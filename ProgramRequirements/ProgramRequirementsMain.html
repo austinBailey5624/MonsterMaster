@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Monster Master Program Requirements</title>
+	<link href="MonsterMaster.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<center>
+<table width=80%>
+	<tr>
+		<td colspan="3"><h1>Classes</h1></td>
+	</tr>
+	<tr>
+		<td>Name</td>
+		<td colspan="2">Purpose</td>
+	</tr>
+	<tr>
+		<td>Actor</td>
+		<td colspan="2">Interface that Monsters and PlayerActors implement - it holds basic 'fighting' information: hp mp level etc<td>
+	</tr>	
+	<tr>
+		<td>Battlefield</td>
+		<td colspan="2">Holds two arrays of Actors -Allies and enemies- and pushes to a queue that alternates between them, checks if an actor is dead and removes it from the queue, handles the menus associated with the battle</td>
+	</tr>
+	<tr>
+		<td>Bestiary</td>
+		<td colspan="2">Acts as the 'pokedex': Holds and organizes the basic information about the MonsterTypes, reads the names and descriptions from file</td>
+	</tr>
+	<tr>
+		<td>Damage</td>
+		<td colspan="2">It is the class that holds all of the different damage types, basically a wrapper for two arrays- the actual damage and the status damage</td>
+	</tr>
+	<tr>
+		<td>Equippable</td>
+		<td colspan="2">This a class that extends the Items class along with (eventually) QuestItem and Useable- these Items are the Items that the player character can equip to increase their combat effectiveness in various ways</td>
+	</tr>
+	<tr>
+		<td>Item</td>
+		<td colspan="2">This is an interface that is extended by the Equippable, QuestItem and Useable classes</td>
+	</tr>
+	<tr>
+		<td>List Reader</td>
+		<td colspan="2">This class handles reading the information pertaining to the Objects from file -all of the names and descriptions for the Bestiary class for example</td>
+	</tr>
+	<tr>
+		<td>List Writer</td>
+		<td colspan="2">This class is responsible for writing the files that the List Reader reads - most of the methods are only used once but I keep it around anyway just incase</td>
+	</tr>
+	<tr>
+		<td>Main</td>
+		<td colspan="2">Basically its a menu system that calls other functions. It also has methods that are used across a lot of functions, like getRandomNumber and verify() (which is used to verify input to functions)</td>
+	</tr>
+	<tr>
+		<td>Monster</td>
+		<td colspan="2">This class Inherits from Actor and handles each individual monster</td>
+	</tr>
+	<tr>
+		<td>MonsterType</td>
+		<td colspan="2">Used to generate what type (or species) the monster is I.E. bulbasaur</td>
+	</tr>
+	<tr>
+		<td>Party</td>
+		<td colspan="2">Holds four Actors, and handles the methods involved with equipping, looking at stats, etc</td>
+	</tr>
+	<tr>
+		<td>Place</td>
+		<td colspan="2">Basically a two dimensional 'field' of Terrains that may or may not be transversed across</td>
+	</tr>
+	<tr>
+		<td>PlayerCharacter</td>
+		<td colspan="2">Extends Actor, Houses information specific to the playerCharacter</td>
+	</tr>
+	<tr>
+		<td>Skill</td>
+		<td colspan="2">It is a constructor for the skills that will be used in the game- 1 for each monsterType plus some others</td>
+	</tr>
+	<tr>
+		<td>Terrain</td>
+		<td colspan="2">A terrain is basically a single square of a place that can be transversible or not like a wall or a path. Stuff can also happen when you transverse across them, like monster battles for instance</td>
+	</tr>
+	<tr>
+		<td>Useable</td>
+		<td colspan="2">Useable extends Item and these are items that can be used during battle or from the menu</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>
