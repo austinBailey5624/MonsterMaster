@@ -327,34 +327,392 @@ public class main
 		bestiary[2][2]=teraTree;
 		
 		
-		bestiary[2][3]=definePegasusMonsterTypes();
-		bestiary[2][4]=defineCompassionMonsterTypes();
-		bestiary[2][5]=defineRottenMonsterTypes();
+		pes=2;
+		ses=3;
+		MonsterTree pegasusTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		pegasusTree.m_elders=new MonsterType[2];
+		pegasusTree.m_elders[0]=new MonsterType("Greater Pegasus",pes,ses,4,0,"This pegasus is fully awesome. If an ancient greek hero needs a flying steed, this guy shows up. But only if the hero is Bellerophon. BECAUSE HERCULES NEVER RODE PEGASUS DISNEY!!!");
+		pegasusTree.m_elders[1]=new MonsterType("Flying Forest",pes,ses,4,1,"The flying forest is a group of wingtrees. It doesnt' have enough lift from its levitation though, so it has birds hang on and flap as hard as they can");
+		pegasusTree.m_adults= new MonsterType[2];
+		pegasusTree.m_adults[0]=new MonsterType("Pegasus",pes,ses,3,0,"Pegasus is glad that its no longer a lesser pegasus, because lets face it, those teenage years sucked. Now he can fly but he cant carry anyone. Especially heores in armor. Are you kidding me? Its already areodynamically impossible for a horse to fly and now you want to add a two hundred pound hero with 300 pounds of armor? not to mention loot? Not on my back",pegasusTree.m_elders[0]);
+		pegasusTree.m_adults[1]=new MonsterType("Wing Tree",pes,ses,3,1,"The wingTree loved watching WW1 films and always wanted to be a wingman. However, its not a man, its a tree. So it settled for the next best thing. Somehow he got ahold of some avatior goggles, and put them on his trunk because he doesnt have eyes. But it makes him look cool, so no one calls him on it. Also it bears saying that this is the guy you want to bring with you to tree parties, he can make you look SOOO good in front of the female trees.",pegasusTree.m_elders[1]);
+		pegasusTree.m_adolescents = new MonsterType[2];
+		pegasusTree.m_adolescents[0]=new MonsterType("Lesser Pegasus",pes,ses,2,0,"Lesser Pegasus is a little depressed. I mean the baby pegases didn't mind that it was called minor becasuse its a baby. But Lesser pegasus knows what theyre saying, and its really akward and its just sad... But atleast its front hooves dont look like trees anymore! It also cant fly to its undending shame, all the other pegasus laugh at it... Its a hard life",pegasusTree.m_adults[0]);
+		pegasusTree.m_adolescents[1]=new MonsterType("Sapwing",pes,ses,2,1,"The sapwing is a tree that wanted to be a bird. Now its converted its leaves into semi feathers and can hop along the ground some if it tries real hard.",pegasusTree.m_adults[1]);
+		pegasusTree.m_infants = new MonsterType[1];
+		pegasusTree.m_infants[0]= new MonsterType("Minor Pegases",pes,ses,1,0,"Half horse, half plant half bird... Or wait, is that too many halves? Its front two legs are treeish, while the torso, head and back legs are a horse and it has wings. Dont look at me, you've all seen Hercules! Its like that except the two front legs are treeish. And its the reaally cute baby form, obviously",pegasusTree.m_adolescents[0],pegasusTree.m_adolescents[1]);
+		pegasusTree.m_eggs=new MonsterType[1];
+		pegasusTree.m_eggs[0]=new MonsterType("Pegasus Egg",pes,ses,0,0,"The Pegasus egg shows a natural affinity for both the air and the earth. However, the part of it that is psyched about flying is on the bottom half, and the part that enjoys the ground is on the top half. So it balances upside down. People say it looks ridiculous, but eggs cant hear sooo...",pegasusTree.m_infants[0]);
+		bestiary[2][3]=pegasusTree;
+
+		pes=2;
+		ses=4;
+		MonsterTree compassionTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		compassionTree.m_elders=new MonsterType[2];
+		compassionTree.m_elders[0]=new MonsterType("Shaolin",pes,ses,4,0,"The Sholin is an elder monk that can despense wisdom to buff allies");
+		compassionTree.m_elders[1]=new MonsterType("Mother Theres",pes,ses,4,1,"A female elder monk that can sacrifice herself to heal all alies to full health, even if they are fallen");
+		compassionTree.m_adults=new MonsterType[2];
+		compassionTree.m_adults[0]=new MonsterType("Bodisatva",pes,ses,3,0,"The Bodisatva is now an experienced mond, that has a healing palm that deals damage to enemies and heals allies",compassionTree.m_elders[0]);
+		compassionTree.m_adults[1]=new MonsterType("Theresatva",pes,ses,3,1,"The Theresatva is self sacrificing, and can give half of her own vital energy to ressurect the fallen to half health",compassionTree.m_elders[1]);
+		compassionTree.m_adolescents=new MonsterType[2];
+		compassionTree.m_adolescents[0]=new MonsterType("Bodisat",pes,ses,2,0,"The Bodisat is a young monk that was trained by the shaolin, and can strike with a sacred palm",compassionTree.m_adults[0]);
+		compassionTree.m_adolescents[1]=new MonsterType("Theresat",pes,ses,2,1,"The Theresat is a bald young female healer that heals through forgiveness. She heals quite a bit, but a third is applied to the opposing team",compassionTree.m_adults[1]);
+		compassionTree.m_infants=new MonsterType[1];
+		compassionTree.m_infants[0]=new MonsterType("Buddi",pes,ses,1,0,"A Buddi is a young enlighted being who can heal through compassion, and will heal both the virtuous and the vengeful, it looks like a buddhist mask",compassionTree.m_adolescents[0],compassionTree.m_adolescents[1]);
+		compassionTree.m_eggs=new MonsterType[1];
+		compassionTree.m_eggs[0]=new MonsterType("Compassion Egg",pes,ses,0,0,"The Compassion Egg has a bright green cross on its shell to show that is will grow into a healer",compassionTree.m_infants[0]);
+		bestiary[2][4]=compassionTree;
+
+		pes=2;
+		ses=5;
+		MonsterTree rottenTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		rottenTree.m_elders=new MonsterType[1];
+		rottenTree.m_elders[0] = new MonsterType("BeePee",pes,ses,4,0,"The BeePee floods toxic sludge all over the opponents battlefield which ignites when hit with fire, dealing massive damage");
+		rottenTree.m_adults = new MonsterType[1];
+		rottenTree.m_adults[0] = new MonsterType("Flint",pes,ses,3,0,"The Flint coughs on its enemies and continually releases methane, it explodes when attacked by fire dealing a large amount of damage to all sides",rottenTree.m_elders[0]);
+		rottenTree.m_adolescents = new MonsterType[1];
+		rottenTree.m_adolescents[0] = new MonsterType("Smaugh",pes,ses,2,0,"The Smaugh is a Sewer demon covered in refuse",rottenTree.m_adults[0]);
+		rottenTree.m_infants=new MonsterType[1];
+		rottenTree.m_infants[0]=new MonsterType("Sewerat",pes,ses,1,0,"The Sewerat is a rather large rat that smells terrible.",rottenTree.m_adolescents[0]);
+		rottenTree.m_eggs=new MonsterType[1];
+		rottenTree.m_eggs[0]=new MonsterType("Rotten Egg",pes,ses,0,0,"The Rotten egg infects those around it with disease",rottenTree.m_infants[0]);
+		bestiary[2][5]=rottenTree;
 		
 		//primary Air
-		bestiary[3][0]=defineSandsMonsterTypes();
-		bestiary[3][1]=defineSeaBreezeMonsterTypes();
-		bestiary[3][2]=defineBirdsMonsterTypes();
-		bestiary[3][3]=defineAeroMonsterTypes();
-		bestiary[3][4]=defineCockaMonsterTypes();
-		bestiary[3][5]=defineNightWingMonsterTypes();
+		
+		pes=3;
+		ses=0;
+		MonsterTree sandTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		sandTree.m_elders=new MonsterType[3];
+		sandTree.m_elders[0]=new MonsterType("Greater Sphynx",pes,ses,4,0,"The greater Sphynx is a very large sphyix with haunting eyes that also speaks in riddles and analogies but has large folded wings along its back. It cant fly with them, but when it spreads them out, it looks very intimidaing. The feathers also alternate between jade and torquoise, so the Greater Sphynx was once hunted for its wings. But then it killed and ate all the hunters, so that was over pretty quickly");
+		sandTree.m_elders[1]=new MonsterType("Scorpious",pes,ses,4,1,"The Scorpious is a descendant of the giant Scorpion that killed Orion.");
+		sandTree.m_elders[2]=new MonsterType("Bihump",pes,ses,4,2,"The Bihump has mystical powers and can cast greater sandstorm that does no damage to sand creatrues, small damage to fire and air primary creatures and more damage to all other creatures each turn");
+		sandTree.m_adults=new MonsterType[3];
+		sandTree.m_adults[0]=new MonsterType("Sphynx",pes,ses,3,0,"The Sphynx has the head of a man and the body of a lion, like the Slynx it evolved from, it speaks only in riddles, however these riddles are more difficult",sandTree.m_elders[0]);
+		sandTree.m_adults[1]=new MonsterType("Scarpi",pes,ses,3,1,"A Scarpi is a large scorpion whose plates have turned into armor, although they do bear scars from its earlier encounters. It is named after the fabled storyteller who is credited for the creation of its myth. Obviously it wasn't a myth",sandTree.m_elders[1]);
+		sandTree.m_adults[2]=new MonsterType("Unihump",pes,ses,3,2,"A unihump is a camel with a single hump. It stores water in this hump obviously and can cast sandstorm with its mind",sandTree.m_elders[2]);
+		sandTree.m_adolescents=new MonsterType[3];
+		sandTree.m_adolescents[0]=new MonsterType("Slynx",pes,ses,2,0,"A Slynx is a mythical sand cat that has haunting eyes and can speak, but only speaks in riddles. Whenever asked a question, it anwsers with another question, usually pointing at the right answer. If the Slynx has no clue though, it will just repeat the question asked of it, it is about the size of a mountain lion",sandTree.m_adults[0]);
+		sandTree.m_adolescents[1]=new MonsterType("Skorpi",pes,ses,2,1,"A Scorpi is a small scorpion that is red and very poisonous",sandTree.m_adults[1]);
+		sandTree.m_adolescents[2]=new MonsterType("Humpless",pes,ses,2,2,"A humpless is a sad camel without a hump. It can magically control the sand with its mind, and keeps some in the gourd across its back",sandTree.m_adults[2]);
+		sandTree.m_infants=new MonsterType[1];
+		sandTree.m_infants[0]=new MonsterType("Kangarat",pes,ses,1,0,"The Kangarat is a small rodent that can spend its whole life without having to drink any water. It takes no damage from sandstorm",sandTree.m_adolescents[0],sandTree.m_adolescents[1],sandTree.m_adolescents[2]);
+		sandTree.m_eggs=new MonsterType[1];
+		sandTree.m_eggs[0]=new MonsterType("Sands Egg",pes,ses,0,0,"The Sands Egg has a sandy shell with the sand logo printed on it",sandTree.m_infants[0]);
+		bestiary[3][0]=sandTree;
+		
+		pes=3;
+		ses=1;
+		MonsterTree seaBreezeTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		seaBreezeTree.m_elders = new MonsterType[2];
+		seaBreezeTree.m_elders[0]=new MonsterType("Heligull",pes,ses,4,0,"The Heligull's wings rotate above it like a helicopter. It dives deep into the water to find prey. It can hold its breath for up to 4 hours, and spends almost as much time above water as within");
+		seaBreezeTree.m_elders[1]=new MonsterType("Soarfish",pes,ses,4,1,"The Soarfish has adapted gulls that allow it to breath both water and air. It has no need to go under water and preys on small birds. However it usually stays near the water to feed its children who cannot fly as well");
+		seaBreezeTree.m_adults=new MonsterType[2];
+		seaBreezeTree.m_adults[0]=new MonsterType("Peligull",pes,ses,3,0,"The pelligull is a large gull with  a great gullet. When there are fish near the surface of the water, it will dive in and open its large mouth. When it surfaces again it spits out the water but retains the fish in its mouth",seaBreezeTree.m_elders[0]);
+		seaBreezeTree.m_adults[1]=new MonsterType("Flyfish",pes,ses,3,1,"The Flyfish can fly at low altitudes out of water and feasts on the small insects just above the waters surface.",seaBreezeTree.m_elders[1]);
+		seaBreezeTree.m_adolescents=new MonsterType[2];
+		seaBreezeTree.m_adolescents[0]=new MonsterType("Guller",pes,ses,2,0,"The guller is a small gull with wide wings",seaBreezeTree.m_adults[0]);
+		seaBreezeTree.m_adolescents[1]=new MonsterType("Skipfish",pes,ses,2,1,"The skipfish can't quite fly yet, but it loved the feeling when it was younger in the baby gulls claws. It can skip out of the water on its fins that are becoming like wings",seaBreezeTree.m_adults[1]);
+		seaBreezeTree.m_infants=new MonsterType[1];
+		seaBreezeTree.m_infants[0]=new MonsterType("Gullfish",pes,ses,1,0,"The first fish a baby gull ever caught is still in its claws. Initially there was some fear between the baby gull and the fish, but they became fast friends when the fish found out how cool it is to fly",seaBreezeTree.m_adolescents[0],seaBreezeTree.m_adolescents[1]);
+		seaBreezeTree.m_eggs=new MonsterType[1];
+		seaBreezeTree.m_eggs[0]=new MonsterType("SeaBreeze Egg",pes,ses,0,0,"The SeaBreeze egg's parents often hold onto it for months at a time before they see dry land. SeaBreeze Monsters love flying above the ocean, so when a SeaBreeze egg is laid, it is caught by the father who holds it while they are flying, even when sleeping.",seaBreezeTree.m_infants[0]);
+		bestiary[3][1]=seaBreezeTree;
+		
+		pes=3;
+		ses=2;
+		MonsterTree birdTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		birdTree.m_elders=new MonsterType[2];
+		birdTree.m_elders[0]=new MonsterType("Foursamcan",pes,ses,4,0,"The Foursamcan channels light from the sun that shines through its multicolored feathers to confuse its enemies");
+		birdTree.m_elders[1]=new MonsterType("Seusstruse",pes,ses,4,1,"When a Fabstruse comes to the realization that leather never goes out of style, it becomes a Seusstruse. When the Seusstruse lays eggs, they are green, and when it has access to ham, it places the ham near the eggs because it loves green eggs and ham.");
+		birdTree.m_adults=new MonsterType[2];
+		birdTree.m_adults[0]=new MonsterType("Threesamcan",pes,ses,3,0,"The Threesamcan is a much larger version of the Tusamcan, and is even more colorful",birdTree.m_elders[0]);
+		birdTree.m_adults[1]=new MonsterType("Fabstruse",pes,ses,3,1,"The Fabstruse is a very strange black and purple bird that loves fashion, but always seems to be behind on the trends. I mean leather Jacket? Sooo Eighties",birdTree.m_elders[1]);
+		birdTree.m_adolescents=new MonsterType[2];
+		birdTree.m_adolescents[0]=	new MonsterType("Tusamcan",pes,ses,2,0,"The TuscamCan is a colorful blue bird with a rainbow beak that tells little children to eat healthy while giving them pure sugar for breakfast",birdTree.m_adults[0]);
+		birdTree.m_adolescents[1]= new MonsterType("Abstruse",pes,ses,2,1,"The Abstruse is a brightly colorful bird that complicated and interesting... Or completely ridculous depending on how you look at it. It looks like a peacock, except every single feather is a different color, and they're not organized in any particular manner. When it walks, it takes its long storklike legs and pulls them up way higher than they need to go, giving it a ridiculous looking gait. Its long neck is a gradient from green to blue, and it has a yellow feather crown on the crest of its head",birdTree.m_adults[1]);
+		birdTree.m_infants=new MonsterType[1];
+		birdTree.m_infants[0]=new MonsterType("Colour",pes,ses,1,0,"The Colour is a colorful hatchling.",birdTree.m_adolescents[0],birdTree.m_adolescents[1]);
+		birdTree.m_eggs=new MonsterType[1];
+		birdTree.m_eggs[0]=new MonsterType("Bird Egg",pes,ses,0,0,"The BirdEgg is a rainbow colored egg with the bird crest at its center",birdTree.m_infants[0]);
+		bestiary[3][2]=birdTree;
+
+		pes=3;
+		ses=3;
+		MonsterTree aeroTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		aeroTree.m_elders=new MonsterType[2];
+		aeroTree.m_elders[0]=new MonsterType("Roc",pes,ses,4,0,"The Roc is a giant bald eagle with a thirty foot wingspan, it often sits on a golden dome");
+		aeroTree.m_elders[1]=new MonsterType("Air Atronach",pes,ses,4,1,"Lightening often surrounds the Air Atronach whenever it is angry. It is surrounded by six elementals, three of which are aero, three of which determine the other types of spells it can cast");
+		aeroTree.m_adults=new MonsterType[3];
+		aeroTree.m_adults[0]=new MonsterType("Baldgul",pes,ses,3,0,"The Baldgul is a bald eagle that is actually bald. Not white feathers, no feathers",aeroTree.m_elders[0]);
+		aeroTree.m_adults[1]=new MonsterType("Wings",pes,ses,3,1,"Byrdi hated the beatles, because the name made it hungry. And the problem with the rolling stones was, well, people would often try to kill it and another bird with a single one. But Once the beatles split up, it became Wings",aeroTree.m_elders[0]);
+		aeroTree.m_adults[2]=new MonsterType("Aero Elemental",pes,ses,3,2,"The Aero Elemental is a suped up version of the AeroSymbol with more wings etc.",aeroTree.m_elders[1]);
+		aeroTree.m_adolescents=new MonsterType[3];
+		aeroTree.m_adolescents[0]=new MonsterType("toupeagle",pes,ses,2,0,"The toupeagle is a young eagle that went prematurely bald. Its very sensitive about its baldness and thus wears a toupee. Its a good toupee too, but it looks ridiculous because its not really on right because, well it has only wings and claws to work with",aeroTree.m_adults[0]);
+		aeroTree.m_adolescents[1]=new MonsterType("Byrdi",pes,ses,2,1,"The Byrdi grew up in the seventies and fell in love with rock and roll. It gets dizzy when it acts out its favorite song",aeroTree.m_adults[1]);
+		aeroTree.m_adolescents[2]=new MonsterType("AeroSymbol",pes,ses,2,3,"The AeroSymbol is a circle with six points that looks like the aero glyph. The six points are feathers",aeroTree.m_adults[2]);
+		aeroTree.m_infants = new MonsterType[1];
+		aeroTree.m_infants[0]=new MonsterType("Flapper",pes,ses,1,0,"The Flapper shows a ridiculous amount of leg, esspecially for this time period. It is very stylish, and wears a headband with a feather on it, even though its already a bird",aeroTree.m_adolescents[0],aeroTree.m_adolescents[1],aeroTree.m_adolescents[2]);
+		aeroTree.m_eggs = new MonsterType[1];
+		aeroTree.m_eggs[0]=new MonsterType("AeroEgg",pes,ses,0,0,"The aeroEgg hovers in the air, and is yellow with the bird crest on it. It was designed to hover just in case one of its parents accidentally knocks it out of the tree, so it can be rescued before it hits the ground",aeroTree.m_infants[0]);
+		bestiary[3][3]=aeroTree;
+
+		pes=3;
+		ses=4;
+		MonsterTree cockaTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		cockaTree.m_elders=new MonsterType[1];
+		cockaTree.m_elders[0]=new MonsterType("CockaFour",pes,ses,4,0,"The Cockafour is the undisputed leader of the cockas. Its beak is lined with razors, and its dance can drive all birds crazy, and berserks all air primaries");
+		cockaTree.m_adults=new MonsterType[3];
+		cockaTree.m_adults[0]=new MonsterType("Cockadude",pes,ses,3,0,"The Cockadude is a super cool cocka who wears 8 bit glasses and raps",cockaTree.m_elders[0]);
+		cockaTree.m_adults[1]=new MonsterType("Cockathree",pes,ses,3,1,"The Cockathree is a pretty awesome cocka that often dances with its feathers and raises its crest",cockaTree.m_elders[0]);
+		cockaTree.m_adults[2]=new MonsterType("Lovebird",pes,ses,3,2,"The Lovebird is a totally pink cocka that is eternally smiling. It can flirt with an air primary monster to occupy it for one turn",cockaTree.m_elders[0]);
+		cockaTree.m_adolescents=new MonsterType[3];
+		cockaTree.m_adolescents[0]=new MonsterType("Cockarude",pes,ses,2,0,"The Cockarude is a cocka that his very rude and often signals with its middle feather. It wears a backwards baseball cap, how it got one I dont know",cockaTree.m_adults[0]);
+		cockaTree.m_adolescents[1]=new MonsterType("Cockatwo",pes,ses,2,1,"The Cockatwo is a regular cocka. And by regular I mean very strange",cockaTree.m_adults[1]);
+		cockaTree.m_adolescents[2]=new MonsterType("Smilebird",pes,ses,2,2,"The Smilebird is a cocka who is using its smile feathers to smile. It is also blushing a vey delicate shade of pink.",cockaTree.m_adults[2]);
+		cockaTree.m_infants=new MonsterType[1];
+		cockaTree.m_infants[0]=new MonsterType("Cockaone",pes,ses,1,0,"A baby cockatoo that has yet to leave its shell. Its cracked and eveything, but it hasn't left. It wears the top of the shell like a helmet",cockaTree.m_adolescents[0],cockaTree.m_adolescents[1],cockaTree.m_adolescents[2]);
+		cockaTree.m_eggs = new MonsterType[1];
+		cockaTree.m_eggs[0]=new MonsterType("CockaEgg",pes,ses,0,0,"The CockaEgg is a pure white egg with the cocka crest on it",cockaTree.m_infants[0]);
+		bestiary[3][4]=cockaTree;
+
+		
+		pes=3;
+		ses=5;
+		MonsterTree nightWingTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		nightWingTree.m_elders=new MonsterType[2];
+		nightWingTree.m_elders[0]=new MonsterType("Vampelder",pes,ses,4,0,"The Vampelder is an older vampire that can assume human form. It can dissipate into a crowd of bats to attack its enemies");
+		nightWingTree.m_elders[1]=new MonsterType("Lenoraven",pes,ses,4,1,"Because of the Lenoraven's intimite relationship with death, it can instantly kill a monster with less than 20% health");
+		nightWingTree.m_elders[2]=new MonsterType("Knowlowlegabel",pes,ses,4,1,"The Knowlowlegabel knows only that it does not know. It can cast logical contradiction that injures monsters scaling with their intellect");
+		nightWingTree.m_adults=new MonsterType[2];
+		nightWingTree.m_adults[0]=new MonsterType("Vampire",pes,ses,3,0,"The vampire can float around like a shadow in the night. It can vampire bite that heals 1/2 of the damage inflicted. It takes extra damage from fire and light.",nightWingTree.m_elders[0]);
+		nightWingTree.m_adults[1]=new MonsterType("Skulltrure",pes,ses,3,1,"The Skullture is a vulture with the head of a skull, like its younger cousin, the Scanvegiar, it feeds on death, and has an ability to deal double damage the turn after a monster dies",nightWingTree.m_elders[1]);
+		nightWingTree.m_adults[2]=new MonsterType("Wisowl",pes,ses,3,1,"The wiseowl is an older version of the rationowl that can expose the weaknesses of its enemies so that they take 25% extra damage for the rest of the battle. This effect does not stack with identify weakness",nightWingTree.m_elders[2]);
+		nightWingTree.m_adolescents=new MonsterType[3];
+		nightWingTree.m_adolescents[0]=new MonsterType("ShadowWing",pes,ses,2,0,"The shadowing is a bat that has a vampire attack that heals for 1/4th of the attacks damage",nightWingTree.m_adults[0]);
+		nightWingTree.m_adolescents[1]=new MonsterType("Scavengair",pes,ses,2,1,"The scavenger is a young vulture that feeds on death. For each creature that dies, it deals an additional 5% damage",nightWingTree.m_adults[1]);
+		nightWingTree.m_adolescents[2]=new MonsterType("Rationowl",pes,ses,2,1,"The Rationowl is a thinker and percieves its enemies weaknesses before it strikes. It can cast identify which increases damage to an enemy by 15% for the rest of the battle",nightWingTree.m_adults[2]);
+		nightWingTree.m_infants=new MonsterType[1];
+		nightWingTree.m_infants[0]=new MonsterType("Foreshadowwing",pes,ses,1,0,"Its very hard to tell what manner of winged beast this is, as it is covered by shadows and appears to have four wings",nightWingTree.m_adolescents[0],nightWingTree.m_adolescents[1],nightWingTree.m_adolescents[2]);
+		nightWingTree.m_eggs=new MonsterType[1];
+		nightWingTree.m_eggs[0]=new MonsterType("NightWing Egg",pes,ses,0,0,"The NightWing egg is black and nearly hidden in the shadows of the cave where it is laid",nightWingTree.m_infants[0]);
+		bestiary[3][5]=nightWingTree;
 
 		
 		//primary Light
-		bestiary[4][0]=defineSolarMonsterTypes();
-		bestiary[4][1]=defineLunarMonsterTypes();
-		bestiary[4][2]=defineGuardianMonsterTypes();
-		bestiary[4][3]=defineHolyMonsterTypes();
-		bestiary[4][4]=defineLuxorMonsterTypes();
+		pes=4;
+		ses=0;
+		//TODO redo solar tree
+		MonsterTree solarTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		solarTree.m_elders = new MonsterType[3];
+		solarTree.m_elders[0]=new MonsterType("Flarebear",pes,ses,4,0,"A Flarebear, as the name implies is a sun elemental bear");
+		solarTree.m_elders[1]=new MonsterType("FlareTyrant",pes,ses,4,1,"A solar-elemental tyrant");
+		solarTree.m_elders[2]=new MonsterType("Sol",pes,ses,4,2,"A Sol is as bright as the sun, only smaller");
+		solarTree.m_adults = new MonsterType[3];
+		solarTree.m_adults[0]=new MonsterType("FlareWulf",pes,ses,3,0,"A FlareWulf is a glowing wolf that can breathe a solar flare",solarTree.m_elders[0]);
+		solarTree.m_adults[1]=new MonsterType("Solaire",pes,ses,3,1,"A Solaire is a larger diurnal with big teeth and horns",solarTree.m_elders[1]);
+		solarTree.m_adults[2]=new MonsterType("Antares",pes,ses,3,2,"Named after the third brighest star in the night sky, the Sirius is a brighter vega with more magic",solarTree.m_elders[2]);
+		solarTree.m_adolescents=new MonsterType[3];
+		solarTree.m_adolescents[0]=new MonsterType("FireFaux",pes,ses,2,0,"A Firefaux is a fox that loves sitting in the sun and absorbing rays. It has a yellow coat, and is a reference to an awesome browser",solarTree.m_adults[0]);
+		solarTree.m_adolescents[1]=new MonsterType("Diurnal",pes,ses,2,1,"A diurnal is a montser that is active only during the day. It looks like a saur made of flames",solarTree.m_adults[1]);
+		solarTree.m_adolescents[2]=new MonsterType("Vega",pes,ses,2,2,"Named after the fifth brightest star in the sky, the vega is a spherical construct with rotating ray blades that resembles the sun",solarTree.m_adults[2]);
+		solarTree.m_infants=new MonsterType[1];
+		solarTree.m_infants[0]=new MonsterType("Tona",pes,ses,1,0,"A tona is a floating orb that gains energy from the suns rays. At night it floats to rest and stops glowing, appearing a simple stone",solarTree.m_adolescents[0],solarTree.m_adolescents[1],solarTree.m_adolescents[2]);
+		solarTree.m_eggs = new MonsterType[1];
+		solarTree.m_eggs[0]=new MonsterType("Solar egg",pes,ses,0,0,"The solar egg glows slightly in the night if left out in the sun all day, as if it absorbs the sun's rays",solarTree.m_infants[0]);
+		bestiary[4][0]=solarTree;
+		
+		pes=4;
+		ses=1;
+		MonsterTree lunarTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		lunarTree.m_elders=new MonsterType[2];
+		lunarTree.m_elders[0]=new MonsterType("Lona",pes,ses,4,0,"Lona's are stronger when they have a Luna present. They are great white Wolves with ice colored eyes, their eyes seem to speak of their souls, human");
+		lunarTree.m_elders[1]=new MonsterType("Luna",pes,ses,4,1,"Luna is a large moon appearing stone with a single large silver band surrounding it, that shows six phases of the moon");
+		lunarTree.m_adults=new MonsterType[2];
+		lunarTree.m_adults[0]=new MonsterType("Selen",pes,ses,3,0,"Selen is a greater wolf, pure white. It can preform moon beam which deals mainly light damage with water secondary.",lunarTree.m_elders[0]);
+		lunarTree.m_adults[1] = new MonsterType("Mayari",pes,ses,3,1,"Mayari depicts a half full moon emblazoned on a cylindrical stone. The silver band surrounding it has spawned six crescents, all facing outwards",lunarTree.m_elders[1]);
+		lunarTree.m_adolescents=new MonsterType[2];
+		lunarTree.m_adolescents[0] = new MonsterType("Chia",pes,ses,2,0,"Chia is a small wolf that can howl at the moon to increase its attack",lunarTree.m_adults[0]);
+		lunarTree.m_adolescents[1] = new MonsterType("Chandra",pes,ses,2,1,"Chandra is a cylindrical stone whose radius is 4 times its height, it shows the waning phase of the moon, if you were to project the waning moon on the rock, the rock cooresponding to the dark side of the moon is black and the lit side of the moon is white. It is surrounded by a simple silver bar with six crescents",lunarTree.m_adults[1]);
+		lunarTree.m_infants=new MonsterType[1];
+		lunarTree.m_infants[0]=new MonsterType("Lunapup",pes,ses,1,0,"The Lunapup is a small wolf born from a lunar egg on the full moon.",lunarTree.m_adolescents[0],lunarTree.m_adolescents[1]);
+		lunarTree.m_eggs=new MonsterType[1];
+		lunarTree.m_eggs[0]=new MonsterType("Lunar egg",pes,ses,0,0,"The Lunar egg appears to be a stone during the day, however when moonlight shines upon it, it is clearly an egg with the lunar symbol embossed upon it. The brightness of the symbol is determined by the phase the moon is in.",lunarTree.m_infants[0]);
+		bestiary[4][1]=lunarTree;
+
+
+		pes=4;
+		ses=2;
+		MonsterTree guardianTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		guardianTree.m_elders=new MonsterType[2];
+		guardianTree.m_elders[0]=new MonsterType("Guardainus",pes,ses,4,0,"The Guardainus is a titan with a large amount of HP. He can cast a skill on a unit so that he dies instead of them when they are killed, transferring hp");
+		guardianTree.m_elders[1]=new MonsterType("Halarial",pes,ses,4,1,"The Halarial is a greater angel. It can sacrifice itself to keep another from death for three turns");
+		guardianTree.m_adults=new MonsterType[2];
+		guardianTree.m_adults[0]=new MonsterType("Scardar",pes,ses,3,0,"The scardar has many scars, including one over his left eye, his visible skin is scarred and his shield is spiked which allows him to return a percentage of damage",guardianTree.m_elders[0]);
+		guardianTree.m_adults[1]=new MonsterType("Halosses",pes,ses,3,1,"The Halosses is a fully adult angel cloaked in green. She can cast regen on an ally which heals it for some hp each turn",guardianTree.m_elders[1]);
+		guardianTree.m_adolescents=new MonsterType[2];
+		guardianTree.m_adolescents[0]=new MonsterType("Sheildar",pes,ses,2,0,"The Sheildar is an older Escutcheoner who has acquired metal guards, which is a plus. He can taunt enemies to force them to attack him",guardianTree.m_adults[0]);
+		guardianTree.m_adolescents[1]=new MonsterType("Haloss",pes,ses,2,1,"The Haloss is a lesser angel that can cast shell on an ally, which acts as a temporary shield",guardianTree.m_adults[1]);
+		guardianTree.m_infants=new MonsterType[1];
+		guardianTree.m_infants[0]=new MonsterType("Escutcheoner",pes,ses,1,0,"The Escutcheoner is a small creature with a big shield that it is very proud of and shines on a daily basis. In combat he can attack as usual",guardianTree.m_adolescents[0],guardianTree.m_adolescents[1]);
+		guardianTree.m_eggs=new MonsterType[1];
+		guardianTree.m_eggs[0]=new MonsterType("Guardian Egg",pes,ses,0,0,"The guardian tree is hard as a rock, the guardian crest embossed on its center",guardianTree.m_infants[0]);
+		bestiary[4][2]=guardianTree;
+		
+
+		pes=4;
+		ses=3;
+		MonsterTree holyTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		holyTree.m_elders=new MonsterType[2];
+		holyTree.m_elders[0] = new MonsterType("Archangel",pes,ses,4,0,"The Archangel  can buff all angels on the owners side");
+		holyTree.m_elders[1] = new MonsterType("Ultrangel",pes,ses,4,1,"The ultra angel is the epitome of an angel");
+		holyTree.m_adults=new MonsterType[2];
+		holyTree.m_adults[0]=new MonsterType("Onangel",pes,ses,3,0,"The Onangel has a passive buff that deals 15% bonus damage to dark elemental enemies",holyTree.m_elders[0]);
+		holyTree.m_adults[1]=new MonsterType("Anangel",pes,ses,3,1,"The Anangel can promote its allies to do +20% damage versus dark primary enemies",holyTree.m_elders[1]);		
+		holyTree.m_adolescents=new MonsterType[2];
+		holyTree.m_adolescents[0]=new MonsterType("Hemiangel",pes,ses,2,0,"The Hemiangel has a cherubic body and shoots from a bow",holyTree.m_adults[0]);
+		holyTree.m_adolescents[1]=new MonsterType("Semiangel",pes,ses,2,1,"The Semiangel can annoint light primary allies, buffing their attack by 20%",holyTree.m_adults[1]);
+		holyTree.m_infants=new MonsterType[1];
+		holyTree.m_infants[0]=new MonsterType("Demiangel",pes,ses,1,0,"The Demiangel is a small angel who left heaven in order to help the world (or its wings were not strong enough to keep it that high in the sky, depending on who you ask) its magical ability is to heal, however it refuses to heal anything with a dark or fire element",holyTree.m_adolescents[0],holyTree.m_adolescents[1]);
+		holyTree.m_eggs = new MonsterType[1];
+		holyTree.m_eggs[0]= new MonsterType("Holy Egg", pes,ses,0,0,"It is a golden egg. Unfortunately there are only a finite number of them because the people benefiting from the golden egg killed the goose that laid them thinking it must be made of more valuable materials. They were wrong.",holyTree.m_infants[0]);
+		bestiary[4][3]=holyTree;
+		
+		pes=4;
+		ses=4;
+		MonsterTree luxorTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		luxorTree.m_elders=new MonsterType[3];
+		luxorTree.m_elders[0] = new MonsterType("Ascendenphage",pes,ses,4,0, "The Ascendenpage is a lage Argenphage whose armor glows a brilliant white, made of some opaque white metal, the symbols etched into the metal are likewise fancy");
+		luxorTree.m_elders[1] = new MonsterType("Luminacier",pes,ses,4,1,"The Luminacier is a single Luminace surrounded by six smaller Candellas, representing faith, justice, mercy, compassion, forgiveness and redemption");
+		luxorTree.m_elders[2] = new MonsterType("Light Atronach",pes,ses,4,2,"The light atronach is an ascendant light elemenal that is surrounded by six symbols, representing each of the six elements");
+		luxorTree.m_adults=new MonsterType[3];
+		luxorTree.m_adults[0] = new MonsterType("Argenphage",pes,ses,3,0,"The Argenphage is a larger phage with silver plates inlaid with complex designs. It is said that their eyes can see the balance of a soul",luxorTree.m_adults[0]);
+		luxorTree.m_adults[1] = new MonsterType("Luminace",pes,ses,3,1,"The Luminace is a collection of three Candellas, representing faith, truth and service, the virtues of its holy order. It will often shirk from the control of a dark master, even rebelling at times",luxorTree.m_adults[1]);	
+		luxorTree.m_adults[2] = new MonsterType("Light Elemental",pes,ses,3,2,"the light elemental is a large light symbol surrounded by three other symbols, water, air and earth. The elemental can channel any of the four energies",luxorTree.m_adults[2]);
+		luxorTree.m_adolescents = new MonsterType[3];
+		luxorTree.m_adolescents[0] = new MonsterType("Phage",pes,ses,2,0, "A phage is a glowing ball of light that is protected by golden armor. It is floating about three feet in the air and has three fingered golden claws that extend two feet from its shoulders. it has two asymmetric horns on its helmet that is not attached to its body, and light glows from the eye sockets",luxorTree.m_adults[0]);
+		luxorTree.m_adolescents[1] = new MonsterType("Candella",pes,ses,2,1, "A Candella absorbs the light of the sun during the day and uses this light to attack its enemies at night. It can reveal the presence of monsters trying to stealth",luxorTree.m_adults[1]);
+		luxorTree.m_adolescents[2] = new MonsterType("Light Symbol",pes,ses,2,2,"A Light symbol is the embodiment of the symbol of light and can cast lumimagia 1, the basic light attack spell",luxorTree.m_adults[2]);
+		luxorTree.m_infants = new MonsterType[1];
+		luxorTree.m_infants[0]=new MonsterType("Lumin",pes,ses,1,0,"A lesser lumin is a small hovering ball of light that can heal other light monsters",luxorTree.m_adolescents[0],luxorTree.m_adolescents[1],luxorTree.m_adolescents[2]);
+		luxorTree.m_eggs = new MonsterType[1];
+		luxorTree.m_eggs[0]=new MonsterType("Luxor Egg",pes,ses,0,0,"The luxor Egg glows a brilliant white and has the luxor symbol etched on its surface",luxorTree.m_infants[0]);
+		bestiary[4][4]=luxorTree;
+		
+		//TODO:complete RedemptionTree;
 //		bestiary[4][5]=defineRedemptionMonsterTypes();
-//		
-//		//primary Dark
-//		bestiary[5][0]=defineDemonicMonsterTypes();
-//		bestiary[5][1]=definePoisonMonsterTypes();
-//		bestiary[5][2]=defineUndeadMonsterTypes();
-//		bestiary[5][3]=defineStormMonsterTypes();
-//		bestiary[5][4]=defineBetrayerMonsterTypes();
-//		bestiary[5][5]=defineUmbralMonsterTypes();
+		
+		//primary Dark
+
+		MonsterTree demonicTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		pes=5;
+		ses=0;
+		demonicTree.m_elders = new MonsterType[3];
+		demonicTree.m_elders[0] = new MonsterType("Astaroth",pes,ses,4,0,"Astaroth is a bright red demon with large black horns fifteen feet tall. He weilds a large corrupted axe that has a living eye where the blade meets the haft");
+		demonicTree.m_elders[1] = new MonsterType("Asag",pes,ses,4,1,"Asag is also known as the fear. He appears as a giant demon with the body of a bear and the head of a stag.");
+		demonicTree.m_elders[2] = new MonsterType("Shedu",pes,ses,4,2,"The Shedu is a phantom witch that speaks only curses, whose eyeless sockets see through the dark and not");
+		demonicTree.m_adults = new MonsterType[3];
+		demonicTree.m_adults[0] = new MonsterType("Incubus",pes,ses,3,0,"The Incubus can take many forms, sometimes appearing as a poet, or perhaps an athelete to sexually corrupt women, when they feel excited as their prey is near, often their eyes will revert to their true form, but only for an instant, giving the virtuous their only warning");
+		demonicTree.m_adults[1] = new MonsterType("Succubus",pes,ses,3,1,"The succubus is a beautiful female demon meant to provoke lust in the hearts of men. They catch their prey more ofthen than the Incubus, as men have weaker hearts when it comes to resisting beauty");
+		demonicTree.m_adults[2] = new MonsterType("Grimiore",pes,ses,3,2,"A sentient black book that has the demon crest embossed on the cover. The spells and hexes within are written in both the blood of the slain and the blood of the conqueror");
+		demonicTree.m_adolescents = new MonsterType[3];
+		demonicTree.m_adolescents[0] = new MonsterType("Scamp",pes,ses,2,0,"A scamp is a minor demon with claws and long ears, it screams at its enemies to initiate combat");
+		demonicTree.m_adolescents[1] = new MonsterType("Imp",pes,ses,2,1,"An imp is a small red demon carrying a pitchfork. It is aggressive but is wise enough not to initiate combat against a stronger opponent");
+		demonicTree.m_adolescents[2] = new MonsterType("Jinn",pes,ses,2,2,"A Jinn attacks its enemies with mystical enemies, preying on the weak of mind. It is ephemeral, which greatly reduces the efficacy of physical attacks");
+		demonicTree.m_infants = new MonsterType[1];
+		demonicTree.m_infants[0] = new MonsterType("Fiend",pes,ses,1,0,"The fiend is a minor demon, colored dark red with black horns");
+		demonicTree.m_eggs = new MonsterType[1];
+		demonicTree.m_eggs[0] = new MonsterType("Demonic Egg",pes,ses,0,0,"The demonic egg is is a rusty black with the demonic symbol embossed on its center, it is painful to touch");
+		bestiary[5][0]=demonicTree;
+
+		MonsterTree poisonTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		pes=5;
+		ses=1;
+		poisonTree.m_elders[0]= new MonsterType("Queen B",pes,ses,3,0,"Queen B is the younger sister of Queen A, however when they were in a beauty pagent, everyone chose Queen B, so she became the dominant Queen. She can summon Stingers to the empty allied positions");
+		poisonTree.m_elders[1]=new MonsterType("King Rattle",pes,ses,3,1,"King Rattle has a large Rattle on the end of its tail. Not like a snakes, like a babies rattle, but really large. It also has a crown. Its scales are brown and it is very large");
+		poisonTree.m_elders[2]=new MonsterType("Red Widow",pes,ses,3,2,"The Red Widow has gotten over her husbands death. The hourglass has turned black, and the rest of her has turned red. This color, and the scent given off from her hide, attracts insects to their doom. Her bright color does as well");
+		poisonTree.m_elders[3]=new MonsterType("Cougar Spider",pes,ses,3,3,"The Cougar Spider is an older spider who still looks nice and knows how to treat men (spiders) right. She takes them to her web and then eats them.");
+		poisonTree.m_adults=new MonsterType[3];
+		poisonTree.m_adults[0]=new MonsterType("Wasplash",pes,ses,3,0,"The Wasplash is an oversized wasp with a stinger and it can latch onto a single enemy with the hooked blades on the end of its legs, stinging them multiple times",poisonTree.m_elders[0]);
+		poisonTree.m_adults[1]=new MonsterType("Slyslyther",pes,ses,3,1,"The SlySlyther is a grown Slyther whose scales have turned black as night, it is very quiet and can sneak attack its enemies.",poisonTree.m_elders[1]);
+		poisonTree.m_adults[2]=new MonsterType("Widow",pes,ses,3,2,"The Widow is a widowed spider that is really broken up about it, cries all the time. It looks like a black widow but larger and sad",poisonTree.m_elders[2],poisonTree.m_elders[3]);
+		poisonTree.m_adolescents=new MonsterType[3];
+		poisonTree.m_adolescents[0]=new MonsterType("Stinger",pes,ses,2,0,"The Stinger is an oversized wasp with a poisonous stinger",poisonTree.m_adults[0]);
+		poisonTree.m_adolescents[1]=new MonsterType("Slyther",pes,ses,2,1,"The Slyther is a small snake that slides through the grass towards its prey. Its bite is venemous. Its green and has no rattle",poisonTree.m_adults[1]);
+		poisonTree.m_adolescents[2]=new MonsterType("Creeper",pes,ses,2,2,"The creeper is a spider that can shoot webs at its enemies to slow them down.",poisonTree.m_adults[2]);
+		poisonTree.m_infants = new MonsterType[1];
+		poisonTree.m_infants[0] = new MonsterType("Fanger",pes,ses,1,0,"The fanger is a small scorpion that can lift its legs up and slither and has fangs",poisonTree.m_adolescents[0],poisonTree.m_adolescents[1],poisonTree.m_adolescents[2]);
+		poisonTree.m_eggs = new MonsterType[1];
+		poisonTree.m_eggs[0] = new MonsterType("Poison Egg",pes,ses,0,0,"The poison egg is black with a greenish hue. The symbol is embossed on its surface, and spikes extend from the shell, which defend itself. The spikes are of course dipped in poison",poisonTree.m_infants[0]);
+		bestiary[5][1]=poisonTree;
+		
+		pes=5;
+		ses=2;
+		MonsterTree undeadTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		undeadTree.m_elders = new MonsterType[1];
+		undeadTree.m_elders[0] = new MonsterType("Skulltyrant",pes,ses,4,0,"The Skulltyrant is a large undead T-rex. Very Scary");
+		undeadTree.m_elders[1] = new MonsterType("Specter",pes,ses,4,1,"The Specter can possess an enemy for three turns after which it dies");
+		undeadTree.m_adults = new MonsterType[1];
+		undeadTree.m_adults[0] = new MonsterType("Skullclar",pes,ses,3,0,"The Skullclar is a larger Skullsaur with wings and horns",undeadTree.m_elders[0]);
+		undeadTree.m_adults[1] = new MonsterType("Phantom",pes,ses,3,1,"The Phantom is still incorporeal and weilds a curved scepter",undeadTree.m_elders[1]);
+		undeadTree.m_adolescents = new MonsterType[1];
+		undeadTree.m_adolescents[0] = new MonsterType("Skullsaur",pes,ses,2,0,"The Skullsaur is a undead veloceraptor looking thing that has a badass attack called deathclaw",undeadTree.m_adults[0]);
+		undeadTree.m_adolescents[1] = new MonsterType("Ghostet",pes,ses,2,1,"The Ghostet is a weak phantom that takes reduced physical damage",undeadTree.m_adults[1]);
+		undeadTree.m_infants = new MonsterType[1];
+		undeadTree.m_infants[0] = new MonsterType("Stull",pes,ses,1,0,"The stull is a floating skull with glowing green orbs in its eye sockets",undeadTree.m_adolescents[0],undeadTree.m_adolescents[1]);
+		undeadTree.m_eggs = new MonsterType[1];
+		undeadTree.m_eggs[0] = new MonsterType("Undead Egg",pes,ses,0,0,"Lifeless and cold, the egg is the color and consistency of bone, with the undead crest embossed on the center",undeadTree.m_infants[0]);
+		bestiary[5][2]=undeadTree;
+		
+		pes=5;
+		ses=3;
+		MonsterTree stormTree= new MonsterTree(pes,ses,typeNames[pes][ses]);
+		stormTree.m_elders = new MonsterType[1];
+		stormTree.m_elders[0] = new MonsterType("Thundragon",pes,ses,4,0,"The Thundragon is a fully formed dragon made of clouds. Its breath is a hurricane, its scream a thunderbolt");
+		stormTree.m_adults = new MonsterType[1];
+		stormTree.m_adults[0] = new MonsterType("Tempestor",pes,ses,3,0,"The Tempestor is a greater thunder wyvern with wings and rear claws. Its presence will darken the sky and call harsh gales",stormTree.m_elders[0]);
+		stormTree.m_adolescents = new MonsterType[1];
+		stormTree.m_adolescents[0] = new MonsterType("Thundroar",pes,ses,2,0,"The Thundroar is a dragonlike snake in the clouds. Lightening storms occur when multiple Thundroars battle in the heavens. It is said that thunder is caused by their roaring",stormTree.m_adults[0]);
+		stormTree.m_infants = new MonsterType[1];
+		stormTree.m_infants[0]= new MonsterType("Maltag", pes,ses,1,0,"Have you ever had a really bad day? So bad that even though there was a clear blue sky, it felt like a small dark cloud was following you around? This is that cloud",stormTree.m_adolescents[0]);
+		stormTree.m_eggs = new MonsterType[1];
+		stormTree.m_eggs[0] = new MonsterType("Storm Egg",pes,ses,0,0,"The storm egg is solid black and appears to be made of obsidian, excepting, of course, the symbol embossed on its center",stormTree.m_infants[0]);
+		bestiary[5][3]=stormTree;
+
+		pes=5;
+		ses=4;
+		MonsterTree betrayerTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		betrayerTree.m_elders = new MonsterType[1];
+		betrayerTree.m_elders[0] = new MonsterType("Avengeant",pes,ses,4,0,"The Avengeant once served God, but gien will, disagreed with his descision. When he went to resolve the conflict, God couldn't stand being questioned and excommunicated the Avengent, who has hated God and those loyal to him ever since");
+		betrayerTree.m_adults = new MonsterType[1];
+		betrayerTree.m_adults[0] = new MonsterType("Black Knight",pes,ses,3,0,"The black knight is sheilded in dark plate, that has rituals etched into the steel",betrayerTree.m_elders[0]);
+		betrayerTree.m_adolescents = new MonsterType[1];
+		betrayerTree.m_adolescents[0] = new MonsterType("Dark Phage",pes,ses,2,0,"The dark phage is a corrupted phage that turned from the service of its creator",betrayerTree.m_adults[0]);
+		betrayerTree.m_adolescents[1] = new MonsterType("Fallen HemiAngel",pes,ses,2,1,"The Fallen HemiAngel has larger wings both turned black",betrayerTree.m_adults[0]);
+		betrayerTree.m_infants = new MonsterType[1];
+		betrayerTree.m_infants[0] = new MonsterType("Fallen DemiAngel",pes,ses,1,0,"The fallen demiAngel is an angel that followed the light bringer when he fell from heaven. It was weak then, and has yet to grow",betrayerTree.m_adolescents[0],betrayerTree.m_adolescents[1]);
+		betrayerTree.m_eggs = new MonsterType[1];
+		betrayerTree.m_eggs[0] = new MonsterType("Betrayer Eggs",pes,ses,0,0,"The betrayer egg is half black and half white its center embossed with the betrayers symbol, a back being stabbed",betrayerTree.m_infants[0]);
+		bestiary[5][4]=betrayerTree;
+		
+		pes=5;
+		ses=5;
+		MonsterTree umbralTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		umbralTree.m_elders = new MonsterType[2];
+		umbralTree.m_elders[0] = new MonsterType("Eye Of Dis",pes,ses,4,0,"The Eye of Dis is a haunting shadow in the shape of an eye");
+		umbralTree.m_elders[1] = new MonsterType("Umbral Atronach", pes,ses,4,1,"The Umbral Atronach is a very large umbral symbol surrounded by Elementals representing every element. As such, it can cast greater darkness magics and regular magics of every other element");
+		umbralTree.m_adults = new MonsterType[2];
+		umbralTree.m_adults[0] = new MonsterType("Obfuscay",pes,ses,3,0,"The Obfuscay consumes darkness and channels it back at its enemies, blinding them",umbralTree.m_elders[0]);
+		umbralTree.m_adults[1] = new MonsterType("Umbral Elemental",pes,ses,3,1,"The Umbral Elemental is a large umbral symbol surrounded by three lesser symbols of other elements. As such, it can cast lesser magics of those elements",umbralTree.m_elders[1]);
+		umbralTree.m_adolescents = new MonsterType[3];
+		umbralTree.m_adolescents[0] = new MonsterType("Shadeoss",pes,ses,2,0,"The Shadeoss is strongest in darkness. It appears to be the upper torso of a knight weilding a sword",umbralTree.m_adults[0]);
+		umbralTree.m_adolescents[1] = new MonsterType("Screel",pes,ses,2,1,"The Screel is a dark scamp that attacks from the shadows",umbralTree.m_adults[0]);
+		umbralTree.m_adolescents[2] = new MonsterType("Umbral Symbol",pes,ses,2,2,"The Umbral Symbol is a floating symbol in the shape of the blinded eye that casts basic dark magic",umbralTree.m_adults[1]);
+		umbralTree.m_infants = new MonsterType[1];
+		umbralTree.m_infants[0] = new MonsterType("Umbress",pes,ses,1,0,"The umbress appears to bea small floating black flame, with two purple eyes", umbralTree.m_adolescents[0],umbralTree.m_adolescents[1],umbralTree.m_adolescents[2]);
+		umbralTree.m_eggs = new MonsterType[1];
+		umbralTree.m_eggs[0] = new MonsterType("Umbral Egg",pes,ses,0,0,"The umbral egg sucks light and appears to cast dark tendrils from its shell, but if you look again theyre gone. It seems weak and fragile when exposed to light, but during the dusk, when the light is weak, the blinded eye  can be seen embossed on its surface",umbralTree.m_infants[0]);
+		bestiary[5][5]=umbralTree;
 		return bestiary;
 	}
 	public static void plot()
@@ -420,426 +778,6 @@ public class main
 		typeNames[5][3]="Storm";//Dark Primary, Air Secondary, dark version of weather
 		typeNames[5][4]="Betrayer";//Dark Primary, light secondary, fallen angels etc
 		typeNames[5][5]="Umbral";//Shadowed creatures
-	}
-
-	public static MonsterTree definePegasusMonsterTypes()
-	{
-		pes=2;
-		ses=3;
-		MonsterTree pegasusTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		pegasusTree.m_elders=new MonsterType[2];
-		pegasusTree.m_elders[0]=new MonsterType("Greater Pegasus",pes,ses,4,0,"This pegasus is fully awesome. If an ancient greek hero needs a flying steed, this guy shows up. But only if the hero is Bellerophon. BECAUSE HERCULES NEVER RODE PEGASUS DISNEY!!!");
-		pegasusTree.m_elders[1]=new MonsterType("Flying Forest",pes,ses,4,1,"The flying forest is a group of wingtrees. It doesnt' have enough lift from its levitation though, so it has birds hang on and flap as hard as they can");
-		pegasusTree.m_adults= new MonsterType[2];
-		pegasusTree.m_adults[0]=new MonsterType("Pegasus",pes,ses,3,0,"Pegasus is glad that its no longer a lesser pegasus, because lets face it, those teenage years sucked. Now he can fly but he cant carry anyone. Especially heores in armor. Are you kidding me? Its already areodynamically impossible for a horse to fly and now you want to add a two hundred pound hero with 300 pounds of armor? not to mention loot? Not on my back",pegasusTree.m_elders[0]);
-		pegasusTree.m_adults[1]=new MonsterType("Wing Tree",pes,ses,3,1,"The wingTree loved watching WW1 films and always wanted to be a wingman. However, its not a man, its a tree. So it settled for the next best thing. Somehow he got ahold of some avatior goggles, and put them on his trunk because he doesnt have eyes. But it makes him look cool, so no one calls him on it. Also it bears saying that this is the guy you want to bring with you to tree parties, he can make you look SOOO good in front of the female trees.",pegasusTree.m_elders[1]);
-		pegasusTree.m_adolescents = new MonsterType[2];
-		pegasusTree.m_adolescents[0]=new MonsterType("Lesser Pegasus",pes,ses,2,0,"Lesser Pegasus is a little depressed. I mean the baby pegases didn't mind that it was called minor becasuse its a baby. But Lesser pegasus knows what theyre saying, and its really akward and its just sad... But atleast its front hooves dont look like trees anymore! It also cant fly to its undending shame, all the other pegasus laugh at it... Its a hard life",pegasusTree.m_adults[0]);
-		pegasusTree.m_adolescents[1]=new MonsterType("Sapwing",pes,ses,2,1,"The sapwing is a tree that wanted to be a bird. Now its converted its leaves into semi feathers and can hop along the ground some if it tries real hard.",pegasusTree.m_adults[1]);
-		pegasusTree.m_infants = new MonsterType[1];
-		pegasusTree.m_infants[0]= new MonsterType("Minor Pegases",pes,ses,1,0,"Half horse, half plant half bird... Or wait, is that too many halves? Its front two legs are treeish, while the torso, head and back legs are a horse and it has wings. Dont look at me, you've all seen Hercules! Its like that except the two front legs are treeish. And its the reaally cute baby form, obviously",pegasusTree.m_adolescents[0],pegasusTree.m_adolescents[1]);
-		pegasusTree.m_eggs=new MonsterType[1];
-		pegasusTree.m_eggs[0]=new MonsterType("Pegasus Egg",pes,ses,0,0,"The Pegasus egg shows a natural affinity for both the air and the earth. However, the part of it that is psyched about flying is on the bottom half, and the part that enjoys the ground is on the top half. So it balances upside down. People say it looks ridiculous, but eggs cant hear sooo...",pegasusTree.m_infants[0]);
-		return pegasusTree;
-	}
-	public static MonsterTree defineCompassionMonsterTypes()
-	{
-		pes=2;
-		ses=4;
-		MonsterTree compassionTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		compassionTree.m_elders=new MonsterType[2];
-		compassionTree.m_elders[0]=new MonsterType("Shaolin",pes,ses,4,0,"The Sholin is an elder monk that can despense wisdom to buff allies");
-		compassionTree.m_elders[1]=new MonsterType("Mother Theres",pes,ses,4,1,"A female elder monk that can sacrifice herself to heal all alies to full health, even if they are fallen");
-		compassionTree.m_adults=new MonsterType[2];
-		compassionTree.m_adults[0]=new MonsterType("Bodisatva",pes,ses,3,0,"The Bodisatva is now an experienced mond, that has a healing palm that deals damage to enemies and heals allies",compassionTree.m_elders[0]);
-		compassionTree.m_adults[1]=new MonsterType("Theresatva",pes,ses,3,1,"The Theresatva is self sacrificing, and can give half of her own vital energy to ressurect the fallen to half health",compassionTree.m_elders[1]);
-		compassionTree.m_adolescents=new MonsterType[2];
-		compassionTree.m_adolescents[0]=new MonsterType("Bodisat",pes,ses,2,0,"The Bodisat is a young monk that was trained by the shaolin, and can strike with a sacred palm",compassionTree.m_adults[0]);
-		compassionTree.m_adolescents[1]=new MonsterType("Theresat",pes,ses,2,1,"The Theresat is a bald young female healer that heals through forgiveness. She heals quite a bit, but a third is applied to the opposing team",compassionTree.m_adults[1]);
-		compassionTree.m_infants=new MonsterType[1];
-		compassionTree.m_infants[0]=new MonsterType("Buddi",pes,ses,1,0,"A Buddi is a young enlighted being who can heal through compassion, and will heal both the virtuous and the vengeful, it looks like a buddhist mask",compassionTree.m_adolescents[0],compassionTree.m_adolescents[1]);
-		compassionTree.m_eggs=new MonsterType[1];
-		compassionTree.m_eggs[0]=new MonsterType("Compassion Egg",pes,ses,0,0,"The Compassion Egg has a bright green cross on its shell to show that is will grow into a healer",compassionTree.m_infants[0]);
-		return compassionTree;
-	}
-	public static MonsterTree defineRottenMonsterTypes()
-	{
-		pes=2;
-		ses=5;
-		MonsterTree rottenTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		rottenTree.m_elders=new MonsterType[1];
-		rottenTree.m_elders[0] = new MonsterType("BeePee",pes,ses,4,0,"The BeePee floods toxic sludge all over the opponents battlefield which ignites when hit with fire, dealing massive damage");
-		rottenTree.m_adults = new MonsterType[1];
-		rottenTree.m_adults[0] = new MonsterType("Flint",pes,ses,3,0,"The Flint coughs on its enemies and continually releases methane, it explodes when attacked by fire dealing a large amount of damage to all sides",rottenTree.m_elders[0]);
-		rottenTree.m_adolescents = new MonsterType[1];
-		rottenTree.m_adolescents[0] = new MonsterType("Smaugh",pes,ses,2,0,"The Smaugh is a Sewer demon covered in refuse",rottenTree.m_adults[0]);
-		rottenTree.m_infants=new MonsterType[1];
-		rottenTree.m_infants[0]=new MonsterType("Sewerat",pes,ses,1,0,"The Sewerat is a rather large rat that smells terrible.",rottenTree.m_adolescents[0]);
-		rottenTree.m_eggs=new MonsterType[1];
-		rottenTree.m_eggs[0]=new MonsterType("Rotten Egg",pes,ses,0,0,"The Rotten egg infects those around it with disease",rottenTree.m_infants[0]);
-		return rottenTree;
-	}
-	public static MonsterTree defineSandsMonsterTypes()
-	{
-		pes=3;
-		ses=0;
-		MonsterTree sandTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		sandTree.m_elders=new MonsterType[3];
-		sandTree.m_elders[0]=new MonsterType("Greater Sphynx",pes,ses,4,0,"The greater Sphynx is a very large sphyix with haunting eyes that also speaks in riddles and analogies but has large folded wings along its back. It cant fly with them, but when it spreads them out, it looks very intimidaing. The feathers also alternate between jade and torquoise, so the Greater Sphynx was once hunted for its wings. But then it killed and ate all the hunters, so that was over pretty quickly");
-		sandTree.m_elders[1]=new MonsterType("Scorpious",pes,ses,4,1,"The Scorpious is a descendant of the giant Scorpion that killed Orion.");
-		sandTree.m_elders[2]=new MonsterType("Bihump",pes,ses,4,2,"The Bihump has mystical powers and can cast greater sandstorm that does no damage to sand creatrues, small damage to fire and air primary creatures and more damage to all other creatures each turn");
-		sandTree.m_adults=new MonsterType[3];
-		sandTree.m_adults[0]=new MonsterType("Sphynx",pes,ses,3,0,"The Sphynx has the head of a man and the body of a lion, like the Slynx it evolved from, it speaks only in riddles, however these riddles are more difficult",sandTree.m_elders[0]);
-		sandTree.m_adults[1]=new MonsterType("Scarpi",pes,ses,3,1,"A Scarpi is a large scorpion whose plates have turned into armor, although they do bear scars from its earlier encounters. It is named after the fabled storyteller who is credited for the creation of its myth. Obviously it wasn't a myth",sandTree.m_elders[1]);
-		sandTree.m_adults[2]=new MonsterType("Unihump",pes,ses,3,2,"A unihump is a camel with a single hump. It stores water in this hump obviously and can cast sandstorm with its mind",sandTree.m_elders[2]);
-		sandTree.m_adolescents=new MonsterType[3];
-		sandTree.m_adolescents[0]=new MonsterType("Slynx",pes,ses,2,0,"A Slynx is a mythical sand cat that has haunting eyes and can speak, but only speaks in riddles. Whenever asked a question, it anwsers with another question, usually pointing at the right answer. If the Slynx has no clue though, it will just repeat the question asked of it, it is about the size of a mountain lion",sandTree.m_adults[0]);
-		sandTree.m_adolescents[1]=new MonsterType("Skorpi",pes,ses,2,1,"A Scorpi is a small scorpion that is red and very poisonous",sandTree.m_adults[1]);
-		sandTree.m_adolescents[2]=new MonsterType("Humpless",pes,ses,2,2,"A humpless is a sad camel without a hump. It can magically control the sand with its mind, and keeps some in the gourd across its back",sandTree.m_adults[2]);
-		sandTree.m_infants=new MonsterType[1];
-		sandTree.m_infants[0]=new MonsterType("Kangarat",pes,ses,1,0,"The Kangarat is a small rodent that can spend its whole life without having to drink any water. It takes no damage from sandstorm",sandTree.m_adolescents[0],sandTree.m_adolescents[1],sandTree.m_adolescents[2]);
-		sandTree.m_eggs=new MonsterType[1];
-		sandTree.m_eggs[0]=new MonsterType("Sands Egg",pes,ses,0,0,"The Sands Egg has a sandy shell with the sand logo printed on it",sandTree.m_infants[0]);
-		return sandTree;
-	}
-	public static MonsterTree defineSeaBreezeMonsterTypes()
-	{
-		pes=3;
-		ses=1;
-		MonsterTree seaBreezeTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		seaBreezeTree.m_elders = new MonsterType[2];
-		seaBreezeTree.m_elders[0]=new MonsterType("Heligull",pes,ses,4,0,"The Heligull's wings rotate above it like a helicopter. It dives deep into the water to find prey. It can hold its breath for up to 4 hours, and spends almost as much time above water as within");
-		seaBreezeTree.m_elders[1]=new MonsterType("Soarfish",pes,ses,4,1,"The Soarfish has adapted gulls that allow it to breath both water and air. It has no need to go under water and preys on small birds. However it usually stays near the water to feed its children who cannot fly as well");
-		seaBreezeTree.m_adults=new MonsterType[2];
-		seaBreezeTree.m_adults[0]=new MonsterType("Peligull",pes,ses,3,0,"The pelligull is a large gull with  a great gullet. When there are fish near the surface of the water, it will dive in and open its large mouth. When it surfaces again it spits out the water but retains the fish in its mouth",seaBreezeTree.m_elders[0]);
-		seaBreezeTree.m_adults[1]=new MonsterType("Flyfish",pes,ses,3,1,"The Flyfish can fly at low altitudes out of water and feasts on the small insects just above the waters surface.",seaBreezeTree.m_elders[1]);
-		seaBreezeTree.m_adolescents=new MonsterType[2];
-		seaBreezeTree.m_adolescents[0]=new MonsterType("Guller",pes,ses,2,0,"The guller is a small gull with wide wings",seaBreezeTree.m_adults[0]);
-		seaBreezeTree.m_adolescents[1]=new MonsterType("Skipfish",pes,ses,2,1,"The skipfish can't quite fly yet, but it loved the feeling when it was younger in the baby gulls claws. It can skip out of the water on its fins that are becoming like wings",seaBreezeTree.m_adults[1]);
-		seaBreezeTree.m_infants=new MonsterType[1];
-		seaBreezeTree.m_infants[0]=new MonsterType("Gullfish",pes,ses,1,0,"The first fish a baby gull ever caught is still in its claws. Initially there was some fear between the baby gull and the fish, but they became fast friends when the fish found out how cool it is to fly",seaBreezeTree.m_adolescents[0],seaBreezeTree.m_adolescents[1]);
-		seaBreezeTree.m_eggs=new MonsterType[1];
-		seaBreezeTree.m_eggs[0]=new MonsterType("SeaBreeze Egg",pes,ses,0,0,"The SeaBreeze egg's parents often hold onto it for months at a time before they see dry land. SeaBreeze Monsters love flying above the ocean, so when a SeaBreeze egg is laid, it is caught by the father who holds it while they are flying, even when sleeping.",seaBreezeTree.m_infants[0]);
-		return seaBreezeTree;
-	}
-	public static MonsterTree defineBirdsMonsterTypes()
-	{
-		pes=3;
-		ses=2;
-		MonsterTree birdTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		birdTree.m_elders=new MonsterType[2];
-		birdTree.m_elders[0]=new MonsterType("Foursamcan",pes,ses,4,0,"The Foursamcan channels light from the sun that shines through its multicolored feathers to confuse its enemies");
-		birdTree.m_elders[1]=new MonsterType("Seusstruse",pes,ses,4,1,"When a Fabstruse comes to the realization that leather never goes out of style, it becomes a Seusstruse. When the Seusstruse lays eggs, they are green, and when it has access to ham, it places the ham near the eggs because it loves green eggs and ham.");
-		birdTree.m_adults=new MonsterType[2];
-		birdTree.m_adults[0]=new MonsterType("Threesamcan",pes,ses,3,0,"The Threesamcan is a much larger version of the Tusamcan, and is even more colorful",birdTree.m_elders[0]);
-		birdTree.m_adults[1]=new MonsterType("Fabstruse",pes,ses,3,1,"The Fabstruse is a very strange black and purple bird that loves fashion, but always seems to be behind on the trends. I mean leather Jacket? Sooo Eighties",birdTree.m_elders[1]);
-		birdTree.m_adolescents=new MonsterType[2];
-		birdTree.m_adolescents[0]=	new MonsterType("Tusamcan",pes,ses,2,0,"The TuscamCan is a colorful blue bird with a rainbow beak that tells little children to eat healthy while giving them pure sugar for breakfast",birdTree.m_adults[0]);
-		birdTree.m_adolescents[1]= new MonsterType("Abstruse",pes,ses,2,1,"The Abstruse is a brightly colorful bird that complicated and interesting... Or completely ridculous depending on how you look at it. It looks like a peacock, except every single feather is a different color, and they're not organized in any particular manner. When it walks, it takes its long storklike legs and pulls them up way higher than they need to go, giving it a ridiculous looking gait. Its long neck is a gradient from green to blue, and it has a yellow feather crown on the crest of its head",birdTree.m_adults[1]);
-		birdTree.m_infants=new MonsterType[1];
-		birdTree.m_infants[0]=new MonsterType("Colour",pes,ses,1,0,"The Colour is a colorful hatchling.",birdTree.m_adolescents[0],birdTree.m_adolescents[1]);
-		birdTree.m_eggs=new MonsterType[1];
-		birdTree.m_eggs[0]=new MonsterType("Bird Egg",pes,ses,0,0,"The BirdEgg is a rainbow colored egg with the bird crest at its center",birdTree.m_infants[0]);
-		return birdTree;
-	}
-	public static MonsterTree defineAeroMonsterTypes()
-	{
-		pes=3;
-		ses=3;
-		MonsterTree aeroTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		aeroTree.m_elders=new MonsterType[2];
-		aeroTree.m_elders[0]=new MonsterType("Roc",pes,ses,4,0,"The Roc is a giant bald eagle with a thirty foot wingspan, it often sits on a golden dome");
-		aeroTree.m_elders[1]=new MonsterType("Air Atronach",pes,ses,4,1,"Lightening often surrounds the Air Atronach whenever it is angry. It is surrounded by six elementals, three of which are aero, three of which determine the other types of spells it can cast");
-		aeroTree.m_adults=new MonsterType[3];
-		aeroTree.m_adults[0]=new MonsterType("Baldgul",pes,ses,3,0,"The Baldgul is a bald eagle that is actually bald. Not white feathers, no feathers",aeroTree.m_elders[0]);
-		aeroTree.m_adults[1]=new MonsterType("Wings",pes,ses,3,1,"Byrdi hated the beatles, because the name made it hungry. And the problem with the rolling stones was, well, people would often try to kill it and another bird with a single one. But Once the beatles split up, it became Wings",aeroTree.m_elders[0]);
-		aeroTree.m_adults[2]=new MonsterType("Aero Elemental",pes,ses,3,2,"The Aero Elemental is a suped up version of the AeroSymbol with more wings etc.",aeroTree.m_elders[1]);
-		aeroTree.m_adolescents=new MonsterType[3];
-		aeroTree.m_adolescents[0]=new MonsterType("toupeagle",pes,ses,2,0,"The toupeagle is a young eagle that went prematurely bald. Its very sensitive about its baldness and thus wears a toupee. Its a good toupee too, but it looks ridiculous because its not really on right because, well it has only wings and claws to work with",aeroTree.m_adults[0]);
-		aeroTree.m_adolescents[1]=new MonsterType("Byrdi",pes,ses,2,1,"The Byrdi grew up in the seventies and fell in love with rock and roll. It gets dizzy when it acts out its favorite song",aeroTree.m_adults[1]);
-		aeroTree.m_adolescents[2]=new MonsterType("AeroSymbol",pes,ses,2,3,"The AeroSymbol is a circle with six points that looks like the aero glyph. The six points are feathers",aeroTree.m_adults[2]);
-		aeroTree.m_infants = new MonsterType[1];
-		aeroTree.m_infants[0]=new MonsterType("Flapper",pes,ses,1,0,"The Flapper shows a ridiculous amount of leg, esspecially for this time period. It is very stylish, and wears a headband with a feather on it, even though its already a bird",aeroTree.m_adolescents[0],aeroTree.m_adolescents[1],aeroTree.m_adolescents[2]);
-		aeroTree.m_eggs = new MonsterType[1];
-		aeroTree.m_eggs[0]=new MonsterType("AeroEgg",pes,ses,0,0,"The aeroEgg hovers in the air, and is yellow with the bird crest on it. It was designed to hover just in case one of its parents accidentally knocks it out of the tree, so it can be rescued before it hits the ground",aeroTree.m_infants[0]);
-		return aeroTree;
-	}
-	public static MonsterTree defineCockaMonsterTypes()
-	{
-		pes=3;
-		ses=4;
-		MonsterTree cockaTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		cockaTree.m_elders=new MonsterType[1];
-		cockaTree.m_elders[0]=new MonsterType("CockaFour",pes,ses,4,0,"The Cockafour is the undisputed leader of the cockas. Its beak is lined with razors, and its dance can drive all birds crazy, and berserks all air primaries");
-		cockaTree.m_adults=new MonsterType[3];
-		cockaTree.m_adults[0]=new MonsterType("Cockadude",pes,ses,3,0,"The Cockadude is a super cool cocka who wears 8 bit glasses and raps",cockaTree.m_elders[0]);
-		cockaTree.m_adults[1]=new MonsterType("Cockathree",pes,ses,3,1,"The Cockathree is a pretty awesome cocka that often dances with its feathers and raises its crest",cockaTree.m_elders[0]);
-		cockaTree.m_adults[2]=new MonsterType("Lovebird",pes,ses,3,2,"The Lovebird is a totally pink cocka that is eternally smiling. It can flirt with an air primary monster to occupy it for one turn",cockaTree.m_elders[0]);
-		cockaTree.m_adolescents=new MonsterType[3];
-		cockaTree.m_adolescents[0]=new MonsterType("Cockarude",pes,ses,2,0,"The Cockarude is a cocka that his very rude and often signals with its middle feather. It wears a backwards baseball cap, how it got one I dont know",cockaTree.m_adults[0]);
-		cockaTree.m_adolescents[1]=new MonsterType("Cockatwo",pes,ses,2,1,"The Cockatwo is a regular cocka. And by regular I mean very strange",cockaTree.m_adults[1]);
-		cockaTree.m_adolescents[2]=new MonsterType("Smilebird",pes,ses,2,2,"The Smilebird is a cocka who is using its smile feathers to smile. It is also blushing a vey delicate shade of pink.",cockaTree.m_adults[2]);
-		cockaTree.m_infants=new MonsterType[1];
-		cockaTree.m_infants[0]=new MonsterType("Cockaone",pes,ses,1,0,"A baby cockatoo that has yet to leave its shell. Its cracked and eveything, but it hasn't left. It wears the top of the shell like a helmet",cockaTree.m_adolescents[0],cockaTree.m_adolescents[1],cockaTree.m_adolescents[2]);
-		cockaTree.m_eggs = new MonsterType[1];
-		cockaTree.m_eggs[0]=new MonsterType("CockaEgg",pes,ses,0,0,"The CockaEgg is a pure white egg with the cocka crest on it",cockaTree.m_infants[0]);
-		return cockaTree;
-	}
-	public static MonsterTree defineNightWingMonsterTypes()
-	{
-		pes=3;
-		ses=5;
-		MonsterTree nightWingTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		nightWingTree.m_elders=new MonsterType[2];
-		nightWingTree.m_elders[0]=new MonsterType("Vampelder",pes,ses,4,0,"The Vampelder is an older vampire that can assume human form. It can dissipate into a crowd of bats to attack its enemies");
-		nightWingTree.m_elders[1]=new MonsterType("Lenoraven",pes,ses,4,1,"Because of the Lenoraven's intimite relationship with death, it can instantly kill a monster with less than 20% health");
-		nightWingTree.m_elders[2]=new MonsterType("Knowlowlegabel",pes,ses,4,1,"The Knowlowlegabel knows only that it does not know. It can cast logical contradiction that injures monsters scaling with their intellect");
-		nightWingTree.m_adults=new MonsterType[2];
-		nightWingTree.m_adults[0]=new MonsterType("Vampire",pes,ses,3,0,"The vampire can float around like a shadow in the night. It can vampire bite that heals 1/2 of the damage inflicted. It takes extra damage from fire and light.",nightWingTree.m_elders[0]);
-		nightWingTree.m_adults[1]=new MonsterType("Skulltrure",pes,ses,3,1,"The Skullture is a vulture with the head of a skull, like its younger cousin, the Scanvegiar, it feeds on death, and has an ability to deal double damage the turn after a monster dies",nightWingTree.m_elders[1]);
-		nightWingTree.m_adults[2]=new MonsterType("Wisowl",pes,ses,3,1,"The wiseowl is an older version of the rationowl that can expose the weaknesses of its enemies so that they take 25% extra damage for the rest of the battle. This effect does not stack with identify weakness",nightWingTree.m_elders[2]);
-		nightWingTree.m_adolescents=new MonsterType[3];
-		nightWingTree.m_adolescents[0]=new MonsterType("ShadowWing",pes,ses,2,0,"The shadowing is a bat that has a vampire attack that heals for 1/4th of the attacks damage",nightWingTree.m_adults[0]);
-		nightWingTree.m_adolescents[1]=new MonsterType("Scavengair",pes,ses,2,1,"The scavenger is a young vulture that feeds on death. For each creature that dies, it deals an additional 5% damage",nightWingTree.m_adults[1]);
-		nightWingTree.m_adolescents[2]=new MonsterType("Rationowl",pes,ses,2,1,"The Rationowl is a thinker and percieves its enemies weaknesses before it strikes. It can cast identify which increases damage to an enemy by 15% for the rest of the battle",nightWingTree.m_adults[2]);
-		nightWingTree.m_infants=new MonsterType[1];
-		nightWingTree.m_infants[0]=new MonsterType("Foreshadowwing",pes,ses,1,0,"Its very hard to tell what manner of winged beast this is, as it is covered by shadows and appears to have four wings",nightWingTree.m_adolescents[0],nightWingTree.m_adolescents[1],nightWingTree.m_adolescents[2]);
-		nightWingTree.m_eggs=new MonsterType[1];
-		nightWingTree.m_eggs[0]=new MonsterType("NightWing Egg",pes,ses,0,0,"The NightWing egg is black and nearly hidden in the shadows of the cave where it is laid",nightWingTree.m_infants[0]);
-		return nightWingTree;
-	}
-	public static MonsterTree defineSolarMonsterTypes()
-	{
-		pes=4;
-		ses=0;
-		//TODO redo solar tree
-		MonsterTree solarTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		solarTree.m_elders = new MonsterType[3];
-		solarTree.m_elders[0]=new MonsterType("Flarebear",pes,ses,4,0,"A Flarebear, as the name implies is a sun elemental bear");
-		solarTree.m_elders[1]=new MonsterType("FlareTyrant",pes,ses,4,1,"A solar-elemental tyrant");
-		solarTree.m_elders[2]=new MonsterType("Sol",pes,ses,4,2,"A Sol is as bright as the sun, only smaller");
-		solarTree.m_adults = new MonsterType[3];
-		solarTree.m_adults[0]=new MonsterType("FlareWulf",pes,ses,3,0,"A FlareWulf is a glowing wolf that can breathe a solar flare",solarTree.m_elders[0]);
-		solarTree.m_adults[1]=new MonsterType("Solaire",pes,ses,3,1,"A Solaire is a larger diurnal with big teeth and horns",solarTree.m_elders[1]);
-		solarTree.m_adults[2]=new MonsterType("Antares",pes,ses,3,2,"Named after the third brighest star in the night sky, the Sirius is a brighter vega with more magic",solarTree.m_elders[2]);
-		solarTree.m_adolescents=new MonsterType[3];
-		solarTree.m_adolescents[0]=new MonsterType("FireFaux",pes,ses,2,0,"A Firefaux is a fox that loves sitting in the sun and absorbing rays. It has a yellow coat, and is a reference to an awesome browser",solarTree.m_adults[0]);
-		solarTree.m_adolescents[1]=new MonsterType("Diurnal",pes,ses,2,1,"A diurnal is a montser that is active only during the day. It looks like a saur made of flames",solarTree.m_adults[1]);
-		solarTree.m_adolescents[2]=new MonsterType("Vega",pes,ses,2,2,"Named after the fifth brightest star in the sky, the vega is a spherical construct with rotating ray blades that resembles the sun",solarTree.m_adults[2]);
-		solarTree.m_infants=new MonsterType[1];
-		solarTree.m_infants[0]=new MonsterType("Tona",pes,ses,1,0,"A tona is a floating orb that gains energy from the suns rays. At night it floats to rest and stops glowing, appearing a simple stone",solarTree.m_adolescents[0],solarTree.m_adolescents[1],solarTree.m_adolescents[2]);
-		solarTree.m_eggs = new MonsterType[1];
-		solarTree.m_eggs[0]=new MonsterType("Solar egg",pes,ses,0,0,"The solar egg glows slightly in the night if left out in the sun all day, as if it absorbs the sun's rays",solarTree.m_infants[0]);
-		return solarTree;
-	}
-	public static MonsterTree defineLunarMonsterTypes()
-	{
-		pes=4;
-		ses=1;
-		MonsterTree lunarTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		lunarTree.m_elders=new MonsterType[2];
-		lunarTree.m_elders[0]=new MonsterType("Lona",pes,ses,4,0,"Lona's are stronger when they have a Luna present. They are great white Wolves with ice colored eyes, their eyes seem to speak of their souls, human");
-		lunarTree.m_elders[1]=new MonsterType("Luna",pes,ses,4,1,"Luna is a large moon appearing stone with a single large silver band surrounding it, that shows six phases of the moon");
-		lunarTree.m_adults=new MonsterType[2];
-		lunarTree.m_adults[0]=new MonsterType("Selen",pes,ses,3,0,"Selen is a greater wolf, pure white. It can preform moon beam which deals mainly light damage with water secondary.",lunarTree.m_elders[0]);
-		lunarTree.m_adults[1] = new MonsterType("Mayari",pes,ses,3,1,"Mayari depicts a half full moon emblazoned on a cylindrical stone. The silver band surrounding it has spawned six crescents, all facing outwards",lunarTree.m_elders[1]);
-		lunarTree.m_adolescents=new MonsterType[2];
-		lunarTree.m_adolescents[0] = new MonsterType("Chia",pes,ses,2,0,"Chia is a small wolf that can howl at the moon to increase its attack",lunarTree.m_adults[0]);
-		lunarTree.m_adolescents[1] = new MonsterType("Chandra",pes,ses,2,1,"Chandra is a cylindrical stone whose radius is 4 times its height, it shows the waning phase of the moon, if you were to project the waning moon on the rock, the rock cooresponding to the dark side of the moon is black and the lit side of the moon is white. It is surrounded by a simple silver bar with six crescents",lunarTree.m_adults[1]);
-		lunarTree.m_infants=new MonsterType[1];
-		lunarTree.m_infants[0]=new MonsterType("Lunapup",pes,ses,1,0,"The Lunapup is a small wolf born from a lunar egg on the full moon.",lunarTree.m_adolescents[0],lunarTree.m_adolescents[1]);
-		lunarTree.m_eggs=new MonsterType[1];
-		lunarTree.m_eggs[0]=new MonsterType("Lunar egg",pes,ses,0,0,"The Lunar egg appears to be a stone during the day, however when moonlight shines upon it, it is clearly an egg with the lunar symbol embossed upon it. The brightness of the symbol is determined by the phase the moon is in.",lunarTree.m_infants[0]);
-		return lunarTree;
-	}
-	public static MonsterTree defineGuardianMonsterTypes()
-	{
-		pes=4;
-		ses=2;
-		MonsterTree guardianTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		guardianTree.m_elders=new MonsterType[2];
-		guardianTree.m_elders[0]=new MonsterType("Guardainus",pes,ses,4,0,"The Guardainus is a titan with a large amount of HP. He can cast a skill on a unit so that he dies instead of them when they are killed, transferring hp");
-		guardianTree.m_elders[1]=new MonsterType("Halarial",pes,ses,4,1,"The Halarial is a greater angel. It can sacrifice itself to keep another from death for three turns");
-		guardianTree.m_adults=new MonsterType[2];
-		guardianTree.m_adults[0]=new MonsterType("Scardar",pes,ses,3,0,"The scardar has many scars, including one over his left eye, his visible skin is scarred and his shield is spiked which allows him to return a percentage of damage",guardianTree.m_elders[0]);
-		guardianTree.m_adults[1]=new MonsterType("Halosses",pes,ses,3,1,"The Halosses is a fully adult angel cloaked in green. She can cast regen on an ally which heals it for some hp each turn",guardianTree.m_elders[1]);
-		guardianTree.m_adolescents=new MonsterType[2];
-		guardianTree.m_adolescents[0]=new MonsterType("Sheildar",pes,ses,2,0,"The Sheildar is an older Escutcheoner who has acquired metal guards, which is a plus. He can taunt enemies to force them to attack him",guardianTree.m_adults[0]);
-		guardianTree.m_adolescents[1]=new MonsterType("Haloss",pes,ses,2,1,"The Haloss is a lesser angel that can cast shell on an ally, which acts as a temporary shield",guardianTree.m_adults[1]);
-		guardianTree.m_infants=new MonsterType[1];
-		guardianTree.m_infants[0]=new MonsterType("Escutcheoner",pes,ses,1,0,"The Escutcheoner is a small creature with a big shield that it is very proud of and shines on a daily basis. In combat he can attack as usual",guardianTree.m_adolescents[0],guardianTree.m_adolescents[1]);
-		guardianTree.m_eggs=new MonsterType[1];
-		guardianTree.m_eggs[0]=new MonsterType("Guardian Egg",pes,ses,0,0,"The guardian tree is hard as a rock, the guardian crest embossed on its center",guardianTree.m_infants[0]);
-		return guardianTree;
-	}
-	public static MonsterTree defineHolyMonsterTypes()
-	{
-		pes=4;
-		ses=3;
-		MonsterTree holyTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		holyTree.m_elders=new MonsterType[2];
-		holyTree.m_elders[0] = new MonsterType("Archangel",pes,ses,4,0,"The Archangel  can buff all angels on the owners side");
-		holyTree.m_elders[1] = new MonsterType("Ultrangel",pes,ses,4,1,"The ultra angel is the epitome of an angel");
-		holyTree.m_adults=new MonsterType[2];
-		holyTree.m_adults[0]=new MonsterType("Onangel",pes,ses,3,0,"The Onangel has a passive buff that deals 15% bonus damage to dark elemental enemies",holyTree.m_elders[0]);
-		holyTree.m_adults[1]=new MonsterType("Anangel",pes,ses,3,1,"The Anangel can promote its allies to do +20% damage versus dark primary enemies",holyTree.m_elders[1]);		
-		holyTree.m_adolescents=new MonsterType[2];
-		holyTree.m_adolescents[0]=new MonsterType("Hemiangel",pes,ses,2,0,"The Hemiangel has a cherubic body and shoots from a bow",holyTree.m_adults[0]);
-		holyTree.m_adolescents[1]=new MonsterType("Semiangel",pes,ses,2,1,"The Semiangel can annoint light primary allies, buffing their attack by 20%",holyTree.m_adults[1]);
-		holyTree.m_infants=new MonsterType[1];
-		holyTree.m_infants[0]=new MonsterType("Demiangel",pes,ses,1,0,"The Demiangel is a small angel who left heaven in order to help the world (or its wings were not strong enough to keep it that high in the sky, depending on who you ask) its magical ability is to heal, however it refuses to heal anything with a dark or fire element",holyTree.m_adolescents[0],holyTree.m_adolescents[1]);
-		holyTree.m_eggs = new MonsterType[1];
-		holyTree.m_eggs[0]= new MonsterType("Holy Egg", pes,ses,0,0,"It is a golden egg. Unfortunately there are only a finite number of them because the people benefiting from the golden egg killed the goose that laid them thinking it must be made of more valuable materials. They were wrong.",holyTree.m_infants[0]);
-		return holyTree;
-	}
-	public static MonsterTree defineLuxorMonsterTypes()
-	{
-		pes=4;
-		ses=4;
-		MonsterTree luxorTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		luxorTree.m_elders=new MonsterType[3];
-		luxorTree.m_elders[0] = new MonsterType("Ascendenphage",pes,ses,4,0, "The Ascendenpage is a lage Argenphage whose armor glows a brilliant white, made of some opaque white metal, the symbols etched into the metal are likewise fancy");
-		luxorTree.m_elders[1] = new MonsterType("Luminacier",pes,ses,4,1,"The Luminacier is a single Luminace surrounded by six smaller Candellas, representing faith, justice, mercy, compassion, forgiveness and redemption");
-		luxorTree.m_elders[2] = new MonsterType("Light Atronach",pes,ses,4,2,"The light atronach is an ascendant light elemenal that is surrounded by six symbols, representing each of the six elements");
-		luxorTree.m_adults=new MonsterType[3];
-		luxorTree.m_adults[0] = new MonsterType("Argenphage",pes,ses,3,0,"The Argenphage is a larger phage with silver plates inlaid with complex designs. It is said that their eyes can see the balance of a soul",luxorTree.m_adults[0]);
-		luxorTree.m_adults[1] = new MonsterType("Luminace",pes,ses,3,1,"The Luminace is a collection of three Candellas, representing faith, truth and service, the virtues of its holy order. It will often shirk from the control of a dark master, even rebelling at times",luxorTree.m_adults[1]);	
-		luxorTree.m_adults[2] = new MonsterType("Light Elemental",pes,ses,3,2,"the light elemental is a large light symbol surrounded by three other symbols, water, air and earth. The elemental can channel any of the four energies",luxorTree.m_adults[2]);
-		luxorTree.m_adolescents = new MonsterType[3];
-		luxorTree.m_adolescents[0] = new MonsterType("Phage",pes,ses,2,0, "A phage is a glowing ball of light that is protected by golden armor. It is floating about three feet in the air and has three fingered golden claws that extend two feet from its shoulders. it has two asymmetric horns on its helmet that is not attached to its body, and light glows from the eye sockets",luxorTree.m_adults[0]);
-		luxorTree.m_adolescents[1] = new MonsterType("Candella",pes,ses,2,1, "A Candella absorbs the light of the sun during the day and uses this light to attack its enemies at night. It can reveal the presence of monsters trying to stealth",luxorTree.m_adults[1]);
-		luxorTree.m_adolescents[2] = new MonsterType("Light Symbol",pes,ses,2,2,"A Light symbol is the embodiment of the symbol of light and can cast lumimagia 1, the basic light attack spell",luxorTree.m_adults[2]);
-		luxorTree.m_infants = new MonsterType[1];
-		luxorTree.m_infants[0]=new MonsterType("Lumin",pes,ses,1,0,"A lesser lumin is a small hovering ball of light that can heal other light monsters",luxorTree.m_adolescents[0],luxorTree.m_adolescents[1],luxorTree.m_adolescents[2]);
-		luxorTree.m_eggs = new MonsterType[1];
-		luxorTree.m_eggs[0]=new MonsterType("Luxor Egg",pes,ses,0,0,"The luxor Egg glows a brilliant white and has the luxor symbol etched on its surface",luxorTree.m_infants[0]);
-		return luxorTree;
-	}
-	public static MonsterTree defineRedemptionMonsterTypes()
-	{
-		MonsterTree redemptionTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		//TODO finish redemptionTree after demons are created
-		return redemptionTree;
-	}
-	public static MonsterTree defineDemonicMonsterTypes()
-	{
-		MonsterTree demonicTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		pes=5;
-		ses=0;
-		demonicTree.m_elders = new MonsterType[3];
-		demonicTree.m_elders[0] = new MonsterType("Astaroth",pes,ses,4,0,"Astaroth is a bright red demon with large black horns fifteen feet tall. He weilds a large corrupted axe that has a living eye where the blade meets the haft");
-		demonicTree.m_elders[1] = new MonsterType("Asag",pes,ses,4,1,"Asag is also known as the fear. He appears as a giant demon with the body of a bear and the head of a stag.");
-		demonicTree.m_elders[2] = new MonsterType("Shedu",pes,ses,4,2,"The Shedu is a phantom witch that speaks only curses, whose eyeless sockets see through the dark and not");
-		demonicTree.m_adults = new MonsterType[3];
-		demonicTree.m_adults[0] = new MonsterType("Incubus",pes,ses,3,0,"The Incubus can take many forms, sometimes appearing as a poet, or perhaps an athelete to sexually corrupt women, when they feel excited as their prey is near, often their eyes will revert to their true form, but only for an instant, giving the virtuous their only warning");
-		demonicTree.m_adults[1] = new MonsterType("Succubus",pes,ses,3,1,"The succubus is a beautiful female demon meant to provoke lust in the hearts of men. They catch their prey more ofthen than the Incubus, as men have weaker hearts when it comes to resisting beauty");
-		demonicTree.m_adults[2] = new MonsterType("Grimiore",pes,ses,3,2,"A sentient black book that has the demon crest embossed on the cover. The spells and hexes within are written in both the blood of the slain and the blood of the conqueror");
-		demonicTree.m_adolescents = new MonsterType[3];
-		demonicTree.m_adolescents[0] = new MonsterType("Scamp",pes,ses,2,0,"A scamp is a minor demon with claws and long ears, it screams at its enemies to initiate combat");
-		demonicTree.m_adolescents[1] = new MonsterType("Imp",pes,ses,2,1,"An imp is a small red demon carrying a pitchfork. It is aggressive but is wise enough not to initiate combat against a stronger opponent");
-		demonicTree.m_adolescents[2] = new MonsterType("Jinn",pes,ses,2,2,"A Jinn attacks its enemies with mystical enemies, preying on the weak of mind. It is ephemeral, which greatly reduces the efficacy of physical attacks");
-		demonicTree.m_infants = new MonsterType[1];
-		demonicTree.m_infants[0] = new MonsterType("Fiend",pes,ses,1,0,"The fiend is a minor demon, colored dark red with black horns");
-		demonicTree.m_eggs = new MonsterType[1];
-		demonicTree.m_eggs[0] = new MonsterType("Demonic Egg",pes,ses,0,0,"The demonic egg is is a rusty black with the demonic symbol embossed on its center, it is painful to touch");
-		return demonicTree;
-	}
-	public static MonsterTree definePoisonMonsterTypes()
-	{
-		MonsterTree poisonTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		pes=5;
-		ses=1;
-		poisonTree.m_elders[0]= new MonsterType("Queen B",pes,ses,3,0,"Queen B is the younger sister of Queen A, however when they were in a beauty pagent, everyone chose Queen B, so she became the dominant Queen. She can summon Stingers to the empty allied positions");
-		poisonTree.m_elders[1]=new MonsterType("King Rattle",pes,ses,3,1,"King Rattle has a large Rattle on the end of its tail. Not like a snakes, like a babies rattle, but really large. It also has a crown. Its scales are brown and it is very large");
-		poisonTree.m_elders[2]=new MonsterType("Red Widow",pes,ses,3,2,"The Red Widow has gotten over her husbands death. The hourglass has turned black, and the rest of her has turned red. This color, and the scent given off from her hide, attracts insects to their doom. Her bright color does as well");
-		poisonTree.m_elders[3]=new MonsterType("Cougar Spider",pes,ses,3,3,"The Cougar Spider is an older spider who still looks nice and knows how to treat men (spiders) right. She takes them to her web and then eats them.");
-		poisonTree.m_adults=new MonsterType[3];
-		poisonTree.m_adults[0]=new MonsterType("Wasplash",pes,ses,3,0,"The Wasplash is an oversized wasp with a stinger and it can latch onto a single enemy with the hooked blades on the end of its legs, stinging them multiple times",poisonTree.m_elders[0]);
-		poisonTree.m_adults[1]=new MonsterType("Slyslyther",pes,ses,3,1,"The SlySlyther is a grown Slyther whose scales have turned black as night, it is very quiet and can sneak attack its enemies.",poisonTree.m_elders[1]);
-		poisonTree.m_adults[2]=new MonsterType("Widow",pes,ses,3,2,"The Widow is a widowed spider that is really broken up about it, cries all the time. It looks like a black widow but larger and sad",poisonTree.m_elders[2],poisonTree.m_elders[3]);
-		poisonTree.m_adolescents=new MonsterType[3];
-		poisonTree.m_adolescents[0]=new MonsterType("Stinger",pes,ses,2,0,"The Stinger is an oversized wasp with a poisonous stinger",poisonTree.m_adults[0]);
-		poisonTree.m_adolescents[1]=new MonsterType("Slyther",pes,ses,2,1,"The Slyther is a small snake that slides through the grass towards its prey. Its bite is venemous. Its green and has no rattle",poisonTree.m_adults[1]);
-		poisonTree.m_adolescents[2]=new MonsterType("Creeper",pes,ses,2,2,"The creeper is a spider that can shoot webs at its enemies to slow them down.",poisonTree.m_adults[2]);
-		poisonTree.m_infants = new MonsterType[1];
-		poisonTree.m_infants[0] = new MonsterType("Fanger",pes,ses,1,0,"The fanger is a small scorpion that can lift its legs up and slither and has fangs",poisonTree.m_adolescents[0],poisonTree.m_adolescents[1],poisonTree.m_adolescents[2]);
-		poisonTree.m_eggs = new MonsterType[1];
-		poisonTree.m_eggs[0] = new MonsterType("Poison Egg",pes,ses,0,0,"The poison egg is black with a greenish hue. The symbol is embossed on its surface, and spikes extend from the shell, which defend itself. The spikes are of course dipped in poison",poisonTree.m_infants[0]);
-		return poisonTree;
-	}
-	public static MonsterTree defineUndeadMonsterTypes()
-	{
-		pes=5;
-		ses=2;
-		MonsterTree undeadTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		undeadTree.m_elders = new MonsterType[1];
-		undeadTree.m_elders[0] = new MonsterType("Skulltyrant",pes,ses,4,0,"The Skulltyrant is a large undead T-rex. Very Scary");
-		undeadTree.m_elders[1] = new MonsterType("Specter",pes,ses,4,1,"The Specter can possess an enemy for three turns after which it dies");
-		undeadTree.m_adults = new MonsterType[1];
-		undeadTree.m_adults[0] = new MonsterType("Skullclar",pes,ses,3,0,"The Skullclar is a larger Skullsaur with wings and horns",undeadTree.m_elders[0]);
-		undeadTree.m_adults[1] = new MonsterType("Phantom",pes,ses,3,1,"The Phantom is still incorporeal and weilds a curved scepter",undeadTree.m_elders[1]);
-		undeadTree.m_adolescents = new MonsterType[1];
-		undeadTree.m_adolescents[0] = new MonsterType("Skullsaur",pes,ses,2,0,"The Skullsaur is a undead veloceraptor looking thing that has a badass attack called deathclaw",undeadTree.m_adults[0]);
-		undeadTree.m_adolescents[1] = new MonsterType("Ghostet",pes,ses,2,1,"The Ghostet is a weak phantom that takes reduced physical damage",undeadTree.m_adults[1]);
-		undeadTree.m_infants = new MonsterType[1];
-		undeadTree.m_infants[0] = new MonsterType("Stull",pes,ses,1,0,"The stull is a floating skull with glowing green orbs in its eye sockets",undeadTree.m_adolescents[0],undeadTree.m_adolescents[1]);
-		undeadTree.m_eggs = new MonsterType[1];
-		undeadTree.m_eggs[0] = new MonsterType("Undead Egg",pes,ses,0,0,"Lifeless and cold, the egg is the color and consistency of bone, with the undead crest embossed on the center",undeadTree.m_infants[0]);
-		//TODO add more undead monsters
-		return undeadTree;
-	}
-	public static MonsterTree defineStormMonsterTypes()
-	{
-		pes=5;
-		ses=3;
-		MonsterTree stormTree= new MonsterTree(pes,ses,typeNames[pes][ses]);
-		stormTree.m_elders = new MonsterType[1];
-		stormTree.m_elders[0] = new MonsterType("Thundragon",pes,ses,4,0,"The Thundragon is a fully formed dragon made of clouds. Its breath is a hurricane, its scream a thunderbolt");
-		stormTree.m_adults = new MonsterType[1];
-		stormTree.m_adults[0] = new MonsterType("Tempestor",pes,ses,3,0,"The Tempestor is a greater thunder wyvern with wings and rear claws. Its presence will darken the sky and call harsh gales",stormTree.m_elders[0]);
-		stormTree.m_adolescents = new MonsterType[1];
-		stormTree.m_adolescents[0] = new MonsterType("Thundroar",pes,ses,2,0,"The Thundroar is a dragonlike snake in the clouds. Lightening storms occur when multiple Thundroars battle in the heavens. It is said that thunder is caused by their roaring",stormTree.m_adults[0]);
-		stormTree.m_infants = new MonsterType[1];
-		stormTree.m_infants[0]= new MonsterType("Maltag", pes,ses,1,0,"Have you ever had a really bad day? So bad that even though there was a clear blue sky, it felt like a small dark cloud was following you around? This is that cloud",stormTree.m_adolescents[0]);
-		stormTree.m_eggs = new MonsterType[1];
-		stormTree.m_eggs[0] = new MonsterType("Storm Egg",pes,ses,0,0,"The storm egg is solid black and appears to be made of obsidian, excepting, of course, the symbol embossed on its center",stormTree.m_infants[0]);
-		return stormTree;
-	}
-	public static MonsterTree defineBetrayerMonsterTypes()
-	{
-		pes=5;
-		ses=4;
-		MonsterTree betrayerTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		betrayerTree.m_elders = new MonsterType[1];
-		betrayerTree.m_elders[0] = new MonsterType("Avengeant",pes,ses,4,0,"The Avengeant once served God, but gien will, disagreed with his descision. When he went to resolve the conflict, God couldn't stand being questioned and excommunicated the Avengent, who has hated God and those loyal to him ever since");
-		betrayerTree.m_adults = new MonsterType[1];
-		betrayerTree.m_adults[0] = new MonsterType("Black Knight",pes,ses,3,0,"The black knight is sheilded in dark plate, that has rituals etched into the steel",betrayerTree.m_elders[0]);
-		betrayerTree.m_adolescents = new MonsterType[1];
-		betrayerTree.m_adolescents[0] = new MonsterType("Dark Phage",pes,ses,2,0,"The dark phage is a corrupted phage that turned from the service of its creator",betrayerTree.m_adults[0]);
-		betrayerTree.m_adolescents[1] = new MonsterType("Fallen HemiAngel",pes,ses,2,1,"The Fallen HemiAngel has larger wings both turned black",betrayerTree.m_adults[0]);
-		betrayerTree.m_infants = new MonsterType[1];
-		betrayerTree.m_infants[0] = new MonsterType("Fallen DemiAngel",pes,ses,1,0,"The fallen demiAngel is an angel that followed the light bringer when he fell from heaven. It was weak then, and has yet to grow",betrayerTree.m_adolescents[0],betrayerTree.m_adolescents[1]);
-		betrayerTree.m_eggs = new MonsterType[1];
-		betrayerTree.m_eggs[0] = new MonsterType("Betrayer Eggs",pes,ses,0,0,"The betrayer egg is half black and half white its center embossed with the betrayers symbol, a back being stabbed",betrayerTree.m_infants[0]);
-		return betrayerTree;
-	}
-	public static MonsterTree defineUmbralMonsterTypes()
-	{
-		pes=5;
-		ses=5;
-		MonsterTree umbralTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		umbralTree.m_elders = new MonsterType[1];
-//		umbralTree.m_adults[0] = new MonsterType("")
-		umbralTree.m_adults = new MonsterType[1];
-		umbralTree.m_adults[0] = new MonsterType("Obfuscay",pes,ses,3,0,"The Obfuscay consumes darkness and channels it back at its enemies, blinding them");
-		umbralTree.m_adolescents = new MonsterType[1];
-		umbralTree.m_adolescents[0] = new MonsterType("Shadeoss",pes,ses,2,0,"The Shadeoss is strongest in darkness. It appears to be the upper torso of a knight weilding a sword");
-		umbralTree.m_adolescents[1] = new MonsterType("Screel",pes,ses,2,1,"The Screel is a dark scamp that attacks from the shadows");
-		umbralTree.m_infants = new MonsterType[1];
-		umbralTree.m_infants[0] = new MonsterType("Umbress",pes,ses,1,0,"The umbress appears to bea small floating black flame, with two purple eyes");
-		umbralTree.m_eggs = new MonsterType[1];
-		umbralTree.m_eggs[0] = new MonsterType("Umbral Egg",pes,ses,0,0,"The umbral egg sucks light and appears to cast dark tendrils from its shell, but if you look again theyre gone. It seems weak and fragile when exposed to light, but during the dusk, when the light is weak, the blinded eye  can be seen embossed on its surface",umbralTree.m_infants[0]);
-		return umbralTree;
 	}
 	public static void printTypes()
 	{
