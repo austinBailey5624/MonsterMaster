@@ -480,11 +480,11 @@ public class main
 		pes=3;
 		ses=5;
 		MonsterTree nightWingTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		nightWingTree.m_elders=new MonsterType[2];
+		nightWingTree.m_elders=new MonsterType[3];
 		nightWingTree.m_elders[0]=new MonsterType("Vampelder",pes,ses,4,0,"The Vampelder is an older vampire that can assume human form. It can dissipate into a crowd of bats to attack its enemies");
 		nightWingTree.m_elders[1]=new MonsterType("Lenoraven",pes,ses,4,1,"Because of the Lenoraven's intimite relationship with death, it can instantly kill a monster with less than 20% health");
 		nightWingTree.m_elders[2]=new MonsterType("Knowlowlegabel",pes,ses,4,1,"The Knowlowlegabel knows only that it does not know. It can cast logical contradiction that injures monsters scaling with their intellect");
-		nightWingTree.m_adults=new MonsterType[2];
+		nightWingTree.m_adults=new MonsterType[3];
 		nightWingTree.m_adults[0]=new MonsterType("Vampire",pes,ses,3,0,"The vampire can float around like a shadow in the night. It can vampire bite that heals 1/2 of the damage inflicted. It takes extra damage from fire and light.",nightWingTree.m_elders[0]);
 		nightWingTree.m_adults[1]=new MonsterType("Skulltrure",pes,ses,3,1,"The Skullture is a vulture with the head of a skull, like its younger cousin, the Scanvegiar, it feeds on death, and has an ability to deal double damage the turn after a monster dies",nightWingTree.m_elders[1]);
 		nightWingTree.m_adults[2]=new MonsterType("Wisowl",pes,ses,3,1,"The wiseowl is an older version of the rationowl that can expose the weaknesses of its enemies so that they take 25% extra damage for the rest of the battle. This effect does not stack with identify weakness",nightWingTree.m_elders[2]);
@@ -628,6 +628,7 @@ public class main
 		MonsterTree poisonTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		pes=5;
 		ses=1;
+		poisonTree.m_elders= new MonsterType[4];
 		poisonTree.m_elders[0]= new MonsterType("Queen B",pes,ses,3,0,"Queen B is the younger sister of Queen A, however when they were in a beauty pagent, everyone chose Queen B, so she became the dominant Queen. She can summon Stingers to the empty allied positions");
 		poisonTree.m_elders[1]=new MonsterType("King Rattle",pes,ses,3,1,"King Rattle has a large Rattle on the end of its tail. Not like a snakes, like a babies rattle, but really large. It also has a crown. Its scales are brown and it is very large");
 		poisonTree.m_elders[2]=new MonsterType("Red Widow",pes,ses,3,2,"The Red Widow has gotten over her husbands death. The hourglass has turned black, and the rest of her has turned red. This color, and the scent given off from her hide, attracts insects to their doom. Her bright color does as well");
@@ -649,13 +650,13 @@ public class main
 		pes=5;
 		ses=2;
 		MonsterTree undeadTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		undeadTree.m_elders = new MonsterType[1];
+		undeadTree.m_elders = new MonsterType[2];
 		undeadTree.m_elders[0] = new MonsterType("Skulltyrant",pes,ses,4,0,"The Skulltyrant is a large undead T-rex. Very Scary");
 		undeadTree.m_elders[1] = new MonsterType("Specter",pes,ses,4,1,"The Specter can possess an enemy for three turns after which it dies");
-		undeadTree.m_adults = new MonsterType[1];
+		undeadTree.m_adults = new MonsterType[2];
 		undeadTree.m_adults[0] = new MonsterType("Skullclar",pes,ses,3,0,"The Skullclar is a larger Skullsaur with wings and horns",undeadTree.m_elders[0]);
 		undeadTree.m_adults[1] = new MonsterType("Phantom",pes,ses,3,1,"The Phantom is still incorporeal and weilds a curved scepter",undeadTree.m_elders[1]);
-		undeadTree.m_adolescents = new MonsterType[1];
+		undeadTree.m_adolescents = new MonsterType[2];
 		undeadTree.m_adolescents[0] = new MonsterType("Skullsaur",pes,ses,2,0,"The Skullsaur is a undead veloceraptor looking thing that has a badass attack called deathclaw",undeadTree.m_adults[0]);
 		undeadTree.m_adolescents[1] = new MonsterType("Ghostet",pes,ses,2,1,"The Ghostet is a weak phantom that takes reduced physical damage",undeadTree.m_adults[1]);
 		undeadTree.m_infants = new MonsterType[1];
@@ -686,7 +687,7 @@ public class main
 		betrayerTree.m_elders[0] = new MonsterType("Avengeant",pes,ses,4,0,"The Avengeant once served God, but gien will, disagreed with his descision. When he went to resolve the conflict, God couldn't stand being questioned and excommunicated the Avengent, who has hated God and those loyal to him ever since");
 		betrayerTree.m_adults = new MonsterType[1];
 		betrayerTree.m_adults[0] = new MonsterType("Black Knight",pes,ses,3,0,"The black knight is sheilded in dark plate, that has rituals etched into the steel",betrayerTree.m_elders[0]);
-		betrayerTree.m_adolescents = new MonsterType[1];
+		betrayerTree.m_adolescents = new MonsterType[2];
 		betrayerTree.m_adolescents[0] = new MonsterType("Dark Phage",pes,ses,2,0,"The dark phage is a corrupted phage that turned from the service of its creator",betrayerTree.m_adults[0]);
 		betrayerTree.m_adolescents[1] = new MonsterType("Fallen HemiAngel",pes,ses,2,1,"The Fallen HemiAngel has larger wings both turned black",betrayerTree.m_adults[0]);
 		betrayerTree.m_infants = new MonsterType[1];
@@ -865,11 +866,6 @@ public class main
 	}
 	public static void main2(String[] args)
 	{
-		//Instead of Cocka, consider divine type, more focused on physical where holy is more focused on magical
-//		define();
-//		defineTypes();
-	//	printTypes();
-		//PlayerCharacter p1 =new PlayerCharacter();
 		try
 		{
 			fileOut=new FileOutputStream("out.txt");
