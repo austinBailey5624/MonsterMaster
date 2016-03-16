@@ -935,8 +935,9 @@ public class main
 	}
 	public static void main(String[] args)
 	{
+		defineTypes();
 		exit=false;
-		String mainMenuOptions="Main menu\n1)Count Monsters";
+		String mainMenuOptions="Main menu\n1)Count Monsters\n2)Transverse Bestiary";
 		System.out.println(mainMenuOptions);
 		MonsterTree[][]bestiary=define();
 		while(!exit)
@@ -962,27 +963,27 @@ public class main
 			choice=myScanner.nextInt();
 			if(choice==1)
 			{
-				
+				transverseBestiary1(0,bestiary);
 			}
 			else if(choice==2)
 			{
-				
+				transverseBestiary1(1,bestiary);
 			}
 			else if(choice==3)
 			{
-				
+				transverseBestiary1(2,bestiary);
 			}
 			else if(choice==4)
 			{
-				
+				transverseBestiary1(3,bestiary);
 			}
 			else if(choice==5)
 			{
-				
+				transverseBestiary1(4,bestiary);
 			}
 			else if(choice==6)
 			{
-				
+				transverseBestiary1(5,bestiary);
 			}
 			else if(choice==7)
 			{
@@ -997,8 +998,10 @@ public class main
 	}
 	public static void transverseBestiary1(int primary,MonsterTree[][] bestiary)
 	{
-		String BestiaryMenuOptions1="Bestiary Secondary Menu, please choose the derived type you want to look at\n1) " + typeNames[primary][1] + "\n2) " + typeNames[primary][2] + "\n3) " + typeNames[primary][3] + "\n4) " + typeNames[primary][4] + 
-				"\n5) " + typeNames[primary][5] + "\n6) " + typeNames[primary][5] + "\n7) Back";
+//		System.out.println("primary is : "+ primary);//debugging
+//		System.out.println("typeNames[0][0]= " + typeNames[0][0]);//debugging
+		String BestiaryMenuOptions1="Bestiary Secondary Menu, please choose the derived type you want to look at\n1) " + typeNames[primary][0] + "\n2) " + typeNames[primary][1] + "\n3) " + typeNames[primary][2] + "\n4) " + typeNames[primary][3] + 
+				"\n5) " + typeNames[primary][4] + "\n6) " + typeNames[primary][5] + "\n7) Back";
 		exit=false;
 		while(!exit)
 		{
@@ -1006,27 +1009,27 @@ public class main
 			choice=myScanner.nextInt();
 			if(choice==1)
 			{
-				
+				transverseBestiary2(primary,0,bestiary);
 			}
 			else if(choice==2)
 			{
-				
+				transverseBestiary2(primary,1,bestiary);
 			}
 			else if(choice==3)
 			{
-				
+				transverseBestiary2(primary,2,bestiary);
 			}
 			else if(choice==4)
 			{
-				
+				transverseBestiary2(primary,3,bestiary);
 			}
 			else if(choice==5)
 			{
-				
+				transverseBestiary2(primary,4,bestiary);
 			}
 			else if(choice==6)
 			{
-				
+				transverseBestiary2(primary,5,bestiary);
 			}
 			else if(choice==7)
 			{
@@ -1041,6 +1044,7 @@ public class main
  	}
 	public static void transverseBestiary2(int primary, int secondary, MonsterTree[][] bestiary)
 	{
+		System.out.println("secondary= " + secondary);
 		String BestiaryMenuOptions2="Select monster's grade\n1) eggs\n2) infants\n3) adolescents\n4) adults\n5) elders\n6) Back";
 		exit=false;
 		while(!exit)
@@ -1049,23 +1053,23 @@ public class main
 			choice=myScanner.nextInt();
 			if(choice==1)
 			{
-				
+				transverseBestiaryMonsters(primary, secondary, 0,bestiary);
 			}
 			else if(choice==2)
 			{
-				
+				transverseBestiaryMonsters(primary, secondary, 1,bestiary);
 			}
 			else  if(choice==3)
 			{
-				
+				transverseBestiaryMonsters(primary, secondary, 2,bestiary);
 			}
 			else if(choice==4)
 			{
-				
+				transverseBestiaryMonsters(primary, secondary, 3, bestiary);
 			}
 			else if(choice==5)
 			{
-				
+				transverseBestiaryMonsters(primary, secondary, 4, bestiary);
 			}
 			else if(choice==6)
 			{
@@ -1112,7 +1116,7 @@ public class main
 			System.out.println("Your potential monster choices are:");
 			for(int i=0; i<length; i++)
 			{
-				System.out.print(i + ")");
+				System.out.print((i+1) + ")");
 				
 				if(age==0)
 				{
@@ -1140,7 +1144,7 @@ public class main
 			choice=myScanner.nextInt();
 			if(choice<=length&&choice>0)
 			{
-				
+				transverseBestiaryMonsterSelected(primary,secondary,age,choice-1,bestiary);
 			}
 			else if(choice==length+1&&choice>0)
 			{
@@ -1178,22 +1182,23 @@ public class main
 		}
 		else
 		{
-			System.out.println("ERRROR incorrect value for age");
+			System.out.println("ERRROR incorrect value for age, recorded value is: " + age);
 			return;
 		}
 
 		
-		System.out.println("Monster Type: " + selectedMonsterType.getTypeName());
-		System.out.println("Primary Element: " + getElementName(primary));
+		System.out.println("Monster Type:      " + selectedMonsterType.getTypeName());
+		System.out.println("Primary Element:   " + getElementName(primary));
 		System.out.println("Secondary Element: " + getElementName(secondary));
-		System.out.println("Derived Elements" + typeNames[primary][secondary]);
-		if(selectedMonsterType.getNumOfEvolutions()==0);
+		System.out.println("Derived Element:   " + typeNames[primary][secondary]);
+		System.out.println("num of evolutions is " +selectedMonsterType.getNumOfEvolutions());//debugging
+		if(selectedMonsterType.getNumOfEvolutions()==0)
 		{
 			System.out.println("Evolves Into: Does not Evolve into anything");
 		}
-		if(selectedMonsterType.getNumOfEvolutions()==1)
+		else if(selectedMonsterType.getNumOfEvolutions()==1)
 		{
-			System.out.println("Evolves Into:");
+			System.out.println("Evolves Into:" + selectedMonsterType.getEvolvesInto1());
 		}
 		else if(selectedMonsterType.getNumOfEvolutions()==2)
 		{
@@ -1236,7 +1241,7 @@ public class main
 			}
 			else
 			{
-				System.out.println("Incorrect value for getNumOfEvolutions");
+				System.out.println("Incorrect value for getNumOfEvolutions, recorded value is : " + selectedMonsterType.getNumOfEvolutions());
 			}
 			choice=myScanner.nextInt();
 			if(choice==1)
