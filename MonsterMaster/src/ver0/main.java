@@ -9,12 +9,15 @@ import java.io.*;
 public class main 
 {
 	static int tempi;
+	static String inputError="Sorry we didn't understand your input, please only enter one of the numbers provided";
+	static int choice;
 	static FileInputStream fileIn=null;
 	static FileOutputStream fileOut=null;
 	static Scanner myScanner= new Scanner(System.in);
 	static String[][] typeNames=new String[6][6];
 	static int pes;//primary element set, time saver
 	static int ses;//secondary element set, time saver
+	static boolean exit;
 	public static MonsterTree[][] define()
 	{
 		MonsterTree[][] bestiary = new MonsterTree[6][6];
@@ -932,7 +935,147 @@ public class main
 	}
 	public static void main(String[] args)
 	{
+		exit=false;
+		String mainMenuOptions="Main menu\n1)Count Monsters";
+		System.out.println(mainMenuOptions);
 		MonsterTree[][]bestiary=define();
-		System.out.println("There are " + MonsterType.monsterTypeNum + " Monster types with definitions so far");
+		while(!exit)
+		{
+			choice=myScanner.nextInt();
+			if(choice==1)
+			{
+				System.out.println("There are " + MonsterType.monsterTypeNum + " Monster types with definitions so far");
+			}
+			else if(choice==2)
+			{
+				transverseBestiary(bestiary);
+			}
+		}
+	}
+	public static void transverseBestiary(MonsterTree[][] bestiary)
+	{
+		exit=false;
+		String mainBestiaryMenuOptions="Bestiry main menu, choose primary element:\n1) Fire \n2) Water \n3) Earth \n4) Air \n5) Light \n6) Dark\n7) Back";
+		while(!exit)
+		{
+			System.out.println(mainBestiaryMenuOptions);
+			choice=myScanner.nextInt();
+			if(choice==1)
+			{
+				
+			}
+			else if(choice==2)
+			{
+				
+			}
+			else if(choice==3)
+			{
+				
+			}
+			else if(choice==4)
+			{
+				
+			}
+			else if(choice==5)
+			{
+				
+			}
+			else if(choice==6)
+			{
+				
+			}
+			else if(choice==7)
+			{
+				exit=true;
+				return;
+			}
+			else
+			{
+				System.out.println(inputError);
+			}
+		}		
+	}
+	public static void transverseBestiary1(int primary,MonsterTree[][] bestiary)
+	{
+		String BestiaryMenuOptions1="Bestiary Secondary Menu, please choose the derived type you want to look at\n1) " + typeNames[primary][1] + "\n2) " + typeNames[primary][2] + "\n3) " + typeNames[primary][3] + "\n4) " + typeNames[primary][4] + 
+				"\n5) " + typeNames[primary][5] + "\n6) " + typeNames[primary][5] + "\n7) Back";
+		exit=false;
+		while(!exit)
+		{
+			System.out.println(BestiaryMenuOptions1);
+			choice=myScanner.nextInt();
+			if(choice==1)
+			{
+				
+			}
+			else if(choice==2)
+			{
+				
+			}
+			else if(choice==3)
+			{
+				
+			}
+			else if(choice==4)
+			{
+				
+			}
+			else if(choice==5)
+			{
+				
+			}
+			else if(choice==6)
+			{
+				
+			}
+			else if(choice==7)
+			{
+				exit=true;
+				return;
+			}
+			else
+			{
+				System.out.println(inputError);
+			}
+		}
+ 	}
+	public static void transverseBestiary2(int primary, int secondary, MonsterTree[][] bestiary)
+	{
+		String BestiaryMenuOptions2="Select monster's grade\n1) eggs\n2) infants\n3) adolescents\n4) adults\n5) elders\n6) Back";
+		exit=false;
+		while(!exit)
+		{
+			System.out.println(BestiaryMenuOptions2);
+			choice=myScanner.nextInt();
+			if(choice==1)
+			{
+				
+			}
+			else if(choice==2)
+			{
+				
+			}
+			else  if(choice==3)
+			{
+				
+			}
+			else if(choice==4)
+			{
+				
+			}
+			else if(choice==5)
+			{
+				
+			}
+			else if(choice==6)
+			{
+				exit=true;
+				return;
+			}
+			else
+			{
+				System.out.println(inputError);
+			}
+		}
 	}
 }
