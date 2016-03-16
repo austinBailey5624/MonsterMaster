@@ -21,6 +21,10 @@ public class MonsterType
 	
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description)
 	{
+		m_numEvolvesFrom=0;
+		m_evolvesFrom1=null;
+		m_evolvesFrom2=null;
+		m_evolvesFrom3=null;
 		m_typeName=typeName;
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
@@ -35,6 +39,10 @@ public class MonsterType
 	}
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1)
 	{
+		m_numEvolvesFrom=0;
+		m_evolvesFrom1=null;
+		m_evolvesFrom2=null;
+		m_evolvesFrom3=null;
 		m_typeName=typeName;
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
@@ -49,6 +57,10 @@ public class MonsterType
 	}
 	MonsterType(String typeName,int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2)
 	{
+		m_numEvolvesFrom=0;
+		m_evolvesFrom1=null;
+		m_evolvesFrom2=null;
+		m_evolvesFrom3=null;
 		m_typeName=typeName;
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
@@ -63,6 +75,10 @@ public class MonsterType
 	}
 	MonsterType(String typeName,int primaryElement, int secondaryElement,int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2, MonsterType evolvesInto3)
 	{
+		m_numEvolvesFrom=0;
+		m_evolvesFrom1=null;
+		m_evolvesFrom2=null;
+		m_evolvesFrom3=null;
 		m_typeName=typeName;
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
@@ -79,6 +95,10 @@ public class MonsterType
 	
 	//memberVariables
 	private int m_numOfEvolutions;
+	private int m_numEvolvesFrom;
+	private MonsterType m_evolvesFrom1;
+	private MonsterType m_evolvesFrom2;
+	private MonsterType m_evolvesFrom3;
 	private MonsterType m_evolvesInto1;
 	private MonsterType m_evolvesInto2;
 	private MonsterType m_evolvesInto3;
@@ -90,6 +110,38 @@ public class MonsterType
 	private int m_secondaryElement;//Note same as above
 	
 	//getters and setters
+	public void setEvolvesFrom(MonsterType evolvesFrom)
+	{
+		m_evolvesFrom1=evolvesFrom;
+		m_numEvolvesFrom++;
+	}
+	public void setEvolvesFrom1(MonsterType evolvesFrom)
+	{
+		m_evolvesFrom1=evolvesFrom;
+		m_numEvolvesFrom++;
+	}
+	public MonsterType getEvolvesFrom1()
+	{
+		return m_evolvesFrom1;
+	}
+	public void setEvolvesFrom2(MonsterType evolvesFrom)
+	{
+		m_evolvesFrom2=evolvesFrom;
+		m_numEvolvesFrom++;
+	}
+	public MonsterType getEvolvesFrom2()
+	{
+		return m_evolvesFrom2;
+	}
+	public void setEvolvesFrom3(MonsterType evolvesFrom)
+	{
+		m_evolvesFrom3=evolvesFrom;
+		m_numEvolvesFrom++;
+	}
+	public MonsterType getEvolvesFrom3()
+	{
+		return(m_evolvesFrom3);
+	}
 	public MonsterType getEvolvesInto1()
 	{
 		return m_evolvesInto1;
