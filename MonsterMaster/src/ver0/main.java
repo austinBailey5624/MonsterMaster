@@ -1078,4 +1078,215 @@ public class main
 			}
 		}
 	}
+	public static void transverseBestiaryMonsters(int primary, int secondary, int age, MonsterTree[][] bestiary)
+	{
+		int length=0;
+		if(age==0)
+		{
+			length = bestiary[primary][secondary].m_eggs.length;			
+		}
+		else if(age==1)
+		{
+			length = bestiary[primary][secondary].m_infants.length;
+		}
+		else if(age==2)
+		{
+			length = bestiary[primary][secondary].m_adolescents.length;
+		}
+		else if(age==3)
+		{
+			length = bestiary[primary][secondary].m_adults.length;
+		}
+		else if(age==4)
+		{
+			length = bestiary[primary][secondary].m_elders.length;
+		}
+		else
+		{
+			length=0;
+			System.out.println("ERROR int controlling age is outside of bounds");
+		}
+		exit=false;
+		while(!exit)
+		{	
+			System.out.println("Your potential monster choices are:");
+			for(int i=0; i<length; i++)
+			{
+				System.out.print(i + ")");
+				
+				if(age==0)
+				{
+					System.out.print(bestiary[primary][secondary].m_eggs[i].getTypeName());					
+				}
+				else if(age==1)
+				{
+					System.out.print(bestiary[primary][secondary].m_infants[i].getTypeName());
+				}
+				else if(age==2)
+				{
+					System.out.print(bestiary[primary][secondary].m_adolescents[i].getTypeName());
+				}
+				else if(age==3)
+				{
+					System.out.print(bestiary[primary][secondary].m_adults[i].getTypeName());
+				}
+				else if(age==4)
+				{
+					System.out.print(bestiary[primary][secondary].m_elders[i].getTypeName());
+				}
+				System.out.println();
+			}
+			System.out.println(length+1 + ") Back");
+			choice=myScanner.nextInt();
+			if(choice<=length&&choice>0)
+			{
+				
+			}
+			else if(choice==length+1&&choice>0)
+			{
+				exit=true;
+				return;
+			}
+			else
+			{
+				System.out.println(inputError);
+			}
+		}
+	}
+	public static void transverseBestiaryMonsterSelected(int primary, int secondary, int age, int selectedMonster, MonsterTree[][] bestiary)
+	{
+		MonsterType selectedMonsterType;//selects the monster from the bestiary based on the given information
+		if(age==0)
+		{
+			selectedMonsterType=bestiary[primary][secondary].m_eggs[selectedMonster];			
+		}
+		else if(age==1)
+		{
+			selectedMonsterType=bestiary[primary][secondary].m_infants[selectedMonster];
+		}
+		else if(age==2)
+		{
+			selectedMonsterType=bestiary[primary][secondary].m_adolescents[selectedMonster];
+		}
+		else if(age==3)
+		{
+			selectedMonsterType=bestiary[primary][secondary].m_adults[selectedMonster];
+		}
+		else if(age==4)
+		{
+			selectedMonsterType=bestiary[primary][secondary].m_elders[selectedMonster];
+		}
+		else
+		{
+			System.out.println("ERRROR incorrect value for age");
+			return;
+		}
+
+		
+		System.out.println("Monster Type: " + selectedMonsterType.getTypeName());
+		System.out.println("Primary Element: " + getElementName(primary));
+		System.out.println("Secondary Element: " + getElementName(secondary));
+		System.out.println("Derived Elements" + typeNames[primary][secondary]);
+		if(selectedMonsterType.getNumOfEvolutions()==0);
+		{
+			System.out.println("Evolves Into: Does not Evolve into anything");
+		}
+		if(selectedMonsterType.getNumOfEvolutions()==1)
+		{
+			System.out.println("Evolves Into:");
+		}
+		else if(selectedMonsterType.getNumOfEvolutions()==2)
+		{
+			System.out.println("Physical Evolution: " + selectedMonsterType.getEvolvesInto1());
+			System.out.println("Magical  Evolution:  " + selectedMonsterType.getEvolvesInto2());
+		}
+		else if(selectedMonsterType.getNumOfEvolutions()==3)
+		{
+			System.out.println("Physical Evolution: " + selectedMonsterType.getEvolvesInto1());
+			System.out.println("Balanced Evolution: " + selectedMonsterType.getEvolvesInto2());
+			System.out.println("Magical  Evolution: " + selectedMonsterType.getEvolvesInto3());
+		}
+		else
+		{
+			System.out.println("Incorrect value for get NUM of Evolutions");
+		}
+		
+		System.out.println("Description: " + selectedMonsterType.getDescription());
+		System.out.println();
+		
+		exit=false;
+		while(!exit)
+		{
+			System.out.println("Please select what you would like to do next: ");
+			System.out.println("1) Go back");
+			if(selectedMonsterType.getNumOfEvolutions()==1)
+			{
+				System.out.println("2) Go to " + selectedMonsterType.getEvolvesInto1().getTypeName());
+			}
+			else if(selectedMonsterType.getNumOfEvolutions()==2)
+			{
+				System.out.println("2) Go to " + selectedMonsterType.getEvolvesInto1().getTypeName());
+				System.out.println("3) Go to " + selectedMonsterType.getEvolvesInto2().getTypeName());
+			}
+			else if(selectedMonsterType.getNumOfEvolutions()==3)
+			{
+				System.out.println("2) Go to " + selectedMonsterType.getEvolvesInto1().getTypeName());
+				System.out.println("3) Go to " + selectedMonsterType.getEvolvesInto2().getTypeName());
+				System.out.println("4) Go to " + selectedMonsterType.getEvolvesInto3().getTypeName());
+			}
+			else
+			{
+				System.out.println("Incorrect value for getNumOfEvolutions");
+			}
+			choice=myScanner.nextInt();
+			if(choice==1)
+			{
+				exit=true;
+				return;
+			}
+			else if(choice==2&&selectedMonsterType.getNumOfEvolutions()>0)
+			{
+				//TODO finish
+			}
+			else if(choice==3&&selectedMonsterType.getNumOfEvolutions()>1)
+			{
+				//TODO finish
+			}
+			else if(choice==4&&selectedMonsterType.getNumOfEvolutions()==3)
+			{
+				//TODO finish
+			}
+		}
+	}
+	public static String getElementName(int element)
+	{
+		if(element==0)
+		{
+			return("Fire");
+		}
+		else if(element==1)
+		{
+			return("Water");
+		}
+		else if(element==2)
+		{
+			return("Earth");
+		}
+		else if(element==3)
+		{
+			return("Air");
+		}
+		else if(element==4)
+		{
+			return("Light");
+		}
+		else if(element==5)
+		{
+			return("Dark");
+		}
+		else 
+		{
+			return("Error: Invalid Argument");
+		}
+	}
 }

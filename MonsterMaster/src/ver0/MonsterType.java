@@ -9,15 +9,15 @@ public class MonsterType
 {
 	static int monsterTypeNum=0;
 	//constructors
-	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType)
-	{
-		m_typeName = typeName;
-		m_primaryElement=primaryElement;
-		m_secondaryElement=secondaryElement;
-		m_evolutionStage=evolutionStage;
-		m_evolutionType=evolutionType;
-		monsterTypeNum++;
-	}
+//	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType)//Outdated, unused
+//	{
+//		m_typeName = typeName;
+//		m_primaryElement=primaryElement;
+//		m_secondaryElement=secondaryElement;
+//		m_evolutionStage=evolutionStage;
+//		m_evolutionType=evolutionType;
+//		monsterTypeNum++;
+//	}
 	
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description)
 	{
@@ -90,6 +90,18 @@ public class MonsterType
 	private int m_secondaryElement;//Note same as above
 	
 	//getters and setters
+	public MonsterType getEvolvesInto1()
+	{
+		return m_evolvesInto1;
+	}
+	public MonsterType getEvolvesInto2()
+	{
+		return m_evolvesInto2;
+	}
+	public MonsterType getEvolvesInto3()
+	{
+		return m_evolvesInto3;
+	}
 	public String getTypeName()
 	{
 		return m_typeName;
@@ -137,5 +149,9 @@ public class MonsterType
 	public void setSecondaryElement(int newSecondaryElement)
 	{
 		m_secondaryElement=newSecondaryElement;
+	}
+	public int getNumOfEvolutions()
+	{
+		return m_numOfEvolutions;
 	}
 }
