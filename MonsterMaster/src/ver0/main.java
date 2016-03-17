@@ -32,7 +32,7 @@ public class main
 		pyroTree.m_elders[2]=new MonsterType("Bolide",pes,ses,4,2,"The Bolide is a grown up comet with large muscular legs that moves even faster.");
 		pyroTree.m_elders[3]=new MonsterType("Flame Atronach",pes,ses,4,3,"The flame atronach is a giant circular flame symbol made of red steel surrouned by six smaller flame symbols that rotate around it, faster when its casting a spell");
 		pyroTree.m_adults=new MonsterType[4];
-		pyroTree.m_adults[0]=new MonsterType("Pyros",pes,ses,3,0,"A Pyros has the body of a man and the head of a bull, it wears a cape made of flame though the cape does not burn it. It has a flame crescent axe that seems to be made of red steel",pyroTree.m_elders[1]);
+		pyroTree.m_adults[0]=new MonsterType("Pyros",pes,ses,3,0,"A Pyros has the body of a man and the head of a bull, it wears a cape made of flame though the cape does not burn it. It has a flame crescent axe that seems to be made of red steel",pyroTree.m_elders[0],pyroTree.m_elders[1]);
 		pyroTree.m_adults[1]=new MonsterType("Flarus",pes,ses,3,1,"A greater Flarus has short legs and gian arms that extend to the floor. Its entire body is aflame, and short red horns can be seen ",pyroTree.m_elders[1]);
 		pyroTree.m_adults[2]=new MonsterType("Comet",pes,ses,3,2,"The Comet is a four legged hound with an incredible amount of speed. It runs as fast as it can and slams into its enemy in combat, known as the 'comet dash'",pyroTree.m_elders[2]);
 		pyroTree.m_adults[3]=new MonsterType("Flame Elemental",pes,ses,3,2,"The flame elemetal has is a chasis of black iron engulfed in flame",pyroTree.m_elders[3]);
@@ -44,6 +44,20 @@ public class main
 		pyroTree.m_infants[0]=new MonsterType("Flarial",pes,ses,1,0,"An orange ball of flame with a red eye. It hovers in the air, a foot above the ground, a sphere a foot in diameter. The ends of the flame flow behind it, althogh no wind can be felt",pyroTree.m_adolescents[0],pyroTree.m_adolescents[1],pyroTree.m_adolescents[2]);
 		pyroTree.m_eggs = new MonsterType[1];
 		pyroTree.m_eggs[0]= new MonsterType("Pyro Egg",pes,ses,0,0,"An orange egg with the symbol of a red flame. When you touch it, it is warm, and you become angry, though you do not know why. Pull your hand away and you are burned, though by the egg or yourself you cannot tell",pyroTree.m_infants[0]);
+
+		pyroTree.m_elders[0].setEvolvesFrom1(pyroTree.m_adults[0]);
+		pyroTree.m_elders[1].setEvolvesFrom1(pyroTree.m_adults[0]);
+		pyroTree.m_elders[1].setEvolvesFrom2(pyroTree.m_adults[1]);
+		pyroTree.m_elders[2].setEvolvesFrom1(pyroTree.m_adults[2]);
+		pyroTree.m_elders[3].setEvolvesFrom1(pyroTree.m_adults[3]);
+		pyroTree.m_adults[0].setEvolvesFrom1(pyroTree.m_adolescents[0]);
+		pyroTree.m_adults[1].setEvolvesFrom1(pyroTree.m_adolescents[0]);
+		pyroTree.m_adults[2].setEvolvesFrom1(pyroTree.m_adolescents[1]);
+		pyroTree.m_adults[3].setEvolvesFrom1(pyroTree.m_adolescents[2]);
+		pyroTree.m_adolescents[0].setEvolvesFrom1(pyroTree.m_infants[0]);
+		pyroTree.m_adolescents[1].setEvolvesFrom1(pyroTree.m_infants[0]);
+		pyroTree.m_adolescents[2].setEvolvesFrom1(pyroTree.m_infants[0]);
+		pyroTree.m_infants[0].setEvolvesFrom1(pyroTree.m_eggs[0]);
 		bestiary[0][0]=pyroTree;
 		
 		ses=1;
@@ -64,6 +78,17 @@ public class main
 		lavaTree.m_infants[0]=new MonsterType("Philammon",pes,ses,1,0,"Philammon was the weakest of the suns of vulcan, and the monster derived from him resembles a green ball with orange eyes and horns",lavaTree.m_adolescents[0],lavaTree.m_adolescents[1],lavaTree.m_adolescents[2]);
 		lavaTree.m_eggs=new MonsterType[1];
 		lavaTree.m_eggs[0]=new MonsterType("Lava Egg",pes,ses,0,0,"The volcano egg is orange and very hot, with a glyph on its center of a mountain with lava pouring down it. It dries out quickly and is best left in water",lavaTree.m_infants[0]);
+
+		lavaTree.m_elders[0].setEvolvesFrom1(lavaTree.m_adults[0]);
+		lavaTree.m_elders[1].setEvolvesFrom1(lavaTree.m_adults[1]);
+		lavaTree.m_elders[2].setEvolvesFrom1(lavaTree.m_adults[2]);
+		lavaTree.m_adults[0].setEvolvesFrom1(lavaTree.m_adolescents[0]);
+		lavaTree.m_adults[1].setEvolvesFrom1(lavaTree.m_adolescents[1]);
+		lavaTree.m_adults[2].setEvolvesFrom1(lavaTree.m_adolescents[2]);		
+		lavaTree.m_adolescents[0].setEvolvesFrom(lavaTree.m_infants[0]);		
+		lavaTree.m_adolescents[1].setEvolvesFrom(lavaTree.m_infants[0]);		
+		lavaTree.m_adolescents[2].setEvolvesFrom(lavaTree.m_infants[0]);		
+		lavaTree.m_infants[0].setEvolvesFrom(lavaTree.m_eggs[0]);		
 		bestiary[0][1]=lavaTree;
 		
 		ses=2;
@@ -84,6 +109,17 @@ public class main
 		dinosaurTree.m_infants[0] = new MonsterType("Salamander",pes,ses,1,0,"The salamander is a small dinosaur that can breathe fire.",dinosaurTree.m_adolescents[0],dinosaurTree.m_adolescents[1],dinosaurTree.m_adolescents[2]);
 		dinosaurTree.m_eggs=new MonsterType[1];
 		dinosaurTree.m_eggs[0]=new MonsterType("Dino Egg",pes,ses,0,0,"Call John Hammond, it finally happened, were going to be millionares!!",dinosaurTree.m_infants[0]);
+
+		dinosaurTree.m_elders[0].setEvolvesFrom(dinosaurTree.m_adults[0]);
+		dinosaurTree.m_elders[1].setEvolvesFrom(dinosaurTree.m_adults[1]);
+		dinosaurTree.m_elders[2].setEvolvesFrom(dinosaurTree.m_adults[2]);
+		dinosaurTree.m_adults[0].setEvolvesFrom(dinosaurTree.m_adolescents[0]);
+		dinosaurTree.m_adults[1].setEvolvesFrom(dinosaurTree.m_adolescents[1]);
+		dinosaurTree.m_adults[2].setEvolvesFrom(dinosaurTree.m_adolescents[2]);
+		dinosaurTree.m_adolescents[0].setEvolvesFrom(dinosaurTree.m_infants[0]);
+		dinosaurTree.m_adolescents[1].setEvolvesFrom(dinosaurTree.m_infants[0]);
+		dinosaurTree.m_adolescents[2].setEvolvesFrom(dinosaurTree.m_infants[0]);
+		dinosaurTree.m_infants[0].setEvolvesFrom(dinosaurTree.m_eggs[0]);
 		bestiary[0][2]=dinosaurTree;
 		
 		ses=3;
@@ -101,6 +137,16 @@ public class main
 		phoenixTree.m_infants[0]=new MonsterType("Lesser Phoenix", pes,ses,1,0,"The Lesser Phoenix has yet to gain much plumage, although its eye sparkles with understanding when you speak to it, and when you caress it, its eye closes with love, and you feel hope.",phoenixTree.m_adolescents[0],phoenixTree.m_adolescents[1],phoenixTree.m_adolescents[2]);
 		phoenixTree.m_eggs= new MonsterType[1];
 		phoenixTree.m_eggs[0]= new MonsterType("Phoenix Egg", pes,ses,0,0,"The egg hovers slightly above the ground and is lit aflame by a fire that gives no heat",phoenixTree.m_infants[0]);
+		
+		phoenixTree.m_elders[0].setEvolvesFrom1(phoenixTree.m_adults[0]);
+		phoenixTree.m_elders[0].setEvolvesFrom2(phoenixTree.m_adults[1]);
+		phoenixTree.m_adults[0].setEvolvesFrom1(phoenixTree.m_adolescents[0]);
+		phoenixTree.m_adults[1].setEvolvesFrom1(phoenixTree.m_adolescents[1]);
+		phoenixTree.m_adults[1].setEvolvesFrom2(phoenixTree.m_adolescents[2]);
+		phoenixTree.m_adolescents[0].setEvolvesFrom(phoenixTree.m_infants[0]);
+		phoenixTree.m_adolescents[1].setEvolvesFrom(phoenixTree.m_infants[0]);
+		phoenixTree.m_adolescents[2].setEvolvesFrom(phoenixTree.m_infants[0]);
+		phoenixTree.m_infants[0].setEvolvesFrom(phoenixTree.m_eggs[0]);
 		bestiary[0][3]=phoenixTree;
 		
 		ses=4;
@@ -118,6 +164,14 @@ public class main
 		justiceTree.m_infants[0]=new MonsterType("Angier",pes,ses,1,0,"The angier has a very sophomoric view of whats right and wrong, and when it percieves some slight against itself or its god, it runs up, quite childishly and demands satisfaction, regardless how much larger the villan is");
 		justiceTree.m_eggs=new MonsterType[1];
 		justiceTree.m_eggs[0]=new MonsterType("Justice Egg",pes,ses,0,0,"The egg white with a golden flame symbol in its center. When it is near you you are stronger in your convictions, and obsess over your sins, feeling regret and the desire to make things right");
+		
+		justiceTree.m_elders[0].setEvolvesFrom(justiceTree.m_adults[0]);
+		justiceTree.m_elders[1].setEvolvesFrom(justiceTree.m_adults[1]);
+		justiceTree.m_adults[0].setEvolvesFrom(justiceTree.m_adolescents[0]);
+		justiceTree.m_adults[1].setEvolvesFrom(justiceTree.m_adolescents[0]);
+		justiceTree.m_adolescents[0].setEvolvesFrom(justiceTree.m_infants[0]);
+		justiceTree.m_adolescents[1].setEvolvesFrom(justiceTree.m_infants[1]);
+		justiceTree.m_infants[0].setEvolvesFrom(justiceTree.m_eggs[0]);
 		bestiary[0][4]=justiceTree;
 		
 		ses=5;
@@ -135,6 +189,17 @@ public class main
 		vengenceTree.m_infants[0]=new MonsterType("Spiten",pes,ses,1,0,"A spiten is a class of inferior imp that has needle like teeth, a bright red goblinesque body and black eyes.",vengenceTree.m_adolescents[0],vengenceTree.m_adolescents[1],vengenceTree.m_adolescents[2]);
 		vengenceTree.m_eggs=new MonsterType[1];
 		vengenceTree.m_eggs[0]=new MonsterType("Vengence Egg",pes,ses,0,0,"The egg is split in half, half red, half black, with a symmetric crest in the center. On the black side, the crest is in red, on the red side, the crest is in black. The crest itself looks like a flame, except wider than possible, and the end of the flame flicks into a cruel point. When it is near, you remember all the things that you love that were taken from you, the egg incites you to claim vengence. If broken, it casts a lesser curse on the breaker",vengenceTree.m_infants[0]);
+		
+		vengenceTree.m_elders[0].setEvolvesFrom1(vengenceTree.m_adults[0]);
+		vengenceTree.m_elders[0].setEvolvesFrom2(vengenceTree.m_adults[1]);
+		vengenceTree.m_adults[0].setEvolvesFrom1(vengenceTree.m_adolescents[0]);
+		vengenceTree.m_adults[0].setEvolvesFrom2(vengenceTree.m_adolescents[1]);
+		vengenceTree.m_adults[1].setEvolvesFrom1(vengenceTree.m_adolescents[1]);
+		vengenceTree.m_adults[1].setEvolvesFrom2(vengenceTree.m_adolescents[2]);
+		vengenceTree.m_adolescents[0].setEvolvesFrom(vengenceTree.m_infants[0]);
+		vengenceTree.m_adolescents[1].setEvolvesFrom(vengenceTree.m_infants[1]);
+		vengenceTree.m_adolescents[2].setEvolvesFrom(vengenceTree.m_infants[2]);
+		vengenceTree.m_infants[0].setEvolvesFrom(vengenceTree.m_eggs[0]);
 		bestiary[0][5]=vengenceTree;
 		
 		//primary water
@@ -151,31 +216,52 @@ public class main
 		steamTree.m_infants[0]=new MonsterType("Minor Steamlet",pes,ses,1,0,"The lesser steamlet is a young demon made of steam. It cannot be harmed by physical attacks, but has very little health. A small amount of white phosporus drives its core, and if this phosporous is damaged, it will die quickly",steamTree.m_adolescents[0]);
 		steamTree.m_eggs=new MonsterType[1];
 		steamTree.m_eggs[0]=new MonsterType("Steam Egg", pes,ses,0,0,"Steam continually rises off of this egg. A nest of them are often put underneath a spa. They're not very nice to carry, because they drench whatever they are carried in in hot water. It also may be an obscure refrence to the foglets from the witcher series",steamTree.m_infants[0]);
+		
+		steamTree.m_elders[0].setEvolvesFrom(steamTree.m_adults[0]);
+		steamTree.m_adults[0].setEvolvesFrom(steamTree.m_adolescents[0]);
+		steamTree.m_adolescents[0].setEvolvesFrom(steamTree.m_infants[0]);
+		steamTree.m_adolescents[0].setEvolvesFrom(steamTree.m_eggs[0]);
 		bestiary[1][0]=steamTree;
 		
 		ses=1;
-		MonsterTree aquaTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		MonsterTree aquaTree = new MonsterTree(pes,ses,typeNames[pes][ses]);//potential name for another monster: aqari
 		aquaTree.m_elders=new MonsterType[3];
 		aquaTree.m_elders[0]=new MonsterType("Blue Dragon",pes,ses,4,0,"A blue dragon that lives under the sea. It is scaleless and can breath a water pulse at its enemies");
-		aquaTree.m_elders[1]=new MonsterType("Aqua Atronach",pes,ses,4,1,"An Aqua Atronach is a collection of Elementals, a large one in the center with the five other elements represented as smaller elementals around the edge. When the Atronach wants to cast spells from other elements, it pulls that elemental into the center and channels its magic energy though both");
+		aquaTree.m_elders[1]=new MonsterType("Levithan",pes,ses,4,1,"A leviathan is a giant sea monster that can shoot a very pressured stream of water at its enemies. It grew from a huge collection of cuddlerfish that fused together");
+		aquaTree.m_elders[2]=new MonsterType("Aqua Atronach",pes,ses,4,2,"An Aqua Atronach is a collection of Elementals, a large one in the center with the five other elements represented as smaller elementals around the edge. When the Atronach wants to cast spells from other elements, it pulls that elemental into the center and channels its magic energy though both");
 		aquaTree.m_adults = new MonsterType[3];
 		aquaTree.m_adults[0]=new MonsterType("SliceFinn",pes,ses,3,0,"Slicefinn is a shark. A hammerhead shark whose front finn is sharpened steel",aquaTree.m_elders[0]);
 //		aquaTree.m_adults[1]=new MonsterType("Kai",pes,ses,3,1,"The Kai is an old koi who has begun to turn golden",aquaTree.m_elders[0]);
-		aquaTree.m_adults[1]=new MonsterType("Snugglerfish",pes,ses,3,1,"The Snugglerfish is a pair of cuddlefish that have attached and grown large. Its move is snuggle");
-		aquaTree.m_adults[2]=new MonsterType("Aqua Elemental",pes,ses,3,2,"The Aqua Elemental is a large aqua symbol that has six crystallized water droplets on each of its six points",aquaTree.m_elders[1]);
+		aquaTree.m_adults[1]=new MonsterType("Snugglerfish",pes,ses,3,1,"The Snugglerfish is a pair of cuddlefish that have attached and grown large. Its move is snuggle",aquaTree.m_elders[1]);
+		aquaTree.m_adults[2]=new MonsterType("Aqua Elemental",pes,ses,3,2,"The Aqua Elemental is a large aqua symbol that has six crystallized water droplets on each of its six points",aquaTree.m_elders[2]);
 		aquaTree.m_adolescents=new MonsterType[3];
 		aquaTree.m_adolescents[0]=new MonsterType("EdgeFinn",pes,ses,2,0,"EdgeFinn is a larger version of the Minnow with a serrated crest and finns, as well as small, razor sharp teeth. unlike most fish, its eyes  face forward to stalk its prey, like the carnivores on land",aquaTree.m_adults[0]);
 //		aquaTree.m_adolescents[1]=new MonsterType("Koi",pes,ses,2,1,"A large orange fish, whose face looks a bit like a chinese mystic, floating and calm",aquaTree.m_adults[1]);
 		aquaTree.m_adolescents[1]=new MonsterType("Cuddlerfish",pes,ses,2,1,"A Cuddlerfish is shaped like a Cuttlefish but also loves cuddling. Thats why typically they come in pairs. They seperate infrequently, and when they do, both halves become very needy and inevitably float back together.",aquaTree.m_adults[1]);
-		aquaTree.m_adolescents[2]= new MonsterType("Aquari",pes,ses,2,1,"A silver Taurus, with a sapphire sphere at its base. Etched on the Sapphire Sphere is the water Symbol. When it attacks, the crest apears in the center of the Taurus, and water drips from it. When one is near, calmness and complasency echoes in the mind.",aquaTree.m_adults[2]);
+		aquaTree.m_adolescents[2]= new MonsterType("Aqua Symbol",pes,ses,2,1,"A silver Taurus, with a sapphire sphere at its base. Etched on the Sapphire Sphere is the water Symbol. When it attacks, the crest apears in the center of the Taurus, and water drips from it. When one is near, calmness and complasency echoes in the mind.",aquaTree.m_adults[2]);
 		aquaTree.m_infants=new MonsterType[1];
 		aquaTree.m_infants[0]=new MonsterType("Minnow",pes,ses,1,0,"Minnow is a small blue fish with a green eye and finn. It floats in the air as if it were swimming in water. Why? How? Why did physics just suddenly stop working? BECAUSE I SAID SO. Thats why",aquaTree.m_adolescents[0],aquaTree.m_adolescents[1],aquaTree.m_adolescents[2]);
 		aquaTree.m_eggs=new MonsterType[1];
 		aquaTree.m_eggs[0]=new MonsterType("Aqua Egg",pes,ses,0,0,"The egg faintly glows cyan when left in water. It is a light blue perfect egg shape, with the water crest in dark blue emblazoned across it. When brought out of water it dries. If it dries enough to crack the monster inside may be close to death, however submerging it in water again and the shell will regenerate",aquaTree.m_infants[0]);
+		
+		aquaTree.m_elders[0].setEvolvesFrom(aquaTree.m_adults[0]);
+		aquaTree.m_elders[1].setEvolvesFrom(aquaTree.m_adults[1]);
+		aquaTree.m_elders[2].setEvolvesFrom(aquaTree.m_adults[2]);
+		aquaTree.m_adults[0].setEvolvesFrom(aquaTree.m_adolescents[0]);
+		aquaTree.m_adults[1].setEvolvesFrom(aquaTree.m_adolescents[1]);
+		aquaTree.m_adults[2].setEvolvesFrom(aquaTree.m_adolescents[2]);
+		aquaTree.m_adolescents[0].setEvolvesFrom(aquaTree.m_infants[0]);
+		aquaTree.m_adolescents[1].setEvolvesFrom(aquaTree.m_infants[0]);
+		aquaTree.m_adolescents[2].setEvolvesFrom(aquaTree.m_infants[0]);
+		aquaTree.m_infants[0].setEvolvesFrom(aquaTree.m_eggs[0]);
 		bestiary[1][1]=aquaTree;
 		
 		ses=2;
 		MonsterTree amphibiousTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		amphibiousTree.m_elders=new MonsterType[3];
+		amphibiousTree.m_elders[0]=new MonsterType("Tonguedancer",pes,ses,4,0,"Despite being unrelated to air, the Tonguedancer is very quick and agile, using all four limbs in addition to its tongue to manipulate the world around it");
+		amphibiousTree.m_elders[1]=new MonsterType("Frogealer",pes,ses,4,1,"The Frogealer is a shifty frog whose slime has addictive hallucinogenic properties. When attacked with physical attacks, interesting things can happen");
+		amphibiousTree.m_elders[2]=new MonsterType("Meititode",pes,ses,4,2,"The Meititode is constantly in meditation. It shields itself in a sphere of mud to protect itself. It is rightly considered the master of the natural elements, and can cast all levels of the natural magics. However, it is vulnerable to the moral elements");
 		amphibiousTree.m_adults=new MonsterType[3];
 		amphibiousTree.m_adults[0]=new MonsterType("Frogar",pes,ses,3,0,"The frogar is a giant toad witha spiked tongue that uses the tongue in combat. The tongue itself is as hard as iron. It wears a vest with an oriental 'Frog fu' symbol on it, which would make you think its great at martial arts, but its not. Its just trying to be cool");
 		amphibiousTree.m_adults[1]=new MonsterType("Frogaudy",pes,ses,3,1,"The frogaudy is not only rainbow, it also sparkles. It found this fake diamond ring once, thought it was shiny and awesome, and its wardrobe has only gotten shinier since then. Now it has a golden hat and a monocole as well");
@@ -188,6 +274,17 @@ public class main
 		amphibiousTree.m_infants[0]=new MonsterType("Tapple",pes,ses,1,0,"The Tapple's parents were terrible at naming babies, so they asked the tapple what it would like to be called. It tried to say tadpole, but as it was a baby, it couldn't pronounce it properly. The name stuck. The tapple is blue-green and is very proud of its long double-finned tail. Its parents told it not to get too attached, but it did anyway");
 		amphibiousTree.m_eggs = new MonsterType[1];
 		amphibiousTree.m_eggs[0]= new MonsterType("Amphibious Egg",pes,ses,0,0,"The egg is a perfect sphere, blue and green with a lighter yolk in the center, seemingly unformed except for a black eve. the egg itself is happy in water or land, as the name implies");
+		
+		amphibiousTree.m_elders[0].setEvolvesFrom(amphibiousTree.m_adults[0]);
+		amphibiousTree.m_elders[1].setEvolvesFrom(amphibiousTree.m_adults[1]);
+		amphibiousTree.m_elders[2].setEvolvesFrom(amphibiousTree.m_adults[2]);
+		amphibiousTree.m_adults[0].setEvolvesFrom(amphibiousTree.m_adolescents[0]);
+		amphibiousTree.m_adults[1].setEvolvesFrom(amphibiousTree.m_adolescents[1]);
+		amphibiousTree.m_adults[2].setEvolvesFrom(amphibiousTree.m_adolescents[2]);
+		amphibiousTree.m_adolescents[0].setEvolvesFrom(amphibiousTree.m_infants[0]);
+		amphibiousTree.m_adolescents[1].setEvolvesFrom(amphibiousTree.m_infants[0]);
+		amphibiousTree.m_adolescents[2].setEvolvesFrom(amphibiousTree.m_infants[0]);
+		amphibiousTree.m_infants[0].setEvolvesFrom(amphibiousTree.m_eggs[0]);
 		bestiary[1][2]=amphibiousTree;
 
 		ses=3;
@@ -209,6 +306,24 @@ public class main
 		weatherTree.m_infants[0]=new MonsterType("Cirrus",pes,ses,1,0,"A small cloud that curves around like a snake. It has no mouth and a small blue diamond on its head, its body is covered by fog, and it is lighter than air.",weatherTree.m_adolescents[0],weatherTree.m_adolescents[1],weatherTree.m_adolescents[2]);
 		weatherTree.m_eggs = new MonsterType[1];
 		weatherTree.m_eggs[0] = new MonsterType("Weather Egg",pes,ses,0,0,"The weather egg has a grey surface with the weather crest (a circle with a cloud and thunderbold) emblazoned on the center. It will yeild if you push into it, it has a flexible shell, that seems to smoke, except the smoke is a very light color",weatherTree.m_infants[0]);
+		
+		weatherTree.m_elders[0].setEvolvesFrom1(weatherTree.m_adults[0]);
+		weatherTree.m_elders[0].setEvolvesFrom2(weatherTree.m_adults[1]);
+		weatherTree.m_elders[0].setEvolvesFrom3(weatherTree.m_adults[2]);
+		weatherTree.m_elders[1].setEvolvesFrom1(weatherTree.m_adults[2]);
+		weatherTree.m_elders[1].setEvolvesFrom2(weatherTree.m_adults[3]);
+		weatherTree.m_elders[1].setEvolvesFrom3(weatherTree.m_adults[4]);
+		weatherTree.m_adults[0].setEvolvesFrom1(weatherTree.m_adolescents[0]);
+		weatherTree.m_adults[1].setEvolvesFrom1(weatherTree.m_adolescents[0]);
+		weatherTree.m_adults[2].setEvolvesFrom1(weatherTree.m_adolescents[0]);
+		weatherTree.m_adults[2].setEvolvesFrom2(weatherTree.m_adolescents[1]);
+		weatherTree.m_adults[3].setEvolvesFrom1(weatherTree.m_adolescents[1]);
+		weatherTree.m_adults[3].setEvolvesFrom2(weatherTree.m_adolescents[2]);
+		weatherTree.m_adults[4].setEvolvesFrom1(weatherTree.m_adolescents[2]);
+		weatherTree.m_adolescents[0].setEvolvesFrom1(weatherTree.m_infants[0]);
+		weatherTree.m_adolescents[1].setEvolvesFrom1(weatherTree.m_infants[1]);
+		weatherTree.m_adolescents[2].setEvolvesFrom1(weatherTree.m_infants[2]);
+		weatherTree.m_infants[0].setEvolvesFrom1(weatherTree.m_eggs[0]);
 		bestiary[1][3]=weatherTree;
 		
 		ses=4;
@@ -233,6 +348,21 @@ public class main
 		iceTree.m_infants[0]=new MonsterType("Snoball",pes,ses,1,0,"The Snoball is a ball of snow, and no one can tell quite whats inside, as many different young snow creatures stay in the ball of snow until a teenager. It has the passive ability melt, which lessens the other teams fire abilities after it is slain",iceTree.m_adolescents[0],iceTree.m_adolescents[1],iceTree.m_adolescents[2]);
 		iceTree.m_eggs=new MonsterType[1];
 		iceTree.m_eggs[0]=new MonsterType("Ice Egg",pes,ses,0,0,"The Ice Egg has a snow glyph on its belly. The top and bottom of the egg are crested in frost, and the rest of the shell is a cool blue. When dropped in water, it will float to the surface and create an ice island around itself, it cannot do this indefinately, as cooling the matter around it takes energy from the baby inside, who cannot live in conditions much beyond freezing",iceTree.m_infants[0]);
+		
+		iceTree.m_elders[0].setEvolvesFrom(iceTree.m_adults[0]);
+		iceTree.m_elders[1].setEvolvesFrom(iceTree.m_adults[1]);
+		iceTree.m_elders[2].setEvolvesFrom(iceTree.m_adults[2]);
+		iceTree.m_elders[3].setEvolvesFrom(iceTree.m_adults[3]);
+		iceTree.m_elders[4].setEvolvesFrom(iceTree.m_adults[4]);
+		iceTree.m_adults[0].setEvolvesFrom(iceTree.m_adolescents[0]);
+		iceTree.m_adults[1].setEvolvesFrom(iceTree.m_adolescents[1]);
+		iceTree.m_adults[2].setEvolvesFrom1(iceTree.m_adolescents[2]);
+		iceTree.m_adults[3].setEvolvesFrom2(iceTree.m_adolescents[2]);
+		iceTree.m_adults[4].setEvolvesFrom3(iceTree.m_adolescents[2]);
+		iceTree.m_adolescents[0].setEvolvesFrom(iceTree.m_infants[0]);
+		iceTree.m_adolescents[1].setEvolvesFrom(iceTree.m_infants[0]);
+		iceTree.m_adolescents[2].setEvolvesFrom(iceTree.m_infants[0]);
+		iceTree.m_infants[0].setEvolvesFrom(iceTree.m_eggs[0]);
 		bestiary[1][4]=iceTree;
 		
 		ses=5;
@@ -258,6 +388,23 @@ public class main
 		deepTree.m_infants[0]=new MonsterType("Deepfish",pes,ses,1,0,"The deepfish is a small fish used to the echoes of the darkness. Its face is sunken, its scales are dark and ruddy, the spines of its fin are black, but the webbing is blue",deepTree.m_adolescents[0],deepTree.m_adolescents[1],deepTree.m_adolescents[2]);
 		deepTree.m_eggs=new MonsterType[1];
 		deepTree.m_eggs[0]=new MonsterType("Deep Egg",pes,ses,0,0,"The deep egg is used to being shrouded in the darkness of the deep, and is nearly unbreakable, as it is used to the pressure on the bottom of the seafloor. It can regulate its internal pressure. When another primary water elemental is in play, its defense rises by half again",deepTree.m_infants[0]);
+		
+		deepTree.m_elders[0].setEvolvesFrom1(deepTree.m_adults[0]);
+		deepTree.m_elders[1].setEvolvesFrom1(deepTree.m_adults[1]);
+		deepTree.m_elders[2].setEvolvesFrom1(deepTree.m_adults[2]);
+		deepTree.m_elders[3].setEvolvesFrom1(deepTree.m_adults[3]);
+		deepTree.m_elders[4].setEvolvesFrom1(deepTree.m_adults[4]);
+		deepTree.m_elders[4].setEvolvesFrom2(deepTree.m_adults[5]);
+		deepTree.m_adults[0].setEvolvesFrom(deepTree.m_adolescents[0]);
+		deepTree.m_adults[1].setEvolvesFrom(deepTree.m_adolescents[1]);
+		deepTree.m_adults[2].setEvolvesFrom(deepTree.m_adolescents[1]);
+		deepTree.m_adults[3].setEvolvesFrom(deepTree.m_adolescents[2]);
+		deepTree.m_adults[4].setEvolvesFrom(deepTree.m_adolescents[3]);
+		deepTree.m_adults[5].setEvolvesFrom(deepTree.m_adolescents[4]);
+		deepTree.m_adolescents[0].setEvolvesFrom(deepTree.m_infants[0]);
+		deepTree.m_adolescents[1].setEvolvesFrom(deepTree.m_infants[0]);
+		deepTree.m_adolescents[2].setEvolvesFrom(deepTree.m_infants[0]);
+		deepTree.m_infants[0].setEvolvesFrom(deepTree.m_eggs[0]);
 		bestiary[1][5]=deepTree;
 
 		//primary earth
@@ -280,6 +427,17 @@ public class main
 		fairyTree.m_infants[0]= new MonsterType("Sprite",pes,ses,1,0,"The sprite is about nine inches tall, and three of those inches are a ridiculously large brown hat, wizard style with a black belt and a golden buckle. it has a mischeveous face with a big red ruddy nose and is always smiling. It is wearing a green frock and brown pointed boots with a black strap and gold buckle. The hem of the green frock is cut into right angles. It can fly, obviously, and enjoys casting mischevious magic. Its personality is similar to everyone's annoying little brother",fairyTree.m_adolescents[0],fairyTree.m_adolescents[1],fairyTree.m_adolescents[2]);
 		fairyTree.m_eggs=new MonsterType[1];
 		fairyTree.m_eggs[0]=new MonsterType("Fairy Egg",pes,ses,0,0,"The fairy egg has mystical fey energy surrounding it in whisps and sparkling. The top 1/4 is gree, the bottom 1/4 is red and in the middle is a gradient between the two. in the center of the egg is the fairy crest",fairyTree.m_infants[0]);
+		
+		fairyTree.m_elders[0].setEvolvesFrom(fairyTree.m_adults[0]);
+		fairyTree.m_elders[1].setEvolvesFrom(fairyTree.m_adults[1]);
+		fairyTree.m_elders[2].setEvolvesFrom(fairyTree.m_adults[2]);
+		fairyTree.m_adults[0].setEvolvesFrom(fairyTree.m_adolescents[0]);
+		fairyTree.m_adults[1].setEvolvesFrom(fairyTree.m_adolescents[1]);
+		fairyTree.m_adults[2].setEvolvesFrom(fairyTree.m_adolescents[2]);
+		fairyTree.m_adolescents[0].setEvolvesFrom(fairyTree.m_infants[0]);
+		fairyTree.m_adolescents[1].setEvolvesFrom(fairyTree.m_infants[0]);
+		fairyTree.m_adolescents[2].setEvolvesFrom(fairyTree.m_infants[0]);
+		fairyTree.m_infants[0].setEvolvesFrom(fairyTree.m_eggs[0]);
 		bestiary[2][0]=fairyTree;
 		
 		ses=1;
@@ -297,20 +455,28 @@ public class main
 		swampTree.m_infants[0]=new MonsterType("Boggart",pes,ses,1,0,"The Boggart lives cheifly in bogs and haunts them",swampTree.m_adolescents[0],swampTree.m_adolescents[1]);
 		swampTree.m_eggs=new MonsterType[1];
 		swampTree.m_eggs[0]= new MonsterType("Swamp Egg",pes,ses,0,0,"The swamp egg is best left in brackish water",swampTree.m_infants[0]);
+		
+		swampTree.m_elders[0].setEvolvesFrom(swampTree.m_adults[0]);
+		swampTree.m_elders[1].setEvolvesFrom(swampTree.m_adults[1]);
+		swampTree.m_adults[0].setEvolvesFrom(swampTree.m_adolescents[0]);
+		swampTree.m_adults[1].setEvolvesFrom(swampTree.m_adolescents[1]);
+		swampTree.m_adolescents[0].setEvolvesFrom(swampTree.m_infants[0]);
+		swampTree.m_adolescents[1].setEvolvesFrom(swampTree.m_infants[0]);
+		swampTree.m_infants[0].setEvolvesFrom(swampTree.m_eggs[0]);
 		bestiary[2][1]=swampTree;
 		
 		ses=2;
 		MonsterTree teraTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		teraTree.m_elders=new MonsterType[6];
 		teraTree.m_elders[0]=new MonsterType("Honey BadgeBear",pes,ses,4,0,"The only thing scarier than a Honey Badger is one that mutated into a huge bear that still has its markings. It really loves honey. Like crazy");
-		teraTree.m_elders[1]=new MonsterType("Sagewolf",pes,ses,4,1,"The Sagewolf is an elder greenwolf with an eyepatch.");
+		teraTree.m_elders[1]=new MonsterType("Awarewolf",pes,ses,4,1,"The Awarewolf is an elder greenwolf with an eyepatch that spends its days meditating, contemplaing the complexities of life.");
 		teraTree.m_elders[2]=new MonsterType("Flourisyana",pes,ses,4,2,"The Flourisyana is a large pale green wolf that has magic bladed flowers that it thows at enemies");
 		teraTree.m_elders[3]=new MonsterType("Tenured Professtrig",pes,ses,4,1,"The professtrid has tenure, thus doesn't actually have to work anymore and can do whatever it wants. It also has a stare that can put someone in their place");
 		teraTree.m_elders[4]=new MonsterType("Tree Hugger Hugger Tree",pes,ses,4,4,"The Tree Hugger Hugger Tree is a tree that loves hugging, especially tree huggers, which is fortunate, because only tree huggers hug trees.");
 		teraTree.m_elders[5]=new MonsterType("Tera Atronach",pes,ses,4,5,"A large tera elemental surrounded by the elementals representing all other primary elements");
 		teraTree.m_adults= new MonsterType[6];
 		teraTree.m_adults[0]=new MonsterType("Honey Badger",pes,ses,3,0,"My only advice to you is not to mess with the honey badger. He was once locked up in vietcong prison for being a badass, and all they wanted him to do is poop. BUT HONEY BADGER DON'T CARE! HONEY BADGER DON'T GIVE A SHIT. credit for the idea belongs to: https://www.youtube.com/watch?v=4r7wHMg5Yjg",teraTree.m_elders[0]);
-		teraTree.m_adults[1]=new MonsterType("Greenwolf",pes,ses,3,1,"The ChapparWolf has hardened the ends of its vines into bark. Its fur has begun turning green",teraTree.m_elders[1]);
+		teraTree.m_adults[1]=new MonsterType("Greenwolf",pes,ses,3,1,"The GreenWolf has hardened the ends of its vines into bark. Its fur has begun turning green",teraTree.m_elders[1]);
 		teraTree.m_adults[2]=new MonsterType("Flowering Aiyana",pes,ses,3,2,"The Aiyana now has flowers growing over its body. It attacks with fragrant fumes from its flowers. Its fur is all white",teraTree.m_elders[2]);
 		teraTree.m_adults[3]=new MonsterType("Professtrig",pes,ses,3,1,"The trig went to college and became a professor which is why he has big white bushy eyebrows and moustache. His most damaging attack is assigning math homework which deals more damage the closer the intelligence is to 5 because if its much lower than that it doesn't care and much higher and its easy",teraTree.m_elders[3]);
 		teraTree.m_adults[4]=new MonsterType("Hugger Tree",pes,ses,3,2,"The hugger tree is a tree with two dedicated branches toward hugging and protecting people. It looks like it has a smile carved in its bark, but it actually just grew that way",teraTree.m_elders[4]);
@@ -322,15 +488,34 @@ public class main
 		teraTree.m_adolescents[3]=new MonsterType("Trig",pes,ses,2,3,"A small nerdy twig that just loves math. It can recite all of the mathematical properties up to vector calclus off of the top of its head, it especially loves sine, cosine and tangent. It always remembers to bring an apple for the teacher. It cant see very well (as it lacks eyes) and thus keeps its bifocals on at all times",teraTree.m_adults[3],teraTree.m_adults[4]);
 		teraTree.m_adolescents[4]=new MonsterType("Tera Symbol",pes,ses,2,5,"The Tera Symbol is a green taurus with the earth symbol it its center",teraTree.m_adults[5]);
 		teraTree.m_infants=new MonsterType[3];
-		teraTree.m_infants[0]=new MonsterType("Babadger", pes,ses,1,0,"The Babadger lures its enemies close with its cuteness, and then slashes them viciously when they're exposed. But its only enemies are its fellow babadger pups, which is why its parents seperate them at birth",teraTree.m_adolescents[0],teraTree.m_adolescents[4]);
-		teraTree.m_infants[1]=new MonsterType("Bulbapup",pes,ses,1,1,"A small, energetic puppy with a large bulb on its back, resembling an onion. It loves to jump around, but when it does so it is rather comical, as the weight of the bulb often makes it fall over. Its bark is adoable. And its not a refrence to Bulbasaur from Pokemon. At all.",teraTree.m_adolescents[1],teraTree.m_adolescents[2],teraTree.m_adolescents[4]);
+		teraTree.m_infants[0]=new MonsterType("Babadger", pes,ses,1,0,"The Babadger lures its enemies close with its cuteness, and then slashes them viciously when they're exposed. But its only enemies are its fellow babadger pups, which is why its parents seperate them at birth",teraTree.m_adolescents[0]);
+		teraTree.m_infants[1]=new MonsterType("Bulbapup",pes,ses,1,1,"A small, energetic puppy with a large bulb on its back, resembling an onion. It loves to jump around, but when it does so it is rather comical, as the weight of the bulb often makes it fall over. Its bark is adoable. And its not a refrence to Bulbasaur from Pokemon. At all.",teraTree.m_adolescents[1],teraTree.m_adolescents[2]);
 		teraTree.m_infants[2]=new MonsterType("Stiket",pes,ses,1,2,"The sticket pretends to be magical but isn't. Its very depressing huh? Its basically just a small stick that can move on its own. But its very good at listening, probably because it cant talk. If it could though it would always advise revenge by saying 'Sticket to em!'",teraTree.m_adolescents[3],teraTree.m_adolescents[4]);		
 		teraTree.m_eggs=new MonsterType[1];
-		teraTree.m_eggs[0]=new MonsterType("Tera Egg",pes,ses,0,0,"A brown Egg that looks a lot like a clod of dirt except for the glowing green earth crest etched onto its surface. It is heavy and when placed in the grass, the grass grows and circles around it, as if coushining it.",teraTree.m_infants[0],teraTree.m_infants[1],teraTree.m_infants[2]);
+		teraTree.m_eggs[0]=new MonsterType("Tera Egg",pes,ses,0,0,"A brown Egg that looks a lot like a clod of dirt except for the glowing green earth crest etched onto its surface. It is heavy and when placed in the grass, the grass grows and circles around it, as if coushining it. It is magical and can evolve into a baby badger, a puppy or a stick. 'But Puppies dont come from eggs!' you may think! Banish your logic, this is a video game, there is no place for it here!",teraTree.m_infants[0],teraTree.m_infants[1],teraTree.m_infants[2]);
+		
+		teraTree.m_elders[0].setEvolvesFrom(teraTree.m_adults[0]);
+		teraTree.m_elders[1].setEvolvesFrom(teraTree.m_adults[1]);
+		teraTree.m_elders[2].setEvolvesFrom(teraTree.m_adults[2]);
+		teraTree.m_elders[3].setEvolvesFrom(teraTree.m_adults[3]);
+		teraTree.m_elders[4].setEvolvesFrom(teraTree.m_adults[4]);
+		teraTree.m_elders[5].setEvolvesFrom(teraTree.m_adults[5]);
+		teraTree.m_adults[0].setEvolvesFrom(teraTree.m_adolescents[0]);
+		teraTree.m_adults[1].setEvolvesFrom(teraTree.m_adolescents[1]);
+		teraTree.m_adults[2].setEvolvesFrom(teraTree.m_adolescents[2]);
+		teraTree.m_adults[3].setEvolvesFrom(teraTree.m_adolescents[3]);
+		teraTree.m_adults[4].setEvolvesFrom(teraTree.m_adolescents[3]);
+		teraTree.m_adults[5].setEvolvesFrom(teraTree.m_adolescents[4]);
+		teraTree.m_adolescents[0].setEvolvesFrom(teraTree.m_infants[0]);
+		teraTree.m_adolescents[1].setEvolvesFrom(teraTree.m_infants[1]);
+		teraTree.m_adolescents[2].setEvolvesFrom(teraTree.m_infants[1]);
+		teraTree.m_adolescents[3].setEvolvesFrom(teraTree.m_infants[2]);
+		teraTree.m_adolescents[4].setEvolvesFrom(teraTree.m_infants[2]);
+		teraTree.m_infants[0].setEvolvesFrom(teraTree.m_eggs[0]);
+		teraTree.m_infants[1].setEvolvesFrom(teraTree.m_eggs[0]);
+		teraTree.m_infants[2].setEvolvesFrom(teraTree.m_eggs[0]);		
 		bestiary[2][2]=teraTree;
 		
-		
-		pes=2;
 		ses=3;
 		MonsterTree pegasusTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		pegasusTree.m_elders=new MonsterType[2];
@@ -346,9 +531,16 @@ public class main
 		pegasusTree.m_infants[0]= new MonsterType("Minor Pegases",pes,ses,1,0,"Half horse, half plant half bird... Or wait, is that too many halves? Its front two legs are treeish, while the torso, head and back legs are a horse and it has wings. Dont look at me, you've all seen Hercules! Its like that except the two front legs are treeish. And its the reaally cute baby form, obviously",pegasusTree.m_adolescents[0],pegasusTree.m_adolescents[1]);
 		pegasusTree.m_eggs=new MonsterType[1];
 		pegasusTree.m_eggs[0]=new MonsterType("Pegasus Egg",pes,ses,0,0,"The Pegasus egg shows a natural affinity for both the air and the earth. However, the part of it that is psyched about flying is on the bottom half, and the part that enjoys the ground is on the top half. So it balances upside down. People say it looks ridiculous, but eggs cant hear sooo...",pegasusTree.m_infants[0]);
+		
+		pegasusTree.m_elders[0].setEvolvesFrom(pegasusTree.m_adults[0]);
+		pegasusTree.m_elders[1].setEvolvesFrom(pegasusTree.m_adults[1]);
+		pegasusTree.m_adults[0].setEvolvesFrom(pegasusTree.m_adolescents[0]);
+		pegasusTree.m_adults[1].setEvolvesFrom(pegasusTree.m_adolescents[1]);
+		pegasusTree.m_adolescents[0].setEvolvesFrom(pegasusTree.m_infants[0]);
+		pegasusTree.m_adolescents[1].setEvolvesFrom(pegasusTree.m_infants[0]);
+		pegasusTree.m_infants[0].setEvolvesFrom(pegasusTree.m_eggs[0]);
 		bestiary[2][3]=pegasusTree;
 
-		pes=2;
 		ses=4;
 		MonsterTree compassionTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		compassionTree.m_elders=new MonsterType[2];
@@ -364,10 +556,18 @@ public class main
 		compassionTree.m_infants[0]=new MonsterType("Buddi",pes,ses,1,0,"A Buddi is a young enlighted being who can heal through compassion, and will heal both the virtuous and the vengeful, it looks like a buddhist mask",compassionTree.m_adolescents[0],compassionTree.m_adolescents[1]);
 		compassionTree.m_eggs=new MonsterType[1];
 		compassionTree.m_eggs[0]=new MonsterType("Compassion Egg",pes,ses,0,0,"The Compassion Egg has a bright green cross on its shell to show that is will grow into a healer",compassionTree.m_infants[0]);
+		
+		compassionTree.m_elders[0].setEvolvesFrom(compassionTree.m_adults[0]);
+		compassionTree.m_elders[1].setEvolvesFrom(compassionTree.m_adults[1]);
+		compassionTree.m_adults[0].setEvolvesFrom(compassionTree.m_adolescents[0]);
+		compassionTree.m_adults[1].setEvolvesFrom(compassionTree.m_adolescents[1]);
+		compassionTree.m_adults[0].setEvolvesFrom(compassionTree.m_adolescents[0]);
+		compassionTree.m_adolescents[0].setEvolvesFrom(compassionTree.m_infants[0]);
+		compassionTree.m_adolescents[1].setEvolvesFrom(compassionTree.m_infants[0]);
+		compassionTree.m_infants[0].setEvolvesFrom(compassionTree.m_eggs[0]);
 		bestiary[2][4]=compassionTree;
 
-		pes=2;
-		ses=5;
+		ses=5;//TODO fix/redo this tree
 		MonsterTree rottenTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		rottenTree.m_elders=new MonsterType[1];
 		rottenTree.m_elders[0] = new MonsterType("BeePee",pes,ses,4,0,"The BeePee floods toxic sludge all over the opponents battlefield which ignites when hit with fire, dealing massive damage");
@@ -379,6 +579,11 @@ public class main
 		rottenTree.m_infants[0]=new MonsterType("Sewerat",pes,ses,1,0,"The Sewerat is a rather large rat that smells terrible.",rottenTree.m_adolescents[0]);
 		rottenTree.m_eggs=new MonsterType[1];
 		rottenTree.m_eggs[0]=new MonsterType("Rotten Egg",pes,ses,0,0,"The Rotten egg infects those around it with disease",rottenTree.m_infants[0]);
+		
+		rottenTree.m_elders[0].setEvolvesFrom(rottenTree.m_adults[0]);
+		rottenTree.m_adults[0].setEvolvesFrom(rottenTree.m_adolescents[0]);
+		rottenTree.m_adolescents[0].setEvolvesFrom(rottenTree.m_infants[0]);
+		rottenTree.m_infants[0].setEvolvesFrom(rottenTree.m_infants[0]);
 		bestiary[2][5]=rottenTree;
 		
 		//primary Air
