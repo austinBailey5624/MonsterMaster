@@ -607,9 +607,19 @@ public class main
 		sandTree.m_infants[0]=new MonsterType("Kangarat",pes,ses,1,0,"The Kangarat is a small rodent that can spend its whole life without having to drink any water. It takes no damage from sandstorm",sandTree.m_adolescents[0],sandTree.m_adolescents[1],sandTree.m_adolescents[2]);
 		sandTree.m_eggs=new MonsterType[1];
 		sandTree.m_eggs[0]=new MonsterType("Sands Egg",pes,ses,0,0,"The Sands Egg has a sandy shell with the sand logo printed on it",sandTree.m_infants[0]);
+		
+		sandTree.m_elders[0].setEvolvesFrom(sandTree.m_adults[0]);
+		sandTree.m_elders[1].setEvolvesFrom(sandTree.m_adults[1]);
+		sandTree.m_elders[2].setEvolvesFrom(sandTree.m_adults[2]);
+		sandTree.m_adults[0].setEvolvesFrom(sandTree.m_adolescents[0]);
+		sandTree.m_adults[1].setEvolvesFrom(sandTree.m_adolescents[1]);
+		sandTree.m_adults[2].setEvolvesFrom(sandTree.m_adolescents[2]);
+		sandTree.m_adolescents[0].setEvolvesFrom(sandTree.m_infants[0]);
+		sandTree.m_adolescents[1].setEvolvesFrom(sandTree.m_infants[0]);
+		sandTree.m_adolescents[2].setEvolvesFrom(sandTree.m_infants[0]);
+		sandTree.m_infants[0].setEvolvesFrom(sandTree.m_eggs[0]);
 		bestiary[3][0]=sandTree;
 		
-		pes=3;
 		ses=1;
 		MonsterTree seaBreezeTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		seaBreezeTree.m_elders = new MonsterType[2];
@@ -625,9 +635,16 @@ public class main
 		seaBreezeTree.m_infants[0]=new MonsterType("Gullfish",pes,ses,1,0,"The first fish a baby gull ever caught is still in its claws. Initially there was some fear between the baby gull and the fish, but they became fast friends when the fish found out how cool it is to fly",seaBreezeTree.m_adolescents[0],seaBreezeTree.m_adolescents[1]);
 		seaBreezeTree.m_eggs=new MonsterType[1];
 		seaBreezeTree.m_eggs[0]=new MonsterType("SeaBreeze Egg",pes,ses,0,0,"The SeaBreeze egg's parents often hold onto it for months at a time before they see dry land. SeaBreeze Monsters love flying above the ocean, so when a SeaBreeze egg is laid, it is caught by the father who holds it while they are flying, even when sleeping.",seaBreezeTree.m_infants[0]);
-		bestiary[3][1]=seaBreezeTree;
 		
-		pes=3;
+		seaBreezeTree.m_elders[0].setEvolvesFrom(seaBreezeTree.m_adults[0]);
+		seaBreezeTree.m_elders[1].setEvolvesFrom(seaBreezeTree.m_adults[1]);
+		seaBreezeTree.m_adults[0].setEvolvesFrom(seaBreezeTree.m_adolescents[0]);
+		seaBreezeTree.m_adults[1].setEvolvesFrom(seaBreezeTree.m_adolescents[1]);
+		seaBreezeTree.m_adolescents[0].setEvolvesFrom(seaBreezeTree.m_infants[0]);
+		seaBreezeTree.m_adolescents[1].setEvolvesFrom(seaBreezeTree.m_infants[0]);
+		seaBreezeTree.m_infants[0].setEvolvesFrom(seaBreezeTree.m_eggs[0]);
+		bestiary[3][1]=seaBreezeTree;
+	
 		ses=2;
 		MonsterTree birdTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		birdTree.m_elders=new MonsterType[2];
@@ -643,9 +660,16 @@ public class main
 		birdTree.m_infants[0]=new MonsterType("Colour",pes,ses,1,0,"The Colour is a colorful hatchling.",birdTree.m_adolescents[0],birdTree.m_adolescents[1]);
 		birdTree.m_eggs=new MonsterType[1];
 		birdTree.m_eggs[0]=new MonsterType("Bird Egg",pes,ses,0,0,"The BirdEgg is a rainbow colored egg with the bird crest at its center",birdTree.m_infants[0]);
+		
+		birdTree.m_elders[0].setEvolvesFrom(birdTree.m_adults[0]);
+		birdTree.m_elders[1].setEvolvesFrom(birdTree.m_adults[1]);
+		birdTree.m_adults[0].setEvolvesFrom(birdTree.m_adolescents[0]);
+		birdTree.m_adults[1].setEvolvesFrom(birdTree.m_adolescents[1]);
+		birdTree.m_adolescents[0].setEvolvesFrom(birdTree.m_infants[0]);
+		birdTree.m_adolescents[1].setEvolvesFrom(birdTree.m_infants[0]);
+		birdTree.m_infants[0].setEvolvesFrom(birdTree.m_eggs[0]);
 		bestiary[3][2]=birdTree;
 
-		pes=3;
 		ses=3;
 		MonsterTree aeroTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		aeroTree.m_elders=new MonsterType[2];
@@ -663,9 +687,19 @@ public class main
 		aeroTree.m_infants[0]=new MonsterType("Flapper",pes,ses,1,0,"The Flapper shows a ridiculous amount of leg, esspecially for this time period. It is very stylish, and wears a headband with a feather on it, even though its already a bird",aeroTree.m_adolescents[0],aeroTree.m_adolescents[1],aeroTree.m_adolescents[2]);
 		aeroTree.m_eggs = new MonsterType[1];
 		aeroTree.m_eggs[0]=new MonsterType("AeroEgg",pes,ses,0,0,"The aeroEgg hovers in the air, and is yellow with the bird crest on it. It was designed to hover just in case one of its parents accidentally knocks it out of the tree, so it can be rescued before it hits the ground",aeroTree.m_infants[0]);
+		
+		aeroTree.m_elders[0].setEvolvesFrom1(aeroTree.m_adults[0]);
+		aeroTree.m_elders[0].setEvolvesFrom2(aeroTree.m_adults[1]);
+		aeroTree.m_elders[1].setEvolvesFrom(aeroTree.m_adults[2]);
+		aeroTree.m_adults[0].setEvolvesFrom(aeroTree.m_adolescents[0]);
+		aeroTree.m_adults[1].setEvolvesFrom(aeroTree.m_adolescents[1]);
+		aeroTree.m_adults[2].setEvolvesFrom(aeroTree.m_adolescents[2]);
+		aeroTree.m_adolescents[0].setEvolvesFrom(aeroTree.m_infants[0]);
+		aeroTree.m_adolescents[1].setEvolvesFrom(aeroTree.m_infants[0]);
+		aeroTree.m_adolescents[2].setEvolvesFrom(aeroTree.m_infants[0]);
+		aeroTree.m_infants[0].setEvolvesFrom(aeroTree.m_eggs[0]);
 		bestiary[3][3]=aeroTree;
 
-		pes=3;
 		ses=4;
 		MonsterTree cockaTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		cockaTree.m_elders=new MonsterType[1];
@@ -682,10 +716,18 @@ public class main
 		cockaTree.m_infants[0]=new MonsterType("Cockaone",pes,ses,1,0,"A baby cockatoo that has yet to leave its shell. Its cracked and eveything, but it hasn't left. It wears the top of the shell like a helmet",cockaTree.m_adolescents[0],cockaTree.m_adolescents[1],cockaTree.m_adolescents[2]);
 		cockaTree.m_eggs = new MonsterType[1];
 		cockaTree.m_eggs[0]=new MonsterType("CockaEgg",pes,ses,0,0,"The CockaEgg is a pure white egg with the cocka crest on it",cockaTree.m_infants[0]);
+		cockaTree.m_elders[0].setEvolvesFrom1(cockaTree.m_adults[0]);
+		cockaTree.m_elders[1].setEvolvesFrom2(cockaTree.m_adults[1]);
+		cockaTree.m_elders[2].setEvolvesFrom3(cockaTree.m_adults[2]);
+		cockaTree.m_adults[0].setEvolvesFrom(cockaTree.m_adolescents[0]);
+		cockaTree.m_adults[1].setEvolvesFrom(cockaTree.m_adolescents[1]);
+		cockaTree.m_adults[2].setEvolvesFrom(cockaTree.m_adolescents[2]);
+		cockaTree.m_adolescents[0].setEvolvesFrom(cockaTree.m_infants[0]);
+		cockaTree.m_adolescents[1].setEvolvesFrom(cockaTree.m_infants[0]);
+		cockaTree.m_adolescents[2].setEvolvesFrom(cockaTree.m_infants[0]);
+		cockaTree.m_infants[0].setEvolvesFrom(cockaTree.m_infants[0]);
 		bestiary[3][4]=cockaTree;
 
-		
-		pes=3;
 		ses=5;
 		MonsterTree nightWingTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		nightWingTree.m_elders=new MonsterType[3];
@@ -704,6 +746,17 @@ public class main
 		nightWingTree.m_infants[0]=new MonsterType("Foreshadowwing",pes,ses,1,0,"Its very hard to tell what manner of winged beast this is, as it is covered by shadows and appears to have four wings",nightWingTree.m_adolescents[0],nightWingTree.m_adolescents[1],nightWingTree.m_adolescents[2]);
 		nightWingTree.m_eggs=new MonsterType[1];
 		nightWingTree.m_eggs[0]=new MonsterType("NightWing Egg",pes,ses,0,0,"The NightWing egg is black and nearly hidden in the shadows of the cave where it is laid",nightWingTree.m_infants[0]);
+		
+		nightWingTree.m_elders[0].setEvolvesFrom(nightWingTree.m_adults[0]);
+		nightWingTree.m_elders[1].setEvolvesFrom(nightWingTree.m_adults[1]);
+		nightWingTree.m_elders[2].setEvolvesFrom(nightWingTree.m_adults[2]);
+		nightWingTree.m_adults[0].setEvolvesFrom(nightWingTree.m_adolescents[0]);
+		nightWingTree.m_adults[1].setEvolvesFrom(nightWingTree.m_adolescents[1]);
+		nightWingTree.m_adults[2].setEvolvesFrom(nightWingTree.m_adolescents[2]);
+		nightWingTree.m_adolescents[0].setEvolvesFrom(nightWingTree.m_infants[0]);
+		nightWingTree.m_adolescents[1].setEvolvesFrom(nightWingTree.m_infants[0]);
+		nightWingTree.m_adolescents[2].setEvolvesFrom(nightWingTree.m_infants[0]);
+		nightWingTree.m_infants[0].setEvolvesFrom(nightWingTree.m_eggs[0]);
 		bestiary[3][5]=nightWingTree;
 
 		
@@ -728,9 +781,19 @@ public class main
 		solarTree.m_infants[0]=new MonsterType("Tona",pes,ses,1,0,"A tona is a floating orb that gains energy from the suns rays. At night it floats to rest and stops glowing, appearing a simple stone",solarTree.m_adolescents[0],solarTree.m_adolescents[1],solarTree.m_adolescents[2]);
 		solarTree.m_eggs = new MonsterType[1];
 		solarTree.m_eggs[0]=new MonsterType("Solar egg",pes,ses,0,0,"The solar egg glows slightly in the night if left out in the sun all day, as if it absorbs the sun's rays",solarTree.m_infants[0]);
+		
+		solarTree.m_elders[0].setEvolvesFrom(solarTree.m_adults[0]);
+		solarTree.m_elders[1].setEvolvesFrom(solarTree.m_adults[1]);
+		solarTree.m_elders[2].setEvolvesFrom(solarTree.m_adults[2]);
+		solarTree.m_adults[0].setEvolvesFrom(solarTree.m_adolescents[0]);
+		solarTree.m_adults[1].setEvolvesFrom(solarTree.m_adolescents[1]);
+		solarTree.m_adults[2].setEvolvesFrom(solarTree.m_adolescents[2]);
+		solarTree.m_adolescents[0].setEvolvesFrom(solarTree.m_infants[0]);
+		solarTree.m_adolescents[1].setEvolvesFrom(solarTree.m_infants[0]);
+		solarTree.m_adolescents[2].setEvolvesFrom(solarTree.m_infants[0]);
+		solarTree.m_infants[0].setEvolvesFrom(solarTree.m_eggs[0]);
 		bestiary[4][0]=solarTree;
 		
-		pes=4;
 		ses=1;
 		MonsterTree lunarTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		lunarTree.m_elders=new MonsterType[2];
@@ -746,10 +809,16 @@ public class main
 		lunarTree.m_infants[0]=new MonsterType("Lunapup",pes,ses,1,0,"The Lunapup is a small wolf born from a lunar egg on the full moon.",lunarTree.m_adolescents[0],lunarTree.m_adolescents[1]);
 		lunarTree.m_eggs=new MonsterType[1];
 		lunarTree.m_eggs[0]=new MonsterType("Lunar egg",pes,ses,0,0,"The Lunar egg appears to be a stone during the day, however when moonlight shines upon it, it is clearly an egg with the lunar symbol embossed upon it. The brightness of the symbol is determined by the phase the moon is in.",lunarTree.m_infants[0]);
+		
+		lunarTree.m_elders[0].setEvolvesFrom(lunarTree.m_adults[0]);
+		lunarTree.m_elders[1].setEvolvesFrom(lunarTree.m_adults[1]);
+		lunarTree.m_adults[0].setEvolvesFrom(lunarTree.m_adolescents[0]);
+		lunarTree.m_adults[1].setEvolvesFrom(lunarTree.m_adolescents[1]);
+		lunarTree.m_adolescents[0].setEvolvesFrom(lunarTree.m_infants[0]);
+		lunarTree.m_adolescents[1].setEvolvesFrom(lunarTree.m_infants[0]);
+		lunarTree.m_infants[0].setEvolvesFrom(lunarTree.m_eggs[0]);
 		bestiary[4][1]=lunarTree;
 
-
-		pes=4;
 		ses=2;
 		MonsterTree guardianTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		guardianTree.m_elders=new MonsterType[2];
@@ -765,10 +834,16 @@ public class main
 		guardianTree.m_infants[0]=new MonsterType("Escutcheoner",pes,ses,1,0,"The Escutcheoner is a small creature with a big shield that it is very proud of and shines on a daily basis. In combat he can attack as usual",guardianTree.m_adolescents[0],guardianTree.m_adolescents[1]);
 		guardianTree.m_eggs=new MonsterType[1];
 		guardianTree.m_eggs[0]=new MonsterType("Guardian Egg",pes,ses,0,0,"The guardian tree is hard as a rock, the guardian crest embossed on its center",guardianTree.m_infants[0]);
+		
+		guardianTree.m_elders[0].setEvolvesFrom(guardianTree.m_adults[0]);
+		guardianTree.m_elders[1].setEvolvesFrom(guardianTree.m_adults[1]);
+		guardianTree.m_adults[0].setEvolvesFrom(guardianTree.m_adolescents[0]);
+		guardianTree.m_adults[1].setEvolvesFrom(guardianTree.m_adolescents[1]);
+		guardianTree.m_adolescents[0].setEvolvesFrom(guardianTree.m_infants[0]);
+		guardianTree.m_adolescents[1].setEvolvesFrom(guardianTree.m_infants[0]);
+		guardianTree.m_infants[0].setEvolvesFrom(guardianTree.m_eggs[0]);
 		bestiary[4][2]=guardianTree;
 		
-
-		pes=4;
 		ses=3;
 		MonsterTree holyTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		holyTree.m_elders=new MonsterType[2];
@@ -784,9 +859,16 @@ public class main
 		holyTree.m_infants[0]=new MonsterType("Demiangel",pes,ses,1,0,"The Demiangel is a small angel who left heaven in order to help the world (or its wings were not strong enough to keep it that high in the sky, depending on who you ask) its magical ability is to heal, however it refuses to heal anything with a dark or fire element",holyTree.m_adolescents[0],holyTree.m_adolescents[1]);
 		holyTree.m_eggs = new MonsterType[1];
 		holyTree.m_eggs[0]= new MonsterType("Holy Egg", pes,ses,0,0,"It is a golden egg. Unfortunately there are only a finite number of them because the people benefiting from the golden egg killed the goose that laid them thinking it must be made of more valuable materials. They were wrong.",holyTree.m_infants[0]);
-		bestiary[4][3]=holyTree;
 		
-		pes=4;
+		holyTree.m_elders[0].setEvolvesFrom(holyTree.m_adults[0]);
+		holyTree.m_elders[1].setEvolvesFrom(holyTree.m_adults[1]);
+		holyTree.m_adults[0].setEvolvesFrom(holyTree.m_adolescents[0]);
+		holyTree.m_adults[1].setEvolvesFrom(holyTree.m_adolescents[1]);
+		holyTree.m_adolescents[0].setEvolvesFrom(holyTree.m_infants[0]);
+		holyTree.m_adolescents[1].setEvolvesFrom(holyTree.m_infants[0]);
+		holyTree.m_infants[0].setEvolvesFrom(holyTree.m_eggs[0]);
+		bestiary[4][3]=holyTree;
+	
 		ses=4;
 		MonsterTree luxorTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		luxorTree.m_elders=new MonsterType[3];
@@ -805,16 +887,54 @@ public class main
 		luxorTree.m_infants[0]=new MonsterType("Lumin",pes,ses,1,0,"A lesser lumin is a small hovering ball of light that can heal other light monsters",luxorTree.m_adolescents[0],luxorTree.m_adolescents[1],luxorTree.m_adolescents[2]);
 		luxorTree.m_eggs = new MonsterType[1];
 		luxorTree.m_eggs[0]=new MonsterType("Luxor Egg",pes,ses,0,0,"The luxor Egg glows a brilliant white and has the luxor symbol etched on its surface",luxorTree.m_infants[0]);
+		
+		luxorTree.m_elders[0].setEvolvesFrom(luxorTree.m_adults[0]);
+		luxorTree.m_elders[1].setEvolvesFrom(luxorTree.m_adults[1]);
+		luxorTree.m_elders[2].setEvolvesFrom(luxorTree.m_adults[2]);
+		luxorTree.m_adults[0].setEvolvesFrom(luxorTree.m_adolescents[0]);
+		luxorTree.m_adults[1].setEvolvesFrom(luxorTree.m_adolescents[1]);
+		luxorTree.m_adults[2].setEvolvesFrom(luxorTree.m_adolescents[2]);
+		luxorTree.m_adolescents[0].setEvolvesFrom(luxorTree.m_infants[0]);
+		luxorTree.m_adolescents[1].setEvolvesFrom(luxorTree.m_infants[0]);
+		luxorTree.m_adolescents[2].setEvolvesFrom(luxorTree.m_infants[0]);
+		luxorTree.m_infants[0].setEvolvesFrom(luxorTree.m_eggs[0]);
 		bestiary[4][4]=luxorTree;
 		
-		//TODO:complete RedemptionTree;
-//		bestiary[4][5]=defineRedemptionMonsterTypes();
+		ses=5;
+		MonsterTree redemptionTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		redemptionTree.m_elders = new MonsterType[3];
+		redemptionTree.m_elders[0]=new MonsterType("Atonement",pes,ses,4,0,"The Atonment is a very large muscluar ex-demon that is particularly enraged by sin, Its unique attack is the Redemption Cross Slash that can reduce all enemies health to at least 1 and deals more damage against dark elementals");
+		redemptionTree.m_elders[1]=new MonsterType("Redeemer",pes,ses,4,1,"The Redeemer's special attack temporarily changes the primary element of its target to light for the duration of the battle");
+		redemptionTree.m_elders[2]=new MonsterType("Enlighten",pes,ses,4,2,"The Enlighten looks like the Glowen except it has magestic black wings, in stark contrast with its white robe. It can cast an area of effect light attack that harms its enemies and heals its allies of blindness and casts regen on them");
+		redemptionTree.m_adults = new MonsterType[3];
+		redemptionTree.m_adults[0]=new MonsterType("Astone",pes,ses,3,0,"The Atonet is a large muscular ex-demon whose horn-stumps are clearly visible. It redeems itself by fighting for just causes. Its special will not end an enemies life, as it has sworn off killing, but will leave it with at lest 1 hp remaining",redemptionTree.m_elders[0]);
+		redemptionTree.m_adults[1]=new MonsterType("Restit",pes,ses,3,1,"The Restit is an ex-demon that is very agile. It can speak words of hope to dark monsters that does average damage but costs no mp",redemptionTree.m_elders[1]);
+		redemptionTree.m_adults[2]=new MonsterType("Glowen",pes,ses,3,2,"The Glowen is a redeemed fallen angel, whose cut wings are beginning to regrow. Its eyes caused it to sin, so it cast them aside, and wears a blindfold in their place. It cannot hit with phyiscal attacks, but it can cast repent, a spell that will attack all of the monsters on the other field",redemptionTree.m_elders[2]);
+		redemptionTree.m_adolescents=new MonsterType[3];
+		redemptionTree.m_adolescents[0]=new MonsterType("Atonet",pes,ses,2,0,"The Astone is an ex-demon that is large and round for its age. It redeems itself by taking some of the damage from another. Like its predecessor form it is a shell of darkness engulfing an orb of light. however, it is much larger and fatter",redemptionTree.m_adults[0]);
+		redemptionTree.m_adolescents[1]=new MonsterType("Reprate",pes,ses,2,1,"The Reperate is an ex-demon that is thin lanky and agile. It redeems itself by correcting its path, and zelously avoiding temptation. It has a sneak attack that does extra damage against dark elementals",redemptionTree.m_adults[1]);
+		redemptionTree.m_adolescents[2]=new MonsterType("Dimmer",pes,ses,2,2,"The Dimmer is a young ex-demon that his small and angelic, with a cowl that covers much of its face, dirty white lined with black. It redeems itself through prayer and meditation, and can cast shine, a magic spell that shows the way through the darkness",redemptionTree.m_adults[2]);
+		redemptionTree.m_infants=new MonsterType[1];
+		redemptionTree.m_infants[0]=new MonsterType("Guiltor",pes,ses,1,0,"The guiltor is a minor demon whose outer body is dark. However, a globe of light dwells within, that holds its hope of redemption. When it is near, mistakes are better remembered, although reparations are not always clear",redemptionTree.m_adolescents[0],redemptionTree.m_adolescents[1],redemptionTree.m_adolescents[2]);
+		redemptionTree.m_eggs=new MonsterType[1];
+		redemptionTree.m_eggs[0]=new MonsterType("Redemption Egg",pes,ses,0,0,"The Redemption egg appears metallic, as if some base crude metals grime was scraped away, revealing an inner shine",redemptionTree.m_infants[0]);
 		
+		redemptionTree.m_elders[0].setEvolvesFrom(redemptionTree.m_adults[0]);
+		redemptionTree.m_elders[1].setEvolvesFrom(redemptionTree.m_adults[1]);
+		redemptionTree.m_elders[2].setEvolvesFrom(redemptionTree.m_adults[2]);
+		redemptionTree.m_adults[0].setEvolvesFrom(redemptionTree.m_adolescents[0]);
+		redemptionTree.m_adults[1].setEvolvesFrom(redemptionTree.m_adolescents[1]);
+		redemptionTree.m_adults[2].setEvolvesFrom(redemptionTree.m_adolescents[2]);
+		redemptionTree.m_adolescents[0].setEvolvesFrom(redemptionTree.m_infants[0]);
+		redemptionTree.m_adolescents[1].setEvolvesFrom(redemptionTree.m_infants[0]);
+		redemptionTree.m_adolescents[2].setEvolvesFrom(redemptionTree.m_infants[0]);
+		redemptionTree.m_infants[0].setEvolvesFrom(redemptionTree.m_eggs[0]);
 		//primary Dark
 
-		MonsterTree demonicTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+
 		pes=5;
 		ses=0;
+		MonsterTree demonicTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		demonicTree.m_elders = new MonsterType[3];
 		demonicTree.m_elders[0] = new MonsterType("Astaroth",pes,ses,4,0,"Astaroth is a bright red demon with large black horns fifteen feet tall. He weilds a large corrupted axe that has a living eye where the blade meets the haft");
 		demonicTree.m_elders[1] = new MonsterType("Asag",pes,ses,4,1,"Asag is also known as the fear. He appears as a giant demon with the body of a bear and the head of a stag.");
@@ -831,11 +951,21 @@ public class main
 		demonicTree.m_infants[0] = new MonsterType("Fiend",pes,ses,1,0,"The fiend is a minor demon, colored dark red with black horns");
 		demonicTree.m_eggs = new MonsterType[1];
 		demonicTree.m_eggs[0] = new MonsterType("Demonic Egg",pes,ses,0,0,"The demonic egg is is a rusty black with the demonic symbol embossed on its center, it is painful to touch");
+		
+		demonicTree.m_elders[0].setEvolvesFrom(demonicTree.m_adults[0]);
+		demonicTree.m_elders[1].setEvolvesFrom(demonicTree.m_adults[1]);
+		demonicTree.m_elders[2].setEvolvesFrom(demonicTree.m_adults[2]);
+		demonicTree.m_adults[0].setEvolvesFrom(demonicTree.m_adolescents[0]);
+		demonicTree.m_adults[1].setEvolvesFrom(demonicTree.m_adolescents[1]);
+		demonicTree.m_adults[2].setEvolvesFrom(demonicTree.m_adolescents[2]);
+		demonicTree.m_adolescents[0].setEvolvesFrom(demonicTree.m_infants[0]);
+		demonicTree.m_adolescents[1].setEvolvesFrom(demonicTree.m_infants[0]);
+		demonicTree.m_adolescents[2].setEvolvesFrom(demonicTree.m_infants[0]);
+		demonicTree.m_infants[0].setEvolvesFrom(demonicTree.m_eggs[0]);
 		bestiary[5][0]=demonicTree;
 
-		MonsterTree poisonTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
-		pes=5;
 		ses=1;
+		MonsterTree poisonTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		poisonTree.m_elders= new MonsterType[4];
 		poisonTree.m_elders[0]= new MonsterType("Queen B",pes,ses,3,0,"Queen B is the younger sister of Queen A, however when they were in a beauty pagent, everyone chose Queen B, so she became the dominant Queen. She can summon Stingers to the empty allied positions");
 		poisonTree.m_elders[1]=new MonsterType("King Rattle",pes,ses,3,1,"King Rattle has a large Rattle on the end of its tail. Not like a snakes, like a babies rattle, but really large. It also has a crown. Its scales are brown and it is very large");
@@ -853,11 +983,22 @@ public class main
 		poisonTree.m_infants[0] = new MonsterType("Fanger",pes,ses,1,0,"The fanger is a small scorpion that can lift its legs up and slither and has fangs",poisonTree.m_adolescents[0],poisonTree.m_adolescents[1],poisonTree.m_adolescents[2]);
 		poisonTree.m_eggs = new MonsterType[1];
 		poisonTree.m_eggs[0] = new MonsterType("Poison Egg",pes,ses,0,0,"The poison egg is black with a greenish hue. The symbol is embossed on its surface, and spikes extend from the shell, which defend itself. The spikes are of course dipped in poison",poisonTree.m_infants[0]);
-		bestiary[5][1]=poisonTree;
 		
-		pes=5;
-		ses=2;
-		MonsterTree undeadTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
+		poisonTree.m_elders[0].setEvolvesFrom(poisonTree.m_adults[0]);
+		poisonTree.m_elders[1].setEvolvesFrom(poisonTree.m_adults[1]);
+		poisonTree.m_elders[2].setEvolvesFrom(poisonTree.m_adults[2]);
+		poisonTree.m_elders[3].setEvolvesFrom(poisonTree.m_adults[3]);
+		poisonTree.m_adults[0].setEvolvesFrom(poisonTree.m_adolescents[0]);
+		poisonTree.m_adults[1].setEvolvesFrom(poisonTree.m_adolescents[1]);
+		poisonTree.m_adults[2].setEvolvesFrom(poisonTree.m_adolescents[2]);
+		poisonTree.m_adolescents[0].setEvolvesFrom(poisonTree.m_infants[0]);
+		poisonTree.m_adolescents[1].setEvolvesFrom(poisonTree.m_infants[0]);
+		poisonTree.m_adolescents[2].setEvolvesFrom(poisonTree.m_infants[0]);
+		poisonTree.m_infants[0].setEvolvesFrom(poisonTree.m_eggs[0]);
+		bestiary[5][1]=poisonTree;
+
+		ses=2;//TODO Fix this its embarrassing
+		MonsterTree undeadTree = new MonsterTree(pes,ses,typeNames[pes][ses]);//ghast, revenant, 
 		undeadTree.m_elders = new MonsterType[2];
 		undeadTree.m_elders[0] = new MonsterType("Skulltyrant",pes,ses,4,0,"The Skulltyrant is a large undead T-rex. Very Scary");
 		undeadTree.m_elders[1] = new MonsterType("Specter",pes,ses,4,1,"The Specter can possess an enemy for three turns after which it dies");
@@ -871,9 +1012,15 @@ public class main
 		undeadTree.m_infants[0] = new MonsterType("Stull",pes,ses,1,0,"The stull is a floating skull with glowing green orbs in its eye sockets",undeadTree.m_adolescents[0],undeadTree.m_adolescents[1]);
 		undeadTree.m_eggs = new MonsterType[1];
 		undeadTree.m_eggs[0] = new MonsterType("Undead Egg",pes,ses,0,0,"Lifeless and cold, the egg is the color and consistency of bone, with the undead crest embossed on the center",undeadTree.m_infants[0]);
+		undeadTree.m_elders[0].setEvolvesFrom(undeadTree.m_adults[0]);
+		undeadTree.m_elders[1].setEvolvesFrom(undeadTree.m_adults[1]);
+		undeadTree.m_adults[0].setEvolvesFrom(undeadTree.m_adolescents[0]);
+		undeadTree.m_adults[1].setEvolvesFrom(undeadTree.m_adolescents[1]);
+		undeadTree.m_adolescents[0].setEvolvesFrom(undeadTree.m_infants[0]);
+		undeadTree.m_adolescents[1].setEvolvesFrom(undeadTree.m_infants[0]);
+		undeadTree.m_infants[0].setEvolvesFrom(undeadTree.m_eggs[0]);
 		bestiary[5][2]=undeadTree;
 		
-		pes=5;
 		ses=3;
 		MonsterTree stormTree= new MonsterTree(pes,ses,typeNames[pes][ses]);
 		stormTree.m_elders = new MonsterType[1];
@@ -886,10 +1033,12 @@ public class main
 		stormTree.m_infants[0]= new MonsterType("Maltag", pes,ses,1,0,"Have you ever had a really bad day? So bad that even though there was a clear blue sky, it felt like a small dark cloud was following you around? This is that cloud",stormTree.m_adolescents[0]);
 		stormTree.m_eggs = new MonsterType[1];
 		stormTree.m_eggs[0] = new MonsterType("Storm Egg",pes,ses,0,0,"The storm egg is solid black and appears to be made of obsidian, excepting, of course, the symbol embossed on its center",stormTree.m_infants[0]);
+		stormTree.m_adults[0].setEvolvesFrom(stormTree.m_adolescents[0]);
+		stormTree.m_adolescents[0].setEvolvesFrom(stormTree.m_infants[0]);
+		stormTree.m_infants[0].setEvolvesFrom(stormTree.m_eggs[0]);
 		bestiary[5][3]=stormTree;
 
-		pes=5;
-		ses=4;
+		ses=4;//TODO fix this its too small
 		MonsterTree betrayerTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		betrayerTree.m_elders = new MonsterType[1];
 		betrayerTree.m_elders[0] = new MonsterType("Avengeant",pes,ses,4,0,"The Avengeant once served God, but gien will, disagreed with his descision. When he went to resolve the conflict, God couldn't stand being questioned and excommunicated the Avengent, who has hated God and those loyal to him ever since");
@@ -902,9 +1051,14 @@ public class main
 		betrayerTree.m_infants[0] = new MonsterType("Fallen DemiAngel",pes,ses,1,0,"The fallen demiAngel is an angel that followed the light bringer when he fell from heaven. It was weak then, and has yet to grow",betrayerTree.m_adolescents[0],betrayerTree.m_adolescents[1]);
 		betrayerTree.m_eggs = new MonsterType[1];
 		betrayerTree.m_eggs[0] = new MonsterType("Betrayer Eggs",pes,ses,0,0,"The betrayer egg is half black and half white its center embossed with the betrayers symbol, a back being stabbed",betrayerTree.m_infants[0]);
+		betrayerTree.m_elders[0].setEvolvesFrom(betrayerTree.m_adults[0]);
+		betrayerTree.m_adults[0].setEvolvesFrom1(betrayerTree.m_adolescents[0]);
+		betrayerTree.m_adults[0].setEvolvesFrom2(betrayerTree.m_adolescents[0]);
+		betrayerTree.m_adolescents[0].setEvolvesFrom(betrayerTree.m_infants[0]);
+		betrayerTree.m_adolescents[1].setEvolvesFrom(betrayerTree.m_infants[0]);
+		betrayerTree.m_infants[0].setEvolvesFrom(betrayerTree.m_eggs[0]);
 		bestiary[5][4]=betrayerTree;
 		
-		pes=5;
 		ses=5;
 		MonsterTree umbralTree = new MonsterTree(pes,ses,typeNames[pes][ses]);
 		umbralTree.m_elders = new MonsterType[2];
@@ -921,6 +1075,15 @@ public class main
 		umbralTree.m_infants[0] = new MonsterType("Umbress",pes,ses,1,0,"The umbress appears to bea small floating black flame, with two purple eyes", umbralTree.m_adolescents[0],umbralTree.m_adolescents[1],umbralTree.m_adolescents[2]);
 		umbralTree.m_eggs = new MonsterType[1];
 		umbralTree.m_eggs[0] = new MonsterType("Umbral Egg",pes,ses,0,0,"The umbral egg sucks light and appears to cast dark tendrils from its shell, but if you look again theyre gone. It seems weak and fragile when exposed to light, but during the dusk, when the light is weak, the blinded eye  can be seen embossed on its surface",umbralTree.m_infants[0]);
+		umbralTree.m_elders[0].setEvolvesFrom(umbralTree.m_adults[0]);
+		umbralTree.m_elders[1].setEvolvesFrom(umbralTree.m_adults[1]);
+		umbralTree.m_adults[0].setEvolvesFrom1(umbralTree.m_adolescents[0]);
+		umbralTree.m_adults[0].setEvolvesFrom2(umbralTree.m_adolescents[1]);
+		umbralTree.m_adults[1].setEvolvesFrom(umbralTree.m_adolescents[2]);
+		umbralTree.m_adolescents[0].setEvolvesFrom(umbralTree.m_infants[0]);
+		umbralTree.m_adolescents[1].setEvolvesFrom(umbralTree.m_infants[0]);
+		umbralTree.m_adolescents[2].setEvolvesFrom(umbralTree.m_infants[0]);
+		umbralTree.m_infants[0].setEvolvesFrom(umbralTree.m_eggs[0]);
 		bestiary[5][5]=umbralTree;
 		return bestiary;
 	}
