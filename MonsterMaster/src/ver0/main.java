@@ -1306,10 +1306,10 @@ public class main
 		defineTypes();
 		exit=false;
 		String mainMenuOptions="Main menu\n1)Count Monsters\n2)Transverse Bestiary";
-		System.out.println(mainMenuOptions);
 		MonsterTree[][]bestiary=define();
 		while(!exit)
 		{
+			System.out.println(mainMenuOptions);
 			choice=myScanner.nextInt();
 			if(choice==1)
 			{
@@ -1324,7 +1324,7 @@ public class main
 	public static void transverseBestiary(MonsterTree[][] bestiary)
 	{
 		exit=false;
-		String mainBestiaryMenuOptions="Bestiry main menu, choose primary element:\n1) Fire \n2) Water \n3) Earth \n4) Air \n5) Light \n6) Dark\n7) Back";
+		String mainBestiaryMenuOptions="Bestiry main menu, choose primary element:\n1) Fire \n2) Water \n3) Earth \n4) Air \n5) Light \n6) Dark\n7) Back\n8) Exit";
 		while(!exit)
 		{
 			System.out.println(mainBestiaryMenuOptions);
@@ -1355,6 +1355,11 @@ public class main
 			}
 			else if(choice==7)
 			{
+//				exit=true;
+				return;
+			}
+			else if(choice==8)
+			{
 				exit=true;
 				return;
 			}
@@ -1369,7 +1374,7 @@ public class main
 //		System.out.println("primary is : "+ primary);//debugging
 //		System.out.println("typeNames[0][0]= " + typeNames[0][0]);//debugging
 		String BestiaryMenuOptions1="Bestiary Secondary Menu, please choose the derived type you want to look at\n1) " + typeNames[primary][0] + "\n2) " + typeNames[primary][1] + "\n3) " + typeNames[primary][2] + "\n4) " + typeNames[primary][3] + 
-				"\n5) " + typeNames[primary][4] + "\n6) " + typeNames[primary][5] + "\n7) Back";
+				"\n5) " + typeNames[primary][4] + "\n6) " + typeNames[primary][5] + "\n7) Back\n8) Exit";
 		exit=false;
 		while(!exit)
 		{
@@ -1401,6 +1406,10 @@ public class main
 			}
 			else if(choice==7)
 			{
+				return;
+			}
+			else if(choice==8)
+			{
 				exit=true;
 				return;
 			}
@@ -1413,7 +1422,7 @@ public class main
 	public static void transverseBestiary2(int primary, int secondary, MonsterTree[][] bestiary)
 	{
 		System.out.println("secondary= " + secondary);
-		String BestiaryMenuOptions2="Select monster's grade\n1) eggs\n2) infants\n3) adolescents\n4) adults\n5) elders\n6) Back";
+		String BestiaryMenuOptions2="Select monster's grade\n1) eggs\n2) infants\n3) adolescents\n4) adults\n5) elders\n6) Back\n7) Exit";
 		exit=false;
 		while(!exit)
 		{
@@ -1440,6 +1449,10 @@ public class main
 				transverseBestiaryMonsters(primary, secondary, 4, bestiary);
 			}
 			else if(choice==6)
+			{
+				return;
+			}
+			else if(choice==7)
 			{
 				exit=true;
 				return;
@@ -1508,13 +1521,21 @@ public class main
 				}
 				System.out.println();
 			}
-			System.out.println(length+1 + ") Back");
+			System.out.println(length+1 + ") See All" + length+2 + ") Back\n" + (length+3) + ") Exit");
 			choice=myScanner.nextInt();
 			if(choice<=length&&choice>0)
 			{
 				transverseBestiaryMonsterSelected(primary,secondary,age,choice-1,bestiary);
 			}
 			else if(choice==length+1&&choice>0)
+			{
+//				transverseBestiaryShowAllMonstersInTree(primary,secondary,choice-1,bestiary);
+			}
+			else if(choice==length+2&&choice>0)
+			{
+				return;
+			}
+			else if(choice==length+3&&choice>0)
 			{
 				exit=true;
 				return;
@@ -1523,6 +1544,39 @@ public class main
 			{
 				System.out.println(inputError);
 			}
+		}
+	}
+	public static void transverseBestiaryShowAllMonstersInTree(int primary, int secondary, MonsterTree[][] bestiary, int count)
+	{
+		exit=false;
+		while(!exit)
+		{		
+			for(int i=0;i<bestiary[primary][secondary].m_eggs.length;i++)
+			{
+			System.out.println(count + ") " + bestiary[primary][secondary].m_eggs[i].getTypeName());
+			count++;
+			}
+			for(int i=0;i<bestiary[primary][secondary].m_infants.length;i++)
+			{
+				System.out.println(count + ") " + bestiary[primary][secondary].m_infants[i].getTypeName());
+				count++;
+			}
+			for(int i=0;i<bestiary[primary][secondary].m_adolescents.length;i++)
+			{	
+				System.out.println(count + ") " + bestiary[primary][secondary].m_adolescents[i].getTypeName());
+				count++;
+			}
+			for(int i=0;i<bestiary[primary][secondary].m_adults.length;i++)
+			{
+				System.out.println(count + ") " + bestiary[primary][secondary].m_adults[i].getTypeName());
+				count++;
+			}
+			for(int i=0;i<bestiary[primary][secondary].m_elders.length;i++)
+			{
+				System.out.println(count + ") " + bestiary[primary][secondary].m_adults[i].getTypeName());
+				count++;
+			}
+			System.out.println(count+1 +") back" + count+2 + ") Exit");
 		}
 	}
 	public static void transverseBestiaryMonsterSelected(int primary, int secondary, int age, int selectedMonster, MonsterTree[][] bestiary)
@@ -1566,18 +1620,18 @@ public class main
 		}
 		else if(selectedMonsterType.getNumOfEvolutions()==1)
 		{
-			System.out.println("Evolves Into:" + selectedMonsterType.getEvolvesInto1());
+			System.out.println("Evolves Into:" + selectedMonsterType.getEvolvesInto1().getTypeName());
 		}
 		else if(selectedMonsterType.getNumOfEvolutions()==2)
 		{
-			System.out.println("Physical Evolution: " + selectedMonsterType.getEvolvesInto1());
-			System.out.println("Magical  Evolution:  " + selectedMonsterType.getEvolvesInto2());
+			System.out.println("Physical Evolution: " + selectedMonsterType.getEvolvesInto1().getTypeName());
+			System.out.println("Magical  Evolution:  " + selectedMonsterType.getEvolvesInto2().getTypeName());
 		}
 		else if(selectedMonsterType.getNumOfEvolutions()==3)
 		{
-			System.out.println("Physical Evolution: " + selectedMonsterType.getEvolvesInto1());
-			System.out.println("Balanced Evolution: " + selectedMonsterType.getEvolvesInto2());
-			System.out.println("Magical  Evolution: " + selectedMonsterType.getEvolvesInto3());
+			System.out.println("Physical Evolution: " + selectedMonsterType.getEvolvesInto1().getTypeName());
+			System.out.println("Balanced Evolution: " + selectedMonsterType.getEvolvesInto2().getTypeName());
+			System.out.println("Magical  Evolution: " + selectedMonsterType.getEvolvesInto3().getTypeName());
 		}
 		else
 		{
