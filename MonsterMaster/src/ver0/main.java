@@ -170,7 +170,7 @@ public class main
 		justiceTree.m_adults[0].setEvolvesFrom(justiceTree.m_adolescents[0]);
 		justiceTree.m_adults[1].setEvolvesFrom(justiceTree.m_adolescents[0]);
 		justiceTree.m_adolescents[0].setEvolvesFrom(justiceTree.m_infants[0]);
-		justiceTree.m_adolescents[1].setEvolvesFrom(justiceTree.m_infants[1]);
+		justiceTree.m_adolescents[1].setEvolvesFrom(justiceTree.m_infants[0]);
 		justiceTree.m_infants[0].setEvolvesFrom(justiceTree.m_eggs[0]);
 		bestiary[0][4]=justiceTree;
 		
@@ -197,8 +197,8 @@ public class main
 		vengenceTree.m_adults[1].setEvolvesFrom1(vengenceTree.m_adolescents[1]);
 		vengenceTree.m_adults[1].setEvolvesFrom2(vengenceTree.m_adolescents[2]);
 		vengenceTree.m_adolescents[0].setEvolvesFrom(vengenceTree.m_infants[0]);
-		vengenceTree.m_adolescents[1].setEvolvesFrom(vengenceTree.m_infants[1]);
-		vengenceTree.m_adolescents[2].setEvolvesFrom(vengenceTree.m_infants[2]);
+		vengenceTree.m_adolescents[1].setEvolvesFrom(vengenceTree.m_infants[0]);
+		vengenceTree.m_adolescents[2].setEvolvesFrom(vengenceTree.m_infants[0]);
 		vengenceTree.m_infants[0].setEvolvesFrom(vengenceTree.m_eggs[0]);
 		bestiary[0][5]=vengenceTree;
 		
@@ -321,8 +321,8 @@ public class main
 		weatherTree.m_adults[3].setEvolvesFrom2(weatherTree.m_adolescents[2]);
 		weatherTree.m_adults[4].setEvolvesFrom1(weatherTree.m_adolescents[2]);
 		weatherTree.m_adolescents[0].setEvolvesFrom1(weatherTree.m_infants[0]);
-		weatherTree.m_adolescents[1].setEvolvesFrom1(weatherTree.m_infants[1]);
-		weatherTree.m_adolescents[2].setEvolvesFrom1(weatherTree.m_infants[2]);
+		weatherTree.m_adolescents[1].setEvolvesFrom1(weatherTree.m_infants[0]);
+		weatherTree.m_adolescents[2].setEvolvesFrom1(weatherTree.m_infants[0]);
 		weatherTree.m_infants[0].setEvolvesFrom1(weatherTree.m_eggs[0]);
 		bestiary[1][3]=weatherTree;
 		
@@ -399,8 +399,8 @@ public class main
 		deepTree.m_adults[1].setEvolvesFrom(deepTree.m_adolescents[1]);
 		deepTree.m_adults[2].setEvolvesFrom(deepTree.m_adolescents[1]);
 		deepTree.m_adults[3].setEvolvesFrom(deepTree.m_adolescents[2]);
-		deepTree.m_adults[4].setEvolvesFrom(deepTree.m_adolescents[3]);
-		deepTree.m_adults[5].setEvolvesFrom(deepTree.m_adolescents[4]);
+		deepTree.m_adults[4].setEvolvesFrom(deepTree.m_adolescents[2]);
+		deepTree.m_adults[5].setEvolvesFrom(deepTree.m_adolescents[2]);
 		deepTree.m_adolescents[0].setEvolvesFrom(deepTree.m_infants[0]);
 		deepTree.m_adolescents[1].setEvolvesFrom(deepTree.m_infants[0]);
 		deepTree.m_adolescents[2].setEvolvesFrom(deepTree.m_infants[0]);
@@ -717,8 +717,8 @@ public class main
 		cockaTree.m_eggs = new MonsterType[1];
 		cockaTree.m_eggs[0]=new MonsterType("CockaEgg",pes,ses,0,0,"The CockaEgg is a pure white egg with the cocka crest on it",cockaTree.m_infants[0]);
 		cockaTree.m_elders[0].setEvolvesFrom1(cockaTree.m_adults[0]);
-		cockaTree.m_elders[1].setEvolvesFrom2(cockaTree.m_adults[1]);
-		cockaTree.m_elders[2].setEvolvesFrom3(cockaTree.m_adults[2]);
+		cockaTree.m_elders[0].setEvolvesFrom2(cockaTree.m_adults[1]);
+		cockaTree.m_elders[0].setEvolvesFrom3(cockaTree.m_adults[2]);
 		cockaTree.m_adults[0].setEvolvesFrom(cockaTree.m_adolescents[0]);
 		cockaTree.m_adults[1].setEvolvesFrom(cockaTree.m_adolescents[1]);
 		cockaTree.m_adults[2].setEvolvesFrom(cockaTree.m_adolescents[2]);
@@ -987,7 +987,7 @@ public class main
 		poisonTree.m_elders[0].setEvolvesFrom(poisonTree.m_adults[0]);
 		poisonTree.m_elders[1].setEvolvesFrom(poisonTree.m_adults[1]);
 		poisonTree.m_elders[2].setEvolvesFrom(poisonTree.m_adults[2]);
-		poisonTree.m_elders[3].setEvolvesFrom(poisonTree.m_adults[3]);
+		poisonTree.m_elders[3].setEvolvesFrom(poisonTree.m_adults[2]);
 		poisonTree.m_adults[0].setEvolvesFrom(poisonTree.m_adolescents[0]);
 		poisonTree.m_adults[1].setEvolvesFrom(poisonTree.m_adolescents[1]);
 		poisonTree.m_adults[2].setEvolvesFrom(poisonTree.m_adolescents[2]);
