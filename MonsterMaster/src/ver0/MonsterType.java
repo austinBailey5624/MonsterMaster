@@ -110,15 +110,26 @@ public class MonsterType
 	private int m_secondaryElement;//Note same as above
 	
 	//getters and setters
+	
+	public int getNumEvolvesFrom()
+	{
+		return m_numEvolvesFrom;
+	}
 	public void setEvolvesFrom(MonsterType evolvesFrom)
 	{
+		if(m_evolvesFrom1==null)
+		{
+			m_numEvolvesFrom++;
+		}
 		m_evolvesFrom1=evolvesFrom;
-		m_numEvolvesFrom++;
 	}
 	public void setEvolvesFrom1(MonsterType evolvesFrom)
 	{
+		if(m_evolvesFrom1==null)
+		{
+			m_numEvolvesFrom++;
+		}
 		m_evolvesFrom1=evolvesFrom;
-		m_numEvolvesFrom++;
 	}
 	public MonsterType getEvolvesFrom1()
 	{
@@ -126,8 +137,11 @@ public class MonsterType
 	}
 	public void setEvolvesFrom2(MonsterType evolvesFrom)
 	{
+		if(m_evolvesFrom2==null)
+		{
+			m_numEvolvesFrom++;
+		}
 		m_evolvesFrom2=evolvesFrom;
-		m_numEvolvesFrom++;
 	}
 	public MonsterType getEvolvesFrom2()
 	{
@@ -135,8 +149,11 @@ public class MonsterType
 	}
 	public void setEvolvesFrom3(MonsterType evolvesFrom)
 	{
+		if(m_evolvesFrom3==null)
+		{
+			m_numEvolvesFrom++;
+		}
 		m_evolvesFrom3=evolvesFrom;
-		m_numEvolvesFrom++;
 	}
 	public MonsterType getEvolvesFrom3()
 	{

@@ -1521,7 +1521,8 @@ public class main
 				}
 				System.out.println();
 			}
-			System.out.println(length+1 + ") See All" + length+2 + ") Back\n" + (length+3) + ") Exit");
+//			System.out.println("length= " + length);//debugging
+			System.out.println(length+1 + ") See All\n" + (length+2) + ") Back\n" + (length+3) + ") Exit");
 			choice=myScanner.nextInt();
 			if(choice<=length&&choice>0)
 			{
@@ -1550,11 +1551,15 @@ public class main
 	{
 		exit=false;
 		while(!exit)
-		{		
+		{	
+			if(count==1)
+			{
+				System.out.println("Please Select a monster to look at");
+			}
 			for(int i=0;i<bestiary[primary][secondary].m_eggs.length;i++)
 			{
-			System.out.println(count + ") " + bestiary[primary][secondary].m_eggs[i].getTypeName());
-			count++;
+				System.out.println(count + ") " + bestiary[primary][secondary].m_eggs[i].getTypeName());
+				count++;
 			}
 			for(int i=0;i<bestiary[primary][secondary].m_infants.length;i++)
 			{
@@ -1577,6 +1582,11 @@ public class main
 				count++;
 			}
 			System.out.println(count+1 +") back" + count+2 + ") Exit");
+			choice=myScanner.nextInt();
+			if(choice<=bestiary[primary][secondary].m_eggs.length)
+			{
+				
+			}
 		}
 	}
 	public static void transverseBestiaryMonsterSelected(int primary, int secondary, int age, int selectedMonster, MonsterTree[][] bestiary)
@@ -1637,7 +1647,10 @@ public class main
 		{
 			System.out.println("Incorrect value for get NUM of Evolutions");
 		}
-		
+		if(selectedMonsterType.getNumEvolvesFrom()==0)
+		{
+			System.out.println("Does Not Evolve From anything");
+		}
 		System.out.println("Description: " + selectedMonsterType.getDescription());
 		System.out.println();
 		
