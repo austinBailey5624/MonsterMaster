@@ -4,7 +4,7 @@
  * 		@DateBegun		12/6/2015
  */
 package ver0;
-public class Monster 
+public class Monster extends Actor
 {
 	//constructors
 	public Monster(String name, int primaryElement, int secondaryElement, MonsterType type)
