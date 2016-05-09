@@ -2,13 +2,16 @@ package ver0;
 
 public class Actor 
 {
-	private String m_name;
+	private String m_name;		//holds the name of the actor
+	
 	private int m_hpTrueMax;	//holds the actual Maximum Hp (health points)
 	private int m_hpMax;		//holds the max that can be altered in battle
 	private int m_hpCur;		//holds the current hp, if <=0 needs to die
 	private int m_mpTrueMax;	//holds the actual Maximum Mp (Magic Points)
 	private int m_mpMax;		//holds the max that can be altered in battle
 	private int m_mpCur;		//holds the current mp that can be used in battle
+	
+	private int m_level;		//holds the level of the character
 	
 	//getters
 	/**
