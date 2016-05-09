@@ -1,0 +1,38 @@
+package ver0;
+/**
+ * @file Terrain.java
+ * @author Austin Bailey <a604b997@gmail.com>
+ * @dateBegun 5/8/2016
+ * @lastUpdated 5/8/2016
+ */
+public class Terrain 
+{
+	String m_name;
+	boolean m_transversible;
+	char m_show;
+	static int totTerrainNum=1;
+	public Terrain(int which)
+	{
+		if(which==0)
+		{
+			m_name="path";
+			m_transversible=true;
+			m_show='P';
+		}
+		else if(which==1)
+		{
+			m_name="Wall";
+			m_transversible=false;
+			m_show='W';
+		}
+	}
+	public static Terrain[] getAllTerrain()
+	{
+		Terrain[] TerrainArray = new Terrain[totTerrainNum];
+		for(int i=0; i<TerrainArray.length;i++)
+		{
+			TerrainArray[i]= new Terrain(i);
+		}
+		return TerrainArray;
+	}
+}
