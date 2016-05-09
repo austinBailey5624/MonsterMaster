@@ -3,7 +3,7 @@ package ver0;
  * @file	Place.java
  * @author 	Austin Bailey
  * @dateBegun:	5/8/2016
- * @lastUpdate:	5/8-2016
+ * @lastUpdate:	5/9/2016
  */
 public class Place 
 {
@@ -90,5 +90,36 @@ public class Place
 			maxDimensionY=7;
 		}
 	}
-	
+	public void transverse()
+	{
+		//code moving character here
+		boolean exit=false;
+		while(!exit)
+		{
+			printPlace();
+			printChoices();
+		}
+	}
+	public void printPlace()
+	{
+		for(int i=0; i<maxDimensionX;i++)
+		{
+			for(int j=0; j<maxDimensionY;j++)
+			{
+				if(i==curLocX&&j==curLocY)
+				{
+					System.out.print("@ ");
+				}
+				else
+				{
+					System.out.print(content[i][j] + " ");
+				}
+			}
+			System.out.println();
+		}
+	}
+	public void printChoices()
+	{
+		
+	}
 }
