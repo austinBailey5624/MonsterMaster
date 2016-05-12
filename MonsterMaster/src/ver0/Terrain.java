@@ -10,7 +10,7 @@ public class Terrain
 	String m_name;
 	boolean m_transversible;
 	char m_show;
-	static int totTerrainNum=1;
+	static int totTerrainNum=2;
 	public Terrain(int which)
 	{
 		if(which==0)

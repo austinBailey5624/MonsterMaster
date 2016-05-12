@@ -211,7 +211,8 @@ public class main
 			}
 			else if(choice==3)
 			{
-				
+				Place myPlace = new Place(1);
+				myPlace.transverse();
 			}
 			else if(choice==4)
 			{
