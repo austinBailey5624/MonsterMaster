@@ -117,19 +117,19 @@ public class Place
 			input=myScanner.next();
 			if(input.equals("w"))
 			{
-				tryMove(2);
+				tryMove(1);
 			}
 			else if(input.equals("a"))
 			{
-				tryMove(3);
+				tryMove(2);
 			}
 			else if(input.equals("s"))
 			{
-				tryMove(4);
+				tryMove(3);
 			}
 			else if(input.equals("d"))
 			{
-				tryMove(1);
+				tryMove(4);
 			}
 			else if(input.equals("e"))
 			{
@@ -144,11 +144,11 @@ public class Place
 	}
 	public void printPlace()
 	{
-		System.out.println("maxDimensionX: " + maxDimensionX);
-		System.out.println("maxDimensionY: " + maxDimensionY);
-		for(int i=0; i<maxDimensionX;i++)
+//		System.out.println("maxDimensionX: " + maxDimensionX);//Debugging
+//		System.out.println("maxDimensionY: " + maxDimensionY);
+		for(int j=maxDimensionY-1; j>=0;j--)
 		{
-			for(int j=0; j<maxDimensionY;j++)
+			for(int i=0; i<maxDimensionX;i++)
 			{
 				if(i==curLocX&&j==curLocY)
 				{
@@ -157,17 +157,19 @@ public class Place
 				else
 				{
 					System.out.print(content[i][j].m_show + " ");
+//					System.out.print((i+7*(j)) + " "); //debugging
 				}
 			}
 			System.out.println();
 		}
+		System.out.println("Current coordinate x:" + curLocX + " y:" +  curLocY);
 	}
 	public void printChoices()
 	{
 		int minDimensionX=0;
 		int minDimensionY=0;
 		int choice=1;
-		if(curLocY!=maxDimensionY)
+		if((!(curLocY==maxDimensionY)||!content[curLocX][curLocY+1].m_transversible))
 		{
 			System.out.println("w) move North");
 		}
@@ -197,7 +199,7 @@ public class Place
 			}
 			else if(!content[curLocX][curLocY+1].m_transversible)//checks to make sure the tile can be walked over
 			{
-				System.out.println("Sorry, you cant move across " + content[curLocX][curLocY+1]);
+				System.out.println("Sorry, you cant move across " + content[curLocX][curLocY+1].m_name);
 			}
 			else
 			{
@@ -211,9 +213,9 @@ public class Place
 			{
 				System.out.println("Sorry, that move is out of bounds");
 			}
-			else if(!content[curLocX+1][curLocY].m_transversible)//checks to make sure the tile can be walked over
+			else if(!content[curLocX-1][curLocY].m_transversible)//checks to make sure the tile can be walked over
 			{
-				System.out.println("Sorry, you cant move across " + content[curLocX+1][curLocY].m_name);
+				System.out.println("Sorry, you cant move across " + content[curLocX-1][curLocY].m_name);
 			}
 			else
 			{
@@ -228,7 +230,7 @@ public class Place
 			}
 			else if(!content[curLocX][curLocY-1].m_transversible)//checks to make sure the tile can be walked over
 			{
-				System.out.println("Sorry, you cant move across " + content[curLocX+1][curLocY].m_name);
+				System.out.println("Sorry, you cant move across " + content[curLocX][curLocY-1].m_name);
 			}
 			else
 			{
@@ -258,7 +260,7 @@ public class Place
 			prevLocY=curLocY;
 			curLocY++;
 		}
-		else if(direction==2)//moing north
+		else if(direction==2)//moving West
 		{
 			prevLocX=curLocX;
 			curLocX--;
