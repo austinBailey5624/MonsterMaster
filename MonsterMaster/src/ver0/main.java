@@ -211,8 +211,57 @@ public class main
 			}
 			else if(choice==3)
 			{
-				Place myPlace = new Place(1);
-				myPlace.transverse();
+				Place myPlace;
+				while(true)
+				{
+					System.out.println("Which place would you like to visit?\n1)Maxe\n2)Square"
+							+ "\n3)inequalSides\n4)Exit");
+					String input = myScanner.next();
+					if(input.equals("1"))
+					{
+						myPlace = new Place(0,0);
+						int exit=1;
+						while(exit!=0)
+						{
+							exit=myPlace.transverse();
+							if(exit==1)
+							{
+								myPlace = new Place(2,1);
+							}
+							else if(exit==2)
+							{
+								myPlace = new Place(0,1);
+							}
+							else if(exit==3)
+							{
+								myPlace = new Place(1,1);
+							}
+							else if(exit==4)
+							{
+								myPlace= new Place(2,2);
+							}
+						}
+						
+					}
+					else if(input.equals("2"))
+					{
+						myPlace=new Place(0,1);
+						myPlace.transverse();
+					}
+					else if(input.equals("3"))
+					{
+						myPlace=new Place(2,1);
+						myPlace.transverse();
+					}
+					else if(input.equals("4"))
+					{
+						return;
+					}
+					else
+					{
+						System.out.println("Sorry we didn't understand your input");
+					}
+				}
 			}
 			else if(choice==4)
 			{
