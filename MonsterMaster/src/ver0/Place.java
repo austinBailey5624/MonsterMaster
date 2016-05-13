@@ -19,77 +19,49 @@ public class Place
 	int prevLocY;
 	Terrain[][] content;
 	
-	public Place(int which)
+	public Place(int which,int exit)
 	{
 		Terrain[] terrains = Terrain.getAllTerrain();
 		Terrain p = new Terrain(0);
 		Terrain w = new Terrain(1);
+		Terrain x = new Terrain(0,1);
+		Terrain y = new Terrain(0,2);
+		Terrain z = new Terrain(0,3);
+		Terrain v = new Terrain(0,4);
 		if(which==0)
 		{
-			int StartLocX=0;
-			int StartLocY=0;
+			if(exit==0)
+			{
 			curLocX=0;
 			curLocY=0;
 			prevLocX=0;
 			prevLocY=0;
-			content=new Terrain[7][7];
-			content[0][0]=p;
-			content[0][1]=w;
-			content[0][2]=w;
-			content[0][3]=w;
-			content[0][4]=w;
-			content[0][5]=w;
-			content[0][6]=w;
-			content[1][0]=p;
-			content[1][1]=w;
-			content[1][2]=p;
-			content[1][3]=p;
-			content[1][4]=p;
-			content[1][5]=p;
-			content[1][6]=p;
-			content[2][0]=p;
-			content[2][1]=w;
-			content[2][2]=p;
-			content[2][3]=w;
-			content[2][4]=w;
-			content[2][5]=w;
-			content[2][6]=p;
-			content[3][0]=p;
-			content[3][1]=w;
-			content[3][2]=p;
-			content[3][3]=p;
-			content[3][4]=p;
-			content[3][5]=w;
-			content[3][6]=p;
-			content[4][0]=p;
-			content[4][1]=p;
-			content[4][2]=w;
-			content[4][3]=w;
-			content[4][4]=p;
-			content[4][5]=w;
-			content[4][6]=p;
-			content[5][0]=w;
-			content[5][1]=p;
-			content[5][2]=p;
-			content[5][3]=p;
-			content[5][4]=p;
-			content[5][5]=w;
-			content[5][6]=p;
-			content[6][0]=w;
-			content[6][1]=w;
-			content[6][2]=w;
-			content[6][3]=w;
-			content[6][4]=w;
-			content[6][5]=w;
-			content[6][6]=p;
-			maxDimensionX=7;
-			maxDimensionY=7;
+			}
+			else if(exit==1)
+			{
+				curLocX=5;
+				curLocY=6;
+				prevLocX=6;
+				prevLocY=6;
+			}
+			content=new Terrain[][]
+			{
+				{p,w,w,w,w,w,w},
+				{p,w,p,p,p,p,p},
+				{p,w,p,w,w,w,p},
+				{p,w,p,p,p,w,p},
+				{p,p,w,w,p,w,p},
+				{w,p,p,p,p,w,p},
+				{w,w,w,w,w,w,x}
+			};
+			maxDimensionX=6;
+			maxDimensionY=6;
 		}
 		if(which==1)
 		{
 			content=new Terrain[][]
 			{
-				{w,w,w,w,w,w,w},
+				{w,w,w,v,w,w,w},
 				{w,p,p,p,p,p,w},
 				{w,p,p,p,p,p,w},
 				{w,p,p,p,p,p,w},
@@ -97,21 +69,57 @@ public class Place
 				{w,p,p,p,p,p,w},
 				{w,w,w,w,w,w,w}
 			};
-			maxDimensionX=7;
-			maxDimensionY=7;
-			curLocX=3;
-			curLocY=3;
-			prevLocX=3;
-			prevLocY=3;
+			maxDimensionX=6;//decremented by 1 since count starts at 0
+			maxDimensionY=6;
+			if(exit==1)
+			{
+				curLocX=1;
+				curLocY=3;
+				prevLocX=3;
+				prevLocY=0;
+			}
+		}
+		if(which==2)//horizontal bridge
+		{
+			content=new Terrain[][]
+			{
+				{w,y,w},
+				{w,p,w},
+				{w,p,w},
+				{w,p,w},
+				{w,p,w},
+				{w,p,w},
+				{w,z,w}
+			};
+			maxDimensionX=6;//values decremented by one since count starts at 0
+			maxDimensionY=2;
+			if(exit==1)
+			{
+				curLocX=1;
+				curLocY=1;
+				prevLocX=0;
+				prevLocY=1;
+			}
+			else if(exit==2)
+			{
+				curLocX=5;
+				curLocY=1;
+				prevLocX=6;
+				prevLocY=1;
+			}
 		}
 	}
-	public void transverse()
+	public int transverse()
 	{
 		//code moving character here
 		boolean exit=false;
 		String input;
 		while(!exit)
 		{
+			if(content[curLocX][curLocY].m_show=='E')
+			{
+				return(content[curLocX][curLocY].m_exitNumber);
+			}
 			printPlace();
 			printChoices();
 			input=myScanner.next();
@@ -133,22 +141,23 @@ public class Place
 			}
 			else if(input.equals("e"))
 			{
-				System.out.print("Exiting");
-				return;
+				System.out.println("Exiting");
+				return 0;
 			}
 			else
 			{
-				System.out.print("Sorry, we couldn't understand your input, please input a 'w' 's' 'a' 'd' or 'e'");
+				System.out.println("Sorry, we couldn't understand your input, please input a 'w' 's' 'a' 'd' or 'e'");
 			}
 		}
+		return 0;
 	}
 	public void printPlace()
 	{
 //		System.out.println("maxDimensionX: " + maxDimensionX);//Debugging
 //		System.out.println("maxDimensionY: " + maxDimensionY);
-		for(int j=maxDimensionY-1; j>=0;j--)
+		for(int j=maxDimensionY; j>=0;j--)
 		{
-			for(int i=0; i<maxDimensionX;i++)
+			for(int i=0; i<=maxDimensionX;i++)
 			{
 				if(i==curLocX&&j==curLocY)
 				{
@@ -169,21 +178,34 @@ public class Place
 		int minDimensionX=0;
 		int minDimensionY=0;
 		int choice=1;
-		if((!(curLocY==maxDimensionY)||!content[curLocX][curLocY+1].m_transversible))
+		if(curLocY!=maxDimensionY)//checks to make sure not on edge
 		{
-			System.out.println("w) move North");
+			if(content[curLocX][curLocY+1].m_transversible)//checks that tile north is transversible
+			{
+				System.out.println("w) move North");
+			}
 		}
 		if(curLocX!=minDimensionX)
 		{
-			System.out.println("a) move West");
+			if(content[curLocX-1][curLocY].m_transversible)
+			{
+				System.out.println("a) move West");
+			}
 		}
 		if(curLocY!=minDimensionY)
 		{
-			System.out.println("s) move South");
+			if(content[curLocX][curLocY-1].m_transversible)
+			{
+				System.out.println("s) move South");
+			}
 		}
 		if(curLocX!=maxDimensionX)
 		{
-			System.out.println("d) move East");
+			System.out.println("curLocx= " + curLocX + "\nmaxDimensionX= " + maxDimensionX);
+			if(content[curLocX+1][curLocY].m_transversible)//Now we know this test won't be out of bounds
+			{
+				System.out.println("d) move East");
+			}
 		}
 		System.out.println("e) Exit");
 	}
