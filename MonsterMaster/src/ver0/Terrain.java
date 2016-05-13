@@ -10,12 +10,14 @@ public class Terrain
 	String m_name;
 	boolean m_transversible;
 	char m_show;
+	int m_exitNumber;
 	static int totTerrainNum=2;
 	public Terrain(int which)
 	{
+		m_exitNumber=0;
 		if(which==0)
 		{
-			m_name="path";
+			m_name="Path";
 			m_transversible=true;
 			m_show='P';
 		}
@@ -25,6 +27,13 @@ public class Terrain
 			m_transversible=false;
 			m_show='W';
 		}
+	}
+	public Terrain(int which, int exitNo)
+	{
+		m_name="Exit";
+		m_transversible=true;
+		m_show='E';
+		m_exitNumber=exitNo;
 	}
 	public static Terrain[] getAllTerrain()
 	{
