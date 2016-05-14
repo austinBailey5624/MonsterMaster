@@ -21,7 +21,6 @@ public class Place
 	
 	public Place(int which,int exit)
 	{
-		Terrain[] terrains = Terrain.getAllTerrain();
 		Terrain p = new Terrain(0);
 		Terrain w = new Terrain(1);
 		Terrain x = new Terrain(0,1);
@@ -201,7 +200,7 @@ public class Place
 		}
 		if(curLocX!=maxDimensionX)
 		{
-			System.out.println("curLocx= " + curLocX + "\nmaxDimensionX= " + maxDimensionX);
+//			System.out.println("curLocx= " + curLocX + "\nmaxDimensionX= " + maxDimensionX);
 			if(content[curLocX+1][curLocY].m_transversible)//Now we know this test won't be out of bounds
 			{
 				System.out.println("d) move East");
