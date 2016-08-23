@@ -1,6 +1,6 @@
 # MonsterMaster
 ## Overview
-MonsterMaster is a MonsterCatching RPG *cough* Pokemon Clone *cough* Developed by Austin Bailey and whoever wants to join him
+MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed by Austin Bailey and whoever wants to join him
 ## Differences from Pokemon
 1. **The player matters** In Pokemon Games the user really doesnt matter at all other than as a way to move yourself around the screen. In MonsterMaster the character you are an active part of the battle and defeat occurs when you yourself are knocked out, not just when the monster representing you is defeated *it also bears noting that monsters gain experience much faster than humans.
 2. **There is player choice** that shapes the world around you.
@@ -16,7 +16,7 @@ MonsterMaster is a MonsterCatching RPG *cough* Pokemon Clone *cough* Developed b
 ## Gameplay 
 
 1. **Elements**
-	*I can see your soul through your eyes* There are six elements, and each  
+	*I can see your soul through your eyes* Each person, and monster has an element. Which element it is can be determined by looking at the color of their eyes. 
   * **Fire** 
     * People with a fire element are passionate and aggressive. They tend to act on instinct. They deal more damage to Air Types and take more damage from Water Types. People who are fire elemental have *red* eyes
   * **Water**
@@ -31,7 +31,7 @@ MonsterMaster is a MonsterCatching RPG *cough* Pokemon Clone *cough* Developed b
     * Dark elementals follow their own code and are often unpredictable. They often have a sense of right and wrong, but they don't let anyone tell them what to do. They tend to be very independent and can be good leaders but usually make terrible followers- unless they find other people with similar ideals. People who are dark elemental have *dark grey* eyes.  
 	
 2. **Special Elements**	
-  * **Grey*
+  * **Grey**
 	*  Children who have yet to be exposed to the world have grey eyes. Their eyes change color during puberty.
   * **Bound**
 	*  After a dramatic change happens in someones life, their element may become 'bound', in which case their old element is trapped by a new one. For instance, if a fiery barbarian is captured and converted by the church, his red eyes would be bound by an outer iris of white.
@@ -56,8 +56,8 @@ MonsterMaster is a MonsterCatching RPG *cough* Pokemon Clone *cough* Developed b
 
  - [ ] Finish to do list
  - [x] Make the first draft of the monsters
- - [x] Make the first draft of the terrain/world
- - [x] Make methods to transvers the monsters
+ - [x] Make the first draft of the terrain/world interaction
+ - [x] Make methods to read bestiary
  - [ ] Figure out how I/O is going to work with save files
  - [ ] Design plot system
  - [ ] Design battle system
