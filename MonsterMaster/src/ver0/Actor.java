@@ -84,6 +84,16 @@ public class Actor
 		return m_name;
 	}
 	
+	/**
+	 * @param(pre):		Actor object exists with initialized value m_name
+	 * @param(post):	does not change member variables
+	 * @return:			int m_level
+	 */
+	public int getLevel()
+	{
+		return m_level;
+	}
+	
 	
 	
 	//setters
@@ -146,5 +156,15 @@ public class Actor
 	public void setMpCur(int mpCur)
 	{
 		m_mpCur=mpCur;
+	}
+	
+	/**
+	 * @param(pre):		Actor object exists
+	 * @param(post):	sets m_Level to parameter level
+	 * @return:			void
+	 */
+	public void setLevel(int level)
+	{
+		m_level=level;
 	}
 }

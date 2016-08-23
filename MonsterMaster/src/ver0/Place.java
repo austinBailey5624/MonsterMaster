@@ -8,7 +8,11 @@ package ver0;
 import java.util.Scanner;
 public class Place 
 {
+	//Static member variables
 	static Scanner myScanner= new Scanner(System.in);
+	
+	//member variables
+	String m_name;
 	int maxDimensionX;
 	int maxDimensionY;
 	int startLocX;
@@ -19,6 +23,8 @@ public class Place
 	int prevLocY;
 	Terrain[][] content;
 	
+	
+	//constructors
 	public Place(int which,int exit)
 	{
 		Terrain p = new Terrain(0);
@@ -29,6 +35,7 @@ public class Place
 		Terrain v = new Terrain(0,4);
 		if(which==0)
 		{
+			m_name="EasyMaze";
 			if(exit==0)
 			{
 			curLocX=0;
@@ -58,6 +65,7 @@ public class Place
 		}
 		if(which==1)
 		{
+			m_name="box";
 			content=new Terrain[][]
 			{
 				{w,w,w,v,w,w,w},
@@ -80,6 +88,7 @@ public class Place
 		}
 		if(which==2)//horizontal bridge
 		{
+			m_name="hallway";
 			content=new Terrain[][]
 			{
 				{w,y,w},
@@ -108,7 +117,9 @@ public class Place
 			}
 		}
 	}
-	public int transverse()
+	
+	//methods
+	public int transverse(boolean agile)
 	{
 		//code moving character here
 		boolean exit=false;
@@ -119,7 +130,14 @@ public class Place
 			{
 				return(content[curLocX][curLocY].m_exitNumber);
 			}
-			printPlace();
+			if(agile)
+			{
+				printAgile(3);
+			}
+			else
+			{
+				printPlace();
+			}
 			printChoices();
 			input=myScanner.next();
 			if(input.equals("w"))
@@ -141,7 +159,7 @@ public class Place
 			else if(input.equals("e"))
 			{
 				System.out.println("Exiting");
-				return 0;
+				return(0);
 			}
 			else
 			{
@@ -172,11 +190,40 @@ public class Place
 		}
 		System.out.println("Current coordinate x:" + curLocX + " y:" +  curLocY);
 	}
+	public void printAgile(int sight)
+	{
+		if(sight<3)
+		{
+			sight=3;
+		}
+		System.out.println("curLocX: " + curLocX + "\ncurLocY: " + curLocY);
+		for(int j=curLocY+sight; j>=curLocY-sight; j--)
+		{
+			for(int i=curLocX-sight; i<=curLocX+sight; i++)
+			{
+				try
+				{
+					if(i==curLocX&&j==curLocY)
+					{
+						System.out.print("@ ");
+					}
+					else
+					{
+						System.out.print(content[i][j].m_show + " ");
+					}
+				}
+				catch(Exception e)
+				{
+					System.out.print("W ");//if array error, print a wall in the space
+				}
+			}
+			System.out.println();
+		}
+	}
 	public void printChoices()
 	{
 		int minDimensionX=0;
 		int minDimensionY=0;
-		int choice=1;
 		if(curLocY!=maxDimensionY)//checks to make sure not on edge
 		{
 			if(content[curLocX][curLocY+1].m_transversible)//checks that tile north is transversible

@@ -14,13 +14,13 @@ public class MonsterTree
 	//monsters[2]= new Monster[3];
 	MonsterTree(int assignPrimaryElement, int assignSecondaryElement, String assignTypeName)
 	{
-		primaryElement=assignPrimaryElement;
-		secondaryElement=assignSecondaryElement;
+//		primaryElement=assignPrimaryElement;
+//		secondaryElement=assignSecondaryElement;
 		m_typeName=assignTypeName;
 	}
 	int m_MonsterNum=0;
-	private int primaryElement;
-	private int secondaryElement;
+//	private int primaryElement;
+//	private int secondaryElement;
 	MonsterType[] m_eggs;
 	MonsterType[] m_infants;
 	MonsterType[] m_adolescents;
