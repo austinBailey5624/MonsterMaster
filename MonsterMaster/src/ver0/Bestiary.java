@@ -1083,6 +1083,50 @@ public class Bestiary
 				bestiary[5][5]=umbralTree;
 				return bestiary;
 	}
+
+	public static MonsterType[][][][] generateBestiary2()
+	{
+//		MonsterType[][][][] bestiary;
+//		bestiary[0][0][2][0]=new MonsterType("Flame Symbol",0,0,2,2,"A circular golden band a foot and a half in diameter two inches thick holds a red sphere at its base. When it becomes angry the ring lights aflame and the flame symbol can be seen glowing in its center, althouh there is nothing there",pyroTree.m_adults[3]);
+//		bestiary[0][0][1][0]=new MonsterType("Flarial",0,0,1,0,"An orange ball of flame with a red eye. It hovers in the air, a foot above the ground, a sphere a foot in diameter. The ends of the flame flow behind it, althogh no wind can be felt",pyroTree.m_adolescents[0],pyroTree.m_adolescents[1],pyroTree.m_adolescents[2]);
+//		bestiary[0][0][0][0]=new MonsterType("Pyro Egg",0,0,0,0,"An orange egg with the symbol of a red flame. When you touch it, it is warm, and you become angry, though you do not know why. Pull your hand away and you are burned, though by the egg or yourself you cannot tell",pyroTree.m_infants[0]);
+	
+		MonsterType[][][][] bestiary=new MonsterType[6][][][];
+		bestiary[5]=new MonsterType[6][][];
+		bestiary[4]=new MonsterType[6][][];
+		bestiary[3]=new MonsterType[6][][];
+		bestiary[2]=new MonsterType[6][][];
+		bestiary[1]=new MonsterType[6][][];
+		bestiary[0]=new MonsterType[6][][];
+		bestiary[0][0]=new MonsterType[5][];
+		bestiary[0][0][0]=new MonsterType[1];
+		bestiary[0][0][1]=new MonsterType[1];
+		bestiary[0][0][2]=new MonsterType[3];
+		bestiary[0][0][3]=new MonsterType[4];
+		bestiary[0][0][4]=new MonsterType[4];
+		bestiary[0][0][4][0]=new MonsterType("Red Dragon",0,0,4,0,"The red dragon is as the name implies a red dragon. It breathes fire and captures princes. Yes, I said princes, not princesses, you sexist! It can only be defeated by a young blonde detective being given directions by a captured serial killer. If you didn't get the reference, google it. You won't be disappointed");
+		bestiary[0][0][4][1]=new MonsterType("Benemoth",0,0,4,1,"The benemoth is a giant, human shaped colossus of flame.");
+		bestiary[0][0][4][2]=new MonsterType("Bolide",0,0,4,2,"The Bolide is a grown up comet with large muscular legs that moves even faster.");
+		bestiary[0][0][4][3]=new MonsterType("Flame Atronach",0,0,4,3,"The flame atronach is a giant circular flame symbol made of red steel surrouned by six smaller flame symbols that rotate around it, faster when its casting a spell");
+		bestiary[0][0][3][0]=new MonsterType("Pyros",0,0,3,0,"A Pyros has the body of a man and the head of a bull, it wears a cape made of flame though the cape does not burn it. It has a flame crescent axe that seems to be made of red steel",bestiary[0][0][4][0],bestiary[0][0][4][1]);
+		bestiary[0][0][3][1]=new MonsterType("Flarus",0,0,3,1,"A greater Flarus has short legs and gian arms that extend to the floor. Its entire body is aflame, and short red horns can be seen ",bestiary[0][0][4][1]);
+		bestiary[0][0][3][2]=new MonsterType("Comet",0,0,3,2,"The Comet is a four legged hound with an incredible amount of speed. It runs as fast as it can and slams into its enemy in combat, known as the 'comet dash'",bestiary[0][0][4][2]);
+		bestiary[0][0][3][3]=new MonsterType("Flame Elemental",0,0,3,2,"The flame elemetal has is a chasis of black iron engulfed in flame",bestiary[0][0][4][3]);
+		bestiary[0][0][2][0]=new MonsterType("Pyrus",0,0,2,0,"Pyrus is a three foot tall demon, engulfed in flame with an extending red snout like a dogs with black eyes and red iruses. His teeth shine in the light of his flames",bestiary[0][0][4][0],bestiary[0][0][4][1]);
+		bestiary[0][0][2][1]=new MonsterType("Flarpup",0,0,2,1,"The Flarpup is a small dog with hair that looks like fire. It inflicts fire damage with its bite",bestiary[0][0][3][2]);
+		bestiary[0][0][2][2]=new MonsterType("Flame Symbol",0,0,2,2,"A circular golden band a foot and a half in diameter two inches thick holds a red sphere at its base. When it becomes angry the ring lights aflame and the flame symbol can be seen glowing in its center, althouh there is nothing there",bestiary[0][0][3][3]);
+		bestiary[0][0][1][0]=new MonsterType("Flarial",0,0,1,0,"An orange ball of flame with a red eye. It hovers in the air, a foot above the ground, a sphere a foot in diameter. The ends of the flame flow behind it, althogh no wind can be felt",bestiary[0][0][2][0],bestiary[0][0][2][1],bestiary[0][0][2][2]);
+		bestiary[0][0][0][0]=new MonsterType("Pyro Egg",0,0,0,0,"An orange egg with the symbol of a red flame. When you touch it, it is warm, and you become angry, though you do not know why. Pull your hand away and you are burned, though by the egg or yourself you cannot tell",bestiary[0][0][1][0]);
+
+
+
+
+
+
+
+		//TODO finish
+		
+	}
 	public static String[][] defineTypes()
 	{
 		String[][] typeNames = new String[6][6];
