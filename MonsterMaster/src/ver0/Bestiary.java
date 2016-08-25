@@ -1117,7 +1117,47 @@ public class Bestiary
 		bestiary[0][0][2][2]=new MonsterType("Flame Symbol",0,0,2,2,"A circular golden band a foot and a half in diameter two inches thick holds a red sphere at its base. When it becomes angry the ring lights aflame and the flame symbol can be seen glowing in its center, althouh there is nothing there",bestiary[0][0][3][3]);
 		bestiary[0][0][1][0]=new MonsterType("Flarial",0,0,1,0,"An orange ball of flame with a red eye. It hovers in the air, a foot above the ground, a sphere a foot in diameter. The ends of the flame flow behind it, althogh no wind can be felt",bestiary[0][0][2][0],bestiary[0][0][2][1],bestiary[0][0][2][2]);
 		bestiary[0][0][0][0]=new MonsterType("Pyro Egg",0,0,0,0,"An orange egg with the symbol of a red flame. When you touch it, it is warm, and you become angry, though you do not know why. Pull your hand away and you are burned, though by the egg or yourself you cannot tell",bestiary[0][0][1][0]);
-
+		bestiary[0][1]=new MonsterType[5][];
+		bestiary[0][1][0]=new MonsterType[1];
+		bestiary[0][1][1]=new MonsterType[1];
+		bestiary[0][1][2]=new MonsterType[3];
+		bestiary[0][1][3]=new MonsterType[3];
+		bestiary[0][1][4]=new MonsterType[3];
+		bestiary[0][1][4][0]=new MonsterType("Vulcanous",0,1,4,0,"Vulcanous is a walking colossus filled with lava");
+		bestiary[0][1][4][1]=new MonsterType("Vagrus",0,1,4,1,"Vagrus is a lava dragon that levitates and doesnt have wings. Its skill is lavabreath");
+		bestiary[0][1][4][2]=new MonsterType("Vulcan",0,1,4,2,"Vulcan is named after the god Vulcan and can cast all sorts of magic. It is a flaming wheel whose spokes have the elemental glyphs written on them. Its greatest strength is the breadth of magic that it ca cast. Also live long and prosper");
+		bestiary[0][1][3][0]=new MonsterType("Philottus",0,1,3,0,"Philottus is a walking smelter with a big hammer. It can cover its hammer with lava to do 2.5 times as much damage on its next attack, but the buff only lasts for one turn, as then the cast cools",bestiary[0][1][4][0]);
+		bestiary[0][1][3][1]=new MonsterType("Cercyon",0,1,3,1,"Cercyon is a lavasnake that can wrap itself around its prey. Doing so cools it, thus damaging both itself and its victim",bestiary[0][1][4][1]);
+		bestiary[0][1][3][2]=new MonsterType("Spither",0,1,3,2,"Spither is a lava elemental that is capable of casting both fire and water magic. The large center circle holds the lava crest, and the six outer circles alternate between the fire and water crests",bestiary[0][1][4][2]);
+		bestiary[0][1][2][0]=new MonsterType("Crerops",0,1,2,0,"Creops is a man size titan with no face made of melting stone. lava flows to its heart at its center and back to the rock, his only weak point",bestiary[0][1][3][0]);
+		bestiary[0][1][2][1]=new MonsterType("Erichthonius",0,1,2,1,"Erichthonius is a lizard the size of a wolf made of magma. It spits lava to attack",bestiary[0][1][3][1]);
+		bestiary[0][1][2][2]=new MonsterType("Corynetes",0,1,2,2,"Corynetes is a floating sphere of lava, that pulses from yellow to orange hot. it has a cracked shell of earth around which the lava flows.",bestiary[0][1][3][2]);		
+		bestiary[0][1][1][0]=new MonsterType("Philammon",0,1,1,0,"Philammon was the weakest of the suns of vulcan, and the monster derived from him resembles a green ball with orange eyes and horns",bestiary[0][1][2][0],bestiary[0][1][2][1],bestiary[0][1][2][2]);
+		bestiary[0][1][0][0]=new MonsterType("Lava Egg",0,1,0,0,"The volcano egg is orange and very hot, with a glyph on its center of a mountain with lava pouring down it. It dries out quickly and is best left in water",bestiary[0][1][1][0]);
+		bestiary[0][2]=new MonsterType[5][];
+		bestiary[0][2][0]=new MonsterType[1];
+		bestiary[0][2][1]=new MonsterType[1];
+		bestiary[0][2][2]=new MonsterType[3];
+		bestiary[0][2][3]=new MonsterType[3];
+		bestiary[0][2][4]=new MonsterType[3];
+		bestiary[0][2][4][0]=new MonsterType("Great White Tyrant",0,2,4,0,"A great White tyrant is a larger version of the tyrant that is as white as bone. It also  has arm claws now, although why it needs them when it has that huge jaw is anyones guess. Its a reference to Jurassic World");
+		bestiary[0][2][4][1]=new MonsterType("EdgeWinger",0,2,4,1,"The EdgeWinger is an evolved SteelWinger, that shaved off the edges of the steel so that its really really sharp, and a much lighter weight, so it can fly again");
+		bestiary[0][2][4][2]=new MonsterType("Broncheospikesaur",0,2,4,2,"A gigantic spikesaur that has a mass of hp and can taunt all enemies at once, but its physical attack is very weak");
+		bestiary[0][2][3][0]=new MonsterType("Tyrant",0,2,3,0,"A tyrant is a giant raptor with big teeth and skimpy arms",bestiary[0][2][4][0]);
+		bestiary[0][2][3][1]=new MonsterType("SteelWinger",0,2,3,1,"A larger winger with a steel beak and wings. The winger thought it would be cool to have steel, but it didnt account for the weight, which slowed it down and keeps it from flying",bestiary[0][2][4][1]);
+		bestiary[0][2][3][2]=new MonsterType("Spikevorsaur",0,2,3,2,"A Spikevorsaure is a large herbivour that got wise and grew spikes. Now it taunts enemies, and when they attack, a portion of the damage inflicted is returned to the enemy",bestiary[0][2][4][2]);
+		bestiary[0][2][2][0]=new MonsterType("Raptor",0,2,2,0,"A small velociraptor that is very fast and knows the move Dinobite",bestiary[0][2][3][0]);
+		bestiary[0][2][2][1]=new MonsterType("Winger",0,2,2,1,"A winger is a flying dinosaur that looks like a bat except it has a cone head. Yeah, brutally honest.",bestiary[0][2][3][1]);
+		bestiary[0][2][2][2]=new MonsterType("Herbisaur",0,2,2,2,"A Herbisaur is large for in adolescent, and has a lot of hp. It can make itself look like a target, effectively taunting them.",bestiary[0][2][3][2]);
+		bestiary[0][2][1][0]=new MonsterType("Salamander",0,2,1,0,"The salamander is a small dinosaur that can breathe fire.",bestiary[0][2][2][0],bestiary[0][2][2][1],bestiary[0][2][2][2]);
+		bestiary[0][2][0][0]=new MonsterType("Dino Egg",0,2,0,0,"Call John Hammond, it finally happened, were going to be millionares!!",bestiary[0][2][1][0]);
+		bestiary[0][3]=new MonsterType[5][];
+		bestiary[0][3][0]=new MonsterType[1];
+		bestiary[0][3][1]=new MonsterType[1];
+		bestiary[0][3][2]=new MonsterType[3];
+		bestiary[0][3][3]=new MonsterType[2];
+		bestiary[0][3][4]=new MonsterType[1];
+		
 
 
 
@@ -1125,7 +1165,7 @@ public class Bestiary
 
 
 		//TODO finish
-		
+		return bestiary;
 	}
 	public static String[][] defineTypes()
 	{
