@@ -290,4 +290,18 @@ public class Main
 			return false;
 		}
 	}
+	public static void SmartPrint(String s)
+	{
+		int stop=s.length();
+		for(int i=0; i<stop;i++)
+		{
+			for(int j=0; j<55&&i<stop;j++)
+			{
+				System.out.print(s.charAt(i));
+				i++;
+			}
+			System.out.println();
+		}
+		
+	}
 }
