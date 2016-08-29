@@ -10,6 +10,7 @@ import java.util.Random;
 public class Bestiary 
 {
 	public static MonsterType[][][][] bestiary=generateBestiary();
+	public static String[][] typeNames=defineTypes();
 	public static boolean exit;
 	public static int tempi;
 	public static int choice;
@@ -1033,13 +1034,65 @@ public class Bestiary
 	}
 	public static void travelSecondary(int primary)
 	{
+		exit=false;
+		while(!exit)
+		{
+			System.out.println("What is the secondary element of the monster you would like to look for?");
+			for(int i=1; i<bestiary[primary].length+1;i++)
+			{
+				System.out.print(i + ") ");
+				System.out.println(typeNames[primary][i]);
+			}
+			System.out.println("7) Go Back\n8) Exit");
+			choice=Main.verify(bestiary[primary].length+2);
+			if(choice>0&&choice<7)
+			{
+				travelEvolution(primary,choice-1);
+			}
+			else if(choice==7)
+			{
+				return;
+			}
+			else if(choice==8)
+			{
+				exit=true;//this sets the static value to true, which will kick the user out of all while loops in bestiary
+				return;
+			}
+		}
 		
 	}
 	public static void travelEvolution(int primary,int secondary)
 	{
-		
+		exit=false;
+		while(!exit)
+		{
+			System.out.println("Which monster sub-group for the " + typeNames[primary][secondary] + " monster group would you like to look at?");
+			System.out.println("1) Show All\n2) Show Eggs\n3) Show Infants\n4) Show Adolescents\n5) Show Adults\n6) Show Elders\n7) Go Back\n8) Exit");
+			choice=Main.verify(6);
+			if(choice==1)
+			{
+				travelShowAllInGroup(primary,secondary);
+			}
+			else if(choice>1&&choice<7)
+			{
+				travelSelect(primary,secondary,choice-2);
+			}
+			else if(choice==7)
+			{
+				return;
+			}
+			else if(choice==8)
+			{
+				exit=true;
+				return;
+			}
+		}
 	}
 	public static void travelSelect(int primary,int secondary, int evolution)
+	{
+		
+	}
+	public static void travelShowAllInGroup(int primary, int secondary)
 	{
 		
 	}

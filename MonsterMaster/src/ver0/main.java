@@ -323,7 +323,7 @@ public class Main
 		}
 	}
 	/**
-	 * @author: Tim Elvart,Austin Bailey
+	 * @author: Tim Elvart
 	 * @param min
 	 * @param max
 	 * @pre instance of Battle exists
