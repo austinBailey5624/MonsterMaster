@@ -4,16 +4,16 @@
  * 		@dateBegun:		12/6/2015
  **/
 package ver0;
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
+import java.util.Random;
+//import java.io.*;
 public class Main 
 {
+	static Random r = new Random(422187);//arbitrarily picked the answer to the life the universe and everything followed by Finn's serial number for random
 	static int tempi;//temporary int
 	static String temps;//temporary String
 	static String inputError="Sorry we didn't understand your input, please only enter one of the numbers provided";
 	static int choice;
-	static FileInputStream fileIn=null;
-	static FileOutputStream fileOut=null;
 	static Scanner myScanner= new Scanner(System.in);
 	static boolean exit;
 	public static void plot()
@@ -128,7 +128,6 @@ public class Main
 	}
 	public static void main(String[] args)
 	{
-//		String[][] typeNames=Bestiary.defineTypes();
 		exit=false;
 		String mainMenuOptions="Main menu\n1) Count Monsters\n2) Transverse Bestiary\n3) Test gridWalk\n4) Exit";
 		while(!exit)
@@ -165,15 +164,7 @@ public class Main
 		while(!exit)
 		{
 			System.out.println("1) Print regular\n2) Print Agile\n3) Exit");
-			temps=myScanner.next();
-			if(verifyInt(temps))//this block verifies that the given information is valid
-			{
-				choice=Integer.parseInt(temps);
-			}
-			else
-			{
-				choice=0;
-			}
+			choice=verify(3);
 			if(choice==1)
 			{
 				GridWalkStaticDisplay();
@@ -195,13 +186,14 @@ public class Main
 	public static void GridWalkStaticDisplay()
 	{
 		Place myPlace;
+		int temp;
 		exit=false;
 		while(!exit)
 		{
 			System.out.println("Which place would you like to visit?\n1)Maxe\n2)Square"
 					+ "\n3)inequalSides\n4)Exit");
-			String input = myScanner.next();
-			if(input.equals("1"))
+			temp=verify(4);
+			if(temp==1)
 			{
 				myPlace = new Place(0,0);
 				int exitnum=1;
@@ -225,17 +217,17 @@ public class Main
 					}
 				}
 			}
-			else if(input.equals("2"))
+			else if(temp==2)
 			{
 				myPlace=new Place(0,1);
 				myPlace.transverse(true);
 			}
-			else if(input.equals("3"))
+			else if(temp==3)
 			{
 				myPlace=new Place(2,1);
 				myPlace.transverse(true);
 			}
-			else if(input.equals("4"))
+			else if(temp==4)
 			{
 				return;
 			}
@@ -282,6 +274,10 @@ public class Main
 		try
 		{
 			int x=Integer.parseInt(s);
+			if(x==0)
+			{
+				
+			}
 			return true;
 		}
 		catch(Exception e)
@@ -293,9 +289,9 @@ public class Main
 	public static void SmartPrint(String s)
 	{
 		int stop=s.length();
-		for(int i=0; i<stop;i++)
+		for(int i=0; i<stop;)
 		{
-			for(int j=0; j<55&&i<stop;j++)
+			for(int j=0; j<56&&i<stop;j++)
 			{
 				System.out.print(s.charAt(i));
 				i++;
@@ -303,5 +299,39 @@ public class Main
 			System.out.println();
 		}
 		
+	}
+	public static int verify(int answerCeiling)//the answerCeiling refers to the larges acceptable integer that will be accepted
+	{
+		String num=myScanner.next();
+		try
+		{
+			int choice=Integer.parseInt(num);//tries to parse the string as an integer, if it fails, the catch clause is triggered, which returns a 0 for bad value
+			if(choice<1||choice>answerCeiling)
+			{
+				System.out.println("Please enter a number between 1 and " + answerCeiling);
+				return 0;
+			}
+			else
+			{
+				return choice;
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("Please only input the numbers cooresponding to the choices");
+			return 0;//stands for error
+		}
+	}
+	/**
+	 * @author: Tim Elvart,Austin Bailey
+	 * @param min
+	 * @param max
+	 * @pre instance of Battle exists
+	 * @post none
+	 * @return Int that has value inclusively between min and max
+	 */
+	public static int randomNumber(int min, int max)
+	{
+		return r.nextInt(max-min+1)+min;
 	}
 }
