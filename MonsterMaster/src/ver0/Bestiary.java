@@ -993,7 +993,7 @@ public class Bestiary
 		
 		return typeNames;
 	}
-	public static void travel(MonsterType[][][][] bestiary)
+	public static void travel()
 	{
 		exit=false;
 		while(!exit)
@@ -1014,6 +1014,8 @@ public class Bestiary
 			}
 		}
 	}
+	
+
 	public static void travelPrimary()
 	{
 		exit=false;
@@ -1064,16 +1066,25 @@ public class Bestiary
 	public static void travelEvolution(int primary,int secondary)
 	{
 		exit=false;
+		Fourple catcher;
 		while(!exit)
 		{
 			System.out.println("Which monster sub-group for the " + typeNames[primary][secondary] + " monster group would you like to look at?");
 			System.out.println("1) Show All\n2) Show Eggs\n3) Show Infants\n4) Show Adolescents\n5) Show Adults\n6) Show Elders\n7) Go Back\n8) Exit");
 			choice=Main.verify(6);
-			if(choice==1)
+			while(choice==1)
 			{
-				travelShowAllInGroup(primary,secondary);
+				catcher=travelShowAllInGroup(primary,secondary);
+				if(catcher.m_a==7)
+				{
+					choice=0;
+				}
+				else
+				{
+					travelMonster(catcher.m_a,catcher.m_b,catcher.m_c,catcher.m_d);
+				}
 			}
-			else if(choice>1&&choice<7)
+			if(choice>1&&choice<7)
 			{
 				travelSelect(primary,secondary,choice-2);
 			}
@@ -1086,19 +1097,152 @@ public class Bestiary
 				exit=true;
 				return;
 			}
+			
 		}
 	}
 	public static void travelSelect(int primary,int secondary, int evolution)
 	{
-		
+		int length;
+		exit=false;
+		while(!exit)
+		{
+			length = bestiary[primary][secondary][evolution].length;
+			System.out.println("Which monster type would you like to look at?");
+			for(int i=1; i<bestiary[primary][secondary][evolution].length+1;i++)
+			{
+				System.out.println(i + ") " + bestiary[primary][secondary][evolution][i].getTypeName());
+			}
+			System.out.println((length+1) + ") Go Back\n" +(length+2)+ ") Exit");
+			choice=Main.verify(length+2);
+			if(choice>0 && choice<length)
+			{
+				travelMonster(primary,secondary,evolution,choice-1);
+			}
+			else if(choice==length+1)
+			{
+				return;
+			}
+			else if(choice==length+2)
+			{
+				exit=true;
+				return;
+			}
+		}
 	}
-	public static void travelShowAllInGroup(int primary, int secondary)
+	public static Fourple travelShowAllInGroup(int primary, int secondary)
 	{
+		exit=false;
+		Fourple returner = new Fourple();
+		int choice=0;
+		int size=0;//the size of the array of tuples
+		//This for loop determines the length of the tuple
+		for(int i=0; i<bestiary[primary][secondary].length;i++)
+		{
+			for(int j=0;j<bestiary[primary][secondary][i].length;j++)
+			{
+				size++;
+			}
+		}
 		
+		Tuple[] choices = new Tuple[size]; 
+		while(exit==false)//just mixing up the looping condition for some style points
+		{
+			System.out.println("Which Monster in the group would you like to look at?");
+			for(int i=0; i<bestiary[primary][secondary].length;i++)
+			{
+				for(int j=0; j<bestiary[primary][secondary][i].length;j++)
+				{
+					System.out.println((choice+1) + ") " + bestiary[primary][secondary][i][j].getTypeName());
+					choices[choice].m_a=i;
+					choices[choice].m_b=j;
+					choice++;
+				}
+			}
+			System.out.println(choice + ") go Back");
+			choice++;
+			System.out.println(choice + ") Exit");
+			
+			tempi=Main.verify(choice+1);
+			if(tempi>0&&tempi<choice-2)
+			{
+				returner.m_a=primary;
+				returner.m_b=secondary;
+				returner.m_c=choices[tempi].m_a;
+				returner.m_d=choices[tempi].m_b;
+				return returner;
+			}
+			else if(tempi==choice-1)
+			{
+				returner.m_a=7;
+				return returner;
+			}
+			else if(tempi==choice)
+			{
+				returner.m_a=7;
+				exit=true;
+				return returner;
+			}
+		}
+		returner.m_a=7;//unnecessary-added to get rid of warnings
+		return returner;
 	}
 	public static void travelMonster(int primary, int secondary, int evolution, int which)
 	{
+		MonsterType selected= bestiary[primary][secondary][evolution][which];//timesaver;
+		System.out.println("Name:              " + selected.getTypeName());
+		System.out.println("Primary Element:   " + getElementName(selected.getPrimaryElement()));
+		System.out.println("Secondary Element: " + getElementName(selected.getSecondaryElement()));
+		System.out.println("Derived Element:   " + typeNames[selected.getPrimaryElement()][selected.getSecondaryElement()]);
+		System.out.println("Evolution Stage:   " + getStageName(selected.getEvolutionStage()));
+		Main.SmartPrint("Description:\n" + selected.getDescription());
 		
+		System.out.println("num of evolutions is " +selected.getNumOfEvolutions());//debugging
+		if(selected.getNumOfEvolutions()==0)
+		{
+			System.out.println("Evolves Into:        Does not Evolve into anything");
+		}
+		else if(selected.getNumOfEvolutions()==1)
+		{
+			System.out.println("Evolves Into:        " + selected.getEvolvesInto1().getTypeName());
+		}
+		else if(selected.getNumOfEvolutions()==2)
+		{
+			System.out.println("Physical Evolution:  " + selected.getEvolvesInto1().getTypeName());
+			System.out.println("Magical  Evolution:  " + selected.getEvolvesInto2().getTypeName());
+		}
+		else if(selected.getNumOfEvolutions()==3)
+		{
+			System.out.println("Physical Evolution:  " + selected.getEvolvesInto1().getTypeName());
+			System.out.println("Balanced Evolution:  " + selected.getEvolvesInto2().getTypeName());
+			System.out.println("Magical  Evolution:  " + selected.getEvolvesInto3().getTypeName());
+		}
+		else
+		{
+			System.out.println("Incorrect value for get NUM of Evolutions");
+		}
+		
+		if(selected.getNumEvolvesFrom()==0)
+		{
+			System.out.println("Does Not Evolve From anything");
+		}
+		else if(selected.getNumEvolvesFrom()==1)
+		{
+			System.out.println("EvolvesFrom: " + selected.getEvolvesFrom1());
+		}
+		else if(selected.getNumEvolvesFrom()==2)
+		{
+			System.out.println("Evolves From: " + selected.getEvolvesFrom1());
+			System.out.println("and:          " + selected.getEvolvesFrom2());
+		}
+		else if(selected.getNumEvolvesFrom()==3)
+		{
+			System.out.println("Evolves From: " +selected.getEvolvesFrom1());
+			System.out.println("and:          " +selected.getEvolvesFrom2());
+			System.out.println("and           " +selected.getEvolvesFrom3());
+		}
+		
+		exit=false;
+		//TODO finish
 	}
 
 	
@@ -1459,9 +1603,35 @@ public class Bestiary
 			return("Error: Invalid Argument");
 		}
 	}
+	public static String getStageName(int stage)
+	{
+		if(stage==0)
+		{
+			return("Egg");
+		}
+		else if(stage==1)
+		{
+			return("Infant");
+		}
+		else if(stage==2)
+		{
+			return("Adolescent");
+		}
+		else if(stage==3)
+		{
+			return("Adult");
+		}
+		else if(stage==4)
+		{
+			return("Elder");
+		}
+		else
+		{
+			return("Error: invalid Argument");
+		}
+	}
 	public static void run()
 	{
-		MonsterType[][][][] bestiary = generateBestiary();
-		transverseBestiary(bestiary);
+		travel();
 	}
 }
