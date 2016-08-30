@@ -9,16 +9,6 @@ public class MonsterType
 {
 	static int monsterTypeNum=0;
 	//constructors
-//	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType)//Outdated, unused
-//	{
-//		m_typeName = typeName;
-//		m_primaryElement=primaryElement;
-//		m_secondaryElement=secondaryElement;
-//		m_evolutionStage=evolutionStage;
-//		m_evolutionType=evolutionType;
-//		monsterTypeNum++;
-//	}
-	
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description)
 	{
 		m_numEvolvesFrom=0;

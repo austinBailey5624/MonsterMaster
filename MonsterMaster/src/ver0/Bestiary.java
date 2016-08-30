@@ -1,6 +1,5 @@
 package ver0;
 import java.util.Scanner;
-import java.util.Random;
 /**
  * @file	Bestiary.java
  * @author 	Austin Bailey <a604b997@gmail.com>
@@ -1022,7 +1021,7 @@ public class Bestiary
 		while(!exit)
 		{
 			System.out.println("What is the primary element of the monster you would like to look for?");
-			System.out.println("1) Fire\n2) Water\n3) Earth\n4) Air\n5) Light\n6)Dark\n7)Exit Bestiary");
+			System.out.println("1) Fire\n2) Water\n3) Earth\n4) Air\n5) Light\n6) Dark\n7)Exit Bestiary");
 			choice=Main.verify(7);
 			if(choice>0&&choice<7)
 			{
@@ -1043,7 +1042,7 @@ public class Bestiary
 			for(int i=1; i<bestiary[primary].length+1;i++)
 			{
 				System.out.print(i + ") ");
-				System.out.println(typeNames[primary][i]);
+				System.out.println(typeNames[primary][i-1]);
 			}
 			System.out.println("7) Go Back\n8) Exit");
 			choice=Main.verify(bestiary[primary].length+2);
@@ -1065,6 +1064,8 @@ public class Bestiary
 	}
 	public static void travelEvolution(int primary,int secondary)
 	{
+		Fourple next=new Fourple();
+		next.m_a=0;
 		exit=false;
 		Fourple catcher;
 		while(!exit)
@@ -1081,7 +1082,10 @@ public class Bestiary
 				}
 				else
 				{
-					travelMonster(catcher.m_a,catcher.m_b,catcher.m_c,catcher.m_d);
+					while(catcher.m_a!=7)
+					{
+						catcher =travelMonster(catcher.m_a,catcher.m_b,catcher.m_c,catcher.m_d);
+					}
 				}
 			}
 			if(choice>1&&choice<7)
@@ -1103,6 +1107,8 @@ public class Bestiary
 	public static void travelSelect(int primary,int secondary, int evolution)
 	{
 		int length;
+		Fourple next = new Fourple();
+		next.m_a=0;
 		exit=false;
 		while(!exit)
 		{
@@ -1110,13 +1116,20 @@ public class Bestiary
 			System.out.println("Which monster type would you like to look at?");
 			for(int i=1; i<bestiary[primary][secondary][evolution].length+1;i++)
 			{
-				System.out.println(i + ") " + bestiary[primary][secondary][evolution][i].getTypeName());
+				System.out.println(i + ") " + bestiary[primary][secondary][evolution][i-1].getTypeName());
 			}
 			System.out.println((length+1) + ") Go Back\n" +(length+2)+ ") Exit");
 			choice=Main.verify(length+2);
+			next.m_a=primary;
+			next.m_b=secondary;
+			next.m_c=evolution;
+			next.m_d=choice-1;
 			if(choice>0 && choice<length)
 			{
-				travelMonster(primary,secondary,evolution,choice-1);
+				while(next.m_a!=7)
+				{
+					next= travelMonster(next.m_a,next.m_b,next.m_c,next.m_d);
+				}
 			}
 			else if(choice==length+1)
 			{
@@ -1145,6 +1158,10 @@ public class Bestiary
 		}
 		
 		Tuple[] choices = new Tuple[size]; 
+		for(int i=0;i<size;i++)
+		{
+			choices[i]=new Tuple();
+		}
 		while(exit==false)//just mixing up the looping condition for some style points
 		{
 			System.out.println("Which Monster in the group would you like to look at?");
@@ -1158,17 +1175,17 @@ public class Bestiary
 					choice++;
 				}
 			}
+			choice++;
 			System.out.println(choice + ") go Back");
 			choice++;
 			System.out.println(choice + ") Exit");
-			
 			tempi=Main.verify(choice+1);
-			if(tempi>0&&tempi<choice-2)
+			if(tempi>0&&tempi<choice-1)
 			{
 				returner.m_a=primary;
 				returner.m_b=secondary;
-				returner.m_c=choices[tempi].m_a;
-				returner.m_d=choices[tempi].m_b;
+				returner.m_c=choices[tempi-1].m_a;
+				returner.m_d=choices[tempi-1].m_b;
 				return returner;
 			}
 			else if(tempi==choice-1)
@@ -1182,11 +1199,12 @@ public class Bestiary
 				exit=true;
 				return returner;
 			}
+			choice=0;
 		}
 		returner.m_a=7;//unnecessary-added to get rid of warnings
 		return returner;
 	}
-	public static void travelMonster(int primary, int secondary, int evolution, int which)
+	public static Fourple travelMonster(int primary, int secondary, int evolution, int which)
 	{
 		MonsterType selected= bestiary[primary][secondary][evolution][which];//timesaver;
 		System.out.println("Name:              " + selected.getTypeName());
@@ -1227,22 +1245,100 @@ public class Bestiary
 		}
 		else if(selected.getNumEvolvesFrom()==1)
 		{
-			System.out.println("EvolvesFrom: " + selected.getEvolvesFrom1());
+			System.out.println("EvolvesFrom: " + selected.getEvolvesFrom1().getTypeName());
 		}
 		else if(selected.getNumEvolvesFrom()==2)
 		{
-			System.out.println("Evolves From: " + selected.getEvolvesFrom1());
-			System.out.println("and:          " + selected.getEvolvesFrom2());
+			System.out.println("Evolves From: " + selected.getEvolvesFrom1().getTypeName());
+			System.out.println("and:          " + selected.getEvolvesFrom2().getTypeName());
 		}
 		else if(selected.getNumEvolvesFrom()==3)
 		{
-			System.out.println("Evolves From: " +selected.getEvolvesFrom1());
-			System.out.println("and:          " +selected.getEvolvesFrom2());
-			System.out.println("and           " +selected.getEvolvesFrom3());
+			System.out.println("Evolves From: " + selected.getEvolvesFrom1().getTypeName());
+			System.out.println("and:          " + selected.getEvolvesFrom2().getTypeName());
+			System.out.println("and           " + selected.getEvolvesFrom3().getTypeName());
 		}
 		
 		exit=false;
-		//TODO finish
+		int size=selected.getNumEvolvesFrom()+selected.getNumOfEvolutions();
+		Tuple[] indexer = new Tuple[size];
+		for(int i=0;i<size;i++)
+		{
+			indexer[i]=new Tuple();
+		}
+		while(exit==false)
+		{
+			choice=0;
+			System.out.println("What would you like to look at next?");
+			if(selected.getNumEvolvesFrom()>0)			
+			{
+				System.out.println(choice+1 + ") " +selected.getEvolvesFrom1().getTypeName());
+				indexer[choice].m_a=selected.getEvolvesFrom1().getEvolutionStage();
+				indexer[choice].m_b=selected.getEvolvesFrom1().getEvolutionType();
+				choice++;
+			}
+			if(selected.getNumEvolvesFrom()>1)
+			{
+				System.out.println(choice+1 + ") " +selected.getEvolvesFrom2().getTypeName());
+				indexer[choice].m_a=selected.getEvolvesFrom2().getEvolutionStage();
+				indexer[choice].m_b=selected.getEvolvesFrom2().getEvolutionType();
+				choice++;
+			}
+			if(selected.getNumEvolvesFrom()>2)
+			{
+				System.out.println(choice+1 + ") " + selected.getEvolvesFrom3().getTypeName());
+				indexer[choice].m_a=selected.getEvolvesFrom2().getEvolutionStage();
+				indexer[choice].m_b=selected.getEvolvesFrom2().getEvolutionType();
+				choice++;
+			}
+			if(selected.getNumOfEvolutions()>0)
+			{
+				System.out.println(choice+1 + ") " +selected.getEvolvesInto1().getTypeName());
+				indexer[choice].m_a=selected.getEvolvesInto1().getEvolutionStage();
+				indexer[choice].m_b=selected.getEvolvesInto1().getEvolutionType();
+				choice++;
+			}
+			if(selected.getNumOfEvolutions()>1)
+			{	
+				System.out.println(choice+1 + ") " + selected.getEvolvesInto2().getTypeName());
+				indexer[choice].m_a=selected.getEvolvesInto2().getEvolutionStage();
+				indexer[choice].m_b=selected.getEvolvesInto2().getEvolutionType();
+				choice++;
+			}
+			if(selected.getNumOfEvolutions()>2)
+			{
+				System.out.println(choice+1 + ") " +selected.getEvolvesInto3().getTypeName());
+				indexer[choice].m_a=selected.getEvolvesInto3().getEvolutionStage();
+				indexer[choice].m_b=selected.getEvolvesInto3().getEvolutionType();
+				choice++;
+			}
+			System.out.println(choice+1 + ") Go Back");
+			choice++;
+			System.out.println(choice+1 + ") Exit");
+			int decision = Main.verify(size+2);
+			Fourple myFourple = new Fourple();
+			myFourple.m_a = primary;
+			myFourple.m_b = secondary;
+			myFourple.m_c=7;
+			myFourple.m_d=7;
+			if(decision>0&decision<size)
+			{
+				myFourple.m_c=indexer[decision].m_a;
+				myFourple.m_d=indexer[decision].m_b;
+			}
+			else if(decision==choice)
+			{
+				return myFourple;				
+			}
+			else if(decision==choice+1)
+			{
+				exit=false;
+				return myFourple;
+			}
+		}
+		Fourple ple =new Fourple();
+		ple.m_a=7;
+		return ple;
 	}
 
 	
