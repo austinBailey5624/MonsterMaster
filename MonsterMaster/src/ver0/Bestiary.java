@@ -953,6 +953,10 @@ public class Bestiary
 	{
 		MonsterType[] myArray=convertTo1d();
 		Fourple[] myFourples=new Fourple[myArray.length];
+		for(int i=0; i<myFourples.length;i++)
+		{
+			myFourples[i]=new Fourple();
+		}
 		int index=0;
 		for(int i=0; i<bestiary.length;i++)
 		{
@@ -1020,6 +1024,7 @@ public class Bestiary
 	{
 		exit=false;
 		Fourple myFourple= new Fourple();
+		int lookup;
 		while(!exit)
 		{	
 			System.out.println("What would you like to do?\n1) Find monsters by element\n2) Look at random Monster\n3) Look up Monster by Index\n4) Look up Monster by Array position");
@@ -1047,7 +1052,13 @@ public class Bestiary
 			{
 				System.out.println("What position in the 1d array would you like to lookup?");
 				MonsterType[] bestiary1d=convertTo1d();
-//				Fourple[] = new Fourple
+				Fourple[] IndexLookup=generateMonsterIndexes();
+				lookup=Main.verify(bestiary1d.length);
+				myFourple=IndexLookup[lookup];
+				while(myFourple.m_a!=7)
+				{
+					myFourple=travelMonster(myFourple.m_a,myFourple.m_b,myFourple.m_c,myFourple.m_d);
+				}
 			}
 		}
 	}
@@ -1110,7 +1121,7 @@ public class Bestiary
 		{
 			System.out.println("Which monster sub-group for the " + typeNames[primary][secondary] + " monster group would you like to look at?");
 			System.out.println("1) Show All\n2) Show Eggs\n3) Show Infants\n4) Show Adolescents\n5) Show Adults\n6) Show Elders\n7) Go Back\n8) Exit");
-			choice=Main.verify(6);
+			choice=Main.verify(8);
 			while(choice==1)
 			{
 				catcher=travelShowAllInGroup(primary,secondary);
@@ -1244,6 +1255,12 @@ public class Bestiary
 	}
 	public static Fourple travelMonster(int primary, int secondary, int evolution, int which)
 	{
+		if(primary==7)
+		{
+			Fourple x=new Fourple();
+			x.m_a=7;
+			return x;
+		}
 		MonsterType selected= bestiary[primary][secondary][evolution][which];//timesaver;
 		System.out.println("Name:              " + selected.getTypeName());
 		System.out.println("Primary Element:   " + getElementName(selected.getPrimaryElement()));
@@ -1361,15 +1378,18 @@ public class Bestiary
 			myFourple.m_d=7;
 			if(decision>0&decision<size)
 			{
-				myFourple.m_c=indexer[decision].m_a;
-				myFourple.m_d=indexer[decision].m_b;
+				myFourple.m_c=indexer[decision-1].m_a;
+				myFourple.m_d=indexer[decision-1].m_b;
+				return myFourple;
 			}
 			else if(decision==choice)
 			{
+				myFourple.m_a=7;
 				return myFourple;				
 			}
 			else if(decision==choice+1)
 			{
+				myFourple.m_a=7;
 				exit=false;
 				return myFourple;
 			}
