@@ -929,7 +929,7 @@ public class Bestiary
 		//TODO finish
 		return bestiary;
 	}
-	public static MonsterType[] convertTo1d(MonsterType[][][][] bestiary)
+	public static MonsterType[] convertTo1d()
 	{
 		MonsterType[] bestiary1d=new MonsterType[358];
 		int index=0;
@@ -948,6 +948,30 @@ public class Bestiary
 			}
 		}
 		return bestiary1d;
+	}
+	public static Fourple[] generateMonsterIndexes()
+	{
+		MonsterType[] myArray=convertTo1d();
+		Fourple[] myFourples=new Fourple[myArray.length];
+		int index=0;
+		for(int i=0; i<bestiary.length;i++)
+		{
+			for(int j=0; j<bestiary[i].length;j++)
+			{
+				for(int k=0; k<bestiary[i][j].length;k++)
+				{
+					for(int m=0;m<bestiary[i][j][k].length;m++)
+					{
+						myFourples[index].m_a=i;
+						myFourples[index].m_b=j;
+						myFourples[index].m_c=k;
+						myFourples[index].m_d=m;
+						index++;
+					}
+				}
+			}
+		}
+		return myFourples;
 	}
 	public static String[][] defineTypes()
 	{
@@ -995,6 +1019,7 @@ public class Bestiary
 	public static void travel()
 	{
 		exit=false;
+		Fourple myFourple= new Fourple();
 		while(!exit)
 		{	
 			System.out.println("What would you like to do?\n1) Find monsters by element\n2) Look at random Monster\n3) Look up Monster by Index\n4) Look up Monster by Array position");
@@ -1009,7 +1034,20 @@ public class Bestiary
 				int secondaryElement=Main.randomNumber(0, bestiary[primaryElement].length);
 				int evolutionStage=Main.randomNumber(0, bestiary[primaryElement][secondaryElement].length);
 				int monsterSelect=Main.randomNumber(0, bestiary[primaryElement][secondaryElement][evolutionStage].length);
-				travelMonster(primaryElement,secondaryElement,evolutionStage,monsterSelect);
+				myFourple.m_a=primaryElement;
+				myFourple.m_b=secondaryElement;
+				myFourple.m_c=evolutionStage;
+				myFourple.m_d=monsterSelect;
+				while(myFourple.m_a!=7)
+				{
+					myFourple=travelMonster(myFourple.m_a,myFourple.m_b,myFourple.m_c,myFourple.m_d);
+				}
+			}
+			else if(choice==3)
+			{
+				System.out.println("What position in the 1d array would you like to lookup?");
+				MonsterType[] bestiary1d=convertTo1d();
+//				Fourple[] = new Fourple
 			}
 		}
 	}
