@@ -12,6 +12,13 @@ public class Actor
 	private int m_mpCur;		//holds the current mp that can be used in battle
 	
 	private int m_level;		//holds the level of the character
+
+	public int[] m_thornsDmg;	//holds the amount of damage the enemy takes when attacking
+	public int[] m_status;		//holds the statuses of the Actor
+	public int m_numPhysicalAttacks;//used in determining how monsters evolve
+	public int m_numMagicalAttacks;//used in determining how monsters evolve
+	
+	
 	
 	//getters
 	/**
