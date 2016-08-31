@@ -18,6 +18,7 @@ public class Bestiary
 	public static Scanner myScanner= new Scanner(System.in);
 	public static MonsterType[][][][] generateBestiary()
 	{
+		Skill[] skillSet=Skill.getAllSkills();
 		MonsterType[][][][] bestiary=new MonsterType[6][][][];
 		bestiary[5]=new MonsterType[6][][];
 		bestiary[4]=new MonsterType[6][][];
@@ -35,15 +36,15 @@ public class Bestiary
 		bestiary[0][0][4][1]=new MonsterType("Benemoth",0,0,4,1,"The benemoth is a giant, human shaped colossus of flame.");
 		bestiary[0][0][4][2]=new MonsterType("Bolide",0,0,4,2,"The Bolide is a grown up comet with large muscular legs that moves even faster.");
 		bestiary[0][0][4][3]=new MonsterType("Flame Atronach",0,0,4,3,"The flame atronach is a giant circular flame symbol made of red steel surrouned by six smaller flame symbols that rotate around it, faster when its casting a spell");
-		bestiary[0][0][3][0]=new MonsterType("Pyros",0,0,3,0,"A Pyros has the body of a man and the head of a bull, it wears a cape made of flame though the cape does not burn it. It has a flame crescent axe that seems to be made of red steel",bestiary[0][0][4][0],bestiary[0][0][4][1]);
+		bestiary[0][0][3][0]=new MonsterType("Pyros",0,0,3,0,"A Pyros has the body of a man and the head of a bull, it wears a cape made of flame though the cape does not burn it. It has a flame crescent axe that seems to be made of red steel",bestiary[0][0][4][0],bestiary[0][0][4][1],skillSet[8]);
 		bestiary[0][0][3][1]=new MonsterType("Flarus",0,0,3,1,"A greater Flarus has short legs and gian arms that extend to the floor. Its entire body is aflame, and short red horns can be seen ",bestiary[0][0][4][1]);
 		bestiary[0][0][3][2]=new MonsterType("Comet",0,0,3,2,"The Comet is a four legged hound with an incredible amount of speed. It runs as fast as it can and slams into its enemy in combat, known as the 'comet dash'",bestiary[0][0][4][2]);
 		bestiary[0][0][3][3]=new MonsterType("Flame Elemental",0,0,3,2,"The flame elemetal has is a chasis of black iron engulfed in flame",bestiary[0][0][4][3]);
-		bestiary[0][0][2][0]=new MonsterType("Pyrus",0,0,2,0,"Pyrus is a three foot tall demon, engulfed in flame with an extending red snout like a dogs with black eyes and red iruses. His teeth shine in the light of his flames",bestiary[0][0][4][0],bestiary[0][0][4][1]);
+		bestiary[0][0][2][0]=new MonsterType("Pyrus",0,0,2,0,"Pyrus is a three foot tall demon, engulfed in flame with an extending red snout like a dogs with black eyes and red iruses. His teeth shine in the light of his flames",bestiary[0][0][3][0],bestiary[0][0][3][1],skillSet[7]);
 		bestiary[0][0][2][1]=new MonsterType("Flarpup",0,0,2,1,"The Flarpup is a small dog with hair that looks like fire. It inflicts fire damage with its bite",bestiary[0][0][3][2]);
 		bestiary[0][0][2][2]=new MonsterType("Flame Symbol",0,0,2,2,"A circular golden band a foot and a half in diameter two inches thick holds a red sphere at its base. When it becomes angry the ring lights aflame and the flame symbol can be seen glowing in its center, althouh there is nothing there",bestiary[0][0][3][3]);
-		bestiary[0][0][1][0]=new MonsterType("Flarial",0,0,1,0,"An orange ball of flame with a red eye. It hovers in the air, a foot above the ground, a sphere a foot in diameter. The ends of the flame flow behind it, althogh no wind can be felt",bestiary[0][0][2][0],bestiary[0][0][2][1],bestiary[0][0][2][2]);
-		bestiary[0][0][0][0]=new MonsterType("Pyro Egg",0,0,0,0,"An orange egg with the symbol of a red flame. When you touch it, it is warm, and you become angry, though you do not know why. Pull your hand away and you are burned, though by the egg or yourself you cannot tell",bestiary[0][0][1][0]);
+		bestiary[0][0][1][0]=new MonsterType("Flarial",0,0,1,0,"An orange ball of flame with a red eye. It hovers in the air, a foot above the ground, a sphere a foot in diameter. The ends of the flame flow behind it, althogh no wind can be felt",bestiary[0][0][2][0],bestiary[0][0][2][1],bestiary[0][0][2][2],skillSet[6]);
+		bestiary[0][0][0][0]=new MonsterType("Pyro Egg",0,0,0,0,"An orange egg with the symbol of a red flame. When you touch it, it is warm, and you become angry, though you do not know why. Pull your hand away and you are burned, though by the egg or yourself you cannot tell",bestiary[0][0][1][0],skillSet[0]);
 		bestiary[0][0][4][0].setEvolvesFrom(bestiary[0][0][3][0]);
 		bestiary[0][0][4][1].setEvolvesFrom(bestiary[0][0][3][0]);
 		bestiary[0][0][4][1].setEvolvesFrom2(bestiary[0][0][3][1]);
@@ -210,7 +211,7 @@ public class Bestiary
 		bestiary[1][1][2][1]=new MonsterType("Cuddlerfish",1,1,2,1,"A Cuddlerfish is shaped like a Cuttlefish but also loves cuddling. Thats why typically they come in pairs. They seperate infrequently, and when they do, both halves become very needy and inevitably float back together.",bestiary[1][1][3][1]);
 		bestiary[1][1][2][2]=new MonsterType("Aqua Symbol",1,1,2,1,"A silver Taurus, with a sapphire sphere at its base. Etched on the Sapphire Sphere is the water Symbol. When it attacks, the crest apears in the center of the Taurus, and water drips from it. When one is near, calmness and complasency echoes in the mind.",bestiary[1][1][3][2]);
 		bestiary[1][1][1][0]=new MonsterType("Minnow",1,1,1,0,"Minnow is a small blue fish with a green eye and finn. It floats in the air as if it were swimming in water. Why? How? Why did physics just suddenly stop working? BECAUSE I SAID SO. Thats why",bestiary[1][1][2][0],bestiary[1][1][2][1],bestiary[1][1][2][2]);
-		bestiary[1][1][0][0]=new MonsterType("Aqua Egg",1,1,0,0,"The egg faintly glows cyan when left in water. It is a light blue perfect egg shape, with the water crest in dark blue emblazoned across it. When brought out of water it dries. If it dries enough to crack the monster inside may be close to death, however submerging it in water again and the shell will regenerate",bestiary[1][1][1][0]);
+		bestiary[1][1][0][0]=new MonsterType("Aqua Egg",1,1,0,0,"The egg faintly glows cyan when left in water. It is a light blue perfect egg shape, with the water crest in dark blue emblazoned across it. When brought out of water it dries. If it dries enough to crack the monster inside may be close to death, however submerging it in water again and the shell will regenerate",bestiary[1][1][1][0],skillSet[2]);
 		bestiary[1][1][4][0].setEvolvesFrom(bestiary[1][1][3][0]);
 		bestiary[1][1][4][1].setEvolvesFrom(bestiary[1][1][3][1]);
 		bestiary[1][1][4][2].setEvolvesFrom(bestiary[1][1][3][2]);
@@ -431,7 +432,7 @@ public class Bestiary
 		bestiary[2][2][1][0]=new MonsterType("Babadger",2,2,1,0,"The Babadger lures its enemies close with its cuteness, and then slashes them viciously when they're exposed. But its only enemies are its fellow babadger pups, which is why its parents seperate them at birth",bestiary[2][2][2][0]);
 		bestiary[2][2][1][1]=new MonsterType("Bulbapup",2,2,1,1,"A small, energetic puppy with a large bulb on its back, resembling an onion. It loves to jump around, but when it does so it is rather comical, as the weight of the bulb often makes it fall over. Its bark is adoable. And its not a refrence to Bulbasaur from Pokemon. At all.",bestiary[2][2][2][1],bestiary[2][2][2][2],bestiary[2][2][2][4]);
 		bestiary[2][2][1][2]=new MonsterType("Stiket",2,2,1,2,"The sticket pretends to be magical but isn't. Its very depressing huh? Its basically just a small stick that can move on its own. But its very good at listening, probably because it cant talk. If it could though it would always advise revenge by saying 'Sticket to em!'",bestiary[2][2][2][3],bestiary[2][2][2][4]);		
-		bestiary[2][2][0][0]=new MonsterType("Tera Egg",2,2,0,0,"A brown Egg that looks a lot like a clod of dirt except for the glowing green earth crest etched onto its surface. It is heavy and when placed in the grass, the grass grows and circles around it, as if coushining it. It is magical and can evolve into a baby badger, a puppy or a stick. 'But Puppies dont come from eggs!' you may think! Banish your logic, this is a video game, there is no place for it here!",bestiary[2][2][1][0],bestiary[2][2][1][1],bestiary[2][2][1][2]);
+		bestiary[2][2][0][0]=new MonsterType("Tera Egg",2,2,0,0,"A brown Egg that looks a lot like a clod of dirt except for the glowing green earth crest etched onto its surface. It is heavy and when placed in the grass, the grass grows and circles around it, as if coushining it. It is magical and can evolve into a baby badger, a puppy or a stick. 'But Puppies dont come from eggs!' you may think! Banish your logic, this is a video game, there is no place for it here!",bestiary[2][2][1][0],bestiary[2][2][1][1],bestiary[2][2][1][2],skillSet[2]);
 		bestiary[2][2][4][0].setEvolvesFrom(bestiary[2][2][3][0]);
 		bestiary[2][2][4][1].setEvolvesFrom(bestiary[2][2][3][1]);
 		bestiary[2][2][4][2].setEvolvesFrom(bestiary[2][2][3][1]);
@@ -594,7 +595,7 @@ public class Bestiary
 		bestiary[3][3][2][1]=new MonsterType("Byrdi",3,3,2,1,"The Byrdi grew up in the seventies and fell in love with rock and roll. It gets dizzy when it acts out its favorite song",bestiary[3][3][3][1]);
 		bestiary[3][3][2][2]=new MonsterType("AeroSymbol",3,3,2,3,"The AeroSymbol is a circle with six points that looks like the aero glyph. The six points are feathers",bestiary[3][3][3][2]);
 		bestiary[3][3][1][0]=new MonsterType("Flapper",3,3,1,0,"The Flapper shows a ridiculous amount of leg, esspecially for this time period. It is very stylish, and wears a headband with a feather on it, even though its already a bird",bestiary[3][3][2][0],bestiary[3][3][2][1],bestiary[3][3][2][2]);
-		bestiary[3][3][0][0]=new MonsterType("AeroEgg",3,3,0,0,"The aeroEgg hovers in the air, and is yellow with the bird crest on it. It was designed to hover just in case one of its parents accidentally knocks it out of the tree, so it can be rescued before it hits the ground",bestiary[3][3][1][0]);
+		bestiary[3][3][0][0]=new MonsterType("AeroEgg",3,3,0,0,"The aeroEgg hovers in the air, and is yellow with the bird crest on it. It was designed to hover just in case one of its parents accidentally knocks it out of the tree, so it can be rescued before it hits the ground",bestiary[3][3][1][0],skillSet[3]);
 		bestiary[3][3][4][0].setEvolvesFrom(bestiary[3][3][3][0]);
 		bestiary[3][3][4][0].setEvolvesFrom(bestiary[3][3][3][1]);
 		bestiary[3][3][4][1].setEvolvesFrom(bestiary[3][3][3][2]);
@@ -762,7 +763,7 @@ public class Bestiary
 		bestiary[4][4][2][1]=new MonsterType("Candella",4,4,2,1, "A Candella absorbs the light of the sun during the day and uses this light to attack its enemies at night. It can reveal the presence of monsters trying to stealth",bestiary[4][4][3][1]);
 		bestiary[4][4][2][2]=new MonsterType("Light Symbol",4,4,2,2,"A Light symbol is the embodiment of the symbol of light and can cast lumimagia 1, the basic light attack spell",bestiary[4][4][3][2]);
 		bestiary[4][4][1][0]=new MonsterType("Lumin",4,4,1,0,"A lesser lumin is a small hovering ball of light that can heal other light monsters",bestiary[4][4][2][0],bestiary[4][4][2][1],bestiary[4][4][2][2]);
-		bestiary[4][4][0][0]=new MonsterType("Luxor Egg",4,4,0,0,"The luxor Egg glows a brilliant white and has the luxor symbol etched on its surface",bestiary[4][4][1][0]);
+		bestiary[4][4][0][0]=new MonsterType("Luxor Egg",4,4,0,0,"The luxor Egg glows a brilliant white and has the luxor symbol etched on its surface",bestiary[4][4][1][0],skillSet[4]);
 		bestiary[4][5]=new MonsterType[5][];
 		bestiary[4][5][0]=new MonsterType[1];
 		bestiary[4][5][1]=new MonsterType[1];
@@ -915,7 +916,7 @@ public class Bestiary
 		bestiary[5][5][2][1]=new MonsterType("Screel",5,5,2,1,"The Screel is a black envy demon, desiring the desiring the form and life of a man. It is still young, so the result is obscene",bestiary[5][5][3][0]);
 		bestiary[5][5][2][2]=new MonsterType("Umbral Symbol",5,5,2,2,"The Umbral Symbol is a floating symbol in the shape of the blinded eye that casts basic dark magic",bestiary[5][5][3][1]);
 		bestiary[5][5][1][0]=new MonsterType("Umbress",5,5,1,0,"The umbress appears to bea small floating black flame, with two purple eyes",bestiary[5][5][2][0],bestiary[5][5][2][1],bestiary[5][5][2][2]);
-		bestiary[5][5][0][0]=new MonsterType("Umbral Egg",5,5,0,0,"The umbral egg sucks light and appears to cast dark tendrils from its shell, but if you look again theyre gone. It seems weak and fragile when exposed to light, but during the dusk, when the light is weak, the blinded eye  can be seen embossed on its surface",bestiary[5][5][1][0]);
+		bestiary[5][5][0][0]=new MonsterType("Umbral Egg",5,5,0,0,"The umbral egg sucks light and appears to cast dark tendrils from its shell, but if you look again theyre gone. It seems weak and fragile when exposed to light, but during the dusk, when the light is weak, the blinded eye  can be seen embossed on its surface",bestiary[5][5][1][0],skillSet[5]);
 		bestiary[5][5][4][0].setEvolvesFrom(bestiary[5][5][3][0]);
 		bestiary[5][5][4][1].setEvolvesFrom(bestiary[5][5][3][1]);
 		bestiary[5][5][4][2].setEvolvesFrom(bestiary[5][5][3][2]);
