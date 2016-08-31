@@ -25,6 +25,7 @@ public class MonsterType
 		m_evolvesInto2=null;
 		m_evolvesInto3=null;
 		m_numOfEvolutions=0;
+		m_skill=null;
 		monsterTypeNum++;
 	}
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1)
@@ -43,6 +44,7 @@ public class MonsterType
 		m_evolvesInto2=null;
 		m_evolvesInto3=null;
 		m_numOfEvolutions=1;
+		m_skill=null;
 		monsterTypeNum++;
 	}
 	MonsterType(String typeName,int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2)
@@ -61,6 +63,7 @@ public class MonsterType
 		m_evolvesInto2=evolvesInto2;
 		m_evolvesInto3=null;
 		m_numOfEvolutions=2;
+		m_skill=null;
 		monsterTypeNum++;
 	}
 	MonsterType(String typeName,int primaryElement, int secondaryElement,int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2, MonsterType evolvesInto3)
@@ -79,6 +82,7 @@ public class MonsterType
 		m_evolvesInto2=evolvesInto2;
 		m_evolvesInto3=evolvesInto3;
 		m_numOfEvolutions=3;
+		m_skill=null;
 		monsterTypeNum++;
 	}
 	

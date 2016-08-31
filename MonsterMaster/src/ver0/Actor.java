@@ -20,7 +20,7 @@ public class Actor
 	
 	//constructors
 	
-	public void takeDamage(Damage damage)//TODO: fix this later
+	public void takeDamage(Damage damage) //TODO: fix this later
 	{
 		m_hpCur = m_hpCur-damage.m_phyDmg;
 		m_hpCur-=damage.m_magDmg;
@@ -186,4 +186,6 @@ public class Actor
 	{
 		m_level=level;
 	}
+
+
 }
