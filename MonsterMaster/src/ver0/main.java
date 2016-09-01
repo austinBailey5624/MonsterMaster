@@ -136,7 +136,7 @@ public class Main
 			choice=myScanner.nextInt();
 			if(choice==1)
 			{
-				System.out.println("There are " + MonsterType.monsterTypeNum + " Monster types with definitions so far");
+				System.out.println("There are " + MonsterType.howMany() + " Monster types with definitions so far");
 			}
 			else if(choice==2)
 			{

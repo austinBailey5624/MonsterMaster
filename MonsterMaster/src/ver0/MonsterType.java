@@ -7,7 +7,6 @@ package ver0;
 
 public class MonsterType 
 {
-	static int monsterTypeNum=0;
 	//constructors
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description)
 	{
@@ -26,7 +25,6 @@ public class MonsterType
 		m_evolvesInto3=null;
 		m_numOfEvolutions=0;
 		m_skill=null;
-		monsterTypeNum++;
 	}
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1)
 	{
@@ -45,7 +43,6 @@ public class MonsterType
 		m_evolvesInto3=null;
 		m_numOfEvolutions=1;
 		m_skill=null;
-		monsterTypeNum++;
 	}
 	MonsterType(String typeName,int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2)
 	{
@@ -64,7 +61,6 @@ public class MonsterType
 		m_evolvesInto3=null;
 		m_numOfEvolutions=2;
 		m_skill=null;
-		monsterTypeNum++;
 	}
 	MonsterType(String typeName,int primaryElement, int secondaryElement,int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2, MonsterType evolvesInto3)
 	{
@@ -83,7 +79,6 @@ public class MonsterType
 		m_evolvesInto3=evolvesInto3;
 		m_numOfEvolutions=3;
 		m_skill=null;
-		monsterTypeNum++;
 	}
 	
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, Skill skill)
@@ -103,7 +98,6 @@ public class MonsterType
 		m_evolvesInto3=null;
 		m_numOfEvolutions=0;
 		m_skill=skill;
-		monsterTypeNum++;
 	}
 	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1,Skill skill)
 	{
@@ -122,7 +116,6 @@ public class MonsterType
 		m_evolvesInto3=null;
 		m_numOfEvolutions=1;
 		m_skill=skill;
-		monsterTypeNum++;
 	}	
 	MonsterType(String typeName,int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2, Skill skill)
 	{
@@ -141,7 +134,6 @@ public class MonsterType
 		m_evolvesInto3=null;
 		m_numOfEvolutions=2;
 		m_skill=skill;
-		monsterTypeNum++;
 	}	
 	MonsterType(String typeName,int primaryElement, int secondaryElement,int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2, MonsterType evolvesInto3,Skill skill)
 	{
@@ -160,7 +152,6 @@ public class MonsterType
 		m_evolvesInto3=evolvesInto3;
 		m_numOfEvolutions=3;
 		m_skill=skill;
-		monsterTypeNum++;
 	}
 	//memberVariables
 	private int m_numOfEvolutions;
@@ -199,8 +190,27 @@ public class MonsterType
 				}
 			}
 		}
+		System.out.println("ERROR in index lookup!");
 		return-1;
-		
+	}
+	
+	public static int howMany()//returns how many monster types there are
+	{
+		int keeper=0;
+		for(int i=0; i<Bestiary.bestiary.length;i++)
+		{
+			for(int j=0; j<Bestiary.bestiary[i].length;j++)
+			{
+				for(int k=0; k<Bestiary.bestiary[i][j].length;k++)
+				{
+					for(int m=0; m<Bestiary.bestiary[i][j][k].length; m++)
+					{
+						keeper++;
+					}
+				}
+			}
+		}
+		return keeper;
 	}
 	
 	//getters and setters
