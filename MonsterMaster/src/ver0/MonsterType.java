@@ -179,6 +179,30 @@ public class MonsterType
 	private int m_secondaryElement;//Note same as above
 	Skill m_skill;
 	
+	public int indexLookup()
+	{
+		int keeper=0;
+		for(int i=0; i<Bestiary.bestiary.length;i++)
+		{
+			for(int j=0; j<Bestiary.bestiary[i].length;j++)
+			{
+				for(int k=0; k<Bestiary.bestiary[i][j].length;k++)
+				{
+					for(int m=0; m<Bestiary.bestiary[i][j][k].length; m++)
+					{
+						if(this.m_primaryElement==i&&this.m_secondaryElement==j&&this.m_evolutionStage==k&&this.m_evolutionType==m)
+						{
+							return keeper;
+						}
+						keeper++;
+					}
+				}
+			}
+		}
+		return-1;
+		
+	}
+	
 	//getters and setters
 	
 	public int getNumEvolvesFrom()
