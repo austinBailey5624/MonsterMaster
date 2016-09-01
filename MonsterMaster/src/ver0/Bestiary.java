@@ -1036,10 +1036,10 @@ public class Bestiary
 			}
 			else if(choice==2)
 			{
-				int primaryElement=Main.randomNumber(0,bestiary.length);
-				int secondaryElement=Main.randomNumber(0, bestiary[primaryElement].length);
-				int evolutionStage=Main.randomNumber(0, bestiary[primaryElement][secondaryElement].length);
-				int monsterSelect=Main.randomNumber(0, bestiary[primaryElement][secondaryElement][evolutionStage].length);
+				int primaryElement=Main.randomNumber(0,bestiary.length-1);
+				int secondaryElement=Main.randomNumber(0, bestiary[primaryElement].length-1);
+				int evolutionStage=Main.randomNumber(0, bestiary[primaryElement][secondaryElement].length-1);
+				int monsterSelect=Main.randomNumber(0, bestiary[primaryElement][secondaryElement][evolutionStage].length-1);
 				myFourple.m_a=primaryElement;
 				myFourple.m_b=secondaryElement;
 				myFourple.m_c=evolutionStage;
@@ -1236,7 +1236,7 @@ public class Bestiary
 				returner.m_b=secondary;
 				returner.m_c=choices[tempi-1].m_a;
 				returner.m_d=choices[tempi-1].m_b;
-				return returner;
+				travelMonster(primary,secondary,choices[tempi-1].m_a,choices[tempi-1].m_b);
 			}
 			else if(tempi==choice-1)
 			{
@@ -1381,6 +1381,7 @@ public class Bestiary
 			{
 				myFourple.m_c=indexer[decision-1].m_a;
 				myFourple.m_d=indexer[decision-1].m_b;
+				travelMonster(primary,secondary,indexer[decision-1].m_a,indexer[decision-1].m_b);
 				return myFourple;
 			}
 			else if(decision==choice)
