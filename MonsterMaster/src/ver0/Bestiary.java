@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Bestiary 
 {
 	public static MonsterType[][][][] bestiary=generateBestiary();
+	public static MonsterType[] bestiary1d=convertTo1d();
 	public static String[][] typeNames=defineTypes();
 	public static boolean exit;
 	public static int tempi;
@@ -74,7 +75,7 @@ public class Bestiary
 		bestiary[0][1][2][1]=new MonsterType("Erichthonius",0,1,2,1,"Erichthonius is a lizard the size of a wolf made of magma. It spits lava to attack",bestiary[0][1][3][1]);
 		bestiary[0][1][2][2]=new MonsterType("Corynetes",0,1,2,2,"Corynetes is a floating sphere of lava, that pulses from yellow to orange hot. it has a cracked shell of earth around which the lava flows.",bestiary[0][1][3][2]);		
 		bestiary[0][1][1][0]=new MonsterType("Philammon",0,1,1,0,"Philammon was the weakest of the suns of vulcan, and the monster derived from him resembles a green ball with orange eyes and horns",bestiary[0][1][2][0],bestiary[0][1][2][1],bestiary[0][1][2][2]);
-		bestiary[0][1][0][0]=new MonsterType("Lava Egg",0,1,0,0,"The volcano egg is orange and very hot, with a glyph on its center of a mountain with lava pouring down it. It dries out quickly and is best left in water",bestiary[0][1][1][0]);
+		bestiary[0][1][0][0]=new MonsterType("Lava Egg",0,1,0,0,"The volcano egg is orange and very hot, with a glyph on its center of a mountain with lava pouring down it. It dries out quickly and is best left in water",bestiary[0][1][1][0],skillSet[9]);
 		bestiary[0][1][4][0].setEvolvesFrom(bestiary[0][1][3][0]);
 		bestiary[0][1][4][1].setEvolvesFrom(bestiary[0][1][3][1]);
 		bestiary[0][1][4][2].setEvolvesFrom(bestiary[0][1][3][2]);
@@ -125,7 +126,7 @@ public class Bestiary
 		bestiary[0][3][2][1]=new MonsterType("Firebird",0,3,2,1,"The firebird is based in slavic folklore and is known for generating a bonfire for lost travlers, pointing them to safety",bestiary[0][3][3][1]);
 		bestiary[0][3][2][2]=new MonsterType("Fawke",0,3,2,2,"The fawkes, or flaming hawkes are descended from a legendary phoenix who gave a boy a hat. They are colored from orange to yellow on their torso and underwing, followed by red on the upper wing. Alone among the phoenixes, they cannot light themselves aflame, or simply choose not to. They often cry for the wounded",bestiary[0][3][3][1]);
 		bestiary[0][3][1][0]=new MonsterType("Lesser Phoenix", 0,3,1,0,"The Lesser Phoenix has yet to gain much plumage, although its eye sparkles with understanding when you speak to it, and when you caress it, its eye closes with love, and you feel hope.",bestiary[0][3][2][0],bestiary[0][3][2][1],bestiary[0][3][2][2]);
-		bestiary[0][3][0][0]=new MonsterType("Phoenix Egg", 0,3,0,0,"The egg hovers slightly above the ground and is lit aflame by a fire that gives no heat",bestiary[0][3][1][0]);
+		bestiary[0][3][0][0]=new MonsterType("Phoenix Egg", 0,3,0,0,"The wind caresses this egg that hovers slightly above the ground. Its small flame follows the shape of the wind. When you touch it, a voice echoes in your mind: 'You may take pride in burning fire, but flame best moves to winds desire'",bestiary[0][3][1][0]);
 		bestiary[0][3][4][0].setEvolvesFrom(bestiary[0][3][3][0]);
 		bestiary[0][3][4][0].setEvolvesFrom2(bestiary[0][3][3][1]);
 		bestiary[0][3][3][0].setEvolvesFrom(bestiary[0][3][2][0]);
@@ -1063,8 +1064,6 @@ public class Bestiary
 			}
 		}
 	}
-	
-
 	public static void travelPrimary()
 	{
 		exit=false;
@@ -1244,6 +1243,7 @@ public class Bestiary
 		System.out.println("Secondary Element: " + getElementName(selected.getSecondaryElement()));
 		System.out.println("Derived Element:   " + typeNames[selected.getPrimaryElement()][selected.getSecondaryElement()]);
 		System.out.println("Evolution Stage:   " + getStageName(selected.getEvolutionStage()));
+		System.out.println("Index:             " + selected.indexLookup());
 		Main.SmartPrint("Description:\n" + selected.getDescription());
 		
 		System.out.println("num of evolutions is " +selected.getNumOfEvolutions());//debugging
@@ -1370,10 +1370,6 @@ public class Bestiary
 		}
 		return;
 	}
-
-	
-	
-	
 	public static String getElementName(int element)
 	{
 		if(element==0)

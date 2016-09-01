@@ -22,14 +22,10 @@ public class Actor
 	
 	public void takeDamage(Damage damage) //TODO: fix this later
 	{
-		m_hpCur = m_hpCur-damage.m_phyDmg;
-		m_hpCur-=damage.m_magDmg;
-		m_hpCur-=damage.m_firDmg;
-		m_hpCur-=damage.m_wtrDmg;
-		m_hpCur-=damage.m_ertDmg;
-		m_hpCur-=damage.m_airDmg;
-		m_hpCur-=damage.m_lgtDmg;
-		m_hpCur-=damage.m_drkDmg;
+		for(int i=0;i<damage.m_normalDmg.length;i++)
+		{
+			m_hpCur-=damage.m_normalDmg[i];
+		}
 	}
 	
 	//getters

@@ -58,6 +58,8 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - [x] Make the first draft of the monsters
  - [x] Make the first draft of the terrain/world interaction
  - [x] Make methods to read bestiary
+ - [ ] Fix methods that read the bestiary
+ - [ ] Make skills cost mp
  - [ ] Figure out how I/O is going to work with save files
  - [ ] Design plot system
  - [ ] Design battle system
