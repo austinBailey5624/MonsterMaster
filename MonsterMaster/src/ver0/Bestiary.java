@@ -1040,14 +1040,16 @@ public class Bestiary
 				int secondaryElement=Main.randomNumber(0, bestiary[primaryElement].length-1);
 				int evolutionStage=Main.randomNumber(0, bestiary[primaryElement][secondaryElement].length-1);
 				int monsterSelect=Main.randomNumber(0, bestiary[primaryElement][secondaryElement][evolutionStage].length-1);
-				myFourple.m_a=primaryElement;
-				myFourple.m_b=secondaryElement;
-				myFourple.m_c=evolutionStage;
-				myFourple.m_d=monsterSelect;
-				while(myFourple.m_a!=7)
-				{
-					myFourple=travelMonster(myFourple.m_a,myFourple.m_b,myFourple.m_c,myFourple.m_d);
-				}
+//				myFourple.m_a=primaryElement;
+//				myFourple.m_b=secondaryElement;
+//				myFourple.m_c=evolutionStage;
+//				myFourple.m_d=monsterSelect;
+//				while(myFourple.m_a!=7)
+//				{
+//					myFourple=travelMonster(myFourple.m_a,myFourple.m_b,myFourple.m_c,myFourple.m_d);
+
+//				}
+				travelMonster(primaryElement,secondaryElement,evolutionStage,monsterSelect);
 			}
 			else if(choice==3)
 			{
@@ -1056,10 +1058,8 @@ public class Bestiary
 				Fourple[] IndexLookup=generateMonsterIndexes();
 				lookup=Main.verify(bestiary1d.length);
 				myFourple=IndexLookup[lookup];
-				while(myFourple.m_a!=7)
-				{
-					myFourple=travelMonster(myFourple.m_a,myFourple.m_b,myFourple.m_c,myFourple.m_d);
-				}
+				travelMonster(myFourple.m_a,myFourple.m_b,myFourple.m_c,myFourple.m_d);
+				
 			}
 		}
 	}
@@ -1117,7 +1117,6 @@ public class Bestiary
 		Fourple next=new Fourple();
 		next.m_a=0;
 		exit=false;
-		Fourple catcher;
 		while(!exit)
 		{
 			System.out.println("Which monster sub-group for the " + typeNames[primary][secondary] + " monster group would you like to look at?");
@@ -1125,18 +1124,7 @@ public class Bestiary
 			choice=Main.verify(8);
 			while(choice==1)
 			{
-				catcher=travelShowAllInGroup(primary,secondary);
-				if(catcher.m_a==7)
-				{
-					choice=0;
-				}
-				else
-				{
-					while(catcher.m_a!=7)
-					{
-						catcher =travelMonster(catcher.m_a,catcher.m_b,catcher.m_c,catcher.m_d);
-					}
-				}
+				travelShowAllInGroup(primary,secondary);
 			}
 			if(choice>1&&choice<7)
 			{
@@ -1176,10 +1164,7 @@ public class Bestiary
 			next.m_d=choice-1;
 			if(choice>0 && choice<length)
 			{
-				while(next.m_a!=7)
-				{
-					next= travelMonster(next.m_a,next.m_b,next.m_c,next.m_d);
-				}
+				travelMonster(next.m_a,next.m_b,next.m_c,next.m_d);
 			}
 			else if(choice==length+1)
 			{
@@ -1192,10 +1177,10 @@ public class Bestiary
 			}
 		}
 	}
-	public static Fourple travelShowAllInGroup(int primary, int secondary)
+	public static void travelShowAllInGroup(int primary, int secondary)
 	{
 		exit=false;
-		Fourple returner = new Fourple();
+		//Fourple returner = new Fourple();
 		int choice=0;
 		int size=0;//the size of the array of tuples
 		//This for loop determines the length of the tuple
@@ -1232,35 +1217,26 @@ public class Bestiary
 			tempi=Main.verify(choice+1);
 			if(tempi>0&&tempi<choice-1)
 			{
-				returner.m_a=primary;
-				returner.m_b=secondary;
-				returner.m_c=choices[tempi-1].m_a;
-				returner.m_d=choices[tempi-1].m_b;
 				travelMonster(primary,secondary,choices[tempi-1].m_a,choices[tempi-1].m_b);
 			}
 			else if(tempi==choice-1)
 			{
-				returner.m_a=7;
-				return returner;
+				return;
 			}
 			else if(tempi==choice)
 			{
-				returner.m_a=7;
 				exit=true;
-				return returner;
+				return;
 			}
 			choice=0;
-		}
-		returner.m_a=7;//unnecessary-added to get rid of warnings
-		return returner;
+		}//unnecessary-added to get rid of warnings
+		return;
 	}
-	public static Fourple travelMonster(int primary, int secondary, int evolution, int which)
+	public static void travelMonster(int primary, int secondary, int evolution, int which)
 	{
 		if(primary==7)
 		{
-			Fourple x=new Fourple();
-			x.m_a=7;
-			return x;
+			System.out.println("Error- primary element outside of accepted parameters");
 		}
 		MonsterType selected= bestiary[primary][secondary][evolution][which];//timesaver;
 		System.out.println("Name:              " + selected.getTypeName());
@@ -1377,357 +1353,27 @@ public class Bestiary
 			myFourple.m_b = secondary;
 			myFourple.m_c=7;
 			myFourple.m_d=7;
-			if(decision>0&decision<size)
+			if(decision>0&decision<size+1)
 			{
-				myFourple.m_c=indexer[decision-1].m_a;
-				myFourple.m_d=indexer[decision-1].m_b;
 				travelMonster(primary,secondary,indexer[decision-1].m_a,indexer[decision-1].m_b);
-				return myFourple;
+				return;
 			}
 			else if(decision==choice)
 			{
-				myFourple.m_a=7;
-				return myFourple;				
+				return;				
 			}
 			else if(decision==choice+1)
 			{
-				myFourple.m_a=7;
 				exit=false;
-				return myFourple;
+				return;
 			}
 		}
-		Fourple ple =new Fourple();
-		ple.m_a=7;
-		return ple;
+		return;
 	}
 
 	
 	
 	
-	public static void transverseBestiary(MonsterType[][][][] bestiary)
-	{
-		exit=false;
-		String menuOptions="What would you like to do?\n1) Examine Bestiary based on element\n2) Look up a random monster\n3) Look up a monster by 4 digit index\n4) Look up a monster based on linear index";
-		while(!exit)
-		{
-			System.out.println(menuOptions);
-			choice=myScanner.nextInt();//TODO:fix this
-			//if(choice)
-		}
-	}
-	public static void transverseBestiary0(MonsterType[][][][] bestiary)
-	{
-		exit=false;
-		String mainBestiaryMenuOptions="Choose primary element:\n1) Fire \n2) Water \n3) Earth \n4) Air \n5) Light \n6) Dark\n7) Back\n8) Exit";
-		while(!exit)
-		{
-			System.out.println(mainBestiaryMenuOptions);
-			choice=myScanner.nextInt();
-			if(choice==1)
-			{
-				transverseBestiary1(0,bestiary);
-			}
-			else if(choice==2)
-			{
-				transverseBestiary1(1,bestiary);
-			}
-			else if(choice==3)
-			{
-				transverseBestiary1(2,bestiary);
-			}
-			else if(choice==4)
-			{
-				transverseBestiary1(3,bestiary);
-			}
-			else if(choice==5)
-			{
-				transverseBestiary1(4,bestiary);
-			}
-			else if(choice==6)
-			{
-				transverseBestiary1(5,bestiary);
-			}
-			else if(choice==7)
-			{
-//				exit=true;
-				return;
-			}
-			else if(choice==8)
-			{
-				exit=true;
-				return;
-			}
-			else
-			{
-				System.out.println(inputError);
-			}
-		}		
-	}
-	public static void transverseBestiary1(int primary,MonsterType[][][][] bestiary)
-	{
-		String[][] typeNames=Bestiary.defineTypes();
-		String BestiaryMenuOptions1="Bestiary Secondary Menu, please choose the derived type you want to look at\n1) " + typeNames[primary][0] + "\n2) " + typeNames[primary][1] + "\n3) " + typeNames[primary][2] + "\n4) " + typeNames[primary][3] + 
-				"\n5) " + typeNames[primary][4] + "\n6) " + typeNames[primary][5] + "\n7) Back\n8) Exit";
-		exit=false;
-		while(!exit)
-		{
-			System.out.println(BestiaryMenuOptions1);
-			choice=myScanner.nextInt();
-			if(choice==1)
-			{
-				transverseBestiary2(primary,0,bestiary);
-			}
-			else if(choice==2)
-			{
-				transverseBestiary2(primary,1,bestiary);
-			}
-			else if(choice==3)
-			{
-				transverseBestiary2(primary,2,bestiary);
-			}
-			else if(choice==4)
-			{
-				transverseBestiary2(primary,3,bestiary);
-			}
-			else if(choice==5)
-			{
-				transverseBestiary2(primary,4,bestiary);
-			}
-			else if(choice==6)
-			{
-				transverseBestiary2(primary,5,bestiary);
-			}
-			else if(choice==7)
-			{
-				return;
-			}
-			else if(choice==8)
-			{
-				exit=true;
-				return;
-			}
-			else
-			{
-				System.out.println(inputError);
-			}
-		}
- 	}
-	public static void transverseBestiary2(int primary, int secondary, MonsterType[][][][] bestiary)
-	{
-//		System.out.println("secondary= " + secondary);
-		String BestiaryMenuOptions2="Select monster's Age\n1) eggs\n2) infants\n3) adolescents\n4) adults\n5) elders\n6) Back\n7) Exit";
-		exit=false;
-		while(!exit)
-		{
-			System.out.println(BestiaryMenuOptions2);
-			choice=myScanner.nextInt();
-			if(choice==1)
-			{
-				transverseBestiaryMonsters(primary, secondary, 0,bestiary);
-			}
-			else if(choice==2)
-			{
-				transverseBestiaryMonsters(primary, secondary, 1,bestiary);
-			}
-			else  if(choice==3)
-			{
-				transverseBestiaryMonsters(primary, secondary, 2,bestiary);
-			}
-			else if(choice==4)
-			{
-				transverseBestiaryMonsters(primary, secondary, 3, bestiary);
-			}
-			else if(choice==5)
-			{
-				transverseBestiaryMonsters(primary, secondary, 4, bestiary);
-			}
-			else if(choice==6)
-			{
-				return;
-			}
-			else if(choice==7)
-			{
-				exit=true;
-				return;
-			}
-			else
-			{
-				System.out.println(inputError);
-			}
-		}
-	}
-	public static int[] transverseBestiaryMonsters(int primary, int secondary, int age, MonsterType[][][][] bestiary)//TODO fix this
-	{
-		int length=bestiary[primary][secondary][age].length;
-		exit=false;
-		while(!exit)
-		{	
-			System.out.println("Your potential monster choices are:");
-			for(int i=0; i<length; i++)
-			{
-				System.out.print((i+1) + ")");
-				System.out.print(bestiary[primary][secondary][age][i].getTypeName());
-				System.out.println();
-			}
-//			System.out.println("length= " + length);//debugging
-			System.out.println(length+1 + ") See All\n" + (length+2) + ") Back\n" + (length+3) + ") Exit");
-			choice=myScanner.nextInt();
-			if(choice<=length&&choice>0)
-			{
-				transverseBestiaryMonsterSelected(primary,secondary,age,choice-1,bestiary);
-			}
-			else if(choice==length+1&&choice>0)
-			{
-//				transverseBestiaryShowAllMonstersInTree(primary,secondary,choice-1,bestiary);
-			}
-			else if(choice==length+2&&choice>0)
-			{
-				int[] array=new int[5];
-				array[0]=0;
-				array[1]=0;
-				array[2]=0;
-				array[3]=0;
-				array[4]=0;
-				return array;
-			}
-			else if(choice==length+3&&choice>0)
-			{
-				exit=true;
-			}
-			else
-			{
-				System.out.println(inputError);
-			}
-		}
-		int[] array={1};
-		return array;
-	}
-	public static void transverseBestiaryShowAllMonstersInTree(int primary, int secondary, MonsterType[][][][] bestiary, int count)
-	{
-		exit=false;
-		while(!exit)
-		{	
-			if(count==1)
-			{
-				System.out.println("Please Select a monster to look at");
-			}
-			for(int i=0;i<bestiary[primary][secondary][0].length;i++)
-			{
-				System.out.println(count + ") " + bestiary[primary][secondary][0][i].getTypeName());
-				count++;
-			}
-			for(int i=0;i<bestiary[primary][secondary][1].length;i++)
-			{
-				System.out.println(count + ") " + bestiary[primary][secondary][1][i].getTypeName());
-				count++;
-			}
-			for(int i=0;i<bestiary[primary][secondary][2].length;i++)
-			{	
-				System.out.println(count + ") " + bestiary[primary][secondary][2][i].getTypeName());
-				count++;
-			}
-			for(int i=0;i<bestiary[primary][secondary][3].length;i++)
-			{
-				System.out.println(count + ") " + bestiary[primary][secondary][3][i].getTypeName());
-				count++;
-			}
-			for(int i=0;i<bestiary[primary][secondary][4].length;i++)
-			{
-				System.out.println(count + ") " + bestiary[primary][secondary][4][i].getTypeName());
-				count++;
-			}
-			System.out.println(count+1 +") back" + count+2 + ") Exit");
-			choice=myScanner.nextInt();
-			if(choice<=bestiary[primary][secondary][0].length)
-			{
-				//TODO finish
-			}
-		}
-	}
-	public static void transverseBestiaryMonsterSelected(int primary, int secondary, int age, int selectedMonster, MonsterType[][][][] bestiary)
-	{		
-		String[][] typeNames=Bestiary.defineTypes();
-		MonsterType selectedMonsterType=bestiary[primary][secondary][age][selectedMonster];//selects the monster from the bestiary based on the given information
-		
-		System.out.println("Monster Type:      " + selectedMonsterType.getTypeName());
-		System.out.println("Primary Element:   " + getElementName(primary));
-		System.out.println("Secondary Element: " + getElementName(secondary));
-		System.out.println("Derived Element:   " + typeNames[primary][secondary]);
-		System.out.println("num of evolutions is " +selectedMonsterType.getNumOfEvolutions());//debugging
-		if(selectedMonsterType.getNumOfEvolutions()==0)
-		{
-			System.out.println("Evolves Into: Does not Evolve into anything");
-		}
-		else if(selectedMonsterType.getNumOfEvolutions()==1)
-		{
-			System.out.println("Evolves Into:" + selectedMonsterType.getEvolvesInto1().getTypeName());
-		}
-		else if(selectedMonsterType.getNumOfEvolutions()==2)
-		{
-			System.out.println("Physical Evolution: " + selectedMonsterType.getEvolvesInto1().getTypeName());
-			System.out.println("Magical  Evolution:  " + selectedMonsterType.getEvolvesInto2().getTypeName());
-		}
-		else if(selectedMonsterType.getNumOfEvolutions()==3)
-		{
-			System.out.println("Physical Evolution: " + selectedMonsterType.getEvolvesInto1().getTypeName());
-			System.out.println("Balanced Evolution: " + selectedMonsterType.getEvolvesInto2().getTypeName());
-			System.out.println("Magical  Evolution: " + selectedMonsterType.getEvolvesInto3().getTypeName());
-		}
-		else
-		{
-			System.out.println("Incorrect value for get NUM of Evolutions");
-		}
-		if(selectedMonsterType.getNumEvolvesFrom()==0)
-		{
-			System.out.println("Does Not Evolve From anything");
-		}
-		Main.SmartPrint("Description: " + selectedMonsterType.getDescription());
-		System.out.println();
-		
-		exit=false;
-		while(!exit)
-		{
-			System.out.println("Please select what you would like to do next: ");
-			System.out.println("1) Go back");
-			if(selectedMonsterType.getNumOfEvolutions()==1)
-			{
-				System.out.println("2) Go to " + selectedMonsterType.getEvolvesInto1().getTypeName());
-			}
-			else if(selectedMonsterType.getNumOfEvolutions()==2)
-			{
-				System.out.println("2) Go to " + selectedMonsterType.getEvolvesInto1().getTypeName());
-				System.out.println("3) Go to " + selectedMonsterType.getEvolvesInto2().getTypeName());
-			}
-			else if(selectedMonsterType.getNumOfEvolutions()==3)
-			{
-				System.out.println("2) Go to " + selectedMonsterType.getEvolvesInto1().getTypeName());
-				System.out.println("3) Go to " + selectedMonsterType.getEvolvesInto2().getTypeName());
-				System.out.println("4) Go to " + selectedMonsterType.getEvolvesInto3().getTypeName());
-			}
-			else
-			{
-				System.out.println("Incorrect value for getNumOfEvolutions, recorded value is : " + selectedMonsterType.getNumOfEvolutions());
-			}
-			choice=myScanner.nextInt();
-			if(choice==1)
-			{
-				exit=true;
-				return;
-			}
-			else if(choice==2&&selectedMonsterType.getNumOfEvolutions()>0)
-			{
-				//TODO finish
-			}
-			else if(choice==3&&selectedMonsterType.getNumOfEvolutions()>1)
-			{
-				//TODO finish
-			}
-			else if(choice==4&&selectedMonsterType.getNumOfEvolutions()==3)
-			{
-				//TODO finish
-			}
-		}
-	}
 	public static String getElementName(int element)
 	{
 		if(element==0)

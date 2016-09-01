@@ -300,7 +300,7 @@ public class Main
 		}
 		
 	}
-	public static int verify(int answerCeiling)//the answerCeiling refers to the larges acceptable integer that will be accepted
+	public static int verify(int answerCeiling)//the answerCeiling refers to the larges acceptable integer that will be accepted//when you call this it needs to be in a while loop
 	{
 		String num=myScanner.next();
 		try
