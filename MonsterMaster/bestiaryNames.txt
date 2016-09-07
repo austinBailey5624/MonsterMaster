@@ -1,4 +1,5 @@
-358Pyro Egg
+358
+Pyro Egg
 Flarial
 Pyrus
 Flarpup
