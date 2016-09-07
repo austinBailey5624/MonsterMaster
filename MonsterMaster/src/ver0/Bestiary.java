@@ -19,7 +19,6 @@ public class Bestiary
 	public static Scanner myScanner= new Scanner(System.in);
 	public static MonsterType[][][][] generateBestiary()
 	{
-		Skill[] skillSet=Skill.getAllSkills();
 		MonsterType[][][][] bestiary=new MonsterType[6][][][];
 		bestiary[5]=new MonsterType[6][][];
 		bestiary[4]=new MonsterType[6][][];
@@ -33,19 +32,19 @@ public class Bestiary
 		bestiary[0][0][2]=new MonsterType[3];
 		bestiary[0][0][3]=new MonsterType[4];
 		bestiary[0][0][4]=new MonsterType[4];
-		bestiary[0][0][4][0]=new MonsterType("Red Dragon",0,0,4,0,"The red dragon is as the name implies a red dragon. It breathes fire and captures princes. Yes, I said princes, not princesses, you sexist! It can only be defeated by a young blonde detective being given directions by a captured serial killer. If you didn't get the reference, google it. You won't be disappointed");
-		bestiary[0][0][4][1]=new MonsterType("Benemoth",0,0,4,1,"The benemoth is a giant, human shaped colossus of flame.");
-		bestiary[0][0][4][2]=new MonsterType("Bolide",0,0,4,2,"The Bolide is a grown up comet with large muscular legs that moves even faster.");
-		bestiary[0][0][4][3]=new MonsterType("Flame Atronach",0,0,4,3,"The flame atronach is a giant circular flame symbol made of red steel surrouned by six smaller flame symbols that rotate around it, faster when its casting a spell");
-		bestiary[0][0][3][0]=new MonsterType("Pyros",0,0,3,0,"A Pyros has the body of a man and the head of a bull, it wears a cape made of flame though the cape does not burn it. It has a flame crescent axe that seems to be made of red steel",bestiary[0][0][4][0],bestiary[0][0][4][1],skillSet[8]);
-		bestiary[0][0][3][1]=new MonsterType("Flarus",0,0,3,1,"A greater Flarus has short legs and gian arms that extend to the floor. Its entire body is aflame, and short red horns can be seen ",bestiary[0][0][4][1]);
-		bestiary[0][0][3][2]=new MonsterType("Comet",0,0,3,2,"The Comet is a four legged hound with an incredible amount of speed. It runs as fast as it can and slams into its enemy in combat, known as the 'comet dash'",bestiary[0][0][4][2]);
-		bestiary[0][0][3][3]=new MonsterType("Flame Elemental",0,0,3,2,"The flame elemetal has is a chasis of black iron engulfed in flame",bestiary[0][0][4][3]);
-		bestiary[0][0][2][0]=new MonsterType("Pyrus",0,0,2,0,"Pyrus is a three foot tall demon, engulfed in flame with an extending red snout like a dogs with black eyes and red iruses. His teeth shine in the light of his flames",bestiary[0][0][3][0],bestiary[0][0][3][1],skillSet[7]);
-		bestiary[0][0][2][1]=new MonsterType("Flarpup",0,0,2,1,"The Flarpup is a small dog with hair that looks like fire. It inflicts fire damage with its bite",bestiary[0][0][3][2]);
-		bestiary[0][0][2][2]=new MonsterType("Flame Symbol",0,0,2,2,"A circular golden band a foot and a half in diameter two inches thick holds a red sphere at its base. When it becomes angry the ring lights aflame and the flame symbol can be seen glowing in its center, althouh there is nothing there",bestiary[0][0][3][3]);
-		bestiary[0][0][1][0]=new MonsterType("Flarial",0,0,1,0,"An orange ball of flame with a red eye. It hovers in the air, a foot above the ground, a sphere a foot in diameter. The ends of the flame flow behind it, althogh no wind can be felt",bestiary[0][0][2][0],bestiary[0][0][2][1],bestiary[0][0][2][2],skillSet[6]);
-		bestiary[0][0][0][0]=new MonsterType("Pyro Egg",0,0,0,0,"An orange egg with the symbol of a red flame. When you touch it, it is warm, and you become angry, though you do not know why. Pull your hand away and you are burned, though by the egg or yourself you cannot tell",bestiary[0][0][1][0],skillSet[0]);
+		bestiary[0][0][4][0]=new MonsterType(0,0,4,0);
+		bestiary[0][0][4][1]=new MonsterType(0,0,4,1);
+		bestiary[0][0][4][2]=new MonsterType(0,0,4,2);
+		bestiary[0][0][4][3]=new MonsterType(0,0,4,3);
+		bestiary[0][0][3][0]=new MonsterType(0,0,3,0,bestiary[0][0][4][0],bestiary[0][0][4][1]);
+		bestiary[0][0][3][1]=new MonsterType(0,0,3,1,bestiary[0][0][4][1]);
+		bestiary[0][0][3][2]=new MonsterType(0,0,3,2,bestiary[0][0][4][2]);
+		bestiary[0][0][3][3]=new MonsterType(0,0,3,2,bestiary[0][0][4][3]);
+		bestiary[0][0][2][0]=new MonsterType(0,0,2,0,bestiary[0][0][3][0],bestiary[0][0][3][1]);
+		bestiary[0][0][2][1]=new MonsterType(0,0,2,1,bestiary[0][0][3][2]);
+		bestiary[0][0][2][2]=new MonsterType(0,0,2,2,bestiary[0][0][3][3]);
+		bestiary[0][0][1][0]=new MonsterType(0,0,1,0,bestiary[0][0][2][0],bestiary[0][0][2][1],bestiary[0][0][2][2]);
+		bestiary[0][0][0][0]=new MonsterType(0,0,0,0,bestiary[0][0][1][0]);
 		bestiary[0][0][4][0].setEvolvesFrom(bestiary[0][0][3][0]);
 		bestiary[0][0][4][1].setEvolvesFrom(bestiary[0][0][3][0]);
 		bestiary[0][0][4][1].setEvolvesFrom2(bestiary[0][0][3][1]);
@@ -65,17 +64,17 @@ public class Bestiary
 		bestiary[0][1][2]=new MonsterType[3];
 		bestiary[0][1][3]=new MonsterType[3];
 		bestiary[0][1][4]=new MonsterType[3];
-		bestiary[0][1][4][0]=new MonsterType("Vulcanous",0,1,4,0,"Vulcanous is a walking colossus filled with lava");
-		bestiary[0][1][4][1]=new MonsterType("Vagrus",0,1,4,1,"Vagrus is a lava dragon that levitates and doesnt have wings. Its skill is lavabreath");
-		bestiary[0][1][4][2]=new MonsterType("Vulcan",0,1,4,2,"Vulcan is named after the god Vulcan and can cast all sorts of magic. It is a flaming wheel whose spokes have the elemental glyphs written on them. Its greatest strength is the breadth of magic that it ca cast. Also live long and prosper");
-		bestiary[0][1][3][0]=new MonsterType("Philottus",0,1,3,0,"Philottus is a walking smelter with a big hammer. It can cover its hammer with lava to do 2.5 times as much damage on its next attack, but the buff only lasts for one turn, as then the cast cools",bestiary[0][1][4][0]);
-		bestiary[0][1][3][1]=new MonsterType("Cercyon",0,1,3,1,"Cercyon is a lavasnake that can wrap itself around its prey. Doing so cools it, thus damaging both itself and its victim",bestiary[0][1][4][1]);
-		bestiary[0][1][3][2]=new MonsterType("Spither",0,1,3,2,"Spither is a lava elemental that is capable of casting both fire and water magic. The large center circle holds the lava crest, and the six outer circles alternate between the fire and water crests",bestiary[0][1][4][2]);
-		bestiary[0][1][2][0]=new MonsterType("Crerops",0,1,2,0,"Creops is a man size titan with no face made of melting stone. lava flows to its heart at its center and back to the rock, his only weak point",bestiary[0][1][3][0]);
-		bestiary[0][1][2][1]=new MonsterType("Erichthonius",0,1,2,1,"Erichthonius is a lizard the size of a wolf made of magma. It spits lava to attack",bestiary[0][1][3][1]);
-		bestiary[0][1][2][2]=new MonsterType("Corynetes",0,1,2,2,"Corynetes is a floating sphere of lava, that pulses from yellow to orange hot. it has a cracked shell of earth around which the lava flows.",bestiary[0][1][3][2]);		
-		bestiary[0][1][1][0]=new MonsterType("Philammon",0,1,1,0,"Philammon was the weakest of the suns of vulcan, and the monster derived from him resembles a green ball with orange eyes and horns",bestiary[0][1][2][0],bestiary[0][1][2][1],bestiary[0][1][2][2]);
-		bestiary[0][1][0][0]=new MonsterType("Lava Egg",0,1,0,0,"The volcano egg is orange and very hot, with a glyph on its center of a mountain with lava pouring down it. It dries out quickly and is best left in water",bestiary[0][1][1][0],skillSet[9]);
+		bestiary[0][1][4][0]=new MonsterType(0,1,4,0);
+		bestiary[0][1][4][1]=new MonsterType(0,1,4,1);
+		bestiary[0][1][4][2]=new MonsterType(0,1,4,2);
+		bestiary[0][1][3][0]=new MonsterType(0,1,3,0,bestiary[0][1][4][0]);
+		bestiary[0][1][3][1]=new MonsterType(0,1,3,1,bestiary[0][1][4][1]);
+		bestiary[0][1][3][2]=new MonsterType(0,1,3,2,bestiary[0][1][4][2]);
+		bestiary[0][1][2][0]=new MonsterType(0,1,2,0,bestiary[0][1][3][0]);
+		bestiary[0][1][2][1]=new MonsterType(0,1,2,1,bestiary[0][1][3][1]);
+		bestiary[0][1][2][2]=new MonsterType(0,1,2,2,bestiary[0][1][3][2]);		
+		bestiary[0][1][1][0]=new MonsterType(0,1,1,0,bestiary[0][1][2][0],bestiary[0][1][2][1],bestiary[0][1][2][2]);
+		bestiary[0][1][0][0]=new MonsterType(0,1,0,0,bestiary[0][1][1][0]);
 		bestiary[0][1][4][0].setEvolvesFrom(bestiary[0][1][3][0]);
 		bestiary[0][1][4][1].setEvolvesFrom(bestiary[0][1][3][1]);
 		bestiary[0][1][4][2].setEvolvesFrom(bestiary[0][1][3][2]);
@@ -92,17 +91,17 @@ public class Bestiary
 		bestiary[0][2][2]=new MonsterType[3];
 		bestiary[0][2][3]=new MonsterType[3];
 		bestiary[0][2][4]=new MonsterType[3];
-		bestiary[0][2][4][0]=new MonsterType("Great White Tyrant",0,2,4,0,"A great White tyrant is a larger version of the tyrant that is as white as bone. It also  has arm claws now, although why it needs them when it has that huge jaw is anyones guess. Its a reference to Jurassic World");
-		bestiary[0][2][4][1]=new MonsterType("EdgeWinger",0,2,4,1,"The EdgeWinger is an evolved SteelWinger, that shaved off the edges of the steel so that its really really sharp, and a much lighter weight, so it can fly again");
-		bestiary[0][2][4][2]=new MonsterType("Broncheospikesaur",0,2,4,2,"A gigantic spikesaur that has a mass of hp and can taunt all enemies at once, but its physical attack is very weak");
-		bestiary[0][2][3][0]=new MonsterType("Tyrant",0,2,3,0,"A tyrant is a giant raptor with big teeth and skimpy arms",bestiary[0][2][4][0]);
-		bestiary[0][2][3][1]=new MonsterType("SteelWinger",0,2,3,1,"A larger winger with a steel beak and wings. The winger thought it would be cool to have steel, but it didnt account for the weight, which slowed it down and keeps it from flying",bestiary[0][2][4][1]);
-		bestiary[0][2][3][2]=new MonsterType("Spikevorsaur",0,2,3,2,"A Spikevorsaure is a large herbivour that got wise and grew spikes. Now it taunts enemies, and when they attack, a portion of the damage inflicted is returned to the enemy",bestiary[0][2][4][2]);
-		bestiary[0][2][2][0]=new MonsterType("Raptor",0,2,2,0,"A small velociraptor that is very fast and knows the move Dinobite",bestiary[0][2][3][0]);
-		bestiary[0][2][2][1]=new MonsterType("Winger",0,2,2,1,"A winger is a flying dinosaur that looks like a bat except it has a cone head. Yeah, brutally honest.",bestiary[0][2][3][1]);
-		bestiary[0][2][2][2]=new MonsterType("Herbisaur",0,2,2,2,"A Herbisaur is large for in adolescent, and has a lot of hp. It can make itself look like a target, effectively taunting them.",bestiary[0][2][3][2]);
-		bestiary[0][2][1][0]=new MonsterType("Salamander",0,2,1,0,"The salamander is a small dinosaur that can breathe fire.",bestiary[0][2][2][0],bestiary[0][2][2][1],bestiary[0][2][2][2]);
-		bestiary[0][2][0][0]=new MonsterType("Dino Egg",0,2,0,0,"Call John Hammond, it finally happened, were going to be millionares!!",bestiary[0][2][1][0]);
+		bestiary[0][2][4][0]=new MonsterType(0,2,4,0);
+		bestiary[0][2][4][1]=new MonsterType(0,2,4,1);
+		bestiary[0][2][4][2]=new MonsterType(0,2,4,2);
+		bestiary[0][2][3][0]=new MonsterType(0,2,3,0,bestiary[0][2][4][0]);
+		bestiary[0][2][3][1]=new MonsterType(0,2,3,1,bestiary[0][2][4][1]);
+		bestiary[0][2][3][2]=new MonsterType(0,2,3,2,bestiary[0][2][4][2]);
+		bestiary[0][2][2][0]=new MonsterType(0,2,2,0,bestiary[0][2][3][0]);
+		bestiary[0][2][2][1]=new MonsterType(0,2,2,1,bestiary[0][2][3][1]);
+		bestiary[0][2][2][2]=new MonsterType(0,2,2,2,bestiary[0][2][3][2]);
+		bestiary[0][2][1][0]=new MonsterType(0,2,1,0,bestiary[0][2][2][0],bestiary[0][2][2][1],bestiary[0][2][2][2]);
+		bestiary[0][2][0][0]=new MonsterType(0,2,0,0,bestiary[0][2][1][0]);
 		bestiary[0][2][4][0].setEvolvesFrom(bestiary[0][2][3][0]);
 		bestiary[0][2][4][1].setEvolvesFrom(bestiary[0][2][3][1]);
 		bestiary[0][2][4][2].setEvolvesFrom(bestiary[0][2][3][2]);
@@ -119,14 +118,14 @@ public class Bestiary
 		bestiary[0][3][2]=new MonsterType[3];
 		bestiary[0][3][3]=new MonsterType[2];
 		bestiary[0][3][4]=new MonsterType[1];
-		bestiary[0][3][4][0]=new MonsterType("Fenghuang",0,3,4,0,"The Fenghuang is the king of phoenixes. It is a symbol of hope for the fallen that they may rise again");
-		bestiary[0][3][3][0]=new MonsterType("Rock Cholk",0,3,3,0,"Large Chols are called Cholks. This one in particular loves its big rock, that it throws at people. It once paid a bill for a selfie, and was glad to do so",bestiary[0][3][4][0]);
-		bestiary[0][3][3][1]=new MonsterType("FireEagle",0,3,3,1,"The Fire Eagle is an eagle on fire that can sream at its enemies",bestiary[0][3][4][0]);
-		bestiary[0][3][2][0]=new MonsterType("Chol",0,3,2,0,"The Chol is a violent Phoenix with a six foot wingspan. It has red plumage underneath its wings and on its torso and head. the top of its wings are an orange flame. Also, it can light its claws afire when it is angry and defending its flock",bestiary[0][3][3][0]);
-		bestiary[0][3][2][1]=new MonsterType("Firebird",0,3,2,1,"The firebird is based in slavic folklore and is known for generating a bonfire for lost travlers, pointing them to safety",bestiary[0][3][3][1]);
-		bestiary[0][3][2][2]=new MonsterType("Fawke",0,3,2,2,"The fawkes, or flaming hawkes are descended from a legendary phoenix who gave a boy a hat. They are colored from orange to yellow on their torso and underwing, followed by red on the upper wing. Alone among the phoenixes, they cannot light themselves aflame, or simply choose not to. They often cry for the wounded",bestiary[0][3][3][1]);
-		bestiary[0][3][1][0]=new MonsterType("Lesser Phoenix", 0,3,1,0,"The Lesser Phoenix has yet to gain much plumage, although its eye sparkles with understanding when you speak to it, and when you caress it, its eye closes with love, and you feel hope.",bestiary[0][3][2][0],bestiary[0][3][2][1],bestiary[0][3][2][2]);
-		bestiary[0][3][0][0]=new MonsterType("Phoenix Egg", 0,3,0,0,"The wind caresses this egg that hovers slightly above the ground. Its small flame follows the shape of the wind. When you touch it, a voice echoes in your mind: 'You may take pride in burning fire, but flame best moves to winds desire'",bestiary[0][3][1][0]);
+		bestiary[0][3][4][0]=new MonsterType(0,3,4,0);
+		bestiary[0][3][3][0]=new MonsterType(0,3,3,0,bestiary[0][3][4][0]);
+		bestiary[0][3][3][1]=new MonsterType(0,3,3,1,bestiary[0][3][4][0]);
+		bestiary[0][3][2][0]=new MonsterType(0,3,2,0,bestiary[0][3][3][0]);
+		bestiary[0][3][2][1]=new MonsterType(0,3,2,1,bestiary[0][3][3][1]);
+		bestiary[0][3][2][2]=new MonsterType(0,3,2,2,bestiary[0][3][3][1]);
+		bestiary[0][3][1][0]=new MonsterType(0,3,1,0,bestiary[0][3][2][0],bestiary[0][3][2][1],bestiary[0][3][2][2]);
+		bestiary[0][3][0][0]=new MonsterType(0,3,0,0,bestiary[0][3][1][0]);
 		bestiary[0][3][4][0].setEvolvesFrom(bestiary[0][3][3][0]);
 		bestiary[0][3][4][0].setEvolvesFrom2(bestiary[0][3][3][1]);
 		bestiary[0][3][3][0].setEvolvesFrom(bestiary[0][3][2][0]);
@@ -142,14 +141,14 @@ public class Bestiary
 		bestiary[0][4][2]=new MonsterType[2];
 		bestiary[0][4][3]=new MonsterType[2];
 		bestiary[0][4][4]=new MonsterType[2];
-		bestiary[0][4][4][0]=new MonsterType("Zireal",0,4,4,0,"The Zireal is the angel of justice. Wears a white garb with a golden tassle. Blindfolded with a white cloth, but never misses. Weilds a sword in one hand and scales in the other");
-		bestiary[0][4][4][1]=new MonsterType("Justicier",0,4,4,1,"The Justicier is a quiet robed figure, who can speak into the ears of the wicked. For her, the ends justify the means, and any means will be used to the betterment of mankind");
-		bestiary[0][4][3][0]=new MonsterType("Ordinator",0,4,3,0,"The ordinator is a justicar who has served for its term as a city guard and now goes forth to right whatever wrong it sees. It stands in shining white steel platemail with a steel sheild edged in gold with a knee length white silk cape edgd in gold");
-		bestiary[0][4][3][1]=new MonsterType("Anyr",0,4,3,1,"The Anyr is a judge that has been given the full authority of the church to act in the interest of the greater good in whatever way it thinks best. It can only be second guessed by a clergyman ranked bishop or higher. It has the ability to cast a spell that heals all light elementals and harms all dark elementals, but does not descriminate between friend and foe. It is loosely based on the amyr form Patrick Rothfuss' kingkiller chronicles. which you should read, by the way.");
-		bestiary[0][4][2][0]=new MonsterType("Justicar",0,4,2,0,"The justicar appears as a lesser knight in shining chianmail and a golden crest upon its helm. It holds a wooden shield painted white in its left hand with an iron sword in its right. It has a cloth half cape edged in yellow. The justicar believes solidly in the rule of law and protects the weak. However, if it views the weak to be unvirtuous, it will leave them to suffer, believing that their karma will sort them out");
-		bestiary[0][4][2][1]=new MonsterType("Ayurved",0,4,2,1,"The Ayurved is a healer that calls upon faith to direct the healing of its god. It is better at healing the virtuous, and refuses to touch the vile");
-		bestiary[0][4][1][0]=new MonsterType("Angier",0,4,1,0,"The angier has a very sophomoric view of whats right and wrong, and when it percieves some slight against itself or its god, it runs up, quite childishly and demands satisfaction, regardless how much larger the villan is");
-		bestiary[0][4][0][0]=new MonsterType("Justice Egg",0,4,0,0,"The egg white with a golden flame symbol in its center. When it is near you you are stronger in your convictions, and obsess over your sins, feeling regret and the desire to make things right");
+		bestiary[0][4][4][0]=new MonsterType(0,4,4,0);
+		bestiary[0][4][4][1]=new MonsterType(0,4,4,1);
+		bestiary[0][4][3][0]=new MonsterType(0,4,3,0,bestiary[0][4][4][0]);
+		bestiary[0][4][3][1]=new MonsterType(0,4,3,1,bestiary[0][4][4][1]);
+		bestiary[0][4][2][0]=new MonsterType(0,4,2,0,bestiary[0][4][3][0]);
+		bestiary[0][4][2][1]=new MonsterType(0,4,2,1,bestiary[0][4][3][1]);
+		bestiary[0][4][1][0]=new MonsterType(0,4,1,0,bestiary[0][4][2][0],bestiary[0][4][2][1]);
+		bestiary[0][4][0][0]=new MonsterType(0,4,0,0,bestiary[0][4][1][0]);
 		bestiary[0][4][4][0].setEvolvesFrom(bestiary[0][4][3][0]);
 		bestiary[0][4][4][1].setEvolvesFrom(bestiary[0][4][3][1]);
 		bestiary[0][4][3][0].setEvolvesFrom(bestiary[0][4][2][0]);
@@ -163,14 +162,14 @@ public class Bestiary
 		bestiary[0][5][2]=new MonsterType[3];
 		bestiary[0][5][3]=new MonsterType[2];
 		bestiary[0][5][4]=new MonsterType[1];
-		bestiary[0][5][4][0]=new MonsterType("Revenant",0,5,4,0,"The revenant wears black steel, outlined with sharp red lines. The full helm covers the entire head and has red horns, though wether these horns are a part of the helmet or the demon is unknown. It weilds a large sword that appears to be worn down and rusty, but shines when covered with the blood of the guilty. The helmet opens with a Y , where the top is curved.");
-		bestiary[0][5][3][0]=new MonsterType("Halfrec",0,5,3,0,"A Halfrec is a female vengence demon with bat wings. It is unforgiving, and believes itself to be doing what is right. They are slowly coming back after a 'buff' vampire slayer killed most of them",bestiary[0][5][3][0]);
-		bestiary[0][5][3][1]=new MonsterType("D'Hoffry",0,5,3,1,"The D'Hoffry are male vengence angels with red wings. They are crueler than their cousins, the Halfrecs.",bestiary[0][5][4][0]);
-		bestiary[0][5][2][0]=new MonsterType("Jacobia",0,5,2,0,"The jacobia looks for all intents and purposes, a demon. It hates all the evil in the world with a passion. It represents the hotter, angrier side of vengence. It plans to kill them all but does not realize, after all the evil has been slain, it will still have one last murder to preform. It does bonus damage to creatures with a dark element, and less damage to creatures with a light element. Description inspiration: Death Note Season 1 episode 1",bestiary[0][5][4][0]);		
-		bestiary[0][5][2][1]=new MonsterType("Letham",0,5,2,1,"A letham is a creature that once loved passionately and had its love taken away. It is patient and waits for the time to strike, resembling an emo teenager. Its name is an anagram of hamlet",bestiary[0][5][3][0],bestiary[0][5][3][1]);
-		bestiary[0][5][2][2]=new MonsterType("Lizebet",0,5,2,2,"It is a play on the Elizabethean revenge tragedy. She has an obsidian curving circlet on her forhead, coming to a point in the center of her brow. Her skin is ashen, her hair bloodred, her eyes, that only open when she casts spells, are yellow. She represents the quiet revenge, cold and calculated, and speaks seldom, then only in a whisper. To tell her allies why they failed her, at the summit of their deffeat",bestiary[0][5][3][1]);
-		bestiary[0][5][1][0]=new MonsterType("Spiten",0,5,1,0,"A spiten is a class of inferior imp that has needle like teeth, a bright red goblinesque body and black eyes.",bestiary[0][5][2][0],bestiary[0][5][2][1],bestiary[0][5][2][2]);
-		bestiary[0][5][0][0]=new MonsterType("Vengence Egg",0,5,0,0,"The egg is split in half, half red, half black, with a symmetric crest in the center. On the black side, the crest is in red, on the red side, the crest is in black. The crest itself looks like a flame, except wider than possible, and the end of the flame flicks into a cruel point. When it is near, you remember all the things that you love that were taken from you, the egg incites you to claim vengence. If broken, it casts a lesser curse on the breaker",bestiary[0][5][1][0]);
+		bestiary[0][5][4][0]=new MonsterType(0,5,4,0);
+		bestiary[0][5][3][0]=new MonsterType(0,5,3,0,bestiary[0][5][3][0]);
+		bestiary[0][5][3][1]=new MonsterType(0,5,3,1,bestiary[0][5][4][0]);
+		bestiary[0][5][2][0]=new MonsterType(0,5,2,0,bestiary[0][5][4][0]);		
+		bestiary[0][5][2][1]=new MonsterType(0,5,2,1,bestiary[0][5][3][0],bestiary[0][5][3][1]);
+		bestiary[0][5][2][2]=new MonsterType(0,5,2,2,bestiary[0][5][3][1]);
+		bestiary[0][5][1][0]=new MonsterType(0,5,1,0,bestiary[0][5][2][0],bestiary[0][5][2][1],bestiary[0][5][2][2]);
+		bestiary[0][5][0][0]=new MonsterType(0,5,0,0,bestiary[0][5][1][0]);
 		bestiary[0][5][4][0].setEvolvesFrom(bestiary[0][5][3][0]);
 		bestiary[0][5][4][0].setEvolvesFrom2(bestiary[0][5][3][1]);
 		bestiary[0][5][3][0].setEvolvesFrom(bestiary[0][5][2][0]);
@@ -212,7 +211,7 @@ public class Bestiary
 		bestiary[1][1][2][1]=new MonsterType("Cuddlerfish",1,1,2,1,"A Cuddlerfish is shaped like a Cuttlefish but also loves cuddling. Thats why typically they come in pairs. They seperate infrequently, and when they do, both halves become very needy and inevitably float back together.",bestiary[1][1][3][1]);
 		bestiary[1][1][2][2]=new MonsterType("Aqua Symbol",1,1,2,1,"A silver Taurus, with a sapphire sphere at its base. Etched on the Sapphire Sphere is the water Symbol. When it attacks, the crest apears in the center of the Taurus, and water drips from it. When one is near, calmness and complasency echoes in the mind.",bestiary[1][1][3][2]);
 		bestiary[1][1][1][0]=new MonsterType("Minnow",1,1,1,0,"Minnow is a small blue fish with a green eye and finn. It floats in the air as if it were swimming in water. Why? How? Why did physics just suddenly stop working? BECAUSE I SAID SO. Thats why",bestiary[1][1][2][0],bestiary[1][1][2][1],bestiary[1][1][2][2]);
-		bestiary[1][1][0][0]=new MonsterType("Aqua Egg",1,1,0,0,"The egg faintly glows cyan when left in water. It is a light blue perfect egg shape, with the water crest in dark blue emblazoned across it. When brought out of water it dries. If it dries enough to crack the monster inside may be close to death, however submerging it in water again and the shell will regenerate",bestiary[1][1][1][0],skillSet[2]);
+		bestiary[1][1][0][0]=new MonsterType("Aqua Egg",1,1,0,0,"The egg faintly glows cyan when left in water. It is a light blue perfect egg shape, with the water crest in dark blue emblazoned across it. When brought out of water it dries. If it dries enough to crack the monster inside may be close to death, however submerging it in water again and the shell will regenerate",bestiary[1][1][1][0]);
 		bestiary[1][1][4][0].setEvolvesFrom(bestiary[1][1][3][0]);
 		bestiary[1][1][4][1].setEvolvesFrom(bestiary[1][1][3][1]);
 		bestiary[1][1][4][2].setEvolvesFrom(bestiary[1][1][3][2]);
@@ -433,7 +432,7 @@ public class Bestiary
 		bestiary[2][2][1][0]=new MonsterType("Babadger",2,2,1,0,"The Babadger lures its enemies close with its cuteness, and then slashes them viciously when they're exposed. But its only enemies are its fellow babadger pups, which is why its parents seperate them at birth",bestiary[2][2][2][0]);
 		bestiary[2][2][1][1]=new MonsterType("Bulbapup",2,2,1,1,"A small, energetic puppy with a large bulb on its back, resembling an onion. It loves to jump around, but when it does so it is rather comical, as the weight of the bulb often makes it fall over. Its bark is adoable. And its not a refrence to Bulbasaur from Pokemon. At all.",bestiary[2][2][2][1],bestiary[2][2][2][2],bestiary[2][2][2][4]);
 		bestiary[2][2][1][2]=new MonsterType("Stiket",2,2,1,2,"The sticket pretends to be magical but isn't. Its very depressing huh? Its basically just a small stick that can move on its own. But its very good at listening, probably because it cant talk. If it could though it would always advise revenge by saying 'Sticket to em!'",bestiary[2][2][2][3],bestiary[2][2][2][4]);		
-		bestiary[2][2][0][0]=new MonsterType("Tera Egg",2,2,0,0,"A brown Egg that looks a lot like a clod of dirt except for the glowing green earth crest etched onto its surface. It is heavy and when placed in the grass, the grass grows and circles around it, as if coushining it. It is magical and can evolve into a baby badger, a puppy or a stick. 'But Puppies dont come from eggs!' you may think! Banish your logic, this is a video game, there is no place for it here!",bestiary[2][2][1][0],bestiary[2][2][1][1],bestiary[2][2][1][2],skillSet[2]);
+		bestiary[2][2][0][0]=new MonsterType("Tera Egg",2,2,0,0,"A brown Egg that looks a lot like a clod of dirt except for the glowing green earth crest etched onto its surface. It is heavy and when placed in the grass, the grass grows and circles around it, as if coushining it. It is magical and can evolve into a baby badger, a puppy or a stick. 'But Puppies dont come from eggs!' you may think! Banish your logic, this is a video game, there is no place for it here!",bestiary[2][2][1][0],bestiary[2][2][1][1],bestiary[2][2][1][2]);
 		bestiary[2][2][4][0].setEvolvesFrom(bestiary[2][2][3][0]);
 		bestiary[2][2][4][1].setEvolvesFrom(bestiary[2][2][3][1]);
 		bestiary[2][2][4][2].setEvolvesFrom(bestiary[2][2][3][1]);
@@ -596,7 +595,7 @@ public class Bestiary
 		bestiary[3][3][2][1]=new MonsterType("Byrdi",3,3,2,1,"The Byrdi grew up in the seventies and fell in love with rock and roll. It gets dizzy when it acts out its favorite song",bestiary[3][3][3][1]);
 		bestiary[3][3][2][2]=new MonsterType("AeroSymbol",3,3,2,3,"The AeroSymbol is a circle with six points that looks like the aero glyph. The six points are feathers",bestiary[3][3][3][2]);
 		bestiary[3][3][1][0]=new MonsterType("Flapper",3,3,1,0,"The Flapper shows a ridiculous amount of leg, esspecially for this time period. It is very stylish, and wears a headband with a feather on it, even though its already a bird",bestiary[3][3][2][0],bestiary[3][3][2][1],bestiary[3][3][2][2]);
-		bestiary[3][3][0][0]=new MonsterType("AeroEgg",3,3,0,0,"The aeroEgg hovers in the air, and is yellow with the bird crest on it. It was designed to hover just in case one of its parents accidentally knocks it out of the tree, so it can be rescued before it hits the ground",bestiary[3][3][1][0],skillSet[3]);
+		bestiary[3][3][0][0]=new MonsterType("AeroEgg",3,3,0,0,"The aeroEgg hovers in the air, and is yellow with the bird crest on it. It was designed to hover just in case one of its parents accidentally knocks it out of the tree, so it can be rescued before it hits the ground",bestiary[3][3][1][0]);
 		bestiary[3][3][4][0].setEvolvesFrom(bestiary[3][3][3][0]);
 		bestiary[3][3][4][0].setEvolvesFrom(bestiary[3][3][3][1]);
 		bestiary[3][3][4][1].setEvolvesFrom(bestiary[3][3][3][2]);
@@ -764,7 +763,7 @@ public class Bestiary
 		bestiary[4][4][2][1]=new MonsterType("Candella",4,4,2,1, "A Candella absorbs the light of the sun during the day and uses this light to attack its enemies at night. It can reveal the presence of monsters trying to stealth",bestiary[4][4][3][1]);
 		bestiary[4][4][2][2]=new MonsterType("Light Symbol",4,4,2,2,"A Light symbol is the embodiment of the symbol of light and can cast lumimagia 1, the basic light attack spell",bestiary[4][4][3][2]);
 		bestiary[4][4][1][0]=new MonsterType("Lumin",4,4,1,0,"A lesser lumin is a small hovering ball of light that can heal other light monsters",bestiary[4][4][2][0],bestiary[4][4][2][1],bestiary[4][4][2][2]);
-		bestiary[4][4][0][0]=new MonsterType("Luxor Egg",4,4,0,0,"The luxor Egg glows a brilliant white and has the luxor symbol etched on its surface",bestiary[4][4][1][0],skillSet[4]);
+		bestiary[4][4][0][0]=new MonsterType("Luxor Egg",4,4,0,0,"The luxor Egg glows a brilliant white and has the luxor symbol etched on its surface",bestiary[4][4][1][0]);
 		bestiary[4][5]=new MonsterType[5][];
 		bestiary[4][5][0]=new MonsterType[1];
 		bestiary[4][5][1]=new MonsterType[1];
@@ -917,7 +916,7 @@ public class Bestiary
 		bestiary[5][5][2][1]=new MonsterType("Screel",5,5,2,1,"The Screel is a black envy demon, desiring the desiring the form and life of a man. It is still young, so the result is obscene",bestiary[5][5][3][0]);
 		bestiary[5][5][2][2]=new MonsterType("Umbral Symbol",5,5,2,2,"The Umbral Symbol is a floating symbol in the shape of the blinded eye that casts basic dark magic",bestiary[5][5][3][1]);
 		bestiary[5][5][1][0]=new MonsterType("Umbress",5,5,1,0,"The umbress appears to bea small floating black flame, with two purple eyes",bestiary[5][5][2][0],bestiary[5][5][2][1],bestiary[5][5][2][2]);
-		bestiary[5][5][0][0]=new MonsterType("Umbral Egg",5,5,0,0,"The umbral egg sucks light and appears to cast dark tendrils from its shell, but if you look again theyre gone. It seems weak and fragile when exposed to light, but during the dusk, when the light is weak, the blinded eye  can be seen embossed on its surface",bestiary[5][5][1][0],skillSet[5]);
+		bestiary[5][5][0][0]=new MonsterType("Umbral Egg",5,5,0,0,"The umbral egg sucks light and appears to cast dark tendrils from its shell, but if you look again theyre gone. It seems weak and fragile when exposed to light, but during the dusk, when the light is weak, the blinded eye  can be seen embossed on its surface",bestiary[5][5][1][0]);
 		bestiary[5][5][4][0].setEvolvesFrom(bestiary[5][5][3][0]);
 		bestiary[5][5][4][1].setEvolvesFrom(bestiary[5][5][3][1]);
 		bestiary[5][5][4][2].setEvolvesFrom(bestiary[5][5][3][2]);
@@ -928,7 +927,8 @@ public class Bestiary
 		bestiary[5][5][2][1].setEvolvesFrom(bestiary[5][5][1][0]);
 		bestiary[5][5][2][2].setEvolvesFrom(bestiary[5][5][1][0]);
 		bestiary[5][5][1][0].setEvolvesFrom(bestiary[5][5][0][0]);
-		//TODO finish
+		//TODO here
+
 		return bestiary;
 	}
 	public static MonsterType[] convertTo1d()
@@ -948,6 +948,31 @@ public class Bestiary
 					}
 				}
 			}
+		}
+		
+		//This block reads the names from file and assigns them
+		String[] names = ListReader.getNames();
+		if(bestiary1d.length!=names.length)
+		{
+			System.out.println("bestiary: " + bestiary1d.length);
+			System.out.println("names: " + names.length);
+		}
+		for(int i=0;i<bestiary1d.length;i++)
+		{
+			bestiary1d[i].setTypeName(names[i]);
+		}
+		
+		
+		//This block reads the descriptions from file and assigns them
+		String[] descriptions = ListReader.getDescriptions();
+		if(bestiary1d.length!=descriptions.length)//test code
+		{
+			System.out.println("bestiary: " + bestiary1d.length);
+			System.out.println("Descriptions: " + descriptions.length);
+		}
+		for(int i=0;i<bestiary1d.length;i++)
+		{
+			bestiary1d[i].setDescription(descriptions[i]);
 		}
 		return bestiary1d;
 	}
@@ -1041,15 +1066,6 @@ public class Bestiary
 				int secondaryElement=Main.randomNumber(0, bestiary[primaryElement].length-1);
 				int evolutionStage=Main.randomNumber(0, bestiary[primaryElement][secondaryElement].length-1);
 				int monsterSelect=Main.randomNumber(0, bestiary[primaryElement][secondaryElement][evolutionStage].length-1);
-//				myFourple.m_a=primaryElement;
-//				myFourple.m_b=secondaryElement;
-//				myFourple.m_c=evolutionStage;
-//				myFourple.m_d=monsterSelect;
-//				while(myFourple.m_a!=7)
-//				{
-//					myFourple=travelMonster(myFourple.m_a,myFourple.m_b,myFourple.m_c,myFourple.m_d);
-
-//				}
 				travelMonster(primaryElement,secondaryElement,evolutionStage,monsterSelect);
 			}
 			else if(choice==3)
