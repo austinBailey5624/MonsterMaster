@@ -5,11 +5,12 @@
  **/
 package ver0;
 import java.util.Scanner;
+import java.util.Calendar;
 import java.util.Random;
 //import java.io.*;
 public class Main 
 {
-	static Random r = new Random(422187);//arbitrarily picked the answer to the life the universe and everything followed by Finn's serial number for random
+	static Random r;
 	static int tempi;//temporary int
 	static String temps;//temporary String
 	static String inputError="Sorry we didn't understand your input, please only enter one of the numbers provided";
@@ -129,7 +130,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		exit=false;
-		String mainMenuOptions="Main menu\n1) Count Monsters\n2) Transverse Bestiary\n3) Test gridWalk\n4) Exit";
+		String mainMenuOptions="Main menu\n1) Count Monsters\n2) Transverse Bestiary\n3) Test gridWalk\n4) Test ListReader()\n5) Test ListWriter\n6) Exit";
 		while(!exit)
 		{
 			System.out.println(mainMenuOptions);
@@ -140,7 +141,6 @@ public class Main
 			}
 			else if(choice==2)
 			{
-				//transverseBestiary(bestiary);
 				Bestiary.run();
 			}
 			else if(choice==3)
@@ -148,6 +148,18 @@ public class Main
 				testElementGridWalk();
 			}
 			else if(choice==4)
+			{
+				String[] plot = ListReader.readPlot();
+				for(int i=0; i<plot.length;i++)
+				{
+					System.out.println(plot[i]);
+				}
+			}
+			else if(choice==5)
+			{
+				ListWriter.writeDescriptionList();
+			}
+			else if(choice==6)
 			{
 				return;
 			}
@@ -332,6 +344,9 @@ public class Main
 	 */
 	public static int randomNumber(int min, int max)
 	{
+		Calendar c = Calendar.getInstance();
+		
+		r=new Random(c.getTimeInMillis());//used time to generate 'random' number
 		return r.nextInt(max-min+1)+min;
 	}
 }
