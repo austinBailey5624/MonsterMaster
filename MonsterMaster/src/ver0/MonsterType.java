@@ -14,12 +14,12 @@ public class MonsterType
 		m_evolvesFrom1=null;
 		m_evolvesFrom2=null;
 		m_evolvesFrom3=null;
-		m_typeName=typeName;
+//		m_typeName=typeName;//going to try to read this from file
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
 		m_evolutionStage=evolutionStage;
 		m_evolutionType=evolutionType;
-		m_description=description;
+//		m_description=description;
 		m_evolvesInto1=null;
 		m_evolvesInto2=null;
 		m_evolvesInto3=null;
@@ -32,12 +32,12 @@ public class MonsterType
 		m_evolvesFrom1=null;
 		m_evolvesFrom2=null;
 		m_evolvesFrom3=null;
-		m_typeName=typeName;
+//		m_typeName=typeName;
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
 		m_evolutionStage=evolutionStage;
 		m_evolutionType=evolutionType;
-		m_description=description;
+//		m_description=description;
 		m_evolvesInto1=evolvesInto1;
 		m_evolvesInto2=null;
 		m_evolvesInto3=null;
@@ -50,12 +50,12 @@ public class MonsterType
 		m_evolvesFrom1=null;
 		m_evolvesFrom2=null;
 		m_evolvesFrom3=null;
-		m_typeName=typeName;
+//		m_typeName=typeName;
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
 		m_evolutionStage=evolutionStage;
 		m_evolutionType=evolutionType;
-		m_description=description;
+//		m_description=description;
 		m_evolvesInto1=evolvesInto1;
 		m_evolvesInto2=evolvesInto2;
 		m_evolvesInto3=null;
@@ -68,12 +68,12 @@ public class MonsterType
 		m_evolvesFrom1=null;
 		m_evolvesFrom2=null;
 		m_evolvesFrom3=null;
-		m_typeName=typeName;
+//		m_typeName=typeName;
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
 		m_evolutionStage=evolutionStage;
 		m_evolutionType=evolutionType;
-		m_description=description;
+//		m_description=description;
 		m_evolvesInto1=evolvesInto1;
 		m_evolvesInto2=evolvesInto2;
 		m_evolvesInto3=evolvesInto3;
@@ -81,78 +81,6 @@ public class MonsterType
 		m_skill=null;
 	}
 	
-	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, Skill skill)
-	{
-		m_numEvolvesFrom=0;
-		m_evolvesFrom1=null;
-		m_evolvesFrom2=null;
-		m_evolvesFrom3=null;
-		m_typeName=typeName;
-		m_primaryElement=primaryElement;
-		m_secondaryElement=secondaryElement;
-		m_evolutionStage=evolutionStage;
-		m_evolutionType=evolutionType;
-		m_description=description;
-		m_evolvesInto1=null;
-		m_evolvesInto2=null;
-		m_evolvesInto3=null;
-		m_numOfEvolutions=0;
-		m_skill=skill;
-	}
-	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1,Skill skill)
-	{
-		m_numEvolvesFrom=0;
-		m_evolvesFrom1=null;
-		m_evolvesFrom2=null;
-		m_evolvesFrom3=null;
-		m_typeName=typeName;
-		m_primaryElement=primaryElement;
-		m_secondaryElement=secondaryElement;
-		m_evolutionStage=evolutionStage;
-		m_evolutionType=evolutionType;
-		m_description=description;
-		m_evolvesInto1=evolvesInto1;
-		m_evolvesInto2=null;
-		m_evolvesInto3=null;
-		m_numOfEvolutions=1;
-		m_skill=skill;
-	}	
-	MonsterType(String typeName,int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2, Skill skill)
-	{
-		m_numEvolvesFrom=0;
-		m_evolvesFrom1=null;
-		m_evolvesFrom2=null;
-		m_evolvesFrom3=null;
-		m_typeName=typeName;
-		m_primaryElement=primaryElement;
-		m_secondaryElement=secondaryElement;
-		m_evolutionStage=evolutionStage;
-		m_evolutionType=evolutionType;
-		m_description=description;
-		m_evolvesInto1=evolvesInto1;
-		m_evolvesInto2=evolvesInto2;
-		m_evolvesInto3=null;
-		m_numOfEvolutions=2;
-		m_skill=skill;
-	}	
-	MonsterType(String typeName,int primaryElement, int secondaryElement,int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2, MonsterType evolvesInto3,Skill skill)
-	{
-		m_numEvolvesFrom=0;
-		m_evolvesFrom1=null;
-		m_evolvesFrom2=null;
-		m_evolvesFrom3=null;
-		m_typeName=typeName;
-		m_primaryElement=primaryElement;
-		m_secondaryElement=secondaryElement;
-		m_evolutionStage=evolutionStage;
-		m_evolutionType=evolutionType;
-		m_description=description;
-		m_evolvesInto1=evolvesInto1;
-		m_evolvesInto2=evolvesInto2;
-		m_evolvesInto3=evolvesInto3;
-		m_numOfEvolutions=3;
-		m_skill=skill;
-	}
 	//memberVariables
 	private int m_numOfEvolutions;
 	private int m_numEvolvesFrom;
