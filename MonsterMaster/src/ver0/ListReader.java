@@ -44,4 +44,46 @@ public class ListReader
 		}
 		
 	}
+	public static String[] getNames()
+	{
+		String[] names;
+		names = new String[0];//This line should be overwritten, the empty array is what will be returned in the exception case
+		try
+		{
+			reader = new BufferedReader(new FileReader("bestiaryNames.txt"));
+			int size = Integer.parseInt(reader.readLine());
+			names = new String[size];
+			for(int i=0;i<size;i++)
+			{
+				names[i]=reader.readLine();
+			}
+			reader.close();
+		}
+		catch(Exception e)
+		{
+			System.out.println("File does not exist");
+		}
+		return names;
+	}
+	public static String[] getDescriptions()
+	{
+		String[] descriptions;
+		descriptions = new String[0];
+		try
+		{
+			reader = new BufferedReader(new FileReader("bestiaryDescriptions.txt"));
+			int size = Integer.parseInt(reader.readLine());//picks up the first line which should be the size of the array
+			descriptions = new String[size];
+			for(int i=0;i<size;i++)
+			{
+				descriptions[i]=reader.readLine();
+			}
+			reader.close();
+		}
+		catch(Exception e)
+		{
+			System.out.println("cannot detect bestiaryDescriptions.txt");
+		}
+		return descriptions;
+	}
 }
