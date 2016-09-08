@@ -32,21 +32,23 @@ public class Skill
 		m_generic=true;
 		m_index=index;
 		m_damage = new Damage();
-		selected=Bestiary.bestiary1d[index];
+		selected=Bestiary.bestiary1d[index];//selected stands for the monster cooresponding to the skill being created
 		
 		String name=Bestiary.typeNames[selected.getPrimaryElement()][selected.getSecondaryElement()];
+		
+		//The following code consructs the generic skills associated with each monster
 		if(selected.getEvolutionStage()==0)//This code handles constructing the skills associated with the eggs
 		{
 			m_name=name+"shell";
 			m_castOnSelf=true;
 		}
-		else if(selected.getEvolutionStage()==1)//
+		else if(selected.getEvolutionStage()==1)//This code handles the skills associated with the infant stage (yes the Tera's all get the same skill)
 		{
 			m_name=name+" Strike";
 			m_castOnSelf=false;
 			m_castOnSingle=true;
 			m_castOnEnemy=true;
-		}
+		}//This else if statement handles creating the skills associated with trees that have only one adolescent
 		else if(selected.getEvolutionStage()==2&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==1)
 		{
 			//this code handles the Trees that have only one adolescent
@@ -55,10 +57,10 @@ public class Skill
 			m_castOnSingle=true;
 			m_castOnEnemy=true;
 			m_isPhysical=true;
-		}
+		}//This else if handles creating the skills associated with the trees that have two adolescents (hence length==2)
 		else if(selected.getEvolutionStage()==2&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==2)
 		{
-			if(selected.getEvolutionType()==0)
+			if(selected.getEvolutionType()==0)//for the physical monster
 			{
 				m_name = name + " claw";
 				m_isPhysical=true;
@@ -66,7 +68,35 @@ public class Skill
 				m_castOnSingle=true;
 				m_castOnEnemy=true;
 			}
-			else if(selected.getEvolutionType()==1)
+			else if(selected.getEvolutionType()==1)//for the magical monster
+			{
+				m_name = name + " bolt";
+				m_isMagical=true;
+				m_castOnSelf=false;
+				m_castOnSingle=true;
+				m_castOnEnemy=true;
+			}
+		}//This else if handles creating the skills associated with the trees that have more than two adolsecents -if the tree has more than three some are unassigned
+		else if(selected.getEvolutionStage()==2&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length>2)
+		{
+			if(selected.getEvolutionType()==0)//for the physcial monster
+			{
+				m_name = name + " claw";
+				m_isPhysical=true;
+				m_castOnSelf=false;
+				m_castOnSingle=true;
+				m_castOnEnemy=true;
+			}
+			else if(selected.getEvolutionType()==1)//for the 'balanced' monster
+			{
+				m_name = "Strong" + name + " strike";
+				m_isPhysical=true;
+				m_isMagical=true;
+				m_castOnSelf=false;
+				m_castOnSingle=true;
+				m_castOnEnemy=true;
+			}//This skill is associated with the 'magical' monster
+			else if(selected.getEvolutionType()==Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length-1)
 			{
 				m_name = name + " bolt";
 				m_isMagical=true;
@@ -76,6 +106,8 @@ public class Skill
 			}
 		}
 		//TODO finish Constructor
+		
+		//This handles some member booleans - if the skill is cast on yourself then it is cast on single and not cast on enemy
 		if(m_castOnSelf==true)
 		{
 			m_castOnSingle=true;
@@ -89,16 +121,17 @@ public class Skill
 		{
 			if(selected.getPrimaryElement()==selected.getSecondaryElement())
 			{
-				target[0].m_thornsDmg[selected.getPrimaryElement()+2]=5;
+				target[0].m_thornsDmg[selected.getPrimaryElement()+2]=5;//the target will be the monster casting it -as its member variable m_self=true
+				//The thorns damage array begins with physical damage then magical damage, which is why the element is staggered by two
 			}
 			else
 			{
-				target[0].m_thornsDmg[selected.getPrimaryElement()+2]=3;
+				target[0].m_thornsDmg[selected.getPrimaryElement()+2]=3;//the primary element thorns damage is slightly higher than the secondary element thorns damage
 				target[0].m_thornsDmg[selected.getSecondaryElement()+2]=2;
 			}
 		}
 		else if(selected.getEvolutionStage()==1)//handles the execution for the infant skills
-		{
+		{//in all cases but one, there is only one infan
 			Damage myDamage = new Damage();
 			if(selected.getPrimaryElement()==selected.getSecondaryElement())
 			{
@@ -130,7 +163,7 @@ public class Skill
 				myDamage.m_normalDmg[selected.getSecondaryElement()+2]=10;
 			}
 			target[0].takeDamage(myDamage);
-		}
+		}//This else if handles the execution for skills associated with adolescent monsters who have 2 monsters in their type
 		else if(selected.getEvolutionStage()==2&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==2)
 		{
 			Damage myDamage = new Damage();
@@ -160,11 +193,54 @@ public class Skill
 					myDamage.m_normalDmg[selected.getSecondaryElement()+2]=10;
 				}
 			}
+			target[0].takeDamage(myDamage);//actually applies the object to the target
+		}//This else if handles the execution for skills associated with monsters who live in trees with more than two adolescent monsters
+		else if(selected.getEvolutionStage()==2&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length>2)
+		{
+			Damage myDamage = new Damage();//creates the damage object-common to all generic skills
+			if(selected.getEvolutionType()==0)//means that the monster selected is the physical evolution
+			{
+				myDamage.m_normalDmg[0]=20;
+				if(selected.getPrimaryElement()==selected.getSecondaryElement())
+				{
+					myDamage.m_normalDmg[selected.getPrimaryElement()+2]=30;
+				}
+				else
+				{
+					myDamage.m_normalDmg[selected.getPrimaryElement()+2]=20;
+					myDamage.m_normalDmg[selected.getSecondaryElement()+2]=10;
+				}
+			}
+			else if(selected.getEvolutionType()==1)//means that the corresponding monster is some kind of "balanced" evolution
+			{
+				if(selected.getPrimaryElement()==selected.getSecondaryElement())
+				{
+					myDamage.m_normalDmg[0]=10;
+					myDamage.m_normalDmg[1]=10;
+					myDamage.m_normalDmg[selected.getPrimaryElement()+2]=30;
+				}
+				else
+				{
+					myDamage.m_normalDmg[0]=10;
+					myDamage.m_normalDmg[1]=10;
+					myDamage.m_normalDmg[selected.getPrimaryElement()+2]=20;
+					myDamage.m_normalDmg[selected.getSecondaryElement()+2]=10;
+				}
+			}//this if ensures that the cooresponding monster is the "magical" evolution
+			else if(selected.getEvolutionType()==Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length-1)
+			{
+				myDamage.m_normalDmg[1]=20;
+				if(selected.getPrimaryElement()==selected.getSecondaryElement())
+				{
+					myDamage.m_normalDmg[selected.getPrimaryElement()+2]=30;
+				}
+				else
+				{
+					myDamage.m_normalDmg[selected.getPrimaryElement()+2]=20;
+					myDamage.m_normalDmg[selected.getSecondaryElement()+2]=10;
+				}
+			}
 		}
-		
-		
-		
-		
 		
 		
 		

@@ -8,43 +8,39 @@ package ver0;
 public class MonsterType 
 {
 	//constructors
-	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description)
+	MonsterType(int primaryElement, int secondaryElement, int evolutionStage, int evolutionType)
 	{
 		m_numEvolvesFrom=0;
 		m_evolvesFrom1=null;
 		m_evolvesFrom2=null;
 		m_evolvesFrom3=null;
-//		m_typeName=typeName;//going to try to read this from file
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
 		m_evolutionStage=evolutionStage;
 		m_evolutionType=evolutionType;
-//		m_description=description;
 		m_evolvesInto1=null;
 		m_evolvesInto2=null;
 		m_evolvesInto3=null;
 		m_numOfEvolutions=0;
 		m_skill=null;
 	}
-	MonsterType(String typeName, int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1)
+	MonsterType(int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, MonsterType evolvesInto1)
 	{
 		m_numEvolvesFrom=0;
 		m_evolvesFrom1=null;
 		m_evolvesFrom2=null;
 		m_evolvesFrom3=null;
-//		m_typeName=typeName;
 		m_primaryElement=primaryElement;
 		m_secondaryElement=secondaryElement;
 		m_evolutionStage=evolutionStage;
 		m_evolutionType=evolutionType;
-//		m_description=description;
 		m_evolvesInto1=evolvesInto1;
 		m_evolvesInto2=null;
 		m_evolvesInto3=null;
 		m_numOfEvolutions=1;
 		m_skill=null;
 	}
-	MonsterType(String typeName,int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2)
+	MonsterType(int primaryElement, int secondaryElement, int evolutionStage, int evolutionType, MonsterType evolvesInto1, MonsterType evolvesInto2)
 	{
 		m_numEvolvesFrom=0;
 		m_evolvesFrom1=null;
@@ -62,7 +58,7 @@ public class MonsterType
 		m_numOfEvolutions=2;
 		m_skill=null;
 	}
-	MonsterType(String typeName,int primaryElement, int secondaryElement,int evolutionStage, int evolutionType, String description, MonsterType evolvesInto1, MonsterType evolvesInto2, MonsterType evolvesInto3)
+	MonsterType(int primaryElement, int secondaryElement,int evolutionStage, int evolutionType, MonsterType evolvesInto1, MonsterType evolvesInto2, MonsterType evolvesInto3)
 	{
 		m_numEvolvesFrom=0;
 		m_evolvesFrom1=null;

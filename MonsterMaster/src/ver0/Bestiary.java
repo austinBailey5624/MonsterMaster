@@ -976,14 +976,14 @@ public class Bestiary
 		}
 		return bestiary1d;
 	}
-	public static Fourple[] generateMonsterIndexes()
+	public static int[][] generateMonsterIndexes()
 	{
 		MonsterType[] myArray=convertTo1d();
-		Fourple[] myFourples=new Fourple[myArray.length];
-		for(int i=0; i<myFourples.length;i++)
-		{
-			myFourples[i]=new Fourple();
-		}
+		int[][] myFourples=new int[myArray.length][4];
+//		for(int i=0; i<myFourples.length;i++)
+//		{
+//			myFourples[i]=new Fourple();
+//		}
 		int index=0;
 		for(int i=0; i<bestiary.length;i++)
 		{
@@ -993,10 +993,10 @@ public class Bestiary
 				{
 					for(int m=0;m<bestiary[i][j][k].length;m++)
 					{
-						myFourples[index].m_a=i;
-						myFourples[index].m_b=j;
-						myFourples[index].m_c=k;
-						myFourples[index].m_d=m;
+						myFourples[index][0]=i;
+						myFourples[index][1]=j;
+						myFourples[index][2]=k;
+						myFourples[index][3]=m;
 						index++;
 					}
 				}
@@ -1050,7 +1050,7 @@ public class Bestiary
 	public static void travel()
 	{
 		exit=false;
-		Fourple myFourple= new Fourple();
+		int[] myFourple= new int[4];
 		int lookup;
 		while(!exit)
 		{	
@@ -1072,10 +1072,10 @@ public class Bestiary
 			{
 				System.out.println("What position in the 1d array would you like to lookup?");
 				MonsterType[] bestiary1d=convertTo1d();
-				Fourple[] IndexLookup=generateMonsterIndexes();
+				int[][] IndexLookup=generateMonsterIndexes();
 				lookup=Main.verify(bestiary1d.length);
 				myFourple=IndexLookup[lookup];
-				travelMonster(myFourple.m_a,myFourple.m_b,myFourple.m_c,myFourple.m_d);
+				travelMonster(myFourple[0],myFourple[1],myFourple[2],myFourple[3]);
 				
 			}
 		}
@@ -1129,8 +1129,8 @@ public class Bestiary
 	}
 	public static void travelEvolution(int primary,int secondary)
 	{
-		Fourple next=new Fourple();
-		next.m_a=0;
+		int[] next=new int[4];
+		next[0]=0;
 		exit=false;
 		while(!exit)
 		{
@@ -1160,8 +1160,8 @@ public class Bestiary
 	public static void travelSelect(int primary,int secondary, int evolution)
 	{
 		int length;
-		Fourple next = new Fourple();
-		next.m_a=0;
+		int[] next = new int[4];
+		next[0]=0;
 		exit=false;
 		while(!exit)
 		{
@@ -1173,13 +1173,13 @@ public class Bestiary
 			}
 			System.out.println((length+1) + ") Go Back\n" +(length+2)+ ") Exit");
 			choice=Main.verify(length+2);
-			next.m_a=primary;
-			next.m_b=secondary;
-			next.m_c=evolution;
-			next.m_d=choice-1;
+			next[0]=primary;
+			next[1]=secondary;
+			next[2]=evolution;
+			next[3]=choice-1;
 			if(choice>0 && choice<length)
 			{
-				travelMonster(next.m_a,next.m_b,next.m_c,next.m_d);
+				travelMonster(next[0],next[1],next[2],next[3]);
 			}
 			else if(choice==length+1)
 			{
@@ -1364,11 +1364,11 @@ public class Bestiary
 			choice++;
 			System.out.println(choice+1 + ") Exit");
 			int decision = Main.verify(size+2);
-			Fourple myFourple = new Fourple();
-			myFourple.m_a = primary;
-			myFourple.m_b = secondary;
-			myFourple.m_c=7;
-			myFourple.m_d=7;
+			int[] myFourple = new int[4];
+			myFourple[0] = primary;
+			myFourple[1] = secondary;
+			myFourple[2]=7;
+			myFourple[3]=7;
 			if(decision>0&decision<size+1)
 			{
 				travelMonster(primary,secondary,indexer[decision-1].m_a,indexer[decision-1].m_b);
