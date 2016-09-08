@@ -1,0 +1,40 @@
+body
+{
+	background-color :#60C8A0;
+	font-family:arial;
+	border: 3px solid green;
+}
+
+/*
+h1
+{
+	margin:0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+*/
+tr
+{
+	border: 2px solid gray;
+}
+
+td
+{
+	text-align: center;
+	border: 2px solid gray;
+}
+
+heading
+{
+	font-family:arial;
+	font-size:20;
+	
+}
+
+img
+{
+	margin: auto;
+	display: block;
+}
