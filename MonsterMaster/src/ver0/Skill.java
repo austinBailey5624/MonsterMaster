@@ -104,8 +104,114 @@ public class Skill
 				m_castOnSingle=true;
 				m_castOnEnemy=true;
 			}
+		}//This handles the Adults on single branch trees
+		else if(selected.getEvolutionStage()==3&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==1)
+		{
+			m_name = name + " Super Attack";
+			m_isMagical=true;
+			m_castOnSelf=false;
+			m_castOnSingle=false;//attacks mutliple
+			m_castOnEnemy=true;
+			
+		}//Handles the adults on two branch trees
+		else if(selected.getEvolutionStage()==3&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==2)
+		{
+			if(selected.getEvolutionType()==0)//this is for the physical side of the tree
+			{
+				m_name = name + " bite";
+				m_isPhysical = true;
+				m_isMagical=false;
+				m_castOnSingle=true;
+				m_castOnEnemy=true;
+			}
+			else//this is for the magical side of the tree
+			{
+				m_name = name + " Wide Blast";
+				m_isPhysical = false;
+				m_isMagical = true;
+				m_castOnSingle=false;
+				m_castOnEnemy=true;
+			}
+		}//Handles the adults on three or more branch trees
+		else if(selected.getEvolutionStage()==3&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length>2)
+		{	
+			if(selected.getEvolutionType()==0)//this is for the physical side of the tree
+			{
+				m_name = name + " bite";
+				m_isPhysical = true;
+				m_isMagical=false;
+				m_castOnSingle=true;
+				m_castOnEnemy=true;
+			}
+			else if(selected.getEvolutionType()==1)//balanced side of the tree
+			{
+				m_name = name + " Super Attack";
+				m_isMagical=true;
+				m_castOnSelf=false;
+				m_castOnSingle=false;//attacks mutliple
+				m_castOnEnemy=true;
+			}//magical side of the tree
+			else if(selected.getEvolutionType()==Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length-1)
+			{
+				m_name = name + " Wide Blast";
+				m_isPhysical = false;
+				m_isMagical = true;
+				m_castOnSingle=false;
+				m_castOnEnemy=true;
+			}
+		}//handles the case of an elder single sibling
+		else if(selected.getEvolutionStage()==4&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==1)
+		{
+			m_name = name + " Ultra Attack";
+			m_isMagical=true;
+			m_isPhysical=true;
+			m_castOnSingle=false;
+			m_castOnEnemy=true;
 		}
-		//TODO finish Constructor
+		else if(selected.getEvolutionStage()==4&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==2)
+		{
+			if(selected.getEvolutionType()==0)
+			{
+				m_name = name = " Wide Claw";
+				m_isPhysical=true;
+				m_castOnSingle=false;
+				m_castOnEnemy=true;
+			}
+			else
+			{
+				m_name = name + " Ultra Wide Blast";
+				m_isMagical = true;
+				m_castOnSingle=false;
+				m_castOnEnemy=true;
+			}
+		}
+		else if(selected.getEvolutionStage()==4&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length>2)
+		{
+			if(selected.getEvolutionType()==0)
+			{
+				m_name = name + " Wide Claw";
+				m_isPhysical=true;
+				m_castOnSingle=false;
+				m_castOnEnemy=true;
+			}
+			else if(selected.getEvolutionType()==Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length-1)
+			{
+				m_name = name + " Ultra Wide Blast";
+				m_isMagical = true;
+				m_castOnSingle=false;
+				m_castOnEnemy=true;
+			}
+			else
+			{
+				m_name = name + " Ultra Attack";
+				m_isMagical=true;
+				m_isPhysical=true;
+				m_castOnSingle=false;
+				m_castOnEnemy=true;
+			}
+		}
+			
+			//TODO finish Constructor
 		
 		//This handles some member booleans - if the skill is cast on yourself then it is cast on single and not cast on enemy
 		if(m_castOnSelf==true)
@@ -240,8 +346,116 @@ public class Skill
 					myDamage.m_normalDmg[selected.getSecondaryElement()+2]=10;
 				}
 			}
+			target[0].takeDamage(myDamage);
 		}
-		
+		//This handles the Adults on single branch trees
+		else if(selected.getEvolutionStage()==3&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==1)
+		{
+			Damage myDamage = new Damage();
+			for(int i=0;i<myDamage.m_normalDmg.length;i++)
+			{
+				myDamage.m_normalDmg[i]=0;
+			}
+			myDamage.m_normalDmg[0]=20;
+			myDamage.m_normalDmg[selected.getPrimaryElement()+2]+=12;
+			myDamage.m_normalDmg[selected.getSecondaryElement()+2]+=18;
+			for(int i=0;i<target.length;i++)
+			{
+				target[i].takeDamage(myDamage);
+			}
+					
+		}//Handles the adults on two branch trees
+		else if(selected.getEvolutionStage()==3&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length==2)
+		{
+			Damage myDamage = new Damage();
+			for(int i=0;i<myDamage.m_normalDmg.length;i++)
+			{
+				myDamage.m_normalDmg[i]=0;
+			}
+			if(selected.getEvolutionType()==0)//this is for the physical side of the tree
+			{
+	
+				myDamage.m_normalDmg[0]=70;
+				myDamage.m_normalDmg[selected.getPrimaryElement()+2]+=20;
+				myDamage.m_normalDmg[selected.getSecondaryElement()+2]+=10;
+				target[0].takeDamage(myDamage);
+			}
+			else//this is for the magical side of the tree
+			{
+				myDamage.m_normalDmg[1]=15;
+				myDamage.m_normalDmg[selected.getPrimaryElement()]+=20;
+				myDamage.m_normalDmg[selected.getSecondaryElement()]+=15;
+				for(int i=0;i<target.length;i--)
+				{
+					target[i].takeDamage(myDamage);
+				}
+			}
+		}
+		else if(selected.getEvolutionStage()==3&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length>2)
+		{
+			Damage myDamage = new Damage();
+			for(int i=0;i<myDamage.m_normalDmg.length;i++)
+			{
+				myDamage.m_normalDmg[i]=0;
+			}
+			if(selected.getEvolutionType()==0)//this is for the physical side of the tree
+			{
+				myDamage.m_normalDmg[0]=70;
+				myDamage.m_normalDmg[selected.getPrimaryElement()+2]+=20;
+				myDamage.m_normalDmg[selected.getSecondaryElement()+2]+=10;
+				target[0].takeDamage(myDamage);
+			}
+			else if(selected.getEvolutionType()==1)//balanced side of the tree
+			{
+				for(int i=0;i<myDamage.m_normalDmg.length;i++)
+				{
+					myDamage.m_normalDmg[i]=0;
+				}
+				myDamage.m_normalDmg[0]=20;
+				myDamage.m_normalDmg[selected.getPrimaryElement()+2]+=12;
+				myDamage.m_normalDmg[selected.getSecondaryElement()+2]+=18;
+				for(int i=0;i<target.length;i++)
+				{
+					target[i].takeDamage(myDamage);
+				}
+			}//magical side of the tree
+			else if(selected.getEvolutionType()==Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length-1)
+			{
+
+				myDamage.m_normalDmg[1]=15;
+				myDamage.m_normalDmg[selected.getPrimaryElement()+2]+=20;
+				myDamage.m_normalDmg[selected.getSecondaryElement()+2]+=15;
+				for(int i=0;i<target.length;i++)
+				{
+					target[i].takeDamage(myDamage);
+				}
+			}
+		}
+		else if(selected.getEvolutionStage()==4&&Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length>2)
+		{
+			Damage myDamage = new Damage();
+			if(selected.getEvolutionType()==0)
+			{
+				myDamage.m_normalDmg[0]=70;
+				myDamage.m_normalDmg[selected.getPrimaryElement()+2]+=20;
+				myDamage.m_normalDmg[selected.getSecondaryElement()+2]+=10;
+				for(int i=0; i<target.length;i++)
+				{
+					target[0].takeDamage(myDamage);
+				}
+			}
+			else if(selected.getEvolutionType()==Bestiary.bestiary[selected.getPrimaryElement()][selected.getSecondaryElement()][selected.getEvolutionStage()].length-1)
+			{
+				myDamage.m_normalDmg[1]=30;
+				myDamage.m_normalDmg[selected.getPrimaryElement()+2]+=40;
+				myDamage.m_normalDmg[selected.getSecondaryElement()+2]+=30;
+				for(int i=0; i<target.length;i++)
+				{
+					target[i].takeDamage(myDamage);
+				}
+			}
+			//TODO finish
+		}
 		
 		
 		

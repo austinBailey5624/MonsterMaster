@@ -130,7 +130,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		exit=false;
-		String mainMenuOptions="Main menu\n1) Count Monsters\n2) Transverse Bestiary\n3) Test gridWalk\n4) Exit";
+		String mainMenuOptions="Main menu\n1) Count Monsters\n2) Transverse Bestiary\n3) Test gridWalk\n4) Access ListWriter\n5) Exit";
 		while(!exit)
 		{
 			System.out.println(mainMenuOptions);
@@ -147,6 +147,10 @@ public class Main
 			{
 				testElementGridWalk();
 			}
+			else if(choice==4)
+			{
+				ListWriter.menu();
+			}
 //			else if(choice==4)
 //			{
 //				String[] plot = ListReader.readPlot();
@@ -159,7 +163,7 @@ public class Main
 //			{
 //				ListWriter.writeDescriptionList();
 //			}
-			else if(choice==4)
+			else if(choice==5)
 			{
 				return;
 			}
