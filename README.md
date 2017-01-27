@@ -1,3 +1,7 @@
+#NOTICE: The game is currently being worked on in a different project, found at https://github.com/JayhawkZombie/EECS581Project
+
+
+
 # MonsterMaster
 ## Overview
 MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed by Austin Bailey and whoever wants to join him

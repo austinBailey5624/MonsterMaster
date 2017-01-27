@@ -352,16 +352,22 @@ public class ListWriter
 		}
 		
 	}
+	//this method has been hijacked to help with the JayhawkZombie version of MonsterMaster
 	public static void writeBestiary()
 	{
 		MonsterType[] myArray = Bestiary.bestiary1d;
 		try
 		{
-			BufferedWriter myWriter = new BufferedWriter( new FileWriter("bestiary.txt"));
+			BufferedWriter myWriter = new BufferedWriter( new FileWriter("SFEngeineBestiary2.txt"));
 			myWriter.write(String.valueOf(myArray.length));
 			myWriter.newLine();
-			for(int i=0; i<myArray.length; i++)
+			for(int i=35; i<myArray.length; i++)
 			{
+				//handles the bestiary information for the monster itself
+				myWriter.write(myArray[i].getTypeName());
+				myWriter.newLine();
+				myWriter.write(myArray[i].getDescription());
+				myWriter.newLine();
 				myWriter.write(String.valueOf(myArray[i].getPrimaryElement()));
 				myWriter.newLine();
 				myWriter.write(String.valueOf(myArray[i].getSecondaryElement()));
@@ -369,10 +375,199 @@ public class ListWriter
 				myWriter.write(String.valueOf(myArray[i].getEvolutionStage()));
 				myWriter.newLine();
 				myWriter.write(String.valueOf(myArray[i].getEvolutionType()));
+				//4
 				myWriter.newLine();
-				myWriter.write(myArray[i].getTypeName());
+				//handles the texture assignment
+				if(myArray[i].getPrimaryElement()==0 && myArray[i].getSecondaryElement()==3)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/LesserPhoenix12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==0 && myArray[i].getSecondaryElement()==4)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Angier12FSpriteSheet.png");	
+				}
+				else if(myArray[i].getPrimaryElement()==0 && myArray[i].getSecondaryElement()==5)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Spiten12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==1 && myArray[i].getSecondaryElement()==0)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/MinorSteamlet12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==1 && myArray[i].getSecondaryElement()==1)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Minnow12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==1 && myArray[i].getSecondaryElement()==2)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Tapple12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==1 && myArray[i].getSecondaryElement()==3)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==1 && myArray[i].getSecondaryElement()==4)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Snoball12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==1 && myArray[i].getSecondaryElement()==5)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==2 && myArray[i].getSecondaryElement()==0)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Sprite12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==2 && myArray[i].getSecondaryElement()==1)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Boggart12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==2 && myArray[i].getSecondaryElement()==2)
+				{
+					if(myArray[i].getEvolutionType()==0 && myArray[i].getEvolutionStage()>1)
+					{
+						myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Babadger12FSpriteSheet.png");
+					}
+					else if(myArray[i].getEvolutionType()>1 && myArray[i].getEvolutionStage()>1)
+					{
+						myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png");
+					}
+					else
+					{
+						myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Bulbapup12FSpriteSheet.png");
+					}
+				}
+				else if(myArray[i].getPrimaryElement()==2 && myArray[i].getSecondaryElement()==3)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/MinorPegasus12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==2 && myArray[i].getSecondaryElement()==4)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Buddi12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==2 && myArray[i].getSecondaryElement()==5)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/SeweRat12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==3 && myArray[i].getSecondaryElement()==0)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Kangarat12FSpriteSheet.png");
+				}
+				else if(myArray[i].getPrimaryElement()==3 && myArray[i].getSecondaryElement()==1)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Gullfish.png");
+				}
+				else if(myArray[i].getPrimaryElement()==3 && myArray[i].getSecondaryElement()==2)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Colour.png");
+				}
+				else if(myArray[i].getPrimaryElement()==3 && myArray[i].getSecondaryElement()==3)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Flapper.png");
+				}
+				else if(myArray[i].getPrimaryElement()==3 && myArray[i].getSecondaryElement()==4)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/CockaOne.png");
+				}
+				else if(myArray[i].getPrimaryElement()==3 && myArray[i].getSecondaryElement()==5)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/FourShadoWing.png");
+				}
+				else if(myArray[i].getPrimaryElement()==4 && myArray[i].getSecondaryElement()==0)
+				{
+					if(myArray[i].getEvolutionType()==1)
+					{
+						myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/FireFaux.png");
+					}
+					else
+					{
+						myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Tona.png");
+					}
+				}
+				else if(myArray[i].getPrimaryElement()==4 && myArray[i].getSecondaryElement()==1)
+				{
+					if(myArray[i].getEvolutionType()==0 && myArray[i].getEvolutionStage()>1)
+					{
+						myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Lunapup.png");
+					}
+					else
+					{
+						myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Lona.png");
+					}
+				}
+				else if(myArray[i].getPrimaryElement()==4 && myArray[i].getSecondaryElement()==2)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Escutcheoner.png");
+				}
+				else if(myArray[i].getPrimaryElement()==4 && myArray[i].getSecondaryElement()==3)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/DemiAngel.png");
+				}
+				else if(myArray[i].getPrimaryElement()==4 && myArray[i].getSecondaryElement()==4)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Lumin.png");
+				}
+				else if(myArray[i].getPrimaryElement()==4 && myArray[i].getSecondaryElement()==5)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Guilt.png");
+				}
+				else if(myArray[i].getPrimaryElement()==5 && myArray[i].getSecondaryElement()==0)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Fiend.png");
+				}
+				else if(myArray[i].getPrimaryElement()==5 && myArray[i].getSecondaryElement()==1)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Stinger.png");
+				}
+				else if(myArray[i].getPrimaryElement()==5 && myArray[i].getSecondaryElement()==2)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Stull.png");
+				}
+				else if(myArray[i].getPrimaryElement()==5 && myArray[i].getSecondaryElement()==3)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Maltag.png");
+				}
+				else if(myArray[i].getPrimaryElement()==5 && myArray[i].getSecondaryElement()==4)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/FallenDemiAngel.png");
+				}
+				else if(myArray[i].getPrimaryElement()==5 && myArray[i].getSecondaryElement()==5)
+				{
+					myWriter.write("SFEngine/Samples/Animations/CharacterAnimations/Umbress.png");
+				}
 				myWriter.newLine();
-				myWriter.write(myArray[i].getDescription());
+				
+				//handles the evolvesInto Assignment
+				if(myArray[i].getEvolvesInto1()==null)
+				{
+					myWriter.write("NULL");
+				}
+				else
+				{
+					myWriter.write(myArray[i].getEvolvesInto1().getTypeName());
+				}
+				myWriter.newLine();
+				
+				if(myArray[i].getEvolvesInto2()==null)
+				{
+					myWriter.write("NULL");
+				}
+				else 
+				{
+					myWriter.write(myArray[i].getEvolvesInto2().getTypeName());
+				}
+				myWriter.newLine();
+				
+				if(myArray[i].getEvolvesInto3()==null)
+				{
+					myWriter.write("NULL");
+				}
+				else
+				{
+					myWriter.write(myArray[i].getEvolvesInto3().getTypeName());
+				}
+				//Clears a final line
+				myWriter.newLine();
 				myWriter.newLine();
 			}
 			myWriter.close();

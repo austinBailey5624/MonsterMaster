@@ -34,8 +34,10 @@ public class MonsterType
 		m_secondaryElement=secondaryElement;
 		m_evolutionStage=evolutionStage;
 		m_evolutionType=evolutionType;
-		m_evolvesInto1=evolvesInto1;
-		m_evolvesInto2=null;
+		//m_evolvesInto1=evolvesInto1;
+		//m_evolvesInto2=null;
+		m_evolvesInto1=null;
+		m_evolvesInto2=evolvesInto1;
 		m_evolvesInto3=null;
 		m_numOfEvolutions=1;
 		m_skill=null;
@@ -53,8 +55,10 @@ public class MonsterType
 		m_evolutionType=evolutionType;
 //		m_description=description;
 		m_evolvesInto1=evolvesInto1;
-		m_evolvesInto2=evolvesInto2;
-		m_evolvesInto3=null;
+		//m_evolvesInto2=evolvesInto2;
+		//m_evolvesInto3=null;
+		m_evolvesInto2=null;
+		m_evolvesInto3=evolvesInto2;
 		m_numOfEvolutions=2;
 		m_skill=null;
 	}
