@@ -567,9 +567,9 @@ A towering cloud with a yellow wolfs head that has no compunction about gliding 
 2
 0
 SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png
+NULL
 Nephol
-Cirricumulus
-CumuloStratus
+NULL
 
 Stratus
 The stratus is a cloud with a somber sheeps head that is very depressed and cries all the time. This is why it rains often when this particular cloud is out. It is highly against convective slavery, and even calls itself a free-convective.
@@ -578,9 +578,10 @@ The stratus is a cloud with a somber sheeps head that is very depressed and crie
 2
 1
 SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png
+NULL
 CumuloStratus
 NULL
-Stratonimbus
+
 
 Nimbus
 The nimbus basically looks like a floating turtle with glasses, except the shell is a cloud and the head is yellow with a lame curly loop for hair. Its glasses are black, how they float I don't know
@@ -589,9 +590,9 @@ The nimbus basically looks like a floating turtle with glasses, except the shell
 2
 2
 SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png
-Stratonimbus
 NULL
 NimbuloPonderant
+NULL
 
 Nephol
 The nephol is a cloud dragon with a yellow head an claws and no wings because it can float. It breathes lightening at its enemies
@@ -604,37 +605,15 @@ NULL
 Thunderus
 NULL
 
-Cirricumulus
-The Cirricumulus is less concerned with rain and more concerned with air currents. It can cast air funnel which increases the damage of air-based attacks for the duration of the battle. In appearance its a greater wolf with a very long tail that is often wrapped around itself
-1
-3
-3
-1
-SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png
-NULL
-Thunderus
-NULL
-
 CumuloStratus
 The CumuloStratus can spread itself thin and use the water droplets that make up its mass as a lens to focus the sun on the battlefield, increasing fire and solar damage. However, it cannot attack while this is going on. In apperance it is rather formless, drifting high
 1
 3
 3
-2
-SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png
-Thunderus
-NULL
-Cumulonimbus
-
-Stratonimbus
-The StratoNimbus looks like an old goat when in corporeal form. It can change form to appear as a mist that surrounds the battlefield. When it does this, visibility is decreased for both sides, and water and ice attacks are strengthened
 1
-3
-3
-3
 SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png
 NULL
-Cumulonimbus
+CirriCumulus
 NULL
 
 NimbuloPonderant
@@ -642,7 +621,7 @@ The Nimbuloponderant is a greater turtle that can cast heavy rain on the battlef
 1
 3
 3
-4
+2
 SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png
 NULL
 Cumulonimbus
@@ -659,8 +638,8 @@ NULL
 NULL
 NULL
 
-Cumulonimbus
-The Cumulonimbus is a magical weather system that can cast two weather magics at once
+Cirricumulus
+The Cirricumulus is less concerned with rain and more concerned with air currents. It can cast air funnel which increases the damage of air-based attacks for the duration of the battle. In appearance its a greater wolf with a very long tail that is often wrapped around itself
 1
 3
 4
@@ -670,15 +649,15 @@ NULL
 NULL
 NULL
 
-Ice Egg
-The Ice Egg has a snow glyph on its belly. The top and bottom of the egg are crested in frost, and the rest of the shell is a cool blue. When dropped in water, it will float to the surface and create an ice island around itself, it cannot do this indefinately, as cooling the matter around it takes energy from the baby inside, who cannot live in conditions much beyond freezing
+Cumulonimbus
+The Cumulonimbus is a magical weather system that can cast two weather magics at once
 1
+3
 4
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/Snoball12FSpriteSheet.png
+2
+SFEngine/Samples/Animations/CharacterAnimations/Cirrus12FSpriteSheet.png
 NULL
-Snoball
+NULL
 NULL
 
 Snoball
@@ -722,7 +701,7 @@ The icebreaker is an ice demon with a staff that has a large snowflake on its cr
 2
 SFEngine/Samples/Animations/CharacterAnimations/Snoball12FSpriteSheet.png
 White Limper
-Chiller
+NULL
 Ice Witch
 
 Freki
@@ -758,23 +737,12 @@ NULL
 WhiteRunner
 NULL
 
-Chiller
-the Chiller is a ice demon with a great ice trident, black horns and white-blue eyes that bore into the soul. Also a huge Michael Jackson fan, loves 'Thriller' in particular, but its rather tonedeaf, and thinks Michael is talking about it in the song.
-1
-4
-3
-3
-SFEngine/Samples/Animations/CharacterAnimations/Snoball12FSpriteSheet.png
-NULL
-Freezer
-NULL
-
 Ice Witch
 the Ice witch is exactly what it sounds like
 1
 4
 3
-4
+3
 SFEngine/Samples/Animations/CharacterAnimations/Snoball12FSpriteSheet.png
 NULL
 Ice Lich
@@ -813,8 +781,8 @@ NULL
 NULL
 NULL
 
-Freezer
-The Freezer is a demon that can move swiftly through ice the same way fish swim through water. It is sneaky and will often appear behind enemies and stab them with its icicle
+Ice Lich
+The Ice lich is the penultimate ice demon that has transformed itself into full lich form. As such, it is very hard to destroy
 1
 4
 4
@@ -822,28 +790,6 @@ The Freezer is a demon that can move swiftly through ice the same way fish swim 
 SFEngine/Samples/Animations/CharacterAnimations/Snoball12FSpriteSheet.png
 NULL
 NULL
-NULL
-
-Ice Lich
-The Ice lich is the penultimate ice demon that has transformed itself into full lich form. As such, it is very hard to destroy
-1
-4
-4
-4
-SFEngine/Samples/Animations/CharacterAnimations/Snoball12FSpriteSheet.png
-NULL
-NULL
-NULL
-
-Deep Egg
-The deep egg is used to being shrouded in the darkness of the deep, and is nearly unbreakable, as it is used to the pressure on the bottom of the seafloor. It can regulate its internal pressure. When another primary water elemental is in play, its defense rises by half again
-1
-5
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
-NULL
-Deepfish
 NULL
 
 Deepfish
@@ -875,9 +821,9 @@ The Starish is called so because it is kinda like a star except its also a fish
 2
 1
 SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
+NULL
 Ninjastar
 NULL
-Darkstar
 
 jelly
 The jelly is a small fish that is bell shaped and floats around. It wraps its tail around its enemies to sting them
@@ -887,8 +833,8 @@ The jelly is a small fish that is bell shaped and floats around. It wraps its ta
 2
 SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
 Hydroza
+NULL
 Stauroza
-Scyphozoa
 
 Vasquid
 The Vasquid is a full-fledged giant sqid that is the size of a house when under water and considerably smaller when over land. Its tentacles are very strong and hard and can break even the most resilient bones. The only way to survive this fish is to dodge it
@@ -912,23 +858,12 @@ NULL
 DeathStarFish
 NULL
 
-Darkstar
-The Darkstar is a starish that became interested in black magic. its flesh has turned black in response, and it casts magic from the end of its five arms. Each end appears to be lit aflame with blue flame, but it is actual a chemical reaction
-1
-5
-3
-2
-SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
-NULL
-Abysstar
-NULL
-
 Hydroza
 The Hydroza is a translucent (and nearly invisible in dark water) large jellyfish that constricts its prey and eats them alive. As the fish is translucent, it is the only known monster in which you can see a prey species being digested. It has poisonous spikes on the mandibles with which it attacks its prey
 1
 5
 3
-3
+2
 SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
 NULL
 Hydoridolina
@@ -939,18 +874,7 @@ The Stauroza is a large opaque black jellyfish that has a white star on the insi
 1
 5
 3
-4
-SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
-NULL
-Trachylina
-NULL
-
-Scyphozoa
-The bell of the Scyphozoa is rings of Black and dark blue. It can form glyphs with its arms, with which it casts spells. The skill related to it is inksign, which lowers accuracy to water types, and deals damage
-1
-5
 3
-5
 SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
 NULL
 Trachylina
@@ -978,23 +902,12 @@ NULL
 NULL
 NULL
 
-Abysstar
-The Abysstar moves through the water using magic that it puslates through its five arms. It can cast darkpressure on its enemies, who feel the hoplessness of being lost at the floor of the ocean being crushed by hundreds of thousands of pounds of water above them. It has many small places on the seafloor where it has placed  satanic rituals and it travels between them for unknown purposes
-1
-5
-4
-2
-SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
-NULL
-NULL
-NULL
-
 Hydoridolina
 The Hydoridolinia is actually a group of Hydroza and smaller jellyfish that comes together and is controlled by a single conscious mind.
 1
 5
 4
-3
+2
 SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
 NULL
 NULL
@@ -1005,21 +918,10 @@ The Trachylina is an ascendent deep magical user that can use pressure pulse on 
 1
 5
 4
-4
+3
 SFEngine/Samples/Animations/CharacterAnimations/Deepfish12FSpriteSheet.png
 NULL
 NULL
-NULL
-
-Fairy Egg
-The fairy egg has mystical fey energy surrounding it in whisps and sparkling. The top 1/4 is green, the bottom 1/4 is red and in the middle is a gradient between the two. in the center of the egg is the fairy crest
-2
-0
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/Sprite12FSpriteSheet.png
-NULL
-Sprite
 NULL
 
 Sprite
@@ -1220,24 +1122,13 @@ NULL
 NULL
 NULL
 
-Tera Egg
-A brown Egg that looks a lot like a clod of dirt except for the glowing green earth crest etched onto its surface. It is heavy and when placed in the grass, the grass grows and circles around it, as if coushining it. It is magical and can evolve into a baby badger, a puppy or a stick. 'But Puppies dont come from eggs!' you may think! Banish your logic, this is a video game, there is no place for it here!
-2
-2
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/Bulbapup12FSpriteSheet.png
-Babadger
-Bulbapup
-Stiket
-
 Babadger
 The Babadger lures its enemies close with its cuteness, and then slashes them viciously when they're exposed. But its only enemies are its fellow babadger pups, which is why its parents seperate them at birth
 2
 2
 1
 0
-SFEngine/Samples/Animations/CharacterAnimations/Bulbapup12FSpriteSheet.png
+SFEngine/Samples/Animations/CharacterAnimations/Babadger12FSpriteSheet.png
 NULL
 BadgeBadger
 NULL
@@ -1250,7 +1141,7 @@ A small, energetic puppy with a large bulb on its back, resembling an onion. It 
 1
 SFEngine/Samples/Animations/CharacterAnimations/Bulbapup12FSpriteSheet.png
 VineWolf
-Aiyana
+NULL
 Tera Symbol
 
 Stiket
@@ -1259,7 +1150,7 @@ The sticket pretends to be magical but isn't. Its very depressing huh? Its basic
 2
 1
 2
-SFEngine/Samples/Animations/CharacterAnimations/Bulbapup12FSpriteSheet.png
+SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
 Trig
 NULL
 Tera Symbol
@@ -1286,38 +1177,27 @@ NULL
 Greenwolf
 NULL
 
-Aiyana
-The aiyana is a calm relaxed wolf with a flower on its back. In the center of the flower is the yin yang, a symbol for balance. It often lays in the grass, and enjoys watching the plants grow and flower around it. It has a passive ability that strengthens all moves by plant types by 10%
-2
-2
-2
-2
-SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
-NULL
-Flowering Aiyana
-NULL
-
 Trig
 A small nerdy twig that just loves math. It can recite all of the mathematical properties up to vector calclus off of the top of its head, it especially loves sine, cosine and tangent. It always remembers to bring an apple for the teacher. It cant see very well (as it lacks eyes) and thus keeps its bifocals on at all times
 2
 2
 2
-3
+2
 SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
+NULL
 Professtrig
 NULL
-Hugger Tree
 
 Tera Symbol
 The Tera Symbol is a green taurus with the earth symbol it its center
 2
 2
 2
-5
+3
 SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
+Jade
 NULL
 Tera Elemental
-NULL
 
 Honey Badger
 My only advice to you is not to mess with the honey badger. He was once locked up in vietcong prison for being a badass, and all they wanted him to do is poop. BUT HONEY BADGER DON'T CARE! HONEY BADGER DON'T GIVE A SHIT. credit for the idea belongs to: https://www.youtube.com/watch?v=4r7wHMg5Yjg
@@ -1341,37 +1221,26 @@ Sief
 NULL
 Awarewolf
 
-Flowering Aiyana
-The Aiyana now has flowers growing over its body. It attacks with fragrant fumes from its flowers. Its fur is all white
-2
-2
-3
-2
-SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
-NULL
-Flourisyana
-NULL
-
 Professtrig
 The trig went to college and became a professor which is why he has big white bushy eyebrows and moustache. His most damaging attack is assigning math homework which deals more damage the closer the intelligence is to 5 because if its much lower than that it doesn't care and much higher and its easy
 2
 2
 3
-1
+2
 SFEngine/Samples/Animations/CharacterAnimations/Bulbapup12FSpriteSheet.png
 NULL
 Tenured Professtrig
 NULL
 
-Hugger Tree
-The hugger tree is a tree with two dedicated branches toward hugging and protecting people. It looks like it has a smile carved in its bark, but it actually just grew that way
+Jade
+Mined deep in the mountains, Jade is a lesser elemental that strikes physically as well as magically
 2
 2
 3
-2
+3
 SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
 NULL
-Tree Hugger Hugger Tree
+Emerald
 NULL
 
 Tera Elemental
@@ -1379,7 +1248,7 @@ A large tera symbol surrounded by a dark symbol, a fire symbol and a water symbo
 2
 2
 3
-2
+4
 SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
 NULL
 Tera Atronach
@@ -1418,8 +1287,8 @@ NULL
 NULL
 NULL
 
-Flourisyana
-The Flourisyana is a large pale green wolf that has magic bladed flowers that it thows at enemies
+Tenured Professtrig
+The professtrid has tenure, thus doesn't actually have to work anymore and can do whatever it wants. It also has a stare that can put someone in their place
 2
 2
 4
@@ -1429,23 +1298,12 @@ NULL
 NULL
 NULL
 
-Tenured Professtrig
-The professtrid has tenure, thus doesn't actually have to work anymore and can do whatever it wants. It also has a stare that can put someone in their place
+Emerald
+A great gem that resembles the great Earth Gem and can channel some of its powers
 2
 2
 4
 4
-SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
-NULL
-NULL
-NULL
-
-Tree Hugger Hugger Tree
-The Tree Hugger Hugger Tree is a tree that loves hugging, especially tree huggers, which is fortunate, because only tree huggers hug trees.
-2
-2
-4
-5
 SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
 NULL
 NULL
@@ -1460,17 +1318,6 @@ A large tera elemental surrounded by the elementals representing all other prima
 SFEngine/Samples/Animations/CharacterAnimations/Sticket12FSpriteSheet.png
 NULL
 NULL
-NULL
-
-Pegasus Egg
-The Pegasus egg shows a natural affinity for both the air and the earth. However, the part of it that is psyched about flying is on the bottom half, and the part that enjoys the ground is on the top half. So it balances upside down. People say it looks ridiculous, but eggs cant hear sooo...
-2
-3
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/MinorPegasus12FSpriteSheet.png
-NULL
-Minor Pegasus
 NULL
 
 Minor Pegasus
@@ -1602,7 +1449,7 @@ The Bodisatva is now an experienced mond, that has a healing palm that deals dam
 0
 SFEngine/Samples/Animations/CharacterAnimations/Buddi12FSpriteSheet.png
 NULL
-NULL
+Shaolin
 NULL
 
 Theresatva
@@ -1613,7 +1460,7 @@ The Theresatva is self sacrificing, and can give half of her own vital energy to
 1
 SFEngine/Samples/Animations/CharacterAnimations/Buddi12FSpriteSheet.png
 NULL
-NULL
+Mother Theres
 NULL
 
 Shaolin
@@ -1636,17 +1483,6 @@ A female elder monk that can sacrifice herself to heal all alies to full health,
 SFEngine/Samples/Animations/CharacterAnimations/Buddi12FSpriteSheet.png
 NULL
 NULL
-NULL
-
-Rotten Egg
-The Rotten egg infects those around it with disease
-2
-5
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/SeweRat12FSpriteSheet.png
-NULL
-Sewerat
 NULL
 
 Sewerat
@@ -1691,17 +1527,6 @@ The BeePee floods toxic sludge all over the opponents battlefield which ignites 
 SFEngine/Samples/Animations/CharacterAnimations/SeweRat12FSpriteSheet.png
 NULL
 NULL
-NULL
-
-Sands Egg
-The Sands Egg has a sandy shell with the sand logo printed on it
-3
-0
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/Kangarat12FSpriteSheet.png
-NULL
-Kangarat
 NULL
 
 Kangarat
@@ -1990,17 +1815,6 @@ NULL
 NULL
 NULL
 
-AeroEgg
-The aeroEgg hovers in the air, and is yellow with the bird crest on it. It was designed to hover just in case one of its parents accidentally knocks it out of the tree, so it can be rescued before it hits the ground
-3
-3
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
-NULL
-Flapper
-NULL
-
 Flapper
 The Flapper shows a ridiculous amount of leg, esspecially for this time period. It is very stylish, and wears a headband with a feather on it, even though its already a bird
 3
@@ -2041,9 +1855,10 @@ The AeroSymbol is a circle with six points that looks like the aero glyph. The s
 2
 3
 SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
+Quartz
 NULL
 Aero Elemental
-NULL
+
 
 Baldgul
 The Baldgul is a bald eagle that is actually bald. Not white feathers, no feathers
@@ -2053,7 +1868,7 @@ The Baldgul is a bald eagle that is actually bald. Not white feathers, no feathe
 0
 SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
 NULL
-Roc
+PatriotHawk
 NULL
 
 Wings
@@ -2067,15 +1882,38 @@ NULL
 Roc
 NULL
 
-Aero Elemental
-The Aero Elemental is a suped up version of the AeroSymbol with more wings etc.
+Quartz
+Quartz is mined from high mountains that reach for the heavens, although it is a mineral, it has been imbued with magic electral energy, and its magnetism causes smaller, weaker crystals to orbit it.
 3
 3
 3
 2
 SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
 NULL
+Topaz
+NULL
+
+Aero Elemental
+The Aero Elemental is a suped up version of the AeroSymbol with more wings etc.
+3
+3
+3
+3
+SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
+NULL
 Air Atronach
+NULL
+
+PatriotHawk
+Once famously displayed during the intro of the Colbert Report, the Patriot hawk is a giant Bald Eagle with blue starred shoulders and wing feathers alternating between white and red.
+3
+3
+4
+0
+SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
+NULL
+NULL
+NULL
 NULL
 
 Roc
@@ -2083,7 +1921,18 @@ The Roc is a giant bald eagle with a thirty foot wingspan, it often sits on a go
 3
 3
 4
-0
+1
+SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
+NULL
+NULL
+NULL
+
+Topaz
+A great elememtal crystal crackling with electric energy, the Topaz is the pinnacle of pure air magical energy
+3
+3
+4
+2
 SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
 NULL
 NULL
@@ -2094,7 +1943,7 @@ Lightening often surrounds the Air Atronach whenever it is angry. It is surround
 3
 3
 4
-1
+3
 SFEngine/Samples/Animations/CharacterAnimations/Flapper.png
 NULL
 NULL
@@ -2163,7 +2012,7 @@ The Cockadude is a super cool cocka who wears 8 bit glasses and raps. He is freq
 0
 SFEngine/Samples/Animations/CharacterAnimations/CockaOne.png
 NULL
-CockaFour
+CockaCrude
 NULL
 
 Cockathree
@@ -2185,7 +2034,18 @@ The Lovebird is a totally pink cocka that is eternally smiling. It can flirt wit
 2
 SFEngine/Samples/Animations/CharacterAnimations/CockaOne.png
 NULL
-CockaFour
+MotherBird
+NULL
+
+CockaCrude
+The CockaCrude is the black sheep of the cocka family, that often acts out and bites its fellow birds. As a result it is secluded and bitter, although because of its strength, it is the first bird called upon when the flock is attacked
+3
+4
+4
+0
+SFEngine/Samples/Animations/CharacterAnimations/CockaOne.png
+NULL
+NULL
 NULL
 
 CockaFour
@@ -2193,7 +2053,18 @@ The Cockafour is the undisputed leader of the cockas. Its beak is lined with raz
 3
 4
 4
-0
+1
+SFEngine/Samples/Animations/CharacterAnimations/CockaOne.png
+NULL
+NULL
+NULL
+
+MotherBird
+The mother bird would be the den mother of the cockas if they had a den. As such, it is the Nest mother, and is the first bird a young CockaOne goes to if its having trouble.
+3
+4
+4
+2
 SFEngine/Samples/Animations/CharacterAnimations/CockaOne.png
 NULL
 NULL
@@ -2441,37 +2312,26 @@ NULL
 NULL
 NULL
 
-Lunar egg
-The Lunar egg appears to be a stone during the day, however when moonlight shines upon it, it is clearly an egg with the lunar symbol embossed upon it. The brightness of the symbol is determined by the phase the moon is in.
-4
-1
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/Lona.png
-NULL
-Lunapup
-NULL
-
-Lunapup
-The Lunapup is a small wolf born from a lunar egg on the full moon.
+Lona
+Created under the full moon, a lona is a celestial orb of pure lunar energy
 4
 1
 1
 0
 SFEngine/Samples/Animations/CharacterAnimations/Lona.png
-Chia
+Lunapup
 NULL
 Chandra
 
-Chia
-Chia is a small wolf that can howl at the moon to increase its attack
+Lunapup
+When manifesting itself into a physical form, the lona found a white wolf howling at the moon, and was amazed at its beauty. It thusly decided to turn into a wolf. Although weak and young, the Lunapup grows stronger in the light of the full moon and weaker in its absence. A moonless, starless night bodes ill for a lunapup, who will be unable to recharge even a portion of the celestial energy of which it is dependent.
 4
 1
 2
 0
 SFEngine/Samples/Animations/CharacterAnimations/Lunapup.png
 NULL
-Selen
+Celene
 NULL
 
 Chandra
@@ -2507,8 +2367,8 @@ NULL
 Luna
 NULL
 
-Lona
-Lona's are stronger when they have a Luna present. They are great white Wolves with ice colored eyes, their eyes seem to speak of their souls, human
+Celene
+Celene's are stronger when they have a Luna present. They are great white Wolves with ice colored eyes, their eyes seem to speak of their souls, human
 4
 1
 4
@@ -2756,9 +2616,10 @@ A Light symbol is the embodiment of the symbol of light and can cast lumimagia 1
 2
 2
 SFEngine/Samples/Animations/CharacterAnimations/Lumin.png
+MoonStone
 NULL
 Light Elemental
-NULL
+
 
 Argenphage
 The Argenphage is a larger phage with silver plates inlaid with complex designs. It is said that their eyes can see the balance of a soul
@@ -2782,12 +2643,23 @@ NULL
 Luminacier
 NULL
 
+MoonStone
+A white stone that holds pure light energy. As it floats, it is used by adventurers to light the way in dungeons, keeping their torch-hand free
+4
+4
+3
+2
+SFEngine/Samples/Animations/CharacterAnimations/Lumin.png
+NULL
+Diamond
+NULL
+
 Light Elemental
 the light elemental is a large light symbol surrounded by three other symbols, water, air and earth. The elemental can channel any of the four energies
 4
 4
 3
-2
+3
 SFEngine/Samples/Animations/CharacterAnimations/Lumin.png
 NULL
 Light Atronach
@@ -2815,12 +2687,23 @@ NULL
 NULL
 NULL
 
+Diamond
+Known as the most precious elemental stone, the Diamond has a long history of being betrayed by its owner, who breaks it and sells it for gold. Indeed many breed them just for this purpose.
+4
+4
+4
+2
+SFEngine/Samples/Animations/CharacterAnimations/Lumin.png
+NULL
+NULL
+NULL
+
 Light Atronach
 The light atronach is an ascendant light elemenal that is surrounded by six symbols, representing each of the six elements
 4
 4
 4
-2
+3
 SFEngine/Samples/Animations/CharacterAnimations/Lumin.png
 NULL
 NULL
@@ -3079,19 +2962,19 @@ NULL
 Fanger
 NULL
 
-Fanger
-The fanger is a small scorpion that can lift its legs up and slither and has fangs
+Stinger
+The Stinger is a small scorpion that can lift its legs up and slither and has fangs
 5
 1
 1
 0
 SFEngine/Samples/Animations/CharacterAnimations/Stinger.png
-Stinger
+BuzzBlade
 Slyther
 Creeper
 
-Stinger
-The Stinger is an oversized wasp with a poisonous stinger
+BuzzBlade
+The BuzzBlade is an oversized wasp with a poisonous stinger
 5
 1
 2
@@ -3152,9 +3035,9 @@ The Widow is a widowed spider that is really broken up about it, cries all the t
 3
 2
 SFEngine/Samples/Animations/CharacterAnimations/Stinger.png
+NULL
 Red Widow
 NULL
-Cougar Spider
 
 Queen B
 Queen B is the younger sister of Queen A, however when they were in a beauty pagent, everyone chose Queen B, so she became the dominant Queen. She can summon Stingers to the empty allied positions
@@ -3187,28 +3070,6 @@ The Red Widow has gotten over her husbands death. The hourglass has turned black
 SFEngine/Samples/Animations/CharacterAnimations/Stinger.png
 NULL
 NULL
-NULL
-
-Cougar Spider
-The Cougar Spider is an older spider who still looks nice and knows how to treat men (spiders) right. She takes them to her web and then eats them.
-5
-1
-3
-3
-SFEngine/Samples/Animations/CharacterAnimations/Stinger.png
-NULL
-NULL
-NULL
-
-Undead Egg
-Lifeless and cold, the egg is the color and consistency of bone, with the undead crest embossed on the center
-5
-2
-0
-0
-SFEngine/Samples/Animations/CharacterAnimations/Stull.png
-NULL
-Stull
 NULL
 
 Stull
@@ -3450,7 +3311,7 @@ The Screel is a black envy demon, desiring the desiring the form and life of a m
 1
 SFEngine/Samples/Animations/CharacterAnimations/Umbress.png
 NULL
-Senistair
+Caecus
 NULL
 
 Umbral Symbol
@@ -3460,8 +3321,6 @@ The Umbral Symbol is a floating symbol in the shape of the blinded eye that cast
 2
 2
 SFEngine/Samples/Animations/CharacterAnimations/Umbress.png
-NULL
-Caecus
 NULL
 
 Senistair
@@ -3486,12 +3345,23 @@ NULL
 Mang
 NULL
 
+Obsidian
+Dark as night, and reflective, obsidian is formed by fast cooling lava.
+5
+5
+3
+2
+SFEngine/Samples/Animations/CharacterAnimations/Umbress.png
+NULL
+Onyx
+NULL
+
 Umbral Elemental
 The Umbral Elemental is a large umbral symbol surrounded by three lesser symbols of other elements. As such, it can cast lesser magics of those elements
 5
 5
 3
-2
+3
 SFEngine/Samples/Animations/CharacterAnimations/Umbress.png
 NULL
 Umbral Atronach
@@ -3519,12 +3389,23 @@ NULL
 NULL
 NULL
 
+Onyx
+The onyx cosumes the light around it, giving it a halo of shadow
+5
+5
+4
+2
+SFEngine/Samples/Animations/CharacterAnimations/Umbress.png
+NULL
+NULL
+NULL
+
 Umbral Atronach
 The Umbral Atronach is a very large umbral symbol surrounded by Elementals representing every element. As such, it can cast greater darkness magics and regular magics of every other element
 5
 5
 4
-2
+3
 SFEngine/Samples/Animations/CharacterAnimations/Umbress.png
 NULL
 NULL
