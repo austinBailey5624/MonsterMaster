@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0126206d-971d-4342-ac2e-820ec1d1a444",
+            "Value": {
+                "id": "e5c5fb2e-15ca-476b-9fd6-efe9cb3b7808",
+                "resourcePath": "sprites\\sprite_FireSymbol\\sprite_FireSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0164f756-c05c-4e80-8e60-f90fec98937b",
             "Value": {
                 "id": "86814e3a-8402-40b2-b9e8-2b2dd48b0428",
@@ -44,6 +52,14 @@
                 "id": "6b94b9ef-96ba-41a5-a47c-fdebd9f01f95",
                 "resourcePath": "sprites\\tileset_Forest\\tileset_Forest.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "018db075-30f9-48c9-a145-1e22ad44b8cc",
+            "Value": {
+                "id": "1b53d2b1-3873-4114-8a09-a84579dafbff",
+                "resourcePath": "objects\\object_OakTree_MediumHouse_3\\object_OakTree_MediumHouse_3.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -84,6 +100,22 @@
                 "id": "596072c2-5391-41b5-9075-2ec837639ee0",
                 "resourcePath": "views\\111b7a0f-5530-4253-9e65-ab5462ee21cc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1247d29c-c893-4a60-94fe-14d944122b77",
+            "Value": {
+                "id": "b9653e64-c941-4ad1-9ef8-aa5384c1d2d8",
+                "resourcePath": "tilesets\\tileset_collisionMask\\tileset_collisionMask.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
+            "Value": {
+                "id": "3bc435e3-b5fb-46bd-ab8b-60a5c64630c6",
+                "resourcePath": "objects\\RPGObject\\RPGObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -167,6 +199,14 @@
             }
         },
         {
+            "Key": "3a995fa6-4586-49ca-b1ac-48d868819ed2",
+            "Value": {
+                "id": "da7007a1-a00a-4c56-881e-48922c71a529",
+                "resourcePath": "objects\\Flarial\\Flarial.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3d3d7ca6-816c-4a75-a5b5-5eb9f5873ce4",
             "Value": {
                 "id": "760f87c0-1ce4-4158-a0ec-6dd97e0c5670",
@@ -247,10 +287,42 @@
             }
         },
         {
+            "Key": "5e03eff2-170a-4f91-b9d9-5cbaf5ed0ed7",
+            "Value": {
+                "id": "74603128-f0b6-447d-8444-9c085fbe3d91",
+                "resourcePath": "objects\\object_OakTree_ArmorShop\\object_OakTree_ArmorShop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5f532901-de8c-45db-8ed8-7fecea0a9904",
+            "Value": {
+                "id": "d69f0db4-f146-47a7-b854-bbc653c80262",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6275c098-37d9-4ba1-b189-685aa3756996",
+            "Value": {
+                "id": "e2ccc8e1-56cc-4a0d-9873-dabfa9ac6d6c",
+                "resourcePath": "objects\\Fire\\Fire.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "62fb0a78-14ec-421a-9bd7-a410f4c60398",
             "Value": {
                 "id": "4885b6e3-f2ff-42e8-a53c-7e1b85a07d54",
                 "resourcePath": "objects\\object_OakTree_SmallHouse_1\\object_OakTree_SmallHouse_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "62fb81e7-9b9c-4c9a-aad7-a0f0fbb408a3",
+            "Value": {
+                "id": "a8158651-775b-45cb-a6ca-199bbfb24ea7",
+                "resourcePath": "objects\\object_OakTree_MediumHouse_1\\object_OakTree_MediumHouse_1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -279,6 +351,22 @@
             }
         },
         {
+            "Key": "79ee5c93-3b62-47a6-b6c0-ac401f2f6d3a",
+            "Value": {
+                "id": "372817fd-5614-4009-87e4-2fc32d0e9d3d",
+                "resourcePath": "objects\\object_OakTree_MediumHouse_2\\object_OakTree_MediumHouse_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7c28ffd0-7b4e-4097-abde-b566ef2c6ef4",
+            "Value": {
+                "id": "c167d282-4412-45a6-bdc5-c8f26e72eb86",
+                "resourcePath": "sprites\\sprite_tileset_CollisionMask\\sprite_tileset_CollisionMask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "830ffa8e-449c-4d13-9a76-042a8411f823",
             "Value": {
                 "id": "67686513-2176-41e8-b1b2-24660420dca8",
@@ -292,6 +380,14 @@
                 "id": "2f42b9f5-6947-40dd-826b-4cf6803f7e23",
                 "resourcePath": "sprites\\sprite_OakTree_SmallHouse_2\\sprite_OakTree_SmallHouse_2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8ff12b17-c814-4599-89f6-02eee908c2ea",
+            "Value": {
+                "id": "6924bddf-e760-404f-8a7d-d0ef61a358c7",
+                "resourcePath": "views\\8ff12b17-c814-4599-89f6-02eee908c2ea.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -311,11 +407,43 @@
             }
         },
         {
+            "Key": "94bad1b6-4a3f-49db-b8cc-3594a150eada",
+            "Value": {
+                "id": "32a57920-f9f4-4154-98c3-3e2ae42e6e0e",
+                "resourcePath": "objects\\object_OakTree_MediumHouse_4\\object_OakTree_MediumHouse_4.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9a1620cc-0c86-42b9-a9da-097bd06d768e",
+            "Value": {
+                "id": "c29495d6-b741-47c2-9ee4-b55482be1e72",
+                "resourcePath": "objects\\object_OakTree_ItemShop\\object_OakTree_ItemShop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9a2a258b-43cc-4197-b14d-53250560a491",
+            "Value": {
+                "id": "b7596d0a-9e09-4954-a865-cd9e09a54470",
+                "resourcePath": "views\\9a2a258b-43cc-4197-b14d-53250560a491.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9b32bef3-25fd-4579-9f2e-175f18bc166f",
             "Value": {
                 "id": "c3804bf1-3a82-46ba-91d9-390056c0a6ad",
                 "resourcePath": "sprites\\sprite_Oaktree_Barracks\\sprite_Oaktree_Barracks.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
+            "Value": {
+                "id": "40e4fdbe-369c-49d8-b3e9-f2fed74b6954",
+                "resourcePath": "objects\\PrimaryElement\\PrimaryElement.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -359,11 +487,27 @@
             }
         },
         {
+            "Key": "ac88079f-d0f9-47b8-9dc2-6caefd63e031",
+            "Value": {
+                "id": "0fbc409e-2eee-497c-8b6e-0684ed14dcf2",
+                "resourcePath": "sprites\\sprite_tileset_forest_edging\\sprite_tileset_forest_edging.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ae2c4957-56c3-483a-bd41-1333de552758",
             "Value": {
                 "id": "e8912edf-ffe2-4f93-bbb1-98686225e090",
                 "resourcePath": "sprites\\sprite_OakTree_ArmorShop\\sprite_OakTree_ArmorShop.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "af048461-9bde-4a32-89aa-22004b25bfc7",
+            "Value": {
+                "id": "08d019b6-711f-4d34-9824-2dbbca87745c",
+                "resourcePath": "views\\af048461-9bde-4a32-89aa-22004b25bfc7.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -375,10 +519,34 @@
             }
         },
         {
+            "Key": "b5df5ab0-b5f0-4a6d-938a-5499aba13095",
+            "Value": {
+                "id": "17d60230-b4a3-4b2e-bbcb-1c05d573dffa",
+                "resourcePath": "views\\b5df5ab0-b5f0-4a6d-938a-5499aba13095.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b6563069-6c72-40df-abfd-752b267c086e",
             "Value": {
                 "id": "f7ab2d19-f615-4cc7-b688-e4fe704bd07c",
                 "resourcePath": "views\\b6563069-6c72-40df-abfd-752b267c086e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c0830f9e-39c7-486c-8edf-6506ee0bf3e8",
+            "Value": {
+                "id": "bffc4dc0-dbfb-4034-98ed-5d20afbd9b3f",
+                "resourcePath": "objects\\object_OakTree_WeaponShop\\object_OakTree_WeaponShop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c085d8c9-2b24-4b9c-b641-f497a1b0edfa",
+            "Value": {
+                "id": "06df8eba-6a8a-44e4-923c-95c5cf8a6132",
+                "resourcePath": "views\\c085d8c9-2b24-4b9c-b641-f497a1b0edfa.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -404,6 +572,14 @@
                 "id": "a4e33455-d621-49c1-9cb7-b6f1ff492bf8",
                 "resourcePath": "sprites\\sprite_OakTree_MediumHouse_1\\sprite_OakTree_MediumHouse_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cacf6872-ea84-4918-9870-31033cb9f694",
+            "Value": {
+                "id": "2936da6d-a004-413f-b3ae-068a92eca8ed",
+                "resourcePath": "tilesets\\tileset_forest_edging\\tileset_forest_edging.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -447,10 +623,34 @@
             }
         },
         {
+            "Key": "d018b1fc-666e-4d6c-8f35-dba5e3e8593b",
+            "Value": {
+                "id": "a8c02079-2113-4144-9e8c-90c7a243c4aa",
+                "resourcePath": "views\\d018b1fc-666e-4d6c-8f35-dba5e3e8593b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d17d03f7-444e-4886-98f2-b6647169a48d",
             "Value": {
                 "id": "198f91f5-8c51-4bec-8c18-4e75e5229af9",
                 "resourcePath": "views\\d17d03f7-444e-4886-98f2-b6647169a48d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d2184fda-90a2-4e5f-aaec-a84299f580a4",
+            "Value": {
+                "id": "a306e2cf-f6d7-46c5-b5c0-b85ea0fe0ba6",
+                "resourcePath": "views\\d2184fda-90a2-4e5f-aaec-a84299f580a4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d406621e-49bd-4575-84f7-1fa5fd826797",
+            "Value": {
+                "id": "ffe48654-563e-4cd7-9584-53d3ddbd3932",
+                "resourcePath": "views\\d406621e-49bd-4575-84f7-1fa5fd826797.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -487,11 +687,35 @@
             }
         },
         {
+            "Key": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "Value": {
+                "id": "d193f92e-028f-4071-b58e-7c30b7d4e14a",
+                "resourcePath": "objects\\Actor\\Actor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f28ff2b4-3004-4c75-8d96-7528c813d516",
+            "Value": {
+                "id": "d828ded5-88f1-4d95-9a22-5553eb354655",
+                "resourcePath": "views\\f28ff2b4-3004-4c75-8d96-7528c813d516.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "fd34a94b-e2bb-4b50-b93d-fe72ac1bb310",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4f674c6-cd3b-4da7-8b53-ca71c0c1c6c1",
+            "Value": {
+                "id": "0fe09b01-9c84-432b-89b5-740e3d05e2c6",
+                "resourcePath": "views\\f4f674c6-cd3b-4da7-8b53-ca71c0c1c6c1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -6,10 +6,12 @@
     "children": [
         "6a581912-9043-4756-806f-aa67ccc1dbe9",
         "0ddff610-8dc3-43be-bd36-ed39ad66532f",
-        "016f0942-95b6-4153-98f9-de4235b57134"
+        "016f0942-95b6-4153-98f9-de4235b57134",
+        "ac88079f-d0f9-47b8-9dc2-6caefd63e031",
+        "7c28ffd0-7b4e-4097-abde-b566ef2c6ef4"
     ],
     "filterType": "GMSprite",
-    "folderName": "tilSets",
+    "folderName": "tileSets",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

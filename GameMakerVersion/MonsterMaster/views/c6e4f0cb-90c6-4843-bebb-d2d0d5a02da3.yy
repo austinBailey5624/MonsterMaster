@@ -4,14 +4,10 @@
     "mvc": "1.1",
     "name": "c6e4f0cb-90c6-4843-bebb-d2d0d5a02da3",
     "children": [
-        "cf4c6adb-cce0-429e-a65c-ebfece784ac2",
-        "b1515ae5-b643-4f01-a1bd-1dac7f88b6c7",
-        "cbedcae2-5a4c-4ecd-89cb-34fe0ce592f2",
-        "0552bcec-8f15-403d-bc79-5456e16bdc29",
-        "261bc247-9943-4f27-aa3c-191a7eb9b741",
-        "62fb0a78-14ec-421a-9bd7-a410f4c60398",
-        "095a9371-215a-4fec-b6ee-f9c3737aa891",
-        "4ef2b297-b8bd-447f-bd27-e9704167e421"
+        "d406621e-49bd-4575-84f7-1fa5fd826797",
+        "b5df5ab0-b5f0-4a6d-938a-5499aba13095",
+        "af048461-9bde-4a32-89aa-22004b25bfc7",
+        "8ff12b17-c814-4599-89f6-02eee908c2ea"
     ],
     "filterType": "GMObject",
     "folderName": "group_OakTreeSetPieces",
