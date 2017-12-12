@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "c0005735-130a-4c7c-9d1e-ab2456f34408",
+            "Value": {
+                "id": "41fef88c-a47c-4f29-8af9-53d6d695b1e6",
+                "resourcePath": "tilesets\\ForestOverlap\\ForestOverlap.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "c0830f9e-39c7-486c-8edf-6506ee0bf3e8",
             "Value": {
                 "id": "bffc4dc0-dbfb-4034-98ed-5d20afbd9b3f",
@@ -564,6 +572,14 @@
                 "id": "1985bdf2-275a-48dc-9034-5fa84e1a2ca0",
                 "resourcePath": "views\\c6e4f0cb-90c6-4843-bebb-d2d0d5a02da3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c9376ef3-4f39-44a7-ac25-315648137bd6",
+            "Value": {
+                "id": "1f53720a-7f23-4065-bb4d-c9bb75997ba0",
+                "resourcePath": "sprites\\TreeTop\\TreeTop.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
