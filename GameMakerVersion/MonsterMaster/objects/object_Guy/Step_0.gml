@@ -12,19 +12,25 @@ else if(x<xprevious)
 {
 	if(sprite_index!=GuyLeft)
 	sprite_index=GuyLeft;
-	image_speed=imgspd;
+	image_speed=2.5*imgspd;
 }	
-else if(y>yprevious)
-{
-	if(sprite_index!=GuyForwards)
-	sprite_index=GuyForwards;
-	image_speed=imgspd;
-}
 else if(y<yprevious)
 {
-	if(sprite_index!=GuyForwards)
+//	if(sprite_index!=GuyForwards)
+//	sprite_index=GuyForwards;
+//	image_speed=imgspd;
+	if(sprite_index!=GuyBack)
 	sprite_index = GuyBack;
-	image_speed=imgspd;
+	image_speed = imgspd;
+}
+else if(y>yprevious)
+{
+//	if(sprite_index!=GuyBack)
+//	sprite_index = GuyBack;
+//	image_speed=2.5*imgspd;
+	if(sprite_index!=GuyForwards)
+	sprite_index = GuyForwards;
+	image_speed = 2.5*imgspd;
 }
 
 else
