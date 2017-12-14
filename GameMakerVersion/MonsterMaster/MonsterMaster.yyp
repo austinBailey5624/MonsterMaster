@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "18e0ae4e-3985-4bc7-906b-44f9a047aa19",
+            "Value": {
+                "id": "00685e23-0ae5-40d4-965c-e3ab1e09bb1a",
+                "resourcePath": "objects\\Lava\\Lava.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1ad149b0-7334-4340-8abd-ac4e1b6b6e20",
             "Value": {
                 "id": "2f27d655-fdb6-4639-8f8d-2a3ccd34f103",
@@ -215,10 +223,34 @@
             }
         },
         {
+            "Key": "437f950c-952d-472a-82b0-65c1fbb85cb2",
+            "Value": {
+                "id": "05bf64f0-035c-465f-ab49-b738ab40a928",
+                "resourcePath": "sprites\\sprite_WaterSymbol\\sprite_WaterSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "451249e6-3967-4f9b-94b8-7cc26030f738",
+            "Value": {
+                "id": "6a19e83e-700f-4b8d-9160-d797d2bc4f0b",
+                "resourcePath": "views\\451249e6-3967-4f9b-94b8-7cc26030f738.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "45c1c045-3c6f-4bd3-a156-03cb4b860d84",
             "Value": {
                 "id": "02838207-25a1-40ae-99f7-e6bc82c4ff21",
                 "resourcePath": "sprites\\sprite_OakTree_SmallHouse_1\\sprite_OakTree_SmallHouse_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "460828a4-8721-4d23-86c2-35e17f449dab",
+            "Value": {
+                "id": "0a2c3d07-93d6-4009-af8f-64fd8cc1f1e1",
+                "resourcePath": "sprites\\sprite_PhoenixSymbol\\sprite_PhoenixSymbol.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -231,6 +263,14 @@
             }
         },
         {
+            "Key": "4705ac2b-621b-4c76-b971-8cb5a0686c0d",
+            "Value": {
+                "id": "baa175c0-8f01-4911-925e-6ad395b1aec5",
+                "resourcePath": "sprites\\sprite_JusticeSymbol\\sprite_JusticeSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "498e7f17-a528-4023-9f78-6dc244d4ab09",
             "Value": {
                 "id": "c0095d3b-624a-4861-bc75-9b058cda848b",
@@ -239,10 +279,34 @@
             }
         },
         {
+            "Key": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "Value": {
+                "id": "031ae22d-596e-4deb-83df-0df91d021788",
+                "resourcePath": "objects\\SecondaryElement\\SecondaryElement.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4e44a360-0d40-4649-92d6-f757e686774a",
+            "Value": {
+                "id": "f5844f4c-e91d-4874-805c-0833df4a3ecf",
+                "resourcePath": "sprites\\sprite_VengenceSymbol\\sprite_VengenceSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4ef2b297-b8bd-447f-bd27-e9704167e421",
             "Value": {
                 "id": "1de02b43-506f-4c31-8665-4bd8a1a02efe",
                 "resourcePath": "objects\\object_OakTree_SmallHouse_3\\object_OakTree_SmallHouse_3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "516de5f3-68eb-441e-ac3e-aae8f059dc7d",
+            "Value": {
+                "id": "c8e3f141-0124-48e3-be13-f0e5064c6835",
+                "resourcePath": "objects\\Dino\\Dino.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -255,11 +319,27 @@
             }
         },
         {
+            "Key": "5873c0b1-41ae-43a9-9240-145824d42b68",
+            "Value": {
+                "id": "82d8de15-883f-47db-9590-48db0f6d65cf",
+                "resourcePath": "objects\\Pyro\\Pyro.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "58b6b8be-aa10-4f79-929d-40cc0437489c",
             "Value": {
                 "id": "97a2249b-aabf-442d-8ecb-3f1161ac910a",
                 "resourcePath": "sprites\\sprite_OakTree_Inn\\sprite_OakTree_Inn.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "58b8d4e4-bb7c-4b9b-a324-b7ebd246ed5d",
+            "Value": {
+                "id": "94957ebb-f251-4bcb-ab7c-9a0c8b4fd4c6",
+                "resourcePath": "objects\\Light\\Light.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -303,6 +383,14 @@
             }
         },
         {
+            "Key": "62648c48-5017-4b6d-b470-47ad48bead6f",
+            "Value": {
+                "id": "1a89a170-647f-4771-9aaa-08b8d6bcb0ac",
+                "resourcePath": "views\\62648c48-5017-4b6d-b470-47ad48bead6f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6275c098-37d9-4ba1-b189-685aa3756996",
             "Value": {
                 "id": "e2ccc8e1-56cc-4a0d-9873-dabfa9ac6d6c",
@@ -323,6 +411,14 @@
             "Value": {
                 "id": "a8158651-775b-45cb-a6ca-199bbfb24ea7",
                 "resourcePath": "objects\\object_OakTree_MediumHouse_1\\object_OakTree_MediumHouse_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6683b54f-7359-4dd6-b386-0e5f8aefb2c6",
+            "Value": {
+                "id": "4f6ce723-95a0-443d-9522-51806d37319f",
+                "resourcePath": "objects\\Air\\Air.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -367,11 +463,35 @@
             }
         },
         {
+            "Key": "8252b521-f56d-4092-a7d9-701be61ead71",
+            "Value": {
+                "id": "6390fc52-876c-44ce-bec3-91798b3d80f0",
+                "resourcePath": "sprites\\sprite_AirSymbol\\sprite_AirSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "830ffa8e-449c-4d13-9a76-042a8411f823",
             "Value": {
                 "id": "67686513-2176-41e8-b1b2-24660420dca8",
                 "resourcePath": "sprites\\sprite_OakTree_Church\\sprite_OakTree_Church.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "83c04a3c-a6bf-4f6b-a7db-790f4adf1625",
+            "Value": {
+                "id": "96fdc224-9b03-4951-bfe1-16b7cd1e563d",
+                "resourcePath": "sprites\\sprite_DarkSymbol\\sprite_DarkSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89e382d6-9c76-4aca-a360-d9700d952ec1",
+            "Value": {
+                "id": "0ce8f9cf-4324-4bcd-8fec-78c8f270db43",
+                "resourcePath": "views\\89e382d6-9c76-4aca-a360-d9700d952ec1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -436,6 +556,14 @@
                 "id": "c3804bf1-3a82-46ba-91d9-390056c0a6ad",
                 "resourcePath": "sprites\\sprite_Oaktree_Barracks\\sprite_Oaktree_Barracks.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9ba7c75d-7a6d-4930-9e88-e6fa642b3b7c",
+            "Value": {
+                "id": "eaee9d4a-ecd9-401f-89c9-5928326b6563",
+                "resourcePath": "objects\\Water\\Water.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -535,6 +663,22 @@
             }
         },
         {
+            "Key": "bb8e0377-a0da-4156-9083-02291ce1a8ac",
+            "Value": {
+                "id": "ebd135d3-765d-421a-9192-349b7af4948d",
+                "resourcePath": "sprites\\sprite_LavaSymbol\\sprite_LavaSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bfec9557-0ce7-4a87-ad4e-5e23f9d18357",
+            "Value": {
+                "id": "014fc07a-a290-4b63-9da2-94872a52f679",
+                "resourcePath": "sprites\\sprite_LightSymbol\\sprite_LightSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c0005735-130a-4c7c-9d1e-ab2456f34408",
             "Value": {
                 "id": "41fef88c-a47c-4f29-8af9-53d6d695b1e6",
@@ -551,11 +695,11 @@
             }
         },
         {
-            "Key": "c085d8c9-2b24-4b9c-b641-f497a1b0edfa",
+            "Key": "c0e03e25-959f-4d93-be8a-ce5ceb4c78bb",
             "Value": {
-                "id": "06df8eba-6a8a-44e4-923c-95c5cf8a6132",
-                "resourcePath": "views\\c085d8c9-2b24-4b9c-b641-f497a1b0edfa.yy",
-                "resourceType": "GMFolder"
+                "id": "ad2636ae-f3c9-41a2-9879-30b50edfe2c8",
+                "resourcePath": "objects\\Dark\\Dark.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -627,6 +771,14 @@
             "Value": {
                 "id": "bcb67e12-fa2a-4539-949b-d437f33f30e8",
                 "resourcePath": "sprites\\sprite_OakTree_MeduimHouse_2\\sprite_OakTree_MeduimHouse_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cf35a561-ae13-4aba-83d3-267a0c518f27",
+            "Value": {
+                "id": "e0b8eb6c-cf49-421a-929b-a2e51d87228d",
+                "resourcePath": "sprites\\sprite_DinoSymbol\\sprite_DinoSymbol.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -707,6 +859,22 @@
             "Value": {
                 "id": "d193f92e-028f-4071-b58e-7c30b7d4e14a",
                 "resourcePath": "objects\\Actor\\Actor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e5d6cd0d-2493-40af-ba89-50ab4d37e0c9",
+            "Value": {
+                "id": "6dd20a89-ed7e-4bb5-baa7-05043d451f5b",
+                "resourcePath": "sprites\\sprite_EarthSymbol\\sprite_EarthSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ef890738-1174-4622-b8cb-fd129467e595",
+            "Value": {
+                "id": "5ff66610-018e-4570-bc3b-ad5e48997c3e",
+                "resourcePath": "objects\\Earth\\Earth.yy",
                 "resourceType": "GMObject"
             }
         },
