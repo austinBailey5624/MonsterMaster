@@ -11,7 +11,11 @@
         "438df197-d88b-4ea2-8664-9ec71d0a3c63",
         "3a1e2c26-1529-4fee-81fa-b55daa292f37",
         "44daf540-8c83-4752-a3ce-bc4ee8bde225",
-        "905ed9bd-d8bb-4f14-8cf2-85a2e74dbd84"
+        "905ed9bd-d8bb-4f14-8cf2-85a2e74dbd84",
+        "1887ddcc-7aea-430f-8912-aada432a9de5",
+        "0feb4f23-2aca-42b3-aba3-75d90eb82f7a",
+        "fec1238c-d92e-4faf-aa27-c53136a1957a",
+        "dc194f27-a638-4023-95d9-3b5a780afe50"
     ],
     "filterType": "GMSprite",
     "folderName": "Pyro",
