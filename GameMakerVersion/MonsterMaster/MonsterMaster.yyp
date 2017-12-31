@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "376c51e0-b098-48fd-b2f0-76f5c598b475",
+            "Value": {
+                "id": "9ec621be-8442-48ee-9c11-e061a81d9005",
+                "resourcePath": "objects\\monsterType_Ruby\\monsterType_Ruby.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "37da7512-aaf4-44f3-87c2-00cc9595aa6b",
             "Value": {
                 "id": "61c8809b-962f-444b-bca9-38a153b228ad",
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "3bd068fb-1d4b-4cba-b025-9370673778af",
+            "Value": {
+                "id": "478a1d95-d282-4a04-b588-3e3bc1699fce",
+                "resourcePath": "objects\\monsterType_Bolide\\monsterType_Bolide.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3be599f8-0957-4cee-b87f-f47c0237c4c6",
             "Value": {
                 "id": "db1ace71-12f0-4025-b94f-ccda98e0efd1",
@@ -412,6 +428,14 @@
                 "id": "760f87c0-1ce4-4158-a0ec-6dd97e0c5670",
                 "resourcePath": "sounds\\sound_MainTheme\\sound_MainTheme.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "3e19a21b-c740-4b4b-8117-bbe9885f73fa",
+            "Value": {
+                "id": "5ac68acf-6968-486c-aac6-6a649aeabcdc",
+                "resourcePath": "objects\\monsterType_Pyres\\monsterType_Pyres.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -575,6 +599,22 @@
             }
         },
         {
+            "Key": "518f0ceb-37ea-4127-a2b3-2978148b9547",
+            "Value": {
+                "id": "6471bfb9-c05a-4062-b782-39e4dc1f48c8",
+                "resourcePath": "objects\\monsterType_Pyos\\monsterType_Pyos.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "525f9278-d313-4d90-abcf-e0f8ff914cff",
+            "Value": {
+                "id": "a74d51eb-9ab2-4eb7-a8ad-447920f78faf",
+                "resourcePath": "objects\\monsterType_FireOpal\\monsterType_FireOpal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "54422988-1127-4f21-be42-a982ad0d79cb",
             "Value": {
                 "id": "5dd68f59-e1d6-4a26-80bb-38f4ba676630",
@@ -667,6 +707,14 @@
             "Value": {
                 "id": "74603128-f0b6-447d-8444-9c085fbe3d91",
                 "resourcePath": "objects\\object_OakTree_ArmorShop\\object_OakTree_ArmorShop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5e4d8124-e325-4efd-833f-e35f70fd93a0",
+            "Value": {
+                "id": "a7a34a39-efef-460b-abc2-4b0d46418e11",
+                "resourcePath": "objects\\monsterType_PyroSymbol\\monsterType_PyroSymbol.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1015,6 +1063,14 @@
             }
         },
         {
+            "Key": "950a8c62-0906-4aee-b21a-6f756788ceed",
+            "Value": {
+                "id": "52747557-e7ee-4912-8603-2fb757e7dc75",
+                "resourcePath": "objects\\monsterType_PyroAtronach\\monsterType_PyroAtronach.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "96c3e467-1a0d-479c-94b2-639c9dbe45d9",
             "Value": {
                 "id": "79c5ebfd-8cad-4e55-ade6-99cc71b0503b",
@@ -1204,6 +1260,14 @@
                 "id": "f7ab2d19-f615-4cc7-b688-e4fe704bd07c",
                 "resourcePath": "views\\b6563069-6c72-40df-abfd-752b267c086e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b991c791-760b-4ea4-acad-fa49204a0e35",
+            "Value": {
+                "id": "fe02391c-e873-4fb6-ad19-c5db2f9e559c",
+                "resourcePath": "objects\\monsterType_Comet\\monsterType_Comet.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1620,6 +1684,14 @@
                 "id": "8b6fe319-7794-44ab-aa25-ab02153ea7cb",
                 "resourcePath": "sprites\\sprite_DeepSymbol\\sprite_DeepSymbol.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e2d1dcad-6ac6-47b8-a4c1-77db0119604c",
+            "Value": {
+                "id": "60fd986c-a67c-46b6-a8e9-d5f172b34277",
+                "resourcePath": "objects\\monsterType_PyroElemental\\monsterType_PyroElemental.yy",
+                "resourceType": "GMObject"
             }
         },
         {
