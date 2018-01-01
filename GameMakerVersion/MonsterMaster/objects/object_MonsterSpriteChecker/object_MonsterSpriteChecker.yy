@@ -65,13 +65,23 @@
             "m_owner": "35c552b4-0a5f-468a-b867-f047ffeecd5b"
         },
         {
-            "id": "b787f908-6d08-4a67-bce8-53335a369a0d",
+            "id": "8ebda140-39b8-4714-8a2c-ab259f8bc8d7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 68,
+            "eventtype": 9,
+            "m_owner": "35c552b4-0a5f-468a-b867-f047ffeecd5b"
+        },
+        {
+            "id": "78a20257-70f4-477d-95fd-8caac5827bc5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 65,
-            "eventtype": 5,
+            "eventtype": 9,
             "m_owner": "35c552b4-0a5f-468a-b867-f047ffeecd5b"
         }
     ],
@@ -117,7 +127,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "m_spriteCounter",
+            "varName": "m_whichMonster",
             "varType": 1
         },
         {
@@ -131,11 +141,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "variable_name",
-            "varType": 0
+            "varName": "m_whichSubelement",
+            "varType": 1
         }
     ],
     "solid": false,
-    "spriteId": "da291c92-abee-4e6b-9204-77eab4594c8d",
+    "spriteId": "50b7f5d1-6354-4164-88ed-554feacf1eb1",
     "visible": true
 }

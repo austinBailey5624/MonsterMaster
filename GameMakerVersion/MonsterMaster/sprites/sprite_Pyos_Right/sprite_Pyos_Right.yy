@@ -121,8 +121,8 @@
         }
     ],
     "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 15,
+    "originLocked": true,
+    "playbackSpeed": 5,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,
