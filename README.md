@@ -1,14 +1,10 @@
-#NOTICE: The game is currently being worked on in a different project, found at https://github.com/JayhawkZombie/EECS581Project
-
-
-
 # MonsterMaster
 ## Overview
 MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed by Austin Bailey and whoever wants to join him
 ## Differences from Pokemon
 1. **The player matters** In Pokemon Games the user really doesnt matter at all other than as a way to move yourself around the screen. In MonsterMaster as the character you are an active participant in the battle and defeat occurs when you are knocked out, not just when the monster representing you is defeated *it also bears noting that monsters gain experience much faster than humans.
 2. **There is player choice** that shapes the world around you.
-3. **There isn't a single way to win the game.** There are factions that you side with and gain reputation with that determine how you play and end the game.
+3. **There isn't a single way to win the game.** There are factions that you side with and gain ranks and reputation with that determine how you play and end the game.
 4. **The world is open.** Although there are gates to certain areas, (and certain areas are much more difficult than others) you can directly open them by sacrifice a monster with certain stats
 5. **You can Combine monsters.** Part of the game is combining your monsters to make better monsters.
 6. **Level Cap.** The level of monsters is capped based on how many monsters are in its family tree. A second generation will be more powerful and have a higher level cap than a first generation etc
@@ -16,6 +12,12 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 8. **Monster evolution isn't linear.** How you use the monster will determine how it evolves-usually. A monster that attacks physically will have a different evolution than if that same monster used only magical attacks.
 9. **Monsters are Expensive** There is no infinite box to hold the monsters, keeping them costs money - higher for stronger evolutions/generations. You cant simply catch all of them, because you probably cant afford it-unless you own the world.
   
+## Why is it so pixelated?
+
+Because I'm one guy and I have a lot of ideas that I want to try out and incorporate into the game- I'd rather have a bunch of super
+pixelated characters mucking about than a few really pretty characters with a very limited scope. In short, I prefer breath do depth
+(in graphics at least).
+
   
 ## Gameplay 
 
@@ -56,7 +58,145 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 	6. **The Redeemed**
       * The Redeemed are former criminals who make up half of the military arm of the church. They vehemetly despise evil and wrongdoing, perhaps even more fiercely than the just. They are famous for giving their enemies a chance to repent and convert before their deaths. The just seek to destroy this faction as they dont believe in reform.	
 
-## To Do List
+## Mechanics To Do List
+ - [x] Main Menu mock-up
+ - [ ] Incorporate finished music (as of 3/20/2018)
+ - [ ] Incorporate Pause Menu
+ - [ ] Add Opening Cinematic
+ - [ ] Finish implementation of Infant Monster Types
+ - [ ] Create Class for Items
+ -  -  [ ] Create Class for Weapons
+ -  -  [ ] Create Class for Armors
+ -  -  [ ] Create Class for Useable (similar to implimentation of skill, with restrictions on number of uses)
+ - [ ] Finalize Inventory design (array of integers whose index is mapped to a particular item?)
+ - [ ] Inventory UI
+ - [ ] Shop UI
+ - [ ] Finalize Skill Design
+ -  -  [ ] Determine what skills are mapped to what monster/player
+ -  -  [ ] Determine Mechanics of skill usage
+ -  -  [ ] Implement already written skill types
+ - [ ] After writing what we want skills to do, determine all of the values for the damage array
+ - [ ] Make Fighter Class (from BattleActor class from 581)
+ - [ ] Make Player Classes (from HumanActor, MainCharacter, Companion, HumanEnemy, Party, Conversation)
+ 
+## Design To Do List
+ - [x] SpriteSheets for Pyro Monsters
+ - [x] SpriteSheets for Lava Monsters
+ - [x] SpriteSheets for Dino Monsters 
+ - [ ] SpriteSheets for Phoenix Monsters
+ - [ ] SpriteSheets for Justice Monsters
+ - [ ] SpriteSheets for Vengence Monsters
+ 
+ - [ ] SpriteSheets for Steam Monsters
+ - [ ] SpriteSheets for Aqua Monsters
+ - [ ] SpriteSheets for Amphibious Monsters
+ - [ ] SpriteSheets for Weather Monsters
+ - [ ] SpriteSheets for Ice Monsters
+ - [ ] SpriteSheets for Deep Monsters
+
+ - [ ] SpriteSheets for Fey Monsters
+ - [ ] SpriteSheets for Swamp Monsters
+ - [ ] SpriteSheets for Terra Monsters
+ - [ ] SpriteSheets for Pegasus Monsters
+ - [ ] SpriteSheets for Compassion Monsters
+ - [ ] SpriteSheets for Rotten Monsters
+ 
+ - [ ] SpriteSheets for Sand Monsters
+ - [ ] SpriteSheets for Seabreeze Monsters
+ - [ ] SpriteSheets for Bird Monsters
+ - [ ] SpriteSheets for Aero Monsters
+ - [ ] SpriteSheets for Cocka Monsters
+ - [ ] SpriteSheets for NightWing Monsters
+ 
+ - [ ] SpriteSheets for Solar Monsters
+ - [ ] SpriteSheets for Lunar Monsters
+ - [ ] SpriteSheets for Guardian Monsters
+ - [ ] SpriteSheets for Angel Monsters
+ - [ ] SpriteSheets for Luxor Monsters
+ - [ ] SpriteSheets for Redemption Monsters
+ 
+ - [ ] SpriteSheets for Demon Monsters
+ - [ ] SpriteSheets for Poison Monsters
+ - [ ] SpriteSheets for Undead Monsters
+ - [ ] SpriteSheets for Storm Monsters
+ - [ ] SpriteSheets for Betrayer Monsters
+ - [ ] SpriteSheets for Umbral Monsters
+ 
+ - [x] SpriteSheets for Generic[tiered] Items
+ - - [x] SpriteSheets for Daggers
+ - - [x] SpriteSheets for ShortSwords
+ - - [x] SpriteSheets for Hatchets
+ - - [x] SpriteSheets for LongSwords 
+ 
+ - [x] Finish MainMenu design
+ - [x] Finish MainMenu implementation
+ - - [ ] Redo Crystal animation
+ - - [ ] Design specialized main menu for different elementals
+ 
+## Plot/Wiki To Do List
+
+### Gods
+ - [ ] Write Wiki page for Anu, father of light
+ - [x] Write Wiki page for Ahros, the Judge
+ - [ ] Write Wiki page for Velhu, the merciful (Mother Moon)
+ - [ ] Write Wiki page for Sid, the compassionate
+ - [ ] Write Wiki page for Gabriel, First servant of the Gods
+ - [ ] Write Wiki page for Pythion the redeemer
+ - [x] Write Wiki page for Malacathe the destroyer
+ - [ ] Write Wiki page for Rhea (Mother Nature and Goddess of earth)
+ - [ ] Write Wiki page for Adara the Ice Queen
+ - [x] Write Wiki page for Muir the Bandit-God 
+ - [ ] Write Wiki page for Ars
+ 
+### Guardians
+ - [ ] Write Wiki page for Telvar, guardian of the earth temple
+ 
+### Locations
+ 
+ - [ ] Write General location page
+ - [ ] Write Wiki page for Oaktree
+ - [ ] Write Wiki page for Dunhollow (hamlet between Oaktree and Newaven)
+ - [ ] Write Wiki page for Newaven
+ - [ ] Write Wiki page for Golden Bank
+ 
+### Factions
+ - [x] Write Wiki page for Sudi Satfa (Sid's trees faction)
+ - [ ] Write Wiki page for Justicars (Ahros' warriors, militant arm of chruch)
+ - [ ] Write Wiki page for Mage's college
+ - [ ] Write Wiki page for Primus Mercenary Company
+ - [ ] Write Wiki page for the Church of the Light
+ - [ ] Write Wiki page for Desert Bandits(Robin-Hoods under the watchful eye of Muir)
+ 
+### Others
+
+#### Mage's College
+ - [x] Write Wiki page for Ondrey, initial arch-mage of college 
+ 
+#### Justicars
+ - [ ] Write Page for Axton -ally/companion in 'main' quest: Initiate in Justicars assigned with helping you defeat the servants of malacathe
+ - [x] Write wiki page for Yuse, serent of the Justicars
+ 
+#### Church of the Light
+ - [x] Write page for Iscar, betrayer of the Light
+ 
+#### Primus Mercenary Company
+ - [x] Write page for the Iron Maiden
+ - [ ] Write page for Tosc
+ - [ ] Write page for the Blonden Brothers
+ 
+#### Oaktree
+ - [ ] WorldBuild Oaktree Actors
+ - [ ] WorldBuild Oaktree Interior Locations 
+ - - [.5] Make Oaktree church 
+ 
+#### Dunhollow
+ - [ ] Write Wiki page for Martha (Charitable Witch in Dunhollow)
+
+#### Golden Bank
+ - [ ] Write Wiki page for Tom Walker
+ - [ ] Write Wiki page for Faust
+ 
+## Old To Do List(depreciated)
 
  - [ ] Finish to do list
  - [x] Make the first draft of the monsters
@@ -84,3 +224,6 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - [ ] make permadeath option-hardcore mode
  - [ ] Implement Factions
  - [ ] Implement Achievements  
+ 
+ @Copyright 2016-2018 Austin Bailey all rights reserved
+ 

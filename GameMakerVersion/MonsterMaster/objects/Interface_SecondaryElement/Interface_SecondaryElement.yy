@@ -67,6 +67,34 @@
             "value": "Interface_PrimaryElement",
             "varName": "m_secondaryElement",
             "varType": 5
+        },
+        {
+            "id": "348b70fd-85ec-40f4-9d48-ae2620ea32b6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "m_16bitSprite",
+            "varType": 5
+        },
+        {
+            "id": "d913f79d-19ca-4b86-a5b8-fc98c3ef31da",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "m_32bitSprite",
+            "varType": 5
         }
     ],
     "solid": false,

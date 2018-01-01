@@ -13,7 +13,11 @@
         "c0e03e25-959f-4d93-be8a-ce5ceb4c78bb",
         "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
         "62648c48-5017-4b6d-b470-47ad48bead6f",
-        "d8f2500b-6b43-412d-b393-d4475626f7cc"
+        "d8f2500b-6b43-412d-b393-d4475626f7cc",
+        "1245ee7d-3ae5-4dbb-be08-a1d6676e3bf6",
+        "9f8a2464-4bc0-4666-84e3-2c3010d6a7ec",
+        "b96c5a4a-0405-41e2-ae22-9f8464836cd2",
+        "72439634-bae1-4ac5-a62c-113fe4f9e733"
     ],
     "filterType": "GMObject",
     "folderName": "Elements",

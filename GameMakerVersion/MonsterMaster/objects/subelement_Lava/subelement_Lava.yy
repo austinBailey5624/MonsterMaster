@@ -39,10 +39,26 @@
             "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
             "propertyId": "5db4c851-b988-4c52-84bf-c85195036760",
             "value": "element_Water"
+        },
+        {
+            "id": "22d43d21-2b87-4c87-b1f4-37e4e8b96220",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "348b70fd-85ec-40f4-9d48-ae2620ea32b6",
+            "value": "sprite_FireSymbol"
+        },
+        {
+            "id": "033b654b-1df8-4625-9a84-b746341dbc21",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "d913f79d-19ca-4b86-a5b8-fc98c3ef31da",
+            "value": "sprite_LavaSymbol32"
         }
     ],
     "parentObjectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -59,6 +75,6 @@
         
     ],
     "solid": false,
-    "spriteId": "bb8e0377-a0da-4156-9083-02291ce1a8ac",
+    "spriteId": "ea5b2803-12a1-46dc-8513-66ab787041fa",
     "visible": true
 }

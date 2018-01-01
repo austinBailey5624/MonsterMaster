@@ -1,0 +1,30 @@
+{
+    "id": "922be4cd-96fa-4f1e-8606-f300f5c54066",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "922be4cd-96fa-4f1e-8606-f300f5c54066",
+    "children": [
+        "c47f738f-2a43-4923-8528-7f7e41e3b34f",
+        "3f12e6ab-ed26-4d08-bf12-c4345976f2d5",
+        "1fa7bb9e-1c24-475c-a80b-9e9ed6e26c24",
+        "d41218f9-a034-4f6b-a453-d4dd115b0967",
+        "e64dee06-c65e-4806-a1e0-ac3c02433a79",
+        "c71d37a7-16b9-43ef-baed-bf384f73d13b",
+        "96fcf933-c851-4c91-9631-65545b5693e2",
+        "28762c6b-242a-4136-9cba-0187ce516b58",
+        "e27b0e93-8203-493a-bceb-1b16ca161f37",
+        "8d084c60-26d7-4437-b02a-dd7ab9c82e72",
+        "30559f00-2cbd-4bac-a5b5-f6b1ec0346b5",
+        "07c5a1c0-8850-4b2e-ba51-99a415c4a458",
+        "2f173114-5222-4110-b8c4-4f34e5b33d5e",
+        "f453e8e3-1a63-445f-93ab-b393fe5bf36f",
+        "128bd80b-aa1a-4bc6-8a3e-8a5ec9be49e7",
+        "d6c3a7e7-08ce-4950-99d2-abfd7e631984",
+        "1bad81c4-7159-4140-8478-ed00bac23986",
+        "9fe53e3e-bba3-423c-ade2-a136d0d2d0a0"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Terra",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

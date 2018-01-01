@@ -32,10 +32,26 @@
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
             "value": "\"Fueled by passion and impulse, fire elementals are known for their strength and tendency toward rash action.\""
+        },
+        {
+            "id": "18ee799e-7843-4dfb-ba6c-9ae90839a623",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
+            "propertyId": "63df77ba-763c-43c4-8de3-094465cc2cae",
+            "value": "sprite_FireSymbol"
+        },
+        {
+            "id": "5096373d-8f75-48b3-8e56-5ed33cde4853",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
+            "propertyId": "068d96e3-35e4-40b5-b26a-466c27aefefe",
+            "value": "sprite_FireSymbol32"
         }
     ],
     "parentObjectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -50,6 +66,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "0126206d-971d-4342-ac2e-820ec1d1a444",
+    "spriteId": "4b4d19a8-09df-40c1-a948-aba0d303656a",
     "visible": true
 }

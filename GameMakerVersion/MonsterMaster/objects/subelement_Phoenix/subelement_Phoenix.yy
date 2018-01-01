@@ -39,10 +39,26 @@
             "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
             "propertyId": "5db4c851-b988-4c52-84bf-c85195036760",
             "value": "element_Air"
+        },
+        {
+            "id": "d5b0b23a-fe57-40a0-aa3c-3a2da10b07b2",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "348b70fd-85ec-40f4-9d48-ae2620ea32b6",
+            "value": "sprite_PhoenixSymbol"
+        },
+        {
+            "id": "367c748c-0b98-4efc-83d4-4339a4f86ec9",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "d913f79d-19ca-4b86-a5b8-fc98c3ef31da",
+            "value": "sprite_PhoenixSymbol32"
         }
     ],
     "parentObjectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -57,6 +73,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "460828a4-8721-4d23-86c2-35e17f449dab",
+    "spriteId": "837e0c44-efbc-4100-8e34-733cbe51b54c",
     "visible": true
 }

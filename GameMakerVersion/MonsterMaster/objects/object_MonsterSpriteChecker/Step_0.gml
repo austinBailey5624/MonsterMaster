@@ -1,6 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
-var imgspd = .5;
+var imgspd = 1;
+if(m_travelLeft<16)
+{
+	object_MonsterSpriteChecker.x-=2;
+	m_travelLeft+=2;
+}
+if(m_travelRight<16)
+{
+	object_MonsterSpriteChecker.x+=2;
+	m_travelRight+=2;
+}
+if(m_travelUp<16)
+{
+	object_MonsterSpriteChecker.y-=2;
+	m_travelUp+=2;
+}
+if(m_travelDown<16)
+{
+	object_MonsterSpriteChecker.y+=2;
+	m_travelDown+=2;
+}
 if(x>xprevious)
 {
 	if(sprite_index!=m_curMonsterType.m_RightSprite)
@@ -12,7 +32,7 @@ else if(x<xprevious)
 {
 	if(sprite_index!=m_curMonsterType.m_LeftSprite)
 	sprite_index=m_curMonsterType.m_LeftSprite;
-	image_speed=2.5*imgspd;
+	image_speed=imgspd;
 }	
 else if(y<yprevious)
 {
@@ -24,7 +44,7 @@ else if(y>yprevious)
 {
 	if(sprite_index!=m_curMonsterType.m_FrontSprite)
 	sprite_index = m_curMonsterType.m_FrontSprite;
-	image_speed = 2.5*imgspd;
+	image_speed = imgspd;
 }
 
 else

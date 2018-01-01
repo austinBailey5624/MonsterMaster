@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"unnamed monsterType\""
+            "value": "\"\""
         },
         {
             "id": "47c3ad7b-0f6f-4404-adf4-84de385f7325",
@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"description not defined\""
+            "value": "\"\""
         }
     ],
     "parentObjectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",

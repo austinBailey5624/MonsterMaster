@@ -39,10 +39,26 @@
             "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
             "propertyId": "5db4c851-b988-4c52-84bf-c85195036760",
             "value": "element_Fire"
+        },
+        {
+            "id": "f3243f61-34b8-461d-8e8f-e5ea1778e0dd",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "348b70fd-85ec-40f4-9d48-ae2620ea32b6",
+            "value": "sprite_FireSymbol"
+        },
+        {
+            "id": "fccdc157-0d96-43c3-b3f7-7abc262add51",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "d913f79d-19ca-4b86-a5b8-fc98c3ef31da",
+            "value": "sprite_FireSymbol32"
         }
     ],
     "parentObjectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -57,6 +73,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "0126206d-971d-4342-ac2e-820ec1d1a444",
+    "spriteId": "4b4d19a8-09df-40c1-a948-aba0d303656a",
     "visible": true
 }
