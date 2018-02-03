@@ -1,6 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
 var imgspd = 1;
+if(m_travelLeft<16)
+{
+	object_MonsterSpriteChecker.x-=2;
+	m_travelLeft+=2;
+}
+if(m_travelRight<16)
+{
+	object_MonsterSpriteChecker.x+=2;
+	m_travelRight+=2;
+}
+if(m_travelUp<16)
+{
+	object_MonsterSpriteChecker.y-=2;
+	m_travelUp+=2;
+}
+if(m_travelDown<16)
+{
+	object_MonsterSpriteChecker.y+=2;
+	m_travelDown+=2;
+}
 if(x>xprevious)
 {
 	if(sprite_index!=m_curMonsterType.m_RightSprite)
