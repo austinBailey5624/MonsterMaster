@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "041f6632-7cd6-436e-a2e1-18abce3e6465",
+            "Value": {
+                "id": "eae5a59a-3de2-44ff-a7d6-aa75258a032e",
+                "resourcePath": "sprites\\sprite_Philottus_Left\\sprite_Philottus_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04734a9f-0811-4c82-8c9e-6228e6d1c53b",
             "Value": {
                 "id": "a11ff85e-65c2-4d4e-b674-ea1db9797741",
@@ -100,6 +108,14 @@
                 "id": "d1283c3b-8e7b-45d6-bf62-3cbaa9bb4d32",
                 "resourcePath": "objects\\object_OakTree_Inn\\object_OakTree_Inn.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "09567e15-7d57-4123-a16d-1a5c62e1b4f3",
+            "Value": {
+                "id": "1ac65ca6-7988-4a69-b71f-eace467222eb",
+                "resourcePath": "sprites\\sprite_Crerops_Left\\sprite_Crerops_Left.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -223,6 +239,14 @@
             }
         },
         {
+            "Key": "1478a25b-4dfb-4595-9c4d-08834822b8e7",
+            "Value": {
+                "id": "2ea2d99e-157f-4b9f-89ac-be326f16ba79",
+                "resourcePath": "sprites\\sprite_Cercyon_Left\\sprite_Cercyon_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "14b4cb1c-d6f6-4aa2-a9e2-bd23718fd5bf",
             "Value": {
                 "id": "542ea57a-f2e7-42c9-8e8d-238b60b557cc",
@@ -307,6 +331,14 @@
             "Value": {
                 "id": "9b1d91b4-00af-4fd1-8542-a6e1fbc92286",
                 "resourcePath": "sprites\\sprite_MinorSteamlet_Forwards\\sprite_MinorSteamlet_Forwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1d0e0c38-18ba-4bde-b286-2913a5f05761",
+            "Value": {
+                "id": "52bea1d7-dd13-4d8f-a6f5-bf208d4f4a20",
+                "resourcePath": "sprites\\sprite_Philottus_Backward\\sprite_Philottus_Backward.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -423,6 +455,14 @@
             }
         },
         {
+            "Key": "2d2a3f46-c91e-4f62-a410-e6eb0a5b44ff",
+            "Value": {
+                "id": "bfffb5d8-ea05-4ef2-ad32-9441929d55dd",
+                "resourcePath": "sprites\\sprite_Vulcanous_Backward\\sprite_Vulcanous_Backward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2f58fdfd-4d2c-449f-bfc1-666c2d16cf81",
             "Value": {
                 "id": "429e4465-5d43-469c-9873-3fb729eac794",
@@ -535,6 +575,14 @@
             }
         },
         {
+            "Key": "392a4f3d-fdda-49be-a024-f8ccc8467ac8",
+            "Value": {
+                "id": "09916238-2691-4f94-a1e6-f6c56f55fbd4",
+                "resourcePath": "sprites\\sprite_Cercyon_Backward\\sprite_Cercyon_Backward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "399aafbe-3235-4d4b-b730-18f17f317d8e",
             "Value": {
                 "id": "ae21091d-2ff1-4769-ab9f-bac19d67721d",
@@ -579,6 +627,14 @@
             "Value": {
                 "id": "b1f03d8f-523b-4853-8245-d8916cf74c2a",
                 "resourcePath": "sprites\\sprite_Flarial_Backwards\\sprite_Flarial_Backwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3bb633ea-c0e6-45e7-9a7d-5dcd0e54c1ec",
+            "Value": {
+                "id": "1b59fade-4804-41c8-b508-5839c90ad7c1",
+                "resourcePath": "sprites\\sprite_Vulcanous_Left1\\sprite_Vulcanous_Left1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -855,6 +911,14 @@
             }
         },
         {
+            "Key": "5503237f-5159-4490-a3c4-dd1991878812",
+            "Value": {
+                "id": "9543b3dc-5f6e-48b0-8889-958d141930de",
+                "resourcePath": "sprites\\sprite_Corynetes_Left\\sprite_Corynetes_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "56196465-6668-485e-8933-08de80046a76",
             "Value": {
                 "id": "1e1fd461-a1b5-45a5-a580-603c8cf1c10e",
@@ -883,6 +947,14 @@
             "Value": {
                 "id": "77e3a2cb-1ac7-4902-bfc9-03fdf24e6a37",
                 "resourcePath": "sprites\\sprite_SeabreezeSymbol\\sprite_SeabreezeSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "586ba413-16dc-45fd-94e1-dea0f2c9f118",
+            "Value": {
+                "id": "9aa3334e-b8d9-4b2d-a0a3-00ec3e109347",
+                "resourcePath": "sprites\\sprite_Corynetes_Backward\\sprite_Corynetes_Backward.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -951,6 +1023,14 @@
             }
         },
         {
+            "Key": "5aea3586-34b2-4e55-8838-24c49acb91e3",
+            "Value": {
+                "id": "6260953a-5a95-4fcd-b9e2-90a0e07f633f",
+                "resourcePath": "sprites\\sprite_Crerops_Backward\\sprite_Crerops_Backward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5b3e00bc-9fec-4df4-a7dd-8e20a5941193",
             "Value": {
                 "id": "79a90a28-d029-4b1d-bda5-7f38186e824e",
@@ -1012,6 +1092,14 @@
                 "id": "d69f0db4-f146-47a7-b854-bbc653c80262",
                 "resourcePath": "objects\\object_camera\\object_camera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6028b4c3-89e2-49d4-8cbc-52b5d7d1ce2a",
+            "Value": {
+                "id": "b771bf5b-260e-462e-a219-47847c2fcf3f",
+                "resourcePath": "sprites\\sprite_Vulcanous_Right\\sprite_Vulcanous_Right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1119,6 +1207,14 @@
             }
         },
         {
+            "Key": "67eb52eb-ed20-4a57-b811-4fd58e96017a",
+            "Value": {
+                "id": "2fffff13-687a-4e99-9e97-a193cb876342",
+                "resourcePath": "sprites\\sprite_Vagrus_Backward\\sprite_Vagrus_Backward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6947fa9b-8084-4f63-b0f0-704d0b3c957d",
             "Value": {
                 "id": "d892cd34-5e4b-456f-8314-c9800302e5c8",
@@ -1199,6 +1295,14 @@
             }
         },
         {
+            "Key": "72319c99-94a2-4d25-84d4-61f8115a1a12",
+            "Value": {
+                "id": "ec473a41-a1c7-4f03-bbda-a91c7c0d1733",
+                "resourcePath": "sprites\\sprite_Corynetes_Right\\sprite_Corynetes_Right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "72439634-bae1-4ac5-a62c-113fe4f9e733",
             "Value": {
                 "id": "315bf7f5-cb48-445b-932d-a3055ef0ddf7",
@@ -1227,6 +1331,14 @@
             "Value": {
                 "id": "bf104514-b8d4-495f-b842-a8063d684392",
                 "resourcePath": "sprites\\sprite_Crerops_Forward\\sprite_Crerops_Forward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "773c7885-ac74-46c0-9e68-6dfccc3a5aba",
+            "Value": {
+                "id": "c393e4f0-8ad8-495c-a9b7-e544ef5b287e",
+                "resourcePath": "sprites\\sprite_Vagrus_Right\\sprite_Vagrus_Right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1380,6 +1492,22 @@
                 "id": "a07b46ba-46d7-481a-a0ae-f2716571b12f",
                 "resourcePath": "objects\\subelement_Rotten\\subelement_Rotten.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "859ee93e-f09e-408e-bf95-485e652062e2",
+            "Value": {
+                "id": "feefddbd-1bfe-4ff7-b876-d2327d9b45dc",
+                "resourcePath": "views\\859ee93e-f09e-408e-bf95-485e652062e2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8728a55e-f07e-416b-a6a0-d25d8613c0eb",
+            "Value": {
+                "id": "2be23c04-27fc-4337-a35f-eb9abe7b5ceb",
+                "resourcePath": "sprites\\sprite_Philottus_Right\\sprite_Philottus_Right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1655,6 +1783,14 @@
             }
         },
         {
+            "Key": "a1ca272b-9dde-4772-95e1-2535e6be72a8",
+            "Value": {
+                "id": "d568b32c-b068-41d6-94e1-0a38ac3cb10a",
+                "resourcePath": "views\\a1ca272b-9dde-4772-95e1-2535e6be72a8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a36cba58-7fdc-4927-9565-b21e88f70b26",
             "Value": {
                 "id": "38b6507c-5662-496c-88cd-13c4dc4c1e37",
@@ -1767,6 +1903,14 @@
             }
         },
         {
+            "Key": "b339ea97-7e91-4138-ae1e-368d0d2d6dc8",
+            "Value": {
+                "id": "2edb5d4b-0e1c-4dd6-a4a3-bda8ec2e932c",
+                "resourcePath": "sprites\\sprite_Philottus_Forward\\sprite_Philottus_Forward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b3d431c2-3076-4207-be40-5215032897d8",
             "Value": {
                 "id": "8bad8fa4-19a2-49c1-884d-ea2b60417823",
@@ -1791,6 +1935,14 @@
             }
         },
         {
+            "Key": "b532731f-eb74-45c4-9118-9d8d077ee83c",
+            "Value": {
+                "id": "891b8393-c561-4344-92f1-da3d4507f8bf",
+                "resourcePath": "sprites\\sprite_Cercyon_Right\\sprite_Cercyon_Right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b5df5ab0-b5f0-4a6d-938a-5499aba13095",
             "Value": {
                 "id": "17d60230-b4a3-4b2e-bbcb-1c05d573dffa",
@@ -1804,6 +1956,14 @@
                 "id": "f7ab2d19-f615-4cc7-b688-e4fe704bd07c",
                 "resourcePath": "views\\b6563069-6c72-40df-abfd-752b267c086e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b87dd724-e984-41ab-a3dd-b292fa46292d",
+            "Value": {
+                "id": "6b0b11f9-9f84-4882-948d-309118abb46a",
+                "resourcePath": "sprites\\sprite_Vagrus_Left\\sprite_Vagrus_Left.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2231,6 +2391,14 @@
             }
         },
         {
+            "Key": "db825a08-2e7d-4b34-a403-bb15183b09b1",
+            "Value": {
+                "id": "779f4957-aeda-4198-875c-aca044d53707",
+                "resourcePath": "sprites\\sprite_Vagrus_Forward\\sprite_Vagrus_Forward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dbbd7365-40d8-4019-a2bb-d4d785095a0a",
             "Value": {
                 "id": "d63390d4-adb8-42f2-ac8f-5a7e25b10c0a",
@@ -2442,7 +2610,7 @@
             "Key": "f354d91c-b4d3-4419-9e28-01f861eb8616",
             "Value": {
                 "id": "1cd7aa6e-8fe1-45a9-8e36-c635e7bb7cab",
-                "resourcePath": "sprites\\sprite_Philottus_Forward\\sprite_Philottus_Forward.yy",
+                "resourcePath": "sprites\\sprite_Vulcanous_Forward\\sprite_Vulcanous_Forward.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2500,6 +2668,14 @@
                 "id": "35c47912-99c9-49e9-94a4-dd9bd4eb5537",
                 "resourcePath": "views\\fc995393-2d61-404f-8769-4aa9ffe891bd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fe52003a-c0f5-4c68-86a4-318f6bb1eb97",
+            "Value": {
+                "id": "3945e410-b2d1-4e01-a20d-15968b4f6115",
+                "resourcePath": "sprites\\sprite_Crerops_Right\\sprite_Crerops_Right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
