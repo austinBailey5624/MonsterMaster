@@ -57,7 +57,44 @@ if(m_whichSubelement==0)//Pyro Subelement
 		m_curMonsterType = monsterType_Flarial;
 	}	
 	m_whichMonster--;
-	
+}
+else if(m_whichSubelement==1)
+{
+	if(m_whichMonster==0)//Old is Philammon, new is Vagrus
+	{
+		m_curMonsterType = monsterType_Vagrus;	
+	}
+	else if(m_whichMonster==1)//old is Crerops
+	{
+		m_curMonsterType = monsterType_Philammon;	
+	}
+	else if(m_whichMonster==2)//old is Corynetes
+	{
+		m_curMonsterType = monsterType_Crerops;
+	}
+	else if(m_whichMonster==3)
+	{
+		m_curMonsterType = monsterType_Corynetes;
+	}
+	else if(m_whichMonster==4)
+	{
+		m_curMonsterType = monsterType_Philottus;
+	}
+	else if(m_whichMonster==5)
+	{
+		m_curMonsterType = monsterType_Cercyon;
+	}
+	else if(m_whichMonster==6)
+	{
+		m_curMonsterType = monsterType_Vulcanous;
+	}
+	else
+	{
+		m_whichMonster=1;
+		m_curMonsterType = monsterType_Philammon;
+	}
+	m_whichMonster--;
+}
 	var imgspd = 1;
 	if(x>xprevious)
 	{
@@ -86,4 +123,3 @@ if(m_whichSubelement==0)//Pyro Subelement
 		image_index=0;
 		image_speed=0;
 	}
-}

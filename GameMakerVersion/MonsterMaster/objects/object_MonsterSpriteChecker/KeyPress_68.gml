@@ -49,11 +49,43 @@ if(m_whichSubelement == 0)
 	else
 	{
 		m_whichMonster = -1;
-		m_curMonsterType = monsterType_Flarial
+		m_curMonsterType = monsterType_Flarial;
 	}		
 	m_whichMonster++;
 }
-
+else if(m_whichSubelement==1)
+{
+	if(m_whichMonster==0)//old is Philammon
+	{
+		m_curMonsterType = monsterType_Crerops;
+	}
+	else if(m_whichMonster==1)
+	{
+		m_curMonsterType = monsterType_Corynetes;
+	}
+	else if(m_whichMonster==2)
+	{
+		m_curMonsterType = monsterType_Philottus;
+	}
+	else if(m_whichMonster==3)
+	{
+		m_curMonsterType = monsterType_Cercyon;
+	}
+	else if(m_whichMonster==4)
+	{
+		m_curMonsterType = monsterType_Vulcanous;
+	}
+	else if(m_whichMonster==5)
+	{
+		m_curMonsterType = monsterType_Vagrus;
+	}
+	else
+	{
+		m_whichMonster=-1;
+		m_curMonsterType = monsterType_Philammon;
+	}
+	m_whichMonster++;
+}
 var imgspd = 1;
 if(x>xprevious)
 {
