@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "0c6f0fee-5dd7-424c-b504-7ff68962fe4a",
+            "Value": {
+                "id": "eed9108d-1c75-4845-9f95-8e89143e32c0",
+                "resourcePath": "sprites\\sprite_EdgeWinger_Left\\sprite_EdgeWinger_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c8fd20c-9358-41ea-95fc-3dd6164a45be",
             "Value": {
                 "id": "0a832289-dfcc-46f5-a23b-75c352dd1f03",
@@ -303,11 +311,27 @@
             }
         },
         {
+            "Key": "177ff2cf-9127-40be-8741-6181d016f48e",
+            "Value": {
+                "id": "6c93edf3-4d48-460b-b416-b6d7aba89b8f",
+                "resourcePath": "sprites\\sprite_Broncheospikesaur_Left\\sprite_Broncheospikesaur_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "17ffb7e0-5a37-4499-bb0f-8e40b70b7d57",
             "Value": {
                 "id": "c5bd1e74-1d99-4ec5-a4a7-52a4e272a4a2",
                 "resourcePath": "objects\\subelement_Aero\\subelement_Aero.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "18075a1a-b059-48ad-bfd1-10b806eff288",
+            "Value": {
+                "id": "266a0975-f866-43c8-b078-107a32d5ce90",
+                "resourcePath": "sprites\\sprite_SteelWinger_Left\\sprite_SteelWinger_Left.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -388,6 +412,14 @@
                 "id": "52bea1d7-dd13-4d8f-a6f5-bf208d4f4a20",
                 "resourcePath": "sprites\\sprite_Philottus_Backward\\sprite_Philottus_Backward.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1df13478-3d57-49af-bc17-b9c59eccdd18",
+            "Value": {
+                "id": "1a618429-cbc5-472c-abec-60d9da48ba86",
+                "resourcePath": "objects\\monsterType_Salamander\\monsterType_Salamander.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -483,6 +515,14 @@
             "Value": {
                 "id": "2236c3d4-e669-4257-9b38-52d961066759",
                 "resourcePath": "sprites\\sprite_OakTree_SmallHouse_3\\sprite_OakTree_SmallHouse_3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2bd519b7-172d-449a-b631-025e1e9787f6",
+            "Value": {
+                "id": "58523e6c-babc-4b8b-98eb-8630520d2c8e",
+                "resourcePath": "sprites\\sprite_GreatWhiteTyrant_Right\\sprite_GreatWhiteTyrant_Right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -727,6 +767,14 @@
             }
         },
         {
+            "Key": "3c2c7881-8552-4ce4-a319-35445a379812",
+            "Value": {
+                "id": "cc2b90c5-4535-4160-96f1-da12870c5e90",
+                "resourcePath": "sprites\\sprite_Winger_Right\\sprite_Winger_Right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d3d7ca6-816c-4a75-a5b5-5eb9f5873ce4",
             "Value": {
                 "id": "760f87c0-1ce4-4158-a0ec-6dd97e0c5670",
@@ -746,7 +794,7 @@
             "Key": "3db248ae-abef-4284-b6e3-474a500b6787",
             "Value": {
                 "id": "498f1d4d-e72a-47a6-b029-7591f748b190",
-                "resourcePath": "sprites\\sprite_SteelWinger_Forwards1\\sprite_SteelWinger_Forwards1.yy",
+                "resourcePath": "sprites\\sprite_EdgeWinger_Forwards\\sprite_EdgeWinger_Forwards.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -863,11 +911,27 @@
             }
         },
         {
+            "Key": "495904a3-591b-4b48-a46c-9cfe2b81db38",
+            "Value": {
+                "id": "d0fac608-1b06-4824-a28d-899edd59a823",
+                "resourcePath": "sprites\\sprite_Spikevorsaur_Left\\sprite_Spikevorsaur_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "498e7f17-a528-4023-9f78-6dc244d4ab09",
             "Value": {
                 "id": "c0095d3b-624a-4861-bc75-9b058cda848b",
                 "resourcePath": "rooms\\OakTree\\OakTree.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "49d93c65-633e-4c49-ad99-f1c48580b5fe",
+            "Value": {
+                "id": "80d1d9c5-181b-48e4-a689-39a2f3f8bfcf",
+                "resourcePath": "sprites\\sprite_SteelWinger_Backwards\\sprite_SteelWinger_Backwards.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1127,6 +1191,14 @@
             }
         },
         {
+            "Key": "5a394bd7-e975-4698-94dd-5eb0cadedaa8",
+            "Value": {
+                "id": "893733cd-06dc-4452-a8c5-597365ec5c17",
+                "resourcePath": "sprites\\sprite_SteelWinger_Right\\sprite_SteelWinger_Right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a4feea9-67b7-4cac-9171-3a061396a2c4",
             "Value": {
                 "id": "f105eabb-556b-4aed-8b0d-a353856f4043",
@@ -1215,6 +1287,14 @@
             }
         },
         {
+            "Key": "5eced464-ea81-4bd8-8119-ac4b4ea84d68",
+            "Value": {
+                "id": "3e76e38b-d0c5-48a9-b25e-b10d35e1def1",
+                "resourcePath": "sprites\\sprite_Raptor_Left\\sprite_Raptor_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5f532901-de8c-45db-8ed8-7fecea0a9904",
             "Value": {
                 "id": "d69f0db4-f146-47a7-b854-bbc653c80262",
@@ -1235,6 +1315,14 @@
             "Value": {
                 "id": "6ee563fd-eb2e-45a6-95ae-29fb6dc7aa62",
                 "resourcePath": "sprites\\sprite_CompassionSymbol\\sprite_CompassionSymbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "614e9d22-f669-4607-92a0-1b06078a6214",
+            "Value": {
+                "id": "0f977e85-e93c-4340-9f68-7edd75668c5c",
+                "resourcePath": "sprites\\sprite_EdgeWinger_Forwards1\\sprite_EdgeWinger_Forwards1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1391,6 +1479,14 @@
             }
         },
         {
+            "Key": "6d268eef-fbe6-4799-b6ea-2cebb2ae4ebf",
+            "Value": {
+                "id": "64c70079-9fa7-49a9-9ff7-b36c98d58fec",
+                "resourcePath": "sprites\\sprite_Spikevorsaur_Backwards\\sprite_Spikevorsaur_Backwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "70084173-ad87-47bf-be75-a66d5985c859",
             "Value": {
                 "id": "3c546a65-736f-4716-8f66-d07498ea5b19",
@@ -1455,6 +1551,14 @@
             }
         },
         {
+            "Key": "76956b22-447e-4c01-8edc-1cd49ce77467",
+            "Value": {
+                "id": "4e32f95b-7d3f-4117-b702-0c73e080bbd7",
+                "resourcePath": "sprites\\sprite_Tyrant_Backwards\\sprite_Tyrant_Backwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "769e97c4-5dd3-4892-a2c2-6ca6fd66f811",
             "Value": {
                 "id": "1b42b234-4af7-4ebd-b396-b759339edfea",
@@ -1499,6 +1603,14 @@
             "Value": {
                 "id": "b51353a0-5d88-4612-9570-81768def80e9",
                 "resourcePath": "sprites\\sprite_tileset_GreatForestWater\\sprite_tileset_GreatForestWater.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7a174399-75a2-4b1d-ada3-3208d0decb19",
+            "Value": {
+                "id": "341aef5a-2be1-448b-b1be-100837dec252",
+                "resourcePath": "sprites\\sprite_GreatWhiteTyrant_Backwards\\sprite_GreatWhiteTyrant_Backwards.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1554,7 +1666,7 @@
             "Key": "7e81b31f-9361-4f94-b508-bc50a0a792d2",
             "Value": {
                 "id": "71f11e60-185b-412e-a0fc-ebbfe5e1c09d",
-                "resourcePath": "sprites\\sprite_Spikevorsaur_Forwards1\\sprite_Spikevorsaur_Forwards1.yy",
+                "resourcePath": "sprites\\sprite_Broncheospikesaur_Forwards1\\sprite_Broncheospikesaur_Forwards1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1679,6 +1791,14 @@
             }
         },
         {
+            "Key": "88e45306-467e-43b3-a58f-69708c63a7f9",
+            "Value": {
+                "id": "d537ee1d-ee4d-4360-be1d-cb2b37baddf2",
+                "resourcePath": "sprites\\sprite_Herbisaur_Right\\sprite_Herbisaur_Right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "894c0b1c-9541-455f-a30f-ff0690efa88e",
             "Value": {
                 "id": "4911d391-86ce-47b4-97e7-a9c40942775a",
@@ -1751,6 +1871,14 @@
             }
         },
         {
+            "Key": "8fd19cb8-7876-4d67-b76f-86c08e983dc6",
+            "Value": {
+                "id": "fc8d2065-68ec-474f-ab83-9655f8e068fb",
+                "resourcePath": "sprites\\sprite_Herbisaur_Backwards\\sprite_Herbisaur_Backwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8ff12b17-c814-4599-89f6-02eee908c2ea",
             "Value": {
                 "id": "6924bddf-e760-404f-8a7d-d0ef61a358c7",
@@ -1807,6 +1935,14 @@
             }
         },
         {
+            "Key": "949177f6-a139-4e15-9bc7-8032d49a3834",
+            "Value": {
+                "id": "55bac765-76e4-450a-a989-d123a5b03178",
+                "resourcePath": "sprites\\sprite_Herbisaur_Left\\sprite_Herbisaur_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "94bad1b6-4a3f-49db-b8cc-3594a150eada",
             "Value": {
                 "id": "32a57920-f9f4-4154-98c3-3e2ae42e6e0e",
@@ -1836,6 +1972,14 @@
                 "id": "79c5ebfd-8cad-4e55-ade6-99cc71b0503b",
                 "resourcePath": "sprites\\sprite_PyroElemental_Backwards\\sprite_PyroElemental_Backwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "99ec225f-6c84-4e89-9212-1bd228809b1c",
+            "Value": {
+                "id": "a2693f84-fe4f-4f4c-8db5-f3f99a7d0a53",
+                "resourcePath": "objects\\monsterType_Raptor\\monsterType_Raptor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1895,6 +2039,14 @@
             }
         },
         {
+            "Key": "9bc5e7e1-0242-43c0-8087-89fcb2b8ba82",
+            "Value": {
+                "id": "ef13cb42-f765-47e6-b285-e683997c3f0b",
+                "resourcePath": "sprites\\sprite_Broncheospikesaur_Backwards\\sprite_Broncheospikesaur_Backwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9c0ba3cc-9dcf-4a8f-abda-49201d0d1fb7",
             "Value": {
                 "id": "b3622bb8-3314-44ae-8855-6aba4d7080dd",
@@ -1951,6 +2103,14 @@
             }
         },
         {
+            "Key": "a0b1af73-514c-410f-85b6-7ac3ad4f837f",
+            "Value": {
+                "id": "7cbb52ef-f480-49b1-97ae-3bcee72f4daf",
+                "resourcePath": "sprites\\sprite_Spikevorsaur_Right\\sprite_Spikevorsaur_Right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a0cd7dc0-a518-45e6-b855-4ca83bc1f255",
             "Value": {
                 "id": "fe57e08d-d33e-40fd-8bdb-d23ba19bb708",
@@ -1979,6 +2139,14 @@
             "Value": {
                 "id": "38b6507c-5662-496c-88cd-13c4dc4c1e37",
                 "resourcePath": "sprites\\sprite_Phillammon_Backward\\sprite_Phillammon_Backward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a40aa6f7-2eed-4350-939b-2728cec0073b",
+            "Value": {
+                "id": "89b0b415-ad60-4d2c-acce-3d032b377542",
+                "resourcePath": "sprites\\sprite_Raptor_Backwards\\sprite_Raptor_Backwards.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2067,6 +2235,14 @@
             "Value": {
                 "id": "0fbc409e-2eee-497c-8b6e-0684ed14dcf2",
                 "resourcePath": "sprites\\sprite_tileset_forest_edging\\sprite_tileset_forest_edging.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "adb5a93f-67e9-46e6-a854-24188063d4e3",
+            "Value": {
+                "id": "bcf03926-fc63-4bdd-83b2-01e068dff23a",
+                "resourcePath": "sprites\\sprite_Winger_Backwards\\sprite_Winger_Backwards.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2207,10 +2383,26 @@
             }
         },
         {
+            "Key": "bbfe3ee5-e4e6-442d-bb39-d2c629e5e181",
+            "Value": {
+                "id": "06c88f57-0ce9-46eb-8fe0-9b9b623774d2",
+                "resourcePath": "sprites\\sprite_Tyrant_Left\\sprite_Tyrant_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bcc77cdd-9586-4e7a-99de-eb0f9b86750e",
             "Value": {
                 "id": "7ea6a195-52c0-4754-89c1-d085929b9459",
                 "resourcePath": "sprites\\sprite_Phillamon_Left\\sprite_Phillamon_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bce2bae6-681e-4796-9f53-f295fd70526b",
+            "Value": {
+                "id": "ce46718a-a2c6-4a85-9496-48191b476fc8",
+                "resourcePath": "sprites\\sprite_Tyrant_Right\\sprite_Tyrant_Right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2479,6 +2671,14 @@
             }
         },
         {
+            "Key": "cfa978c4-0468-4608-969c-04f34c473a81",
+            "Value": {
+                "id": "132376c7-8cc6-4a5b-8b4e-1f06343861ae",
+                "resourcePath": "sprites\\sprite_GreatWhiteTyrant_Left\\sprite_GreatWhiteTyrant_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d0010ac1-ccfb-4530-a477-52494cc3fe47",
             "Value": {
                 "id": "1a4f05c4-ad9a-4738-a620-9b6a58d73051",
@@ -2559,10 +2759,26 @@
             }
         },
         {
+            "Key": "d6f127a3-630d-4418-bdfc-a21997bd89b1",
+            "Value": {
+                "id": "b46b7d4f-8c8a-4a92-bc44-7049b3d9134b",
+                "resourcePath": "views\\d6f127a3-630d-4418-bdfc-a21997bd89b1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d7259c17-33ef-42ed-9d93-8b3cac402bdd",
             "Value": {
                 "id": "c6abe6e6-8e0e-4878-b0cc-d92168c3620d",
                 "resourcePath": "sprites\\sprite_Pyres_Forwards\\sprite_Pyres_Forwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d75d53c4-f71d-4b1a-9aae-9ee94e8a1321",
+            "Value": {
+                "id": "08970071-eb1c-4f02-bb38-0ae1718c5413",
+                "resourcePath": "sprites\\sprite_Winger_Left\\sprite_Winger_Left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2587,6 +2803,22 @@
             "Value": {
                 "id": "cdab7bce-0d14-4a6a-8ff2-b0e038f023ea",
                 "resourcePath": "sprites\\sprite_Flarial_Left\\sprite_Flarial_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d9944726-5cf6-4a97-807b-d279a637b4cc",
+            "Value": {
+                "id": "9bb55c98-ed90-42ca-a402-b03bc773491b",
+                "resourcePath": "sprites\\sprite_EdgeWinger_Right\\sprite_EdgeWinger_Right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d99b4de5-83fd-4988-84f3-f2d23aa7ff05",
+            "Value": {
+                "id": "211f0800-f0ea-475e-b286-f05beafa2766",
+                "resourcePath": "sprites\\sprite_Broncheospikesaur_Right\\sprite_Broncheospikesaur_Right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2795,6 +3027,14 @@
             "Value": {
                 "id": "4c2abdc6-fe35-4dd3-8262-71b6ad1bc056",
                 "resourcePath": "sprites\\sprite_Flarpup_Left\\sprite_Flarpup_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ea40ce4c-c069-44bb-9cc7-cbe885e346f9",
+            "Value": {
+                "id": "a43e6d79-f05c-4340-b637-6afb359bbba0",
+                "resourcePath": "sprites\\sprite_Raptor_Right\\sprite_Raptor_Right.yy",
                 "resourceType": "GMSprite"
             }
         },

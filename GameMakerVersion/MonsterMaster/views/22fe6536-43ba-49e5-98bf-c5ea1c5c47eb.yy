@@ -5,7 +5,8 @@
     "name": "22fe6536-43ba-49e5-98bf-c5ea1c5c47eb",
     "children": [
         "875f5d4c-008a-44e2-91f1-a59bc34c0301",
-        "a7f90948-af93-44f1-8f54-a22950374a15"
+        "a7f90948-af93-44f1-8f54-a22950374a15",
+        "d6f127a3-630d-4418-bdfc-a21997bd89b1"
     ],
     "filterType": "GMObject",
     "folderName": "FirePrimary",
