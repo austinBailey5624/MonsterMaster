@@ -86,6 +86,56 @@ else if(m_whichSubelement==1)
 	}
 	m_whichMonster++;
 }
+else if(m_whichSubelement==2)//Dino
+{
+	m_whichMonster++;
+	
+	if(m_whichMonster>=10)
+	{
+		m_whichMonster=0;	
+	}
+	
+	if(m_whichMonster==0)//Salamander
+	{
+		m_curMonsterType = monsterType_Salamander;
+	}
+	else if(m_whichMonster==1)//Raptor
+	{
+		m_curMonsterType = monsterType_Raptor;
+	}
+	else if(m_whichMonster==2)//Winger
+	{
+		m_curMonsterType = monsterType_Winger;
+	}
+	else if(m_whichMonster==3)//Herbisaur
+	{
+		m_curMonsterType = monsterType_Herbisaur;
+	}
+	else if(m_whichMonster==4)//Tyrant
+	{
+		m_curMonsterType = monsterType_Tyrant;
+	}
+	else if(m_whichMonster==5)//SteelWinger
+	{
+		m_curMonsterType = monsterType_SteelWinger;
+	}
+	else if(m_whichMonster==6)//Spikevorsaur
+	{
+		m_curMonsterType = monsterType_Spikevorsaur;
+	}
+	else if(m_whichMonster==7)//GreatWhiteTyrant;
+	{
+		m_curMonsterType = monsterType_GreatWhiteTyrant;
+	}
+	else if(m_whichMonster==8)//EdgeWinger
+	{
+		m_curMonsterType = monsterType_EdgeWinger;
+	}
+	else if(m_whichMonster==9)//BroncheoSpikeSaur
+	{
+		m_curMonsterType = monsterType_Broncheospikesaur;
+	}
+}
 var imgspd = 1;
 if(x>xprevious)
 {

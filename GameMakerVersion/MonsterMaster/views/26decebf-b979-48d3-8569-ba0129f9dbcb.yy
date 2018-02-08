@@ -10,7 +10,7 @@
         "a0b1af73-514c-410f-85b6-7ac3ad4f837f"
     ],
     "filterType": "GMSprite",
-    "folderName": "Spokevorsaur",
+    "folderName": "Spikevorsaur",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
