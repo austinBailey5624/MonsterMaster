@@ -1,63 +1,63 @@
 {
-    "id": "99ec225f-6c84-4e89-9212-1bd228809b1c",
+    "id": "d2e737c6-ce26-48d2-bdbc-00a026107347",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Raptor",
+    "name": "monsterType_GreatWhiteTyrant",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "d60b5e5b-1f9d-474e-955f-c81745e77e4f",
+            "id": "7bcde07c-7c96-4597-94cc-63500b9681d9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Raptor\""
+            "value": "\"Great White Tyrant\""
         },
         {
-            "id": "9e5f2239-c3c7-4a50-b1c6-ca2fa752662b",
+            "id": "0c2c46b9-34c8-45df-8d24-1d53f56928d7",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"Though weak on its own, Raptors, when working together can take down much larger prey. They are famed for their cunning and cruelty, often taking time to give the meat its 'savor'\""
+            "value": "\"Decades of curing scale plate with the ashes of fallen enemies have turned the Tyrants scales and horns white- a manner of bone harder even than steel. Its gaze is said to so terrifying that its prey freezes in fear when they meet it. Why this superstition is though, no one knows, as a meeting with a Great White Tyrant rarely leaves any survivors.\""
         },
         {
-            "id": "ef37e0ce-75a6-421b-beef-99f79320b27f",
+            "id": "06c6e849-cc4e-4e9a-8c02-801d676c697e",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Raptor_Forwards"
+            "value": "sprite_GreatWhiteTyrant_Forwards"
         },
         {
-            "id": "10154aa3-51ea-48b5-910d-e9b6c6955e35",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
-            "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_Raptor_Right"
-        },
-        {
-            "id": "12fadd22-4cbb-42ec-a309-dbb5ccbb323e",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
-            "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Raptor_Left"
-        },
-        {
-            "id": "7d21aabd-93c7-43b6-80e9-f41cd8796e3a",
+            "id": "648879ff-21f9-44dc-9582-3511915bb097",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Raptor_Backwards"
+            "value": "sprite_GreatWhiteTyrant_Backwards"
         },
         {
-            "id": "c3a94bee-7812-4a69-8d77-ecbcc709df4f",
+            "id": "298e8669-c42c-4c18-aaaa-c4f80efc281b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
+            "value": "sprite_GreatWhiteTyrant_Right"
+        },
+        {
+            "id": "50066d34-6623-4af1-9abd-ca4dfd2961ae",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
+            "value": "sprite_GreatWhiteTyrant_Left"
+        },
+        {
+            "id": "08d4293a-f23a-4dbc-ae2f-e6d69d83cbe9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "7bc488f3-150e-4abd-9719-ec7be15a47c7",
+    "spriteId": "4ee6bc31-8627-4039-84dc-793753e1f771",
     "visible": true
 }

@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00cce93e-b909-4b2d-bb9e-4a5459958a76",
+            "Value": {
+                "id": "07babcf9-ec95-4322-ba85-0bfa4ae307b7",
+                "resourcePath": "objects\\monsterType_Winger\\monsterType_Winger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0126206d-971d-4342-ac2e-820ec1d1a444",
             "Value": {
                 "id": "e5c5fb2e-15ca-476b-9fd6-efe9cb3b7808",
@@ -479,6 +487,14 @@
             }
         },
         {
+            "Key": "2769bc17-1221-45c6-a5ec-940ae3ba2d0c",
+            "Value": {
+                "id": "813eb557-be3c-4b93-9703-51a14e0a340c",
+                "resourcePath": "objects\\monsterType_Tyrant\\monsterType_Tyrant.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2915116c-6c13-4108-9b9b-34a73b65550f",
             "Value": {
                 "id": "01dd08c3-8c42-4fe1-9e04-06e5cc21f777",
@@ -532,6 +548,14 @@
                 "id": "dda93a0e-bc2b-48f9-83d5-16878784a3a1",
                 "resourcePath": "views\\2c8348fa-3c5b-45e5-8240-4597b3ca8d27.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2c9b47a1-f5a9-4b5d-bf36-0cf015d92996",
+            "Value": {
+                "id": "ba46d971-17f6-4a16-a141-d6072b8e0895",
+                "resourcePath": "objects\\monsterType_EdgeWinger\\monsterType_EdgeWinger.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -911,6 +935,14 @@
             }
         },
         {
+            "Key": "487867de-726b-4935-b1dc-d1776b9edc0f",
+            "Value": {
+                "id": "9ebf79a2-bf25-46e7-b512-d4b5cf4d380b",
+                "resourcePath": "objects\\monsterType_SteelWinger\\monsterType_SteelWinger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "495904a3-591b-4b48-a46c-9cfe2b81db38",
             "Value": {
                 "id": "d0fac608-1b06-4824-a28d-899edd59a823",
@@ -1092,6 +1124,14 @@
                 "id": "9543b3dc-5f6e-48b0-8889-958d141930de",
                 "resourcePath": "sprites\\sprite_Corynetes_Left\\sprite_Corynetes_Left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "553db7d5-e51e-435c-babd-7da464f89a89",
+            "Value": {
+                "id": "68824bc0-c0ed-4cfe-8c40-9128efcade52",
+                "resourcePath": "objects\\monsterType_Herbisaur\\monsterType_Herbisaur.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1322,7 +1362,7 @@
             "Key": "614e9d22-f669-4607-92a0-1b06078a6214",
             "Value": {
                 "id": "0f977e85-e93c-4340-9f68-7edd75668c5c",
-                "resourcePath": "sprites\\sprite_EdgeWinger_Forwards1\\sprite_EdgeWinger_Forwards1.yy",
+                "resourcePath": "sprites\\sprite_EdgeWinger_Backwards\\sprite_EdgeWinger_Backwards.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1535,6 +1575,14 @@
             }
         },
         {
+            "Key": "723f78dd-2e2d-4c90-a2ea-e04cb3203f66",
+            "Value": {
+                "id": "148dc028-339a-4822-a9d9-07118b88abb8",
+                "resourcePath": "objects\\monsterType_Broncheospikesaur\\monsterType_Broncheospikesaur.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "72439634-bae1-4ac5-a62c-113fe4f9e733",
             "Value": {
                 "id": "315bf7f5-cb48-445b-932d-a3055ef0ddf7",
@@ -1666,7 +1714,7 @@
             "Key": "7e81b31f-9361-4f94-b508-bc50a0a792d2",
             "Value": {
                 "id": "71f11e60-185b-412e-a0fc-ebbfe5e1c09d",
-                "resourcePath": "sprites\\sprite_Broncheospikesaur_Forwards1\\sprite_Broncheospikesaur_Forwards1.yy",
+                "resourcePath": "sprites\\sprite_Broncheospikesaur_Forwards\\sprite_Broncheospikesaur_Forwards.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1820,6 +1868,14 @@
                 "id": "0ce8f9cf-4324-4bcd-8fec-78c8f270db43",
                 "resourcePath": "views\\89e382d6-9c76-4aca-a360-d9700d952ec1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8a65cce2-5507-4377-b68c-880c5f5a529c",
+            "Value": {
+                "id": "4760a103-4b05-411b-a055-c0db1457043b",
+                "resourcePath": "objects\\monsterType_Spikevorsaur\\monsterType_Spikevorsaur.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2708,6 +2764,14 @@
                 "id": "a306e2cf-f6d7-46c5-b5c0-b85ea0fe0ba6",
                 "resourcePath": "views\\d2184fda-90a2-4e5f-aaec-a84299f580a4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d2e737c6-ce26-48d2-bdbc-00a026107347",
+            "Value": {
+                "id": "f5e77287-05cd-48fb-8aa0-47603868bfbe",
+                "resourcePath": "objects\\monsterType_GreatWhiteTyrant\\monsterType_GreatWhiteTyrant.yy",
+                "resourceType": "GMObject"
             }
         },
         {

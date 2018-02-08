@@ -2,7 +2,7 @@
     "id": "7e81b31f-9361-4f94-b508-bc50a0a792d2",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite_Broncheospikesaur_Forwards1",
+    "name": "sprite_Broncheospikesaur_Forwards",
     "For3D": false,
     "HTile": false,
     "VTile": false,

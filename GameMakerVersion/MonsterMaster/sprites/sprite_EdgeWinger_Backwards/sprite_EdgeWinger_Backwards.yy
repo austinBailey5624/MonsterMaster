@@ -2,7 +2,7 @@
     "id": "614e9d22-f669-4607-92a0-1b06078a6214",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite_EdgeWinger_Forwards1",
+    "name": "sprite_EdgeWinger_Backwards",
     "For3D": false,
     "HTile": false,
     "VTile": false,
