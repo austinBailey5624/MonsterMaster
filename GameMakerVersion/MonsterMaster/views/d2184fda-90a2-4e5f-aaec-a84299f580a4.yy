@@ -6,7 +6,8 @@
     "children": [
         "cd87771a-e0a0-4336-89ca-dfe0710223ca",
         "be55022b-a151-48d5-b27c-35b9bf504ef4",
-        "d0010ac1-ccfb-4530-a477-52494cc3fe47"
+        "d0010ac1-ccfb-4530-a477-52494cc3fe47",
+        "a43f438a-5d13-455f-b4ef-4d1163d7dd80"
     ],
     "filterType": "GMSprite",
     "folderName": "PrimaryFire",
