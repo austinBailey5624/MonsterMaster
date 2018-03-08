@@ -1,6 +1,3 @@
-#NOTICE: The game is currently being worked on in a different project, found at https://github.com/JayhawkZombie/EECS581Project
-
-
 
 # MonsterMaster
 ## Overview
@@ -56,7 +53,86 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 	6. **The Redeemed**
       * The Redeemed are former criminals who make up half of the military arm of the church. They vehemetly despise evil and wrongdoing, perhaps even more fiercely than the just. They are famous for giving their enemies a chance to repent and convert before their deaths. The just seek to destroy this faction as they dont believe in reform.	
 
-## To Do List
+## Mechanics To Do List
+ - [ ] Finish implementation of Infant Monster Types
+ - [ ] Create Class for Items
+ -  -  [ ] Create Class for Weapons
+ -  -  [ ] Create Class for Armors
+ -  -  [ ] Create Class for Useable (similar to implimentation of skill, with restrictions on number of uses)
+ - [ ] Finalize Inventory design (array of integers whose index is mapped to a particular item?)
+ - [ ] Inventory UI
+ - [ ] Shop UI
+ - [ ] Finalize Skill Design
+ -  -  [ ] Determine what skills are mapped to what monster/player
+ -  -  [ ] Determine Mechanics of skill usage
+ -  -  [ ] Implement already written skill types
+ - [ ] After writing what we want skills to do, determine all of the values for the damage array
+ - [ ] Make Fighter Class (from BattleActor class from 581)
+ - [ ] Make Player Classes (from HumanActor, MainCharacter, Companion, HumanEnemy, Party, Conversation)
+ 
+## Design To Do List
+ - [x] SpriteSheets for Pyro Monsters
+ - [x] SpriteSheets for Lava Monsters
+ - [x] SpriteSheets for Dino Monsters 
+ - [ ] SpriteSheets for Phoenix Monsters
+ - [ ] SpriteSheets for Justice Monsters
+ - [ ] SpriteSheets for Vengence Monsters
+ 
+ - [ ] SpriteSheets for Steam Monsters
+ - [ ] SpriteSheets for Aqua Monsters
+ - [ ] SpriteSheets for Amphibious Monsters
+ - [ ] SpriteSheets for Weather Monsters
+ - [ ] SpriteSheets for Ice Monsters
+ - [ ] SpriteSheets for Deep Monsters
+
+ - [ ] SpriteSheets for Fey Monsters
+ - [ ] SpriteSheets for Swamp Monsters
+ - [ ] SpriteSheets for Terra Monsters
+ - [ ] SpriteSheets for Pegasus Monsters
+ - [ ] SpriteSheets for Compassion Monsters
+ - [ ] SpriteSheets for Rotten Monsters
+ 
+ - [ ] SpriteSheets for Sand Monsters
+ - [ ] SpriteSheets for Seabreeze Monsters
+ - [ ] SpriteSheets for Bird Monsters
+ - [ ] SpriteSheets for Aero Monsters
+ - [ ] SpriteSheets for Cocka Monsters
+ - [ ] SpriteSheets for NightWing Monsters
+ 
+ - [ ] SpriteSheets for Solar Monsters
+ - [ ] SpriteSheets for Lunar Monsters
+ - [ ] SpriteSheets for Guardian Monsters
+ - [ ] SpriteSheets for Angel Monsters
+ - [ ] SpriteSheets for Luxor Monsters
+ - [ ] SpriteSheets for Redemption Monsters
+ 
+ - [ ] SpriteSheets for Demon Monsters
+ - [ ] SpriteSheets for Poison Monsters
+ - [ ] SpriteSheets for Undead Monsters
+ - [ ] SpriteSheets for Storm Monsters
+ - [ ] SpriteSheets for Betrayer Monsters
+ - [ ] SpriteSheets for Umbral Monsters
+ 
+## Plot/Wiki To Do List
+
+ - [ ] Write Wiki page for Anu, father of light
+ - [ ] Write Wiki page for Ahros, the Judge
+ - [ ] Write Wiki page for Velhu, the merciful
+ - [ ] Write Wiki page for Sid, the compassionate
+ - [ ] Write Wiki page for Pythion the redeemer
+ - [ ] Write Wiki page for Malacathe the destroyer
+ - [ ] Write Wiki page for Rhea (Mother Nature and Goddess of earth)
+ - [ ] Write Wiki page for Adara the Ice Queen
+ 
+ - [ ] Write Wiki page for Telvar, guardian of the earth temple
+ - [ ] Write Wiki page for Oaktree
+ - [ ] Write Wiki page for Dunhollow (hamlet between Oaktree and Newaven)
+ - [ ] Write Wiki page for Newaven
+ - [ ] Write Wiki page for Martha (Charitable Witch in Dunhollow)
+ - [ ] Write General location page
+ - [ ] Write Page for Axton -ally/companion in 'main' quest
+ 
+## Old To Do List(depreciated)
 
  - [ ] Finish to do list
  - [x] Make the first draft of the monsters
