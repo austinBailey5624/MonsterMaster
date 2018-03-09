@@ -10,7 +10,9 @@
         "58b6b8be-aa10-4f79-929d-40cc0437489c",
         "23245ae5-d4b0-4ef4-b04d-5e2b3488f6e7",
         "34ddf658-4709-4477-9fdf-84a8d8087f9e",
-        "37da7512-aaf4-44f3-87c2-00cc9595aa6b"
+        "37da7512-aaf4-44f3-87c2-00cc9595aa6b",
+        "d4379949-5700-4802-a389-936bfb5e84f9",
+        "3fb9cdc6-fb7d-4e96-8c41-4c6d56fc9e70"
     ],
     "filterType": "GMSprite",
     "folderName": "OakTreeSetPieces",
