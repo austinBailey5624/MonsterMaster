@@ -113,6 +113,11 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - [ ] SpriteSheets for Betrayer Monsters
  - [ ] SpriteSheets for Umbral Monsters
  
+ - [x] SpriteSheets for Generic[tiered] Items
+ - - [x] SpriteSheets for Daggers
+ - - [x] SpriteSheets for ShortSwords
+ - - [x] SpriteSheets for Hatchets
+ - - [x] SpriteSheets for LongSwords 
 ## Plot/Wiki To Do List
 
  - [ ] Write Wiki page for Anu, father of light
