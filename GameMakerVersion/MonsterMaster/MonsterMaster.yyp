@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "1c0f7aac-f8fb-4918-b5af-3289086ec4bb",
+            "Value": {
+                "id": "aff3dd05-1572-4f42-9ca6-3c59368dce54",
+                "resourcePath": "views\\86a73ceb-0081-41f2-bf01-f1ac4c03b388-room.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1c48db30-e3ab-4a46-863f-c7712f2a1cb7",
             "Value": {
                 "id": "9b1d91b4-00af-4fd1-8542-a6e1fbc92286",
@@ -1815,6 +1823,14 @@
             }
         },
         {
+            "Key": "70f28201-40a3-42ba-aedb-c55309b08f8b",
+            "Value": {
+                "id": "626e1709-b78e-4301-97c5-1d631bb28e1e",
+                "resourcePath": "objects\\Interface_RPGItem\\Interface_RPGItem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "71586f36-4c8c-4761-bcd8-5f675356a904",
             "Value": {
                 "id": "f10f4cea-c6d6-41f5-8041-811a30990288",
@@ -2011,6 +2027,14 @@
             "Value": {
                 "id": "432f77ba-2826-4eec-9866-b272cc1f7ec4",
                 "resourcePath": "views\\7d0982e3-e6a5-45fb-8adb-ca3e537b119f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d42ba8c-d24d-48bf-8456-1b997d9e317f",
+            "Value": {
+                "id": "c9fdad81-4c25-4cdc-97fd-e274f26f39fa",
+                "resourcePath": "views\\498e7f17-a528-4023-9f78-6dc244d4ab09-room.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2500,6 +2524,14 @@
                 "id": "40e4fdbe-369c-49d8-b3e9-f2fed74b6954",
                 "resourcePath": "objects\\Interface_PrimaryElement\\Interface_PrimaryElement.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9e860902-8701-496b-9acc-4f66da6ee20c",
+            "Value": {
+                "id": "aa1caadc-3fac-4ce5-b654-5893e714b3c6",
+                "resourcePath": "views\\9e860902-8701-496b-9acc-4f66da6ee20c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
