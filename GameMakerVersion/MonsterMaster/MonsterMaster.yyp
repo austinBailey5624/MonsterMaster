@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "07dc4a24-7080-4e7d-959a-62434112d35d",
+            "Value": {
+                "id": "fd87c85b-1c94-4b3c-b700-29f5f2c821da",
+                "resourcePath": "views\\07dc4a24-7080-4e7d-959a-62434112d35d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "08d8b79c-133c-4379-8c6a-6897617810d3",
             "Value": {
                 "id": "711faf57-2127-4731-9596-421ca3d229b0",
@@ -1319,6 +1327,14 @@
             }
         },
         {
+            "Key": "3f3f915d-6581-42da-ae59-e41e9c61edb3",
+            "Value": {
+                "id": "b317adda-ca9d-4d39-abf0-240a1f73607e",
+                "resourcePath": "views\\3f3f915d-6581-42da-ae59-e41e9c61edb3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3f4a4dff-72d9-48a8-add5-2ecf47df20ad",
             "Value": {
                 "id": "110004d7-f188-4548-a567-09511f48fcd8",
@@ -1580,6 +1596,14 @@
                 "id": "bd05422d-42cc-470c-846e-02470ba00f4e",
                 "resourcePath": "sprites\\sprite_FireSymbol32\\sprite_FireSymbol32.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4b85724b-2af4-467b-b585-4dfb4a567913",
+            "Value": {
+                "id": "09a8f03a-4d1e-4405-ae76-2b17d90d77fa",
+                "resourcePath": "objects\\object_RustyDagger\\object_RustyDagger.yy",
+                "resourceType": "GMObject"
             }
         },
         {

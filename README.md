@@ -136,6 +136,7 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - [ ] Write Wiki page for Martha (Charitable Witch in Dunhollow)
  - [ ] Write General location page
  - [ ] Write Page for Axton -ally/companion in 'main' quest
+ - [x] Write page for Iscar, betrayer of the Light
  
 ## Old To Do List(depreciated)
 

@@ -8,7 +8,7 @@ if(m_transitionOccuring)
 	if(image_index > (image_number-1))
 	{
 		m_transitionOccuring=false;
-		layerId = layer_get_id(InvisibleMonsterTypeLayer);
+//		layerId = layer_get_id(InvisibleMonsterTypeLayer);
 		room_goto(m_targetRoom);
 	}
 }
