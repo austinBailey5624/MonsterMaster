@@ -1215,6 +1215,14 @@
             }
         },
         {
+            "Key": "3991fbe0-25ec-4017-a1e3-c3e2206eb0ad",
+            "Value": {
+                "id": "f1d3a7c5-cef7-4d26-ab3e-4e60fe023c27",
+                "resourcePath": "objects\\object_MainMenu_MusicStore\\object_MainMenu_MusicStore.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "399aafbe-3235-4d4b-b730-18f17f317d8e",
             "Value": {
                 "id": "ae21091d-2ff1-4769-ab9f-bac19d67721d",
@@ -2495,6 +2503,14 @@
             }
         },
         {
+            "Key": "69d5dcd1-1ac9-49c2-a046-cff502ca3c87",
+            "Value": {
+                "id": "859ac0ae-ac84-4ce1-9748-1fe803808291",
+                "resourcePath": "objects\\object_MainMenu_LoadButton\\object_MainMenu_LoadButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6a581912-9043-4756-806f-aa67ccc1dbe9",
             "Value": {
                 "id": "b39c6ecb-a663-4b9c-b206-b463ebb92bb3",
@@ -3207,6 +3223,14 @@
             }
         },
         {
+            "Key": "88bd1074-173d-4c40-a44a-10a2ba116e76",
+            "Value": {
+                "id": "03e4db9a-9b59-4d80-b9b6-2e7d59488844",
+                "resourcePath": "objects\\object_MainMenu_CrystalAnimation\\object_MainMenu_CrystalAnimation.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "88e45306-467e-43b3-a58f-69708c63a7f9",
             "Value": {
                 "id": "d537ee1d-ee4d-4360-be1d-cb2b37baddf2",
@@ -3516,6 +3540,14 @@
                 "id": "28fe04c1-8d5f-43d3-9575-7a318c0cf428",
                 "resourcePath": "views\\954474ea-8416-4365-a430-8581e3e05380.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "964dedd2-462a-428a-ad99-5d5377e9b5f4",
+            "Value": {
+                "id": "47942a8c-2be4-4dcb-808b-b31ea2a0d9e8",
+                "resourcePath": "objects\\object_MainMenu_CreditsButton\\object_MainMenu_CreditsButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {
