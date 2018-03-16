@@ -138,7 +138,7 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - [ ] Write Page for Axton -ally/companion in 'main' quest
  - [x] Write page for Iscar, betrayer of the Light
  - [ ] Write page for Prime, a mercenary group
- - - [ ] Write page for the Iron Maiden
+ - - [x] Write page for the Iron Maiden
  - - [ ] Write page for Tosc
  - - [ ] Write page for the Blonden Brothers
  - [x] Write page for Ishebu, the deciever, head of the church
