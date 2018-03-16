@@ -2711,6 +2711,14 @@
             }
         },
         {
+            "Key": "749eabab-dddc-4447-bcc4-01884fde2811",
+            "Value": {
+                "id": "677eee9c-f589-479f-a197-95648acf4061",
+                "resourcePath": "objects\\object_MainMenu_NewGameButton\\object_MainMenu_NewGameButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "753c281d-0065-4cca-b15d-cabbd2d049c5",
             "Value": {
                 "id": "ce549808-b43e-4fb6-9515-5042d8dc9d3d",
