@@ -1,36 +1,36 @@
 {
-    "id": "e2b9da3e-f680-4c87-9af3-8b93136564e2",
+    "id": "a0801ca7-edf2-45b5-975e-776dcb0d2f38",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_MainMenu_CreditsButton",
+    "name": "object_MainMenu_LoadGameButton",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "58f0fdac-be09-4f3d-addc-8d40daee14a4",
+            "id": "f21c999c-293d-4b6b-b7ef-a31fcf0eb92c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "84f69fe1-ae28-42f4-a7fe-3e739385f6e5",
-            "value": "sprite_MainMenu_Credits"
+            "value": "sprite_MainMenu_Load"
         },
         {
-            "id": "194522ce-b695-4ddd-a2da-36c67ec5edc9",
+            "id": "eedd5353-3340-4935-8a82-bb01e1fa09e9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "a281e72d-e2da-4ba7-a575-3265c78183d7",
-            "value": "sprite_MainMenu_CreditsSelected"
+            "value": "sprite_MainMenu_LoadSelected"
         },
         {
-            "id": "b1590eb1-27f2-4007-a363-5f608477abe8",
+            "id": "56aa31ec-923f-424a-8296-47eb855dcdd1",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "07e68718-92d7-44a4-9d2c-56746b855d46",
-            "value": "OakTree"
+            "value": "LoadMenuMockup"
         }
     ],
     "parentObjectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
@@ -49,6 +49,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "bcde8a7b-c2e3-431c-b8c2-1d1126a1e9a0",
+    "spriteId": "59cad6af-83c2-488d-aea1-c7139be05bef",
     "visible": true
 }

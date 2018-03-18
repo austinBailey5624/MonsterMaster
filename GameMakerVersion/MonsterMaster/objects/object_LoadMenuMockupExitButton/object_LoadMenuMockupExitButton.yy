@@ -1,36 +1,36 @@
 {
-    "id": "e2b9da3e-f680-4c87-9af3-8b93136564e2",
+    "id": "64779595-3049-484c-8eeb-468961c07665",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_MainMenu_CreditsButton",
+    "name": "object_LoadMenuMockupExitButton",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "58f0fdac-be09-4f3d-addc-8d40daee14a4",
+            "id": "f1a9aba5-dd95-4f7e-bcdf-1db059983745",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "84f69fe1-ae28-42f4-a7fe-3e739385f6e5",
-            "value": "sprite_MainMenu_Credits"
+            "value": "sprite_LoadMenuMockup_BackButtonDefault"
         },
         {
-            "id": "194522ce-b695-4ddd-a2da-36c67ec5edc9",
+            "id": "5c7ceed0-7f3f-42e3-8376-565d43f00190",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "a281e72d-e2da-4ba7-a575-3265c78183d7",
-            "value": "sprite_MainMenu_CreditsSelected"
+            "value": "sprite_LoadMenuMockup_BackButtonMouseover"
         },
         {
-            "id": "b1590eb1-27f2-4007-a363-5f608477abe8",
+            "id": "06a522b6-2d3e-4cbb-866d-0e3c14343ea1",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "07e68718-92d7-44a4-9d2c-56746b855d46",
-            "value": "OakTree"
+            "value": "MainMenu"
         }
     ],
     "parentObjectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
@@ -49,6 +49,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "bcde8a7b-c2e3-431c-b8c2-1d1126a1e9a0",
+    "spriteId": "18976680-880a-4980-a29a-9cae0760e7af",
     "visible": true
 }

@@ -1,28 +1,38 @@
 {
-    "id": "69d5dcd1-1ac9-49c2-a046-cff502ca3c87",
+    "id": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_MainMenu_LoadButton",
+    "name": "Interface_LevelTransitionButton",
     "eventList": [
         {
-            "id": "e6715ebf-493c-4f83-bf32-ae7f82083a4f",
+            "id": "773a6d95-8168-4daa-915e-ec4765296b36",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 10,
             "eventtype": 6,
-            "m_owner": "69d5dcd1-1ac9-49c2-a046-cff502ca3c87"
+            "m_owner": "8676a702-9768-4c73-aa24-cc9a7e0b6e73"
         },
         {
-            "id": "c4f73af8-9bd2-4950-b4bf-218e9fbb605a",
+            "id": "093bf787-aa58-4136-8ce1-fe05e7220317",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 11,
             "eventtype": 6,
-            "m_owner": "69d5dcd1-1ac9-49c2-a046-cff502ca3c87"
+            "m_owner": "8676a702-9768-4c73-aa24-cc9a7e0b6e73"
+        },
+        {
+            "id": "278f34a2-610e-4548-86ee-7f2f8d39e58f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 6,
+            "m_owner": "8676a702-9768-4c73-aa24-cc9a7e0b6e73"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,7 +53,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "0d93f0ef-36a0-4e64-8f08-2e1655fdd005",
+            "id": "84f69fe1-ae28-42f4-a7fe-3e739385f6e5",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -52,12 +62,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "sprite_MainMenu_Load",
+            "value": "noone",
             "varName": "m_defaultSprite",
             "varType": 5
         },
         {
-            "id": "9da857ba-a4e6-43f8-9451-4c9a38cb6373",
+            "id": "a281e72d-e2da-4ba7-a575-3265c78183d7",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -66,12 +76,26 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "sprite_MainMenu_LoadSelected",
+            "value": "noone",
             "varName": "m_mouseOverSprite",
+            "varType": 5
+        },
+        {
+            "id": "07e68718-92d7-44a4-9d2c-56746b855d46",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "m_targetRoom",
             "varType": 5
         }
     ],
     "solid": false,
-    "spriteId": "59cad6af-83c2-488d-aea1-c7139be05bef",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

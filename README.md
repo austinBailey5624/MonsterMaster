@@ -118,6 +118,11 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - - [x] SpriteSheets for ShortSwords
  - - [x] SpriteSheets for Hatchets
  - - [x] SpriteSheets for LongSwords 
+ 
+ - [x] Finish MainMenu design
+ - [x] Finish MainMenu implementation
+ - - [ ] Redo Crystal animation
+ - - [ ] Design specialized main menu for different elementals
 ## Plot/Wiki To Do List
 
  - [ ] Write Wiki page for Anu, father of light

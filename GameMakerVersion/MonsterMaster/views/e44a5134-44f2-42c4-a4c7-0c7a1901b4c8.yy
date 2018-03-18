@@ -5,11 +5,11 @@
     "name": "e44a5134-44f2-42c4-a4c7-0c7a1901b4c8",
     "children": [
         "e53f9ddb-a3e9-40c7-8277-22ad15ed43bc",
-        "749eabab-dddc-4447-bcc4-01884fde2811",
-        "69d5dcd1-1ac9-49c2-a046-cff502ca3c87",
-        "3991fbe0-25ec-4017-a1e3-c3e2206eb0ad",
-        "964dedd2-462a-428a-ad99-5d5377e9b5f4",
-        "88bd1074-173d-4c40-a44a-10a2ba116e76"
+        "88bd1074-173d-4c40-a44a-10a2ba116e76",
+        "a0801ca7-edf2-45b5-975e-776dcb0d2f38",
+        "6bb8db64-52df-493c-8215-c45d3b35dd59",
+        "e2b9da3e-f680-4c87-9af3-8b93136564e2",
+        "5d273152-64d6-403f-9912-e190e07a685b"
     ],
     "filterType": "GMObject",
     "folderName": "MainMenuObjects",

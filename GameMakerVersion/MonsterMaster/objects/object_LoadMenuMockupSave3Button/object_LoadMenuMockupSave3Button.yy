@@ -1,36 +1,36 @@
 {
-    "id": "e2b9da3e-f680-4c87-9af3-8b93136564e2",
+    "id": "541b4848-116f-46f3-ace1-cfb9e3ef9538",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_MainMenu_CreditsButton",
+    "name": "object_LoadMenuMockupSave3Button",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "58f0fdac-be09-4f3d-addc-8d40daee14a4",
+            "id": "eb364681-42f5-43a8-9638-4a8a4a629f74",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "84f69fe1-ae28-42f4-a7fe-3e739385f6e5",
-            "value": "sprite_MainMenu_Credits"
+            "value": "sprite_LoadMenuMockup_Save3default"
         },
         {
-            "id": "194522ce-b695-4ddd-a2da-36c67ec5edc9",
+            "id": "1ef90247-9b1f-434a-b974-4282f3d766cc",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "a281e72d-e2da-4ba7-a575-3265c78183d7",
-            "value": "sprite_MainMenu_CreditsSelected"
+            "value": "sprite_LoadMenuMockup_Save3mouseover"
         },
         {
-            "id": "b1590eb1-27f2-4007-a363-5f608477abe8",
+            "id": "6ff2413b-a7dc-4f4a-be03-887c7a26ecf5",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "07e68718-92d7-44a4-9d2c-56746b855d46",
-            "value": "OakTree"
+            "value": "noone"
         }
     ],
     "parentObjectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
@@ -49,6 +49,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "bcde8a7b-c2e3-431c-b8c2-1d1126a1e9a0",
+    "spriteId": "f8c29349-db64-4dab-aaaa-2b55cade32d9",
     "visible": true
 }
