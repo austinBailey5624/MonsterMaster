@@ -127,10 +127,10 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 
  - [ ] Write Wiki page for Anu, father of light
  - [ ] Write Wiki page for Ahros, the Judge
- - [ ] Write Wiki page for Velhu, the merciful
+ - [ ] Write Wiki page for Velhu, the merciful (Mother Moon)
  - [ ] Write Wiki page for Sid, the compassionate
  - [ ] Write Wiki page for Pythion the redeemer
- - [ ] Write Wiki page for Malacathe the destroyer
+ - [x] Write Wiki page for Malacathe the destroyer
  - [ ] Write Wiki page for Rhea (Mother Nature and Goddess of earth)
  - [ ] Write Wiki page for Adara the Ice Queen
  
