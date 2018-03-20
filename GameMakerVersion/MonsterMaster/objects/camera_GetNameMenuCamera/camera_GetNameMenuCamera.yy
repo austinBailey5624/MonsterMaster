@@ -1,10 +1,19 @@
 {
-    "id": "46844c48-a902-4d03-a1e1-7ef0773c5267",
+    "id": "11ba042e-64e1-4eeb-8591-530096ed272a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_MusicStore_BlankCanvas",
+    "name": "camera_GetNameMenuCamera",
     "eventList": [
-        
+        {
+            "id": "2d8d91bb-9d21-468c-801a-a2c7f8f2a47b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "11ba042e-64e1-4eeb-8591-530096ed272a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -22,23 +31,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "123e3ea9-5c6a-461f-957d-68c715c8d0ae",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "sprite_BlankMenuCanvasBackCutout",
-            "varName": "m_sprite",
-            "varType": 5
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "2451e7b3-20c6-412c-b8ce-c4296376cf26",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

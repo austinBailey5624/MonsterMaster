@@ -177,3 +177,6 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - [ ] make permadeath option-hardcore mode
  - [ ] Implement Factions
  - [ ] Implement Achievements  
+ 
+ @Copyright 2016-2018 Austin Bailey all rights reserved
+ 

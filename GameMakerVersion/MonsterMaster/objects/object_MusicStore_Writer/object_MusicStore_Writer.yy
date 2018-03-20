@@ -5,16 +5,6 @@
     "name": "object_MusicStore_Writer",
     "eventList": [
         {
-            "id": "ea96cf5d-af05-403c-aa8d-2c3dde17a9c5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "a900b332-61be-460d-85bc-1da0ddbc72e2"
-        },
-        {
             "id": "3fc05c20-c557-4381-8b91-fadd695fdcf1",
             "modelName": "GMEvent",
             "mvc": "1.0",

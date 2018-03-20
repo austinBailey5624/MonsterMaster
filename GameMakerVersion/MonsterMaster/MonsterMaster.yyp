@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "11ba042e-64e1-4eeb-8591-530096ed272a",
+            "Value": {
+                "id": "d38fb8bf-125e-4c6f-8eba-2be8cfcd4c44",
+                "resourcePath": "objects\\camera_GetNameMenuCamera\\camera_GetNameMenuCamera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1245ee7d-3ae5-4dbb-be08-a1d6676e3bf6",
             "Value": {
                 "id": "c9ad04b8-a9dc-4e91-bc67-f61b8014a4b6",
@@ -628,6 +636,14 @@
                 "id": "d4fb1356-256b-4e2f-a976-e9f320c0e37b",
                 "resourcePath": "views\\1b993d6f-5624-4d77-9694-3ff0e3237a01.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1c0a72a1-c083-4d28-b2f5-29e45585611b",
+            "Value": {
+                "id": "ff376f88-8ed0-48d4-96fd-2b91e744e2e9",
+                "resourcePath": "sprites\\sprite_tileset_OakTreeBuildingInterior1\\sprite_tileset_OakTreeBuildingInterior1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3823,6 +3839,14 @@
             }
         },
         {
+            "Key": "9744f0c9-55dd-4a8d-b122-c5b9bbe1bfbc",
+            "Value": {
+                "id": "44b2ff9f-b88a-4ee3-b037-2d02755318e0",
+                "resourcePath": "views\\9744f0c9-55dd-4a8d-b122-c5b9bbe1bfbc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "98f2de73-2a43-4acd-9460-53ae76469765",
             "Value": {
                 "id": "787b66fc-bd65-4235-8d59-36a18df5005c",
@@ -5762,7 +5786,7 @@
             "Key": "e53f9ddb-a3e9-40c7-8277-22ad15ed43bc",
             "Value": {
                 "id": "47f8b793-74c9-4e28-83e6-3c9fed086711",
-                "resourcePath": "objects\\MainMenuCamera\\MainMenuCamera.yy",
+                "resourcePath": "objects\\camera_MainMenuCamera\\camera_MainMenuCamera.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -5868,6 +5892,14 @@
                 "id": "bdb88cea-96c7-40ca-a329-d9f33779ed73",
                 "resourcePath": "objects\\subelement_Phoenix\\subelement_Phoenix.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ed577a79-a3dc-4881-84bd-69096eb5b7a4",
+            "Value": {
+                "id": "64ecf06f-4165-413d-888c-43775ffb8fe0",
+                "resourcePath": "sprites\\sprite_tileset_OakTreeBuildingInterior\\sprite_tileset_OakTreeBuildingInterior.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -5,16 +5,6 @@
     "name": "object_Credits_Writer",
     "eventList": [
         {
-            "id": "3309c2e8-af33-43b7-8a46-de08a4f6c768",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "57f8784f-4275-4422-91a5-c6309ae988dc"
-        },
-        {
             "id": "71ae70af-360b-4a0c-a392-9cfb6e574c54",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "object_MusicStore_BlankBackground",
     "eventList": [
-        {
-            "id": "3c334f2b-54bd-4809-8784-07ce64634fd1",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "e0a3234f-22c6-4e2f-a801-9c9639b78332"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
