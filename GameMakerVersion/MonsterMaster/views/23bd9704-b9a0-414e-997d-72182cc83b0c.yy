@@ -10,7 +10,8 @@
         "09476630-4e2b-4d5a-a4c2-0f0525ba6d08",
         "8d0fca5d-d970-4823-bfe5-6d47f0d90f7c",
         "0716b387-368c-4c4f-bdac-553b1b832f32",
-        "9bd45759-5504-4a39-8655-47ed5863bd60"
+        "9bd45759-5504-4a39-8655-47ed5863bd60",
+        "0f176ddc-f404-4322-a187-868df421e258"
     ],
     "filterType": "GMObject",
     "folderName": "UIMenuObjects",
