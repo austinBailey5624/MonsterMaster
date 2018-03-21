@@ -34,7 +34,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "noone",
-            "varName": "Lead",
+            "varName": "m_Lead",
             "varType": 5
         },
         {
@@ -48,7 +48,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "noone",
-            "varName": "Follow1",
+            "varName": "m_Follow1",
             "varType": 5
         },
         {
@@ -62,7 +62,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "noone",
-            "varName": "Follow2",
+            "varName": "m_Follow2",
             "varType": 5
         },
         {
@@ -76,7 +76,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "noone",
-            "varName": "Follow3",
+            "varName": "m_Follow3",
             "varType": 5
         },
         {

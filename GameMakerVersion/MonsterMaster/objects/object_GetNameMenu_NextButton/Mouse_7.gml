@@ -9,5 +9,10 @@ else//If the player didn't write a name
 }
 if(m_targetRoom!=noone)//checks that there is a room before transitioning
 {
+	object_MainCharacter.m_FrontSprite=GuyForwards;
+	object_MainCharacter.m_BackSprite=GuyBack;
+	object_MainCharacter.m_RightSprite=GuyRight;
+	object_MainCharacter.m_LeftSprite=GuyLeft;
+	object_MainParty.m_lead = object_MainCharacter;
 	room_goto(m_targetRoom);
 }
