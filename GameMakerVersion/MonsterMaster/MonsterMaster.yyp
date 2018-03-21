@@ -1047,6 +1047,14 @@
             }
         },
         {
+            "Key": "2d70618f-c848-4f6c-bb29-df386bb2f134",
+            "Value": {
+                "id": "8a49509b-f8f3-46ec-ba43-5d39c2f6f924",
+                "resourcePath": "fonts\\Arial_16\\Arial_16.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2ed178c6-0787-47e9-95c6-d6fd7dc89182",
             "Value": {
                 "id": "8610b452-d0fe-450d-b14f-2f338b900833",
@@ -1652,6 +1660,14 @@
                 "id": "02838207-25a1-40ae-99f7-e6bc82c4ff21",
                 "resourcePath": "sprites\\sprite_OakTree_SmallHouse_1\\sprite_OakTree_SmallHouse_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "45ca7865-ee5c-49db-8906-745b3b5fac62",
+            "Value": {
+                "id": "42924db3-c512-4675-b44d-26aae6846930",
+                "resourcePath": "fonts\\Arial_32\\Arial_32.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -3172,6 +3188,14 @@
                 "id": "89d1826c-bff1-4ff5-ac38-d373b91842ae",
                 "resourcePath": "objects\\subelement_Nightwing\\subelement_Nightwing.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7dc111a3-1539-43e9-a6be-6976524e932a",
+            "Value": {
+                "id": "cf8de603-6cc9-4f0b-a7a4-6589e6955eb5",
+                "resourcePath": "fonts\\Arial_64\\Arial_64.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -6332,6 +6356,14 @@
                 "id": "12133e0a-6fdd-42b7-9f2b-d04f4a55bbcb",
                 "resourcePath": "sprites\\sprite_AquaAtronach_Forwards\\sprite_AquaAtronach_Forwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ff025f46-0beb-4b0c-a3a0-2fea2b86a670",
+            "Value": {
+                "id": "52169758-9ee3-4986-99ed-cd8c258bbd8b",
+                "resourcePath": "fonts\\Arial_8\\Arial_8.yy",
+                "resourceType": "GMFont"
             }
         },
         {
