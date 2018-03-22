@@ -5,7 +5,7 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 ## Differences from Pokemon
 1. **The player matters** In Pokemon Games the user really doesnt matter at all other than as a way to move yourself around the screen. In MonsterMaster as the character you are an active participant in the battle and defeat occurs when you are knocked out, not just when the monster representing you is defeated *it also bears noting that monsters gain experience much faster than humans.
 2. **There is player choice** that shapes the world around you.
-3. **There isn't a single way to win the game.** There are factions that you side with and gain reputation with that determine how you play and end the game.
+3. **There isn't a single way to win the game.** There are factions that you side with and gain ranks and reputation with that determine how you play and end the game.
 4. **The world is open.** Although there are gates to certain areas, (and certain areas are much more difficult than others) you can directly open them by sacrifice a monster with certain stats
 5. **You can Combine monsters.** Part of the game is combining your monsters to make better monsters.
 6. **Level Cap.** The level of monsters is capped based on how many monsters are in its family tree. A second generation will be more powerful and have a higher level cap than a first generation etc
@@ -54,6 +54,10 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
       * The Redeemed are former criminals who make up half of the military arm of the church. They vehemetly despise evil and wrongdoing, perhaps even more fiercely than the just. They are famous for giving their enemies a chance to repent and convert before their deaths. The just seek to destroy this faction as they dont believe in reform.	
 
 ## Mechanics To Do List
+ - [x] Main Menu mock-up
+ - [ ] Incorporate finished music (as of 3/20/2018)
+ - [ ] Incorporate Pause Menu
+ - [ ] 
  - [ ] Finish implementation of Infant Monster Types
  - [ ] Create Class for Items
  -  -  [ ] Create Class for Weapons
@@ -123,31 +127,69 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - [x] Finish MainMenu implementation
  - - [ ] Redo Crystal animation
  - - [ ] Design specialized main menu for different elementals
+ 
 ## Plot/Wiki To Do List
 
+### Gods
  - [ ] Write Wiki page for Anu, father of light
- - [ ] Write Wiki page for Ahros, the Judge
+ - [x] Write Wiki page for Ahros, the Judge
  - [ ] Write Wiki page for Velhu, the merciful (Mother Moon)
  - [ ] Write Wiki page for Sid, the compassionate
+ - [ ] Write Wiki page for Gabriel, First servant of the Gods
  - [ ] Write Wiki page for Pythion the redeemer
  - [x] Write Wiki page for Malacathe the destroyer
  - [ ] Write Wiki page for Rhea (Mother Nature and Goddess of earth)
  - [ ] Write Wiki page for Adara the Ice Queen
+ - [x] Write Wiki page for Muir the Bandit-God 
+ - [ ] Write Wiki page for Ars
  
+### Guardians
  - [ ] Write Wiki page for Telvar, guardian of the earth temple
+ 
+### Locations
+ 
+ - [ ] Write General location page
  - [ ] Write Wiki page for Oaktree
  - [ ] Write Wiki page for Dunhollow (hamlet between Oaktree and Newaven)
  - [ ] Write Wiki page for Newaven
- - [ ] Write Wiki page for Martha (Charitable Witch in Dunhollow)
- - [ ] Write General location page
- - [ ] Write Page for Axton -ally/companion in 'main' quest
- - [x] Write page for Iscar, betrayer of the Light
- - [ ] Write page for Prime, a mercenary group
- - - [x] Write page for the Iron Maiden
- - - [ ] Write page for Tosc
- - - [ ] Write page for the Blonden Brothers
- - [x] Write page for Ishebu, the deciever, head of the church
+ - [ ] Write Wiki page for Golden Bank
  
+### Factions
+ - [x] Write Wiki page for Sudi Satfa (Sid's trees faction)
+ - [ ] Write Wiki page for Justicars (Ahros' warriors, militant arm of chruch)
+ - [ ] Write Wiki page for Mage's college
+ - [ ] Write Wiki page for Primus Mercenary Company
+ - [ ] Write Wiki page for the Church of the Light
+ - [ ] Write Wiki page for Desert Bandits(Robin-Hoods under the watchful eye of Muir)
+ 
+### Others
+
+#### Mage's College
+ - [x] Write Wiki page for Ondrey, initial arch-mage of college 
+ 
+#### Justicars
+ - [ ] Write Page for Axton -ally/companion in 'main' quest: Initiate in Justicars assigned with helping you defeat the servants of malacathe
+ - [x] Write wiki page for Yuse, serent of the Justicars
+ 
+#### Church of the Light
+ - [x] Write page for Iscar, betrayer of the Light
+ 
+#### Primus Mercenary Company
+ - [x] Write page for the Iron Maiden
+ - [ ] Write page for Tosc
+ - [ ] Write page for the Blonden Brothers
+ 
+#### Oaktree
+ - [ ] WorldBuild Oaktree Actors
+ - [ ] WorldBuild Oaktree Interior Locations 
+ - - [.5] Make Oaktree church 
+ 
+#### Dunhollow
+ - [ ] Write Wiki page for Martha (Charitable Witch in Dunhollow)
+
+#### Golden Bank
+ - [ ] Write Wiki page for Tom Walker
+ - [ ] Write Wiki page for Faust
  
 ## Old To Do List(depreciated)
 
