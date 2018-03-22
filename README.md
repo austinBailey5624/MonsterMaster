@@ -57,7 +57,7 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
  - [x] Main Menu mock-up
  - [ ] Incorporate finished music (as of 3/20/2018)
  - [ ] Incorporate Pause Menu
- - [ ] 
+ - [ ] Add Opening Cinematic
  - [ ] Finish implementation of Infant Monster Types
  - [ ] Create Class for Items
  -  -  [ ] Create Class for Weapons

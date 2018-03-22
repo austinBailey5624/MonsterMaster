@@ -3943,6 +3943,14 @@
             }
         },
         {
+            "Key": "9413e5ee-f1fb-40eb-9051-b5a435956e57",
+            "Value": {
+                "id": "1e946a25-bc6f-4ec3-9af1-ae4d4e3e9f09",
+                "resourcePath": "objects\\object_Intro_Background\\object_Intro_Background.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "944e0b72-35a2-4f3b-9bef-d7375cf9ab4e",
             "Value": {
                 "id": "815c0966-c5cb-4d45-a3c5-5ce0b809255d",
@@ -4012,6 +4020,14 @@
                 "id": "44b2ff9f-b88a-4ee3-b037-2d02755318e0",
                 "resourcePath": "views\\9744f0c9-55dd-4a8d-b122-c5b9bbe1bfbc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9858882f-c627-450f-a27e-c61c2a12b08f",
+            "Value": {
+                "id": "c4263f5d-c19b-4cc6-adec-11859a4e934c",
+                "resourcePath": "sprites\\sprite_introCutscene_Background\\sprite_introCutscene_Background.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4580,6 +4596,14 @@
                 "id": "bcf03926-fc63-4bdd-83b2-01e068dff23a",
                 "resourcePath": "sprites\\sprite_Winger_Backwards\\sprite_Winger_Backwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "add0ff85-3060-4453-a803-9437a5f634c2",
+            "Value": {
+                "id": "2d0b6537-c1b1-4cdb-8a2f-3a256cdd7f2c",
+                "resourcePath": "views\\add0ff85-3060-4453-a803-9437a5f634c2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
