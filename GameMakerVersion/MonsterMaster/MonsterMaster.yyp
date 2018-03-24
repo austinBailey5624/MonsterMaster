@@ -202,7 +202,7 @@
             "Key": "082aacf4-e064-4752-be8c-e4399eed6d46",
             "Value": {
                 "id": "4850843a-a326-4320-8b99-132c0fed5437",
-                "resourcePath": "sprites\\sprite_StatusBarMockUp\\sprite_StatusBarMockUp.yy",
+                "resourcePath": "sprites\\sprite_Status_HealthBar\\sprite_Status_HealthBar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2188,6 +2188,14 @@
                 "id": "a74d51eb-9ab2-4eb7-a8ad-447920f78faf",
                 "resourcePath": "objects\\monsterType_FireOpal\\monsterType_FireOpal.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "52b17e09-d02e-4ae5-877d-3c2cab56d216",
+            "Value": {
+                "id": "546d6b27-e00c-4589-8c1b-7e796803f574",
+                "resourcePath": "sprites\\sprite_Status_ManaBar\\sprite_Status_ManaBar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
