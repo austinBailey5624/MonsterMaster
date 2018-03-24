@@ -4,11 +4,9 @@
     "mvc": "1.1",
     "name": "fe4da7ec-7b30-4279-ba78-fefd3932f656",
     "children": [
-        "e004ad28-abf9-4390-ac59-371d7aba7908",
-        "f01b64f4-06c6-4ee4-9deb-2bbd917f05f7",
-        "53f65b1c-091e-4865-bfbd-043a9dd5c8de",
         "9958544b-e3bc-4549-b112-ca5508e5b902",
-        "42dd5624-e7b1-448b-9c45-e7d31e2e7e2e"
+        "b0baa914-42a9-4f8c-9b2b-7970f1a0364f",
+        "3029cc7a-e734-4b02-bcfc-52444620b1f1"
     ],
     "filterType": "GMSprite",
     "folderName": "UISprites",
