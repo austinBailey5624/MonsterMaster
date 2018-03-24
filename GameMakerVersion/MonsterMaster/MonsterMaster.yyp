@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "04040995-6b95-45ee-b402-2e6ddd4eeb6d",
+            "Value": {
+                "id": "19a10f38-1e2f-460f-b25a-607691b2d7c3",
+                "resourcePath": "objects\\BattleActorMockAlly\\BattleActorMockAlly.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "041f6632-7cd6-436e-a2e1-18abce3e6465",
             "Value": {
                 "id": "eae5a59a-3de2-44ff-a7d6-aa75258a032e",
@@ -308,6 +316,14 @@
                 "id": "eed9108d-1c75-4845-9f95-8e89143e32c0",
                 "resourcePath": "sprites\\sprite_EdgeWinger_Left\\sprite_EdgeWinger_Left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0c7f9c2f-a8a8-47d4-8955-e9e224727727",
+            "Value": {
+                "id": "6b187c13-04ee-44f1-89fd-ec0fef9b4bcf",
+                "resourcePath": "objects\\object_MockEnemyLeader\\object_MockEnemyLeader.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -911,6 +927,14 @@
             }
         },
         {
+            "Key": "247a59c1-2e3a-467b-84ee-e9b12232c5fd",
+            "Value": {
+                "id": "444ac000-1cfa-40eb-9392-18796236c0ee",
+                "resourcePath": "tilesets\\tileset_ChuchBattleBackGround\\tileset_ChuchBattleBackGround.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "247e2a14-da8c-4bfe-93fe-09283e7719de",
             "Value": {
                 "id": "bae7f4c8-0851-487d-afa6-84a938cefd71",
@@ -940,6 +964,14 @@
                 "id": "8e8fa40a-3b8b-452e-80fd-c368c16a39c9",
                 "resourcePath": "sprites\\sprite_Pyos_Forward\\sprite_Pyos_Forward.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "266cb1a1-c0be-4915-a1ca-906cd8eb3533",
+            "Value": {
+                "id": "dba98f87-3e43-48c8-bc0d-00b64d6b6983",
+                "resourcePath": "views\\266cb1a1-c0be-4915-a1ca-906cd8eb3533.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1143,6 +1175,14 @@
             }
         },
         {
+            "Key": "2ee64c7b-1943-44ca-aebb-f7c2582a2a24",
+            "Value": {
+                "id": "5da5d35a-29d9-4229-94f2-3f42b10a7d11",
+                "resourcePath": "views\\2ee64c7b-1943-44ca-aebb-f7c2582a2a24.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2f58fdfd-4d2c-449f-bfc1-666c2d16cf81",
             "Value": {
                 "id": "429e4465-5d43-469c-9873-3fb729eac794",
@@ -1228,6 +1268,14 @@
                 "id": "4112dd97-27b6-4ff8-82ab-ea24fc785f5a",
                 "resourcePath": "views\\338ea0d1-8825-4308-b1c4-44d7952ea4c8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "33bdee5e-5b75-4e40-8e2d-61ca320662d5",
+            "Value": {
+                "id": "94ed2f8e-7dc4-4d4d-b30e-65c1752b726f",
+                "resourcePath": "objects\\object_MockEnemy2\\object_MockEnemy2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1420,6 +1468,22 @@
                 "id": "dd3d4c21-db56-4501-adcd-e4d4ac73772d",
                 "resourcePath": "sprites\\sprite_TannedBracers\\sprite_TannedBracers.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "38bb68ae-8b06-4d21-b952-e2a33595971c",
+            "Value": {
+                "id": "abce855e-6afa-451f-b0c6-d75b3902d4ab",
+                "resourcePath": "objects\\Interface_MockBattleActor\\Interface_MockBattleActor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3904fdcc-fe69-4c4e-8c9b-cf6f86ffe797",
+            "Value": {
+                "id": "8b7c5603-208e-4c11-93bc-bba343ad5312",
+                "resourcePath": "views\\3904fdcc-fe69-4c4e-8c9b-cf6f86ffe797.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1660,6 +1724,14 @@
                 "id": "f5060b91-9630-473a-ad4d-506154056ee9",
                 "resourcePath": "sprites\\sprite_PyroSymbol_Forwards\\sprite_PyroSymbol_Forwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4212152e-4698-47d4-b063-36d157f10ef8",
+            "Value": {
+                "id": "d7db3455-06a8-4340-9dd9-29dd8359a013",
+                "resourcePath": "objects\\object_MockEnemy4\\object_MockEnemy4.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3047,6 +3119,14 @@
             }
         },
         {
+            "Key": "7059181b-ef64-463e-a90d-3ae53d741c72",
+            "Value": {
+                "id": "166141d9-13ec-49cc-951c-6bd7c928e0e6",
+                "resourcePath": "objects\\object_BattleActorMockAlly1\\object_BattleActorMockAlly1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "70ee122b-6a80-4a20-ae3b-80c64106f350",
             "Value": {
                 "id": "ad558eef-7961-4345-8273-0d1bcaaf2b05",
@@ -3743,6 +3823,14 @@
             }
         },
         {
+            "Key": "86c87eb4-4302-41d9-9712-c9d2f437284e",
+            "Value": {
+                "id": "c155f6bb-4d00-40f3-bf40-f3eb030bfba2",
+                "resourcePath": "objects\\object_MockEnemy3\\object_MockEnemy3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8728a55e-f07e-416b-a6a0-d25d8613c0eb",
             "Value": {
                 "id": "2be23c04-27fc-4337-a35f-eb9abe7b5ceb",
@@ -4127,6 +4215,14 @@
             }
         },
         {
+            "Key": "9678a988-0c6a-4613-9984-a6f44bfefebf",
+            "Value": {
+                "id": "0143c688-3ec8-43d8-999e-f2542e7a0768",
+                "resourcePath": "objects\\object_BattleMock_BackgroundBorder\\object_BattleMock_BackgroundBorder.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "96ae3a1d-08a5-4201-ab40-2216dfdfbb59",
             "Value": {
                 "id": "c996963b-b6b5-46ce-8b99-a2f9471e5d36",
@@ -4315,6 +4411,14 @@
             "Value": {
                 "id": "a14bb927-2331-460a-bbac-4bb14facb93c",
                 "resourcePath": "views\\9c4c2919-78ed-47b7-8559-03fcaef414e3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9c9589b2-9197-40ad-9d7a-1f44e9742a25",
+            "Value": {
+                "id": "fd968e7a-7217-4761-825d-bdc634df1c0a",
+                "resourcePath": "views\\9c9589b2-9197-40ad-9d7a-1f44e9742a25.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -4583,6 +4687,14 @@
             }
         },
         {
+            "Key": "a6dfe941-22c7-49e0-82b2-1ab219c5acab",
+            "Value": {
+                "id": "15811abf-e683-4729-b1fa-23582f88a4fd",
+                "resourcePath": "views\\a6dfe941-22c7-49e0-82b2-1ab219c5acab.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a6f0f751-bdbd-4fb6-b15f-b1d3864cc240",
             "Value": {
                 "id": "525f9094-2298-4126-9ce6-a7e2e3d9d39b",
@@ -4722,7 +4834,7 @@
             "Key": "ab7fec3f-b9a6-4600-9a39-eb77fad939fc",
             "Value": {
                 "id": "a1980537-9a5e-4b94-941f-c2a98db2aee8",
-                "resourcePath": "sprites\\sprite_HealthBarMockUp\\sprite_HealthBarMockUp.yy",
+                "resourcePath": "sprites\\sprite_StatusBarMock\\sprite_StatusBarMock.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4740,6 +4852,14 @@
                 "id": "415e972b-ff6b-4dee-bd99-5b201dd94abd",
                 "resourcePath": "views\\ab9f729a-1163-4534-bb2d-fe282bd25cd2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "abe6287a-5a46-4e3c-be45-aad8c0c3b95b",
+            "Value": {
+                "id": "e80b7889-2c36-4ca7-a363-14b24412b6f0",
+                "resourcePath": "sprites\\sprite_tileSet_OakTreeChurchStrechx12\\sprite_tileSet_OakTreeChurchStrechx12.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4844,6 +4964,14 @@
                 "id": "94bec873-488d-4d05-be4a-26f39a2969d9",
                 "resourcePath": "sprites\\sprite_SwampSymbol\\sprite_SwampSymbol.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b29509e8-e0f5-4abc-ba60-41fcc1d76be1",
+            "Value": {
+                "id": "1554dd49-36ae-46de-a4da-45eaf2764782",
+                "resourcePath": "objects\\object_BattleActorMockAlly3\\object_BattleActorMockAlly3.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5831,6 +5959,14 @@
             }
         },
         {
+            "Key": "d660b210-c6c6-4a25-8cd6-54f73c4264b2",
+            "Value": {
+                "id": "085655fd-59d9-4487-9afc-270dc43cad9d",
+                "resourcePath": "sprites\\sprite_StatusBarSelected\\sprite_StatusBarSelected.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d66fbf84-220f-4489-b147-fdf5cb871d10",
             "Value": {
                 "id": "3b91bcea-5bd8-4f20-ab0f-44512268160e",
@@ -5859,6 +5995,14 @@
             "Value": {
                 "id": "08970071-eb1c-4f02-bb38-0ae1718c5413",
                 "resourcePath": "sprites\\sprite_Winger_Left\\sprite_Winger_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d7bf6d78-d6dd-41bd-8bb4-af105f4ecf8d",
+            "Value": {
+                "id": "2fbb69da-f712-4872-b239-748c37245332",
+                "resourcePath": "sprites\\sprite_MockBattleBackground\\sprite_MockBattleBackground.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6423,6 +6567,14 @@
             }
         },
         {
+            "Key": "ec6ac7d3-463d-4d31-9551-099e9f25df7f",
+            "Value": {
+                "id": "a246ad35-f4d5-4bc9-8270-0074afcff23d",
+                "resourcePath": "views\\ec6ac7d3-463d-4d31-9551-099e9f25df7f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ecd6ba70-ddba-4c0f-9786-8d7432b088ee",
             "Value": {
                 "id": "03f07683-87ba-4fd9-905c-ea748707347e",
@@ -6543,6 +6695,14 @@
             }
         },
         {
+            "Key": "f11185c5-8f0a-4603-8955-4d9a71bb2c98",
+            "Value": {
+                "id": "ae7fd677-749e-46a8-acd3-50004f7fd4e1",
+                "resourcePath": "objects\\object_BattleActorMockAlly2\\object_BattleActorMockAlly2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f14228a4-9541-4d48-80d2-252928eaa1eb",
             "Value": {
                 "id": "6d55b601-8540-4d40-8c3b-e93e16c51bc5",
@@ -6580,6 +6740,14 @@
                 "id": "0f2513aa-0c0b-45ed-be1d-0960f10db242",
                 "resourcePath": "sprites\\sprite_AquaSymbol_Right\\sprite_AquaSymbol_Right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f244a354-b153-4458-86f0-282117ec6f8e",
+            "Value": {
+                "id": "4f2353f8-af29-4448-8cd6-29826002f490",
+                "resourcePath": "objects\\Interface_StatusBar\\Interface_StatusBar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -6804,6 +6972,14 @@
                 "id": "a8ec9eea-ad57-46b0-9dee-757052ce1fe2",
                 "resourcePath": "sprites\\sprite_SilkHat\\sprite_SilkHat.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f83bf4fa-3ee7-4a26-a23a-6beb03e8688d",
+            "Value": {
+                "id": "9212bf79-b9e2-4623-b24c-4ba155807cfa",
+                "resourcePath": "rooms\\room_BattleMock\\room_BattleMock.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
