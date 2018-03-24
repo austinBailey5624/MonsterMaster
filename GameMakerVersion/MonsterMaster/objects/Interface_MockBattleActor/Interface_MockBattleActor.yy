@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "Interface_MockBattleActor",
     "eventList": [
-        
+        {
+            "id": "ee015b6d-fc2e-41dd-a8d6-331573de403b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "38bb68ae-8b06-4d21-b952-e2a33595971c"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

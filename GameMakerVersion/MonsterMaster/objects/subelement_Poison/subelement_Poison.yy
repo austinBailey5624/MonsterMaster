@@ -39,6 +39,22 @@
             "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
             "propertyId": "5db4c851-b988-4c52-84bf-c85195036760",
             "value": "element_Water"
+        },
+        {
+            "id": "b3c11544-e323-489f-8495-2d1a7565a8c2",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "348b70fd-85ec-40f4-9d48-ae2620ea32b6",
+            "value": "sprite_PoisonSymbol"
+        },
+        {
+            "id": "fe9fceca-145d-46ae-93db-e8234da3bdc1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "d913f79d-19ca-4b86-a5b8-fc98c3ef31da",
+            "value": "sprite_PoisonSymbol32"
         }
     ],
     "parentObjectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
@@ -57,6 +73,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "63056727-8a54-4ed4-ad43-85a3d5f77404",
+    "spriteId": "103c3f72-9069-4fb2-9cda-92294b757986",
     "visible": true
 }

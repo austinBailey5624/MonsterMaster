@@ -39,6 +39,22 @@
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
             "value": "\"Terra\""
+        },
+        {
+            "id": "c6a9b066-3429-4c61-950d-6c6c276856b6",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "348b70fd-85ec-40f4-9d48-ae2620ea32b6",
+            "value": "sprite_EarthSymbol"
+        },
+        {
+            "id": "93fb0795-4265-4222-902e-42c3b5379ce8",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
+            "propertyId": "d913f79d-19ca-4b86-a5b8-fc98c3ef31da",
+            "value": "sprite_TerraSymbol32"
         }
     ],
     "parentObjectId": "4b9d06ba-9e85-41dd-af46-20a51fe36fb8",
@@ -57,6 +73,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "e5d6cd0d-2493-40af-ba89-50ab4d37e0c9",
+    "spriteId": "f96ee20e-6ea0-493d-b1f7-d23c23bbf137",
     "visible": true
 }
