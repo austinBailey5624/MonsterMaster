@@ -146,7 +146,7 @@
             "Key": "04040995-6b95-45ee-b402-2e6ddd4eeb6d",
             "Value": {
                 "id": "19a10f38-1e2f-460f-b25a-607691b2d7c3",
-                "resourcePath": "objects\\BattleActorMockAlly\\BattleActorMockAlly.yy",
+                "resourcePath": "objects\\object_BattleActorMockAlly\\object_BattleActorMockAlly.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -476,6 +476,14 @@
                 "id": "d38fb8bf-125e-4c6f-8eba-2be8cfcd4c44",
                 "resourcePath": "objects\\camera_GetNameMenuCamera\\camera_GetNameMenuCamera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1242e7c3-0a64-4321-9d06-de8495a42060",
+            "Value": {
+                "id": "f79a7802-93fd-44d5-aaf7-b1a904b18e9b",
+                "resourcePath": "rooms\\room_Defeat\\room_Defeat.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -887,6 +895,14 @@
             }
         },
         {
+            "Key": "23313ccb-dd45-4618-8599-5e6cb611e833",
+            "Value": {
+                "id": "682ace81-edde-4af7-b708-c8cf26cb49bf",
+                "resourcePath": "objects\\object_BattleMock_MinigameManager\\object_BattleMock_MinigameManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "23425a97-7aa3-48c3-b1a3-a219ea36d868",
             "Value": {
                 "id": "2258f09d-9d9b-49cd-8c46-a67bd0d954ba",
@@ -1060,14 +1076,6 @@
                 "id": "2236c3d4-e669-4257-9b38-52d961066759",
                 "resourcePath": "sprites\\sprite_OakTree_SmallHouse_3\\sprite_OakTree_SmallHouse_3.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2af32e8c-f3aa-4f46-9538-5f9cc085cbef",
-            "Value": {
-                "id": "efaaa562-f114-4e67-b0c0-063eb3d58d52",
-                "resourcePath": "objects\\object_MockBattle_MouseOverSelector\\object_MockBattle_MouseOverSelector.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1708,6 +1716,14 @@
                 "id": "d6dd4e2d-6bcd-4154-8f1a-f54ad8460a3d",
                 "resourcePath": "sprites\\sprite_OakTree_ChurchDoor\\sprite_OakTree_ChurchDoor.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "407f1187-e9b9-4609-856a-d9943f58b190",
+            "Value": {
+                "id": "0d1bd0d1-d13c-44bf-8e12-21581bf43569",
+                "resourcePath": "objects\\object_BlankMenuBackground\\object_BlankMenuBackground.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3031,6 +3047,14 @@
             }
         },
         {
+            "Key": "6b624eea-c5f8-476d-b2ca-711e76879afe",
+            "Value": {
+                "id": "a11bd5b1-cf3d-48f0-9200-bbce4adb0ea1",
+                "resourcePath": "objects\\object_BlankTextBox\\object_BlankTextBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6bb8db64-52df-493c-8215-c45d3b35dd59",
             "Value": {
                 "id": "4311b7e2-ae8b-45b8-b038-369000080935",
@@ -3108,6 +3132,14 @@
                 "id": "2731b9b2-dd59-4312-ac26-e35d0ced225f",
                 "resourcePath": "sprites\\sprite_MithrilGreaves\\sprite_MithrilGreaves.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6e63b357-a60b-42dc-8fc2-ec398f93a431",
+            "Value": {
+                "id": "bfb9e1dc-e374-4722-aee9-ff0efce580e6",
+                "resourcePath": "objects\\object_VictoryMessageTextBox\\object_VictoryMessageTextBox.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3332,6 +3364,14 @@
                 "id": "c393e4f0-8ad8-495c-a9b7-e544ef5b287e",
                 "resourcePath": "sprites\\sprite_Vagrus_Right\\sprite_Vagrus_Right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "77588ae6-41e4-440b-b450-830a72723ee9",
+            "Value": {
+                "id": "fd431176-326f-4efa-a1a5-f7c4c4c87b2a",
+                "resourcePath": "objects\\object_DefeatScreenWriter\\object_DefeatScreenWriter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4815,6 +4855,14 @@
             }
         },
         {
+            "Key": "aa954e40-455f-4a88-884b-658b5f956eb3",
+            "Value": {
+                "id": "f2280f47-74b5-47d8-bf74-d6192cb090d7",
+                "resourcePath": "scripts\\script_GetStatusBarSpriteIndex\\script_GetStatusBarSpriteIndex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ab067f73-23b8-463e-89a9-e15704265ba0",
             "Value": {
                 "id": "90aab48f-35b3-4a03-a124-0b8f021a0626",
@@ -5068,6 +5116,14 @@
                 "id": "891b8393-c561-4344-92f1-da3d4507f8bf",
                 "resourcePath": "sprites\\sprite_Cercyon_Right\\sprite_Cercyon_Right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b56fb6c0-0150-4178-808d-71cab8917750",
+            "Value": {
+                "id": "2ab059d6-f080-49f9-a310-68b90a433577",
+                "resourcePath": "objects\\object_DefeatScreenWriter1\\object_DefeatScreenWriter1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5895,6 +5951,14 @@
             }
         },
         {
+            "Key": "d3eca31e-2555-415e-94d4-6a917248e8a7",
+            "Value": {
+                "id": "49c19f0f-b2a9-4ba9-8bb2-0cdec831c4d2",
+                "resourcePath": "views\\d3eca31e-2555-415e-94d4-6a917248e8a7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d406621e-49bd-4575-84f7-1fa5fd826797",
             "Value": {
                 "id": "ffe48654-563e-4cd7-9584-53d3ddbd3932",
@@ -6004,6 +6068,14 @@
                 "id": "08970071-eb1c-4f02-bb38-0ae1718c5413",
                 "resourcePath": "sprites\\sprite_Winger_Left\\sprite_Winger_Left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d7b40118-68e4-48ff-966b-77c9d46bc71a",
+            "Value": {
+                "id": "b8a51086-25ee-4851-a9c1-dae3d97f8bac",
+                "resourcePath": "views\\d7b40118-68e4-48ff-966b-77c9d46bc71a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -6927,6 +6999,14 @@
             }
         },
         {
+            "Key": "f682f0bb-825b-410e-8e39-2fc7f71ff7e0",
+            "Value": {
+                "id": "c9b7844b-c5dd-4887-8cd4-5d1b48e1cd8c",
+                "resourcePath": "objects\\object_DefeatMessageTextBox\\object_DefeatMessageTextBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f68402c2-5736-45dd-874d-80be6e6ce037",
             "Value": {
                 "id": "cdb836c2-9061-4da7-be1e-de1097d04201",
@@ -6948,6 +7028,14 @@
                 "id": "f05d038d-cccf-43b6-859a-7bbfd896e9d8",
                 "resourcePath": "sprites\\sprite_Minnow_Right\\sprite_Minnow_Right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f71e612b-f04f-40fe-bc39-770fbfb47796",
+            "Value": {
+                "id": "26d6fc42-60b2-4752-a476-d16a0969c256",
+                "resourcePath": "rooms\\room_BattleMockVIctory\\room_BattleMockVIctory.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -7160,7 +7248,7 @@
         }
     ],
     "script_order": [
-        
+        "aa954e40-455f-4a88-884b-658b5f956eb3"
     ],
     "tutorial": ""
 }

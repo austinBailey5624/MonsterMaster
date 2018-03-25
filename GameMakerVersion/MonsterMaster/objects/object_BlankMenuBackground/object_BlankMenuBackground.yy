@@ -1,8 +1,8 @@
 {
-    "id": "2af32e8c-f3aa-4f46-9538-5f9cc085cbef",
+    "id": "407f1187-e9b9-4609-856a-d9943f58b190",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_MockBattle_MouseOverSelector",
+    "name": "object_BlankMenuBackground",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "f89fdc32-017e-45fd-ac73-71eb55894d23",
     "visible": true
 }

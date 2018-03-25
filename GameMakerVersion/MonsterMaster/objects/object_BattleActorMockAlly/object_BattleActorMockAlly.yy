@@ -2,7 +2,7 @@
     "id": "04040995-6b95-45ee-b402-2e6ddd4eeb6d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "BattleActorMockAlly",
+    "name": "object_BattleActorMockAlly",
     "eventList": [
         
     ],
@@ -38,7 +38,7 @@
             "mvc": "1.0",
             "objectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",
             "propertyId": "6c3e6564-91dc-4ca7-8597-c7618cddc749",
-            "value": "100"
+            "value": "10"
         },
         {
             "id": "b1a2e422-8407-48f6-be61-af7895c60eef",
@@ -46,7 +46,7 @@
             "mvc": "1.0",
             "objectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",
             "propertyId": "9b94a107-8c1d-473a-a132-8087d4e8aba5",
-            "value": "100"
+            "value": "10"
         },
         {
             "id": "79c0eb49-4980-45fb-a8e7-89aeb06da274",

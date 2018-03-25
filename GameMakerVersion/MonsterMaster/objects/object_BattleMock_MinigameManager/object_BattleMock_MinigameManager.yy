@@ -1,58 +1,38 @@
 {
-    "id": "38bb68ae-8b06-4d21-b952-e2a33595971c",
+    "id": "23313ccb-dd45-4618-8599-5e6cb611e833",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Interface_MockBattleActor",
+    "name": "object_BattleMock_MinigameManager",
     "eventList": [
         {
-            "id": "ee015b6d-fc2e-41dd-a8d6-331573de403b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "38bb68ae-8b06-4d21-b952-e2a33595971c"
-        },
-        {
-            "id": "6e88587e-eb87-4aa1-90ff-5b430b33ecc3",
+            "id": "d8cb0d3e-7cb0-4566-9866-7832efccac2c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "38bb68ae-8b06-4d21-b952-e2a33595971c"
+            "m_owner": "23313ccb-dd45-4618-8599-5e6cb611e833"
         },
         {
-            "id": "30e72c24-50d1-47a5-818e-bcdf38fd24b1",
+            "id": "4c6b300c-1d69-4403-82b1-a566e3f90409",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 6,
-            "m_owner": "38bb68ae-8b06-4d21-b952-e2a33595971c"
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "23313ccb-dd45-4618-8599-5e6cb611e833"
         },
         {
-            "id": "6ffef6bc-c6ed-40c3-8392-53e7e7ed4251",
+            "id": "9f894874-e74b-4c80-a349-99720f9ef597",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
-            "eventtype": 6,
-            "m_owner": "38bb68ae-8b06-4d21-b952-e2a33595971c"
-        },
-        {
-            "id": "1d430ac6-cf54-40a5-ab6f-3f4492fd2671",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 6,
-            "m_owner": "38bb68ae-8b06-4d21-b952-e2a33595971c"
+            "enumb": 68,
+            "eventtype": 9,
+            "m_owner": "23313ccb-dd45-4618-8599-5e6cb611e833"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -73,7 +53,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "97cb38e0-cf4f-4727-8df0-4fe3327ce535",
+            "id": "6e4cef51-f134-4b47-a738-4406b92f20d9",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -82,12 +62,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "subelement_Pyro",
-            "varName": "m_subElement",
+            "value": "object_BattleActorMockAlly",
+            "varName": "MockBattleAlly1",
             "varType": 5
         },
         {
-            "id": "4355b4ef-d589-45c8-a713-66be7b037530",
+            "id": "84682dbb-8f5b-4a1b-9937-6bb12bdeb166",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -96,12 +76,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "80",
-            "varName": "m_healthCur",
-            "varType": 0
+            "value": "object_BattleActorMockAlly1",
+            "varName": "MockBattleAlly2",
+            "varType": 5
         },
         {
-            "id": "fe509b6a-ed8f-436a-b547-633475d56e2f",
+            "id": "b333092a-1162-41ab-94a0-f6f8b4bbcaeb",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -110,12 +90,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
-            "varName": "m_healthMax",
-            "varType": 0
+            "value": "object_BattleActorMockAlly2",
+            "varName": "MockBattleAlly3",
+            "varType": 5
         },
         {
-            "id": "6c3e6564-91dc-4ca7-8597-c7618cddc749",
+            "id": "51c86679-6fbb-4e2c-b62f-be6a0c22a773",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -124,12 +104,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
-            "varName": "m_magicCur",
-            "varType": 0
+            "value": "object_BattleActorMockAlly3",
+            "varName": "MockBattleAlly4",
+            "varType": 5
         },
         {
-            "id": "9b94a107-8c1d-473a-a132-8087d4e8aba5",
+            "id": "ea19c6cd-437e-407b-8189-d17ec9869d69",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -138,12 +118,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
-            "varName": "m_magicMax",
-            "varType": 0
+            "value": "object_MockEnemyLeader",
+            "varName": "MockBattleEnemy1",
+            "varType": 5
         },
         {
-            "id": "d62c5ec2-7e41-4995-a425-83370aa10a0b",
+            "id": "9881346a-fdfc-4245-b245-613f6878e2f8",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -152,65 +132,51 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "m_positionOnBattle",
+            "value": "object_MockEnemy2",
+            "varName": "MockBattleEnemy2",
+            "varType": 5
+        },
+        {
+            "id": "13fffedb-7120-43ea-9866-6e3a76511da5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "object_MockEnemy3",
+            "varName": "MockBattleEnemy3",
+            "varType": 5
+        },
+        {
+            "id": "edb0a9ac-9fa8-4af3-ba20-77ea38e6cf58",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "object_MockEnemy4",
+            "varName": "MockBattleEnemy4",
+            "varType": 5
+        },
+        {
+            "id": "cff930f5-f31f-4aba-8795-0f6abba6cff5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "12",
+            "varName": "m_clickPower",
             "varType": 1
-        },
-        {
-            "id": "744b83c8-99b0-45bf-bc72-37e28168be9d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "false",
-            "varName": "m_isAlly",
-            "varType": 3
-        },
-        {
-            "id": "136eaf18-b613-4e12-a570-192823e5cf12",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "sprite_Status_HealthBar",
-            "varName": "m_HealthBar",
-            "varType": 5
-        },
-        {
-            "id": "49b37593-af0e-4dda-9ef6-8bbfd329164a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "sprite_Status_ManaBar",
-            "varName": "m_MagicBar",
-            "varType": 5
-        },
-        {
-            "id": "998984b4-c171-4103-9c92-936e78dcf691",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "false",
-            "varName": "m_isSelected",
-            "varType": 3
         }
     ],
     "solid": false,

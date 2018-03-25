@@ -23,6 +23,14 @@
             "objectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",
             "propertyId": "97cb38e0-cf4f-4727-8df0-4fe3327ce535",
             "value": "subelement_Dino"
+        },
+        {
+            "id": "cc2ea056-787f-4e16-872b-038ffb37b551",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",
+            "propertyId": "4355b4ef-d589-45c8-a713-66be7b037530",
+            "value": "30"
         }
     ],
     "parentObjectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",
