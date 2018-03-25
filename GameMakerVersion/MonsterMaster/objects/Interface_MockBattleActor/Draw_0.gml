@@ -35,5 +35,6 @@ else
 
 //actually draw the status Bar
 
-draw_sprite(m_HealthBar,-1,statusBarx,statusBary);
-draw_sprite(m_HealthBar,-1,statusBarx,statusBary);
+draw_sprite(m_HealthBar,sprite_index,statusBary,statusBarx);
+draw_sprite(m_MagicBar,sprite_index,statusBary,statusBarx);
+draw_sprite(m_subElement.m_32bitSprite,sprite_index,statusBary+2,statusBarx);

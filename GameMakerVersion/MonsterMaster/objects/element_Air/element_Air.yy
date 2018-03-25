@@ -23,10 +23,26 @@
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
             "value": "\"Rash and impulsive, air elementals are known for their extroversion and tendency toward adventure \""
+        },
+        {
+            "id": "c1d4ec77-27cb-4c3f-b49e-c67521488aca",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
+            "propertyId": "63df77ba-763c-43c4-8de3-094465cc2cae",
+            "value": "sprite_AirSymbol"
+        },
+        {
+            "id": "4496117d-6384-4db1-897b-726054c7893a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
+            "propertyId": "068d96e3-35e4-40b5-b26a-466c27aefefe",
+            "value": "sprite_AeroSymbol32"
         }
     ],
     "parentObjectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -41,6 +57,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "8252b521-f56d-4092-a7d9-701be61ead71",
+    "spriteId": "77fe03b4-1e28-4f94-9b35-79b97028e6f2",
     "visible": true
 }

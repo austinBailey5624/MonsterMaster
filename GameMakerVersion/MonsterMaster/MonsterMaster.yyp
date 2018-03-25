@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "2af32e8c-f3aa-4f46-9538-5f9cc085cbef",
+            "Value": {
+                "id": "efaaa562-f114-4e67-b0c0-063eb3d58d52",
+                "resourcePath": "objects\\object_MockBattle_MouseOverSelector\\object_MockBattle_MouseOverSelector.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2b136077-061e-4399-be36-37fb20c43e21",
             "Value": {
                 "id": "7cfbd203-7c09-4e87-b43c-27125a6eead3",

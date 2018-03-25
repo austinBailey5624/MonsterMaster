@@ -157,6 +157,20 @@
             "value": "sprite_Status_ManaBar",
             "varName": "m_MagicBar",
             "varType": 5
+        },
+        {
+            "id": "998984b4-c171-4103-9c92-936e78dcf691",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "false",
+            "varName": "m_isSelected",
+            "varType": 3
         }
     ],
     "solid": false,

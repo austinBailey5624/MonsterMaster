@@ -15,6 +15,22 @@
             "objectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",
             "propertyId": "97cb38e0-cf4f-4727-8df0-4fe3327ce535",
             "value": "subelement_Dino"
+        },
+        {
+            "id": "c5f46f5f-d36b-4225-b5d7-1a8c5b0b894f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",
+            "propertyId": "d62c5ec2-7e41-4995-a425-83370aa10a0b",
+            "value": "2"
+        },
+        {
+            "id": "e6b78368-41aa-4354-861f-89f18a7fe52e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",
+            "propertyId": "744b83c8-99b0-45bf-bc72-37e28168be9d",
+            "value": "True"
         }
     ],
     "parentObjectId": "38bb68ae-8b06-4d21-b952-e2a33595971c",

@@ -8,7 +8,8 @@
         "ec6ac7d3-463d-4d31-9551-099e9f25df7f",
         "38bb68ae-8b06-4d21-b952-e2a33595971c",
         "9c9589b2-9197-40ad-9d7a-1f44e9742a25",
-        "3904fdcc-fe69-4c4e-8c9b-cf6f86ffe797"
+        "3904fdcc-fe69-4c4e-8c9b-cf6f86ffe797",
+        "2af32e8c-f3aa-4f46-9538-5f9cc085cbef"
     ],
     "filterType": "GMObject",
     "folderName": "BattleMockUpObjects",

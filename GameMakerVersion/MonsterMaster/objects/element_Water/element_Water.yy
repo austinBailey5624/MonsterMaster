@@ -32,10 +32,26 @@
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
             "value": "Guided by calm and thoughtful response, water elementals are known for their wisdom and affinity for magic.\""
+        },
+        {
+            "id": "8c0b970b-e4ae-4285-b2f7-8fcb105425fd",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
+            "propertyId": "63df77ba-763c-43c4-8de3-094465cc2cae",
+            "value": "sprite_WaterSymbol"
+        },
+        {
+            "id": "9667e2ae-6a85-4d46-a5a6-17bd1b632c6e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
+            "propertyId": "068d96e3-35e4-40b5-b26a-466c27aefefe",
+            "value": "sprite_AquaSymbol32"
         }
     ],
     "parentObjectId": "9d925569-d6f5-4221-90cf-74b76ee9dd87",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -50,6 +66,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "437f950c-952d-472a-82b0-65c1fbb85cb2",
+    "spriteId": "18f3ba61-ca1e-46af-aebb-59c9086a08aa",
     "visible": true
 }
