@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "object_BlankTextBox",
     "eventList": [
-        
+        {
+            "id": "54ed507a-ef60-4b33-ba50-ea8dc57d54be",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 6,
+            "m_owner": "6b624eea-c5f8-476d-b2ca-711e76879afe"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -42,9 +42,9 @@ if(enemiesAlive<=0)
 	room_goto(room_BattleMockVIctory);
 }
 m_clickPower=alliesAlive*3;
-var difficulty = 100;
+var difficulty = 200;
 var AllyDam=difficulty*(enemiesAlive/alliesAlive)/fps_real;
-var EnemyHeal=difficulty*enemiesAlive/fps_real
+var EnemyHeal=difficulty*enemiesAlive/fps_real;
 
 if(MockBattleAlly1.m_healthCur>0)
 {
@@ -78,7 +78,7 @@ if(MockBattleEnemy4.m_healthCur>0)
 {
 	MockBattleEnemy4.m_healthCur+=EnemyHeal;
 }
-keyboard_check(vk_return)
-{
-	show_message(string(enemiesAlive));
-}
+//keyboard_check(vk_return)
+//{
+//	show_message(string(enemiesAlive));
+//}

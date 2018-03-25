@@ -1,18 +1,18 @@
 {
-    "id": "6e63b357-a60b-42dc-8fc2-ec398f93a431",
+    "id": "9a5b07e4-0fbb-4047-87f9-e55dc50f3cd1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_VictoryMessageTextBox",
+    "name": "object_MiniGameWriter",
     "eventList": [
         {
-            "id": "be3468db-7344-4d78-a0d1-1aa2c18f7a70",
+            "id": "7ada6068-d317-45c4-a18a-00f1d6de5669",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "6e63b357-a60b-42dc-8fc2-ec398f93a431"
+            "m_owner": "9a5b07e4-0fbb-4047-87f9-e55dc50f3cd1"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "dcca8775-9061-4cb5-9a92-c6ce8138b03d",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

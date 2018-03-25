@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "07e68718-92d7-44a4-9d2c-56746b855d46",
-            "value": "noone"
+            "value": "room_BattleMock"
         },
         {
             "id": "834577c9-96c9-4b67-90a6-d3b24f9de52f",

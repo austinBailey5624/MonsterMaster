@@ -37,6 +37,14 @@ else
 if(m_isSelected)
 {
 	draw_self();
+	if(m_healthCur<0)
+	{
+		m_healthCur=0;
+	}
+	if(m_magicCur<0)
+	{
+		m_magicCur=0;
+	}
 	if(m_isAlly)
 	{
 		//show_message(script_GetStatusBarSpriteIndex(m_healthCur,m_healthMax));
@@ -51,8 +59,8 @@ if(m_isSelected)
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
 		draw_set_font(Arial_32);
-		draw_text(432,82,string(m_healthCur)+" / "+string(m_healthMax));
-		draw_text(432,146,string(m_magicCur)+" / "+string(m_magicMax));
+		draw_text(432,82,string(ceil(m_healthCur))+" / "+string(m_healthMax));
+		draw_text(432,146,string(ceil(m_magicCur))+" / "+string(m_magicMax));
 		return;
 	}
 	else
@@ -64,8 +72,8 @@ if(m_isSelected)
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
 		draw_set_font(Arial_32);
-		draw_text(432,728,string(m_healthCur)+" / "+string(m_healthMax));
-		draw_text(432,808,string(m_magicCur)+" / "+string(m_magicMax));
+		draw_text(432,728,string(ceil(m_healthCur))+" / "+string(m_healthMax));
+		draw_text(432,808,string(ceil(m_magicCur))+" / "+string(m_magicMax));
 		return;
 	}
 }

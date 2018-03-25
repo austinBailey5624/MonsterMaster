@@ -1,3 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
-room_goto(MainMenu);
+/// @description TransitionBackToMainMenu
+//Place time buffer so as not to skip through victory
+//if(m_clock>100)
+//{
+//	room_goto(MainMenu);
+//}

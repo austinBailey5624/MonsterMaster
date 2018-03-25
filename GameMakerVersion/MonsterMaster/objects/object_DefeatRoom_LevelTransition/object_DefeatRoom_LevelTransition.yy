@@ -1,18 +1,28 @@
 {
-    "id": "6e63b357-a60b-42dc-8fc2-ec398f93a431",
+    "id": "3605c895-6168-4104-ab9e-7501f9cbde7e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_VictoryMessageTextBox",
+    "name": "object_DefeatRoom_LevelTransition",
     "eventList": [
         {
-            "id": "be3468db-7344-4d78-a0d1-1aa2c18f7a70",
+            "id": "dd637c1e-bf5b-4d64-b6ee-fe5878f580c1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "3605c895-6168-4104-ab9e-7501f9cbde7e"
+        },
+        {
+            "id": "4f48bd9f-78a9-480c-9649-784bd683f08a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "6e63b357-a60b-42dc-8fc2-ec398f93a431"
+            "m_owner": "3605c895-6168-4104-ab9e-7501f9cbde7e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "dcca8775-9061-4cb5-9a92-c6ce8138b03d",
+    "spriteId": "f89fdc32-017e-45fd-ac73-71eb55894d23",
     "visible": true
 }

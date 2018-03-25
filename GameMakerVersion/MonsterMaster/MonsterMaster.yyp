@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "09f2980f-54e5-430d-bf1f-5a64885ee49e",
+            "Value": {
+                "id": "532c1c61-bd5f-4df5-8874-568689c82e79",
+                "resourcePath": "rooms\\room_MiniGameRules\\room_MiniGameRules.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "09fcaa48-1d06-40d6-8c5f-e8fa606ea205",
             "Value": {
                 "id": "0c39c0ef-478c-446f-92f8-b0ba73c21511",
@@ -1364,6 +1372,14 @@
                 "id": "f7a67c9b-d4da-4d23-9551-c74e59d3f241",
                 "resourcePath": "sprites\\sprite_DragonscaleBracers\\sprite_DragonscaleBracers.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3605c895-6168-4104-ab9e-7501f9cbde7e",
+            "Value": {
+                "id": "948011b1-e7cf-4e18-81b7-7300c47c270c",
+                "resourcePath": "objects\\object_DefeatRoom_LevelTransition\\object_DefeatRoom_LevelTransition.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2655,6 +2671,14 @@
             }
         },
         {
+            "Key": "5c6515eb-0531-4a9b-81fa-2f4b6f068b19",
+            "Value": {
+                "id": "ffeec1e7-71ea-4785-aed9-e5b341b6c42d",
+                "resourcePath": "objects\\object_BlankBackground\\object_BlankBackground.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5c982f0d-7ef0-483f-b537-ca3f25dd89a2",
             "Value": {
                 "id": "ae7b60e9-65c2-4039-9910-f00090e7b734",
@@ -2804,6 +2828,14 @@
                 "id": "6d154caa-d993-4b60-85b6-d73c46029c28",
                 "resourcePath": "sprites\\sprite_Cirrus_Backwards\\sprite_Cirrus_Backwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "615984bf-2b6b-4733-ae42-7d3ff596d2b3",
+            "Value": {
+                "id": "5661b06a-e53e-4f03-83bb-ad66aa589720",
+                "resourcePath": "views\\615984bf-2b6b-4733-ae42-7d3ff596d2b3.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3311,6 +3343,14 @@
             }
         },
         {
+            "Key": "75759a41-9625-43dc-b9f1-3c149e317414",
+            "Value": {
+                "id": "d1b01b50-db9b-421e-bfe5-3fc5c124ee8e",
+                "resourcePath": "objects\\object_MiniGameWriter_LevelTransition\\object_MiniGameWriter_LevelTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "757964b1-deec-4bb4-9fd1-95ec1f0e544e",
             "Value": {
                 "id": "b1ebb1c9-ce85-4373-89d9-02fe9c6eb07b",
@@ -3412,6 +3452,14 @@
                 "id": "c72fa033-bb31-48a6-a09f-5ed5db14e274",
                 "resourcePath": "sprites\\sprite_AeroSymbol32\\sprite_AeroSymbol32.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "781963c9-9e0c-4a14-96b2-2316cbea9ed0",
+            "Value": {
+                "id": "32102e7d-ad9d-4d3d-9a82-faafe02f821b",
+                "resourcePath": "objects\\object_DefeatMessageWriter\\object_DefeatMessageWriter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4295,6 +4343,14 @@
             }
         },
         {
+            "Key": "9759aa59-d9cd-46c4-85ae-4bf184137ae3",
+            "Value": {
+                "id": "0399d9c9-486b-430e-bec5-5794ea70a6ec",
+                "resourcePath": "objects\\object_MockVictoryRoom_LevelTransition\\object_MockVictoryRoom_LevelTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9858882f-c627-450f-a27e-c61c2a12b08f",
             "Value": {
                 "id": "c4263f5d-c19b-4cc6-adec-11859a4e934c",
@@ -4356,6 +4412,14 @@
                 "id": "3d524170-8ddb-4222-b008-a381d565251a",
                 "resourcePath": "sprites\\sprite_DemonSymbol32\\sprite_DemonSymbol32.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9a5b07e4-0fbb-4047-87f9-e55dc50f3cd1",
+            "Value": {
+                "id": "0ba7f153-befd-4ec6-9e81-1b7744d9dd62",
+                "resourcePath": "objects\\object_MiniGameWriter\\object_MiniGameWriter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4532,6 +4596,14 @@
                 "id": "bcabc7ce-8060-43d9-8ace-f5a43dc46e0c",
                 "resourcePath": "sprites\\sprite_FireEagle_Backwards\\sprite_FireEagle_Backwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9fe89d9d-da1e-4065-9ec6-9df5e227aef6",
+            "Value": {
+                "id": "b9a8bddd-86d3-486e-929c-ea52fb7675b3",
+                "resourcePath": "views\\9fe89d9d-da1e-4065-9ec6-9df5e227aef6.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5391,6 +5463,14 @@
             }
         },
         {
+            "Key": "c02fafaa-c84d-4b21-aefe-c531bdfdab1b",
+            "Value": {
+                "id": "83739ece-9d73-4289-bbf8-a9612d608a32",
+                "resourcePath": "views\\c02fafaa-c84d-4b21-aefe-c531bdfdab1b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c0602872-278d-4281-a529-407917f219ab",
             "Value": {
                 "id": "4d8384e5-219d-405a-a416-117302528669",
@@ -5460,6 +5540,14 @@
                 "id": "724357b0-ba60-4f4e-a610-e19833a13f5d",
                 "resourcePath": "sprites\\sprite_FireOpal_Backwards\\sprite_FireOpal_Backwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c20e8b5c-fcc4-4c37-96c3-6924a4fc47bf",
+            "Value": {
+                "id": "e834e524-8cc6-420f-a256-fd663f22b09f",
+                "resourcePath": "fonts\\Arial_96\\Arial_96.yy",
+                "resourceType": "GMFont"
             }
         },
         {

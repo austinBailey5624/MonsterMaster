@@ -1,18 +1,18 @@
 {
-    "id": "6e63b357-a60b-42dc-8fc2-ec398f93a431",
+    "id": "781963c9-9e0c-4a14-96b2-2316cbea9ed0",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_VictoryMessageTextBox",
+    "name": "object_DefeatMessageWriter",
     "eventList": [
         {
-            "id": "be3468db-7344-4d78-a0d1-1aa2c18f7a70",
+            "id": "3c3be006-d504-4833-a51a-7c14b2786d3a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "6e63b357-a60b-42dc-8fc2-ec398f93a431"
+            "m_owner": "781963c9-9e0c-4a14-96b2-2316cbea9ed0"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "dcca8775-9061-4cb5-9a92-c6ce8138b03d",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
