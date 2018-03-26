@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "0808fd28-fa1f-4cb6-94d0-7f0d51febe82",
+            "Value": {
+                "id": "3f5a7533-be58-40d6-ab80-aeada29ad3aa",
+                "resourcePath": "views\\0808fd28-fa1f-4cb6-94d0-7f0d51febe82.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "082aacf4-e064-4752-be8c-e4399eed6d46",
             "Value": {
                 "id": "4850843a-a326-4320-8b99-132c0fed5437",
@@ -475,6 +483,14 @@
             "Value": {
                 "id": "596072c2-5391-41b5-9075-2ec837639ee0",
                 "resourcePath": "views\\111b7a0f-5530-4253-9e65-ab5462ee21cc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "11a305c4-984c-4bd3-8b77-b5919fabd182",
+            "Value": {
+                "id": "5daf7b90-3fa0-4e68-9961-102785aefc4b",
+                "resourcePath": "views\\11a305c4-984c-4bd3-8b77-b5919fabd182.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1087,6 +1103,14 @@
             }
         },
         {
+            "Key": "2b0250d4-3ef5-4883-bd29-5ebe5034783a",
+            "Value": {
+                "id": "2da46b75-185a-44f1-b04b-c9e96efe0bb8",
+                "resourcePath": "views\\2b0250d4-3ef5-4883-bd29-5ebe5034783a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2b136077-061e-4399-be36-37fb20c43e21",
             "Value": {
                 "id": "7cfbd203-7c09-4e87-b43c-27125a6eead3",
@@ -1580,6 +1604,14 @@
                 "id": "b1f03d8f-523b-4853-8245-d8916cf74c2a",
                 "resourcePath": "sprites\\sprite_Flarial_Backwards\\sprite_Flarial_Backwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3b07d7fa-b098-45d6-a823-ee5d15087687",
+            "Value": {
+                "id": "3bb7128a-118e-4d70-9933-98ae03648df3",
+                "resourcePath": "rooms\\room_PauseMenu_Base\\room_PauseMenu_Base.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -3695,6 +3727,14 @@
             }
         },
         {
+            "Key": "8094178d-f721-4e3d-9fe8-45ea7cfa650a",
+            "Value": {
+                "id": "98f2f569-d170-4629-b618-fba56b1e40ea",
+                "resourcePath": "views\\8094178d-f721-4e3d-9fe8-45ea7cfa650a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "80c61477-4a71-4171-a0ec-00c0524f9576",
             "Value": {
                 "id": "7666ff92-9c61-4b2f-8dd5-be8c59cdac63",
@@ -3724,6 +3764,14 @@
                 "id": "b43a15aa-5fb8-4acd-84dc-3c8c946c1c9b",
                 "resourcePath": "objects\\object_MusicStore_BackButton\\object_MusicStore_BackButton.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "82374d99-771b-455d-84a0-cc9b3ebeaa3d",
+            "Value": {
+                "id": "e07313ba-7f6b-4f0a-807c-a3dff85742c7",
+                "resourcePath": "sprites\\sprite_FSPauseMenu_Background\\sprite_FSPauseMenu_Background.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4935,6 +4983,14 @@
             }
         },
         {
+            "Key": "aabe15ea-8769-48f4-ac90-09fc6012d79f",
+            "Value": {
+                "id": "4ef0107f-da9a-4f7a-8214-c6a455be1281",
+                "resourcePath": "objects\\object_FSPauseMenuButton_Title\\object_FSPauseMenuButton_Title.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ab067f73-23b8-463e-89a9-e15704265ba0",
             "Value": {
                 "id": "90aab48f-35b3-4a03-a124-0b8f021a0626",
@@ -5076,6 +5132,14 @@
                 "id": "ca0ceffb-d459-4b11-86d9-00af893e8298",
                 "resourcePath": "sprites\\sprite_SteelChainmail\\sprite_SteelChainmail.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b14fa336-24e3-4081-9778-2ecfc24a3748",
+            "Value": {
+                "id": "30ccfc3d-c0d0-4c30-b725-b47867e8f735",
+                "resourcePath": "views\\b14fa336-24e3-4081-9778-2ecfc24a3748.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5239,6 +5303,14 @@
             }
         },
         {
+            "Key": "b7b6ed14-5807-4e30-a609-43bcac4318ce",
+            "Value": {
+                "id": "ba3506a7-281d-4fce-a0e1-cc2a75941cd7",
+                "resourcePath": "objects\\Interface_FSPauseMenuButton\\Interface_FSPauseMenuButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b81e1160-2571-4fd8-b25a-0069eca3d9c6",
             "Value": {
                 "id": "4aae2d75-4d84-49c6-859e-ca972346a636",
@@ -5331,6 +5403,14 @@
             "Value": {
                 "id": "49c93816-e561-4db5-852f-31fc64473a9d",
                 "resourcePath": "sprites\\sprite_LuxorSymbol32\\sprite_LuxorSymbol32.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bb8027ab-ccbd-4d88-a9fb-56efb4a24880",
+            "Value": {
+                "id": "a8412a2f-ff30-4f35-816b-6518f1b2bed0",
+                "resourcePath": "sprites\\sprite_FSPauseMenu_ButtonMouseOver\\sprite_FSPauseMenu_ButtonMouseOver.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6631,6 +6711,14 @@
             }
         },
         {
+            "Key": "e5a06a15-bd80-43d4-b9f2-7fa725a7d174",
+            "Value": {
+                "id": "a9f9c909-d2a2-4792-a12e-5582580e3f1b",
+                "resourcePath": "objects\\object_FSPauseMenuButton_Back\\object_FSPauseMenuButton_Back.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e5d6cd0d-2493-40af-ba89-50ab4d37e0c9",
             "Value": {
                 "id": "6dd20a89-ed7e-4bb5-baa7-05043d451f5b",
@@ -6716,6 +6804,14 @@
                 "id": "ed901abe-0c48-4531-b794-29a6cbc58227",
                 "resourcePath": "sprites\\sprite_LavaSymbol32\\sprite_LavaSymbol32.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eab94668-9623-4acf-a978-d67e9b3659cd",
+            "Value": {
+                "id": "55e49e36-9bcb-475e-aef4-bc9c324727c1",
+                "resourcePath": "objects\\object_FSPauseMenuButton_Encyclopedia\\object_FSPauseMenuButton_Encyclopedia.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7324,6 +7420,14 @@
                 "id": "52169758-9ee3-4986-99ed-cd8c258bbd8b",
                 "resourcePath": "fonts\\Arial_8\\Arial_8.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "ff3146fb-f98c-4f10-8cae-59c79ead0f50",
+            "Value": {
+                "id": "a6e50e66-9dc7-4e2c-9ce3-f33c35c5fd9c",
+                "resourcePath": "sprites\\sprite_FSPauseMenu_ButtonDefault\\sprite_FSPauseMenu_ButtonDefault.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

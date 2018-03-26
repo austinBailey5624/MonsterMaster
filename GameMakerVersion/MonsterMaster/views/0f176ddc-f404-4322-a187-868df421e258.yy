@@ -12,7 +12,7 @@
         "c2274c17-3930-4fad-a237-f8ec53655b43"
     ],
     "filterType": "GMObject",
-    "folderName": "PauseMenuObjects",
+    "folderName": "OldPauseMenuObjects",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
