@@ -1,4 +1,3 @@
-
 # MonsterMaster
 ## Overview
 MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed by Austin Bailey and whoever wants to join him
@@ -13,6 +12,12 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 8. **Monster evolution isn't linear.** How you use the monster will determine how it evolves-usually. A monster that attacks physically will have a different evolution than if that same monster used only magical attacks.
 9. **Monsters are Expensive** There is no infinite box to hold the monsters, keeping them costs money - higher for stronger evolutions/generations. You cant simply catch all of them, because you probably cant afford it-unless you own the world.
   
+## Why is it so pixelated?
+
+Because I'm one guy and I have a lot of ideas that I want to try out and incorporate into the game- I'd rather have a bunch of super
+pixelated characters mucking about than a few really pretty characters with a very limited scope. In short, I prefer breath do depth
+(in graphics at least).
+
   
 ## Gameplay 
 

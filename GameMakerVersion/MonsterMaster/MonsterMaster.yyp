@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "0471761f-135d-4071-bb3a-13c93ee8fadd",
+            "Value": {
+                "id": "eb29a314-899f-4b5e-999b-f1ac9d6eb649",
+                "resourcePath": "fonts\\GWScript_24\\GWScript_24.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "04734a9f-0811-4c82-8c9e-6228e6d1c53b",
             "Value": {
                 "id": "a11ff85e-65c2-4d4e-b674-ea1db9797741",
@@ -711,6 +719,14 @@
             }
         },
         {
+            "Key": "1aa98dff-74dc-4552-85f3-4f61ab31c6ca",
+            "Value": {
+                "id": "9fa1c555-2439-4c25-aed3-cacbb471c580",
+                "resourcePath": "datafiles_yy\\min font readme.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "1ad149b0-7334-4340-8abd-ac4e1b6b6e20",
             "Value": {
                 "id": "2f27d655-fdb6-4639-8f8d-2a3ccd34f103",
@@ -1244,6 +1260,14 @@
                 "id": "7ae743b2-243e-4e15-b106-a40e9c44162f",
                 "resourcePath": "objects\\object_GetNameMenu_Writer\\object_GetNameMenu_Writer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "30207be1-2ce0-474c-beaf-f612ebb376f8",
+            "Value": {
+                "id": "e914c418-0197-428f-a537-1d3e3294a71a",
+                "resourcePath": "datafiles_yy\\careless-script.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -2591,6 +2615,14 @@
             }
         },
         {
+            "Key": "5938020f-14e1-483b-8ad1-59988f592cce",
+            "Value": {
+                "id": "5de07a43-5d0e-4106-b456-7ee547e7b4eb",
+                "resourcePath": "datafiles_yy\\min.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "59541842-c655-453b-b94f-bae3cb466ac8",
             "Value": {
                 "id": "dd1f05cc-065f-4f01-8575-56754f4860fe",
@@ -2732,6 +2764,14 @@
                 "id": "3a443126-57c9-4b8e-b39f-523bcdb4799f",
                 "resourcePath": "objects\\object_MainMenu_NewGameButton\\object_MainMenu_NewGameButton.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5d513fb2-8e28-4a10-b2b6-328b2856025f",
+            "Value": {
+                "id": "03b69032-3c90-4f0a-9c91-3f362c4c4ba0",
+                "resourcePath": "extensions\\extension_Font\\extension_Font.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -3140,6 +3180,14 @@
                 "id": "6e0eadd7-543a-4410-b66d-280be23075ad",
                 "resourcePath": "sprites\\sprite_OakLongbow\\sprite_OakLongbow.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6be91c5a-fabb-43ed-849d-c37421ad8ff1",
+            "Value": {
+                "id": "8b8b6435-4f5f-46cf-8dae-30788817e418",
+                "resourcePath": "datafiles_yy\\submin.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -4751,6 +4799,14 @@
             }
         },
         {
+            "Key": "a1e87086-0062-45b2-8543-fd4ee1b44494",
+            "Value": {
+                "id": "fbf02a45-8a73-45f5-b4b1-1396ad81dcba",
+                "resourcePath": "datafiles_yy\\GWolfScript9by5.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "a256e206-5d13-4941-8303-5c82193a97da",
             "Value": {
                 "id": "b4554de1-128e-4f15-ba66-747e304a37f9",
@@ -5951,6 +6007,14 @@
             }
         },
         {
+            "Key": "cd8b98be-5246-4143-8f17-7219ebc01331",
+            "Value": {
+                "id": "6d83dd6a-8757-4421-9fb4-962a1c50abf9",
+                "resourcePath": "extensions\\min_font\\min_font.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "cdd8c72c-6f37-47f6-b1a3-2f201a10fead",
             "Value": {
                 "id": "d60bc0a3-fb54-4bd5-bd45-21b4529d98b4",
@@ -6167,6 +6231,14 @@
             }
         },
         {
+            "Key": "d59908db-afb9-4cde-9a83-ad63b3ede177",
+            "Value": {
+                "id": "f3da9b97-0d30-4488-9938-80ea21f20d5c",
+                "resourcePath": "fonts\\GWScript_12\\GWScript_12.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "d5b09f40-9f4d-4626-928f-43aac380a963",
             "Value": {
                 "id": "fc1dfcf3-d49b-4db7-ac65-8fae0f67c8ec",
@@ -6292,6 +6364,14 @@
                 "id": "cdab7bce-0d14-4a6a-8ff2-b0e038f023ea",
                 "resourcePath": "sprites\\sprite_Flarial_Left\\sprite_Flarial_Left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d9866f17-dcb3-426a-9f61-5c621b97a158",
+            "Value": {
+                "id": "c2b80f8d-daf8-4830-adce-0058c121efcd",
+                "resourcePath": "datafiles_yy\\orthogonal.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -6772,6 +6852,14 @@
                 "id": "4c2abdc6-fe35-4dd3-8262-71b6ad1bc056",
                 "resourcePath": "sprites\\sprite_Flarpup_Left\\sprite_Flarpup_Left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e92993a1-a37d-4d93-9781-ff37163bcd4d",
+            "Value": {
+                "id": "59bb7f3e-ab2b-42a6-bb91-1d2780808e66",
+                "resourcePath": "fonts\\GWScript_36\\GWScript_36.yy",
+                "resourceType": "GMFont"
             }
         },
         {
