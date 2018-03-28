@@ -52,8 +52,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "\"What is your name?\"",
-            "varName": "m_Text",
+            "value": "\"What is Your Name?\"",
+            "varName": "m_text",
             "varType": 2
         }
     ],

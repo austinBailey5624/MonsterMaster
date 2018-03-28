@@ -1,20 +1,20 @@
 {
-    "id": "19364fc7-a9f2-4f88-873d-16a047684083",
+    "id": "2aeb9d0e-f3cb-4dc1-8106-48c81f48155d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_FSPauseMenuButton_Encyclopedia",
+    "name": "object_FSPauseMenuButton_SaveLoad",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "e1f06127-5d27-4246-b806-e20f8f6bd324",
+            "id": "301a52c4-2301-4f21-98da-1717baa72335",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",
             "propertyId": "753d9973-2248-485f-8fe4-bfa7364ad03a",
-            "value": "\"Encyclopedia\""
+            "value": "\"Save\/Load\""
         }
     ],
     "parentObjectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",

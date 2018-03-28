@@ -1,20 +1,20 @@
 {
-    "id": "19364fc7-a9f2-4f88-873d-16a047684083",
+    "id": "fc1b59d8-204c-4782-9e6c-4915a2d44844",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_FSPauseMenuButton_Encyclopedia",
+    "name": "object_FSPauseMenuButton_ViewMark",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "e1f06127-5d27-4246-b806-e20f8f6bd324",
+            "id": "5e954643-09e0-4e83-9eb3-1bb118c29ae9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",
             "propertyId": "753d9973-2248-485f-8fe4-bfa7364ad03a",
-            "value": "\"Encyclopedia\""
+            "value": "\"Mark\""
         }
     ],
     "parentObjectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",

@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "19364fc7-a9f2-4f88-873d-16a047684083",
+            "Value": {
+                "id": "95f7aae1-d525-4dc2-b511-81a3b513df3b",
+                "resourcePath": "objects\\object_FSPauseMenuButton_Encyclopedia\\object_FSPauseMenuButton_Encyclopedia.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "194633bb-dafe-40d6-b7d2-b4dfbcfadce1",
             "Value": {
                 "id": "ac438eb0-c216-4803-b53e-216f22b7dbeb",
@@ -716,14 +724,6 @@
                 "id": "1742e3cf-89cf-4e08-8e63-43c333e9574d",
                 "resourcePath": "sprites\\sprite_Brahm_Left\\sprite_Brahm_Left.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "1aa98dff-74dc-4552-85f3-4f61ab31c6ca",
-            "Value": {
-                "id": "9fa1c555-2439-4c25-aed3-cacbb471c580",
-                "resourcePath": "datafiles_yy\\min font readme.txt.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1071,6 +1071,14 @@
             }
         },
         {
+            "Key": "2913eec6-133b-4b6d-a154-aba894563524",
+            "Value": {
+                "id": "a42db1be-1c94-4bf5-bca3-7fec44d8a02e",
+                "resourcePath": "fonts\\GWScript_60\\GWScript_60.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2915116c-6c13-4108-9b9b-34a73b65550f",
             "Value": {
                 "id": "01dd08c3-8c42-4fe1-9e04-06e5cc21f777",
@@ -1116,6 +1124,22 @@
                 "id": "2236c3d4-e669-4257-9b38-52d961066759",
                 "resourcePath": "sprites\\sprite_OakTree_SmallHouse_3\\sprite_OakTree_SmallHouse_3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2a8c3e82-d935-4164-915f-3749ebdd899f",
+            "Value": {
+                "id": "10795549-97cb-47a1-a852-fcf43190864f",
+                "resourcePath": "fonts\\GWScript_96\\GWScript_96.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "2aeb9d0e-f3cb-4dc1-8106-48c81f48155d",
+            "Value": {
+                "id": "87f66fa6-c9c5-4519-94e5-80d6af3be7ea",
+                "resourcePath": "objects\\object_FSPauseMenuButton_SaveLoad\\object_FSPauseMenuButton_SaveLoad.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1260,14 +1284,6 @@
                 "id": "7ae743b2-243e-4e15-b106-a40e9c44162f",
                 "resourcePath": "objects\\object_GetNameMenu_Writer\\object_GetNameMenu_Writer.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "30207be1-2ce0-474c-beaf-f612ebb376f8",
-            "Value": {
-                "id": "e914c418-0197-428f-a537-1d3e3294a71a",
-                "resourcePath": "datafiles_yy\\careless-script.ttf.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -2615,14 +2631,6 @@
             }
         },
         {
-            "Key": "5938020f-14e1-483b-8ad1-59988f592cce",
-            "Value": {
-                "id": "5de07a43-5d0e-4106-b456-7ee547e7b4eb",
-                "resourcePath": "datafiles_yy\\min.ttf.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "59541842-c655-453b-b94f-bae3cb466ac8",
             "Value": {
                 "id": "dd1f05cc-065f-4f01-8575-56754f4860fe",
@@ -3180,14 +3188,6 @@
                 "id": "6e0eadd7-543a-4410-b66d-280be23075ad",
                 "resourcePath": "sprites\\sprite_OakLongbow\\sprite_OakLongbow.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "6be91c5a-fabb-43ed-849d-c37421ad8ff1",
-            "Value": {
-                "id": "8b8b6435-4f5f-46cf-8dae-30788817e418",
-                "resourcePath": "datafiles_yy\\submin.ttf.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -5015,6 +5015,14 @@
             }
         },
         {
+            "Key": "a95d07ab-c2a1-46d7-8824-9eb7a66b6624",
+            "Value": {
+                "id": "0116f7dc-2166-4bdc-ad53-803bbe9f3734",
+                "resourcePath": "objects\\object_FSPauseMenuButton_Options\\object_FSPauseMenuButton_Options.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a987c2d8-65b5-4980-9b4c-a814ebbf5150",
             "Value": {
                 "id": "da9ec0b4-eb83-4c09-a3f2-eb3fd9b7593f",
@@ -5036,14 +5044,6 @@
                 "id": "f2280f47-74b5-47d8-bf74-d6192cb090d7",
                 "resourcePath": "scripts\\script_GetStatusBarSpriteIndex\\script_GetStatusBarSpriteIndex.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "aabe15ea-8769-48f4-ac90-09fc6012d79f",
-            "Value": {
-                "id": "4ef0107f-da9a-4f7a-8214-c6a455be1281",
-                "resourcePath": "objects\\object_FSPauseMenuButton_Title\\object_FSPauseMenuButton_Title.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -5276,6 +5276,14 @@
                 "id": "2fc33086-ba2b-4e8c-8d62-343d76c54bdd",
                 "resourcePath": "sprites\\sprite_CrystalOrb\\sprite_CrystalOrb.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b420a657-96b0-4c2e-b0ef-e63d97fc7331",
+            "Value": {
+                "id": "3c5f1a22-3e0d-4f9b-ab16-2ef1c702e436",
+                "resourcePath": "objects\\object_FSPauseMenuButton_Inventory\\object_FSPauseMenuButton_Inventory.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -6007,14 +6015,6 @@
             }
         },
         {
-            "Key": "cd8b98be-5246-4143-8f17-7219ebc01331",
-            "Value": {
-                "id": "6d83dd6a-8757-4421-9fb4-962a1c50abf9",
-                "resourcePath": "extensions\\min_font\\min_font.yy",
-                "resourceType": "GMExtension"
-            }
-        },
-        {
             "Key": "cdd8c72c-6f37-47f6-b1a3-2f201a10fead",
             "Value": {
                 "id": "d60bc0a3-fb54-4bd5-bd45-21b4529d98b4",
@@ -6359,19 +6359,19 @@
             }
         },
         {
+            "Key": "d934768c-62aa-4138-88fc-070660dd6871",
+            "Value": {
+                "id": "e120d5de-288e-4f94-a385-c2c0b289b82e",
+                "resourcePath": "objects\\object_FSPauseMenuButton_Party\\object_FSPauseMenuButton_Party.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d95ca72a-4fed-49d0-81c3-7613fade16b1",
             "Value": {
                 "id": "cdab7bce-0d14-4a6a-8ff2-b0e038f023ea",
                 "resourcePath": "sprites\\sprite_Flarial_Left\\sprite_Flarial_Left.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d9866f17-dcb3-426a-9f61-5c621b97a158",
-            "Value": {
-                "id": "c2b80f8d-daf8-4830-adce-0058c121efcd",
-                "resourcePath": "datafiles_yy\\orthogonal.ttf.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -6735,6 +6735,14 @@
             }
         },
         {
+            "Key": "e3431dfe-ab06-47a5-b5e7-9767df1650ed",
+            "Value": {
+                "id": "75977eb4-db4b-4437-92f4-bf21cee6ed98",
+                "resourcePath": "fonts\\GWScript_48\\GWScript_48.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "e3a5b8a8-c9da-4330-9280-9f2cfa152c3d",
             "Value": {
                 "id": "c755b2da-039d-44eb-a332-2dd56de689bf",
@@ -6892,14 +6900,6 @@
                 "id": "ed901abe-0c48-4531-b794-29a6cbc58227",
                 "resourcePath": "sprites\\sprite_LavaSymbol32\\sprite_LavaSymbol32.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "eab94668-9623-4acf-a978-d67e9b3659cd",
-            "Value": {
-                "id": "55e49e36-9bcb-475e-aef4-bc9c324727c1",
-                "resourcePath": "objects\\object_FSPauseMenuButton_Encyclopedia\\object_FSPauseMenuButton_Encyclopedia.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -7436,6 +7436,14 @@
                 "id": "1809b9a7-cd20-4f0e-8773-e6f3bfde0e6a",
                 "resourcePath": "sprites\\sprite_MithrilHatchet\\sprite_MithrilHatchet.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc1b59d8-204c-4782-9e6c-4915a2d44844",
+            "Value": {
+                "id": "1bc69235-b9d7-4f19-91d4-6e64d67f3779",
+                "resourcePath": "objects\\object_FSPauseMenuButton_ViewMark\\object_FSPauseMenuButton_ViewMark.yy",
+                "resourceType": "GMObject"
             }
         },
         {

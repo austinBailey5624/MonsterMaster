@@ -117,6 +117,20 @@
             "value": "noone",
             "varName": "m_nextRoom",
             "varType": 5
+        },
+        {
+            "id": "6446631d-9848-4552-ac9f-1689f31a029b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "false",
+            "varName": "m_isSelected",
+            "varType": 3
         }
     ],
     "solid": false,

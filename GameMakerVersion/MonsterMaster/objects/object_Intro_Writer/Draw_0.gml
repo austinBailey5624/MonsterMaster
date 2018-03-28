@@ -4,6 +4,7 @@
 //	draw_text_ext_transformed(432,144,m_set1Line1,64,864,.9,.9,1);
 //	draw_text_ext_transformed(432,432,m_set1Line2,64,864,.9,.9,1);
 //	draw_text_ext_transformed(432,720,m_set1Line3,64,864,.9,.9,1);
+draw_set_font(GWScript_60);
 if(m_time<=m_cycleLength)
 {
 	draw_set_alpha(m_time/m_cycleLength);

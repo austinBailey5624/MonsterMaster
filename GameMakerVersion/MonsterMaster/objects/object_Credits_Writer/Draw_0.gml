@@ -14,6 +14,6 @@ if(which==1)
 }
 else if(which==2)
 {
-	draw_set_font(Arial_32);
+	draw_set_font(GWScript_36);
 	draw_text_ext_transformed(432,66,m_text,40,704,1,1,0);	
 }
