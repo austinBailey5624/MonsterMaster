@@ -1,48 +1,48 @@
 {
-    "id": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6",
+    "id": "793ec1f6-06ca-4f4a-a068-c3c53f692d9f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "interface_BestiaryButton",
+    "name": "object_BestiaryMenu_BackButton",
     "eventList": [
         {
-            "id": "c4dc73c0-a678-4951-8872-2b7f8cd9e9c7",
+            "id": "3b372a5d-e1d4-4685-ba63-240c0f2c66b0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6"
+            "m_owner": "793ec1f6-06ca-4f4a-a068-c3c53f692d9f"
         },
         {
-            "id": "519b2acc-2746-41d4-b14a-40d5c6f711b8",
+            "id": "f3978067-00b3-473a-a8ae-75756afcda64",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 10,
             "eventtype": 6,
-            "m_owner": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6"
+            "m_owner": "793ec1f6-06ca-4f4a-a068-c3c53f692d9f"
         },
         {
-            "id": "4f9e8ea0-4982-4539-afd4-3ced17edef49",
+            "id": "238a7bf3-e209-4cda-afbd-322dfa720f91",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 11,
             "eventtype": 6,
-            "m_owner": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6"
+            "m_owner": "793ec1f6-06ca-4f4a-a068-c3c53f692d9f"
         },
         {
-            "id": "678019db-f17c-4a73-bb07-4f7b40206c56",
+            "id": "d513eb39-ea9a-4ec3-b5df-17cb746d20fd",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 7,
             "eventtype": 6,
-            "m_owner": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6"
+            "m_owner": "793ec1f6-06ca-4f4a-a068-c3c53f692d9f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -63,7 +63,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "67a501a2-389e-4e8a-a565-a7a1e6ce75f7",
+            "id": "eaa95ffa-5224-4663-929c-6a16626e17fe",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -72,12 +72,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "m_subElement",
+            "value": "sprite_Bestiary_StageLabel",
+            "varName": "m_defaultSprite",
             "varType": 5
         },
         {
-            "id": "5ecbc1dd-5118-4607-b1c3-6115edff4b4e",
+            "id": "f12f8fd0-a126-4209-9d8b-68b072fccf63",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -86,12 +86,26 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "m_targetRoom",
+            "value": "sprite_Bestiary_StageLabel_MouseOver",
+            "varName": "m_mouseOverSprite",
             "varType": 5
         },
         {
-            "id": "9c0b94fa-08fd-4edd-9785-1481233b2bc4",
+            "id": "be43f8bb-d0d1-4efe-a181-74f820f494a0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "room_Encyclopedia_Bestiary",
+            "varName": "m_roomTarget",
+            "varType": 5
+        },
+        {
+            "id": "7cdf063a-10e6-46f3-82bd-63634803a24d",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -103,23 +117,9 @@
             "value": "false",
             "varName": "m_isSelected",
             "varType": 3
-        },
-        {
-            "id": "4559f0f9-d611-46f4-a0f2-7e1ea6d75779",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "sprite_ElementSymbol32MouseOver",
-            "varName": "m_mouseOverSprite",
-            "varType": 5
         }
     ],
     "solid": false,
-    "spriteId": "9d2f064c-2291-4c5b-a832-e69ff68466b1",
+    "spriteId": "e78a4a0e-08ed-48d3-b3d1-e83bf3b7dce7",
     "visible": true
 }

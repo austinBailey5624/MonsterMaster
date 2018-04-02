@@ -1,48 +1,18 @@
 {
-    "id": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6",
+    "id": "febdac04-6d67-453b-95a4-33c496caa4af",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "interface_BestiaryButton",
+    "name": "object_BestiaryMenu_MonsterTypeBox",
     "eventList": [
         {
-            "id": "c4dc73c0-a678-4951-8872-2b7f8cd9e9c7",
+            "id": "39a2cd6b-9811-4f66-bf8a-80340a269b04",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6"
-        },
-        {
-            "id": "519b2acc-2746-41d4-b14a-40d5c6f711b8",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 6,
-            "m_owner": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6"
-        },
-        {
-            "id": "4f9e8ea0-4982-4539-afd4-3ced17edef49",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
-            "eventtype": 6,
-            "m_owner": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6"
-        },
-        {
-            "id": "678019db-f17c-4a73-bb07-4f7b40206c56",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 6,
-            "m_owner": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6"
+            "m_owner": "febdac04-6d67-453b-95a4-33c496caa4af"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -63,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "67a501a2-389e-4e8a-a565-a7a1e6ce75f7",
+            "id": "1ef716cb-f1bd-4373-9017-38a709637d87",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -72,12 +42,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "m_subElement",
+            "value": "sprite_Bestiary_MonsterTypeDefault",
+            "varName": "m_defaultSprite",
             "varType": 5
         },
         {
-            "id": "5ecbc1dd-5118-4607-b1c3-6115edff4b4e",
+            "id": "694207bb-0c08-4934-a3c1-b41e111d4926",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -86,12 +56,26 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "m_targetRoom",
+            "value": "sprite_Bestiary_MonsterTypeDefaultMouseOver",
+            "varName": "m_mouseOverSprite",
             "varType": 5
         },
         {
-            "id": "9c0b94fa-08fd-4edd-9785-1481233b2bc4",
+            "id": "b8ce1e4e-4785-458b-ba94-9ce7d3303782",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "monsterType_Flarial",
+            "varName": "m_monsterType",
+            "varType": 5
+        },
+        {
+            "id": "42d913df-f1ca-4dd2-b9d2-60c51b0a5d9f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -103,23 +87,9 @@
             "value": "false",
             "varName": "m_isSelected",
             "varType": 3
-        },
-        {
-            "id": "4559f0f9-d611-46f4-a0f2-7e1ea6d75779",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "sprite_ElementSymbol32MouseOver",
-            "varName": "m_mouseOverSprite",
-            "varType": 5
         }
     ],
     "solid": false,
-    "spriteId": "9d2f064c-2291-4c5b-a832-e69ff68466b1",
+    "spriteId": "28f5b433-7f10-4c97-9962-6dae612d8c24",
     "visible": true
 }
