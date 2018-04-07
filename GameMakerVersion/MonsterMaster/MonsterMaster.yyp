@@ -7655,6 +7655,14 @@
             }
         },
         {
+            "Key": "bbceae62-ff54-4056-ae53-f8ace7e41894",
+            "Value": {
+                "id": "88338e4c-e907-4d47-a966-344d4223965f",
+                "resourcePath": "sprites\\sprite_Bestiary_SubElementPopUpLabel\\sprite_Bestiary_SubElementPopUpLabel.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bbfe3ee5-e4e6-442d-bb39-d2c629e5e181",
             "Value": {
                 "id": "06c88f57-0ce9-46eb-8fe0-9b9b623774d2",
