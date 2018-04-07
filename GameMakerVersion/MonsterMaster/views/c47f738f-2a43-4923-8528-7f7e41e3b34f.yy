@@ -7,7 +7,7 @@
         "e7bc4873-8ed1-451a-ba6f-e52cb322d6e6",
         "e64cf8c9-4e32-430e-90a1-aef322575855",
         "2d2bc6c8-3fcf-43c4-9857-2ff69949afb1",
-        "039cdc01-49f9-4b34-9204-405c3a652d10"
+        "76cbd6fc-caf8-407d-aaad-a790092c07b0"
     ],
     "filterType": "GMSprite",
     "folderName": "Babadger",
