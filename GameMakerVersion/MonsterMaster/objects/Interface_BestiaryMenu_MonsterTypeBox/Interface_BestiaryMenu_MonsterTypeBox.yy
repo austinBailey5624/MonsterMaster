@@ -2,7 +2,7 @@
     "id": "febdac04-6d67-453b-95a4-33c496caa4af",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_BestiaryMenu_MonsterTypeBox",
+    "name": "Interface_BestiaryMenu_MonsterTypeBox",
     "eventList": [
         {
             "id": "39a2cd6b-9811-4f66-bf8a-80340a269b04",
@@ -12,6 +12,36 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
+            "m_owner": "febdac04-6d67-453b-95a4-33c496caa4af"
+        },
+        {
+            "id": "94f1c56d-a5e2-4bd1-aa3e-4d84b523b793",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "febdac04-6d67-453b-95a4-33c496caa4af"
+        },
+        {
+            "id": "2bc40b18-fcd4-4cfd-bda4-a4b3c71367e0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 6,
+            "m_owner": "febdac04-6d67-453b-95a4-33c496caa4af"
+        },
+        {
+            "id": "16739169-c677-4728-b1e9-4cc45a7aa78b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 11,
+            "eventtype": 6,
             "m_owner": "febdac04-6d67-453b-95a4-33c496caa4af"
         }
     ],
@@ -87,6 +117,48 @@
             "value": "false",
             "varName": "m_isSelected",
             "varType": 3
+        },
+        {
+            "id": "322ae336-366c-4559-a628-ed67a27039be",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "subelement_Pyro",
+            "varName": "m_monsterElement",
+            "varType": 5
+        },
+        {
+            "id": "85bd7034-be30-43f5-bb44-d16f91e8e373",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "m_monsterAge",
+            "varType": 1
+        },
+        {
+            "id": "b9d72a38-f6e5-41b8-a684-f558c6e0a74e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_monsterIndex",
+            "varType": 1
         }
     ],
     "solid": false,

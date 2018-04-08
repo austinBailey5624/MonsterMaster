@@ -54,7 +54,7 @@ if(m_isSelected)
 		draw_sprite_stretched(m_subElement.m_32bitSprite,sprite_index,16,48,128,128);
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
-		draw_set_font(Arial_32);
+		draw_set_font(GWScript_36);
 		draw_text(432,82,string(ceil(m_healthCur))+" / "+string(m_healthMax));
 		draw_text(432,146,string(ceil(m_magicCur))+" / "+string(m_magicMax));
 		return;
