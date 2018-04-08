@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "0cc7f1ae-6a30-4731-a9f8-5417a814fef1",
+            "Value": {
+                "id": "33a531cb-4b73-4ff4-8575-85a5a70fa2ab",
+                "resourcePath": "objects\\object_BestiaryMenu_PhysicalTang_Bident\\object_BestiaryMenu_PhysicalTang_Bident.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0cfb074a-d516-48ca-bf00-46f324262b08",
             "Value": {
                 "id": "aec13603-a813-44f6-ad3d-992cde1a5ee1",
@@ -743,6 +751,22 @@
             }
         },
         {
+            "Key": "1394f5dd-fef6-4705-a80b-d903c773121d",
+            "Value": {
+                "id": "049157a3-a11b-473b-b773-df9791b08ee6",
+                "resourcePath": "sprites\\sprite_Bestiary_Bident_PhysicalTang\\sprite_Bestiary_Bident_PhysicalTang.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "13b20255-6626-414a-ae4d-0224f8236485",
+            "Value": {
+                "id": "180947db-1f3d-413b-a719-38653c306d3a",
+                "resourcePath": "sprites\\sprite_Bestiary_BackButton_MouseOver\\sprite_Bestiary_BackButton_MouseOver.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "Value": {
                 "id": "3bc435e3-b5fb-46bd-ab8b-60a5c64630c6",
@@ -820,6 +844,14 @@
                 "id": "23c617ba-71a3-4afe-939c-b3da5687ecfe",
                 "resourcePath": "sprites\\sprite_Sapphire_Forwards\\sprite_Sapphire_Forwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1667c54d-dc9e-4838-b2b0-43bc54478488",
+            "Value": {
+                "id": "cb60a518-4294-4a56-8611-517570f6cdbd",
+                "resourcePath": "views\\1667c54d-dc9e-4838-b2b0-43bc54478488.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1580,6 +1612,14 @@
                 "id": "01dd08c3-8c42-4fe1-9e04-06e5cc21f777",
                 "resourcePath": "objects\\subelement_Compassion\\subelement_Compassion.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "29196378-1c03-4918-9d84-c345c37b6243",
+            "Value": {
+                "id": "ff66384b-c6ca-45cb-855c-5338e86b3710",
+                "resourcePath": "rooms\\room_Bestiary_Quadent\\room_Bestiary_Quadent.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2575,10 +2615,18 @@
             }
         },
         {
+            "Key": "4037c16c-d23d-4ebe-8b69-025b03e04d17",
+            "Value": {
+                "id": "05ca882b-1bfb-44ac-9ef2-4a6b2614f993",
+                "resourcePath": "views\\4037c16c-d23d-4ebe-8b69-025b03e04d17.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4079fe47-af72-4c3c-af77-8bc6623a4d20",
             "Value": {
                 "id": "cbe8b36d-dda1-45c4-a5a6-46fb4f05016a",
-                "resourcePath": "rooms\\room_Bestiary_SubElemTree3\\room_Bestiary_SubElemTree3.yy",
+                "resourcePath": "rooms\\room_Bestiary_Trident\\room_Bestiary_Trident.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -3695,6 +3743,14 @@
             }
         },
         {
+            "Key": "5b0f418a-4b59-4ffe-9afd-12a764c3fc2d",
+            "Value": {
+                "id": "5ae31ce8-9d1e-47ad-a696-d17762af502b",
+                "resourcePath": "rooms\\room_Bestiary_Spear\\room_Bestiary_Spear.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "5b247b31-e57a-4e1a-a078-d946b0268a7a",
             "Value": {
                 "id": "e7fa07e5-de51-4ee5-9ba6-4770f1696960",
@@ -3716,6 +3772,14 @@
                 "id": "79a90a28-d029-4b1d-bda5-7f38186e824e",
                 "resourcePath": "views\\5b3e00bc-9fec-4df4-a7dd-8e20a5941193.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5b400278-4c8f-40ae-8be5-b5c8be0f1f96",
+            "Value": {
+                "id": "334cbbef-7815-4ce8-9109-bd0750e80620",
+                "resourcePath": "objects\\object_Bestiary_BestiaryVariableHolder\\object_Bestiary_BestiaryVariableHolder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4327,6 +4391,14 @@
             }
         },
         {
+            "Key": "6ad5ba41-7d63-4426-aedc-61b43567ca7d",
+            "Value": {
+                "id": "c370faa3-1518-4225-96e4-af98b0c20ae6",
+                "resourcePath": "objects\\object_BestiaryMenu_MagicalTang_Quadent\\object_BestiaryMenu_MagicalTang_Quadent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6b2c40dc-214f-4cb6-b0cd-17c501d50a0f",
             "Value": {
                 "id": "9b894cd8-09f6-4199-b9f6-76ddedc9f493",
@@ -4530,7 +4602,7 @@
             "Key": "7055db8e-e346-49a3-960d-dce49ca804e4",
             "Value": {
                 "id": "a336b0be-cd09-490c-8121-25972d62635c",
-                "resourcePath": "objects\\object_BestiaryMenu_Label\\object_BestiaryMenu_Label.yy",
+                "resourcePath": "objects\\Interface_BestiaryMenu_Label\\Interface_BestiaryMenu_Label.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -4692,6 +4764,14 @@
                 "id": "10ac9731-0be7-4185-9d4b-e75dc1244d10",
                 "resourcePath": "sprites\\sprite_Bestiary_MonsterTypeDefaultMouseOver\\sprite_Bestiary_MonsterTypeDefaultMouseOver.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "73c43763-8125-42c0-86f1-b259c501926d",
+            "Value": {
+                "id": "aed462a6-eab4-45ae-8653-7f3ffa53b39c",
+                "resourcePath": "objects\\object_BestiaryMenu_Label_Adult\\object_BestiaryMenu_Label_Adult.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4983,6 +5063,14 @@
             }
         },
         {
+            "Key": "7ae16053-5226-4b24-afc9-140a48182ec9",
+            "Value": {
+                "id": "18004da5-3255-4bc4-a7b8-e7b787546ca7",
+                "resourcePath": "rooms\\room_Bestiary_Bident\\room_Bestiary_Bident.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7aff1c9d-8411-44c5-9cad-acf14771a308",
             "Value": {
                 "id": "30175493-ff28-46a8-9424-4eade0855109",
@@ -5083,6 +5171,14 @@
             "Value": {
                 "id": "d0a1d757-d380-42e6-9fe6-1a31eb2ea2f6",
                 "resourcePath": "sprites\\sprite_LightSymbol_Backwards\\sprite_LightSymbol_Backwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7d7fbf68-0590-4873-8b6e-51b6a2572b6c",
+            "Value": {
+                "id": "aea1275f-ac4d-4b4f-9158-dff1651cdf13",
+                "resourcePath": "sprites\\sprite_Bestiary_Quadent_MagicalTang\\sprite_Bestiary_Quadent_MagicalTang.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5795,6 +5891,14 @@
             "Value": {
                 "id": "8628cc16-d69a-49ed-b9f5-9d0faf66e806",
                 "resourcePath": "sprites\\sprite_Escutcheoner_Backwards\\sprite_Escutcheoner_Backwards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8d4cf9e5-3416-4f13-9f25-e8ead6445a03",
+            "Value": {
+                "id": "359c323e-6204-4aac-b9d1-4ca5680cd37e",
+                "resourcePath": "sprites\\sprite_Bestiary_Bident_MagicalTang\\sprite_Bestiary_Bident_MagicalTang.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6647,6 +6751,14 @@
             }
         },
         {
+            "Key": "a0dff206-75fe-4d52-a7ed-8a08b47a4eb4",
+            "Value": {
+                "id": "37cdf02f-7bd2-4fa5-8ad5-69e93ff8b93c",
+                "resourcePath": "sprites\\sprite_Bestiary_Quadent_MagicalTang2\\sprite_Bestiary_Quadent_MagicalTang2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a12ceb1f-492a-4210-bc2b-9525ee73ca52",
             "Value": {
                 "id": "02fd031f-5e89-48c8-aa40-7f0d7c78e6bc",
@@ -6919,6 +7031,14 @@
             }
         },
         {
+            "Key": "a8c2f99a-dbd0-4a57-9d57-58b429cba931",
+            "Value": {
+                "id": "814b9e41-a44a-46ab-85b4-38c9525ff1aa",
+                "resourcePath": "views\\a8c2f99a-dbd0-4a57-9d57-58b429cba931.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a900b332-61be-460d-85bc-1da0ddbc72e2",
             "Value": {
                 "id": "a5db5e9e-2a92-4f0c-b985-b46fd829eec0",
@@ -7132,6 +7252,14 @@
                 "id": "2d0b6537-c1b1-4cdb-8a2f-3a256cdd7f2c",
                 "resourcePath": "views\\add0ff85-3060-4453-a803-9437a5f634c2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ae1cb299-eb6e-484f-9107-0bc662ccb6e7",
+            "Value": {
+                "id": "594d4472-842a-48f7-8e8e-94da96d4b370",
+                "resourcePath": "objects\\object_BestiaryMenu_MagicalTang\\object_BestiaryMenu_MagicalTang.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7567,6 +7695,22 @@
             }
         },
         {
+            "Key": "b97a4dcb-1483-4618-a87f-41716f6bfe33",
+            "Value": {
+                "id": "612dc362-b902-4738-83c0-f4bd1a57f66b",
+                "resourcePath": "sprites\\sprite_Bestiary_Quadent_PhysicalTang\\sprite_Bestiary_Quadent_PhysicalTang.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b98be32f-fe0c-47fd-9857-5f4ccd4240c9",
+            "Value": {
+                "id": "bcf12fd3-be77-4e7f-912f-7080d0a60f16",
+                "resourcePath": "objects\\object_BestiaryMenu_PhysicalTang_Quadent\\object_BestiaryMenu_PhysicalTang_Quadent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b991c791-760b-4ea4-acad-fa49204a0e35",
             "Value": {
                 "id": "fe02391c-e873-4fb6-ad19-c5db2f9e559c",
@@ -7847,6 +7991,14 @@
             }
         },
         {
+            "Key": "c017cdac-cc58-4970-8f9f-8aac87335075",
+            "Value": {
+                "id": "dfe24d9f-d598-469b-be62-5d3dd6605d09",
+                "resourcePath": "sprites\\sprite_Bestiary_BackButton\\sprite_Bestiary_BackButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c018524d-b959-47ff-814b-6d9dd889e047",
             "Value": {
                 "id": "8385741f-2221-47fd-9eb9-a572b3b8ab43",
@@ -8052,6 +8204,22 @@
                 "id": "6b75d186-a116-44c4-89bc-f6d02021db41",
                 "resourcePath": "sprites\\sprite_Corynetes_Forward\\sprite_Corynetes_Forward.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c4374a9a-d447-469f-a597-2ff717760985",
+            "Value": {
+                "id": "e346ba39-1dba-498e-a08d-e51de1bc4ca1",
+                "resourcePath": "scripts\\script_GetSubElementTreeType\\script_GetSubElementTreeType.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c45d5c11-76b6-4c63-9c76-48ff681aa2e4",
+            "Value": {
+                "id": "2dabd44b-cd4e-4188-8412-0f319a90b873",
+                "resourcePath": "objects\\object_BestiaryMenu_Label_Elder\\object_BestiaryMenu_Label_Elder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -9191,6 +9359,14 @@
             }
         },
         {
+            "Key": "de0a8aa1-24fa-488b-9f10-0a9472861cbb",
+            "Value": {
+                "id": "f170c9fd-e854-4d51-ab65-b7ff4d43fb12",
+                "resourcePath": "sprites\\sprite_Bestiary_Trident_MagicalTang\\sprite_Bestiary_Trident_MagicalTang.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "de0a91f9-de18-4b0d-99db-15ae215224f2",
             "Value": {
                 "id": "8f823c7d-592c-43e5-a2aa-b43590dcf434",
@@ -9340,6 +9516,14 @@
                 "id": "7bd38a66-cd21-4d7c-8b3d-8b29e15fd9f0",
                 "resourcePath": "sprites\\sprite_Suddi_Forwards\\sprite_Suddi_Forwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e12bd1a1-9d9d-4d21-b1e6-34bc4a319c0d",
+            "Value": {
+                "id": "65af32f4-75dd-4cf8-bb3e-fd75f41eec95",
+                "resourcePath": "views\\e12bd1a1-9d9d-4d21-b1e6-34bc4a319c0d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -9855,6 +10039,14 @@
             }
         },
         {
+            "Key": "ed357968-10c5-4899-bcad-fbc4892b472a",
+            "Value": {
+                "id": "126fde94-cbd7-42c2-9690-b5e44b7e4f7c",
+                "resourcePath": "objects\\object_BestiaryMenu_Label_Adolescent\\object_BestiaryMenu_Label_Adolescent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ed577a79-a3dc-4881-84bd-69096eb5b7a4",
             "Value": {
                 "id": "64ecf06f-4165-413d-888c-43775ffb8fe0",
@@ -9980,6 +10172,14 @@
                 "id": "a59c85fc-f346-480f-96d3-7aaf7045409b",
                 "resourcePath": "sprites\\sprite_SteelMaul\\sprite_SteelMaul.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f0da6362-6a0d-44e2-abb7-879ba94bf76c",
+            "Value": {
+                "id": "580a5db2-b147-447e-aafd-0b1b18427805",
+                "resourcePath": "objects\\object_BestiaryMenu_MagicalTang_Quadent2\\object_BestiaryMenu_MagicalTang_Quadent2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -10151,6 +10351,14 @@
             }
         },
         {
+            "Key": "f4be82df-6a4c-4bdb-92c5-47d77df288e4",
+            "Value": {
+                "id": "799e6ab3-608d-430e-9bcf-cc7f27cb967a",
+                "resourcePath": "objects\\object_BestiaryMenu_MagicalTang_Bident\\object_BestiaryMenu_MagicalTang_Bident.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f4bed356-a766-45f9-ab62-f46aa0995606",
             "Value": {
                 "id": "9ea58bbe-5704-4458-b79f-e76a88a37b68",
@@ -10283,6 +10491,14 @@
             "Value": {
                 "id": "cdb836c2-9061-4da7-be1e-de1097d04201",
                 "resourcePath": "objects\\object_PauseMenu_master\\object_PauseMenu_master.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f6bc457e-eacc-4ab1-8e40-8357159c5b5e",
+            "Value": {
+                "id": "fff64c9d-9c26-43a1-8830-529a81d93966",
+                "resourcePath": "objects\\object_BestiaryMenu_Label_Infant\\object_BestiaryMenu_Label_Infant.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -10616,7 +10832,8 @@
         }
     ],
     "script_order": [
-        "aa954e40-455f-4a88-884b-658b5f956eb3"
+        "aa954e40-455f-4a88-884b-658b5f956eb3",
+        "c4374a9a-d447-469f-a597-2ff717760985"
     ],
     "tutorial": ""
 }

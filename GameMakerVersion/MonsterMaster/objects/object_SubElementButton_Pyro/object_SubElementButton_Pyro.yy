@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6",
             "propertyId": "5ecbc1dd-5118-4607-b1c3-6115edff4b4e",
-            "value": "room_Bestiary_SubElemTree3"
+            "value": "room_Bestiary_Trident"
         }
     ],
     "parentObjectId": "c6161f6a-675a-426f-a2d0-a9dc27ad9be6",

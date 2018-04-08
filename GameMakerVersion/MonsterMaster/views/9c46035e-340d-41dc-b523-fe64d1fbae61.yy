@@ -14,7 +14,8 @@
         "c87b82fe-e940-4242-b772-5ba38328a0a0",
         "95ab645f-4366-47f3-bdd1-0a4e539dd2e9",
         "f6eee859-ee23-4736-815c-18940b4416eb",
-        "0b444378-a885-4ce2-b45d-9ae7aab92f60"
+        "0b444378-a885-4ce2-b45d-9ae7aab92f60",
+        "5b400278-4c8f-40ae-8be5-b5c8be0f1f96"
     ],
     "filterType": "GMObject",
     "folderName": "Bestiary_Room",

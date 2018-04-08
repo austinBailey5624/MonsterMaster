@@ -1,8 +1,8 @@
 {
-    "id": "7055db8e-e346-49a3-960d-dce49ca804e4",
+    "id": "f0da6362-6a0d-44e2-abb7-879ba94bf76c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_BestiaryMenu_Label",
+    "name": "object_BestiaryMenu_MagicalTang_Quadent2",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "e78a4a0e-08ed-48d3-b3d1-e83bf3b7dce7",
+    "spriteId": "a0dff206-75fe-4d52-a7ed-8a08b47a4eb4",
     "visible": true
 }

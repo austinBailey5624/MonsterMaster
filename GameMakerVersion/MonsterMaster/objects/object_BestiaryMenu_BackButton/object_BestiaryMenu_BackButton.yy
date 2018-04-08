@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "sprite_Bestiary_StageLabel",
+            "value": "sprite_Bestiary_BackButton",
             "varName": "m_defaultSprite",
             "varType": 5
         },
@@ -86,7 +86,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "sprite_Bestiary_StageLabel_MouseOver",
+            "value": "sprite_Bestiary_BackButton_MouseOver",
             "varName": "m_mouseOverSprite",
             "varType": 5
         },
@@ -101,7 +101,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "room_Encyclopedia_Bestiary",
-            "varName": "m_roomTarget",
+            "varName": "m_targetRoom",
             "varType": 5
         },
         {
@@ -120,6 +120,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "e78a4a0e-08ed-48d3-b3d1-e83bf3b7dce7",
+    "spriteId": "c017cdac-cc58-4970-8f9f-8aac87335075",
     "visible": true
 }
