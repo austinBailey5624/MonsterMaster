@@ -1,31 +1,39 @@
 {
-    "id": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
+    "id": "87c720ca-5a3c-4adb-9ef3-f6a8e0e74fde",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "MonsterType",
+    "name": "monsterType_Sief",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "5b1f8e2c-d12e-44e7-adb4-d994aae44727",
+            "id": "872f2596-d080-4abc-862c-276b76964614",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"\""
+            "value": "\"Sief\""
         },
         {
-            "id": "47c3ad7b-0f6f-4404-adf4-84de385f7325",
+            "id": "64556b82-f7a2-4b6a-a882-559387b9f86c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"\""
+            "value": "\"Sief is a giant wolf with a scar over its right eye weilding a giant broadsword, and bears no relation to Sif from Darksouls.\""
+        },
+        {
+            "id": "40ec29c5-780b-4d86-b873-091346c53790",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
+            "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
+            "value": "subelement_Terra"
         }
     ],
-    "parentObjectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+    "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -39,22 +47,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "Interface_SecondaryElement",
-            "varName": "m_subelement",
-            "varType": 5
-        }
-    ],
+    "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true

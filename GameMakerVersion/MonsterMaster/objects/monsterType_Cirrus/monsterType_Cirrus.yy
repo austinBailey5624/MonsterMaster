@@ -1,68 +1,68 @@
 {
-    "id": "dff82a39-98ba-4517-98eb-5a7d3795581d",
+    "id": "4491c8bd-32e6-423a-8d75-66250e4c8384",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Tapple",
+    "name": "monsterType_Cirrus",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "77f5e618-2765-4171-9eeb-b5f4f91f0e7e",
+            "id": "99a16929-0b1e-4c13-b485-dd3c1f582e46",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Tapple\""
+            "value": "\"Cirrus\""
         },
         {
-            "id": "1c4bb6ea-31ed-4e49-b208-e6a986cb3f79",
+            "id": "c3af3221-3092-4534-8a1c-0d9deae1c76b",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"The Tapple's parents were terrible at naming babies, so they asked the tapple what it would like to be called. It tried to say tadpole, but as it was a baby, it couldn't pronounce it properly. The name stuck. The tapple is blue-green and is very proud of its long double-finned tail. Its parents told it not to get too attached, but it did anyway\""
+            "value": "\" A small cloud that curves around like a snake. It has no mouth and a small blue diamond on its head, its body is covered by fog, and it is lighter than air.\""
         },
         {
-            "id": "a1267aee-9102-46ab-b42f-b25255b9d036",
+            "id": "54b90d7c-b423-495c-a7f5-e16b96e56a11",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Tapple_Forwards"
+            "value": "sprite_Cirrus_Forwards"
         },
         {
-            "id": "0d4d8d9f-3570-4439-81c7-79c3ad582d57",
+            "id": "66b4fa28-e695-4f9d-b11c-d156aa200f95",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Tapple_Backwards"
+            "value": "sprite_Cirrus_Backwards"
         },
         {
-            "id": "a3b64792-2b73-4fab-a11a-e7b9f75bf31a",
+            "id": "9c533e78-c9d3-416f-a96c-e55c19759203",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_TappleRight"
+            "value": "sprite_Cirrus_RIght"
         },
         {
-            "id": "7a0b6eee-0399-4a04-b341-e2ef9eeeb0b1",
+            "id": "59478579-91fa-4988-a225-68c2367ba1ee",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Tapple_Left"
+            "value": "sprite_Cirrus_Left"
         },
         {
-            "id": "d46508df-932e-4b9f-a883-a80a4c7b8ce5",
+            "id": "d91de4bc-01eb-4590-a1d7-5b705d0ebe1c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "value": "subelement_Amphibious"
+            "value": "subelement_Weather"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "d302fd2b-647a-4c03-a727-b1b701343fa3",
+    "spriteId": "a059181d-49b2-4fda-a89b-56ac8edc25bc",
     "visible": true
 }

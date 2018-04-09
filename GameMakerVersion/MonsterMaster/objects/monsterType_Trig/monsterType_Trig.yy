@@ -1,31 +1,39 @@
 {
-    "id": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
+    "id": "d75601e9-2bc5-4323-a520-810726d99813",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "MonsterType",
+    "name": "monsterType_Trig",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "5b1f8e2c-d12e-44e7-adb4-d994aae44727",
+            "id": "dcdbdc9c-0db3-4a12-9b98-a38772aedfc6",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"\""
+            "value": "\"Trig\""
         },
         {
-            "id": "47c3ad7b-0f6f-4404-adf4-84de385f7325",
+            "id": "5896d289-aca0-4cb3-b8a9-c964688637bd",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"\""
+            "value": "\" A small nerdy twig that just loves math. It can recite all of the mathematical properties up to vector calclus off of the top of its head, it especially loves sine, cosine and tangent. It always remembers to bring an apple for the teacher. It cant see very well (as it lacks eyes) and thus keeps its bifocals on at all times.\""
+        },
+        {
+            "id": "b1415487-1857-4bd9-b81f-50416fda5958",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
+            "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
+            "value": "subelement_Terra"
         }
     ],
-    "parentObjectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+    "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -39,22 +47,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "Interface_SecondaryElement",
-            "varName": "m_subelement",
-            "varType": 5
-        }
-    ],
+    "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true

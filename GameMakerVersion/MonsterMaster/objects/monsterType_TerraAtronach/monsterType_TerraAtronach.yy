@@ -1,68 +1,68 @@
 {
-    "id": "dff82a39-98ba-4517-98eb-5a7d3795581d",
+    "id": "2760670f-7eaa-4fdc-a1f8-e0ef1fa1fb4b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Tapple",
+    "name": "monsterType_TerraAtronach",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "77f5e618-2765-4171-9eeb-b5f4f91f0e7e",
+            "id": "da70d785-bdc5-4b35-93a0-19bb4b59b3f2",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Tapple\""
+            "value": "\"Terra Atronach\""
         },
         {
-            "id": "1c4bb6ea-31ed-4e49-b208-e6a986cb3f79",
+            "id": "d9b1e461-e4aa-42fd-b3fc-f6dd950c08d5",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"The Tapple's parents were terrible at naming babies, so they asked the tapple what it would like to be called. It tried to say tadpole, but as it was a baby, it couldn't pronounce it properly. The name stuck. The tapple is blue-green and is very proud of its long double-finned tail. Its parents told it not to get too attached, but it did anyway\""
+            "value": "\" A large Terra elemental surrounded by the elementals representing all other primary elements\""
         },
         {
-            "id": "a1267aee-9102-46ab-b42f-b25255b9d036",
+            "id": "af9b7e17-f4e3-4369-a043-d2aa5091d4a5",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Tapple_Forwards"
+            "value": "sprite_TerraAtronach_Forwards"
         },
         {
-            "id": "0d4d8d9f-3570-4439-81c7-79c3ad582d57",
+            "id": "6aaace6f-f7d0-4e5d-ac79-3b74dfe3f9fc",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Tapple_Backwards"
+            "value": "sprite_TerraAtronach_Backwards"
         },
         {
-            "id": "a3b64792-2b73-4fab-a11a-e7b9f75bf31a",
+            "id": "1c5ef213-6cb6-4cbc-bc6f-e4c28c887f62",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_TappleRight"
+            "value": "sprite_TerraAtronach_Right"
         },
         {
-            "id": "7a0b6eee-0399-4a04-b341-e2ef9eeeb0b1",
+            "id": "eddeaf58-c2fc-4769-9514-e8450af38a27",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Tapple_Left"
+            "value": "sprite_TerraAtronach_Left"
         },
         {
-            "id": "d46508df-932e-4b9f-a883-a80a4c7b8ce5",
+            "id": "863c4f5c-cacc-42e0-99ca-6b62bdffd6e7",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "value": "subelement_Amphibious"
+            "value": "subelement_Terra"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "d302fd2b-647a-4c03-a727-b1b701343fa3",
+    "spriteId": "b0887998-6410-4977-9bae-b48be496b2d3",
     "visible": true
 }

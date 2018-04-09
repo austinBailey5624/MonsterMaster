@@ -1,68 +1,68 @@
 {
-    "id": "dff82a39-98ba-4517-98eb-5a7d3795581d",
+    "id": "390e5d50-a6f4-4c8a-a055-f57d18adde02",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Tapple",
+    "name": "monsterType_Snoball",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "77f5e618-2765-4171-9eeb-b5f4f91f0e7e",
+            "id": "522a0c05-1bea-4c43-bdad-2b9aad75cc31",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Tapple\""
+            "value": "\"Snoball\""
         },
         {
-            "id": "1c4bb6ea-31ed-4e49-b208-e6a986cb3f79",
+            "id": "d67c9766-d62c-419c-ac77-d04ef3ef6e4b",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"The Tapple's parents were terrible at naming babies, so they asked the tapple what it would like to be called. It tried to say tadpole, but as it was a baby, it couldn't pronounce it properly. The name stuck. The tapple is blue-green and is very proud of its long double-finned tail. Its parents told it not to get too attached, but it did anyway\""
+            "value": "\" The Snoball is a ball of snow, and no one can tell quite whats inside, as many different young snow creatures stay in the ball of snow until a teenager. It has the passive ability melt, which lessens the other teams fire abilities after it is slain\""
         },
         {
-            "id": "a1267aee-9102-46ab-b42f-b25255b9d036",
+            "id": "59e50447-6bb9-46cf-9d64-1e1760226e45",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Tapple_Forwards"
+            "value": "sprite_Snoball_Forwards"
         },
         {
-            "id": "0d4d8d9f-3570-4439-81c7-79c3ad582d57",
+            "id": "72fd2f8d-e0ca-4de0-9c3b-9d753c00a346",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Tapple_Backwards"
+            "value": "sprite_Snoball_Backwards"
         },
         {
-            "id": "a3b64792-2b73-4fab-a11a-e7b9f75bf31a",
+            "id": "dc037ebb-2731-473a-a84f-4f2baed447a9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_TappleRight"
+            "value": "sprite_Snoball_Right"
         },
         {
-            "id": "7a0b6eee-0399-4a04-b341-e2ef9eeeb0b1",
+            "id": "ad807d48-cc67-4ab8-9ac0-790cf5a128fe",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Tapple_Left"
+            "value": "sprite_Snoball_Left"
         },
         {
-            "id": "d46508df-932e-4b9f-a883-a80a4c7b8ce5",
+            "id": "459bd316-9fb5-41b2-acc2-0ebde3ba91b8",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "value": "subelement_Amphibious"
+            "value": "subelement_Ice"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "d302fd2b-647a-4c03-a727-b1b701343fa3",
+    "spriteId": "5f655644-7854-4da7-999e-d2f4d457f35b",
     "visible": true
 }

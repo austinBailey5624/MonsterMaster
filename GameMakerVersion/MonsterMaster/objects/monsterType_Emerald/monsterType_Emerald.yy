@@ -1,68 +1,68 @@
 {
-    "id": "dff82a39-98ba-4517-98eb-5a7d3795581d",
+    "id": "683a5c47-b577-4ac6-9997-718bb6e534d6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Tapple",
+    "name": "monsterType_Emerald",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "77f5e618-2765-4171-9eeb-b5f4f91f0e7e",
+            "id": "96b44c60-4226-4e25-8fc3-cbe688e4264c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Tapple\""
+            "value": "\"Emerald\""
         },
         {
-            "id": "1c4bb6ea-31ed-4e49-b208-e6a986cb3f79",
+            "id": "42ce90a1-fbd7-4ca3-a8aa-3b9a38f37b76",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"The Tapple's parents were terrible at naming babies, so they asked the tapple what it would like to be called. It tried to say tadpole, but as it was a baby, it couldn't pronounce it properly. The name stuck. The tapple is blue-green and is very proud of its long double-finned tail. Its parents told it not to get too attached, but it did anyway\""
+            "value": "\"A great gem that resembles the great Earth Gem and can channel some of its powers\""
         },
         {
-            "id": "a1267aee-9102-46ab-b42f-b25255b9d036",
+            "id": "c880dd3d-1930-4cd8-bfca-d01280845271",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Tapple_Forwards"
+            "value": "sprite_Emerald_Forwards"
         },
         {
-            "id": "0d4d8d9f-3570-4439-81c7-79c3ad582d57",
+            "id": "36b71f8c-3f44-4e85-91e3-d7f0190376d9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Tapple_Backwards"
+            "value": "sprite_Emerald_Backwards"
         },
         {
-            "id": "a3b64792-2b73-4fab-a11a-e7b9f75bf31a",
+            "id": "96b72ba4-4cec-4818-b004-ba997e5cd11c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_TappleRight"
+            "value": "sprite_Emerald_Right"
         },
         {
-            "id": "7a0b6eee-0399-4a04-b341-e2ef9eeeb0b1",
+            "id": "3e0b6442-e82c-488e-879d-3286acd2c555",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Tapple_Left"
+            "value": "sprite_Emerald_Left"
         },
         {
-            "id": "d46508df-932e-4b9f-a883-a80a4c7b8ce5",
+            "id": "d4d9f567-f3ba-47f8-ad2f-04d573cc23fb",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "value": "subelement_Amphibious"
+            "value": "subelement_Terra"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "d302fd2b-647a-4c03-a727-b1b701343fa3",
+    "spriteId": "2a8261b0-fdfd-4dcd-bc40-bd096a52cfea",
     "visible": true
 }
