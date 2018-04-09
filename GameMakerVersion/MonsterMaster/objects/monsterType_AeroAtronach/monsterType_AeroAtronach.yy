@@ -1,68 +1,68 @@
 {
-    "id": "a7cfc319-3b69-4a51-b36d-35fe53273927",
+    "id": "73fc9935-2966-4211-abfe-8953ea0a73f5",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Sewerat",
+    "name": "monsterType_AeroAtronach",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "d15f45b4-a2d6-459c-9c32-87eb2912b66a",
+            "id": "80e63f4e-d22a-4f80-8821-1d8e230132d3",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Sewerat\""
+            "value": "\"Aero Atronach\""
         },
         {
-            "id": "7c38791c-cf10-443b-ae95-390600b889ad",
+            "id": "e6263416-8dfd-4b5f-b144-7ec9320a258e",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"The Sewerat is a rather large rat that smells terrible. It tends to dwell in disgusting places, like the sewer for which it is named. Surprisingly its blood has healing properties since it is so good at fighting disease.\""
+            "value": "\"Lightening often surrounds the Air Atronach whenever it is angry. It is surrounded by six elementals, three of which are aero, three of which determine the other types of spells it can cast.\""
         },
         {
-            "id": "8fb47b41-57f0-4732-918d-4247f4fa3e92",
+            "id": "8dc839de-e324-4fda-bd7f-a0f2b292e9f9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Sewerat_Forwards"
+            "value": "sprite_AeroAtronach_Forwards"
         },
         {
-            "id": "56921118-0af7-4e82-af26-604cae2292db",
+            "id": "529bbe06-9c0c-4378-9246-9c0e2776c32d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Sewerat_Backwards"
+            "value": "sprite_AeroAtronach_Backwards"
         },
         {
-            "id": "45baeb74-9037-42c3-99bc-1de5f876cdfa",
+            "id": "7e429a47-1f57-413d-83bf-2249f813fa7a",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_Sewerat_Right"
+            "value": "sprite_AeroAtronach_Right"
         },
         {
-            "id": "e1319bd0-0e87-42b8-b8e0-9782f7b892a8",
+            "id": "0c64b9a2-989d-4170-ad52-0649e85af399",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Sewerat_Left"
+            "value": "sprite_AeroAtronach_Left"
         },
         {
-            "id": "9ba38d79-8466-4c18-a9ed-7a695757625a",
+            "id": "e1c5b69d-d6fd-4d25-a6be-38c3b79fcaf7",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "value": "subelement_Rotten"
+            "value": "subelement_Aero"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "3b05fc7d-cba8-4244-989b-b4bb0662e56c",
+    "spriteId": "befdbcc1-9454-4af5-b870-96cf89ccda77",
     "visible": true
 }
