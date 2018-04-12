@@ -1,68 +1,68 @@
 {
-    "id": "3972dd94-2a55-4da0-ae18-5c55e130196f",
+    "id": "03c68993-a30a-4bfa-a455-4ea112f58fc0",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Guilt",
+    "name": "monsterType_Fiend",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "76a6ec4f-e48c-49c6-bcaa-33c0beba4b88",
+            "id": "2d8bd04c-4c60-4972-b111-11ef68cd7e3b",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Guilt\""
+            "value": "\"Fiend\""
         },
         {
-            "id": "abae49b5-f65b-4641-a676-e5ab4b9a5f04",
+            "id": "127e0f75-e566-44dc-b4fb-6de6e0553bcc",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\" The Guilt is a minor demon whose outer body is dark. However, a globe of light dwells within, that holds its hope of redemption. When it is near, mistakes are better remembered, although reparations are not always clear.\""
+            "value": "\": The fiend is a minor demon, colored dark red with black horns. He is consumed by hatred, and causes a stinging burn when touched.\""
         },
         {
-            "id": "7e76011e-20e9-489a-9112-6739a7fa5512",
+            "id": "a6af561e-6fdf-4551-9eb9-9e442a696b59",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Guilt_Forwards"
+            "value": "sprite_Feind_Forwards"
         },
         {
-            "id": "85ef59e3-5513-4b85-8741-891600d4b2cf",
+            "id": "e5933436-dd8f-40a8-accb-d116d8a2ebdd",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Guilt_Backwards"
+            "value": "sprite_Feind_Backwards"
         },
         {
-            "id": "6bb7cb21-716f-4202-b80d-7f3951493bc1",
+            "id": "f757bd6c-9e4d-4174-a4c0-e16a17ad79d4",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_Guilt_Right"
+            "value": "sprite_Feind_Right"
         },
         {
-            "id": "849ae660-2439-4f1b-ad5a-113aa3554ace",
+            "id": "79c74cb8-7fd9-4cf0-8783-29849dc10e00",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Guilt_Left"
+            "value": "sprite_Feind_Left"
         },
         {
-            "id": "7bbcd6e1-a57d-4bcb-9782-80166b2aa7c2",
+            "id": "381c003c-18f0-4f5f-91de-e2f1a549724a",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "value": "subelement_Luxor"
+            "value": "subelement_Demon"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "3aef362e-1f33-4301-a2bd-b31f741a9ca2",
+    "spriteId": "97bca687-52d1-4a05-a3f4-468e09dc432f",
     "visible": true
 }

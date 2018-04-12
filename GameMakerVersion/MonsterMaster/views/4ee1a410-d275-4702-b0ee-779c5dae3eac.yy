@@ -8,7 +8,8 @@
         "8576aeb7-ad6b-485c-ae1f-c299faa72bd1",
         "b6eed035-6cde-4d15-9333-d9abc9af7695",
         "08ca131f-a7ec-4fc7-87cb-047223bcbfe6",
-        "98adeb4d-6404-4536-a406-a48f7057efbd"
+        "98adeb4d-6404-4536-a406-a48f7057efbd",
+        "aeeecce0-d42c-40f9-b9fb-4095284a2787"
     ],
     "filterType": "GMObject",
     "folderName": "MonsterTypes",

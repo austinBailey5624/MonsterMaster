@@ -1,68 +1,68 @@
 {
-    "id": "3972dd94-2a55-4da0-ae18-5c55e130196f",
+    "id": "03a96c19-214d-4d4d-9ac2-acd189db26db",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Guilt",
+    "name": "monsterType_Stinger",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "76a6ec4f-e48c-49c6-bcaa-33c0beba4b88",
+            "id": "5e9c0ac8-5099-4a5e-b3d3-430ffcd078bf",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Guilt\""
+            "value": "\"Stinger\""
         },
         {
-            "id": "abae49b5-f65b-4641-a676-e5ab4b9a5f04",
+            "id": "873906ae-71e1-4daf-a461-f842ef246c70",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\" The Guilt is a minor demon whose outer body is dark. However, a globe of light dwells within, that holds its hope of redemption. When it is near, mistakes are better remembered, although reparations are not always clear.\""
+            "value": "\" The Stinger is a small scorpion that can lift its legs up and slither and has fangs. It is faster than it looks, and will chase enemies with its stinger. It feeds on potent liquors, blood especially- which feeds it magically as well as physically, making its poison more potent.\""
         },
         {
-            "id": "7e76011e-20e9-489a-9112-6739a7fa5512",
+            "id": "b8fde15f-f809-4b43-bbad-cf1ae4cb93cd",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Guilt_Forwards"
+            "value": "sprite_Stinger_Forwards"
         },
         {
-            "id": "85ef59e3-5513-4b85-8741-891600d4b2cf",
+            "id": "38963d9e-c3f9-4533-8770-2e898bbbac8b",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Guilt_Backwards"
+            "value": "sprite_Stinger_Backwards"
         },
         {
-            "id": "6bb7cb21-716f-4202-b80d-7f3951493bc1",
+            "id": "ae70f0d6-a878-43bf-a9af-21831230ff5d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_Guilt_Right"
+            "value": "sprite_Stinger_Right"
         },
         {
-            "id": "849ae660-2439-4f1b-ad5a-113aa3554ace",
+            "id": "3960be48-cdfc-4027-af94-e5c2586f233e",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Guilt_Left"
+            "value": "sprite_Stinger_Left"
         },
         {
-            "id": "7bbcd6e1-a57d-4bcb-9782-80166b2aa7c2",
+            "id": "0bfcd746-6116-4529-949a-268c0ab778d9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "value": "subelement_Luxor"
+            "value": "subelement_Poison"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "3aef362e-1f33-4301-a2bd-b31f741a9ca2",
+    "spriteId": "621e46cf-7161-4ead-8253-9a0e3a3a10f7",
     "visible": true
 }
