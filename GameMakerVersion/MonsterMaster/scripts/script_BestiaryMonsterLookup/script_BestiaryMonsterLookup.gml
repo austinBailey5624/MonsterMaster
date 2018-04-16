@@ -164,7 +164,375 @@ else if(argument0 == subelement_Dino)
 }
 else if(argument0 == subelement_Phoenix)
 {
+	if(argument1 == 1)
+	{
+		return monsterType_MinorPhoenix;
+	}
+/*	if(argument1 ==2)//adolescents
+	{
+		if(argument2 == 0);
+	}*/
+	if(argument1 == 3 && argument2 == 1)
+	{
+		return monsterType_FireEagle;
+	}
+	if(argument2 == 0)
+	{
+		return monsterType_Chol
+	}
+	if(argument2 == 1)
+	{
+		return monsterType_FireBird;
+	}
 	return monsterType_MinorPhoenix;
+}
+else if(argument0 == subelement_Justice)
+{
+	return monsterType_Angier;
+}
+else if(argument0 == subelement_Vengence)
+{
+	return monsterType_Spiten;
+}
+else if(argument0 == subelement_Steam)
+{
+	return monsterType_MinorSteamlet;
+}
+else if(argument0 == subelement_Aqua)
+{
+	if(argument1 == 1)//infants
+	{
+		return monsterType_Minnow;
+	}
+	else if(argument1 == 2)//adolescents
+	{
+		if(argument2 == 2)//AquaSymbol
+		{
+			return monsterType_AquaSymbol;
+		}
+	}
+	else if(argument1 == 3)//adults
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_Torquoise;
+		}
+		else if(argument2 == 3)
+		{
+			return monsterType_AquaElemental;
+		}
+	}
+	else if(argument1 == 4)//elders
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_Sapphire;
+		}
+		else if(argument2 == 3)
+		{
+			return monsterType_AquaAtronach;
+		}
+	}
+	return monsterType_Minnow;
+}
+else if(argument0 == subelement_Amphibious)
+{
+	return monsterType_Tapple;
+}
+else if(argument0 == subelement_Weather)
+{
+	return monsterType_Cirrus;
+}
+else if(argument0 == subelement_Ice)
+{
+	return monsterType_Snoball;
+}
+else if(argument0 == subelement_Deep)
+{
+	return monsterType_Deepfish;
+}
+else if(argument0 == subelement_Fey)
+{
+	return monsterType_Sprite;
+}
+else if(argument0 == subelement_Swamp)
+{
+	return monsterType_Boggart;
+}
+else if(argument0 == subelement_Terra)
+{
+	if(argument1 == 1)
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Babadger;
+		}
+		else if(argument2 == 1)
+		{
+			return monsterType_Bulbapup;
+		}
+		else if(argument2 == 2)
+		{
+			return monsterType_Stiket;
+		}
+	}
+	else if(argument1 == 2)
+	{
+		if(argument2 == 0)//badgebadger
+		{
+			return monsterType_Babadger;
+		}
+		else if(argument2 == 1)//vinewolf
+		{
+			return monsterType_Bulbapup;
+		}
+		else if(argument2 == 2)//Trig
+		{
+			return monsterType_Stiket;
+		}
+		else if(argument2 ==3)//TerraSymbol
+		{
+			return monsterType_TerraSymbol;
+		}
+	}
+	else if(argument1 == 3)
+	{
+		if(argument2 == 3)
+		{
+			return monsterType_Jade;
+		}
+		if(argument2 == 4)
+		{
+			return monsterType_TerraElemental;
+		}
+	}
+	else if(argument1 == 4)//elders
+	{
+		if(argument2 == 4)
+		{
+			return monsterType_Emerald;
+		}
+		if(argument2 == 5)
+		{
+			return monsterType_TerraAtronach;
+		}
+	}
+	
+	if(argument2 == 0)
+	{
+		return monsterType_Babadger;
+	}
+	else if(argument2 == 1)
+	{
+		return monsterType_Bulbapup;
+	}
+	else if(argument2 == 2)
+	{
+		return monsterType_Stiket;
+	}
+	
+	return monsterType_Bulbapup;
+}
+else if(argument0 == subelement_Pegasus)
+{
+	return monsterType_MinorPegasus;
+}
+else if(argument0 == subelement_Compassion)
+{
+	return monsterType_Suddi;	
+}
+else if(argument0 == subelement_Rotten)
+{
+	return monsterType_Sewerat;
+}
+else if(argument0 == subelement_Sand)
+{
+	return monsterType_Kangarat;
+}
+else if(argument0 == subelement_Seabreeze)
+{
+	return monsterType_Gullfish;
+}
+else if(argument0 == subelement_Bird)
+{
+	return monsterType_Colour;
+}
+else if(argument0 == subelement_Aero)
+{
+	if(argument1 == 1)
+	{
+		return monsterType_Flapper;
+	}
+	else if(argument1 == 2)
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_AeroSymbol;
+		}
+	}
+	else if(argument1 ==3)
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_Quartz;		
+		}
+		else if(argument2 == 3)
+		{
+			return monsterType_AeroElemental;
+		}
+	}
+	else if(argument1 ==4)//elders
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_Topaz;
+		}
+		else if(argument2 == 3)
+		{
+			return monsterType_AeroAtronach;
+		}
+	}
+	return monsterType_Flapper;
+}
+else if(argument0 == subelement_Cocka)
+{
+	return monsterType_Cockaone;
+}
+else if(argument0 == subelement_Nightwing)
+{
+	return monsterType_Fourshadowing;
+}
+else if(argument0 == subelement_Solar)
+{
+	if(argument1 == 1)//infants
+	{
+		return monsterType_Tona;	
+	}
+	if(argument2 == 0)
+	{
+		return monsterType_Firefaux;
+	}
+	
+	return monsterType_Tona;
+}
+else if(argument0 == subelement_Lunar)
+{
+	if(argument1 == 1)//infants
+	{
+		return monsterType_Lona;
+	}
+	if(argument2 == 0)
+	{
+		return monsterType_Lunapup;
+	}
+	return monsterType_Lona;
+}
+else if(argument0 == subelement_Guardian)
+{
+	return monsterType_Escutcheoner;
+}
+else if(argument0 == subelement_Angel)
+{
+	return monsterType_Demiangel;
+}
+else if(argument0 == subelement_Luxor)
+{
+	if(argument1 == 1)//infants
+	{
+		return monsterType_Lumin;
+	}
+	if(argument1 == 2)//adolescents
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_LuxorSymbol;
+		}
+	}
+	if(argument1 == 3)//adults
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_Moonstone;
+		}
+		else if(argument2 == 3)
+		{
+			return monsterType_LuxorElemental;
+		}
+	}
+	if(argument1 == 4)//elders
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_Diamond;
+		}
+		if(argument2 == 3)
+		{
+			return monsterType_LuxorAtronach;	
+		}
+	}
+	return monsterType_Lumin;
+}
+else if(argument0 == subelement_Redemption)
+{
+	return monsterType_Guilt;
+}
+else if(argument0 == subelement_Demon)
+{
+	return monsterType_Fiend;
+}
+else if(argument0 == subelement_Poison)
+{
+	return monsterType_Stinger;
+}
+else if(argument0 == subelement_Undead)
+{
+	return monsterType_Stull;
+}
+else if(argument0 == subelement_Storm)
+{
+	return monsterType_Maltag;
+}
+else if(argument0 == subelement_Betrayer)
+{
+	return monsterType_FallenDemiAngel;
+}
+else if(argument0 == subelement_Umbral)
+{
+	if(argument1 == 1)//infants
+	{
+		return monsterType_Umbress;
+	}
+	if(argument1 == 2)
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_UmbralSymbol;
+		}
+	}
+	if(argument1 == 3)
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_Obsidian;
+		}
+		if(argument2 == 3)
+		{
+			return monsterType_UmbralElemental;
+		}
+	}
+	if(argument1 == 4)
+	{
+		if(argument2 == 2)
+		{
+			return monsterType_Onyx;
+		}
+		if(argument2 == 3)
+		{
+			return monsterType_UmbralAtronach;
+		}
+	}
+	
+	return monsterType_Umbress;
 }
 else
 {

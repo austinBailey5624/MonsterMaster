@@ -46,7 +46,7 @@
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_FallenDemiAgnel_Left"
+            "value": "sprite_FallenDemiAngel_Left"
         },
         {
             "id": "3a7a0a84-8fbc-4aeb-aae7-3a2408284229",
@@ -66,7 +66,7 @@
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
