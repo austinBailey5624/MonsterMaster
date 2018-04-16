@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "0593b019-9e0c-41ab-b1ca-a46d92cdd8c9",
+            "Value": {
+                "id": "0e489960-cd89-455a-9bb5-54dc67b3601b",
+                "resourcePath": "objects\\monsterType_Fawke\\monsterType_Fawke.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "05c4d852-845a-49ef-b881-2d978e85066a",
             "Value": {
                 "id": "2f2be025-f430-4831-8c59-c251c775426c",
@@ -10671,6 +10679,14 @@
             }
         },
         {
+            "Key": "e07e9c29-41bd-4671-a374-0c4bda30d34e",
+            "Value": {
+                "id": "a9fb07a9-c03a-4d1c-857b-c28573677149",
+                "resourcePath": "objects\\monsterType_Franzer\\monsterType_Franzer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e0a3234f-22c6-4e2f-a801-9c9639b78332",
             "Value": {
                 "id": "271c6899-f8a0-48aa-ba76-a6447b532c81",
@@ -10852,6 +10868,14 @@
                 "id": "c755b2da-039d-44eb-a332-2dd56de689bf",
                 "resourcePath": "views\\e3a5b8a8-c9da-4330-9280-9f2cfa152c3d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e3b424ae-64c3-4b51-9cc7-9918c6e16b78",
+            "Value": {
+                "id": "8d3daedb-9ced-4d94-b372-f4bb875c258d",
+                "resourcePath": "objects\\monsterType_Fenghuang\\monsterType_Fenghuang.yy",
+                "resourceType": "GMObject"
             }
         },
         {

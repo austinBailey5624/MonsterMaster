@@ -168,21 +168,38 @@ else if(argument0 == subelement_Phoenix)
 	{
 		return monsterType_MinorPhoenix;
 	}
-/*	if(argument1 ==2)//adolescents
+	if(argument1 == 2)
 	{
-		if(argument2 == 0);
-	}*/
-	if(argument1 == 3 && argument2 == 1)
-	{
-		return monsterType_FireEagle;
+		if(argument2 == 0)
+		{
+			return monsterType_Chol;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_FireBird;
+		}
 	}
-	if(argument2 == 0)
+	if(argument1 == 3)
 	{
-		return monsterType_Chol
+		if(argument2 == 0)
+		{
+			return monsterType_Fawke;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_FireEagle;
+		}
 	}
-	if(argument2 == 1)
+	if(argument1 == 4)
 	{
-		return monsterType_FireBird;
+		if(argument2 ==0)
+		{
+			return monsterType_Fenghuang;
+		}
+		if(argument2 ==1)
+		{
+			return monsterType_Franzer;
+		}
 	}
 	return monsterType_MinorPhoenix;
 }
