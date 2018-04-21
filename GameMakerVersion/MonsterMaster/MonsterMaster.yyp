@@ -2439,6 +2439,14 @@
             }
         },
         {
+            "Key": "32a2374c-e73c-4482-b7bd-26c0343cf08c",
+            "Value": {
+                "id": "525b518f-1f4f-441d-8102-a523770a7486",
+                "resourcePath": "objects\\monsterType_Jacobia\\monsterType_Jacobia.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "33150421-cb6a-4ab5-b378-110a4dbe8220",
             "Value": {
                 "id": "48908b52-cb51-4b54-89a1-087b65000beb",
@@ -2732,6 +2740,14 @@
                 "id": "61c8809b-962f-444b-bca9-38a153b228ad",
                 "resourcePath": "views\\37da7512-aaf4-44f3-87c2-00cc9595aa6b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "37efa5f4-0107-4714-b6cc-36b86ff66146",
+            "Value": {
+                "id": "74edf476-309a-4e7c-965c-ce23c3c540f1",
+                "resourcePath": "objects\\monsterType_Lizbet\\monsterType_Lizbet.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3723,6 +3739,14 @@
             "Value": {
                 "id": "7a43dc62-b8b5-4fc9-bf9d-e52082bd8e6d",
                 "resourcePath": "objects\\monsterType_VineWolf\\monsterType_VineWolf.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4d54a6a2-c55a-4553-bb3c-d0f8123a1b80",
+            "Value": {
+                "id": "b2841f76-3369-4ab2-b268-c8903860a091",
+                "resourcePath": "objects\\Interface_MovementActor\\Interface_MovementActor.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -6491,6 +6515,14 @@
             "Value": {
                 "id": "a07b46ba-46d7-481a-a0ae-f2716571b12f",
                 "resourcePath": "objects\\subelement_Rotten\\subelement_Rotten.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "859b879d-eba5-4f72-a5d1-dc499f239108",
+            "Value": {
+                "id": "bbc45b75-fa72-4761-a699-3d28499cfd6c",
+                "resourcePath": "objects\\monsterType_Letham\\monsterType_Letham.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -11154,7 +11186,7 @@
             "Key": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "Value": {
                 "id": "d193f92e-028f-4071-b58e-7c30b7d4e14a",
-                "resourcePath": "objects\\Interface_Actor\\Interface_Actor.yy",
+                "resourcePath": "objects\\Interface_SpritedActor\\Interface_SpritedActor.yy",
                 "resourceType": "GMObject"
             }
         },

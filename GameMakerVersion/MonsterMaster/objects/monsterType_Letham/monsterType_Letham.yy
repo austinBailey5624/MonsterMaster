@@ -1,14 +1,14 @@
 {
-    "id": "7a794859-71da-478c-aba1-d0b6ecb6c167",
+    "id": "859b879d-eba5-4f72-a5d1-dc499f239108",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Interface_BattleActor",
+    "name": "monsterType_Letham",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "4d54a6a2-c55a-4553-bb3c-d0f8123a1b80",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

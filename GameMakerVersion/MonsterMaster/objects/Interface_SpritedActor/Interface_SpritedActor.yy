@@ -2,7 +2,7 @@
     "id": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Interface_Actor",
+    "name": "Interface_SpritedActor",
     "eventList": [
         
     ],
@@ -78,62 +78,6 @@
             "value": "noone",
             "varName": "m_LeftSprite",
             "varType": 5
-        },
-        {
-            "id": "add1c321-41c8-43ac-98d5-d37ecb865229",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "m_travelUp",
-            "varType": 1
-        },
-        {
-            "id": "a3af1848-ef98-4c1a-8d05-a4ff3c29a2c6",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "m_travelDown",
-            "varType": 1
-        },
-        {
-            "id": "a46d0578-bf9f-429e-b77c-c77b959464d8",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "m_travelRight",
-            "varType": 1
-        },
-        {
-            "id": "09a9f635-7e80-4840-8b05-9cb3514ad73b",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "m_travelLeft",
-            "varType": 1
         }
     ],
     "solid": false,
