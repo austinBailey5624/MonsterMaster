@@ -2,7 +2,7 @@
     "id": "6b6de842-9da8-4511-8b78-617d2073f9a1",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite_Aynrved_ForwardsBouncy",
+    "name": "sprite_Ayurved_ForwardsBouncy",
     "For3D": false,
     "HTile": false,
     "VTile": false,

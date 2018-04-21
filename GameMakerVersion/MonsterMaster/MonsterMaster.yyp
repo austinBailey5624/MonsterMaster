@@ -975,6 +975,14 @@
             }
         },
         {
+            "Key": "15b63925-934a-4ea2-8d10-93876bdc0397",
+            "Value": {
+                "id": "5bf75726-386e-4eab-9880-cd08045d1b13",
+                "resourcePath": "objects\\monsterType_Zireal\\monsterType_Zireal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "160c1b84-4c24-4cd2-9a0b-9e3c5fed5567",
             "Value": {
                 "id": "8b7ee67b-283a-40d4-ad57-0d887ca1731f",
@@ -1794,7 +1802,7 @@
             "Key": "26fe0108-60d2-436d-99b0-c01f7125a8f1",
             "Value": {
                 "id": "084593c2-d86b-49d2-b00c-adc15cb3dfe1",
-                "resourcePath": "sprites\\sprite_Aynrved_Forwards\\sprite_Aynrved_Forwards.yy",
+                "resourcePath": "sprites\\sprite_Ayurved_Forwards\\sprite_Ayurved_Forwards.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3218,7 +3226,7 @@
             "Key": "440ef6a6-fa7f-47e7-b135-e8674d42fd6b",
             "Value": {
                 "id": "93b645de-ee49-4d8f-987e-eb21ddb2d2bc",
-                "resourcePath": "sprites\\sprite_Kangarat_Left1\\sprite_Kangarat_Left1.yy",
+                "resourcePath": "sprites\\sprite_Kangarat_Right\\sprite_Kangarat_Right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3738,7 +3746,7 @@
             "Key": "4fe2b356-4205-4cf9-9c3f-bca33d341e72",
             "Value": {
                 "id": "1bcd7624-d064-4a16-bed5-00e9f75ac920",
-                "resourcePath": "sprites\\sprite_Aynrved_Right\\sprite_Aynrved_Right.yy",
+                "resourcePath": "sprites\\sprite_Ayurved_Right\\sprite_Ayurved_Right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5034,7 +5042,7 @@
             "Key": "6b6de842-9da8-4511-8b78-617d2073f9a1",
             "Value": {
                 "id": "45a6ec3e-ca25-469e-ae7e-64299cd3a5b2",
-                "resourcePath": "sprites\\sprite_Aynrved_ForwardsBouncy\\sprite_Aynrved_ForwardsBouncy.yy",
+                "resourcePath": "sprites\\sprite_Ayurved_ForwardsBouncy\\sprite_Ayurved_ForwardsBouncy.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5612,6 +5620,14 @@
                 "id": "ae2f6cbe-1e21-4c9f-8df3-43ceed001979",
                 "resourcePath": "views\\778be396-8f21-4462-8100-aa8c40174014.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "77933031-72f3-4846-9e26-e98c1cfae382",
+            "Value": {
+                "id": "f66afc33-14f8-434f-a0a0-5af653bc81e4",
+                "resourcePath": "objects\\monsterType_Ayurved\\monsterType_Ayurved.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7503,6 +7519,14 @@
             }
         },
         {
+            "Key": "9da0290b-0acb-489f-8de0-45b2231a1e56",
+            "Value": {
+                "id": "6230a00b-75ce-4610-9e86-9f952aff4ae2",
+                "resourcePath": "objects\\monsterType_Justicer\\monsterType_Justicer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9e06e377-f3db-45f1-98bd-75e07a7ae10d",
             "Value": {
                 "id": "a217c4c2-8c44-4835-8f52-284e40685c34",
@@ -7842,7 +7866,7 @@
             "Key": "a3c4d243-b205-442c-b94a-eaa5fd2799a6",
             "Value": {
                 "id": "3a03ccea-5982-42ee-9931-14b33e4f4fbc",
-                "resourcePath": "sprites\\sprite_Aynrved_Left\\sprite_Aynrved_Left.yy",
+                "resourcePath": "sprites\\sprite_Ayurved_Left\\sprite_Ayurved_Left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7932,6 +7956,14 @@
                 "id": "525f9094-2298-4126-9ce6-a7e2e3d9d39b",
                 "resourcePath": "views\\a6f0f751-bdbd-4fb6-b15f-b1d3864cc240.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a6f89d12-beec-4adf-be09-e20c9a49a78d",
+            "Value": {
+                "id": "cabae1e6-328d-49a0-a9b9-babba4bd0c52",
+                "resourcePath": "objects\\monsterType_Anyr\\monsterType_Anyr.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -9002,7 +9034,7 @@
             "Key": "bc0e3214-301c-4b9f-ae48-7f758419b52f",
             "Value": {
                 "id": "68569a27-df29-443a-92fd-0ed92bcf72f2",
-                "resourcePath": "sprites\\sprite_Aynrved_Backwards\\sprite_Aynrved_Backwards.yy",
+                "resourcePath": "sprites\\sprite_Ayurved_Backwards\\sprite_Ayurved_Backwards.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -10359,6 +10391,14 @@
             }
         },
         {
+            "Key": "d64d3db4-3ae1-4803-a80e-1d9e8f125704",
+            "Value": {
+                "id": "e34cb416-3bd9-419b-8746-8d633b0ee1fd",
+                "resourcePath": "objects\\monsterType_Justicar\\monsterType_Justicar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d660b210-c6c6-4a25-8cd6-54f73c4264b2",
             "Value": {
                 "id": "085655fd-59d9-4487-9afc-270dc43cad9d",
@@ -11316,6 +11356,14 @@
                 "id": "e9b479aa-9591-45d4-ac2d-8faf09698b89",
                 "resourcePath": "views\\e8dc16c2-92a0-4a00-86e5-ddeb9173ede3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e8f2d5da-a577-4467-94fc-3d23df6e1ba5",
+            "Value": {
+                "id": "d11339f8-7ae7-470e-a391-855f8b076e8c",
+                "resourcePath": "objects\\monsterType_Ordinator\\monsterType_Ordinator.yy",
+                "resourceType": "GMObject"
             }
         },
         {

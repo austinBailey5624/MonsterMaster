@@ -1,68 +1,68 @@
 {
-    "id": "779d3b0f-2a41-4612-8e5c-ddc91db3a488",
+    "id": "e8f2d5da-a577-4467-94fc-3d23df6e1ba5",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "monsterType_Kangarat",
+    "name": "monsterType_Ordinator",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "87954b9e-dd7b-4e3e-8602-40212654ab62",
+            "id": "b2b6e101-169b-4682-9696-378b0755cf1c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"Kangarat\""
+            "value": "\"Ordinator\""
         },
         {
-            "id": "6012e94b-d331-494a-87f8-2ad68b72d0dc",
+            "id": "6ce2a5d7-06ec-4927-832f-8547b616f630",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"The Kangarat is a small rodent that can spend its whole life without having to drink any water. It takes no damage from sandstorm\""
+            "value": "\" The ordinator is a justicar who has served its term as a city guard and now goes forth to right whatever wrong it sees. It stands in shining white steel plate mail with a steel shield edged in gold with a knee-length white silk cape edged in gold\""
         },
         {
-            "id": "5e41a2ed-5612-4640-8bea-e091d96ea84d",
+            "id": "bc451d10-103c-4c7f-96a1-e9f4608bd589",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "sprite_Kangarat_Forwards"
+            "value": "sprite_Ordinator_Forwards"
         },
         {
-            "id": "1ccf57c6-1ade-4d0d-962c-e1e5181528c0",
+            "id": "c134e312-8279-4cde-802e-534bfa69f4cf",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "sprite_Kangarat_Backwards"
+            "value": "sprite_Ordinator_Backwards"
         },
         {
-            "id": "6d2d6b92-d290-4edf-96ff-8e406f45684b",
+            "id": "163061c2-a298-4fb0-ae9d-c0b7b316150e",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "sprite_Kangarat_Right"
+            "value": "sprite_Ordinator_Right"
         },
         {
-            "id": "054ac09a-dd11-4086-8a5c-8fb102312b00",
+            "id": "780c3240-21e0-48a5-99e3-ff3829dd60be",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "sprite_Kangarat_Left"
+            "value": "sprite_Ordinator_Left"
         },
         {
-            "id": "7f6d9e78-4ab0-413b-8152-5f4fe65a6bfb",
+            "id": "2a4de943-8ec4-4cf1-ab8a-a375b4f8753f",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
-            "value": "subelement_Sand"
+            "value": "subelement_Justice"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -81,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "51d9cbfb-cd44-439b-bdd4-cad0732cf908",
+    "spriteId": "a8fdd969-5cf8-41d0-8727-05a924b1c632",
     "visible": true
 }

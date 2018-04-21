@@ -205,6 +205,43 @@ else if(argument0 == subelement_Phoenix)
 }
 else if(argument0 == subelement_Justice)
 {
+	if(argument1 == 1)
+	{
+		return monsterType_Angier;
+	}
+	else if(argument1 == 2)
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Justicar;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Ayurved;
+		}
+	}
+	if(argument1 == 3)
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Ordinator;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Anyr;
+		}
+	}
+	if(argument1 == 4)
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Zireal;	
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Justicer;
+		}
+	}
 	return monsterType_Angier;
 }
 else if(argument0 == subelement_Vengence)
