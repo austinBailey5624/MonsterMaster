@@ -287,6 +287,22 @@ else if(argument0 == subelement_Vengence)
 }
 else if(argument0 == subelement_Steam)
 {
+	if(argument1==1)
+	{
+		return monsterType_MinorSteamlet;
+	}
+	if(argument1==2)
+	{
+		return monsterType_LesserSteamlet;
+	}
+	if(argument1==3)
+	{
+		return monsterType_Steamlet;
+	}
+	if(argument1 == 4)
+	{
+		return monsterType_GreaterSteamlet;	
+	}
 	return monsterType_MinorSteamlet;
 }
 else if(argument0 == subelement_Aqua)
