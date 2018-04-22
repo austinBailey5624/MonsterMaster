@@ -246,6 +246,43 @@ else if(argument0 == subelement_Justice)
 }
 else if(argument0 == subelement_Vengence)
 {
+	if(argument1 == 1)//infants
+	{
+		return monsterType_Spiten;
+	}
+	if(argument1 == 2)//adolescents
+	{
+		if(argument2 ==0)
+		{
+			return monsterType_Jacobia;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Lizbet;
+		}
+	}
+	if(argument1 == 3)//adults
+	{
+		if(argument2 ==0)
+		{
+			return monsterType_Letham;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_DHoffry;
+		}
+	}
+	if(argument1 == 4)
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Revenant;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Halfrec;
+		}
+	}
 	return monsterType_Spiten;
 }
 else if(argument0 == subelement_Steam)

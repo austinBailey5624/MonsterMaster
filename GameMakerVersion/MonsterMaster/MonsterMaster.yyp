@@ -1191,6 +1191,14 @@
             }
         },
         {
+            "Key": "196fe684-6e62-4453-9967-24b4bd8afe96",
+            "Value": {
+                "id": "7f6b4b5c-2613-4656-97ec-70be2c92758f",
+                "resourcePath": "objects\\monsterType_Halfrec\\monsterType_Halfrec.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "19e56b69-3e33-47e5-a405-8850742fd293",
             "Value": {
                 "id": "87848c6b-77f9-4946-ae31-6ff5f4857dd7",
@@ -3516,6 +3524,14 @@
                 "id": "5a1e6ea6-546d-47ee-a648-ea1930abdc23",
                 "resourcePath": "sprites\\sprite_Flarpup_Forward\\sprite_Flarpup_Forward.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "482ff5ca-df44-41ad-ae43-e85ee1c13e02",
+            "Value": {
+                "id": "2e754b84-2e2c-4e42-b563-36510a1cca09",
+                "resourcePath": "objects\\monsterType_DHoffry\\monsterType_DHoffry.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7100,6 +7116,14 @@
                 "id": "0d1461e7-d025-4940-9aa6-a01e41a47edb",
                 "resourcePath": "sprites\\sprite_IronMaul\\sprite_IronMaul.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "924c4ddf-521e-4aac-8f4b-9340c8020ea3",
+            "Value": {
+                "id": "e631b6a1-e213-4887-8a78-36b006caf982",
+                "resourcePath": "objects\\monsterType_Revenant\\monsterType_Revenant.yy",
+                "resourceType": "GMObject"
             }
         },
         {
