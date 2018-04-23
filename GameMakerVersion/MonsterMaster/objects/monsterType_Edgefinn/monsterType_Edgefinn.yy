@@ -25,7 +25,39 @@
             "value": "\"EdgeFinn is a larger version of the Minnow with a serrated crest and finns, as well as small, razor-sharp teeth. unlike most fish, its eyes face forward to stalk its prey, like the carnivores on land.\""
         },
         {
-            "id": "b662b488-d2c0-457b-b0c0-c9487c6df7a8",
+            "id": "914ac9ab-6416-4072-b7ba-db4d0db66786",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
+            "value": "sprite_EdgeFinn_Forwards"
+        },
+        {
+            "id": "5692a0c7-9fef-4754-a011-4037ebc9c983",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
+            "value": "sprite_EdgeFinn_Backwards"
+        },
+        {
+            "id": "6657dbfd-d30d-4af0-b880-5339142bf21f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
+            "value": "sprite_EdgeFinn_Right"
+        },
+        {
+            "id": "c831fb80-cb03-4a0a-abee-96dbea397dc1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
+            "value": "sprite_EdgeFinn_Left"
+        },
+        {
+            "id": "dadc8afa-d3b3-4dd9-bf6f-de486b37a4da",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
@@ -49,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "0c689fde-d912-4f04-9f81-b64114b990da",
     "visible": true
 }

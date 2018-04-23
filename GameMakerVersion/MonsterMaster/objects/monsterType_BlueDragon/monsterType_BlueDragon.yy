@@ -31,10 +31,42 @@
             "objectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
             "propertyId": "324fab1f-4d71-452a-86d4-80584f88bdd3",
             "value": "subelement_Aqua"
+        },
+        {
+            "id": "0b4176cb-5ac7-45fe-b5ff-cea31b91f204",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
+            "value": "sprite_BlueDragon_Forwards"
+        },
+        {
+            "id": "cf5e8375-5c42-4ea8-8035-925e592e20ba",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
+            "value": "sprite_BlueDragon_Backwards"
+        },
+        {
+            "id": "e4425b45-eb8b-44e1-ad02-f6c954358f84",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
+            "value": "sprite_BlueDragon_Right"
+        },
+        {
+            "id": "9b23d4d6-c795-4671-a1d6-902180832505",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
+            "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
+            "value": "sprite_BlueDragon_Left"
         }
     ],
     "parentObjectId": "5b7c5068-aa55-4578-835b-dd5182cdee5a",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -49,6 +81,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "245c594c-6251-4005-a862-9e6fab6661a3",
     "visible": true
 }

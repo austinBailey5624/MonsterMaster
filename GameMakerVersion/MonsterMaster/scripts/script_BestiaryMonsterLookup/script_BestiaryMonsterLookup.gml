@@ -313,6 +313,14 @@ else if(argument0 == subelement_Aqua)
 	}
 	else if(argument1 == 2)//adolescents
 	{
+		if(argument2 == 0)
+		{
+			return monsterType_Edgefinn;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Cuddlerfish;
+		}
 		if(argument2 == 2)//AquaSymbol
 		{
 			return monsterType_AquaSymbol;
@@ -320,6 +328,14 @@ else if(argument0 == subelement_Aqua)
 	}
 	else if(argument1 == 3)//adults
 	{
+		if(argument2 == 0)
+		{
+			return monsterType_Slicefinn;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Snugglerfish;
+		}
 		if(argument2 == 2)
 		{
 			return monsterType_Torquoise;
@@ -331,6 +347,14 @@ else if(argument0 == subelement_Aqua)
 	}
 	else if(argument1 == 4)//elders
 	{
+		if(argument2 == 0)
+		{
+			return monsterType_BlueDragon;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Levithan;
+		}
 		if(argument2 == 2)
 		{
 			return monsterType_Sapphire;
