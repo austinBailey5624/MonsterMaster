@@ -368,6 +368,55 @@ else if(argument0 == subelement_Aqua)
 }
 else if(argument0 == subelement_Amphibious)
 {
+	if(argument1 == 1)//infants
+	{
+		return monsterType_Tapple;
+	}
+	if(argument1 == 2)//adolescents
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Froget;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Rainbowfrog;
+		}
+		if(argument2 == 2)
+		{
+			return monsterType_Frogami;
+		}
+	}
+	if(argument1 == 3)//adults
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Frogar;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Frogaudy;
+		}
+		if(argument2 == 2)
+		{
+			return monsterType_Esotoad;
+		}
+	}
+	if(argument1 == 4)//elders
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Tonguedancer;
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Frogealer;
+		}
+		if(argument2 == 2)
+		{
+			return monsterType_Metitode;
+		}
+	}
 	return monsterType_Tapple;
 }
 else if(argument0 == subelement_Weather)

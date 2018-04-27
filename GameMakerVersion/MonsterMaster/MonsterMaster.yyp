@@ -1271,6 +1271,14 @@
             }
         },
         {
+            "Key": "18b2fa06-930a-498a-b575-0cf5ac4478d2",
+            "Value": {
+                "id": "4cf8a28f-7582-4cbf-b82b-17152167964b",
+                "resourcePath": "objects\\monsterType_Frogealer\\monsterType_Frogealer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "18e0ae4e-3985-4bc7-906b-44f9a047aa19",
             "Value": {
                 "id": "00685e23-0ae5-40d4-965c-e3ab1e09bb1a",
@@ -1980,6 +1988,14 @@
                 "id": "e2ca6c9c-2158-427f-9fcc-390ca147769a",
                 "resourcePath": "sprites\\sprite_GullFish_Left\\sprite_GullFish_Left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "253a993a-15b5-4317-96dc-b0fd351bb5a9",
+            "Value": {
+                "id": "03124635-d7ab-48a0-8f4c-58d6019f814c",
+                "resourcePath": "objects\\monsterType_Metitode\\monsterType_Metitode.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5479,6 +5495,14 @@
             }
         },
         {
+            "Key": "68f9dd45-e1da-4098-ab72-2fbd47cb702b",
+            "Value": {
+                "id": "a85a2f55-9ab8-4013-87a0-f78b3283f8bb",
+                "resourcePath": "objects\\monsterType_Froget\\monsterType_Froget.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6909b241-625f-4c7f-b271-4ab7aa709c1b",
             "Value": {
                 "id": "43829bb7-c77e-4586-acbb-8a2b74799d62",
@@ -6028,6 +6052,14 @@
                 "id": "4d248a7a-d407-453b-b1a8-b937dde79314",
                 "resourcePath": "sprites\\sprite_DragonBoneHatchet\\sprite_DragonBoneHatchet.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "744db05d-9e42-4865-86d7-d5a8af178147",
+            "Value": {
+                "id": "d8e3f47f-cba7-418d-8b79-d1ca839dfe73",
+                "resourcePath": "objects\\monsterType_Frogaudy\\monsterType_Frogaudy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7220,6 +7252,14 @@
                 "id": "0ce8f9cf-4324-4bcd-8fec-78c8f270db43",
                 "resourcePath": "views\\89e382d6-9c76-4aca-a360-d9700d952ec1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8a5424f9-4bd9-41c7-84c3-ed82f9b96eb4",
+            "Value": {
+                "id": "75d98faf-a52d-41be-a4c3-a77b49989a24",
+                "resourcePath": "objects\\monsterType_Frogar\\monsterType_Frogar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -9751,6 +9791,14 @@
             }
         },
         {
+            "Key": "b9f63707-d0c7-4d94-924d-adbeb73d2a6a",
+            "Value": {
+                "id": "9f0ce32c-becf-4dda-88b6-446d3707d2d5",
+                "resourcePath": "objects\\monsterType_Esotoad\\monsterType_Esotoad.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ba181a11-30a8-475f-99d0-f41d5e1d14a1",
             "Value": {
                 "id": "21113ebd-2cc0-4941-bb3e-18a9a6f9a687",
@@ -9772,6 +9820,14 @@
                 "id": "1b850b45-2a6d-4453-94df-8823efa92d46",
                 "resourcePath": "sprites\\sprite_FireEagle_Right\\sprite_FireEagle_Right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba824dba-137e-4701-922b-55e4d5e8b7b0",
+            "Value": {
+                "id": "a8c675d5-d13d-4f35-93c0-c609663ca3db",
+                "resourcePath": "objects\\monsterType_Tonguedancer\\monsterType_Tonguedancer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -10683,6 +10739,14 @@
             "Value": {
                 "id": "8c239d53-69f8-4d71-b077-df8817abd65e",
                 "resourcePath": "objects\\object_SubElementButton_Solar\\object_SubElementButton_Solar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cb1317d9-2721-44e8-9d8d-1af4dda380c4",
+            "Value": {
+                "id": "49f101ab-9fda-46c5-b2a0-cacce2724998",
+                "resourcePath": "objects\\monsterType_Frogami\\monsterType_Frogami.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -13388,6 +13452,14 @@
                 "id": "1809b9a7-cd20-4f0e-8773-e6f3bfde0e6a",
                 "resourcePath": "sprites\\sprite_MithrilHatchet\\sprite_MithrilHatchet.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc132ec4-4a66-4404-af5b-8771d8739dc4",
+            "Value": {
+                "id": "321f6cb1-96eb-41ca-9e3a-5ac123dec5f8",
+                "resourcePath": "objects\\monsterType_Rainbowfrog\\monsterType_Rainbowfrog.yy",
+                "resourceType": "GMObject"
             }
         },
         {
