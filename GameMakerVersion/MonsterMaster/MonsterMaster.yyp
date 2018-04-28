@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "076c177d-3af6-412c-b0b5-c8192868de66",
+            "Value": {
+                "id": "d4ec8438-9a41-4ea4-a436-59a2e537c671",
+                "resourcePath": "rooms\\room_Bestiary_MonsterType\\room_Bestiary_MonsterType.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "07c5a1c0-8850-4b2e-ba51-99a415c4a458",
             "Value": {
                 "id": "f0b059ca-038e-4cfc-a691-5106aa85ccf7",
@@ -1619,6 +1627,14 @@
             "Value": {
                 "id": "a93c3e30-7724-43bb-a51a-56d1a0c6d152",
                 "resourcePath": "objects\\object_Intro_Writer\\object_Intro_Writer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1f2d178d-c3a4-459b-a780-5998fe54c653",
+            "Value": {
+                "id": "32e8ee3c-0aa9-4fb7-b56d-d6cf73096d28",
+                "resourcePath": "objects\\object_BestiaryMenu_Button64by160\\object_BestiaryMenu_Button64by160.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2991,6 +3007,14 @@
             }
         },
         {
+            "Key": "37c32895-3837-4c66-955e-bc46552b06da",
+            "Value": {
+                "id": "26cfbb4f-50c3-406b-bf5a-592fa972a053",
+                "resourcePath": "objects\\object_BestiaryMenu_MonsterTypeTitleBar\\object_BestiaryMenu_MonsterTypeTitleBar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "37da7512-aaf4-44f3-87c2-00cc9595aa6b",
             "Value": {
                 "id": "61c8809b-962f-444b-bca9-38a153b228ad",
@@ -3092,6 +3116,14 @@
                 "id": "3a4cd490-d55f-4583-bd46-341c6beec032",
                 "resourcePath": "objects\\monsterType_Guilt\\monsterType_Guilt.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3981362e-819c-45ab-8b28-08df31781a08",
+            "Value": {
+                "id": "3320238f-1a5a-43ee-bedf-ca5aa1789fb6",
+                "resourcePath": "sprites\\sprite_Bestiary_MonsterTypeDescriptionBackground\\sprite_Bestiary_MonsterTypeDescriptionBackground.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4708,6 +4740,14 @@
                 "id": "6b50baa4-bcf8-4a5b-92b5-66901603b0be",
                 "resourcePath": "sprites\\sprite_MainMenu_Load\\sprite_MainMenu_Load.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5a1491ee-22d7-4653-a83a-2b829e7e25d5",
+            "Value": {
+                "id": "c604067d-f130-4dc2-b972-9e56b57dda84",
+                "resourcePath": "objects\\object_BestiaryMonsterTypeRoomWriter\\object_BestiaryMonsterTypeRoomWriter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -8615,6 +8655,14 @@
             }
         },
         {
+            "Key": "a31eb832-75e6-44ff-8daa-9995d8214519",
+            "Value": {
+                "id": "0bf0d116-2ade-4df1-bc45-6eba02fec511",
+                "resourcePath": "objects\\object_MonsterDescriptionBackground\\object_MonsterDescriptionBackground.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a31f032e-e0f9-40fd-aa55-1b189c8ef36d",
             "Value": {
                 "id": "047d28b2-462d-44eb-aabb-4acc8e6fb98a",
@@ -8979,6 +9027,14 @@
             "Value": {
                 "id": "578db7ce-1703-416e-8bb4-fa1740b231c6",
                 "resourcePath": "sprites\\sprite_Justicar_Left\\sprite_Justicar_Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aa2a478b-4d21-4a4f-b766-c24f87ef247e",
+            "Value": {
+                "id": "d74a0155-415d-4208-aa83-c8f8fd0e1930",
+                "resourcePath": "sprites\\sprite_Bestiary_BackButton64by160\\sprite_Bestiary_BackButton64by160.yy",
                 "resourceType": "GMSprite"
             }
         },
