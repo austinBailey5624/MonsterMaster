@@ -1,18 +1,38 @@
 {
-    "id": "be260655-6ec5-4a38-a269-caa192198eff",
+    "id": "3889e7be-db28-4f96-86a2-e977e3364a17",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Interface_BestiaryMenu_MonsterSpriteShower",
+    "name": "object_MonsterSpriteShower_Backwards",
     "eventList": [
         {
-            "id": "e37c8a38-431b-4f3a-b851-61b8a6fbaf0b",
+            "id": "67b69c87-a97a-450f-80dd-e2419a830804",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "be260655-6ec5-4a38-a269-caa192198eff"
+            "m_owner": "3889e7be-db28-4f96-86a2-e977e3364a17"
+        },
+        {
+            "id": "7dfe7662-4efd-425b-bd47-ba24bb5e8017",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "3889e7be-db28-4f96-86a2-e977e3364a17"
+        },
+        {
+            "id": "56c63049-94f0-4dd5-b640-628abedc2c7c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "3889e7be-db28-4f96-86a2-e977e3364a17"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

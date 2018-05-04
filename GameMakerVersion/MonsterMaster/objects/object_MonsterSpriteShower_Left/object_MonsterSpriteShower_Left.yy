@@ -1,23 +1,23 @@
 {
-    "id": "cf1c9093-a8e4-49e8-a0a8-920b78ba2131",
+    "id": "ae0320a4-df0a-4e61-a0b8-d7bdc631a71e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object_BestiaryMenu_MonsterTypeTitleBar",
+    "name": "object_MonsterSpriteShower_Left",
     "eventList": [
         {
-            "id": "6fc66c9e-2db6-44ce-adae-6f6df36026d2",
+            "id": "36c3ecb8-bf60-4472-92f0-b20e76c20b5d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "cf1c9093-a8e4-49e8-a0a8-920b78ba2131"
+            "eventtype": 0,
+            "m_owner": "ae0320a4-df0a-4e61-a0b8-d7bdc631a71e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "be260655-6ec5-4a38-a269-caa192198eff",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "624a9dd2-5be7-4da5-b777-fb91e6591c0d",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

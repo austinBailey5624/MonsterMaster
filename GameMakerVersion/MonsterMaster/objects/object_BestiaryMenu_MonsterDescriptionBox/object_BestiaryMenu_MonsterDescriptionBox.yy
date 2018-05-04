@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "object_BestiaryMenu_MonsterDescriptionBox",
     "eventList": [
-        
+        {
+            "id": "3255b859-b80d-436f-ad31-cdd59dc60cdd",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "f0791537-afad-4616-98ed-6658b2a05d73"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
