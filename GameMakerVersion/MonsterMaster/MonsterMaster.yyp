@@ -1143,6 +1143,14 @@
             }
         },
         {
+            "Key": "15d60d73-9364-4a35-9bd1-275084fd7777",
+            "Value": {
+                "id": "90fe5505-a1b7-4f87-8adc-a8c05a206e17",
+                "resourcePath": "sprites\\sprite_Bestiary_MonsterTypeDefault128\\sprite_Bestiary_MonsterTypeDefault128.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "15e487cc-a930-436b-be22-4fe8d7153513",
             "Value": {
                 "id": "007bdf81-2815-482f-a4aa-3942301231cc",
@@ -1655,6 +1663,14 @@
             }
         },
         {
+            "Key": "1fddeac1-ab44-4012-a223-4973f6442587",
+            "Value": {
+                "id": "a6b283f8-27d6-4d0c-a532-1b705720d3d0",
+                "resourcePath": "rooms\\room_Bestiary_MonsterRoom\\room_Bestiary_MonsterRoom.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "200178df-36af-4abc-8bd1-f6503ca65cd6",
             "Value": {
                 "id": "a2c745a9-b3d4-4f0f-a404-c052b749e57d",
@@ -1756,6 +1772,14 @@
                 "id": "9cb5fce5-7e47-499d-89cc-490690a994d2",
                 "resourcePath": "objects\\monsterType_LesserSteamlet\\monsterType_LesserSteamlet.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "223d7a84-59de-4d4d-a3a1-faac8af1d29a",
+            "Value": {
+                "id": "c6348b2c-c6fa-43f6-bc9f-a06e1c30638e",
+                "resourcePath": "views\\223d7a84-59de-4d4d-a3a1-faac8af1d29a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -7247,6 +7271,14 @@
             }
         },
         {
+            "Key": "89be607b-b2ca-4306-96f1-6bf7766c6616",
+            "Value": {
+                "id": "3a4e4081-025b-4bf5-9eb8-ca4d010608ec",
+                "resourcePath": "objects\\object_BestiaryMenu_MonsterDescriptionBackButton\\object_BestiaryMenu_MonsterDescriptionBackButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "89e382d6-9c76-4aca-a360-d9700d952ec1",
             "Value": {
                 "id": "0ce8f9cf-4324-4bcd-8fec-78c8f270db43",
@@ -10023,6 +10055,14 @@
             }
         },
         {
+            "Key": "be260655-6ec5-4a38-a269-caa192198eff",
+            "Value": {
+                "id": "b616fdf9-26ec-416c-9a09-8da5b8ee5a89",
+                "resourcePath": "objects\\Interface_BestiaryMenu_MonsterSpriteShower\\Interface_BestiaryMenu_MonsterSpriteShower.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "be55022b-a151-48d5-b27c-35b9bf504ef4",
             "Value": {
                 "id": "1b6b1aef-151f-46fd-bf85-908980546dd7",
@@ -10964,6 +11004,14 @@
                 "id": "b0da0796-152d-4770-bcab-2bec0bdeda5f",
                 "resourcePath": "sprites\\sprite_Anyr_Left\\sprite_Anyr_Left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cf1c9093-a8e4-49e8-a0a8-920b78ba2131",
+            "Value": {
+                "id": "2064d6c8-e82b-47bc-aee3-5bcd714b7ab6",
+                "resourcePath": "objects\\object_BestiaryMenu_MonsterTypeTitleBar\\object_BestiaryMenu_MonsterTypeTitleBar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -12791,6 +12839,14 @@
             }
         },
         {
+            "Key": "f0791537-afad-4616-98ed-6658b2a05d73",
+            "Value": {
+                "id": "12551487-6132-462a-b014-b22871986648",
+                "resourcePath": "objects\\object_BestiaryMenu_MonsterDescriptionBox\\object_BestiaryMenu_MonsterDescriptionBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f0da6362-6a0d-44e2-abb7-879ba94bf76c",
             "Value": {
                 "id": "580a5db2-b147-447e-aafd-0b1b18427805",
@@ -13612,6 +13668,14 @@
                 "id": "a7ce7af8-95c7-4985-a7d3-97accfe5fcd6",
                 "resourcePath": "objects\\monsterType_Luminace\\monsterType_Luminace.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ffc180b1-1d54-4f93-a5fe-337dea9ada24",
+            "Value": {
+                "id": "02ebaf98-5486-4880-8ce3-57c41ae3c6bb",
+                "resourcePath": "sprites\\sprite_Bestiary_MonsterDescriptionBG\\sprite_Bestiary_MonsterDescriptionBG.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
