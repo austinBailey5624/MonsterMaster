@@ -98,7 +98,7 @@ else if(argument0 = subelement_Lava)
 	{
 		if(argument2 == 0)
 		{
-			return monsterType_Vulcanous
+			return monsterType_Vulcanous;
 		}
 		else
 		{
@@ -421,6 +421,56 @@ else if(argument0 == subelement_Amphibious)
 }
 else if(argument0 == subelement_Weather)
 {
+	if(argument1==1)
+	{
+		return monsterType_Cirrus;
+	}
+	if(argument1 == 2)
+	{
+		if(argument2 == 0)
+		{
+			//return monsterType_Cirrus;
+			return monsterType_Cumulus;	
+		}
+		if(argument2 == 1)
+		{
+			return monsterType_Stratus;	
+		}
+		if(argument2 == 2)
+		{
+			return monsterType_Nimbus;	
+		}
+	}
+	if(argument1 == 3)
+	{
+		if(argument2 == 0)
+		{
+			return monsterType_Nephol;
+		}
+		if(argument2==1)
+		{
+			return monsterType_CumuloStratus;
+		}
+		if(argument2==2)
+		{
+			return monsterType_NimbuloPonderant;
+		}
+	}
+	if(argument1==4)
+	{
+		if(argument2==0)
+		{
+			return monsterType_Thunderus;
+		}
+		if(argument2==1)
+		{
+			return monsterType_Cirricumulus;
+		}
+		if(argument2==2)
+		{
+			return monsterType_Cumulonimbus;
+		}
+	}
 	return monsterType_Cirrus;
 }
 else if(argument0 == subelement_Ice)

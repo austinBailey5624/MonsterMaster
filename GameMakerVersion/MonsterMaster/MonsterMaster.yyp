@@ -1415,6 +1415,14 @@
             }
         },
         {
+            "Key": "1ae3b87e-61f6-4391-b230-535c26fa15e3",
+            "Value": {
+                "id": "cbf6b3ea-49fe-4e68-9ad1-41dfb0d9358c",
+                "resourcePath": "objects\\monsterType_Thunderus\\monsterType_Thunderus.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b1425d9-72a7-4189-af1d-d0da5b165171",
             "Value": {
                 "id": "217af5b1-e348-42c8-9e53-4964b28aa9ff",
@@ -2119,6 +2127,14 @@
             }
         },
         {
+            "Key": "26782f21-0e81-4cc7-af55-7bba1d459133",
+            "Value": {
+                "id": "7ec9dd38-f62d-4fc8-bc18-a15d810f7e12",
+                "resourcePath": "objects\\monsterType_Cirricumulus\\monsterType_Cirricumulus.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "26abc0b6-f23b-4b8d-ae2a-6d67fcf7876a",
             "Value": {
                 "id": "853c3a68-4c66-4525-97c8-84e6f9cffdaa",
@@ -2604,6 +2620,14 @@
                 "id": "e0db483b-c4df-4d23-9bc2-47a346f44978",
                 "resourcePath": "sprites\\sprite_Lizbet_Right\\sprite_Lizbet_Right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2f96f07e-f48d-4fc7-b70f-2ef7827c3963",
+            "Value": {
+                "id": "7752d343-727f-4469-95a9-427749a3f579",
+                "resourcePath": "objects\\monsterType_Cumulus\\monsterType_Cumulus.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4211,6 +4235,14 @@
             "Value": {
                 "id": "b2841f76-3369-4ab2-b268-c8903860a091",
                 "resourcePath": "objects\\Interface_MovementActor\\Interface_MovementActor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4d566b85-a5f8-47a0-b499-08f88cbc5d47",
+            "Value": {
+                "id": "0cef7ccf-02be-4f8d-8493-ee3cd64645c9",
+                "resourcePath": "objects\\monsterType_CumuloStratus\\monsterType_CumuloStratus.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -7223,6 +7255,14 @@
             }
         },
         {
+            "Key": "84929d3b-d0e4-42ad-8ce2-0e90605a1dee",
+            "Value": {
+                "id": "f7894f38-d5f5-4f35-89d4-945819b07a3f",
+                "resourcePath": "objects\\monsterType_Stratus\\monsterType_Stratus.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "84b3bec0-b0a8-4c7f-aded-f1e6cbd8d29f",
             "Value": {
                 "id": "87b6b494-7263-4766-9860-e6f9798f2116",
@@ -7500,6 +7540,14 @@
                 "id": "fd6ad7a9-b649-4df7-948e-c866689e0a9d",
                 "resourcePath": "sprites\\sprite_TongueDancer_Forwards\\sprite_TongueDancer_Forwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89a1e468-859f-4873-9cf7-273f3ca8d0c5",
+            "Value": {
+                "id": "8080eb64-6ff0-4e3e-9d0e-5765065238ef",
+                "resourcePath": "objects\\monsterType_NimbuloPonderant\\monsterType_NimbuloPonderant.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -9991,6 +10039,14 @@
             }
         },
         {
+            "Key": "b7d01a2b-d8b8-4035-8980-9140e96e609e",
+            "Value": {
+                "id": "f4ed18c6-5dc9-418f-8aa7-cce9a86a87d4",
+                "resourcePath": "objects\\monsterType_Nimbus\\monsterType_Nimbus.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b800f181-71cd-4af2-81f8-812c3780cc5b",
             "Value": {
                 "id": "96ed849f-47a4-4ba0-a90d-8e6df4d116ae",
@@ -10684,6 +10740,14 @@
                 "id": "475c17dc-d87e-477d-8686-1c69332a5409",
                 "resourcePath": "sprites\\sprite_PauseMenu_Inventory_MouseOver\\sprite_PauseMenu_Inventory_MouseOver.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c3404d45-f639-4a33-9e1f-698c8245286e",
+            "Value": {
+                "id": "8f285d8e-c6c9-49c8-b93e-18429b7ad24d",
+                "resourcePath": "objects\\monsterType_Cumulonimbus\\monsterType_Cumulonimbus.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -12876,6 +12940,14 @@
                 "id": "e8e5ecd9-d230-40e0-88fe-1b96906ac4ff",
                 "resourcePath": "views\\e99a713f-20cb-439d-a204-ae6b2a5a9803.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e9a149ea-486d-4651-8229-373525dd6d8e",
+            "Value": {
+                "id": "5b09b02a-6722-4eb5-a4a5-2a3ccbefa977",
+                "resourcePath": "objects\\monsterType_Nephol\\monsterType_Nephol.yy",
+                "resourceType": "GMObject"
             }
         },
         {
