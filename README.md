@@ -60,10 +60,10 @@ pixelated characters mucking about than a few really pretty characters with a ve
 
 ## Mechanics To Do List
  - [x] Main Menu mock-up
- - [ ] Incorporate finished music (as of 3/20/2018)
- - [ ] Incorporate Pause Menu
- - [ ] Add Opening Cinematic
- - [ ] Finish implementation of Infant Monster Types
+ - [x] Incorporate finished music (as of 3/20/2018)
+ - [x] Incorporate Pause Menu
+ - [x] Add Opening Cinematic
+ - [x] Finish implementation of Infant Monster Types
  - [ ] Create Class for Items
  -  -  [ ] Create Class for Weapons
  -  -  [ ] Create Class for Armors
@@ -71,26 +71,32 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - [ ] Finalize Inventory design (array of integers whose index is mapped to a particular item?)
  - [ ] Inventory UI
  - [ ] Shop UI
- - [ ] Finalize Skill Design
- -  -  [ ] Determine what skills are mapped to what monster/player
- -  -  [ ] Determine Mechanics of skill usage
+ - [x] Finalize Skill Design
+ -  -  [x] Determine what skills are mapped to what monster/player
+ -  -  [x] Determine Mechanics of skill usage
  -  -  [ ] Implement already written skill types
  - [ ] After writing what we want skills to do, determine all of the values for the damage array
  - [ ] Make Fighter Class (from BattleActor class from 581)
+ -  -  [x] BattleActor
  - [ ] Make Player Classes (from HumanActor, MainCharacter, Companion, HumanEnemy, Party, Conversation)
- 
+ -  - [ ] HumanActor
+ -  - [ ] MainCharacter
+ -  - [ ] Companion
+ -  - [ ] HumanEnemy
+ -  - [x] Party
+ -  - [ ] Conversation
 ## Design To Do List
  - [x] SpriteSheets for Pyro Monsters
  - [x] SpriteSheets for Lava Monsters
  - [x] SpriteSheets for Dino Monsters 
- - [ ] SpriteSheets for Phoenix Monsters
- - [ ] SpriteSheets for Justice Monsters
- - [ ] SpriteSheets for Vengence Monsters
+ - [x] SpriteSheets for Phoenix Monsters
+ - [x] SpriteSheets for Justice Monsters
+ - [x] SpriteSheets for Vengence Monsters
  
- - [ ] SpriteSheets for Steam Monsters
- - [ ] SpriteSheets for Aqua Monsters
- - [ ] SpriteSheets for Amphibious Monsters
- - [ ] SpriteSheets for Weather Monsters
+ - [x] SpriteSheets for Steam Monsters
+ - [x] SpriteSheets for Aqua Monsters
+ - [x] SpriteSheets for Amphibious Monsters
+ - [x] SpriteSheets for Weather Monsters
  - [ ] SpriteSheets for Ice Monsters
  - [ ] SpriteSheets for Deep Monsters
 

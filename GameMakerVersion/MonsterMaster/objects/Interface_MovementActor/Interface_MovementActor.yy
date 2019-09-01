@@ -63,7 +63,7 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "m_travelRight",
-            "varType": 0
+            "varType": 1
         },
         {
             "id": "fd4bb55b-1278-4812-a92a-04ed33819088",
@@ -77,7 +77,7 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "m_travelLeft",
-            "varType": 0
+            "varType": 1
         }
     ],
     "solid": false,

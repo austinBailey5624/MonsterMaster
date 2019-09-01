@@ -1,11 +1,9 @@
-/// @description Sprite Switching and follow following
-// You can write your code in this editor
-if(tilemap_get_at_pixel(collisionLayer,m_lead.bbox_right+16,m_lead.bbox_top)!=0 || (tilemap_get_at_pixel(collisionLayer,m_lead.bbox_right+16,m_lead.bbox_bottom)!=0))
+/// @description Logic for moving party right
+if(tilemap_get_at_pixel(collisionLayer,m_Lead.bbox_right+32,m_Lead.bbox_top)!=0 || (tilemap_get_at_pixel(collisionLayer,m_Lead.bbox_right+32,m_Lead.bbox_bottom)!=0) || !position_empty(x+32, y))
 {
 	return;
 }
-//object_MonsterSpriteChecker.x+=3;
-if(m_lead.m_travelLeft>=16&&m_lead.m_travelRight>=16&&m_lead.m_travelUp>=16&&m_lead.m_travelDown>=16)
+if(m_Lead.m_travelLeft>=32&&m_Lead.m_travelRight>=32&&m_Lead.m_travelUp>=32&&m_Lead.m_travelDown>=32)
 {
-	m_lead.m_travelRight=0;	
+	m_Lead.m_travelRight=0;	
 }

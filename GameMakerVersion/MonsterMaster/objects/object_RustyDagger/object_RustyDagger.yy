@@ -46,7 +46,7 @@
             "mvc": "1.0",
             "objectId": "a987c2d8-65b5-4980-9b4c-a814ebbf5150",
             "propertyId": "6719e259-5cc9-4dc4-8850-9436421df873",
-            "value": "Object_Damage"
+            "value": "Interface_Damage"
         },
         {
             "id": "5220c5ec-5d91-451a-928d-75e1e5f20289",

@@ -1,7 +1,18 @@
-/// @description Insert description here
-// You can write your code in this editor
-object_MainParty.m_lead = object_MainCharacter;
+global.CanWalk = true;
+object_MainParty.m_Lead = object_MainCharacter;
 object_MainCharacter.depth = object_MainParty.depth;
 collisionLayer = layer_tilemap_get_id("Collision");
-m_lead.x = object_MainParty.x;
-m_lead.y = object_MainParty.y;
+
+//place the party on the correct position on the tile
+if(object_MainParty.x mod 16 !=0)
+{
+	object_MainParty.x = object_MainParty.x mod 16;	
+}
+if(object_MainParty.y mod 16 != 0)
+{
+	object_MainParty.y = object_MainParty.y mod 16;
+}
+
+//place the lead in the same place as the party
+m_Lead.x = object_MainParty.x;
+m_Lead.y = object_MainParty.y;

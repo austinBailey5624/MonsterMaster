@@ -32,8 +32,8 @@
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "Object_Damage",
+            "resourceFilter": 256,
+            "value": "Interface_Damage",
             "varName": "m_damage",
             "varType": 5
         },

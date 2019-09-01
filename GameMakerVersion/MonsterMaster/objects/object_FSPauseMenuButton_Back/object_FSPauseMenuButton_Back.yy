@@ -31,7 +31,7 @@
             "mvc": "1.0",
             "objectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",
             "propertyId": "8ffc092d-e613-4732-95e7-bf7d35c387a8",
-            "value": "OakTree"
+            "value": "OakTree32x32"
         }
     ],
     "parentObjectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",

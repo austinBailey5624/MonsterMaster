@@ -15,6 +15,14 @@
             "objectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",
             "propertyId": "753d9973-2248-485f-8fe4-bfa7364ad03a",
             "value": "\"Party\""
+        },
+        {
+            "id": "dc0eacee-bf2e-422c-807f-5498bbb794e3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",
+            "propertyId": "8ffc092d-e613-4732-95e7-bf7d35c387a8",
+            "value": "room_Party_Main"
         }
     ],
     "parentObjectId": "b7b6ed14-5807-4e30-a609-43bcac4318ce",

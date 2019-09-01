@@ -5,14 +5,20 @@
     "name": "fc995393-2d61-404f-8769-4aa9ffe891bd",
     "children": [
         "6a581912-9043-4756-806f-aa67ccc1dbe9",
+        "9fbd3698-689e-4a80-abea-a1a2d2c21d04",
+        "b0b3a476-eb6a-4cf1-85cd-6d0bde67b98a",
         "0ddff610-8dc3-43be-bd36-ed39ad66532f",
         "016f0942-95b6-4153-98f9-de4235b57134",
         "ac88079f-d0f9-47b8-9dc2-6caefd63e031",
         "7c28ffd0-7b4e-4097-abde-b566ef2c6ef4",
+        "39e9ca64-882f-4141-9062-8f5608f3e7d7",
         "c9376ef3-4f39-44a7-ac25-315648137bd6",
         "9c0ba3cc-9dcf-4a8f-abda-49201d0d1fb7",
+        "41184597-12b4-4cc2-82a0-8f5edcda3378",
         "04734a9f-0811-4c82-8c9e-6228e6d1c53b",
+        "8dbc4795-e186-4fac-9633-92d4f9fac74d",
         "56196465-6668-485e-8933-08de80046a76",
+        "ad913a25-452e-46e7-a1d5-4b5af4682874",
         "79f8056e-789d-4ecd-a09c-540926a47353",
         "0c5813f0-d458-496b-9cc4-3a6c916b19e7",
         "ed577a79-a3dc-4881-84bd-69096eb5b7a4",
@@ -20,7 +26,7 @@
         "abe6287a-5a46-4e3c-be45-aad8c0c3b95b"
     ],
     "filterType": "GMSprite",
-    "folderName": "tileSets",
+    "folderName": "TileSets",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
