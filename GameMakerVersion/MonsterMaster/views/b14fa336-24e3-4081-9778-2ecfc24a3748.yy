@@ -8,7 +8,7 @@
         "2b0250d4-3ef5-4883-bd29-5ebe5034783a"
     ],
     "filterType": "GMRoom",
-    "folderName": "MenuSystems",
+    "folderName": "MenuRooms",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

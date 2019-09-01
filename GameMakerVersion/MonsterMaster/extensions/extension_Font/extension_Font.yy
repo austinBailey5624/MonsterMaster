@@ -57,6 +57,7 @@
     "iosThirdPartyFrameworkEntries": [
         
     ],
+    "iosdelegatename": null,
     "iosplistinject": "",
     "license": "",
     "maccompilerflags": "",
@@ -65,5 +66,17 @@
     "packageID": "",
     "productID": "",
     "sourcedir": "",
+    "tvosProps": false,
+    "tvosSystemFrameworkEntries": [
+        
+    ],
+    "tvosThirdPartyFrameworkEntries": [
+        
+    ],
+    "tvosclassname": null,
+    "tvosdelegatename": null,
+    "tvosmaccompilerflags": null,
+    "tvosmaclinkerflags": null,
+    "tvosplistinject": null,
     "version": "0.0.1"
 }

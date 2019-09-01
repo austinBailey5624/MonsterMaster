@@ -11,7 +11,7 @@ view_camera[0] = camera;
 
 //follow = object_Guy;
 //follow = object_MonsterSpriteChecker;
-follow = object_MainParty.m_lead;
+follow = object_MainParty.m_Lead;
 x2 = x;   //x coordinate we're moving to
 y2 = y;   //y coordinate we're moving to 
 //if(follow = noone)

@@ -1,14 +1,16 @@
 {
     "id": "0471761f-135d-4071-bb3a-13c93ee8fadd",
     "modelName": "GMFont",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "GWScript_24",
     "AntiAlias": 0,
     "TTFName": null,
+    "ascenderOffset": 0,
     "bold": false,
     "charset": 0,
     "first": 0,
     "fontName": "GWolfScript9by5",
+    "glyphOperations": 0,
     "glyphs": [
         {
             "Key": 32,
@@ -1436,13 +1438,16 @@
             }
         }
     ],
-    "image": null,
+    "hinting": 0,
     "includeTTF": false,
+    "interpreter": 0,
     "italic": false,
     "kerningPairs": [
         
     ],
     "last": 0,
+    "maintainGms1Font": false,
+    "pointRounding": 0,
     "ranges": [
         {
             "x": 32,
