@@ -13,6 +13,26 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "2fe2a395-229b-4149-901f-180d4ff1859e"
+        },
+        {
+            "id": "0b7472c9-9fc4-4c23-85d4-0473a4d086ba",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "2fe2a395-229b-4149-901f-180d4ff1859e"
+        },
+        {
+            "id": "bda29164-d7fd-409a-b0ee-ef1694af3a43",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 6,
+            "m_owner": "2fe2a395-229b-4149-901f-180d4ff1859e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -42,7 +62,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "m_BattleActor",
             "varType": 5
         }

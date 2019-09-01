@@ -4239,6 +4239,14 @@
             }
         },
         {
+            "Key": "4cb4f8a7-5982-481c-847e-5308494e8571",
+            "Value": {
+                "id": "cd3040e2-dab7-4a74-8466-6718a7e5f3f3",
+                "resourcePath": "sprites\\sprite_PartyMenu_MagicBar\\sprite_PartyMenu_MagicBar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d07d25d-1217-4990-a670-e372eff6f9e0",
             "Value": {
                 "id": "55b0bdf7-2d76-42c5-a97d-beb6628c6796",
@@ -11420,6 +11428,14 @@
                 "id": "9864b3fb-960d-450e-9007-7e57226ede76",
                 "resourcePath": "views\\cd87771a-e0a0-4336-89ca-dfe0710223ca.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cd8b785a-f940-4885-8188-89cfecd5d2cf",
+            "Value": {
+                "id": "bcc2dd42-802f-4c46-b960-8a90315abf6d",
+                "resourcePath": "sprites\\sprite_PartyMenu_HealthBar\\sprite_PartyMenu_HealthBar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
