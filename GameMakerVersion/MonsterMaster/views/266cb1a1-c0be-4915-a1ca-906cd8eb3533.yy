@@ -7,7 +7,8 @@
         "2ee64c7b-1943-44ca-aebb-f7c2582a2a24",
         "d7b40118-68e4-48ff-966b-77c9d46bc71a",
         "9fe89d9d-da1e-4065-9ec6-9df5e227aef6",
-        "c02fafaa-c84d-4b21-aefe-c531bdfdab1b"
+        "c02fafaa-c84d-4b21-aefe-c531bdfdab1b",
+        "f6e1ed3a-a2da-4152-8b45-55c3ade2744d"
     ],
     "filterType": "GMObject",
     "folderName": "BattleObjects",

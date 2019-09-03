@@ -32,8 +32,8 @@
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "monsterType_Flarial",
+            "resourceFilter": 256,
+            "value": "noone",
             "varName": "m_MonsterType",
             "varType": 5
         }

@@ -6,7 +6,8 @@
     "children": [
         "9958544b-e3bc-4549-b112-ca5508e5b902",
         "b0baa914-42a9-4f8c-9b2b-7970f1a0364f",
-        "3029cc7a-e734-4b02-bcfc-52444620b1f1"
+        "3029cc7a-e734-4b02-bcfc-52444620b1f1",
+        "c6eb9303-faa6-437d-be40-6f3767c5d1cb"
     ],
     "filterType": "GMSprite",
     "folderName": "UISprites",
