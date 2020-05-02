@@ -8,7 +8,7 @@
         "56f0eddf-12d4-450e-b175-f5279dfd53b6"
     ],
     "filterType": "GMRoom",
-    "folderName": "OakTree",
+    "folderName": "OakTree16x16",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

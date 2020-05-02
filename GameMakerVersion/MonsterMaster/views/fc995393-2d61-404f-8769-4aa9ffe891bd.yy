@@ -5,6 +5,8 @@
     "name": "fc995393-2d61-404f-8769-4aa9ffe891bd",
     "children": [
         "6a581912-9043-4756-806f-aa67ccc1dbe9",
+        "9fbd3698-689e-4a80-abea-a1a2d2c21d04",
+        "b0b3a476-eb6a-4cf1-85cd-6d0bde67b98a",
         "0ddff610-8dc3-43be-bd36-ed39ad66532f",
         "016f0942-95b6-4153-98f9-de4235b57134",
         "ac88079f-d0f9-47b8-9dc2-6caefd63e031",
@@ -20,7 +22,7 @@
         "abe6287a-5a46-4e3c-be45-aad8c0c3b95b"
     ],
     "filterType": "GMSprite",
-    "folderName": "tileSets",
+    "folderName": "TileSets",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

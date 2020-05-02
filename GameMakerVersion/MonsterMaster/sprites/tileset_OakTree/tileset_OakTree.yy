@@ -2,7 +2,7 @@
     "id": "6a581912-9043-4756-806f-aa67ccc1dbe9",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "tilset_OakTree",
+    "name": "tileset_OakTree",
     "For3D": false,
     "HTile": false,
     "VTile": false,

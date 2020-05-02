@@ -1,6 +1,6 @@
 
 {
-    "name": "OakTreeChurch",
+    "name": "OakTreeChurch16x16",
     "id": "56f0eddf-12d4-450e-b175-f5279dfd53b6",
     "creationCodeFile": "",
     "inheritCode": false,
