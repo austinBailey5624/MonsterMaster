@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
             "propertyId": "0e5975b6-fc7d-41ee-b958-5780db715f52",
-            "value": "OakTreeChurch"
+            "value": "OakTreeChurch16x16"
         },
         {
             "id": "3a272473-6cbd-4edb-a6ce-47994ff1d64f",
