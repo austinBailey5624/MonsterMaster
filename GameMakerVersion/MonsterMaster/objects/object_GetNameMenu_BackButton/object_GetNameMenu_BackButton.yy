@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "07e68718-92d7-44a4-9d2c-56746b855d46",
-            "value": "MainMenu"
+            "value": "OakTree32x32"
         },
         {
             "id": "0955de7d-ba67-48ac-9df8-46969d36e40a",
@@ -47,7 +47,9 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        
+    ],
     "solid": false,
     "spriteId": "a51bd4fe-201f-4391-a4a0-a52a0273c5b5",
     "visible": true

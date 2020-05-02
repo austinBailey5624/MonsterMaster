@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "59c0b368-014a-405c-9f05-33f7773b7c73",
-            "value": "\"unNamed\""
+            "value": "\"The player character\""
         },
         {
             "id": "d5696ec6-b43f-42c3-a483-a0555ace9f04",
@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "13c93ccc-1734-4c10-9fa1-30c4665810ce",
             "propertyId": "6afe491e-47a2-4b06-b88d-5057b3d03798",
-            "value": "\"description not defined\""
+            "value": "\"Our actions define us- and this ones actions are yet crowded in mystery\""
         },
         {
             "id": "0da9add4-ab24-4b1f-94bb-22a66f0a789e",
@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "67838012-46a8-4f15-85c7-9011b8f90ef0",
-            "value": "noone"
+            "value": "GuyForwards"
         },
         {
             "id": "c7aaad78-7e1a-4d05-850a-372ea0230bec",
@@ -38,7 +38,7 @@
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "61d0e087-5f81-4528-bc22-b3eac245d94a",
-            "value": "noone"
+            "value": "GuyBack"
         },
         {
             "id": "5d11f224-0300-4ec0-8ffc-74e9b18129fa",
@@ -46,7 +46,7 @@
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "d4da9bc5-5ee4-41c2-b6e2-592de5c3c15f",
-            "value": "noone"
+            "value": "GuyRight"
         },
         {
             "id": "459c61ab-a22f-42af-b5fa-4ff63d907e79",
@@ -54,7 +54,7 @@
             "mvc": "1.0",
             "objectId": "e07975e0-61bf-41cd-9d12-0b7f1e197a25",
             "propertyId": "381d4f5c-460f-4e28-88b1-57ab2ad1a4aa",
-            "value": "noone"
+            "value": "GuyLeft"
         },
         {
             "id": "1ac96970-b962-48e3-ad98-2cf09d0bd5c1",
