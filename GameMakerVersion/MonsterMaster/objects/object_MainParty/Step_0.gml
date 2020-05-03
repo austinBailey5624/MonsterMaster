@@ -4,23 +4,23 @@ if(global.CanWalk)
 var imgspd = 1;
 if(m_Lead.m_travelLeft<32)
 {
-	m_Lead.x-=1;
-	m_Lead.m_travelLeft++;
+	m_Lead.x-=2;
+	m_Lead.m_travelLeft+=2;
 }
 else if(m_Lead.m_travelRight<32)
 {
-	m_Lead.x++;
-	m_Lead.m_travelRight++;
+	m_Lead.x+=2;
+	m_Lead.m_travelRight+=2;
 }
 else if(m_Lead.m_travelUp<32)
 {
-	m_Lead.y--;
-	m_Lead.m_travelUp++;
+	m_Lead.y-=2;
+	m_Lead.m_travelUp+=2;
 }
 else if(m_Lead.m_travelDown<32)
 {
-	m_Lead.y++;
-	m_Lead.m_travelDown++;
+	m_Lead.y+=2;
+	m_Lead.m_travelDown+=2;
 }
 x=m_Lead.x;
 y=m_Lead.y;
