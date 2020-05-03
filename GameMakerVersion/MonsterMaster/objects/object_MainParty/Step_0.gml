@@ -2,22 +2,22 @@
 if(global.CanWalk)
 {
 var imgspd = 1;
-if(m_Lead.m_travelLeft<16)
+if(m_Lead.m_travelLeft<32)
 {
 	m_Lead.x-=1;
 	m_Lead.m_travelLeft++;
 }
-else if(m_Lead.m_travelRight<16)
+else if(m_Lead.m_travelRight<32)
 {
 	m_Lead.x++;
 	m_Lead.m_travelRight++;
 }
-else if(m_Lead.m_travelUp<16)
+else if(m_Lead.m_travelUp<32)
 {
 	m_Lead.y--;
 	m_Lead.m_travelUp++;
 }
-else if(m_Lead.m_travelDown<16)
+else if(m_Lead.m_travelDown<32)
 {
 	m_Lead.y++;
 	m_Lead.m_travelDown++;
