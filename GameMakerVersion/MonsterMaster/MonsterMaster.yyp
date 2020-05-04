@@ -3983,6 +3983,14 @@
             }
         },
         {
+            "Key": "41184597-12b4-4cc2-82a0-8f5edcda3378",
+            "Value": {
+                "id": "7b5bac9e-6738-4c6e-875c-a550b0395777",
+                "resourcePath": "sprites\\tileSet_OakTreeChurch32\\tileSet_OakTreeChurch32.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "413818c6-fe6a-41e9-955a-77fda2922311",
             "Value": {
                 "id": "4d767305-3a26-4383-bcf5-67f5437db06d",
@@ -5268,6 +5276,14 @@
                 "id": "3c19a9ad-0e92-4bde-afe9-5d5a562739b5",
                 "resourcePath": "sprites\\sprite_LesserSteamlet_Forwards\\sprite_LesserSteamlet_Forwards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "57f19a74-5fa6-4674-b202-09055dce3988",
+            "Value": {
+                "id": "f8b67990-d2e2-4068-9185-42e462311e38",
+                "resourcePath": "objects\\object_OakTree_Church_DoorInside\\object_OakTree_Church_DoorInside.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -8527,6 +8543,14 @@
             }
         },
         {
+            "Key": "8dbc4795-e186-4fac-9633-92d4f9fac74d",
+            "Value": {
+                "id": "ef0f9673-63a0-4963-acee-51e515405df4",
+                "resourcePath": "sprites\\sprite_tileSet_OakTreeChurchEdging32\\sprite_tileSet_OakTreeChurchEdging32.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8de7681c-853f-4701-9c4a-cc049ac376eb",
             "Value": {
                 "id": "7cfdecbe-0ee6-48f3-8337-4804d904735c",
@@ -9748,6 +9772,14 @@
                 "id": "fbf02a45-8a73-45f5-b4b1-1396ad81dcba",
                 "resourcePath": "datafiles_yy\\GWolfScript9by5.ttf.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a2225a32-9e90-4c51-891d-736692fa98af",
+            "Value": {
+                "id": "c8a24bc3-e741-4266-ae5a-05dce0e4290a",
+                "resourcePath": "tilesets\\tileset_OakTree_Church32\\tileset_OakTree_Church32.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -13908,6 +13940,14 @@
                 "id": "3d3ff626-100d-4285-b56f-13cfc31447f1",
                 "resourcePath": "sprites\\sprite_Froget_Forwards_Unfinished21\\sprite_Froget_Forwards_Unfinished21.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e3930fb3-6edd-4b5a-b1d4-e88e9e5f2c31",
+            "Value": {
+                "id": "ed317e8f-df4f-42bc-827f-cba3fa42fbec",
+                "resourcePath": "tilesets\\tileset_OakTree_ChurchEdging32\\tileset_OakTree_ChurchEdging32.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

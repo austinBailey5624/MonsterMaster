@@ -9,19 +9,9 @@
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "35c552b4-0a5f-468a-b867-f047ffeecd5b",
+            "collisionObjectId": "dd216f88-f64d-4f75-b6aa-5162537fbd1a",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7"
-        },
-        {
-            "id": "cb56b1ec-9a71-49e3-9147-3cd218416c57",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
             "m_owner": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7"
         }
     ],
@@ -55,62 +45,6 @@
             "value": "noone",
             "varName": "m_targetRoom",
             "varType": 5
-        },
-        {
-            "id": "bed84a57-91b3-453c-9256-6163ffa3b2ef",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "m_targetx",
-            "varType": 0
-        },
-        {
-            "id": "57ca5885-0031-4a57-8985-d704d26b0410",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "m_targety",
-            "varType": 0
-        },
-        {
-            "id": "0466f8c4-e5a1-459d-8193-e5ab979cc808",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "m_transitionAnimation",
-            "varType": 5
-        },
-        {
-            "id": "bcefffbb-88ab-43a5-a949-8864d40d6ae4",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "False",
-            "varName": "m_transitionOccuring",
-            "varType": 3
         }
     ],
     "solid": false,
