@@ -11591,6 +11591,14 @@
             }
         },
         {
+            "Key": "c0cd865c-2b5c-4129-8078-26368e49dbe4",
+            "Value": {
+                "id": "97cd8756-b5a2-4ff0-8624-80d649dd8ece",
+                "resourcePath": "objects\\object_RoomTransition\\object_RoomTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c0e03e25-959f-4d93-be8a-ce5ceb4c78bb",
             "Value": {
                 "id": "ad2636ae-f3c9-41a2-9879-30b50edfe2c8",
@@ -12468,6 +12476,14 @@
                 "id": "47c9ab96-84b9-40d9-af5c-b2db200d33f3",
                 "resourcePath": "objects\\object_SubElementButton_Terra\\object_SubElementButton_Terra.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ce0a24f2-ec0d-4fd2-bc60-9397db71fe6d",
+            "Value": {
+                "id": "f5a9b48e-b3a3-4431-b178-2d23fb5c57aa",
+                "resourcePath": "rooms\\OakTreeChurch32x32\\OakTreeChurch32x32.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

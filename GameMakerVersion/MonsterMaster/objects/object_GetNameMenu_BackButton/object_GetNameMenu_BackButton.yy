@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "8676a702-9768-4c73-aa24-cc9a7e0b6e73",
             "propertyId": "07e68718-92d7-44a4-9d2c-56746b855d46",
-            "value": "OakTree32x32"
+            "value": "MainMenu"
         },
         {
             "id": "0955de7d-ba67-48ac-9df8-46969d36e40a",
