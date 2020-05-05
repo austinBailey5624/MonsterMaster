@@ -15,38 +15,6 @@
             "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
             "propertyId": "0e5975b6-fc7d-41ee-b958-5780db715f52",
             "value": "OakTree32x32"
-        },
-        {
-            "id": "88f0cbbe-bc38-4f87-b6e1-b1042ac12625",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
-            "propertyId": "bed84a57-91b3-453c-9256-6163ffa3b2ef",
-            "value": "0"
-        },
-        {
-            "id": "1a3fd892-fecb-4dd5-bd63-ec53dc522d4c",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
-            "propertyId": "57ca5885-0031-4a57-8985-d704d26b0410",
-            "value": "0"
-        },
-        {
-            "id": "3687ee07-c26d-4bf5-8b66-6f10301184f3",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
-            "propertyId": "0466f8c4-e5a1-459d-8193-e5ab979cc808",
-            "value": "sprite_OakTree_ChurchDoor_Opening"
-        },
-        {
-            "id": "3f69294e-ff2d-4124-bff6-9c5f22b31e0e",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
-            "propertyId": "bcefffbb-88ab-43a5-a949-8864d40d6ae4",
-            "value": "False"
         }
     ],
     "parentObjectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",

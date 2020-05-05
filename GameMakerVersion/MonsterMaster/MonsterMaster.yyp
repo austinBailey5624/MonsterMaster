@@ -11511,6 +11511,14 @@
             }
         },
         {
+            "Key": "bf1d5670-0638-4773-ae57-12e9377ad74b",
+            "Value": {
+                "id": "e0028025-9b59-46cd-b52c-479d37c65f7d",
+                "resourcePath": "objects\\npc_fatherMichael\\npc_fatherMichael.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bf3c0ef1-4e2a-4c34-a561-edf78f198cab",
             "Value": {
                 "id": "f0c65031-8727-49d9-a9f1-d80e7ac5d0f6",
@@ -13364,6 +13372,14 @@
                 "id": "d63390d4-adb8-42f2-ac8f-5a7e25b10c0a",
                 "resourcePath": "sprites\\sprite_Pyres_Right\\sprite_Pyres_Right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dbcebddb-da76-45da-8f00-243852e4595e",
+            "Value": {
+                "id": "8626aea9-92ad-4a29-a519-e3560dca9352",
+                "resourcePath": "views\\dbcebddb-da76-45da-8f00-243852e4595e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

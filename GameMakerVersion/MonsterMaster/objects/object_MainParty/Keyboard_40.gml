@@ -1,5 +1,5 @@
 /// @description Logic for moving party down
-if(tilemap_get_at_pixel(collisionLayer,m_Lead.bbox_right,m_Lead.bbox_bottom+32)!=0 || (tilemap_get_at_pixel(collisionLayer,m_Lead.bbox_left,m_Lead.bbox_bottom+32)!=0))
+if(tilemap_get_at_pixel(collisionLayer,m_Lead.bbox_right,m_Lead.bbox_bottom+32)!=0 || (tilemap_get_at_pixel(collisionLayer,m_Lead.bbox_left,m_Lead.bbox_bottom+32)!=0) || !position_empty(x, y+32))
 {
 	return;
 }

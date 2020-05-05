@@ -2,6 +2,7 @@
 if(global.CanWalk)
 {
 var imgspd = 1;
+
 if(m_Lead.m_travelLeft<32)
 {
 	m_Lead.x-=2;
