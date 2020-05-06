@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "npc_fatherMichael",
     "eventList": [
-        
+        {
+            "id": "8e18b405-fcb6-4930-91d3-4036b5cb60b7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "bf1d5670-0638-4773-ae57-12e9377ad74b"
+        },
+        {
+            "id": "9502c966-15cb-4961-838f-339cf3501514",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 88,
+            "eventtype": 9,
+            "m_owner": "bf1d5670-0638-4773-ae57-12e9377ad74b"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
@@ -132,7 +151,22 @@
         }
     ],
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "fc3a5a4d-1945-46c5-bd1e-cef03bb7595f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "m_directionFacing",
+            "varType": 0
+        }
+    ],
     "solid": true,
     "spriteId": "3272a4bb-b0de-41df-ae1d-79a0e122888b",
     "visible": true
