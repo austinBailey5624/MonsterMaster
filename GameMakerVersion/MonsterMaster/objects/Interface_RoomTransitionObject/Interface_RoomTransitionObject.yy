@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "Interface_RoomTransitionObject",
     "eventList": [
-        {
-            "id": "34b9a9c9-d614-4569-8ec5-e05857097cdf",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "dd216f88-f64d-4f75-b6aa-5162537fbd1a",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -45,6 +36,34 @@
             "value": "noone",
             "varName": "m_targetRoom",
             "varType": 5
+        },
+        {
+            "id": "02c877e6-b755-474a-90d0-242d28b914f2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_targetx",
+            "varType": 1
+        },
+        {
+            "id": "32dd2fc8-5eaa-4131-a777-12d1edecefac",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_targety",
+            "varType": 1
         }
     ],
     "solid": false,

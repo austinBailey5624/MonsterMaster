@@ -1,5 +1,5 @@
-/// @description Room Transition
-if(object_MainParty.x >= x && object_MainParty.x <x+64 && object_MainParty.y >= y+64 && object_MainParty.y < y+96)
+/// @description Transition room if appropriate
+if(object_MainParty.x = x && object_MainParty.y = y-32)
 {
 	room_goto(m_targetRoom);
 	object_MainParty.x = m_targetx;

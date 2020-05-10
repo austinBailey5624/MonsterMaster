@@ -24,6 +24,22 @@
             "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
             "propertyId": "0e5975b6-fc7d-41ee-b958-5780db715f52",
             "value": "OakTreeChurch32x32"
+        },
+        {
+            "id": "5d68c554-20ca-4a72-bd15-6492c44e0fdb",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
+            "propertyId": "02c877e6-b755-474a-90d0-242d28b914f2",
+            "value": "192"
+        },
+        {
+            "id": "86fd65e2-337a-427a-a1b3-acf086a0c4d1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
+            "propertyId": "32dd2fc8-5eaa-4131-a777-12d1edecefac",
+            "value": "736"
         }
     ],
     "parentObjectId": "71f08a7c-4f5e-4e31-8058-ba8e9070c4b7",
