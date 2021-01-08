@@ -1,0 +1,1385 @@
+fileFormatVersion: 2
+guid: d34e97715d3d44c40a96bbdf797dc944
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1240521016360697932
+    second: OakTreeChurchEdging_0
+  - first:
+      213: 6789413323438494212
+    second: OakTreeChurchEdging_1
+  - first:
+      213: 6963358445320034771
+    second: OakTreeChurchEdging_2
+  - first:
+      213: -7665118267221969800
+    second: OakTreeChurchEdging_3
+  - first:
+      213: 580965190839398007
+    second: OakTreeChurchEdging_4
+  - first:
+      213: 5551467092471583583
+    second: OakTreeChurchEdging_5
+  - first:
+      213: -7647230688857949272
+    second: OakTreeChurchEdging_6
+  - first:
+      213: 5548185165636701729
+    second: OakTreeChurchEdging_7
+  - first:
+      213: -6296048002025379847
+    second: OakTreeChurchEdging_8
+  - first:
+      213: 4839182622114801820
+    second: OakTreeChurchEdging_9
+  - first:
+      213: -2550371165510489822
+    second: OakTreeChurchEdging_10
+  - first:
+      213: 7018272488527237441
+    second: OakTreeChurchEdging_11
+  - first:
+      213: -7982777067842442339
+    second: OakTreeChurchEdging_12
+  - first:
+      213: 8981455894851501377
+    second: OakTreeChurchEdging_13
+  - first:
+      213: 6465408871280515012
+    second: OakTreeChurchEdging_14
+  - first:
+      213: -5702705271172911930
+    second: OakTreeChurchEdging_15
+  - first:
+      213: 2644660307905896637
+    second: OakTreeChurchEdging_16
+  - first:
+      213: -8802350048886120972
+    second: OakTreeChurchEdging_17
+  - first:
+      213: 7140583031853457396
+    second: OakTreeChurchEdging_18
+  - first:
+      213: -1697132746178313856
+    second: OakTreeChurchEdging_19
+  - first:
+      213: -7704425510761139340
+    second: OakTreeChurchEdging_20
+  - first:
+      213: -6271008443389009004
+    second: OakTreeChurchEdging_21
+  - first:
+      213: 4939682104682492171
+    second: OakTreeChurchEdging_22
+  - first:
+      213: 8150921190923543249
+    second: OakTreeChurchEdging_23
+  - first:
+      213: -9207919318616458293
+    second: OakTreeChurchEdging_24
+  - first:
+      213: 3207214021721635594
+    second: OakTreeChurchEdging_25
+  - first:
+      213: -5673264388885767426
+    second: OakTreeChurchEdging_26
+  - first:
+      213: 1489938844693100888
+    second: OakTreeChurchEdging_27
+  - first:
+      213: 3151881661881919661
+    second: OakTreeChurchEdging_28
+  - first:
+      213: -427675372146481630
+    second: OakTreeChurchEdging_29
+  - first:
+      213: -3909874491550445009
+    second: OakTreeChurchEdging_30
+  - first:
+      213: -2650690459130978542
+    second: OakTreeChurchEdging_31
+  - first:
+      213: -6840564699962162314
+    second: OakTreeChurchEdging_32
+  - first:
+      213: -8035030402447316178
+    second: OakTreeChurchEdging_33
+  - first:
+      213: 778268120466147956
+    second: OakTreeChurchEdging_34
+  - first:
+      213: -3591662730595660802
+    second: OakTreeChurchEdging_35
+  - first:
+      213: 7424480349813176813
+    second: OakTreeChurchEdging_36
+  - first:
+      213: 2146663587933258583
+    second: OakTreeChurchEdging_37
+  - first:
+      213: -876091287733932440
+    second: OakTreeChurchEdging_38
+  - first:
+      213: -2773474779535104437
+    second: OakTreeChurchEdging_39
+  - first:
+      213: -4686054879637913831
+    second: OakTreeChurchEdging_40
+  - first:
+      213: 4594878732818343846
+    second: OakTreeChurchEdging_41
+  - first:
+      213: -6092682721184034396
+    second: OakTreeChurchEdging_42
+  - first:
+      213: 7336463853483651270
+    second: OakTreeChurchEdging_43
+  - first:
+      213: 3383235962611763272
+    second: OakTreeChurchEdging_44
+  - first:
+      213: -1698320534593923415
+    second: OakTreeChurchEdging_45
+  - first:
+      213: 6551114577629448057
+    second: OakTreeChurchEdging_46
+  - first:
+      213: 2494681866296488074
+    second: OakTreeChurchEdging_47
+  - first:
+      213: -3367456693119076040
+    second: OakTreeChurchEdging_48
+  - first:
+      213: -4011138119233552910
+    second: OakTreeChurchEdging_49
+  - first:
+      213: -2499852683115614570
+    second: OakTreeChurchEdging_50
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c400694ba47373110800000000000000
+      internalID: 1240521016360697932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4021bd02277d83e50800000000000000
+      internalID: 6789413323438494212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d95401dc91d2a060800000000000000
+      internalID: 6963358445320034771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87470e82c8700a590800000000000000
+      internalID: -7665118267221969800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e69d253c0001800800000000000000
+      internalID: 580965190839398007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f531a0d58e5ca0d40800000000000000
+      internalID: 5551467092471583583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abf72b84349fd590800000000000000
+      internalID: -7647230688857949272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e0ed9330d1ffc40800000000000000
+      internalID: 5548185165636701729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7287633b1ff98a0800000000000000
+      internalID: -6296048002025379847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98656aa4fa382340800000000000000
+      internalID: 4839182622114801820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229295affe24b9cd0800000000000000
+      internalID: -2550371165510489822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1411097d4a9e56160800000000000000
+      internalID: 7018272488527237441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bed162d8a773190800000000000000
+      internalID: -7982777067842442339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d3672fc8a84ac70800000000000000
+      internalID: 8981455894851501377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7955cfc1fb9b950800000000000000
+      internalID: 6465408871280515012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccadf425cbebd0b0800000000000000
+      internalID: -5702705271172911930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db06e4cb988b3b420800000000000000
+      internalID: 2644660307905896637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd10837445c7d580800000000000000
+      internalID: -8802350048886120972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff9ece5f62781360800000000000000
+      internalID: 7140583031853457396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081cb5752c29278e0800000000000000
+      internalID: -1697132746178313856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473ff9851d1641590800000000000000
+      internalID: -7704425510761139340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493a254cb07e8f8a0800000000000000
+      internalID: -6271008443389009004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0134f0e3b64d8440800000000000000
+      internalID: 4939682104682492171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2a33143a3ed1170800000000000000
+      internalID: 8150921190923543249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbb8655a26e63080800000000000000
+      internalID: -9207919318616458293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bbe530920528c20800000000000000
+      internalID: 3207214021721635594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa1797b8148441b0800000000000000
+      internalID: -5673264388885767426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859fcf63c735da410800000000000000
+      internalID: 1489938844693100888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da82a8e0cabbdbb20800000000000000
+      internalID: 3151881661881919661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226a604d387901af0800000000000000
+      internalID: -427675372146481630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2256c68dd55db9c0800000000000000
+      internalID: -3909874491550445009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f1bf5421bd63bd0800000000000000
+      internalID: -2650690459130978542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673cda3f5ae6111a0800000000000000
+      internalID: -6840564699962162314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2be9ae9b66dd7090800000000000000
+      internalID: -8035030402447316178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a456c6bb6fcca00800000000000000
+      internalID: 778268120466147956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb06d5a6c9d72ec0800000000000000
+      internalID: -3591662730595660802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de97b74aa8d090760800000000000000
+      internalID: 7424480349813176813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7530703e82b7acd10800000000000000
+      internalID: 2146663587933258583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86eedc39d9f77d3f0800000000000000
+      internalID: -876091287733932440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b462e4ce163a289d0800000000000000
+      internalID: -2773474779535104437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f323d2ae9c7feb0800000000000000
+      internalID: -4686054879637913831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a762afdcd944cf30800000000000000
+      internalID: 4594878732818343846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a15aa27851727ba0800000000000000
+      internalID: -6092682721184034396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0f266210b50d560800000000000000
+      internalID: 7336463853483651270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8480dcece2ba3fe20800000000000000
+      internalID: 3383235962611763272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a617ccc87a5e68e0800000000000000
+      internalID: -1698320534593923415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9778c72cffb3aea50800000000000000
+      internalID: 6551114577629448057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80f534a0f3ee9220800000000000000
+      internalID: 2494681866296488074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839302aaaf36441d0800000000000000
+      internalID: -3367456693119076040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd3e0ae1239558c0800000000000000
+      internalID: -4011138119233552910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeChurchEdging_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e2610ca3dbe4dd0800000000000000
+      internalID: -2499852683115614570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      OakTreeChurchEdging_44: 3383235962611763272
+      OakTreeChurchEdging_40: -4686054879637913831
+      OakTreeChurchEdging_47: 2494681866296488074
+      OakTreeChurchEdging_1: 6789413323438494212
+      OakTreeChurchEdging_27: 1489938844693100888
+      OakTreeChurchEdging_19: -1697132746178313856
+      OakTreeChurchEdging_7: 5548185165636701729
+      OakTreeChurchEdging_13: 8981455894851501377
+      OakTreeChurchEdging_17: -8802350048886120972
+      OakTreeChurchEdging_49: -4011138119233552910
+      OakTreeChurchEdging_14: 6465408871280515012
+      OakTreeChurchEdging_21: -6271008443389009004
+      OakTreeChurchEdging_4: 580965190839398007
+      OakTreeChurchEdging_18: 7140583031853457396
+      OakTreeChurchEdging_15: -5702705271172911930
+      OakTreeChurchEdging_0: 1240521016360697932
+      OakTreeChurchEdging_25: 3207214021721635594
+      OakTreeChurchEdging_45: -1698320534593923415
+      OakTreeChurchEdging_35: -3591662730595660802
+      OakTreeChurchEdging_2: 6963358445320034771
+      OakTreeChurchEdging_38: -876091287733932440
+      OakTreeChurchEdging_31: -2650690459130978542
+      OakTreeChurchEdging_9: 4839182622114801820
+      OakTreeChurchEdging_28: 3151881661881919661
+      OakTreeChurchEdging_6: -7647230688857949272
+      OakTreeChurchEdging_33: -8035030402447316178
+      OakTreeChurchEdging_34: 778268120466147956
+      OakTreeChurchEdging_3: -7665118267221969800
+      OakTreeChurchEdging_30: -3909874491550445009
+      OakTreeChurchEdging_24: -9207919318616458293
+      OakTreeChurchEdging_5: 5551467092471583583
+      OakTreeChurchEdging_20: -7704425510761139340
+      OakTreeChurchEdging_39: -2773474779535104437
+      OakTreeChurchEdging_10: -2550371165510489822
+      OakTreeChurchEdging_12: -7982777067842442339
+      OakTreeChurchEdging_32: -6840564699962162314
+      OakTreeChurchEdging_26: -5673264388885767426
+      OakTreeChurchEdging_46: 6551114577629448057
+      OakTreeChurchEdging_23: 8150921190923543249
+      OakTreeChurchEdging_42: -6092682721184034396
+      OakTreeChurchEdging_48: -3367456693119076040
+      OakTreeChurchEdging_37: 2146663587933258583
+      OakTreeChurchEdging_22: 4939682104682492171
+      OakTreeChurchEdging_16: 2644660307905896637
+      OakTreeChurchEdging_50: -2499852683115614570
+      OakTreeChurchEdging_29: -427675372146481630
+      OakTreeChurchEdging_36: 7424480349813176813
+      OakTreeChurchEdging_8: -6296048002025379847
+      OakTreeChurchEdging_43: 7336463853483651270
+      OakTreeChurchEdging_41: 4594878732818343846
+      OakTreeChurchEdging_11: 7018272488527237441
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
