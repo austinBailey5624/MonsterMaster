@@ -1,0 +1,7 @@
+MonsterMasterUnity/Library/*
+MonsterMasterUnity/Logs/*
+MonsterMasterUnity/Library/StateCache/*
+MonsterMasterUnity/UserSettings/*
+MonsterMasterUnity/Temp
+MonsterMasterUnity/Temp/*
+*.meta
