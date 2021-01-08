@@ -1,0 +1,41 @@
+{
+  "spriteId": {
+    "name": "sprite_Bestiary_StageLabel",
+    "path": "sprites/sprite_Bestiary_StageLabel/sprite_Bestiary_StageLabel.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "Interface_BestiaryMenu_Label",
+    "path": "objects/Interface_BestiaryMenu_Label/Interface_BestiaryMenu_Label.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"object_BestiaryMenu_Label_Adolescent","path":"objects/object_BestiaryMenu_Label_Adolescent/object_BestiaryMenu_Label_Adolescent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"m_text","path":"objects/Interface_BestiaryMenu_Label/Interface_BestiaryMenu_Label.yy",},"objectId":{"name":"Interface_BestiaryMenu_Label","path":"objects/Interface_BestiaryMenu_Label/Interface_BestiaryMenu_Label.yy",},"value":"\"Adolescent\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "AgeLables",
+    "path": "folders/Objects/UIMenuObjects/PauseMenuObjects/BestiaryMenuObjects/AgeLables.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "object_BestiaryMenu_Label_Adolescent",
+  "tags": [],
+  "resourceType": "GMObject",
+}

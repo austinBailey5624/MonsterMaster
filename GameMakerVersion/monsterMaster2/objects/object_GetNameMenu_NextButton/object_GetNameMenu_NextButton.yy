@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "sprite_MenuNextButton56x24",
+    "path": "sprites/sprite_MenuNextButton56x24/sprite_MenuNextButton56x24.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "Interface_LevelTransitionButton",
+    "path": "objects/Interface_LevelTransitionButton/Interface_LevelTransitionButton.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"parent":{"name":"object_GetNameMenu_NextButton","path":"objects/object_GetNameMenu_NextButton/object_GetNameMenu_NextButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"m_defaultSprite","path":"objects/Interface_LevelTransitionButton/Interface_LevelTransitionButton.yy",},"objectId":{"name":"Interface_LevelTransitionButton","path":"objects/Interface_LevelTransitionButton/Interface_LevelTransitionButton.yy",},"value":"sprite_MenuNextButton56x24","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"m_mouseOverSprite","path":"objects/Interface_LevelTransitionButton/Interface_LevelTransitionButton.yy",},"objectId":{"name":"Interface_LevelTransitionButton","path":"objects/Interface_LevelTransitionButton/Interface_LevelTransitionButton.yy",},"value":"sprite_MenuNextButton56x24MouseOver","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"m_targetRoom","path":"objects/Interface_LevelTransitionButton/Interface_LevelTransitionButton.yy",},"objectId":{"name":"Interface_LevelTransitionButton","path":"objects/Interface_LevelTransitionButton/Interface_LevelTransitionButton.yy",},"value":"OakTree32x32","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "GetNameMenuObjects",
+    "path": "folders/Objects/UIMenuObjects/GetNameMenuObjects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "object_GetNameMenu_NextButton",
+  "tags": [],
+  "resourceType": "GMObject",
+}

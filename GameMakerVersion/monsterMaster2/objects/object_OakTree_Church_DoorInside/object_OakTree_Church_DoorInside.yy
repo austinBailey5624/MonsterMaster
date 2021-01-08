@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "sprite_OakTree_ChurchDoor",
+    "path": "sprites/sprite_OakTree_ChurchDoor/sprite_OakTree_ChurchDoor.yy",
+  },
+  "solid": false,
+  "visible": false,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "Interface_RoomTransitionObject",
+    "path": "objects/Interface_RoomTransitionObject/Interface_RoomTransitionObject.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":88,"eventType":9,"collisionObjectId":null,"parent":{"name":"object_OakTree_Church_DoorInside","path":"objects/object_OakTree_Church_DoorInside/object_OakTree_Church_DoorInside.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"m_targetRoom","path":"objects/Interface_RoomTransitionObject/Interface_RoomTransitionObject.yy",},"objectId":{"name":"Interface_RoomTransitionObject","path":"objects/Interface_RoomTransitionObject/Interface_RoomTransitionObject.yy",},"value":"OakTree32x32","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"m_targetx","path":"objects/Interface_RoomTransitionObject/Interface_RoomTransitionObject.yy",},"objectId":{"name":"Interface_RoomTransitionObject","path":"objects/Interface_RoomTransitionObject/Interface_RoomTransitionObject.yy",},"value":"736","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"m_targety","path":"objects/Interface_RoomTransitionObject/Interface_RoomTransitionObject.yy",},"objectId":{"name":"Interface_RoomTransitionObject","path":"objects/Interface_RoomTransitionObject/Interface_RoomTransitionObject.yy",},"value":"544","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "group_OakTreeSetPieces_Doors",
+    "path": "folders/Objects/PlaceObjects/group_OakTreeSetPieces/16x16/group_OakTreeSetPieces_Doors.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "object_OakTree_Church_DoorInside",
+  "tags": [],
+  "resourceType": "GMObject",
+}
