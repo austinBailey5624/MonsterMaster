@@ -784,6 +784,7 @@
     {"id":{"name":"sprite_DragonBoneDagger","path":"sprites/sprite_DragonBoneDagger/sprite_DragonBoneDagger.yy",},"order":11,},
     {"id":{"name":"sprite_RustedGauntlets","path":"sprites/sprite_RustedGauntlets/sprite_RustedGauntlets.yy",},"order":1,},
     {"id":{"name":"sprite_BronzeGauntlets","path":"sprites/sprite_BronzeGauntlets/sprite_BronzeGauntlets.yy",},"order":3,},
+    {"id":{"name":"sprite_OakTree_BigTreeNoBackground","path":"sprites/sprite_OakTree_BigTreeNoBackground/sprite_OakTree_BigTreeNoBackground.yy",},"order":32,},
     {"id":{"name":"sprite_IronGauntlets","path":"sprites/sprite_IronGauntlets/sprite_IronGauntlets.yy",},"order":5,},
     {"id":{"name":"sprite_SteelGauntlets","path":"sprites/sprite_SteelGauntlets/sprite_SteelGauntlets.yy",},"order":7,},
     {"id":{"name":"sprite_MithrilGauntlets","path":"sprites/sprite_MithrilGauntlets/sprite_MithrilGauntlets.yy",},"order":9,},
