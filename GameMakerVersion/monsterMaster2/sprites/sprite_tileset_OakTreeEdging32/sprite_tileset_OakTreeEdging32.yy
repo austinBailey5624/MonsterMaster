@@ -10,7 +10,7 @@
   "bbox_left": 0,
   "bbox_right": 191,
   "bbox_top": 0,
-  "bbox_bottom": 349,
+  "bbox_bottom": 383,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 32,
+  "gridY": 32,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"c3323acf-5866-4f3f-ba60-77c154a9c378","path":"sprites/sprite_tileset_OakTreeEdging32/sprite_tileset_OakTreeEdging32.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"c3323acf-5866-4f3f-ba60-77c154a9c378","path":"sprites/sprite_tileset_OakTreeEdging32/sprite_tileset_OakTreeEdging32.yy",},"LayerId":{"name":"ad000049-1a91-45d9-a85e-5f1e9cd76a7d","path":"sprites/sprite_tileset_OakTreeEdging32/sprite_tileset_OakTreeEdging32.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
