@@ -23,10 +23,10 @@ public class GuyController : MonoBehaviour
     {
         float tileSize = 1f;
         Vector2 position = transform.position;
-        float speed = .002f;
+        float speed = .003f;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        bool ismoving = false;
+        bool isMoving = false;
         if (travelLeft <= 0 && travelRight <= 0 && travelUp <= 0 && travelDown <= 0)
         {
             if (horizontal > 0.0f) //right
@@ -51,26 +51,31 @@ public class GuyController : MonoBehaviour
         {
             position.x = position.x - speed;
             travelLeft -= speed;
+            isMoving = true;
         }
         else if(travelRight > 0)
         {
             position.x = position.x + speed;
             travelRight -= speed;
+            isMoving = true;
         }
         else if(travelUp > 0)
         {
             position.y = position.y + speed;
             travelUp -= speed;
+            isMoving = true;
         }
         else if(travelDown > 0)
         {
             position.y = position.y - speed;
             travelDown -= speed;
+            isMoving = true;
         }
         animator.SetBool("movingLeft",travelLeft > 0);
         animator.SetBool("movingRight", travelRight > 0);
         animator.SetBool("movingBack",travelUp > 0);
         animator.SetBool("movingForwards", travelDown > 0);
+        animator.SetBool("speedIsZero", !isMoving);
   
         transform.position = position;
     }
