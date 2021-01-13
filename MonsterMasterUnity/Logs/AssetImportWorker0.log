@@ -15,11 +15,11 @@ C:/Users/austi/MonsterMaster/MonsterMasterUnity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55073
+55872
 Successfully changed project path to: C:/Users/austi/MonsterMaster/MonsterMasterUnity
 C:/Users/austi/MonsterMaster/MonsterMasterUnity
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 28.18 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 39.11 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,777 +35,95 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001536 seconds.
+Registered in 0.001989 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 28.24 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 35.60 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.816 seconds
+- Completed reload, in  1.062 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000855 seconds.
+Registered in 0.001209 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 28.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 37.36 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.713 seconds
+- Completed reload, in  0.943 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1769 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 83.1 MB.
-System memory in use after: 83.1 MB.
+System memory in use after: 83.2 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2213.
-Total: 1.816000 ms (FindLiveObjects: 0.196600 ms CreateObjectMapping: 0.065500 ms MarkObjects: 1.505900 ms  DeleteObjects: 0.047100 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_1.asset
-  artifactKey: Guid(57c3fd80c8285e146a74cda4fb863bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_1.asset using Guid(57c3fd80c8285e146a74cda4fb863bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc580ab4d55a64ba420ff6c8e49b2cf') in 0.063414 seconds
-  Import took 0.066003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_10.asset
-  artifactKey: Guid(f03f2d3350170ff419f437a399add4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_10.asset using Guid(f03f2d3350170ff419f437a399add4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e737be83578d292f264b5dd4bc2ad3') in 0.005856 seconds
-  Import took 0.008412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_16.asset
-  artifactKey: Guid(aec4e97e635870c40bcdaad6fc9976d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_16.asset using Guid(aec4e97e635870c40bcdaad6fc9976d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a64ad6e863d319791b5917e85c891af') in 0.007144 seconds
-  Import took 0.010711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_0.asset
-  artifactKey: Guid(d5438076aa588e745b6551862ba5d7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_0.asset using Guid(d5438076aa588e745b6551862ba5d7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67c97da19a63aeac0116b9c0726e85b') in 0.009987 seconds
-  Import took 0.013827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39.png
-  artifactKey: Guid(cdc3c7f4319b54a46b8345f0aebbd64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39.png using Guid(cdc3c7f4319b54a46b8345f0aebbd64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0df7dd60da9a49726593340973db772') in 0.097499 seconds
-  Import took 0.100389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_11.asset
-  artifactKey: Guid(75d203828851f5c4190e658ee435b96e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_11.asset using Guid(75d203828851f5c4190e658ee435b96e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f12a481198c230db8f6c3c69dba82ac') in 0.004587 seconds
-  Import took 0.007375 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_6.asset
-  artifactKey: Guid(84130bdcb5913594f958a63e08ca3a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_6.asset using Guid(84130bdcb5913594f958a63e08ca3a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11f41d4b7261b4e79861c1099d22a97') in 0.005644 seconds
-  Import took 0.008970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_3.asset
-  artifactKey: Guid(aa695beaeb45456479e965ac798fd462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_3.asset using Guid(aa695beaeb45456479e965ac798fd462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c165a41ad646396de2e955d281bf3c') in 0.006920 seconds
-  Import took 0.010604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_7.asset
-  artifactKey: Guid(db73da7b9cc6f7a4fb66c6d89805af7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_7.asset using Guid(db73da7b9cc6f7a4fb66c6d89805af7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4827d7767749a56b398b17c90bf79573') in 0.006837 seconds
-  Import took 0.010304 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_12.asset
-  artifactKey: Guid(221e548e9eec82b4fba745f7966610fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_12.asset using Guid(221e548e9eec82b4fba745f7966610fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538a8df7ed5b34d4163533d1f2cd51f3') in 0.007927 seconds
-  Import took 0.011310 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_8.asset
-  artifactKey: Guid(640e42656d7c3be429fb56c5bd090110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_8.asset using Guid(640e42656d7c3be429fb56c5bd090110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9f4ea9af114b975b53df97f74ad9e7') in 0.007524 seconds
-  Import took 0.011004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_4.asset
-  artifactKey: Guid(9953cd3151c9ae54b9868977e7e2fb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_4.asset using Guid(9953cd3151c9ae54b9868977e7e2fb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6078d8a13be0f02ad5797759d61dcf05') in 0.013785 seconds
-  Import took 0.017321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_13.asset
-  artifactKey: Guid(feaf2f866399e8c4680db715404f5ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_13.asset using Guid(feaf2f866399e8c4680db715404f5ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae7e4e7106034b43de73c7c19ce5745') in 0.014663 seconds
-  Import took 0.017627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_14.asset
-  artifactKey: Guid(e9c12012478a905498c7ff38c596f20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_14.asset using Guid(e9c12012478a905498c7ff38c596f20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c4f066146b840fb143445d280793f3') in 0.008623 seconds
-  Import took 0.012468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_2.asset
-  artifactKey: Guid(b5a7b6c9ea0fc6c49bedf2332e2c3b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_2.asset using Guid(b5a7b6c9ea0fc6c49bedf2332e2c3b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f281e9a9bbcd5b228a121d430a161cf') in 0.005606 seconds
-  Import took 0.008644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_5.asset
-  artifactKey: Guid(e4025e60371cd984f82e3bdddcb7ab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_5.asset using Guid(e4025e60371cd984f82e3bdddcb7ab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5217416fdecf465f92abc4155652f03d') in 0.007856 seconds
-  Import took 0.011113 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_15.asset
-  artifactKey: Guid(64599ad74cb12474ba25f2aea495a863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_15.asset using Guid(64599ad74cb12474ba25f2aea495a863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '136e830102a7d9bc49e2326924c9018c') in 0.010970 seconds
-  Import took 0.015338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_9.asset
-  artifactKey: Guid(3dbbf875ff3db2b428f3436d953235a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/f2db4156-38c4-4511-a18e-85c2a8f0ba39_9.asset using Guid(3dbbf875ff3db2b428f3436d953235a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12526d8fa41d1c4c7dc5a2fb602d911') in 0.008130 seconds
-  Import took 0.011930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.713698 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet
-  artifactKey: Guid(123e0397efc6d094ba2b321eeeb03e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet using Guid(123e0397efc6d094ba2b321eeeb03e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0431b96ccfb7d7246337d19665223253') in 0.001990 seconds
-  Import took 0.004361 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 111.489197 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/0c4e03d3-c98b-4b77-a8c2-77d2b479875c.png
-  artifactKey: Guid(f2fd231b4d291c74f97fa8942fa2df91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/0c4e03d3-c98b-4b77-a8c2-77d2b479875c.png using Guid(f2fd231b4d291c74f97fa8942fa2df91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509a50999e0e6a2627590d43e9d1cdc7') in 0.016634 seconds
-  Import took 0.019416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021366 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/0c4e03d3-c98b-4b77-a8c2-77d2b479875c.png
-  artifactKey: Guid(f2fd231b4d291c74f97fa8942fa2df91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/0c4e03d3-c98b-4b77-a8c2-77d2b479875c.png using Guid(f2fd231b4d291c74f97fa8942fa2df91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509a50999e0e6a2627590d43e9d1cdc7') in 0.012256 seconds
-  Import took 0.014804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.062549 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/c3323acf-5866-4f3f-ba60-77c154a9c378.png
-  artifactKey: Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/c3323acf-5866-4f3f-ba60-77c154a9c378.png using Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6fb8466c07c06c109e935602c9691d0') in 0.010945 seconds
-  Import took 0.013758 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.194067 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png
-  artifactKey: Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png using Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d44842fcd9548506ce5a1d7e2f2ea4') in 0.008410 seconds
-  Import took 0.011054 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.731487 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png
-  artifactKey: Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png using Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029c1d2a44441e332788d74748259f4d') in 0.030711 seconds
-  Import took 0.033400 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.039297 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png
-  artifactKey: Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png using Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029c1d2a44441e332788d74748259f4d') in 0.004646 seconds
-  Import took 0.007158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.098959 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png
-  artifactKey: Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png using Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0496518c0d1221d7a3348117c51f8577') in 0.164042 seconds
-  Import took 0.166853 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.401193 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_0.asset
-  artifactKey: Guid(d01944f0abe04b84daef5e160c4f1e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_0.asset using Guid(d01944f0abe04b84daef5e160c4f1e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1158d34b1b7cf290467232e961c651') in 0.009424 seconds
-  Import took 0.012530 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_23.asset
-  artifactKey: Guid(26dd1748ba98c1f42b466486a6856b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_23.asset using Guid(26dd1748ba98c1f42b466486a6856b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e68b9cce54a6b31a63f8c62e59df03') in 0.006028 seconds
-  Import took 0.008378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_6.asset
-  artifactKey: Guid(4b2b3a3facae04744abeeafd48a762e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_6.asset using Guid(4b2b3a3facae04744abeeafd48a762e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e089eda3a09a90dda836a47f24b687') in 0.004630 seconds
-  Import took 0.006946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_27.asset
-  artifactKey: Guid(f29c4c7e14a4d9f419bce73ea6909e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_27.asset using Guid(f29c4c7e14a4d9f419bce73ea6909e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2cec4fc055503b88b002c1b3d5279f') in 0.004811 seconds
-  Import took 0.007379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_35.asset
-  artifactKey: Guid(3bf202c192aedc6418abd62f3dd41503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_35.asset using Guid(3bf202c192aedc6418abd62f3dd41503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02f7adfae85bf19e3bfe8d3fc9fec2a') in 0.007547 seconds
-  Import took 0.010009 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_34.asset
-  artifactKey: Guid(9c245542152d1f140814a7bc59429aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_34.asset using Guid(9c245542152d1f140814a7bc59429aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13dd77fb7b015891dfd3d11dbbf85c6') in 0.004801 seconds
-  Import took 0.007357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_19.asset
-  artifactKey: Guid(d1ff50646700abd46abf5f3fd5f90ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_19.asset using Guid(d1ff50646700abd46abf5f3fd5f90ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661775fb5fc8b50514555673d24909ba') in 0.008425 seconds
-  Import took 0.012262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_26.asset
-  artifactKey: Guid(889eff523c012a3468d91f1bb6355ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_26.asset using Guid(889eff523c012a3468d91f1bb6355ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74adb556ddb44aa43cddba665a0c1ac') in 0.008060 seconds
-  Import took 0.011523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_8.asset
-  artifactKey: Guid(a1b80b55640c0fa46962736ac8955f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_8.asset using Guid(a1b80b55640c0fa46962736ac8955f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe58cdeec0fa42c325775c1c47f8f699') in 0.007316 seconds
-  Import took 0.010457 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_21.asset
-  artifactKey: Guid(cc6d3f9f917fce2458a0a9264ea264bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_21.asset using Guid(cc6d3f9f917fce2458a0a9264ea264bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6a230997a5fc2eb4b4c70e0d89cbc2') in 0.006546 seconds
-  Import took 0.009347 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_9.asset
-  artifactKey: Guid(6199359c44ec73f49aae31bebccec931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_9.asset using Guid(6199359c44ec73f49aae31bebccec931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a6ee49fbb4d4d726b778a5112a4c7f9') in 0.009453 seconds
-  Import took 0.011788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_32.asset
-  artifactKey: Guid(9b67977ef9791fc4797ee6242ca84586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_32.asset using Guid(9b67977ef9791fc4797ee6242ca84586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cb00528f5998faf2b380f9d53ce880') in 0.004726 seconds
-  Import took 0.007453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_29.asset
-  artifactKey: Guid(8c015cb9ec8fc3f4182b33b2dd7ce55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_29.asset using Guid(8c015cb9ec8fc3f4182b33b2dd7ce55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81940bc8558bafb32b60ec4ded1f4b6') in 0.006345 seconds
-  Import took 0.008955 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_4.asset
-  artifactKey: Guid(479ffc4895fcaaf458e5a0f08ee96c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_4.asset using Guid(479ffc4895fcaaf458e5a0f08ee96c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590d260cdf1b121df860307034200159') in 0.004582 seconds
-  Import took 0.007566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_15.asset
-  artifactKey: Guid(7fa90314eb6e6fa43b28fcce65b069c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_15.asset using Guid(7fa90314eb6e6fa43b28fcce65b069c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75ae1814261552d4c9bf7b3374309335') in 0.004306 seconds
-  Import took 0.006935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_30.asset
-  artifactKey: Guid(5bae4ca44c3ddeb478d1b79df59a94b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_30.asset using Guid(5bae4ca44c3ddeb478d1b79df59a94b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1216f11f188712eab14ab2c319b5fce2') in 0.004366 seconds
-  Import took 0.006873 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_31.asset
-  artifactKey: Guid(08f89101f72ea51469b8785374cd72e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_31.asset using Guid(08f89101f72ea51469b8785374cd72e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c17d060296941265acf11a944dd44a2') in 0.004420 seconds
-  Import took 0.006783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_2.asset
-  artifactKey: Guid(e3023d134269b934a94015df884f1479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_2.asset using Guid(e3023d134269b934a94015df884f1479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8677bbb4fff1a30a022723abb7cff71') in 0.005186 seconds
-  Import took 0.008163 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_5.asset
-  artifactKey: Guid(4fadc8c5a36e9d14e83ea49972af47e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_5.asset using Guid(4fadc8c5a36e9d14e83ea49972af47e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67815b9d474115eb06c19c51537428a1') in 0.005138 seconds
-  Import took 0.008374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_7.asset
-  artifactKey: Guid(7d4cb0d6ed69cf442a4846db78596749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_7.asset using Guid(7d4cb0d6ed69cf442a4846db78596749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81269429873aab6f7ca4cb9da6df0989') in 0.005307 seconds
-  Import took 0.008756 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_11.asset
-  artifactKey: Guid(24a3ec6552d574f4fb57b6dd728cf151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_11.asset using Guid(24a3ec6552d574f4fb57b6dd728cf151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f986bd5fad2d2a7d7fa06dca862d387') in 0.005728 seconds
-  Import took 0.009692 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_12.asset
-  artifactKey: Guid(89889e07d554d1c41bbdfdbf59afe595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_12.asset using Guid(89889e07d554d1c41bbdfdbf59afe595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff69497c195a1fca3a5c9b6bcc5c10b9') in 0.005087 seconds
-  Import took 0.008136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_17.asset
-  artifactKey: Guid(e3cf37a9eaf32fd489e47bc8d4ec3920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_17.asset using Guid(e3cf37a9eaf32fd489e47bc8d4ec3920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0267022bd8b3f2f044e2267079e79063') in 0.005209 seconds
-  Import took 0.007621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_18.asset
-  artifactKey: Guid(9d47b7c1e8561f4488df031550b59314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_18.asset using Guid(9d47b7c1e8561f4488df031550b59314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79079d36db9d8caa9668c2119d0604b3') in 0.005072 seconds
-  Import took 0.007666 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_16.asset
-  artifactKey: Guid(7c14c7a9e21d8114cabb0aafa93a7fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_16.asset using Guid(7c14c7a9e21d8114cabb0aafa93a7fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad6d806d55d61845346333e09bb293b') in 0.004475 seconds
-  Import took 0.007270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_20.asset
-  artifactKey: Guid(8a235762531778548b6db9d7f943e5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_20.asset using Guid(8a235762531778548b6db9d7f943e5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913e57962d21142028161d9215d443ce') in 0.004834 seconds
-  Import took 0.007194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_1.asset
-  artifactKey: Guid(defa1a2a887efed428844c724497365c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_1.asset using Guid(defa1a2a887efed428844c724497365c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a828f71ded4ce4a88b98b90880c4fd') in 0.005610 seconds
-  Import took 0.008876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_22.asset
-  artifactKey: Guid(fe15c7812d8f379458879a692a8054e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_22.asset using Guid(fe15c7812d8f379458879a692a8054e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '155560926349b5f361f4fa037310a208') in 0.004421 seconds
-  Import took 0.006898 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_24.asset
-  artifactKey: Guid(578cc7c17a3b120438c7708230f7a032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_24.asset using Guid(578cc7c17a3b120438c7708230f7a032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b84e6e65948f5f7cef5322908b4bb96') in 0.004751 seconds
-  Import took 0.007264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_25.asset
-  artifactKey: Guid(7bc59034ef857914fa9e9dbf0d655eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_25.asset using Guid(7bc59034ef857914fa9e9dbf0d655eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ca7fd73e352d54ffae906f866d9eb7') in 0.005593 seconds
-  Import took 0.008096 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_13.asset
-  artifactKey: Guid(5b8bba2e3e8e0e846bad75f96923338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_13.asset using Guid(5b8bba2e3e8e0e846bad75f96923338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ada9df10b17ba7f726d7658a0de6629d') in 0.004635 seconds
-  Import took 0.007268 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_28.asset
-  artifactKey: Guid(b6deeb687d52bef44a559d16db5c8574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_28.asset using Guid(b6deeb687d52bef44a559d16db5c8574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff2432453d61808b31437f60bcab6ff') in 0.004942 seconds
-  Import took 0.008077 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_33.asset
-  artifactKey: Guid(1ce85cef9cda91c408b08a7cf48b8830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_33.asset using Guid(1ce85cef9cda91c408b08a7cf48b8830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5deb34c0e38f7299e300306974adc882') in 0.005872 seconds
-  Import took 0.008928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_14.asset
-  artifactKey: Guid(58a87660b8a982d44a89e2eeba61dc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_14.asset using Guid(58a87660b8a982d44a89e2eeba61dc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4656783ef6c5217650108b858e2f8e2') in 0.004787 seconds
-  Import took 0.008108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_3.asset
-  artifactKey: Guid(d411ca4dacb31974582725912ddf3767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_3.asset using Guid(d411ca4dacb31974582725912ddf3767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4973459b62285a43927edf030b01d03e') in 0.004781 seconds
-  Import took 0.007967 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_10.asset
-  artifactKey: Guid(dd183443ee4f1274eb68aad9950c60fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_10.asset using Guid(dd183443ee4f1274eb68aad9950c60fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891d283e49dd0747235edbeb1548267c') in 0.004612 seconds
-  Import took 0.007141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.080238 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_36.asset
-  artifactKey: Guid(8f60d6f6220dc6844b550692c05bafa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_36.asset using Guid(8f60d6f6220dc6844b550692c05bafa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4fd835f8904d28cbe9ebc41e8a79fe7') in 0.005125 seconds
-  Import took 0.007961 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_52.asset
-  artifactKey: Guid(24a75e7635ead264395d173430c7695c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_52.asset using Guid(24a75e7635ead264395d173430c7695c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e6cd60905057ed80666d0147032074') in 0.006969 seconds
-  Import took 0.010601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_59.asset
-  artifactKey: Guid(9592bedf40f0a2241a8334c9cd8a8470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_59.asset using Guid(9592bedf40f0a2241a8334c9cd8a8470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9547c41e9286d2472562265914f31c') in 0.004767 seconds
-  Import took 0.007737 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_64.asset
-  artifactKey: Guid(49a579f7af128f24499ac9d0b3c63dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_64.asset using Guid(49a579f7af128f24499ac9d0b3c63dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956fc18873feafb516a64eb15043bfab') in 0.005680 seconds
-  Import took 0.008600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_61.asset
-  artifactKey: Guid(63cde0a371f9ebf4898e50ec616e8304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_61.asset using Guid(63cde0a371f9ebf4898e50ec616e8304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fdde81b3d4506ff01a88307692ca98c') in 0.011310 seconds
-  Import took 0.014252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_44.asset
-  artifactKey: Guid(b8b1060956f30714a8684cf19494d184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_44.asset using Guid(b8b1060956f30714a8684cf19494d184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2c7ee6282b0628bc0451e8375abf95') in 0.004874 seconds
-  Import took 0.007205 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_49.asset
-  artifactKey: Guid(f601c2f56c942fe4599d220c78a816fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_49.asset using Guid(f601c2f56c942fe4599d220c78a816fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be07889da37b57eda91d1ff0387729ac') in 0.006267 seconds
-  Import took 0.008857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_62.asset
-  artifactKey: Guid(ff32c9f811f14d241a420904efd197a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_62.asset using Guid(ff32c9f811f14d241a420904efd197a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a08d0389a114ed79e547fd260aa0975') in 0.005831 seconds
-  Import took 0.008452 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_60.asset
-  artifactKey: Guid(0acb237735027284e9c50c9d4bbe3546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_60.asset using Guid(0acb237735027284e9c50c9d4bbe3546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cadf9867b1239cd30f07f3ce7fdb6e7') in 0.004505 seconds
-  Import took 0.007301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_43.asset
-  artifactKey: Guid(d426b263db537cd4a819b02904ad5f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_43.asset using Guid(d426b263db537cd4a819b02904ad5f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9f58e7324cbc81a4084cec3831080a') in 0.007744 seconds
-  Import took 0.010316 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_63.asset
-  artifactKey: Guid(24f4c1c40e268a04597bb343729b461e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_63.asset using Guid(24f4c1c40e268a04597bb343729b461e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b2176f98173ea9d10ce9527badf9d2') in 0.004346 seconds
-  Import took 0.006793 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_56.asset
-  artifactKey: Guid(9abbb666080bbd04281f6ec5cf6a1b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_56.asset using Guid(9abbb666080bbd04281f6ec5cf6a1b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd932b033c3cffd69b0e3d44412f818c') in 0.004866 seconds
-  Import took 0.007242 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_47.asset
-  artifactKey: Guid(5a1ddb10ae6d3d549a0053e8ed9f3765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_47.asset using Guid(5a1ddb10ae6d3d549a0053e8ed9f3765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618a100189257271ab47a15392e6d72e') in 0.005362 seconds
-  Import took 0.008200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_48.asset
-  artifactKey: Guid(f1f0f98f51c605d43898a52bfdb76e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_48.asset using Guid(f1f0f98f51c605d43898a52bfdb76e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b32beb94cd29bec6f21800e0f377a40') in 0.004567 seconds
-  Import took 0.006983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_37.asset
-  artifactKey: Guid(768c45b13f1412d4381ccfe4d284d87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_37.asset using Guid(768c45b13f1412d4381ccfe4d284d87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0659fd6e36805300668dffe39b54fd5f') in 0.005711 seconds
-  Import took 0.008153 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_54.asset
-  artifactKey: Guid(e9d176fdb853f3d41878c106dccabc05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_54.asset using Guid(e9d176fdb853f3d41878c106dccabc05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9519bb6cd0331cbde0451776fdc4b13') in 0.005097 seconds
-  Import took 0.007727 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_55.asset
-  artifactKey: Guid(e4e16270fb48d8447929a99dbfdf2416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_55.asset using Guid(e4e16270fb48d8447929a99dbfdf2416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e72d0daf511d92279fdb8fda48dfe7f') in 0.004629 seconds
-  Import took 0.007106 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_65.asset
-  artifactKey: Guid(6b4ac58c796be1642b938ce48430de16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_65.asset using Guid(6b4ac58c796be1642b938ce48430de16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3cfb1e532ce3940fd62eda1b88ba9d9') in 0.005013 seconds
-  Import took 0.008092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_58.asset
-  artifactKey: Guid(d1f85e88b013f7741b85729cfc3d87f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_58.asset using Guid(d1f85e88b013f7741b85729cfc3d87f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e850eee93e4199af8a9cbe0bfce53b28') in 0.007322 seconds
-  Import took 0.010133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_53.asset
-  artifactKey: Guid(eee1dc37eb7bd9e4380ec9399bd3d336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_53.asset using Guid(eee1dc37eb7bd9e4380ec9399bd3d336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b4da334fae82d5c6562bfc94fab693') in 0.005949 seconds
-  Import took 0.008534 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_41.asset
-  artifactKey: Guid(d73361e2964b4724199e0f397433ad22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_41.asset using Guid(d73361e2964b4724199e0f397433ad22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ea32df9d88bf2e6b2f6fe3fe5207c1') in 0.004943 seconds
-  Import took 0.007523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_46.asset
-  artifactKey: Guid(0283a702392442d43a226ae70c3e68c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_46.asset using Guid(0283a702392442d43a226ae70c3e68c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b794f0499d70188309d9c842de9baf') in 0.005768 seconds
-  Import took 0.008286 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_38.asset
-  artifactKey: Guid(e021a72f7c312634caca8b64ba2953f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_38.asset using Guid(e021a72f7c312634caca8b64ba2953f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '346a4afa441142b17519fa3bf383840b') in 0.005970 seconds
-  Import took 0.008832 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_50.asset
-  artifactKey: Guid(675b9fab6a21e4c4cb714cb1273a60cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_50.asset using Guid(675b9fab6a21e4c4cb714cb1273a60cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79529135294ce805457b22bb253e76e2') in 0.012812 seconds
-  Import took 0.015815 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_40.asset
-  artifactKey: Guid(5b34887801c01864f916a015c3a89dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_40.asset using Guid(5b34887801c01864f916a015c3a89dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74a48bdac56175c79532c6315066517') in 0.009749 seconds
-  Import took 0.012383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_39.asset
-  artifactKey: Guid(b7a6611a1c2c81843bc89a5c21527361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_39.asset using Guid(b7a6611a1c2c81843bc89a5c21527361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd19af252a72d0f421f9e34f6c761252') in 0.004733 seconds
-  Import took 0.007118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_42.asset
-  artifactKey: Guid(88b7cc54243aa0e479468044f9099761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_42.asset using Guid(88b7cc54243aa0e479468044f9099761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1fe0a65d0f700fbb6d556da13b2bd4') in 0.006844 seconds
-  Import took 0.009522 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_51.asset
-  artifactKey: Guid(acd1300c547b0424696c9255778ff209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_51.asset using Guid(acd1300c547b0424696c9255778ff209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a453a96af0be65a72b75c61d694e6750') in 0.004657 seconds
-  Import took 0.007039 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_57.asset
-  artifactKey: Guid(deb305ebd629ec34d84a14e88d596d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_57.asset using Guid(deb305ebd629ec34d84a14e88d596d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5a529624d637df4e5b758057975679') in 0.004372 seconds
-  Import took 0.006838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_45.asset
-  artifactKey: Guid(806e2e7699e41224b8da276465a94551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging_45.asset using Guid(806e2e7699e41224b8da276465a94551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31baaa2887eef4faa63e648d590d6595') in 0.005219 seconds
-  Import took 0.008114 seconds .
+Total: 2.747000 ms (FindLiveObjects: 0.617200 ms CreateObjectMapping: 0.208300 ms MarkObjects: 1.845700 ms  DeleteObjects: 0.074800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/GuyController.cs
+  artifactKey: Guid(53f0119bd4f6d6a4093ae6a1e2f5fc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GuyController.cs using Guid(53f0119bd4f6d6a4093ae6a1e2f5fc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfdd4c94eb6b0393cad25f1cfaad58dd') in 0.026897 seconds
+  Import took 0.029756 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001062 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.723 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.9 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2215.
+Total: 1.567600 ms (FindLiveObjects: 0.201500 ms CreateObjectMapping: 0.060300 ms MarkObjects: 1.293000 ms  DeleteObjects: 0.011700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000929 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.748 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.0 MB.
+System memory in use after: 83.1 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2217.
+Total: 1.662800 ms (FindLiveObjects: 0.191400 ms CreateObjectMapping: 0.058500 ms MarkObjects: 1.396700 ms  DeleteObjects: 0.014700 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

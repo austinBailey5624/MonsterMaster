@@ -71,6 +71,7 @@ public class GuyController : MonoBehaviour
         animator.SetBool("movingRight", travelRight > 0);
         animator.SetBool("movingBack",travelUp > 0);
         animator.SetBool("movingForwards", travelDown > 0);
+  
         transform.position = position;
     }
 }
