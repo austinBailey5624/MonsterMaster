@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Guy_Right_Idle
-  m_Speed: 1
+  m_Speed: 1000
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -34,7 +34,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Guy_Left_Idle
-  m_Speed: 1
+  m_Speed: 1000
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -60,7 +60,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Guy_Left
-  m_Speed: 1
+  m_Speed: 8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 11941490844356817}
@@ -101,7 +101,7 @@ AnimatorStateTransition:
   m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
-  m_InterruptionSource: 1
+  m_InterruptionSource: 2
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
 --- !u!1101 &-2416520338797532225
@@ -112,9 +112,6 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: speedIsZero
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: movingBack
     m_EventTreshold: 0
@@ -129,7 +126,7 @@ AnimatorStateTransition:
   m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
-  m_InterruptionSource: 1
+  m_InterruptionSource: 2
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
 --- !u!1102 &-1653627609662450636
@@ -140,7 +137,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Guy_Forwards
-  m_Speed: 1
+  m_Speed: 8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -4351338625287623314}
@@ -167,9 +164,6 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: speedIsZero
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: movingForwards
     m_EventTreshold: 0
@@ -184,7 +178,7 @@ AnimatorStateTransition:
   m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
-  m_InterruptionSource: 1
+  m_InterruptionSource: 2
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
 --- !u!1101 &-1340796822302145898
@@ -209,7 +203,7 @@ AnimatorStateTransition:
   m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
-  m_InterruptionSource: 1
+  m_InterruptionSource: 2
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
 --- !u!91 &9100000
@@ -286,7 +280,7 @@ AnimatorStateTransition:
   m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
-  m_InterruptionSource: 1
+  m_InterruptionSource: 2
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
 --- !u!1107 &225774373931570816
@@ -312,16 +306,16 @@ AnimatorStateMachine:
     m_Position: {x: 790, y: 400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2531359159984511634}
-    m_Position: {x: 10, y: 170, z: 0}
+    m_Position: {x: 20, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6276893704233961027}
-    m_Position: {x: 640, y: 290, z: 0}
+    m_Position: {x: 630, y: 710, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4772878840053093933}
-    m_Position: {x: 200, y: 290, z: 0}
+    m_Position: {x: 180, y: 740, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8398018208580339934}
-    m_Position: {x: 810, y: 140, z: 0}
+    m_Position: {x: 780, y: 140, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -1613112228765237125}
@@ -331,7 +325,7 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 440, y: 390, z: 0}
+  m_AnyStatePosition: {x: 440, y: 440, z: 0}
   m_EntryPosition: {x: 20, y: 10, z: 0}
   m_ExitPosition: {x: 690, y: 30, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -357,8 +351,8 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 1
+  m_HasFixedDuration: 0
+  m_InterruptionSource: 2
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
 --- !u!1101 &884540881393794984
@@ -369,9 +363,6 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: speedIsZero
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: movingRight
     m_EventTreshold: 0
@@ -385,7 +376,7 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 1
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
@@ -397,7 +388,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Guy_Right
-  m_Speed: 1
+  m_Speed: 8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 529990772318139592}
@@ -424,7 +415,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Guy_Forwards_Idle
-  m_Speed: 1
+  m_Speed: 1000
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -450,7 +441,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Guy_Back_Idle
-  m_Speed: 1
+  m_Speed: 1000
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -476,7 +467,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Guy_Backwards
-  m_Speed: 1
+  m_Speed: 8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -1340796822302145898}
@@ -506,9 +497,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: movingLeft
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: speedIsZero
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4401843953481789952}
   m_Solo: 0
@@ -520,6 +508,6 @@ AnimatorStateTransition:
   m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
-  m_InterruptionSource: 1
+  m_InterruptionSource: 2
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1

@@ -6,6 +6,7 @@ using UnityEngine;
 public class GuyController : MonoBehaviour
 {
     public Animator animator;
+    public float speed;
     float travelLeft;
     float travelRight;
     float travelUp;
@@ -23,7 +24,6 @@ public class GuyController : MonoBehaviour
     {
         float tileSize = 1f;
         Vector2 position = transform.position;
-        float speed = .003f;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         bool isMoving = false;
@@ -46,36 +46,45 @@ public class GuyController : MonoBehaviour
                 travelDown = tileSize;
             }
         }
+        bool movingLeft = false;
+        bool movingRight = false;
+        bool movingUp = false;
+        bool movingDown = false;
 
         if(travelLeft >0)
         {
+            movingLeft = true;
             position.x = position.x - speed;
             travelLeft -= speed;
             isMoving = true;
         }
         else if(travelRight > 0)
         {
+            movingRight = true;
             position.x = position.x + speed;
             travelRight -= speed;
             isMoving = true;
         }
         else if(travelUp > 0)
         {
+            movingUp = true;
             position.y = position.y + speed;
             travelUp -= speed;
             isMoving = true;
         }
         else if(travelDown > 0)
         {
+            movingDown = true;
             position.y = position.y - speed;
             travelDown -= speed;
             isMoving = true;
         }
-        animator.SetBool("movingLeft",travelLeft > 0);
-        animator.SetBool("movingRight", travelRight > 0);
-        animator.SetBool("movingBack",travelUp > 0);
-        animator.SetBool("movingForwards", travelDown > 0);
         animator.SetBool("speedIsZero", !isMoving);
+        animator.SetBool("movingLeft",movingLeft);
+        animator.SetBool("movingRight", movingRight);
+        animator.SetBool("movingBack",movingUp);
+        animator.SetBool("movingForwards", movingDown);
+
   
         transform.position = position;
     }
