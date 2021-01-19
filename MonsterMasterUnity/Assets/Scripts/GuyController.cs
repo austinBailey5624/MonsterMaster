@@ -79,7 +79,7 @@ public class GuyController : MonoBehaviour
             travelDown -= speed;
             isMoving = true;
         }
-        animator.SetBool("speedIsZero", !isMoving);
+        animator.SetBool("isMoving", isMoving);
         animator.SetBool("movingLeft",movingLeft);
         animator.SetBool("movingRight", movingRight);
         animator.SetBool("movingBack",movingUp);
