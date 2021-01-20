@@ -1,0 +1,2935 @@
+fileFormatVersion: 2
+guid: bee9dac3849eff14d866b1a750fd3ba1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2701218718715192439
+    second: OakTreeBuildingInterior_0
+  - first:
+      213: -7946025368652199436
+    second: OakTreeBuildingInterior_1
+  - first:
+      213: -9120920290748663672
+    second: OakTreeBuildingInterior_2
+  - first:
+      213: -7688876483200464383
+    second: OakTreeBuildingInterior_3
+  - first:
+      213: -667189580708231060
+    second: OakTreeBuildingInterior_4
+  - first:
+      213: 8357824106944675966
+    second: OakTreeBuildingInterior_5
+  - first:
+      213: 7503633561244020338
+    second: OakTreeBuildingInterior_6
+  - first:
+      213: 753739577587944615
+    second: OakTreeBuildingInterior_7
+  - first:
+      213: -6482009507389304247
+    second: OakTreeBuildingInterior_8
+  - first:
+      213: 408258002342053019
+    second: OakTreeBuildingInterior_9
+  - first:
+      213: 2412614913129571585
+    second: OakTreeBuildingInterior_10
+  - first:
+      213: 3513704396767217346
+    second: OakTreeBuildingInterior_11
+  - first:
+      213: -4940236506598046438
+    second: OakTreeBuildingInterior_12
+  - first:
+      213: 6146820086304050947
+    second: OakTreeBuildingInterior_13
+  - first:
+      213: -1231930888680335938
+    second: OakTreeBuildingInterior_14
+  - first:
+      213: 6432440005558225340
+    second: OakTreeBuildingInterior_15
+  - first:
+      213: 1975785511931638359
+    second: OakTreeBuildingInterior_16
+  - first:
+      213: 6622066892311181311
+    second: OakTreeBuildingInterior_17
+  - first:
+      213: -3059030424075712599
+    second: OakTreeBuildingInterior_18
+  - first:
+      213: 5606654007949505920
+    second: OakTreeBuildingInterior_19
+  - first:
+      213: 2767647580848073753
+    second: OakTreeBuildingInterior_20
+  - first:
+      213: 2068305440761313637
+    second: OakTreeBuildingInterior_21
+  - first:
+      213: 1768954876159397303
+    second: OakTreeBuildingInterior_22
+  - first:
+      213: 6629584397056840143
+    second: OakTreeBuildingInterior_23
+  - first:
+      213: 1716984727068101596
+    second: OakTreeBuildingInterior_24
+  - first:
+      213: -8338575498257074093
+    second: OakTreeBuildingInterior_25
+  - first:
+      213: 5431072390464927920
+    second: OakTreeBuildingInterior_26
+  - first:
+      213: -1372752555008686715
+    second: OakTreeBuildingInterior_27
+  - first:
+      213: -8081627821104228405
+    second: OakTreeBuildingInterior_28
+  - first:
+      213: 1460098112830737832
+    second: OakTreeBuildingInterior_29
+  - first:
+      213: -9113303290243677319
+    second: OakTreeBuildingInterior_30
+  - first:
+      213: -4531979686206743402
+    second: OakTreeBuildingInterior_31
+  - first:
+      213: 3721762246806553278
+    second: OakTreeBuildingInterior_32
+  - first:
+      213: -7100691976470149162
+    second: OakTreeBuildingInterior_33
+  - first:
+      213: -5510402673870970932
+    second: OakTreeBuildingInterior_34
+  - first:
+      213: -7827529474473157282
+    second: OakTreeBuildingInterior_35
+  - first:
+      213: 8852665650933317804
+    second: OakTreeBuildingInterior_36
+  - first:
+      213: 775456984406207801
+    second: OakTreeBuildingInterior_37
+  - first:
+      213: -2315071907864323339
+    second: OakTreeBuildingInterior_38
+  - first:
+      213: -1994414740813026692
+    second: OakTreeBuildingInterior_39
+  - first:
+      213: 983171488615784493
+    second: OakTreeBuildingInterior_40
+  - first:
+      213: -5747212821946659945
+    second: OakTreeBuildingInterior_41
+  - first:
+      213: -181830442716778363
+    second: OakTreeBuildingInterior_42
+  - first:
+      213: 7840169685509629692
+    second: OakTreeBuildingInterior_43
+  - first:
+      213: 1323607474471668886
+    second: OakTreeBuildingInterior_44
+  - first:
+      213: -1056356898938792722
+    second: OakTreeBuildingInterior_45
+  - first:
+      213: -6177764983183264120
+    second: OakTreeBuildingInterior_46
+  - first:
+      213: 1388751540022768259
+    second: OakTreeBuildingInterior_47
+  - first:
+      213: 9169948427419107129
+    second: OakTreeBuildingInterior_48
+  - first:
+      213: -4646855170966153389
+    second: OakTreeBuildingInterior_49
+  - first:
+      213: 3811896932312881285
+    second: OakTreeBuildingInterior_50
+  - first:
+      213: 6745275658751743233
+    second: OakTreeBuildingInterior_51
+  - first:
+      213: -177504738780069948
+    second: OakTreeBuildingInterior_52
+  - first:
+      213: 5254114171695602876
+    second: OakTreeBuildingInterior_53
+  - first:
+      213: -5156035869222413290
+    second: OakTreeBuildingInterior_54
+  - first:
+      213: -1391113092437707020
+    second: OakTreeBuildingInterior_55
+  - first:
+      213: 6575660397811042177
+    second: OakTreeBuildingInterior_56
+  - first:
+      213: 3036645207085602944
+    second: OakTreeBuildingInterior_57
+  - first:
+      213: -1639549610473152766
+    second: OakTreeBuildingInterior_58
+  - first:
+      213: 4154567818386508244
+    second: OakTreeBuildingInterior_59
+  - first:
+      213: -1484104546156208926
+    second: OakTreeBuildingInterior_60
+  - first:
+      213: 2117725808785103952
+    second: OakTreeBuildingInterior_61
+  - first:
+      213: -9142914187606016143
+    second: OakTreeBuildingInterior_62
+  - first:
+      213: 8417769957683933303
+    second: OakTreeBuildingInterior_63
+  - first:
+      213: -1602628717284775143
+    second: OakTreeBuildingInterior_64
+  - first:
+      213: -2606045255820312815
+    second: OakTreeBuildingInterior_65
+  - first:
+      213: -5283584043526920361
+    second: OakTreeBuildingInterior_66
+  - first:
+      213: 5757389508397388366
+    second: OakTreeBuildingInterior_67
+  - first:
+      213: 7980770277290425461
+    second: OakTreeBuildingInterior_68
+  - first:
+      213: -8959438134015831941
+    second: OakTreeBuildingInterior_69
+  - first:
+      213: 6890365357715136078
+    second: OakTreeBuildingInterior_70
+  - first:
+      213: 2612063246497260649
+    second: OakTreeBuildingInterior_71
+  - first:
+      213: -8711787870634535831
+    second: OakTreeBuildingInterior_72
+  - first:
+      213: 3315495288637378969
+    second: OakTreeBuildingInterior_73
+  - first:
+      213: 7814340494232452175
+    second: OakTreeBuildingInterior_74
+  - first:
+      213: 8881452332083861120
+    second: OakTreeBuildingInterior_75
+  - first:
+      213: 2023908189252294217
+    second: OakTreeBuildingInterior_76
+  - first:
+      213: 5385028225471035335
+    second: OakTreeBuildingInterior_77
+  - first:
+      213: 4809920270935660208
+    second: OakTreeBuildingInterior_78
+  - first:
+      213: 1612393808225984807
+    second: OakTreeBuildingInterior_79
+  - first:
+      213: 2976090503888449916
+    second: OakTreeBuildingInterior_80
+  - first:
+      213: -5387755870262439336
+    second: OakTreeBuildingInterior_81
+  - first:
+      213: 6090494966995847945
+    second: OakTreeBuildingInterior_82
+  - first:
+      213: 198013461897821470
+    second: OakTreeBuildingInterior_83
+  - first:
+      213: -8121507250992832961
+    second: OakTreeBuildingInterior_84
+  - first:
+      213: -4232701645321740690
+    second: OakTreeBuildingInterior_85
+  - first:
+      213: 226013935492011743
+    second: OakTreeBuildingInterior_86
+  - first:
+      213: 2809191628349271130
+    second: OakTreeBuildingInterior_87
+  - first:
+      213: 1070056042303535452
+    second: OakTreeBuildingInterior_88
+  - first:
+      213: -8994773898238826475
+    second: OakTreeBuildingInterior_89
+  - first:
+      213: 6018093052557543021
+    second: OakTreeBuildingInterior_90
+  - first:
+      213: -6857191498508693726
+    second: OakTreeBuildingInterior_91
+  - first:
+      213: -1943971219919032102
+    second: OakTreeBuildingInterior_92
+  - first:
+      213: -5543483136382165728
+    second: OakTreeBuildingInterior_93
+  - first:
+      213: 466402779882327949
+    second: OakTreeBuildingInterior_94
+  - first:
+      213: -504949225278403373
+    second: OakTreeBuildingInterior_95
+  - first:
+      213: -253504064854842428
+    second: OakTreeBuildingInterior_96
+  - first:
+      213: 8412380312119474429
+    second: OakTreeBuildingInterior_97
+  - first:
+      213: -6571347141529624799
+    second: OakTreeBuildingInterior_98
+  - first:
+      213: 2785031109228916196
+    second: OakTreeBuildingInterior_99
+  - first:
+      213: 6793997296397904323
+    second: OakTreeBuildingInterior_100
+  - first:
+      213: -2613165272384937684
+    second: OakTreeBuildingInterior_101
+  - first:
+      213: -3676075160677617812
+    second: OakTreeBuildingInterior_102
+  - first:
+      213: -86082137182731501
+    second: OakTreeBuildingInterior_103
+  - first:
+      213: 6393289962635695850
+    second: OakTreeBuildingInterior_104
+  - first:
+      213: 9214494595085232903
+    second: OakTreeBuildingInterior_105
+  - first:
+      213: 1357537858620199101
+    second: OakTreeBuildingInterior_106
+  - first:
+      213: 7656277825389155529
+    second: OakTreeBuildingInterior_107
+  - first:
+      213: 8866299199868074845
+    second: OakTreeBuildingInterior_108
+  - first:
+      213: -8264025856230780168
+    second: OakTreeBuildingInterior_109
+  - first:
+      213: 6017092325503487555
+    second: OakTreeBuildingInterior_110
+  - first:
+      213: -5800853650617065480
+    second: OakTreeBuildingInterior_111
+  - first:
+      213: -7472327724798514384
+    second: OakTreeBuildingInterior_112
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774a7adec18ac7520800000000000000
+      internalID: 2701218718715192439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f94e3de60c0ab190800000000000000
+      internalID: -7946025368652199436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888f54df15bfb6180800000000000000
+      internalID: -9120920290748663672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a4bf0739f9b4590800000000000000
+      internalID: -7688876483200464383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c684b0c7c9aadb6f0800000000000000
+      internalID: -667189580708231060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7042ad5eb4fcf370800000000000000
+      internalID: 8357824106944675966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e26aec7f2422860800000000000000
+      internalID: 7503633561244020338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac484ff622d57a00800000000000000
+      internalID: 753739577587944615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9421b5932b64b06a0800000000000000
+      internalID: -6482009507389304247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b940f467d7c6aa500800000000000000
+      internalID: 408258002342053019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105e5ec1b745b7120800000000000000
+      internalID: 2412614913129571585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6c90f488f23c030800000000000000
+      internalID: 3513704396767217346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a158ecd5211c07bb0800000000000000
+      internalID: -4940236506598046438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f836e1d44ed4550800000000000000
+      internalID: 6146820086304050947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb59060426d47eee0800000000000000
+      internalID: -1231930888680335938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb94f42ca1e944950800000000000000
+      internalID: 6432440005558225340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7527c0774766b6b10800000000000000
+      internalID: 1975785511931638359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7351bd0ce46eb50800000000000000
+      internalID: 6622066892311181311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7cad769042c85d0800000000000000
+      internalID: -3059030424075712599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085b95a6d16decd40800000000000000
+      internalID: 5606654007949505920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c2be7afc8a86620800000000000000
+      internalID: 2767647580848073753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569f59b07d814bc10800000000000000
+      internalID: 2068305440761313637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd0d2966179c8810800000000000000
+      internalID: 1768954876159397303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc19b0352e3010c50800000000000000
+      internalID: 6629584397056840143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_24
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb4aa52384f3d710800000000000000
+      internalID: 1716984727068101596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3587c9593cd674c80800000000000000
+      internalID: -8338575498257074093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8f717609b0f5b40800000000000000
+      internalID: 5431072390464927920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585823a03d003fce0800000000000000
+      internalID: -1372752555008686715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc71b24a05a48df80800000000000000
+      internalID: -8081627821104228405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad8e786f7f434410800000000000000
+      internalID: 1460098112830737832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97380ae11fa078180800000000000000
+      internalID: -9113303290243677319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c5c52ac7c2b11c0800000000000000
+      internalID: -4531979686206743402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb24d537b0b56a330800000000000000
+      internalID: 3721762246806553278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7c70bb446457d90800000000000000
+      internalID: -7100691976470149162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfde86a6fd1783b0800000000000000
+      internalID: -5510402673870970932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d902d3a670f5390800000000000000
+      internalID: -7827529474473157282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0ce2f818cfada70800000000000000
+      internalID: 8852665650933317804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93da02ec40af2ca00800000000000000
+      internalID: 775456984406207801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fad2469d563fdfd0800000000000000
+      internalID: -2315071907864323339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a690f2c5a6254e0800000000000000
+      internalID: -1994414740813026692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d206c34824de4ad00800000000000000
+      internalID: 983171488615784493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b8c43736ccd30b0800000000000000
+      internalID: -5747212821946659945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580b38cfc220a7df0800000000000000
+      internalID: -181830442716778363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6669b3ac0edcc60800000000000000
+      internalID: 7840169685509629692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c8fe93cf56e5210800000000000000
+      internalID: 1323607474471668886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee458ba4ff01751f0800000000000000
+      internalID: -1056356898938792722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886b38f9a7b244aa0800000000000000
+      internalID: -6177764983183264120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3827550fa26d54310800000000000000
+      internalID: 1388751540022768259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fb7f0a283324f70800000000000000
+      internalID: 9169948427419107129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35710e397dd038fb0800000000000000
+      internalID: -4646855170966153389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_50
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58819ea401496e430800000000000000
+      internalID: 3811896932312881285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_51
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1059cff39780c9d50800000000000000
+      internalID: 6745275658751743233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfb01b6160698df0800000000000000
+      internalID: -177504738780069948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc134d600d5ae840800000000000000
+      internalID: 5254114171695602876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c53ddd1b41278b0800000000000000
+      internalID: -5156035869222413290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6fada4306c1bce0800000000000000
+      internalID: -1391113092437707020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187812fda40714b50800000000000000
+      internalID: 6575660397811042177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_57
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088da3d1ab4542a20800000000000000
+      internalID: 3036645207085602944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f1e14e0562f39e0800000000000000
+      internalID: -1639549610473152766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_59
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d982324b6df7a930800000000000000
+      internalID: 4154567818386508244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_60
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec11d447c6676be0800000000000000
+      internalID: -1484104546156208926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c1054276ca36d10800000000000000
+      internalID: 2117725808785103952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f3dd3dcf7dd1180800000000000000
+      internalID: -9142914187606016143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_63
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770b4b06d2de1d470800000000000000
+      internalID: 8417769957683933303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_64
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ba6673ca152c9e0800000000000000
+      internalID: -1602628717284775143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_65
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ffc32b5a775dbd0800000000000000
+      internalID: -2606045255820312815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_66
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757e7a85e40fca6b0800000000000000
+      internalID: -5283584043526920361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e425691014b56ef40800000000000000
+      internalID: 5757389508397388366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_68
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c34e3884461ce60800000000000000
+      internalID: 7980770277290425461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_69
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70d5ea7c7ea9a380800000000000000
+      internalID: -8959438134015831941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e944f39ce7f9f50800000000000000
+      internalID: 6890365357715136078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964a252fea9ef3420800000000000000
+      internalID: 2612063246497260649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9649544b613891780800000000000000
+      internalID: -8711787870634535831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99156b51661030e20800000000000000
+      internalID: 3315495288637378969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cfca0074d127c60800000000000000
+      internalID: 7814340494232452175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_75
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0865c6f07d1414b70800000000000000
+      internalID: 8881452332083861120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946136666cd561c10800000000000000
+      internalID: 2023908189252294217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_77
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c737a4d3a67bba40800000000000000
+      internalID: 5385028225471035335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6121b900540c240800000000000000
+      internalID: 4809920270935660208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721695130af506610800000000000000
+      internalID: 1612393808225984807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_80
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c713fa79b823d4920800000000000000
+      internalID: 2976090503888449916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8525b70e498da35b0800000000000000
+      internalID: -5387755870262439336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_82
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b871657e8c58450800000000000000
+      internalID: 6090494966995847945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_83
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d3a29c13c7fb200800000000000000
+      internalID: 198013461897821470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_84
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e10df4f2c9a4f80800000000000000
+      internalID: -8121507250992832961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ed266874c6245c0800000000000000
+      internalID: -4232701645321740690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_86
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd61a431a76f22300800000000000000
+      internalID: 226013935492011743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c62c9f6e04cf620800000000000000
+      internalID: 2809191628349271130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_88
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5933431d4a99de00800000000000000
+      internalID: 1070056042303535452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518e480cbc42c2380800000000000000
+      internalID: -8994773898238826475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6640fefebf848350800000000000000
+      internalID: 6018093052557543021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_91
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f8f8eb9ac56d0a0800000000000000
+      internalID: -6857191498508693726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_92
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0b42f9970a505e0800000000000000
+      internalID: -1943971219919032102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_93
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d929545779113b0800000000000000
+      internalID: -5543483136382165728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_94
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f04217bdef87600800000000000000
+      internalID: 466402779882327949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc0cadda5f0ef8f0800000000000000
+      internalID: -504949225278403373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_96
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3a539656f5b7cf0800000000000000
+      internalID: -253504064854842428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8fe5bb257ceb470800000000000000
+      internalID: 8412380312119474429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_98
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f195d5792edc4a0800000000000000
+      internalID: -6571347141529624799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_99
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed6002c90b66a620800000000000000
+      internalID: 2785031109228916196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_100
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9e2c08b80294e50800000000000000
+      internalID: 6793997296397904323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_101
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21eb18a70c2cbbd0800000000000000
+      internalID: -2613165272384937684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_102
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f6c283e15fbfcc0800000000000000
+      internalID: -3676075160677617812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_103
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31387b790cc2ecef0800000000000000
+      internalID: -86082137182731501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae698f0195789b850800000000000000
+      internalID: 6393289962635695850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_105
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70befc4830670ef70800000000000000
+      internalID: 9214494595085232903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_106
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db093386d71f6d210800000000000000
+      internalID: 1357537858620199101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_107
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c455041e10904a60800000000000000
+      internalID: 7656277825389155529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b7778852c6b0b70800000000000000
+      internalID: 8866299199868074845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_109
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f298b8b448405d80800000000000000
+      internalID: -8264025856230780168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_110
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e4d521791018350800000000000000
+      internalID: 6017092325503487555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_111
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff11f8c65a3f7fa0800000000000000
+      internalID: -5800853650617065480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakTreeBuildingInterior_112
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03be41e3685fc4890800000000000000
+      internalID: -7472327724798514384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      OakTreeBuildingInterior_99: 2785031109228916196
+      OakTreeBuildingInterior_15: 6432440005558225340
+      OakTreeBuildingInterior_2: -9120920290748663672
+      OakTreeBuildingInterior_35: -7827529474473157282
+      OakTreeBuildingInterior_44: 1323607474471668886
+      OakTreeBuildingInterior_67: 5757389508397388366
+      OakTreeBuildingInterior_57: 3036645207085602944
+      OakTreeBuildingInterior_59: 4154567818386508244
+      OakTreeBuildingInterior_10: 2412614913129571585
+      OakTreeBuildingInterior_71: 2612063246497260649
+      OakTreeBuildingInterior_78: 4809920270935660208
+      OakTreeBuildingInterior_64: -1602628717284775143
+      OakTreeBuildingInterior_1: -7946025368652199436
+      OakTreeBuildingInterior_98: -6571347141529624799
+      OakTreeBuildingInterior_5: 8357824106944675966
+      OakTreeBuildingInterior_55: -1391113092437707020
+      OakTreeBuildingInterior_38: -2315071907864323339
+      OakTreeBuildingInterior_22: 1768954876159397303
+      OakTreeBuildingInterior_42: -181830442716778363
+      OakTreeBuildingInterior_112: -7472327724798514384
+      OakTreeBuildingInterior_107: 7656277825389155529
+      OakTreeBuildingInterior_33: -7100691976470149162
+      OakTreeBuildingInterior_31: -4531979686206743402
+      OakTreeBuildingInterior_65: -2606045255820312815
+      OakTreeBuildingInterior_109: -8264025856230780168
+      OakTreeBuildingInterior_77: 5385028225471035335
+      OakTreeBuildingInterior_21: 2068305440761313637
+      OakTreeBuildingInterior_108: 8866299199868074845
+      OakTreeBuildingInterior_43: 7840169685509629692
+      OakTreeBuildingInterior_87: 2809191628349271130
+      OakTreeBuildingInterior_24: 1716984727068101596
+      OakTreeBuildingInterior_25: -8338575498257074093
+      OakTreeBuildingInterior_47: 1388751540022768259
+      OakTreeBuildingInterior_52: -177504738780069948
+      OakTreeBuildingInterior_12: -4940236506598046438
+      OakTreeBuildingInterior_58: -1639549610473152766
+      OakTreeBuildingInterior_20: 2767647580848073753
+      OakTreeBuildingInterior_100: 6793997296397904323
+      OakTreeBuildingInterior_110: 6017092325503487555
+      OakTreeBuildingInterior_60: -1484104546156208926
+      OakTreeBuildingInterior_28: -8081627821104228405
+      OakTreeBuildingInterior_54: -5156035869222413290
+      OakTreeBuildingInterior_93: -5543483136382165728
+      OakTreeBuildingInterior_92: -1943971219919032102
+      OakTreeBuildingInterior_96: -253504064854842428
+      OakTreeBuildingInterior_17: 6622066892311181311
+      OakTreeBuildingInterior_39: -1994414740813026692
+      OakTreeBuildingInterior_26: 5431072390464927920
+      OakTreeBuildingInterior_85: -4232701645321740690
+      OakTreeBuildingInterior_94: 466402779882327949
+      OakTreeBuildingInterior_76: 2023908189252294217
+      OakTreeBuildingInterior_80: 2976090503888449916
+      OakTreeBuildingInterior_62: -9142914187606016143
+      OakTreeBuildingInterior_36: 8852665650933317804
+      OakTreeBuildingInterior_90: 6018093052557543021
+      OakTreeBuildingInterior_105: 9214494595085232903
+      OakTreeBuildingInterior_84: -8121507250992832961
+      OakTreeBuildingInterior_73: 3315495288637378969
+      OakTreeBuildingInterior_14: -1231930888680335938
+      OakTreeBuildingInterior_89: -8994773898238826475
+      OakTreeBuildingInterior_95: -504949225278403373
+      OakTreeBuildingInterior_32: 3721762246806553278
+      OakTreeBuildingInterior_3: -7688876483200464383
+      OakTreeBuildingInterior_91: -6857191498508693726
+      OakTreeBuildingInterior_4: -667189580708231060
+      OakTreeBuildingInterior_13: 6146820086304050947
+      OakTreeBuildingInterior_6: 7503633561244020338
+      OakTreeBuildingInterior_56: 6575660397811042177
+      OakTreeBuildingInterior_70: 6890365357715136078
+      OakTreeBuildingInterior_97: 8412380312119474429
+      OakTreeBuildingInterior_104: 6393289962635695850
+      OakTreeBuildingInterior_63: 8417769957683933303
+      OakTreeBuildingInterior_19: 5606654007949505920
+      OakTreeBuildingInterior_41: -5747212821946659945
+      OakTreeBuildingInterior_48: 9169948427419107129
+      OakTreeBuildingInterior_101: -2613165272384937684
+      OakTreeBuildingInterior_0: 2701218718715192439
+      OakTreeBuildingInterior_82: 6090494966995847945
+      OakTreeBuildingInterior_66: -5283584043526920361
+      OakTreeBuildingInterior_50: 3811896932312881285
+      OakTreeBuildingInterior_40: 983171488615784493
+      OakTreeBuildingInterior_106: 1357537858620199101
+      OakTreeBuildingInterior_81: -5387755870262439336
+      OakTreeBuildingInterior_83: 198013461897821470
+      OakTreeBuildingInterior_86: 226013935492011743
+      OakTreeBuildingInterior_45: -1056356898938792722
+      OakTreeBuildingInterior_88: 1070056042303535452
+      OakTreeBuildingInterior_34: -5510402673870970932
+      OakTreeBuildingInterior_75: 8881452332083861120
+      OakTreeBuildingInterior_8: -6482009507389304247
+      OakTreeBuildingInterior_18: -3059030424075712599
+      OakTreeBuildingInterior_69: -8959438134015831941
+      OakTreeBuildingInterior_102: -3676075160677617812
+      OakTreeBuildingInterior_30: -9113303290243677319
+      OakTreeBuildingInterior_111: -5800853650617065480
+      OakTreeBuildingInterior_9: 408258002342053019
+      OakTreeBuildingInterior_46: -6177764983183264120
+      OakTreeBuildingInterior_53: 5254114171695602876
+      OakTreeBuildingInterior_103: -86082137182731501
+      OakTreeBuildingInterior_29: 1460098112830737832
+      OakTreeBuildingInterior_79: 1612393808225984807
+      OakTreeBuildingInterior_23: 6629584397056840143
+      OakTreeBuildingInterior_37: 775456984406207801
+      OakTreeBuildingInterior_49: -4646855170966153389
+      OakTreeBuildingInterior_74: 7814340494232452175
+      OakTreeBuildingInterior_72: -8711787870634535831
+      OakTreeBuildingInterior_51: 6745275658751743233
+      OakTreeBuildingInterior_27: -1372752555008686715
+      OakTreeBuildingInterior_61: 2117725808785103952
+      OakTreeBuildingInterior_16: 1975785511931638359
+      OakTreeBuildingInterior_68: 7980770277290425461
+      OakTreeBuildingInterior_7: 753739577587944615
+      OakTreeBuildingInterior_11: 3513704396767217346
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

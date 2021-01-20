@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprite_Feind_Forwards","path":"sprites/sprite_Feind_Forwards/sprite_Feind_Forwards.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprite_Feind_Forwards",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprite_BlankMenuBackground","path":"sprites/sprite_BlankMenuBackground/sprite_BlankMenuBackground.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprite_BlankMenuBackground",
     "tags": [],
     "resourceType": "GMSequence",
   },

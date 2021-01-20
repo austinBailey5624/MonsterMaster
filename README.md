@@ -16,7 +16,7 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 
 Because I'm one guy and I have a lot of ideas that I want to try out and incorporate into the game- I'd rather have a bunch of super
 pixelated characters mucking about than a few really pretty characters with a very limited scope. In short, I prefer breath do depth
-(in graphics at least).
+(in graphics at least). 
 
   
 ## Gameplay 
@@ -58,7 +58,79 @@ pixelated characters mucking about than a few really pretty characters with a ve
 	6. **The Redeemed**
       * The Redeemed are former criminals who make up half of the military arm of the church. They vehemetly despise evil and wrongdoing, perhaps even more fiercely than the just. They are famous for giving their enemies a chance to repent and convert before their deaths. The just seek to destroy this faction as they dont believe in reform.	
 
-## Mechanics To Do List
+
+## To Do List
+ - [ ] Reincoporate Rooms from old game maker version as menus in Unity version
+ - - [x] Main Menu
+ - - [ ] Name selector
+ - - [ ] Intro Scenimatic
+ - - [x] Pause Menu
+ - - [ ] Encyclopedia
+ - - [ ] Bestiary Main Page
+ - [x] Fix transition placement between scenes using singletons
+ - [x] Fix character movement flipping sprites on movement left
+ - [ ] Create new Scenes for OakTree houses
+ - - [ ] Brahms House
+ - - [ ] Barracks
+ - - [ ] TownHall
+ - - [ ] Kylers House (Dark)
+ - - [ ] Your House (Neutral)
+ - - [ ] remaining OakTree Houses
+ - [ ] Construct NPC Mechanics
+ - - [ ] Conversation system (look at Inky from Unity)
+ - - [ ] selection system
+ - - [ ] Turning on selection (looking at the person who selects you)
+ - [ ] Battle System
+ - [ ] Scenes outside of Oaktree for demo
+ - - [ ] Forest for earthy creatures
+ - - [ ] Pool for watery creatures
+ - - [ ] Cave for dark creatures
+ - [ ] Design multisprite system to construct NPC/Players with
+ - - [ ] Base Female Sprite
+ - - [ ] Sprites for hair
+ - - [ ] Sprites for eyes
+ - - [ ] Sprites for shirts
+ - - [ ] Sprites for Pants/dresses
+ - - [ ] Sprites for Shoes
+ - - [ ] Sprites for Belts
+ - - [ ] Sprites for Hats
+ - [ ] Implement persistence with treasure chest
+ - [ ] Switch Sand and Phoenix subelements
+ - [ ] Replace Swamp subelement with plant subelement
+ 
+
+ 
+## Old To Do List(depreciated)
+
+ - [ ] Finish to do list
+ - [x] Make the first draft of the monsters
+ - [x] Make the first draft of the terrain/world interaction
+ - [x] Make methods to read bestiary
+ - [x] Fix methods that read the bestiary
+ - [x] Make code 'soft' - read in bestiary strings
+ - [ ] Make skills cost mp
+ - [ ] Figure out how I/O is going to work with save files
+ - [ ] Design plot system
+ - [ ] Design battle system
+ - [ ] Make general skills
+ - [ ] Update program requirements
+ - [ ] Design Skills - current
+ - [ ] Give Each Skill a description
+ - [ ] Design inventory
+ - [ ] Design Companions
+ - [ ] Make Enemy stuff
+ - [ ] Make experience stuff
+ - [ ] Implement enemy AI
+ - [ ] Design Terrain that initiates monster battles
+ - [ ] Design gates that require sacrifices
+ - [ ] Make Tests for everything
+ - [ ] ... 
+ - [ ] make permadeath option-hardcore mode
+ - [ ] Implement Factions
+ - [ ] Implement Achievements  
+ 
+## Old To Do List2(depreciated)
+### Mechanics To Do List
  - [x] Main Menu mock-up
  - [x] Incorporate finished music (as of 3/20/2018)
  - [x] Incorporate Pause Menu
@@ -85,7 +157,7 @@ pixelated characters mucking about than a few really pretty characters with a ve
  -  - [ ] HumanEnemy
  -  - [x] Party
  -  - [ ] Conversation
-## Design To Do List
+### Design To Do List
  - [x] SpriteSheets for Pyro Monsters
  - [x] SpriteSheets for Lava Monsters
  - [x] SpriteSheets for Dino Monsters 
@@ -139,9 +211,9 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - - [ ] Redo Crystal animation
  - - [ ] Design specialized main menu for different elementals
  
-## Plot/Wiki To Do List
+### Plot/Wiki To Do List
 
-### Gods
+#### Gods
  - [ ] Write Wiki page for Anu, father of light
  - [x] Write Wiki page for Ahros, the Judge
  - [ ] Write Wiki page for Velhu, the merciful (Mother Moon)
@@ -154,10 +226,10 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - [x] Write Wiki page for Muir the Bandit-God 
  - [ ] Write Wiki page for Ars
  
-### Guardians
+#### Guardians
  - [ ] Write Wiki page for Telvar, guardian of the earth temple
  
-### Locations
+#### Locations
  
  - [ ] Write General location page
  - [ ] Write Wiki page for Oaktree
@@ -165,7 +237,7 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - [ ] Write Wiki page for Newaven
  - [ ] Write Wiki page for Golden Bank
  
-### Factions
+#### Factions
  - [x] Write Wiki page for Sudi Satfa (Sid's trees faction)
  - [ ] Write Wiki page for Justicars (Ahros' warriors, militant arm of chruch)
  - [ ] Write Wiki page for Mage's college
@@ -201,35 +273,6 @@ pixelated characters mucking about than a few really pretty characters with a ve
 #### Golden Bank
  - [ ] Write Wiki page for Tom Walker
  - [ ] Write Wiki page for Faust
- 
-## Old To Do List(depreciated)
-
- - [ ] Finish to do list
- - [x] Make the first draft of the monsters
- - [x] Make the first draft of the terrain/world interaction
- - [x] Make methods to read bestiary
- - [x] Fix methods that read the bestiary
- - [x] Make code 'soft' - read in bestiary strings
- - [ ] Make skills cost mp
- - [ ] Figure out how I/O is going to work with save files
- - [ ] Design plot system
- - [ ] Design battle system
- - [ ] Make general skills
- - [ ] Update program requirements
- - [ ] Design Skills - current
- - [ ] Give Each Skill a description
- - [ ] Design inventory
- - [ ] Design Companions
- - [ ] Make Enemy stuff
- - [ ] Make experience stuff
- - [ ] Implement enemy AI
- - [ ] Design Terrain that initiates monster battles
- - [ ] Design gates that require sacrifices
- - [ ] Make Tests for everything
- - [ ] ... 
- - [ ] make permadeath option-hardcore mode
- - [ ] Implement Factions
- - [ ] Implement Achievements  
  
  @Copyright 2016-2018 Austin Bailey all rights reserved
  

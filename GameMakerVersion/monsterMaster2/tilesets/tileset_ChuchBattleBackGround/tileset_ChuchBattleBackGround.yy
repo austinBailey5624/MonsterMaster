@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprite_tileSet_OakTreeChurchStrechx12",
-    "path": "sprites/sprite_tileSet_OakTreeChurchStrechx12/sprite_tileSet_OakTreeChurchStrechx12.yy",
-  },
+  "spriteId": null,
   "tileWidth": 96,
   "tileHeight": 96,
   "tilexoff": 0,

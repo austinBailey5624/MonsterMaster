@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "Sprite1000",
-    "path": "sprites/Sprite1000/Sprite1000.yy",
-  },
+  "spriteId": null,
   "tileWidth": 32,
   "tileHeight": 32,
   "tilexoff": 0,
