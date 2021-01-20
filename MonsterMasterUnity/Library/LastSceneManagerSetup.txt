@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Oaktree.unity
+- path: Assets/Scenes/OaktreeChurch.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

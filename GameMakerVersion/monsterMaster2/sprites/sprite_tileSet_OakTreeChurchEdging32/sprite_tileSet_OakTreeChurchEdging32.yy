@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprite_tileSet_OakTreeChurchEdging32","path":"sprites/sprite_tileSet_OakTreeChurchEdging32/sprite_tileSet_OakTreeChurchEdging32.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprite_tileSet_OakTreeChurchEdging32",
     "tags": [],
     "resourceType": "GMSequence",
   },
