@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Oaktree.unity
+    guid: 5eea8a2ead31106468a2c0b607655f2e
+  - enabled: 1
+    path: Assets/Scenes/OaktreeChurch.unity
+    guid: 22b1967c389e51041806735624eb4a32
   m_configObjects: {}
