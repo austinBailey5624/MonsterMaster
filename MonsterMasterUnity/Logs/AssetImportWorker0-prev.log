@@ -15,11 +15,11 @@ C:/Users/austi/MonsterMaster/MonsterMasterUnity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51474
+53769
 Successfully changed project path to: C:/Users/austi/MonsterMaster/MonsterMasterUnity
 C:/Users/austi/MonsterMaster/MonsterMasterUnity
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 28.55 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 28.84 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,169 +35,25 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001712 seconds.
+Registered in 0.001727 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 28.27 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 28.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.842 seconds
+- Completed reload, in  0.832 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000976 seconds.
+Registered in 0.000923 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 28.52 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.721 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1769 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.1 MB.
-System memory in use after: 83.2 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2213.
-Total: 1.679500 ms (FindLiveObjects: 0.188400 ms CreateObjectMapping: 0.093800 ms MarkObjects: 1.359400 ms  DeleteObjects: 0.036800 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png
-  artifactKey: Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png using Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3afe77da3b451279c94ebe006e41f7b5') in 0.089799 seconds
-  Import took 0.092326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png
-  artifactKey: Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png using Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc885d30ad67fe2a6376c1127772fbc') in 0.008025 seconds
-  Import took 0.010946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png
-  artifactKey: Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png using Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0161a2e86d3bc6d3fa1caa3e29a807') in 0.007884 seconds
-  Import took 0.011096 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.627617 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png
-  artifactKey: Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png using Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fc68828d2e6a29f7aeea32c8fd636b') in 0.016774 seconds
-  Import took 0.019282 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015641 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png
-  artifactKey: Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png using Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fc68828d2e6a29f7aeea32c8fd636b') in 0.009982 seconds
-  Import took 0.012460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.554453 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png
-  artifactKey: Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png using Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28435e1bdfffe7bb75ed8f67c56207d6') in 0.029804 seconds
-  Import took 0.032425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 65.833581 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png
-  artifactKey: Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png using Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da03cb5e3dc2df9c43392e39469f66d4') in 0.036306 seconds
-  Import took 0.039060 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008858 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png
-  artifactKey: Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png using Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da03cb5e3dc2df9c43392e39469f66d4') in 0.003975 seconds
-  Import took 0.006628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.642374 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png
-  artifactKey: Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png using Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f13461d9f5eae952b9c024f4041a24f6') in 0.035516 seconds
-  Import took 0.038051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.091117 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png
-  artifactKey: Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png using Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be0208cb6dc9f56478b624bd08dbfe3') in 0.005255 seconds
-  Import took 0.007633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012437 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png
-  artifactKey: Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png using Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be0208cb6dc9f56478b624bd08dbfe3') in 0.007287 seconds
-  Import took 0.009743 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.825490 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png
-  artifactKey: Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png using Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22171b4978308f2f38f610668dfe489') in 0.048533 seconds
-  Import took 0.050931 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000918 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.654 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.9 MB.
-System memory in use after: 86.1 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2225.
-Total: 1.416100 ms (FindLiveObjects: 0.132000 ms CreateObjectMapping: 0.042700 ms MarkObjects: 1.230100 ms  DeleteObjects: 0.010700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000908 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 28.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -205,272 +61,1008 @@ RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.720 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.1 MB.
-System memory in use after: 86.2 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2227.
-Total: 1.637500 ms (FindLiveObjects: 0.179200 ms CreateObjectMapping: 0.060900 ms MarkObjects: 1.382800 ms  DeleteObjects: 0.013700 ms)
-
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000932 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.651 seconds
-Platform modules already initialized, skipping
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.2 MB.
-System memory in use after: 86.3 MB.
+Unloading 1769 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.1 MB.
+System memory in use after: 83.2 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2229.
-Total: 1.506900 ms (FindLiveObjects: 0.147300 ms CreateObjectMapping: 0.049500 ms MarkObjects: 1.297300 ms  DeleteObjects: 0.012000 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2213.
+Total: 1.604800 ms (FindLiveObjects: 0.208000 ms CreateObjectMapping: 0.080800 ms MarkObjects: 1.277700 ms  DeleteObjects: 0.037600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/OaktreeChurch.unity
+  artifactKey: Guid(22b1967c389e51041806735624eb4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/OaktreeChurch.unity using Guid(22b1967c389e51041806735624eb4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad8da4d52d918b367922a3d4bb5ab85') in 0.009758 seconds
+  Import took 0.012085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.180676 seconds.
+  path: Assets/Scenes/Oaktree.unity
+  artifactKey: Guid(5eea8a2ead31106468a2c0b607655f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Oaktree.unity using Guid(5eea8a2ead31106468a2c0b607655f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d98d9f565cfbf5ca5149e61239cef58') in 0.003091 seconds
+  Import took 0.006482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.730112 seconds.
+  path: Assets/Sprites/TileMapSprites/Old
+  artifactKey: Guid(629cffbf184384040ab3685166902ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/Old using Guid(629cffbf184384040ab3685166902ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5f7749e1b70c1ef65ee059dc50b2060') in 0.002235 seconds
+  Import took 0.004808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.880567 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch
+  artifactKey: Guid(2c3e4519d1c095640807c718a1a72ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch using Guid(2c3e4519d1c095640807c718a1a72ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4af9bd27f64ff7ee05b0b6cfc640e09') in 0.001821 seconds
+  Import took 0.004397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.034845 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/0c4e03d3-c98b-4b77-a8c2-77d2b479875c.png
+  artifactKey: Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/0c4e03d3-c98b-4b77-a8c2-77d2b479875c.png using Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c92d33f1e02b22d0d88db3dad9aabeb') in 0.100478 seconds
+  Import took 0.102824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.655615 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging.png
+  artifactKey: Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging.png using Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb87b86595e0cdfb72152a5a277ee7c') in 0.031441 seconds
+  Import took 0.033878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.076183 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging.png
+  artifactKey: Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging.png using Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf89ef362879c5d0230f79320e148bfd') in 0.023387 seconds
+  Import took 0.025781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011806 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging.png
+  artifactKey: Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging.png using Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf89ef362879c5d0230f79320e148bfd') in 0.014516 seconds
+  Import took 0.017163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 133.620717 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging.png
+  artifactKey: Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging.png using Guid(d34e97715d3d44c40a96bbdf797dc944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db8a40a7d7b49d935ba6debea1297cb') in 0.093341 seconds
+  Import took 0.096166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.731174 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/af2c898e-14b2-4e2b-bc74-c1ba170bbd2b.png
+  artifactKey: Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/af2c898e-14b2-4e2b-bc74-c1ba170bbd2b.png using Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbc7cfb51dba56c361e6c4e9776878e') in 0.086472 seconds
+  Import took 0.089021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.967753 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch.png
+  artifactKey: Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch.png using Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bf15494c30b938b84880d4b703098f') in 0.027858 seconds
+  Import took 0.030196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.877228 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch.png
+  artifactKey: Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch.png using Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306789e4dfff09f9594b85c79828905a') in 0.018069 seconds
+  Import took 0.020528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031969 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch.png
+  artifactKey: Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch.png using Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306789e4dfff09f9594b85c79828905a') in 0.020435 seconds
+  Import took 0.022985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.268259 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch.png
+  artifactKey: Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch.png using Guid(96a1a868812313e47bbd095912cd4759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b32dca2c0b3686510c0f90b44da088a') in 0.071047 seconds
+  Import took 0.073575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.399588 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchPalette.prefab
+  artifactKey: Guid(b3a3ca37431276c4b8ba9edfc8aafe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchPalette.prefab using Guid(b3a3ca37431276c4b8ba9edfc8aafe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65a641185e5fa6f4cdeba53cd0db0a1') in 0.010248 seconds
+  Import took 0.012729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.775150 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_0.asset
+  artifactKey: Guid(63ac529ac12cc6d47adc0e3b7f3e95ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_0.asset using Guid(63ac529ac12cc6d47adc0e3b7f3e95ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34584286179cff21df88d9f4ac083f2') in 0.016170 seconds
+  Import took 0.018704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_16.asset
+  artifactKey: Guid(08b6e774c3307b74b9f3bbe87e285069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_16.asset using Guid(08b6e774c3307b74b9f3bbe87e285069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aae06a0b52dbc4c845cb9dbd4dc3b1a') in 0.004015 seconds
+  Import took 0.006025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_23.asset
+  artifactKey: Guid(d6c641c6388bbf3498e8cfb5928b9254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_23.asset using Guid(d6c641c6388bbf3498e8cfb5928b9254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd811d7b1c3834543f9d69324c25bb7a7') in 0.004428 seconds
+  Import took 0.007003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_13.asset
+  artifactKey: Guid(39099bea177068d47bd0209f14c16724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_13.asset using Guid(39099bea177068d47bd0209f14c16724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd2845b144c69010083a479c34edf642') in 0.004498 seconds
+  Import took 0.007177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_5.asset
+  artifactKey: Guid(669bbd8671cbb0c4f8f8b56dbf935759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_5.asset using Guid(669bbd8671cbb0c4f8f8b56dbf935759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49effb12f5e265252cb04d43593d48f6') in 0.004913 seconds
+  Import took 0.007627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_27.asset
+  artifactKey: Guid(dca18f2d8fd7f7f45a0940b4fc3a85d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_27.asset using Guid(dca18f2d8fd7f7f45a0940b4fc3a85d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab0ee0d789b1c481ca93fd4f3a7ffe15') in 0.005232 seconds
+  Import took 0.007764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_37.asset
+  artifactKey: Guid(ef9e981a0dfbbcb4eb76862488447cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_37.asset using Guid(ef9e981a0dfbbcb4eb76862488447cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6263078ebb5f25170e73f2550df23ce3') in 0.004896 seconds
+  Import took 0.007385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchPalette.prefab
+  artifactKey: Guid(b3a3ca37431276c4b8ba9edfc8aafe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchPalette.prefab using Guid(b3a3ca37431276c4b8ba9edfc8aafe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f68f101192703363077aa6c4d70ef698') in 0.003139 seconds
+  Import took 0.005355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_35.asset
+  artifactKey: Guid(5d49488acd4ecec4bb5492655da19fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_35.asset using Guid(5d49488acd4ecec4bb5492655da19fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52979f7bcb7cd34f584bd0cffc935007') in 0.004663 seconds
+  Import took 0.006777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_6.asset
+  artifactKey: Guid(6d9e5f25dd3d3454c8a494cd1f04eda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_6.asset using Guid(6d9e5f25dd3d3454c8a494cd1f04eda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4db54b626020767dc9ca58c4b07ead') in 0.004619 seconds
+  Import took 0.006887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_1.asset
+  artifactKey: Guid(c3f537ddb370dad4492a7bbcec366eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_1.asset using Guid(c3f537ddb370dad4492a7bbcec366eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '842700e072d74f4cb7b41ae014367c76') in 0.004227 seconds
+  Import took 0.006515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_11.asset
+  artifactKey: Guid(a2c495798cfa9424f906b95f8ea5da77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_11.asset using Guid(a2c495798cfa9424f906b95f8ea5da77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97bfeeed4dbe6ac2106f332003755fc9') in 0.004203 seconds
+  Import took 0.006557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_40.asset
+  artifactKey: Guid(04697f7d2328726459d63dca811f9c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_40.asset using Guid(04697f7d2328726459d63dca811f9c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32ca5ea7adaaeb901a65671eec25f82') in 0.004521 seconds
+  Import took 0.007256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_19.asset
+  artifactKey: Guid(5b35d7b47d680064e8903965d2727556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_19.asset using Guid(5b35d7b47d680064e8903965d2727556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8afe17371e829189bf241bf5035134') in 0.004890 seconds
+  Import took 0.007575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_21.asset
+  artifactKey: Guid(90e70f9bc3fd4c24380a2e5438a39686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_21.asset using Guid(90e70f9bc3fd4c24380a2e5438a39686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93404779bef2ac4a55b24f89b1e8e658') in 0.004401 seconds
+  Import took 0.006650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_42.asset
+  artifactKey: Guid(9ce782c9e178ccc4c8a81e093095c4bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_42.asset using Guid(9ce782c9e178ccc4c8a81e093095c4bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5ba45aecef57b1cd8b705f6c311c8f') in 0.005291 seconds
+  Import took 0.007688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_9.asset
+  artifactKey: Guid(c2a0fa12706f71142b609a610a3db568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_9.asset using Guid(c2a0fa12706f71142b609a610a3db568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebfb61005c2bb15664fe87300c0cae2b') in 0.004683 seconds
+  Import took 0.007094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_12.asset
+  artifactKey: Guid(33bb99e6efb873145a2a489f607a523f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_12.asset using Guid(33bb99e6efb873145a2a489f607a523f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b9a265f456bba38269a7feb8fbf6d6') in 0.005124 seconds
+  Import took 0.007774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_14.asset
+  artifactKey: Guid(682ff560fa8f50044840753a8fe1d509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_14.asset using Guid(682ff560fa8f50044840753a8fe1d509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e28461e0a81ed9ce3f1a2dea9f046f') in 0.004302 seconds
+  Import took 0.006836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_25.asset
+  artifactKey: Guid(3fcfa678ff13b4b48b31d84aa53885d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_25.asset using Guid(3fcfa678ff13b4b48b31d84aa53885d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133686503c7b3e5e7aca602fa00b501f') in 0.004925 seconds
+  Import took 0.007776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_10.asset
+  artifactKey: Guid(6cc5d33029155e348bd95ba8dfb73e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_10.asset using Guid(6cc5d33029155e348bd95ba8dfb73e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ba2ad43e7f75585cb5ab72108e103d') in 0.004539 seconds
+  Import took 0.007043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_34.asset
+  artifactKey: Guid(49ba0db7b8d3ad44ab29465c31bc396d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_34.asset using Guid(49ba0db7b8d3ad44ab29465c31bc396d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b597ffd453ced057f5e1323f1e287a5') in 0.004126 seconds
+  Import took 0.006443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_18.asset
+  artifactKey: Guid(52c4b4c4e11b33b4c9f97aaf8640d067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_18.asset using Guid(52c4b4c4e11b33b4c9f97aaf8640d067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5265e309c0352a6c9cef62272ca08d8') in 0.004060 seconds
+  Import took 0.006166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_4.asset
+  artifactKey: Guid(6fa4658818e25f147afdaac21ab851d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_4.asset using Guid(6fa4658818e25f147afdaac21ab851d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '646b75872b6eecd9f5ee7d3ad79efbf3') in 0.005682 seconds
+  Import took 0.008119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_8.asset
+  artifactKey: Guid(1b860f0ca581e2241ac0b25ad14a6ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_8.asset using Guid(1b860f0ca581e2241ac0b25ad14a6ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ef48ae07417b4a31997700abd840ff') in 0.004581 seconds
+  Import took 0.006854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_30.asset
+  artifactKey: Guid(ba05ab911c7ad9a488eec4b6a670f6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_30.asset using Guid(ba05ab911c7ad9a488eec4b6a670f6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12ee8182db9380b1af4aaceed90de29') in 0.004193 seconds
+  Import took 0.006349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_39.asset
+  artifactKey: Guid(aaa66b86c00e21a4b9ecd879698a9ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_39.asset using Guid(aaa66b86c00e21a4b9ecd879698a9ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c77bd90693d25ed2d0a97475fd3cd1') in 0.004720 seconds
+  Import took 0.007358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_17.asset
+  artifactKey: Guid(7056e96c29b70c541be4e2e529ee1ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_17.asset using Guid(7056e96c29b70c541be4e2e529ee1ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af9df2b23d59b6656f9eca6ac91c2e2') in 0.004954 seconds
+  Import took 0.007802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_22.asset
+  artifactKey: Guid(11405039a82406d4da969d971f8f0205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_22.asset using Guid(11405039a82406d4da969d971f8f0205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f13d6e4f4f8f15326b59082522b121') in 0.004607 seconds
+  Import took 0.006975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_41.asset
+  artifactKey: Guid(2902247bafbf09341af8c5da56e07ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_41.asset using Guid(2902247bafbf09341af8c5da56e07ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36eede9eee854d42549c91f3c435ae61') in 0.004379 seconds
+  Import took 0.006698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_32.asset
+  artifactKey: Guid(5e9282614d7fc9e48835cf8d60f22a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_32.asset using Guid(5e9282614d7fc9e48835cf8d60f22a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ecf29d21add76eeb240d72dc4d33e7') in 0.004469 seconds
+  Import took 0.006796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_44.asset
+  artifactKey: Guid(675af8616f06c1341bc45dc5b39d1160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_44.asset using Guid(675af8616f06c1341bc45dc5b39d1160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34594f99b422a61dddba09fbf729f4f9') in 0.004026 seconds
+  Import took 0.006226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_3.asset
+  artifactKey: Guid(1571992f9e72b7944bf79a2c46d9c2dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_3.asset using Guid(1571992f9e72b7944bf79a2c46d9c2dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f27ab1ca96932a4ced3c0de939517cd') in 0.005192 seconds
+  Import took 0.008245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_20.asset
+  artifactKey: Guid(f2666c6988f1a6f4d8d69cfbd5790db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_20.asset using Guid(f2666c6988f1a6f4d8d69cfbd5790db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71110a5ba0c89f3725523c3a65306f07') in 0.004898 seconds
+  Import took 0.007537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_28.asset
+  artifactKey: Guid(c1b2879306b0d5543a0538b6533fb9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_28.asset using Guid(c1b2879306b0d5543a0538b6533fb9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b4e61e23b9415e589713cf3ba78676') in 0.004340 seconds
+  Import took 0.006783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_29.asset
+  artifactKey: Guid(a01103c88e66ed04cb0b82afe3dab829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_29.asset using Guid(a01103c88e66ed04cb0b82afe3dab829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae17b148a5f4cb6523f39729eefb12d') in 0.004682 seconds
+  Import took 0.007360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_43.asset
+  artifactKey: Guid(6eec080d9f0dcac46bf4fcd6a18eff99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_43.asset using Guid(6eec080d9f0dcac46bf4fcd6a18eff99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4c165f9b64ef30ab797a1e75767c65') in 0.004247 seconds
+  Import took 0.006638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_7.asset
+  artifactKey: Guid(e9220b3ad5b92ae43bffdf1f5f0c2807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_7.asset using Guid(e9220b3ad5b92ae43bffdf1f5f0c2807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33c61f7f49cadbb30cd74da3969edcd') in 0.004046 seconds
+  Import took 0.006440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_26.asset
+  artifactKey: Guid(9931a930d3b326046826907732c1f8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_26.asset using Guid(9931a930d3b326046826907732c1f8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61d7628bd650872343cff097b5f9fb38') in 0.005428 seconds
+  Import took 0.007800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_33.asset
+  artifactKey: Guid(7edf42fa964401e4086ce81e5fe64654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_33.asset using Guid(7edf42fa964401e4086ce81e5fe64654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c93372e0931c50ba61386fc351485a1') in 0.005150 seconds
+  Import took 0.007659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_38.asset
+  artifactKey: Guid(fa3614e4cf1aa67488eda6ce623e7300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_38.asset using Guid(fa3614e4cf1aa67488eda6ce623e7300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea74c91ffc29ad1897dfc312faca655a') in 0.004029 seconds
+  Import took 0.006353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_36.asset
+  artifactKey: Guid(42150e259547c424489dedf93623874a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_36.asset using Guid(42150e259547c424489dedf93623874a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd404190711519ba3627426980b3470') in 0.004470 seconds
+  Import took 0.006893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_24.asset
+  artifactKey: Guid(c9da79984dd264d42a9a145602304cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_24.asset using Guid(c9da79984dd264d42a9a145602304cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb81caa4556447c1fb137fce9491ba6') in 0.004837 seconds
+  Import took 0.007552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_2.asset
+  artifactKey: Guid(3ddad36693c135f4eabd6ddda05a2029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_2.asset using Guid(3ddad36693c135f4eabd6ddda05a2029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e4404ed069f3c605a359e7526ae4a1') in 0.005353 seconds
+  Import took 0.007832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_15.asset
+  artifactKey: Guid(4cb41ddd8eea0f94d8de7d6f46a8ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_15.asset using Guid(4cb41ddd8eea0f94d8de7d6f46a8ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c73400f25da8661dc067a6196593f75') in 0.004801 seconds
+  Import took 0.007296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_31.asset
+  artifactKey: Guid(153a52aa2fc3d244fb40bb6d02f7505e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurch_31.asset using Guid(153a52aa2fc3d244fb40bb6d02f7505e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc753ab654ffa39f3bb5634051477819') in 0.004216 seconds
+  Import took 0.006480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.501436 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_0.asset
+  artifactKey: Guid(e78ae322620dda346be935c7f20d9623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_0.asset using Guid(e78ae322620dda346be935c7f20d9623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5285c7ec425a50da7b02ceb0dec4a992') in 0.013507 seconds
+  Import took 0.015963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_8.asset
+  artifactKey: Guid(398de78f626300b4ab795ba37967870c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_8.asset using Guid(398de78f626300b4ab795ba37967870c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693d6b5f7fc8eed82e02d32f6db125be') in 0.004354 seconds
+  Import took 0.006404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_9.asset
+  artifactKey: Guid(5670177a866b29845bd7c84a7e066419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_9.asset using Guid(5670177a866b29845bd7c84a7e066419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73ff21f919c68070de206bf63282d59') in 0.005658 seconds
+  Import took 0.007816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_11.asset
+  artifactKey: Guid(c7a4d754662d8e44b946a8e7a9fedca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_11.asset using Guid(c7a4d754662d8e44b946a8e7a9fedca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54894ce39e45297683db1b37a3caf89') in 0.004667 seconds
+  Import took 0.007019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_10.asset
+  artifactKey: Guid(26955d262c803d549acc060c083bae0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_10.asset using Guid(26955d262c803d549acc060c083bae0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e161b51191de7b37e27792205ca6c5a') in 0.004400 seconds
+  Import took 0.006636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_1.asset
+  artifactKey: Guid(932b59dd5d5ec8b40885fac48767797a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_1.asset using Guid(932b59dd5d5ec8b40885fac48767797a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5e7b9e6dc5ef5f7abdd471127311d3') in 0.004703 seconds
+  Import took 0.007051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_7.asset
+  artifactKey: Guid(a2bd236bf3180c3439fa75a99c596b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_7.asset using Guid(a2bd236bf3180c3439fa75a99c596b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1005c19ab3f4c1570d32e3da97a47aee') in 0.004468 seconds
+  Import took 0.007040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_4.asset
+  artifactKey: Guid(512c6abc1b41b24468110218864edf8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_4.asset using Guid(512c6abc1b41b24468110218864edf8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c03e46b8014fc3be8b26793ad02ad8') in 0.004526 seconds
+  Import took 0.006816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_14.asset
+  artifactKey: Guid(7fefa3f5bb429cc4a91d93a74104b5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_14.asset using Guid(7fefa3f5bb429cc4a91d93a74104b5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da108c8eb462be3e7ec5989ba9f328b') in 0.004343 seconds
+  Import took 0.006580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_18.asset
+  artifactKey: Guid(2151042870a285645b96cb26b418e90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_18.asset using Guid(2151042870a285645b96cb26b418e90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3b13421bac9a7d57b0a8118d01d360') in 0.004932 seconds
+  Import took 0.007456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_16.asset
+  artifactKey: Guid(6ecc1ab79a079e64ca8d90487d5278b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_16.asset using Guid(6ecc1ab79a079e64ca8d90487d5278b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782573f7d87fa134d670c7e487507ded') in 0.004547 seconds
+  Import took 0.006961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_20.asset
+  artifactKey: Guid(fb002e2c55db74b4dae9a47a646d0e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_20.asset using Guid(fb002e2c55db74b4dae9a47a646d0e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a66f5ec1cae522a58b2edde1802804') in 0.004647 seconds
+  Import took 0.007238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_13.asset
+  artifactKey: Guid(da146127c40440a4d91d3a49fae10b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_13.asset using Guid(da146127c40440a4d91d3a49fae10b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca9e990909d3ea8632715763d72cfc5') in 0.005791 seconds
+  Import took 0.008634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_2.asset
+  artifactKey: Guid(6963caf6083ccef4285ae9f4addb993a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_2.asset using Guid(6963caf6083ccef4285ae9f4addb993a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fd26466ace6d4c2f0d21cef9ff943f') in 0.004791 seconds
+  Import took 0.007137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_15.asset
+  artifactKey: Guid(7f7f9894a7e8e8b438f542c769073960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_15.asset using Guid(7f7f9894a7e8e8b438f542c769073960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc3724b334861a6d9a3137dc0582095') in 0.004677 seconds
+  Import took 0.006910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_12.asset
+  artifactKey: Guid(e7dd1f6ca3655bd469e039b43f331b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_12.asset using Guid(e7dd1f6ca3655bd469e039b43f331b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc56e845d6831e8ed1b33f36d38989b') in 0.004472 seconds
+  Import took 0.006972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_5.asset
+  artifactKey: Guid(427f795b737d5b54b8a0d8b4f886e368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_5.asset using Guid(427f795b737d5b54b8a0d8b4f886e368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9fbd0ede0b9df54825bf0b488ec1796') in 0.004892 seconds
+  Import took 0.007598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_17.asset
+  artifactKey: Guid(8e9f2b33122fe5a41ad4646353bded72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_17.asset using Guid(8e9f2b33122fe5a41ad4646353bded72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08902b38e8ca3d01c1e2bbf390bc5c13') in 0.005307 seconds
+  Import took 0.008645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_19.asset
+  artifactKey: Guid(a13498347c298644cabb4ef7be31aca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_19.asset using Guid(a13498347c298644cabb4ef7be31aca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ded53928dbcdab8ef06428e7a369e9a') in 0.004990 seconds
+  Import took 0.007689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_3.asset
+  artifactKey: Guid(dba3d59abfa8d6c42832ff2f73fa41bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_3.asset using Guid(dba3d59abfa8d6c42832ff2f73fa41bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0de61ba23cffbe94306708b43150f0f') in 0.004902 seconds
+  Import took 0.007719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_6.asset
+  artifactKey: Guid(886894a3b31e99d4fbcbabd293fb1f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_6.asset using Guid(886894a3b31e99d4fbcbabd293fb1f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2466bc969d36a3ee1cec1594203b5e') in 0.004865 seconds
+  Import took 0.007139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_21.asset
+  artifactKey: Guid(00988f275334f36488365a95fa3c9737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_21.asset using Guid(00988f275334f36488365a95fa3c9737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3bb0f73152f4ec4b70d5a4523206e04') in 0.005391 seconds
+  Import took 0.007830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 632.371719 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight.prefab
+  artifactKey: Guid(f25946e1e8650d74fab0d885cc6c2927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight.prefab using Guid(f25946e1e8650d74fab0d885cc6c2927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e44ec3d2068b85e6a4961cf8d4933c3') in 0.003246 seconds
+  Import took 0.006315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005083 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight.prefab
+  artifactKey: Guid(f25946e1e8650d74fab0d885cc6c2927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight.prefab using Guid(f25946e1e8650d74fab0d885cc6c2927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e44ec3d2068b85e6a4961cf8d4933c3') in 0.002737 seconds
+  Import took 0.005202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.084592 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_22.asset
+  artifactKey: Guid(f86b4027a43cc5049a81ea0da73c3316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_22.asset using Guid(f86b4027a43cc5049a81ea0da73c3316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc002abfb4491f67c69b0a840aa1b19') in 0.008734 seconds
+  Import took 0.011160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_23.asset
+  artifactKey: Guid(a766992c1ecf04b438cf85f65b0a9b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_23.asset using Guid(a766992c1ecf04b438cf85f65b0a9b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1cefc79525668136cf89fe7f4a8ec98') in 0.005155 seconds
+  Import took 0.007276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_33.asset
+  artifactKey: Guid(f7e86bf376cd4004b973813a863861e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_33.asset using Guid(f7e86bf376cd4004b973813a863861e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b87998634a3b052a47f91027777923e') in 0.009647 seconds
+  Import took 0.012186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_31.asset
+  artifactKey: Guid(ea8fe33a652368747b5a082b3d98159e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_31.asset using Guid(ea8fe33a652368747b5a082b3d98159e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5f0cd456386926d066117a34d3e189') in 0.015367 seconds
+  Import took 0.018150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_26.asset
+  artifactKey: Guid(0899f370a64423441a1cfa021fc57ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_26.asset using Guid(0899f370a64423441a1cfa021fc57ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b252421002463e3739ad18b90165190') in 0.014657 seconds
+  Import took 0.017586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_29.asset
+  artifactKey: Guid(25df49b8b88485042b5d8f8aa0bbdb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_29.asset using Guid(25df49b8b88485042b5d8f8aa0bbdb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748ddb1a75e21c1133c3b1b3a84b0a15') in 0.010546 seconds
+  Import took 0.012822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_32.asset
+  artifactKey: Guid(78db6c0f60b332746a2b214b8dc503a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_32.asset using Guid(78db6c0f60b332746a2b214b8dc503a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f14a129909a9ebd2571e543a114918d') in 0.015457 seconds
+  Import took 0.017652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_34.asset
+  artifactKey: Guid(9791f77287740fd4e9cc6675e6464383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_34.asset using Guid(9791f77287740fd4e9cc6675e6464383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17687bd415dff70ac8c2f4ec9a0464b1') in 0.004529 seconds
+  Import took 0.006899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_27.asset
+  artifactKey: Guid(17e78af1964260d41a5be1642a948a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_27.asset using Guid(17e78af1964260d41a5be1642a948a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '858329b7edc50a6b3961156aa6bc426c') in 0.004524 seconds
+  Import took 0.006799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_24.asset
+  artifactKey: Guid(1adecb7e0df2b3742b0669308aad6419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_24.asset using Guid(1adecb7e0df2b3742b0669308aad6419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91bfb2ea7cdf817d17d95218c274cbb') in 0.004573 seconds
+  Import took 0.006856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_25.asset
+  artifactKey: Guid(a144f5e70057ca848b882957ef465949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_25.asset using Guid(a144f5e70057ca848b882957ef465949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6ac18286188aa8408a49e656b516b7') in 0.004475 seconds
+  Import took 0.006617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_39.asset
+  artifactKey: Guid(95e001d033183384bbdf4c79ebc7db2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_39.asset using Guid(95e001d033183384bbdf4c79ebc7db2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '127f9114be2f62f867061c8ee99bb437') in 0.004763 seconds
+  Import took 0.006964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_47.asset
+  artifactKey: Guid(15f2639ae9bdb854db8c698e74b1a0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_47.asset using Guid(15f2639ae9bdb854db8c698e74b1a0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3b1e5720bebbe7293684aad9918e7d') in 0.005017 seconds
+  Import took 0.008142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchPalette.prefab
+  artifactKey: Guid(b3a3ca37431276c4b8ba9edfc8aafe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchPalette.prefab using Guid(b3a3ca37431276c4b8ba9edfc8aafe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e829dab771b3a881d2d821e84d1095f') in 0.003565 seconds
+  Import took 0.006417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_49.asset
+  artifactKey: Guid(f6348c32dc06dde4eba0c922d1f7f994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_49.asset using Guid(f6348c32dc06dde4eba0c922d1f7f994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca6fd40ae096050f5f526908a79b794') in 0.004496 seconds
+  Import took 0.006969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_42.asset
+  artifactKey: Guid(f1ef4559c9d14614ea4344dc3a8916a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_42.asset using Guid(f1ef4559c9d14614ea4344dc3a8916a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7bb7f7252aaa15e67a4e0171ba24176') in 0.004418 seconds
+  Import took 0.006710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_48.asset
+  artifactKey: Guid(3ea00d1599b50c24598a73df9bb85d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_48.asset using Guid(3ea00d1599b50c24598a73df9bb85d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82c0f874767e8be7e5c84d6a92ce569') in 0.004696 seconds
+  Import took 0.007055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_36.asset
+  artifactKey: Guid(dab434772eb3fb340acddea80b3e9d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_36.asset using Guid(dab434772eb3fb340acddea80b3e9d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7a975c22df5da27a36a76136cb5c64') in 0.004706 seconds
+  Import took 0.007194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_40.asset
+  artifactKey: Guid(615ed5b5efb133a4e85aca9333da05a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_40.asset using Guid(615ed5b5efb133a4e85aca9333da05a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98fc3b32ad6aa329b2c88eac1a2ca7a') in 0.004799 seconds
+  Import took 0.007391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_37.asset
+  artifactKey: Guid(edd852f3a35ff804d9862e47f6e121bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_37.asset using Guid(edd852f3a35ff804d9862e47f6e121bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ebce58ffb7ad1865896bb0a4e871bc1') in 0.004455 seconds
+  Import took 0.006737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_45.asset
+  artifactKey: Guid(0b4f6c15efe60fa40b4f59880e2db438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_45.asset using Guid(0b4f6c15efe60fa40b4f59880e2db438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02dae3a0ef5cf50eff636de351fbdba') in 0.004448 seconds
+  Import took 0.006606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_38.asset
+  artifactKey: Guid(58c6a7e3f31fd7b4db6458b1e84004dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_38.asset using Guid(58c6a7e3f31fd7b4db6458b1e84004dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68cf94375ad9cce057765d4a3dc7880a') in 0.004563 seconds
+  Import took 0.006857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_44.asset
+  artifactKey: Guid(d92cf985b4fc83f4ea93e10047a23725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_44.asset using Guid(d92cf985b4fc83f4ea93e10047a23725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc22686194cfd7363980df4ee51d90e8') in 0.004534 seconds
+  Import took 0.006869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_43.asset
+  artifactKey: Guid(3e47e9a7f053a904ab9ab57af522a6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_43.asset using Guid(3e47e9a7f053a904ab9ab57af522a6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9629a71dc5befc37285f4fc1faa0382') in 0.004157 seconds
+  Import took 0.006383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_35.asset
+  artifactKey: Guid(5fa82b6266171c7498a8165dcbdfc045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_35.asset using Guid(5fa82b6266171c7498a8165dcbdfc045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2bb424656d2f9146a146cec4d33d586') in 0.004688 seconds
+  Import took 0.007011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_46.asset
+  artifactKey: Guid(8b3fd25521a36f741ace5612ea111bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_46.asset using Guid(8b3fd25521a36f741ace5612ea111bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5031825dad76d68f773cb55f943cd3d5') in 0.005915 seconds
+  Import took 0.008185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_30.asset
+  artifactKey: Guid(e2be8aa4fd45f3a4e836a647a1c6a733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_30.asset using Guid(e2be8aa4fd45f3a4e836a647a1c6a733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b9ad393a22cbf65cd8c6845479481f') in 0.004350 seconds
+  Import took 0.006735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_41.asset
+  artifactKey: Guid(a488c8bc529851e4897dfb7bfdb8fa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_41.asset using Guid(a488c8bc529851e4897dfb7bfdb8fa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dff7cd921ee54a617290eded9617809') in 0.004656 seconds
+  Import took 0.007167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_28.asset
+  artifactKey: Guid(dd6e350255c4d994e8195823a90d2d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_28.asset using Guid(dd6e350255c4d994e8195823a90d2d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4db2b4d74b5a84e54a933a2bde87d0') in 0.005332 seconds
+  Import took 0.007703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_50.asset
+  artifactKey: Guid(1bced9b8d7f4ace48baa6f7e844bf732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/OakTreeChurchEdging_50.asset using Guid(1bced9b8d7f4ace48baa6f7e844bf732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a29a844baae4a77cc128f5395df9f3') in 0.004763 seconds
+  Import took 0.007188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.263585 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLightAnimaton.anim
+  artifactKey: Guid(48316d064d7c1a94d92916c7f5b0b76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLightAnimaton.anim using Guid(48316d064d7c1a94d92916c7f5b0b76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab54b523fbce63a63aa966d91d2c6f6f') in 0.003719 seconds
+  Import took 0.006698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003897 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLightAnimaton.anim
+  artifactKey: Guid(48316d064d7c1a94d92916c7f5b0b76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLightAnimaton.anim using Guid(48316d064d7c1a94d92916c7f5b0b76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab54b523fbce63a63aa966d91d2c6f6f') in 0.002092 seconds
+  Import took 0.004520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.267769 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLightAnimation.anim
+  artifactKey: Guid(62bc8ecf7cf4d234ab3345fc2cb556ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLightAnimation.anim using Guid(62bc8ecf7cf4d234ab3345fc2cb556ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fb2f4b5a3557e25cb668245dc813f1') in 0.002648 seconds
+  Import took 0.005537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.251457 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight.controller
+  artifactKey: Guid(0b22ab29fda4cb540b492cecdaddc064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight.controller using Guid(0b22ab29fda4cb540b492cecdaddc064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e481cef8e740c63f26dab46e77ef6ecf') in 0.003841 seconds
+  Import took 0.006318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.384450 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight 1.controller
+  artifactKey: Guid(4c1b9648648f60e4da06f5fd704fefaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight 1.controller using Guid(4c1b9648648f60e4da06f5fd704fefaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eecfcb878162ab5ffc101a1d5e2d5464') in 0.002408 seconds
+  Import took 0.005393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 240.947818 seconds.
+  path: Assets/Scenes/OaktreeChurch.unity
+  artifactKey: Guid(22b1967c389e51041806735624eb4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/OaktreeChurch.unity using Guid(22b1967c389e51041806735624eb4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0ddbc6f903b363a9d0291710c7f14a') in 0.001979 seconds
+  Import took 0.004853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.974808 seconds.
+  path: Assets/7f07e7cd-3112-4e7d-833e-4fd595a06955.png
+  artifactKey: Guid(f1bcddf445f828642accbf3e3345b825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/7f07e7cd-3112-4e7d-833e-4fd595a06955.png using Guid(f1bcddf445f828642accbf3e3345b825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c00856c96e0f487ddc70253f9e9e52e7') in 0.018489 seconds
+  Import took 0.021257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/7f07e7cd-3112-4e7d-833e-4fd595a06955.png
+  artifactKey: Guid(f1bcddf445f828642accbf3e3345b825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/7f07e7cd-3112-4e7d-833e-4fd595a06955.png using Guid(f1bcddf445f828642accbf3e3345b825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c00856c96e0f487ddc70253f9e9e52e7') in 0.049240 seconds
+  Import took 0.051612 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000924 seconds.
+Registered in 0.000886 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.646 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.3 MB.
-System memory in use after: 86.4 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2231.
-Total: 1.667800 ms (FindLiveObjects: 0.162300 ms CreateObjectMapping: 0.050200 ms MarkObjects: 1.442700 ms  DeleteObjects: 0.011800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000904 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.643 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.3 MB.
-System memory in use after: 86.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2233.
-Total: 1.547000 ms (FindLiveObjects: 0.191700 ms CreateObjectMapping: 0.057700 ms MarkObjects: 1.285800 ms  DeleteObjects: 0.010900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 562.583459 seconds.
-  path: Assets/Scripts/GuyController.cs
-  artifactKey: Guid(53f0119bd4f6d6a4093ae6a1e2f5fc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GuyController.cs using Guid(53f0119bd4f6d6a4093ae6a1e2f5fc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942c2be2ef8247740d13783d76a270d1') in 0.010469 seconds
-  Import took 0.012971 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011851 seconds.
-  path: Assets/Scripts/GuyController.cs
-  artifactKey: Guid(53f0119bd4f6d6a4093ae6a1e2f5fc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GuyController.cs using Guid(53f0119bd4f6d6a4093ae6a1e2f5fc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942c2be2ef8247740d13783d76a270d1') in 0.001773 seconds
-  Import took 0.004788 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000888 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.645 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.4 MB.
-System memory in use after: 86.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2235.
-Total: 1.496300 ms (FindLiveObjects: 0.181100 ms CreateObjectMapping: 0.055000 ms MarkObjects: 1.249200 ms  DeleteObjects: 0.010400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000922 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.662 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.5 MB.
-System memory in use after: 86.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2237.
-Total: 3.047300 ms (FindLiveObjects: 0.358000 ms CreateObjectMapping: 0.096300 ms MarkObjects: 2.564600 ms  DeleteObjects: 0.025900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 205.274198 seconds.
-  path: Assets/Animations/BaseMale/BaseMaleForwards.anim
-  artifactKey: Guid(7f5a17fc97b94ed49bbe77ac5bedadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/BaseMale/BaseMaleForwards.anim using Guid(7f5a17fc97b94ed49bbe77ac5bedadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabd9da91474bc1671880471744c920c') in 0.011385 seconds
-  Import took 0.013842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 223.761670 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/New Animation.anim
-  artifactKey: Guid(83c83c962a4df7642b982b2a673ec84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/New Animation.anim using Guid(83c83c962a4df7642b982b2a673ec84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df1a1bd91d2c128ebb6b407596496a0') in 0.002369 seconds
-  Import took 0.005171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.784106 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.anim
-  artifactKey: Guid(147f3dbb08af71c4882771fc18fb1daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.anim using Guid(147f3dbb08af71c4882771fc18fb1daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22cec2c996c2e5a79c0008fe096acc0') in 0.002097 seconds
-  Import took 0.004533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.014738 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMale.controller
-  artifactKey: Guid(3c1133ee8618f174f8485e5859abbe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMale.controller using Guid(3c1133ee8618f174f8485e5859abbe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f531c3322fefde52df370a880303cf98') in 0.004685 seconds
-  Import took 0.007487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5593.252329 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwardsIdle.anim
-  artifactKey: Guid(7326e2b11d075d340bf9abc93c039b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwardsIdle.anim using Guid(7326e2b11d075d340bf9abc93c039b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c037c2b0d90804059b86710fea4a52') in 0.003274 seconds
-  Import took 0.006552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001899 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwardsIdle.anim
-  artifactKey: Guid(7326e2b11d075d340bf9abc93c039b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwardsIdle.anim using Guid(7326e2b11d075d340bf9abc93c039b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c037c2b0d90804059b86710fea4a52') in 0.002252 seconds
-  Import took 0.004753 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 466.379436 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleLeft.anim
-  artifactKey: Guid(b29f1a755174b9e4192024b3bd518e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleLeft.anim using Guid(b29f1a755174b9e4192024b3bd518e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16faf9e19ce169919f85ce6a2353facd') in 0.002749 seconds
-  Import took 0.005809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002481 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleLeft.anim
-  artifactKey: Guid(b29f1a755174b9e4192024b3bd518e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleLeft.anim using Guid(b29f1a755174b9e4192024b3bd518e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16faf9e19ce169919f85ce6a2353facd') in 0.002346 seconds
-  Import took 0.004918 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 74.666760 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleLeft.anim
-  artifactKey: Guid(b29f1a755174b9e4192024b3bd518e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleLeft.anim using Guid(b29f1a755174b9e4192024b3bd518e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262b2fddcb6a97c186b681ffbe3a94c8') in 0.002644 seconds
-  Import took 0.005791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002217 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleLeft.anim
-  artifactKey: Guid(b29f1a755174b9e4192024b3bd518e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleLeft.anim using Guid(b29f1a755174b9e4192024b3bd518e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262b2fddcb6a97c186b681ffbe3a94c8') in 0.002643 seconds
-  Import took 0.005087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 217.994097 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMale.controller
-  artifactKey: Guid(3c1133ee8618f174f8485e5859abbe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMale.controller using Guid(3c1133ee8618f174f8485e5859abbe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9a5821af95cada08aba52960741fde') in 0.004419 seconds
-  Import took 0.007467 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000959 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.656 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.6 MB.
-System memory in use after: 86.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2239.
-Total: 1.615300 ms (FindLiveObjects: 0.161700 ms CreateObjectMapping: 0.053300 ms MarkObjects: 1.384400 ms  DeleteObjects: 0.014700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 518.000349 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMale.controller
-  artifactKey: Guid(3c1133ee8618f174f8485e5859abbe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMale.controller using Guid(3c1133ee8618f174f8485e5859abbe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c049eb41ac3a6893cdb983cca480927') in 0.012702 seconds
-  Import took 0.015718 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000970 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -478,306 +1070,402 @@ RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.649 seconds
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.3 MB.
+System memory in use after: 86.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2229.
+Total: 1.519800 ms (FindLiveObjects: 0.139100 ms CreateObjectMapping: 0.044300 ms MarkObjects: 1.322600 ms  DeleteObjects: 0.012500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 234.993643 seconds.
+  path: Assets/Sprites/TileMapSprites/Old/f2db4156-38c4-4511-a18e-85c2a8f0ba39.png
+  artifactKey: Guid(cdc3c7f4319b54a46b8345f0aebbd64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/Old/f2db4156-38c4-4511-a18e-85c2a8f0ba39.png using Guid(cdc3c7f4319b54a46b8345f0aebbd64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96c1b7a101811da8329f53f32860a02') in 0.078318 seconds
+  Import took 0.080789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.003697 seconds.
+  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png
+  artifactKey: Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards128.png using Guid(2d1d63d8794ea904082309493c217303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d07d9bf166b9033f9cd6d14fbf81c9') in 0.078017 seconds
+  Import took 0.080608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.822256 seconds.
+  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMale.controller
+  artifactKey: Guid(3c1133ee8618f174f8485e5859abbe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMale.controller using Guid(3c1133ee8618f174f8485e5859abbe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4cef462aba26e43563eab03948f2021') in 0.005072 seconds
+  Import took 0.007614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004544 seconds.
+  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png
+  artifactKey: Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleForwards.png using Guid(94fcbc03d59fe004c85a5d08e433c657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bab3446799479a33d59741a477cee35') in 0.071961 seconds
+  Import took 0.074415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.973045 seconds.
+  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png
+  artifactKey: Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleHoriz.png using Guid(36fc8018ed1a3c64a8ccbdc75dd25489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d118e4a02f56a91e7fa085a4ae1156') in 0.049976 seconds
+  Import took 0.052348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.398522 seconds.
+  path: Assets/Sprites/OakTreeSetPieces/sprite_OakTree_ArmorShop.png
+  artifactKey: Guid(6df8251085f6be8408ca8fb471ef48be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/OakTreeSetPieces/sprite_OakTree_ArmorShop.png using Guid(6df8251085f6be8408ca8fb471ef48be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da6fa750cfcc272ef728fffebede980') in 0.023266 seconds
+  Import took 0.025971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.061008 seconds.
+  path: Assets/Sprites/OakTreeSetPieces/sprite_OakTree_Barracks.png
+  artifactKey: Guid(0f87cb66856add94aa9911e11c393821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/OakTreeSetPieces/sprite_OakTree_Barracks.png using Guid(0f87cb66856add94aa9911e11c393821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e011f6b00e41ab9c36fb6f4680cd86dd') in 0.037254 seconds
+  Import took 0.039673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.780173 seconds.
+  path: Assets/Sprites/OakTreeSetPieces/sprite_OakTree_BigTree.png
+  artifactKey: Guid(3a201af3e0f5331448c7321da4965abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/OakTreeSetPieces/sprite_OakTree_BigTree.png using Guid(3a201af3e0f5331448c7321da4965abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13d03dd8a6d8eb6529ac1806206567d0') in 0.028421 seconds
+  Import took 0.030893 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000952 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.709 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.4 MB.
+System memory in use after: 86.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2237.
+Total: 2.009100 ms (FindLiveObjects: 0.156900 ms CreateObjectMapping: 0.054300 ms MarkObjects: 1.765700 ms  DeleteObjects: 0.014300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001594 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.832 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.5 MB.
+System memory in use after: 86.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2239.
+Total: 1.633200 ms (FindLiveObjects: 0.161000 ms CreateObjectMapping: 0.058900 ms MarkObjects: 1.394100 ms  DeleteObjects: 0.018400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000987 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.681 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.6 MB.
+System memory in use after: 86.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2241.
+Total: 1.599000 ms (FindLiveObjects: 0.153100 ms CreateObjectMapping: 0.050400 ms MarkObjects: 1.381600 ms  DeleteObjects: 0.012900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 844.351304 seconds.
+  path: Assets/Scripts/CameraFollow.cs
+  artifactKey: Guid(c10057aedbee43e4883af7078e92c392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraFollow.cs using Guid(c10057aedbee43e4883af7078e92c392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9acf180cfbaf517ac7dc948d153e8b2') in 0.012995 seconds
+  Import took 0.015433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.742176 seconds.
+  path: Assets/Scenes/OaktreeChurch.unity
+  artifactKey: Guid(22b1967c389e51041806735624eb4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/OaktreeChurch.unity using Guid(22b1967c389e51041806735624eb4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2153c8254a0875f0fcf98a8bd27e2b10') in 0.007086 seconds
+  Import took 0.009960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Scenes/OaktreeChurch.unity
+  artifactKey: Guid(22b1967c389e51041806735624eb4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/OaktreeChurch.unity using Guid(22b1967c389e51041806735624eb4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2153c8254a0875f0fcf98a8bd27e2b10') in 0.001998 seconds
+  Import took 0.004807 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001021 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.641 seconds
+Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 86.7 MB.
 System memory in use after: 86.8 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2241.
-Total: 1.498000 ms (FindLiveObjects: 0.162600 ms CreateObjectMapping: 0.048800 ms MarkObjects: 1.274400 ms  DeleteObjects: 0.011400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001217 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.621 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.8 MB.
-System memory in use after: 86.9 MB.
-
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2243.
-Total: 1.561400 ms (FindLiveObjects: 0.184000 ms CreateObjectMapping: 0.064200 ms MarkObjects: 1.298900 ms  DeleteObjects: 0.013200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000978 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.637 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 87.0 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2245.
-Total: 1.542800 ms (FindLiveObjects: 0.158100 ms CreateObjectMapping: 0.052800 ms MarkObjects: 1.317400 ms  DeleteObjects: 0.013500 ms)
+Total: 1.666100 ms (FindLiveObjects: 0.147500 ms CreateObjectMapping: 0.047800 ms MarkObjects: 1.457600 ms  DeleteObjects: 0.012200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 306.106019 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleRight.anim
-  artifactKey: Guid(95efe4623e86d8a418a8c503e11a04d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleRight.anim using Guid(95efe4623e86d8a418a8c503e11a04d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a587f53ebd947414207cc04d432126') in 0.009877 seconds
-  Import took 0.012421 seconds .
+  Time since last request: 15.290333 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimator.anim
+  artifactKey: Guid(382ced68d8d6a184e81a52b63e00edb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimator.anim using Guid(382ced68d8d6a184e81a52b63e00edb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718ea452c1f46c07c6112e484d2c191a') in 0.008434 seconds
+  Import took 0.011064 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.009681 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleRight.anim
-  artifactKey: Guid(95efe4623e86d8a418a8c503e11a04d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleRight.anim using Guid(95efe4623e86d8a418a8c503e11a04d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a587f53ebd947414207cc04d432126') in 0.002424 seconds
-  Import took 0.005215 seconds .
+  Time since last request: 399.091717 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation
+  artifactKey: Guid(a71cf0a1865cff1478bf3803df6fdc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation using Guid(a71cf0a1865cff1478bf3803df6fdc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b131d481ca5b15703c767a98ec6f7ac') in 0.002311 seconds
+  Import took 0.005042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.967258 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/44829132-06a6-4dbf-b5f6-7ee335110ded.png
+  artifactKey: Guid(51d329ed506f0e740846daa7c89fa0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/44829132-06a6-4dbf-b5f6-7ee335110ded.png using Guid(51d329ed506f0e740846daa7c89fa0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8be9e2609227591c87534063904efc7') in 0.094125 seconds
+  Import took 0.096547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 517.337557 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/0c4e03d3-c98b-4b77-a8c2-77d2b479875c.png
+  artifactKey: Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/0c4e03d3-c98b-4b77-a8c2-77d2b479875c.png using Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9013dcb0771d15045f0d3033bd4ed7ca') in 0.038093 seconds
+  Import took 0.040918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.093495 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png
+  artifactKey: Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png using Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad9ae576bd0cdc1814c29185338a31d') in 0.024847 seconds
+  Import took 0.027274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.973836 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png
+  artifactKey: Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png using Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd4229963cc346feeec95804c3718c6') in 0.006030 seconds
+  Import took 0.008455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009014 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png
+  artifactKey: Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png using Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd4229963cc346feeec95804c3718c6') in 0.083030 seconds
+  Import took 0.085588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.269216 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png
+  artifactKey: Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png using Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff22ccdb92d1741d9cb68c37e67efd78') in 0.049070 seconds
+  Import took 0.051528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 306.753137 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/New Animation.anim
+  artifactKey: Guid(6914671761d0ec14daece460b43ea6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/New Animation.anim using Guid(6914671761d0ec14daece460b43ea6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c6cff5e8db9548173d25c3d99df1bf') in 0.002726 seconds
+  Import took 0.005730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.114604 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight.controller
+  artifactKey: Guid(0b22ab29fda4cb540b492cecdaddc064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GlowingLight.controller using Guid(0b22ab29fda4cb540b492cecdaddc064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31cde19468fbf18e7548f58e6a779f8') in 0.003181 seconds
+  Import took 0.005915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.178304 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/GameObject.controller
+  artifactKey: Guid(4658cbd2f247d934f81ce1daed9ef6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/GameObject.controller using Guid(4658cbd2f247d934f81ce1daed9ef6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd88ec354d7f6842fbc65b5e4f930628') in 0.002738 seconds
+  Import took 0.005381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.162597 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/New Animation.anim
+  artifactKey: Guid(9b5eb90083d5b584f929fab72bc51375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/New Animation.anim using Guid(9b5eb90083d5b584f929fab72bc51375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b28f7c282a6284cc0ee7505ed2b7e7c') in 0.002134 seconds
+  Import took 0.004624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.755341 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.controller
+  artifactKey: Guid(2a943c8ff6de0ac4b817691548b002c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.controller using Guid(2a943c8ff6de0ac4b817691548b002c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7236bc707db103515c3f5ca1d546ade3') in 0.002142 seconds
+  Import took 0.004677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 154.893382 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.prefab
+  artifactKey: Guid(ea30b1f2080fb1a4f84a35fd14709be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.prefab using Guid(ea30b1f2080fb1a4f84a35fd14709be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (GlowingLight) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (GlowingLight) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+ -> (artifact id: '7bc8cf22d91f842f9bfd448d8bcadbf7') in 0.024025 seconds
+  Import took 0.026536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007206 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.prefab
+  artifactKey: Guid(ea30b1f2080fb1a4f84a35fd14709be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.prefab using Guid(ea30b1f2080fb1a4f84a35fd14709be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (GlowingLight) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (GlowingLight) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+ -> (artifact id: '7bc8cf22d91f842f9bfd448d8bcadbf7') in 0.006215 seconds
+  Import took 0.009071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.655341 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png
+  artifactKey: Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.png using Guid(f8a90291fff9c664e93d0237b5978a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f1cbcd5fddecd5eeafb059e7828998') in 0.039711 seconds
+  Import took 0.042093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 382.912938 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.prefab
+  artifactKey: Guid(ea30b1f2080fb1a4f84a35fd14709be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeChurch/LightAnimation/GlowingLight.prefab using Guid(ea30b1f2080fb1a4f84a35fd14709be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d9ee2ef20eecad00da31210724b85c') in 0.018459 seconds
+  Import took 0.021701 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000906 seconds.
+Registered in 0.000979 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.634 seconds
+- Completed reload, in  0.635 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 87.0 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2247.
-Total: 1.546800 ms (FindLiveObjects: 0.143700 ms CreateObjectMapping: 0.045600 ms MarkObjects: 1.343300 ms  DeleteObjects: 0.013100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000969 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.647 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.1 MB.
-System memory in use after: 87.2 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2249.
-Total: 1.686700 ms (FindLiveObjects: 0.194500 ms CreateObjectMapping: 0.060600 ms MarkObjects: 1.417300 ms  DeleteObjects: 0.013500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000888 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.670 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.2 MB.
-System memory in use after: 87.3 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2251.
-Total: 1.597200 ms (FindLiveObjects: 0.157300 ms CreateObjectMapping: 0.050600 ms MarkObjects: 1.372300 ms  DeleteObjects: 0.015900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001054 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.633 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.2 MB.
-System memory in use after: 87.3 MB.
+System memory in use before: 87.0 MB.
+System memory in use after: 87.1 MB.
 
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2253.
-Total: 1.491800 ms (FindLiveObjects: 0.147400 ms CreateObjectMapping: 0.049600 ms MarkObjects: 1.283700 ms  DeleteObjects: 0.010300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 899.382696 seconds.
-  path: Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards.anim
-  artifactKey: Guid(3c394aa514c2bf94583615a892def2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/CharacterSprites/BaseMaleSprites/BaseMaleBackwards.anim using Guid(3c394aa514c2bf94583615a892def2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1c04d188131a4a2a5a36dfcd943102') in 0.009148 seconds
-  Import took 0.011782 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000983 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.625 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.3 MB.
-System memory in use after: 87.4 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2255.
-Total: 1.516200 ms (FindLiveObjects: 0.157700 ms CreateObjectMapping: 0.052800 ms MarkObjects: 1.294100 ms  DeleteObjects: 0.010700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000916 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.645 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2257.
-Total: 1.840700 ms (FindLiveObjects: 0.179700 ms CreateObjectMapping: 0.075900 ms MarkObjects: 1.569300 ms  DeleteObjects: 0.014800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 392.551366 seconds.
-  path: Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png
-  artifactKey: Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TileMapSprites/OakTreeTileSet/OakTreeEdging.png using Guid(3a31c45a6713a5e46ad2a4e69e2d6dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348ff2f14c4ea0079935573144aad8cd') in 0.152709 seconds
-  Import took 0.155355 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 64.106073 seconds.
-  path: Assets/Tiles/TestTile.asset
-  artifactKey: Guid(f0fc7cf670c48ea43b588deaf2ce7aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiles/TestTile.asset using Guid(f0fc7cf670c48ea43b588deaf2ce7aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d1548f711aa8226174d588bdddf5e4') in 0.005859 seconds
-  Import took 0.008258 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001139 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.698 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.5 MB.
-System memory in use after: 87.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2263.
-Total: 1.680200 ms (FindLiveObjects: 0.167600 ms CreateObjectMapping: 0.055900 ms MarkObjects: 1.442400 ms  DeleteObjects: 0.013800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000924 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.636 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.6 MB.
-System memory in use after: 87.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2265.
-Total: 1.586300 ms (FindLiveObjects: 0.173300 ms CreateObjectMapping: 0.065100 ms MarkObjects: 1.333700 ms  DeleteObjects: 0.013100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000851 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.640 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.7 MB.
-System memory in use after: 87.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2267.
-Total: 1.896200 ms (FindLiveObjects: 0.248400 ms CreateObjectMapping: 0.110600 ms MarkObjects: 1.524200 ms  DeleteObjects: 0.012000 ms)
+Total: 1.549500 ms (FindLiveObjects: 0.141100 ms CreateObjectMapping: 0.044000 ms MarkObjects: 1.349400 ms  DeleteObjects: 0.013900 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
