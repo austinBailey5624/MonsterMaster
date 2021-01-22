@@ -1,11 +1,7 @@
 {
   "resources": [
-    {"id":{"name":"tileset_OakTree","path":"sprites/tileset_OakTree/tileset_OakTree.yy",},"order":1,},
     {"id":{"name":"tileset_OakTree32","path":"sprites/tileset_OakTree32/tileset_OakTree32.yy",},"order":3,},
     {"id":{"name":"tileset_TreeTop","path":"sprites/tileset_TreeTop/tileset_TreeTop.yy",},"order":5,},
-    {"id":{"name":"sprite_Forest47","path":"sprites/sprite_Forest47/sprite_Forest47.yy",},"order":7,},
-    {"id":{"name":"tileset_Forest","path":"sprites/tileset_Forest/tileset_Forest.yy",},"order":9,},
-    {"id":{"name":"sprite_tileset_forest_edging","path":"sprites/sprite_tileset_forest_edging/sprite_tileset_forest_edging.yy",},"order":11,},
     {"id":{"name":"sprite_tileset_CollisionMask","path":"sprites/sprite_tileset_CollisionMask/sprite_tileset_CollisionMask.yy",},"order":13,},
     {"id":{"name":"sprite_tileset_CollisionMask32","path":"sprites/sprite_tileset_CollisionMask32/sprite_tileset_CollisionMask32.yy",},"order":15,},
     {"id":{"name":"TreeTop","path":"sprites/TreeTop/TreeTop.yy",},"order":17,},
@@ -18,8 +14,6 @@
     {"id":{"name":"sprite_tileset_GreatForestWater","path":"sprites/sprite_tileset_GreatForestWater/sprite_tileset_GreatForestWater.yy",},"order":31,},
     {"id":{"name":"sprite_tileset_Water2","path":"sprites/sprite_tileset_Water2/sprite_tileset_Water2.yy",},"order":33,},
     {"id":{"name":"sprite_tileset_OakTreeBuildingInterior","path":"sprites/sprite_tileset_OakTreeBuildingInterior/sprite_tileset_OakTreeBuildingInterior.yy",},"order":35,},
-    {"id":{"name":"sprite_tileset_OakTreeBuildingInterior1","path":"sprites/sprite_tileset_OakTreeBuildingInterior1/sprite_tileset_OakTreeBuildingInterior1.yy",},"order":37,},
-    {"id":{"name":"sprite_tileSet_OakTreeChurchStrechx12","path":"sprites/sprite_tileSet_OakTreeChurchStrechx12/sprite_tileSet_OakTreeChurchStrechx12.yy",},"order":39,},
     {"id":{"name":"sprite_Flarial_Forwards","path":"sprites/sprite_Flarial_Forwards/sprite_Flarial_Forwards.yy",},"order":0,},
     {"id":{"name":"sprite_Flarial_Backwards","path":"sprites/sprite_Flarial_Backwards/sprite_Flarial_Backwards.yy",},"order":1,},
     {"id":{"name":"sprite_Flarial_Left32","path":"sprites/sprite_Flarial_Left32/sprite_Flarial_Left32.yy",},"order":6,},

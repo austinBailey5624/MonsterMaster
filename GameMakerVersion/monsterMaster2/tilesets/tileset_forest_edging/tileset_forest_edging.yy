@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprite_tileset_forest_edging",
-    "path": "sprites/sprite_tileset_forest_edging/sprite_tileset_forest_edging.yy",
-  },
+  "spriteId": null,
   "tileWidth": 16,
   "tileHeight": 16,
   "tilexoff": 0,

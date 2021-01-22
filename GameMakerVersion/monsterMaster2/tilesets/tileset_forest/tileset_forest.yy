@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "tileset_OakTree",
-    "path": "sprites/tileset_OakTree/tileset_OakTree.yy",
-  },
+  "spriteId": null,
   "tileWidth": 16,
   "tileHeight": 16,
   "tilexoff": 0,

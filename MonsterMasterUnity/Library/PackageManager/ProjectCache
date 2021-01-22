@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637459185714856989
-    m_Hash: 2893904133
+      ticks: 637468702837718687
+    m_Hash: 240654113
   m_LockFileStatus:
     m_FilePath: C:/Users/austi/MonsterMaster/MonsterMasterUnity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637459185778998640
-    m_Hash: 1291434365
+      ticks: 637468702843272204
+    m_Hash: 3251769762
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -86,6 +86,7 @@ m_PackageAssets:
         - 4.2.4
         - 4.2.5
         - 4.2.6
+        - 4.2.8
         - 5.0.0
         - 5.0.1
         - 5.0.2
@@ -267,6 +268,7 @@ m_PackageAssets:
         - 3.1.4
         - 3.1.5
         - 3.1.6
+        - 3.1.7
         - 4.0.0
         - 4.0.1
         - 4.0.2
@@ -437,6 +439,7 @@ m_PackageAssets:
         - 4.1.2
         - 4.1.3
         - 4.1.4
+        - 4.1.5
         - 5.0.0
         - 5.0.1
         - 5.0.2
@@ -768,8 +771,28 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 1.0.2
+        - 1.0.3
+        - 1.0.4
+        - 1.0.9
+        - 1.0.10
+        - 1.0.11
+        - 2.0.0
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
         - 2.0.5
         compatible:
+        - 1.0.2
+        - 1.0.3
+        - 1.0.4
+        - 1.0.9
+        - 1.0.10
+        - 1.0.11
+        - 2.0.0
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
         - 2.0.5
         verified: 2.0.5
       dependencies: []
@@ -787,7 +810,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637400980850000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -863,6 +886,183 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
+        path: 
+    - packageId: com.unity.quicksearch@2.0.2
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.2
+      source: 1
+      resolvedPath: C:\Users\austi\MonsterMaster\MonsterMasterUnity\Library\PackageCache\com.unity.quicksearch@2.0.2
+      assetPath: Packages/com.unity.quicksearch
+      name: com.unity.quicksearch
+      displayName: Quick Search
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'Search multiple areas of Unity: assets, scene objects, menu items,
+        packages, APIs, settings, etc.
+
+
+        On Windows simply press Alt+'' to
+        find anything or Option+'' on Mac.
+
+        Look in the shortcut manager
+        for additional Quick Search shortcut bindings.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.9.5-preview.1
+        - 0.9.6-preview.1
+        - 0.9.7-preview.3
+        - 0.9.9-preview.2
+        - 0.9.95-preview
+        - 1.0.0-preview.2
+        - 1.0.1-preview.1
+        - 1.0.9-preview.2
+        - 1.1.0-preview.1
+        - 1.2.0-preview.1
+        - 1.2.1-preview
+        - 1.2.2-preview
+        - 1.2.3-preview
+        - 1.2.4-preview
+        - 1.2.6-preview
+        - 1.2.7-preview
+        - 1.2.8-preview
+        - 1.2.9-preview
+        - 1.3.0-preview
+        - 1.3.1-preview
+        - 1.3.2-preview
+        - 1.4.1
+        - 1.4.2-preview.1
+        - 1.4.2-preview.2
+        - 1.4.2-preview.3
+        - 1.5.0-preview.1
+        - 1.5.0-preview.2
+        - 1.5.0-preview.3
+        - 1.5.0-preview.4
+        - 1.5.0-preview.5
+        - 1.5.0-preview.6
+        - 1.5.0
+        - 1.5.1
+        - 1.5.2-preview.1
+        - 1.5.2-preview.2
+        - 1.5.2
+        - 1.5.3
+        - 1.5.4
+        - 1.6.0-preview.1
+        - 1.6.0-preview.2
+        - 1.6.0-preview.3
+        - 1.6.0-preview.4
+        - 1.6.0-preview.5
+        - 1.6.0-preview.6
+        - 1.6.0-preview.7
+        - 1.6.0-preview.8
+        - 1.6.0-preview.9
+        - 2.0.0
+        - 2.0.2
+        - 2.1.0-preview.1
+        - 2.1.0-preview.2
+        - 2.1.0-preview.3
+        - 2.1.0-preview.4
+        - 3.0.0-preview.1
+        - 3.0.0-preview.2
+        - 3.0.0-preview.3
+        compatible:
+        - 0.9.5-preview.1
+        - 0.9.6-preview.1
+        - 0.9.7-preview.3
+        - 0.9.9-preview.2
+        - 0.9.95-preview
+        - 1.0.0-preview.2
+        - 1.0.1-preview.1
+        - 1.0.9-preview.2
+        - 1.1.0-preview.1
+        - 1.2.0-preview.1
+        - 1.2.1-preview
+        - 1.2.2-preview
+        - 1.2.3-preview
+        - 1.2.4-preview
+        - 1.2.6-preview
+        - 1.2.7-preview
+        - 1.2.8-preview
+        - 1.2.9-preview
+        - 1.3.0-preview
+        - 1.3.1-preview
+        - 1.3.2-preview
+        - 1.4.1
+        - 1.4.2-preview.1
+        - 1.4.2-preview.2
+        - 1.4.2-preview.3
+        - 1.5.0-preview.1
+        - 1.5.0-preview.2
+        - 1.5.0-preview.3
+        - 1.5.0-preview.4
+        - 1.5.0-preview.5
+        - 1.5.0-preview.6
+        - 1.5.0
+        - 1.5.1
+        - 1.5.2-preview.1
+        - 1.5.2-preview.2
+        - 1.5.2
+        - 1.5.3
+        - 1.5.4
+        - 1.6.0-preview.1
+        - 1.6.0-preview.2
+        - 1.6.0-preview.3
+        - 1.6.0-preview.4
+        - 1.6.0-preview.5
+        - 1.6.0-preview.6
+        - 1.6.0-preview.7
+        - 1.6.0-preview.8
+        - 1.6.0-preview.9
+        - 2.0.0
+        - 2.0.2
+        - 2.1.0-preview.1
+        - 2.1.0-preview.2
+        - 2.1.0-preview.3
+        - 2.1.0-preview.4
+        - 3.0.0-preview.1
+        - 3.0.0-preview.2
+        - 3.0.0-preview.3
+        verified: 2.0.2
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - unity
+      - editor
+      - omni
+      - tool
+      - quick
+      - search
+      - assets
+      - menu
+      - scene
+      - api
+      - packages
+      - anything
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637293829350000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.quicksearch.git
+        revision: 4d5c0f54be26662a75c6c9d71d0f5354d4379fe8
         path: 
     - packageId: com.unity.test-framework@1.1.19
       testable: 0
@@ -1136,6 +1336,7 @@ m_PackageAssets:
         - 1.2.15
         - 1.2.16
         - 1.2.17
+        - 1.2.18
         - 1.3.0-preview.2
         - 1.3.0-preview.3
         - 1.3.0-preview.5
@@ -1148,6 +1349,7 @@ m_PackageAssets:
         - 1.3.4
         - 1.3.5
         - 1.3.6
+        - 1.3.7
         - 1.4.0-preview.1
         - 1.4.0-preview.2
         - 1.4.0-preview.3
@@ -1160,6 +1362,7 @@ m_PackageAssets:
         - 1.4.3
         - 1.4.4
         - 1.4.5
+        - 1.4.6
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1169,6 +1372,8 @@ m_PackageAssets:
         - 1.5.1-pre.1
         - 1.5.1-pre.2
         - 1.5.1-pre.3
+        - 1.5.2
+        - 1.6.0-pre.1
         compatible:
         - 1.2.6
         - 1.2.7
@@ -1181,6 +1386,7 @@ m_PackageAssets:
         - 1.2.15
         - 1.2.16
         - 1.2.17
+        - 1.2.18
         - 1.3.0-preview.2
         - 1.3.0-preview.3
         - 1.3.0-preview.5
@@ -1193,6 +1399,7 @@ m_PackageAssets:
         - 1.3.4
         - 1.3.5
         - 1.3.6
+        - 1.3.7
         - 1.4.0-preview.1
         - 1.4.0-preview.2
         - 1.4.0-preview.3
@@ -1205,6 +1412,7 @@ m_PackageAssets:
         - 1.4.3
         - 1.4.4
         - 1.4.5
+        - 1.4.6
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1214,7 +1422,9 @@ m_PackageAssets:
         - 1.5.1-pre.1
         - 1.5.1-pre.2
         - 1.5.1-pre.3
-        verified: 1.4.5
+        - 1.5.2
+        - 1.6.0-pre.1
+        verified: 1.4.6
       dependencies: []
       resolvedDependencies: []
       keywords:
