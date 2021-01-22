@@ -15,11 +15,11 @@ C:/Users/austi/MonsterMaster/MonsterMasterUnity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61845
+63387
 Successfully changed project path to: C:/Users/austi/MonsterMaster/MonsterMasterUnity
 C:/Users/austi/MonsterMaster/MonsterMasterUnity
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.41 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 30.27 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,72 +35,649 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001808 seconds.
+Registered in 0.001535 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.37 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 30.70 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.819 seconds
+- Completed reload, in  0.801 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000967 seconds.
+Registered in 0.000862 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.94 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 31.05 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.734 seconds
+- Completed reload, in  0.733 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1878 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 86.6 MB.
 System memory in use after: 86.7 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2323.
-Total: 1.650400 ms (FindLiveObjects: 0.186500 ms CreateObjectMapping: 0.084500 ms MarkObjects: 1.341300 ms  DeleteObjects: 0.037300 ms)
+Total: 1.769300 ms (FindLiveObjects: 0.180700 ms CreateObjectMapping: 0.083400 ms MarkObjects: 1.466900 ms  DeleteObjects: 0.037500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprites/OakTreeInternal
-  artifactKey: Guid(d9a9dad154a9dab47b117e7ff2d26f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/OakTreeInternal using Guid(d9a9dad154a9dab47b117e7ff2d26f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a5aa5c18eb16ef86e160c1d5a65cf3') in 0.003721 seconds
-  Import took 0.006119 seconds .
+  path: Assets/Scenes/OakTree_EmmasHouse.unity
+  artifactKey: Guid(9379b3dfea37b874c9ea6b2a3426e276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/OakTree_EmmasHouse.unity using Guid(9379b3dfea37b874c9ea6b2a3426e276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce5af8341f370c9922a6240451d88525') in 0.009652 seconds
+  Import took 0.012125 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001216 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.810 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1869 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.4 MB.
-System memory in use after: 86.5 MB.
+Received Import Request.
+  Time since last request: 20.214376 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior
+  artifactKey: Guid(3706a726383025b41b1ded16fee48754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior using Guid(3706a726383025b41b1ded16fee48754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7eda86f0464f32a679adf0d3ce9bf1') in 0.002811 seconds
+  Import took 0.006151 seconds .
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2325.
-Total: 1.736300 ms (FindLiveObjects: 0.204100 ms CreateObjectMapping: 0.080500 ms MarkObjects: 1.435600 ms  DeleteObjects: 0.015200 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 50.154661 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/2464450a-fbbb-4a48-9b70-6f978bcfc4df.png
+  artifactKey: Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/2464450a-fbbb-4a48-9b70-6f978bcfc4df.png using Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e950319ceb36e7953a4b9abc00b7b873') in 0.090280 seconds
+  Import took 0.092991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.979349 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior.png
+  artifactKey: Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior.png using Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f103db794389e7e042e695882849fc03') in 0.014770 seconds
+  Import took 0.017538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.733194 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior.png
+  artifactKey: Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior.png using Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451ee1f23db8c1f9b3ec82d20175ab4f') in 0.032415 seconds
+  Import took 0.035298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038047 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior.png
+  artifactKey: Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior.png using Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451ee1f23db8c1f9b3ec82d20175ab4f') in 0.005164 seconds
+  Import took 0.007954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.767822 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior.png
+  artifactKey: Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior.png using Guid(bee9dac3849eff14d866b1a750fd3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71dd407ebbb1b4b670836d5b84029dce') in 0.215616 seconds
+  Import took 0.218709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 125.801651 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_0.asset
+  artifactKey: Guid(09e100e3e5292824892cc18a19f14678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_0.asset using Guid(09e100e3e5292824892cc18a19f14678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e22884eb0c3b79dbda5994f94a66500') in 0.016799 seconds
+  Import took 0.019586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_10.asset
+  artifactKey: Guid(26cfecc9481c82143a9ead4beef9bc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_10.asset using Guid(26cfecc9481c82143a9ead4beef9bc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030ff925b33d24313e2329d48f6b9120') in 0.006710 seconds
+  Import took 0.009433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_33.asset
+  artifactKey: Guid(ff3ddad46dff2ae45a58bc61e74b3cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_33.asset using Guid(ff3ddad46dff2ae45a58bc61e74b3cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27fbcba6181e85e4067f936f8ac32cb2') in 0.015466 seconds
+  Import took 0.018302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_3.asset
+  artifactKey: Guid(3f5b8ff9f0fd210459e9dadeba8df68d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_3.asset using Guid(3f5b8ff9f0fd210459e9dadeba8df68d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6faf0939c8be8e492135507429fa8d44') in 0.005034 seconds
+  Import took 0.007652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_48.asset
+  artifactKey: Guid(56f616bd2acc5954292bd48385f2e3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_48.asset using Guid(56f616bd2acc5954292bd48385f2e3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abbf432538da5e80540aaa70429e649b') in 0.004864 seconds
+  Import took 0.007195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_4.asset
+  artifactKey: Guid(328ac995c904dbe4b8eb7241a6bd2135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_4.asset using Guid(328ac995c904dbe4b8eb7241a6bd2135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55319f5173b8f7528f0ea439415185f0') in 0.059961 seconds
+  Import took 0.062308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_24.asset
+  artifactKey: Guid(d8b3dc35262bbe848a30d4a3880593b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_24.asset using Guid(d8b3dc35262bbe848a30d4a3880593b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58c13979a9baa667f6cca26437ac885c') in 0.017228 seconds
+  Import took 0.019777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_26.asset
+  artifactKey: Guid(2476f4d48efb4e542a1edc5366f5230c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_26.asset using Guid(2476f4d48efb4e542a1edc5366f5230c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb46740ac65f4b3f108358365eef122d') in 0.014632 seconds
+  Import took 0.017206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_29.asset
+  artifactKey: Guid(399abe84857572740aa2bb706bc38517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_29.asset using Guid(399abe84857572740aa2bb706bc38517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef850c206418ea6273e314a1e02e8a2f') in 0.009363 seconds
+  Import took 0.011820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_57.asset
+  artifactKey: Guid(94ce7a149b82c414181b37f9833e24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_57.asset using Guid(94ce7a149b82c414181b37f9833e24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc80635f7da8873e0b8ba285226b603') in 0.017075 seconds
+  Import took 0.019425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_23.asset
+  artifactKey: Guid(1b11310e650f6a245a377924662e0519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_23.asset using Guid(1b11310e650f6a245a377924662e0519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0268a4b469a35bdd5958812decb2cf54') in 0.016617 seconds
+  Import took 0.018881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_50.asset
+  artifactKey: Guid(60547467e23436f42a025bfcd86b8360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_50.asset using Guid(60547467e23436f42a025bfcd86b8360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f96ac7ae6d76405179b5814a8e349a2') in 0.008190 seconds
+  Import took 0.010575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_64.asset
+  artifactKey: Guid(fc8adacfe2ad7f642a0bb66e90e9cd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_64.asset using Guid(fc8adacfe2ad7f642a0bb66e90e9cd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838634d885c5ddd9a70ef5498c3448d9') in 0.004580 seconds
+  Import took 0.007064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_60.asset
+  artifactKey: Guid(19ffdc9306231034fa334b917cac4c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_60.asset using Guid(19ffdc9306231034fa334b917cac4c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e7e82a686034b4cf323d4ecee801b0') in 0.004634 seconds
+  Import took 0.006868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_30.asset
+  artifactKey: Guid(7ad74f8d469ff7040922da97d7b2ba33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_30.asset using Guid(7ad74f8d469ff7040922da97d7b2ba33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9473ebfee3c68630ac38ff02ca634e') in 0.004690 seconds
+  Import took 0.007319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_38.asset
+  artifactKey: Guid(3acb00b8173ad1842a185bf08944d528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_38.asset using Guid(3acb00b8173ad1842a185bf08944d528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6ee3a5497fc5297b34c866152facc3') in 0.005344 seconds
+  Import took 0.007808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_47.asset
+  artifactKey: Guid(6d8cc8880ff581c448ae7c9bcb05a2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_47.asset using Guid(6d8cc8880ff581c448ae7c9bcb05a2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cde8dffd2fe52321ae583d48143ecf') in 0.004493 seconds
+  Import took 0.006798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_31.asset
+  artifactKey: Guid(e081e5fafb724484ca598171e664fd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_31.asset using Guid(e081e5fafb724484ca598171e664fd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c5aa6eddbd9bbcc79e99bed29494de') in 0.004385 seconds
+  Import took 0.006700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_44.asset
+  artifactKey: Guid(8e80f1def9fb2fa4fa9498de029a2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_44.asset using Guid(8e80f1def9fb2fa4fa9498de029a2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0dfe96fc1f0352b6687a731d2846d3') in 0.004587 seconds
+  Import took 0.006996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_25.asset
+  artifactKey: Guid(c691f9c4bd20d4349825c48b87b557d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_25.asset using Guid(c691f9c4bd20d4349825c48b87b557d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7f53c5122055d61836b82b9593b2be') in 0.004981 seconds
+  Import took 0.007449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_41.asset
+  artifactKey: Guid(80e12612128089443a7c6e1bf6bde6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_41.asset using Guid(80e12612128089443a7c6e1bf6bde6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61636388864d2d4ee9e2621d0b8f75c3') in 0.004161 seconds
+  Import took 0.006512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_22.asset
+  artifactKey: Guid(f0021cefcd02f3d40a12a0556cbaecce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_22.asset using Guid(f0021cefcd02f3d40a12a0556cbaecce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '228d0117622413fb881ed1b6390a88bf') in 0.005213 seconds
+  Import took 0.008035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_11.asset
+  artifactKey: Guid(e59db9cd66ee6044996b77c2ef511a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_11.asset using Guid(e59db9cd66ee6044996b77c2ef511a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf2918ad6a931310cd7c156ddf3078a') in 0.004238 seconds
+  Import took 0.006710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_58.asset
+  artifactKey: Guid(70d88f4e1cc17ee4db46c1606894eeb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_58.asset using Guid(70d88f4e1cc17ee4db46c1606894eeb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18290a867232ec16d91f9d7b4344b878') in 0.004968 seconds
+  Import took 0.007289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_45.asset
+  artifactKey: Guid(b4bc074c64ef68c49942737cee5d21f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_45.asset using Guid(b4bc074c64ef68c49942737cee5d21f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab00d8170c02090197081135451770a') in 0.007117 seconds
+  Import took 0.009800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_52.asset
+  artifactKey: Guid(62f8d6b884d28464d9d94b8de273dfe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_52.asset using Guid(62f8d6b884d28464d9d94b8de273dfe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071c36dfd54b50924726113203d9d634') in 0.004849 seconds
+  Import took 0.007640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_61.asset
+  artifactKey: Guid(4d24da78a5a095d46973d307c77c44e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_61.asset using Guid(4d24da78a5a095d46973d307c77c44e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e0f42342a2a51190717d26b8dabfa8') in 0.004576 seconds
+  Import took 0.006940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_67.asset
+  artifactKey: Guid(802f6fd871877a24881bed814aa8ccf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_67.asset using Guid(802f6fd871877a24881bed814aa8ccf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '833f04179c283e2fd1fa6a2748f31fe3') in 0.005124 seconds
+  Import took 0.007524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_13.asset
+  artifactKey: Guid(af5d47ed9649f264b96741a19fafa6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_13.asset using Guid(af5d47ed9649f264b96741a19fafa6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29d0efe066a080f617603a4b5fa4a92') in 0.004791 seconds
+  Import took 0.007379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_27.asset
+  artifactKey: Guid(1c02b7d2dc1d4e44197dc0998b983d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_27.asset using Guid(1c02b7d2dc1d4e44197dc0998b983d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5546421572448f1b4e968fc3f884c99') in 0.004497 seconds
+  Import took 0.006848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_54.asset
+  artifactKey: Guid(d93dcc67e2945c84e89bca031a91cc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_54.asset using Guid(d93dcc67e2945c84e89bca031a91cc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e38cb3fd74180823cc145c1ba3168fb5') in 0.004080 seconds
+  Import took 0.006408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_14.asset
+  artifactKey: Guid(31a0add7192a3b3469cec647096e95be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_14.asset using Guid(31a0add7192a3b3469cec647096e95be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b437e63797ec82bc5545f68b423da531') in 0.004405 seconds
+  Import took 0.007082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_15.asset
+  artifactKey: Guid(a1f470617de6a0f44aaba14f1fc639e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_15.asset using Guid(a1f470617de6a0f44aaba14f1fc639e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fb9524ed5a0df9d7a3a26023ca2247') in 0.004660 seconds
+  Import took 0.007178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_55.asset
+  artifactKey: Guid(2d35b3ea534ea314386f661cb3cb8fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_55.asset using Guid(2d35b3ea534ea314386f661cb3cb8fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd2004a22ec95bea71a1bddbc44dbff7') in 0.005037 seconds
+  Import took 0.007320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_17.asset
+  artifactKey: Guid(5363a05db3d998a47b78990cb586ba63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_17.asset using Guid(5363a05db3d998a47b78990cb586ba63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86416310ea8dbc11851b8310fad474a2') in 0.004382 seconds
+  Import took 0.006724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_34.asset
+  artifactKey: Guid(4f099277432098642bba772f7cab97e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_34.asset using Guid(4f099277432098642bba772f7cab97e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c31f90ab779314e0af3015d9844070') in 0.005100 seconds
+  Import took 0.007707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_5.asset
+  artifactKey: Guid(5b2feb9bd0328be42baf1b11b6b82b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_5.asset using Guid(5b2feb9bd0328be42baf1b11b6b82b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e353b8dede63d3acf5ab51b8a56efa6') in 0.004624 seconds
+  Import took 0.007139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_18.asset
+  artifactKey: Guid(72f0215f0d774cf45ac8b60dbe6c6175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_18.asset using Guid(72f0215f0d774cf45ac8b60dbe6c6175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414bc8a3e9ab32081199afbbe6c27915') in 0.004502 seconds
+  Import took 0.006947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_7.asset
+  artifactKey: Guid(3305cfa1d96139c49bedb6e3c38d175c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_7.asset using Guid(3305cfa1d96139c49bedb6e3c38d175c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b707fafdb9020bcf06743683e35f6f') in 0.005312 seconds
+  Import took 0.009002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_59.asset
+  artifactKey: Guid(3fa62a7f48c1ab94a816da74ce294489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_59.asset using Guid(3fa62a7f48c1ab94a816da74ce294489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b533065c25566f4f8119a91c80a4b631') in 0.004671 seconds
+  Import took 0.007367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_19.asset
+  artifactKey: Guid(0990bb1edcb043d43aae1f6925dd75bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_19.asset using Guid(0990bb1edcb043d43aae1f6925dd75bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65960402bc440a52930c2f732efc2a93') in 0.004208 seconds
+  Import took 0.006951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_36.asset
+  artifactKey: Guid(e2624eab531d9ba4282fc85f696367f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_36.asset using Guid(e2624eab531d9ba4282fc85f696367f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2442802c993c17d6d426195cf02b3de6') in 0.005354 seconds
+  Import took 0.008372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_39.asset
+  artifactKey: Guid(5bfb8d690f662d747ac7bb0f3ffc3a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_39.asset using Guid(5bfb8d690f662d747ac7bb0f3ffc3a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6246aed5903b0e9ff6a6eaab7590ebc5') in 0.004505 seconds
+  Import took 0.007467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_28.asset
+  artifactKey: Guid(d0aead3a76e1e284fb0488aae07ff3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_28.asset using Guid(d0aead3a76e1e284fb0488aae07ff3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708d7e6aa4042d4b810fbd1caf057a3b') in 0.005165 seconds
+  Import took 0.008227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_53.asset
+  artifactKey: Guid(000567191b039ad4c855aa73fc44bbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_53.asset using Guid(000567191b039ad4c855aa73fc44bbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '512085de330f6c17b879924769a0ed78') in 0.006174 seconds
+  Import took 0.009927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_37.asset
+  artifactKey: Guid(29810fba6ca1ac247935777dd01df12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_37.asset using Guid(29810fba6ca1ac247935777dd01df12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984e9d5c227e8b863756cccd1a326672') in 0.004985 seconds
+  Import took 0.008076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_2.asset
+  artifactKey: Guid(e10fa23538ba8c94f9baec8a383c8d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_2.asset using Guid(e10fa23538ba8c94f9baec8a383c8d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a5133d64c3156c2388883538401461') in 0.004492 seconds
+  Import took 0.007184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_62.asset
+  artifactKey: Guid(f80d40b281aa18f4d9e96a2859b21b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_62.asset using Guid(f80d40b281aa18f4d9e96a2859b21b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9310b52d672e198b315a5d78e7189def') in 0.004534 seconds
+  Import took 0.007724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_35.asset
+  artifactKey: Guid(1cde9935c531f7a4eb9247515e00a40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_35.asset using Guid(1cde9935c531f7a4eb9247515e00a40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105474933d5a671b9815a952f0ddc5ff') in 0.004951 seconds
+  Import took 0.008127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_66.asset
+  artifactKey: Guid(2d4de5521326ae0429c01d0e6fc86bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_66.asset using Guid(2d4de5521326ae0429c01d0e6fc86bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a21b35360a8199c9a970093285b4699') in 0.004545 seconds
+  Import took 0.007280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_42.asset
+  artifactKey: Guid(eaa4848e6e5abfa428499e7fa8f23fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_42.asset using Guid(eaa4848e6e5abfa428499e7fa8f23fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8720a26325a530895042cb8a80e7b3') in 0.004449 seconds
+  Import took 0.006994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_1.asset
+  artifactKey: Guid(ab1f82a884943bf43934dfcfe92455e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_1.asset using Guid(ab1f82a884943bf43934dfcfe92455e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56a495cd3d607d83a392173d43f39a4') in 0.005399 seconds
+  Import took 0.008135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_46.asset
+  artifactKey: Guid(8c336ed839765694bac205646d3849e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_46.asset using Guid(8c336ed839765694bac205646d3849e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ce5fd857d553347a63d0c1b3bf1489') in 0.004480 seconds
+  Import took 0.006987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_6.asset
+  artifactKey: Guid(a769219a82409ca46879af05de660ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_6.asset using Guid(a769219a82409ca46879af05de660ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9206a7f3c55838552f2d2cedf88ec318') in 0.004807 seconds
+  Import took 0.007494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_56.asset
+  artifactKey: Guid(a6357d875da64004fb9c145a4d2d8e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_56.asset using Guid(a6357d875da64004fb9c145a4d2d8e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bdb32bf05f7e45698e0df4eee152a5b') in 0.005230 seconds
+  Import took 0.008137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_43.asset
+  artifactKey: Guid(825c4662817af3346bdd7e981dd9bd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_43.asset using Guid(825c4662817af3346bdd7e981dd9bd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4875ae44afb0c72a0c3b596837731012') in 0.004902 seconds
+  Import took 0.007505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_8.asset
+  artifactKey: Guid(88397eb9b6cf55c49a695c3b3d258d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_8.asset using Guid(88397eb9b6cf55c49a695c3b3d258d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf73e23ea2221cff82c0d34eb49e52b') in 0.004407 seconds
+  Import took 0.007036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_16.asset
+  artifactKey: Guid(e69a6bf293fb0ad4a95f6d0d0ac10258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_16.asset using Guid(e69a6bf293fb0ad4a95f6d0d0ac10258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a315553de1a3e2acd345f1078c8849') in 0.004865 seconds
+  Import took 0.007374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_21.asset
+  artifactKey: Guid(ad6e50a475cb5764a9ac31a158c0b3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_21.asset using Guid(ad6e50a475cb5764a9ac31a158c0b3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748f568c984acc9a02817454429e1ff4') in 0.004928 seconds
+  Import took 0.007927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_49.asset
+  artifactKey: Guid(2c28ce0372906ff4d8edc9e724ea7fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_49.asset using Guid(2c28ce0372906ff4d8edc9e724ea7fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da831f760234fa64a7b6aaa38a0c261') in 0.004959 seconds
+  Import took 0.007680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_65.asset
+  artifactKey: Guid(3770a7a4474bbd945b17c7693f01e52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_65.asset using Guid(3770a7a4474bbd945b17c7693f01e52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8ef0693fe50bd9cbb9464b39d57a16') in 0.005183 seconds
+  Import took 0.008560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_20.asset
+  artifactKey: Guid(e8e822f737e3093428be377751c1492c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_20.asset using Guid(e8e822f737e3093428be377751c1492c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4641b5622f4a292c901f859e131db75a') in 0.005925 seconds
+  Import took 0.009027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_51.asset
+  artifactKey: Guid(c2bd802abda94de41863c22d230111dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_51.asset using Guid(c2bd802abda94de41863c22d230111dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ba6c3d903dbd7229207e7bf8cdef07') in 0.004513 seconds
+  Import took 0.007203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_32.asset
+  artifactKey: Guid(f44939950a36aa542a930a354d70ad55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_32.asset using Guid(f44939950a36aa542a930a354d70ad55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b150f4ba71aed2868d1fb9de8e4592') in 0.005484 seconds
+  Import took 0.008179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_40.asset
+  artifactKey: Guid(fdf158834d9208e47859c8a431d6ea53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_40.asset using Guid(fdf158834d9208e47859c8a431d6ea53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b26872c503b3f233e09b707322cfe00') in 0.005508 seconds
+  Import took 0.009004 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_9.asset
+  artifactKey: Guid(ecfe111926552814e919e8860cd53206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_9.asset using Guid(ecfe111926552814e919e8860cd53206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a89b2f222b7c09214701d531a7b8f7') in 0.005035 seconds
+  Import took 0.007763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_12.asset
+  artifactKey: Guid(4a65261d442072a4fab5d4ca1c0776db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_12.asset using Guid(4a65261d442072a4fab5d4ca1c0776db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74932de9359b358e817fda10970a70ec') in 0.004682 seconds
+  Import took 0.007269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_63.asset
+  artifactKey: Guid(d49065f45a44c7b4f9e0fcfcf9e9679d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileMapSprites/OakTreeHouseInterior/OakTreeBuildingInterior_63.asset using Guid(d49065f45a44c7b4f9e0fcfcf9e9679d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c38ab0b144215eda0cb7693e820f042') in 0.005505 seconds
+  Import took 0.008373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 685.883723 seconds.
+  path: Assets/PersistentObjects/LevelTransitionObject.prefab
+  artifactKey: Guid(9aa1e75396e4d084988cbd3accd11026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PersistentObjects/LevelTransitionObject.prefab using Guid(9aa1e75396e4d084988cbd3accd11026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf2f4787697ee6392a88edb409af3c8e') in 0.031469 seconds
+  Import took 0.034678 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
