@@ -16,10 +16,11 @@ public class LevelTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(transform.position.x == adjacentTransform.position.x && transform.position.y == adjacentTransform.position.y && Input.GetMouseButtonDown(0))
         if((transform.position - adjacentTransform.position).sqrMagnitude < 0.1f && Input.GetAxis("Select") > .1f)
         {
             SceneManager.LoadScene(nextSceneName);
         }
+
+
     }
 }
