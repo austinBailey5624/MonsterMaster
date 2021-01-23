@@ -94,6 +94,7 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - - [ ] Sprites for Shoes
  - - [ ] Sprites for Belts
  - - [ ] Sprites for Hats
+ - [ ] Implement persistence with treasure chest
  
 
  
