@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
-    private Sprite defaultSprite;
+    protected Sprite defaultSprite;
     public Sprite hoverSprite;
 
     void Start()

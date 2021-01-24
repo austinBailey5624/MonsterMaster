@@ -65,6 +65,7 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - - [ ] Name selector
  - - [ ] Intro Scenimatic
  - - [ ] Pause Menu
+ - - - On base pause menu page, move buttons to left, make mark on right, replace options with Journal, and mark with Options
  - - [ ] Encyclopedia
  - - [ ] Bestiary Main Page
  - [ ] Fix transition placement between scenes using singletons
