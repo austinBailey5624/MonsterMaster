@@ -13,6 +13,8 @@ public class GuyController : MonoBehaviour
     float travelDown;
     bool facingLeft;
 
+
+
     void Start()
     {
         travelLeft = 0;
@@ -20,6 +22,7 @@ public class GuyController : MonoBehaviour
         travelUp = 0;
         travelDown = 0;
         facingLeft = false;
+        transform.position = GameSaveManager.playerPositionBySceneName[SceneManager.GetActiveScene().name];
     }
 
     void Update()
@@ -108,6 +111,8 @@ public class GuyController : MonoBehaviour
 
         if (Input.GetAxis("Return")>.1f || Input.GetAxis("Cancel")>.1f)
         {
+            string sceneName = SceneManager.GetActiveScene().name;
+            GameSaveManager.playerPositionBySceneName[sceneName] = transform.position;
             SceneManager.LoadScene("PauseMenu");
         }
     }

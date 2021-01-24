@@ -16,7 +16,6 @@ public class ButtonController : MonoBehaviour
     void OnMouseEnter()
     {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = hoverSprite;
-        Debug.Log("Entered");
     }
 
     void OnMouseExit()

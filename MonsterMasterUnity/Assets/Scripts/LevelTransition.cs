@@ -18,9 +18,9 @@ public class LevelTransition : MonoBehaviour
     {
         if((transform.position - adjacentTransform.position).sqrMagnitude < 0.1f && Input.GetAxis("Select") > .1f)
         {
+            string sceneName = SceneManager.GetActiveScene().name;
+            GameSaveManager.playerPositionBySceneName[sceneName] = transform.position;
             SceneManager.LoadScene(nextSceneName);
         }
-
-
     }
 }
