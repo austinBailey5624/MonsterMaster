@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class GuyController : MonoBehaviour
 {
@@ -105,5 +105,10 @@ public class GuyController : MonoBehaviour
 
   
         transform.position = position;
+
+        if (Input.GetAxis("Return")>.1f || Input.GetAxis("Cancel")>.1f)
+        {
+            SceneManager.LoadScene("PauseMenu");
+        }
     }
 }
