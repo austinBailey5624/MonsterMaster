@@ -9,6 +9,9 @@ public class ButtonSceneTransition : ButtonController
 
     void OnMouseUp()
     {
-        SceneManager.LoadScene(nextSceneName);
+        if (nextSceneName.Length > 1)
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
     }
 }

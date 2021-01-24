@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonController : MonoBehaviour
+public class ButtonController : MonoBehaviour 
 {
     protected Sprite defaultSprite;
     public Sprite hoverSprite;
@@ -16,6 +16,7 @@ public class ButtonController : MonoBehaviour
     void OnMouseEnter()
     {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = hoverSprite;
+        Debug.Log("Entered");
     }
 
     void OnMouseExit()
