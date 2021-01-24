@@ -1081,6 +1081,7 @@ GameObject:
   - component: {fileID: 1752656550}
   - component: {fileID: 1752656552}
   - component: {fileID: 1752656553}
+  - component: {fileID: 1752656554}
   m_Layer: 0
   m_Name: LoadGameButton
   m_TagString: Untagged
@@ -1192,6 +1193,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: acb1ff48effaa3646a3ce94fd7fbb414, type: 3}
+--- !u!114 &1752656554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752656549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: acb1ff48effaa3646a3ce94fd7fbb414, type: 3}
+  nextSceneName: LoadMenu
 --- !u!1 &1980880662
 GameObject:
   m_ObjectHideFlags: 0
