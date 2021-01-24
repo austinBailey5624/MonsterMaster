@@ -68,7 +68,7 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - - [ ] Encyclopedia
  - - [ ] Bestiary Main Page
  - [ ] Fix transition placement between scenes using singletons
- - [ ] Fix character movement flipping sprites on movement left
+ - [x] Fix character movement flipping sprites on movement left
  - [ ] Create new Scenes for OakTree houses
  - - [ ] Brahms House
  - - [ ] Barracks

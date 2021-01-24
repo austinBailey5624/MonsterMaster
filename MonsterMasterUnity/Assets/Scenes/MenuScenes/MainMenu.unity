@@ -155,7 +155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: 16dd6f4c4ac408c4db49cba10c48a840, type: 3}
-  renderer: {fileID: 0}
 --- !u!212 &189043761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -279,7 +278,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: 533e5f223b3b96f44b837b96025b0247, type: 3}
-  renderer: {fileID: 0}
 --- !u!212 &1053149049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -665,8 +663,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1787852612}
   - component: {fileID: 1787852611}
-  - component: {fileID: 1787852610}
   - component: {fileID: 1787852613}
+  - component: {fileID: 1787852610}
   m_Layer: 0
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -683,11 +681,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1787852609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: 8e4c9b216dde1634fa02f8a583452985, type: 3}
-  renderer: {fileID: 0}
+  nextSceneName: OakTree
 --- !u!212 &1787852611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -811,7 +809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: a32cb9618a5c84840b98f58a82389188, type: 3}
-  renderer: {fileID: 0}
 --- !u!212 &1991355038
 SpriteRenderer:
   m_ObjectHideFlags: 0

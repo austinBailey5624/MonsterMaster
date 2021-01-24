@@ -11,6 +11,7 @@ public class GuyController : MonoBehaviour
     float travelRight;
     float travelUp;
     float travelDown;
+    bool facingLeft;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class GuyController : MonoBehaviour
         travelRight = 0;
         travelUp = 0;
         travelDown = 0;
+        facingLeft = false;
     }
 
     void Update()
@@ -32,18 +34,22 @@ public class GuyController : MonoBehaviour
             if (horizontal > 0.0f) //right
             {
                 travelRight = tileSize;
+                facingLeft = false;
             }
             else if (horizontal < 0.0f) //left
             {
                 travelLeft = tileSize;
+                facingLeft = true;
             }
             if (vertical > 0.0f)//Up
             {
                 travelUp = tileSize;
+                facingLeft = false;
             }
             else if (vertical < 0.0f)//down
             {
                 travelDown = tileSize;
+                facingLeft = false;
             }
         }
         bool movingLeft = false;
@@ -51,7 +57,7 @@ public class GuyController : MonoBehaviour
         bool movingUp = false;
         bool movingDown = false;
 
-        if(travelLeft >0)
+        if(travelLeft > 0)
         {
             movingLeft = true;
             position.x = position.x - speed;
@@ -84,6 +90,18 @@ public class GuyController : MonoBehaviour
         animator.SetBool("movingRight", movingRight);
         animator.SetBool("movingBack",movingUp);
         animator.SetBool("movingForwards", movingDown);
+        if(facingLeft)
+        {
+            Vector3 characterScale = transform.localScale;
+            characterScale.x = -1;
+            transform.localScale = characterScale;
+        }
+        else
+        {
+            Vector3 characterScale = transform.localScale;
+            characterScale.x = 1;
+            transform.localScale = characterScale;
+        }
 
   
         transform.position = position;
