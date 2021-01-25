@@ -10,7 +10,7 @@ public class LevelTransition : MonoBehaviour
 
     void Update()
     {
-        if((transform.position - adjacentTransform.position).sqrMagnitude < 0.1f && Input.GetAxis("Select") > .1f)
+        if((transform.position - adjacentTransform.position).sqrMagnitude < 0.1f && Input.GetAxis("Submit") > .1f)
         {
             string sceneName = SceneManager.GetActiveScene().name;
             GameState.previousSceneName = sceneName;

@@ -61,14 +61,13 @@ pixelated characters mucking about than a few really pretty characters with a ve
 
 ## To Do List
  - [ ] Reincoporate Rooms from old game maker version as menus in Unity version
- - - [ ] Main Menu
+ - - [x] Main Menu
  - - [ ] Name selector
  - - [ ] Intro Scenimatic
- - - [ ] Pause Menu
- - - - On base pause menu page, move buttons to left, make mark on right, replace options with Journal, and mark with Options
+ - - [x] Pause Menu
  - - [ ] Encyclopedia
  - - [ ] Bestiary Main Page
- - [ ] Fix transition placement between scenes using singletons
+ - [x] Fix transition placement between scenes using singletons
  - [x] Fix character movement flipping sprites on movement left
  - [ ] Create new Scenes for OakTree houses
  - - [ ] Brahms House
@@ -96,6 +95,8 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - - [ ] Sprites for Belts
  - - [ ] Sprites for Hats
  - [ ] Implement persistence with treasure chest
+ - [ ] Switch Sand and Phoenix subelements
+ - [ ] Replace Swamp subelement with plant subelement
  
 
  

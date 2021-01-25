@@ -113,7 +113,7 @@ public class MainCharacterController : MonoBehaviour
   
         transform.position = position;
 
-        if (Input.GetAxis("Return")>.1f || Input.GetAxis("Cancel")>.1f)
+        if (Input.GetAxis("Cancel")>.1f)
         {
             string sceneName = SceneManager.GetActiveScene().name;
             GameState.previousSceneName = sceneName;
