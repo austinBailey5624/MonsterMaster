@@ -7,19 +7,14 @@ public class LevelTransition : MonoBehaviour
 {
     public Transform adjacentTransform;
     public string nextSceneName;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if((transform.position - adjacentTransform.position).sqrMagnitude < 0.1f && Input.GetAxis("Select") > .1f)
         {
             string sceneName = SceneManager.GetActiveScene().name;
-            GameSaveManager.playerPositionBySceneName[sceneName] = transform.position;
+            GameState.previousSceneName = sceneName;
+            GameState.playerPositionBySceneName[sceneName] = transform.position;
             SceneManager.LoadScene(nextSceneName);
         }
     }

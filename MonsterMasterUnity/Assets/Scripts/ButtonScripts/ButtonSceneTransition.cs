@@ -9,7 +9,13 @@ public class ButtonSceneTransition : ButtonController
 
     void OnMouseUp()
     {
-        if (nextSceneName.Length > 1)
+        string gotoSceneName = GameState.previousSceneName;
+        GameState.previousSceneName = SceneManager.GetActiveScene().name;
+        if (nextSceneName.Equals("previousScene"))
+        {
+            SceneManager.LoadScene(gotoSceneName);
+        }
+        else if (nextSceneName.Length > 1)
         {
             SceneManager.LoadScene(nextSceneName);
         }
