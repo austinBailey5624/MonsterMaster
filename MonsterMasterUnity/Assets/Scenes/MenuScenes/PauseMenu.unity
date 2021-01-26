@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
-  nextSceneName: 
+  nextSceneName: EncyclopediaMenu
 --- !u!1 &999963501
 GameObject:
   m_ObjectHideFlags: 0

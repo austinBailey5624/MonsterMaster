@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/MenuScenes/PauseMenu.unity
+- path: Assets/Scenes/MenuScenes/EncyclopediaMenu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

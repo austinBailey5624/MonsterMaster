@@ -106,6 +106,8 @@
     {"id":{"name":"sprite_Herbisaur_Forwards","path":"sprites/sprite_Herbisaur_Forwards/sprite_Herbisaur_Forwards.yy",},"order":1,},
     {"id":{"name":"sprite_Herbisaur_Backwards","path":"sprites/sprite_Herbisaur_Backwards/sprite_Herbisaur_Backwards.yy",},"order":3,},
     {"id":{"name":"sprite_Herbisaur_Left","path":"sprites/sprite_Herbisaur_Left/sprite_Herbisaur_Left.yy",},"order":5,},
+    {"id":{"name":"sprite_newPauseMenu_108_25Selected","path":"sprites/sprite_newPauseMenu_108_25Selected/sprite_newPauseMenu_108_25Selected.yy",},"order":18,},
+    {"id":{"name":"sprite_newPauseMenu_108_25","path":"sprites/sprite_newPauseMenu_108_25/sprite_newPauseMenu_108_25.yy",},"order":17,},
     {"id":{"name":"sprite_Herbisaur_Right","path":"sprites/sprite_Herbisaur_Right/sprite_Herbisaur_Right.yy",},"order":7,},
     {"id":{"name":"sprite_Tyrant_Forwards","path":"sprites/sprite_Tyrant_Forwards/sprite_Tyrant_Forwards.yy",},"order":1,},
     {"id":{"name":"sprite_Tyrant_Backwards","path":"sprites/sprite_Tyrant_Backwards/sprite_Tyrant_Backwards.yy",},"order":3,},
