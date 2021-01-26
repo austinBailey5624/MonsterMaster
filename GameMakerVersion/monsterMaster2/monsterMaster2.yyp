@@ -1155,6 +1155,7 @@
     {"id":{"name":"monsterType_AquaSymbol","path":"objects/monsterType_AquaSymbol/monsterType_AquaSymbol.yy",},"order":7,},
     {"id":{"name":"monsterType_Slicefinn","path":"objects/monsterType_Slicefinn/monsterType_Slicefinn.yy",},"order":9,},
     {"id":{"name":"monsterType_Snugglerfish","path":"objects/monsterType_Snugglerfish/monsterType_Snugglerfish.yy",},"order":11,},
+    {"id":{"name":"sprite_Feind_ForwardsNew","path":"sprites/sprite_Feind_ForwardsNew/sprite_Feind_ForwardsNew.yy",},"order":8,},
     {"id":{"name":"monsterType_Torquoise","path":"objects/monsterType_Torquoise/monsterType_Torquoise.yy",},"order":13,},
     {"id":{"name":"monsterType_AquaElemental","path":"objects/monsterType_AquaElemental/monsterType_AquaElemental.yy",},"order":15,},
     {"id":{"name":"monsterType_BlueDragon","path":"objects/monsterType_BlueDragon/monsterType_BlueDragon.yy",},"order":17,},
