@@ -1443,7 +1443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: acb1ff48effaa3646a3ce94fd7fbb414, type: 3}
-  nextSceneName: Oaktree
+  nextSceneName: CharacterCreatorMenu
 --- !u!212 &2128948455
 SpriteRenderer:
   m_ObjectHideFlags: 0

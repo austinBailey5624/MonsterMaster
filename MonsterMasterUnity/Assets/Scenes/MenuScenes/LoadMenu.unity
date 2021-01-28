@@ -1900,7 +1900,7 @@ GameObject:
   - component: {fileID: 1852794147}
   - component: {fileID: 1852794146}
   m_Layer: 5
-  m_Name: SaveFileText2 (1)
+  m_Name: SaveFileText3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
