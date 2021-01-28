@@ -87,16 +87,16 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - - [ ] Cave for dark creatures
  - [ ] Design multisprite system to construct NPC/Players with
  - - [ ] Base Female Sprite
- - - [ ] Sprites for hair
- - - [ ] Sprites for eyes
- - - [ ] Sprites for shirts
- - - [ ] Sprites for Pants/dresses
- - - [ ] Sprites for Shoes
- - - [ ] Sprites for Belts
- - - [ ] Sprites for Hats
+ - - [x] Sprites for hair
+ - - [x]Sprites for eyes
+ - - [x] Sprites for shirts
+ - - [x] Sprites for Pants/dresses
+ - - [x] Sprites for Shoes
+ - - [ ] Sprites for Belts(Cancelled)
+ - - [ ] Sprites for Hats(OnHold)
  - [ ] Implement persistence with treasure chest
  - [ ] Switch Sand and Phoenix subelements
- - [ ] Replace Swamp subelement with plant subelement
+ - [ ] Replace Swamp subelement with Plant subelement
  
 
  
@@ -274,5 +274,5 @@ pixelated characters mucking about than a few really pretty characters with a ve
  - [ ] Write Wiki page for Tom Walker
  - [ ] Write Wiki page for Faust
  
- @Copyright 2016-2018 Austin Bailey all rights reserved
+ @Copyright 2016-2022 Austin Bailey all rights reserved
  

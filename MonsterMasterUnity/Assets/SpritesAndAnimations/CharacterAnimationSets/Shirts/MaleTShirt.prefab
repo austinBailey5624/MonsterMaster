@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6985951259284888006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6029957211087378881}
+  - component: {fileID: -9158251546732670850}
+  m_Layer: 0
+  m_Name: MaleTShirt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6029957211087378881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6985951259284888006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-9158251546732670850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6985951259284888006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036d61fbd393a544a96a087273f74d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftIsRightReversed: 1
+  frontSprites:
+  - {fileID: 21300000, guid: faf45fb6f65fa7d4a92232ca8b51f3b6, type: 3}
+  - {fileID: 21300000, guid: 9743c0ba0e204bf4b827113d57798b24, type: 3}
+  - {fileID: 21300000, guid: faf45fb6f65fa7d4a92232ca8b51f3b6, type: 3}
+  - {fileID: 21300000, guid: 37fa259e5af786043a1891465a6d38a8, type: 3}
+  backSprites:
+  - {fileID: 21300000, guid: 3795ec27142a1b6448989a41229f084d, type: 3}
+  - {fileID: 21300000, guid: f7edd1c9de276284ca69d1e35ccf9190, type: 3}
+  - {fileID: 21300000, guid: 3795ec27142a1b6448989a41229f084d, type: 3}
+  - {fileID: 21300000, guid: f7edd1c9de276284ca69d1e35ccf9190, type: 3}
+  rightSprites:
+  - {fileID: 21300000, guid: 6025e197d81590747a3068695087d84c, type: 3}
+  - {fileID: 21300000, guid: 9dbac42695c72ef47814d30af4128544, type: 3}
+  - {fileID: 21300000, guid: 6025e197d81590747a3068695087d84c, type: 3}
+  - {fileID: 21300000, guid: a29fe7f67eeef9543a9654ecf2e66d07, type: 3}
+  leftSprites: []
