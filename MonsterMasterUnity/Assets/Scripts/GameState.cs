@@ -6,7 +6,8 @@ public class GameState : MonoBehaviour
 {
     public static GameState gameSave;
     public static Dictionary<string, Vector2> playerPositionBySceneName = new Dictionary<string, Vector2>();
-    public static string previousSceneName;
+    public static string previousPlaceName;
+    public static string previousMenuName;
   
     private void Awake()
     {

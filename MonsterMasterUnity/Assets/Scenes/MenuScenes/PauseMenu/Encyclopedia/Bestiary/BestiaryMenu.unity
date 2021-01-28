@@ -1846,7 +1846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: ae598844527b10f4b9c1a197f2ca5950, type: 3}
-  nextSceneName: previousScene
+  nextSceneName: EncyclopediaMenu
 --- !u!212 &499358950
 SpriteRenderer:
   m_ObjectHideFlags: 0

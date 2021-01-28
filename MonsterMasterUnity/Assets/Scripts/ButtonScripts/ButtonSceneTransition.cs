@@ -9,11 +9,25 @@ public class ButtonSceneTransition : ButtonController
 
     void OnMouseUp()
     {
-        string gotoSceneName = GameState.previousSceneName;
-        GameState.previousSceneName = SceneManager.GetActiveScene().name;
-        if (nextSceneName.Equals("previousScene"))
+        string tempPrevPlace = GameState.previousPlaceName;
+        string tempPrevMenu = GameState.previousMenuName;
+        string activeSceneName = SceneManager.GetActiveScene().name;
+        if (activeSceneName.Contains("Menu") || activeSceneName.Contains("menu"))
         {
-            SceneManager.LoadScene(gotoSceneName);
+            GameState.previousMenuName = activeSceneName;
+        }
+        else
+        {
+            GameState.previousPlaceName = activeSceneName;
+        }
+        
+        if (nextSceneName.Equals("previousPlace"))
+        {
+            SceneManager.LoadScene(tempPrevPlace);
+        }
+        else if(nextSceneName.Equals("previousMenu"))
+        {
+            SceneManager.LoadScene(tempPrevMenu);
         }
         else if (nextSceneName.Length > 1)
         {

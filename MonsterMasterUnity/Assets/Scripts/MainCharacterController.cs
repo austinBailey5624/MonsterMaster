@@ -116,7 +116,7 @@ public class MainCharacterController : MonoBehaviour
         if (Input.GetAxis("Cancel")>.1f)
         {
             string sceneName = SceneManager.GetActiveScene().name;
-            GameState.previousSceneName = sceneName;
+            GameState.previousPlaceName = sceneName;
             GameState.playerPositionBySceneName[sceneName] = transform.position;
             SceneManager.LoadScene("PauseMenu");
         }

@@ -2120,7 +2120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: ae598844527b10f4b9c1a197f2ca5950, type: 3}
-  nextSceneName: previousScene
+  nextSceneName: previousMenu
 --- !u!61 &1905255585
 BoxCollider2D:
   m_ObjectHideFlags: 0
