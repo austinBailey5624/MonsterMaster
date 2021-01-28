@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprite_FSPauseMenu_BestiaryElementTag","path":"sprites/sprite_FSPauseMenu_BestiaryElementTag/sprite_FSPauseMenu_BestiaryElementTag.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprite_FSPauseMenu_BestiaryElementTag",
     "tags": [],
     "resourceType": "GMSequence",
   },

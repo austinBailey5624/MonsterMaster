@@ -61,7 +61,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprite_SandSymbol32","path":"sprites/sprite_SandSymbol32/sprite_SandSymbol32.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprite_SandSymbol32",
     "tags": [],
     "resourceType": "GMSequence",
   },

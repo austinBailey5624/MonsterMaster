@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2730.6667
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 29
+  controlID: 85
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,7 +94,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 402
-    height: 924
+    height: 923.3333
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 924
+    y: 923.3333
     width: 2084.6667
-    height: 383.33337
+    height: 384.00006
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 14}
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 58
+  controlID: 131
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,11 +248,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2084.6667
-    height: 924
+    height: 923.3333
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 59
+  controlID: 132
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,7 +271,7 @@ MonoBehaviour:
     x: 402
     y: 0
     width: 1682.6667
-    height: 924
+    height: 923.3333
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -355,9 +355,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 996.6667
+    y: 996
     width: 2083.6667
-    height: 362.33337
+    height: 363.00006
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -372,22 +372,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/MenuScenes
+    - Assets/Scenes/MenuScenes/PauseMenu/Encyclopedia/Bestiary
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 88
   m_LastFolders:
-  - Assets/Scenes/MenuScenes
+  - Assets/Scenes/MenuScenes/PauseMenu/Encyclopedia/Bestiary
   m_LastFoldersGridSize: 88
   m_LastProjectPath: C:\Users\austi\MonsterMaster\MonsterMasterUnity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 77.666626}
-    m_SelectedIDs: 28410000
-    m_LastClickedID: 16680
-    m_ExpandedIDs: 000000000c4100000e41000010410000124100001441000016410000184100001a4100001c4100001e41000000ca9a3b
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: a6490000
+    m_LastClickedID: 18854
+    m_ExpandedIDs: 00000000f2410000f4410000f6410000f8410000fa410000fc410000fe4100000042000002420000044200000e42000016420000204200009e490000a249000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -415,7 +415,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000c4100000e41000010410000124100001441000016410000184100001a4100001c4100001e410000
+    m_ExpandedIDs: 00000000f2410000f4410000f6410000f8410000fa410000fc410000fe410000004200000242000004420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -533,28 +533,28 @@ MonoBehaviour:
     x: 0
     y: 72.66667
     width: 401
-    height: 903
+    height: 902.3333
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 86e1ffffe0e7ffffc0e8ffffe6e9ffff04eaffff98f6ffff16f7ffff72f9ffff24fbffffba490000de490000904b0000525c0000
+      m_SelectedIDs: 4a79ffff
+      m_LastClickedID: -34486
+      m_ExpandedIDs: 7a79ffffd87affff067bffff0c8effffc097ffff0eeaffff7cf6ffff82faffff24fbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Bestiary
-        m_OriginalName: Bestiary
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 23666
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -588,7 +588,7 @@ MonoBehaviour:
     x: 402
     y: 72.66667
     width: 1680.6667
-    height: 903
+    height: 902.3333
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d69a67902db7f994ca099bec79d22ce1
@@ -601,9 +601,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.33, y: -3.8599997, z: 0}
+    m_Target: {x: 0, y: 1.6666667, z: 90}
     speed: 2
-    m_Value: {x: 6.33, y: -3.8599997, z: 0}
+    m_Value: {x: 0, y: 1.6666667, z: 90}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -654,9 +654,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.4721906
+    m_Target: 3.3223145
     speed: 2
-    m_Value: 2.4721906
+    m_Value: 3.3223145
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -705,7 +705,7 @@ MonoBehaviour:
     x: 402
     y: 72.66667
     width: 1680.6667
-    height: 903
+    height: 902.3333
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -750,22 +750,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1680.6667
-      height: 882
-    m_Scale: {x: 0.91875, y: 0.91875}
-    m_Translation: {x: 840.3334, y: 441}
+      height: 881.3333
+    m_Scale: {x: 0.91805553, y: 0.91805553}
+    m_Translation: {x: 840.3334, y: 440.66666}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -914.64856
+      x: -915.34045
       y: -480
-      width: 1829.2971
+      width: 1830.6809
       height: 960
     m_MinimalGUI: 1
-  m_defaultScale: 0.91875
-  m_LastWindowPixelSize: {x: 2521, y: 1354.5}
+  m_defaultScale: 0.91805553
+  m_LastWindowPixelSize: {x: 2521, y: 1353.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100

@@ -409,7 +409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 120
   m_Sprite: {fileID: 21300000, guid: 57aac7a5c66145743b80858022f9f7f6, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -904,7 +904,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 120
   m_Sprite: {fileID: 21300000, guid: 1b0f2b77e923e3a4ea1a11dfb305cc53, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
-  nextSceneName: 
+  nextSceneName: BestiaryMenu
 --- !u!61 &1112213772
 BoxCollider2D:
   m_ObjectHideFlags: 0

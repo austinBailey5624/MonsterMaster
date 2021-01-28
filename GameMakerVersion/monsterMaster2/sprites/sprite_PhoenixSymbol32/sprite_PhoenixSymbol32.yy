@@ -62,7 +62,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprite_PhoenixSymbol32","path":"sprites/sprite_PhoenixSymbol32/sprite_PhoenixSymbol32.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprite_PhoenixSymbol32",
     "tags": [],
     "resourceType": "GMSequence",
   },
