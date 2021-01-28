@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprite_ElementalSymbolBase","path":"sprites/sprite_ElementalSymbolBase/sprite_ElementalSymbolBase.yy",},
     "resourceVersion": "1.3",
-    "name": "sprite_ElementalSymbolBase",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

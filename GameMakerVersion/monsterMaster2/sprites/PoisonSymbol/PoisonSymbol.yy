@@ -24,12 +24,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b895af40-22c5-47f2-be07-790ee91f5216","path":"sprites/sprite_ElementalSymbolBase/sprite_ElementalSymbolBase.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b895af40-22c5-47f2-be07-790ee91f5216","path":"sprites/sprite_ElementalSymbolBase/sprite_ElementalSymbolBase.yy",},"LayerId":{"name":"f5423d68-ec7a-4a80-98a0-717a4ada60fd","path":"sprites/sprite_ElementalSymbolBase/sprite_ElementalSymbolBase.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_ElementalSymbolBase","path":"sprites/sprite_ElementalSymbolBase/sprite_ElementalSymbolBase.yy",},"resourceVersion":"1.0","name":"b895af40-22c5-47f2-be07-790ee91f5216","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b895af40-22c5-47f2-be07-790ee91f5216","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b895af40-22c5-47f2-be07-790ee91f5216","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},"LayerId":{"name":"f5423d68-ec7a-4a80-98a0-717a4ada60fd","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"b895af40-22c5-47f2-be07-790ee91f5216","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},"LayerId":{"name":"39da80c5-95bb-4392-a5f6-3bfd709fbf71","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"PoisonSymbol","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},"resourceVersion":"1.0","name":"b895af40-22c5-47f2-be07-790ee91f5216","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprite_ElementalSymbolBase","path":"sprites/sprite_ElementalSymbolBase/sprite_ElementalSymbolBase.yy",},
+    "spriteId": {"name":"PoisonSymbol","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,10 +42,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4d37d665-3040-4e79-aa9a-c4d7adc10655","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b895af40-22c5-47f2-be07-790ee91f5216","path":"sprites/sprite_ElementalSymbolBase/sprite_ElementalSymbolBase.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"81c9821b-0922-40fe-a11f-68abca22e609","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b895af40-22c5-47f2-be07-790ee91f5216","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -58,21 +59,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprite_ElementalSymbolBase","path":"sprites/sprite_ElementalSymbolBase/sprite_ElementalSymbolBase.yy",},
+    "parent": {"name":"PoisonSymbol","path":"sprites/PoisonSymbol/PoisonSymbol.yy",},
     "resourceVersion": "1.3",
-    "name": "sprite_ElementalSymbolBase",
+    "name": "PoisonSymbol",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"39da80c5-95bb-4392-a5f6-3bfd709fbf71","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f5423d68-ec7a-4a80-98a0-717a4ada60fd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "32x32",
-    "path": "folders/Sprites/ElementSymbols/32x32.yy",
+    "name": "DarkSymbolSprites32",
+    "path": "folders/Sprites/ElementSymbols/32x32/DarkSymbolSprites32.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprite_ElementalSymbolBase",
+  "name": "PoisonSymbol",
   "tags": [],
   "resourceType": "GMSprite",
 }
