@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/MenuScenes/MainMenu2.unity
+- path: Assets/Scenes/MenuScenes/CharacterCreatorMenu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

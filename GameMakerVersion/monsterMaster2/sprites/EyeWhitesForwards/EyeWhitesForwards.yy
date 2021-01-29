@@ -26,9 +26,11 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"c021dcd9-1216-4135-9831-41ac4ecfc921","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"c021dcd9-1216-4135-9831-41ac4ecfc921","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"LayerId":{"name":"0646af58-2ae5-4b97-b40e-0662590ea53c","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"c021dcd9-1216-4135-9831-41ac4ecfc921","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"LayerId":{"name":"e57eaf97-fc4e-4ff0-98d2-fa00679731e9","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"EyeWhitesForwards","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","name":"c021dcd9-1216-4135-9831-41ac4ecfc921","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"96de0ab7-6352-460f-87e8-062135525390","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"96de0ab7-6352-460f-87e8-062135525390","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"LayerId":{"name":"0646af58-2ae5-4b97-b40e-0662590ea53c","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"96de0ab7-6352-460f-87e8-062135525390","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"LayerId":{"name":"e57eaf97-fc4e-4ff0-98d2-fa00679731e9","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"EyeWhitesForwards","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","name":"96de0ab7-6352-460f-87e8-062135525390","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -44,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"59f4c634-cf9b-46c8-8b8c-f764595cdf8c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c021dcd9-1216-4135-9831-41ac4ecfc921","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"b24a99ad-8d44-4255-9ff7-b9b131061096","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96de0ab7-6352-460f-87e8-062135525390","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"71216d5d-72d4-42be-a72a-80654375b76e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c021dcd9-1216-4135-9831-41ac4ecfc921","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cca235cc-0225-425c-9cb5-b2177c2f5216","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96de0ab7-6352-460f-87e8-062135525390","path":"sprites/EyeWhitesForwards/EyeWhitesForwards.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -69,7 +71,8 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0646af58-2ae5-4b97-b40e-0662590ea53c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"e57eaf97-fc4e-4ff0-98d2-fa00679731e9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0646af58-2ae5-4b97-b40e-0662590ea53c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "EyeWhites",
