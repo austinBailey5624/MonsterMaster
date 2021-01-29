@@ -11,17 +11,18 @@ public class Person : MonoBehaviour
     public Sprite pantSprite;
     public Sprite shirtSprite;
     public Sprite shoesSprite;
+    public Sprite hairStyleSprite;
     public Color bodyColor;
     public Color eyeWhitesColor;
     public Color irisColor;
     public Color pantColor;
     public Color shirtColor;
     public Color shoesColor;
+    public Color hairStyleColor;
     public string subjectPronoun;
     public string objectPronoun;
     public string possesivePronoun;
 
-    // Start is called before the first frame update
     void Start()
     {
         GameObject body = this.transform.GetChild(0).gameObject;
@@ -39,9 +40,11 @@ public class Person : MonoBehaviour
         GameObject shirt = this.transform.GetChild(4).gameObject;
         shirt.gameObject.GetComponent<SpriteRenderer>().sprite = shirtSprite;
         shirt.gameObject.GetComponent<SpriteRenderer>().color = shirtColor;
+        GameObject hairStyle = this.transform.GetChild(5).gameObject;
+        hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite = hairStyleSprite;
+        hairStyle.gameObject.GetComponent<SpriteRenderer>().color = hairStyleColor;
     }
 
-    // Update is called once per frame
     void Update()
     {
 
