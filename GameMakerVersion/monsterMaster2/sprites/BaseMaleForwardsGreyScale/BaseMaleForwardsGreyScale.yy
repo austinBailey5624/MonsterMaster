@@ -76,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0646af58-2ae5-4b97-b40e-0662590ea53c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "BaseMale",
-    "path": "folders/Sprites/CharacterSprites/PersonSprites/BaseMale.yy",
+    "name": "Body",
+    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/Body.yy",
   },
   "resourceVersion": "1.0",
   "name": "BaseMaleForwardsGreyScale",
