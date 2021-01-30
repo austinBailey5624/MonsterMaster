@@ -1082,13 +1082,13 @@ MonoBehaviour:
   pantSprite: {fileID: 21300000, guid: b0349507d57bceb42a0f6cded42915d6, type: 3}
   shirtSprite: {fileID: 21300000, guid: faf45fb6f65fa7d4a92232ca8b51f3b6, type: 3}
   shoesSprite: {fileID: 21300000, guid: f8dae805c2e0efb41ad0ae576c698d21, type: 3}
-  hairStyleSprite: {fileID: 21300000, guid: d2c651cf4a1c9164eb6f8a12c4662130, type: 3}
+  hairStyleSprite: {fileID: 21300000, guid: 3853a5105bffd2741bc6be94afead53f, type: 3}
   bodyColor: {r: 1, g: 0.8156863, b: 0.6627451, a: 1}
   eyeWhitesColor: {r: 1, g: 1, b: 1, a: 1}
   irisColor: {r: 0, g: 0, b: 0, a: 1}
   pantColor: {r: 0.3018868, g: 0.156502, b: 0, a: 1}
-  shirtColor: {r: 0, g: 0.41509432, b: 0.008647765, a: 1}
-  shoesColor: {r: 0.16981131, g: 0.07547169, b: 0, a: 1}
+  shirtColor: {r: 0, g: 0.3, b: 0, a: 1}
+  shoesColor: {r: 0.3490566, g: 0.1542343, b: 0, a: 1}
   hairStyleColor: {r: 0.7490196, g: 0.39215687, b: 0, a: 1}
   subjectPronoun: He
   objectPronoun: Him
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -954.6235, y: -140.8958, z: 626.5334, w: 6.9835386}
+  m_margin: {x: -954.6235, y: -140.8958, z: 626.5334, w: -19.31192}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1682,7 +1682,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356244264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356244264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
   m_Name: 
@@ -3384,6 +3384,7 @@ GameObject:
   - component: {fileID: 848413668}
   - component: {fileID: 848413667}
   - component: {fileID: 848413666}
+  - component: {fileID: 848413669}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -3495,6 +3496,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &848413669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848413664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af514cb96137e1240b5734af44aca9bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &853326593
 GameObject:
   m_ObjectHideFlags: 0
@@ -5280,7 +5293,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 123
   m_Sprite: {fileID: 21300000, guid: 3853a5105bffd2741bc6be94afead53f, type: 3}
-  m_Color: {r: 0.59607846, g: 0.30588236, b: 0, a: 1}
+  m_Color: {r: 0.7490196, g: 0.39215687, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5302,6 +5315,7 @@ GameObject:
   - component: {fileID: 1263600113}
   - component: {fileID: 1263600112}
   - component: {fileID: 1263600111}
+  - component: {fileID: 1263600114}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -5413,6 +5427,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1263600114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263600109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50b9741288cbec41be955eac2c4d25f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tshirt: {fileID: 21300000, guid: faf45fb6f65fa7d4a92232ca8b51f3b6, type: 3}
+  tanktop: {fileID: 21300000, guid: 1f6d4638b9828d447a18091581d9ca1c, type: 3}
+  longSleeve: {fileID: 21300000, guid: cf7d7d7fa539b1e42bcec3f666a30df4, type: 3}
+  robe: {fileID: 21300000, guid: ad61c38b8e71dc64fb2c2cb83d7a1d23, type: 3}
 --- !u!1 &1292150604
 GameObject:
   m_ObjectHideFlags: 0
@@ -6566,7 +6596,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475084044}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -6592,7 +6622,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475084044}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
   m_Name: 
@@ -8473,7 +8503,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 121
+  m_SortingOrder: 123
   m_Sprite: {fileID: 21300000, guid: faf45fb6f65fa7d4a92232ca8b51f3b6, type: 3}
   m_Color: {r: 0, g: 0.38679248, b: 0.024266563, a: 1}
   m_FlipX: 0
@@ -8620,6 +8650,7 @@ GameObject:
   - component: {fileID: 2100464789}
   - component: {fileID: 2100464788}
   - component: {fileID: 2100464787}
+  - component: {fileID: 2100464790}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -8731,6 +8762,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2100464790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100464785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f8d80af74f9a04a94ac7891c2e68ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2110794408
 GameObject:
   m_ObjectHideFlags: 0
@@ -8771,7 +8814,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110794408}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -8797,7 +8840,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110794408}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
   m_Name: 

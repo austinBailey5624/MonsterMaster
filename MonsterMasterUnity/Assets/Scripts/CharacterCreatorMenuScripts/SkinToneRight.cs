@@ -46,10 +46,6 @@ public class SkinToneRight : MonoBehaviour
     bool ColorsEqual(Color color1, Color color2)
     {
         float tolerance = .001f;
-        Debug.Log("Color1:" + color1.r + " " + color1.g + " " + color1.b);
-        Debug.Log("Color2:" + color2.r + " " + color2.g + " " + color2.b);
-        Debug.Log("Equals:" + ((color1.r - color2.r < tolerance) && (color1.g - color2.g < tolerance) && (color1.b - color2.b < tolerance)));
-
         return (Mathf.Abs(color1.r - color2.r) < tolerance) && (Mathf.Abs(color1.g - color2.g) < tolerance) && (Mathf.Abs(color1.b - color2.b) < tolerance);
     }
 }

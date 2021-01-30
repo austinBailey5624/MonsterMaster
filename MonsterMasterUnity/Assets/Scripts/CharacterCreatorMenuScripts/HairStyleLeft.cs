@@ -11,8 +11,6 @@ public class HairStyleLeft : MonoBehaviour
     void OnMouseUp()
     {
         GameObject mainCharacter = GameObject.FindGameObjectWithTag("Player");
-
-        mainCharacter.GetComponent<Person>().hairStyleSprite = tonsure;
         GameObject hairStyle = mainCharacter.transform.GetChild(5).gameObject;
         if(hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite.Equals(tonsure))
         {
