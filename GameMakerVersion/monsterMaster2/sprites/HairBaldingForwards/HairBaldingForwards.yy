@@ -81,7 +81,7 @@
   ],
   "parent": {
     "name": "HairBalding",
-    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/HairBalding.yy",
+    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/HairStyles/HairBalding.yy",
   },
   "resourceVersion": "1.0",
   "name": "HairBaldingForwards",

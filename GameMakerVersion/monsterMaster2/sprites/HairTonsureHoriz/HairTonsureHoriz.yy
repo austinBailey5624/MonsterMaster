@@ -76,7 +76,7 @@
   ],
   "parent": {
     "name": "HairTonsure",
-    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/HairTonsure.yy",
+    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/HairStyles/HairTonsure.yy",
   },
   "resourceVersion": "1.0",
   "name": "HairTonsureHoriz",

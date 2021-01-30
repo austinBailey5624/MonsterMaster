@@ -12,6 +12,7 @@ public class Person : MonoBehaviour
     public Sprite shirtSprite;
     public Sprite shoesSprite;
     public Sprite hairStyleSprite;
+    public Sprite facialHairSprite;
     public Color bodyColor;
     public Color eyeWhitesColor;
     public Color irisColor;
@@ -43,6 +44,9 @@ public class Person : MonoBehaviour
         GameObject hairStyle = this.transform.GetChild(5).gameObject;
         hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite = hairStyleSprite;
         hairStyle.gameObject.GetComponent<SpriteRenderer>().color = hairStyleColor;
+        GameObject facialHair = this.transform.GetChild(6).gameObject;
+        facialHair.gameObject.GetComponent<SpriteRenderer>().sprite = facialHairSprite;
+        facialHair.gameObject.GetComponent<SpriteRenderer>().color = hairStyleColor;
     }
 
     void Update()

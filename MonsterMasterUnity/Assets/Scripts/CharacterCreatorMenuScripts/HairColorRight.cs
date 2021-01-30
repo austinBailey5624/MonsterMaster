@@ -67,6 +67,8 @@ public class HairColorRight : MonoBehaviour
         {
             hairStyle.gameObject.GetComponent<SpriteRenderer>().color = redhead;
         }
+        GameObject facialHair = mainCharacter.transform.GetChild(6).gameObject;
+        facialHair.gameObject.GetComponent<SpriteRenderer>().color = hairStyle.gameObject.GetComponent<SpriteRenderer>().color;
     }
 
     bool ColorsEqual(Color color1, Color color2)

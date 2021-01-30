@@ -71,7 +71,7 @@
   ],
   "parent": {
     "name": "BlankHair",
-    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/BlankHair.yy",
+    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/HairStyles/BlankHair.yy",
   },
   "resourceVersion": "1.0",
   "name": "BlankHair",

@@ -76,7 +76,7 @@
   ],
   "parent": {
     "name": "HairCropped",
-    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/HairCropped.yy",
+    "path": "folders/Sprites/CharacterSprites/PersonSegmentSprites/HairStyles/HairCropped.yy",
   },
   "resourceVersion": "1.0",
   "name": "HairCroppedHoriz",

@@ -609,6 +609,7 @@ GameObject:
   - component: {fileID: 118091679}
   - component: {fileID: 118091678}
   - component: {fileID: 118091677}
+  - component: {fileID: 118091680}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -720,6 +721,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &118091680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118091675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481393bb156c39e4c8df9b055375325e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fiveShadow: {fileID: 21300000, guid: 49001902571cc9543966b38fa4509d16, type: 3}
+  fullBeard: {fileID: 21300000, guid: 59c09ca10ddc2ac4084471a866a10d02, type: 3}
+  goatee: {fileID: 21300000, guid: 70e6c62eab68c534fa4f8d7dd6f85a06, type: 3}
+  moustache: {fileID: 21300000, guid: 7202866109a5aed458d7cd42a31fa8dc, type: 3}
+  peachFuzz: {fileID: 21300000, guid: 20769f0b5fdd8bd43b9693de5247cb18, type: 3}
+  trampBeard: {fileID: 21300000, guid: b3f2663292aa0754fbdb1bf7f70bd5bf, type: 3}
+  wraparound: {fileID: 21300000, guid: 62fba4ee0e74d5b43a3b081963bf0c58, type: 3}
 --- !u!1 &125187244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1118,7 @@ MonoBehaviour:
   shirtSprite: {fileID: 21300000, guid: faf45fb6f65fa7d4a92232ca8b51f3b6, type: 3}
   shoesSprite: {fileID: 21300000, guid: f8dae805c2e0efb41ad0ae576c698d21, type: 3}
   hairStyleSprite: {fileID: 21300000, guid: 3853a5105bffd2741bc6be94afead53f, type: 3}
+  facialHairSprite: {fileID: 0}
   bodyColor: {r: 1, g: 0.8156863, b: 0.6627451, a: 1}
   eyeWhitesColor: {r: 1, g: 1, b: 1, a: 1}
   irisColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1126,6 +1147,7 @@ Transform:
   - {fileID: 2044709832}
   - {fileID: 1189892206}
   - {fileID: 2008140448}
+  - {fileID: 1564470718}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1792,6 +1814,7 @@ GameObject:
   - component: {fileID: 358316640}
   - component: {fileID: 358316639}
   - component: {fileID: 358316638}
+  - component: {fileID: 358316641}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -1903,6 +1926,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &358316641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358316636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9f4aba8cb65c642a2184f5727fcb80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fiveShadow: {fileID: 21300000, guid: 49001902571cc9543966b38fa4509d16, type: 3}
+  fullBeard: {fileID: 21300000, guid: 59c09ca10ddc2ac4084471a866a10d02, type: 3}
+  goatee: {fileID: 21300000, guid: 70e6c62eab68c534fa4f8d7dd6f85a06, type: 3}
+  moustache: {fileID: 21300000, guid: 7202866109a5aed458d7cd42a31fa8dc, type: 3}
+  peachFuzz: {fileID: 21300000, guid: 20769f0b5fdd8bd43b9693de5247cb18, type: 3}
+  trampBeard: {fileID: 21300000, guid: b3f2663292aa0754fbdb1bf7f70bd5bf, type: 3}
+  wraparound: {fileID: 21300000, guid: 62fba4ee0e74d5b43a3b081963bf0c58, type: 3}
 --- !u!1 &388815798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +2830,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747671145}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2814,7 +2856,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747671145}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
   m_Name: 
@@ -6995,6 +7037,36 @@ Transform:
   m_Father: {fileID: 1533152495}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1564470717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564470718}
+  m_Layer: 0
+  m_Name: FacialHair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1564470718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564470717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 208676364}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1594721245
 GameObject:
   m_ObjectHideFlags: 0
@@ -7933,7 +8005,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982016737}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -7959,7 +8031,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982016737}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
   m_Name: 
