@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 71566764}
   - component: {fileID: 71566763}
   - component: {fileID: 71566762}
+  - component: {fileID: 71566765}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -311,6 +312,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &71566765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71566760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015d25e5c5b7baf44a648c3705e84b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pantsSprite: {fileID: 21300000, guid: b0349507d57bceb42a0f6cded42915d6, type: 3}
+  shorts: {fileID: 21300000, guid: b2929903795e31c4b81b973e6d99fe97, type: 3}
 --- !u!1 &88737266
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +978,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186779785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -989,7 +1004,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186779785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
   m_Name: 
@@ -1086,7 +1101,7 @@ MonoBehaviour:
   bodyColor: {r: 1, g: 0.8156863, b: 0.6627451, a: 1}
   eyeWhitesColor: {r: 1, g: 1, b: 1, a: 1}
   irisColor: {r: 0, g: 0, b: 0, a: 1}
-  pantColor: {r: 0.3018868, g: 0.156502, b: 0, a: 1}
+  pantColor: {r: 0.2, g: 0.1, b: 0, a: 1}
   shirtColor: {r: 0, g: 0.3, b: 0, a: 1}
   shoesColor: {r: 0.3490566, g: 0.1542343, b: 0, a: 1}
   hairStyleColor: {r: 0.7490196, g: 0.39215687, b: 0, a: 1}
@@ -5720,6 +5735,7 @@ GameObject:
   - component: {fileID: 1342598202}
   - component: {fileID: 1342598201}
   - component: {fileID: 1342598200}
+  - component: {fileID: 1342598203}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -5831,6 +5847,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1342598203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342598198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5952a5663b93c47b7fb290f7665bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pantsSprite: {fileID: 21300000, guid: b0349507d57bceb42a0f6cded42915d6, type: 3}
+  shorts: {fileID: 21300000, guid: b2929903795e31c4b81b973e6d99fe97, type: 3}
 --- !u!1 &1348569420
 GameObject:
   m_ObjectHideFlags: 0
@@ -6142,7 +6172,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365792079}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -6168,7 +6198,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365792079}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
   m_Name: 
@@ -7538,6 +7568,7 @@ GameObject:
   - component: {fileID: 1891314659}
   - component: {fileID: 1891314658}
   - component: {fileID: 1891314657}
+  - component: {fileID: 1891314660}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -7649,6 +7680,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1891314660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891314655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a0ca5df4d935e498ae48b832ada3d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tshirt: {fileID: 21300000, guid: faf45fb6f65fa7d4a92232ca8b51f3b6, type: 3}
+  tanktop: {fileID: 21300000, guid: 1f6d4638b9828d447a18091581d9ca1c, type: 3}
+  longSleeve: {fileID: 21300000, guid: cf7d7d7fa539b1e42bcec3f666a30df4, type: 3}
+  robe: {fileID: 21300000, guid: ad61c38b8e71dc64fb2c2cb83d7a1d23, type: 3}
 --- !u!1 &1903803884
 GameObject:
   m_ObjectHideFlags: 0
@@ -8009,7 +8056,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996220161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -8035,7 +8082,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996220161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
   m_Name: 
