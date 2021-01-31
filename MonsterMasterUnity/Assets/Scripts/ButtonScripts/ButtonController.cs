@@ -12,7 +12,6 @@ public class ButtonController : MonoBehaviour
         defaultSprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
     }
 
-    // Update is called once per frame
     void OnMouseEnter()
     {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = hoverSprite;
