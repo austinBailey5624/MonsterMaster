@@ -17,7 +17,13 @@ public class VanishingTextController : MonoBehaviour
         {"Amphibious",8},
         {"Weather",9},
         {"Ice",10},
-        {"Deep",11 } };
+        {"Deep",11},
+        {"Fey",12},
+        {"Plant",13},
+        {"Terra",14},
+        {"Pegasus",15},
+        {"Compassion",16},
+        {"Rotten",17} };
 
 
     public void appearText(string subelementName)
