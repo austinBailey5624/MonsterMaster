@@ -40,7 +40,7 @@ public class VanishingTextController : MonoBehaviour
         {"Poison",31 },
         {"Undead",32 },
         {"Storm",33 },
-        {"Betrayal",34 },
+        {"Betrayer",34 },
         {"Umbral",35 }
     };
 
