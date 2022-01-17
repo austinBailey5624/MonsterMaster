@@ -11,6 +11,10 @@ public enum Direction
     Down = 3
 }
 
+/**
+*   Class to control the Main Character
+*   Copyright 2022 Austin Bailey
+*/
 public class MainCharacterController : Person
 {
     public float speed;
@@ -38,7 +42,7 @@ public class MainCharacterController : Person
         DontDestroyOnLoad(this.gameObject);
     }
 
-    void Start()
+    new void Start()
     {
         GameObject body = this.transform.GetChild(0).gameObject;
         body.gameObject.GetComponent<SpriteRenderer>().sprite =
@@ -113,7 +117,10 @@ public class MainCharacterController : Person
                 startScale.y = characterScalex;
                 this.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1f/(float)characterScalex,1f/(float)characterScalex);
                 transform.localScale = startScale;
-                position = GameState.playerPositionBySceneName[sceneName];
+                if(!sceneName.Contains("Menu"))
+                {
+                    position = GameState.playerPositionBySceneName[sceneName];
+                }
             }
         }
         if (isFrozen)

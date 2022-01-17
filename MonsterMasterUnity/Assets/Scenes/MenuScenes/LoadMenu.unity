@@ -133,10 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 12654457}
   - component: {fileID: 12654456}
-  - component: {fileID: 12654458}
-  - component: {fileID: 12654459}
+  - component: {fileID: 12654460}
   m_Layer: 0
-  m_Name: Save3Button
+  m_Name: SaveSlot3Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +208,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &12654458
+--- !u!114 &12654460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,36 +217,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 12654455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
+  m_Script: {fileID: 11500000, guid: b713f1b085b49c14da102be2f8c69b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 3ba7a302ff3556e45bcd0b3b338c07ef, type: 3}
---- !u!61 &12654459
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12654455}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8, y: 0.42}
-    newSize: {x: 1.8, y: 0.42}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.8, y: 0.42}
-  m_EdgeRadius: 0
+  isSelected: 0
+  isHighlighted: 0
+  selectedSprite: {fileID: 21300000, guid: 3ba7a302ff3556e45bcd0b3b338c07ef, type: 3}
+  upButton: {fileID: 1140544988}
+  rightButton: {fileID: 1905255586}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 0}
+  saveButton: {fileID: 601581388}
+  deleteButton: {fileID: 785636336}
+  loadButton: {fileID: 1602875509}
 --- !u!1 &79942904
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,10 +715,9 @@ GameObject:
   m_Component:
   - component: {fileID: 391645325}
   - component: {fileID: 391645324}
-  - component: {fileID: 391645326}
-  - component: {fileID: 391645327}
+  - component: {fileID: 391645328}
   m_Layer: 0
-  m_Name: Save1Button
+  m_Name: SaveSlot1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -809,7 +790,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &391645326
+--- !u!114 &391645328
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -818,36 +799,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 391645323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
+  m_Script: {fileID: 11500000, guid: b713f1b085b49c14da102be2f8c69b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 3ba7a302ff3556e45bcd0b3b338c07ef, type: 3}
---- !u!61 &391645327
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391645323}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8, y: 0.42}
-    newSize: {x: 1.8, y: 0.42}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.8, y: 0.42}
-  m_EdgeRadius: 0
+  isSelected: 1
+  isHighlighted: 0
+  selectedSprite: {fileID: 21300000, guid: 3ba7a302ff3556e45bcd0b3b338c07ef, type: 3}
+  upButton: {fileID: 0}
+  rightButton: {fileID: 1905255586}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 1140544988}
+  saveButton: {fileID: 601581388}
+  deleteButton: {fileID: 785636336}
+  loadButton: {fileID: 1602875509}
 --- !u!1 &411845826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1044,7 @@ GameObject:
   - component: {fileID: 601581384}
   - component: {fileID: 601581386}
   - component: {fileID: 601581387}
+  - component: {fileID: 601581388}
   m_Layer: 0
   m_Name: SaveActionButton
   m_TagString: Untagged
@@ -1193,6 +1158,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.31}
   m_EdgeRadius: 0
+--- !u!114 &601581388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601581383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8324ac71919aed64b81f7b5697143157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  isHighlighted: 0
+  selectedSprite: {fileID: 21300000, guid: ae598844527b10f4b9c1a197f2ca5950, type: 3}
+  upButton: {fileID: 0}
+  rightButton: {fileID: 0}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 785636336}
+  selectedSlot: {fileID: 0}
 --- !u!1 &785636331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,6 +1190,7 @@ GameObject:
   - component: {fileID: 785636332}
   - component: {fileID: 785636334}
   - component: {fileID: 785636335}
+  - component: {fileID: 785636336}
   m_Layer: 0
   m_Name: DeleteButton
   m_TagString: Untagged
@@ -1318,6 +1304,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.31}
   m_EdgeRadius: 0
+--- !u!114 &785636336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785636331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1689ce0d4eb0261438b898e67fd0f232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  isHighlighted: 0
+  selectedSprite: {fileID: 21300000, guid: ae598844527b10f4b9c1a197f2ca5950, type: 3}
+  upButton: {fileID: 601581388}
+  rightButton: {fileID: 0}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 1602875509}
+  selectedSlot: {fileID: 0}
 --- !u!1 &973249115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,10 +1470,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1140544985}
   - component: {fileID: 1140544984}
-  - component: {fileID: 1140544986}
-  - component: {fileID: 1140544987}
+  - component: {fileID: 1140544988}
   m_Layer: 0
-  m_Name: Save2Button
+  m_Name: SaveSlot2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1540,7 +1545,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1140544986
+--- !u!114 &1140544988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1549,36 +1554,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1140544983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c41f7c4bff7624fad3920260b0aede, type: 3}
+  m_Script: {fileID: 11500000, guid: b713f1b085b49c14da102be2f8c69b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 3ba7a302ff3556e45bcd0b3b338c07ef, type: 3}
---- !u!61 &1140544987
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140544983}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8, y: 0.42}
-    newSize: {x: 1.8, y: 0.42}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.8, y: 0.42}
-  m_EdgeRadius: 0
+  isSelected: 0
+  isHighlighted: 0
+  selectedSprite: {fileID: 21300000, guid: 3ba7a302ff3556e45bcd0b3b338c07ef, type: 3}
+  upButton: {fileID: 391645328}
+  rightButton: {fileID: 1905255586}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 12654460}
+  saveButton: {fileID: 601581388}
+  deleteButton: {fileID: 785636336}
+  loadButton: {fileID: 1602875509}
 --- !u!1001 &1443054763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1796,6 +1784,7 @@ GameObject:
   - component: {fileID: 1602875505}
   - component: {fileID: 1602875507}
   - component: {fileID: 1602875508}
+  - component: {fileID: 1602875509}
   m_Layer: 0
   m_Name: LoadButton
   m_TagString: Untagged
@@ -1909,6 +1898,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.31}
   m_EdgeRadius: 0
+--- !u!114 &1602875509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602875504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e5fecda663d64ebac7c847cfb0e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  isHighlighted: 0
+  selectedSprite: {fileID: 21300000, guid: ae598844527b10f4b9c1a197f2ca5950, type: 3}
+  upButton: {fileID: 785636336}
+  rightButton: {fileID: 0}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 0}
+  selectedSlot: {fileID: 0}
 --- !u!1 &1852794144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +2066,7 @@ GameObject:
   - component: {fileID: 1905255582}
   - component: {fileID: 1905255584}
   - component: {fileID: 1905255585}
+  - component: {fileID: 1905255586}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -2171,6 +2181,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.31}
   m_EdgeRadius: 0
+--- !u!114 &1905255586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905255581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872eb6a890ea1004b97943c53d53f13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  isHighlighted: 0
+  selectedSprite: {fileID: 21300000, guid: ae598844527b10f4b9c1a197f2ca5950, type: 3}
+  upButton: {fileID: 0}
+  rightButton: {fileID: 0}
+  leftButton: {fileID: 12654460}
+  downButton: {fileID: 0}
+  nextSceneName: previousMenu
 --- !u!1 &1911932624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,12 +2249,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 0.5
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 2
-  m_MatchWidthOrHeight: 0
+  m_ScaleFactor: 0.63
+  m_ReferenceResolution: {x: 2000, y: 2000}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.422
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

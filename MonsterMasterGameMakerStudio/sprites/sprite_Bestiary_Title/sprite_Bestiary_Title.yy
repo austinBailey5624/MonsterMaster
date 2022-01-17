@@ -43,9 +43,9 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"95c91e12-40f0-4e24-b16f-7be982ef51a8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9516b90e-d081-4841-a04f-a199e9d75e76","path":"sprites/sprite_Bestiary_Title/sprite_Bestiary_Title.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -61,7 +61,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprite_Bestiary_Title","path":"sprites/sprite_Bestiary_Title/sprite_Bestiary_Title.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprite_Bestiary_Title",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"context","resourceVersion":"1.0","name":"71420be4-c4cc-4de8-8fdf-8fd4f07c85cf","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"113499c2-21f1-460e-8265-bd18f24d0e98","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "BestiarySprites",
     "path": "folders/Sprites/UISprites/Menu/BestiarySprites.yy",

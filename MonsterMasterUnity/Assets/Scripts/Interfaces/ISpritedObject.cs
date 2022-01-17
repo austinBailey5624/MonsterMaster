@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface ISpritedObject 
 {
-    Sprite sprite();
+    Sprite getDefaultSprite();
 }

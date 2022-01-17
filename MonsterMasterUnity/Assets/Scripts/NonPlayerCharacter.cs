@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+*   Class to handle NonPlayerCharacters
+*   Copyright 2022 Austin Bailey
+*/
 public class NonPlayerCharacter : Person
 {
     private float tolerance = 0.2f;
@@ -23,7 +27,7 @@ public class NonPlayerCharacter : Person
         }
     }
 
-    void Start()
+    new void Start()
     {
         GameObject body = this.transform.GetChild(0).gameObject;
         body.gameObject.GetComponent<SpriteRenderer>().sprite =
@@ -85,8 +89,8 @@ public class NonPlayerCharacter : Person
             Vector3 leftPosition =
                 new Vector3(position.x - tilesize, position.y, position.z);
             Vector3 rightPosition = new Vector3(position.x + tilesize, position.y, position.z);
-            Debug.Log("position:  " + position);
-            Debug.Log("AdjacentPosition: " + adjacentTransform.position);
+            // Debug.Log("position:  " + position);
+            // Debug.Log("AdjacentPosition: " + adjacentTransform.position);
             if (
                 (belowPosition - adjacentTransform.position).sqrMagnitude <
                 tolerance

@@ -5,72 +5,15 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
     RecentlyUsedSceneGuid-0:
-      value: 575252005c005108585d58714826594441154d7d7a2e773229784936b6b03739
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-      value: 010251005d0259595c580f2442255e4447164f7d7e2a7667752f4a36e4b66d6c
-      flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 0200070553575a5a090f0d74427a0a4413154b7f297e2233787d486abae46d60
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 54570c57510451035c08547b43775d444e4e402f7f707f672f2d1f6ab4b4623c
-      flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 5b0350075001595f5c585b7011770e4447151979757e236778704f66e0e16068
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 5a02035f07060d5d080f5f75127b0844154e1d2b7a2a74317e7d4f65e7b2636e
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-      value: 5757500054565a030e595d204020094444164d7a287e71682c704466e7e6303d
-      flags: 0
-    RecentlyUsedSceneGuid-7:
-      value: 0650575704010a03550b092614225c4447161d79747a27337d284e35b5e4656b
-      flags: 0
-    RecentlyUsedSceneGuid-8:
       value: 565451075d545b5e0c0a5f7341730944404f19782f7824667d7e4b66b7e6663d
       flags: 0
-    RecentlyUsedSceneGuid-9:
-      value: 5653520704070a5e0c5a592143740a444e4f19737e7c77657f2b1862e4b96661
+    RecentlyUsedSceneGuid-1:
+      value: 5153565701075e0d5858087a11215c44154e197c757f736779284564e3e63639
       flags: 0
->>>>>>> c7afcee5... Update Unity version with Character Creator; Squash commits from second half of 2021
-    RecentlyUsedScenePath-0:
-      value: 22424703114646680e0b0227036c70111d230a2f291b2535232c0e7ccde13f0cf0e233d6c237323d2a2ae029173b4f2afc031d12
+    RecentlyUsedSceneGuid-2:
+      value: 0650575704010a03550b092614225c4447161d79747a27337d284e35b5e4656b
       flags: 0
-    RecentlyUsedScenePath-1:
-      value: 22424703114646680e0b0227036c721518022b292926232362041c3aeccd3136f7a923e7ee2e26
-      flags: 0
-    RecentlyUsedScenePath-2:
-      value: 22424703114646680e0b0227036c721518022b292926232362051232e6cd3136f7a923e7ee2e26
-      flags: 0
-    RecentlyUsedScenePath-3:
-      value: 22424703114646680e0b0227036c721518022b292926232362191c26f1e5193decf279d9e62f2c391407e1294a2b0f36e613
-      flags: 0
-    RecentlyUsedScenePath-4:
-      value: 22424703114646680e0b0227036c721518022b292926232362191c26f1e5193decf279cce939263f350dff3900370070d7040a12f507051b140af40f3cfa1e065fd016cc0ed1
-      flags: 0
-    RecentlyUsedScenePath-5:
-      value: 22424703114646680e0b0227036c721518022b292926232362041c3aeccd3136f7b578fce9332b25
-      flags: 0
-    RecentlyUsedScenePath-6:
-      value: 22424703114646680e0b0227036c721518022b292926232362191c26f1e5193decf279cce939263f350dff3900370070d00f1a1fff0a18125e2cf81d05f6110108e81dcb0f860a12c20d05
-      flags: 0
-    RecentlyUsedScenePath-7:
-      value: 22424703114646680e0b0227036c721518022b2929262323620a1532f0e1372ce7f502ecf42e3a2e7717e1351027
-      flags: 0
-    RecentlyUsedScenePath-8:
-      value: 22424703114646680e0b0227036c721518022b2929262323620a1532f0e1372ce7f515fbe23b2b332b2fea3211701431fb1e10
-      flags: 0
-    RecentlyUsedScenePath-9:
-      value: 22424703114646680e0b0227036c70111d230a2f291b2535232c0e7ccde13f2cf0e233a7f234362820
-      flags: 0
->>>>>>> a41135ec... Start Unity Version; Squash Commits from the first third of 2021
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
@@ -79,30 +22,13 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_DesiredImportWorkerCount: 2
   m_StandbyImportWorkerCount: 2
   m_IdleImportWorkerShutdownDelay: 60000
-=======
->>>>>>> a41135ec... Start Unity Version; Squash Commits from the first third of 2021
-=======
-  m_DesiredImportWorkerCount: 2
-  m_StandbyImportWorkerCount: 2
-  m_IdleImportWorkerShutdownDelay: 60000
->>>>>>> c7afcee5... Update Unity version with Character Creator; Squash commits from second half of 2021
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
   m_VCProjectOverlayIcons: 1
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
-<<<<<<< HEAD
   m_VCAllowAsyncUpdate: 1
   m_ArtifactGarbageCollection: 1
-=======
-  m_VCAllowAsyncUpdate: 0
-<<<<<<< HEAD
->>>>>>> a41135ec... Start Unity Version; Squash Commits from the first third of 2021
-=======
-  m_ArtifactGarbageCollection: 1
->>>>>>> c7afcee5... Update Unity version with Character Creator; Squash commits from second half of 2021

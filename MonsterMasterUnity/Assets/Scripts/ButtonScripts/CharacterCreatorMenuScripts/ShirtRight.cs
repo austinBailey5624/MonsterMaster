@@ -1,0 +1,114 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ShirtRight : CharacterCreatorMenuButton
+{
+    public AnimationSet tshirtSet;
+
+    public AnimationSet tanktopSet;
+
+    public AnimationSet longSleeveSet;
+
+    public AnimationSet robeSet;
+
+    private Color darkGreen = new Color(0f, .3f, 0f, 1f);
+
+    private Color lightGrey = new Color(.8f, .8f, .8f, 1f);
+
+    private Color darkGrey = new Color(.2f, .2f, .2f, 1f);
+
+    private Color brown = new Color(.2f, .1f, 0f, 1f);
+
+    private Color red = new Color(.8f, 0f, 0f, 1f);
+
+    private bool keydown = false;
+
+    public override void actionWhenSelected()
+    {
+        MainCharacterController mainCharacter =
+            GameObject
+                .FindGameObjectWithTag("Player")
+                .GetComponent<MainCharacterController>();
+        AnimationSet curShirtSet = mainCharacter.shirtSet;
+        float submit = Input.GetAxisRaw("Submit");
+        if (submit == 1)
+        {
+            keydown = true;
+        }
+        else if (submit == 0 && keydown == true)
+        {
+            if (curShirtSet.Equals(tshirtSet))
+            {
+                mainCharacter.shirtSet = robeSet;
+                if (ColorsEqual(mainCharacter.shirtColor, darkGreen))
+                {
+                    mainCharacter.shirtColor = red;
+                    mainCharacter
+                        .transform
+                        .GetChild(4)
+                        .GetComponent<SpriteRenderer>()
+                        .color = red;
+                }
+                else if (ColorsEqual(mainCharacter.shirtColor, lightGrey))
+                {
+                    mainCharacter.shirtColor = darkGreen;
+                    mainCharacter
+                        .transform
+                        .GetChild(4)
+                        .GetComponent<SpriteRenderer>()
+                        .color = darkGreen;
+                }
+                else if (ColorsEqual(mainCharacter.shirtColor, darkGrey))
+                {
+                    mainCharacter.shirtColor = lightGrey;
+                    mainCharacter
+                        .transform
+                        .GetChild(4)
+                        .GetComponent<SpriteRenderer>()
+                        .color = lightGrey;
+                }
+                else if (ColorsEqual(mainCharacter.shirtColor, brown))
+                {
+                    mainCharacter.shirtColor = darkGrey;
+                    mainCharacter
+                        .transform
+                        .GetChild(4)
+                        .GetComponent<SpriteRenderer>()
+                        .color = darkGrey;
+                }
+                else if (ColorsEqual(mainCharacter.shirtColor, red))
+                {
+                    mainCharacter.shirtColor = brown;
+                    mainCharacter
+                        .transform
+                        .GetChild(4)
+                        .GetComponent<SpriteRenderer>()
+                        .color = brown;
+                }
+            }
+            else if (curShirtSet.Equals(tanktopSet))
+            {
+                mainCharacter.shirtSet = tshirtSet;
+            }
+            else if (curShirtSet.Equals(longSleeveSet))
+            {
+                mainCharacter.shirtSet = tanktopSet;
+            }
+            else if (curShirtSet.Equals(robeSet))
+            {
+                mainCharacter.shirtSet = longSleeveSet;
+            }
+            mainCharacter.setSprite(0, 3);
+            keydown = false;
+        }
+    }
+
+    bool ColorsEqual(Color color1, Color color2)
+    {
+        float tolerance = .001f;
+        return (Mathf.Abs(color1.r - color2.r) < tolerance) &&
+        (Mathf.Abs(color1.g - color2.g) < tolerance) &&
+        (Mathf.Abs(color1.b - color2.b) < tolerance);
+    }
+}

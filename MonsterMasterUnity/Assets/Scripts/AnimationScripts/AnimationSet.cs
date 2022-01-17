@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+*   Class to represent all of the Sprites and Animation a object has to cycle through
+*   through the course of its life.
+*   Copyright 2022 Austin Bailey
+*/
 public class AnimationSet : MonoBehaviour
 {
     public bool leftIsRightReversed;
@@ -58,5 +63,10 @@ public class AnimationSet : MonoBehaviour
 
 
         return true;
+    }
+
+    public override int GetHashCode()
+    {
+        return 0;
     }
 }
