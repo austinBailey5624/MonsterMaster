@@ -4,3 +4,6 @@ MonsterMasterUnity/Library/StateCache/*
 MonsterMasterUnity/UserSettings/*
 MonsterMasterUnity/Temp
 MonsterMasterUnity/Temp/*
+.gitconfig
+.bash_history
+.viminfo

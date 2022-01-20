@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2691654865709687115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 993198428013146362}
+  - component: {fileID: -9194870008149777985}
+  m_Layer: 0
+  m_Name: 5Deep
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &993198428013146362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691654865709687115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-9194870008149777985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691654865709687115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 21300000, guid: 16a4f6b67a840494d951ee1c55bdd65c, type: 3}
+  name: Deep
+  description: Hidden in the depths beyond all other life lie the deep monsters.
+    What hidden magics they keep beyond the sight of all others none can know. They
+    are known for viciously defending their territory, guarding their secrets jealously.
+    Most serve Illian, master of hidden knowledge, who seeks to one day rise from
+    the depths and dominate all life.
+  firstPrimaryElement: {fileID: 3841102742118678946, guid: b3a9918e836f2c0429af512b5c6d1701,
+    type: 3}
+  secondPrimaryElement: {fileID: 3029641130924714745, guid: c8d418ac3efc7534c9b133b5235a89e4,
+    type: 3}
+  defaultColor: {r: 0.11013707, g: 0.11013707, b: 0.4245283, a: 1}
+  highlightColor: {r: 0.16114317, g: 0.15566039, b: 1, a: 1}
+  babyMonster: {fileID: -9020465605157225496, guid: 1e242d776cff39e4d8f6cace1f3f8fd4,
+    type: 3}

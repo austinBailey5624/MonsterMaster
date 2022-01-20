@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8353564051073814565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5282404174778388809}
+  - component: {fileID: 3703601068939396312}
+  m_Layer: 0
+  m_Name: 30Tonguedancer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5282404174778388809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8353564051073814565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3703601068939396312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8353564051073814565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1161493543, guid: 5f57686b71962ab449c2e173e1816642, type: 3}
+  name: Tonguedancer
+  description: Despite being unrelated to air, the Tonguedancer is very quick and
+    agile, using all four limbs in addition to its tongue to manipulate the world
+    around it  .
+  secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -2813354272601890461, guid: af9d34f42d1f80c478ddd554c7317cab,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: 496337264, guid: c2aef37a2c42d2840b136ed8aec9fdb7, type: 3}
+  - {fileID: -1565132040, guid: c2aef37a2c42d2840b136ed8aec9fdb7, type: 3}
+  - {fileID: 2131710685, guid: c2aef37a2c42d2840b136ed8aec9fdb7, type: 3}
+  - {fileID: 317555923, guid: c2aef37a2c42d2840b136ed8aec9fdb7, type: 3}
+  downSprites:
+  - {fileID: 1161493543, guid: 5f57686b71962ab449c2e173e1816642, type: 3}
+  - {fileID: -153727842, guid: 5f57686b71962ab449c2e173e1816642, type: 3}
+  - {fileID: -2036144777, guid: 5f57686b71962ab449c2e173e1816642, type: 3}
+  - {fileID: 959233277, guid: 5f57686b71962ab449c2e173e1816642, type: 3}
+  rightSprites:
+  - {fileID: 1952618719, guid: 6ee3df1ea4e1702428c7c3a7645d0593, type: 3}
+  - {fileID: -890738826, guid: 6ee3df1ea4e1702428c7c3a7645d0593, type: 3}
+  - {fileID: -834566325, guid: 6ee3df1ea4e1702428c7c3a7645d0593, type: 3}
+  - {fileID: 1396301593, guid: 6ee3df1ea4e1702428c7c3a7645d0593, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

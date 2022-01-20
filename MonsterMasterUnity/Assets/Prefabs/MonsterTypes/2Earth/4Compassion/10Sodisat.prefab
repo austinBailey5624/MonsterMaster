@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2544856881179752730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5445957220835546658}
+  - component: {fileID: -2509146618736250414}
+  m_Layer: 0
+  m_Name: 10Sodisat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5445957220835546658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544856881179752730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2509146618736250414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544856881179752730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
+  name: Sodisat
+  description: The Sodisat is a young monk-seeming monster that trained for years
+    to use its body to de-escalate the conflict. It as learned the art of striking
+    with a sacred palm, which will pacify a nearly defeated foe (1hp left), allowing
+    the conflict to end peacefully.
+  secondaryElement: {fileID: 4609062588304492513, guid: cacecc853b02f194e88caeb73f8bf08a,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 2481788439678780944, guid: 796fc0f598600a744bc7af2f1a343d8b,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 8842391814599924411, guid: 5e85092a78157f5419001316b7d3d10c,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites: []
+  downSprites: []
+  rightSprites: []
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

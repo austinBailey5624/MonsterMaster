@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4002151652273022853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8882914672511692176}
+  - component: {fileID: -3331310355847749483}
+  m_Layer: 0
+  m_Name: 10Phage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8882914672511692176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002151652273022853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3331310355847749483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002151652273022853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
+  name: Phage
+  description: A phage is a glowing ball of light that is protected by tin armor.
+    It is floating about three feet in the air and has three fingered golden claws
+    that extend two feet from its shoulders. it has two asymmetric horns on its helmet
+    that is not attached to its body, and light glows from the eye sockets.
+  secondaryElement: {fileID: -3261303298942615324, guid: cef558b292381944aa4af21a669e85f7,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -1372631896300606379, guid: e4ae80ede15cdfc458c6f5a75dc291ff,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -2413669921744750713, guid: 75983d869929f0c48b290c9f703791b9,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites: []
+  downSprites: []
+  rightSprites: []
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2660516345993106671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7172763777407470859}
+  - component: {fileID: -5353367405831982056}
+  m_Layer: 0
+  m_Name: 11RainbowFrog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7172763777407470859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660516345993106671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5353367405831982056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660516345993106671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 108954005, guid: 0ed197714ea43c24b80b5d672b42a066, type: 3}
+  name: Rainbow Frog
+  description: The rainbow frog is a frog that is colored like a rainbow. It was
+    nearly hunted to extinction by the leprechauns, but they gave up when they realized
+    that it wasn't always sitting on a pot of gold. In fact, it never was. Poor dead
+    rainbow Frogs... There is animosity between the Rainbow Frogs and the leprechauns
+    to this day.
+  secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 2788707079923308377, guid: b1d397eaea6cd5142ae312ec213e22fa,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 5581803974312184288, guid: b6dafa46a23d8e14f830044469d75786,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -784989404, guid: 38e18aba3d6e3f04f9bbcbc74ea09f8f, type: 3}
+  - {fileID: 1011797219, guid: 38e18aba3d6e3f04f9bbcbc74ea09f8f, type: 3}
+  - {fileID: 1666833608, guid: 38e18aba3d6e3f04f9bbcbc74ea09f8f, type: 3}
+  - {fileID: 443372592, guid: 38e18aba3d6e3f04f9bbcbc74ea09f8f, type: 3}
+  downSprites:
+  - {fileID: 108954005, guid: 0ed197714ea43c24b80b5d672b42a066, type: 3}
+  - {fileID: -562777849, guid: 0ed197714ea43c24b80b5d672b42a066, type: 3}
+  - {fileID: -1706482090, guid: 0ed197714ea43c24b80b5d672b42a066, type: 3}
+  - {fileID: 94227583, guid: 0ed197714ea43c24b80b5d672b42a066, type: 3}
+  rightSprites:
+  - {fileID: -428971897, guid: 2c72b6c713e201d41bbd4bae6e265aec, type: 3}
+  - {fileID: 542420732, guid: 2c72b6c713e201d41bbd4bae6e265aec, type: 3}
+  - {fileID: 878217599, guid: 2c72b6c713e201d41bbd4bae6e265aec, type: 3}
+  - {fileID: -496902549, guid: 2c72b6c713e201d41bbd4bae6e265aec, type: 3}
+  leftSprites:
+  - {fileID: -2132842069, guid: a8eb17eb5cdfa1a48aa1f798923e9711, type: 3}
+  - {fileID: -619419748, guid: a8eb17eb5cdfa1a48aa1f798923e9711, type: 3}
+  - {fileID: -2132842069, guid: a8eb17eb5cdfa1a48aa1f798923e9711, type: 3}
+  - {fileID: 427037972, guid: a8eb17eb5cdfa1a48aa1f798923e9711, type: 3}
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8805127990391171121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2782900713982679790}
+  - component: {fileID: -451864546133584070}
+  m_Layer: 0
+  m_Name: 20Baldgul
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2782900713982679790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805127990391171121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-451864546133584070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805127990391171121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
+  name: Baldgul
+  description: The Baldgul is a bald eagle that is actually bald. Not white feathers,
+    no feathers.
+  secondaryElement: {fileID: 0}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -5694726984192749390, guid: a970cb68476f7de4ca81c0045f4e971f,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 4612361911372876636, guid: 94079721250dd204ca1076c449629642,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites: []
+  downSprites: []
+  rightSprites: []
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

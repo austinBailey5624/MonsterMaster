@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5019508141209869928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9095965588296286743}
+  - component: {fileID: -7920643349965016312}
+  m_Layer: 0
+  m_Name: 21Snugglerfish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9095965588296286743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5019508141209869928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7920643349965016312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5019508141209869928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1725611222, guid: f541508df5c477a4d9d19fd563590202, type: 3}
+  name: Snugglerfish
+  description: The toxic codependency of the cuddlefish has reached its apex, and
+    the two cuddlerfish have fused into a single Snugglerfish.  The Snugglerfish
+    couldn't be happier though, each half truly fulfilled in its connection with
+    the other. Who am I to judge?
+  secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 4298292222814926112, guid: f5a428b56fe999942afa36eb681b9a5f,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 4976262398806095593, guid: 19b2bfc65c01c494cb446736cf08474a,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -1496511551, guid: dc7a4ed590a001047b32f073a52ad15f, type: 3}
+  - {fileID: 188018802, guid: dc7a4ed590a001047b32f073a52ad15f, type: 3}
+  - {fileID: 1291645119, guid: dc7a4ed590a001047b32f073a52ad15f, type: 3}
+  - {fileID: -1761976316, guid: dc7a4ed590a001047b32f073a52ad15f, type: 3}
+  downSprites:
+  - {fileID: 1725611222, guid: f541508df5c477a4d9d19fd563590202, type: 3}
+  - {fileID: -1435905370, guid: f541508df5c477a4d9d19fd563590202, type: 3}
+  - {fileID: 1998455116, guid: f541508df5c477a4d9d19fd563590202, type: 3}
+  - {fileID: 1551828345, guid: f541508df5c477a4d9d19fd563590202, type: 3}
+  rightSprites:
+  - {fileID: 201788622, guid: 2388ed5d254ebc84b95c1e16ba492625, type: 3}
+  - {fileID: -60039895, guid: 2388ed5d254ebc84b95c1e16ba492625, type: 3}
+  - {fileID: -992077865, guid: 2388ed5d254ebc84b95c1e16ba492625, type: 3}
+  - {fileID: -1382575862, guid: 2388ed5d254ebc84b95c1e16ba492625, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

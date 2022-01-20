@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2350606062343854844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071410685475792404}
+  - component: {fileID: 8147544918331524479}
+  m_Layer: 0
+  m_Name: 00Sticket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2071410685475792404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350606062343854844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8147544918331524479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350606062343854844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1208325177, guid: e09ce6d0c3720ef4daa1d70ff8febc93, type: 3}
+  name: Sticket
+  description: The Sticket pretends to be magical but isn't. Its very depressing
+    huh? Its basically just a small stick that can move on its own. But its very
+    good at listening, probably because it cant talk. If it could though it would
+    always advise revenge by saying 'Sticket to em!'
+  secondaryElement: {fileID: 1428736970731791400, guid: edd571e3e07bab148bfd636671b90547,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -6916617896549048054, guid: e61bdc899868481459b5753079fb6123,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -1090570165, guid: d20e5b65ba581f446aae0dda01d1f7ac, type: 3}
+  - {fileID: -1902472042, guid: d20e5b65ba581f446aae0dda01d1f7ac, type: 3}
+  - {fileID: 1455500050, guid: d20e5b65ba581f446aae0dda01d1f7ac, type: 3}
+  - {fileID: -770302743, guid: d20e5b65ba581f446aae0dda01d1f7ac, type: 3}
+  downSprites:
+  - {fileID: 1208325177, guid: e09ce6d0c3720ef4daa1d70ff8febc93, type: 3}
+  - {fileID: -1161454690, guid: e09ce6d0c3720ef4daa1d70ff8febc93, type: 3}
+  - {fileID: 286786463, guid: e09ce6d0c3720ef4daa1d70ff8febc93, type: 3}
+  - {fileID: -1502438983, guid: e09ce6d0c3720ef4daa1d70ff8febc93, type: 3}
+  rightSprites:
+  - {fileID: -403071305, guid: 5d0caaa5917eca746a284ac860b791e0, type: 3}
+  - {fileID: -558941537, guid: 5d0caaa5917eca746a284ac860b791e0, type: 3}
+  - {fileID: -442336185, guid: 5d0caaa5917eca746a284ac860b791e0, type: 3}
+  - {fileID: -1205729172, guid: 5d0caaa5917eca746a284ac860b791e0, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7981348503342878378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2301194129848130666}
+  - component: {fileID: -2494025450734026967}
+  m_Layer: 0
+  m_Name: 33AeroAtronach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2301194129848130666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7981348503342878378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2494025450734026967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7981348503342878378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 474422053, guid: ab92cd0647b65d44297e6e0f2067a16c, type: 3}
+  name: Aero Atronach
+  description: ' Lightning often surrounds the Air Atronach whenever it is angry.
+    It is surrounded by six elementals, three of which are aero, three of which determine
+    the other types of spells it can cast'
+  secondaryElement: {fileID: 0}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 4170692502771860797, guid: c121e5b08a96f2b44bb2bb1f7e89dec0,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: 1034241691, guid: ae9ff6c881d742141a8503d02db38459, type: 3}
+  - {fileID: 1689601823, guid: ae9ff6c881d742141a8503d02db38459, type: 3}
+  - {fileID: 898581089, guid: ae9ff6c881d742141a8503d02db38459, type: 3}
+  - {fileID: -925458985, guid: ae9ff6c881d742141a8503d02db38459, type: 3}
+  downSprites:
+  - {fileID: 474422053, guid: ab92cd0647b65d44297e6e0f2067a16c, type: 3}
+  - {fileID: -1179039233, guid: ab92cd0647b65d44297e6e0f2067a16c, type: 3}
+  - {fileID: -427047204, guid: ab92cd0647b65d44297e6e0f2067a16c, type: 3}
+  - {fileID: 2040374763, guid: ab92cd0647b65d44297e6e0f2067a16c, type: 3}
+  rightSprites:
+  - {fileID: -1914334968, guid: e0df04e4c2743924cb54794251d2e136, type: 3}
+  - {fileID: -675841964, guid: e0df04e4c2743924cb54794251d2e136, type: 3}
+  - {fileID: 1539645780, guid: e0df04e4c2743924cb54794251d2e136, type: 3}
+  - {fileID: -1279130880, guid: e0df04e4c2743924cb54794251d2e136, type: 3}
+  leftSprites:
+  - {fileID: -280520225, guid: 6254764f1959ce2488c8077683d5d5eb, type: 3}
+  - {fileID: -389606453, guid: 6254764f1959ce2488c8077683d5d5eb, type: 3}
+  - {fileID: -407795571, guid: 6254764f1959ce2488c8077683d5d5eb, type: 3}
+  - {fileID: 447235332, guid: 6254764f1959ce2488c8077683d5d5eb, type: 3}
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

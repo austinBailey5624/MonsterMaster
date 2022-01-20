@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4481081275955963937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4994037546987612886}
+  - component: {fileID: -2435575855158544452}
+  m_Layer: 0
+  m_Name: 22Glowen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4994037546987612886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4481081275955963937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2435575855158544452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4481081275955963937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
+  name: Glowen
+  description: The Glowen is a redeemed fallen angel, whose cut wings are beginning
+    to regrow. Its eyes caused it to sin, so it cast them aside, and wears a blindfold
+    in their place. It cannot hit with phyiscal attacks, but it can cast repent,
+    a spell that will attack all of the monsters on the other field.
+  secondaryElement: {fileID: 4107190744854638878, guid: 9721832e8a5f1624c83cd9a634214656,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -3197050032566291988, guid: b25fbdff033f04b408aec3b681dd8416,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -679166426861167846, guid: 37ca339eaa212224984fadbbad7e619e,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites: []
+  downSprites: []
+  rightSprites: []
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

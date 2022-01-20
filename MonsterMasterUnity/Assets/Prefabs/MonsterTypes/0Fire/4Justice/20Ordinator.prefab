@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5173783605340820899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5435370995261077786}
+  - component: {fileID: -7115134150197056487}
+  m_Layer: 0
+  m_Name: 20Ordinator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5435370995261077786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5173783605340820899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7115134150197056487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5173783605340820899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -1870268561, guid: a4b41863e63c5bd40be1c3d9dbb9203f, type: 3}
+  name: Ordinator
+  description: The ordinator is a justicar who has served its term as a city guard
+    and now goes forth to right whatever wrong it sees. It stands in shining white
+    steel plate mail with a steel shield edged in gold with a knee-length white silk
+    cape edged in gold
+  secondaryElement: {fileID: -7319997053904476201, guid: a3fb5d4265d4475478a996ee0d72e192,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -4934386458181212159, guid: 0c3c93fa35a9f974ca36effddd9cdb7b,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 2149340337983382907, guid: 71ffec8071883634b8ba99790e3a9c55,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -1650945434, guid: 756f1ccb7f7519f4fa6d9714bb49465f, type: 3}
+  - {fileID: 12772250, guid: 756f1ccb7f7519f4fa6d9714bb49465f, type: 3}
+  - {fileID: 2046350233, guid: 756f1ccb7f7519f4fa6d9714bb49465f, type: 3}
+  - {fileID: -1800834037, guid: 756f1ccb7f7519f4fa6d9714bb49465f, type: 3}
+  downSprites:
+  - {fileID: -1870268561, guid: a4b41863e63c5bd40be1c3d9dbb9203f, type: 3}
+  - {fileID: 1783424619, guid: a4b41863e63c5bd40be1c3d9dbb9203f, type: 3}
+  - {fileID: 1149096854, guid: a4b41863e63c5bd40be1c3d9dbb9203f, type: 3}
+  - {fileID: 1551685128, guid: a4b41863e63c5bd40be1c3d9dbb9203f, type: 3}
+  rightSprites:
+  - {fileID: 1766880029, guid: bc0a9f887e98cd344a0414c94f059d34, type: 3}
+  - {fileID: 960294292, guid: bc0a9f887e98cd344a0414c94f059d34, type: 3}
+  - {fileID: 1964101703, guid: bc0a9f887e98cd344a0414c94f059d34, type: 3}
+  - {fileID: -716805370, guid: bc0a9f887e98cd344a0414c94f059d34, type: 3}
+  leftSprites:
+  - {fileID: -1662560406, guid: ea9bf4e7fd110cb41a08496f3a6d3629, type: 3}
+  - {fileID: -814840446, guid: ea9bf4e7fd110cb41a08496f3a6d3629, type: 3}
+  - {fileID: 572666231, guid: ea9bf4e7fd110cb41a08496f3a6d3629, type: 3}
+  - {fileID: 1159479680, guid: ea9bf4e7fd110cb41a08496f3a6d3629, type: 3}
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

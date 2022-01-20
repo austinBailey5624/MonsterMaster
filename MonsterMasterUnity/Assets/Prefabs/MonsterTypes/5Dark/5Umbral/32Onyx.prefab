@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &569641743492160764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3861922190773226876}
+  - component: {fileID: -8534902704558522497}
+  m_Layer: 0
+  m_Name: 32Onyx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3861922190773226876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569641743492160764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8534902704558522497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569641743492160764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -1498540523, guid: 211b846f18807b74882a7d267aceceb6, type: 3}
+  name: Onyx
+  description: The onyx consumes the light around it, giving it a halo of shadow.
+    It crystalizes any energy sent at it and consumes it at will. It bows only to
+    masters that serve themselves, and even then, the master must be powerful enough
+    to dominate it utterly. It's made of a thousand onyx crystals, each incredibly
+    valuable, but anything that would seek to take them is a fool- they are cursed
+    and embedded with darkness.
+  secondaryElement: {fileID: 7823154011277093879, guid: 60cc9ecf927b1554bb7c63067acde323,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 6023436451869976784, guid: f4e86e291261322488fc491e94a7a4ff,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: 1307544400, guid: ed6faae6c0846f3408c802b2b91b37d8, type: 3}
+  - {fileID: -64894854, guid: ed6faae6c0846f3408c802b2b91b37d8, type: 3}
+  - {fileID: -1360982630, guid: ed6faae6c0846f3408c802b2b91b37d8, type: 3}
+  - {fileID: 1819043014, guid: ed6faae6c0846f3408c802b2b91b37d8, type: 3}
+  downSprites:
+  - {fileID: -1498540523, guid: 211b846f18807b74882a7d267aceceb6, type: 3}
+  - {fileID: 553638933, guid: 211b846f18807b74882a7d267aceceb6, type: 3}
+  - {fileID: -2134819279, guid: 211b846f18807b74882a7d267aceceb6, type: 3}
+  - {fileID: -2007241720, guid: 211b846f18807b74882a7d267aceceb6, type: 3}
+  rightSprites:
+  - {fileID: 1342823429, guid: 7481742aebf8ee24dac93cf81251f795, type: 3}
+  - {fileID: -359042311, guid: 7481742aebf8ee24dac93cf81251f795, type: 3}
+  - {fileID: -35657160, guid: 7481742aebf8ee24dac93cf81251f795, type: 3}
+  - {fileID: 481997646, guid: 7481742aebf8ee24dac93cf81251f795, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

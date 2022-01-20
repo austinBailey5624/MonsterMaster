@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3645700745527917496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6920869046501420818}
+  - component: {fileID: 140246821753328138}
+  m_Layer: 0
+  m_Name: 00Flarial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6920869046501420818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3645700745527917496}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140246821753328138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3645700745527917496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 446577712, guid: 292708621c73a484eafca6c23ac24f4c, type: 3}
+  name: Flarial
+  description: A young spirit, made of flame, that hovers above the earth- it casts
+    no shadow, as it is a source of light. It is too young to have such anger in
+    its eyes, yet anger there is, and the child is consumed by it
+  secondaryElement: {fileID: -1591830680305207344, guid: 4e6f574650357744486c44e0ac6b3fe6,
+    type: 3}
+  physicalEvolution: {fileID: 6277841753982432833, guid: 14726b32d15920048895d5208f8feefc,
+    type: 3}
+  balancedEvolution: {fileID: 7600954882720777373, guid: 33ad7d4bb29552b4eae52f6b484af7a5,
+    type: 3}
+  magicalEvolution: {fileID: 1542924349838229340, guid: 437e582f8f778284887dd28a5c663d20,
+    type: 3}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: -1160744698, guid: 16b339526b1222444afdc96e805afe6b, type: 3}
+  - {fileID: -771572534, guid: 16b339526b1222444afdc96e805afe6b, type: 3}
+  - {fileID: 1177919970, guid: 16b339526b1222444afdc96e805afe6b, type: 3}
+  - {fileID: 713708583, guid: 16b339526b1222444afdc96e805afe6b, type: 3}
+  downSprites:
+  - {fileID: 446577712, guid: 292708621c73a484eafca6c23ac24f4c, type: 3}
+  - {fileID: -1256310339, guid: 292708621c73a484eafca6c23ac24f4c, type: 3}
+  - {fileID: -81728795, guid: 292708621c73a484eafca6c23ac24f4c, type: 3}
+  - {fileID: 1825335851, guid: 292708621c73a484eafca6c23ac24f4c, type: 3}
+  rightSprites:
+  - {fileID: 1271410353, guid: 26a334d1833dce84987bb839545ad1bc, type: 3}
+  - {fileID: 1912649866, guid: 26a334d1833dce84987bb839545ad1bc, type: 3}
+  - {fileID: -1959648363, guid: 26a334d1833dce84987bb839545ad1bc, type: 3}
+  - {fileID: -418282795, guid: 26a334d1833dce84987bb839545ad1bc, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MenuScenes/MainMenu.unity
-    guid: 5bfaa2cea45c375488a924152be1f929
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MenuScenes/LoadMenu.unity
     guid: 4cff958353438ef47b576f1bd14e40ca
@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OakTreeScenes/OakTree_EmmasHouse.unity
     guid: 9379b3dfea37b874c9ea6b2a3426e276
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/PauseMenu/Encyclopedia/Bestiary/BestiarySubelementMenu.unity
+    guid: c2f34fa0a06fad043adbddf5c228213c
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/PauseMenu/Encyclopedia/Bestiary/BestiaryMonsterTypeMenu.unity
+    guid: 5ec03619621840d408d0b59948ac432d
   m_configObjects: {}

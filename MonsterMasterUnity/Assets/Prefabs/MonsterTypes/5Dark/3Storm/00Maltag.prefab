@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7492072000159026373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3680976063794653910}
+  - component: {fileID: -2245783185971455460}
+  m_Layer: 0
+  m_Name: 00Maltag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3680976063794653910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7492072000159026373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2245783185971455460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7492072000159026373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1190668977, guid: 0edd01b00c9a1f44aa8296ba683c94ce, type: 3}
+  name: Maltag
+  description: 'Have you ever had a really bad day? So bad that even if it was sunny,
+    a small mean cloud was following you and raining on your parade? This is that
+    cloud: a Cirrus with a bad attitude.'
+  secondaryElement: {fileID: -988008113699039376, guid: 82efe74e544df944ebbb787b9ea68d22,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -5816403334408087265, guid: 4d04b8acd10393a47bca6b3cb94a557f,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: 102382097, guid: 23c82cea7a4f3734c8d81aba3db310cc, type: 3}
+  - {fileID: -1383779412, guid: 23c82cea7a4f3734c8d81aba3db310cc, type: 3}
+  - {fileID: -1296234122, guid: 23c82cea7a4f3734c8d81aba3db310cc, type: 3}
+  - {fileID: -1144794921, guid: 23c82cea7a4f3734c8d81aba3db310cc, type: 3}
+  downSprites:
+  - {fileID: 1190668977, guid: 0edd01b00c9a1f44aa8296ba683c94ce, type: 3}
+  - {fileID: -440634473, guid: 0edd01b00c9a1f44aa8296ba683c94ce, type: 3}
+  - {fileID: 827851248, guid: 0edd01b00c9a1f44aa8296ba683c94ce, type: 3}
+  - {fileID: 1928479636, guid: 0edd01b00c9a1f44aa8296ba683c94ce, type: 3}
+  rightSprites:
+  - {fileID: -914736960, guid: 87973ca389c5f6e4b8af90269d47b3b0, type: 3}
+  - {fileID: -959240405, guid: 87973ca389c5f6e4b8af90269d47b3b0, type: 3}
+  - {fileID: 1984807800, guid: 87973ca389c5f6e4b8af90269d47b3b0, type: 3}
+  - {fileID: -526048012, guid: 87973ca389c5f6e4b8af90269d47b3b0, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

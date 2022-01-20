@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &297976183893432664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5934048334863307056}
+  - component: {fileID: -4169451604314769922}
+  m_Layer: 0
+  m_Name: 21Anangel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5934048334863307056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297976183893432664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4169451604314769922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297976183893432664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
+  name: Anangel
+  description: A conusmate enemy of darkness, blessed with a large halo for its saintlyness,
+    the Anangel can promote its allies to do +20% damage versus dark primary enemies,
+    and though it can heal, it refuses to do so for any ally that has any taint on
+    their soul.
+  secondaryElement: {fileID: -9038520565073950744, guid: 12a6b661cce4c7049b239a807075d7a5,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 1391586966996296991, guid: 91e11f3e7e9df9f4a95f60f30e5fa41b,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 1770338487800401384, guid: 5ecaaa386a94dc148aa1dc10da37e5b9,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites: []
+  downSprites: []
+  rightSprites: []
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

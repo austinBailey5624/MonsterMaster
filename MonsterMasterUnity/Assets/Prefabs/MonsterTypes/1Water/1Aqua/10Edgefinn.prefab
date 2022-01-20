@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8899523729497866093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1378556661601283791}
+  - component: {fileID: 8676357071632841669}
+  m_Layer: 0
+  m_Name: 10Edgefinn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1378556661601283791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8899523729497866093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8676357071632841669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8899523729497866093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1685898696, guid: b8ccb5907d13f574fb7f537c282f911c, type: 3}
+  name: Edgefinn
+  description: EdgeFinn is a larger version of the Minnow with a serrated crest and
+    finns, as well as small, razor-sharp teeth. unlike most fish, its eyes face forward
+    to stalk its prey, like the carnivores on land. It is known for hunting its prey
+    with persistance, and it can smell blood three miles distant.
+  secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -9066302204291404136, guid: 3d1ac3bf1748f9740ade6e67758d8a0d,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 6973090546917149751, guid: 9381a8f3110a1f34e8216a7175528746,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: 1887850303, guid: 963e2f496e5f7184a87792fc119f9b02, type: 3}
+  - {fileID: 1494599104, guid: 963e2f496e5f7184a87792fc119f9b02, type: 3}
+  - {fileID: -1762244029, guid: 963e2f496e5f7184a87792fc119f9b02, type: 3}
+  - {fileID: -1148192017, guid: 963e2f496e5f7184a87792fc119f9b02, type: 3}
+  downSprites:
+  - {fileID: 1685898696, guid: b8ccb5907d13f574fb7f537c282f911c, type: 3}
+  - {fileID: 77612127, guid: b8ccb5907d13f574fb7f537c282f911c, type: 3}
+  - {fileID: 1800695790, guid: b8ccb5907d13f574fb7f537c282f911c, type: 3}
+  - {fileID: -725500768, guid: b8ccb5907d13f574fb7f537c282f911c, type: 3}
+  rightSprites:
+  - {fileID: -1543058453, guid: b74dd331f9cf79443a6f7c4275f09826, type: 3}
+  - {fileID: -1568620583, guid: b74dd331f9cf79443a6f7c4275f09826, type: 3}
+  - {fileID: 1112405300, guid: b74dd331f9cf79443a6f7c4275f09826, type: 3}
+  - {fileID: 256463572, guid: b74dd331f9cf79443a6f7c4275f09826, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

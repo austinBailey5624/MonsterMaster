@@ -1,0 +1,2 @@
+Attribution:
+Base image "Pegasus.jpg" Was retrieved from https://www.istockphoto.com/illustrations/pegasus-wings on 2/5/2022 at 10:51AM CST - According to the liscence I'm allowed to reuse it and I'm going to make it the base of my Pegasus Symbol

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5560893097047439811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7797943132132069202}
+  - component: {fileID: 5429064176471007133}
+  m_Layer: 0
+  m_Name: 32Topaz
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7797943132132069202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5560893097047439811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5429064176471007133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5560893097047439811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 503893856, guid: f1b7498dd614c70489ba6bb66a075479, type: 3}
+  name: Topaz
+  description: 'A great elememtal crystal crackling with electric energy, the Topaz
+    is the pinnacle of pure air magic. It also likes smashing its body into the unworthy-
+    specifically anyone who disparages the air elementals for being weak. '
+  secondaryElement: {fileID: 1648053196639599297, guid: 3d70c069bda0a1947bb3d6decfe9e7db,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -8875660259030206499, guid: cbb7e1706f5e569418967d201e47b919,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: 285550791, guid: ffa8c81b21605dc40a50e0bfc3c185ca, type: 3}
+  - {fileID: -1052091191, guid: ffa8c81b21605dc40a50e0bfc3c185ca, type: 3}
+  - {fileID: 1483590984, guid: ffa8c81b21605dc40a50e0bfc3c185ca, type: 3}
+  - {fileID: -395724492, guid: ffa8c81b21605dc40a50e0bfc3c185ca, type: 3}
+  downSprites:
+  - {fileID: 503893856, guid: f1b7498dd614c70489ba6bb66a075479, type: 3}
+  - {fileID: -1088897973, guid: f1b7498dd614c70489ba6bb66a075479, type: 3}
+  - {fileID: -865238005, guid: f1b7498dd614c70489ba6bb66a075479, type: 3}
+  - {fileID: -1441805310, guid: f1b7498dd614c70489ba6bb66a075479, type: 3}
+  rightSprites:
+  - {fileID: 271665904, guid: 221e84ca7ed89e74fac64a121a29edb7, type: 3}
+  - {fileID: -1618152684, guid: 221e84ca7ed89e74fac64a121a29edb7, type: 3}
+  - {fileID: -1205700891, guid: 221e84ca7ed89e74fac64a121a29edb7, type: 3}
+  - {fileID: -1618152684, guid: 221e84ca7ed89e74fac64a121a29edb7, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

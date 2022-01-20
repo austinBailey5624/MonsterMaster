@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8611110676026999386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277020534711863280}
+  - component: {fileID: 2449289744489595218}
+  m_Layer: 0
+  m_Name: 22Nimbuloponderant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1277020534711863280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611110676026999386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2449289744489595218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611110676026999386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 380087082, guid: e6520920c5b1d8442854d0cb3b672b0a, type: 3}
+  name: Nimbuloponderant
+  description: The Nimbuloponderant has grown fat with rain from feeding off of thermals
+    from the ocean. It climbs high into the bitter sky to chill this rain to incorporate
+    it as snow in its body.It is slow and strong, as befits its nature. It is made
+    even stronger by the cold and the snow, which it often causes.
+  secondaryElement: {fileID: 4365761220871908015, guid: 24ed4b5d520c63549bf079edfb891ef2,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -5453189909573787627, guid: e7ed634a221ffb440a2bb22014ca333c,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -7781831207231285138, guid: 7bad6f1889a60f64ab886052f616fb31,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: -649447011, guid: f7c14748420abb2428ae8850f2afe6ee, type: 3}
+  - {fileID: 1157846787, guid: f7c14748420abb2428ae8850f2afe6ee, type: 3}
+  - {fileID: 629993590, guid: f7c14748420abb2428ae8850f2afe6ee, type: 3}
+  - {fileID: -1956487914, guid: f7c14748420abb2428ae8850f2afe6ee, type: 3}
+  downSprites:
+  - {fileID: 380087082, guid: e6520920c5b1d8442854d0cb3b672b0a, type: 3}
+  - {fileID: -1709521926, guid: e6520920c5b1d8442854d0cb3b672b0a, type: 3}
+  - {fileID: -342346027, guid: e6520920c5b1d8442854d0cb3b672b0a, type: 3}
+  - {fileID: -1352094605, guid: e6520920c5b1d8442854d0cb3b672b0a, type: 3}
+  rightSprites:
+  - {fileID: 1910870026, guid: f1346de3db98bbb459f89f1a7f4dbb56, type: 3}
+  - {fileID: -1635465574, guid: f1346de3db98bbb459f89f1a7f4dbb56, type: 3}
+  - {fileID: -439271830, guid: f1346de3db98bbb459f89f1a7f4dbb56, type: 3}
+  - {fileID: 1235574790, guid: f1346de3db98bbb459f89f1a7f4dbb56, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

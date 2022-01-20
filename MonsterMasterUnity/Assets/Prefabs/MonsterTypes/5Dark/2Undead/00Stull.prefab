@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &809303595779381776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376230489816115}
+  - component: {fileID: -5057835397463467094}
+  m_Layer: 0
+  m_Name: 00Stull
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &376230489816115
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809303595779381776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5057835397463467094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809303595779381776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1250144673, guid: dd03d365fe512324b9390e703c19f157, type: 3}
+  name: Stull
+  description: Silent Witness in the dark. When Death himself cannot come, these
+    monsters listen greedily to the necromancers' secret whispers. They are the first
+    undead spirit summoned by budding necromancers, and are a gateway to darker magics.
+    They whisper incantations of dark spells, but beware- you may not be ready for
+    the secrets they provide, and they may consume you.
+  secondaryElement: {fileID: -213147953103020885, guid: d50331d33c6b53f408176b460efe4ffc,
+    type: 3}
+  physicalEvolution: {fileID: 5149776472990234854, guid: 47d0a3c7366688a4dbd9de6060f4db82,
+    type: 3}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: -1005311604754120087, guid: de6128b1d14852144b6ff02574800b0d,
+    type: 3}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: -1386444953, guid: fe441f453a2676443a13fcd729b06b7a, type: 3}
+  - {fileID: 1208925303, guid: fe441f453a2676443a13fcd729b06b7a, type: 3}
+  - {fileID: -637170436, guid: fe441f453a2676443a13fcd729b06b7a, type: 3}
+  - {fileID: 1984530645, guid: fe441f453a2676443a13fcd729b06b7a, type: 3}
+  downSprites:
+  - {fileID: 1250144673, guid: dd03d365fe512324b9390e703c19f157, type: 3}
+  - {fileID: 949814943, guid: dd03d365fe512324b9390e703c19f157, type: 3}
+  - {fileID: -833072526, guid: dd03d365fe512324b9390e703c19f157, type: 3}
+  - {fileID: -1582501282, guid: dd03d365fe512324b9390e703c19f157, type: 3}
+  rightSprites:
+  - {fileID: 2083362442, guid: 52c4d042cec561940bc5c6fb8a50d6e4, type: 3}
+  - {fileID: 703854522, guid: 52c4d042cec561940bc5c6fb8a50d6e4, type: 3}
+  - {fileID: -219007409, guid: 52c4d042cec561940bc5c6fb8a50d6e4, type: 3}
+  - {fileID: -1211706932, guid: 52c4d042cec561940bc5c6fb8a50d6e4, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &964477212943710992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3021357248170180595}
+  - component: {fileID: 8180448504749424720}
+  m_Layer: 0
+  m_Name: 11Vinewolf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3021357248170180595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964477212943710992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8180448504749424720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964477212943710992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
+  name: VineWolf
+  description: The vinewolf's bulb sprounted into vines that encircle it. Often while
+    hunting it will use the vines to hold down its prey while it goes in for the
+    kill. It can also wrap its vines around an unsuspecting opponent, at a great
+    cost to the agility of both creatures.
+  secondaryElement: {fileID: -6167040606810525808, guid: 350ac7d25402e844a838a5a45dba9168,
+    type: 3}
+  physicalEvolution: {fileID: 7409138259892491638, guid: aa4dbad17a104f943ba780d262964429,
+    type: 3}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 2468283471267158279, guid: d3628e2b66c73d94b840f3328bfb4adf,
+    type: 3}
+  previousEvolution: {fileID: 3405451846353825294, guid: a27cbe1d6a4430a4b92477a389f7272e,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites: []
+  downSprites: []
+  rightSprites: []
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

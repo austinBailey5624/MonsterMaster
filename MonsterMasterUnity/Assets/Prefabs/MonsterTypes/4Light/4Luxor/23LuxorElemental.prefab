@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7012689402487731537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251126379082523654}
+  - component: {fileID: 7858553625361606422}
+  m_Layer: 0
+  m_Name: 23LuxorElemental
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1251126379082523654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012689402487731537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7858553625361606422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012689402487731537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -477295510, guid: c2e69dff28585ec4fb4d3f628c08959a, type: 3}
+  name: Luxor Elemental
+  description: The Luxor Elemental is a large light symbol surrounded by two other
+    symbols, water, and earth. The elemental can channel any of the three energies
+    to attack the wicked or defend the righteous.
+  secondaryElement: {fileID: -3261303298942615324, guid: cef558b292381944aa4af21a669e85f7,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 7124970269701724925, guid: b5176dc619b0e914999031626e31fd7c,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 8142590448234542771, guid: 858b94af41961d7429d0ddd78439f49c,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -2118214630, guid: c8b4f641841ac804eb6c4cbef66432ac, type: 3}
+  - {fileID: 1512569375, guid: c8b4f641841ac804eb6c4cbef66432ac, type: 3}
+  - {fileID: -1213840836, guid: c8b4f641841ac804eb6c4cbef66432ac, type: 3}
+  - {fileID: 1117838283, guid: c8b4f641841ac804eb6c4cbef66432ac, type: 3}
+  downSprites:
+  - {fileID: -477295510, guid: c2e69dff28585ec4fb4d3f628c08959a, type: 3}
+  - {fileID: 1198315983, guid: c2e69dff28585ec4fb4d3f628c08959a, type: 3}
+  - {fileID: -1483970598, guid: c2e69dff28585ec4fb4d3f628c08959a, type: 3}
+  - {fileID: 232107192, guid: c2e69dff28585ec4fb4d3f628c08959a, type: 3}
+  rightSprites:
+  - {fileID: -842222373, guid: f7f39c11663ebf645b1b65ca22d67d7a, type: 3}
+  - {fileID: 1754250105, guid: f7f39c11663ebf645b1b65ca22d67d7a, type: 3}
+  - {fileID: 2021797672, guid: f7f39c11663ebf645b1b65ca22d67d7a, type: 3}
+  - {fileID: -209876230, guid: f7f39c11663ebf645b1b65ca22d67d7a, type: 3}
+  leftSprites:
+  - {fileID: 1817386505, guid: cf73bc98d2d78364682cd8eed1e8f426, type: 3}
+  - {fileID: -135788491, guid: cf73bc98d2d78364682cd8eed1e8f426, type: 3}
+  - {fileID: 1578292212, guid: cf73bc98d2d78364682cd8eed1e8f426, type: 3}
+  - {fileID: 1913441189, guid: cf73bc98d2d78364682cd8eed1e8f426, type: 3}
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

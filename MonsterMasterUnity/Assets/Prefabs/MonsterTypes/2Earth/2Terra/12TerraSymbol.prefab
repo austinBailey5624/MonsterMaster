@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6945367397848294255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9139213380701991839}
+  - component: {fileID: -6656054439485472049}
+  m_Layer: 0
+  m_Name: 12TerraSymbol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9139213380701991839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945367397848294255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6656054439485472049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945367397848294255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 481502838, guid: 081efb1051b75204ba32e72d1e5b6c24, type: 3}
+  name: Terra Symbol
+  description: The Tera Symbol is a green taurus with the earth symbol it its center.
+    It is happiest and shines brightest in forests, surrounded by life.
+  secondaryElement: {fileID: -6167040606810525808, guid: 350ac7d25402e844a838a5a45dba9168,
+    type: 3}
+  physicalEvolution: {fileID: 507521939649079249, guid: ff2f7e6de27b42044ad89bfb143673d8,
+    type: 3}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: -5874953607224481701, guid: 29f0e6b70ff0ea240bfc505b678292c4,
+    type: 3}
+  previousEvolution: {fileID: 3405451846353825294, guid: a27cbe1d6a4430a4b92477a389f7272e,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -91348928, guid: 6204f1c82f398374f960fc7b3c4830c9, type: 3}
+  - {fileID: -366839086, guid: 6204f1c82f398374f960fc7b3c4830c9, type: 3}
+  - {fileID: 911739574, guid: 6204f1c82f398374f960fc7b3c4830c9, type: 3}
+  - {fileID: -1752865695, guid: 6204f1c82f398374f960fc7b3c4830c9, type: 3}
+  downSprites:
+  - {fileID: 481502838, guid: 081efb1051b75204ba32e72d1e5b6c24, type: 3}
+  - {fileID: -739830095, guid: 081efb1051b75204ba32e72d1e5b6c24, type: 3}
+  - {fileID: 307573112, guid: 081efb1051b75204ba32e72d1e5b6c24, type: 3}
+  - {fileID: -769183800, guid: 081efb1051b75204ba32e72d1e5b6c24, type: 3}
+  rightSprites:
+  - {fileID: 751280338, guid: 3303da99895f6ba46bbc68227b0d3e3e, type: 3}
+  - {fileID: 1235509813, guid: 3303da99895f6ba46bbc68227b0d3e3e, type: 3}
+  - {fileID: -2074543712, guid: 3303da99895f6ba46bbc68227b0d3e3e, type: 3}
+  - {fileID: -161911822, guid: 3303da99895f6ba46bbc68227b0d3e3e, type: 3}
+  leftSprites: []
+  attackSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  onHitSprites: []
+  onDeathSprites: []

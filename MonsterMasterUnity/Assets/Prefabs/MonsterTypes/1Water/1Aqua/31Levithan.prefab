@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8845245563137126390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8552299022042793555}
+  - component: {fileID: 4298292222814926112}
+  m_Layer: 0
+  m_Name: 31Levithan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8552299022042793555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8845245563137126390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4298292222814926112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8845245563137126390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -213936019, guid: e791af7dc50b3a24c83c57489bd638a7, type: 3}
+  name: Levitathan
+  description: A Leviathan is a giant sea monster that can shoot a very pressured
+    stream of water at its enemies. It grew from a huge collection of Cuddlerfish
+    that fused together. It haunts the oceans and is an unstoppable force below the
+    waves
+  secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -7920643349965016312, guid: 41d5d5967b0f9804a98998df54ee6efc,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: 1083779487, guid: 0f8414fd85fc8464bb434d1e80dab299, type: 3}
+  - {fileID: 968195506, guid: 0f8414fd85fc8464bb434d1e80dab299, type: 3}
+  - {fileID: 1884585989, guid: 0f8414fd85fc8464bb434d1e80dab299, type: 3}
+  - {fileID: -1863803598, guid: 0f8414fd85fc8464bb434d1e80dab299, type: 3}
+  downSprites:
+  - {fileID: -213936019, guid: e791af7dc50b3a24c83c57489bd638a7, type: 3}
+  - {fileID: 133306326, guid: e791af7dc50b3a24c83c57489bd638a7, type: 3}
+  - {fileID: 693523168, guid: e791af7dc50b3a24c83c57489bd638a7, type: 3}
+  - {fileID: -522002652, guid: e791af7dc50b3a24c83c57489bd638a7, type: 3}
+  rightSprites:
+  - {fileID: -940301643, guid: 585978c72a1920649a12a1ee69a56fbf, type: 3}
+  - {fileID: 11467419, guid: 585978c72a1920649a12a1ee69a56fbf, type: 3}
+  - {fileID: -1472282999, guid: 585978c72a1920649a12a1ee69a56fbf, type: 3}
+  - {fileID: 354413791, guid: 585978c72a1920649a12a1ee69a56fbf, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

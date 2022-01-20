@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6475128905676912986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2549845284560790997}
+  - component: {fileID: -8821537144282541557}
+  m_Layer: 0
+  m_Name: 22Esotoad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2549845284560790997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475128905676912986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8821537144282541557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475128905676912986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
+  name: Esotoad
+  description: The esotoads left arm is blue, and its right arm is green. With its
+    left it has telekineic control over the water, with its right it has telekinetic
+    control over the earth. It became too lazy to walk long ago, and now whenever
+    it wants to go somewhere it will conjure a sphere of water to float in, or a
+    mass of land to sit upon that it then guides to its destination
+  secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 2501717387835219746, guid: bd86ad9387a378245b0fda74d7e55f76,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -6262127704601528221, guid: 08741b3133529c941904a7ee422e4763,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: -435780609, guid: 3f9a0fe0a1c7e504d92899ee4c582bef, type: 3}
+  - {fileID: -2008993293, guid: 3f9a0fe0a1c7e504d92899ee4c582bef, type: 3}
+  - {fileID: -537492053, guid: 3f9a0fe0a1c7e504d92899ee4c582bef, type: 3}
+  - {fileID: -1324932586, guid: 3f9a0fe0a1c7e504d92899ee4c582bef, type: 3}
+  downSprites:
+  - {fileID: -1279762812, guid: 0dc0efae16aed4642aa462a95c02f7f1, type: 3}
+  - {fileID: 248934308, guid: 0dc0efae16aed4642aa462a95c02f7f1, type: 3}
+  - {fileID: -756242790, guid: 0dc0efae16aed4642aa462a95c02f7f1, type: 3}
+  - {fileID: -453057312, guid: 0dc0efae16aed4642aa462a95c02f7f1, type: 3}
+  rightSprites:
+  - {fileID: -1997088405, guid: 8af0cae594d7d1f42b7fcd89b48a181f, type: 3}
+  - {fileID: -1751651356, guid: 8af0cae594d7d1f42b7fcd89b48a181f, type: 3}
+  - {fileID: 1116472716, guid: 8af0cae594d7d1f42b7fcd89b48a181f, type: 3}
+  - {fileID: -424869999, guid: 8af0cae594d7d1f42b7fcd89b48a181f, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

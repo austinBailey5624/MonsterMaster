@@ -201,7 +201,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 130
+  m_SortingOrder: 530
   m_TargetDisplay: 0
 --- !u!224 &79859323
 RectTransform:
@@ -241,7 +241,6 @@ GameObject:
   - component: {fileID: 109766724}
   - component: {fileID: 109766723}
   - component: {fileID: 109766725}
-  - component: {fileID: 109766726}
   m_Layer: 0
   m_Name: PeopleButton
   m_TagString: Untagged
@@ -289,7 +288,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 120
+  m_SortingOrder: 520
   m_Sprite: {fileID: 21300000, guid: f6ac9f4025627e647b61605b926d5fa7, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -325,37 +324,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 109766722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  isSelected: 0
+  selectedSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  upButton: {fileID: 612107555}
+  rightButton: {fileID: 579395364}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 0}
   nextSceneName: 
---- !u!61 &109766726
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109766722}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.08, y: 0.26}
-    newSize: {x: 1.08, y: 0.26}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.08, y: 0.26}
-  m_EdgeRadius: 0
 --- !u!1 &210475773
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +391,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 120
+  m_SortingOrder: 520
   m_Sprite: {fileID: 21300000, guid: 57aac7a5c66145743b80858022f9f7f6, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -865,7 +843,6 @@ GameObject:
   - component: {fileID: 579395363}
   - component: {fileID: 579395362}
   - component: {fileID: 579395364}
-  - component: {fileID: 579395365}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -913,7 +890,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 120
+  m_SortingOrder: 520
   m_Sprite: {fileID: 21300000, guid: 1b0f2b77e923e3a4ea1a11dfb305cc53, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -949,37 +926,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 579395361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
+  isSelected: 1
+  selectedSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
+  upButton: {fileID: 1112213771}
+  rightButton: {fileID: 0}
+  leftButton: {fileID: 109766725}
+  downButton: {fileID: 0}
   nextSceneName: PauseMenu
---- !u!61 &579395365
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579395361}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.25}
-    newSize: {x: 0.66, y: 0.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.66, y: 0.25}
-  m_EdgeRadius: 0
 --- !u!1 &612107552
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,7 +947,6 @@ GameObject:
   - component: {fileID: 612107554}
   - component: {fileID: 612107553}
   - component: {fileID: 612107555}
-  - component: {fileID: 612107556}
   m_Layer: 0
   m_Name: FactionsButton
   m_TagString: Untagged
@@ -1039,7 +994,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 120
+  m_SortingOrder: 520
   m_Sprite: {fileID: 21300000, guid: f6ac9f4025627e647b61605b926d5fa7, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -1075,37 +1030,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 612107552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  isSelected: 0
+  selectedSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  upButton: {fileID: 1783192133}
+  rightButton: {fileID: 579395364}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 109766725}
   nextSceneName: 
---- !u!61 &612107556
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612107552}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.08, y: 0.26}
-    newSize: {x: 1.08, y: 0.26}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.08, y: 0.26}
-  m_EdgeRadius: 0
 --- !u!1 &797240217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1075,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -594.69}
+  m_AnchoredPosition: {x: 0, y: -585}
   m_SizeDelta: {x: 937.92, y: 191.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797240219
@@ -1242,73 +1176,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797240217}
   m_CullTransparentMesh: 1
---- !u!1 &908447733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 908447736}
-  - component: {fileID: 908447735}
-  - component: {fileID: 908447734}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &908447734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908447733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &908447735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908447733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &908447736
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908447733}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975618990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,7 +1407,6 @@ GameObject:
   - component: {fileID: 1112213770}
   - component: {fileID: 1112213769}
   - component: {fileID: 1112213771}
-  - component: {fileID: 1112213772}
   m_Layer: 0
   m_Name: BestiaryButton
   m_TagString: Untagged
@@ -1588,7 +1454,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 120
+  m_SortingOrder: 520
   m_Sprite: {fileID: 21300000, guid: f6ac9f4025627e647b61605b926d5fa7, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -1624,37 +1490,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1112213768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  isSelected: 0
+  selectedSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  upButton: {fileID: 0}
+  rightButton: {fileID: 579395364}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 1525943938}
   nextSceneName: BestiaryMenu
---- !u!61 &1112213772
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112213768}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.08, y: 0.26}
-    newSize: {x: 1.08, y: 0.26}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.08, y: 0.26}
-  m_EdgeRadius: 0
 --- !u!1 &1268692172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,7 +1647,6 @@ GameObject:
   - component: {fileID: 1525943937}
   - component: {fileID: 1525943936}
   - component: {fileID: 1525943938}
-  - component: {fileID: 1525943939}
   m_Layer: 0
   m_Name: ReliquaryButton
   m_TagString: Untagged
@@ -1850,7 +1694,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 120
+  m_SortingOrder: 520
   m_Sprite: {fileID: 21300000, guid: f6ac9f4025627e647b61605b926d5fa7, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -1886,37 +1730,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1525943935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  isSelected: 0
+  selectedSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  upButton: {fileID: 1112213771}
+  rightButton: {fileID: 579395364}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 1783192133}
   nextSceneName: 
---- !u!61 &1525943939
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525943935}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.08, y: 0.26}
-    newSize: {x: 1.08, y: 0.26}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.08, y: 0.26}
-  m_EdgeRadius: 0
 --- !u!1 &1711530530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,7 +1887,6 @@ GameObject:
   - component: {fileID: 1783192132}
   - component: {fileID: 1783192131}
   - component: {fileID: 1783192133}
-  - component: {fileID: 1783192134}
   m_Layer: 0
   m_Name: DeitiesButton
   m_TagString: Untagged
@@ -2112,7 +1934,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 120
+  m_SortingOrder: 520
   m_Sprite: {fileID: 21300000, guid: f6ac9f4025627e647b61605b926d5fa7, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -2148,37 +1970,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783192130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  isSelected: 0
+  selectedSprite: {fileID: 21300000, guid: 34e582dbf6413e3408611f61db9b4f3d, type: 3}
+  upButton: {fileID: 1525943938}
+  rightButton: {fileID: 579395364}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 612107555}
   nextSceneName: 
---- !u!61 &1783192134
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783192130}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.08, y: 0.26}
-    newSize: {x: 1.08, y: 0.26}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.08, y: 0.26}
-  m_EdgeRadius: 0
 --- !u!1 &1915009744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,7 +2037,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 500
   m_Sprite: {fileID: 21300000, guid: 067b66ad0e42a704ea6a9552625d1af6, type: 3}
   m_Color: {r: 1, g: 0.4392157, b: 0, a: 1}
   m_FlipX: 0
@@ -2273,7 +2074,7 @@ PrefabInstance:
     - target: {fileID: 8627088874020685263, guid: 7eb8ebcc2d165b342b12e4ea59c9417e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8627088874020685263, guid: 7eb8ebcc2d165b342b12e4ea59c9417e,
         type: 3}

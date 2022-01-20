@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8743840658481722816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2878307751813179880}
+  - component: {fileID: 324519635525715306}
+  m_Layer: 0
+  m_Name: 00MinorPhoenix
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2878307751813179880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743840658481722816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324519635525715306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743840658481722816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1217920906, guid: 2e7d9809b47f1224facbe4fd96245747, type: 3}
+  name: Minor Phoenix
+  description: Not yet brilliant, or aflame like its stronger, larger cousins, the
+    lesser phoenix is known to be a tempermental bird, aggressive and purile. Sparks
+    appear intermittenlty around it, occassionally setting its surroundings to flame-
+    a flame that the Minor Phoenix enjoys. They cannot tolerate winter or even a
+    slight chill, preferring warmer climes.
+  secondaryElement: {fileID: 2625040331287048730, guid: 8cb6333acdb98f6469f73e49bf3fe55d,
+    type: 3}
+  physicalEvolution: {fileID: 8728033898782185120, guid: c58dcca0062bf8e44a5c566b1a4748ee,
+    type: 3}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 40148472385362574, guid: 7aa6f1e3f880fce4787e26cfe06804d6,
+    type: 3}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: 1114431694, guid: 2cb56d79c9908164fb1192e732aabdc3, type: 3}
+  - {fileID: 1973740493, guid: 2cb56d79c9908164fb1192e732aabdc3, type: 3}
+  - {fileID: -1796962601, guid: 2cb56d79c9908164fb1192e732aabdc3, type: 3}
+  - {fileID: 1920772344, guid: 2cb56d79c9908164fb1192e732aabdc3, type: 3}
+  downSprites:
+  - {fileID: 1217920906, guid: 2e7d9809b47f1224facbe4fd96245747, type: 3}
+  - {fileID: -148808186, guid: 2e7d9809b47f1224facbe4fd96245747, type: 3}
+  - {fileID: 82572284, guid: 2e7d9809b47f1224facbe4fd96245747, type: 3}
+  - {fileID: -1932539160, guid: 2e7d9809b47f1224facbe4fd96245747, type: 3}
+  rightSprites:
+  - {fileID: 1981690822, guid: b4ff60ef40fda8744bf7b78eac302dbd, type: 3}
+  - {fileID: -1470781912, guid: b4ff60ef40fda8744bf7b78eac302dbd, type: 3}
+  - {fileID: 450498462, guid: b4ff60ef40fda8744bf7b78eac302dbd, type: 3}
+  - {fileID: -1110356688, guid: b4ff60ef40fda8744bf7b78eac302dbd, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []
