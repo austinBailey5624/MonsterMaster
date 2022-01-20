@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5149699574535780086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 116078094341314867}
+  - component: {fileID: 8842391814599924411}
+  m_Layer: 0
+  m_Name: 00Suddi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &116078094341314867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149699574535780086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8842391814599924411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149699574535780086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 530579476, guid: e7ee2abadca5be541b9a2941bc121ae5, type: 3}
+  name: Suddi
+  description: A Suddi is a young enlighted being who can heal through compassion
+    and will heal both the virtuous and the vengeful, it resembles the mask of Sid,
+    the enlightened one.
+  secondaryElement: {fileID: 4609062588304492513, guid: cacecc853b02f194e88caeb73f8bf08a,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: -1693567538, guid: 7eb439735b3374248a1affc607a9c8ab, type: 3}
+  - {fileID: 1222334339, guid: 7eb439735b3374248a1affc607a9c8ab, type: 3}
+  - {fileID: 883098618, guid: 7eb439735b3374248a1affc607a9c8ab, type: 3}
+  - {fileID: -687128768, guid: 7eb439735b3374248a1affc607a9c8ab, type: 3}
+  downSprites:
+  - {fileID: 530579476, guid: e7ee2abadca5be541b9a2941bc121ae5, type: 3}
+  - {fileID: -758503947, guid: e7ee2abadca5be541b9a2941bc121ae5, type: 3}
+  - {fileID: 988693984, guid: e7ee2abadca5be541b9a2941bc121ae5, type: 3}
+  - {fileID: 400562865, guid: e7ee2abadca5be541b9a2941bc121ae5, type: 3}
+  rightSprites:
+  - {fileID: -571875024, guid: f9adec878b1575e4f8bb79df72c3b72e, type: 3}
+  - {fileID: 40529920, guid: f9adec878b1575e4f8bb79df72c3b72e, type: 3}
+  - {fileID: 1758942002, guid: f9adec878b1575e4f8bb79df72c3b72e, type: 3}
+  - {fileID: 90561817, guid: f9adec878b1575e4f8bb79df72c3b72e, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

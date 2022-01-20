@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7602848209277023177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3325411788916841124}
+  - component: {fileID: 6169034260861527439}
+  m_Layer: 0
+  m_Name: 20Tyrant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3325411788916841124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7602848209277023177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6169034260861527439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7602848209277023177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -630266432, guid: 05af65374c8143647bca091082272a78, type: 3}
+  name: Tyrant
+  description: A giant monster with huge jaws capable of enveloping a human whole,
+    the tyrant is the lord of the plains. Its skin is charcoal grey because it nests
+    in the charred hides of its prey. Tyrants are known for their ability to breathe
+    fire, which it often does to quickly kill enemies that are too fast to catch.
+  secondaryElement: {fileID: -3621540873206418475, guid: ed5273bbe1655ba4390d64cdd84be8e0,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 1513421780627645326, guid: 15bed36ae1ec40d4390e6057c517c088,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 2537102685265113686, guid: 5ac7c0a5e43987f4081fbc570fbf803e,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -1299740108, guid: 863df53b25fb0ab4ea8f962234d5f282, type: 3}
+  - {fileID: -486718647, guid: 863df53b25fb0ab4ea8f962234d5f282, type: 3}
+  - {fileID: -1398092606, guid: 863df53b25fb0ab4ea8f962234d5f282, type: 3}
+  - {fileID: 1309844604, guid: 863df53b25fb0ab4ea8f962234d5f282, type: 3}
+  downSprites:
+  - {fileID: -630266432, guid: 05af65374c8143647bca091082272a78, type: 3}
+  - {fileID: 2063748673, guid: 05af65374c8143647bca091082272a78, type: 3}
+  - {fileID: 1229997597, guid: 05af65374c8143647bca091082272a78, type: 3}
+  - {fileID: -994867455, guid: 05af65374c8143647bca091082272a78, type: 3}
+  rightSprites:
+  - {fileID: 1194035360, guid: 96788089adf7a04419cb07cff9760ecb, type: 3}
+  - {fileID: 1647826513, guid: 96788089adf7a04419cb07cff9760ecb, type: 3}
+  - {fileID: -1637303821, guid: 96788089adf7a04419cb07cff9760ecb, type: 3}
+  - {fileID: 1163358956, guid: 96788089adf7a04419cb07cff9760ecb, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

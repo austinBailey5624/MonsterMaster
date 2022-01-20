@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &167874563197966507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2144854580231043532}
+  - component: {fileID: -1084776304595036587}
+  m_Layer: 0
+  m_Name: 21SteelWinger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2144854580231043532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167874563197966507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1084776304595036587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167874563197966507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1420740206, guid: 21870d4e98de36f4eb4d9568a398aaa4, type: 3}
+  name: Steel Winger
+  description: A larger Winger with a steel beak and wings. The winger thought it
+    would be cool to go steel, but it didn't account for the weight, which slows
+    it down and in extreme cases keeps it from flying. The added defense is exceptional
+    though, and the steel hooks in its claws and beak have an even greater penetrating
+    effect than the raw bone of the Winger.
+  secondaryElement: {fileID: -3621540873206418475, guid: ed5273bbe1655ba4390d64cdd84be8e0,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -2285670183503532476, guid: 9a3a4907f86c29c4e91995126c5741c9,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -5875754871140177172, guid: 61c041fe548e946438b6cfc379b597a6,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: 17002442, guid: 07ec49ee650f53d418bf7f70bead5422, type: 3}
+  - {fileID: -315226097, guid: 07ec49ee650f53d418bf7f70bead5422, type: 3}
+  - {fileID: -1877980923, guid: 07ec49ee650f53d418bf7f70bead5422, type: 3}
+  - {fileID: -689900480, guid: 07ec49ee650f53d418bf7f70bead5422, type: 3}
+  downSprites:
+  - {fileID: 1420740206, guid: 21870d4e98de36f4eb4d9568a398aaa4, type: 3}
+  - {fileID: 403522786, guid: 21870d4e98de36f4eb4d9568a398aaa4, type: 3}
+  - {fileID: -1597429497, guid: 21870d4e98de36f4eb4d9568a398aaa4, type: 3}
+  - {fileID: -994377579, guid: 21870d4e98de36f4eb4d9568a398aaa4, type: 3}
+  rightSprites:
+  - {fileID: 762155279, guid: 74d6489e88a6e0d4295ccda4a082aba0, type: 3}
+  - {fileID: 1768883067, guid: 74d6489e88a6e0d4295ccda4a082aba0, type: 3}
+  - {fileID: -161515690, guid: 74d6489e88a6e0d4295ccda4a082aba0, type: 3}
+  - {fileID: -536614942, guid: 74d6489e88a6e0d4295ccda4a082aba0, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

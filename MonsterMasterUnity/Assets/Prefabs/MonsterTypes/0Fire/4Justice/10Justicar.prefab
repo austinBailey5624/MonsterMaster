@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7400178288285800338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6635804607781658032}
+  - component: {fileID: 2149340337983382907}
+  m_Layer: 0
+  m_Name: 10Justicar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6635804607781658032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7400178288285800338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2149340337983382907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7400178288285800338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1329400669, guid: 6fa23c4a82aa7fa4a99cf6af96c2bcb9, type: 3}
+  name: Justicar
+  description: ' The Justicar appears as a lesser knight in shining chainmail and
+    a golden crest upon its helm. It holds a wooden shield painted white in its left
+    hand with an iron sword in its right. It has a cloth half cape edged in yellow.
+    The Justicar believes solidly in the rule of law and protects the weak. However,
+    if it views the weak to be unvirtuous, it will leave them to suffer, believing
+    that their karma will sort them out'
+  secondaryElement: {fileID: -7319997053904476201, guid: a3fb5d4265d4475478a996ee0d72e192,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -7115134150197056487, guid: abd4c2de8703ed3498f266a64e31797e,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -4116516895290632914, guid: 02743a9285c033749958848aef93ed0b,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -199243964, guid: 0cfa905972618804dbfb8b886269d61d, type: 3}
+  - {fileID: 1234518371, guid: 0cfa905972618804dbfb8b886269d61d, type: 3}
+  - {fileID: 650368191, guid: 0cfa905972618804dbfb8b886269d61d, type: 3}
+  - {fileID: 1071455517, guid: 0cfa905972618804dbfb8b886269d61d, type: 3}
+  downSprites:
+  - {fileID: 1329400669, guid: 6fa23c4a82aa7fa4a99cf6af96c2bcb9, type: 3}
+  - {fileID: 507445545, guid: 6fa23c4a82aa7fa4a99cf6af96c2bcb9, type: 3}
+  - {fileID: 534143426, guid: 6fa23c4a82aa7fa4a99cf6af96c2bcb9, type: 3}
+  - {fileID: 101750832, guid: 6fa23c4a82aa7fa4a99cf6af96c2bcb9, type: 3}
+  rightSprites:
+  - {fileID: -1345605401, guid: 9ac8c7c626a1eb648854ec07cb18ba72, type: 3}
+  - {fileID: 608183206, guid: 9ac8c7c626a1eb648854ec07cb18ba72, type: 3}
+  - {fileID: 87870766, guid: 9ac8c7c626a1eb648854ec07cb18ba72, type: 3}
+  - {fileID: 885266615, guid: 9ac8c7c626a1eb648854ec07cb18ba72, type: 3}
+  leftSprites:
+  - {fileID: -1015714334, guid: d3ed8beb47e4c5140aefbffe99077bf6, type: 3}
+  - {fileID: 419046567, guid: d3ed8beb47e4c5140aefbffe99077bf6, type: 3}
+  - {fileID: 976190909, guid: d3ed8beb47e4c5140aefbffe99077bf6, type: 3}
+  - {fileID: -1022922945, guid: d3ed8beb47e4c5140aefbffe99077bf6, type: 3}
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

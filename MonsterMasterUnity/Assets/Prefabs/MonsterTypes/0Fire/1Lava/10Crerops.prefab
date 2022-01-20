@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4873940967943670311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3229954097922163629}
+  - component: {fileID: 3465129830083201547}
+  m_Layer: 0
+  m_Name: 10Crerops
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3229954097922163629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4873940967943670311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3465129830083201547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4873940967943670311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -1199226201, guid: 85fd820caf3ad4941b89969fcc596469, type: 3}
+  name: Crerops
+  description: A man size titan with a face of melting stone. Lava flows from its
+    heart, animating its rocky body. This molten heart is its strength, but also
+    its weak point. Small horns have sprouted from its head, mainly used for defense
+  secondaryElement: {fileID: -7010680253480515942, guid: e3eec3208962f6346b8aedc76fee25b7,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 8859108852453747917, guid: 9636ef0be42bcf443886d5058eaf8a98,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 4168933404533642376, guid: 096d0d446522ff241af5434a12c41b2c,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 0
+  upSprites:
+  - {fileID: -190966651, guid: 130098974d06fec4ba9384e84098f298, type: 3}
+  - {fileID: -1211687872, guid: 130098974d06fec4ba9384e84098f298, type: 3}
+  - {fileID: -2101522204, guid: 130098974d06fec4ba9384e84098f298, type: 3}
+  - {fileID: -1319878130, guid: 130098974d06fec4ba9384e84098f298, type: 3}
+  downSprites:
+  - {fileID: -1199226201, guid: 85fd820caf3ad4941b89969fcc596469, type: 3}
+  - {fileID: 1915272076, guid: 85fd820caf3ad4941b89969fcc596469, type: 3}
+  - {fileID: 725769750, guid: 85fd820caf3ad4941b89969fcc596469, type: 3}
+  - {fileID: -1915337873, guid: 85fd820caf3ad4941b89969fcc596469, type: 3}
+  rightSprites:
+  - {fileID: -393565883, guid: ee43db7b8f5defe44969ccf4c2a2a460, type: 3}
+  - {fileID: -1843844588, guid: ee43db7b8f5defe44969ccf4c2a2a460, type: 3}
+  - {fileID: -128307742, guid: ee43db7b8f5defe44969ccf4c2a2a460, type: 3}
+  - {fileID: 1604229921, guid: ee43db7b8f5defe44969ccf4c2a2a460, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

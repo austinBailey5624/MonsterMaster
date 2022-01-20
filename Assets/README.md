@@ -1,0 +1,3 @@
+### Abstract
+
+Unless otherwise noted the Assets in this and folders contained with this folder (and all of their directories- recursively) are under the sole ownership of Austin Bailey and unless otherwise listed are authored by him as well. They are for the private use in the game Monster Master and are not to be used for any other purpose unless express (written) permission is given. If you would like to use them to work on the game with me (Austin Bailey) feel free to email me at a604b997@gmail.com, I'm sure we can work something out. For any purpose other than that though, All rights are reserved, Copyright 2022 Austin Bailey.

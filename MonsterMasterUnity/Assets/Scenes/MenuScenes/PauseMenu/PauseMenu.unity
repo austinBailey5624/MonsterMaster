@@ -199,7 +199,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 277998556}
-  - component: {fileID: 277998557}
   m_Layer: 0
   m_Name: ButtonSystemController
   m_TagString: Untagged
@@ -229,18 +228,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &277998557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277998555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35657f2546ce0a642a5e2704cd5d40f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &301832126
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,9 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 309752337}
   - component: {fileID: 309752336}
-  - component: {fileID: 309752339}
   - component: {fileID: 309752338}
-  - component: {fileID: 309752340}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -464,33 +449,7 @@ Transform:
   m_Father: {fileID: 277998556}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &309752338
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309752335}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.25}
-    newSize: {x: 0.66, y: 0.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.66, y: 0.25}
-  m_EdgeRadius: 0
---- !u!114 &309752339
+--- !u!114 &309752338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -499,28 +458,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 309752335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
-  nextSceneName: previousPlace
---- !u!114 &309752340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309752335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10dd267998a2f474cb7df70b2e1505cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 1
-  hoverSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
-  upButton: {fileID: 0}
+  selectedSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
+  upButton: {fileID: 931302957}
   rightButton: {fileID: 0}
-  leftButton: {fileID: 1150741191}
+  leftButton: {fileID: 1150741189}
   downButton: {fileID: 0}
   nextSceneName: previousPlace
 --- !u!1 &444692861
@@ -533,9 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 444692863}
   - component: {fileID: 444692862}
-  - component: {fileID: 444692865}
   - component: {fileID: 444692864}
-  - component: {fileID: 444692866}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -610,33 +553,7 @@ Transform:
   m_Father: {fileID: 277998556}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &444692864
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444692861}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.25}
-    newSize: {x: 0.66, y: 0.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.66, y: 0.25}
-  m_EdgeRadius: 0
---- !u!114 &444692865
+--- !u!114 &444692864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -645,27 +562,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 444692861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
-  nextSceneName: MainMenu2
---- !u!114 &444692866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444692861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10dd267998a2f474cb7df70b2e1505cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
-  hoverSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
-  upButton: {fileID: 565187920}
-  rightButton: {fileID: 1150741191}
+  selectedSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
+  upButton: {fileID: 565187918}
+  rightButton: {fileID: 1150741189}
   leftButton: {fileID: 0}
   downButton: {fileID: 0}
   nextSceneName: MainMenu
@@ -679,9 +582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 565187917}
   - component: {fileID: 565187916}
-  - component: {fileID: 565187919}
   - component: {fileID: 565187918}
-  - component: {fileID: 565187920}
   m_Layer: 0
   m_Name: Save / Load
   m_TagString: Untagged
@@ -756,33 +657,7 @@ Transform:
   m_Father: {fileID: 277998556}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &565187918
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565187915}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.36, y: 0.25}
-    newSize: {x: 1.36, y: 0.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.36, y: 0.25}
-  m_EdgeRadius: 0
---- !u!114 &565187919
+--- !u!114 &565187918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -791,29 +666,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 565187915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
-  nextSceneName: LoadMenu
---- !u!114 &565187920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565187915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10dd267998a2f474cb7df70b2e1505cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
-  hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
-  upButton: {fileID: 1265942709}
-  rightButton: {fileID: 1150741191}
-  leftButton: {fileID: 444692866}
-  downButton: {fileID: 1150741191}
+  selectedSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
+  upButton: {fileID: 1265942707}
+  rightButton: {fileID: 309752338}
+  leftButton: {fileID: 0}
+  downButton: {fileID: 444692864}
   nextSceneName: LoadMenu
 --- !u!1 &665128681
 GameObject:
@@ -961,9 +822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 931302956}
   - component: {fileID: 931302955}
-  - component: {fileID: 931302958}
   - component: {fileID: 931302957}
-  - component: {fileID: 931302959}
   m_Layer: 0
   m_Name: Encyclopedia
   m_TagString: Untagged
@@ -1038,33 +897,7 @@ Transform:
   m_Father: {fileID: 277998556}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &931302957
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931302954}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.36, y: 0.25}
-    newSize: {x: 1.36, y: 0.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.36, y: 0.25}
-  m_EdgeRadius: 0
---- !u!114 &931302958
+--- !u!114 &931302957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1073,27 +906,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 931302954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
-  nextSceneName: EncyclopediaMenu
---- !u!114 &931302959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931302954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10dd267998a2f474cb7df70b2e1505cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
-  hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
+  selectedSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
   upButton: {fileID: 0}
-  rightButton: {fileID: 309752340}
+  rightButton: {fileID: 309752338}
   leftButton: {fileID: 0}
   downButton: {fileID: 1345744946}
   nextSceneName: EncyclopediaMenu
@@ -1328,8 +1147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: 11cae5d5da73c7b4b86e852ab09798e5, type: 3}
-  nextSceneName: 
 --- !u!1 &1150741186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,9 +1157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1150741188}
   - component: {fileID: 1150741187}
-  - component: {fileID: 1150741190}
   - component: {fileID: 1150741189}
-  - component: {fileID: 1150741191}
   m_Layer: 0
   m_Name: Options
   m_TagString: Untagged
@@ -1417,33 +1232,7 @@ Transform:
   m_Father: {fileID: 277998556}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1150741189
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150741186}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.25}
-    newSize: {x: 0.66, y: 0.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.66, y: 0.25}
-  m_EdgeRadius: 0
---- !u!114 &1150741190
+--- !u!114 &1150741189
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1452,28 +1241,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150741186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
-  nextSceneName: 
---- !u!114 &1150741191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150741186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10dd267998a2f474cb7df70b2e1505cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
-  hoverSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
-  upButton: {fileID: 565187920}
-  rightButton: {fileID: 309752340}
-  leftButton: {fileID: 444692866}
+  selectedSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
+  upButton: {fileID: 565187918}
+  rightButton: {fileID: 309752338}
+  leftButton: {fileID: 444692864}
   downButton: {fileID: 0}
   nextSceneName: 
 --- !u!1 &1154182753
@@ -1622,9 +1397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1265942706}
   - component: {fileID: 1265942705}
-  - component: {fileID: 1265942708}
   - component: {fileID: 1265942707}
-  - component: {fileID: 1265942709}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -1699,33 +1472,7 @@ Transform:
   m_Father: {fileID: 277998556}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1265942707
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265942704}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.36, y: 0.25}
-    newSize: {x: 1.36, y: 0.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.36, y: 0.25}
-  m_EdgeRadius: 0
---- !u!114 &1265942708
+--- !u!114 &1265942707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1734,29 +1481,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1265942704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
-  nextSceneName: 
---- !u!114 &1265942709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265942704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10dd267998a2f474cb7df70b2e1505cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
-  hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
+  selectedSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
   upButton: {fileID: 1345744946}
-  rightButton: {fileID: 309752340}
+  rightButton: {fileID: 309752338}
   leftButton: {fileID: 0}
-  downButton: {fileID: 565187920}
+  downButton: {fileID: 565187918}
   nextSceneName: 
 --- !u!1 &1281354496
 GameObject:
@@ -1948,8 +1681,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1345744945}
   - component: {fileID: 1345744944}
-  - component: {fileID: 1345744943}
-  - component: {fileID: 1345744942}
   - component: {fileID: 1345744946}
   m_Layer: 0
   m_Name: Party
@@ -1958,46 +1689,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1345744942
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345744941}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.36, y: 0.25}
-    newSize: {x: 1.36, y: 0.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.36, y: 0.25}
-  m_EdgeRadius: 0
---- !u!114 &1345744943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345744941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
-  nextSceneName: 
 --- !u!212 &1345744944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2074,15 +1765,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1345744941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10dd267998a2f474cb7df70b2e1505cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 89edc16e97532434ea4c02206b99aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
-  hoverSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
-  upButton: {fileID: 931302959}
-  rightButton: {fileID: 309752340}
+  selectedSprite: {fileID: 21300000, guid: db26e269fbb12714bb739507277a2c85, type: 3}
+  upButton: {fileID: 931302957}
+  rightButton: {fileID: 309752338}
   leftButton: {fileID: 0}
-  downButton: {fileID: 1265942709}
+  downButton: {fileID: 0}
   nextSceneName: 
 --- !u!1 &1698401997
 GameObject:

@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7166251047616975643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1283309490101024750}
+  - component: {fileID: -5875754871140177172}
+  m_Layer: 0
+  m_Name: 11Winger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1283309490101024750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166251047616975643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5875754871140177172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166251047616975643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 971675500, guid: 2951aa4cac5e3b044b4b37cf32151394, type: 3}
+  name: Winger
+  description: A small flying dinosaur that resembles a bat, except for its cone-shaped
+    head and large teeth. Wingers are known for their great vision and speed, often
+    killing smaller prey before they knew they were under attack. The hooks in their
+    wings, though small are devastatingly sharp and can rend through any armor with
+    the slightest flaw.
+  secondaryElement: {fileID: -3621540873206418475, guid: ed5273bbe1655ba4390d64cdd84be8e0,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -1084776304595036587, guid: cea4c802ff89b454f963e0eba42c86f9,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -7324667394597615298, guid: d2bd50836b6dbb3428daa1f8bd530539,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: -1800390628, guid: 52de2a489a9bab24a94278cd206e01d0, type: 3}
+  - {fileID: 1311812949, guid: 52de2a489a9bab24a94278cd206e01d0, type: 3}
+  - {fileID: -422332508, guid: 52de2a489a9bab24a94278cd206e01d0, type: 3}
+  - {fileID: 1954673246, guid: 52de2a489a9bab24a94278cd206e01d0, type: 3}
+  downSprites:
+  - {fileID: 971675500, guid: 2951aa4cac5e3b044b4b37cf32151394, type: 3}
+  - {fileID: 60718812, guid: 2951aa4cac5e3b044b4b37cf32151394, type: 3}
+  - {fileID: 1106388510, guid: 2951aa4cac5e3b044b4b37cf32151394, type: 3}
+  - {fileID: -1153256843, guid: 2951aa4cac5e3b044b4b37cf32151394, type: 3}
+  rightSprites:
+  - {fileID: 1182788766, guid: 98322152bf0745d42bf3f0af85e55226, type: 3}
+  - {fileID: -1323346578, guid: 98322152bf0745d42bf3f0af85e55226, type: 3}
+  - {fileID: -305770300, guid: 98322152bf0745d42bf3f0af85e55226, type: 3}
+  - {fileID: -1978379791, guid: 98322152bf0745d42bf3f0af85e55226, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

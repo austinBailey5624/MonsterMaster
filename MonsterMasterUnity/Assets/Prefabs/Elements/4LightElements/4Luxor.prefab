@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8112491851353387827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3051628082422271998}
+  - component: {fileID: -3261303298942615324}
+  m_Layer: 0
+  m_Name: 4Luxor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3051628082422271998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8112491851353387827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3261303298942615324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8112491851353387827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 21300000, guid: 12ed723ffb547d14085ccb535fd4b04d, type: 3}
+  name: Luxor
+  description: Luxor Monsters are beings of pure light. On the battlefield, they
+    cast spells that banish darkness (increasing accuracy against the hidden) and
+    powerful offensive magic that only works against monsters with some dedication
+    to the dark. They refuse to attack anything that is 'good' or 'neutral' in their
+    eyes. They are also powerful healers but refuse to heal any dark monster. Masters
+    of Luxor monsters will find that they respond best to transparency and to a dedication
+    to truth above all else.
+  firstPrimaryElement: {fileID: -356870857971701300, guid: e31c56be87d35f045979dd82d870c69e,
+    type: 3}
+  secondPrimaryElement: {fileID: -356870857971701300, guid: e31c56be87d35f045979dd82d870c69e,
+    type: 3}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightColor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+  babyMonster: {fileID: -2413669921744750713, guid: 75983d869929f0c48b290c9f703791b9,
+    type: 3}

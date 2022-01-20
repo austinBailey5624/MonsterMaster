@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3296607393393857793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4926147164176554399}
+  - component: {fileID: -1674591032831449799}
+  m_Layer: 0
+  m_Name: 00Cirrus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4926147164176554399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296607393393857793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1674591032831449799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296607393393857793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -1134956524, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
+  name: Cirrus
+  description: A small cloud roughly in the shape of a sheep. When it gets embarrased
+    or excited, it accidently dribbles rain on the ground below, which the other
+    clouds jeer and laugh at, much to the Cirrus's dismay. They are loyal to those
+    that care for them, such as when it is fed by the steam from cookfires. They
+    seem rather sad, until you get to know them.
+  secondaryElement: {fileID: 4365761220871908015, guid: 24ed4b5d520c63549bf079edfb891ef2,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: 1066752688, guid: 8eded54d753cd074e82b9b72a53e6b81, type: 3}
+  - {fileID: -1408190962, guid: 8eded54d753cd074e82b9b72a53e6b81, type: 3}
+  - {fileID: 1065846178, guid: 8eded54d753cd074e82b9b72a53e6b81, type: 3}
+  - {fileID: -1992495511, guid: 8eded54d753cd074e82b9b72a53e6b81, type: 3}
+  downSprites:
+  - {fileID: -1134956524, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
+  - {fileID: 73583270, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
+  - {fileID: -1030410483, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
+  - {fileID: 917370364, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
+  rightSprites:
+  - {fileID: 2022801383, guid: 41428fa6f2601714ab778e92cd018c5a, type: 3}
+  - {fileID: -258572279, guid: 41428fa6f2601714ab778e92cd018c5a, type: 3}
+  - {fileID: 2052888240, guid: 41428fa6f2601714ab778e92cd018c5a, type: 3}
+  - {fileID: -1306047860, guid: 41428fa6f2601714ab778e92cd018c5a, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

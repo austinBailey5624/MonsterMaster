@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8230759246283594692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4353324828474467953}
+  - component: {fileID: -4228362830156929317}
+  m_Layer: 0
+  m_Name: 12Herbisaur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4353324828474467953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230759246283594692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4228362830156929317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230759246283594692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1493613121, guid: 9661759b13c5ab14d947837bb9e5cfe4, type: 3}
+  name: Herbisaur
+  description: Large for an adolescent, the Herbisaur is a dinosaur that is slow
+    target- but beefy. Its skin is so thick and tough that often predators will grow
+    tired and seek different prey. Herbisaurs are named because they don't eat any
+    meat, but they eat nearly everything else- all the time. Many use this to explain
+    why they are so large at such a young age.
+  secondaryElement: {fileID: -3621540873206418475, guid: ed5273bbe1655ba4390d64cdd84be8e0,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 401896280432705792, guid: 936cd382eec68b247b0e14f8b2be36dc,
+    type: 3}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: -7324667394597615298, guid: d2bd50836b6dbb3428daa1f8bd530539,
+    type: 3}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: 415677291, guid: 6f06bdd4346cabd4f8e5fac6ff9a8e0a, type: 3}
+  - {fileID: -1858996916, guid: 6f06bdd4346cabd4f8e5fac6ff9a8e0a, type: 3}
+  - {fileID: -1117485348, guid: 6f06bdd4346cabd4f8e5fac6ff9a8e0a, type: 3}
+  - {fileID: -72259841, guid: 6f06bdd4346cabd4f8e5fac6ff9a8e0a, type: 3}
+  downSprites:
+  - {fileID: 1493613121, guid: 9661759b13c5ab14d947837bb9e5cfe4, type: 3}
+  - {fileID: -835104575, guid: 9661759b13c5ab14d947837bb9e5cfe4, type: 3}
+  - {fileID: -2043228360, guid: 9661759b13c5ab14d947837bb9e5cfe4, type: 3}
+  - {fileID: 1409223403, guid: 9661759b13c5ab14d947837bb9e5cfe4, type: 3}
+  rightSprites:
+  - {fileID: -374426080, guid: aa67ba7c707ad2946b2acdeb3f3bfc70, type: 3}
+  - {fileID: -207606196, guid: aa67ba7c707ad2946b2acdeb3f3bfc70, type: 3}
+  - {fileID: -42259625, guid: aa67ba7c707ad2946b2acdeb3f3bfc70, type: 3}
+  - {fileID: -948177189, guid: aa67ba7c707ad2946b2acdeb3f3bfc70, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

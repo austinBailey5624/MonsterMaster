@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5360868788836816492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8899326275204116001}
+  - component: {fileID: -1683082213455331225}
+  m_Layer: 0
+  m_Name: 00Fiend
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8899326275204116001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5360868788836816492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1683082213455331225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5360868788836816492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -254624335, guid: 23e180c22920ee24f9ab0dc5a294db34, type: 3}
+  name: Fiend
+  description: The fiend is a minor demon, colored dark red with black horns. He
+    is consumed by hatred, and causes a stinging burn when touched.
+  secondaryElement: {fileID: 0}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: -1257844803, guid: fc3c851e376719c49b5b182870252ddf, type: 3}
+  - {fileID: 2103994281, guid: fc3c851e376719c49b5b182870252ddf, type: 3}
+  - {fileID: -146284694, guid: fc3c851e376719c49b5b182870252ddf, type: 3}
+  - {fileID: -517254321, guid: fc3c851e376719c49b5b182870252ddf, type: 3}
+  downSprites:
+  - {fileID: -254624335, guid: 23e180c22920ee24f9ab0dc5a294db34, type: 3}
+  - {fileID: -134245949, guid: 23e180c22920ee24f9ab0dc5a294db34, type: 3}
+  - {fileID: -750670130, guid: 23e180c22920ee24f9ab0dc5a294db34, type: 3}
+  - {fileID: -2008015553, guid: 23e180c22920ee24f9ab0dc5a294db34, type: 3}
+  rightSprites:
+  - {fileID: 63237466, guid: 8bc437c17aaba51498386ac6ca867407, type: 3}
+  - {fileID: 1195712425, guid: 8bc437c17aaba51498386ac6ca867407, type: 3}
+  - {fileID: -806631353, guid: 8bc437c17aaba51498386ac6ca867407, type: 3}
+  - {fileID: 1316594746, guid: 8bc437c17aaba51498386ac6ca867407, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

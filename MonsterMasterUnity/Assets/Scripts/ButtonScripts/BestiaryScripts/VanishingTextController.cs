@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/**
+*   Class to handle the vanishing text in the Bestiary Menu
+*   Copyright 2022, Austin Bailey 2022 All rights reserved
+*/
 public class VanishingTextController : MonoBehaviour
 {
     private Dictionary<string, int> textIndexBySubelementName = new Dictionary<string, int>(){

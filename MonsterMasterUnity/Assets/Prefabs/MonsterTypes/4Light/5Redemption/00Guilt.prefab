@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3870252924078919127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4327523517867714007}
+  - component: {fileID: -8203939003611798054}
+  m_Layer: 0
+  m_Name: 00Guilt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4327523517867714007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3870252924078919127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8203939003611798054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3870252924078919127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -1813144697, guid: badfb0408683502408f1e85f91b95551, type: 3}
+  name: Guilt
+  description: The Guilt is a minor demon whose outer body is dark. However, a globe
+    of light dwells within, that holds its hope of redemption. When it is near, mistakes
+    are better remembered, although reparations are not always clear.
+  secondaryElement: {fileID: 4107190744854638878, guid: 9721832e8a5f1624c83cd9a634214656,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: 127279651, guid: 39adc4c818628a24a8cb3f109fc44014, type: 3}
+  - {fileID: 1786108984, guid: 39adc4c818628a24a8cb3f109fc44014, type: 3}
+  - {fileID: -424951672, guid: 39adc4c818628a24a8cb3f109fc44014, type: 3}
+  - {fileID: 863098512, guid: 39adc4c818628a24a8cb3f109fc44014, type: 3}
+  downSprites:
+  - {fileID: -1813144697, guid: badfb0408683502408f1e85f91b95551, type: 3}
+  - {fileID: -715404575, guid: badfb0408683502408f1e85f91b95551, type: 3}
+  - {fileID: -612906408, guid: badfb0408683502408f1e85f91b95551, type: 3}
+  - {fileID: 873372028, guid: badfb0408683502408f1e85f91b95551, type: 3}
+  rightSprites:
+  - {fileID: -15318277, guid: 5aa7e39c6af1bd64faff36bcb00bd8ab, type: 3}
+  - {fileID: 1951260153, guid: 5aa7e39c6af1bd64faff36bcb00bd8ab, type: 3}
+  - {fileID: -136494610, guid: 5aa7e39c6af1bd64faff36bcb00bd8ab, type: 3}
+  - {fileID: 1035754499, guid: 5aa7e39c6af1bd64faff36bcb00bd8ab, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7466019304011872799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6138311173165751173}
+  - component: {fileID: 343990033503695341}
+  m_Layer: 0
+  m_Name: 00MinorPegasus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6138311173165751173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7466019304011872799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &343990033503695341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7466019304011872799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 1702556277, guid: 1d7ba0298ec71324784ffe4051f4f129, type: 3}
+  name: Minor Pegasus
+  description: Half horse, half plant half bird... Or wait, is that too many halves?
+    Its front two legs are treeish, while the torso, head and back legs are a horse
+    and it has wings. Dont look at me, you've all seen Hercules! Its like that except
+    the two front legs are treeish. And its the reaally cute baby form, obviously.
+  secondaryElement: {fileID: 1761686480032472804, guid: 37f1907587076564aa401c14d48fb780,
+    type: 3}
+  physicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 0}
+  previousEvolution: {fileID: 0}
+  leftSpritesAreRightSpritesReversed: 1
+  upSprites:
+  - {fileID: 919634017, guid: a693d8726f3636244af4865161194acd, type: 3}
+  - {fileID: 1984478715, guid: a693d8726f3636244af4865161194acd, type: 3}
+  - {fileID: -1366702020, guid: a693d8726f3636244af4865161194acd, type: 3}
+  - {fileID: 157310387, guid: a693d8726f3636244af4865161194acd, type: 3}
+  downSprites:
+  - {fileID: 1702556277, guid: 1d7ba0298ec71324784ffe4051f4f129, type: 3}
+  - {fileID: -1453939753, guid: 1d7ba0298ec71324784ffe4051f4f129, type: 3}
+  - {fileID: -1448949429, guid: 1d7ba0298ec71324784ffe4051f4f129, type: 3}
+  - {fileID: -23020912, guid: 1d7ba0298ec71324784ffe4051f4f129, type: 3}
+  rightSprites:
+  - {fileID: -41392241, guid: a0011028084eb2b4eb3fad43b89da984, type: 3}
+  - {fileID: -635818550, guid: a0011028084eb2b4eb3fad43b89da984, type: 3}
+  - {fileID: 857925067, guid: a0011028084eb2b4eb3fad43b89da984, type: 3}
+  - {fileID: 909132487, guid: a0011028084eb2b4eb3fad43b89da984, type: 3}
+  leftSprites: []
+  attackSprites: []
+  onHitSprites: []
+  onDeathSprites: []
