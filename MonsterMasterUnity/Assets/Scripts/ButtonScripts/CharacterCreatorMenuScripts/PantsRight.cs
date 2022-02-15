@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
 /**
 *   Class to control the behavior of the right pants selector button in the Character Creator Menu.
@@ -66,7 +67,7 @@ public class PantsRight : CharacterCreatorMenuButton
                     .GetComponent<SpriteRenderer>()
                     .color = mainCharacter.pantColor;
             }
-            mainCharacter.setSprite(0, 3);
+            mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;
         }
     }

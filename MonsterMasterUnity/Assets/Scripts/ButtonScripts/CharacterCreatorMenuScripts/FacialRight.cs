@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
 /**
 *   Class to control the behavior of the right facial hair selector in the character creator menu
@@ -76,7 +77,7 @@ public class FacialRight : CharacterCreatorMenuButton
             Color hairColor = mainCharacter.hairStyleColor;
             facialHair.gameObject.GetComponent<SpriteRenderer>().color =
                 hairColor;
-            mainCharacter.setSprite(0, 3);
+            mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;
         }
     }

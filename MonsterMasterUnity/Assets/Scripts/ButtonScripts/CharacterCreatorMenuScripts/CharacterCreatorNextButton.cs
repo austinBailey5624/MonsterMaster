@@ -13,6 +13,7 @@ public class CharacterCreatorNextButton : CharacterCreatorMenuButton
 
     public override void actionWhenSelected()
     {
+        GameState.isFrozen = false;
         string tempPrevPlace = GameState.previousPlaceName;
         string tempPrevMenu = GameState.previousMenuName;
         string activeSceneName = SceneManager.GetActiveScene().name;

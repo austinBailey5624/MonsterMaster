@@ -46,13 +46,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Ice Witch
-  description: he Ice witch is in the process of selling her soul to the cold gods
+  description: The Ice Witch is in the process of selling her soul to the cold gods
     of death. Her eyes have turned a cruel blue, and the frost has bitten her extremities
     white. She is no longer capable of human speech, and the cursed shawl with which
     she surrounds herself has a icy blue tinge to it. She attacks with a frozen sycamore
     staff with a cold blue stone at its center. She is well versed in ice magic and
     thrives in the cold.
-  secondaryElement: {fileID: 0}
+  secondaryElement: {fileID: 1423319002745640293, guid: 19123de7576b6da47bb104cc269ad021,
+    type: 3}
   physicalEvolution: {fileID: 0}
   balancedEvolution: {fileID: -7985418472272342198, guid: 0ec81f141df9df743b7cfca94f8bf0cf,
     type: 3}

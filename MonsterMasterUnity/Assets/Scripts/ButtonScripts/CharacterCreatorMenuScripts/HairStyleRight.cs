@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
 /**
 *    Class to control the behavior of the left hair style selector in the character creator menu
@@ -42,7 +43,7 @@ public class HairStyleRight : CharacterCreatorMenuButton
             {
                 mainCharacter.hairStyleSet = hairBaldingSet;
             }
-            mainCharacter.setSprite(0, 3);
+            mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;
         }
     }

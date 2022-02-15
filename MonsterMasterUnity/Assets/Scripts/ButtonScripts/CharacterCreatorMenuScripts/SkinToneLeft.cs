@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
 /**
 *   Class to control the behavior of the skin tone left button in the Character Creator
@@ -64,7 +65,7 @@ public class SkinToneLeft : CharacterCreatorMenuButton
                 .GetChild(0)
                 .GetComponent<SpriteRenderer>()
                 .color = mainCharacter.bodyColor;
-            mainCharacter.setSprite(0, 3);
+            mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;
         }
     }

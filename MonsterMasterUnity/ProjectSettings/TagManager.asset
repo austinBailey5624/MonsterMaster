@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PronounSelector
   - Scene
+  - Conversation
   layers:
   - Default
   - TransparentFX

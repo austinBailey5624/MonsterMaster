@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
 /**
 *   Class to control the behavior of the left shirt selector in the Character Creator Menu
@@ -105,7 +106,7 @@ public class ShirtLeft : CharacterCreatorMenuButton
                         .color = darkGreen;
                 }
             }
-            mainCharacter.setSprite(0, 3);
+            mainCharacter.setSprite(0, EDirection.Down);
             keydown = false; 
         }
     }

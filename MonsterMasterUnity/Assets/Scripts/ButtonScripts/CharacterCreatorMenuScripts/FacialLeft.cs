@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
 /**
 *   Class to control the behavior of the Left Facial Hair selector in the Character Creator Menu
-*   Copyright 2022 Austin Bailey
+*   Copyright 2022 Austin Bailey All Rights Reserved
 */
 public class FacialLeft : CharacterCreatorMenuButton
 {
@@ -77,7 +78,7 @@ public class FacialLeft : CharacterCreatorMenuButton
             Color hairColor = mainCharacter.hairStyleColor;
             facialHair.gameObject.GetComponent<SpriteRenderer>().color =
                 hairColor;
-            mainCharacter.setSprite(0, 3);
+            mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;
         }
     }

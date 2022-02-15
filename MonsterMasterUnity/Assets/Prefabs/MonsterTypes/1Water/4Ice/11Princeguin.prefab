@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 0}
+  defaultSprite: {fileID: -221822028, guid: 77752f0c1ebaabc4db80eaa10b288993, type: 3}
   name: Princeguin
   description: The Princeguin is a young emperor penguin that has yet to prove its
     worth. In penguin society, blood means little, so though the Princeguin was born
@@ -59,9 +59,21 @@ MonoBehaviour:
   previousEvolution: {fileID: -6280616071952647690, guid: 2fcaa6ed787d85e46b9369378a09a965,
     type: 3}
   leftSpritesAreRightSpritesReversed: 0
-  upSprites: []
-  downSprites: []
-  rightSprites: []
+  upSprites:
+  - {fileID: 1397587765, guid: b14fc794708b0534e9e42d87ecc27406, type: 3}
+  - {fileID: -1118455086, guid: b14fc794708b0534e9e42d87ecc27406, type: 3}
+  - {fileID: -744669854, guid: b14fc794708b0534e9e42d87ecc27406, type: 3}
+  - {fileID: 115424604, guid: b14fc794708b0534e9e42d87ecc27406, type: 3}
+  downSprites:
+  - {fileID: -221822028, guid: 77752f0c1ebaabc4db80eaa10b288993, type: 3}
+  - {fileID: -401780516, guid: 77752f0c1ebaabc4db80eaa10b288993, type: 3}
+  - {fileID: 495932215, guid: 77752f0c1ebaabc4db80eaa10b288993, type: 3}
+  - {fileID: -1544200879, guid: 77752f0c1ebaabc4db80eaa10b288993, type: 3}
+  rightSprites:
+  - {fileID: 153863179, guid: 8fbfc1794c53d7b439713c4cba4defcd, type: 3}
+  - {fileID: 356606706, guid: 8fbfc1794c53d7b439713c4cba4defcd, type: 3}
+  - {fileID: 59090603, guid: 8fbfc1794c53d7b439713c4cba4defcd, type: 3}
+  - {fileID: 71815120, guid: 8fbfc1794c53d7b439713c4cba4defcd, type: 3}
   leftSprites: []
   attackSprites: []
   onHitSprites: []

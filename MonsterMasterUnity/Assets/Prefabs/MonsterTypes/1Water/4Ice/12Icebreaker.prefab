@@ -45,11 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
-  name: IceBreaker
-  description: The icebreaker is an ice demon with a staff that has a large snowflake
+  name: Icebreaker
+  description: The Icebreaker is an ice demon with a staff that has a large snowflake
     on its crest. It casts cold magic, and is great at starting conversations with
     women, especilly at parties. It knows lots of good pick up lines and even more
-    bad ones
+    bad ones.
   secondaryElement: {fileID: 1423319002745640293, guid: 19123de7576b6da47bb104cc269ad021,
     type: 3}
   physicalEvolution: {fileID: 8335739348751142196, guid: 1384e96e2211d3e46b39eb82bed9e4b6,

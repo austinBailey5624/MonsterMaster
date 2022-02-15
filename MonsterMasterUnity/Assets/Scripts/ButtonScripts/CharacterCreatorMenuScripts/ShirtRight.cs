@@ -1,7 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
+/**
+*   Class to control the behavior of the Shirt Right Button in the Character Creator Menu
+*   Copyright 2022 Austin Bailey All Rights Reserved
+*/
 public class ShirtRight : CharacterCreatorMenuButton
 {
     public AnimationSet tshirtSet;
@@ -99,7 +104,7 @@ public class ShirtRight : CharacterCreatorMenuButton
             {
                 mainCharacter.shirtSet = longSleeveSet;
             }
-            mainCharacter.setSprite(0, 3);
+            mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;
         }
     }

@@ -1033,7 +1033,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1068665680}
   - component: {fileID: 1068665679}
-  - component: {fileID: 1068665682}
   - component: {fileID: 1068665681}
   m_Layer: 0
   m_Name: Mark
@@ -1135,18 +1134,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.08, y: 1.08}
   m_EdgeRadius: 0
---- !u!114 &1068665682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068665678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2765b166900f94ca6991a02407393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1150741186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,7 +1760,7 @@ MonoBehaviour:
   upButton: {fileID: 931302957}
   rightButton: {fileID: 309752338}
   leftButton: {fileID: 0}
-  downButton: {fileID: 0}
+  downButton: {fileID: 1265942707}
   nextSceneName: 
 --- !u!1 &1698401997
 GameObject:

@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
 /**
 *   Class to handle NonPlayerCharacters
-*   Copyright 2022 Austin Bailey
+*   Copyright 2022 Austin Bailey All Rights Reserved
 */
 public class NonPlayerCharacter : Person
 {
@@ -13,6 +14,10 @@ public class NonPlayerCharacter : Person
     private float tilesize = 1f;
 
     private Transform adjacentTransform;
+
+    public ConversationNodeImpl conversationNode;
+
+    public SecondaryElement element;
 
     void Awake()
     {
@@ -78,7 +83,7 @@ public class NonPlayerCharacter : Person
 
     void Update()
     {
-        if (Input.GetAxis("Submit") > .1f)
+        if (Input.GetAxis("Submit") > .1f && GameState.isFrozen == false)
         {
             
             Vector3 position = this.transform.position;
@@ -89,27 +94,36 @@ public class NonPlayerCharacter : Person
             Vector3 leftPosition =
                 new Vector3(position.x - tilesize, position.y, position.z);
             Vector3 rightPosition = new Vector3(position.x + tilesize, position.y, position.z);
-            // Debug.Log("position:  " + position);
-            // Debug.Log("AdjacentPosition: " + adjacentTransform.position);
             if (
                 (belowPosition - adjacentTransform.position).sqrMagnitude <
                 tolerance
             )
             {
-                setSprite(0, 3);
+                setSprite(0, EDirection.Down);
+                Action();
             }
             else if((abovePosition - adjacentTransform.position).sqrMagnitude < tolerance)
             {
-                setSprite(0,0);
+                setSprite(0, EDirection.Up);
+                Action();
             }
             else if((rightPosition - adjacentTransform.position).sqrMagnitude < tolerance)
             {
-                setSprite(0,1);
+                setSprite(0,EDirection.Right);
+                Action();
             }
             else if((leftPosition - adjacentTransform.position).sqrMagnitude < tolerance)
             {
-                setSprite(0,2);
+                setSprite(0,EDirection.Left);
+                Action();
             }
+
         }
+    }
+
+    public virtual void Action()
+    {
+        GameObject conversationController = GameObject.FindGameObjectWithTag("Conversation");
+        conversationController.GetComponent<ConversationController>().Activate(conversationNode, element);
     }
 }

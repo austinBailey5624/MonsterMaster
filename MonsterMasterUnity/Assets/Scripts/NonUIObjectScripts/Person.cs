@@ -1,7 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
+/**
+*   Class to handle behaviors common to all people to avoid rewriting code
+*   Copyright 2022 Austin Bailey All Rights Reserved
+*/
 public class Person : MonoBehaviour
 {
     public bool isMale;
@@ -38,7 +43,7 @@ public class Person : MonoBehaviour
 
     private int spriteIndex = 0;
 
-    private int directionIndex = 0;
+    // private int directionIndex = 0;
 
     private int updateSlowdown = 0;
 
@@ -102,31 +107,31 @@ public class Person : MonoBehaviour
             if (spriteIndex == 3)
             {
                 spriteIndex = 0;
-                directionIndex = directionIndex == 3 ? 0 : directionIndex + 1;
+                // directionIndex = directionIndex == 3 ? 0 : directionIndex + 1;
             }
             else
             {
                 spriteIndex++;
             }
-            setSprite (spriteIndex, directionIndex);
+            // setSprite (spriteIndex, directionIndex);
 
             updateSlowdown = 0;
         }
         updateSlowdown++;
     }
 
-    public void setSprite(int spriteIndex, int direction)
+    public void setSprite(int spriteIndex, EDirection direction)
     {
         facingLeft = false;
         switch (direction)
         {
-            case 0: //Back
+            case EDirection.Up: 
                 setBackSprite (spriteIndex);
                 break;
-            case 1: //Right
+            case EDirection.Right: 
                 setRightSprite (spriteIndex);
                 break;
-            case 2: //Left
+            case EDirection.Left:
                 if (bodySet.leftIsRightReversed)
                 {
                     //Since Left is Right Reversed, we set right and then flip later
@@ -138,7 +143,7 @@ public class Person : MonoBehaviour
                     setLeftSprite (spriteIndex);
                 }
                 break;
-            case 3: //Front
+            case EDirection.Down: 
                 setFrontSprite (spriteIndex);
                 break;
             default:

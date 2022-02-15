@@ -1979,7 +1979,7 @@ MonoBehaviour:
   rightButton: {fileID: 579395364}
   leftButton: {fileID: 0}
   downButton: {fileID: 612107555}
-  nextSceneName: 
+  nextSceneName: DeitiesMenu
 --- !u!1 &1915009744
 GameObject:
   m_ObjectHideFlags: 0

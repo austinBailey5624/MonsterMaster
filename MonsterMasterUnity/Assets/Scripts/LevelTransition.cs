@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/**
+*   Class to handle level Transitions
+*   Copyright 2022 Austin Bailey All Rights Reserved
+*/
 public class LevelTransition : MonoBehaviour
 {
     public Transform adjacentTransform;

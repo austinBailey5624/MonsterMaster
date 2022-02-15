@@ -2,14 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static EDirection;
 
-public enum Direction
-{
-    Up = 0,
-    Right = 1,
-    Left = 2,
-    Down = 3
-}
 
 /**
 *   Class to control the Main Character
@@ -21,15 +15,13 @@ public class MainCharacterController : Person
 
     public float speed;
 
-    public bool isFrozen;
-
     private string lastSceneName;
 
     private bool facingLeft2;
 
     private float travelDistance = 0.0f;
 
-    private int direction = 0;
+    private EDirection direction = EDirection.Down;
 
     private float tileSize = 1f;
 
@@ -121,6 +113,7 @@ public class MainCharacterController : Person
             lastSceneName = sceneName;
             if (sceneName != "CharacterCreatorMenu")
             {
+                GameState.isFrozen = false;
                 Vector3 startScale = transform.localScale;
                 characterScalex = 3.5f;
 
@@ -134,7 +127,7 @@ public class MainCharacterController : Person
                 }
             }
         }
-        if (isFrozen)
+        if (GameState.isFrozen)
         {
             setSprite(0, direction);
         }
@@ -151,21 +144,21 @@ public class MainCharacterController : Person
                 )
                 {
                     travelDistance = tileSize;
-                    direction = 0;
+                    direction = EDirection.Up;
                 }
                 else if (
                     horizontal > 0.0f //right
                 )
                 {
                     travelDistance = tileSize;
-                    direction = 1;
+                    direction = EDirection.Right;
                 }
                 else if (
                     horizontal < 0.0f //left
                 )
                 {
                     travelDistance = tileSize;
-                    direction = 2;
+                    direction = EDirection.Left;
                     facingLeft2 = true;
                 }
                 if (
@@ -173,26 +166,26 @@ public class MainCharacterController : Person
                 )
                 {
                     travelDistance = tileSize;
-                    direction = 3;
+                    direction = EDirection.Down;
                 }
             }
 
-            if (travelDistance > 0 && direction == 0)
+            if (travelDistance > 0 && direction == EDirection.Up)
             {
                 position.y = position.y + speed;
                 travelDistance -= speed;
             }
-            else if (travelDistance > 0 && direction == 1)
+            else if (travelDistance > 0 && direction == EDirection.Right)
             {
                 position.x = position.x + speed;
                 travelDistance -= speed;
             }
-            else if (travelDistance > 0 && direction == 2)
+            else if (travelDistance > 0 && direction == EDirection.Left)
             {
                 position.x = position.x - speed;
                 travelDistance -= speed;
             }
-            else if (travelDistance > 0 && direction == 3)
+            else if (travelDistance > 0 && direction == EDirection.Down)
             {
                 position.y = position.y - speed;
                 travelDistance -= speed;
@@ -236,7 +229,7 @@ public class MainCharacterController : Person
 
             transform.position = position;
 
-            if (Input.GetAxis("Cancel") > .1f)
+            if (Input.GetAxis("Cancel") > .1f && GameState.isFrozen == false)
             {
                 GameState.previousPlaceName = sceneName;
                 GameState.playerPositionBySceneName[sceneName] =

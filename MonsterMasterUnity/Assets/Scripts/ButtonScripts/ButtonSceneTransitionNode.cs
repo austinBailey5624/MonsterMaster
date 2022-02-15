@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 /**
 *   Class to handle buttons that transition scenes and are part of a node system.
-*   Copyright 2022, Austin Bailey
+*   Copyright 2022, Austin Bailey All Rights Reserved
 */
 public class ButtonSceneTransitionNode : MonoBehaviour, IButtonSceneTransition, IButtonSystemNode
 {
@@ -153,7 +153,7 @@ public class ButtonSceneTransitionNode : MonoBehaviour, IButtonSceneTransition, 
         }
     }
 
-    public void actionWhenSelected()
+    public virtual void actionWhenSelected()
     {
         string tempPrevPlace = GameState.previousPlaceName;
         string tempPrevMenu = GameState.previousMenuName;

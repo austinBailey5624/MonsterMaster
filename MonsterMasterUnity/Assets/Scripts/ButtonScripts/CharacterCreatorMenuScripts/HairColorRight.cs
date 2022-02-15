@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static EDirection;
 
 /**
 *   Class to contorl the behavior of the right Hair Color Selector in the Character Creator Menu
@@ -99,7 +100,7 @@ public class HairColorRight : CharacterCreatorMenuButton
                 .GetChild(7)
                 .GetComponent<SpriteRenderer>()
                 .color = mainCharacter.hairStyleColor;
-            mainCharacter.setSprite(0, 3);
+            mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;
         }
     }
