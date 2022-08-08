@@ -21,6 +21,7 @@ public enum EAffinity
     Neptune,
     Gaia,
     Bacchus,
+    Bennu,
     Thanatos,
     Malacathe,
     Illian,

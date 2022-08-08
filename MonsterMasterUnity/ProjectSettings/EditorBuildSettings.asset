@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuScenes/PauseMenu/Encyclopedia/Deities/DeitiesMenu.unity
     guid: 72391adf45483b94db346a8fbeda1e88
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/PauseMenu/Encyclopedia/Deities/DeitySelectedMenu.unity
+    guid: 8a5fa5c0c83a69742bc58a0f852ccb64
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/DifficultyMenu.unity
+    guid: d8f18d8107c2642408f7f6a1f11e2c6f
   m_configObjects: {}

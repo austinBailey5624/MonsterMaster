@@ -13,6 +13,8 @@ public class ConversationController : MonoBehaviour
 
     private Color invisible = new Color(0f, 0f, 0f, 0f);
 
+    private DesignColors colors;
+
     private GameObject statementBackground;
 
     private GameObject portraitBackground;
@@ -88,22 +90,20 @@ public class ConversationController : MonoBehaviour
     {
         statementBackground = this.transform.GetChild(0).gameObject;
         portraitBackground = this.transform.GetChild(1).gameObject;
-        arrowUpBackground = this.transform.GetChild(2).gameObject;
-        arrowDownBackground = this.transform.GetChild(3).gameObject;
-        choice1Background = this.transform.GetChild(4).gameObject;
-        choice2Background = this.transform.GetChild(5).gameObject;
-        choice3Background = this.transform.GetChild(6).gameObject;
-        choice4Background = this.transform.GetChild(7).gameObject;
-        choice5Background = this.transform.GetChild(8).gameObject;
-        choice6Background = this.transform.GetChild(9).gameObject;
-        statementText = this.transform.GetChild(10).gameObject;
-        choice1Text = this.transform.GetChild(11).gameObject;
-        choice2Text = this.transform.GetChild(12).gameObject;
-        choice3Text = this.transform.GetChild(13).gameObject;
-        choice4Text = this.transform.GetChild(14).gameObject;
-        choice5Text = this.transform.GetChild(15).gameObject;
-        choice6Text = this.transform.GetChild(16).gameObject;
-        speakerPortrait = this.transform.GetChild(17).gameObject;
+        choice1Background = this.transform.GetChild(2).gameObject;
+        choice2Background = this.transform.GetChild(3).gameObject;
+        choice3Background = this.transform.GetChild(4).gameObject;
+        choice4Background = this.transform.GetChild(5).gameObject;
+        choice5Background = this.transform.GetChild(6).gameObject;
+        choice6Background = this.transform.GetChild(7).gameObject;
+        statementText = this.transform.GetChild(8).gameObject;
+        choice1Text = this.transform.GetChild(9).gameObject;
+        choice2Text = this.transform.GetChild(10).gameObject;
+        choice3Text = this.transform.GetChild(11).gameObject;
+        choice4Text = this.transform.GetChild(12).gameObject;
+        choice5Text = this.transform.GetChild(13).gameObject;
+        choice6Text = this.transform.GetChild(14).gameObject;
+        speakerPortrait = this.transform.GetChild(15).gameObject;
         backgrounds =
             new List<GameObject>()
             {
@@ -155,98 +155,86 @@ public class ConversationController : MonoBehaviour
             if (choices.Count >= 1)
             {
                 choice1Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getDefaultColor();
+                    colors.backgroundColor;
                 choice1Text.GetComponent<TMP_Text>().text =
                     choices[0].getFlavorText();
                 choice1Text.GetComponent<TMP_Text>().color =
-                    subElement.getHighlightColor();
+                    colors.textColor;
             }
             if (choices.Count >= 2)
             {
                 choice2Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getDefaultColor();
+                    colors.backgroundColor;
                 choice2Text.GetComponent<TMP_Text>().text =
                     choices[1].getFlavorText();
                 choice2Text.GetComponent<TMP_Text>().color =
-                    subElement.getHighlightColor();
+                    colors.textColor;
             }
             if (choices.Count >= 3)
             {
                 choice3Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getDefaultColor();
+                    colors.backgroundColor;
                 choice3Text.GetComponent<TMP_Text>().text =
                     choices[2].getFlavorText();
                 choice3Text.GetComponent<TMP_Text>().color =
-                    subElement.getHighlightColor();
+                    colors.textColor;
             }
             if (choices.Count >= 4)
             {
                 choice4Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getDefaultColor();
+                    colors.backgroundColor;
                 choice4Text.GetComponent<TMP_Text>().text =
                     choices[3].getFlavorText();
                 choice4Text.GetComponent<TMP_Text>().color =
-                    subElement.getHighlightColor();
+                    colors.textColor;
             }
             if (choices.Count >= 5)
             {
                 choice5Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getDefaultColor();
+                    colors.backgroundColor;
                 choice5Text.GetComponent<TMP_Text>().text =
                     choices[4].getFlavorText();
                 choice5Text.GetComponent<TMP_Text>().color =
-                    subElement.getHighlightColor();
+                    colors.textColor;
             }
             if (choices.Count >= 6)
             {
                 choice6Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getDefaultColor();
+                    colors.backgroundColor;
                 choice6Text.GetComponent<TMP_Text>().text =
                     choices[5].getFlavorText();
                 choice6Text.GetComponent<TMP_Text>().color =
-                    subElement.getHighlightColor();
+                    colors.textColor;
             }
             if (selectedChoice == 1)
             {
                 choice1Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getHighlightColor();
-                choice1Text.GetComponent<TMP_Text>().color =
-                    subElement.getDefaultColor();
+                    colors.selectedColor;
             }
             if (selectedChoice == 2)
             {
                 choice2Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getHighlightColor();
-                choice2Text.GetComponent<TMP_Text>().color =
-                    subElement.getDefaultColor();
+                    colors.selectedColor;
             }
             if (selectedChoice == 3)
             {
                 choice3Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getHighlightColor();
-                choice3Text.GetComponent<TMP_Text>().color =
-                    subElement.getDefaultColor();
+                    colors.selectedColor;
             }
             if (selectedChoice == 4)
             {
                 choice4Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getHighlightColor();
-                choice4Text.GetComponent<TMP_Text>().color =
-                    subElement.getDefaultColor();
+                    colors.selectedColor;
             }
             if (selectedChoice == 5)
             {
                 choice5Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getHighlightColor();
-                choice5Text.GetComponent<TMP_Text>().color =
-                    subElement.getDefaultColor();
+                    colors.selectedColor;
             }
             if (selectedChoice == 6)
             {
                 choice6Background.GetComponent<SpriteRenderer>().color =
-                    subElement.getHighlightColor();
-                choice6Text.GetComponent<TMP_Text>().color =
-                    subElement.getDefaultColor();
+                    colors.selectedColor;
             }
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
@@ -395,6 +383,7 @@ public class ConversationController : MonoBehaviour
         this.conversationNode = conversationNode;
         isActive = true;
         subElement = element;
+        colors = GameState.designColorsController.getElementDesignColors(element);
         statementBackground.GetComponent<SpriteRenderer>().color =
             element.getDefaultColor();
         statementText.GetComponent<TMP_Text>().text =

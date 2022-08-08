@@ -2,8 +2,11 @@ MonsterMasterUnity/Library/*
 MonsterMasterUnity/Logs/*
 MonsterMasterUnity/Library/StateCache/*
 MonsterMasterUnity/UserSettings/*
+MonsterMasterUnity/UserSettings/Layouts/*
+MonsterMasterUnity/UserSettings/Layouts/default-2021.dwlt
 MonsterMasterUnity/Temp
 MonsterMasterUnity/Temp/*
+MonsterMasterUnity/MonsterMasterUnity_Data/*
 .gitconfig
 .bash_history
 .viminfo

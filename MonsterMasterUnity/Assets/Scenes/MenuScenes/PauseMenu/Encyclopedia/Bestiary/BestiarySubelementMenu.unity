@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 331c3b3de4be2a040868d4abcb04a825, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6875bc5ecca5337469f4b9bffb009e34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 18994243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.5, y: -1.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 299893599}
@@ -402,7 +402,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -422,7 +422,7 @@ Transform:
   m_GameObject: {fileID: 50418691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 732390572}
@@ -441,13 +441,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 269921010}
   - {fileID: 255749586}
@@ -457,7 +453,7 @@ MonoBehaviour:
   rightButtons:
   - {fileID: 255749586}
   - {fileID: 395864420}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &101918441
 GameObject:
@@ -486,7 +482,7 @@ Transform:
   m_GameObject: {fileID: 101918441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.25, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2042596289}
@@ -534,7 +530,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -557,13 +553,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons: []
   downButtons:
   - {fileID: 618227632}
@@ -579,7 +571,7 @@ MonoBehaviour:
   - {fileID: 324944263}
   - {fileID: 2122728253}
   - {fileID: 428617324}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &102506156
 GameObject:
@@ -607,7 +599,7 @@ Transform:
   m_GameObject: {fileID: 102506156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 255749584}
@@ -723,7 +715,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 500
-  m_Sprite: {fileID: 21300000, guid: 067b66ad0e42a704ea6a9552625d1af6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2136776073d59744b57d69be4a80740, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -743,7 +735,7 @@ Transform:
   m_GameObject: {fileID: 125785135}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 299893599}
@@ -775,7 +767,7 @@ Transform:
   m_GameObject: {fileID: 233472793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1862685942}
@@ -915,7 +907,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &255749583
 GameObject:
@@ -944,7 +936,7 @@ Transform:
   m_GameObject: {fileID: 255749583}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 102506157}
@@ -992,7 +984,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1015,13 +1007,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 1862685944}
   - {fileID: 1891438696}
@@ -1031,7 +1019,7 @@ MonoBehaviour:
   - {fileID: 50418694}
   rightButtons:
   - {fileID: 395864420}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &257072660
 GameObject:
@@ -1059,7 +1047,7 @@ Transform:
   m_GameObject: {fileID: 257072660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1245719171}
@@ -1176,7 +1164,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1195,8 +1183,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269921007}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.75, y: -0.25, z: 0.15795712}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.75, y: -0.25, z: 0}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1412169014}
@@ -1215,13 +1203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 1952642360}
   - {fileID: 101918444}
@@ -1241,8 +1225,77 @@ MonoBehaviour:
   - {fileID: 1891438696}
   - {fileID: 728956978}
   - {fileID: 1245719173}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
+--- !u!1001 &278866467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034711903612034710, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7816111762910531077, guid: 40292ada55036414b967221201fb7757,
+        type: 3}
+      propertyPath: m_Name
+      value: BestiaryMenuState
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40292ada55036414b967221201fb7757, type: 3}
 --- !u!1 &299893598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,7 +1352,7 @@ Transform:
   - {fileID: 2122728251}
   - {fileID: 428617322}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &299893600
 MonoBehaviour:
@@ -1340,7 +1393,7 @@ Transform:
   m_GameObject: {fileID: 324944260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.75, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1894977381}
@@ -1388,7 +1441,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1411,13 +1464,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons: []
   downButtons:
   - {fileID: 1891438696}
@@ -1433,7 +1482,7 @@ MonoBehaviour:
   rightButtons:
   - {fileID: 2122728253}
   - {fileID: 428617324}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &374541966
 GameObject:
@@ -1461,7 +1510,7 @@ Transform:
   m_GameObject: {fileID: 374541966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 618227630}
@@ -1546,7 +1595,7 @@ Transform:
   m_GameObject: {fileID: 395864417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 591703173}
@@ -1594,7 +1643,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1617,13 +1666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 728956978}
   - {fileID: 1245719173}
@@ -1633,7 +1678,7 @@ MonoBehaviour:
   - {fileID: 255749586}
   - {fileID: 50418694}
   rightButtons:
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &428617321
 GameObject:
@@ -1662,7 +1707,7 @@ Transform:
   m_GameObject: {fileID: 428617321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.75, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1278798222}
@@ -1710,7 +1755,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1733,13 +1778,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons: []
   downButtons:
   - {fileID: 1245719173}
@@ -1755,7 +1796,7 @@ MonoBehaviour:
   - {fileID: 101918444}
   - {fileID: 1952642360}
   rightButtons:
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1001 &441237315
 PrefabInstance:
@@ -1767,7 +1808,7 @@ PrefabInstance:
     - target: {fileID: 8627088874020685263, guid: 7eb8ebcc2d165b342b12e4ea59c9417e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8627088874020685263, guid: 7eb8ebcc2d165b342b12e4ea59c9417e,
         type: 3}
@@ -1852,7 +1893,7 @@ Transform:
   m_GameObject: {fileID: 591703172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395864418}
@@ -1968,7 +2009,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 331c3b3de4be2a040868d4abcb04a825, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6875bc5ecca5337469f4b9bffb009e34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1988,7 +2029,7 @@ Transform:
   m_GameObject: {fileID: 616911846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 299893599}
@@ -2021,7 +2062,7 @@ Transform:
   m_GameObject: {fileID: 618227629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.25, y: -0.25, z: 0.15795712}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 374541967}
@@ -2069,7 +2110,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2092,13 +2133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 101918444}
   - {fileID: 1952642360}
@@ -2118,7 +2155,7 @@ MonoBehaviour:
   - {fileID: 1891438696}
   - {fileID: 728956978}
   - {fileID: 1245719173}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &642978460
 GameObject:
@@ -2178,7 +2215,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 6dca570304479d446a49d1640bf9fe41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 530341bc402348e48a1e218b5f4f5ccc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2198,7 +2235,7 @@ Transform:
   m_GameObject: {fileID: 642978460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 299893599}
@@ -2399,7 +2436,7 @@ Transform:
   m_GameObject: {fileID: 728956975}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.25, y: -0.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2120715179}
@@ -2447,7 +2484,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2470,13 +2507,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 2122728253}
   - {fileID: 428617324}
@@ -2495,7 +2528,7 @@ MonoBehaviour:
   - {fileID: 269921010}
   rightButtons:
   - {fileID: 1245719173}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &732390571
 GameObject:
@@ -2523,7 +2556,7 @@ Transform:
   m_GameObject: {fileID: 732390571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 50418693}
@@ -2639,7 +2672,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 331c3b3de4be2a040868d4abcb04a825, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6875bc5ecca5337469f4b9bffb009e34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2659,7 +2692,7 @@ Transform:
   m_GameObject: {fileID: 770554644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.5, y: 1.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 299893599}
@@ -2691,7 +2724,7 @@ Transform:
   m_GameObject: {fileID: 868769835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1313154230}
@@ -2913,7 +2946,7 @@ Transform:
   m_GameObject: {fileID: 1015304956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2122728251}
@@ -2982,6 +3015,7 @@ GameObject:
   - component: {fileID: 1141064154}
   - component: {fileID: 1141064153}
   - component: {fileID: 1141064155}
+  - component: {fileID: 1141064156}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -3030,7 +3064,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 1b0f2b77e923e3a4ea1a11dfb305cc53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6875bc5ecca5337469f4b9bffb009e34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3050,7 +3084,7 @@ Transform:
   m_GameObject: {fileID: 1141064152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.5, y: -4.4, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 299893599}
@@ -3063,7 +3097,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141064152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d328b092b7ca7e44789e826aeca004f3, type: 3}
   m_Name: 
@@ -3073,8 +3107,42 @@ MonoBehaviour:
   selectedSprite: {fileID: 21300000, guid: cd730b0872a498c43a5dd956999e1d59, type: 3}
   upButton: {fileID: 0}
   downButton: {fileID: 0}
-  leftButton: {fileID: 1313154231}
+  leftButton: {fileID: 0}
   rightButton: {fileID: 0}
+  nextSceneName: BestiaryMenu
+--- !u!114 &1141064156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141064152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e7deeb9f3e38e498cacfff64f3824f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
+  isSelected: 1
+  isInContext: 1
+  upButtons:
+  - {fileID: 1313154231}
+  downButtons:
+  - {fileID: 428617324}
+  - {fileID: 2122728253}
+  - {fileID: 324944263}
+  - {fileID: 2123673655}
+  - {fileID: 101918444}
+  - {fileID: 1952642360}
+  leftButtons:
+  - {fileID: 1313154231}
+  rightButtons:
+  - {fileID: 1952642360}
+  - {fileID: 101918444}
+  - {fileID: 2123673655}
+  - {fileID: 324944263}
+  - {fileID: 2122728253}
+  - {fileID: 428617324}
   nextSceneName: BestiaryMenu
 --- !u!1 &1245719170
 GameObject:
@@ -3103,7 +3171,7 @@ Transform:
   m_GameObject: {fileID: 1245719170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.75, y: -0.25, z: 0.15795712}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 257072661}
@@ -3151,7 +3219,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3174,13 +3242,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 428617324}
   - {fileID: 2122728253}
@@ -3199,7 +3263,7 @@ MonoBehaviour:
   - {fileID: 618227632}
   - {fileID: 269921010}
   rightButtons:
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &1278798221
 GameObject:
@@ -3227,7 +3291,7 @@ Transform:
   m_GameObject: {fileID: 1278798221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 428617322}
@@ -3344,7 +3408,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3364,7 +3428,7 @@ Transform:
   m_GameObject: {fileID: 1313154228}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -3.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 868769836}
@@ -3383,13 +3447,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 1
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 255749586}
   - {fileID: 50418694}
@@ -3397,7 +3457,7 @@ MonoBehaviour:
   downButtons: []
   leftButtons: []
   rightButtons:
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &1361042416
 GameObject:
@@ -3561,7 +3621,7 @@ Transform:
   m_GameObject: {fileID: 1412169013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 269921009}
@@ -3719,7 +3779,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 331c3b3de4be2a040868d4abcb04a825, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6875bc5ecca5337469f4b9bffb009e34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3739,7 +3799,7 @@ Transform:
   m_GameObject: {fileID: 1713778775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.5, y: -3.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 299893599}
@@ -3771,7 +3831,7 @@ Transform:
   m_GameObject: {fileID: 1731343801}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1952642359}
@@ -3992,7 +4052,7 @@ Transform:
   m_GameObject: {fileID: 1862685941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.75, y: -0.25, z: 0.15795712}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 233472794}
@@ -4040,7 +4100,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4063,13 +4123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 2123673655}
   - {fileID: 324944263}
@@ -4089,7 +4145,7 @@ MonoBehaviour:
   - {fileID: 1891438696}
   - {fileID: 728956978}
   - {fileID: 1245719173}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &1891438693
 GameObject:
@@ -4118,7 +4174,7 @@ Transform:
   m_GameObject: {fileID: 1891438693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.75, y: -0.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2072243758}
@@ -4166,7 +4222,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4189,13 +4245,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons:
   - {fileID: 324944263}
   - {fileID: 2123673655}
@@ -4214,7 +4266,7 @@ MonoBehaviour:
   rightButtons:
   - {fileID: 728956978}
   - {fileID: 1245719173}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &1894977380
 GameObject:
@@ -4242,7 +4294,7 @@ Transform:
   m_GameObject: {fileID: 1894977380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 324944261}
@@ -4326,7 +4378,7 @@ Transform:
   m_GameObject: {fileID: 1925210260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2123673653}
@@ -4453,7 +4505,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 253211196}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -4544,7 +4596,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4564,7 +4616,7 @@ Transform:
   m_GameObject: {fileID: 1952642357}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.75, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1731343802}
@@ -4583,13 +4635,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons: []
   downButtons:
   - {fileID: 269921010}
@@ -4605,7 +4653,7 @@ MonoBehaviour:
   - {fileID: 324944263}
   - {fileID: 2122728253}
   - {fileID: 428617324}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &2042596288
 GameObject:
@@ -4633,7 +4681,7 @@ Transform:
   m_GameObject: {fileID: 2042596288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 101918442}
@@ -4717,7 +4765,7 @@ Transform:
   m_GameObject: {fileID: 2072243757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1891438694}
@@ -4937,7 +4985,7 @@ Transform:
   m_GameObject: {fileID: 2120715178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 728956976}
@@ -5022,7 +5070,7 @@ Transform:
   m_GameObject: {fileID: 2122728250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.25, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1015304957}
@@ -5070,7 +5118,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5093,13 +5141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons: []
   downButtons:
   - {fileID: 728956978}
@@ -5115,7 +5159,7 @@ MonoBehaviour:
   - {fileID: 1952642360}
   rightButtons:
   - {fileID: 428617324}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &2123673652
 GameObject:
@@ -5144,7 +5188,7 @@ Transform:
   m_GameObject: {fileID: 2123673652}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.75, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1925210261}
@@ -5192,7 +5236,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 510
-  m_Sprite: {fileID: 21300000, guid: 611ef570a21952645acc566e528f81bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 305e6ded3c3062744a738f6970e814da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5215,13 +5259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb16e38bf0e37504cb79cfe6522746eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 0}
   isSelected: 0
   isInContext: 0
-  selectedSprite: {fileID: 21300000, guid: 39d9755cc75f75f438d776eb066b3b5e, type: 3}
-  upButton: {fileID: 0}
-  downButton: {fileID: 0}
-  leftButton: {fileID: 0}
-  rightButton: {fileID: 0}
   upButtons: []
   downButtons:
   - {fileID: 1862685944}
@@ -5237,7 +5277,7 @@ MonoBehaviour:
   - {fileID: 324944263}
   - {fileID: 2122728253}
   - {fileID: 428617324}
-  - {fileID: 1141064155}
+  - {fileID: 1141064156}
   monsterType: {fileID: 0}
 --- !u!1 &2143627128
 GameObject:
