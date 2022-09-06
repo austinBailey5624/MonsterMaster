@@ -43,8 +43,6 @@ public class Person : MonoBehaviour
 
     private int spriteIndex = 0;
 
-    // private int directionIndex = 0;
-
     private int updateSlowdown = 0;
 
     protected bool facingLeft = false;
