@@ -7,6 +7,10 @@ MonsterMasterUnity/UserSettings/Layouts/default-2021.dwlt
 MonsterMasterUnity/Temp
 MonsterMasterUnity/Temp/*
 MonsterMasterUnity/MonsterMasterUnity_Data/*
+MonsterMasterMobile/Library/*
+MonsterMasterMobile/Logs/*
+MonsterMasterMobile/UserSettings/*
+MonsterMasterMobile/Temp/*
 .gitconfig
 .bash_history
 .viminfo
