@@ -52,10 +52,12 @@ MonoBehaviour:
     always advise revenge by saying 'Sticket to em!'
   secondaryElement: {fileID: 1428736970731791400, guid: edd571e3e07bab148bfd636671b90547,
     type: 3}
-  physicalEvolution: {fileID: 0}
-  balancedEvolution: {fileID: -6916617896549048054, guid: e61bdc899868481459b5753079fb6123,
+  physicalEvolution: {fileID: 4896228517612396738, guid: fc130662bca4f694380251532264d924,
     type: 3}
-  magicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -428672553171945762, guid: 0cf16956f1bfff34bb9fa2e0d2cd534d,
+    type: 3}
+  magicalEvolution: {fileID: -6916617896549048054, guid: e61bdc899868481459b5753079fb6123,
+    type: 3}
   previousEvolution: {fileID: 0}
   leftSpritesAreRightSpritesReversed: 0
   upSprites:

@@ -186,3 +186,13 @@ git status
 git add .
 ./sc.sh "Finish Deities Menu"
 git push origin main
+dir
+notepad++ README.md 
+git status
+git add .
+dir
+pwd
+sc "Update Readme"
+./sc.sh "Update Readme"
+git status
+git push origin NovemberDecember2022 

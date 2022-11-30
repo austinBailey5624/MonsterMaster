@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5246731501085988880}
   - component: {fileID: -714481117783446195}
   m_Layer: 0
-  m_Name: 10Froget
+  m_Name: 10Hider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 851398556, guid: 9e3b6e6679595d74d9f61fe84d211e0b, type: 3}
-  name: Froget
-  description: The Froget is a three foot tall frog that weilds a wooden spear. Its
-    big black monochrome eyes stare into the deep darkness of the soul. Or so I've
-    been told. I don't think its true actually, I just think its dumb.
+  defaultSprite: {fileID: 0}
+  name: Hider
+  description: The hider relies on its thick shell to save it from any incoming attack.
+    It is still quite agile while hidden in its shell, and will slam its shell on
+    its enemies to attack
   secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -58,21 +58,9 @@ MonoBehaviour:
   previousEvolution: {fileID: 5581803974312184288, guid: b6dafa46a23d8e14f830044469d75786,
     type: 3}
   leftSpritesAreRightSpritesReversed: 1
-  upSprites:
-  - {fileID: -204041886, guid: 0a6b33229f1688c49a4ab2b10cf100ad, type: 3}
-  - {fileID: 1552414181, guid: 0a6b33229f1688c49a4ab2b10cf100ad, type: 3}
-  - {fileID: -1697953882, guid: 0a6b33229f1688c49a4ab2b10cf100ad, type: 3}
-  - {fileID: -1493576448, guid: 0a6b33229f1688c49a4ab2b10cf100ad, type: 3}
-  downSprites:
-  - {fileID: 851398556, guid: 9e3b6e6679595d74d9f61fe84d211e0b, type: 3}
-  - {fileID: -1726855209, guid: 9e3b6e6679595d74d9f61fe84d211e0b, type: 3}
-  - {fileID: -91965035, guid: 9e3b6e6679595d74d9f61fe84d211e0b, type: 3}
-  - {fileID: -1209432313, guid: 9e3b6e6679595d74d9f61fe84d211e0b, type: 3}
-  rightSprites:
-  - {fileID: 1976513777, guid: 91c2fd90f9fc8d0499c1d2277f72a6ae, type: 3}
-  - {fileID: -522560370, guid: 91c2fd90f9fc8d0499c1d2277f72a6ae, type: 3}
-  - {fileID: 968976554, guid: 91c2fd90f9fc8d0499c1d2277f72a6ae, type: 3}
-  - {fileID: -734238240, guid: 91c2fd90f9fc8d0499c1d2277f72a6ae, type: 3}
+  upSprites: []
+  downSprites: []
+  rightSprites: []
   leftSprites: []
   attackSprites: []
   onHitSprites: []
