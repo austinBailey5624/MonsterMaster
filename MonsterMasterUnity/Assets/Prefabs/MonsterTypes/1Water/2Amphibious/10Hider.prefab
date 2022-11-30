@@ -48,7 +48,8 @@ MonoBehaviour:
   name: Hider
   description: The hider relies on its thick shell to save it from any incoming attack.
     It is still quite agile while hidden in its shell, and will slam its shell on
-    its enemies to attack
+    its enemies to attack. Its shell is camoflauged in the swamplands where it dwells
+    to appear as a simple mossy stone
   secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -65,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

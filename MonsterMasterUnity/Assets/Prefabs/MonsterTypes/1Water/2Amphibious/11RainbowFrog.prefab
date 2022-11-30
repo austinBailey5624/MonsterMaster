@@ -50,7 +50,8 @@ MonoBehaviour:
     nearly hunted to extinction by the leprechauns, but they gave up when they realized
     that it wasn't always sitting on a pot of gold. In fact, it never was. Poor dead
     rainbow Frogs... There is animosity between the Rainbow Frogs and the leprechauns
-    to this day.
+    to this day. Their skin is highly prized for its hallucinogenic properties, and
+    it was nearly hunted to extinction, until it became poisonous as well.
   secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -83,3 +84,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

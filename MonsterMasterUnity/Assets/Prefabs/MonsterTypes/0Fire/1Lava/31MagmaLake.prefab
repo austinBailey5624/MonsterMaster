@@ -47,7 +47,9 @@ MonoBehaviour:
   defaultSprite: {fileID: 0}
   name: Magma Lake
   description: Heat and Noxious fumes erupt from this red lake, as if from the bowels
-    of hell itself.
+    of hell itself. It has come to overhwelm the surface world with its fiery wrath,
+    and consumes all in its path, especially metals which strenthen iit. Ice is the
+    only sure way of stopping it.
   secondaryElement: {fileID: -7010680253480515942, guid: e3eec3208962f6346b8aedc76fee25b7,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -63,3 +65,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

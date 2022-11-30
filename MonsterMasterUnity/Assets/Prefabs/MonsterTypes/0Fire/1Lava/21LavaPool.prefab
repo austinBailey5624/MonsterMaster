@@ -48,6 +48,8 @@ MonoBehaviour:
   name: Lava Pool
   description: Spilling out from the earths molten core, this pool of lava is dangerous,
     spitting molten lava at all those around it, as if the pool itself is angry.
+    It has feasted on the fumes and the heat of the core for an age, and now wishes
+    to burn the overworld to make it another fiery home.
   secondaryElement: {fileID: -7010680253480515942, guid: e3eec3208962f6346b8aedc76fee25b7,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -64,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

@@ -47,7 +47,9 @@ MonoBehaviour:
   defaultSprite: {fileID: 0}
   name: Snapper
   description: The snapper rams its horned shell and tail on its enemies to disorient
-    them then snaps with its massive jaw to cripple whatever it can grab on to
+    them then snaps with its massive jaw to cripple whatever it can grab on to. It
+    Hides in the water, and on land, to ambush its prey, which it must get in the
+    first bite or so, as it is very slow.
   secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -64,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

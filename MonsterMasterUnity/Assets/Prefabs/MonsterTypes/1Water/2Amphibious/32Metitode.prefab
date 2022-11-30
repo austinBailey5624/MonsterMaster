@@ -49,7 +49,7 @@ MonoBehaviour:
   description: The Meititode is constantly in meditation. It shields itself in a
     sphere of mud to protect itself. It is rightly considered the master of the natural
     elements, and can cast all levels of the natural magics. However, it is vulnerable
-    to the moral elements
+    to the moral elements.
   secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -81,3 +81,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

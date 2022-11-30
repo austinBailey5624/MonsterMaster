@@ -46,7 +46,7 @@ public class BestiaryMonsterViewController : MonoBehaviour
     public void activate()
     {
         monsterSprite = this.transform.GetChild(0).gameObject;
-        if (monsterType.getIdleSprites().Any())
+        if (monsterType.idleSprites.Any())
         {
             monsterSprite.gameObject.transform.localScale = new Vector3(1,1,1);
         }

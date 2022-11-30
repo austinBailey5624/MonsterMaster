@@ -46,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Crusheller
-  description: A giant Dragon Tortise, the Crusheller likes nothing better than to
-    grab ships with its massive jaw and let loose. This works on things smaller and
-    less sturdy than ships as well
+  description: A giant Dragon Tortoise, the Crusheller likes nothing better than
+    to grab ships with its massive jaw and let loose. This works on things smaller
+    and less sturdy than ships as well
   secondaryElement: {fileID: 3825033281174301815, guid: af3f078e84ea2ad458cb8be0a50276c3,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -64,3 +64,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

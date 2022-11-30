@@ -46,7 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Oil Puddle
-  description: A sentient puddle of oil, giving off noxious, flammable fumes.
+  description: The Philamon melted in the heat of the planet's mantle, dissolving
+    into its constituent parts. After basking in the heat, it formed a sentient puddle
+    of oil, giving off noxious, flammable fumes. It is fued by its anger, and enjoys
+    being lit on fire.
   secondaryElement: {fileID: -7010680253480515942, guid: e3eec3208962f6346b8aedc76fee25b7,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -63,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
