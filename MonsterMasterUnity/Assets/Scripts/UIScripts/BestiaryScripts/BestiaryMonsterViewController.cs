@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /**
@@ -44,7 +45,16 @@ public class BestiaryMonsterViewController : MonoBehaviour
 
     public void activate()
     {
-        spritesToDisplay = monsterType.getDownSprites();
+        monsterSprite = this.transform.GetChild(0).gameObject;
+        if (monsterType.getIdleSprites().Any())
+        {
+            monsterSprite.gameObject.transform.localScale = new Vector3(1,1,1);
+        }
+        else
+        {
+            monsterSprite.gameObject.transform.localScale = new Vector3(8,8,1);
+        }
+        spritesToDisplay = monsterType.getIdleSprites();
     }
 
     void Update()

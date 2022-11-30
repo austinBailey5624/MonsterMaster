@@ -42,6 +42,8 @@ public class MonsterType : MonoBehaviour, IAnimationSet, ISpritedObject, IDescri
 
     public List<Sprite> onDeathSprites;
 
+    public List<Sprite> idleSprites;
+
     public Sprite getDefaultSprite()
     {
         if(defaultSprite == null && previousEvolution != null)
@@ -156,5 +158,14 @@ public class MonsterType : MonoBehaviour, IAnimationSet, ISpritedObject, IDescri
             return getDownSprites();
         }
         return onDeathSprites;
+    }
+
+    public List<Sprite> getIdleSprites()
+    {
+        if(idleSprites == null || !idleSprites.Any())
+        {
+            return getDownSprites();
+        }
+        return idleSprites;
     }
 }
