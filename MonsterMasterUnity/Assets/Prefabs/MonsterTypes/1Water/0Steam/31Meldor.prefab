@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Meldor
-  description: This sentient ball of red vapor contains its own aresol digestive
+  description: This sentient ball of red vapor contains its own aerosol digestive
     system of corrosive vapors. When caught in its grasp, its victims skin melts
   secondaryElement: {fileID: 1338430603057303403, guid: f2a67e75701f0614bbd3c90820713094,
     type: 3}
@@ -63,3 +63,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

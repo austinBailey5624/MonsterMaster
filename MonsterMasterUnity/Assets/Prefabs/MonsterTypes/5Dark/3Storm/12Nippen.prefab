@@ -47,7 +47,9 @@ MonoBehaviour:
   defaultSprite: {fileID: 0}
   name: Nippen
   description: A minor ice demon that summons cold winds on winters nights. It delights
-    in viewing those frozen completely solid
+    in viewing those frozen completely solid. It is stronger in the cold, and even
+    stronger for each frozen enemy on the field. It likes nothing more than to blow
+    all of the heat of an opponent away.
   secondaryElement: {fileID: -988008113699039376, guid: 82efe74e544df944ebbb787b9ea68d22,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -64,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

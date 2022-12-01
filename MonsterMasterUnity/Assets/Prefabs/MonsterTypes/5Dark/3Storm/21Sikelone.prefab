@@ -46,9 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Sikelone
-  description: A thin twister that prides itself on its independence, the sikelone
+  description: 'A thin twister that prides itself on its independence, the sikelone
     tears up whatever is around it with its vicious spin. It loves destruction, and
-    will fade only when all of the trees and buildings in its path have collapsed
+    will fade only when all of the trees and buildings in its path have collapsed.
+    They are famous for making jokes, all by themselves, to themselves, hence the
+    name: Sikelone.'
   secondaryElement: {fileID: -988008113699039376, guid: 82efe74e544df944ebbb787b9ea68d22,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -65,3 +67,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

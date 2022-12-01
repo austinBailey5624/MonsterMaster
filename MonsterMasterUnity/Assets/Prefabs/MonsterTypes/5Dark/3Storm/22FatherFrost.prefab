@@ -50,7 +50,7 @@ MonoBehaviour:
     confused for santa clause. On closer inspection however, his eyes are cold, and
     his skin a pale blue. He seeks to freeze the living, and bring the entire world
     under a permanent winter, but is not wise enough to implement his plans. Instead
-    he preys on travellers during winter
+    he preys on travelers during winter.
   secondaryElement: {fileID: -988008113699039376, guid: 82efe74e544df944ebbb787b9ea68d22,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -67,3 +67,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Thornado
-  description: A demonic spirit posessed a sikelone, granting it width and bearing.
+  description: A demonic spirit possessed a Sikelone, granting it width and bearing.
     In addition to the Thornados massive bulk, and its propensity to launch anything
     near it into the air, the Thornado sports cruel blades along its sides, sharp
     enough to cut metal, which it uses to utterly shred all in its path.
@@ -65,3 +65,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

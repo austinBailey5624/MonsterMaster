@@ -49,7 +49,7 @@ MonoBehaviour:
   description: Only seen in the depths of winter, the Blizarra can bring temperatures
     so low as to freeze blood and oil. It has no true form, at least not one that
     can be seen beneath the sheets of ice and snow that blanket it and everything
-    nearby
+    nearby.
   secondaryElement: {fileID: -988008113699039376, guid: 82efe74e544df944ebbb787b9ea68d22,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -65,3 +65,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
