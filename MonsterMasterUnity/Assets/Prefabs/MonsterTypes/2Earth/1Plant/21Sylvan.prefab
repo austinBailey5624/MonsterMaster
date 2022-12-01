@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Silvan
-  description: A beautious matron of the forest, the Sylvan is a spriggan all grown
+  description: A beauteous matron of the forest, the Sylvan is a Spriggan all grown
     up, and can bend the will of the plants around it to serve it in conflict. It
     has healing prowess for natural (earth elemental) allies, but is unwilling to
     aid anything else.
@@ -66,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

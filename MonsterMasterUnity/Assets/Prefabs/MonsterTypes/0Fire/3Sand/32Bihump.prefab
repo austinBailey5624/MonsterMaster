@@ -46,9 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Bihump
-  description: The Bihump has mystical powers and can cast greater sandstorm that
-    does no damage to sand creatures, small damage to fire and air primary creatures
-    and more damage to all other creatures each turn.
+  description: The Bihump has mystical powers and can control sand with its mind.
+    A loyal beast, it will entomb any that threaten its caravaneer masters in sand.
+    It can cast Fire and Air magic simultaneously, one spell from each hump, and
+    due to its hardiness and wisdom is a prized fighter in the desert arenas. It
+    can be rather slow at times, but it is always a deliberate, directed action that
+    is slow. The beast uses each moment to its fullest.
   secondaryElement: {fileID: -5888168306257564100, guid: c4ed6bf3c8418b24d9592cfa855ce753,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -64,3 +67,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

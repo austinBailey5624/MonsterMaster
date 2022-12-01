@@ -47,7 +47,10 @@ MonoBehaviour:
   defaultSprite: {fileID: 0}
   name: Easedis
   description: A smoky fog of disease, Easedis is highly flammable, and weakens the
-    constitution of all the non-rotten enemies it comes into contact with
+    constitution of all the non-rotten enemies it comes into contact with. It is
+    named for how it eases and relaxes the enemies it comes into contact with, but
+    this is not true relaxation. Indeed this 'ease' is to make its opponents weaker,
+    and more susceptible to infection.
   secondaryElement: {fileID: -1756082322638371030, guid: 71b0e14d3cf083a438a696ebc6df7c58,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -64,3 +67,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

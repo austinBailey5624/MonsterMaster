@@ -47,10 +47,10 @@ MonoBehaviour:
   defaultSprite: {fileID: 0}
   name: Trig
   description: A small nerdy twig that just loves math. It can recite all of the
-    mathematical properties up to vector calclus off of the top of its head, it especially
-    loves sine, cosine and tangent. It always remembers to bring an apple for the
-    teacher. It cant see very well (as it lacks eyes) and thus keeps its bifocals
-    on at all times.
+    mathematical properties up to vector calculus off of the top of its head, it
+    especially loves sine, cosine and tangent. It always remembers to bring an apple
+    for the teacher. It cant see very well (as it lacks eyes) and thus keeps its
+    bifocals on at all times.
   secondaryElement: {fileID: 1428736970731791400, guid: edd571e3e07bab148bfd636671b90547,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -67,3 +67,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

@@ -48,7 +48,7 @@ MonoBehaviour:
   name: Plaguerat
   description: This rat carries the bubonic plague, and infects all that contact
     it with terrible disease. While it is not a strong fighter, it can outlast its
-    enemies, bleeding them to death by a thousand cuts. It is made stronger and healther
+    enemies, bleeding them to death by a thousand cuts. It is made stronger and healthier
     by all of the diseased creatures on either side of the field, and does extra
     damage to plagued enemies.
   secondaryElement: {fileID: -1756082322638371030, guid: 71b0e14d3cf083a438a696ebc6df7c58,
@@ -66,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

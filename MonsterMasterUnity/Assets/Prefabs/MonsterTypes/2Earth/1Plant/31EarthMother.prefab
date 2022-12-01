@@ -48,8 +48,9 @@ MonoBehaviour:
   name: Earth Mother
   description: At one with nature, the Earth Mother is responsible for the care of
     the forest, and will defend it against any trespassers. Her flower hair can be
-    used in potent healing tonics, and she often will rescue troubled travellers,
-    so long as they are pure of heart
+    used in potent healing tonics, and she often will rescue troubled travelers,
+    so long as they are pure of heart, and do not harm any part of the nature she
+    watches over.
   secondaryElement: {fileID: 1428736970731791400, guid: edd571e3e07bab148bfd636671b90547,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -65,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
