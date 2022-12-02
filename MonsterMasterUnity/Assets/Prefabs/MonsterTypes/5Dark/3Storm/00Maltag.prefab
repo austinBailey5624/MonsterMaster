@@ -51,10 +51,12 @@ MonoBehaviour:
     cloud: a Cirrus with a bad attitude.'
   secondaryElement: {fileID: -988008113699039376, guid: 82efe74e544df944ebbb787b9ea68d22,
     type: 3}
-  physicalEvolution: {fileID: 0}
-  balancedEvolution: {fileID: -5816403334408087265, guid: 4d04b8acd10393a47bca6b3cb94a557f,
+  physicalEvolution: {fileID: -5816403334408087265, guid: 4d04b8acd10393a47bca6b3cb94a557f,
     type: 3}
-  magicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: -7893230267216494692, guid: 1c99f266cb105ae45a7cf52fcf101c65,
+    type: 3}
+  magicalEvolution: {fileID: -3771512605441570863, guid: c794bf74f96a0ad438b9e41f04faa85d,
+    type: 3}
   previousEvolution: {fileID: 0}
   leftSpritesAreRightSpritesReversed: 1
   upSprites:

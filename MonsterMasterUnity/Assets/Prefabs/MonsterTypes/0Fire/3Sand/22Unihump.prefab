@@ -46,8 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Unihump
-  description: A Unihump is a camel with a single hump. It stores water in this hump
-    obviously and can cast sandstorm with its mind
+  description: 'A Unihump is a camel with a single hump. It stores water in this
+    hump obviously and can cast sandstorm with its mind. Its fur is designed to cause
+    a slight breeze beneath the heat, cooling it to prepare it for long days in the
+    hot sands. Though slow, it is beloved by the caravaneers of the desert for its
+    hardy ability to carry lots of weight, and for its general good nature. '
   secondaryElement: {fileID: -5888168306257564100, guid: c4ed6bf3c8418b24d9592cfa855ce753,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -64,3 +67,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

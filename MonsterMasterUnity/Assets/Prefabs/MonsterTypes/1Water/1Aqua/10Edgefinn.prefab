@@ -47,9 +47,9 @@ MonoBehaviour:
   defaultSprite: {fileID: 1685898696, guid: b8ccb5907d13f574fb7f537c282f911c, type: 3}
   name: Edgefinn
   description: EdgeFinn is a larger version of the Minnow with a serrated crest and
-    finns, as well as small, razor-sharp teeth. unlike most fish, its eyes face forward
+    fins, as well as small, razor-sharp teeth. unlike most fish, its eyes face forward
     to stalk its prey, like the carnivores on land. It is known for hunting its prey
-    with persistance, and it can smell blood three miles distant.
+    with persistence, and it can smell blood three miles distant.
   secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -78,3 +78,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

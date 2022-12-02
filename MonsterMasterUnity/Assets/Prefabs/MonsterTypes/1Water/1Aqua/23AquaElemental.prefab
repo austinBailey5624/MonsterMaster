@@ -48,7 +48,8 @@ MonoBehaviour:
   name: Aqua Elemental
   description: The Aqua Elemental is a large aqua symbol that has six crystallized
     water droplets on each of its six points. Its incredible mastery of magic has
-    attracted additional symbols, and it can cast magics of those elements as well.
+    attracted additional symbols, and it can cast magics of those elements as well,
+    though it is still most comfortable casting water magic.
   secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -81,3 +82,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

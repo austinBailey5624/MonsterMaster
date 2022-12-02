@@ -47,7 +47,9 @@ MonoBehaviour:
   defaultSprite: {fileID: 0}
   name: Humpless
   description: A humpless is a sad camel without a hump. It can magically control
-    the sand with its mind and keeps some in the gourd across its back
+    the sand with its mind and keeps some in the gourd across its back. It is infamous
+    for never getting any action, and that might be why its so sad. A charm shaped
+    like a humpless us used to protect rich peoples daughters.
   secondaryElement: {fileID: -5888168306257564100, guid: c4ed6bf3c8418b24d9592cfa855ce753,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -64,3 +66,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

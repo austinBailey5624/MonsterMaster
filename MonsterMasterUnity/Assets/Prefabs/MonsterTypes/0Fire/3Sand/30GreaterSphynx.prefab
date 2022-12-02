@@ -46,12 +46,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 0}
   name: Greater Sphynx
-  description: The greater Sphynx is a very large sphyix with haunting eyes that
-    also speaks in riddles and analogies but has large folded wings along its back.
-    It cant fly with them, but when it spreads them out, it looks very intimidating.
-    The feathers also alternate between jade and turquoise, so the Greater Sphynx
-    was once hunted for its wings. But then it killed and ate all the hunters, so
-    that was over pretty quickly.
+  description: The Greater Sphynx is a very large sphynx with haunting eyes that
+    also speaks in riddles and analogies. Unlike its smaller cousings, it has large
+    folded wings along its back. It cant fly with them, but when it spreads them
+    out, it looks very intimidating. The feathers alternate between jade and turquoise,
+    and as these are precious metals, the Greater Sphynx was once hunted for its
+    wings. But then they killed and ate all the hunters after they failed their questions,
+    so that was over quickly.
   secondaryElement: {fileID: -5888168306257564100, guid: c4ed6bf3c8418b24d9592cfa855ce753,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -67,3 +68,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

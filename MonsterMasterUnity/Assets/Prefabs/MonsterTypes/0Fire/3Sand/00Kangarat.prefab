@@ -46,11 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 1736425895, guid: fc90e657b585d6f4d9484cc243fde59d, type: 3}
   name: Kangarat
-  description: A small rodent native to the eastern desert, the Kangarat is known
-    for its ability to withstand the heat of the noonday sun, and its ability to
-    go weeks without water. It feeds primarily on locusts and other desert pests
-    and is considered a blessing by the sand tribes in times of plague and a nuisance
-    otherwise.
+  description: The Kangarat is a small rodent that can spend its whole life without
+    having to drink any water. It is wise in the ways of the desert, and knows where
+    to hide during sandstorms. Unlike most furry creatures, it relishes having sand
+    in its fur. It can tell the direction of the nearest water using its feet, and
+    is a valued pet among the caravaneers that brave the desert.
   secondaryElement: {fileID: -5888168306257564100, guid: c4ed6bf3c8418b24d9592cfa855ce753,
     type: 3}
   physicalEvolution: {fileID: 3520384734605484630, guid: 283a9e07f3c5d39498f40694a0bd87dc,
@@ -80,3 +80,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

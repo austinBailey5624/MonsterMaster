@@ -53,7 +53,8 @@ MonoBehaviour:
     type: 3}
   physicalEvolution: {fileID: 3465129830083201547, guid: 9dea09ac6a6fa49488d21dac83a3f26f,
     type: 3}
-  balancedEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 2556438566051039878, guid: 91934c962a0bde144b9d605f9fb3d72c,
+    type: 3}
   magicalEvolution: {fileID: -6125840465673444138, guid: 552be2316a9544c499a6afb55014b5bb,
     type: 3}
   previousEvolution: {fileID: 0}

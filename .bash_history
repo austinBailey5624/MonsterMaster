@@ -186,3 +186,30 @@ git status
 git add .
 ./sc.sh "Finish Deities Menu"
 git push origin main
+dir
+notepad++ README.md 
+git status
+git add .
+dir
+pwd
+sc "Update Readme"
+./sc.sh "Update Readme"
+git status
+git push origin NovemberDecember2022 
+git pull origin 
+git branch
+git pull origin main
+git branch -D September2022 
+git branch
+git pull origin NovemberDecember2022 
+git status
+git statu
+git status
+git add .
+./sc.sh "Add new Lava, Storm, Steam, Plant, Rotten, and Betrayer monsters, reomve physical amphibious monsters and replace with turtles (way cooler)"
+git status
+git push origin NovemberDecember2022 
+git status
+git add .
+git commit -m "Implement Flarial Idle into bestiary"
+git push origin NovemberDecember2022 

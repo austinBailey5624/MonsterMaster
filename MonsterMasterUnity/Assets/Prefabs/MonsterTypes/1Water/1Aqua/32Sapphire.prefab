@@ -47,7 +47,11 @@ MonoBehaviour:
   defaultSprite: {fileID: 314262327, guid: 2456537a2952f5244942faca2797f1c3, type: 3}
   name: Sapphire
   description: Gleaming, and hewn from rock far beneath the ocean floor, a Sapphire
-    is a bright blue stone that can serve as a channel for a Sophists magic.
+    is a bright blue stone that can serve as a channel for aquatic magic. It is highly
+    prized for its shininess, though any treasure seeker that would wish to kill
+    it should take heed. It is very dangerous when threatened, able to cast water
+    magic, as well as having a near impregnatable carapace, and damaging the carapace
+    would reduce the value of the stone.
   secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -75,3 +79,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

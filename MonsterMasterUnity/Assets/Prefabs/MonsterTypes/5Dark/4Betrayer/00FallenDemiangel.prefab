@@ -53,10 +53,11 @@ MonoBehaviour:
     soon be known
   secondaryElement: {fileID: -4322075060072408945, guid: ab77688fda660d145bcd692c0aaa2acb,
     type: 3}
-  physicalEvolution: {fileID: 0}
-  balancedEvolution: {fileID: -5655042580221226699, guid: b145f5c4a70522b4889fedf738cb16d3,
+  physicalEvolution: {fileID: -5655042580221226699, guid: b145f5c4a70522b4889fedf738cb16d3,
     type: 3}
-  magicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: 285447111713706385, guid: af5a7d4a7a225814cb2671fcd47e1197,
+    type: 3}
   previousEvolution: {fileID: 0}
   leftSpritesAreRightSpritesReversed: 1
   upSprites:

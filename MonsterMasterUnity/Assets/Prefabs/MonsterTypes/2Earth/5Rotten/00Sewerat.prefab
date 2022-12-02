@@ -51,10 +51,12 @@ MonoBehaviour:
     its blood has healing properties since it is so good at fighting disease.
   secondaryElement: {fileID: -1756082322638371030, guid: 71b0e14d3cf083a438a696ebc6df7c58,
     type: 3}
-  physicalEvolution: {fileID: 0}
-  balancedEvolution: {fileID: -229979037298527827, guid: c351d9af9cfb9294ead4e29261682292,
+  physicalEvolution: {fileID: -229979037298527827, guid: c351d9af9cfb9294ead4e29261682292,
     type: 3}
-  magicalEvolution: {fileID: 0}
+  balancedEvolution: {fileID: 6682505475559861564, guid: 88398f50cc4d35f4d93330369dfb6a78,
+    type: 3}
+  magicalEvolution: {fileID: -8225039018192357845, guid: baff42e8325bbaa49be98a9aeac1ab27,
+    type: 3}
   previousEvolution: {fileID: 0}
   leftSpritesAreRightSpritesReversed: 1
   upSprites:
