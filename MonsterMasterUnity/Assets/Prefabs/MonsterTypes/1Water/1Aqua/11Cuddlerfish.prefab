@@ -47,7 +47,7 @@ MonoBehaviour:
   defaultSprite: {fileID: -1937011537, guid: 754cc12fe1afb1a4a8c0087f1e877a98, type: 3}
   name: Cuddlerfish
   description: A Cuddlerfish is shaped like a Cuttlefish but also loves cuddling.
-    Thats why typically they come in pairs. They separate infrequently, and when
+    That's why typically they come in pairs. They separate infrequently, and when
     they do, both halves become very needy and inevitably float back together. They
     are the very picture of toxic codependence.
   secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
@@ -78,3 +78,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

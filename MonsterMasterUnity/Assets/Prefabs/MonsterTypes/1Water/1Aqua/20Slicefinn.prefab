@@ -47,7 +47,9 @@ MonoBehaviour:
   defaultSprite: {fileID: -1552503923, guid: 092e4d24fdf04254082e534373052757, type: 3}
   name: Slicefinn
   description: Slicefinn is a shark. A hammerhead shark whose front finn is sharpened
-    steel.
+    steel. It has a sensor on either end of its fin, that is both an eye and an underwater
+    nose. As a result it can 'smell' blood in three dimensions underwater, for eight
+    miles in any direction
   secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -76,3 +78,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
