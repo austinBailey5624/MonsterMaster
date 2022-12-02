@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Class representing the information for any single Deity in the game
+ * Copyright 2022 Austin Bailey All Rights Reserved
+ */
 public class Deity : MonoBehaviour, ISpritedObject, IDescribedObject
 {
     public SecondaryElement secondaryElement;

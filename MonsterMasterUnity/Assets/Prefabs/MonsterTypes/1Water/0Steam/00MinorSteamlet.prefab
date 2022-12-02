@@ -53,11 +53,13 @@ MonoBehaviour:
     blooded, but wil consider a drop in temperature as an attack (and indeed such
     things can be fatal to a young steamlet), and respond by running away or striking
     with a blast of controlled steam.
-  secondaryElement: {fileID: 0}
-  physicalEvolution: {fileID: 0}
-  balancedEvolution: {fileID: 7269140258761951485, guid: 207161a719daca8478e211cfa8d5bb57,
+  secondaryElement: {fileID: 1338430603057303403, guid: f2a67e75701f0614bbd3c90820713094,
     type: 3}
-  magicalEvolution: {fileID: 0}
+  physicalEvolution: {fileID: 7269140258761951485, guid: 207161a719daca8478e211cfa8d5bb57,
+    type: 3}
+  balancedEvolution: {fileID: 0}
+  magicalEvolution: {fileID: -5470532292896489079, guid: 78c0202b12005bc4f8be1d9e273f65c9,
+    type: 3}
   previousEvolution: {fileID: 0}
   leftSpritesAreRightSpritesReversed: 1
   upSprites:

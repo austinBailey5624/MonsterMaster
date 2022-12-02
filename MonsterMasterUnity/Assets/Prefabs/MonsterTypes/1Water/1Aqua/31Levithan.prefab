@@ -49,7 +49,7 @@ MonoBehaviour:
   description: A Leviathan is a giant sea monster that can shoot a very pressured
     stream of water at its enemies. It grew from a huge collection of Cuddlerfish
     that fused together. It haunts the oceans and is an unstoppable force below the
-    waves
+    waves.
   secondaryElement: {fileID: 6430911621964648103, guid: f29c1208e85bb2441b09d67ab99c3594,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -77,3 +77,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

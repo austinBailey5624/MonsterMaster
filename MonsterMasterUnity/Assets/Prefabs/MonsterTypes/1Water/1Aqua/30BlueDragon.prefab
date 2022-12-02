@@ -46,7 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: -1894586307, guid: 0473b726a0bbdcf4c9968efd46ac3bd4, type: 3}
   name: Blue Dragon
-  description: A scaleless blue dragon that lives under the sea
+  description: A scaleless blue dragon that lives under the sea. Instead of scales
+    it has incredibly sensitive skin, which it uses to sense prey. Despite its massive
+    girth, it is quick enough to keep itself well fed. Under the oceans, it only
+    fears Krakens in deep water, alhough it will fight a Levithan only at great need.
+    As the top of the underwater food chain, some grow lazy, and gather treasures
+    from shipwrecks for their massive hoards.
   secondaryElement: {fileID: 0}
   physicalEvolution: {fileID: 0}
   balancedEvolution: {fileID: 0}
@@ -73,3 +78,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

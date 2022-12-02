@@ -59,9 +59,14 @@ MonoBehaviour:
     type: 3}
   leftSpritesAreRightSpritesReversed: 0
   upSprites: []
-  downSprites: []
+  downSprites:
+  - {fileID: 1715989431, guid: d45846b39bea3ab40b087bc66dbfad51, type: 3}
+  - {fileID: -1153180244, guid: d45846b39bea3ab40b087bc66dbfad51, type: 3}
+  - {fileID: -2004830666, guid: d45846b39bea3ab40b087bc66dbfad51, type: 3}
+  - {fileID: -1557752949, guid: d45846b39bea3ab40b087bc66dbfad51, type: 3}
   rightSprites: []
   leftSprites: []
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []

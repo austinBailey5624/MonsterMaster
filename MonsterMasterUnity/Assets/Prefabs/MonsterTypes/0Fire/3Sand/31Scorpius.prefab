@@ -47,6 +47,10 @@ MonoBehaviour:
   defaultSprite: {fileID: 0}
   name: Scorpious
   description: The Scorpious is a descendant of the giant Scorpion that killed Orion.
+    Huge and black as night, its shiny carapace is highly valued in the eastern empire
+    to use making armor and shields, for despite its black coloring, it is quite
+    cool, even in the most desperate heat. Its terrible claws can burrow in the sand,
+    making it disappear in moments, and reappear unexpectedly behind its prey.
   secondaryElement: {fileID: 0}
   physicalEvolution: {fileID: 0}
   balancedEvolution: {fileID: 0}
@@ -61,3 +65,4 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
