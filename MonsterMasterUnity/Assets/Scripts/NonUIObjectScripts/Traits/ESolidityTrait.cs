@@ -4,11 +4,10 @@ using UnityEngine;
 
 public enum ESolidityTrait
 {
-    Corporeal,
-    Liquid,
-    PartiallyCorporeal,
-    Cloud,
-    Incorporeal,
-    DoesNotApply,
-    Other
+    Corporeal=0,
+    Liquid=1,
+    PartiallyCorporeal=2,
+    Vapor=3,
+    Incorporeal=4,
+    Other=-1
 }

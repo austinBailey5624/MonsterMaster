@@ -44,6 +44,10 @@ public class MonsterType : MonoBehaviour, IAnimationSet, ISpritedObject, IDescri
 
     public List<Sprite> idleSprites;
 
+    public List<Sprite> magicSprites;
+
+    public Traits monsterTraits;
+
     public Sprite getDefaultSprite()
     {
         if(defaultSprite == null && previousEvolution != null)
@@ -92,16 +96,16 @@ public class MonsterType : MonoBehaviour, IAnimationSet, ISpritedObject, IDescri
     {
         if (downSprites == null || !downSprites.Any())
         {
-            List<Sprite> defaultSprites = new List<Sprite>();
-            if (defaultSprite == null)
+            if(previousEvolution != null)
             {
-                defaultSprites.Add(previousEvolution.getDefaultSprite());
+                return previousEvolution.getDownSprites();
             }
             else
             {
+                List<Sprite> defaultSprites = new List<Sprite>();
                 defaultSprites.Add(defaultSprite);
+                return defaultSprites;
             }
-            return defaultSprites;
         }
         return downSprites;
     }

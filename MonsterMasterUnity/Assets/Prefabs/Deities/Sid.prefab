@@ -58,5 +58,5 @@ MonoBehaviour:
   friendlyTitle: Healer
   alliedTitle: Root-Bearer
   howToImproveRelationship: Sid approves of using calming effects instead of violence
-  howToDamageRelationship: Needless cruelty or violence, destruction of the Paramiya
-    Trees
+  howToDamageRelationship: Needless cruelty or violence, or destruction of the Paramiya
+    Trees, will anger Sid.

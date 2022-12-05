@@ -7190,7 +7190,7 @@ MonoBehaviour:
   rightButton: {fileID: 0}
   leftButton: {fileID: 853326598}
   downButton: {fileID: 0}
-  nextSceneName: Oaktree
+  nextSceneName: NameCharacterMenu
 --- !u!1 &2067023229
 GameObject:
   m_ObjectHideFlags: 0

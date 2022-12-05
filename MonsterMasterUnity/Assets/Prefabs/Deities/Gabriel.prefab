@@ -58,5 +58,6 @@ MonoBehaviour:
   friendlyTitle: Holy servant
   alliedTitle: Angel
   howToImproveRelationship: Gabriel approves of those that prosthelytize for the
-    church
-  howToDamageRelationship: Worship foreign Gods
+    church, or support his missionaries in their quest to convert heathens
+  howToDamageRelationship: Gabriel dispises those who worship foreign Gods, or hinder
+    his missionaries in foreign lands.

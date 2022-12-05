@@ -57,6 +57,7 @@ MonoBehaviour:
   interestedTitle: Plotter
   friendlyTitle: 'Hater of Hypocrisy '
   alliedTitle: Freedom Fighter
-  howToImproveRelationship: Acheron loves those who Kill Gods
+  howToImproveRelationship: Acheron loves those who plot the downfall of the Gods,
+    especially those that kill them
   howToDamageRelationship: Acheron hates those who blindly follow orders, especially
     if those orders are evil.

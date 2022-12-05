@@ -57,5 +57,7 @@ MonoBehaviour:
   interestedTitle: Baptized
   friendlyTitle: 
   alliedTitle: Velhu's Chosen
-  howToImproveRelationship: Be Merciful to the defeated, practice only holy magic
-  howToDamageRelationship: Show cruelty, when you could be kind. Practice dark magic
+  howToImproveRelationship: Velhu loves those that are merciful to the defeated,
+    and practice only holy magic
+  howToDamageRelationship: Velhu despises cruelty, especially when you could be kind.
+    She abhors dark magic and those who practice it.

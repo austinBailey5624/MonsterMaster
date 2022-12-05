@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8067983678734218126}
   - component: {fileID: -1130796420644986712}
+  - component: {fileID: -502031635336112885}
   m_Layer: 0
   m_Name: 33AquaAtronach
   m_TagString: Untagged
@@ -84,3 +85,69 @@ MonoBehaviour:
   onHitSprites: []
   onDeathSprites: []
   idleSprites: []
+  magicSprites: []
+  monsterTraits: {fileID: -502031635336112885}
+--- !u!114 &-502031635336112885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712508036494517573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Aqua Atronach Traits
+  description: Traits for Aqua Atronach Monsters
+  solidity: 0
+  age: 3
+  underwaterTraversal: 3
+  flightTraversal: -3
+  lightProduction: 0
+  physicalTraitValue: 0
+  balancedTraitValue: 0
+  magicalTraitValue: 0
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 0
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 0
+  elementalStoneTraitValue: 0
+  fishTraitValue: 4
+  flockTraitValue: 0
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 0
+  nocturnalTraitValue: 0
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 0
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 0
+  wetTraitValue: 0
+  pyromagiaTraitValue: 1
+  aquamagiaTraitValue: 3
+  terramagiaTraitValue: 1
+  aeroMagiaTraitValue: 1
+  luxorMagiaTraitValue: 1
+  umbralMagiaTraitValue: 1
+  calmTraitValue: 1
+  hotTraitValue: -2
+  strongTraitValue: -1
+  wiseTraitValue: 2
+  fastTraitValue: 0
+  hardyTraitValue: -1
+  richTraitValue: 0

@@ -8,12 +8,11 @@ using UnityEngine;
  */
 public enum EAgeTrait
 {
-    Unborn,
-    Infant,
-    Adolescent,
-    Adult,
-    Elder,
-    Ancient,
-    DoesNotApply,
-    Other
+    Infant=0,
+    Adolescent=1,
+    Adult=2,
+    Elder=3,
+    Ancient=4,
+    Other = -2,
+    Unborn = -1
 }

@@ -13,15 +13,13 @@ public class ConversationController : MonoBehaviour
 
     private Color invisible = new Color(0f, 0f, 0f, 0f);
 
+    private Color white = new Color(1f, 1f, 1f, 1f);
+
     private DesignColors colors;
 
     private GameObject statementBackground;
 
     private GameObject portraitBackground;
-
-    private GameObject arrowUpBackground;
-
-    private GameObject arrowDownBackground;
 
     private GameObject choice1Background;
 
@@ -109,8 +107,6 @@ public class ConversationController : MonoBehaviour
             {
                 statementBackground,
                 portraitBackground,
-                arrowUpBackground,
-                arrowDownBackground,
                 choice1Background,
                 choice2Background,
                 choice3Background,
@@ -361,7 +357,7 @@ public class ConversationController : MonoBehaviour
                         this.Deactivate();
                         this
                             .Activate(selectedConvoChoice.getNextNode(),
-                            subElement);
+                            subElement, speakerPortrait.GetComponent<SpriteRenderer>().sprite);
                     }
                     curtime = 0;
                     hasSubmitted = false;
@@ -375,7 +371,8 @@ public class ConversationController : MonoBehaviour
 
     public void Activate(
         IConversationNode conversationNode,
-        SecondaryElement element
+        SecondaryElement element,
+        Sprite conversationSprite
     )
     {
         GameState.isFrozen = true;
@@ -385,13 +382,21 @@ public class ConversationController : MonoBehaviour
         subElement = element;
         colors = GameState.designColorsController.getElementDesignColors(element);
         statementBackground.GetComponent<SpriteRenderer>().color =
-            element.getDefaultColor();
+            colors.backgroundColor;
         statementText.GetComponent<TMP_Text>().text =
             conversationNode.getConversationText();
         statementText.GetComponent<TMP_Text>().color =
-            element.getHighlightColor();
-        portraitBackground.GetComponent<SpriteRenderer>().color =
-            element.getDefaultColor();
+            colors.textColor;
+
+
+        if(conversationSprite != null)
+        {
+            portraitBackground.GetComponent<SpriteRenderer>().color =
+                colors.backgroundColor;
+            speakerPortrait.GetComponent<SpriteRenderer>().sprite = conversationSprite;
+            speakerPortrait.GetComponent<SpriteRenderer>().color = white;
+        }
+
 
         List<ConversationChoiceImpl> choices =
             conversationNode.getConversationChoices();
@@ -399,63 +404,66 @@ public class ConversationController : MonoBehaviour
         if (choices.Count == 0)
         {
             choice1Background.GetComponent<SpriteRenderer>().color =
-                element.getDefaultColor();
+                colors.backgroundColor;
             choice1Text.GetComponent<TMP_Text>().text = "Continue";
+            choice1Text.GetComponent<TMP_Text>().color =
+                colors.textColor;
         }
         if (choices.Count >= 1)
         {
             choice1Background.GetComponent<SpriteRenderer>().color =
-                element.getDefaultColor();
+                colors.backgroundColor;
             choice1Text.GetComponent<TMP_Text>().text =
                 choices[0].getFlavorText();
             choice1Text.GetComponent<TMP_Text>().color =
-                element.getHighlightColor();
+                colors.textColor;
         }
         if (choices.Count >= 2)
         {
             choice2Background.GetComponent<SpriteRenderer>().color =
-                element.getDefaultColor();
+                colors.backgroundColor;
             choice2Text.GetComponent<TMP_Text>().text =
                 choices[1].getFlavorText();
             choice2Text.GetComponent<TMP_Text>().color =
-                element.getHighlightColor();
+                colors.textColor;
         }
         if (choices.Count >= 3)
         {
             choice3Background.GetComponent<SpriteRenderer>().color =
-                element.getDefaultColor();
+                colors.backgroundColor;
             choice3Text.GetComponent<TMP_Text>().text =
                 choices[2].getFlavorText();
             choice3Text.GetComponent<TMP_Text>().color =
-                element.getHighlightColor();
+                colors.textColor;
         }
         if (choices.Count >= 4)
         {
             choice4Background.GetComponent<SpriteRenderer>().color =
-                element.getDefaultColor();
+                colors.backgroundColor;
             choice4Text.GetComponent<TMP_Text>().text =
                 choices[3].getFlavorText();
             choice4Text.GetComponent<TMP_Text>().color =
-                element.getHighlightColor();
+                colors.textColor;
         }
         if (choices.Count >= 5)
         {
             choice5Background.GetComponent<SpriteRenderer>().color =
-                element.getDefaultColor();
+                colors.backgroundColor;
             choice5Text.GetComponent<TMP_Text>().text =
                 choices[4].getFlavorText();
             choice5Text.GetComponent<TMP_Text>().color =
-                element.getHighlightColor();
+                colors.textColor;
         }
         if (choices.Count >= 6)
         {
             choice6Background.GetComponent<SpriteRenderer>().color =
-                element.getDefaultColor();
+                colors.backgroundColor;
             choice6Text.GetComponent<TMP_Text>().text =
                 choices[5].getFlavorText();
             choice6Text.GetComponent<TMP_Text>().color =
-                element.getHighlightColor();
+                colors.textColor;
         }
+        configureButtons(choices.Count);
     }
 
     public void Deactivate()
@@ -471,5 +479,83 @@ public class ConversationController : MonoBehaviour
             texts[i].GetComponent<TMP_Text>().text = "";
         }
         speakerPortrait.GetComponent<SpriteRenderer>().color = invisible;
+    }
+
+    /**
+     * Responsible for reformatting the buttons in the conversation to their
+     * appropriate sizes based on the nubmer of buttons
+     */
+    private void configureButtons(int numChoices)
+    {
+        if(numChoices < 2)
+        {
+            configure1Button();
+            return;
+        }
+        if(numChoices == 2)
+        {
+            configure2Buttons();
+            return;
+        }
+        if(numChoices == 3)
+        {
+            configure3Buttons();
+            return;
+        }
+        if(numChoices < 7)
+        {
+            configure6Buttons();
+            return;
+        }
+        Debug.Log("Conversation has more than 6 choices, this should not be allowed");
+    }
+
+    private void configure1Button()
+    {
+        configureButton(new Vector3(0, -350, 0), new Vector3(150, 100, 0), new Vector2(1300, 200), 1);
+    }
+
+    private void configure2Buttons()
+    {
+        Vector3 choiceScale = new Vector3(80, 110, 1);
+        Vector2 textSizeDelta = new Vector2(750, 200);
+        configureButton(new Vector3(-410, -350, 0), choiceScale, textSizeDelta, 1);
+        configureButton(new Vector3(410,  -350, 0), choiceScale, textSizeDelta, 2);
+    }
+
+    private void configure3Buttons()
+    {
+        Vector3 choiceScale = new Vector3(53, 100, 1);
+        Vector2 textSizeDelta = new Vector2(500, 200);
+        configureButton(new Vector3(-540, -350, 0), choiceScale, textSizeDelta, 1);
+        configureButton(new Vector3(0,    -350, 0), choiceScale, textSizeDelta, 2);
+        configureButton(new Vector3(540,  -350, 0), choiceScale, textSizeDelta, 3);
+    }
+
+    private void configure6Buttons()
+    {
+        Vector3 choiceScale = new Vector3(53, 45, 1);
+        Vector2 textSizeDelta = new Vector3(535, 110);
+        int left   = -540;
+        int center = 0;
+        int right  = 540;
+        int top    = -265;
+        int bottom = -383;
+        int zPos   = 0;
+        configureButton(new Vector3(left,   top,    zPos), choiceScale, textSizeDelta, 1);
+        configureButton(new Vector3(center, top,    zPos), choiceScale, textSizeDelta, 2);
+        configureButton(new Vector3(right,  top,    zPos), choiceScale, textSizeDelta, 3);
+        configureButton(new Vector3(left,   bottom, zPos), choiceScale, textSizeDelta, 4);
+        configureButton(new Vector3(center, bottom, zPos), choiceScale, textSizeDelta, 5);
+        configureButton(new Vector3(right,  bottom, zPos), choiceScale, textSizeDelta, 6);
+
+    }
+
+    private void configureButton(Vector3 choicePosition, Vector3 choiceScale, Vector2 textSizeDelta, int which)
+    {
+        backgrounds[which + 1].GetComponent<RectTransform>().transform.localPosition = choicePosition;
+        backgrounds[which + 1].GetComponent<RectTransform>().transform.localScale = choiceScale;
+        texts[which].GetComponent<RectTransform>().transform.localPosition = choicePosition;
+        texts[which].GetComponent<RectTransform>().sizeDelta = textSizeDelta;
     }
 }

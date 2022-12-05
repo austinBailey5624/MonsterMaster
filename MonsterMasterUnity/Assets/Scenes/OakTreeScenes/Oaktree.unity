@@ -48407,6 +48407,8 @@ MonoBehaviour:
     type: 3}
   element: {fileID: -3261303298942615324, guid: cef558b292381944aa4af21a669e85f7,
     type: 3}
+  conversationPortrait: {fileID: 21300000, guid: e535d08bebed8804580418b37b861663,
+    type: 3}
 --- !u!1 &1216817930
 GameObject:
   m_ObjectHideFlags: 0

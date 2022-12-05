@@ -13,6 +13,7 @@ public class ButtonSceneTransitionNode : ButtonSystemNode
 
     public override void actionWhenSelected()
     {
+        additionalAction();
         string tempPrevPlace = GameState.previousPlaceName;
         string tempPrevMenu = GameState.previousMenuName;
         string activeSceneName = SceneManager.GetActiveScene().name;
@@ -38,5 +39,10 @@ public class ButtonSceneTransitionNode : ButtonSystemNode
         {
             SceneManager.LoadScene (nextSceneName);
         }
+    }
+
+    public virtual void additionalAction()
+    {
+        //Left intentionally blank to be written by inheritors
     }
 }

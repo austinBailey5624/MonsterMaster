@@ -26,6 +26,8 @@ public class ButtonSystemNode : MonoBehaviour, IButtonSystemNode
 
     protected EDirection shouldMove = EDirection.Center;
 
+    protected bool shouldSubmit = false;
+
     public virtual void Start()
     {
         defaultSprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
@@ -83,6 +85,7 @@ public class ButtonSystemNode : MonoBehaviour, IButtonSystemNode
 
     public virtual void Update()
     {
+        otherUpdate();
         if (isSelected)
         {
             executeSelectedBehavior();//TODO rename to selected Display maybe?
@@ -116,6 +119,7 @@ public class ButtonSystemNode : MonoBehaviour, IButtonSystemNode
             else if (submit > GameState.buttonUpTolerance)
             {
                 actionWhenSelected();
+                shouldSubmit = true;
             }
             if (
                 Mathf.Abs(horizontal) < GameState.buttonDownTolerance &&
@@ -145,13 +149,28 @@ public class ButtonSystemNode : MonoBehaviour, IButtonSystemNode
                     downButton.select();
                 }
                 shouldMove = EDirection.Center;
+                if(shouldSubmit)
+                {
+                    delayedAction();
+                    shouldSubmit = false;
+                }
             }
         }
+    }
+
+    public virtual void otherUpdate()
+    {
+        //left to inheritors to implement
     }
 
     public virtual void actionWhenSelected()
     {
         //left to inheritors to implement
+    }
+
+    public virtual void delayedAction()
+    {
+
     }
 
     public virtual void executeSelectedBehavior()
