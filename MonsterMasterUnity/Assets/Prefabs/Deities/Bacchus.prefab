@@ -56,6 +56,6 @@ MonoBehaviour:
   interestedTitle: Drunkard
   friendlyTitle: Reveler
   alliedTitle: Lord of the Party
-  howToImproveRelationship: Bacchus loves those that eat drink and are merry
-  howToDamageRelationship: ink, or criticize those that partydrink, or criticize
-    those that party
+  howToImproveRelationship: Bacchus loves those that eat drink and are merry.
+  howToDamageRelationship: If you are a buzzkill, or criticize those that party or
+    drink, Bacchus will dislike you.

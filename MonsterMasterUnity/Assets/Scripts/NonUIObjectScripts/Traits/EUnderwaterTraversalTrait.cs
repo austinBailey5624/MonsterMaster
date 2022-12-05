@@ -10,13 +10,14 @@ using UnityEngine;
  * can submerge with various levels of help
  * Copyright 2022 Austin Bailey, All Rights Reserved
  */
-public enum UnderwaterTraversalTrait
+public enum EUnderwaterTraversalTrait
 {
-    WaterBreathing,
-    WaterAdjacent,
-    WaterFriendly,
-    Neutral,
-    WaterUnfriendly,
-    WaterAbhorrent,
-    Unsubmergible
+
+    Neutral=0,
+    WaterFriendly = 1,
+    WaterAdjacent=2,
+    WaterBreathing = 3,
+    WaterUnfriendly =-1,
+    WaterAbhorrent=-2,
+    Unsubmergible=-3
 }

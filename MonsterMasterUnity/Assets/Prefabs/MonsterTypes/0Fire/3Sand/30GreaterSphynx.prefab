@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1447446374207905350}
   - component: {fileID: -1601930695175768046}
+  - component: {fileID: 8311563852667406084}
   m_Layer: 0
   m_Name: 30GreaterSphynx
   m_TagString: Untagged
@@ -52,7 +53,8 @@ MonoBehaviour:
     out, it looks very intimidating. The feathers alternate between jade and turquoise,
     and as these are precious metals, the Greater Sphynx was once hunted for its
     wings. But then they killed and ate all the hunters after they failed their questions,
-    so that was over quickly.
+    so that was over quickly. Its headdress is decorated with Gold and Torquoise
+    like the pharaohs of old
   secondaryElement: {fileID: -5888168306257564100, guid: c4ed6bf3c8418b24d9592cfa855ce753,
     type: 3}
   physicalEvolution: {fileID: 0}
@@ -69,3 +71,69 @@ MonoBehaviour:
   onHitSprites: []
   onDeathSprites: []
   idleSprites: []
+  magicSprites: []
+  monsterTraits: {fileID: 8311563852667406084}
+--- !u!114 &8311563852667406084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018449846440056354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Greater Sphynx Traits
+  description: Default Traits for Greater Sphynx Monsters
+  solidity: 0
+  age: 3
+  underwaterTraversal: 0
+  flightTraversal: -5
+  lightProduction: 0
+  physicalTraitValue: 3
+  balancedTraitValue: 0
+  magicalTraitValue: 0
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 0
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 0
+  elementalStoneTraitValue: 0
+  fishTraitValue: 0
+  flockTraitValue: 0
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 0
+  nocturnalTraitValue: 0
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 4
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 0
+  wetTraitValue: 0
+  pyromagiaTraitValue: 0
+  aquamagiaTraitValue: 0
+  terramagiaTraitValue: 0
+  aeroMagiaTraitValue: 0
+  luxorMagiaTraitValue: 0
+  umbralMagiaTraitValue: 0
+  calmTraitValue: 1
+  hotTraitValue: 1
+  strongTraitValue: 2
+  wiseTraitValue: 2
+  fastTraitValue: 0
+  hardyTraitValue: 1
+  richTraitValue: 1

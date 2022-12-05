@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 811448865002727135}
   - component: {fileID: -7990379801605301184}
+  - component: {fileID: 4340477920573034259}
   m_Layer: 0
   m_Name: 32Sol
   m_TagString: Untagged
@@ -64,3 +65,70 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
+  magicSprites: []
+  monsterTraits: {fileID: 4340477920573034259}
+--- !u!114 &4340477920573034259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370072110061022317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sol Traits
+  description: 
+  solidity: 0
+  age: 3
+  underwaterTraversal: -1
+  flightTraversal: 0
+  lightProduction: 3
+  physicalTraitValue: 0
+  balancedTraitValue: 0
+  magicalTraitValue: 3
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 0
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 4
+  elementalStoneTraitValue: 0
+  fishTraitValue: 0
+  flockTraitValue: 0
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 0
+  nocturnalTraitValue: 0
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 0
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 0
+  wetTraitValue: 0
+  pyromagiaTraitValue: 3
+  aquamagiaTraitValue: 0
+  terramagiaTraitValue: 0
+  aeroMagiaTraitValue: 0
+  luxorMagiaTraitValue: -3
+  umbralMagiaTraitValue: 0
+  calmTraitValue: 0
+  hotTraitValue: 3
+  strongTraitValue: 0
+  wiseTraitValue: 3
+  fastTraitValue: 0
+  hardyTraitValue: -3
+  richTraitValue: 0

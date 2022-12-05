@@ -54,10 +54,10 @@ MonoBehaviour:
     the light. No visage is kept of Pythion, save his mark, a circle enclosed by
     six others.
   enemyTitle: Traitor
-  unfriendlyTitle: 
-  irritatedTitle: 
-  unknownTitle: guiltless
-  interestedTitle: 
+  unfriendlyTitle: Condemned
+  irritatedTitle: Betrayer
+  unknownTitle: Guiltless
+  interestedTitle: Absolution Seeker
   friendlyTitle: Penant
   alliedTitle: Redeemed
   howToImproveRelationship: Pythion values those that work to absolve their sins,

@@ -22,6 +22,10 @@ public class DesignColorsController : ScriptableObject
 
     public DesignColors getElementDesignColors(SecondaryElement secondaryElement)
     {
+        if(secondaryElement == null)
+        {
+            return getDefaultDesignColors();
+        }
         if("Pyro".Equals(secondaryElement.getName()))
         {
             return getPyroColors();
@@ -545,8 +549,8 @@ public class DesignColorsController : ScriptableObject
     public DesignColors getLuxorColors()
     {
         textColor = new Color(1f, 1f, 1f, 1f);
-        backgroundColor = new Color(.85f, .85f, .85f, 1f);
-        selectedColor = new Color(.9f, .9f, .9f, 1f);
+        backgroundColor = new Color(.8f, .8f, .8f, 1f);
+        selectedColor = new Color(.925f, .925f, .925f, 1f);
         return new DesignColors(textColor, backgroundColor, selectedColor);
     }
 

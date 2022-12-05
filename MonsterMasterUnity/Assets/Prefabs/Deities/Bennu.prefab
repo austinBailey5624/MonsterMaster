@@ -52,7 +52,7 @@ MonoBehaviour:
     believer will die by fire and be reborn in the next life. Sacrificial suicide
     is praised by the priests of Bennu, who believe the hotter the fire of the funeral
     pyre, and the greater the courage and resolve of the person who willingly lays
-    upon it, the better the stronger the rebirth and blessing of Bennu.
+    upon it, the stronger the rebirth and blessing of Bennu.
   enemyTitle: 
   unfriendlyTitle: 
   irritatedTitle: 
@@ -60,5 +60,7 @@ MonoBehaviour:
   interestedTitle: 
   friendlyTitle: 
   alliedTitle: Reborn
-  howToImproveRelationship: Worship at the altars of Bennu
-  howToDamageRelationship: Destroy the altars of Bennu
+  howToImproveRelationship: Worship at the altars of Bennu, reincarnate the fallen,
+    and ressurect them to their true forms.
+  howToDamageRelationship: Destroy the altars of Bennu, or harras his servants in
+    their quest for ressurection

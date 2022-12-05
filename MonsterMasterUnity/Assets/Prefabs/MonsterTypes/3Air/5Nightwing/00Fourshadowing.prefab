@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6501637634319205603}
   - component: {fileID: 6437389390285563224}
+  - component: {fileID: -3046640863313759305}
   m_Layer: 0
   m_Name: 00Fourshadowing
   m_TagString: Untagged
@@ -45,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: 1786975433, guid: d739f442a5edc5e47b05cc9d387e000b, type: 3}
-  name: FourShadowing
+  name: Fourshadowing
   description: Its very hard to tell what manner of winged beast this is, as it is
     covered by shadows and appears to have four wings
   secondaryElement: {fileID: 7890226978809080639, guid: 589e6d0ba72d14c4f87b23efc1022508,
@@ -77,3 +78,70 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
+  magicSprites: []
+  monsterTraits: {fileID: -3046640863313759305}
+--- !u!114 &-3046640863313759305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974203011545564147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Fourshadowing Traits
+  description: 
+  solidity: 0
+  age: 0
+  underwaterTraversal: 1
+  flightTraversal: 1
+  lightProduction: 0
+  physicalTraitValue: 0
+  balancedTraitValue: 0
+  magicalTraitValue: 0
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 0
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 0
+  elementalStoneTraitValue: 0
+  fishTraitValue: 0
+  flockTraitValue: 0
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 0
+  nocturnalTraitValue: 1
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 0
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 1
+  wetTraitValue: 0
+  pyromagiaTraitValue: 0
+  aquamagiaTraitValue: 0
+  terramagiaTraitValue: 0
+  aeroMagiaTraitValue: 0
+  luxorMagiaTraitValue: 0
+  umbralMagiaTraitValue: 0
+  calmTraitValue: 0
+  hotTraitValue: 0
+  strongTraitValue: 0
+  wiseTraitValue: 0
+  fastTraitValue: 0
+  hardyTraitValue: 0
+  richTraitValue: 0

@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: d20e5b65ba581f446aae0dda01d1f7ac
+guid: 7609ab86a29167344a3cddb5ae2ba5f9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -43,11 +43,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,10 +63,11 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -81,7 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,8 +110,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6af8ba1b8325417408718987d04c0f95
-      internalID: -1090570165
+      spriteID: 0f1062a64bb50dc41b97823850700170
+      internalID: 638158276
       vertices: []
       indices: 
       edges: []
@@ -128,10 +129,10 @@ TextureImporter:
       name: 00SticketUp32_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 498e1fdc08c10da4db0ffe1f3efb53a8
-      internalID: -1902472042
+      spriteID: 7b1525f0043b24847981feed4128ab52
+      internalID: 323782956
       vertices: []
       indices: 
       edges: []
@@ -149,10 +150,10 @@ TextureImporter:
       name: 00SticketUp32_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 933c53d3d2f3d15469364aa44375c4dd
-      internalID: 1455500050
+      spriteID: ecf1d54a11d338b41a953ed7514cab3d
+      internalID: -1664072889
       vertices: []
       indices: 
       edges: []
@@ -170,10 +171,10 @@ TextureImporter:
       name: 00SticketUp32_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a235f93b2643c49889c07ad9af3c43
-      internalID: -770302743
+      spriteID: 99d758cf339263541a3c8f237ac1c144
+      internalID: -91784716
       vertices: []
       indices: 
       edges: []
@@ -198,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      00SticketUp32_3: -770302743
-      00SticketUp32_0: -1090570165
-      00SticketUp32_1: -1902472042
-      00SticketUp32_2: 1455500050
+      00SticketUp32_3: -91784716
+      00SticketUp32_0: 638158276
+      00SticketUp32_1: 323782956
+      00SticketUp32_2: -1664072889
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

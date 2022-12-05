@@ -53,4 +53,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuScenes/DifficultyMenu.unity
     guid: d8f18d8107c2642408f7f6a1f11e2c6f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/CreditsMenu.unity
+    guid: 56a86874f6e83964ba23336e8e7e0917
+  - enabled: 1
+    path: Assets/Scenes/OaktreeScenes/Oaktree_PlayersBedroom.unity
+    guid: 83a789e2d5096d84a885609da8e727d7
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/NameCharacterMenu.unity
+    guid: 26c006f275e24b14687f78b64c573e85
   m_configObjects: {}

@@ -7,7 +7,7 @@ using static EDirection;
 *   Class to handle behaviors common to all people to avoid rewriting code
 *   Copyright 2022 Austin Bailey All Rights Reserved
 */
-public class Person : MonoBehaviour
+public class Person : MonoBehaviour, ITraversalActor
 {
     public bool isMale;
 

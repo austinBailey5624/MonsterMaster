@@ -73,7 +73,7 @@ public class BestiaryMonsterTypeMenuController : MonoBehaviour
         monsterTypeNameText.GetComponent<TMP_Text>().text =
             monsterType.getName();
         descriptionText.GetComponent<TMP_Text>().text =
-            monsterType.getDescription();
+            getDescriptionText();
         descriptionText.GetComponent<TMP_Text>().color = designColors.textColor;
         monsterView.GetComponent<BestiaryMonsterViewController>().monsterType =
             monsterType;
@@ -191,5 +191,16 @@ public class BestiaryMonsterTypeMenuController : MonoBehaviour
             monsterType.getSecondaryElement().getDefaultSprite();
         subElementSymbolRight.GetComponent<SpriteRenderer>().sprite =
             monsterType.getSecondaryElement().getDefaultSprite();
+    }
+
+    private string getDescriptionText()
+    {
+        string result = monsterType.getDescription();
+        if(monsterType.monsterTraits != null)
+        {
+            result += "\n";
+            result += monsterType.monsterTraits.toString();
+        }
+        return result;
     }
 }

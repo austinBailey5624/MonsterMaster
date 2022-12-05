@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3593342072741048108}
   - component: {fileID: 3405451846353825294}
+  - component: {fileID: 251499140056494184}
   m_Layer: 0
   m_Name: 00Bulbapup
   m_TagString: Untagged
@@ -44,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: -852841656, guid: 7b2f1691717af4e44aac366fa7adc219, type: 3}
+  defaultSprite: {fileID: 998827084, guid: f196a49f6d16b9649bd196593edb6115, type: 3}
   name: Bulbapup
   description: A small, energetic puppy with a large bulb on its back, resembling
     an onion. It loves to jump around, but when it does so it is rather comical,
@@ -61,21 +62,110 @@ MonoBehaviour:
   previousEvolution: {fileID: 0}
   leftSpritesAreRightSpritesReversed: 1
   upSprites:
-  - {fileID: 216294547, guid: 376bff12025b6e34fabd198be1d3acc7, type: 3}
-  - {fileID: 813277823, guid: 376bff12025b6e34fabd198be1d3acc7, type: 3}
-  - {fileID: 1119338814, guid: 376bff12025b6e34fabd198be1d3acc7, type: 3}
-  - {fileID: -857252355, guid: 376bff12025b6e34fabd198be1d3acc7, type: 3}
+  - {fileID: -1503623364, guid: efb4665ef7cfb7e48a580c0b6728ac7e, type: 3}
+  - {fileID: 1076114802, guid: efb4665ef7cfb7e48a580c0b6728ac7e, type: 3}
+  - {fileID: 909218742, guid: efb4665ef7cfb7e48a580c0b6728ac7e, type: 3}
+  - {fileID: 358347622, guid: efb4665ef7cfb7e48a580c0b6728ac7e, type: 3}
   downSprites:
-  - {fileID: -852841656, guid: 7b2f1691717af4e44aac366fa7adc219, type: 3}
-  - {fileID: 949314391, guid: 7b2f1691717af4e44aac366fa7adc219, type: 3}
-  - {fileID: -1329222292, guid: 7b2f1691717af4e44aac366fa7adc219, type: 3}
-  - {fileID: -995780939, guid: 7b2f1691717af4e44aac366fa7adc219, type: 3}
+  - {fileID: 998827084, guid: f196a49f6d16b9649bd196593edb6115, type: 3}
+  - {fileID: -770107373, guid: f196a49f6d16b9649bd196593edb6115, type: 3}
+  - {fileID: -2012830395, guid: f196a49f6d16b9649bd196593edb6115, type: 3}
+  - {fileID: 1501968365, guid: f196a49f6d16b9649bd196593edb6115, type: 3}
   rightSprites:
-  - {fileID: 342049816, guid: ea5ef4d4cf50511408fabb76c19b17c9, type: 3}
-  - {fileID: 192973785, guid: ea5ef4d4cf50511408fabb76c19b17c9, type: 3}
-  - {fileID: 201648338, guid: ea5ef4d4cf50511408fabb76c19b17c9, type: 3}
-  - {fileID: -484283313, guid: ea5ef4d4cf50511408fabb76c19b17c9, type: 3}
+  - {fileID: -881051370, guid: 0e47a473960191e41ade83966dc34040, type: 3}
+  - {fileID: 1419473613, guid: 0e47a473960191e41ade83966dc34040, type: 3}
+  - {fileID: 720432436, guid: 0e47a473960191e41ade83966dc34040, type: 3}
+  - {fileID: 1480195745, guid: 0e47a473960191e41ade83966dc34040, type: 3}
   leftSprites: []
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites:
+  - {fileID: -444885345, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -92430179, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 579783551, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 1881595058, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -885700394, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -170567672, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 1509830925, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -859813844, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -1776318357, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 2092113643, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 1441518616, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -719298725, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -999171566, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 1301744735, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 1592690238, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -525974545, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 2082424920, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -1887700480, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 2011550121, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -213099517, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: 106558953, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  - {fileID: -1199692521, guid: 6b651eebecf91a54fb491288c075b118, type: 3}
+  magicSprites: []
+  monsterTraits: {fileID: 251499140056494184}
+--- !u!114 &251499140056494184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643704123789706508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Bulbapup Traits
+  description: Default Traits for Bulbapup
+  solidity: 0
+  age: 0
+  underwaterTraversal: 0
+  flightTraversal: -1
+  lightProduction: 0
+  physicalTraitValue: 0
+  balancedTraitValue: 0
+  magicalTraitValue: 0
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 0
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 0
+  elementalStoneTraitValue: 0
+  fishTraitValue: 0
+  flockTraitValue: 0
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 1
+  nocturnalTraitValue: 0
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 0
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 0
+  wetTraitValue: 0
+  pyromagiaTraitValue: 0
+  aquamagiaTraitValue: 0
+  terramagiaTraitValue: 0
+  aeroMagiaTraitValue: 0
+  luxorMagiaTraitValue: 0
+  umbralMagiaTraitValue: 0
+  calmTraitValue: 0
+  hotTraitValue: 0
+  strongTraitValue: 0
+  wiseTraitValue: 0
+  fastTraitValue: 0
+  hardyTraitValue: 0
+  richTraitValue: 0

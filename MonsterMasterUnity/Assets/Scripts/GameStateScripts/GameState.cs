@@ -21,11 +21,13 @@ public class GameState : MonoBehaviour
 
     public static string previousMenuName;
 
-    public static string mainCharacterName = "Guy";
+    public static string mainCharacterName = "";
 
     public static Dictionary<EAffinity, int> affinities = getInitialAffinity();
 
     public static bool isFrozen = false;
+
+    public static float tilesize = 1f;
 
     public static float buttonUpTolerance = .25f;
 
@@ -58,11 +60,12 @@ public class GameState : MonoBehaviour
     {
         Dictionary<string, Vector2> initialPositions =
             new Dictionary<string, Vector2>();
-        initialPositions["Oaktree"] = new Vector2(10.5f, 4.5f);
-        initialPositions["Oaktree_Church"] = new Vector2(-1.5f, -16.5f);
-        initialPositions["Oaktree_EmmasHouse"] = new Vector2(10.5f, 19.5f);
-        initialPositions["OakTree_EmmasHouse"] = new Vector2(10.5f, 19.5f);//TODO: Hack, remove when possible
-        initialPositions["Oaktree_BrahmsHouse"] = new Vector2(10.5f, 1.5f);
+        initialPositions["Oaktree"]                = new Vector2(10.5f, 4.5f);
+        initialPositions["Oaktree_Church"]         = new Vector2(-1.5f, -16.5f);
+        initialPositions["Oaktree_EmmasHouse"]     = new Vector2(10.5f, 19.5f);
+        initialPositions["Oaktree_BrahmsHouse"]    = new Vector2(10.5f, 1.5f);
+        initialPositions["Oaktree_PlayersBedroom"] = new Vector2(13.5f, 4.5f);
+        initialPositions["OakTree_PlayersBedroom"] = new Vector2(13.5f, 4.5f);//Hack, remove when possible
         return initialPositions;
     }
 

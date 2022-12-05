@@ -19,6 +19,8 @@ public class NonPlayerCharacter : Person
 
     public SecondaryElement element;
 
+    public Sprite conversationPortrait;
+
     void Awake()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -117,13 +119,12 @@ public class NonPlayerCharacter : Person
                 setSprite(0,EDirection.Left);
                 Action();
             }
-
         }
     }
 
     public virtual void Action()
     {
         GameObject conversationController = GameObject.FindGameObjectWithTag("Conversation");
-        conversationController.GetComponent<ConversationController>().Activate(conversationNode, element);
+        conversationController.GetComponent<ConversationController>().Activate(conversationNode, element, conversationPortrait);
     }
 }

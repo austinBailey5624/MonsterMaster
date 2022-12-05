@@ -59,6 +59,7 @@ MonoBehaviour:
   interestedTitle: Convert
   friendlyTitle: Lawful
   alliedTitle: Judge
-  howToImproveRelationship: Follow the law and judge fairly those that commit sin
-  howToDamageRelationship: Break the law and use power and authority in an unjust
-    manner
+  howToImproveRelationship: Ahros loves those who follow the law and judge fairly
+    those that commit sin
+  howToDamageRelationship: Ahros hates those who break the law and use power and
+    authority in an unjust manner

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4120190608348544942}
   - component: {fileID: -1150013471124391591}
+  - component: {fileID: -5605675228991249723}
   m_Layer: 0
   m_Name: 00Gullfish
   m_TagString: Untagged
@@ -77,3 +78,70 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
+  magicSprites: []
+  monsterTraits: {fileID: -5605675228991249723}
+--- !u!114 &-5605675228991249723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9079011561579622656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Gullfish Traits
+  description: Gullfish Traits
+  solidity: 0
+  age: 0
+  underwaterTraversal: 3
+  flightTraversal: 1
+  lightProduction: 0
+  physicalTraitValue: 0
+  balancedTraitValue: 0
+  magicalTraitValue: 0
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 1
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 0
+  elementalStoneTraitValue: 0
+  fishTraitValue: 0
+  flockTraitValue: 0
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 0
+  nocturnalTraitValue: 0
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 0
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 0
+  wetTraitValue: 0
+  pyromagiaTraitValue: 0
+  aquamagiaTraitValue: 0
+  terramagiaTraitValue: 0
+  aeroMagiaTraitValue: 0
+  luxorMagiaTraitValue: 0
+  umbralMagiaTraitValue: 0
+  calmTraitValue: 0
+  hotTraitValue: 0
+  strongTraitValue: 0
+  wiseTraitValue: 0
+  fastTraitValue: 0
+  hardyTraitValue: 0
+  richTraitValue: 0

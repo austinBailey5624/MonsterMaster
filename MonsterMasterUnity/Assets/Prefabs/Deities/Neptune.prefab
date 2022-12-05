@@ -51,12 +51,12 @@ MonoBehaviour:
   description: Neptune is the God of the Sea. He wields a great trident and controls
     the reefs and the shallows.
   enemyTitle: 
-  unfriendlyTitle: 
-  irritatedTitle: 
+  unfriendlyTitle: Wave-fearer
+  irritatedTitle: Landlubber
   unknownTitle: 
-  interestedTitle: 
-  friendlyTitle: 
-  alliedTitle: 
+  interestedTitle: Net-Weaver
+  friendlyTitle: Fisher of the Sea
+  alliedTitle: Admiral
   howToImproveRelationship: Neptune loves those who honor and respect the waves,
     as well as those beneath them
   howToDamageRelationship: Neptune despises hubris, and those that fail to pay him

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 83405901940922901}
   - component: {fileID: 679950640276138334}
+  - component: {fileID: -2892252342535105302}
   m_Layer: 0
   m_Name: 21Wings
   m_TagString: Untagged
@@ -66,3 +67,70 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
+  magicSprites: []
+  monsterTraits: {fileID: -2892252342535105302}
+--- !u!114 &-2892252342535105302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5000890594880310526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Wings Traits
+  description: Wings Traits
+  solidity: 0
+  age: 2
+  underwaterTraversal: 1
+  flightTraversal: 3
+  lightProduction: 0
+  physicalTraitValue: 0
+  balancedTraitValue: 2
+  magicalTraitValue: 0
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 0
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 1
+  elementalStoneTraitValue: 0
+  fishTraitValue: 0
+  flockTraitValue: 3
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 0
+  nocturnalTraitValue: 0
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 0
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 0
+  wetTraitValue: 0
+  pyromagiaTraitValue: 0
+  aquamagiaTraitValue: 0
+  terramagiaTraitValue: 0
+  aeroMagiaTraitValue: 0
+  luxorMagiaTraitValue: 0
+  umbralMagiaTraitValue: 0
+  calmTraitValue: 0
+  hotTraitValue: 0
+  strongTraitValue: 0
+  wiseTraitValue: 0
+  fastTraitValue: 2
+  hardyTraitValue: 0
+  richTraitValue: 0

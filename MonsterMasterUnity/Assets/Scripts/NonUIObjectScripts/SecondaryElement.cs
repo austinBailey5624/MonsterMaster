@@ -15,8 +15,6 @@ public class SecondaryElement : MonoBehaviour, IElement
     public string description;
     public PrimaryElement firstPrimaryElement;
     public PrimaryElement secondPrimaryElement;
-    public Color defaultColor;
-    public Color highlightColor;
     public MonsterType babyMonster;
 
     public Sprite getDefaultSprite()
@@ -42,16 +40,6 @@ public class SecondaryElement : MonoBehaviour, IElement
     public PrimaryElement getSecondPrimaryElement()
     {
         return secondPrimaryElement;
-    }
-
-    public Color getDefaultColor()
-    {
-        return defaultColor;
-    }
-
-    public Color getHighlightColor()
-    {
-        return highlightColor;
     }
 
     public MonsterType getBaby()

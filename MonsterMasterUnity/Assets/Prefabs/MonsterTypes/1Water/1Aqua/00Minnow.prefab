@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884386765059154928}
   - component: {fileID: 6973090546917149751}
+  - component: {fileID: 5239785599051235882}
   m_Layer: 0
   m_Name: 00Minnow
   m_TagString: Untagged
@@ -44,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 426860645, guid: e71c39c91af9b9943ad5f8dec56b0d7a, type: 3}
+  defaultSprite: {fileID: -533443118, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
   name: Minnow
   description: A small fish with bright blue eyes, they are happiest in water. However
     they are magical and can follow their masters by floating in air with limited
@@ -62,23 +63,166 @@ MonoBehaviour:
   magicalEvolution: {fileID: 175294296813032536, guid: f6ab648d6547bac46bf393cf6886b689,
     type: 3}
   previousEvolution: {fileID: 0}
-  leftSpritesAreRightSpritesReversed: 1
+  leftSpritesAreRightSpritesReversed: 0
   upSprites:
-  - {fileID: 376533922, guid: 2ada9e82ecbd2614aa266c62a0d02923, type: 3}
-  - {fileID: -2073013699, guid: 2ada9e82ecbd2614aa266c62a0d02923, type: 3}
-  - {fileID: 73308746, guid: 2ada9e82ecbd2614aa266c62a0d02923, type: 3}
-  - {fileID: 1137833502, guid: 2ada9e82ecbd2614aa266c62a0d02923, type: 3}
+  - {fileID: -1145196996, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -314745286, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -189361241, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -1682767263, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
   downSprites:
-  - {fileID: -825480233, guid: 8753310c09c80fa44ab5044d1fe54bb4, type: 3}
-  - {fileID: -1168409263, guid: 8753310c09c80fa44ab5044d1fe54bb4, type: 3}
-  - {fileID: -1746395900, guid: 8753310c09c80fa44ab5044d1fe54bb4, type: 3}
-  - {fileID: 7649415, guid: 8753310c09c80fa44ab5044d1fe54bb4, type: 3}
+  - {fileID: 1007225284, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -601744727, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -278258625, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: 196713783, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
   rightSprites:
-  - {fileID: 426860645, guid: e71c39c91af9b9943ad5f8dec56b0d7a, type: 3}
-  - {fileID: 361213047, guid: e71c39c91af9b9943ad5f8dec56b0d7a, type: 3}
-  - {fileID: -938465427, guid: e71c39c91af9b9943ad5f8dec56b0d7a, type: 3}
-  - {fileID: 750501744, guid: e71c39c91af9b9943ad5f8dec56b0d7a, type: 3}
-  leftSprites: []
+  - {fileID: -533443118, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -1766363470, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -1417876256, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: 665679600, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  leftSprites:
+  - {fileID: -1398321196, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: 1471128876, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -891313462, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  - {fileID: -614467497, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
   attackSprites: []
-  onHitSprites: []
-  onDeathSprites: []
+  onHitSprites:
+  - {fileID: 451433700, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1391557531, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1869318613, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1547577891, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1897042950, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1537586810, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -330883494, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: 1134766655, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1782473317, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: 1088675720, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1773196140, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -2035534197, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -293712730, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -495649775, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: 274570544, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -934303321, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: 2125969225, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: 1945854670, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1341724624, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1762878605, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: 373528238, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: 1714845562, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -1222101374, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  - {fileID: -419917848, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
+  onDeathSprites:
+  - {fileID: 773445756, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 2053465602, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 1733207992, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 1291303811, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -133428069, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -1643458583, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 69675946, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 1480973426, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 1394046897, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 112851526, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 246247110, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -1500138014, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 1116410247, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 2075483184, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -467301045, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 1185255495, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -801896795, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -1856786647, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 37793703, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -158268062, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -1472294524, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -90731490, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: -1150747807, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  - {fileID: 1942022346, guid: 217e9848405c5844fa9654c2a0918324, type: 3}
+  idleSprites:
+  - {fileID: -212600371, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 511574836, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -185957715, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -2147189623, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 560923190, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 220464266, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 1959211468, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -1624777006, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 724363894, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -412163858, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -418669988, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 1258675021, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -2049198322, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -2115776768, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 702451294, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -313360609, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 2116826964, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -720438141, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 1671545533, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -663969297, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 719316368, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -157478985, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: 502291568, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  - {fileID: -1253612415, guid: 3b525def19d16b547bd544d1c647b6d4, type: 3}
+  magicSprites: []
+  monsterTraits: {fileID: 5239785599051235882}
+--- !u!114 &5239785599051235882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46903022150024266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Minnow Traits
+  description: Default Traits for Minnow Monsters
+  solidity: 0
+  age: 0
+  underwaterTraversal: 3
+  flightTraversal: -1
+  lightProduction: 0
+  physicalTraitValue: 0
+  balancedTraitValue: 0
+  magicalTraitValue: 0
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 0
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 0
+  elementalStoneTraitValue: 0
+  fishTraitValue: 1
+  flockTraitValue: 0
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 0
+  nocturnalTraitValue: 0
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 0
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 0
+  wetTraitValue: 0
+  pyromagiaTraitValue: 0
+  aquamagiaTraitValue: 0
+  terramagiaTraitValue: 0
+  aeroMagiaTraitValue: 0
+  luxorMagiaTraitValue: 0
+  umbralMagiaTraitValue: 0
+  calmTraitValue: 0
+  hotTraitValue: -1
+  strongTraitValue: 0
+  wiseTraitValue: 0
+  fastTraitValue: 0
+  hardyTraitValue: 0
+  richTraitValue: 0

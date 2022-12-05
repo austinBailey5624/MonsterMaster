@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4632974545496155128}
   - component: {fileID: -7747522956573072687}
+  - component: {fileID: -4765724369810786241}
   m_Layer: 0
   m_Name: 22Wisowl
   m_TagString: Untagged
@@ -65,3 +66,70 @@ MonoBehaviour:
   attackSprites: []
   onHitSprites: []
   onDeathSprites: []
+  idleSprites: []
+  magicSprites: []
+  monsterTraits: {fileID: -4765724369810786241}
+--- !u!114 &-4765724369810786241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6450137241965335745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Wisowl Traits
+  description: 
+  solidity: 0
+  age: 2
+  underwaterTraversal: 1
+  flightTraversal: 3
+  lightProduction: 0
+  physicalTraitValue: 0
+  balancedTraitValue: 0
+  magicalTraitValue: 2
+  avengerTraitValue: 0
+  beachDwellingTraitValue: 0
+  cloudyTraitValue: 0
+  connectionTraitValue: 0
+  dealtInKindTraitValue: 0
+  deathConsumingTraitValue: 0
+  depthsDwellingTraitValue: 0
+  diurnalTraitValue: 0
+  elementalStoneTraitValue: 0
+  fishTraitValue: 0
+  flockTraitValue: 0
+  forestMagicTraitValue: 0
+  guiltTraitValue: 0
+  hateHypocricyTrateValue: 0
+  healerTraitValue: 0
+  immolatedTraitValue: 0
+  isolationTraitValue: 0
+  naturalTraitValue: 0
+  nocturnalTraitValue: 2
+  protectorTraitValue: 0
+  rainbowTraitValue: 0
+  rebirthTraitValue: 0
+  regenShieldTraitValue: 0
+  rootedTraitValue: 0
+  sandyTraitValue: 0
+  steamyTraitValue: 0
+  toxicTraitValue: 0
+  vampireTraitValue: 1
+  wetTraitValue: 0
+  pyromagiaTraitValue: 0
+  aquamagiaTraitValue: 0
+  terramagiaTraitValue: 0
+  aeroMagiaTraitValue: 1
+  luxorMagiaTraitValue: 0
+  umbralMagiaTraitValue: 2
+  calmTraitValue: 0
+  hotTraitValue: 0
+  strongTraitValue: 0
+  wiseTraitValue: 2
+  fastTraitValue: -1
+  hardyTraitValue: 0
+  richTraitValue: 0

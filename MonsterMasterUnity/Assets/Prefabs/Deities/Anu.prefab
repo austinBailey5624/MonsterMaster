@@ -56,6 +56,7 @@ MonoBehaviour:
   interestedTitle: Lay Person
   friendlyTitle: Priest
   alliedTitle: Prophet
-  howToImproveRelationship: Do that which is right, and no harm shall come to you.
-    Obey the law, and the teachings of the Priesthood
-  howToDamageRelationship: Ignore the law, betray the church, support heathen Gods.
+  howToImproveRelationship: Anu loves those that do that which is right, no harm
+    shall come from them. Obey the law, and the teachings of the Priesthood
+  howToDamageRelationship: Anu cannot abide those who ignore the law, betray the
+    church, or support heathen Gods.
