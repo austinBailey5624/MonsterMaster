@@ -147,12 +147,27 @@ public class MainCharacterController : Person
 
     void initializeMonster(GameObject monster)
     {
-        if(monster == null)
+        if (monster == null || monster.gameObject == null || monster.gameObject.GetComponent<Monster>() == null)
         {
             return;
         }
+        MonsterType type = monster.gameObject.GetComponent<Monster>().monsterType;
         monster.gameObject.GetComponent<SpriteRenderer>().sprite = monster1.gameObject.GetComponent<Monster>().monsterType.getDownSprites()[0];
         monster.gameObject.transform.position = this.transform.position;
+        if (type.defaultSprite.rect.width == 16)
+        {
+            monster.gameObject.GetComponent<Transform>().localScale = new Vector3(.3f, .3f, 1);
+        }
+        if (type.defaultSprite.rect.width == 32)
+        {
+            monster.gameObject.GetComponent<Transform>().localScale = new Vector3(1, 1, 1);
+
+        }
+        if (type.defaultSprite.rect.width == 64)
+        {
+            monster.gameObject.GetComponent<Transform>().localScale = new Vector3(.6f, .6f, 1);
+        }
+
     }
 
     void Update()
