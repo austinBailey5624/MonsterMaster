@@ -78,9 +78,6 @@ public class NonPlayerCharacter : Person
             facialHairSet.frontSprites[0];
         facialHair.gameObject.GetComponent<SpriteRenderer>().color =
             hairStyleColor;
-
-        Vector3 characterScale = transform.localScale;
-        characterScalex = characterScale.x;
     }
 
     void Update()

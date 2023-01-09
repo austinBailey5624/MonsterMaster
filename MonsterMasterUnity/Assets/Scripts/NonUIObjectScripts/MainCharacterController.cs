@@ -29,8 +29,7 @@ public class MainCharacterController : Person
 
     public string possesivePronoun;
 
-    private List<GameObject> bodyParts;
-
+    //TODO refactor monsters to List
     private GameObject monster1;
 
     private GameObject monster2;
@@ -43,6 +42,7 @@ public class MainCharacterController : Person
 
     private GameObject monster6;
 
+    //TODO refactor lastPositions to List
     private Vector2 lastPosition;
 
     private Vector2 lastPosition2;
@@ -128,8 +128,6 @@ public class MainCharacterController : Person
             facialHair
         };
 
-        Vector3 characterScale = transform.localScale;
-        characterScalex = characterScale.x;
 
         string currentScene = SceneManager.GetActiveScene().name;
         if (GameState.playerPositionBySceneName.ContainsKey(currentScene))
@@ -422,11 +420,11 @@ public class MainCharacterController : Person
         {
             GameState.isFrozen = false;
             Vector3 startScale = transform.localScale;
-            characterScalex = 3.5f;
+            float characterScaleBase = 3.5f;
 
-            startScale.x = characterScalex;
-            startScale.y = characterScalex;
-            this.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1f / (float)characterScalex, 1f / (float)characterScalex);
+            startScale.x = characterScaleBase;
+            startScale.y = characterScaleBase;
+            this.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1f / (float)characterScaleBase, 1f / (float)characterScaleBase);
             transform.localScale = startScale;
             if (!sceneName.Contains("Menu"))
             {
