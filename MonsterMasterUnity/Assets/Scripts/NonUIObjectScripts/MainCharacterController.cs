@@ -29,6 +29,8 @@ public class MainCharacterController : Person
 
     public string possesivePronoun;
 
+    private List<GameObject> bodyParts;
+
     private GameObject monster1;
 
     private GameObject monster2;
@@ -113,6 +115,18 @@ public class MainCharacterController : Person
             facialHairSet.frontSprites[0];
         facialHair.gameObject.GetComponent<SpriteRenderer>().color =
             hairStyleColor;
+
+        bodyParts = new List<GameObject>()
+        {
+            body,
+            eyeWhites,
+            iris,
+            pants,
+            shirt,
+            hairStyle,
+            shoes,
+            facialHair
+        };
 
         Vector3 characterScale = transform.localScale;
         characterScalex = characterScale.x;
@@ -199,7 +213,7 @@ public class MainCharacterController : Person
                 selectMovementSprite();
             }
 
-            if (direction==EDirection.Left)
+ /*           if (direction==EDirection.Left)
             {
                 Vector3 characterScale = transform.localScale;
                 characterScale.x = -characterScalex;
@@ -210,7 +224,7 @@ public class MainCharacterController : Person
                 Vector3 characterScale = transform.localScale;
                 characterScale.x = characterScalex;
                 transform.localScale = characterScale;
-            }
+            }*/
 
 
             if (Input.GetAxis("Cancel") > .1f && GameState.isFrozen == false)

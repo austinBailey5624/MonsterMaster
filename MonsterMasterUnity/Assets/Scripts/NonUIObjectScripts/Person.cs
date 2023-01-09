@@ -148,8 +148,9 @@ public class Person : MonoBehaviour, ITraversalActor
                 setFrontSprite (spriteIndex);
                 break;
         }
+        flipBodyParts(facingLeft);
 
-        if (facingLeft)
+/*        if (facingLeft)
         {
             Vector3 characterScale = transform.localScale;
             characterScale.x = -characterScalex;
@@ -160,6 +161,34 @@ public class Person : MonoBehaviour, ITraversalActor
             Vector3 characterScale = transform.localScale;
             characterScale.x = characterScalex;
             this.transform.localScale = characterScale;
+        }*/
+    }
+
+    private void flipBodyParts(bool facingLeft)
+    {
+        List<GameObject> bodyParts = new List<GameObject>(8);
+        for(int i = 0; i< 8; i++)
+        {
+            bodyParts.Add(this.transform.GetChild(i).gameObject);
+        }
+        for (int i = 0; i < bodyParts.Count; i++)
+        {
+            Vector3 characterScale = bodyParts[i].transform.localScale;
+            if(facingLeft)
+            {
+                if(characterScale.x > 0)
+                {
+                    characterScale.x *= -1;
+                }
+            }
+            else //facing Right
+            {
+                if(characterScale.x < 0)
+                {
+                    characterScale.x *= -1;
+                }
+            }
+            bodyParts[i].transform.localScale = characterScale;
         }
     }
 
