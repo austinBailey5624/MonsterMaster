@@ -7,7 +7,7 @@ using static EDirection;
 
 /**
 *   Class to control the Main Character
-*   Copyright 2022 Austin Bailey All Rights reserved
+*   Copyright 2022-2023 Austin Bailey All Rights reserved
 */
 public class MainCharacterController : Person
 {
@@ -73,60 +73,14 @@ public class MainCharacterController : Person
 
     new void Start()
     {
-        GameObject body = this.transform.GetChild(0).gameObject;
-        body.gameObject.GetComponent<SpriteRenderer>().sprite =
-            bodySet.frontSprites[0];
-        body.gameObject.GetComponent<SpriteRenderer>().color = bodyColor;
-
-        GameObject eyeWhites = this.transform.GetChild(1).gameObject;
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().sprite =
-            eyeWhitesSet.frontSprites[0];
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().color =
-            eyeWhitesColor;
-
-        GameObject iris = this.transform.GetChild(2).gameObject;
-        iris.gameObject.GetComponent<SpriteRenderer>().sprite =
-            irisSet.frontSprites[0];
-        iris.gameObject.GetComponent<SpriteRenderer>().color = irisColor;
-
-        GameObject pants = this.transform.GetChild(3).gameObject;
-        pants.gameObject.GetComponent<SpriteRenderer>().sprite =
-            pantsSet.frontSprites[0];
-        pants.gameObject.GetComponent<SpriteRenderer>().color = pantColor;
-
-        GameObject shirt = this.transform.GetChild(4).gameObject;
-        shirt.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shirtSet.frontSprites[0];
-        shirt.gameObject.GetComponent<SpriteRenderer>().color = shirtColor;
-
-        GameObject hairStyle = this.transform.GetChild(5).gameObject;
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite =
-            hairStyleSet.frontSprites[0];
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().color =
-            hairStyleColor;
-
-        GameObject shoes = this.transform.GetChild(6).gameObject;
-        shoes.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shoesSet.frontSprites[0];
-        shoes.gameObject.GetComponent<SpriteRenderer>().color = shoesColor;
-
-        GameObject facialHair = this.transform.GetChild(7).gameObject;
-        facialHair.gameObject.GetComponent<SpriteRenderer>().sprite =
-            facialHairSet.frontSprites[0];
-        facialHair.gameObject.GetComponent<SpriteRenderer>().color =
-            hairStyleColor;
-
-        bodyParts = new List<GameObject>()
+        initBodyParts();
+        for (int i = 0; i < 8; i++)
         {
-            body,
-            eyeWhites,
-            iris,
-            pants,
-            shirt,
-            hairStyle,
-            shoes,
-            facialHair
-        };
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().sprite =
+                animationSets[i].frontSprites[0];
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().color =
+                colors[i];
+        }
 
 
         string currentScene = SceneManager.GetActiveScene().name;
@@ -210,20 +164,6 @@ public class MainCharacterController : Person
                 moveCharacter();
                 selectMovementSprite();
             }
-
- /*           if (direction==EDirection.Left)
-            {
-                Vector3 characterScale = transform.localScale;
-                characterScale.x = -characterScalex;
-                transform.localScale = characterScale;
-            }
-            else
-            {
-                Vector3 characterScale = transform.localScale;
-                characterScale.x = characterScalex;
-                transform.localScale = characterScale;
-            }*/
-
 
             if (Input.GetAxis("Cancel") > .1f && GameState.isFrozen == false)
             {

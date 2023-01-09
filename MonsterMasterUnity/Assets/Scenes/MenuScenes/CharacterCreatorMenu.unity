@@ -6963,7 +6963,7 @@ GameObject:
   - component: {fileID: 2012695923}
   - component: {fileID: 2012695922}
   m_Layer: 5
-  m_Name: FacialHairText
+  m_Name: FacialText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7009,7 +7009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Facial Hair
+  m_text: Facial
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba000aba920fef34989c1b2a7eede58e, type: 2}
   m_sharedMaterial: {fileID: 8765495369173025399, guid: ba000aba920fef34989c1b2a7eede58e,
@@ -7037,8 +7037,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 145
-  m_fontSizeBase: 145
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

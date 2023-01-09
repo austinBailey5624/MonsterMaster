@@ -5,7 +5,7 @@ using static EDirection;
 
 /**
 *   Class to control the behavior of the left pants selector button in the Character Creator Menu.
-*   Copyright 2022 Austin Bailey All Rights REserved
+*   Copyright 2022-2023 Austin Bailey All Rights REserved
 */
 public class PantsLeft : CharacterCustomizeButton
 {
@@ -27,7 +27,7 @@ public class PantsLeft : CharacterCustomizeButton
             GameObject
                 .FindGameObjectWithTag("Player")
                 .GetComponent<MainCharacterController>();
-        AnimationSet curPantsSet = mainCharacter.pantsSet;
+        AnimationSet curPantsSet = mainCharacter.animationSets[(int)EBodyPart.Pants];
 
         float submit = Input.GetAxisRaw("Submit");
         if (submit == 1)
@@ -38,28 +38,28 @@ public class PantsLeft : CharacterCustomizeButton
         {
             if (curPantsSet.Equals(shortsSet))
             {
-                mainCharacter.pantsSet = jeansSet;
+                mainCharacter.animationSets[(int)EBodyPart.Pants] = jeansSet;
             }
             else if (curPantsSet.Equals(jeansSet))
             {
-                mainCharacter.pantsSet = shortsSet;
-                if (ColorsEqual(darkBlue, mainCharacter.pantColor))
+                mainCharacter.animationSets[(int)EBodyPart.Pants] = shortsSet;
+                if (ColorsEqual(darkBlue, mainCharacter.colors[(int)EBodyPart.Pants]))
                 {
-                    mainCharacter.pantColor = darkGrey;
+                    mainCharacter.colors[(int)EBodyPart.Pants] = darkGrey;
                 }
-                else if (ColorsEqual(darkGrey, mainCharacter.pantColor))
+                else if (ColorsEqual(darkGrey, mainCharacter.colors[(int)EBodyPart.Pants]))
                 {
-                    mainCharacter.pantColor = brown;
+                    mainCharacter.colors[(int)EBodyPart.Pants] = brown;
                 }
-                else if (ColorsEqual(brown, mainCharacter.pantColor))
+                else if (ColorsEqual(brown, mainCharacter.colors[(int)EBodyPart.Pants]))
                 {
-                    mainCharacter.pantColor = darkBlue;
+                    mainCharacter.colors[(int)EBodyPart.Pants] = darkBlue;
                 }
                 mainCharacter
                     .transform
-                    .GetChild(3)
+                    .GetChild((int)EBodyPart.Pants)
                     .GetComponent<SpriteRenderer>()
-                    .color = mainCharacter.pantColor;
+                    .color = mainCharacter.colors[(int)EBodyPart.Pants];
             }
             mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;

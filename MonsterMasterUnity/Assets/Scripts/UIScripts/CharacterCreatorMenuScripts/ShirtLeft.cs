@@ -36,7 +36,7 @@ public class ShirtLeft : CharacterCustomizeButton
                 .FindGameObjectWithTag("Player")
                 .GetComponent<MainCharacterController>();
 
-        AnimationSet curShirtSet = mainCharacter.shirtSet;
+        AnimationSet curShirtSet = mainCharacter.animationSets[(int)EBodyPart.Shirt];
 
         float submit = Input.GetAxisRaw("Submit");
         if (submit == 1)
@@ -47,61 +47,61 @@ public class ShirtLeft : CharacterCustomizeButton
         {
             if (curShirtSet.Equals(tshirtSet))
             {
-                mainCharacter.shirtSet = tanktopSet;
+                mainCharacter.animationSets[(int)EBodyPart.Shirt] = tanktopSet;
             }
             else if (curShirtSet.Equals(tanktopSet))
             {
-                mainCharacter.shirtSet = longSleeveSet;
+                mainCharacter.animationSets[(int)EBodyPart.Shirt] = longSleeveSet;
             }
             else if (curShirtSet.Equals(longSleeveSet))
             {
-                mainCharacter.shirtSet = robeSet;
+                mainCharacter.animationSets[(int)EBodyPart.Shirt] = robeSet;
             }
             else if (curShirtSet.Equals(robeSet))
             {
-                mainCharacter.shirtSet = tshirtSet;
-                if (ColorsEqual(mainCharacter.shirtColor, darkGreen))
+                mainCharacter.animationSets[(int)EBodyPart.Shirt] = tshirtSet;
+                if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Shirt], darkGreen))
                 {
-                    mainCharacter.shirtColor = lightGrey;
+                    mainCharacter.colors[(int)EBodyPart.Shirt] = lightGrey;
                     mainCharacter
                         .transform
-                        .GetChild(4)
+                        .GetChild((int)EBodyPart.Shirt)
                         .GetComponent<SpriteRenderer>()
                         .color = lightGrey;
                 }
-                else if (ColorsEqual(mainCharacter.shirtColor, lightGrey))
+                else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Shirt], lightGrey))
                 {
-                    mainCharacter.shirtColor = darkGrey;
+                    mainCharacter.colors[(int)EBodyPart.Shirt] = darkGrey;
                     mainCharacter
                         .transform
-                        .GetChild(4)
+                        .GetChild((int)EBodyPart.Shirt)
                         .GetComponent<SpriteRenderer>()
                         .color = darkGrey;
                 }
-                else if (ColorsEqual(mainCharacter.shirtColor, darkGrey))
+                else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Shirt], darkGrey))
                 {
-                    mainCharacter.shirtColor = brown;
+                    mainCharacter.colors[(int)EBodyPart.Shirt] = brown;
                     mainCharacter
                         .transform
-                        .GetChild(4)
+                        .GetChild((int)EBodyPart.Shirt)
                         .GetComponent<SpriteRenderer>()
                         .color = brown;
                 }
-                else if (ColorsEqual(mainCharacter.shirtColor, brown))
+                else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Shirt], brown))
                 {
-                                    mainCharacter.shirtColor = red;
+                    mainCharacter.colors[(int)EBodyPart.Shirt] = red;
                     mainCharacter
                         .transform
-                        .GetChild(4)
+                        .GetChild((int)EBodyPart.Shirt)
                         .GetComponent<SpriteRenderer>()
                         .color = red;
                 }
-                else if (ColorsEqual(mainCharacter.shirtColor, red))
+                else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Shirt], red))
                 {
-                    mainCharacter.shirtColor = darkGreen;
+                    mainCharacter.colors[(int)EBodyPart.Shirt] = darkGreen;
                     mainCharacter
                         .transform
-                        .GetChild(4)
+                        .GetChild((int)EBodyPart.Shirt)
                         .GetComponent<SpriteRenderer>()
                         .color = darkGreen;
                 }
