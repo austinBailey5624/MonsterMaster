@@ -82,6 +82,17 @@ public class MainCharacterController : Person
         }
     }
 
+    private void initPositions()
+    {
+        for(int i = 0; i < monsters.Count; i++)
+        {
+            if(monsters[i] != null)
+            {
+                monsters[i].gameObject.transform.position = this.transform.position;
+            }
+        }
+    }
+
     private void initMonsters()
     {
         for(int i = 8; i < 14; i++)
@@ -321,7 +332,7 @@ public class MainCharacterController : Person
                 position = GameState.playerPositionBySceneName[sceneName];
                 transform.position = position;
                 initLastPositions(position);
-                initMonsters();
+                initPositions();
             }
         }
         travelDistance = 0;
