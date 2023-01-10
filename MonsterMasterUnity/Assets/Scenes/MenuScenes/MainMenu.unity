@@ -470,7 +470,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Copyright Austin Bailey 2016-2022 All Rights Reserved
+  m_text: Copyright Austin Bailey 2016-2023 All Rights Reserved
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba000aba920fef34989c1b2a7eede58e, type: 2}
   m_sharedMaterial: {fileID: 8765495369173025399, guid: ba000aba920fef34989c1b2a7eede58e,

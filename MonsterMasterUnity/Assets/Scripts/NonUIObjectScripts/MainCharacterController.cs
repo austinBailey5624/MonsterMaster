@@ -199,10 +199,8 @@ public class MainCharacterController : Person
 
     private void setLastPositions()
     {
-        Debug.Log("last postions size: " + lastPositions.Count);
         for(int i = 5; i > 0; i--)
         {
-            Debug.Log("i: " + i);
             lastPositions[i] = lastPositions[i - 1];
         }
         lastPositions[0] = transform.position;
