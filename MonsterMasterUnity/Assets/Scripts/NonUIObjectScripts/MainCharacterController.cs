@@ -29,31 +29,10 @@ public class MainCharacterController : Person
 
     public string possesivePronoun;
 
-    //TODO refactor monsters to List
-    private GameObject monster1;
+    private List<GameObject> monsters = new List<GameObject>();
 
-    private GameObject monster2;
+    private List<Vector2> lastPositions = new List<Vector2>();
 
-    private GameObject monster3;
-
-    private GameObject monster4;
-
-    private GameObject monster5;
-
-    private GameObject monster6;
-
-    //TODO refactor lastPositions to List
-    private Vector2 lastPosition;
-
-    private Vector2 lastPosition2;
-
-    private Vector2 lastPosition3;
-
-    private Vector2 lastPosition4;
-
-    private Vector2 lastPosition5;
-
-    private Vector2 lastPosition6;
 
     private double tolerance = .05;
 
@@ -89,36 +68,40 @@ public class MainCharacterController : Person
             transform.position =
                 GameState.playerPositionBySceneName[currentScene];
         }
-        lastPosition  = transform.position;
-        lastPosition2 = transform.position;
-        lastPosition3 = transform.position;
-        lastPosition4 = transform.position; 
-        lastPosition5 = transform.position;
-        lastPosition6 = transform.position;
 
-        monster1 = this.transform.GetChild(8).gameObject;
-        monster2 = this.transform.GetChild(9).gameObject;
-        monster3 = this.transform.GetChild(10).gameObject;
-        monster4 = this.transform.GetChild(11).gameObject;
-        monster5 = this.transform.GetChild(12).gameObject;
-        monster6 = this.transform.GetChild(13).gameObject;
-
-        initializeMonster(monster1);
-        initializeMonster(monster2);
-        initializeMonster(monster3);
-        initializeMonster(monster4);
-        initializeMonster(monster5);
-        initializeMonster(monster6);
+        initLastPositions(transform.position);
+        initMonsters();
     }
 
-    void initializeMonster(GameObject monster)
+    private void initLastPositions(Vector2 position)
+    {
+        lastPositions = new List<Vector2>();
+        for (int i = 0; i < 6; i++)
+        {
+            lastPositions.Add(position);
+        }
+    }
+
+    private void initMonsters()
+    {
+        for(int i = 8; i < 14; i++)
+        {
+            monsters.Add(this.transform.GetChild(i).gameObject);
+        }
+        for(int i = 0; i <6; i++)
+        {
+            initMonster(monsters[i]);
+        }
+    }
+
+    private void initMonster(GameObject monster)
     {
         if (monster == null || monster.gameObject == null || monster.gameObject.GetComponent<Monster>() == null)
         {
             return;
         }
         MonsterType type = monster.gameObject.GetComponent<Monster>().monsterType;
-        monster.gameObject.GetComponent<SpriteRenderer>().sprite = monster1.gameObject.GetComponent<Monster>().monsterType.getDownSprites()[0];
+        monster.gameObject.GetComponent<SpriteRenderer>().sprite = monsters[0].gameObject.GetComponent<Monster>().monsterType.getDownSprites()[0];
         monster.gameObject.transform.position = this.transform.position;
         if (type.defaultSprite.rect.width == 16)
         {
@@ -210,13 +193,19 @@ public class MainCharacterController : Person
         }
         if(travelDistance == tileSize)
         {
-            lastPosition6 = lastPosition5;
-            lastPosition5 = lastPosition4;
-            lastPosition4 = lastPosition3;
-            lastPosition3 = lastPosition2;
-            lastPosition2 = lastPosition;
-            lastPosition = transform.position;
+            setLastPositions();
         }
+    }
+
+    private void setLastPositions()
+    {
+        Debug.Log("last postions size: " + lastPositions.Count);
+        for(int i = 5; i > 0; i--)
+        {
+            Debug.Log("i: " + i);
+            lastPositions[i] = lastPositions[i - 1];
+        }
+        lastPositions[0] = transform.position;
     }
     
     private void moveCharacter()
@@ -243,29 +232,13 @@ public class MainCharacterController : Person
             travelDistance -= speed;
         }
         transform.position = position;
-        if(monster1 != null)
+
+        for(int i = 0; i<6; i++)
         {
-            moveMonster(monster1,lastPosition);
-        }
-        if(monster2 != null)
-        {
-            moveMonster(monster2, lastPosition2);
-        }
-        if(monster3 != null)
-        {
-            moveMonster(monster3, lastPosition3);
-        }
-        if(monster4 != null)
-        {
-            moveMonster(monster4, lastPosition4);
-        }
-        if(monster5 != null)
-        {
-            moveMonster(monster5, lastPosition5);
-        }
-        if(monster6 != null)
-        {
-            moveMonster(monster6, lastPosition6);
+            if(monsters[i] != null)
+            {
+                moveMonster(monsters[i], lastPositions[i]);
+            }
         }
     }
 
@@ -325,31 +298,10 @@ public class MainCharacterController : Person
         {
             index = 0;
         }
-        if(monster1 != null)
+        for(int i = 0; i< 6; i++)
         {
-            monster1.gameObject.GetComponent<Monster>().setSprite(index, direction);
+            monsters[i].gameObject.GetComponent<Monster>().setSprite(index, direction);
         }
-        if (monster2 != null)
-        {
-            monster2.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-        if (monster3 != null)
-        {
-            monster3.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-        if (monster4 != null)
-        {
-            monster4.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-        if (monster5 != null)
-        {
-            monster5.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-        if (monster6 != null)
-        {
-            monster6.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-
     }
 
 
@@ -370,7 +322,8 @@ public class MainCharacterController : Person
             {
                 position = GameState.playerPositionBySceneName[sceneName];
                 transform.position = position;
-                monster1.gameObject.transform.position = position;
+                initLastPositions(position);
+                initMonsters();
             }
         }
         travelDistance = 0;
