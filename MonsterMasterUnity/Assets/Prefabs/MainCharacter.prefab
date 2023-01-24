@@ -134,8 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 8954831779719244305, guid: ac806349cc75f284cbcbc8b8cfe85071,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &3598911763474112245
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -233,8 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 6973090546917149751, guid: 9381a8f3110a1f34e8216a7175528746,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &2331735991943273069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -421,8 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: -3106183679936455921, guid: bb61a563eaa498542b2396ea8f92733b,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &6429256383686829085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -698,8 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 8142590448234542771, guid: 858b94af41961d7429d0ddd78439f49c,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &8856750862084977754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -886,8 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 8147544918331524479, guid: 23ad09a8604db0143beccbd930896f4e,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &8114323655549713540
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1163,8 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 3405451846353825294, guid: a27cbe1d6a4430a4b92477a389f7272e,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &5323964838210627241
 SpriteRenderer:
   m_ObjectHideFlags: 0

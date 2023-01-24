@@ -112,6 +112,10 @@ public class MainCharacterController : Person
             return;
         }
         MonsterType type = monster.gameObject.GetComponent<Monster>().monsterType;
+        if(type == null)
+        {
+            return;
+        }
         monster.gameObject.GetComponent<SpriteRenderer>().sprite = monsters[0].gameObject.GetComponent<Monster>().monsterType.getDownSprites()[0];
         monster.gameObject.transform.position = this.transform.position;
         if (type.defaultSprite.rect.width == 16)
@@ -309,6 +313,10 @@ public class MainCharacterController : Person
         }
         for(int i = 0; i< 6; i++)
         {
+            if(monsters[i].gameObject.GetComponent<Monster>().monsterType == null)
+            {
+                return;
+            }
             monsters[i].gameObject.GetComponent<Monster>().setSprite(index, direction);
         }
     }
