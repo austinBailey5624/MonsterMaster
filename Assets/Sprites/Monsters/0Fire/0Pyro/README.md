@@ -12,14 +12,54 @@ This document is to list the assets not written by Austin Bailey and why they be
     <td align="center">Ownership reason</td>
 </tr>
 <tr>
-    <td align="center">flarialDesign64JanaRowe.gif</td>
+    <td align="center">flarialDesign64JanaRowe.gif (Unused)</td>
     <td align="center">Jana Rowe</td>
     <td align="center">Paid 40$ for 2 hours of time during interview 12/7/2022</td>
 </tr>
 <tr>
-    <td align="center">flarialDesignJanaRowe.jpg</td>
+    <td align="center">flarialDesignJanaRowe.jpg (Unused)</td>
     <td align="center">Jana Rowe</td>
     <td align="center">Paid 40$ for 2 hours of time during interview 12/7/2022</td>
+</tr>
+<tr>
+    <td align="center">Flarial_Idle_Sprites_512.png</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Agreement; Invoice 1/24/2023</td>
+</tr>
+<tr>
+    <td align="center">Flarial_Mag_Attack_Sprites_512.png</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Agreement; Invoice 1/24/2023</td>
+</tr>
+<tr>
+    <td align="center">Flarial_On-Death_Sprites_512.png</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Agreement; Invoice 1/24/2023</td>
+</tr>
+<tr>
+    <td align="center">Flarial_On-Hit_Sprites_512.png</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Agreement; Invoice 1/24/2023</td>
+</tr>
+<tr>
+    <td align="center">Flarial_Phys_Attack_Sprites_512.png</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Agreement; Invoice 1/24/2023</td>
+</tr>
+<tr>
+    <td align="center">Flarial_Traversal_East_Sprites_64.png</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Agreement; Invoice 1/24/2023</td>
+</tr>
+<tr>
+    <td align="center">Flarial_Traversal_North_Sprites_64.png</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Agreement; Invoice 1/24/2023</td>
+</tr>
+<tr>
+    <td align="center">Flarial_Traversal_South_Sprites_64.png</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Agreement; Invoice 1/24/2023</td>
 </tr>
 </table>
 </div>

@@ -31,17 +31,17 @@ public class HairStyleLeft : CharacterCustomizeButton
         }
         else if (submit == 0 && keydown == true)
         {
-            if (mainCharacter.hairStyleSet.Equals(tonsureSet))
+            if (mainCharacter.animationSets[(int)EBodyPart.HairStyle].Equals(tonsureSet))
             {
-                mainCharacter.hairStyleSet = hairBaldingSet;
+                mainCharacter.animationSets[(int)EBodyPart.HairStyle] = hairBaldingSet;
             }
-            else if (mainCharacter.hairStyleSet.Equals(hairBaldingSet))
+            else if (mainCharacter.animationSets[(int)EBodyPart.HairStyle].Equals(hairBaldingSet))
             {
-                mainCharacter.hairStyleSet = hairCroppedSet;
+                mainCharacter.animationSets[(int)EBodyPart.HairStyle] = hairCroppedSet;
             }
-            else if (mainCharacter.hairStyleSet.Equals(hairCroppedSet))
+            else if (mainCharacter.animationSets[(int)EBodyPart.HairStyle].Equals(hairCroppedSet))
             {
-                mainCharacter.hairStyleSet = tonsureSet;
+                mainCharacter.animationSets[(int)EBodyPart.HairStyle] = tonsureSet;
             }
             mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;

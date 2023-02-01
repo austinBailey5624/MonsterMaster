@@ -5,7 +5,7 @@ using static EDirection;
 
 /**
 *   Class to control the behavior of the Left Hair Color Selector in the Character Creator Menu
-*   Copyright 2022 Austin Bailey All Rights Reserved
+*   Copyright 2022-2023 Austin Bailey All Rights Reserved
 */
 public class HairColorLeft : CharacterCustomizeButton
 {
@@ -47,60 +47,60 @@ public class HairColorLeft : CharacterCustomizeButton
         }
         else if(submit == 0 && keydown == true)
         {
-        if (ColorsEqual(mainCharacter.hairStyleColor, redHead))
+        if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], redHead))
         {
-            mainCharacter.hairStyleColor = blonde;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = blonde;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, blonde))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], blonde))
         {
-            mainCharacter.hairStyleColor = lightBrown;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = lightBrown;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, lightBrown))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], lightBrown))
         {
-            mainCharacter.hairStyleColor = brown;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = brown;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, brown))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], brown))
         {
-            mainCharacter.hairStyleColor = darkBrown;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = darkBrown;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, darkBrown))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], darkBrown))
         {
-            mainCharacter.hairStyleColor = black;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = black;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, black))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], black))
         {
-            mainCharacter.hairStyleColor = charcoal;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = charcoal;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, charcoal))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], charcoal))
         {
-            mainCharacter.hairStyleColor = greying;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = greying;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, greying))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], greying))
         {
-            mainCharacter.hairStyleColor = white;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = white;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, white))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], white))
         {
-            mainCharacter.hairStyleColor = blue;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = blue;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, blue))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], blue))
         {
-            mainCharacter.hairStyleColor = green;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = green;
         }
-        else if (ColorsEqual(mainCharacter.hairStyleColor, green))
+        else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.HairStyle], green))
         {
-            mainCharacter.hairStyleColor = redHead;
+                mainCharacter.colors[(int)EBodyPart.HairStyle] = redHead;
         }
         mainCharacter
             .transform
-            .GetChild(5)
+            .GetChild((int)EBodyPart.HairStyle)
             .GetComponent<SpriteRenderer>()
-            .color = mainCharacter.hairStyleColor;
+            .color = mainCharacter.colors[(int)EBodyPart.HairStyle];
         mainCharacter
             .transform
-            .GetChild(7)
+            .GetChild((int)EBodyPart.Facial)
             .GetComponent<SpriteRenderer>()
-            .color = mainCharacter.hairStyleColor;
+            .color = mainCharacter.colors[(int)EBodyPart.HairStyle];
         mainCharacter.setSprite(0, EDirection.Down);
         keydown = false;
     }}

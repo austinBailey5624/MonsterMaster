@@ -134,8 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 8954831779719244305, guid: ac806349cc75f284cbcbc8b8cfe85071,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &3598911763474112245
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -233,8 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 6973090546917149751, guid: 9381a8f3110a1f34e8216a7175528746,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &2331735991943273069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -421,8 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: -3106183679936455921, guid: bb61a563eaa498542b2396ea8f92733b,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &6429256383686829085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -698,8 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 8142590448234542771, guid: 858b94af41961d7429d0ddd78439f49c,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &8856750862084977754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -886,8 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 8147544918331524479, guid: 23ad09a8604db0143beccbd930896f4e,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &8114323655549713540
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1163,8 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87dfff7551f8ff4ab6f41538bf17901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterType: {fileID: 3405451846353825294, guid: a27cbe1d6a4430a4b92477a389f7272e,
-    type: 3}
+  monsterType: {fileID: 0}
 --- !u!212 &5323964838210627241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1283,28 +1277,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMale: 0
-  bodySet: {fileID: -3875276330252644197, guid: f020c6057295c1a48a2f2a3c0fbc173c,
-    type: 3}
-  eyeWhitesSet: {fileID: -2080243524521443885, guid: 41b1c21102d7a784f83ffd2a58e5d2c9,
-    type: 3}
-  irisSet: {fileID: 464812579472147326, guid: 6f1ca8d70d89fb6428c27d6c48bb455a, type: 3}
-  pantsSet: {fileID: 2370731379709174793, guid: 7dbbc7ca5d8d9ac4b860bd127cad69dc,
-    type: 3}
-  shirtSet: {fileID: -9158251546732670850, guid: 5b299e0d13c9fbc45a7a04ce542a181b,
-    type: 3}
-  hairStyleSet: {fileID: 4976262983528457121, guid: 9bf540e9306c4134895896a0cfd22ddc,
-    type: 3}
-  shoesSet: {fileID: -1723024454244123825, guid: da7a4b84a4424474589dd85d96503d72,
-    type: 3}
-  facialHairSet: {fileID: -5029783172028673249, guid: 7bb477d0760205d489175f16f7241e9d,
-    type: 3}
-  bodyColor: {r: 1, g: 0.8156863, b: 0.6627451, a: 1}
-  eyeWhitesColor: {r: 1, g: 1, b: 1, a: 1}
-  irisColor: {r: 0, g: 0.025779724, b: 1, a: 1}
-  pantColor: {r: 0.2, g: 0.1, b: 0, a: 1}
-  shirtColor: {r: 0, g: 0.3, b: 0, a: 1}
-  shoesColor: {r: 0.165, g: 0.06147059, b: 0, a: 1}
-  hairStyleColor: {r: 0.59607846, g: 0.30588236, b: 0, a: 1}
+  animationSets:
+  - {fileID: -3875276330252644197, guid: f020c6057295c1a48a2f2a3c0fbc173c, type: 3}
+  - {fileID: -2080243524521443885, guid: 41b1c21102d7a784f83ffd2a58e5d2c9, type: 3}
+  - {fileID: 464812579472147326, guid: 6f1ca8d70d89fb6428c27d6c48bb455a, type: 3}
+  - {fileID: -5012379149530574833, guid: 6450d25b32b7b274d8ab19c2eb44a78d, type: 3}
+  - {fileID: -9158251546732670850, guid: 5b299e0d13c9fbc45a7a04ce542a181b, type: 3}
+  - {fileID: 4976262983528457121, guid: 9bf540e9306c4134895896a0cfd22ddc, type: 3}
+  - {fileID: -1723024454244123825, guid: da7a4b84a4424474589dd85d96503d72, type: 3}
+  - {fileID: -5506895621215855485, guid: 6ac5f84eda04b6b4eab94a0ff0718a96, type: 3}
+  colors:
+  - {r: 1, g: 0.8156863, b: 0.6627451, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+  - {r: 0.1, g: 0.25, b: 0.5, a: 1}
+  - {r: 0, g: 0.3, b: 0, a: 1}
+  - {r: 0.7490196, g: 0.39215687, b: 0, a: 1}
+  - {r: 0.24528301, g: 0.12443538, b: 0.005784976, a: 1}
+  - {r: 0.7490196, g: 0.39215687, b: 0, a: 1}
   speed: 0.007
   subjectPronoun: He
   objectPronoun: Him

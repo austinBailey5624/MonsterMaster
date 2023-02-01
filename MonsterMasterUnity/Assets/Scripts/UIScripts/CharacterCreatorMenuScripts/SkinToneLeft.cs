@@ -36,35 +36,35 @@ public class SkinToneLeft : CharacterCustomizeButton
         }
         else if (submit == 0 && keydown == true)
         {
-            if (ColorsEqual(mainCharacter.bodyColor, skinTone1))
+            if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Body], skinTone1))
             {
-                mainCharacter.bodyColor = skinTone2;
+                mainCharacter.colors[(int)EBodyPart.Body] = skinTone2;
             }
-            else if (ColorsEqual(mainCharacter.bodyColor, skinTone2))
+            else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Body], skinTone2))
             {
-                mainCharacter.bodyColor = skinTone3;
+                mainCharacter.colors[(int)EBodyPart.Body] = skinTone3;
             }
-            else if (ColorsEqual(mainCharacter.bodyColor, skinTone3))
+            else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Body], skinTone3))
             {
-                mainCharacter.bodyColor = skinTone4;
+                mainCharacter.colors[(int)EBodyPart.Body] = skinTone4;
             }
-            else if (ColorsEqual(mainCharacter.bodyColor, skinTone4))
+            else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Body], skinTone4))
             {
-                mainCharacter.bodyColor = skinTone5;
+                mainCharacter.colors[(int)EBodyPart.Body] = skinTone5;
             }
-            else if (ColorsEqual(mainCharacter.bodyColor, skinTone5))
+            else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Body], skinTone5))
             {
-                mainCharacter.bodyColor = skinTone6;
+                mainCharacter.colors[(int)EBodyPart.Body] = skinTone6;
             }
-            else if (ColorsEqual(mainCharacter.bodyColor, skinTone6))
+            else if (ColorsEqual(mainCharacter.colors[(int)EBodyPart.Body], skinTone6))
             {
-                mainCharacter.bodyColor = skinTone1;
+                mainCharacter.colors[(int)EBodyPart.Body] = skinTone1;
             }
             mainCharacter
                 .transform
-                .GetChild(0)
+                .GetChild((int)EBodyPart.Body)
                 .GetComponent<SpriteRenderer>()
-                .color = mainCharacter.bodyColor;
+                .color = mainCharacter.colors[(int)EBodyPart.Body];
             mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;
         }

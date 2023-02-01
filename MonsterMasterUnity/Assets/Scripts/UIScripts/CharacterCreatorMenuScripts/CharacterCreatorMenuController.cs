@@ -5,7 +5,7 @@ using UnityEngine;
 
 /**
  * Class to control the Behavior of the Character Controller Menu
- * Copyright 2022 Austin Bailey All Rights Reserved
+ * Copyright 2022-2023 Austin Bailey All Rights Reserved
  * */
 public class CharacterCreatorMenuController : MonoBehaviour
 {
@@ -32,6 +32,17 @@ public class CharacterCreatorMenuController : MonoBehaviour
         {
             canvas.transform.GetChild(i).gameObject.GetComponent<TMP_Text>().color = colors.textColor;
         }
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        Vector2 position = new Vector2();
+        position.x = 0;
+        position.y = 0;
+        Vector3 playerScale = new Vector3();
+        playerScale.x = 15;
+        playerScale.y = 15;
+        playerScale.z = 1;
+        player.gameObject.transform.position = position;
+        player.gameObject.transform.localScale = playerScale;
     }
 
     private void colorSelectors(GameObject selectors)

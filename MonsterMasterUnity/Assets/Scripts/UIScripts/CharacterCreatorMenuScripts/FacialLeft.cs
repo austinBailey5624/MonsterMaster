@@ -9,6 +9,8 @@ using static EDirection;
 */
 public class FacialLeft : CharacterCustomizeButton
 {
+
+    //TODO: Simplify with a List
     public AnimationSet fiveShadowSet;
 
     public AnimationSet fullBeardSet;
@@ -34,7 +36,7 @@ public class FacialLeft : CharacterCustomizeButton
                 .FindGameObjectWithTag("Player")
                 .GetComponent<MainCharacterController>();
         GameObject facialHair = mainCharacter.transform.GetChild(5).gameObject;
-        AnimationSet currentHair = mainCharacter.facialHairSet;
+        AnimationSet currentHair = mainCharacter.animationSets[(int)EBodyPart.Facial];
 
         float submit = Input.GetAxisRaw("Submit");
         if (submit == 1)
@@ -45,37 +47,37 @@ public class FacialLeft : CharacterCustomizeButton
         {
             if (currentHair.Equals(blankSet))
             {
-                mainCharacter.facialHairSet = fiveShadowSet;
+                mainCharacter.animationSets[(int)EBodyPart.Facial] = fiveShadowSet;
             }
             else if (currentHair.Equals(fiveShadowSet))
             {
-                mainCharacter.facialHairSet = fullBeardSet;
+                mainCharacter.animationSets[(int)EBodyPart.Facial] = fullBeardSet;
             }
             else if (currentHair.Equals(fullBeardSet))
             {
-                mainCharacter.facialHairSet = goateeSet;
+                mainCharacter.animationSets[(int)EBodyPart.Facial] = goateeSet;
             }
             else if (currentHair.Equals(goateeSet))
             {
-                mainCharacter.facialHairSet = moustacheSet;
+                mainCharacter.animationSets[(int)EBodyPart.Facial] = moustacheSet;
             }
             else if (currentHair.Equals(moustacheSet))
             {
-                mainCharacter.facialHairSet = peachFuzzSet;
+                mainCharacter.animationSets[(int)EBodyPart.Facial] = peachFuzzSet;
             }
             else if (currentHair.Equals(peachFuzzSet))
             {
-                mainCharacter.facialHairSet = trampBeardSet;
+                mainCharacter.animationSets[(int)EBodyPart.Facial] = trampBeardSet;
             }
             else if (currentHair.Equals(trampBeardSet))
             {
-                mainCharacter.facialHairSet = wraparoundSet;
+                mainCharacter.animationSets[(int)EBodyPart.Facial] = wraparoundSet;
             }
             else if (currentHair.Equals(wraparoundSet))
             {
-                mainCharacter.facialHairSet = blankSet;
+                mainCharacter.animationSets[(int)EBodyPart.Facial] = blankSet;
             }
-            Color hairColor = mainCharacter.hairStyleColor;
+            Color hairColor = mainCharacter.colors[(int)EBodyPart.Facial];
             facialHair.gameObject.GetComponent<SpriteRenderer>().color =
                 hairColor;
             mainCharacter.setSprite(0, EDirection.Down);

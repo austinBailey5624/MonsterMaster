@@ -5,97 +5,60 @@ using static EDirection;
 
 /**
 *   Class to handle behaviors common to all people to avoid rewriting code
-*   Copyright 2022 Austin Bailey All Rights Reserved
+*   Copyright 2022-2023 Austin Bailey All Rights Reserved
 */
 public class Person : MonoBehaviour, ITraversalActor
 {
     public bool isMale;
 
-    public AnimationSet bodySet;
+    public List<AnimationSet> animationSets;
 
-    public AnimationSet eyeWhitesSet;
-
-    public AnimationSet irisSet;
-
-    public AnimationSet pantsSet;
-
-    public AnimationSet shirtSet;
-
-    public AnimationSet hairStyleSet;
-
-    public AnimationSet shoesSet;
-
-    public AnimationSet facialHairSet;
-
-    public Color bodyColor;
-
-    public Color eyeWhitesColor;
-
-    public Color irisColor;
-
-    public Color pantColor;
-
-    public Color shirtColor;
-
-    public Color shoesColor;
-
-    public Color hairStyleColor;
+    public List<Color> colors;
 
     private int spriteIndex = 0;
 
     private int updateSlowdown = 0;
 
-    protected bool facingLeft = false;
+    /**
+     * Note for indexes of bodyParts:
+     * 0: Body (blank body)
+     * 1: EyeWhites
+     * 2: Iris
+     * 3: Pants
+     * 4: Shirt
+     * 5: HairStyle
+     * 6: Shoes
+     * 7: Facial hair / makeup
+     */
+    protected List<GameObject> bodyParts;
 
-    protected float characterScalex = 1.0f;
+    protected bool facingLeft = false;
 
     protected void Start()
     {
-        GameObject body = this.transform.GetChild(0).gameObject;
-        body.gameObject.GetComponent<SpriteRenderer>().sprite =
-            bodySet.frontSprites[0];
-        body.gameObject.GetComponent<SpriteRenderer>().color = bodyColor;
+        initBodyParts();
+        for(int i = 0; i < 8; i++)
+        {
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().sprite =
+                animationSets[i].frontSprites[0];
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().color =
+                colors[i];
+        }
+    }
 
-        GameObject eyeWhites = this.transform.GetChild(1).gameObject;
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().sprite =
-            eyeWhitesSet.frontSprites[0];
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().color =
-            eyeWhitesColor;
+    protected void initBodyParts()
+    {
+        if(bodyParts != null)
+        {
+            return;
+        }
+        bodyParts = new List<GameObject>();
 
-        GameObject iris = this.transform.GetChild(2).gameObject;
-        iris.gameObject.GetComponent<SpriteRenderer>().sprite =
-            irisSet.frontSprites[0];
-        iris.gameObject.GetComponent<SpriteRenderer>().color = irisColor;
+        for (int i = 0; i < 8; i++)
+        {
+            bodyParts.Add(this.transform.GetChild(i).gameObject);
+        }
 
-        GameObject pants = this.transform.GetChild(3).gameObject;
-        pants.gameObject.GetComponent<SpriteRenderer>().sprite =
-            pantsSet.frontSprites[0];
-        pants.gameObject.GetComponent<SpriteRenderer>().color = pantColor;
-
-        GameObject shirt = this.transform.GetChild(4).gameObject;
-        shirt.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shirtSet.frontSprites[0];
-        shirt.gameObject.GetComponent<SpriteRenderer>().color = shirtColor;
-
-        GameObject hairStyle = this.transform.GetChild(5).gameObject;
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite =
-            hairStyleSet.frontSprites[0];
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().color =
-            hairStyleColor;
-
-        GameObject shoes = this.transform.GetChild(6).gameObject;
-        shoes.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shoesSet.frontSprites[0];
-        shoes.gameObject.GetComponent<SpriteRenderer>().color = shoesColor;
-
-        GameObject facialHair = this.transform.GetChild(7).gameObject;
-        facialHair.gameObject.GetComponent<SpriteRenderer>().sprite =
-            facialHairSet.frontSprites[0];
-        facialHair.gameObject.GetComponent<SpriteRenderer>().color =
-            hairStyleColor;
-
-        Vector3 characterScale = transform.localScale;
-        characterScalex = characterScale.x;
     }
 
     void Update()
@@ -105,14 +68,11 @@ public class Person : MonoBehaviour, ITraversalActor
             if (spriteIndex == 3)
             {
                 spriteIndex = 0;
-                // directionIndex = directionIndex == 3 ? 0 : directionIndex + 1;
             }
             else
             {
                 spriteIndex++;
             }
-            // setSprite (spriteIndex, directionIndex);
-
             updateSlowdown = 0;
         }
         updateSlowdown++;
@@ -120,6 +80,7 @@ public class Person : MonoBehaviour, ITraversalActor
 
     public void setSprite(int spriteIndex, EDirection direction)
     {
+        initBodyParts();
         facingLeft = false;
         switch (direction)
         {
@@ -130,7 +91,7 @@ public class Person : MonoBehaviour, ITraversalActor
                 setRightSprite (spriteIndex);
                 break;
             case EDirection.Left:
-                if (bodySet.leftIsRightReversed)
+                if (animationSets[0].leftIsRightReversed)
                 {
                     //Since Left is Right Reversed, we set right and then flip later
                     setRightSprite (spriteIndex);
@@ -148,130 +109,65 @@ public class Person : MonoBehaviour, ITraversalActor
                 setFrontSprite (spriteIndex);
                 break;
         }
+        flipBodyParts(facingLeft);
+    }
 
-        if (facingLeft)
+    private void flipBodyParts(bool facingLeft)
+    {
+        for (int i = 0; i < bodyParts.Count; i++)
         {
-            Vector3 characterScale = transform.localScale;
-            characterScale.x = -characterScalex;
-            this.transform.localScale = characterScale;
-        }
-        else
-        {
-            Vector3 characterScale = transform.localScale;
-            characterScale.x = characterScalex;
-            this.transform.localScale = characterScale;
+            Vector3 characterScale = bodyParts[i].transform.localScale;
+            if(facingLeft)
+            {
+                if(characterScale.x > 0)
+                {
+                    characterScale.x *= -1;
+                }
+            }
+            else //facing Right
+            {
+                if(characterScale.x < 0)
+                {
+                    characterScale.x *= -1;
+                }
+            }
+            bodyParts[i].transform.localScale = characterScale;
         }
     }
 
     private void setFrontSprite(int spriteIndex)
     {
-        GameObject body = this.transform.GetChild(0).gameObject;
-        GameObject eyeWhites = this.transform.GetChild(1).gameObject;
-        GameObject iris = this.transform.GetChild(2).gameObject;
-        GameObject pants = this.transform.GetChild(3).gameObject;
-        GameObject shirt = this.transform.GetChild(4).gameObject;
-        GameObject hairStyle = this.transform.GetChild(5).gameObject;
-        GameObject shoes = this.transform.GetChild(6).gameObject;
-        GameObject facialHair = this.transform.GetChild(7).gameObject;
-        body.gameObject.GetComponent<SpriteRenderer>().sprite =
-            bodySet.frontSprites[spriteIndex];
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().sprite =
-            eyeWhitesSet.frontSprites[spriteIndex];
-        iris.gameObject.GetComponent<SpriteRenderer>().sprite =
-            irisSet.frontSprites[spriteIndex];
-        pants.gameObject.GetComponent<SpriteRenderer>().sprite =
-            pantsSet.frontSprites[spriteIndex];
-        shirt.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shirtSet.frontSprites[spriteIndex];
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite =
-            hairStyleSet.frontSprites[spriteIndex];
-        shoes.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shoesSet.frontSprites[spriteIndex];
-        facialHair.gameObject.GetComponent<SpriteRenderer>().sprite =
-            facialHairSet.frontSprites[spriteIndex];
+        for(int i = 0; i < 8; i++)
+        {
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().sprite =
+                animationSets[i].frontSprites[spriteIndex];
+        }
     }
 
     private void setRightSprite(int spriteIndex)
     {
-        GameObject body = this.transform.GetChild(0).gameObject;
-        GameObject eyeWhites = this.transform.GetChild(1).gameObject;
-        GameObject iris = this.transform.GetChild(2).gameObject;
-        GameObject pants = this.transform.GetChild(3).gameObject;
-        GameObject shirt = this.transform.GetChild(4).gameObject;
-        GameObject hairStyle = this.transform.GetChild(5).gameObject;
-        GameObject shoes = this.transform.GetChild(6).gameObject;
-        GameObject facialHair = this.transform.GetChild(7).gameObject;
-        body.gameObject.GetComponent<SpriteRenderer>().sprite =
-            bodySet.rightSprites[spriteIndex];
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().sprite =
-            eyeWhitesSet.rightSprites[spriteIndex];
-        iris.gameObject.GetComponent<SpriteRenderer>().sprite =
-            irisSet.rightSprites[spriteIndex];
-        pants.gameObject.GetComponent<SpriteRenderer>().sprite =
-            pantsSet.rightSprites[spriteIndex];
-        shirt.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shirtSet.rightSprites[spriteIndex];
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite =
-            hairStyleSet.rightSprites[spriteIndex];
-        shoes.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shoesSet.rightSprites[spriteIndex];
-        facialHair.gameObject.GetComponent<SpriteRenderer>().sprite =
-            facialHairSet.rightSprites[spriteIndex];
+        for(int i = 0; i< 8; i++)
+        {
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().sprite =
+                animationSets[i].rightSprites[spriteIndex];
+        }
     }
 
     private void setLeftSprite(int spriteIndex)
     {
-        GameObject body = this.transform.GetChild(0).gameObject;
-        GameObject eyeWhites = this.transform.GetChild(1).gameObject;
-        GameObject iris = this.transform.GetChild(2).gameObject;
-        GameObject pants = this.transform.GetChild(3).gameObject;
-        GameObject shirt = this.transform.GetChild(4).gameObject;
-        GameObject hairStyle = this.transform.GetChild(5).gameObject;
-        GameObject shoes = this.transform.GetChild(6).gameObject;
-        GameObject facialHair = this.transform.GetChild(7).gameObject;
-        body.gameObject.GetComponent<SpriteRenderer>().sprite =
-            bodySet.leftSprites[spriteIndex];
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().sprite =
-            eyeWhitesSet.leftSprites[spriteIndex];
-        iris.gameObject.GetComponent<SpriteRenderer>().sprite =
-            irisSet.leftSprites[spriteIndex];
-        pants.gameObject.GetComponent<SpriteRenderer>().sprite =
-            pantsSet.leftSprites[spriteIndex];
-        shirt.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shirtSet.leftSprites[spriteIndex];
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite =
-            hairStyleSet.leftSprites[spriteIndex];
-        shoes.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shoesSet.leftSprites[spriteIndex];
-        facialHair.gameObject.GetComponent<SpriteRenderer>().sprite =
-            facialHairSet.leftSprites[spriteIndex];
+        for (int i = 0; i < 8; i++)
+        {
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().sprite =
+                animationSets[i].leftSprites[spriteIndex];
+        }
     }
 
     private void setBackSprite(int spriteIndex)
     {
-        GameObject body = this.transform.GetChild(0).gameObject;
-        GameObject eyeWhites = this.transform.GetChild(1).gameObject;
-        GameObject iris = this.transform.GetChild(2).gameObject;
-        GameObject pants = this.transform.GetChild(3).gameObject;
-        GameObject shirt = this.transform.GetChild(4).gameObject;
-        GameObject hairStyle = this.transform.GetChild(5).gameObject;
-        GameObject shoes = this.transform.GetChild(6).gameObject;
-        GameObject facialHair = this.transform.GetChild(7).gameObject;
-        body.gameObject.GetComponent<SpriteRenderer>().sprite =
-            bodySet.backSprites[spriteIndex];
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().sprite =
-            eyeWhitesSet.backSprites[spriteIndex];
-        iris.gameObject.GetComponent<SpriteRenderer>().sprite =
-            irisSet.backSprites[spriteIndex];
-        pants.gameObject.GetComponent<SpriteRenderer>().sprite =
-            pantsSet.backSprites[spriteIndex];
-        shirt.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shirtSet.backSprites[spriteIndex];
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite =
-            hairStyleSet.backSprites[spriteIndex];
-        shoes.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shoesSet.backSprites[spriteIndex];
-        facialHair.gameObject.GetComponent<SpriteRenderer>().sprite =
-            facialHairSet.backSprites[spriteIndex];
+        for (int i = 0; i < 8; i++)
+        {
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().sprite =
+                animationSets[i].backSprites[spriteIndex];
+        }
     }
 }

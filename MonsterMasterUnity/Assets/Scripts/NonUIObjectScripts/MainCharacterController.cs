@@ -7,7 +7,7 @@ using static EDirection;
 
 /**
 *   Class to control the Main Character
-*   Copyright 2022 Austin Bailey All Rights reserved
+*   Copyright 2022-2023 Austin Bailey All Rights reserved
 */
 public class MainCharacterController : Person
 {
@@ -29,29 +29,10 @@ public class MainCharacterController : Person
 
     public string possesivePronoun;
 
-    private GameObject monster1;
+    private List<GameObject> monsters = new List<GameObject>();
 
-    private GameObject monster2;
+    private List<Vector2> lastPositions = new List<Vector2>();
 
-    private GameObject monster3;
-
-    private GameObject monster4;
-
-    private GameObject monster5;
-
-    private GameObject monster6;
-
-    private Vector2 lastPosition;
-
-    private Vector2 lastPosition2;
-
-    private Vector2 lastPosition3;
-
-    private Vector2 lastPosition4;
-
-    private Vector2 lastPosition5;
-
-    private Vector2 lastPosition6;
 
     private double tolerance = .05;
 
@@ -71,51 +52,15 @@ public class MainCharacterController : Person
 
     new void Start()
     {
-        GameObject body = this.transform.GetChild(0).gameObject;
-        body.gameObject.GetComponent<SpriteRenderer>().sprite =
-            bodySet.frontSprites[0];
-        body.gameObject.GetComponent<SpriteRenderer>().color = bodyColor;
+        initBodyParts();
+        for (int i = 0; i < 8; i++)
+        {
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().sprite =
+                animationSets[i].frontSprites[0];
+            bodyParts[i].gameObject.GetComponent<SpriteRenderer>().color =
+                colors[i];
+        }
 
-        GameObject eyeWhites = this.transform.GetChild(1).gameObject;
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().sprite =
-            eyeWhitesSet.frontSprites[0];
-        eyeWhites.gameObject.GetComponent<SpriteRenderer>().color =
-            eyeWhitesColor;
-
-        GameObject iris = this.transform.GetChild(2).gameObject;
-        iris.gameObject.GetComponent<SpriteRenderer>().sprite =
-            irisSet.frontSprites[0];
-        iris.gameObject.GetComponent<SpriteRenderer>().color = irisColor;
-
-        GameObject pants = this.transform.GetChild(3).gameObject;
-        pants.gameObject.GetComponent<SpriteRenderer>().sprite =
-            pantsSet.frontSprites[0];
-        pants.gameObject.GetComponent<SpriteRenderer>().color = pantColor;
-
-        GameObject shirt = this.transform.GetChild(4).gameObject;
-        shirt.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shirtSet.frontSprites[0];
-        shirt.gameObject.GetComponent<SpriteRenderer>().color = shirtColor;
-
-        GameObject hairStyle = this.transform.GetChild(5).gameObject;
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().sprite =
-            hairStyleSet.frontSprites[0];
-        hairStyle.gameObject.GetComponent<SpriteRenderer>().color =
-            hairStyleColor;
-
-        GameObject shoes = this.transform.GetChild(6).gameObject;
-        shoes.gameObject.GetComponent<SpriteRenderer>().sprite =
-            shoesSet.frontSprites[0];
-        shoes.gameObject.GetComponent<SpriteRenderer>().color = shoesColor;
-
-        GameObject facialHair = this.transform.GetChild(7).gameObject;
-        facialHair.gameObject.GetComponent<SpriteRenderer>().sprite =
-            facialHairSet.frontSprites[0];
-        facialHair.gameObject.GetComponent<SpriteRenderer>().color =
-            hairStyleColor;
-
-        Vector3 characterScale = transform.localScale;
-        characterScalex = characterScale.x;
 
         string currentScene = SceneManager.GetActiveScene().name;
         if (GameState.playerPositionBySceneName.ContainsKey(currentScene))
@@ -123,36 +68,70 @@ public class MainCharacterController : Person
             transform.position =
                 GameState.playerPositionBySceneName[currentScene];
         }
-        lastPosition  = transform.position;
-        lastPosition2 = transform.position;
-        lastPosition3 = transform.position;
-        lastPosition4 = transform.position; 
-        lastPosition5 = transform.position;
-        lastPosition6 = transform.position;
 
-        monster1 = this.transform.GetChild(8).gameObject;
-        monster2 = this.transform.GetChild(9).gameObject;
-        monster3 = this.transform.GetChild(10).gameObject;
-        monster4 = this.transform.GetChild(11).gameObject;
-        monster5 = this.transform.GetChild(12).gameObject;
-        monster6 = this.transform.GetChild(13).gameObject;
-
-        initializeMonster(monster1);
-        initializeMonster(monster2);
-        initializeMonster(monster3);
-        initializeMonster(monster4);
-        initializeMonster(monster5);
-        initializeMonster(monster6);
+        initLastPositions(transform.position);
+        initMonsters();
     }
 
-    void initializeMonster(GameObject monster)
+    private void initLastPositions(Vector2 position)
     {
-        if(monster == null)
+        lastPositions = new List<Vector2>();
+        for (int i = 0; i < 6; i++)
+        {
+            lastPositions.Add(position);
+        }
+    }
+
+    private void initPositions()
+    {
+        for(int i = 0; i < monsters.Count; i++)
+        {
+            if(monsters[i] != null)
+            {
+                monsters[i].gameObject.transform.position = this.transform.position;
+            }
+        }
+    }
+
+    private void initMonsters()
+    {
+        for(int i = 8; i < 14; i++)
+        {
+            monsters.Add(this.transform.GetChild(i).gameObject);
+        }
+        for(int i = 0; i <6; i++)
+        {
+            initMonster(monsters[i]);
+        }
+    }
+
+    private void initMonster(GameObject monster)
+    {
+        if (monster == null || monster.gameObject == null || monster.gameObject.GetComponent<Monster>() == null)
         {
             return;
         }
-        monster.gameObject.GetComponent<SpriteRenderer>().sprite = monster1.gameObject.GetComponent<Monster>().monsterType.getDownSprites()[0];
+        MonsterType type = monster.gameObject.GetComponent<Monster>().monsterType;
+        if(type == null)
+        {
+            return;
+        }
+        monster.gameObject.GetComponent<SpriteRenderer>().sprite = monsters[0].gameObject.GetComponent<Monster>().monsterType.getDownSprites()[0];
         monster.gameObject.transform.position = this.transform.position;
+        if (type.defaultSprite.rect.width == 16)
+        {
+            monster.gameObject.GetComponent<Transform>().localScale = new Vector3(.3f, .3f, 1);
+        }
+        if (type.defaultSprite.rect.width == 32)
+        {
+            monster.gameObject.GetComponent<Transform>().localScale = new Vector3(1, 1, 1);
+
+        }
+        if (type.defaultSprite.rect.width == 64)
+        {
+            monster.gameObject.GetComponent<Transform>().localScale = new Vector3(.6f, .6f, 1);
+        }
+
     }
 
     void Update()
@@ -183,20 +162,6 @@ public class MainCharacterController : Person
                 moveCharacter();
                 selectMovementSprite();
             }
-
-            if (direction==EDirection.Left)
-            {
-                Vector3 characterScale = transform.localScale;
-                characterScale.x = -characterScalex;
-                transform.localScale = characterScale;
-            }
-            else
-            {
-                Vector3 characterScale = transform.localScale;
-                characterScale.x = characterScalex;
-                transform.localScale = characterScale;
-            }
-
 
             if (Input.GetAxis("Cancel") > .1f && GameState.isFrozen == false)
             {
@@ -243,13 +208,17 @@ public class MainCharacterController : Person
         }
         if(travelDistance == tileSize)
         {
-            lastPosition6 = lastPosition5;
-            lastPosition5 = lastPosition4;
-            lastPosition4 = lastPosition3;
-            lastPosition3 = lastPosition2;
-            lastPosition2 = lastPosition;
-            lastPosition = transform.position;
+            setLastPositions();
         }
+    }
+
+    private void setLastPositions()
+    {
+        for(int i = 5; i > 0; i--)
+        {
+            lastPositions[i] = lastPositions[i - 1];
+        }
+        lastPositions[0] = transform.position;
     }
     
     private void moveCharacter()
@@ -276,29 +245,13 @@ public class MainCharacterController : Person
             travelDistance -= speed;
         }
         transform.position = position;
-        if(monster1 != null)
+
+        for(int i = 0; i<6; i++)
         {
-            moveMonster(monster1,lastPosition);
-        }
-        if(monster2 != null)
-        {
-            moveMonster(monster2, lastPosition2);
-        }
-        if(monster3 != null)
-        {
-            moveMonster(monster3, lastPosition3);
-        }
-        if(monster4 != null)
-        {
-            moveMonster(monster4, lastPosition4);
-        }
-        if(monster5 != null)
-        {
-            moveMonster(monster5, lastPosition5);
-        }
-        if(monster6 != null)
-        {
-            moveMonster(monster6, lastPosition6);
+            if(monsters[i] != null)
+            {
+                moveMonster(monsters[i], lastPositions[i]);
+            }
         }
     }
 
@@ -358,31 +311,14 @@ public class MainCharacterController : Person
         {
             index = 0;
         }
-        if(monster1 != null)
+        for(int i = 0; i< 6; i++)
         {
-            monster1.gameObject.GetComponent<Monster>().setSprite(index, direction);
+            if(monsters[i].gameObject.GetComponent<Monster>().monsterType == null)
+            {
+                return;
+            }
+            monsters[i].gameObject.GetComponent<Monster>().setSprite(index, direction);
         }
-        if (monster2 != null)
-        {
-            monster2.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-        if (monster3 != null)
-        {
-            monster3.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-        if (monster4 != null)
-        {
-            monster4.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-        if (monster5 != null)
-        {
-            monster5.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-        if (monster6 != null)
-        {
-            monster6.gameObject.GetComponent<Monster>().setSprite(index, direction);
-        }
-
     }
 
 
@@ -393,17 +329,18 @@ public class MainCharacterController : Person
         {
             GameState.isFrozen = false;
             Vector3 startScale = transform.localScale;
-            characterScalex = 3.5f;
+            float characterScaleBase = 3.5f;
 
-            startScale.x = characterScalex;
-            startScale.y = characterScalex;
-            this.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1f / (float)characterScalex, 1f / (float)characterScalex);
+            startScale.x = characterScaleBase;
+            startScale.y = characterScaleBase;
+            this.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1f / (float)characterScaleBase, 1f / (float)characterScaleBase);
             transform.localScale = startScale;
             if (!sceneName.Contains("Menu"))
             {
                 position = GameState.playerPositionBySceneName[sceneName];
                 transform.position = position;
-                monster1.gameObject.transform.position = position;
+                initLastPositions(position);
+                initPositions();
             }
         }
         travelDistance = 0;

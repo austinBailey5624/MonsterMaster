@@ -9,6 +9,7 @@ using static EDirection;
 */
 public class HairStyleRight : CharacterCustomizeButton
 {
+    //TODO: Simplify with a List
     public AnimationSet hairBaldingSet;
 
     public AnimationSet hairCroppedSet;
@@ -31,17 +32,17 @@ public class HairStyleRight : CharacterCustomizeButton
         }
         else if (submit == 0 && keydown == true)
         {
-            if (mainCharacter.hairStyleSet.Equals(tonsureSet))
+            if (mainCharacter.animationSets[(int)EBodyPart.HairStyle].Equals(tonsureSet))
             {
-                mainCharacter.hairStyleSet = hairCroppedSet;
+                mainCharacter.animationSets[(int)EBodyPart.HairStyle] = hairCroppedSet;
             }
-            else if (mainCharacter.hairStyleSet.Equals(hairBaldingSet))
+            else if (mainCharacter.animationSets[(int)EBodyPart.HairStyle].Equals(hairBaldingSet))
             {
-                mainCharacter.hairStyleSet = tonsureSet;
+                mainCharacter.animationSets[(int)EBodyPart.HairStyle] = tonsureSet;
             }
-            else if (mainCharacter.hairStyleSet.Equals(hairCroppedSet))
+            else if (mainCharacter.animationSets[(int)EBodyPart.HairStyle].Equals(hairCroppedSet))
             {
-                mainCharacter.hairStyleSet = hairBaldingSet;
+                mainCharacter.animationSets[(int)EBodyPart.HairStyle] = hairBaldingSet;
             }
             mainCharacter.setSprite(0, EDirection.Down);
             keydown = false;

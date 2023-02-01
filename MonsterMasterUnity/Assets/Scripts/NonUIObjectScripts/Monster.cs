@@ -10,6 +10,7 @@ public class Monster : MonoBehaviour, ITraversalActor
 
     public void setSprite(int spriteIndex, EDirection direction)
     {
+        bool facingLeft = false;
         if(monsterType == null)
         {
             return;
@@ -23,7 +24,15 @@ public class Monster : MonoBehaviour, ITraversalActor
                 setRightSprite(spriteIndex);
                 break;
             case EDirection.Left:
-                setLeftSprite(spriteIndex);
+                if (monsterType.leftSprites.Count == 0)
+                {
+                    setRightSprite(spriteIndex);
+                    facingLeft = true;
+                }
+                else
+                {
+                    setLeftSprite(spriteIndex);
+                }
                 break;
             case EDirection.Down:
                 setDownSprite(spriteIndex);
@@ -32,6 +41,27 @@ public class Monster : MonoBehaviour, ITraversalActor
                 setDownSprite(spriteIndex);
                 break;
         }
+        flipXScale(facingLeft);
+    }
+
+    private void flipXScale(bool facingLeft)
+    {
+        Vector3 characterScale = this.transform.localScale;
+        if (facingLeft)
+        {
+            if (characterScale.x > 0)
+            {
+               characterScale.x *= -1;
+            }
+        }
+        else //facing Right
+        {
+            if (characterScale.x < 0)
+            {
+                characterScale.x *= -1;
+            }
+        }
+        this.transform.localScale = characterScale;
     }
 
     private void setUpSprite(int spriteIndex)
