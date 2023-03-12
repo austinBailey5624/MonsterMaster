@@ -25,3 +25,4 @@ git status
 git add .
 ./sc.sh "First Part of Name Character Menu"
 git push origin main
+git log
