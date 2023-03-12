@@ -167,6 +167,7 @@ public class Traits : MonoBehaviour, IDescribedObject
         result += ageTraitToString();
         result += underwaterToString();
         result += flightTraversalToString();
+        result += lightProductionToString();
         return result;
     }
 
@@ -341,6 +342,19 @@ public class Traits : MonoBehaviour, IDescribedObject
         }
         type += traitValueToInt(flightTraversal) + ", ";
         return type;
+    }
+
+    private string lightProductionToString()
+    {
+        if(lightProduction == 0)
+        {
+            return "";
+        }
+        if(lightProduction > 0)
+        {
+            return "Light Generating " + traitValueToInt(lightProduction) + ", ";
+        }
+        return "Light Consuming " + -traitValueToInt(lightProduction) + ", ";
     }
 
     private string physicalTraitToString()

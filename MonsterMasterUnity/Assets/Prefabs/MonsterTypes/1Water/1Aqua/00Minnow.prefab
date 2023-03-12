@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: -533443118, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
+  defaultSprite: {fileID: 196713783, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
   name: Minnow
   description: A small fish with bright blue eyes, they are happiest in water. However
     they are magical and can follow their masters by floating in air with limited

@@ -98,6 +98,21 @@ public class BestiaryMonsterTypeButton : DynamicButtonSystemNode
             maxNumSprites = spritesToDisplay.Count;
             monsterSprite.gameObject.GetComponent<SpriteRenderer>().sprite =
                 monsterType.getDefaultSprite();
+            if(monsterType.getDefaultSprite().rect.width == 16)
+            {
+                Vector3 scale = new Vector3(8, 8, 1);
+                monsterSprite.gameObject.GetComponent<SpriteRenderer>().transform.localScale = scale;
+            }
+            else if(monsterType.getDefaultSprite().rect.width == 32)
+            {
+                Vector3 scale = new Vector3(16, 16, 1);
+                monsterSprite.gameObject.GetComponent<SpriteRenderer>().transform.localScale = scale;
+            }
+            else if (monsterType.getDefaultSprite().rect.width == 64)
+            {
+                Vector3 scale = new Vector3(16, 16, 1);
+                monsterSprite.gameObject.GetComponent<SpriteRenderer>().transform.localScale = scale;
+            }
             unselectedDisplay();
         }
     }
