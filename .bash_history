@@ -26,3 +26,27 @@ git add .
 ./sc.sh "First Part of Name Character Menu"
 git push origin main
 git log
+git status
+git add .
+git status
+sc.sh "Incorporate Lumin, small bug fixes"
+git push origin March2023
+git checkout main
+git pull origin main
+git checkout -b March2023
+git status
+dir
+./sc.sh "Add Sprites from Mattie into assets"
+git add .
+./sc.sh "Add Sprites from Mattie into assets"
+git status
+git push origin March2023 
+git status
+git add .
+git status
+sc.sh "integrate Bulbapup specialized sprites from Mattie Lyall"
+git push origin March2023 
+git status
+git add .
+sc.sh "Integrate Flapper sprites"
+git push origin March2023 

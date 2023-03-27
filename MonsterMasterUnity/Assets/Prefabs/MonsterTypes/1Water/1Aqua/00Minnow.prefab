@@ -84,7 +84,18 @@ MonoBehaviour:
   - {fileID: 1471128876, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
   - {fileID: -891313462, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
   - {fileID: -614467497, guid: 6e456f294ca87b04f813c34f28f21eab, type: 3}
-  attackSprites: []
+  attackSprites:
+  - {fileID: 1507745869, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: 134495273, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: -1845633560, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: 80196199, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: 511740626, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: -1879126365, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: 2136640617, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: -102326872, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: -2095739089, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: 643176334, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
+  - {fileID: -448120751, guid: d9971efe7c945c0459d24d02cc627f46, type: 3}
   onHitSprites:
   - {fileID: 451433700, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
   - {fileID: -1391557531, guid: 998805493dd53b3488a9c62e7b54e287, type: 3}
