@@ -11,7 +11,7 @@ using UnityEngine;
  * See: https://github.com/austinBailey5624/MonsterMaster/wiki/FeatureIdea:Traits
  * 
  * 
- * Copyright 2022 Austin Bailey, All Rights Reserved
+ * Copyright 2022 - 2023 Austin Bailey, All Rights Reserved
  */
 public class Traits : MonoBehaviour, IDescribedObject
 {
@@ -139,9 +139,295 @@ public class Traits : MonoBehaviour, IDescribedObject
 
     public static Traits makeChildTraits(Traits fatherTraits, Traits motherTraits, Traits newMonsterTypeTraits, int newGenerationValue)
     {
-        //TODO flesh out including difficulty
+        Traits result = newMonsterTypeTraits;
         return fatherTraits;
     }
+
+    private static ETraitValue InheritedTraits(ETraitValue father, ETraitValue mother, int generationValue)
+    {
+        if(generationValue == 2)
+        {
+            return gen2InheritedTraits(father, mother);
+        }
+        if(generationValue == 3)
+        {
+            return gen3InheritedTraits(father, mother);
+        }
+    }
+
+    private static ETraitValue gen2InheritedTraits(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue result;
+        if (father == mother)
+        {
+            result = father;
+        }
+        //case where the value is opposed
+        if( (father > 0 && mother < 0) || (father < 0 && mother > 0) )
+        {
+            result = father + mother;
+        }
+        if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
+        {
+            if (father > mother)
+            {
+                result = gen2InheritedTraitsHelper(father, mother);
+            }
+            else
+            {
+                result = gen2InheritedTraitsHelper(mother, father);
+            }
+        }
+        else //at least one is negative, if only one is negative, the other is zero, we're going down
+        {
+            if ( father < mother )
+            {
+                result = gen2InheritedTraitsHelperNegative(father, mother);
+            }
+            else
+            {
+                result = gen2InheritedTraitsHelperNegative(mother, father);
+            }
+        }
+        return result;
+    }
+
+    private static ETraitValue gen2InheritedTraitsHelper(ETraitValue higher, ETraitValue lower)
+    {
+        ETraitValue result;
+        if (lower == 0)
+        {
+            if (higher - 2 > 0)
+            {
+                result = higher - 2;
+            }
+            else
+            {
+                result = ETraitValue.Neutral;
+            }
+        }
+        else
+        {
+            if (higher > 3)
+            {
+                result = higher - 2;
+            }
+            else
+            {
+                result = higher - 1;
+            }
+            if(lower > result)
+            {
+                result = lower;
+            }
+        }
+        return result;
+    }
+
+    private static ETraitValue gen2InheritedTraitsHelperNegative(ETraitValue biggerNegative, ETraitValue lesserNegative)
+    {
+        ETraitValue result;
+        if(lesserNegative == 0)
+        {
+            if(biggerNegative + 2 < 0)
+            {
+                result = biggerNegative + 2;
+            }
+            else
+            {
+                result = 0;
+            }
+        }
+        else
+        {
+            if(biggerNegative < -3)
+            {
+                result = biggerNegative + 2;
+            }
+            else
+            {
+                result = biggerNegative + 1;
+            }
+            if(lesserNegative < result)
+            {
+                result = lesserNegative;
+            }
+        }
+        return result;
+    }
+
+    private static ETraitValue gen3InheritedTraits(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue result;
+        if(father == mother)
+        {
+            if(father == 0)
+            {
+                return 0;
+            }
+            result = father + 1;
+            if(result > 5)
+            {
+                result = 5;
+            }
+            return result;
+        }
+        //case where the value is opposed
+        if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
+        {
+            result = father + mother;
+        }
+        if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
+        {
+            if (father > mother)
+            {
+                result = gen3InheritedTraitsHelper(father, mother);
+            }
+            else
+            {
+                result = gen3InheritedTraitsHelper(mother, father);
+            }
+        }
+        else //at least one is negative, if only one is negative, the other is zero, we're going down
+        {
+            if (father < mother)
+            {
+                result = gen3InheritedTraitsHelperNegative(father, mother);
+            }
+            else
+            {
+                result = gen3InheritedTraitsHelperNegative(mother, father);
+            }
+        }
+        return result;
+    }
+
+    public static ETraitValue gen3InheritedTraitsHelper(ETraitValue higher, ETraitValue lower)
+    {
+        ETraitValue result;
+        if (lower == 0)
+        {
+            if (higher > 3)
+            {
+                result = higher - 2;
+            }
+            else
+            {
+                result = higher - 1;
+            }
+        }
+        else
+        {
+            result = higher - 1;
+        }
+        return result;
+    }
+
+    private static ETraitValue gen3InheritedTraitsHelperNegative(ETraitValue biggerNegative, ETraitValue lesserNegative)
+    {
+        ETraitValue result;
+        if (lesserNegative == 0)
+        {
+            if (biggerNegative < -3)
+            {
+                result = biggerNegative + 2;
+            }
+            else
+            {
+                result = biggerNegative + 1;
+            }
+        }
+        else
+        {
+            result = biggerNegative + 1;
+        }
+        return result;
+    }
+
+    private static ETraitValue gen4InheritedTraits(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue result;
+        if (father == mother)
+        {
+            if (father == 0)
+            {
+                return 0;
+            }
+            result = father + 1;
+            if (result > 5)
+            {
+                result = 5;
+            }
+            return result;
+        }
+        //case where the value is opposed
+        if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
+        {
+            result = father + mother;
+            if(result > 0)
+            {
+                result++;
+            }
+            else if(result < 0)
+            {
+                result--;
+            }
+        }
+        if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
+        {
+            result = gen4InheritedTraitsHelper(father, mother);
+        }
+        else //at least one is negative, if only one is negative, the other is zero, we're going down
+        {
+            result = gen4InheritedTraitsHelperNegative(father, mother);
+        }
+        return result;
+    }
+
+    private static ETraitValue gen4InheritedTraitsHelper(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue higher;
+        ETraitValue lower;
+        if(father > mother)
+        {
+            higher = father;
+            lower = mother;
+        }
+        else
+        {
+            higher = mother;
+            lower = father;
+        }
+
+        if(lower == 0 || higher > 3)
+        {
+            return higher - 1;
+        }
+        return higher;
+    }
+
+    private static ETraitValue gen4InheritedTraitsHelperNegative(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue biggerNegative;
+        ETraitValue lesserNegative;
+        if(father > mother)
+        {
+            lesserNegative = father;
+            biggerNegative = mother;
+        }
+        else
+        {
+            lesserNegative = mother;
+            biggerNegative = father;
+        }
+
+        if(lesserNegative == 0 || biggerNegative < -3)
+        {
+            return biggerNegative + 1;
+        }
+        return  biggerNegative;
+    }
+
 
     public static Traits evolveTraits(Traits currentTraits, Traits evolutionTraits)
     {
