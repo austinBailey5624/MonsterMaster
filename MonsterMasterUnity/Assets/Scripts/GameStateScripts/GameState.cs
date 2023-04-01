@@ -9,7 +9,7 @@ using static EAffinity;
 * Save Slot should be saved here (to be loaded and unloaded via JSON storage). This is used to 
 * store variables and information between scenes. Yes, its a bit of a God class but I haven't come up 
 * with a better idea yet.
-* Copyright 2022 Austin Bailey All Rights Reserved
+* Copyright 2022-2023 Austin Bailey All Rights Reserved
 */
 public class GameState : MonoBehaviour
 {
@@ -36,6 +36,8 @@ public class GameState : MonoBehaviour
     public static DifficultyState difficultyState;
 
     public static DesignColorsController designColorsController;
+
+    public static EBackgroundType currentBattleBackground = EBackgroundType.Forest;
 
 
     private void Awake()

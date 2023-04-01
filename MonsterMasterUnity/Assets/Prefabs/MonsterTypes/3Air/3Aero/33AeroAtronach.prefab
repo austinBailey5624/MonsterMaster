@@ -50,7 +50,8 @@ MonoBehaviour:
   description: ' Lightning often surrounds the Air Atronach whenever it is angry.
     It is surrounded by six elementals, three of which are aero, three of which determine
     the other types of spells it can cast'
-  secondaryElement: {fileID: 0}
+  secondaryElement: {fileID: 1648053196639599297, guid: 3d70c069bda0a1947bb3d6decfe9e7db,
+    type: 3}
   physicalEvolution: {fileID: 0}
   balancedEvolution: {fileID: 0}
   magicalEvolution: {fileID: 0}
