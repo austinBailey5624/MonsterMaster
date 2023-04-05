@@ -1,3 +1,4 @@
+git add .
 DAYOFWEEK=$(date +%A)
 MONTH=$(date +%B)
 DAYOFMONTH=$(date +%d)

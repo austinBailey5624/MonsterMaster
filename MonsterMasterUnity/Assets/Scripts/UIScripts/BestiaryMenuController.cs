@@ -58,5 +58,24 @@ public class BestiaryMenuController : MonoBehaviour
         unchangingText.transform.GetChild(12).gameObject.GetComponent<TMP_Text>().color = yellowColors.textColor;
         unchangingText.transform.GetChild(13).gameObject.GetComponent<TMP_Text>().color = lightColors.textColor;
         unchangingText.transform.GetChild(14).gameObject.GetComponent<TMP_Text>().color = darkColors.textColor;
+        GameObject ElementSymbols = this.transform.GetChild(7).gameObject;
+        for(int i = 0; i < 6; i++)
+        {
+            assignSymbols(ElementSymbols.transform.GetChild(i).gameObject);
+        }
+    }
+
+    void assignSymbols(GameObject primaryList)
+    {
+        for(int i = 0; i < 6; i++)
+        {
+            assignSymbol(primaryList.transform.GetChild(i).gameObject);
+        }
+    }
+
+    void assignSymbol(GameObject symbol)
+    {
+        SecondaryElement element = symbol.gameObject.GetComponent<BestiarySubelementButton>().secondaryElement;
+        symbol.gameObject.GetComponent<SpriteRenderer>().sprite = element.defaultSprite;
     }
 }

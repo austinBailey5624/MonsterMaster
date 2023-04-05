@@ -50,3 +50,37 @@ git status
 git add .
 sc.sh "Integrate Flapper sprites"
 git push origin March2023 
+git status
+git add .
+./sc.sh "Upload new Assets from camy artworks and reorganize PeopleConversationTags"
+git push origin March2023
+git status
+git add .
+./sc.sh "Update double primaries infant gifs for wiki"
+git push origin March2023
+git status
+git diff
+git add .
+git status
+./sc.sh "Work On Trait combinations"
+git push origin March2023
+git status
+git stash 
+git status
+git checkout main
+git pull origin main
+git branch
+git branch -D April2023 
+git branch -D December2022 
+git branch -D January2023 
+git branch -D March2023 
+git branch -D NovemberDecember2022 
+git branch -D oldflip 
+git branch
+git checkout -b April2023
+git status
+git stash pop
+git status
+git add .
+./sc.sh "fixed some coding errors"
+git push origin April2023

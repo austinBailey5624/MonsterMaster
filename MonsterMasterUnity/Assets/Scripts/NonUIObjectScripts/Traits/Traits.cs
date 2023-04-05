@@ -139,12 +139,140 @@ public class Traits : MonoBehaviour, IDescribedObject
 
     public static Traits makeChildTraits(Traits fatherTraits, Traits motherTraits, Traits newMonsterTypeTraits, int newGenerationValue)
     {
+        //Set all traits to child traits, we won't change Solidity, Age and most Traversal Traits (Except Light Emitting and Flying)
         Traits result = newMonsterTypeTraits;
-        return fatherTraits;
+
+        //Handle Traversal Traits that can be 'upgraded' by parents traits
+        ETraitValue parentFlightTraversal = inheritedTraits(fatherTraits.flightTraversal, motherTraits.flightTraversal, newGenerationValue);
+        if((int)result.flightTraversal < (int)parentFlightTraversal)
+        {
+            result.flightTraversal = parentFlightTraversal;
+        }
+
+        ETraitValue parentLightProduction = inheritedTraits(fatherTraits.lightProduction, motherTraits.lightProduction, newGenerationValue);
+        if((int)result.lightProduction > 0 && (int)result.lightProduction < (int)parentLightProduction)
+        {//parent light production is higher, and we have a positive value, so we upgrade to the parents value
+            result.lightProduction = parentLightProduction;
+        }
+        if((int)result.lightProduction < 0 && (int)result.lightProduction > (int)parentLightProduction)
+        {//parent light production is lower, and we have a negative value, so we upgrade to the parents value
+            result.lightProduction = parentLightProduction;
+        }
+
+        //Handle Evolutionary Traits
+        result.physicalTraitValue = max(result.physicalTraitValue, inheritedTraits(fatherTraits.physicalTraitValue, motherTraits.physicalTraitValue, newGenerationValue));
+        result.balancedTraitValue = max(result.balancedTraitValue, inheritedTraits(fatherTraits.balancedTraitValue, motherTraits.balancedTraitValue, newGenerationValue));
+        result.magicalTraitValue  = max(result.magicalTraitValue,  inheritedTraits(fatherTraits.magicalTraitValue,  motherTraits.magicalTraitValue,  newGenerationValue));
+
+        //Handle Inherited Traots
+        //Start with Immolated, Hot and Fish because they have special logic
+        result.immolatedTraitValue = max(result.immolatedTraitValue, inheritedTraits(fatherTraits.immolatedTraitValue, motherTraits.immolatedTraitValue, newGenerationValue));
+        result.hotTraitValue = valueFromSum((int)result.hotTraitValue + (int)inheritedTraits(fatherTraits.hotTraitValue, motherTraits.hotTraitValue, newGenerationValue));
+        result.fishTraitValue = max(result.fishTraitValue, inheritedTraits(fatherTraits.fishTraitValue, motherTraits.fishTraitValue, newGenerationValue));
+        if ((int)result.immolatedTraitValue > 0)//if the baby is born immolated, it must remain immolated
+        {
+            if((int)result.hotTraitValue < 0)//if we are cold- eliminate that
+            {
+                result.hotTraitValue = (ETraitValue)0;
+            }
+            if((int)result.lightProduction <=0)
+            {
+                result.lightProduction = (ETraitValue)1;
+            }
+            result.fishTraitValue = 0;//we cant be a fish
+            result.underwaterTraversal = EUnderwaterTraversalTrait.Unsubmergible;
+        }
+        else if((int)result.fishTraitValue > 0)//if they are born a fish
+        {
+            result.immolatedTraitValue = (ETraitValue)0;
+            result.underwaterTraversal = EUnderwaterTraversalTrait.WaterBreathing;
+            
+
+        }
+        else if((int)result.hotTraitValue < 0)//they are born cold
+        {
+            //if we are born cold and we are not born immolated, we can't be immolated
+            result.immolatedTraitValue = (ETraitValue)0;
+
+        }
+        //If we're not cold, immolated or a fish we leave everything to their default values
+
+        result.avengerTraitValue = max(result.avengerTraitValue, inheritedTraits(fatherTraits.avengerTraitValue, motherTraits.avengerTraitValue, newGenerationValue));
+        result.beachDwellingTraitValue = max(result.beachDwellingTraitValue, inheritedTraits(fatherTraits.beachDwellingTraitValue, motherTraits.beachDwellingTraitValue, newGenerationValue));
+        result.cloudyTraitValue = max(result.cloudyTraitValue, inheritedTraits(fatherTraits.cloudyTraitValue, motherTraits.cloudyTraitValue, newGenerationValue));
+        result.connectionTraitValue = max(result.connectionTraitValue, inheritedTraits(fatherTraits.connectionTraitValue, motherTraits.connectionTraitValue, newGenerationValue));
+        result.dealtInKindTraitValue = max(result.dealtInKindTraitValue, inheritedTraits(fatherTraits.dealtInKindTraitValue, motherTraits.dealtInKindTraitValue, newGenerationValue));
+        result.deathConsumingTraitValue = max(result.deathConsumingTraitValue, inheritedTraits(fatherTraits.deathConsumingTraitValue, motherTraits.deathConsumingTraitValue, newGenerationValue));
+        result.depthsDwellingTraitValue = max(result.depthsDwellingTraitValue, inheritedTraits(fatherTraits.depthsDwellingTraitValue, motherTraits.depthsDwellingTraitValue, newGenerationValue));
+        result.diurnalTraitValue = max(result.diurnalTraitValue, inheritedTraits(fatherTraits.diurnalTraitValue, motherTraits.diurnalTraitValue, newGenerationValue));
+        result.elementalStoneTraitValue = max(result.elementalStoneTraitValue, inheritedTraits(fatherTraits.elementalStoneTraitValue, motherTraits.elementalStoneTraitValue, newGenerationValue));
+        result.flockTraitValue = max(result.flockTraitValue, inheritedTraits(fatherTraits.flockTraitValue, motherTraits.flockTraitValue, newGenerationValue));
+        result.forestMagicTraitValue = max(result.forestMagicTraitValue, inheritedTraits(fatherTraits.forestMagicTraitValue, motherTraits.forestMagicTraitValue, newGenerationValue));
+        result.guiltTraitValue = max(result.guiltTraitValue, inheritedTraits(fatherTraits.guiltTraitValue, motherTraits.guiltTraitValue, newGenerationValue));
+        result.hateHypocricyTrateValue = max(result.hateHypocricyTrateValue, inheritedTraits(fatherTraits.hateHypocricyTrateValue, motherTraits.hateHypocricyTrateValue, newGenerationValue));
+        result.healerTraitValue = max(result.healerTraitValue, inheritedTraits(fatherTraits.healerTraitValue, motherTraits.healerTraitValue, newGenerationValue));
+        result.isolationTraitValue = max(result.isolationTraitValue, inheritedTraits(fatherTraits.isolationTraitValue, motherTraits.isolationTraitValue, newGenerationValue));
+        result.naturalTraitValue = max(result.naturalTraitValue, inheritedTraits(fatherTraits.naturalTraitValue, motherTraits.naturalTraitValue, newGenerationValue));
+        result.nocturnalTraitValue = max(result.nocturnalTraitValue, inheritedTraits(fatherTraits.nocturnalTraitValue, motherTraits.nocturnalTraitValue, newGenerationValue));
+        result.protectorTraitValue = max(result.protectorTraitValue, inheritedTraits(fatherTraits.protectorTraitValue, motherTraits.protectorTraitValue, newGenerationValue));
+        result.rainbowTraitValue = max(result.rainbowTraitValue, inheritedTraits(fatherTraits.rainbowTraitValue, motherTraits.rainbowTraitValue, newGenerationValue));
+        result.rebirthTraitValue = max(result.rebirthTraitValue, inheritedTraits(fatherTraits.rebirthTraitValue, motherTraits.rebirthTraitValue, newGenerationValue));
+        result.regenShieldTraitValue = max(result.regenShieldTraitValue, inheritedTraits(fatherTraits.regenShieldTraitValue, motherTraits.regenShieldTraitValue, newGenerationValue));
+        result.rootedTraitValue = max(result.rootedTraitValue, inheritedTraits(fatherTraits.rootedTraitValue, motherTraits.rootedTraitValue, newGenerationValue));
+        result.sandyTraitValue = max(result.sandyTraitValue, inheritedTraits(fatherTraits.sandyTraitValue, motherTraits.sandyTraitValue, newGenerationValue));
+        result.steamyTraitValue = max(result.steamyTraitValue, inheritedTraits(fatherTraits.steamyTraitValue, motherTraits.steamyTraitValue, newGenerationValue));
+        result.toxicTraitValue = max(result.toxicTraitValue, inheritedTraits(fatherTraits.toxicTraitValue, motherTraits.toxicTraitValue, newGenerationValue));
+        result.vampireTraitValue = max(result.vampireTraitValue, inheritedTraits(fatherTraits.vampireTraitValue, motherTraits.vampireTraitValue, newGenerationValue));
+        result.wetTraitValue = max(result.wetTraitValue, inheritedTraits(fatherTraits.wetTraitValue, motherTraits.wetTraitValue, newGenerationValue));
+
+
+        //Elemental Magic Traits
+        result.pyromagiaTraitValue = max(result.pyromagiaTraitValue, inheritedTraits(fatherTraits.pyromagiaTraitValue, motherTraits.pyromagiaTraitValue, newGenerationValue));
+        result.aquamagiaTraitValue = max(result.aquamagiaTraitValue, inheritedTraits(fatherTraits.aquamagiaTraitValue, motherTraits.aquamagiaTraitValue, newGenerationValue));
+        result.terramagiaTraitValue = max(result.terramagiaTraitValue, inheritedTraits(fatherTraits.terramagiaTraitValue, motherTraits.terramagiaTraitValue, newGenerationValue));
+        result.aeroMagiaTraitValue = max(result.aeroMagiaTraitValue, inheritedTraits(fatherTraits.aeroMagiaTraitValue, motherTraits.aeroMagiaTraitValue, newGenerationValue));
+        result.luxorMagiaTraitValue = max(result.luxorMagiaTraitValue, inheritedTraits(fatherTraits.luxorMagiaTraitValue, motherTraits.luxorMagiaTraitValue, newGenerationValue));
+        result.umbralMagiaTraitValue = max(result.umbralMagiaTraitValue, inheritedTraits(fatherTraits.umbralMagiaTraitValue, motherTraits.umbralMagiaTraitValue, newGenerationValue));
+
+        //Stat Traits
+        result.calmTraitValue = valueFromSum((int)result.calmTraitValue + (int)inheritedTraits(fatherTraits.calmTraitValue, motherTraits.calmTraitValue, newGenerationValue));
+        result.strongTraitValue = valueFromSum((int)result.strongTraitValue + (int)inheritedTraits(fatherTraits.strongTraitValue, motherTraits.strongTraitValue, newGenerationValue));
+        result.wiseTraitValue = valueFromSum((int)result.wiseTraitValue + (int)inheritedTraits(fatherTraits.wiseTraitValue, motherTraits.wiseTraitValue, newGenerationValue));
+        result.fastTraitValue = valueFromSum((int)result.fastTraitValue + (int)inheritedTraits(fatherTraits.fastTraitValue, motherTraits.fastTraitValue, newGenerationValue));
+        result.hardyTraitValue = valueFromSum((int)result.hardyTraitValue + (int)inheritedTraits(fatherTraits.hardyTraitValue, motherTraits.hardyTraitValue, newGenerationValue));
+        result.richTraitValue = valueFromSum((int)result.richTraitValue + (int)inheritedTraits(fatherTraits.richTraitValue, motherTraits.richTraitValue, newGenerationValue));
+
+        return result;
     }
 
-    private static ETraitValue InheritedTraits(ETraitValue father, ETraitValue mother, int generationValue)
+    private static ETraitValue valueFromSum(int sum)
     {
+        if(sum > 5)
+        {
+            return (ETraitValue)5;
+        }
+        if(sum < -5)
+        {
+            return ETraitValue.Unaligned5;
+        }
+        return (ETraitValue)sum;
+    }
+
+    private static ETraitValue max(ETraitValue child, ETraitValue parents)
+    {
+        if((int)child > (int)parents)
+        {
+            return child;
+        }
+        return parents;
+    }
+
+    private static ETraitValue inheritedTraits(ETraitValue father, ETraitValue mother, int generationValue)
+    {
+        if(generationValue < 2)
+        {
+            throw new System.InvalidOperationException("Attemtpted to combine Traits wtiha generation Value less than 2");
+        }
         if(generationValue == 2)
         {
             return gen2InheritedTraits(father, mother);
@@ -153,6 +281,15 @@ public class Traits : MonoBehaviour, IDescribedObject
         {
             return gen3InheritedTraits(father, mother);
         }
+        if(generationValue == 4)
+        {
+            return gen4InheritedTraits(father, mother);
+        }
+        if(generationValue == 5)
+        {
+            return gen5InheritedTraits(father, mother);
+        }
+        return gen6PlusInheritedTraits(father, mother);
     }
 
     private static ETraitValue gen2InheritedTraits(ETraitValue father, ETraitValue mother)
@@ -163,11 +300,12 @@ public class Traits : MonoBehaviour, IDescribedObject
             result = father;
         }
         //case where the value is opposed
-        if( (father > 0 && mother < 0) || (father < 0 && mother > 0) )
+        if( ((int)father > 0 && (int)mother < 0) || ((int)father < 0 && (int)mother > 0) )
         {
-            result = father + mother;
+            int sum = (int)father + (int)mother;
+            result = (ETraitValue) sum;
         }
-        if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
+        if ((int)father >= 0 && (int)mother >= 0)//both positive or zero, happy path, going up
         {
             if (father > mother)
             {
@@ -199,7 +337,8 @@ public class Traits : MonoBehaviour, IDescribedObject
         {
             if (higher - 2 > 0)
             {
-                result = higher - 2;
+                int sum = (int)higher - 2;
+                result = (ETraitValue)sum;
             }
             else
             {
@@ -208,13 +347,15 @@ public class Traits : MonoBehaviour, IDescribedObject
         }
         else
         {
-            if (higher > 3)
+            if ((int)higher > 3)
             {
-                result = higher - 2;
+                int sum = (int)higher - 2;
+                result = (ETraitValue)sum;
             }
             else
             {
-                result = higher - 1;
+                int sum = (int)higher - 1;
+                result = (ETraitValue)sum;
             }
             if(lower > result)
             {
@@ -227,11 +368,12 @@ public class Traits : MonoBehaviour, IDescribedObject
     private static ETraitValue gen2InheritedTraitsHelperNegative(ETraitValue biggerNegative, ETraitValue lesserNegative)
     {
         ETraitValue result;
-        if(lesserNegative == 0)
+        if((int)lesserNegative == 0)
         {
-            if(biggerNegative + 2 < 0)
+            if((int)biggerNegative + 2 < 0)
             {
-                result = biggerNegative + 2;
+                int sum = (int)biggerNegative + 2;
+                result = (ETraitValue)sum;
             }
             else
             {
@@ -240,17 +382,20 @@ public class Traits : MonoBehaviour, IDescribedObject
         }
         else
         {
-            if(biggerNegative < -3)
+            if((int)biggerNegative < -3)
             {
-                result = biggerNegative + 2;
+                int sum = (int)biggerNegative + 2;
+                result = (ETraitValue)sum;
             }
             else
             {
-                result = biggerNegative + 1;
+                int sum = (int)biggerNegative + 1;
+                result = (ETraitValue)sum;
             }
-            if(lesserNegative < result)
+            if((int)lesserNegative < (int)result)
             {
-                result = lesserNegative;
+                int sum = (int)lesserNegative;
+                result = (ETraitValue)sum;
             }
         }
         return result;
@@ -259,89 +404,75 @@ public class Traits : MonoBehaviour, IDescribedObject
     private static ETraitValue gen3InheritedTraits(ETraitValue father, ETraitValue mother)
     {
         ETraitValue result;
+        int sum;
         if(father == mother)
         {
-            if(father == 0)
+            if((int)father == 0)
             {
                 return 0;
             }
-            result = father + 1;
-            if(result > 5)
+            sum = (int)father + 1;
+            result = (ETraitValue)sum;
+            if((int)result > 5)
             {
-                result = 5;
+                result = (ETraitValue)5;
             }
             return result;
         }
-        //case where the value is opposed
+        //case where the value is opposed (the values have opposite signs)
         if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
         {
-            result = father + mother;
+            sum = (int)father + (int)mother;
+            result = (ETraitValue)sum;
         }
         if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
         {
-            if (father > mother)
-            {
-                result = gen3InheritedTraitsHelper(father, mother);
-            }
-            else
-            {
-                result = gen3InheritedTraitsHelper(mother, father);
-            }
+            result = father > mother ? gen3InheritedTraitsHelper(father, mother) : gen3InheritedTraitsHelper(mother, father);
         }
         else //at least one is negative, if only one is negative, the other is zero, we're going down
         {
-            if (father < mother)
-            {
-                result = gen3InheritedTraitsHelperNegative(father, mother);
-            }
-            else
-            {
-                result = gen3InheritedTraitsHelperNegative(mother, father);
-            }
+            result = father < mother ? gen3InheritedTraitsHelperNegative(father, mother) : gen3InheritedTraitsHelperNegative(mother, father);
         }
         return result;
     }
 
     public static ETraitValue gen3InheritedTraitsHelper(ETraitValue higher, ETraitValue lower)
     {
-        ETraitValue result;
+        int sum;
         if (lower == 0)
         {
-            if (higher > 3)
+            if ((int)higher > 3)
             {
-                result = higher - 2;
+                sum = (int)higher - 2;
+                return (ETraitValue)sum;
             }
             else
             {
-                result = higher - 1;
+                sum = (int)higher - 1;
+                return (ETraitValue)sum;
             }
         }
-        else
-        {
-            result = higher - 1;
-        }
-        return result;
+        sum = (int)higher - 1;
+        return (ETraitValue)sum;
     }
 
     private static ETraitValue gen3InheritedTraitsHelperNegative(ETraitValue biggerNegative, ETraitValue lesserNegative)
     {
-        ETraitValue result;
-        if (lesserNegative == 0)
+        int sum;
+        if ((int)lesserNegative == 0)
         {
-            if (biggerNegative < -3)
+            if ((int)biggerNegative < -3)
             {
-                result = biggerNegative + 2;
+                sum = (int)biggerNegative + 2;
             }
             else
             {
-                result = biggerNegative + 1;
+                sum = (int)biggerNegative + 1;
             }
+            return (ETraitValue)sum;
         }
-        else
-        {
-            result = biggerNegative + 1;
-        }
-        return result;
+        sum = (int)biggerNegative + 1;
+        return (ETraitValue)sum;
     }
 
     private static ETraitValue gen4InheritedTraits(ETraitValue father, ETraitValue mother)
@@ -353,35 +484,35 @@ public class Traits : MonoBehaviour, IDescribedObject
             {
                 return 0;
             }
-            result = father + 1;
-            if (result > 5)
+            result = (ETraitValue)((int)father + 1);
+            if ((int)result > 5)
             {
-                result = 5;
+                result = (ETraitValue)5;
             }
             return result;
         }
         //case where the value is opposed
         if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
         {
-            result = father + mother;
-            if(result > 0)
+            result = (ETraitValue)(int)father + (int)mother;
+            if((int)result > 0 && (int)result < 5)
             {
                 result++;
             }
-            else if(result < 0)
+            else if((int)result < 0 && (int)result > -5)
             {
                 result--;
             }
+            return result;
         }
-        if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
+        else if ((int)father >= 0 && (int)mother >= 0)//both positive or zero, happy path, going up
         {
-            result = gen4InheritedTraitsHelper(father, mother);
+            return gen4InheritedTraitsHelper(father, mother);
         }
         else //at least one is negative, if only one is negative, the other is zero, we're going down
         {
-            result = gen4InheritedTraitsHelperNegative(father, mother);
+            return gen4InheritedTraitsHelperNegative(father, mother);
         }
-        return result;
     }
 
     private static ETraitValue gen4InheritedTraitsHelper(ETraitValue father, ETraitValue mother)
@@ -399,9 +530,9 @@ public class Traits : MonoBehaviour, IDescribedObject
             lower = father;
         }
 
-        if(lower == 0 || higher > 3)
+        if((int)lower == 0 || (int)higher > 3)
         {
-            return higher - 1;
+            return (ETraitValue)((int)higher - 1);
         }
         return higher;
     }
@@ -421,11 +552,133 @@ public class Traits : MonoBehaviour, IDescribedObject
             biggerNegative = father;
         }
 
-        if(lesserNegative == 0 || biggerNegative < -3)
+        if((int)lesserNegative == 0 || (int)biggerNegative < -3)
         {
-            return biggerNegative + 1;
+            return (ETraitValue)((int)biggerNegative + 1);
         }
         return  biggerNegative;
+    }
+
+    private static ETraitValue gen5InheritedTraits(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue result;
+        if (father == mother)
+        {
+            if (father == 0)
+            {
+                return 0;
+            }
+            result = (ETraitValue)((int)father + 1);
+            if ((int)result > 5)
+            {
+                result = (ETraitValue)5;
+            }
+            return result;
+        }
+        if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
+        {
+            result = (ETraitValue)(int)father + (int)mother;
+            if ((int)result > 0 && (int)result < 5)
+            {
+                result++;
+            }
+            else if ((int)result < 0 && (int)result > -5)
+            {
+                result--;
+            }
+            return result;
+        }
+        if((int)father >=0 && (int)mother >=0)
+        {
+            return gen5Helper(father, mother);
+        }
+        return gen5negHelper(father, mother);
+    }
+
+    private static ETraitValue gen5Helper(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue higher;
+        ETraitValue lower;
+        if (father > mother)
+        {
+            higher = father;
+            lower = mother;
+        }
+        else
+        {
+            higher = mother;
+            lower = father;
+        }
+
+        if(lower == 0 && (int)higher > 3)
+        {
+            return (ETraitValue)((int)higher - 1);
+        }
+        else
+        {
+            return higher;
+        }
+    }
+
+    private static ETraitValue gen5negHelper(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue biggerNegative;
+        ETraitValue lesserNegative;
+        if (father > mother)
+        {
+            lesserNegative = father;
+            biggerNegative = mother;
+        }
+        else
+        {
+            lesserNegative = mother;
+            biggerNegative = father;
+        }
+
+        if(lesserNegative == 0 && (int)biggerNegative < -3)
+        {
+            return (ETraitValue)((int)biggerNegative + 1);
+        }
+        else
+        {
+            return biggerNegative;
+        }
+    }
+
+    private static ETraitValue gen6PlusInheritedTraits(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue result;
+        if (father == mother)
+        {
+            if (father == 0)
+            {
+                return 0;
+            }
+            result = (ETraitValue)((int)father + 1);
+            if ((int)result > 5)
+            {
+                result = (ETraitValue)5;
+            }
+            return result;
+        }
+        if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
+        {
+            result = (ETraitValue)(int)father + (int)mother;
+            if ((int)result > 0 && (int)result < 5)
+            {
+                result++;
+            }
+            else if ((int)result < 0 && (int)result > -5)
+            {
+                result--;
+            }
+            return result;
+        }
+        if(father > mother)
+        {
+            return father;
+        }
+        return mother;
     }
 
 

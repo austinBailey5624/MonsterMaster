@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: -1902177823, guid: 302f07f7a375ee04595f434d12fe4aad, type: 3}
+  defaultSprite: {fileID: 1351719800, guid: 9edfbb6254063e94aaa8334f320252dc, type: 3}
   name: Umbress
   description: The umbress appears to bea small floating black flame, with two purple
     eyes. It consumes the light around it, and its eyes see deep into the soul. It
@@ -63,26 +63,114 @@ MonoBehaviour:
   previousEvolution: {fileID: 0}
   leftSpritesAreRightSpritesReversed: 1
   upSprites:
-  - {fileID: 458718429, guid: 654a38c796cf6e843a1e83c342c4c25d, type: 3}
-  - {fileID: 825038417, guid: 654a38c796cf6e843a1e83c342c4c25d, type: 3}
-  - {fileID: 524729299, guid: 654a38c796cf6e843a1e83c342c4c25d, type: 3}
-  - {fileID: -227959137, guid: 654a38c796cf6e843a1e83c342c4c25d, type: 3}
+  - {fileID: -1422936857, guid: c60ffc459cf8a614faa39bc604cd6bd8, type: 3}
+  - {fileID: -1678805446, guid: c60ffc459cf8a614faa39bc604cd6bd8, type: 3}
+  - {fileID: 279275941, guid: c60ffc459cf8a614faa39bc604cd6bd8, type: 3}
+  - {fileID: -1776439112, guid: c60ffc459cf8a614faa39bc604cd6bd8, type: 3}
   downSprites:
-  - {fileID: -1902177823, guid: 302f07f7a375ee04595f434d12fe4aad, type: 3}
-  - {fileID: 1258791797, guid: 302f07f7a375ee04595f434d12fe4aad, type: 3}
-  - {fileID: 1824497427, guid: 302f07f7a375ee04595f434d12fe4aad, type: 3}
-  - {fileID: -1676982447, guid: 302f07f7a375ee04595f434d12fe4aad, type: 3}
+  - {fileID: 1351719800, guid: 9edfbb6254063e94aaa8334f320252dc, type: 3}
+  - {fileID: -664648894, guid: 9edfbb6254063e94aaa8334f320252dc, type: 3}
+  - {fileID: -1334217804, guid: 9edfbb6254063e94aaa8334f320252dc, type: 3}
+  - {fileID: 368547492, guid: 9edfbb6254063e94aaa8334f320252dc, type: 3}
   rightSprites:
-  - {fileID: 762580400, guid: a1a810625b2d89241bfb70bcaf555c27, type: 3}
-  - {fileID: -1767878357, guid: a1a810625b2d89241bfb70bcaf555c27, type: 3}
-  - {fileID: -1283383175, guid: a1a810625b2d89241bfb70bcaf555c27, type: 3}
-  - {fileID: -1908397194, guid: a1a810625b2d89241bfb70bcaf555c27, type: 3}
-  leftSprites: []
-  attackSprites: []
-  onHitSprites: []
-  onDeathSprites: []
-  idleSprites: []
-  magicSprites: []
+  - {fileID: 1972296298, guid: 675b29e8fe17efa4994683acfc702769, type: 3}
+  - {fileID: -592521531, guid: 675b29e8fe17efa4994683acfc702769, type: 3}
+  - {fileID: -2101768904, guid: 675b29e8fe17efa4994683acfc702769, type: 3}
+  - {fileID: -427520669, guid: 675b29e8fe17efa4994683acfc702769, type: 3}
+  leftSprites:
+  - {fileID: 1828595169, guid: 1453a2dd1bccf6a43b83ab0fbd556aa8, type: 3}
+  - {fileID: 829217501, guid: 1453a2dd1bccf6a43b83ab0fbd556aa8, type: 3}
+  - {fileID: -268739605, guid: 1453a2dd1bccf6a43b83ab0fbd556aa8, type: 3}
+  - {fileID: 32995633, guid: 1453a2dd1bccf6a43b83ab0fbd556aa8, type: 3}
+  attackSprites:
+  - {fileID: 1779979500, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -705763340, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 1144273438, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 1106826773, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -1071455552, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -1025147462, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 1959843643, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 1800789742, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 1439278669, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -2115201464, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -2146016567, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 642849567, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -1713447288, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 1813566091, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 2064881317, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -1920613110, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -217858071, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -1321101995, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 985890368, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 302225539, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -1581080669, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -1064724936, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: 2021646853, guid: e2de097b73e676a46930085042119021, type: 3}
+  - {fileID: -1067627781, guid: e2de097b73e676a46930085042119021, type: 3}
+  onHitSprites:
+  - {fileID: -1176845598, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: -1767273286, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: 1558561304, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: -878751461, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: 1832567293, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: -899680487, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: 625552904, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: -2078216490, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: -1811136982, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: -816476245, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: 411032717, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  - {fileID: -1605992687, guid: 74c35c87751658f4588abd6d079ee89d, type: 3}
+  onDeathSprites:
+  - {fileID: 1155654150, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: 2023811776, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: 1429891994, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: 2049721385, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: -82830743, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: 1668981148, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: -1661560070, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: 1330421613, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: 1573122566, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: -1214840622, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: 1829819021, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  - {fileID: -1176341392, guid: 8b50335ea3c4d694dbbaa0e772bd4704, type: 3}
+  idleSprites:
+  - {fileID: 1187157527, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: 211261413, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: -472143757, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: -329165356, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: 1626592763, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: -1687342342, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: -1442258640, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: -485466956, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: 1451895153, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: -2017517735, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: 1682642462, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  - {fileID: -2063134053, guid: 09cf7d42e85a8c5438a5b9389e1f1798, type: 3}
+  magicSprites:
+  - {fileID: 1330949647, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -167773761, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 1559460860, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -1881890057, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 1685485770, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 1827081810, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 332489999, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 1598096799, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -640901731, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -1852405775, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 41659777, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -646333922, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 719680985, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 887593107, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -347103132, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 1563715289, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 1388297260, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -684163050, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -713808152, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -2142952746, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -2023549059, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -1144866500, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: 423491219, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
+  - {fileID: -1662969648, guid: b2a66ae6daa073a4fa7a2b609b66976b, type: 3}
   monsterTraits: {fileID: 4454563569259473472}
 --- !u!114 &4454563569259473472
 MonoBehaviour:
@@ -96,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2ea4a2266c14894c91c27f498c4e3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Umbress Traits
+  description: Default Traits for Umbress Monsters
   solidity: 4
   age: 0
   underwaterTraversal: 0

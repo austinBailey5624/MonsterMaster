@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 21300000, guid: 731f413b65f77cc45bf70dd63753c57d, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 391d00d0ef6cf1446a13f75ec1f46be5, type: 3}
   name: Pegasus
   description: Pegasus Elementals are best known as reformed earth monsters that
     now long to fly. Young pegasuses are born with tree-like, 'rooty' forward appendages
@@ -57,7 +57,5 @@ MonoBehaviour:
     type: 3}
   secondPrimaryElement: {fileID: 8796451921277490683, guid: b84b6650a8131924d976845a48522e37,
     type: 3}
-  defaultColor: {r: 0.4528302, g: 0.4528302, b: 0, a: 1}
-  highlightColor: {r: 0.508807, g: 0.6886792, b: 0, a: 1}
   babyMonster: {fileID: 343990033503695341, guid: c2d0b672c01269a4b988622385d8bb05,
     type: 3}
