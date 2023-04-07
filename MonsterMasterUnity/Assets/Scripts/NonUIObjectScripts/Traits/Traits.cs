@@ -268,89 +268,75 @@ public class Traits : MonoBehaviour, IDescribedObject
     private static ETraitValue gen3InheritedTraits(ETraitValue father, ETraitValue mother)
     {
         ETraitValue result;
+        int sum;
         if(father == mother)
         {
-            if(father == 0)
+            if((int)father == 0)
             {
                 return 0;
             }
-            result = father + 1;
-            if(result > 5)
+            sum = (int)father + 1;
+            result = (ETraitValue)sum;
+            if((int)result > 5)
             {
-                result = 5;
+                result = (ETraitValue)5;
             }
             return result;
         }
-        //case where the value is opposed
+        //case where the value is opposed (the values have opposite signs)
         if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
         {
-            result = father + mother;
+            sum = (int)father + (int)mother;
+            result = (ETraitValue)sum;
         }
         if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
         {
-            if (father > mother)
-            {
-                result = gen3InheritedTraitsHelper(father, mother);
-            }
-            else
-            {
-                result = gen3InheritedTraitsHelper(mother, father);
-            }
+            result = father > mother ? gen3InheritedTraitsHelper(father, mother) : gen3InheritedTraitsHelper(mother, father);
         }
         else //at least one is negative, if only one is negative, the other is zero, we're going down
         {
-            if (father < mother)
-            {
-                result = gen3InheritedTraitsHelperNegative(father, mother);
-            }
-            else
-            {
-                result = gen3InheritedTraitsHelperNegative(mother, father);
-            }
+            result = father < mother ? gen3InheritedTraitsHelperNegative(father, mother) : gen3InheritedTraitsHelperNegative(mother, father);
         }
         return result;
     }
 
     public static ETraitValue gen3InheritedTraitsHelper(ETraitValue higher, ETraitValue lower)
     {
-        ETraitValue result;
+        int sum;
         if (lower == 0)
         {
-            if (higher > 3)
+            if ((int)higher > 3)
             {
-                result = higher - 2;
+                sum = (int)higher - 2;
+                return (ETraitValue)sum;
             }
             else
             {
-                result = higher - 1;
+                sum = (int)higher - 1;
+                return (ETraitValue)sum;
             }
         }
-        else
-        {
-            result = higher - 1;
-        }
-        return result;
+        sum = (int)higher - 1;
+        return (ETraitValue)sum;
     }
 
     private static ETraitValue gen3InheritedTraitsHelperNegative(ETraitValue biggerNegative, ETraitValue lesserNegative)
     {
-        ETraitValue result;
-        if (lesserNegative == 0)
+        int sum;
+        if ((int)lesserNegative == 0)
         {
-            if (biggerNegative < -3)
+            if ((int)biggerNegative < -3)
             {
-                result = biggerNegative + 2;
+                sum = (int)biggerNegative + 2;
             }
             else
             {
-                result = biggerNegative + 1;
+                sum = (int)biggerNegative + 1;
             }
+            return (ETraitValue)sum;
         }
-        else
-        {
-            result = biggerNegative + 1;
-        }
-        return result;
+        sum = (int)biggerNegative + 1;
+        return (ETraitValue)sum;
     }
 
     private static ETraitValue gen4InheritedTraits(ETraitValue father, ETraitValue mother)
@@ -362,27 +348,27 @@ public class Traits : MonoBehaviour, IDescribedObject
             {
                 return 0;
             }
-            result = father + 1;
-            if (result > 5)
+            result = (ETraitValue)((int)father + 1);
+            if ((int)result > 5)
             {
-                result = 5;
+                result = (ETraitValue)5;
             }
             return result;
         }
         //case where the value is opposed
         if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
         {
-            result = father + mother;
-            if(result > 0)
+            result = (ETraitValue)(int)father + (int)mother;
+            if((int)result > 0)
             {
                 result++;
             }
-            else if(result < 0)
+            else if((int)result < 0)
             {
                 result--;
             }
         }
-        if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
+        if ((int)father >= 0 && (int)mother >= 0)//both positive or zero, happy path, going up
         {
             result = gen4InheritedTraitsHelper(father, mother);
         }
@@ -408,9 +394,9 @@ public class Traits : MonoBehaviour, IDescribedObject
             lower = father;
         }
 
-        if(lower == 0 || higher > 3)
+        if((int)lower == 0 || (int)higher > 3)
         {
-            return higher - 1;
+            return (ETraitValue)((int)higher - 1);
         }
         return higher;
     }
@@ -430,9 +416,9 @@ public class Traits : MonoBehaviour, IDescribedObject
             biggerNegative = father;
         }
 
-        if(lesserNegative == 0 || biggerNegative < -3)
+        if((int)lesserNegative == 0 || (int)biggerNegative < -3)
         {
-            return biggerNegative + 1;
+            return (ETraitValue)((int)biggerNegative + 1);
         }
         return  biggerNegative;
     }
