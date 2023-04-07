@@ -269,6 +269,10 @@ public class Traits : MonoBehaviour, IDescribedObject
 
     private static ETraitValue inheritedTraits(ETraitValue father, ETraitValue mother, int generationValue)
     {
+        if(generationValue < 2)
+        {
+            throw new System.InvalidOperationException("Attemtpted to combine Traits wtiha generation Value less than 2");
+        }
         if(generationValue == 2)
         {
             return gen2InheritedTraits(father, mother);
@@ -277,7 +281,15 @@ public class Traits : MonoBehaviour, IDescribedObject
         {
             return gen3InheritedTraits(father, mother);
         }
-        return father;//TODO Remove
+        if(generationValue == 4)
+        {
+            return gen4InheritedTraits(father, mother);
+        }
+        if(generationValue == 5)
+        {
+            return gen5InheritedTraits(father, mother);
+        }
+        return gen6PlusInheritedTraits(father, mother);
     }
 
     private static ETraitValue gen2InheritedTraits(ETraitValue father, ETraitValue mother)
@@ -483,24 +495,24 @@ public class Traits : MonoBehaviour, IDescribedObject
         if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
         {
             result = (ETraitValue)(int)father + (int)mother;
-            if((int)result > 0)
+            if((int)result > 0 && (int)result < 5)
             {
                 result++;
             }
-            else if((int)result < 0)
+            else if((int)result < 0 && (int)result > -5)
             {
                 result--;
             }
+            return result;
         }
-        if ((int)father >= 0 && (int)mother >= 0)//both positive or zero, happy path, going up
+        else if ((int)father >= 0 && (int)mother >= 0)//both positive or zero, happy path, going up
         {
-            result = gen4InheritedTraitsHelper(father, mother);
+            return gen4InheritedTraitsHelper(father, mother);
         }
         else //at least one is negative, if only one is negative, the other is zero, we're going down
         {
-            result = gen4InheritedTraitsHelperNegative(father, mother);
+            return gen4InheritedTraitsHelperNegative(father, mother);
         }
-        return result;
     }
 
     private static ETraitValue gen4InheritedTraitsHelper(ETraitValue father, ETraitValue mother)
@@ -545,6 +557,128 @@ public class Traits : MonoBehaviour, IDescribedObject
             return (ETraitValue)((int)biggerNegative + 1);
         }
         return  biggerNegative;
+    }
+
+    private static ETraitValue gen5InheritedTraits(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue result;
+        if (father == mother)
+        {
+            if (father == 0)
+            {
+                return 0;
+            }
+            result = (ETraitValue)((int)father + 1);
+            if ((int)result > 5)
+            {
+                result = (ETraitValue)5;
+            }
+            return result;
+        }
+        if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
+        {
+            result = (ETraitValue)(int)father + (int)mother;
+            if ((int)result > 0 && (int)result < 5)
+            {
+                result++;
+            }
+            else if ((int)result < 0 && (int)result > -5)
+            {
+                result--;
+            }
+            return result;
+        }
+        if((int)father >=0 && (int)mother >=0)
+        {
+            return gen5Helper(father, mother);
+        }
+        return gen5negHelper(father, mother);
+    }
+
+    private static ETraitValue gen5Helper(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue higher;
+        ETraitValue lower;
+        if (father > mother)
+        {
+            higher = father;
+            lower = mother;
+        }
+        else
+        {
+            higher = mother;
+            lower = father;
+        }
+
+        if(lower == 0 && (int)higher > 3)
+        {
+            return (ETraitValue)((int)higher - 1);
+        }
+        else
+        {
+            return higher;
+        }
+    }
+
+    private static ETraitValue gen5negHelper(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue biggerNegative;
+        ETraitValue lesserNegative;
+        if (father > mother)
+        {
+            lesserNegative = father;
+            biggerNegative = mother;
+        }
+        else
+        {
+            lesserNegative = mother;
+            biggerNegative = father;
+        }
+
+        if(lesserNegative == 0 && (int)biggerNegative < -3)
+        {
+            return (ETraitValue)((int)biggerNegative + 1);
+        }
+        else
+        {
+            return biggerNegative;
+        }
+    }
+
+    private static ETraitValue gen6PlusInheritedTraits(ETraitValue father, ETraitValue mother)
+    {
+        ETraitValue result;
+        if (father == mother)
+        {
+            if (father == 0)
+            {
+                return 0;
+            }
+            result = (ETraitValue)((int)father + 1);
+            if ((int)result > 5)
+            {
+                result = (ETraitValue)5;
+            }
+            return result;
+        }
+        if ((father > 0 && mother < 0) || (father < 0 && mother > 0))
+        {
+            result = (ETraitValue)(int)father + (int)mother;
+            if ((int)result > 0 && (int)result < 5)
+            {
+                result++;
+            }
+            else if ((int)result < 0 && (int)result > -5)
+            {
+                result--;
+            }
+            return result;
+        }
+        if(father > mother)
+        {
+            return father;
+        }
+        return mother;
     }
 
 
