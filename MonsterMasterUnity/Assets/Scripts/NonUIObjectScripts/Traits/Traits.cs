@@ -139,11 +139,135 @@ public class Traits : MonoBehaviour, IDescribedObject
 
     public static Traits makeChildTraits(Traits fatherTraits, Traits motherTraits, Traits newMonsterTypeTraits, int newGenerationValue)
     {
+        //Set all traits to child traits, we won't change Solidity, Age and most Traversal Traits (Except Light Emitting and Flying)
         Traits result = newMonsterTypeTraits;
-        return fatherTraits;
+
+        //Handle Traversal Traits that can be 'upgraded' by parents traits
+        ETraitValue parentFlightTraversal = inheritedTraits(fatherTraits.flightTraversal, motherTraits.flightTraversal, newGenerationValue);
+        if((int)result.flightTraversal < (int)parentFlightTraversal)
+        {
+            result.flightTraversal = parentFlightTraversal;
+        }
+
+        ETraitValue parentLightProduction = inheritedTraits(fatherTraits.lightProduction, motherTraits.lightProduction, newGenerationValue);
+        if((int)result.lightProduction > 0 && (int)result.lightProduction < (int)parentLightProduction)
+        {//parent light production is higher, and we have a positive value, so we upgrade to the parents value
+            result.lightProduction = parentLightProduction;
+        }
+        if((int)result.lightProduction < 0 && (int)result.lightProduction > (int)parentLightProduction)
+        {//parent light production is lower, and we have a negative value, so we upgrade to the parents value
+            result.lightProduction = parentLightProduction;
+        }
+
+        //Handle Evolutionary Traits
+        result.physicalTraitValue = max(result.physicalTraitValue, inheritedTraits(fatherTraits.physicalTraitValue, motherTraits.physicalTraitValue, newGenerationValue));
+        result.balancedTraitValue = max(result.balancedTraitValue, inheritedTraits(fatherTraits.balancedTraitValue, motherTraits.balancedTraitValue, newGenerationValue));
+        result.magicalTraitValue  = max(result.magicalTraitValue,  inheritedTraits(fatherTraits.magicalTraitValue,  motherTraits.magicalTraitValue,  newGenerationValue));
+
+        //Handle Inherited Traots
+        //Start with Immolated, Hot and Fish because they have special logic
+        result.immolatedTraitValue = max(result.immolatedTraitValue, inheritedTraits(fatherTraits.immolatedTraitValue, motherTraits.immolatedTraitValue, newGenerationValue));
+        result.hotTraitValue = valueFromSum((int)result.hotTraitValue + (int)inheritedTraits(fatherTraits.hotTraitValue, motherTraits.hotTraitValue, newGenerationValue));
+        result.fishTraitValue = max(result.fishTraitValue, inheritedTraits(fatherTraits.fishTraitValue, motherTraits.fishTraitValue, newGenerationValue));
+        if ((int)result.immolatedTraitValue > 0)//if the baby is born immolated, it must remain immolated
+        {
+            if((int)result.hotTraitValue < 0)//if we are cold- eliminate that
+            {
+                result.hotTraitValue = (ETraitValue)0;
+            }
+            if((int)result.lightProduction <=0)
+            {
+                result.lightProduction = (ETraitValue)1;
+            }
+            result.fishTraitValue = 0;//we cant be a fish
+            result.underwaterTraversal = EUnderwaterTraversalTrait.Unsubmergible;
+        }
+        else if((int)result.fishTraitValue > 0)//if they are born a fish
+        {
+            result.immolatedTraitValue = (ETraitValue)0;
+            result.underwaterTraversal = EUnderwaterTraversalTrait.WaterBreathing;
+            
+
+        }
+        else if((int)result.hotTraitValue < 0)//they are born cold
+        {
+            //if we are born cold and we are not born immolated, we can't be immolated
+            result.immolatedTraitValue = (ETraitValue)0;
+
+        }
+        //If we're not cold, immolated or a fish we leave everything to their default values
+
+        result.avengerTraitValue = max(result.avengerTraitValue, inheritedTraits(fatherTraits.avengerTraitValue, motherTraits.avengerTraitValue, newGenerationValue));
+        result.beachDwellingTraitValue = max(result.beachDwellingTraitValue, inheritedTraits(fatherTraits.beachDwellingTraitValue, motherTraits.beachDwellingTraitValue, newGenerationValue));
+        result.cloudyTraitValue = max(result.cloudyTraitValue, inheritedTraits(fatherTraits.cloudyTraitValue, motherTraits.cloudyTraitValue, newGenerationValue));
+        result.connectionTraitValue = max(result.connectionTraitValue, inheritedTraits(fatherTraits.connectionTraitValue, motherTraits.connectionTraitValue, newGenerationValue));
+        result.dealtInKindTraitValue = max(result.dealtInKindTraitValue, inheritedTraits(fatherTraits.dealtInKindTraitValue, motherTraits.dealtInKindTraitValue, newGenerationValue));
+        result.deathConsumingTraitValue = max(result.deathConsumingTraitValue, inheritedTraits(fatherTraits.deathConsumingTraitValue, motherTraits.deathConsumingTraitValue, newGenerationValue));
+        result.depthsDwellingTraitValue = max(result.depthsDwellingTraitValue, inheritedTraits(fatherTraits.depthsDwellingTraitValue, motherTraits.depthsDwellingTraitValue, newGenerationValue));
+        result.diurnalTraitValue = max(result.diurnalTraitValue, inheritedTraits(fatherTraits.diurnalTraitValue, motherTraits.diurnalTraitValue, newGenerationValue));
+        result.elementalStoneTraitValue = max(result.elementalStoneTraitValue, inheritedTraits(fatherTraits.elementalStoneTraitValue, motherTraits.elementalStoneTraitValue, newGenerationValue));
+        result.flockTraitValue = max(result.flockTraitValue, inheritedTraits(fatherTraits.flockTraitValue, motherTraits.flockTraitValue, newGenerationValue));
+        result.forestMagicTraitValue = max(result.forestMagicTraitValue, inheritedTraits(fatherTraits.forestMagicTraitValue, motherTraits.forestMagicTraitValue, newGenerationValue));
+        result.guiltTraitValue = max(result.guiltTraitValue, inheritedTraits(fatherTraits.guiltTraitValue, motherTraits.guiltTraitValue, newGenerationValue));
+        result.hateHypocricyTrateValue = max(result.hateHypocricyTrateValue, inheritedTraits(fatherTraits.hateHypocricyTrateValue, motherTraits.hateHypocricyTrateValue, newGenerationValue));
+        result.healerTraitValue = max(result.healerTraitValue, inheritedTraits(fatherTraits.healerTraitValue, motherTraits.healerTraitValue, newGenerationValue));
+        result.isolationTraitValue = max(result.isolationTraitValue, inheritedTraits(fatherTraits.isolationTraitValue, motherTraits.isolationTraitValue, newGenerationValue));
+        result.naturalTraitValue = max(result.naturalTraitValue, inheritedTraits(fatherTraits.naturalTraitValue, motherTraits.naturalTraitValue, newGenerationValue));
+        result.nocturnalTraitValue = max(result.nocturnalTraitValue, inheritedTraits(fatherTraits.nocturnalTraitValue, motherTraits.nocturnalTraitValue, newGenerationValue));
+        result.protectorTraitValue = max(result.protectorTraitValue, inheritedTraits(fatherTraits.protectorTraitValue, motherTraits.protectorTraitValue, newGenerationValue));
+        result.rainbowTraitValue = max(result.rainbowTraitValue, inheritedTraits(fatherTraits.rainbowTraitValue, motherTraits.rainbowTraitValue, newGenerationValue));
+        result.rebirthTraitValue = max(result.rebirthTraitValue, inheritedTraits(fatherTraits.rebirthTraitValue, motherTraits.rebirthTraitValue, newGenerationValue));
+        result.regenShieldTraitValue = max(result.regenShieldTraitValue, inheritedTraits(fatherTraits.regenShieldTraitValue, motherTraits.regenShieldTraitValue, newGenerationValue));
+        result.rootedTraitValue = max(result.rootedTraitValue, inheritedTraits(fatherTraits.rootedTraitValue, motherTraits.rootedTraitValue, newGenerationValue));
+        result.sandyTraitValue = max(result.sandyTraitValue, inheritedTraits(fatherTraits.sandyTraitValue, motherTraits.sandyTraitValue, newGenerationValue));
+        result.steamyTraitValue = max(result.steamyTraitValue, inheritedTraits(fatherTraits.steamyTraitValue, motherTraits.steamyTraitValue, newGenerationValue));
+        result.toxicTraitValue = max(result.toxicTraitValue, inheritedTraits(fatherTraits.toxicTraitValue, motherTraits.toxicTraitValue, newGenerationValue));
+        result.vampireTraitValue = max(result.vampireTraitValue, inheritedTraits(fatherTraits.vampireTraitValue, motherTraits.vampireTraitValue, newGenerationValue));
+        result.wetTraitValue = max(result.wetTraitValue, inheritedTraits(fatherTraits.wetTraitValue, motherTraits.wetTraitValue, newGenerationValue));
+
+
+        //Elemental Magic Traits
+        result.pyromagiaTraitValue = max(result.pyromagiaTraitValue, inheritedTraits(fatherTraits.pyromagiaTraitValue, motherTraits.pyromagiaTraitValue, newGenerationValue));
+        result.aquamagiaTraitValue = max(result.aquamagiaTraitValue, inheritedTraits(fatherTraits.aquamagiaTraitValue, motherTraits.aquamagiaTraitValue, newGenerationValue));
+        result.terramagiaTraitValue = max(result.terramagiaTraitValue, inheritedTraits(fatherTraits.terramagiaTraitValue, motherTraits.terramagiaTraitValue, newGenerationValue));
+        result.aeroMagiaTraitValue = max(result.aeroMagiaTraitValue, inheritedTraits(fatherTraits.aeroMagiaTraitValue, motherTraits.aeroMagiaTraitValue, newGenerationValue));
+        result.luxorMagiaTraitValue = max(result.luxorMagiaTraitValue, inheritedTraits(fatherTraits.luxorMagiaTraitValue, motherTraits.luxorMagiaTraitValue, newGenerationValue));
+        result.umbralMagiaTraitValue = max(result.umbralMagiaTraitValue, inheritedTraits(fatherTraits.umbralMagiaTraitValue, motherTraits.umbralMagiaTraitValue, newGenerationValue));
+
+        //Stat Traits
+        result.calmTraitValue = valueFromSum((int)result.calmTraitValue + (int)inheritedTraits(fatherTraits.calmTraitValue, motherTraits.calmTraitValue, newGenerationValue));
+        result.strongTraitValue = valueFromSum((int)result.strongTraitValue + (int)inheritedTraits(fatherTraits.strongTraitValue, motherTraits.strongTraitValue, newGenerationValue));
+        result.wiseTraitValue = valueFromSum((int)result.wiseTraitValue + (int)inheritedTraits(fatherTraits.wiseTraitValue, motherTraits.wiseTraitValue, newGenerationValue));
+        result.fastTraitValue = valueFromSum((int)result.fastTraitValue + (int)inheritedTraits(fatherTraits.fastTraitValue, motherTraits.fastTraitValue, newGenerationValue));
+        result.hardyTraitValue = valueFromSum((int)result.hardyTraitValue + (int)inheritedTraits(fatherTraits.hardyTraitValue, motherTraits.hardyTraitValue, newGenerationValue));
+        result.richTraitValue = valueFromSum((int)result.richTraitValue + (int)inheritedTraits(fatherTraits.richTraitValue, motherTraits.richTraitValue, newGenerationValue));
+
+        return result;
     }
 
-    private static ETraitValue InheritedTraits(ETraitValue father, ETraitValue mother, int generationValue)
+    private static ETraitValue valueFromSum(int sum)
+    {
+        if(sum > 5)
+        {
+            return (ETraitValue)5;
+        }
+        if(sum < -5)
+        {
+            return ETraitValue.Unaligned5;
+        }
+        return (ETraitValue)sum;
+    }
+
+    private static ETraitValue max(ETraitValue child, ETraitValue parents)
+    {
+        if((int)child > (int)parents)
+        {
+            return child;
+        }
+        return parents;
+    }
+
+    private static ETraitValue inheritedTraits(ETraitValue father, ETraitValue mother, int generationValue)
     {
         if(generationValue == 2)
         {
