@@ -153,6 +153,7 @@ public class Traits : MonoBehaviour, IDescribedObject
         {
             return gen3InheritedTraits(father, mother);
         }
+        return father;//TODO Remove
     }
 
     private static ETraitValue gen2InheritedTraits(ETraitValue father, ETraitValue mother)
@@ -163,11 +164,12 @@ public class Traits : MonoBehaviour, IDescribedObject
             result = father;
         }
         //case where the value is opposed
-        if( (father > 0 && mother < 0) || (father < 0 && mother > 0) )
+        if( ((int)father > 0 && (int)mother < 0) || ((int)father < 0 && (int)mother > 0) )
         {
-            result = father + mother;
+            int sum = (int)father + (int)mother;
+            result = (ETraitValue) sum;
         }
-        if (father >= 0 && mother >= 0)//both positive or zero, happy path, going up
+        if ((int)father >= 0 && (int)mother >= 0)//both positive or zero, happy path, going up
         {
             if (father > mother)
             {
@@ -199,7 +201,8 @@ public class Traits : MonoBehaviour, IDescribedObject
         {
             if (higher - 2 > 0)
             {
-                result = higher - 2;
+                int sum = (int)higher - 2;
+                result = (ETraitValue)sum;
             }
             else
             {
@@ -208,13 +211,15 @@ public class Traits : MonoBehaviour, IDescribedObject
         }
         else
         {
-            if (higher > 3)
+            if ((int)higher > 3)
             {
-                result = higher - 2;
+                int sum = (int)higher - 2;
+                result = (ETraitValue)sum;
             }
             else
             {
-                result = higher - 1;
+                int sum = (int)higher - 1;
+                result = (ETraitValue)sum;
             }
             if(lower > result)
             {
@@ -227,11 +232,12 @@ public class Traits : MonoBehaviour, IDescribedObject
     private static ETraitValue gen2InheritedTraitsHelperNegative(ETraitValue biggerNegative, ETraitValue lesserNegative)
     {
         ETraitValue result;
-        if(lesserNegative == 0)
+        if((int)lesserNegative == 0)
         {
-            if(biggerNegative + 2 < 0)
+            if((int)biggerNegative + 2 < 0)
             {
-                result = biggerNegative + 2;
+                int sum = (int)biggerNegative + 2;
+                result = (ETraitValue)sum;
             }
             else
             {
@@ -240,17 +246,20 @@ public class Traits : MonoBehaviour, IDescribedObject
         }
         else
         {
-            if(biggerNegative < -3)
+            if((int)biggerNegative < -3)
             {
-                result = biggerNegative + 2;
+                int sum = (int)biggerNegative + 2;
+                result = (ETraitValue)sum;
             }
             else
             {
-                result = biggerNegative + 1;
+                int sum = (int)biggerNegative + 1;
+                result = (ETraitValue)sum;
             }
-            if(lesserNegative < result)
+            if((int)lesserNegative < (int)result)
             {
-                result = lesserNegative;
+                int sum = (int)lesserNegative;
+                result = (ETraitValue)sum;
             }
         }
         return result;
