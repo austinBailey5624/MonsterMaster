@@ -33,6 +33,8 @@ public class MainCharacterController : Person
 
     private List<Vector2> lastPositions = new List<Vector2>();
 
+    private BattleActor battleActor;
+
 
     private double tolerance = .05;
 

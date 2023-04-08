@@ -1778,7 +1778,7 @@ MonoBehaviour:
   rightButton: {fileID: 309752338}
   leftButton: {fileID: 0}
   downButton: {fileID: 1265942707}
-  nextSceneName: 
+  nextSceneName: PartyMenu
 --- !u!1 &1698401997
 GameObject:
   m_ObjectHideFlags: 0
