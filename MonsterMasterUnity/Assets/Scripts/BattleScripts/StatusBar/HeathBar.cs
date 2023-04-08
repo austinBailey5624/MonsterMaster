@@ -26,7 +26,7 @@ public class HeathBar : MonoBehaviour
         updateHpDisplay();
     }
 
-    void setHP(int hpMax, int hpCur)
+    void setHp(int hpMax, int hpCur)
     {
         maxHp = hpMax;
         curHp = hpCur;
@@ -44,6 +44,7 @@ public class HeathBar : MonoBehaviour
         return curHp <= 0;
     }
 
+    //TODO remove after testing
     public void Update()
     {
         updateHpDisplay();
@@ -61,10 +62,7 @@ public class HeathBar : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = maxHpBar;
             return;
         }
-        Debug.Log("Count: " + hpBars.Count);
         int index = (int)((float)hpBars.Count * ((float)curHp / (float)maxHp));
-        Debug.Log("cur/max" + (curHp / maxHp));
-        Debug.Log("Index: " + index);
         this.gameObject.GetComponent<SpriteRenderer>().sprite = hpBars[index];
     }
 }
