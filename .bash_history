@@ -84,3 +84,6 @@ git status
 git add .
 ./sc.sh "fixed some coding errors"
 git push origin April2023
+git status
+./sc.sh "Start Battle Actor for Party Menu and Update Church with new Symbols for the Gods"
+git push origin April2023 
