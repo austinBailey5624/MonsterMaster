@@ -6,6 +6,8 @@ public class Monster : MonoBehaviour, ITraversalActor
 {
     public MonsterType monsterType;
 
+    public BattleActor battleActor;
+
     protected float characterScalex = .275f;
 
     public void setSprite(int spriteIndex, EDirection direction)

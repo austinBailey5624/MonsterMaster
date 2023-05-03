@@ -7,6 +7,7 @@ TagManager:
   - PronounSelector
   - Scene
   - Conversation
+  - MonsterMerge
   layers:
   - Default
   - TransparentFX
