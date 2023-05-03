@@ -87,3 +87,12 @@ git push origin April2023
 git status
 ./sc.sh "Start Battle Actor for Party Menu and Update Church with new Symbols for the Gods"
 git push origin April2023 
+git status
+git add .
+./sc.sh "Add Poison and undead symbols from Mattie to Assets"
+git push origin April2023 
+git status
+git status
+git add .
+./sc.sh "Add Terra, Dionsaur and Sand symbols from Mattie to Assets"
+git push origin April2023
