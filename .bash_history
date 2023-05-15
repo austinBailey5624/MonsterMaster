@@ -96,3 +96,16 @@ git status
 git add .
 ./sc.sh "Add Terra, Dionsaur and Sand symbols from Mattie to Assets"
 git push origin April2023
+git status
+git checkout master
+git checkout main
+git pull origin maimn
+git pull origin main
+git branch
+git checkout May2023
+git checkout -b May2023
+git status
+git status
+git add .
+./sc.sh "Add new Assets from Animator in Early May"
+git push origin May2023
