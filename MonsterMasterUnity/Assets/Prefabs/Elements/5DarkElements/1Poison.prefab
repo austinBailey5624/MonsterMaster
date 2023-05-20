@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 21300000, guid: fcf1db1f56077dc4bb9ef0b8c8d312d6, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 304e4971ed7b53c4781a3715c12e230d, type: 3}
   name: Poison
   description: Poison monsters feed on disease and malaise, infecting as many others
     as they can, and drawing strength from each infected foe. They respond well to
@@ -59,7 +59,5 @@ MonoBehaviour:
     type: 3}
   secondPrimaryElement: {fileID: 3841102742118678946, guid: b3a9918e836f2c0429af512b5c6d1701,
     type: 3}
-  defaultColor: {r: 0, g: 0, b: 0.5882353, a: 1}
-  highlightColor: {r: 0, g: 0, b: 0.3254902, a: 1}
   babyMonster: {fileID: -97640446431743778, guid: 6b6b56215e55984429329f721590f0d0,
     type: 3}

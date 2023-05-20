@@ -109,3 +109,7 @@ git status
 git add .
 ./sc.sh "Add new Assets from Animator in Early May"
 git push origin May2023
+git status
+git add .
+./sc.sh "Add new files for Cirrus, Deep Symbol, IllianSymbol"
+git push origin May2023 
