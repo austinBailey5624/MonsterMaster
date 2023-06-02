@@ -113,3 +113,14 @@ git status
 git add .
 ./sc.sh "Add new files for Cirrus, Deep Symbol, IllianSymbol"
 git push origin May2023 
+git status
+git add .
+git commit -m "Incorporate some new Symbols from Mattie"
+git push origin May2023 
+cd ../
+cd GameSimulation/
+dir
+git status
+git add .
+./sc.sh "Add Trade Federation Cards to DB"
+git push origin main
