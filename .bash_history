@@ -96,3 +96,31 @@ git status
 git add .
 ./sc.sh "Add Terra, Dionsaur and Sand symbols from Mattie to Assets"
 git push origin April2023
+git status
+git checkout master
+git checkout main
+git pull origin maimn
+git pull origin main
+git branch
+git checkout May2023
+git checkout -b May2023
+git status
+git status
+git add .
+./sc.sh "Add new Assets from Animator in Early May"
+git push origin May2023
+git status
+git add .
+./sc.sh "Add new files for Cirrus, Deep Symbol, IllianSymbol"
+git push origin May2023 
+git status
+git add .
+git commit -m "Incorporate some new Symbols from Mattie"
+git push origin May2023 
+cd ../
+cd GameSimulation/
+dir
+git status
+git add .
+./sc.sh "Add Trade Federation Cards to DB"
+git push origin main

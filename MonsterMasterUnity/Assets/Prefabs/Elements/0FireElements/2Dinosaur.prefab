@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 21300000, guid: e11e1712329bfb740afa65933d14724a, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 6b81634cf723368478b111600184c598, type: 3}
   name: Dinosaur
   description: Dinosaurs are agressive, large beasts. They get their aggression from
     their Fiery nature, but also can quite a beating due to their hearty, earthen
@@ -54,7 +54,5 @@ MonoBehaviour:
     type: 3}
   secondPrimaryElement: {fileID: -7360794192436991604, guid: 8dc76332c92bd534f9b40942358dedce,
     type: 3}
-  defaultColor: {r: 0.46226418, g: 0.20366915, b: 0, a: 1}
-  highlightColor: {r: 0.754717, g: 0.4381196, b: 0.18867925, a: 1}
   babyMonster: {fileID: -7324667394597615298, guid: d2bd50836b6dbb3428daa1f8bd530539,
     type: 3}

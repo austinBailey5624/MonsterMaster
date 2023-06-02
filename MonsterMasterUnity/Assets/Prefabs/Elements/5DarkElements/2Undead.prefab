@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 21300000, guid: 895e8f4824df90445825b668b8d04488, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 2db7802e88d6d1340a07c6e3739c8309, type: 3}
   name: Undead
   description: Risen servants, the undead have no will of their own, and will not
     abandon, or betray their masters. The magic that animates them is only given
@@ -54,7 +54,5 @@ MonoBehaviour:
     type: 3}
   secondPrimaryElement: {fileID: -7360794192436991604, guid: 8dc76332c92bd534f9b40942358dedce,
     type: 3}
-  defaultColor: {r: 0, g: 0.16470589, b: 0, a: 1}
-  highlightColor: {r: 0, g: 0, b: 0, a: 1}
   babyMonster: {fileID: -5057835397463467094, guid: 0d62fdcd8321e5e4eba594e4efe8e87c,
     type: 3}
