@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65848577916bfa4cb3d5a8afbab240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: -1134956524, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
+  defaultSprite: {fileID: 793942056, guid: e9e5ad0c3afbc75458294575c9ab476f, type: 3}
   name: Cirrus
   description: A small cloud roughly in the shape of a sheep. When it gets embarrased
     or excited, it accidently dribbles rain on the ground below, which the other
@@ -63,22 +63,50 @@ MonoBehaviour:
   previousEvolution: {fileID: 0}
   leftSpritesAreRightSpritesReversed: 1
   upSprites:
-  - {fileID: 1066752688, guid: 8eded54d753cd074e82b9b72a53e6b81, type: 3}
-  - {fileID: -1408190962, guid: 8eded54d753cd074e82b9b72a53e6b81, type: 3}
-  - {fileID: 1065846178, guid: 8eded54d753cd074e82b9b72a53e6b81, type: 3}
-  - {fileID: -1992495511, guid: 8eded54d753cd074e82b9b72a53e6b81, type: 3}
+  - {fileID: 272044505, guid: 06d970480055b2e41a1cbd6da4fe98c8, type: 3}
+  - {fileID: 814065733, guid: 06d970480055b2e41a1cbd6da4fe98c8, type: 3}
+  - {fileID: 1607807954, guid: 06d970480055b2e41a1cbd6da4fe98c8, type: 3}
+  - {fileID: -2071937822, guid: 06d970480055b2e41a1cbd6da4fe98c8, type: 3}
   downSprites:
-  - {fileID: -1134956524, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
-  - {fileID: 73583270, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
-  - {fileID: -1030410483, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
-  - {fileID: 917370364, guid: 6996d61d06380ce4ab01e171a1e84eff, type: 3}
+  - {fileID: 567248370, guid: 529bc1a384161e447a46ce4949553466, type: 3}
+  - {fileID: -1541065265, guid: 529bc1a384161e447a46ce4949553466, type: 3}
+  - {fileID: -697859063, guid: 529bc1a384161e447a46ce4949553466, type: 3}
+  - {fileID: 1781257473, guid: 529bc1a384161e447a46ce4949553466, type: 3}
   rightSprites:
-  - {fileID: 2022801383, guid: 41428fa6f2601714ab778e92cd018c5a, type: 3}
-  - {fileID: -258572279, guid: 41428fa6f2601714ab778e92cd018c5a, type: 3}
-  - {fileID: 2052888240, guid: 41428fa6f2601714ab778e92cd018c5a, type: 3}
-  - {fileID: -1306047860, guid: 41428fa6f2601714ab778e92cd018c5a, type: 3}
-  leftSprites: []
-  attackSprites: []
+  - {fileID: -1309818174, guid: 2a0a316a468165b4e8487a6c118f0a11, type: 3}
+  - {fileID: -2009573702, guid: 2a0a316a468165b4e8487a6c118f0a11, type: 3}
+  - {fileID: -1217878239, guid: 2a0a316a468165b4e8487a6c118f0a11, type: 3}
+  - {fileID: 267553741, guid: 2a0a316a468165b4e8487a6c118f0a11, type: 3}
+  leftSprites:
+  - {fileID: 1096960714, guid: 9f27984cda88f6845addd323fb38169a, type: 3}
+  - {fileID: 300010407, guid: 9f27984cda88f6845addd323fb38169a, type: 3}
+  - {fileID: 2082230304, guid: 9f27984cda88f6845addd323fb38169a, type: 3}
+  - {fileID: -1512118062, guid: 9f27984cda88f6845addd323fb38169a, type: 3}
+  attackSprites:
+  - {fileID: -1449751180, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -1805747612, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: 188037927, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -896632765, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -1672905613, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -155292012, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: 1970870280, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -794597176, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -1804638970, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: 2083318499, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -2129473103, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -1509462666, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -1312429877, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -1684044629, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: 1709386022, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: 1097148766, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -37124302, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -458562378, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -1308647915, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -516285039, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -2043809918, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -1669383684, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: -886423683, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
+  - {fileID: 102840361, guid: d4d00bb9ba48ad84c89166ffd7804d55, type: 3}
   onHitSprites: []
   onDeathSprites: []
   idleSprites: []
