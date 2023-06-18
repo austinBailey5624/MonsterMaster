@@ -226,25 +226,26 @@ public class MainCharacterController : Person
     private void moveCharacter()
     {
         Vector2 position = transform.position;
+        float adjustedSpeed = speed * Time.deltaTime;
         if (direction == EDirection.Up)
         {
-            position.y = position.y + speed;
-            travelDistance -= speed;
+            position.y = position.y + adjustedSpeed;
+            travelDistance -= adjustedSpeed;
         }
         else if (direction == EDirection.Right)
         {
-            position.x = position.x + speed;
-            travelDistance -= speed;
+            position.x = position.x + adjustedSpeed;
+            travelDistance -= adjustedSpeed;
         }
         else if (direction == EDirection.Left)
         {
-            position.x = position.x - speed;
-            travelDistance -= speed;
+            position.x = position.x - adjustedSpeed;
+            travelDistance -= adjustedSpeed;
         }
         else if (direction == EDirection.Down)
         {
-            position.y = position.y - speed;
-            travelDistance -= speed;
+            position.y = position.y - adjustedSpeed;
+            travelDistance -= adjustedSpeed;
         }
         transform.position = position;
 
@@ -259,7 +260,7 @@ public class MainCharacterController : Person
 
     private void moveMonster(GameObject monster, Vector2 target)
     {
-        float adjustedSpeed = speed;
+		float adjustedSpeed = speed * Time.deltaTime;
         Vector2 position = monster.gameObject.transform.position;
         if (target.y - position.y > tolerance)//move up
         {
