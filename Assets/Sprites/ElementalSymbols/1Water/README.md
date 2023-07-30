@@ -19,5 +19,15 @@
     <td align="center">Mattie Lyall</td>
     <td align="center">Employment contract; Invoice May 15, 2023</td>
 </tr>
+<tr>
+    <td align="center">1Aqua1000Alternate.afdesign</td>
+    <td align="center">Mattie Lyall</td>
+    <td align="center">Employment contract; Invoice June 9, 2023</td>
+</tr>
+<tr>
+    <td align="center">1Aqua1000.afdesign</td>
+    <td align="center">Mattie Lyall</td>
+    <td align="center">Employment contract; Invoice June 16, 2023</td>
+</tr>
 </table>
 </div>

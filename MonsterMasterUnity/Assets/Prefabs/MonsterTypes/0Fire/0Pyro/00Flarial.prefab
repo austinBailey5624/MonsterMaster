@@ -170,6 +170,9 @@ MonoBehaviour:
   - {fileID: -1364907391, guid: 7d0e33b64d964ef44bb4a1433dc003a2, type: 3}
   - {fileID: 2077871558, guid: 7d0e33b64d964ef44bb4a1433dc003a2, type: 3}
   monsterTraits: {fileID: 7344444571714590983}
+  northTraversalAnimation: {fileID: 7400000, guid: 49637c7f287a3114897245dda1b4c8e2,
+    type: 2}
+  Traversalanimator: {fileID: 9100000, guid: 391ab9631b755994b81073339c04588d, type: 2}
 --- !u!114 &7344444571714590983
 MonoBehaviour:
   m_ObjectHideFlags: 0

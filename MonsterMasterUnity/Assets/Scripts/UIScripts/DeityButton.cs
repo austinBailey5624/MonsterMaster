@@ -39,6 +39,8 @@ public class DeityButton : ButtonSceneTransitionNode
             selector.transform.localPosition = position;
         }
         nextSceneName = "DeitySelectedMenu";
+
+        this.transform.gameObject.GetComponent<SpriteRenderer>().sprite = deity.defaultSprite;
     }
 
     public override void executeSelectedBehavior()

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 21300000, guid: b78d153d191878347abee3267033716b, type: 3}
+  defaultSprite: {fileID: 21300000, guid: f3e20ffa498265a41b977cf62b2842e5, type: 3}
   name: Luxor
   description: Luxor Monsters are beings of pure light. On the battlefield, they
     cast spells that banish darkness (increasing accuracy against the hidden) and
@@ -57,7 +57,5 @@ MonoBehaviour:
     type: 3}
   secondPrimaryElement: {fileID: -356870857971701300, guid: e31c56be87d35f045979dd82d870c69e,
     type: 3}
-  defaultColor: {r: 1, g: 1, b: 1, a: 1}
-  highlightColor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
   babyMonster: {fileID: -2413669921744750713, guid: 75983d869929f0c48b290c9f703791b9,
     type: 3}

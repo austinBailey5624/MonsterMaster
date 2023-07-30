@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEditor;
 
 /**
 *   Class to represent the type of a monster. There can be more than one instance of a
@@ -47,6 +48,10 @@ public class MonsterType : MonoBehaviour, IAnimationSet, ISpritedObject, IDescri
     public List<Sprite> magicSprites;
 
     public Traits monsterTraits;
+
+    public AnimationClip northTraversalAnimation;
+
+    public UnityEditor.Animations.AnimatorController Traversalanimator;
 
     public Sprite getDefaultSprite()
     {

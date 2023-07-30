@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 21300000, guid: 8173d8aa82fc76c47864e272a58b0973, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 9d284c327c7e9c24da7868b7b789720e, type: 3}
   name: Fey
   description: 'Deep in the woods, hidden from all others, lies a secret, natural
     magic. Many feed this magic with arcane rituals and rites. '
@@ -52,7 +52,5 @@ MonoBehaviour:
     type: 3}
   secondPrimaryElement: {fileID: -7168066130360559295, guid: ea8f2f13184aac549ba91c355023568b,
     type: 3}
-  defaultColor: {r: 0.56078434, g: 0.23529412, b: 0, a: 1}
-  highlightColor: {r: 0.6698113, g: 0.11165107, b: 0.015797434, a: 1}
   babyMonster: {fileID: 3227244346570783373, guid: d2513e6e12af41640b7055b37e989a41,
     type: 3}

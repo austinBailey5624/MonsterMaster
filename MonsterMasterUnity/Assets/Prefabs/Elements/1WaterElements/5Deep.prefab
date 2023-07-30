@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4cecbeb0508f4589eb2b555b8a6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 21300000, guid: 16a4f6b67a840494d951ee1c55bdd65c, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 2f78053fc0e5c294ea057cc4d3e46d68, type: 3}
   name: Deep
   description: Hidden in the depths beyond all other life lie the deep monsters.
     What hidden magics they keep beyond the sight of all others none can know. They
@@ -55,7 +55,5 @@ MonoBehaviour:
     type: 3}
   secondPrimaryElement: {fileID: 3029641130924714745, guid: c8d418ac3efc7534c9b133b5235a89e4,
     type: 3}
-  defaultColor: {r: 0.11013707, g: 0.11013707, b: 0.4245283, a: 1}
-  highlightColor: {r: 0.16114317, g: 0.15566039, b: 1, a: 1}
   babyMonster: {fileID: -9020465605157225496, guid: 1e242d776cff39e4d8f6cace1f3f8fd4,
     type: 3}

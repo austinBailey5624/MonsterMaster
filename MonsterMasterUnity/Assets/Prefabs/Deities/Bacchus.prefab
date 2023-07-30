@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondaryElement: {fileID: 7595964172415261572, guid: 29a771ed374efd0498f78b50ae831be6,
     type: 3}
-  defaultSprite: {fileID: 21300000, guid: 7a09426fa67ec194cb5c3ee1d4252118, type: 3}
+  defaultSprite: {fileID: 21300000, guid: d09e409d6dbdfa14faf2409dce489fbe, type: 3}
   name: Bacchus
   description: Bacchus is the god of revelry and the party
   enemyTitle: Stick-in-the-Ass

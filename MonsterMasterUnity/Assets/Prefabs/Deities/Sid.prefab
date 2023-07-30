@@ -51,8 +51,8 @@ MonoBehaviour:
   description: God of Compassion, Sid meditated himself into a tree, and lives there
     still, healing those that pray at his root
   enemyTitle: Vengeful Fiend
-  unfriendlyTitle: 
-  irritatedTitle: 
+  unfriendlyTitle: Treebreaker
+  irritatedTitle: Anger-consumed
   unknownTitle: 
   interestedTitle: Compassionate
   friendlyTitle: Healer
