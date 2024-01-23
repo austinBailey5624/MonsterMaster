@@ -1,7 +1,13 @@
 # MonsterMaster
 ## Overview
-MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed by Austin Bailey and whoever wants to join him
-## Differences from Pokemon
+MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed by Austin Bailey
+
+## Setup
+
+Download the version of unity (current version being used is here: https://github.com/austinBailey5624/MonsterMaster/blob/main/MonsterMasterUnity/ProjectSettings/ProjectVersion.txt )
+
+
+## Goals: Differences from Pokemon
 1. **The player matters** In Pokemon Games the user really doesnt matter at all other than as a way to move yourself around the screen. In MonsterMaster as the character you are an active participant in the battle and defeat occurs when you are knocked out, not just when the monster representing you is defeated *it also bears noting that monsters gain experience much faster than humans.
 2. **There is player choice** that shapes the world around you.
 3. **There isn't a single way to win the game.** There are factions that you side with and gain ranks and reputation with that determine how you play and end the game.
@@ -12,4 +18,4 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 8. **Monster evolution isn't linear.** How you use the monster will determine how it evolves-usually. A monster that attacks physically will have a different evolution than if that same monster used only magical attacks.
 9. **Monsters are Expensive** There is no infinite box to hold the monsters, keeping them costs money - higher for stronger evolutions/generations. You cant simply catch all of them, because you probably cant afford it-unless you own the world.
   
-@Copyright 2016-2022 Austin Bailey all rights reserved
+@Copyright 2016-2024 Austin Bailey all rights reserved
