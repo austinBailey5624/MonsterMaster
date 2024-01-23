@@ -29,5 +29,30 @@
     <td align="center">Mattie Lyall</td>
     <td align="center">Employment contract; Invoice May 15, 2023</td>
 </tr>
+<tr>
+	<td align="center">AcheronSymbol1000.afdesign</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Contract; Invoice Dec 22, 2023</td>
+</tr>
+<tr>
+	<td align="center">EnemySymbol1000.afdesign</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Contract; Invoice Dec 22, 2023</td>
+</tr>
+<tr>
+	<td align="center">GaiaSymbol1000.afdesign</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Contract; Invoice Dec 22, 2023</td>
+</tr>
+<tr>
+	<td align="center">MalacatheSymbol1000.afdesign</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Contract; Invoice Dec 22, 2023</td>
+</tr>
+<tr>
+	<td align="center">MarsSymbol1000.afdesign</td>
+	<td align="center">Mattie Lyall</td>
+	<td align="center">Employment Contract; Invoice Dec 22, 2023</td>
+</tr>
 </table>
 </div>
