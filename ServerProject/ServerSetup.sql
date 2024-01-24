@@ -105,4 +105,102 @@ VALUES
     (24, 'Malacathe', 4, 'Chaotic'),
     (25, 'Enemy', 5, 'Chaotic');
     
-    Select * from deity;
+    
+    CREATE TABLE faction(
+		faction_id INT PRIMARY KEY AUTO_INCREMENT,
+        name VARCHAR(50)
+        );
+        
+	INSERT INTO faction(name)
+    VALUES
+		('Outdoorsmen'),
+        ('Fighters Guild'),
+        ('Church'),
+        ('Mages'),
+        ('Merchants'),
+        ('Dwarves'),
+        ('Missionaries'),
+        ('Nobility'),
+        ('Royalty'),
+        ('Librarians'),
+        ('Necromancers'),
+        ('Astrologers'),
+        ('Fox\'s Guild'),
+        ('Gentlemen Thieves'),
+        ('Bankers'),
+        ('Investors'),
+        ('Redeemers'),
+        ('Gaia Worshippers'),
+        ('Justicars'),
+        ('Magistiars'),
+        ('Sidden Monks');
+    
+    CREATE TABLE adventure(
+     adventure_id INT PRIMARY KEY AUTO_INCREMENT,
+     name VARCHAR(50) NOT NULL,
+     requirements_id INT,
+     faction_id INT
+     );
+     
+     INSERT INTO adventure(name)
+     VALUES
+		('Initial');
+        
+CREATE TABLE scenario(
+	scenario_id INT PRIMARY KEY AUTO_INCREMENT, -- the unique key identifying the scenario
+    adventure_id INT NOT NULL, -- the adventure to which the scenario belongs
+    FOREIGN KEY(adventure_id) REFERENCES adventure(adventure_id),
+    name VARCHAR(50)
+    );
+    
+INSERT INTO scenario(adventure_id, name)
+VALUES
+	(1,'Initial, light or darkness'),
+    (1,'Forest, Fire or Water'),
+    (1,'Forest2: What Next? Earth or Air'),
+    (1,'Forest Demon Bird'),
+    (1,'Forest Demon Critter'),
+    (1,'Forest Deep Pool'),
+    (1,'Forest Deep Pool2'),
+    (1,'Forgotten Shrine'),
+    (1,'Forgotten Shrine 2'),
+    (1,'Magic Glyph'),
+    (1,'Magic Glyph2');
+    
+    select * from scenario;
+    
+CREATE TABLE choice(
+	choice_id INT PRIMARY KEY AUTO_INCREMENT,
+    scenario_id INT NOT NULL,
+    FOREIGN KEY(scenario_id) REFERENCES scenario(scenario_id),
+    name VARCHAR(50)
+    );
+    
+INSERT INTO choice(scenario_id, name)
+VALUES
+	(1,'Go towards the light'),
+    (1,'Embrace the Darkness'),
+    (2,'Search for twigs to make a fire'),
+    (2,'Find a source of water to drink'),
+    (3,'Stay and make the best of things'),
+    (3,'Abandon your house and search for others'),
+    (4,'Free demon from trap'),
+    (4,'Save bird'),
+    (4,'Kill demon'),
+    (4,'Leave in darkness'),
+    (5,'Free demon from trap'),
+    (5,'Save critter from demon'),
+    (5,'Kill demon, eat critter'),
+    (5,'leave in darkness');
+    
+CREATE TABLE statement(
+	statement_id INT PRIMARY KEY AUTO_INCREMENT,
+    scenario_id INT NOT NULL,
+    FOREIGN KEY(secenario_id) REFERENCES scenario(scenario_id),
+    choice_id INT, -- null choice_id indicates the statement is for the scenario prompt
+    FOREIGN KEY(choice_id) REFERENCES choice(choice_id),
+    content VARCHAR(500) NOT NULL
+    );
+    
+    
+    
