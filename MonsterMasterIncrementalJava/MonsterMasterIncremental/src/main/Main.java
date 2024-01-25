@@ -19,31 +19,40 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		javax.swing.SwingUtilities.invokeLater(new Runnable() {
-			public void run()
-			{
-				initialize();
-				JFrame frame = new JFrame("Monster Master Incremental");
-				JPanel panel = new JPanel(new GridBagLayout());
-				panel.setBorder(BorderFactory.createLineBorder(Color.pink));
-				GridBagConstraints constraints = new GridBagConstraints();
-				constraints.anchor = GridBagConstraints.CENTER;
-				constraints.fill = GridBagConstraints.HORIZONTAL;
-				constraints.weightx = 0.5;
-				constraints.weighty = 0.7;
-				constraints.gridx = 0;
-				constraints.gridy = 0;
-				panel.add(prompt,constraints);
-				constraints.gridy = 1;
-				panel.add(choices,constraints);
-				
-				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frame.setContentPane(panel);		
-				frame.pack();
-				frame.setSize(1920, 1080);
-				frame.setVisible(true);
-			}
-		});
+		JDBCTest test = new JDBCTest();
+		try {
+			test.readDataBase();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+//		
+//		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+//			public void run()
+//			{
+//				initialize();
+//				JFrame frame = new JFrame("Monster Master Incremental");
+//				JPanel panel = new JPanel(new GridBagLayout());
+//				panel.setBorder(BorderFactory.createLineBorder(Color.pink));
+//				GridBagConstraints constraints = new GridBagConstraints();
+//				constraints.anchor = GridBagConstraints.CENTER;
+//				constraints.fill = GridBagConstraints.HORIZONTAL;
+//				constraints.weightx = 0.5;
+//				constraints.weighty = 0.7;
+//				constraints.gridx = 0;
+//				constraints.gridy = 0;
+//				panel.add(prompt,constraints);
+//				constraints.gridy = 1;
+//				panel.add(choices,constraints);
+//				
+//				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//				frame.setContentPane(panel);		
+//				frame.pack();
+//				frame.setSize(1920, 1080);
+//				frame.setVisible(true);
+//			}
+//		});
 	}
 	
 	private static void initialize()

@@ -72,9 +72,6 @@ VALUES
     (53,'Storm',5,3),
     (54,'Betrayer',5,4),
     (55,'Umbral',5,5);
---     
---  Select secondary_element_id, name FROM secondary_element;
---  select Count(*) from secondary_element;
  
  CREATE TABLE deity(
   deity_id INT PRIMARY KEY,
@@ -167,8 +164,6 @@ VALUES
     (1,'Magic Glyph'),
     (1,'Magic Glyph2');
     
-    select * from scenario;
-    
 CREATE TABLE choice(
 	choice_id INT PRIMARY KEY AUTO_INCREMENT,
     scenario_id INT NOT NULL,
@@ -202,5 +197,7 @@ CREATE TABLE statement(
     content VARCHAR(500) NOT NULL
     );
     
+    
+    Select * from primary_element;
     
     
