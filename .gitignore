@@ -17,3 +17,5 @@ MonsterMasterMobile/Temp/*
 .git-for-windows-updater
 MonsterMasterIncrementalJava/.metadata/*
 MonsterMasterIncrementalJava/.settings/*
+MonsterMasterIncrementalJava/MonsterMasterIncremental/bin/SQLUserPass.txt
+MonsterMasterIncrementalJava/MonsterMasterIncremental/src/SQLUserPass.txt

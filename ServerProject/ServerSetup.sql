@@ -153,8 +153,10 @@ CREATE TABLE scenario(
 INSERT INTO scenario(adventure_id, name)
 VALUES
 	(1,'Initial, light or darkness'),
-    (1,'Forest, Fire or Water'),
-    (1,'Forest2: What Next? Earth or Air'),
+    (1,'Light:Forest, Fire or Water'),
+    (1,'Darkness:Forest, Fire or Water'),
+    (1,'Fire:Forest, Earth or Air'),
+    (1,'Water:Forest, Earth or Air'),
     (1,'Forest Demon Bird'),
     (1,'Forest Demon Critter'),
     (1,'Forest Deep Pool'),
@@ -170,6 +172,10 @@ CREATE TABLE choice(
     FOREIGN KEY(scenario_id) REFERENCES scenario(scenario_id),
     name VARCHAR(50)
     );
+    
+INSERT INTO choice(choice_id, scenario_id,name)
+VALUES
+	(-1,1,' ');
     
 INSERT INTO choice(scenario_id, name)
 VALUES
@@ -191,13 +197,45 @@ VALUES
 CREATE TABLE statement(
 	statement_id INT PRIMARY KEY AUTO_INCREMENT,
     scenario_id INT NOT NULL,
-    FOREIGN KEY(secenario_id) REFERENCES scenario(scenario_id),
-    choice_id INT, -- null choice_id indicates the statement is for the scenario prompt
+    FOREIGN KEY(scenario_id) REFERENCES scenario(scenario_id),
+    choice_id INT Default -1, -- 0 choice_id indicates the statement is for the scenario prompt
     FOREIGN KEY(choice_id) REFERENCES choice(choice_id),
     content VARCHAR(500) NOT NULL
     );
+
+--   SELECT scenario.scenario_id, choice.choice_id, scenario.name as 'ScenName', choice.name as 'ChioceName'
+--   FROM scenario
+--   RIGHT JOIN choice ON scenario.scenario_id = choice.scenario_id;
+
+INSERT INTO statement(scenario_id, content)
+VALUES
+	(1,'You awaken in the darkness,'),
+    (1,'With no memory or direction,'),
+    (1,'Time passes but you cannot grasp it;'),
+    (1,'A week, a month, a year comes and fades again.'),
+    (1,'Then there is light'),
+	(2,'The light reveals a forest all around you,'),
+    (2,'Trees reaching into the heavens,'),
+    (2,'Not fully revealed by the light,'),
+    (2,'The black treeptops grasp at the stars.'),
+    (3,'The light is temporary,'),
+    (3,'And soon consumed by the darkness,'),
+    (3,'Yet far above you, still there are stars.'),
+    (3,'The starlight reveals you hidden in a copse of trees.');
+    
+INSERT INTO statement(scenario_id, choice_id, content)
+VALUES
+    (1,1,'Go towards the light'),
+    (1,2,'Embrace the Darkness'),
+    (2,1,'Search for twigs to make a fire'),
+    (2,2,'Search for a source of water to drink'),
+    (3,1,'Search for twigs to make a fire'),
+    (3,2,'Search for a source of water to drink');
+    
+    select * from statement;
     
     
-    Select * from primary_element;
+    
+    select content from statement where scenario_id = 1 and choice_id = -1;
     
     
