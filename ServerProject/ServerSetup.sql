@@ -268,13 +268,13 @@ CREATE TABLE monster_type(
 INSERT INTO monster_type(name, secondary_element_id,  physical_evolution, balanced_evolution, magical_evolution, previous_evolution,  description)
 VALUES
 	('Flarial',0,2,3,4,NULL,'Young spirits made of flame that snap and spit at anything that comes near. Their white eyes burn with anger at whatever they see.'),
-    ('Pyrus',0,NULL, 5, NULL,1,'Minor demond, made of flame. Their arms are glowing iron blades, that they may never put down. They are cursed for their violence to never cease.'),
+    ('Pyrus',0,NULL, 5, NULL,1,'Minor demon, made of flame. Their arms are glowing iron blades, that they may never put down. They are cursed for their violence to never cease.'),
     ('Flarpup',0,NULL, 6, NULL,1,'Young flaming fox cubs dashing this way and that, famed both for their agility and their inability to slow down.'),
     ('Pyro Symbol',0,7, NULL,8, 1,'Magical symbols of the eternal flame, Pyro Symbols spark and burn to the touch. It is said they can see the future in the fire.'),
-    ('Pyos',0,NULL,NULL,NULL,2,'Wingless drakes whose skin is lit aflame, the Pyos are known for their ferocity in combat and the red fire that spills from their jaws.'),
-    ('Comet',0,NULL,NULL,NULL,3,'The adolescent comet has grown black horns from its wolflike body as a result of its propensity to bash its head into whatever its running at.'),
-    ('Fire Opal',0,NULL,NULL,NULL,4,'A sentient red and orange stone, the is an enchanted rock that hovers at chest level. Large as a big pot, they are known for thier fierce loyalty to their masters, as well as their unquenchable heat.'),
-    ('Pyro Elemental',0,NULL,NULL,NULL,4,'A large Pyro Symbol has attracted three smaller symbols to better channel its potent magics.'),
+    ('Pyos',0,NULL,9,NULL,2,'Wingless drakes whose skin is lit aflame, the Pyos are known for their ferocity in combat and the red fire that spills from their jaws.'),
+    ('Comet',0,NULL,10,NULL,3,'The adolescent comet has grown black horns from its wolflike body as a result of its propensity to bash its head into whatever its running at.'),
+    ('Fire Opal',0,NULL,11,NULL,4,'A sentient red and orange stone, the is an enchanted rock that hovers at chest level. Large as a big pot, they are known for thier fierce loyalty to their masters, as well as their unquenchable heat.'),
+    ('Pyro Elemental',0,NULL,12,NULL,4,'A large Pyro Symbol has attracted three smaller symbols to better channel its potent magics.'),
 	('Pyres',0,NULL,NULL,NULL,5,'Greater demons with horns and wings, the flames of its breath and whip are legendary.'),
     ('Bollide',0,NULL,NULL,NULL,6,'When Comets have been consumed by thier anger, they form into a Bolides, huge comets whose speed only ceases at their deaths. Its very speed ignites the air, burning all in its path.'),
     ('Ruby',0,NULL,NULL, NULL,7, 'The Fire Opal has hardened and its power has increased tenfold, granting it a brighter sheen and allowing it to cast magic and attack physically with ever more vigor.'),     
@@ -306,8 +306,8 @@ CREATE TABLE traits(
 CREATE TABLE trait(
 	trait_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
-    description VARCHAR(500) NOT NULL,
-    trait_type ENUM('Corporeality','Age','Traversal','Evolutionary','Inherited','Elemental Magic','Status Increases') NOT NULL
+    description VARCHAR(750) NOT NULL,
+    trait_type ENUM('Corporeality','Age','Traversal','Evolutionary','Inherited','Elemental Magic','Stat Modifiers') NOT NULL
     );
     
 CREATE TABLE trait_intensity_lookup(
@@ -339,9 +339,110 @@ VALUES
     ('Heavy','Traversal','Monsters that are so heavy, they make flight more difficult. Monsters with trait value 5 cannot fly under any circumstances'),
     ('Physical','Evolutionary','Monsters that have grown physically strong as a result of their evolution and ancestry. Deal LogBase2(PhysicalAttackCount)/(6-Intensity) Bonus damage on physical Attacks'),
     ('Balanced','Evolutionary','Monsters that have grown both physically and mentally stronger as a result of their evolution and ancestry. Deal LogBase2(MagicalAttackCount + PhysicalAttackCount)/(3*(6-traitValue)) Bonus damage on all attacks'),
-    ('Magical','Evolutionary','Monsters that have grown mentally more acute as a result of their evolution and ancestry. Deal LogBase2(MagicalAttackCount)/(6-TraitValue) Bonus damage on magical Attacks');
+    ('Magical','Evolutionary','Monsters that have grown mentally more acute as a result of their evolution and ancestry. Deal LogBase2(MagicalAttackCount)/(6-TraitValue) Bonus damage on magical Attacks'),
+    ('Immolated','Inherited','Instead of taking fire damage, Absorb 20/40/60/80/100 % of it as health. Take 12/10/8/6/4 points of damage from rain and 15/13/10/8/6 points of damage in hail. Take severe damage from low temperature. Deal 1/2/4/8/16 points of bonus fire damage with each physical strike that connects. Instantly killed when used underwater, Immune to heatstroke, Targets who contact you take 2/4/6/8/12 Fire damage. Typically found on Pyro monsters. Must be combined with Light-Emitting and Unsumbergable. Cannot be combined with Cold or Fish'),
+    ('Fish','Inherited','Increase speed by 10/15/20/25/35% and defense by 5/10/15/20/25% when underwater. Must be combined with Water-Breathing, cannot be combined with Immolated. Typically found on Aqua Monsters'),
+    ('Natural','Inherited','Increase damage, health, and speed by 2/4/6/8/15% when in plains and the forest. Typically found on Terra Monsters'),
+    ('Sandy','Inherited','Take 60/70/80/90/100% less damage from sandstorm. When sandstorm is active, accuracy penalty is reduced by 60/70/80/90/100%. Typically found on Sand Monsters.'),
+    ('Dealt in kind','Inherited','Deal up to 5/10/15/20/25% bonus damage when health is below 10/15/20/25/35 %. Typically found on Justice and Vengeance Monsters.'),
+    ('Steamy','Inherited','When in the steam caverns, Deal 30/40/50/60/80 % more damage and take 10/15/20/25/30 % less damage. Typically found on Steam Monsters.'),
+    ('Wet','Inherited','gain 1/2/3/4/5 % additional damage for every 10 points of the Wet status effect, to a max of 5/12/18/24/35%. Typically found on Aqua Amphibious, and Plant Monsters. Cannot be combined with Sandy or Immolated'),
+    ('Cloudy','Inherited','Immune to all weather affects other than sandstorm. When a weather effect is in place, deal 3/6/9/12/15 % more damage. Typically found on Weather, and Storm Monsters.'),
+    ('Depths Dwelling','Inherited','When in deep water, Deal 30/40/50/60/80 % more damage and take 10/15/20/25/30 % less damage. Typically found on Deep Monsters.'),
+    ('Forest Magic','Inherited','When in the forest, deal 3/6/9/12/15% bonus magical damage. Typically found on Fey Monsters'),
+    ('Rooted','Inherited','Slowed down by 3/6/9/12/15%, receive 5/10/15/20/25% less damage. Typically found on Plant Monsters.'),
+    ('Healer','Inherited','Damage Healed by this monster is increased by 15/30/45/60/75%. Typically found on Compassion Monsters.'),
+    ('Toxic','Inherited','30/50/70/90/100% chance to deal 1/2/3/4/5 poison damage when attacking. Typically found on Rotten or Poison Monsters.'),
+    ('Rebirth','Inherited','Three turns after being killed, resurrect with 10/20/30/40/50% of your health. Reduce Health by 30/25/20/17/15%. Typically found on Phoenix Monsters, as well as some Angel Monsters.'),
+    ('Costal','Inherited','On the beach, deal 3/6/9/12/15 % extra damage. Typically found on a Seabreeze Monster.'),
+    ('Flock','Inherited','For every team member with at least one rank in "flock", deal 1/2/3/4/5 % bonus damage, and take 1/2/3/4/5% less damage. Typically found on Bird, Aero, and Cocka Monsters.'),
+    ('Vampire','Inherited','Absorb 10/15/20/35/50% of the physical damage you deal as health. Typically found on Nightwing Monsters.'),
+    ('Diurnal','Inherited','2/4/6/8/10% additional damage in the sunshine. Typically found on Solar Monsters. Cannot be combined with Nocturnal.'),
+    ('Nocturnal','Inherited','2/4/6/8/10% additional damage at night. Typically found on a Lunar, or a Umbral Monster. Cannot be combined with Diurnal'),
+    ('Protector','Inherited','Increase defense by 1/2/3/4/5% for each attacker Taunted by you. Typically found on the physical branch of the Guardian subelement.'),
+    ('Regenerator','Inherited','While you have temporary hit points, heal the hit points, and your own by 1/2/3/4/5 points at the end of your turn. Typically found on the magical branch of the Guardian subelement.'),
+    ('Avenger','Inherited','Deal 3/6/9/12/15% bonus damage against Dark-Primary Monsters. Typically found on Angel and Vengeance Monsters.'),
+    ('Connection','Inherited','Deal 1/2/3/4/5% bonus damage if the party is full. Typically found on Luxor Monsters.'),
+    ('Guilt','Inherited','If you deal damage to a Light primary being, take 10/20/30/40/50% of the damage on yourself. Typically found on Redemption Monsters.'),
+    ('Hypocrisy Hater','Inherited','Deal 4/8/12/16/25% more damage to Primary Light enemies, and an additional 2/4/6/8/10% to Luxor and Angel Enemies. Typically found on Demon, Betrayer, and some Umbral Monsters.'),
+    ('Isolation','Inherited','Deal 10/20/30/40/60% more damage when the only fighter left in the party. Typically found on Umbral Monsters.'),
+    ('Random Rainbow','Inherited','The skin of this monster is a hallucinogenic, and contact with it will deal (1/2/3/4/5) points of a random effect. Commonly seen on the balanced branch of the Amphibious subelement.'),
+    ('Elemental Stone','Inherited','Deal 10/15/20/25/40% more damage for each stone equipped by the player'),
+    ('Death Consuming','Inherited','Deal 2/4/6/8/10% more damage per corpse on the battle, typically found on Undead Monsters or some Nightwing Monsters.'),
+    ('Pyromancy','Elemental Magic','Bonus (10*intensity)% fire damage on magical skills'),
+    ('Aquamancy','Elemental Magic','Bonus (10*intensity)% water damage on magical skills'),
+    ('Terramancy','Elemental Magic','Bonus (10*intensity)% earth damage on magical skills'),
+    ('Aeromancy','Elemental Magic','Bonus (10*intensity)% air damage on magical skills'),
+    ('Luxormancy','Elemental Magic','Bonus (10*intensity)% light damage on magical skills'),
+    ('Umbramancy','Elemental Magic','Bonus (10*intensity)% dark damage on magical skills'),
+    ('Calm','Stat Modifiers','A positive value will result in Calm: Deal and receive 20/40/60/80/100% additional Calm Damage. Typically found on Compassion Monsters. A negative value will result in Angry: Deal and receive 20/40/60/80/100% less Calm Damage. Cannot be combined with Calm. Typically found on Demon and Vengeance Monsters.'),
+    ('Hot','Stat Modifiers','A positive value will result in Hot: Slightly increases the temperature of the battlefield each turn. Takes severe damage in cold conditions. Typically found on Pyro and Lava monsters. A negative value will result in Cold: Slightly decreases the temperature of the battlefield each turn. Takes severe damage in hot conditions. Typically found on Ice monsters.'),
+    ('Strong','Stat Modifiers','A positive value will result in Strong: Deal 5/10/15/20/30% additional damage in melee combat. Typically found on Dinosaurs and Physical evolutions. A negative value will result in Weak: deal 5/10/15/20/30% less damage in melee combat. Typically found on Magical Evolutions.'),
+    ('Wise','Stat Modifiers','A positive value will result in Wise: deal 5/10/15/20/30% additional magic damage. Increase experience gain by 2/4/6/8/12% Typically found on Magical Evolutions. A negative value will result in Dumb: 	deal 5/10/15/20/30% less magic damage. Decrease experience gain by 2/4/6/8/12% Typically found on Dinosaurs and Physical evolutions.'),
+    ('Fast','Stat Modifiers','A positive value will result in Fast: Increase speed in turn calculation by 5/10/15/20/25% Typically found on Air primary monsters or Pegasus Monsters. A negative value will result in Slow: Reduce speed in turn calculation by 5/10/15/20/25% Typically found on Elder Physical monsters, or the Physical branch (turtles) of the Amphibious Secondary element.'),
+    ('Hardy','Stat Modifiers','A positive value will result in Hardy: Gain 5/10/15/20/25% Extra health. Typically found on Elder Physical monsters, or the Physical branch (turtles) of the Amphibious Secondary element, or the Undead. A negative value will result in Faint: Reduce Health by 5/10/15/20/25%. Typically found on Phoenix monsters.'),
+    ('Rich','Stat Modifiers','A positive value will result in Poor: Gain 10/20/25/30/35% less gold from battle. Instead, gain 5/10/13/17/20% bonus experience for just this monster, only if there are no Rich monsters in party.');
+    
+INSERT INTO traits(name, monster_type_id)
+VALUES
+	('Flarial Traits', 1),
+    ('Pyrus Traits',2),
+    ('Flarpup Traits',3),
+    ('Pyro Symbol Traits',4),
+    ('Pyos Traits',5),
+    ('Comet Traits',6),
+    ('Fire Opal Traits',7),
+    ('Pyro Elemental Traits',8),
+    ('Pyres Traits',9),
+    ('Bollide Traits',10),
+    ('Ruby Triats',11),
+    ('Primordial Pyro Elemental Traits',12);
+    
+Select * from traits;
+Select trait_id, name from trait;
+
+INSERT INTO trait_intensity_lookup(traits_id, trait_id, intensity)
+VALUES
+	(1,1,1),
+    (1,4,1),
+    (1,11,1),
+    (1,20,1),
+    (1,12,1),
+    (1,15,1),
+    (1,56,1),
+    (2,1,1),
+    (2,5,1),
+    (2,11,1),
+    (2,20,2),
+    (2,12,1),
+    (2,16,2),
+    (2,17,1),
+    (2,56,2),
+    (3,1,1),
+    (3,5,1),
+    (3,11,1),
+    (3,15,1),
+    (3,20,1),
+    (3,19,1),
+    (3,49,1),
+    (3,56,1),
+    (4,1,1),
+    (4,5,1),
+    (4,11,1),
+    (4,15,1),
+    (4,20,1),
+    (4,19,1),
+    (4,49,1),
+    (4,56,1),
+    (5,1,1),
+    (5,6,1),
+    (5,11,1),
+    (5,12,2),
+    (5,20,3),
+    (5,17,2),
+    (5,57,1),
+    (5,58,-1),
+    (5,56,3);
     
     
-    
-    Select * from trait;
     
