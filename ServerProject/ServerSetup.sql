@@ -293,19 +293,19 @@ ALTER TABLE monster_type
 ADD FOREIGN KEY(previous_evolution) REFERENCES monster_type(monster_type_id);
 
     
-Select * from monster_type;
+-- Select * from monster_type;-- 
     
     
 CREATE TABLE traits(
 	traits_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL,
+    traits_name VARCHAR(50) NOT NULL,
     monster_type_id INT,
     FOREIGN KEY(monster_type_id) REFERENCES monster_type(monster_type_id)
     );
     
 CREATE TABLE trait(
 	trait_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL,
+    trait_name VARCHAR(50) NOT NULL,
     description VARCHAR(750) NOT NULL,
     trait_type ENUM('Corporeality','Age','Traversal','Evolutionary','Inherited','Elemental Magic','Stat Modifiers') NOT NULL
     );
@@ -319,7 +319,7 @@ CREATE TABLE trait_intensity_lookup(
     intensity INT
     );
     
-INSERT INTO trait(name, trait_type, description)
+INSERT INTO trait(trait_name, trait_type, description)
 VALUES
 	('Corporeal','Corporeality','Fully Existing in the physical space. Cannot be combined with Partially Corporeal or Incorporeal'),
     ('Partially Corporeal','Corporeality','Not fully existing in the physical space, such as a clout, a flame, or a liquid. Cannot be combined with Corporeal or Incorporeal.'),
@@ -383,7 +383,7 @@ VALUES
     ('Hardy','Stat Modifiers','A positive value will result in Hardy: Gain 5/10/15/20/25% Extra health. Typically found on Elder Physical monsters, or the Physical branch (turtles) of the Amphibious Secondary element, or the Undead. A negative value will result in Faint: Reduce Health by 5/10/15/20/25%. Typically found on Phoenix monsters.'),
     ('Rich','Stat Modifiers','A positive value will result in Poor: Gain 10/20/25/30/35% less gold from battle. Instead, gain 5/10/13/17/20% bonus experience for just this monster, only if there are no Rich monsters in party.');
     
-INSERT INTO traits(name, monster_type_id)
+INSERT INTO traits(traits_name, monster_type_id)
 VALUES
 	('Flarial Traits', 1),
     ('Pyrus Traits',2),
@@ -398,8 +398,8 @@ VALUES
     ('Ruby Triats',11),
     ('Primordial Pyro Elemental Traits',12);
     
-Select * from traits;
-Select trait_id, name from trait;
+-- Select * from traits;
+-- Select trait_id, name from trait;
 
 INSERT INTO trait_intensity_lookup(traits_id, trait_id, intensity)
 VALUES
@@ -442,7 +442,44 @@ VALUES
     (5,17,2),
     (5,57,1),
     (5,58,-1),
-    (5,56,3);
+    (5,56,3),
+    (6,1,1),
+    (6,6,1),
+    (6,11,1),
+    (6,16,2),
+    (6,12,1),
+    (6,20,3),
+    (6,18,2),
+    (6,59,2),
+    (6,56,3),
+    (7,1,1),
+    (7,6,1),
+    (7,11,1),
+    (7,15,1),
+    (7,20,1),
+    (7,18,1),
+    (7,19,1),
+    (7,47,1),
+    (7,56,1),
+    (8,1,1),
+    (8,6,1),
+    (8,11,1),
+    (8,15,1),
+    (8,20,1),
+    (8,19,2),
+    (8,49,2),
+    (8,51,1),
+    (8,54,1),
+    (8,58,1),
+    (8,56,1);
     
+
+Select subquery.traits_name, subquery.trait_name, trait_intensity_lookup.intensity
+FROM ( Select traits.traits_id, traits.traits_name, trait.trait_id, trait.trait_name from traits cross join trait) AS subquery
+Right Join trait_intensity_lookup on  subquery.traits_id = trait_intensity_lookup.traits_id AND subquery.trait_id = trait_intensity_lookup.trait_id;
+
+
+
+
     
     
