@@ -1,4 +1,4 @@
-package main;
+package com.greenwolfgames.MonsterMaster;
 
 import java.io.File;
 import java.util.Scanner;

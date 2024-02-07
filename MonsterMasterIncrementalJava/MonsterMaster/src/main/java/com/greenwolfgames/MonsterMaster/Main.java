@@ -1,4 +1,4 @@
-package main;
+package com.greenwolfgames.MonsterMaster;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -63,7 +63,7 @@ public class Main
 	{
 		promptPanel = new JPanel(new GridBagLayout());
 		new SQLContentRetriever();
-		List<String> prompt = new ArrayList();
+		List<String> prompt = new ArrayList<>();
 		try
 		{
 			prompt = new SQLContentRetriever().getPrompt(scenario_id);

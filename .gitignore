@@ -19,3 +19,6 @@ MonsterMasterIncrementalJava/.metadata/*
 MonsterMasterIncrementalJava/.settings/*
 MonsterMasterIncrementalJava/MonsterMasterIncremental/bin/SQLUserPass.txt
 MonsterMasterIncrementalJava/MonsterMasterIncremental/src/SQLUserPass.txt
+MonsterMasterIncrementalJava/MonsterMaster/target/*
+MonsterMasterIncrementalJava/MonsterMaster/src/SQLUserPass.txt
+MonsterMasterIncrementalJava/MonsterMasterJavaFormat.xml

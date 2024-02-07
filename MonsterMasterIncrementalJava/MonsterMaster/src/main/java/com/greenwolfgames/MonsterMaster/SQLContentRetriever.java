@@ -1,4 +1,4 @@
-package main;
+package com.greenwolfgames.MonsterMaster;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -44,7 +44,7 @@ public class SQLContentRetriever implements ContentRetriever
 		return null;
 	}
 
-	private Connection connectToSQLDB()
+	public static Connection connectToSQLDB()
 	{
 		Connection connection = null;
 		try
