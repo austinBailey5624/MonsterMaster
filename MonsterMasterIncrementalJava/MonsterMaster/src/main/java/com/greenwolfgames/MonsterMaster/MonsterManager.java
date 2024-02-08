@@ -3,10 +3,15 @@ package com.greenwolfgames.MonsterMaster;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
 
 public class MonsterManager
 {
 	private static ArrayList<MonsterType> m_monsterTypes;
+	private static Multimap<SubElement, MonsterType> m_monsterTypesBySubElement;
 
 	public List<MonsterType> getMonsterTypes()
 	{
@@ -16,6 +21,25 @@ public class MonsterManager
 		}
 		readMonsterTypesFromDB();
 		return m_monsterTypes;
+	}
+	
+	public Multimap<SubElement, MonsterType> getMonsterTypesBySubElement()
+	{
+		if(m_monsterTypesBySubElement != null)
+		{
+			return m_monsterTypesBySubElement;
+		}
+		if(m_monsterTypes == null)
+		{
+			readMonsterTypesFromDB();
+		}
+		m_monsterTypesBySubElement = ArrayListMultimap.create();
+		for(MonsterType type : m_monsterTypes)
+		{
+			m_monsterTypesBySubElement.put(type.getSubElement(), type);
+		}
+		return m_monsterTypesBySubElement;
+		
 	}
 
 	private void readMonsterTypesFromDB()
@@ -41,7 +65,7 @@ public class MonsterManager
 		{
 			e.printStackTrace();
 		}
-		//need to resolve the evolutions by assigning the correct mosnter types now they are in context
+		//need to resolve the evolutions by assigning the correct monster types now they are in context
 		for(MonsterType type : m_monsterTypes)
 		{
 			resolveEvolutions(type);
@@ -50,13 +74,43 @@ public class MonsterManager
 	
 	private void resolveEvolutions(MonsterType monsterTypeToResolve)
 	{
-		for(MonsterType potentialMatch : m_monsterTypes)
+		for(MonsterType potentialMatch : getMonsterTypesBySubElement().get(monsterTypeToResolve.getSubElement()))
 		{
-			if(monsterTypeToResolve.getPreviousEvolutionIndex() != null)
+			//Stop resolving evolutions if they're all already resolved
+			if(shouldStopResolvingEvolutions(monsterTypeToResolve))
 			{
-				//TODO logic here
+				return;
 			}
+			if(monsterTypeToResolve.getPreviousEvolutionIndex() == potentialMatch.getIndex())
+			{
+				monsterTypeToResolve.setPreviousEvolution(potentialMatch);
+				continue;//potential match cannot be a different type of evolution as well
+			}
+			if(monsterTypeToResolve.getPhysicalEvolutionIndex() == potentialMatch.getIndex())
+			{
+				monsterTypeToResolve.setPhysicalEvolution(potentialMatch);
+//				potentialMatch.setPreviousEvolution(monsterTypeToResolve);
+				continue;
+			}
+			if(monsterTypeToResolve.getBalancedEvolutionIndex() == potentialMatch.getIndex())
+			{
+				monsterTypeToResolve.setBalancedEvolution(potentialMatch);
+				continue;
+			}
+			if(monsterTypeToResolve.getMagicalEvolutionIndex() == potentialMatch.getIndex())
+			{
+				monsterTypeToResolve.setMagicalEvolution(potentialMatch);
+			}			
 		}
 		
+	}
+	
+	private boolean shouldStopResolvingEvolutions(MonsterType monsterType)
+	{
+		boolean previousEvolutionsResolved = monsterType.getPreviousEvolution() != null || monsterType.getPreviousEvolutionIndex() == 0;
+		boolean physicalEvolutionsResolved = monsterType.getPhysicalEvolution() != null || monsterType.getPhysicalEvolutionIndex() == 0;
+		boolean balancedEvolutionsResolved = monsterType.getBalancedEvolution() != null || monsterType.getBalancedEvolutionIndex() == 0;
+		boolean magicalEvolutionsResolved  = monsterType.getMagicalEvolution()  != null || monsterType.getMagicalEvolutionIndex() == 0;
+		return previousEvolutionsResolved && physicalEvolutionsResolved && balancedEvolutionsResolved && magicalEvolutionsResolved;
 	}
 }

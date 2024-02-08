@@ -12,9 +12,10 @@ public class MonsterManagerTest
 		MonsterManager manager = new MonsterManager();
 		
 		List<MonsterType> monsterTypes = manager.getMonsterTypes();
-		for(MonsterType type : monsterTypes)
+		System.out.println("size: " + monsterTypes.size());
+		for(int i = 0; i< 100; i++)
 		{
-			System.out.println(type.toString());
+			System.out.println(monsterTypes.get(i).toString());
 		}
 				
 	}
