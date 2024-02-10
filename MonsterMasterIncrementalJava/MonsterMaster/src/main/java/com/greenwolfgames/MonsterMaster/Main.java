@@ -1,16 +1,21 @@
 package com.greenwolfgames.MonsterMaster;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 
 public class Main
@@ -31,24 +36,55 @@ public class Main
 			{
 				initialize();
 				JFrame frame = new JFrame("Monster Master Incremental");
-				JPanel panel = new JPanel(new GridBagLayout());
-				panel.setBorder(BorderFactory.createLineBorder(Color.pink));
-				GridBagConstraints constraints = new GridBagConstraints();
-				constraints.anchor  = GridBagConstraints.CENTER;
-				constraints.fill    = GridBagConstraints.HORIZONTAL;
-				constraints.weightx = 0.5;
-				constraints.weighty = 0.7;
-				constraints.gridx   = 0;
-				constraints.gridy   = 0;
-				panel.add(promptPanel, constraints);
-				constraints.gridy = 1;
-				panel.add(choicesPanel, constraints);
-
-				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frame.setContentPane(panel);
-				frame.pack();
 				frame.setSize(1920, 1080);
-				frame.setVisible(true);
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
+				JLayeredPane layeredPane = new JLayeredPane();
+				layeredPane.setPreferredSize(new Dimension(1920,1080));
+				
+				ImageIcon image = new ImageIcon("assets/DarkBackground.png");
+				
+		        JPanel panel = new JPanel() {
+		            @Override
+		            protected void paintComponent(Graphics g) {
+		                super.paintComponent(g);
+		                // Load the background image
+		                ImageIcon backgroundImage = new ImageIcon("assets/DarkBackground.png");
+		                Image img = backgroundImage.getImage();
+		                g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+		            }
+		        };
+		        panel.setLayout(null); // We'll position the text manually
+		        panel.setPreferredSize(new Dimension(1920,1080));
+		        
+		        // Create and add text label
+		        JLabel textLabel = new JLabel("Hello, World!");
+		        textLabel.setForeground(Color.WHITE); // Set text color
+		        textLabel.setFont(new Font("Arial", Font.BOLD, 24)); // Set font
+		        textLabel.setBounds(50, 50, 200, 50); // Position and size
+		        panel.add(textLabel);
+
+		        frame.pack();
+		        frame.setVisible(true);
+
+//		        // Add the panel to the frame
+//		        frame.add(panel);
+//				GridBagConstraints constraints = new GridBagConstraints();
+//				constraints.anchor  = GridBagConstraints.CENTER;
+//				constraints.fill    = GridBagConstraints.HORIZONTAL;
+//				constraints.weightx = 0.5;
+//				constraints.weighty = 0.7;
+//				constraints.gridx   = 0;
+//				constraints.gridy   = 0;
+//				panel.add(promptPanel, constraints);
+//				constraints.gridy = 1;
+//				panel.add(choicesPanel, constraints);
+//
+//
+//				frame.setContentPane(panel);
+//				frame.pack();
+//
+//				frame.setVisible(true);
 			}
 		});
 	}
