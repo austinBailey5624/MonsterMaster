@@ -14,7 +14,7 @@ public class MonsterManager
 	private static Multimap<SubElement, MonsterType> m_monsterTypesBySubElement;
 	private static List<MonsterType.Builder>         m_monsterTypeBuilders;
 
-	public List<MonsterType> getMonsterTypes()
+	public static List<MonsterType> getMonsterTypes()
 	{
 		if (m_monsterTypes != null)
 		{
@@ -24,7 +24,7 @@ public class MonsterManager
 		return m_monsterTypes;
 	}
 
-	public Multimap<SubElement, MonsterType> getMonsterTypesBySubElement()
+	public static Multimap<SubElement, MonsterType> getMonsterTypesBySubElement()
 	{
 		if (m_monsterTypesBySubElement != null)
 		{
@@ -42,7 +42,7 @@ public class MonsterManager
 		return m_monsterTypesBySubElement;
 	}
 
-	private MonsterType getMonsterTypeFromIndex(int index, List<MonsterType> monsterTypes)
+	private static MonsterType getMonsterTypeFromIndex(int index, List<MonsterType> monsterTypes)
 	{
 		if (index == 0)
 		{
@@ -58,7 +58,7 @@ public class MonsterManager
 		throw new IllegalStateException("Monster type with index " + index + " not found in list");
 	}
 
-	private void readMonsterTypesFromDB()
+	private static void readMonsterTypesFromDB()
 	{
 		ArrayList<IntermediateMonsterType> intermediateMonsterTypes = new ArrayList<>();
 		ElementManager.getSubElements();
@@ -89,17 +89,32 @@ public class MonsterManager
 			{
 				resolveParentMonsterTypes(type);
 			}
+			type.setDefaultTraits(TraitConceptManager.getTraitManagerById(type.getIndex()));
 		}
 		for (MonsterType.Builder type : m_monsterTypeBuilders)
 		{
 			MonsterType monsterType = type.build();
 			monsterType.setPreviousEvolution(
 					getMonsterTypeFromIndex(type.getPreviousEvolutionIndex(), MonsterType.getMonsterTypes()));
+//			setTraits(monsterType, managers);
+//			monsterType.setDefaultTraits(TraitConceptManager.getTraitManagerById(monsterType.getIndex()));
 		}
 		m_monsterTypes = MonsterType.getMonsterTypes();
 	}
+	
+//	private static void setTraits(MonsterType type, List<TraitManager> managers)
+//	{
+//		for(TraitManager manager : managers)
+//		{
+//			if(manager.getMonsterTypeId() == type.getIndex())
+//			{
+//				type.setDefaultTraits(manager);
+//			}
+//		}
+//		throw new IllegalArgumentException("No matching manager for monster type index: " + type.getIndex());
+//	}
 
-	private MonsterType.Builder getBuilderByIndex(int index)
+	private static MonsterType.Builder getBuilderByIndex(int index)
 	{
 		for (MonsterType.Builder builder : m_monsterTypeBuilders)
 		{
@@ -112,7 +127,7 @@ public class MonsterManager
 	}
 
 	// returns itself so the next iteration can use that as its previous evolution;
-	private MonsterType.Builder resolveParentMonsterTypes(MonsterType.Builder monsterTypeToResolve)
+	private static MonsterType.Builder resolveParentMonsterTypes(MonsterType.Builder monsterTypeToResolve)
 	{
 		MonsterType.Builder physicalEvolution = getBuilderByIndex(monsterTypeToResolve.getPhysicalEvolutionIndex());
 		if (physicalEvolution != null)

@@ -16,10 +16,16 @@ public class MonsterType
 	private final String             m_description;
 	private final SubElement         m_subElement;
 	// can't be final because double linking in construction graph
-	private MonsterType       m_previousEvolution;
-	private final MonsterType m_physicalEvolution;
-	private final MonsterType m_balancedEvolution;
-	private final MonsterType m_magicalEvolution;
+	private MonsterType        m_previousEvolution;
+	private final MonsterType  m_physicalEvolution;
+	private final MonsterType  m_balancedEvolution;
+	private final MonsterType  m_magicalEvolution;
+	private final TraitManager m_defaultTraits;
+
+	public TraitManager getDefaultTraits()
+	{
+		return m_defaultTraits;
+	}
 
 	public static List<MonsterType> getMonsterTypes()
 	{
@@ -78,7 +84,7 @@ public class MonsterType
 				+ (m_physicalEvolution == null ? "" : (" physical evolution: " + m_physicalEvolution.getName()))
 				+ (m_balancedEvolution == null ? "" : (" balanced evolution: " + m_balancedEvolution.getName()))
 				+ (m_magicalEvolution == null ? "" : (" magical evolution: " + m_magicalEvolution.getName()))
-				+ " Description: " + m_description;
+				+ " Description: " + m_description + m_defaultTraits.toString();
 	}
 
 	private MonsterType(Builder builder)
@@ -115,6 +121,7 @@ public class MonsterType
 		{
 			this.m_magicalEvolution = null;
 		}
+		this.m_defaultTraits = builder.getDefaultTraits();
 		if (m_monsterTypes == null)
 		{
 			m_monsterTypes = new LinkedList<MonsterType>();
@@ -143,6 +150,9 @@ public class MonsterType
 		private int                 m_physicalEvolutionIndex;
 		private int                 m_balancedEvolutionIndex;
 		private int                 m_magicalEvolutionIndex;
+		private TraitManager        m_defaultTraits;
+
+
 
 		public int getIndex()
 		{
@@ -239,6 +249,16 @@ public class MonsterType
 		{
 			this.m_magicalEvolutionIndex = m_magicalEvolutionIndex;
 			return this;
+		}
+		
+		public TraitManager getDefaultTraits()
+		{
+			return m_defaultTraits;
+		}
+
+		public void setDefaultTraits(TraitManager defaultTraits)
+		{
+			this.m_defaultTraits = defaultTraits;
 		}
 
 		public MonsterType build()

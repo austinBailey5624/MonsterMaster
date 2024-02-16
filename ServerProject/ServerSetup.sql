@@ -420,7 +420,7 @@ VALUES
     ('Mystic Wolf',22,NULL,NULL,NULL,146,'A mystic wolf contemplates the mysteries of the universe, and contains them all within its mind. It howls its deep wisdom into the ether, where it is both heard and not heard, who can say. If a wolf howls in the forest and no one can hear them, did he still howl?'),
     ('Emerald',22,NULL,NULL,NULL,147,'A great gem that resembles the great Earth Gem and can channel some of its powers. A mystic earth spirit lives within the gem, attuned to nature and health'),
     ('Primordial Terra Elemental',22,NULL,NULL,NULL,148,'A large Terra elemental surrounded by the elementals representing all other primary elements. It is the magical protector of the forest, and forms symbiotic links with all animals it comes into contact with.'),
-    ('Minor Pegasus',23,155,NULL,156,NULL,'Half horse, half plant half bird... Or wait, is that too many halves? Its front two legs are treeish, while the torso, head and back legs are a horse and it has wings. Dont look at me, you\'ve all seen Hercules! Its like that except the two front legs are treeish. And its the reaally cute baby form, obviously.'),
+    ('Pegasus foal',23,155,NULL,156,NULL,'Half horse, half plant half bird... Or wait, is that too many halves? Its front two legs are treeish, while the torso, head and back legs are a horse and it has wings. Dont look at me, you\'ve all seen Hercules! Its like that except the two front legs are treeish. And its the reaally cute baby form, obviously.'),
     ('Lesser Pegasus',23,NULL,157,NULL,154,'Lesser Pegasus is a little depressed. I mean the baby pegases didn\'t mind that it was called minor because its a baby. But Lesser pegasus knows what they\'re saying, and its really awkward and its just sad... But at least its front hooves dont look like trees anymore! It also cant fly to its unending shame, all the other pegasus laugh at it... Its a hard life.'),
     ('Sapwing',23,NULL,158,NULL,154,'The Sapwing is a tree that wanted to be a bird. Now its converted its leaves into semi feathers and can hop along the ground some if it tries real hard.'),
     ('Pegasus',23,NULL,159,NULL,155,'Pegasus is glad that its no longer a lesser pegasus, because lets face it, those teenage years sucked. Now he can fly but he cant carry anyone. Especially heroes in armor. Are you kidding me? Its already aerodynamically impossible for a horse to fly and now you want to add a two hundred pound hero with 300 pounds of armor? not to mention loot? Not on my back.'),
@@ -444,7 +444,7 @@ VALUES
     ('BeePee',25,NULL,NULL,NULL,172,'The BeePee is the transformed urine of a disgruntled honeybee. It now floods toxic sludge all over the opponents battlefield which ignites when hit with fire, dealing massive damage. It feeds off of the suffering that it causes and is often found near sites of industrial accidents. Oddly, however obvious it is that the problem is BeePee\'s fault, it constantly refuses to take responsibility, and honestly seems to believe that it is a force for good.'),
     ('Plaguerat',25,NULL,NULL,NULL,173,'This rat carries the bubonic plague, and infects all that contact it with terrible disease. While it is not a strong fighter, it can outlast its enemies, bleeding them to death by a thousand cuts. It is made stronger and healthier by all of the diseased creatures on either side of the field, and does extra damage to plagued enemies.'),
     ('Cancerbloat',25,NULL,NULL,NULL,174,'A sentient cancer has taken control of this diseased body and wants only one thing: to spread and grow until all flora and fauna are infected with its lethal disease. The Victim whose body it controls is utterly lost to it, and twitches horribly with each unwilling step.'),
-    ('Minor Phoenix',30,179,NULL,180,NULL,'Not yet brilliant, or aflame like its stronger, larger cousins, the lesser phoenix is known to be a temperamental bird, aggressive and puerile. Sparks fly from its still soft wings, alighting the forest beneath.'),
+    ('Phoenix Chick',30,179,NULL,180,NULL,'Not yet brilliant, or aflame like its stronger, larger cousins, the lesser phoenix is known to be a temperamental bird, aggressive and puerile. Sparks fly from its still soft wings, alighting the forest beneath.'),
     ('Chol',30,NULL,181,NULL,178,'The Chol is a violent Phoenix with a six-foot wingspan. The tops of its wings are alight in orange flame. When angry, or defending the flock, it will light its claws afire. Its red plumage denotes blood as well as flame.'),
     ('Firebird',30,NULL,182,NULL,178,'The only phoenix with green plumage, the firebird is traditionally known for sacrificing itself for others. It is a guide for hopeless lost travelers, lighting bonfires to point them to safety.'),
     ('Fawke',30,NULL,183,NULL,179,'The Fawkes are named for their propensity to light themselves and others aflame- they were originally called Fire Hawks, but it was shortened to Fawkes later to commemorate a legendary phoenix that once gave a boy a hat. Among each group of Fawkes, a female (usually the oldest) is designated the leader of the flock. This Fawke is usually called the \'mother Fawke\', and is referenced bizarrely frequently by Samuel L Jackson'),
@@ -620,8 +620,8 @@ ALTER TABLE monster_type
 ADD FOREIGN KEY(previous_evolution) REFERENCES monster_type(monster_type_id);
     
     
-CREATE TABLE traits(
-	traits_id INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE trait_manager(
+	trait_manager_id INT PRIMARY KEY AUTO_INCREMENT,
     traits_name VARCHAR(50) NOT NULL,
     monster_type_id INT,
     FOREIGN KEY(monster_type_id) REFERENCES monster_type(monster_type_id)
@@ -631,13 +631,13 @@ CREATE TABLE trait(
 	trait_id INT PRIMARY KEY AUTO_INCREMENT,
     trait_name VARCHAR(50) NOT NULL,
     description VARCHAR(750) NOT NULL,
-    trait_type ENUM('Corporeality','Age','Traversal','Evolutionary','Inherited','Elemental Magic','Stat Modifiers') NOT NULL
+    trait_type ENUM('Corporeality','Age','Traversal','Evolutionary','Inherited','ElementalMagic','StatModifier') NOT NULL
     );
     
 CREATE TABLE trait_intensity_lookup(
 	intensity_id INT PRIMARY KEY AUTO_INCREMENT,
-    traits_id INT NOT NULL,
-    FOREIGN KEY(traits_id) REFERENCES traits(traits_id),
+    trait_manager_id INT NOT NULL,
+    FOREIGN KEY(trait_manager_id) REFERENCES trait_manager(trait_manager_id),
     trait_id INT NOT NULL,
     FOREIGN KEY(trait_id) REFERENCES trait(trait_id),
     intensity INT
@@ -693,21 +693,21 @@ VALUES
     ('Random Rainbow','Inherited','The skin of this monster is a hallucinogenic, and contact with it will deal (1/2/3/4/5) points of a random effect. Commonly seen on the balanced branch of the Amphibious subelement.'),
     ('Elemental Stone','Inherited','Deal 10/15/20/25/40% more damage for each stone equipped by the player'),
     ('Death Consuming','Inherited','Deal 2/4/6/8/10% more damage per corpse on the battle, typically found on Undead Monsters or some Nightwing Monsters.'),
-    ('Pyromancy','Elemental Magic','Bonus (10*intensity)% fire damage on magical skills'),
-    ('Aquamancy','Elemental Magic','Bonus (10*intensity)% water damage on magical skills'),
-    ('Terramancy','Elemental Magic','Bonus (10*intensity)% earth damage on magical skills'),
-    ('Aeromancy','Elemental Magic','Bonus (10*intensity)% air damage on magical skills'),
-    ('Luxormancy','Elemental Magic','Bonus (10*intensity)% light damage on magical skills'),
-    ('Umbramancy','Elemental Magic','Bonus (10*intensity)% dark damage on magical skills'),
-    ('Calm','Stat Modifiers','A positive value will result in Calm: Deal and receive 20/40/60/80/100% additional Calm Damage. Typically found on Compassion Monsters. A negative value will result in Angry: Deal and receive 20/40/60/80/100% less Calm Damage. Cannot be combined with Calm. Typically found on Demon and Vengeance Monsters.'),
-    ('Hot','Stat Modifiers','A positive value will result in Hot: Slightly increases the temperature of the battlefield each turn. Takes severe damage in cold conditions. Typically found on Pyro and Lava monsters. A negative value will result in Cold: Slightly decreases the temperature of the battlefield each turn. Takes severe damage in hot conditions. Typically found on Ice monsters.'),
-    ('Strong','Stat Modifiers','A positive value will result in Strong: Deal 5/10/15/20/30% additional damage in melee combat. Typically found on Dinosaurs and Physical evolutions. A negative value will result in Weak: deal 5/10/15/20/30% less damage in melee combat. Typically found on Magical Evolutions.'),
-    ('Wise','Stat Modifiers','A positive value will result in Wise: deal 5/10/15/20/30% additional magic damage. Increase experience gain by 2/4/6/8/12% Typically found on Magical Evolutions. A negative value will result in Dumb: 	deal 5/10/15/20/30% less magic damage. Decrease experience gain by 2/4/6/8/12% Typically found on Dinosaurs and Physical evolutions.'),
-    ('Fast','Stat Modifiers','A positive value will result in Fast: Increase speed in turn calculation by 5/10/15/20/25% Typically found on Air primary monsters or Pegasus Monsters. A negative value will result in Slow: Reduce speed in turn calculation by 5/10/15/20/25% Typically found on Elder Physical monsters, or the Physical branch (turtles) of the Amphibious Secondary element.'),
-    ('Hardy','Stat Modifiers','A positive value will result in Hardy: Gain 5/10/15/20/25% Extra health. Typically found on Elder Physical monsters, or the Physical branch (turtles) of the Amphibious Secondary element, or the Undead. A negative value will result in Faint: Reduce Health by 5/10/15/20/25%. Typically found on Phoenix monsters.'),
-    ('Rich','Stat Modifiers','A positive value will result in Poor: Gain 10/20/25/30/35% less gold from battle. Instead, gain 5/10/13/17/20% bonus experience for just this monster, only if there are no Rich monsters in party.');
+    ('Pyromancy','ElementalMagic','Bonus (10*intensity)% fire damage on magical skills'),
+    ('Aquamancy','ElementalMagic','Bonus (10*intensity)% water damage on magical skills'),
+    ('Terramancy','ElementalMagic','Bonus (10*intensity)% earth damage on magical skills'),
+    ('Aeromancy','ElementalMagic','Bonus (10*intensity)% air damage on magical skills'),
+    ('Luxormancy','ElementalMagic','Bonus (10*intensity)% light damage on magical skills'),
+    ('Umbramancy','ElementalMagic','Bonus (10*intensity)% dark damage on magical skills'),
+    ('Calm','StatModifier','A positive value will result in Calm: Deal and receive 20/40/60/80/100% additional Calm Damage. Typically found on Compassion Monsters. A negative value will result in Angry: Deal and receive 20/40/60/80/100% less Calm Damage. Cannot be combined with Calm. Typically found on Demon and Vengeance Monsters.'),
+    ('Hot','StatModifier','A positive value will result in Hot: Slightly increases the temperature of the battlefield each turn. Takes severe damage in cold conditions. Typically found on Pyro and Lava monsters. A negative value will result in Cold: Slightly decreases the temperature of the battlefield each turn. Takes severe damage in hot conditions. Typically found on Ice monsters.'),
+    ('Strong','StatModifier','A positive value will result in Strong: Deal 5/10/15/20/30% additional damage in melee combat. Typically found on Dinosaurs and Physical evolutions. A negative value will result in Weak: deal 5/10/15/20/30% less damage in melee combat. Typically found on Magical Evolutions.'),
+    ('Wise','StatModifier','A positive value will result in Wise: deal 5/10/15/20/30% additional magic damage. Increase experience gain by 2/4/6/8/12% Typically found on Magical Evolutions. A negative value will result in Dumb: 	deal 5/10/15/20/30% less magic damage. Decrease experience gain by 2/4/6/8/12% Typically found on Dinosaurs and Physical evolutions.'),
+    ('Fast','StatModifier','A positive value will result in Fast: Increase speed in turn calculation by 5/10/15/20/25% Typically found on Air primary monsters or Pegasus Monsters. A negative value will result in Slow: Reduce speed in turn calculation by 5/10/15/20/25% Typically found on Elder Physical monsters, or the Physical branch (turtles) of the Amphibious Secondary element.'),
+    ('Hardy','StatModifier','A positive value will result in Hardy: Gain 5/10/15/20/25% Extra health. Typically found on Elder Physical monsters, or the Physical branch (turtles) of the Amphibious Secondary element, or the Undead. A negative value will result in Faint: Reduce Health by 5/10/15/20/25%. Typically found on Phoenix monsters.'),
+    ('Rich','StatModifier','A positive value will result in Poor: Gain 10/20/25/30/35% less gold from battle. Instead, gain 5/10/13/17/20% bonus experience for just this monster, only if there are no Rich monsters in party.');
     
-INSERT INTO traits(traits_name, monster_type_id)
+INSERT INTO trait_manager(traits_name, monster_type_id)
 VALUES
 	('Flarial Traits', 1),
     ('Pyrus Traits',2),
@@ -862,7 +862,7 @@ VALUES
     ('Mystic Wolf Traits', 151),
     ('Emerald Traits', 152),
     ('Primordial Terra Elemental Traits', 153),
-    ('Minor Pegasus Traits', 154),
+    ('Pegasus foal Traits', 154),
     ('Lesser Pegasus Traits', 155),
     ('Sapwing Traits', 156),
     ('Pegasus Traits', 157),
@@ -886,7 +886,7 @@ VALUES
     ('BeePee Traits', 175),
     ('Plaguerat Traits', 176),
     ('Cancerbloat Triats', 177),
-    ('Minor Phoenix Traits', 178),
+    ('Phoenix Chick Traits', 178),
     ('Chol Traits', 179),
     ('Firebird Traits', 180),
     ('Fawke Traits', 181),
@@ -1054,7 +1054,7 @@ VALUES
 
 Select * from monster_type where monster_type_id > 303; -- and Monster_type_id < 250;
 
-INSERT INTO trait_intensity_lookup(traits_id, trait_id, intensity)
+INSERT INTO trait_intensity_lookup(trait_manager_id, trait_id, intensity)
 VALUES
 	(1,1,1),(1,4,1),(1,11,1),(1,20,1),(1,12,1),(1,15,1),(1,56,1),
     (2,1,1),(2,5,1),(2,11,1),(2,20,2),(2,12,1),(2,16,2),(2,17,1),(2,56,2),
@@ -1081,7 +1081,7 @@ VALUES
     (23,1,1),(23,4,1),(23,10,2),(23,16,2),(23,57,1),(23,58,-1),
     (24,1,1),(24,5,1),(24,10,2),(24,16,3),(24,17,1),(24,57,2),
     (25,1,1),(25,5,1),(25,10,2),(25,14,1),(25,18,1),(25,59,1),
-    (26,1,1),(26,4,1),(26,10,2),(26,16,3),(26,19,1),(26,60,1),(26,39,1),
+    (26,1,1),(26,5,1),(26,10,2),(26,16,3),(26,19,1),(26,60,1),(26,39,1),
     (27,1,1),(27,6,1),(27,10,1),(27,16,5),(27,17,2),(27,57,3),(27,58,-2),(27,59,-1),
     (28,1,1),(28,6,1),(28,10,2),(28,14,3),(28,18,2),(28,59,2),
     (29,1,1),(29,6,1),(29,10,2),(29,16,5),(29,19,2),(29,39,2),(29,60,2),
