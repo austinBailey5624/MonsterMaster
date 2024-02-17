@@ -1,7 +1,12 @@
 package com.greenwolfgames.MonsterMaster;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -21,6 +26,7 @@ public class MonsterManager
 			return m_monsterTypes;
 		}
 		readMonsterTypesFromDB();
+		m_monsterTypes.sort(new MonsterTypeComparator());
 		return m_monsterTypes;
 	}
 
@@ -96,23 +102,9 @@ public class MonsterManager
 			MonsterType monsterType = type.build();
 			monsterType.setPreviousEvolution(
 					getMonsterTypeFromIndex(type.getPreviousEvolutionIndex(), MonsterType.getMonsterTypes()));
-//			setTraits(monsterType, managers);
-//			monsterType.setDefaultTraits(TraitConceptManager.getTraitManagerById(monsterType.getIndex()));
 		}
 		m_monsterTypes = MonsterType.getMonsterTypes();
 	}
-	
-//	private static void setTraits(MonsterType type, List<TraitManager> managers)
-//	{
-//		for(TraitManager manager : managers)
-//		{
-//			if(manager.getMonsterTypeId() == type.getIndex())
-//			{
-//				type.setDefaultTraits(manager);
-//			}
-//		}
-//		throw new IllegalArgumentException("No matching manager for monster type index: " + type.getIndex());
-//	}
 
 	private static MonsterType.Builder getBuilderByIndex(int index)
 	{
@@ -152,5 +144,57 @@ public class MonsterManager
 			magicalEvolution.setPreviousEvolution(monsterTypeToResolve);
 		}
 		return monsterTypeToResolve;
+	}
+	
+	public static void printTraits() throws IOException
+	{
+		getMonsterTypes();
+		String filepath = "TraitsOutput.txt";
+
+		BufferedWriter writer = new BufferedWriter(new FileWriter(filepath));
+		
+		for(MonsterType type : m_monsterTypes)
+		{
+			printMonsterTraits(type,writer);
+		}
+		writer.close();
+	}
+	
+	private static void printMonsterTraits(MonsterType type, BufferedWriter writer) throws IOException
+	{
+		for(Map.Entry<Trait, Integer> entry : getTraitList(type))
+		{
+			writer.write("(" + type.getIndex() + "," + entry.getKey().getIndex() + "," + entry.getValue()+ "),");
+		}
+		writer.write("\n");
+	}
+	
+	public static List<Map.Entry<Trait,Integer>> getTraitList(MonsterType type)
+	{
+		List<Map.Entry<Trait, Integer>> result = new LinkedList<>();
+		for(Map.Entry<Trait, Integer> entry : type.getDefaultTraits().getIntensityByTraits().entrySet())
+		{
+			result.add(entry);
+		}
+		result.sort(new TraitIntensityComparator());
+		return result;
+	}
+	
+	private static class TraitIntensityComparator implements Comparator<Map.Entry<Trait, Integer>>
+	{
+		@Override
+		public int compare(Map.Entry<Trait,Integer> entry1, Map.Entry<Trait,Integer> entry2)
+		{
+			return entry1.getKey().getIndex() - (entry2.getKey().getIndex());
+		}
+	}
+	
+	private static class MonsterTypeComparator implements Comparator<MonsterType>
+	{
+		@Override
+		public int compare(MonsterType type1, MonsterType type2)
+		{
+			return type1.getIndex() - type2.getIndex();
+		}
 	}
 }

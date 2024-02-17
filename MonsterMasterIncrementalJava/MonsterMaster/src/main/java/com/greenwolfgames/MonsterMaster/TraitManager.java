@@ -56,4 +56,9 @@ public class TraitManager
 	{
 		return m_trait_intensity.get(traitToLookup);
 	}
+	
+	public Map<Trait,Integer> getIntensityByTraits()
+	{
+		return m_trait_intensity;
+	}
 }

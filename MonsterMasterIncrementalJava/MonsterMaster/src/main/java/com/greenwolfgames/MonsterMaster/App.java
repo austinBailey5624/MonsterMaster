@@ -2,11 +2,27 @@ package com.greenwolfgames.MonsterMaster;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class App {
 	
 	private static Dimension DIMENSIONS = new Dimension(1920,1080);
     public static void main(String[] args) {
+    	try
+		{
+			MonsterManager.printTraits();
+			cleanTextDoc();
+		}
+		catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
         JFrame frame = new JFrame("Image with Text Example");
         frame.setSize(DIMENSIONS);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -45,5 +61,22 @@ public class App {
 
         frame.pack();
         frame.setVisible(true);
+    }
+    
+    private static void cleanTextDoc() throws IOException
+    {
+    	String inputFile="src/traitsFromDB.txt";
+    	String outputFile="src/traitsFromDBClean.txt";
+    	BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+    	BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+    	String line;
+    	while((line = reader.readLine()) != null)
+    	{
+    		line = line.trim();
+    		writer.write(line);
+    		writer.newLine();
+    	}
+    	reader.close();
+    	writer.close();
     }
 }
