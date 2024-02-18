@@ -1,0 +1,51 @@
+trait_id,trait_name,trait_type
+1,Corporeality
+2,Age
+3,Body Type 1
+4,Body Type 2
+5,Body Type 3
+6,Weight
+7,Underwater Traversal
+8,Wetness affinity
+9,Heat Tolerance
+10,Light Emitting
+11,Diurnal
+12,Strong
+13,Wise
+14,Fast
+15,Hardy
+16,Rich
+17,Physical
+18,Balanced
+19,Magical,
+20,Pyromancy
+21,Aquamancy,
+22,Terramancy,
+23,Aeromancy,
+24,Luxormancy,
+25,Umbramancy,
+26,Avenger,
+27,Cloudy,
+28,Connection,
+29,Costal,
+30,Dealt In Kind,
+31,Death Consuming,
+32,Depths Dweslling,
+33,Elemental Stone,
+34,Fish
+35,Flock,
+36,Forest Magic,
+37,Guilt
+38,Healer,
+39,Hypocrisy Hater,
+40,Immolated,
+41,Isolation,
+42,Natural,
+43,Protector,
+44,Random Rainbow
+45,Rebirth
+46,Regenerator,
+47,Rooted,
+48,Steamy,
+59,Toxic
+50,Vampire

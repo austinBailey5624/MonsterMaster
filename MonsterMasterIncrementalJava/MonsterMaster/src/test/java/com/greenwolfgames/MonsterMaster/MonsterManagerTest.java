@@ -51,11 +51,13 @@ public class MonsterManagerTest
 			{
 				checksum++;
 				numPartially++;
+				System.out.println(monsterType.getName() + monsterType.getDescription());
 			}
 			if (incorporealInt != null)
 			{
 				checksum++;
 				numIncorporeal++;
+				System.out.println(monsterType.getName() + monsterType.getDescription());
 			}
 			assertEquals(1, checksum);
 
@@ -128,6 +130,22 @@ public class MonsterManagerTest
 			System.out.println("Total: " + (numInfant + numAdolescent + numAdult + numElder));
 		}
 	}
+	
+//	@Test
+//	public void getCorporealityTraits()
+//	{
+//		for(MonsterType monsterType : MonsterManager.getMonsterTypes())
+//		{
+//			TraitManager monsterTypeTraits = monsterType.getDefaultTraits();
+//			Trait corporeality = TraitConceptManager.getTraitById();
+//			Integer intensity = monsterTypeTraits.getIntensity(corporeality);
+//			System.out.println(intensity);
+//			if(intensity != null && intensity > 1)
+//			{
+//				System.out.println(monsterType);
+//			}
+//		}
+//	}
 	
 	@Test
 	public void testSizeOfEachSubelement()
