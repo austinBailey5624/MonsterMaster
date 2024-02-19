@@ -7,7 +7,7 @@ package com.greenwolfgames.MonsterMaster;
  *
  */
 public enum ETraitType {
-	CORPOREALITY, AGE, TRAVERSAL, EVOLUTIONARY, INHERITED, ELEMENTALMAGIC, STATMODIFIER;
+	FUNDAMENTAL,CORPOREALITY, AGE, TRAVERSAL, EVOLUTIONARY, INHERITED, ELEMENTALMAGIC, STATMODIFIER;
 	
 	public static ETraitType getEnum(String value)
 	{

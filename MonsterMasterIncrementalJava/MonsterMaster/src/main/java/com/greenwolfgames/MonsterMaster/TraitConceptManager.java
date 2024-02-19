@@ -103,18 +103,22 @@ public class TraitConceptManager
 		try
 		{
 			ResultSet traitsResultSet = SQLContentRetriever.connectToSQLDB().createStatement()
-					.executeQuery("select * from trait");
+					.executeQuery("Select trait_id, trait_name, trait_type from trait;");
 			m_traits = new LinkedList<>();
 			while (traitsResultSet.next())
 			{
 				m_traits.add(new Trait(traitsResultSet.getInt(1), traitsResultSet.getString(2),
-						traitsResultSet.getString(3), ETraitType.getEnum(traitsResultSet.getString(4))));
+						ETraitType.getEnum(traitsResultSet.getString(3))));
 			}
 		}
 		catch (Exception e)
 		{
 			System.err.println("Issue connecting to sql server");
 			e.printStackTrace();
+		}
+		for(Trait trait : m_traits)
+		{
+			System.out.println(trait.toString());
 		}
 	}
 

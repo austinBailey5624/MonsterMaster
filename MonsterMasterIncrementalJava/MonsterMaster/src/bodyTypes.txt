@@ -38,10 +38,11 @@
 38	Stone
 39	Sword
 40	Symbol
-41	Plant
+41	Tree
 42	Turtle
 43	Tyrant
 44	Wasp
 45	Wolf
 46  Liquid
 47  Cow
+48  Spider

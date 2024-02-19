@@ -13,14 +13,14 @@ public class Trait
 
 	private final int        m_index;
 	private final String     m_name;
-	private final String     m_description;
+//	private final String     m_description;
 	private final ETraitType m_traitType;
 
-	public Trait(int index, String name, String description, ETraitType traitType)
+	public Trait(int index, String name,  ETraitType traitType)
 	{
 		this.m_index       = index;
 		this.m_name        = name;
-		this.m_description = description;
+//		this.m_description = description;
 		this.m_traitType   = traitType;
 	}
 
@@ -34,10 +34,10 @@ public class Trait
 		return m_name;
 	}
 
-	public String getDescription()
-	{
-		return m_description;
-	}
+//	public String getDescription()
+//	{
+//		return m_description;
+//	}
 
 	public ETraitType getTraitType()
 	{
@@ -46,6 +46,6 @@ public class Trait
 
 	public String toString()
 	{
-		return "Index: " + m_index + " Name: " + m_name + " Description: " + m_description + " traitType: " + m_traitType.toString();
+		return "Index: " + m_index + " Name: " + m_name + " traitType: " + m_traitType.toString();
 	}
 }
