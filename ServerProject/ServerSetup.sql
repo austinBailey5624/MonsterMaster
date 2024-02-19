@@ -679,7 +679,6 @@ VALUES
     ('Starfish'),('Steam Blob'),('Stone'),('Sword'),('Symbol'),
     ('Tree'),('Turtle'),('Tyrant'),('Wasp'),('Wolf'),('Liquid'),('Cow'),('Spider');
     
-Select * from trait_body_type_value;
     
 CREATE TABLE trait_descriptions(
 	trait_description_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -753,7 +752,51 @@ VALUES
     ('Toxic','Inherited',0,10),
     ('Vampire','Inherited',0,10);
     
--- Select trait_id, trait_name, trait_type from trait;-- 
+Select * from trait;
+
+Select * from trait_body_type_value;
+
+INSERT INTO trait_description(trait_id, trait_value, description)
+VALUES
+	(1,1,'Corporeal, fully existing in the Physical Space'),
+    (1,2,'Fluid, fully existing in the Physical space but very flexible and resistant to physical damage'),
+    (1,3,'Vapor, Fully existing in the physical space with a gaseous form, very flexible and extremely resistant to physical damage'),
+    (1,4,'Flame, Existing solely as a flame, this monster is extremenly resistant to physical damage and damages any who hit it'),
+    (1,5,'Shadow/Light, Existing as a light source or shadow, this monster is immune to physical damage'),
+    (1,6,'Ghost, Existing as a formless ghost, this monster is immune to physical damage, and may haunt any that touch it'),
+    (2,1,'Infant, This monster is incredibly young, maybe scarce days after birth.'),
+    (2,2,'Adolescent, A teenager, this monster is comparatively young, and eager to earn its place among its superiors.'),
+    (2,3,'Adult, In their prime, Adult monsters are very strong and difficult to defeat with younger monsters, even when outnumbered.'),
+    (2,4,'Elder, Wise, but not as strong as they once were, Elder monsters use their experience to their advantage in combat.'),
+    (2,5,'Ancient, To reach this age and strength, a monster must be nearly immortal, and have survived many battles. Ancient Monsters are nearly impossible to control, but those that control them are amazed at their utility.'),
+    (3,1,'Angel, This monster takes the primary form of an angel, servant of the divine.'),
+    (3,2,'Badger, This monster takes the primary form of a small omnivore woodland creature.'),
+    (3,3,'Bat, This monster takes the form of a flying mammal with leathery wings.'),
+    (3,4,'Bear, This monster takes the form of a giant doglike carnivore.'),
+    (3,5,'Bird, This monster takes the form of a flying animal with feathers.'),
+    (3,6,'Blob, This monster takes the form of an amorphus blob.'),
+    (3,7,'Camel, This monster is great at helping the party navigate harsh arid weather enviornments.'),
+    (3,8,'Cloud, This monster takes the form of a cloud in the sky.'),
+    (3,9,'Corpse, This monster takes the form of a corpse, and counts as a corpse in all death calculations, even while alive.'),
+    (3,10,'Demon, With demonic horns and evil eyes, this monster is not to be trusted.'),
+    (3,11,'Disease, Sickness and plague follow wherever this monster goes.'),
+    (3,12,'Dragon, this monster takes the form of a great dragon, with potent breath, wings and claws.'),
+    (3,13,'Elf, Mischevious and tricky, this monster takes the form of an elf.'),
+    (3,14,'Fish, Happier in water, this monster resembles a fish, and prefers the depths.'),
+    (3,15,'Fox, Small, clever and mischevious, this monster resembles a fox spirit, and may attempt to trick you.'),
+    (3,16,'Frog, This wily amphibious monster prefers a humid climate and may have special powers when kissed by a princess.'),
+    (3,17,'Gem, This monster resembles a large expensive Gem with a powerful soul trapped inside.'),
+    (3,18,'Ghost, This frightening monster feels cold when you pass through it.'),
+    (3,19,'Golem, This monster resembles a moving statue.'),
+    (3,20,'Horse, Fast and furious, this horse can be ridden, but only by those that care for it.'),
+    (3,21,'Humanoid, This monster is vaguely human shaped, with a head, two arms and two legs.'),
+    (3,22,'Jellyfish, This monster is a bell of jelly with a long potentially poisonous tail it uses to capture its prey.'),
+    (3,23,'Light Blob, This monster is best described as a blob of light.'),
+    (3,24,'Lizard, This monster is scaled and cold blooded.'),
+    (3,25,'Monk, This monster resembles a holy monk.'),
+    (3,26,'Penguin, A member of the royal family, this penguin either has serfs and land or is in line to inherit it.'),
+    (3,27,'Plant, This monster is definately more flora than fauna, and feeds by drinking water in its roots and sunlight in its leaves.'),
+    (3,28,'Rat, these disgusting little rodents carry all sorts of disease .');
     
 INSERT INTO trait_manager(traits_name, monster_type_id)
 VALUES
