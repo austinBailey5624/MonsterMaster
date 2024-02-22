@@ -680,7 +680,7 @@ VALUES
     ('Tree'),('Turtle'),('Tyrant'),('Wasp'),('Wolf'),('Liquid'),('Cow'),('Spider');
     
     
-CREATE TABLE trait_descriptions(
+CREATE TABLE trait_description(
 	trait_description_id INT PRIMARY KEY AUTO_INCREMENT,
     trait_id INT,
     FOREIGN KEY(trait_id) REFERENCES trait(trait_id),
@@ -940,7 +940,19 @@ VALUES
     (7,3,'This monster usually lives above the land, and feels neutral about sumberging. It will need help to go beneath the waves for an extended period of time.'),
     (7,4,'This monster is accustomed to the water, and can submerge with some help.'),
     (7,5,'This monster is very accustomed to living in the water, and can submerge with very little help.'),
-    (7,6,'This monster breathes the water like it was air, and requries no help to go beneath the waves.');
+    (7,6,'This monster breathes the water like it was air, and requries no help to go beneath the waves.'),
+    (8,-5,'This monster strongly prefers a dry atmosphere and is damaged by wetness, and gains moderate benefits from sandstorms and dry heat.'),
+    (8,-4,'This monster prefers a dry atmosphere and is slightly damaged by wetness, and gains slight benefit from sandstorms and dry heat.'),
+    (8,-3,'This monster is very accustomed to a dry atmosphere, and has moderate penalties when wet. It is immune from damage from sandstorms and dry heat.'),
+    (8,-2,'This monster is accustomed to a dry atmosphere, and has penalties when wet. It takes 50% reduced damage from sandstorms and dry heat.'),
+    (8,-1,'This monster is slightly accustomed to a dry atmosphere, and takes 20% reduced damage from sandstorms and dry heat.'),
+    (8,0,'This monster is accustomed to neither a wet or a dry climate, and has not benefits or penalites from either.'),
+    (8,1,'This monster is slightly accustomed to a wet atmosphere, and gains 1% extra damage and health for every 10 points of the Wet status effect, to a maximum of 5%. It takes 10% additional penalties for sandstorm and dry heat'),
+    (8,2,'This monster is accustomed to a wet atmosphere, and gains 2% extra damage and health for every 10 points of the Wet status effect, to a maximum of 12%. It takes 20% additional penalites from sandstorm and dry heat.'),
+    (8,3,'This monster is very accustomed to a wet atmosphere, and gains 3% extra damage and health for every 10 points of the Wet status effect, to a maximum of 18%. It takes 35% additional penalites from sandstorm and dry heat.'),
+    (8,4,'This monster prefers damp wetness, and gains 4% extra damage and health for every 10 points of the Wet status effect, to a maximum of 24%. It takes 50% additional penalites from sandstorm and dry heat.'),
+    (8,5,'This monster needs damp wetness, and gains 5% additional damage and health for every 10 points of the Wet status effect, to a maximum of 35%. It takes twice as much damage and other penalties from sandstorm and dry heat');
+    
     
     
 INSERT INTO trait_manager(traits_name, monster_type_id)
