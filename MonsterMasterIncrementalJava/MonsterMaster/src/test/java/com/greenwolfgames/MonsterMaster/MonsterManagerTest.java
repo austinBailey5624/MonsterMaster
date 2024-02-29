@@ -31,8 +31,12 @@ public class MonsterManagerTest
 	public void testEachMonsterHasACorporealityTrait()
 	{
 		int numCorporeal   = 0;
-		int numPartially   = 0;
-		int numIncorporeal = 0;
+		int numFluid   = 0;
+		int numVapor = 0;
+		int numFlame = 0;
+		int numShadowOrLight = 0;
+		int numGhost = 0;
+		
 		for (MonsterType monsterType : MonsterManager.getMonsterTypes())
 		{
 			TraitManager monsterTypeTraits  = monsterType.getDefaultTraits();
@@ -44,35 +48,43 @@ public class MonsterManagerTest
 				checksum++;
 				numCorporeal++;
 			}
-			if (corporealInt == 2)
+			else if (corporealInt == 2)
 			{
 				checksum++;
-				numPartially++;
-				System.out.println("2" + monsterType.getName() + monsterType.getIndex());
+				numFluid++;
 			}
-			if (corporealInt == 3)
+			else if (corporealInt == 3)
 			{
 				checksum++;
-				numIncorporeal++;
-				System.out.println("3" + monsterType.getName() + monsterType.getIndex());
+				numVapor++;
+			}
+			else if (corporealInt == 4)
+			{
+				checksum++;
+				numFlame++;
+			}
+			else if (corporealInt == 5)
+			{
+				checksum++;
+				numShadowOrLight++;
+			}
+			else if (corporealInt == 6)
+			{
+				checksum++;
+				numGhost++;
 			}
 			if(checksum != 1)
 			{
-				System.out.println("FAILRUE" + monsterType.getName() + corporealInt);
+				System.out.println( monsterType.getName() + corporealInt + ":" + monsterType.getIndex());
 			}
-//			assertEquals(1, checksum);
-
 		}
+		
 		assertEquals(288,numCorporeal);
-//		assertEquals(42,numPartially);
-//		assertEquals(9,numIncorporeal);
-		if (printStatistics)
-		{
-			System.out.println("Number of Corporeal MonsterTypes: " + numCorporeal);
-			System.out.println("Number of Partially Corporeal MonsterTypes: " + numPartially);
-			System.out.println("Number of Incorporeal MonsterTypes: " + numIncorporeal);
-			System.out.println("Total: " + (numCorporeal + numPartially + numIncorporeal));
-		}
+		assertEquals(6, numFluid);
+		assertEquals(27, numVapor);
+		assertEquals(1, numFlame);
+		assertEquals(14, numShadowOrLight);
+		assertEquals(3, numGhost);
 	}
 
 	@Test
