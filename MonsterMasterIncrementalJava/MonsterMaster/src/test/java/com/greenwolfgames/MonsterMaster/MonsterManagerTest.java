@@ -189,6 +189,16 @@ public class MonsterManagerTest
 		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(35)).size(),10);
 		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(40)).size(),10);
 		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(41)).size(),7);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(42)).size(),7);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(43)).size(),7);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(44)).size(),12);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(45)).size(),10);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(50)).size(),10);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(51)).size(),10);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(52)).size(),7);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(53)).size(),10);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(54)).size(),7);
+		assertEquals(monsterTypesBySubelement.get(ElementManager.getSubElementById(55)).size(),12);
 		
 	}
 }
