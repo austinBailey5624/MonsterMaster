@@ -37,8 +37,8 @@ public class TraitConceptManagerTest
 	public void printAlphabetizedInheritedTraits()
 	{
 //		TraitConceptManager.printTraits();
-//		TraitConceptManager.alphabatizeBodyTypes();
-		TraitConceptManager.printHelper();
+		TraitConceptManager.alphabatizeBodyTypes();
+//		TraitConceptManager.printHelper();
 	}
 	
 

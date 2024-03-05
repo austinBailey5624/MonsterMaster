@@ -13,15 +13,17 @@ public class Trait
 
 	private final int        m_index;
 	private final String     m_name;
-//	private final String     m_description;
+	private final int m_minimumValue;
+	private final int m_maximumValue;
 	private final ETraitType m_traitType;
 
-	public Trait(int index, String name,  ETraitType traitType)
+	public Trait(int index, String name,  ETraitType traitType, int minimumValue, int maximumValue)
 	{
 		this.m_index       = index;
 		this.m_name        = name;
-//		this.m_description = description;
 		this.m_traitType   = traitType;
+		this.m_minimumValue = minimumValue;
+		this.m_maximumValue = maximumValue;
 	}
 
 	public int getIndex()
@@ -34,18 +36,23 @@ public class Trait
 		return m_name;
 	}
 
-//	public String getDescription()
-//	{
-//		return m_description;
-//	}
-
 	public ETraitType getTraitType()
 	{
 		return m_traitType;
 	}
 
+	public int getMinimumValue()
+	{
+		return m_minimumValue;
+	}
+
+	public int getMaximumValue()
+	{
+		return m_maximumValue;
+	}
+
 	public String toString()
 	{
-		return "Index: " + m_index + " Name: " + m_name + " traitType: " + m_traitType.toString();
+		return "Index: " + m_index + " Name: " + m_name + " min: " + m_minimumValue + " max: " + m_maximumValue + " traitType: " + m_traitType.toString();
 	}
 }

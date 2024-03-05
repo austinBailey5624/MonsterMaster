@@ -103,12 +103,12 @@ public class TraitConceptManager
 		try
 		{
 			ResultSet traitsResultSet = SQLContentRetriever.connectToSQLDB().createStatement()
-					.executeQuery("Select trait_id, trait_name, trait_type from trait;");
+					.executeQuery("Select * from trait;");
 			m_traits = new LinkedList<>();
 			while (traitsResultSet.next())
 			{
 				m_traits.add(new Trait(traitsResultSet.getInt(1), traitsResultSet.getString(2),
-						ETraitType.getEnum(traitsResultSet.getString(3))));
+						ETraitType.getEnum(traitsResultSet.getString(3)), traitsResultSet.getInt(4), traitsResultSet.getInt(5)));
 			}
 		}
 		catch (Exception e)
@@ -206,6 +206,17 @@ public class TraitConceptManager
 		bodyTypes.add("Badger");
 		bodyTypes.add("Wasp");
 		bodyTypes.add("Ghost");
+		bodyTypes.add("Liquid");
+		bodyTypes.add("Cow");
+		bodyTypes.add("Spider");
+		bodyTypes.add("Octopus");
+		bodyTypes.add("Spear");
+		bodyTypes.add("Shield");
+		bodyTypes.add("Fang");
+		bodyTypes.add("Claw");
+		bodyTypes.add("Beak");
+		bodyTypes.add("Other");
+		bodyTypes.add("Cat");
 		List<String> bodyTypesSorted = bodyTypes.stream().sorted(String::compareTo).collect(Collectors.toList());
 		
 		for(int i = 0; i < bodyTypesSorted.size();i++)
