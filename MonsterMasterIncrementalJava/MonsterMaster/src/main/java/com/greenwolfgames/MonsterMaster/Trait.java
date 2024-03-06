@@ -16,6 +16,8 @@ public class Trait
 	private final int m_minimumValue;
 	private final int m_maximumValue;
 	private final ETraitType m_traitType;
+	private Map<Integer, String> m_traitValueDescriptions;
+
 
 	public Trait(int index, String name,  ETraitType traitType, int minimumValue, int maximumValue)
 	{
@@ -49,6 +51,16 @@ public class Trait
 	public int getMaximumValue()
 	{
 		return m_maximumValue;
+	}
+	
+	public Map<Integer, String> getTraitValueDescriptions()
+	{
+		return m_traitValueDescriptions;
+	}
+
+	public void setTraitValueDescriptions(Map<Integer, String> traitValueDescriptions)
+	{
+		this.m_traitValueDescriptions = traitValueDescriptions;
 	}
 
 	public String toString()

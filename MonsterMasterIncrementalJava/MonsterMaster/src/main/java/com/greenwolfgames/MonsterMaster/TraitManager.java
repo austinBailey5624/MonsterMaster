@@ -51,7 +51,9 @@ public class TraitManager
 		for (Map.Entry<Trait, Integer> entry : getIntensityByTraitsSorted())
 		{
 			result += "\n    For Trait: " + entry.getKey().getIndex() + " : " + entry.getKey().getName()
-					+ " Value is set to: " + entry.getValue();
+					+ " Value: " + entry.getValue() + 
+					(entry.getKey().getTraitValueDescriptions() == null ? "ERROR: No description available for this trait" : 
+					"Description: " + entry.getKey().getTraitValueDescriptions().get(entry.getValue()));
 		}
 		return result;
 	}

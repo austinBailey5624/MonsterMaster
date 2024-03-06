@@ -2,8 +2,10 @@ package com.greenwolfgames.MonsterMaster;
 
 import java.sql.ResultSet;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -116,9 +118,48 @@ public class TraitConceptManager
 			System.err.println("Issue connecting to sql server");
 			e.printStackTrace();
 		}
-		for(Trait trait : m_traits)
+//		for(Trait trait : m_traits)
+//		{
+////			System.out.println(trait.toString());
+//		}
+		readTraitDescriptionsFromDB();
+	}
+	
+	private static void readTraitDescriptionsFromDB()
+	{
+		try
 		{
-			System.out.println(trait.toString());
+			ResultSet traitsResultSet = SQLContentRetriever.connectToSQLDB().createStatement().executeQuery("Select trait_id, trait_value, description from trait_description;");
+			Map<Integer, String> traitValueDescriptions = new HashMap<Integer,String>();
+			int indexOfCurrentTrait = 1;
+			while (traitsResultSet.next())
+			{
+				int readCurrentIndex = traitsResultSet.getInt(1);
+				//Case where we are still on the same trait as last read (or on initial read)
+				if(readCurrentIndex == indexOfCurrentTrait)
+				{
+					traitValueDescriptions.put(traitsResultSet.getInt(2), traitsResultSet.getString(3));
+				}
+				//Case where we are moving to the next trait
+				else
+				{
+					//we assume that we're incrementing by one, moving from each trait to the next, if we don't we throw an exception
+					if(readCurrentIndex != indexOfCurrentTrait+1)
+					{
+						throw new IllegalStateException("trait description read skipped index " + indexOfCurrentTrait+1 + " Instead was: " + readCurrentIndex);
+					}
+					//handle moving to next trait
+					m_traits.get(indexOfCurrentTrait-1).setTraitValueDescriptions(traitValueDescriptions);
+					traitValueDescriptions = new HashMap<Integer,String>();//reset for next trait
+					indexOfCurrentTrait++;
+					traitValueDescriptions.put(traitsResultSet.getInt(2), traitsResultSet.getString(3));
+				}
+			}
+		}
+		catch (Exception e)
+		{
+			System.err.println("Issue connecting to sql server");
+			e.printStackTrace();
 		}
 	}
 
