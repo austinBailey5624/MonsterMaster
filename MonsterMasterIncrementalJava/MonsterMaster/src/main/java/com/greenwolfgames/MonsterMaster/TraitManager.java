@@ -50,10 +50,13 @@ public class TraitManager
 						: (" Associated MonsterType ID: " + m_monster_type_id));
 		for (Map.Entry<Trait, Integer> entry : getIntensityByTraitsSorted())
 		{
+			if(entry.getKey().getIndex() < 6)
+			{
 			result += "\n    For Trait: " + entry.getKey().getIndex() + " : " + entry.getKey().getName()
 					+ " Value: " + entry.getValue() + 
 					(entry.getKey().getTraitValueDescriptions() == null ? "ERROR: No description available for this trait" : 
 					"Description: " + entry.getKey().getTraitValueDescriptions().get(entry.getValue()));
+			}
 		}
 		return result;
 	}

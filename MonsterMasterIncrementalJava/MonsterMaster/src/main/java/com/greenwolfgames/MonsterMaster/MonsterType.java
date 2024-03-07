@@ -80,10 +80,10 @@ public class MonsterType
 	public String toString()
 	{
 		return "Index: " + m_index + " Name: " + m_name + " SubElement: " + m_subElement.getName()
-				+ (m_previousEvolution == null ? "" : (" previous evolution: " + m_previousEvolution.getName()))
-				+ (m_physicalEvolution == null ? "" : (" physical evolution: " + m_physicalEvolution.getName()))
-				+ (m_balancedEvolution == null ? "" : (" balanced evolution: " + m_balancedEvolution.getName()))
-				+ (m_magicalEvolution == null ? "" : (" magical evolution: " + m_magicalEvolution.getName()))
+//				+ (m_previousEvolution == null ? "" : (" previous evolution: " + m_previousEvolution.getName()))
+//				+ (m_physicalEvolution == null ? "" : (" physical evolution: " + m_physicalEvolution.getName()))
+//				+ (m_balancedEvolution == null ? "" : (" balanced evolution: " + m_balancedEvolution.getName()))
+//				+ (m_magicalEvolution == null ? "" : (" magical evolution: " + m_magicalEvolution.getName()))
 				+ " Description: " + m_description + m_defaultTraits.toString();
 	}
 
