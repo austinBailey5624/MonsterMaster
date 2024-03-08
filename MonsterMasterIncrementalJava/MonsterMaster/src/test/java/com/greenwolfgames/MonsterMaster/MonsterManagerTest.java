@@ -27,7 +27,7 @@ public class MonsterManagerTest
 		assertEquals(monsterTypes.size(), 339);
 		for (MonsterType monsterType : monsterTypes)
 		{
-			if (monsterType.getIndex() >= 50 && monsterType.getIndex() <= 100)
+			if (monsterType.getIndex() >= 100 && monsterType.getIndex() <= 150)
 			{
 				System.out.println(monsterType.toString());
 			}
