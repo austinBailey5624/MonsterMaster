@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MonsterMaster</string>
+    <string name="temp">temp</string>
+    <string name="scene1item1">You awaken in the darkness</string>
+    <string name="scene1item2">With no memory or direction</string>
+    <string name="scene1item3">Time passes but you cannot grasp it</string>
+    <string name="scene1item4">A week, a month, a year</string>
+    <string name="scene1item5">Comes and fades again</string>
+    <string name="scene1item6">Then there is light</string>
+    <string name="scene1choice1">Go towards the light</string>
+    <string name="scene1choice2">Embrace the Darkness</string>
+</resources>
