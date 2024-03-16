@@ -9,4 +9,12 @@
     <string name="scene1item6">Then there is light</string>
     <string name="scene1choice1">Go towards the light</string>
     <string name="scene1choice2">Embrace the Darkness</string>
+    <string name="scene2item1">Light comes from above</string>
+    <string name="scene2item2">Revealing a dark forest</string>
+    <string name="scene2item3">Trees reach to heaven</string>
+    <string name="scene2item4">Outer branches concealed from the light</string>
+    <string name="scene2item5">Your form is unfamiliar</string>
+    <string name="scene2item6">Quiet echoes through the night</string>
+    <string name="scene2choice1">Gather Twigs for fire</string>
+    <string name="scene2choice2">Search for water</string>
 </resources>

@@ -6,6 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:rotation="0"
+    android:rotationX="0"
+    android:rotationY="0"
     tools:context=".MainActivity">
 
     <TextView
@@ -31,7 +34,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text7" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".975" />
 
     <Button
         android:id="@+id/button2"
@@ -42,7 +46,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button1"
-        app:layout_constraintTop_toBottomOf="@+id/text7" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".975" />
 
     <TextView
         android:id="@+id/text2"
@@ -98,23 +103,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/temp"
-        app:layout_constraintBottom_toTopOf="@+id/text7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text5" />
-
-    <TextView
-        android:id="@+id/text7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginBottom="108dp"
         android:text="@string/temp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text6" />
+        app:layout_constraintTop_toBottomOf="@+id/text5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
