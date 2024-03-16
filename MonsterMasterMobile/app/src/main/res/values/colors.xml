@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="darkTextColor">#FFAAAAAA</color>
-    <color name="darkBackground">#FF000000</color>
+    <color name="whitegray">#FFAAAAAA</color>
+    <color name="black">#FF000000</color>
+    <color name="darkGray">#FF222222</color>
+    <color name="darkishGray">#FF444444</color>
     <color name="invisible">#00000000</color>
 </resources>
