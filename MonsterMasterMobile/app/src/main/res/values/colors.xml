@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="whitegray">#FFAAAAAA</color>
-    <color name="black">#FF000000</color>
-    <color name="darkGray">#FF222222</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteGray">#FFAAAAAA</color>
+    <color name="gray">#FF888888</color>
     <color name="darkishGray">#FF444444</color>
+    <color name="darkGray">#FF222222</color>
+    <color name="black">#FF000000</color>
     <color name="invisible">#00000000</color>
 </resources>

@@ -54,7 +54,8 @@ class MainActivity : AppCompatActivity() {
             findViewById(R.id.text3),
             findViewById(R.id.text4),
             findViewById(R.id.text5),
-            findViewById(R.id.text6)
+            findViewById(R.id.text6),
+            findViewById(R.id.text7)
         )
         var textIndex = 0
         for (textView in textViews) {
@@ -63,8 +64,8 @@ class MainActivity : AppCompatActivity() {
             textView.setTextColor(ContextCompat.getColor(this, R.color.invisible))
             textIndex++
         }
-        textViews[2].setTextSize(TypedValue.COMPLEX_UNIT_SP, 18f)
 
+        val fadeInAnimation8 = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         val fadeInAnimation7 = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         val fadeInAnimation6 = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         val fadeInAnimation5 = AnimationUtils.loadAnimation(this, R.anim.fade_in)
@@ -74,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         val fadeInAnimation1 = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         val fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
 
-        fadeInAnimation7.setAnimationListener(object : Animation.AnimationListener {
+        fadeInAnimation8.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {
             }
 
@@ -86,13 +87,13 @@ class MainActivity : AppCompatActivity() {
                 buttons[0].setTextColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.whitegray
+                        R.color.white
                     )
                 )
                 buttons[0].setBackgroundColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.darkishGray
+                        R.color.whiteGray
                     )
                 )
                 buttons[1].setTextColor(
@@ -104,7 +105,26 @@ class MainActivity : AppCompatActivity() {
                 buttons[1].setBackgroundColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.darkishGray
+                        R.color.gray
+                    )
+                )
+
+            }
+
+            override fun onAnimationRepeat(animation: Animation) {}
+        })
+
+        fadeInAnimation7.setAnimationListener(object : Animation.AnimationListener {
+            override fun onAnimationStart(animation: Animation) {
+            }
+
+            override fun onAnimationEnd(animation: Animation) {
+
+                textViews[6].startAnimation(fadeInAnimation8)
+                textViews[6].setTextColor(
+                    ContextCompat.getColor(
+                        this@MainActivity,
+                        R.color.whiteGray
                     )
                 )
 
@@ -123,7 +143,7 @@ class MainActivity : AppCompatActivity() {
                 textViews[5].setTextColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.whitegray
+                        R.color.whiteGray
                     )
                 )
 
@@ -142,7 +162,7 @@ class MainActivity : AppCompatActivity() {
                 textViews[4].setTextColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.whitegray
+                        R.color.whiteGray
                     )
                 )
             }
@@ -160,7 +180,7 @@ class MainActivity : AppCompatActivity() {
                 textViews[3].setTextColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.whitegray
+                        R.color.whiteGray
                     )
                 )
             }
@@ -178,7 +198,7 @@ class MainActivity : AppCompatActivity() {
                 textViews[2].setTextColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.whitegray
+                        R.color.whiteGray
                     )
                 )
             }
@@ -196,7 +216,7 @@ class MainActivity : AppCompatActivity() {
                 textViews[1].setTextColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.whitegray
+                        R.color.whiteGray
                     )
                 )
             }
@@ -214,7 +234,7 @@ class MainActivity : AppCompatActivity() {
                 textViews[0].setTextColor(
                     ContextCompat.getColor(
                         this@MainActivity,
-                        R.color.whitegray
+                        R.color.whiteGray
                     )
                 )
             }
@@ -235,6 +255,7 @@ class MainActivity : AppCompatActivity() {
             statements += getString(R.string.scene1item4)
             statements += getString(R.string.scene1item5)
             statements += getString(R.string.scene1item6)
+            statements += getString(R.string.scene1item7)
             val choices = mutableListOf<Choice>()
             choices += Choice(getString(R.string.scene1choice1)) { currentState ->
                 currentState.whiteScore++
