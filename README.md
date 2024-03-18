@@ -48,5 +48,6 @@ Download the version of unity (current version being used is here: https://githu
   
 2. Q: What is sc.sh? A: a script I wrote a while ago to simplify and standardize adding commits.
 
+3. Q: How many monsters are there? A: Right now 339, though I may expand that in future releases
 
 @Copyright 2016-2024 Austin Bailey all rights reserved

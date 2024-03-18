@@ -236,7 +236,7 @@ VALUES
     (1,'A week, a month, a year comes and fades again.'),
     (1,'Then there is light'),
 	(2,'The light reveals a forest all around you,'),
-    (2,'Trees reaching into the heavens,'),
+    (2,'Trees reach to heaven,'),
     (2,'Not fully revealed by the light,'),
     (2,'The black treeptops grasp at the stars.'),
     (3,'The light is temporary,'),
@@ -249,9 +249,9 @@ VALUES
     (1,1,'Go towards the light'),
     (1,2,'Embrace the Darkness'),
     (2,1,'Search for twigs to make a fire'),
-    (2,2,'Search for a source of water to drink'),
+    (2,2,'Search for water to drink'),
     (3,1,'Search for twigs to make a fire'),
-    (3,2,'Search for a source of water to drink');
+    (3,2,'Search for water to drink');
     
 CREATE TABLE monster_type(
 	monster_type_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -2165,7 +2165,7 @@ VALUES
 (305,1,1),(305,2,2),(305,3,12),(305,6,2),(305,7,6),(305,10,-1),(305,18,1),(305,32,2),(305,40,1),(305,42,1),
 (306,1,6),(306,2,2),(306,3,23),(306,4,12),(306,6,0),(306,7,6),(306,10,-1),(306,20,1),(306,26,1),(306,32,2),(306,42,1),
 (307,1,1),(307,2,3),(307,3,12),(307,4,36),(307,6,3),(307,7,6),(307,10,-1),(307,13,1),(307,18,2),(307,32,3),(307,40,1),(307,42,1),
-(308,1,6),(308,2,3),(308,3,23),(308,4,12)(308,6,0),(308,7,6),(308,10,-2),(308,14,1),(308,16,-1),(308,20,2),(308,23,1),(308,26,2),(308,32,3),(308,42,1),
+(308,1,6),(308,2,3),(308,3,23),(308,4,12),(308,6,0),(308,7,6),(308,10,-2),(308,14,1),(308,16,-1),(308,20,2),(308,23,1),(308,26,2),(308,32,3),(308,42,1),
 (309,1,1),(309,2,4),(309,3,12),(309,4,54),(309,6,5),(309,7,6),(309,10,-1),(309,12,-1),(309,13,2),(309,18,3),(309,32,4),(309,40,2),(309,42,1),
 (310,1,1),(310,2,4),(310,3,23),(310,4,12),(310,6,0),(310,7,6),(310,10,2),(310,14,2),(310,16,-2),(310,20,3),(310,23,2),(310,26,3),(310,32,4),(310,42,2),
 (311,1,3),(311,2,1),(311,3,11),(311,4,14),(311,6,0),(311,7,0),(311,28,1),
@@ -2193,30 +2193,53 @@ VALUES
 (333,1,1),(333,2,3),(333,3,14),(333,4,56),(333,6,3),(333,7,3),(333,10,-3),(333,11,-2),(333,19,2),(333,40,2),(333,42,3),
 (334,1,1),(334,2,3),(334,3,49),(334,4,51),(334,6,3),(334,7,3),(334,10,-3),(334,16,1),(334,17,1),(334,19,1),(334,20,1),(334,26,1),(334,34,1),(334,40,1),(334,42,3),
 (335,1,1),(335,2,3),(335,3,51),(335,6,3),(335,7,3),(335,10,-3),(335,20,2),(335,21,1),(335,24,1),(335,26,2),(335,40,2),(335,42,3),
-(336,1,1),(336,2,4),(336,3,14),(336,4,26)(336,6,0),(336,7,3),(336,10,-4),(336,13,2),(336,15,2),(336,18,3),(336,40,3),(336,42,4),
+(336,1,1),(336,2,4),(336,3,14),(336,4,26),(336,6,0),(336,7,3),(336,10,-4),(336,13,2),(336,15,2),(336,18,3),(336,40,3),(336,42,4),
 (337,1,1),(337,2,4),(337,3,56),(337,4,14),(337,6,2),(337,7,3),(337,10,-4),(337,11,-3),(337,13,2),(337,19,3),(337,40,3),(337,42,4),
 (338,1,1),(338,2,4),(338,3,22),(338,4,49),(338,5,51),(338,6,3),(338,7,3),(338,10,-4),(338,16,2),(338,17,2),(338,19,2),(338,20,2),(338,26,3),(338,34,2),(338,40,3),(338,42,4),
 (339,1,1),(339,2,4),(339,3,51),(339,6,0),(339,7,3),(339,10,-4),(339,14,2),(339,20,3),(339,21,1),(339,22,1),(339,23,1),(339,24,1),(339,25,1),(339,26,3),(339,40,3),(339,42,4);
 
+CREATE TABLE skill(
+    skill_id INT PRIMARY KEY AUTO_INCREMENT,
+    skill_name VARCHAR(50) NOT NULL,
+    skill_description VARCHAR(300) NOT NULL,
+    unlock_requirement_manager_id INT NOT NULL, -- will be a foreign key
+    usage_requirment_mangaer_id INT NOT NULL, -- will be a foreign key
+    cost_mp INT, -- nullable if free
+    cost_hp iNT, -- nullable if free
+    nature ENUM('Physical','Magical','None') NOT NULL,
+    target_type_id INT, -- will be a foreign key
+    effect_id INT -- will be a foreign key
+    );
     
+CREATE TABLE requirement_manager(
+    requirement_manager_id INT PRIMARY KEY AUTO_INCREMENT,
+    requirement_description VARCHAR(300) NOT NULL
+    );
     
+CREATE TABLE requirement_submanager(
+	requirement_id INT PRIMARY KEY AUTO_INCREMENT,
+    requirement_manager_id INT NOT NULL, -- will be a foreign key
+    requirement_submanager_description VARCHAR(300) NOT NULL
+    );
     
+CREATE TABLE trait_requirement(
+	trait_requirement_id INT PRIMARY KEY AUTO_INCREMENT,
+    requirement_manager_id INT NOT NULL, -- will be a foreign key
+    requirement_submanager_id INT NOT NULL, 
+    trait_id INT NOT NULL,
+    requirement_value INT NOT NULL,
+    comparator ENUM('Exactly','AtLeast','AtMost')
+    );
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
+INSERT INTO unlock_requirement_manager(unlock_requirement_description)
+    VALUES
+    ("Corporeality: Corporeal"),
+    ("Corporeality: Coproreal AND Fast: 2"),
+    ("Corporeality:Corporeal AND bodyType:Fang OR Corporeal AND bodytype:Wolf OR Corporeal AND bodytype:Dragon OR Corporeal AND bodyType:Snake"),
+    ("Corporeality:Corporeal AND bodyType:Horse"),
+    ("Corporeality:Fluid OR BodyType:Liquid OR Aquamagia:1"),
+    ("Cloudy:atLeast1 AND Heat Tolerance atMost -1"),
+    ("BodyType:Vapor");
 
     
     
