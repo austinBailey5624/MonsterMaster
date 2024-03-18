@@ -1,17 +1,13 @@
 package com.greenwolfgames.monstermaster
 
-import android.graphics.Color
+import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.util.Log
 import android.util.TypedValue
-import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
@@ -27,11 +23,11 @@ class MainActivity : AppCompatActivity() {
 
 
     //The following code is terrible, terrible spaghetti code. I recognize that, but cannot get the animations
-    //to work the proper iterated way, becasue it keeps repeating the first one. However, I wasted too much
+    //to work the proper iterated way, because it keeps repeating the first one. However, I wasted too much
 // //time trying to fix it and am now moving on TODO fix this to use a single iterated animation
     private fun setScenario(state: State) {
         val currentScenario: Scenario = getScenario(state.nextScenario)
-        val buttons: List<Button> = listOf(findViewById(R.id.button1), findViewById(R.id.button2))
+        val buttons: List<Button> = listOf(findViewById(R.id.button1), findViewById(R.id.button5))
         val mainView: ConstraintLayout = findViewById(R.id.main)
         mainView.setBackgroundColor(ContextCompat.getColor(this, R.color.black))
 
@@ -41,6 +37,10 @@ class MainActivity : AppCompatActivity() {
             button.text = currentScenario.choices.get(buttonIndex).content
             button.setOnClickListener {
                 currentScenario.choices.get(currentIndex).action(state)
+                val intent = Intent(this, Scene2Activity::class.java)
+                intent.putExtra("state", state)
+                startActivity(intent)
+
             }
             button.setTextColor(ContextCompat.getColor(this, R.color.invisible))
             button.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))

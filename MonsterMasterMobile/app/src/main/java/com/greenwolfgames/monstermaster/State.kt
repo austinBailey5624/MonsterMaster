@@ -1,7 +1,9 @@
 package com.greenwolfgames.monstermaster
 
+import java.io.Serializable
+
 //Class to represent the state of the game
-class State
+class State : Serializable
 {
     var nextScenario = 1
     var redScore: Int = 0

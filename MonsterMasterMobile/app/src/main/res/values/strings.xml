@@ -13,9 +13,18 @@
     <string name="scene2item1">Light comes from above</string>
     <string name="scene2item2">Revealing a dark forest</string>
     <string name="scene2item3">Trees reach to heaven</string>
-    <string name="scene2item4">Outer branches concealed from the light</string>
-    <string name="scene2item5">Your form is unfamiliar</string>
-    <string name="scene2item6">Quiet echoes through the night</string>
+    <string name="scene2item4">Outer branches</string>
+    <string name="scene2item5">concealed from the light</string>
+    <string name="scene2item6">Your form is unfamiliar</string>
+    <string name="scene2item7">Quiet echoes through the night</string>
     <string name="scene2choice1">Gather Twigs for fire</string>
     <string name="scene2choice2">Search for water</string>
+    <string name="scene3item1">Darkness comforts you</string>
+    <string name="scene3item2">Light Fades</string>
+    <string name="scene3item3">You sense Trees</string>
+    <string name="scene3item4">Grass</string>
+    <string name="scene3item5">Your form is unfamiliar</string>
+    <string name="scene3item6">Quiet echoes through the night</string>
+    <string name="scene3choice1">Gather twigs for fire</string>
+    <string name="scene3choice2">Search for water</string>
 </resources>
