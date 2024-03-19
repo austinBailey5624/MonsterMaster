@@ -35,17 +35,24 @@ class MainActivity : AppCompatActivity() {
         for (button in buttons) {
             val currentIndex = buttonIndex
             button.text = currentScenario.choices.get(buttonIndex).content
-            button.setOnClickListener {
-                currentScenario.choices.get(currentIndex).action(state)
-                val intent = Intent(this, Scene2Activity::class.java)
-                intent.putExtra("state", state)
-                startActivity(intent)
-
-            }
             button.setTextColor(ContextCompat.getColor(this, R.color.invisible))
             button.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
             buttonIndex++
 
+        }
+
+        buttons[0].setOnClickListener {
+            currentScenario.choices.get(0).action(state)
+            val intent = Intent(this, Scene2Activity::class.java)
+            intent.putExtra("state", state)
+            startActivity(intent)
+        }
+
+        buttons[1].setOnClickListener {
+            currentScenario.choices.get(1).action(state)
+            val intent = Intent(this, Scene3Activity::class.java)
+            intent.putExtra("state", state)
+            startActivity(intent)
         }
 
         val textViews: List<TextView> = listOf(
@@ -260,8 +267,6 @@ class MainActivity : AppCompatActivity() {
             choices += Choice(getString(R.string.scene1choice1)) { currentState ->
                 currentState.whiteScore++
                 currentState.nextScenario = 2
-                Log.d("ChoiceExecuted", "Scene1Choice1Executed")
-                setScenario(currentState)
             }
             choices += Choice(getString(R.string.scene1choice2)) { currentState ->
                 currentState.blackScore++

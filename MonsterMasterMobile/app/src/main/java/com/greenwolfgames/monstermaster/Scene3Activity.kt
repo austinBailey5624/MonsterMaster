@@ -5,56 +5,51 @@ import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
-class Scene2Activity : AppCompatActivity() {
+class Scene3Activity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scene2_forest)
+        setContentView(R.layout.activity_scene3_dark_forest)
         val extras = intent.extras
         val currentState = extras?.getSerializable("state") as State
 
-        val button4: Button = findViewById(R.id.button4)
+        val button: Button = findViewById(R.id.button)
 
+        button.setTextColor(ContextCompat.getColor(this, R.color.invisible))
+        button.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
 
-        button4.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button4.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
-
-        button4.setOnClickListener {
+        button.setOnClickListener {
             currentState.redScore++
-            val intent = Intent(this, Scene4Activity::class.java)
+            val intent = Intent(this, Scene6Activity::class.java)
             intent.putExtra("state", currentState)
             startActivity(intent)
         }
 
-        val button5: Button = findViewById(R.id.button5)
+        val button2: Button = findViewById(R.id.button2)
 
-        button5.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button5.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
+        button2.setTextColor(ContextCompat.getColor(this, R.color.invisible))
+        button2.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
 
-        button5.setOnClickListener {
+        button2.setOnClickListener {
             currentState.blueScore++
-            val intent = Intent(this, Scene5Activity::class.java)
+            val intent = Intent(this, Scene7Activity::class.java)
             intent.putExtra("state", currentState)
             startActivity(intent)
         }
 
         val textViews: List<TextView> = listOf(
-            findViewById(R.id.textView),
-            findViewById(R.id.textView2),
-            findViewById(R.id.textView3),
-            findViewById(R.id.textView4),
-            findViewById(R.id.textView5),
-            findViewById(R.id.textView6),
-            findViewById(R.id.textView7)
+            findViewById(R.id.textView8),
+            findViewById(R.id.textView9),
+            findViewById(R.id.textView10),
+            findViewById(R.id.textView11),
+            findViewById(R.id.textView12),
+            findViewById(R.id.textView13),
         )
 
-        for(textView in textViews)
-        {
+        for (textView in textViews) {
             textView.setTextColor(ContextCompat.getColor(this, R.color.invisible))
         }
 
@@ -70,39 +65,50 @@ class Scene2Activity : AppCompatActivity() {
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast)
         )
 
-        fadeInAnimations[7].setAnimationListener(object : Animation.AnimationListener {
+        fadeInAnimations[6].setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {}
             override fun onAnimationEnd(animation: Animation) {
-                button4.startAnimation(fadeInAnimations[8])
-                button5.startAnimation(fadeInAnimations[8])
+                button.startAnimation(fadeInAnimations[7])
+                button2.startAnimation(fadeInAnimations[7])
 
-                button4.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.red))
-                button4.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.yellowOrange))
+                button.setTextColor(ContextCompat.getColor(this@Scene3Activity, R.color.red))
+                button.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@Scene3Activity,
+                        R.color.yellowOrange
+                    )
+                )
 
-                button5.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.blue))
-                button5.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.cyan))
+                button2.setTextColor(ContextCompat.getColor(this@Scene3Activity, R.color.blue))
+                button2.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@Scene3Activity,
+                        R.color.cyan
+                    )
+                )
 
             }
+
             override fun onAnimationRepeat(animation: Animation) {}
         })
 
-        for(i in 0..6)
-        {
+        for (i in 0..5) {
             fadeInAnimations[i].setAnimationListener(object : Animation.AnimationListener {
                 override fun onAnimationStart(animation: Animation) {}
                 override fun onAnimationEnd(animation: Animation) {
-                    textViews[i].startAnimation(fadeInAnimations[i+1])
-                    textViews[i].setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.whiteGray))
+                    textViews[i].startAnimation(fadeInAnimations[i + 1])
+                    textViews[i].setTextColor(
+                        ContextCompat.getColor(
+                            this@Scene3Activity,
+                            R.color.gray
+                        )
+                    )
                 }
+
                 override fun onAnimationRepeat(animation: Animation) {}
             })
         }
 
         textViews[0].startAnimation(fadeInAnimations[0])
-
-        val slowFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_slow)
-        val faintLight: ImageView = findViewById(R.id.imageView2)
-        faintLight.startAnimation(slowFadeInAnimation)
-
     }
 }

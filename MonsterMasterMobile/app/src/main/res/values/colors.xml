@@ -7,4 +7,13 @@
     <color name="darkGray">#FF222222</color>
     <color name="black">#FF000000</color>
     <color name="invisible">#00000000</color>
+    <color name="red">#FFFF0000</color>
+    <color name="orange">#FFFF8000</color>
+    <color name="yellowOrange">#FFFFDD00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="green">#FF00e000</color>
+    <color name="forestGreen">#FF008000</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="brown">#FFD16900</color>
 </resources>

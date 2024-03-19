@@ -10,10 +10,10 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
-class Scene2Activity : AppCompatActivity() {
+class Scene5Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scene2_forest)
+        setContentView(R.layout.activity_scene5_forest_stream)
         val extras = intent.extras
         val currentState = extras?.getSerializable("state") as State
 
@@ -25,10 +25,10 @@ class Scene2Activity : AppCompatActivity() {
 
 
         button4.setOnClickListener {
-            currentState.redScore++
-            val intent = Intent(this, Scene4Activity::class.java)
-            intent.putExtra("state", currentState)
-            startActivity(intent)
+            currentState.greenScore++
+//            val intent = Intent(this, Scene4Activity::class.java)
+//            intent.putExtra("state", currentState)
+//            startActivity(intent)
         }
 
         val button5: Button = findViewById(R.id.button5)
@@ -37,10 +37,7 @@ class Scene2Activity : AppCompatActivity() {
         button5.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
 
         button5.setOnClickListener {
-            currentState.blueScore++
-            val intent = Intent(this, Scene5Activity::class.java)
-            intent.putExtra("state", currentState)
-            startActivity(intent)
+            currentState.yellowScore++
         }
 
         val textViews: List<TextView> = listOf(
@@ -76,11 +73,11 @@ class Scene2Activity : AppCompatActivity() {
                 button4.startAnimation(fadeInAnimations[8])
                 button5.startAnimation(fadeInAnimations[8])
 
-                button4.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.red))
-                button4.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.yellowOrange))
+                button4.setTextColor(ContextCompat.getColor(this@Scene5Activity, R.color.green))
+                button4.setBackgroundColor(ContextCompat.getColor(this@Scene5Activity, R.color.forestGreen))
 
-                button5.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.blue))
-                button5.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.cyan))
+                button5.setTextColor(ContextCompat.getColor(this@Scene5Activity, R.color.yellow))
+                button5.setBackgroundColor(ContextCompat.getColor(this@Scene5Activity, R.color.brown))
 
             }
             override fun onAnimationRepeat(animation: Animation) {}
@@ -92,7 +89,7 @@ class Scene2Activity : AppCompatActivity() {
                 override fun onAnimationStart(animation: Animation) {}
                 override fun onAnimationEnd(animation: Animation) {
                     textViews[i].startAnimation(fadeInAnimations[i+1])
-                    textViews[i].setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.whiteGray))
+                    textViews[i].setTextColor(ContextCompat.getColor(this@Scene5Activity, R.color.whiteGray))
                 }
                 override fun onAnimationRepeat(animation: Animation) {}
             })
@@ -101,7 +98,7 @@ class Scene2Activity : AppCompatActivity() {
         textViews[0].startAnimation(fadeInAnimations[0])
 
         val slowFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_slow)
-        val faintLight: ImageView = findViewById(R.id.imageView2)
+        val faintLight: ImageView = findViewById(R.id.imageView3)
         faintLight.startAnimation(slowFadeInAnimation)
 
     }

@@ -25,6 +25,26 @@
             android:name=".Scene2Activity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".Scene3Activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Scene4Activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Scene5Activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Scene6Activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Scene7Activity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
