@@ -1,12 +1,12 @@
 package com.greenwolfgames.monstermaster
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -15,9 +15,11 @@ class Scene7Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene7_dark_forest_stream)
         val extras = intent.extras
+        //disable back button
+        onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
         val currentState = extras?.getSerializable("state") as State
 
-        val button4: Button = findViewById(R.id.button4)
+        val button4: Button = findViewById(R.id.button3)
 
 
         button4.setTextColor(ContextCompat.getColor(this, R.color.invisible))
@@ -31,7 +33,7 @@ class Scene7Activity : AppCompatActivity() {
 //            startActivity(intent)
         }
 
-        val button5: Button = findViewById(R.id.button5)
+        val button5: Button = findViewById(R.id.button2)
 
         button5.setTextColor(ContextCompat.getColor(this, R.color.invisible))
         button5.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
@@ -98,5 +100,11 @@ class Scene7Activity : AppCompatActivity() {
         val slowFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_slow)
         val stream: ImageView = findViewById(R.id.imageView3)
         stream.startAnimation(slowFadeInAnimation)
+    }
+    override fun onBackPressed() {
+        if(false) {
+            super.onBackPressed()
+        }
+        // Do nothing here
     }
 }

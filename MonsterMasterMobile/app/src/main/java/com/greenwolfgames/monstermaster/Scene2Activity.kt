@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -15,28 +16,25 @@ class Scene2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene2_forest)
         val extras = intent.extras
+        //disable back button
+        onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
+
         val currentState = extras?.getSerializable("state") as State
 
-        val button4: Button = findViewById(R.id.button4)
-
-
-        button4.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button4.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
-
-        button4.setOnClickListener {
+        val button3: Button = findViewById(R.id.button3)
+        button3.setTextColor(ContextCompat.getColor(this, R.color.invisible))
+        button3.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
+        button3.setOnClickListener {
             currentState.redScore++
             val intent = Intent(this, Scene4Activity::class.java)
             intent.putExtra("state", currentState)
             startActivity(intent)
         }
 
-        val button5: Button = findViewById(R.id.button5)
-
-        button5.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button5.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
-        button5.setOnClickListener {
+        val button4: Button = findViewById(R.id.button4)
+        button4.setTextColor(ContextCompat.getColor(this, R.color.invisible))
+        button4.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
+        button4.setOnClickListener {
             currentState.blueScore++
             val intent = Intent(this, Scene5Activity::class.java)
             intent.putExtra("state", currentState)
@@ -73,14 +71,14 @@ class Scene2Activity : AppCompatActivity() {
         fadeInAnimations[7].setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {}
             override fun onAnimationEnd(animation: Animation) {
+                button3.startAnimation(fadeInAnimations[8])
                 button4.startAnimation(fadeInAnimations[8])
-                button5.startAnimation(fadeInAnimations[8])
 
-                button4.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.red))
-                button4.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.yellowOrange))
+                button3.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.red))
+                button3.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.yellowOrange))
 
-                button5.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.blue))
-                button5.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.cyan))
+                button4.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.blue))
+                button4.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.cyan))
 
             }
             override fun onAnimationRepeat(animation: Animation) {}
@@ -99,10 +97,15 @@ class Scene2Activity : AppCompatActivity() {
         }
 
         textViews[0].startAnimation(fadeInAnimations[0])
-
         val slowFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_slow)
         val faintLight: ImageView = findViewById(R.id.imageView2)
         faintLight.startAnimation(slowFadeInAnimation)
+    }
 
+    override fun onBackPressed() {
+        if(false) {
+            super.onBackPressed()
+        }
+        // Do nothing here
     }
 }

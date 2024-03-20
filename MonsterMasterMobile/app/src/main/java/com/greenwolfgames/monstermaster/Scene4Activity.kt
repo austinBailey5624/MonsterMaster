@@ -6,6 +6,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -14,6 +15,10 @@ class Scene4Activity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene4_forest_fire)
         val extras = intent.extras
+
+        //disable back button
+        onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
+
         val currentState = extras?.getSerializable("state") as State
 
         val button: Button = findViewById(R.id.button)
@@ -108,5 +113,12 @@ class Scene4Activity : AppCompatActivity(){
         val slowFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_slow)
         val fire: ImageView = findViewById(R.id.imageView)
         fire.startAnimation(slowFadeInAnimation)
+    }
+
+    override fun onBackPressed() {
+        if(false) {
+            super.onBackPressed()
+        }
+        // Do nothing here
     }
 }

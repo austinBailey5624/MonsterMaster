@@ -6,6 +6,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.TextView
+import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -14,6 +15,9 @@ class Scene3Activity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene3_dark_forest)
         val extras = intent.extras
+        //disable back button
+        onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
+
         val currentState = extras?.getSerializable("state") as State
 
         val button: Button = findViewById(R.id.button)
@@ -110,5 +114,12 @@ class Scene3Activity : AppCompatActivity(){
         }
 
         textViews[0].startAnimation(fadeInAnimations[0])
+    }
+
+    override fun onBackPressed() {
+        if(false) {
+            super.onBackPressed()
+        }
+        // Do nothing here
     }
 }
