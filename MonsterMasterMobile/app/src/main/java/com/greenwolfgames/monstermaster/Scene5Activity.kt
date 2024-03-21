@@ -1,5 +1,6 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -21,12 +22,18 @@ class Scene5Activity : AppCompatActivity() {
         Utilities.hideButton(button,this@Scene5Activity)
         button.setOnClickListener {
             currentState.addScore(Element.EARTH,1)
+            val intent = Intent(this,Scene9Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
         val button2: Button = findViewById(R.id.scene8button2)
-        Utilities.hideButton(button,this@Scene5Activity)
+        Utilities.hideButton(button2,this@Scene5Activity)
         button2.setOnClickListener {
             currentState.addScore(Element.AIR,1)
+            val intent = Intent(this,Scene9Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
         val textViews: List<TextView> = listOf(
@@ -73,7 +80,7 @@ class Scene5Activity : AppCompatActivity() {
                 override fun onAnimationStart(animation: Animation) {}
                 override fun onAnimationEnd(animation: Animation) {
                     textViews[i].startAnimation(fadeInAnimations[i+1])
-                    textViews[i].setTextColor(ContextCompat.getColor(this@Scene5Activity, R.color.whiteGray))
+                    textViews[i].setTextColor(ContextCompat.getColor(this@Scene5Activity, R.color.lighterBlue))
                 }
                 override fun onAnimationRepeat(animation: Animation) {}
             })

@@ -10,19 +10,19 @@ import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
-class Scene8Activity : AppCompatActivity() {
+class Scene9Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scene8_sun_shrine)
+        setContentView(R.layout.activity_scene9_magic_glyph)
         val extras = intent.extras
         //disable back button
         onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
         val currentState = extras?.getSerializable("state") as State
 
-        val button1: Button = findViewById(R.id.scene8button1)
-        val button2: Button = findViewById(R.id.scene8button2)
-        val button3: Button = findViewById(R.id.scene8button3)
-        val button4: Button = findViewById(R.id.scene8button4)
+        val button1: Button = findViewById(R.id.scene9button1)
+        val button2: Button = findViewById(R.id.scene9button2)
+        val button3: Button = findViewById(R.id.scene9button3)
+        val button4: Button = findViewById(R.id.scene9button4)
 
         val buttons: List<Button> = listOf(
             button1,
@@ -33,15 +33,15 @@ class Scene8Activity : AppCompatActivity() {
 
         for(button in buttons)
         {
-            Utilities.hideButton(button,this@Scene8Activity)
+            Utilities.hideButton(button,this@Scene9Activity)
         }
         button1.setOnClickListener {
             currentState.addScore(Element.LIGHT,2)
             currentState.starterMonster="Lumin"
         }
         button2.setOnClickListener {
-            currentState.addScore(Element.FIRE,2)
-            currentState.starterMonster="Flarial"
+            currentState.addScore(Element.WATER,2)
+            currentState.starterMonster="Minnow"
         }
         if(currentState.getScore(Element.AIR) > currentState.getScore(Element.EARTH))
         {
@@ -60,8 +60,8 @@ class Scene8Activity : AppCompatActivity() {
         }
         button4.setOnClickListener {
             currentState.addScore(Element.LIGHT,1)
-            currentState.addScore(Element.FIRE,1)
-            currentState.starterMonster="Tona"
+            currentState.addScore(Element.WATER,1)
+            currentState.starterMonster="Lona"
         }
 
         val textViews: List<TextView> = listOf(
@@ -69,8 +69,7 @@ class Scene8Activity : AppCompatActivity() {
             findViewById(R.id.textView2),
             findViewById(R.id.textView3),
             findViewById(R.id.textView4),
-            findViewById(R.id.textView5),
-            findViewById(R.id.textView6)
+            findViewById(R.id.textView5)
         )
 
         for(textView in textViews)
@@ -89,45 +88,70 @@ class Scene8Activity : AppCompatActivity() {
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast)
         )
 
-        fadeInAnimations[6].setAnimationListener(object : Animation.AnimationListener {
+        fadeInAnimations[5].setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {}
             override fun onAnimationEnd(animation: Animation) {
                 for(button in buttons)
                 {
-                    button.startAnimation(fadeInAnimations[7])
+                    button.startAnimation(fadeInAnimations[6])
                 }
-                Element.colorButton(button1,this@Scene8Activity,Element.LIGHT)
-                Element.colorButton(button2,this@Scene8Activity,Element.FIRE)
+                Element.colorButton(button1,this@Scene9Activity,Element.LIGHT)
+                Element.colorButton(button2,this@Scene9Activity,Element.WATER)
                 if(currentState.getScore(Element.AIR) > currentState.getScore(Element.EARTH))
                 {
-                    Element.colorButton(button3,this@Scene8Activity,Element.AIR)
+                    Element.colorButton(button3,this@Scene9Activity,Element.AIR)
                 }
                 else {
-                    Element.colorButton(button3,this@Scene8Activity,Element.EARTH)
+                    Element.colorButton(button3,this@Scene9Activity,Element.EARTH)
                 }
-                button4.setTextColor(ContextCompat.getColor(this@Scene8Activity, R.color.white))
-                button4.setBackgroundColor(ContextCompat.getColor(this@Scene8Activity, R.color.pink))
+                button4.setTextColor(ContextCompat.getColor(this@Scene9Activity, R.color.lightCyan))
+                button4.setBackgroundColor(ContextCompat.getColor(this@Scene9Activity, R.color.lightishBlue))
             }
             override fun onAnimationRepeat(animation: Animation) {}
         })
 
-        for(i in 0..5)
+        for(i in 0..4)
         {
             fadeInAnimations[i].setAnimationListener(object : Animation.AnimationListener {
                 override fun onAnimationStart(animation: Animation) {}
                 override fun onAnimationEnd(animation: Animation) {
                     textViews[i].startAnimation(fadeInAnimations[i+1])
-                    textViews[i].setTextColor(ContextCompat.getColor(this@Scene8Activity, R.color.lightYellow))
+                    textViews[i].setTextColor(ContextCompat.getColor(this@Scene9Activity, R.color.lightCyan))
                 }
                 override fun onAnimationRepeat(animation: Animation) {}
             })
         }
 
+        val magicGlyphImage: ImageView = findViewById(R.id.scene9image2)
+
+        val partialFadeInAnimation: Animation = AnimationUtils.loadAnimation(this, R.anim.partial_fade_in)
+        val partialFadeOutAnimation: Animation = AnimationUtils.loadAnimation(this, R.anim.partial_fade_out)
+
+        partialFadeInAnimation.setAnimationListener(object : Animation.AnimationListener {
+            override fun onAnimationStart(animation: Animation) {}
+            override fun onAnimationEnd(animation: Animation) {
+                magicGlyphImage.startAnimation(partialFadeOutAnimation)
+            }
+            override fun onAnimationRepeat(animation: Animation) {}
+        })
+
+        partialFadeOutAnimation.setAnimationListener(object: Animation.AnimationListener{
+            override fun onAnimationStart(animation: Animation) {}
+            override fun onAnimationEnd(animation: Animation) {
+                magicGlyphImage.startAnimation(partialFadeInAnimation)
+            }
+            override fun onAnimationRepeat(animation: Animation) {}
+        })
+
+        magicGlyphImage.startAnimation(partialFadeInAnimation)
+
         textViews[0].startAnimation(fadeInAnimations[0])
 
         val slowFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_slow)
-        val stream: ImageView = findViewById(R.id.imageView4)
+        val stream: ImageView = findViewById(R.id.scene9image1)
         stream.startAnimation(slowFadeInAnimation)
+
+
     }
     override fun onBackPressed() {
         if(false) {
