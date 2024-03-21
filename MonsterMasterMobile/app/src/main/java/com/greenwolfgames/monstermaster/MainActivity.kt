@@ -19,20 +19,18 @@ class MainActivity : AppCompatActivity() {
         var state = State()
 
         val button1: Button = findViewById(R.id.button1)
-        button1.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button1.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
+        Utilities.hideButton(button1,this@MainActivity)
         button1.setOnClickListener {
-            state.whiteScore++
+            state.addScore(Element.LIGHT,1)
             val intent = Intent(this, Scene2Activity::class.java)
             intent.putExtra("state", state)
             startActivity(intent)
         }
 
-        val button2: Button = findViewById(R.id.button2)
-        button2.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button2.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
+        val button2: Button = findViewById(R.id.scene8button2)
+        Utilities.hideButton(button2, this@MainActivity)
         button2.setOnClickListener {
-            state.blackScore++
+            state.addScore(Element.DARK,1)
             val intent = Intent(this, Scene3Activity::class.java)
             intent.putExtra("state", state)
             startActivity(intent)
@@ -68,12 +66,8 @@ class MainActivity : AppCompatActivity() {
             override fun onAnimationEnd(animation: Animation) {
                 button1.startAnimation(fadeInAnimations[8])
                 button2.startAnimation(fadeInAnimations[8])
-
-                button1.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.white))
-                button1.setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.whiteGray))
-
-                button2.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.black))
-                button2.setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.gray))
+                Element.colorButton(button1,this@MainActivity,Element.LIGHT)
+                Element.colorButton(button2,this@MainActivity,Element.DARK)
             }
             override fun onAnimationRepeat(animation: Animation) {}
         })

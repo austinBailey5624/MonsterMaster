@@ -1,5 +1,6 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -10,7 +11,7 @@ import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
-class Scene4Activity : AppCompatActivity(){
+class Scene4Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene4_forest_fire)
@@ -22,21 +23,21 @@ class Scene4Activity : AppCompatActivity(){
         val currentState = extras?.getSerializable("state") as State
 
         val button: Button = findViewById(R.id.button)
-
-        button.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
+        Utilities.hideButton(button, this@Scene4Activity)
         button.setOnClickListener {
-            currentState.greenScore++
+            currentState.addScore(Element.EARTH, 1)
+            val intent = Intent(this,Scene8Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
-        val button2: Button = findViewById(R.id.button2)
-
-        button2.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button2.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
+        val button2: Button = findViewById(R.id.scene8button2)
+        Utilities.hideButton(button2, this@Scene4Activity)
         button2.setOnClickListener {
-            currentState.yellowScore++
+            currentState.addScore(Element.AIR, 1)
+            val intent = Intent(this,Scene8Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
         val textViews: List<TextView> = listOf(
@@ -69,23 +70,8 @@ class Scene4Activity : AppCompatActivity(){
             override fun onAnimationEnd(animation: Animation) {
                 button.startAnimation(fadeInAnimations[7])
                 button2.startAnimation(fadeInAnimations[7])
-
-                button.setTextColor(ContextCompat.getColor(this@Scene4Activity, R.color.green))
-                button.setBackgroundColor(
-                    ContextCompat.getColor(
-                        this@Scene4Activity,
-                        R.color.forestGreen
-                    )
-                )
-
-                button2.setTextColor(ContextCompat.getColor(this@Scene4Activity, R.color.yellow))
-                button2.setBackgroundColor(
-                    ContextCompat.getColor(
-                        this@Scene4Activity,
-                        R.color.brown
-                    )
-                )
-
+                Element.colorButton(button, this@Scene4Activity, Element.EARTH)
+                Element.colorButton(button2, this@Scene4Activity, Element.AIR)
             }
 
             override fun onAnimationRepeat(animation: Animation) {}
@@ -116,7 +102,7 @@ class Scene4Activity : AppCompatActivity(){
     }
 
     override fun onBackPressed() {
-        if(false) {
+        if (false) {
             super.onBackPressed()
         }
         // Do nothing here

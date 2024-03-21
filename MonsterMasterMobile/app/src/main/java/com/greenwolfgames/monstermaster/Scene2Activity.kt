@@ -21,21 +21,19 @@ class Scene2Activity : AppCompatActivity() {
 
         val currentState = extras?.getSerializable("state") as State
 
-        val button3: Button = findViewById(R.id.button3)
-        button3.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button3.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
+        val button3: Button = findViewById(R.id.scene8button1)
+        Utilities.hideButton(button3,this@Scene2Activity)
         button3.setOnClickListener {
-            currentState.redScore++
+            currentState.addScore(Element.FIRE, 1)
             val intent = Intent(this, Scene4Activity::class.java)
             intent.putExtra("state", currentState)
             startActivity(intent)
         }
 
         val button4: Button = findViewById(R.id.button4)
-        button4.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button4.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
+        Utilities.hideButton(button4,this@Scene2Activity)
         button4.setOnClickListener {
-            currentState.blueScore++
+            currentState.addScore(Element.WATER,1)
             val intent = Intent(this, Scene5Activity::class.java)
             intent.putExtra("state", currentState)
             startActivity(intent)
@@ -73,13 +71,8 @@ class Scene2Activity : AppCompatActivity() {
             override fun onAnimationEnd(animation: Animation) {
                 button3.startAnimation(fadeInAnimations[8])
                 button4.startAnimation(fadeInAnimations[8])
-
-                button3.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.red))
-                button3.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.yellowOrange))
-
-                button4.setTextColor(ContextCompat.getColor(this@Scene2Activity, R.color.blue))
-                button4.setBackgroundColor(ContextCompat.getColor(this@Scene2Activity, R.color.cyan))
-
+                Element.colorButton(button3,this@Scene2Activity,Element.FIRE)
+                Element.colorButton(button4,this@Scene2Activity,Element.WATER)
             }
             override fun onAnimationRepeat(animation: Animation) {}
         })

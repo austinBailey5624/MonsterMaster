@@ -15,32 +15,18 @@ class Scene5Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene5_forest_stream)
         val extras = intent.extras
-
-        //disable back button
-        onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
         val currentState = extras?.getSerializable("state") as State
 
-        val button4: Button = findViewById(R.id.button3)
-
-
-        button4.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button4.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
-
-        button4.setOnClickListener {
-            currentState.greenScore++
-//            val intent = Intent(this, Scene4Activity::class.java)
-//            intent.putExtra("state", currentState)
-//            startActivity(intent)
+        val button: Button = findViewById(R.id.scene8button1)
+        Utilities.hideButton(button,this@Scene5Activity)
+        button.setOnClickListener {
+            currentState.addScore(Element.EARTH,1)
         }
 
-        val button5: Button = findViewById(R.id.button2)
-
-        button5.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        button5.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
-        button5.setOnClickListener {
-            currentState.yellowScore++
+        val button2: Button = findViewById(R.id.scene8button2)
+        Utilities.hideButton(button,this@Scene5Activity)
+        button2.setOnClickListener {
+            currentState.addScore(Element.AIR,1)
         }
 
         val textViews: List<TextView> = listOf(
@@ -73,15 +59,10 @@ class Scene5Activity : AppCompatActivity() {
         fadeInAnimations[7].setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {}
             override fun onAnimationEnd(animation: Animation) {
-                button4.startAnimation(fadeInAnimations[8])
-                button5.startAnimation(fadeInAnimations[8])
-
-                button4.setTextColor(ContextCompat.getColor(this@Scene5Activity, R.color.green))
-                button4.setBackgroundColor(ContextCompat.getColor(this@Scene5Activity, R.color.forestGreen))
-
-                button5.setTextColor(ContextCompat.getColor(this@Scene5Activity, R.color.yellow))
-                button5.setBackgroundColor(ContextCompat.getColor(this@Scene5Activity, R.color.brown))
-
+                button.startAnimation(fadeInAnimations[8])
+                button2.startAnimation(fadeInAnimations[8])
+                Element.colorButton(button,this@Scene5Activity,Element.EARTH)
+                Element.colorButton(button2,this@Scene5Activity,Element.AIR)
             }
             override fun onAnimationRepeat(animation: Animation) {}
         })

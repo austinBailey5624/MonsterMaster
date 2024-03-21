@@ -96,13 +96,13 @@
         android:layout_height="wrap_content"
         android:text="@string/scene6choice1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/scene8button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".975" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/scene8button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/scene6choice2"

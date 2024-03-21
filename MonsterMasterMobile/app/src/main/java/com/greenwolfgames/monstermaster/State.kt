@@ -5,11 +5,23 @@ import java.io.Serializable
 //Class to represent the state of the game
 class State : Serializable
 {
-    var nextScenario = 1
-    var redScore: Int = 0
-    var blueScore: Int = 0
-    var greenScore: Int = 0
-    var yellowScore: Int = 0
-    var whiteScore: Int = 0
-    var blackScore: Int = 0
+    var elementalScore = mutableMapOf<Element,Int> (
+        Element.FIRE to 0,
+        Element.WATER to 0,
+        Element.EARTH to 0,
+        Element.AIR to 0,
+        Element.LIGHT to 0,
+        Element.DARK to 0
+    )
+    var starterMonster: String = ""
+
+    fun addScore(element: Element, score: Int)
+    {
+        elementalScore[element] = elementalScore[element]!! + score
+    }
+
+    fun getScore(element: Element): Int
+    {
+        return elementalScore[element]!!
+    }
 }

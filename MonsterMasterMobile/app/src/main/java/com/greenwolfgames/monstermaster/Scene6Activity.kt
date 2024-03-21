@@ -15,27 +15,20 @@ class Scene6Activity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene6_dark_forest_fire)
         val extras = intent.extras
-
-        //disable back button
-        onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
         val currentState = extras?.getSerializable("state") as State
 
         val button: Button = findViewById(R.id.button)
-
         button.setTextColor(ContextCompat.getColor(this, R.color.invisible))
         button.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
         button.setOnClickListener {
-            currentState.greenScore++
+            currentState.addScore(Element.EARTH,1)
         }
 
-        val button2: Button = findViewById(R.id.button2)
-
+        val button2: Button = findViewById(R.id.scene8button2)
         button2.setTextColor(ContextCompat.getColor(this, R.color.invisible))
         button2.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
-
         button2.setOnClickListener {
-            currentState.yellowScore++
+            currentState.addScore(Element.AIR,1)
         }
 
         val textViews: List<TextView> = listOf(
@@ -68,44 +61,26 @@ class Scene6Activity : AppCompatActivity(){
             override fun onAnimationEnd(animation: Animation) {
                 button.startAnimation(fadeInAnimations[7])
                 button2.startAnimation(fadeInAnimations[7])
-
-                button.setTextColor(ContextCompat.getColor(this@Scene6Activity, R.color.green))
-                button.setBackgroundColor(
-                    ContextCompat.getColor(
-                        this@Scene6Activity,
-                        R.color.forestGreen
-                    )
-                )
-
-                button2.setTextColor(ContextCompat.getColor(this@Scene6Activity, R.color.yellow))
-                button2.setBackgroundColor(
-                    ContextCompat.getColor(
-                        this@Scene6Activity,
-                        R.color.brown
-                    )
-                )
-
+                Element.colorButton(button,this@Scene6Activity,Element.EARTH)
+                Element.colorButton(button2,this@Scene6Activity,Element.AIR)
             }
 
             override fun onAnimationRepeat(animation: Animation) {}
         })
 
+        //@formatter:off
         for (i in 0..5) {
             fadeInAnimations[i].setAnimationListener(object : Animation.AnimationListener {
                 override fun onAnimationStart(animation: Animation) {}
                 override fun onAnimationEnd(animation: Animation) {
                     textViews[i].startAnimation(fadeInAnimations[i + 1])
-                    textViews[i].setTextColor(
-                        ContextCompat.getColor(
-                            this@Scene6Activity,
-                            R.color.gray
-                        )
-                    )
+                    textViews[i].setTextColor(ContextCompat.getColor(this@Scene6Activity,R.color.gray))
                 }
 
                 override fun onAnimationRepeat(animation: Animation) {}
             })
         }
+        //@formatter:on
 
         textViews[0].startAnimation(fadeInAnimations[0])
 
