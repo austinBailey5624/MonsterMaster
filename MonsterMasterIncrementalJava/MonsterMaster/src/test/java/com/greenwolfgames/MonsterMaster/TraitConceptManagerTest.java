@@ -40,6 +40,4 @@ public class TraitConceptManagerTest
 		TraitConceptManager.alphabatizeBodyTypes();
 //		TraitConceptManager.printHelper();
 	}
-	
-
 }

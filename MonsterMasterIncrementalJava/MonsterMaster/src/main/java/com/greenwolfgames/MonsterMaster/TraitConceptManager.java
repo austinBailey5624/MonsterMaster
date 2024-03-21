@@ -1,5 +1,7 @@
 package com.greenwolfgames.MonsterMaster;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.sql.ResultSet;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -154,6 +156,13 @@ public class TraitConceptManager
 					indexOfCurrentTrait++;
 					traitValueDescriptions.put(traitsResultSet.getInt(2), traitsResultSet.getString(3));
 				}
+				for(Trait trait : m_traits)
+				{
+					if(trait.getIndex() == readCurrentIndex)
+					{
+						trait.setTraitValueDescriptions(traitValueDescriptions);
+					}
+				}
 			}
 		}
 		catch (Exception e)
@@ -283,5 +292,57 @@ public class TraitConceptManager
 			System.out.print("(" + i + ",62,1),(" + i + ",63,10),");
 		}
 	}
-
+	
+	public static void main(String[] args)
+	{
+		try
+		{
+			FileWriter fileWriter = new FileWriter("traitWikiOutput.txt");
+			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+			bufferedWriter.write(makeWikiContent());
+			bufferedWriter.close();
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	private static String makeWikiContent()
+	{
+		String result = "<div align=\"center\">\n<table>\n<tr>\n    <td align=\"center\"><h3>Trait Name</h3></td>";
+		result += "\n    <td align=\"center\"><h3>Trait Effect</h3></td>\n</tr>\n";
+		List<Trait> traits = getTraits();
+		for(Trait trait : traits)
+		{
+			result+=printTrait(trait);
+		}
+		result += "</table>\n</div>";
+		
+		return result;
+	}
+	
+	private static String printTrait(Trait trait)
+	{
+		if(trait.getIndex() == 4 || trait.getIndex() == 5)
+		{
+			return "";
+		}
+		Map<Integer,String> traitDescriptionsByValue = trait.getTraitValueDescriptions();
+		String result ="";
+		for(int i = trait.getMinimumValue(); i <= trait.getMaximumValue(); i++)
+		{
+			result+=printTraitValue(trait,i,traitDescriptionsByValue);
+		}
+		return result;
+	}
+	
+	private static String printTraitValue(Trait trait, int value, Map<Integer,String> traitDescriptionsByValue)
+	{
+		String result = "<tr>\n    <td align=\"center\">" + trait.getName() + ":" + value + "</td>\n";
+		result += "    <td>" + traitDescriptionsByValue.get(value) + "</td>\n";
+		result += "</tr>\n";
+		return result;
+	}
 }

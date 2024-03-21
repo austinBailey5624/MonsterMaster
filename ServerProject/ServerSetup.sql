@@ -634,46 +634,7 @@ CREATE TABLE trait(
     min_value INT NOT NULL,
     max_value INT NOT NULL
     );
-    
-CREATE TABLE trait_corporeality_value(
-		trait_corporeality_value_id INT PRIMARY KEY AUTO_INCREMENT,
-        trait_corporeality_name VARCHAR(50) NOT NULL
-        );
-    
-CREATE TABLE trait_age_value(
-	trait_age_value_id INT PRIMARY KEY AUTO_INCREMENT,
-    trait_age_name VARCHAR(50) NOT NULL
-    );
-
-INSERT INTO trait_age_value(trait_age_name)
-VALUES
-	('Infant'),
-    ('Adolescent'),
-    ('Adult'),
-    ('Elder'),
-    ('Ancient');
-
-CREATE TABLE trait_body_type_value(
-	trait_body_type_value_id INT PRIMARY KEY AUTO_INCREMENT,
-    trait_body_type_name VARCHAR(50) NOT NULL
-    );
-    
-INSERT INTO trait_body_type_value(trait_body_type_name)
-VALUES
-    ('Angel'),('Badger'),('Bat'),('Beak'),('Bear'),
-    ('Bird'),('Blob'),('Camel'),('Cat'),('Claw'),
-    ('Cloud'),('Corpse'),('Cow'),('Demon'),('Disease'),
-    ('Dragon'),('Elf'),('Fang'),('Fish'),('Fox'),
-    ('Frog'),('Gem'),('Ghost'),('Golem'),('Horse'),
-    ('Humanoid'),('JellyFish'),('Light Blob'),('Liquid'),('Lizard'),
-    ('Monk'),('Octopus'),('Other'),('Penguin'),('Plant'),
-    ('Raptor'),('Rat'),('Scavenger'),('Scorpion'),('Shield'),
-    ('Snake'),('Soldier'),('Spear'),('Sphynx'),('Spider'),
-    ('Squid'),('Starfish'),('Steam Blob'),('Stone'),('Sword'),
-    ('Sword'),('Symbol'),('Tree'),('Turtle'),('Tyrant'),
-    ('Wasp'),('Wolf');
-    
-    
+   
 CREATE TABLE trait_description(
 	trait_description_id INT PRIMARY KEY AUTO_INCREMENT,
     trait_id INT,
@@ -696,14 +657,14 @@ INSERT INTO trait(trait_name,trait_type,min_value,max_value)
 VALUES
 	('Corporeality','Fundamental',1,6),
     ('Age','Fundamental',1,5),
-    ('Body Type 1','Fundamental',1,57),
-    ('Body Type 2','Fundamental',0,57),
-    ('Body Type 3','Fundamental',0,57),
+    ('Body Type 1','Fundamental',1,56),
+    ('Body Type 2','Fundamental',0,56),
+    ('Body Type 3','Fundamental',0,56),
     ('Ability To Fly','Traversal',-10,10),
     ('Underwater','Traversal',0,6),
     ('Wetness Affinity','Traversal',-5,5),
     ('Heat Tolerance','Traversal',-5,5),
-    ('Light Emitting','Traversal',-10,10),
+    ('Light Emitting','Traversal',-5,5),
     ('Diurnal/Nocturnal','Traversal',-5,5),
     ('Calm','StatModifier',-10,10),
     ('Strong','StatModifier',-10,10),
@@ -745,15 +706,6 @@ VALUES
     ('Steamy','Inherited',0,10),
     ('Toxic','Inherited',0,10),
     ('Vampire','Inherited',0,10);
-
-INSERT INTO trait_corporeality_value(trait_corporeality_name)
-VALUES
-	('Corporeal'),
-    ('Fluid'),
-    ('Vapor'),
-    ('Disease Cloud'),
-    ('Ghost'),
-    ('Light');
 
 INSERT INTO trait_description(trait_id, trait_value, description)
 VALUES
@@ -966,7 +918,7 @@ VALUES
     (7,4,'This monster is accustomed to the water, and can submerge with some help.'),
     (7,5,'This monster is very accustomed to living in the water, and can submerge with very little help.'),
     (7,6,'This monster breathes the water like it was air, and requries no help to go beneath the waves.'),
-    (8,-5,'This monster strongly prefers a dry atmosphere and is damaged by wetness, and gains moderate be0nefits from sandstorms and dry heat.'),
+    (8,-5,'This monster strongly prefers a dry atmosphere and is damaged by wetness, and gains moderate benefits from sandstorms and dry heat.'),
     (8,-4,'This monster prefers a dry atmosphere and is slightly damaged by wetness, and gains slight benefit from sandstorms and dry heat.'),
     (8,-3,'This monster is very accustomed to a dry atmosphere, and has moderate penalties when wet. It is immune from damage from sandstorms and dry heat.'),
     (8,-2,'This monster is accustomed to a dry atmosphere, and has penalties when wet. It takes 50% reduced damage from sandstorms and dry heat.'),
@@ -1046,7 +998,8 @@ VALUES
     (13,2,'This monster is known for its strength, and deals 20% additional melee damage.'),
     (13,3,'This monster lifts every day, and its gains pay off, so it deals 30% additional melee damage.'),
     (13,4,'This monster carries boulders around when its bored, and deals 40% additional melee damage.'),
-    (13,5,'This monster is incredible strong, and deals 50% additional melee damage.'),
+    (13,5,'This monster is incredibly strong, and deals 50% additional melee damage.'),
+    (13,6,'This monster is incredibly strong, and deals 60% additional melee damage.'),
     (13,7,'This monster has legendary strength, and deals 70% additional melee damage.'),
     (13,8,'This monster has absurd strength, and deals 80% additional melee damage.'),
     (13,9,'This monster is a world champion weightlifter, and deals 90% additional melee damage.'),
@@ -1174,10 +1127,11 @@ VALUES
     (21,3,'This monster is a journeyman pyromancer, and deals 30% bonus Fire damage.'),
     (21,4,'This monster is an expert pyromancer, and deals 40% bonus Fire damage.'),
     (21,5,'This monster is a master pyromancer, and deals 50% bonus Fire damage.'),
-    (21,6,'This monster is an archpyromancer, and deals 70% bonus Fire damage.'),
-    (21,6,'This monster is an archpyromancer, and deals 80% bonus Fire damage.'),
-    (21,6,'This monster is an archpyromancer, and deals 90% bonus Fire damage.'),
-    (21,6,'This monster has the fire of Mars, and deals double Fire damage.'),
+	(21,6,'This monster is an archpyromancer, and deals 60% bonus Fire damage.'),
+    (21,7,'This monster is an archpyromancer, and deals 70% bonus Fire damage.'),
+    (21,8,'This monster is an archpyromancer, and deals 80% bonus Fire damage.'),
+    (21,9,'This monster is an archpyromancer, and deals 90% bonus Fire damage.'),
+    (21,10,'This monster has the fire of Mars, and deals double Fire damage.'),
     (22,0,'This monster has no aquamancy experience and deals no additional Water Damage.'),
     (22,1,'This monster is a novice aquamancer, and deals 10% bonus Water Damage.'),
     (22,2,'This monster is an apprentice aquamancer, and deals 20% bonus Water Damage.'),
@@ -1378,15 +1332,15 @@ VALUES
     (39,10,'This monster heals like Sid himself, and restores 100% more health when healing.'),
     (40,0,'This monster does not see hypocrisy in the goodness of others, and does not do extra damage to righteous monsters.'),
     (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 3% more damage to light elemental enemies, and an additional 1% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 6% more damage to light elemental enemies, and an additional 2% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 9% more damage to light elemental enemies, and an additional 3% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 12% more damage to light elemental enemies, and an additional 4% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 15% more damage to light elemental enemies, and an additional 5% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 18% more damage to light elemental enemies, and an additional 6% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 21% more damage to light elemental enemies, and an additional 7% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 24% more damage to light elemental enemies, and an additional 8% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders, and deals 27% more damage to light elemental enemies, and an additional 9% damage to Luxor and Angel enemies.'),
-    (40,1,'This monster hates the hypocrisy of the so called do gooders like Acheron himself, and deals 30% more damage to light elemental enemies, and an additional 10% damage to Luxor and Angel enemies.'),
+    (40,2,'This monster hates the hypocrisy of the so called do gooders, and deals 6% more damage to light elemental enemies, and an additional 2% damage to Luxor and Angel enemies.'),
+    (40,3,'This monster hates the hypocrisy of the so called do gooders, and deals 9% more damage to light elemental enemies, and an additional 3% damage to Luxor and Angel enemies.'),
+    (40,4,'This monster hates the hypocrisy of the so called do gooders, and deals 12% more damage to light elemental enemies, and an additional 4% damage to Luxor and Angel enemies.'),
+    (40,5,'This monster hates the hypocrisy of the so called do gooders, and deals 15% more damage to light elemental enemies, and an additional 5% damage to Luxor and Angel enemies.'),
+    (40,6,'This monster hates the hypocrisy of the so called do gooders, and deals 18% more damage to light elemental enemies, and an additional 6% damage to Luxor and Angel enemies.'),
+    (40,7,'This monster hates the hypocrisy of the so called do gooders, and deals 21% more damage to light elemental enemies, and an additional 7% damage to Luxor and Angel enemies.'),
+    (40,8,'This monster hates the hypocrisy of the so called do gooders, and deals 24% more damage to light elemental enemies, and an additional 8% damage to Luxor and Angel enemies.'),
+    (40,9,'This monster hates the hypocrisy of the so called do gooders, and deals 27% more damage to light elemental enemies, and an additional 9% damage to Luxor and Angel enemies.'),
+    (40,10,'This monster hates the hypocrisy of the so called do gooders like Acheron himself, and deals 30% more damage to light elemental enemies, and an additional 10% damage to Luxor and Angel enemies.'),
     (41,0,'This monster is not made of flames, and gains no benefits.'),
     (41,1,'This monster is made of flames, and absorbs 10% of fire damage, takes bonus damage from rain and hail, dies when underwater, and deals 1 point of fire damage when making contact with the enemy.'),
     (41,2,'This monster is made of flames, and absorbs 20% of fire damage, takes bonus damage from rain and hail, dies when underwater, and deals 2 point of fire damage when making contact with the enemy.'),
@@ -1508,11 +1462,6 @@ VALUES
     (51,8,'This monster is a vampire and absorbs 80% of the physical damage it inflicts as health.'),
     (51,9,'This monster is a vampire and absorbs 90% of the physical damage it inflicts as health.'),
     (51,10,'This monster is a vampire and absorbs all of the physical damage it inflicts as health.');
-    
-    
-    Select trait_id, trait_value, description from trait_description;
-    
-    
 	    
 INSERT INTO trait_manager(traits_name, monster_type_id)
 VALUES
@@ -2133,7 +2082,7 @@ VALUES
 (273,1,1),(273,2,4),(273,3,51),(273,6,0),(273,7,3),(273,10,4),(273,14,2),(273,20,3),(273,21,1),(273,22,1),(273,23,1),(273,24,1),(273,25,3),(273,26,1),(273,29,4),(273,38,2),
 (274,1,1),(274,2,1),(274,3,14),(274,4,10),(274,6,1),(274,7,3),(274,38,1),
 (275,1,1),(275,2,2),(275,3,14),(275,4,28),(275,6,2),(275,7,3),(275,13,1),(275,18,1),(275,29,1),(275,38,2),
-(276,1,1),(276,2,2),(276,3,14),(276,4,18),(276,10),(276,6,2),(276,7,3),(276,19,1),(276,27,1),(276,29,1),(276,38,2),
+(276,1,1),(276,2,2),(276,3,14),(276,4,18),(276,6,2),(276,7,3),(276,19,1),(276,27,1),(276,29,1),(276,38,2), -- (276,10),
 (277,1,1),(277,2,2),(277,3,14),(277,4,41),(277,6,0),(277,7,3),(277,20,1),(277,25,1),(277,38,2),
 (278,1,1),(278,2,3),(278,3,14),(278,4,28),(278,5,26),(278,6,3),(278,7,3),(278,13,2),(278,18,2),(278,29,2),(278,38,3),
 (279,1,1),(279,2,3),(279,3,14),(279,4,25),(279,5,18),(279,6,3),(279,7,3),(279,19,2),(279,27,1),(279,29,1),(279,38,3),(279,42,1),
@@ -2231,7 +2180,7 @@ CREATE TABLE trait_requirement(
     comparator ENUM('Exactly','AtLeast','AtMost')
     );
     
-INSERT INTO unlock_requirement_manager(unlock_requirement_description)
+INSERT INTO requirement_manager(requirement_description)
     VALUES
     ("Corporeality: Corporeal"),
     ("Corporeality: Coproreal AND Fast: 2"),
