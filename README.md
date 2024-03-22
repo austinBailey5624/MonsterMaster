@@ -4,7 +4,7 @@ MonsterMaster is a Monster Catching RPG *cough* Pokemon Clone *cough* Developed 
 
 ## How the repo is organized
 
-Monster master has gone through many iterations in its alpha development, as I find a technology that works for a while, then abandon it due to its limitations (like with the old game maker studio version), or for unities new marketing strategy I could not abide in the case of the Unity version. I've also had various version of Java, which is now mainly used to manage the sql aspect of the game. The version currently under development is in android studio, which you can find in MonsterMasterMobile.
+Monster master has gone through many iterations in its alpha development, as I find a technology that works for a while, then abandon it due to its limitations (like with the old game maker studio version), or for unities new marketing strategy I could not abide in the case of the Unity version (deleted, in commit history if you're interested). I've also had various version of Java, which is now mainly used to manage the sql aspect of the game. The version currently under development is in android studio, which you can find in MonsterMasterMobile.
 
 ## What are the components doing?
 
@@ -14,22 +14,11 @@ Monster master has gone through many iterations in its alpha development, as I f
 
 3. MonsterMasterMobile (currently in development) This Android project reads from the files generated in MonsterMasterIncrementalJava and is the current version of the game
 
-4. MonsterMasterUnity: The second version of this project (after the GameMakerVersion) written in C# using unity, abandoned because of unities pricing controversy. A lot of the elements in this project were simplified into Monster Master Mobile
-
-5. GameMakerVersion: (Abandoned) also no longer in the git repo, if you want to play with it, a very rough version exists in early commits, and the 'final' version of that is in GameMakerVersion.zip. Its pretty basic, the interesting parts are after you press 'z' to access the menu- only the bestiary is of note though
+4. GameMakerVersion: (Abandoned) also no longer in the git repo, if you want to play with it, a very rough version exists in early commits, and the 'final' version of that is in GameMakerVersion.zip. Its pretty basic, the interesting parts are after you press 'z' to access the menu- only the bestiary is of note though
 
 ## Vision of the future 
 
 I would like to get the first town and sequence as a playable demo in the mobile version of the game, then the first sixth will be available to play for free, with the following five chapters bringing enhancements that will be modestly expensive (perhaps 2.99 per additional chapter is the idea). Then (and this is a crazy dream stretch goal), I'll redo it using what I've learned to make a better version for the xbox and playstation stores.
-
-## Setup
-
-### Unity project (abandoned)
-
-Download the version of unity (current version being used is here: https://github.com/austinBailey5624/MonsterMaster/blob/main/MonsterMasterUnity/ProjectSettings/ProjectVersion.txt )
-
-
-
 
 ## Differences from Pokemon
 1. **The player matters** In Pokemon Games the user really doesnt matter at all other than as a way to move yourself around the screen. In MonsterMaster as the character you are an active participant in the battle and defeat occurs when you are knocked out, not just when the monster representing you is defeated *it also bears noting that monsters gain experience much faster than humans.
