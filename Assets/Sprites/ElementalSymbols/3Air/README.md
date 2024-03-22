@@ -11,7 +11,7 @@
     <td align="center">Ownership reason</td>
 </tr>
 <tr>
-    <td align="center">3Aero1000.afdesign</td>
+    <td align="center">AeroSymbol.afdesign</td>
     <td align="center">Mattie Lyall</td>
     <td align="center">Employment contract; Invoice June 9th, 2023</td>
 </tr>
