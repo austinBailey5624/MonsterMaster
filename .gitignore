@@ -1,12 +1,3 @@
-MonsterMasterUnity/Library/*
-MonsterMasterUnity/Logs/*
-MonsterMasterUnity/Library/StateCache/*
-MonsterMasterUnity/UserSettings/*
-MonsterMasterUnity/UserSettings/Layouts/*
-MonsterMasterUnity/UserSettings/Layouts/default-2021.dwlt
-MonsterMasterUnity/Temp
-MonsterMasterUnity/Temp/*
-MonsterMasterUnity/MonsterMasterUnity_Data/*
 MonsterMasterMobile/Library/*
 MonsterMasterMobile/Logs/*
 MonsterMasterMobile/UserSettings/*
@@ -15,6 +6,7 @@ MonsterMasterMobile/Temp/*
 .bash_history
 .viminfo
 .git-for-windows-updater
+.lesshst
 MonsterMasterIncrementalJava/.metadata/*
 MonsterMasterIncrementalJava/.settings/*
 MonsterMasterIncrementalJava/MonsterMasterIncremental/bin/SQLUserPass.txt
