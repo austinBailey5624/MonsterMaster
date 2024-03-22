@@ -10,7 +10,7 @@
     <td align="center">Ownership reason</td>
 </tr>
 <tr>
-    <td align="center">5Deep1000.afdesign</td>
+    <td align="center">DeepSymbol.afdesign</td>
     <td align="center">Mattie Lyall</td>
     <td align="center">Employment contract; Invoice May 15, 2023</td>
 </tr>
@@ -20,12 +20,7 @@
     <td align="center">Employment contract; Invoice May 15, 2023</td>
 </tr>
 <tr>
-    <td align="center">1Aqua1000Alternate.afdesign</td>
-    <td align="center">Mattie Lyall</td>
-    <td align="center">Employment contract; Invoice June 9, 2023</td>
-</tr>
-<tr>
-    <td align="center">1Aqua1000.afdesign</td>
+    <td align="center">AquaSymbol.afdesign</td>
     <td align="center">Mattie Lyall</td>
     <td align="center">Employment contract; Invoice June 16, 2023</td>
 </tr>
