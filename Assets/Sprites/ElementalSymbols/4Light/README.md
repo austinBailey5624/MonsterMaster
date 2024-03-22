@@ -11,7 +11,7 @@
     <td align="center">Ownership reason</td>
 </tr>
 <tr>
-    <td align="center">4Luxor1000.afdesign</td>
+    <td align="center">LuxorSymbol.afdesign</td>
     <td align="center">Mattie Lyall</td>
     <td align="center">Employment contract; Invoice June 16th, 2023</td>
 </tr>
