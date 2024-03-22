@@ -11,17 +11,17 @@
     <td align="center">Ownership reason</td>
 </tr>
 <tr>
-    <td align="center">3Pegasus1000.afdesign</td>
+    <td align="center">PegasusSymbol.afdesign</td>
     <td align="center">Mattie Lyall</td>
     <td align="center">Employment contract; Invoice April 2023</td>
 </tr>
 <tr>
-    <td align="center">2Terra1000.afdesign</td>
+    <td align="center">TerraSymbol.afdesign</td>
 	<td align="center">Mattie Lyall</td>
 	<td align="center">Employment Contract; Invoice April 2023</td>
 </tr>
 <tr>
-    <td align="center">0Fey1000.afdesign</td>
+    <td align="center">FeySymbol.afdesign</td>
 	<td align="center">Mattie Lyall</td>
 	<td align="center">Employment Contract; Invoice April 2023</td>
 </tr>
