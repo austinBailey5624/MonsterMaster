@@ -53,6 +53,10 @@
             android:name=".Scene9Activity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".Scene10Activity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

@@ -20,11 +20,11 @@
     <string name="scene2choice1">Gather Twigs for Fire</string>
     <string name="scene2choice2">Search for Water</string>
     <string name="scene3item1">Darkness comforts you</string>
-    <string name="scene3item2">Light Fades</string>
-    <string name="scene3item3">You sense Trees</string>
-    <string name="scene3item4">Grass</string>
-    <string name="scene3item5">Your form is unfamiliar</string>
-    <string name="scene3item6">Quiet echoes in the night</string>
+    <string name="scene3item2">Harsh light Fades</string>
+    <string name="scene3item3">You touch rough bark</string>
+    <string name="scene3item4">Sharp blades of grass</string>
+    <string name="scene3item5">You do not know</string>
+    <string name="scene3item6">Your form, or nature</string>
     <string name="scene3choice1">Gather Twigs for Fire</string>
     <string name="scene3choice2">Search for Water</string>
     <string name="scene4item1">The flame comforts you</string>
