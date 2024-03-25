@@ -230,19 +230,33 @@ CREATE TABLE statement(
 
 INSERT INTO statement(scenario_id, content)
 VALUES
-	(1,'You awaken in the darkness,'),
+	(1,'You awaken in the darkness'),
     (1,'With no memory or direction,'),
-    (1,'Time passes but you cannot grasp it;'),
-    (1,'A week, a month, a year comes and fades again.'),
+    (1,'Time passes'),
+    (1,'You cannot grasp it'),
+    (1,'A week, a month, a year'),
+    (1,'comes and fades again'),
     (1,'Then there is light'),
-	(2,'The light reveals a forest all around you,'),
-    (2,'Trees reach to heaven,'),
-    (2,'Not fully revealed by the light,'),
-    (2,'The black treeptops grasp at the stars.'),
-    (3,'The light is temporary,'),
-    (3,'And soon consumed by the darkness,'),
-    (3,'Yet far above you, still there are stars.'),
-    (3,'The starlight reveals you hidden in a copse of trees.');
+	(2,'Light comes from above'),
+    (2,'Revealing a dark forest'),
+    (2,'Trees reach to heaven'),
+    (2,'Outer branches'),
+    (2,'Silhouetted by the stars'),
+    (2,'Your form is unfamiliar'),
+    (2,'Quiet echoes through the night'),
+    (3,'Darkness comforts you'),
+    (3,'Harsh light fades'),
+    (3,'You touch rough bark'),
+    (3,'Sharp blades of grass'),
+    (3,'You do not know'),
+    (3,'Your nature or your form'),
+    (4,'The flame comforts you'),
+    (4,'Reveals a stream'),
+    (4,'Thirst quenched'),
+    (4,'You are safe'),
+    (4,'A question arrives'),
+    (4,'What next?'),
+    (5,'A stream greets you');
     
 INSERT INTO statement(scenario_id, choice_id, content)
 VALUES
@@ -596,14 +610,14 @@ VALUES
     ('Fallen Archangel',54,NULL,NULL,NULL,325,'The fallen Archangel has embraced its sin, and its evil has taken the form of horns around its head, and dyed its hair black as oil. They are the favorite concubines of Malacathe and the Enemy, though due to their taint they do not earn the trust of the dark gods.'),
     ('Umbress',55,329,330,331,NULL,'The Umbress appears to bea small floating black flame, with two purple eyes. It consumes the light around it, and its eyes see deep into the soul.'),
     ('Shadeoss',55,NULL,332,NULL,328,'The Shadeoss is strongest in darkness. It appears to be the upper torso of a knight weilding a sword and a shield, the foil to a phage.'),
-    ('Screel',55,NULL,333,NULL,328,'The Screel is a black envy demon, desiring the desiring the form and life of a man. It is still young, so the result is obscene. Its eyes are mismatched, white and black, and its left arm is short while its right is too long, and has a big black spike pointing out from its shoulder.'),
+    ('Screel',55,NULL,333,NULL,328,'The Screel is a black envy fox demon, shrouded by purple fire, seeking to sate its endless desires for food and comfort.'),
     ('Umbral Symbol',55,334,NULL,335,328,'The Umbral Symbol is a floating symbol in the shape of the hungering abyss that casts basic dark magic. It is skilled at hiding itself and its allies from enemies, and obscuring truth. It seeks to blind those that oppose it, and can cast bolts of black lightning especially effective against light elementals.'),
     ('Senistair',55,NULL,336,NULL,329,'The Senistair is a shadow in the form of a man whose eyeless sockets peer into your soul. It has an inhuman cheshire smile that can only elicit terror, and a thousand needle-thin fangs that bristle from its smile. It is a demon of consumption, gluttony, and will strengthen over time the more it feeds.'),
-    ('Caecus',55,NULL,337,NULL,330,'The Caecus is a shadow warrior with a bandage wrapped around its eyes. It cannot see, but tracks its enemies by listening-often giving it a better picture of reality than sight. It takes the form of one of the old masters, wearing little armor, leaving it agile enough to dodge all blows. Its clothes are in tatters, cut a thousand times by its enemies- but its skin is flawless.'),
+    ('Caecus',55,NULL,337,NULL,330,'The Caecus is a shadow wolf forever alone, forever hungering for a pack. It hungers for the companionship of its kind, but self interest drives away any who come near.'),
     ('Obsidian',55,NULL,338,NULL,331,'Dark as night, and reflective, obsidian is formed by fast cooling lava embedded with the powers of darkness. It reflects whatever light it does not comsume, and is made of a thousand sharp edges, perfect for cutting into the flesh of the unwary. It radiates darkness, and leaves shards of itself embedded in the flesh of all those that it strikes (or that strike it).'),
     ('Umbral Elemental',55,NULL,339,NULL,331,'The Umbral Elemental is a large umbral symbol surrounded by three lesser symbols of other elements. As such, it can cast lesser magics of those elements. The center Umbral symbol is the strongest, and it feeds off of the energy of the surrounding. The valence symbols are trapped, and cannot escape the magic magnetism of the center, and are utterly under the center\'s control.'),
     ('Eye Of the Enemy',55,NULL,NULL,NULL,332,'The Eye of The Enemy is one of the many eyes of the dark god himself- it can see all aspects of you. Kill it before it speaks, as those that hear its voice turn mad. It is said that none can hide from its sight, and the it drinks the light and the hope out of all that oppose it.'),
-    ('Mang',55,NULL,NULL,NULL,333,'Mang appears as an old man with a walking stick. Attack it and see what happens. Its appearance is deceptive, as is its secret strength. It can peer into the realm of the self- and knows all of the secrets of its enemies. Its voice is a whisper, more devastating than the loudest scream.'),
+    ('Mang',55,NULL,NULL,NULL,333,'The wolf has satiated all its hunger for power, all of its hunger for food. It has everything it could want, and yet still is empty. A hollow, empty purple fire embraces it, a physical manifestation of the loneliness pride wrought.'),
     ('Onyx',55,NULL,NULL,NULL,334,'The onyx consumes the light around it, giving it a halo of shadow. It crystalizes any energy sent at it and consumes it at will. It bows only to masters that serve themselves, and even then, the master must be powerful enough to dominate it utterly. It\'s made of a thousand onyx crystals, each incredibly valuable, but anything that would seek to take them is a fool- they are cursed and embedded with darkness.'),
     ('Primordial Umbral Elemental',55,NULL,NULL,NULL,335,'The Umbral Atronach is a very large umbral symbol surrounded by Elementals representing every element. As such, it can cast greater darkness magics and regular magics of every other element. Each of the surrounding elementals is its slave, and serves it utterly. Its very existence is an affront to decency.');
 
@@ -2151,13 +2165,14 @@ CREATE TABLE skill(
     skill_id INT PRIMARY KEY AUTO_INCREMENT,
     skill_name VARCHAR(50) NOT NULL,
     skill_description VARCHAR(300) NOT NULL,
-    unlock_requirement_manager_id INT NOT NULL, -- will be a foreign key
-    usage_requirment_mangaer_id INT NOT NULL, -- will be a foreign key
-    cost_mp INT, -- nullable if free
-    cost_hp iNT, -- nullable if free
+    unlock_requirement_manager_id INT NOT NULL DEFAULT 0, -- will be a foreign key
+    usage_requirment_mangaer_id INT NOT NULL DEFAULT 0, -- will be a foreign key
+    cost_mp INT DEFAULT 0, -- nullable if free
+    cost_hp iNT DEFAULT 0, -- nullable if free
     nature ENUM('Physical','Magical','None') NOT NULL,
-    target_type_id INT, -- will be a foreign key
-    effect_id INT -- will be a foreign key
+    target_type_id INT NOT NULL DEFAULT 0, -- will be a foreign key, defaults to 0 if not yet known
+    effect_id INT NOT NULL DEFAULT 0, -- will be a foreign key,d efaults to zero if not known
+    tier DOUBLE DEFAULT 0.0
     );
     
 CREATE TABLE requirement_manager(
@@ -2182,13 +2197,96 @@ CREATE TABLE trait_requirement(
     
 INSERT INTO requirement_manager(requirement_description)
     VALUES
-    ("Corporeality: Corporeal"),
-    ("Corporeality: Coproreal AND Fast: 2"),
-    ("Corporeality:Corporeal AND bodyType:Fang OR Corporeal AND bodytype:Wolf OR Corporeal AND bodytype:Dragon OR Corporeal AND bodyType:Snake"),
-    ("Corporeality:Corporeal AND bodyType:Horse"),
-    ("Corporeality:Fluid OR BodyType:Liquid OR Aquamagia:1"),
-    ("Cloudy:atLeast1 AND Heat Tolerance atMost -1"),
-    ("BodyType:Vapor");
+    ("Corporeality:1 Corporeal"),
+    ("Corporeality:2 Fluid"),
+    ("Corporeality:3 Vapor"),
+    ("Corporeality:4 Disease Cloud"),
+    ("Corporeality:5 Ghost"),
+    ("Corporeality:6 Light"),
+    ("Body Type:1 Angel"),
+    ("Body Type:2 Badger"),
+    ("Body Type:3 Bat"),
+    ("Body Type:4 Beak"),
+    ("Body Type:5 Bear"),
+    ("Body Type:6 Bird"),
+    ("Body Type:7 Blob"),
+    ("Body Type:8 Camel"),
+    ("Body Type:9 Cat"),
+    ("Body Type:10 Claw"),
+    ("Body Type:11 Cloud"),
+    ("Body Type:12 Corpse"),
+    ("Body Type:13 Cow"),
+    ("Body Type:14 Demon"),
+    ("Body Type:15 Disease"),
+    ("Body Type:16 Dragon"),
+    ("Body Type:17 Elf"),
+    ("Body Type:18 Fang"),
+    ("Body Type:19 Fish"),
+    ("Body Type:20 Fox"),
+    ("Body Type:21 Frog"),
+    ("Body Type:22 Gem"),
+    ("Body Type:23 Ghost"),
+    ("Body Type:24 Golem"),
+    ("Body Type:25 Horse"),
+    ("Body Type:26 Humanoid"),
+    ("Body Type:27 Jellyfish"),
+    ("Body Type:28 Ligh"),
+    ("Body Type:29 Liquid"),
+    ("Body Type:30 Lizard"),
+    ("Body Type:31 Monk"),
+    ("Body Type:32 Octopus"),
+    ("Body Type:33 Other"),
+    ("Body Type:34 Penguin"),
+    ("Body Type:35 Plant"),
+    ("Body Type:36 Raptor"),
+    ("Body Type:37 Rat"),
+    ("Body Type:38 Scavenger"),
+    ("Body Type:39 Scorpion"),
+    ("Body Type:40 Shield"),
+    ("Body Type:41 Snake"),
+    ("Body Type:42 Soldier"),
+    ("Body Type:43 Spear"),
+    ("Body Type:44 Sphynx"),
+    ("Body Type:45 Spider"),
+    ("Body Type:46 Squid"),
+    ("Body Type:47 Starfish"),
+    ("Body Type:48 Stea"),
+    ("Body Type:49 Stone"),
+    ("Body Type:50 Sword"),
+    ("Body Type:51 Symbol"),
+    ("Body Type:52 Tree"),
+    ("Body Type:53 Turtle"),
+    ("Body Type:54 Tyrant"),
+    ("Body Type:55 Wasp"),
+    ("Body Type:56 Wolf");
+--     ("Corporeality: Coproreal AND Fast: 1"),
+--     ("Corporeality:Corporeal AND bodyType:Fang OR Corporeal AND bodytype:Wolf OR Corporeal AND bodytype:Dragon OR Corporeal AND bodyType:Snake"),
+--     ("Corporeality:Corporeal AND bodyType:Horse"),
+--     ("Corporeality:Fluid OR BodyType:Liquid OR Aquamagia:1"),
+--     ("Cloudy:atLeast1 AND Heat Tolerance atMost -1"),
+--     ("BodyType:Vapor"),
+--     ("Corporeality: Corporeal AND bodyType:Horse and AGE at least 2");
+    
+    Select * from requirement_manager;
 
+INSERT INTO skill(skill_name, skill_description, cost_mp, nature, tier, unlock_requirement_mangaer_id, usage_requirement_manager_id)
+     VALUES
+     ('Tackle','Slam your body into the enemy, dealing some small amount of damage', 0, 'Physical',1.0, 1,1),
+     ('Splash','Splash all enemies in front of you with water',0,'None',1.0,2,2),
+     ('Moisten','Envelop an enemy with your vaporpus body, weakening them to your future electric attacks',0,'Physical',1.0,3,3),
+     ('Choke','Pollute an enemy with your infectious cloud',0,'Phyiscal',1.0,4,4),
+     ('Spook','Scare an enemy by appearing before them',0,'Physical',1.0,5,5),
+     ('Shine','Slam your light body into an enemy, attempting to blind them',0,'Physical',6,6),
+     ('Blessing','Empower a light or neutral target, or damage a dark one',4,'Magical',7,7),
+     ('Shine Badge','Shine your badge, empowering yourself with authority and light, deal a small amount of light damage to everyone',4,'Magical',8,8),
+     ('Suck Blood','Attempt to bite an enemy, dealing a small amount of damage, healing yourself for the amount',4,'None',9,9),
+     ('Peck','Poke an enemy with your beak, dealing air and physical damage',0,'Physical',10,10),
+     ('Hibernate','Heal yourself, and put yourself to sleep',0,'None',11,11);
+--      ('Blitz','This eager monster strikes first before the enemy is ready', 7,'Physical',2.0,7,7),
+--      ('Trample','Rush an enemy row in a straight line in front of you',7,'Physical',2.0,13,9),
+--      ('Chill Wind','A chill wind from the north cools the battle',4,'Magical',2.0,11,11),
+--      ('Bite','Bite an enemy with your fangs',2,'Physical',1.0,8,8);
+
+     
     
     

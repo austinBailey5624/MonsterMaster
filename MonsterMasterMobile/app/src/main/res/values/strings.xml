@@ -24,7 +24,7 @@
     <string name="scene3item3">You touch rough bark</string>
     <string name="scene3item4">Sharp blades of grass</string>
     <string name="scene3item5">You do not know</string>
-    <string name="scene3item6">Your form, or nature</string>
+    <string name="scene3item6">Your nature or your form</string>
     <string name="scene3choice1">Gather Twigs for Fire</string>
     <string name="scene3choice2">Search for Water</string>
     <string name="scene4item1">The flame comforts you</string>
@@ -36,9 +36,9 @@
     <string name="scene4choice1">Stay</string>
     <string name="scene4choice2">Search for Others</string>
     <string name="scene5item1">A stream greets you</string>
-    <string name="scene5item2">Thirst quenched</string>
-    <string name="scene5item3">A fire, quickly made</string>
-    <string name="scene5item4">Brings light and warmth</string>
+    <string name="scene5item2">Glistening in the light</string>
+    <string name="scene5item3">Deep draughts bring joy</string>
+    <string name="scene5item4">Comfort and peace</string>
     <string name="scene5item5">You are safe</string>
     <string name="scene5item6">A question arrives</string>
     <string name="scene5item7">What next?</string>

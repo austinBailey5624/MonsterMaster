@@ -295,18 +295,42 @@ public class TraitConceptManager
 	
 	public static void main(String[] args)
 	{
+		List<Trait> traits = getTraits();
+		Trait bodyType = traits.get(3);
+		Map<Integer,String> valueDescriptions = bodyType.getTraitValueDescriptions();
 		try
 		{
-			FileWriter fileWriter = new FileWriter("traitWikiOutput.txt");
+			FileWriter fileWriter = new FileWriter("serverHelper.txt");
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			bufferedWriter.write(makeWikiContent());
+			String typeName;
+			for(int i = 1; i < valueDescriptions.size(); i++)
+			{
+				typeName = valueDescriptions.get(i).split(" ")[0];
+				typeName = typeName.substring(0, typeName.length()-1);
+				bufferedWriter.write("    (\"Body Type:" + i + " " + typeName + "\"),\n");
+				
+			}
 			bufferedWriter.close();
-			
+			fileWriter.close();
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
+		
+
+//		try
+//		{
+//			FileWriter fileWriter = new FileWriter("traitWikiOutput.txt");
+//			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+//			bufferedWriter.write(makeWikiContent());
+//			bufferedWriter.close();
+//			
+//		}
+//		catch(Exception e)
+//		{
+//			e.printStackTrace();
+//		}
 	}
 	
 	private static String makeWikiContent()
