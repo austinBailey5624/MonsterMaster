@@ -1,5 +1,6 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -23,12 +24,18 @@ class Scene7Activity : AppCompatActivity() {
         Utilities.hideButton(button,this@Scene7Activity)
         button.setOnClickListener {
             currentState.addScore(Element.EARTH,1)
+            val intent = Intent(this,Scene11Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
         val button2: Button = findViewById(R.id.scene8button2)
         Utilities.hideButton(button2,this@Scene7Activity)
         button2.setOnClickListener {
             currentState.addScore(Element.AIR,1)
+            val intent = Intent(this,Scene11Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
         val textViews: List<TextView> = listOf(
