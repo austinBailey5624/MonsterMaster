@@ -1,5 +1,6 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -17,6 +18,20 @@ class Scene10Activity : AppCompatActivity() {
         //disable back button
         onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
         val currentState = extras?.getSerializable("state") as State
+
+        val textViews: List<TextView> = listOf(
+            findViewById(R.id.textView),
+            findViewById(R.id.textView2),
+            findViewById(R.id.textView3),
+            findViewById(R.id.textView4),
+            findViewById(R.id.textView5),
+            findViewById(R.id.textView6)
+        )
+
+        for(textView in textViews)
+        {
+            textView.setTextColor(ContextCompat.getColor(this, R.color.invisible))
+        }
 
         val button1: Button = findViewById(R.id.scene10button1)
         val button2: Button = findViewById(R.id.scene10button2)
@@ -38,14 +53,22 @@ class Scene10Activity : AppCompatActivity() {
             currentState.addScore(Element.FIRE,1)
             currentState.addScore(Element.DARK,1)
             currentState.starterMonster="Spiten"
+            currentState.previousSceneName="Scene10Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
         if(currentState.getScore(Element.AIR) > currentState.getScore(Element.EARTH)) {
             button2.setText(R.string.scene10choice2)
             button2.setOnClickListener {
                 currentState.addScore(Element.AIR, 2)
                 currentState.starterMonster = "Flapper"
+                currentState.previousSceneName="Scene10Activity"
+                val intent = Intent(this, Scene12Activity::class.java)
+                intent.putExtra("state", currentState)
+                startActivity(intent)
             }
-            button3.setText(R.string.scene10choice3)
+            button3.setText( R.string.scene10choice3)
 
         }
         else {
@@ -53,30 +76,29 @@ class Scene10Activity : AppCompatActivity() {
             button2.setOnClickListener {
                 currentState.addScore(Element.EARTH,2)
                 currentState.starterMonster = "Bulbapup"
+                currentState.previousSceneName="Scene10Activity"
+                val intent = Intent(this, Scene12Activity::class.java)
+                intent.putExtra("state", currentState)
+                startActivity(intent)
             }
             button3.setText(R.string.scene10choice3Alt)
+            textViews[3].text = getString(R.string.scene10item4Alt)
         }
         button3.setOnClickListener{
             currentState.addScore(Element.FIRE, 2)
             currentState.starterMonster = "Flarial"
+            currentState.previousSceneName="Scene10Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
         button4.setOnClickListener {
             currentState.addScore(Element.DARK,1)
             currentState.starterMonster="Umbress"
-        }
-
-        val textViews: List<TextView> = listOf(
-            findViewById(R.id.textView),
-            findViewById(R.id.textView2),
-            findViewById(R.id.textView3),
-            findViewById(R.id.textView4),
-            findViewById(R.id.textView5),
-            findViewById(R.id.textView6)
-        )
-
-        for(textView in textViews)
-        {
-            textView.setTextColor(ContextCompat.getColor(this, R.color.invisible))
+            currentState.previousSceneName="Scene10Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
         val fadeInAnimations: List<Animation> = listOf(
@@ -97,9 +119,7 @@ class Scene10Activity : AppCompatActivity() {
                 {
                     button.startAnimation(fadeInAnimations[7])
                 }
-                button1.setTextColor(ContextCompat.getColor(this@Scene10Activity, R.color.black))
-                button1.setBackgroundColor(ContextCompat.getColor(this@Scene10Activity, R.color.red))
-
+                Subelement.colorButton(button1,this@Scene10Activity,Subelement.DEMON)
                 if(currentState.getScore(Element.AIR) > currentState.getScore(Element.EARTH))
                 {
                     Element.colorButton(button2,this@Scene10Activity,Element.AIR)

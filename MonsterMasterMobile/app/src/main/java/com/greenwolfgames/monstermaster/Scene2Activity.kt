@@ -44,9 +44,7 @@ class Scene2Activity : AppCompatActivity() {
             findViewById(R.id.textView2),
             findViewById(R.id.textView3),
             findViewById(R.id.textView4),
-            findViewById(R.id.textView5),
-            findViewById(R.id.textView6),
-            findViewById(R.id.textView7)
+            findViewById(R.id.textView5)
         )
 
         for(textView in textViews)
@@ -61,23 +59,21 @@ class Scene2Activity : AppCompatActivity() {
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast)
         )
 
-        fadeInAnimations[7].setAnimationListener(object : Animation.AnimationListener {
+        fadeInAnimations[5].setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {}
             override fun onAnimationEnd(animation: Animation) {
-                button3.startAnimation(fadeInAnimations[8])
-                button4.startAnimation(fadeInAnimations[8])
+                button3.startAnimation(fadeInAnimations[6])
+                button4.startAnimation(fadeInAnimations[6])
                 Element.colorButton(button3,this@Scene2Activity,Element.FIRE)
                 Element.colorButton(button4,this@Scene2Activity,Element.WATER)
             }
             override fun onAnimationRepeat(animation: Animation) {}
         })
 
-        for(i in 0..6)
+        for(i in 0..4)
         {
             fadeInAnimations[i].setAnimationListener(object : Animation.AnimationListener {
                 override fun onAnimationStart(animation: Animation) {}

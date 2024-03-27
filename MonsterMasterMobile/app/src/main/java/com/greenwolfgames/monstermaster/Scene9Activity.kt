@@ -1,5 +1,6 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -38,10 +39,18 @@ class Scene9Activity : AppCompatActivity() {
         button1.setOnClickListener {
             currentState.addScore(Element.LIGHT,2)
             currentState.starterMonster="Lumin"
+            currentState.previousSceneName="Scene9Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
         button2.setOnClickListener {
             currentState.addScore(Element.WATER,2)
             currentState.starterMonster="Minnow"
+            currentState.previousSceneName="Scene9Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
         if(currentState.getScore(Element.AIR) > currentState.getScore(Element.EARTH))
         {
@@ -49,6 +58,10 @@ class Scene9Activity : AppCompatActivity() {
             button3.setOnClickListener {
                 currentState.addScore(Element.AIR,2)
                 currentState.starterMonster="Flapper"
+                currentState.previousSceneName="Scene9Activity"
+                val intent = Intent(this, Scene12Activity::class.java)
+                intent.putExtra("state", currentState)
+                startActivity(intent)
             }
         }
         else {
@@ -56,12 +69,20 @@ class Scene9Activity : AppCompatActivity() {
             button3.setOnClickListener {
                 currentState.addScore(Element.EARTH,2)
                 currentState.starterMonster = "Bulbapup"
+                currentState.previousSceneName="Scene9Activity"
+                val intent = Intent(this, Scene12Activity::class.java)
+                intent.putExtra("state", currentState)
+                startActivity(intent)
             }
         }
         button4.setOnClickListener {
             currentState.addScore(Element.LIGHT,1)
             currentState.addScore(Element.WATER,1)
             currentState.starterMonster="Lona"
+            currentState.previousSceneName="Scene9Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
         val textViews: List<TextView> = listOf(
@@ -104,8 +125,7 @@ class Scene9Activity : AppCompatActivity() {
                 else {
                     Element.colorButton(button3,this@Scene9Activity,Element.EARTH)
                 }
-                button4.setTextColor(ContextCompat.getColor(this@Scene9Activity, R.color.lightCyan))
-                button4.setBackgroundColor(ContextCompat.getColor(this@Scene9Activity, R.color.lightishBlue))
+                Subelement.colorButton(button4, this@Scene9Activity,Subelement.LUNAR)
             }
             override fun onAnimationRepeat(animation: Animation) {}
         })

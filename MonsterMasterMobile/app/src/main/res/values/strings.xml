@@ -6,25 +6,23 @@
     <string name="scene1item3">Time passes</string>
     <string name="scene1item4">You cannot grasp it</string>
     <string name="scene1item5">A week, a month, a year</string>
-    <string name="scene1item6">Comes and fades again</string>
+    <string name="scene1item6">Comes and fades</string>
     <string name="scene1item7">Then there is light</string>
     <string name="scene1choice1">Go towards the light</string>
     <string name="scene1choice2">Embrace the Darkness</string>
     <string name="scene2item1">Light comes from above</string>
     <string name="scene2item2">Revealing a dark forest</string>
     <string name="scene2item3">Trees reach to heaven</string>
-    <string name="scene2item4">Outer branches</string>
-    <string name="scene2item5">Silhouetted by the stars</string>
-    <string name="scene2item6">Your form is unfamiliar</string>
-    <string name="scene2item7">Quiet echoes in the night</string>
+    <string name="scene2item4">Silhouetted by the stars</string>
+    <string name="scene2item5">Quiet echoes in the night</string>
     <string name="scene2choice1">Gather Twigs for Fire</string>
     <string name="scene2choice2">Search for Water</string>
     <string name="scene3item1">Darkness comforts you</string>
-    <string name="scene3item2">Harsh light Fades</string>
-    <string name="scene3item3">You touch rough bark</string>
-    <string name="scene3item4">Sharp blades of grass</string>
-    <string name="scene3item5">You do not know</string>
-    <string name="scene3item6">Your nature or your form</string>
+    <string name="scene3item2">Obscures your form</string>
+    <string name="scene3item3">Harsh light Fades</string>
+    <string name="scene3item4">Tall Trees</string>
+    <string name="scene3item5">Sharp blades of grass</string>
+    <string name="scene3item6">Are Consumed by Shadow</string>
     <string name="scene3choice1">Gather Twigs for Fire</string>
     <string name="scene3choice2">Search for Water</string>
     <string name="scene4item1">The flame comforts you</string>
@@ -105,4 +103,138 @@
     <string name="scene11choice3">Search for Food</string>
     <string name="scene11choice3Alt">Search for Others</string>
     <string name="scene11choice4">Wait in Darkness</string>
+    <!--Variation 1: Scene8Choice1 Lumin -->
+    <string name="scene12var1item1">A heavenly being</string>
+    <string name="scene12var1item2">Made of pure light</string>
+    <string name="scene12var1item3">Floats down</string>
+    <string name="scene12var1item4">Calls to you</string>
+    <string name="scene12var1item5">What name does it call?</string>
+    <!--Variation 2: Scene8Choice2 Flarial -->
+    <string name="scene12var2item1">The heat of the flame</string>
+    <string name="scene12var2item2">Is a sentient being</string>
+    <string name="scene12var2item3">Its hot soul</string>
+    <string name="scene12var2item4">Calls to you</string>
+    <string name="scene12var2item5">What name does it call?</string>
+    <!--Variation 3: Scene8Choice3 Blubapup -->
+    <string name="scene12var3item1">You find a green onion</string>
+    <string name="scene12var3item2">But when plucked</string>
+    <string name="scene12var3item3">A surprised puppy revealed</string>
+    <string name="scene12var3item4">It licks you</string>
+    <string name="scene12var3item5">And barks your name</string>
+    <string name="scene12var3item6">What name does it call?</string>
+    <!--Variation 4: Scene8Choice3Alt Flapper -->
+    <string name="scene12var4item1">The Birds tweet</string>
+    <string name="scene12var4item2">As you approach</string>
+    <string name="scene12var4item3">One flies to you</string>
+    <string name="scene12var4item4">Perches happily</string>
+    <string name="scene12var4item5">on your shoulder</string>
+    <string name="scene12var4item6">It calls to you joyfully</string>
+    <string name="scene12var4item7">What name does it call?</string>
+    <!--Variation 5: Scene8Choice4 Tona -->
+    <string name="scene12var5item1">The sun shines down</string>
+    <string name="scene12var5item2">A loyal servant</string>
+    <string name="scene12var5item3">Rides its beams</string>
+    <string name="scene12var5item4">Bows and Calls to you</string>
+    <string name="scene12var5item5">What name does it call?</string>
+    <!-- Variation 6: Scene9Choice1 Lumin -->
+    <string name="scene12var6item1">The glyph reforms itself</string>
+    <string name="scene12var6item2">Into a being of light</string>
+    <string name="scene12var6item3">It bows to you</string>
+    <string name="scene12var6item4">And calls to you dutifully</string>
+    <string name="scene12var6item5">What name does it call?</string>
+    <!-- Variation 7: Scene9Choice2 Minnow -->
+    <string name="scene12var7item1">The glyph recognizes your wisdom</string>
+    <string name="scene12var7item2">Rains come</string>
+    <string name="scene12var7item3">Together they form a fish</string>
+    <string name="scene12var7item4">Staring at you</string>
+    <string name="scene12var7item5">Matching wit for wit</string>
+    <string name="scene12var7item6">What name does it call?</string>
+    <!-- Variation 8: Scene9Choice3 Bulbapup -->
+    <string name="scene12var8item1">You find a green onion</string>
+    <string name="scene12var8item2">But when plucked</string>
+    <string name="scene12var8item3">Its a surprised puppy</string>
+    <string name="scene12var8item4">It licks you</string>
+    <string name="scene12var8item5">and barks your name</string>
+    <string name="scene12var8item6">What name does it back?</string>
+    <!-- Variation 9: Scene9Choice3Alt Flapper -->
+    <string name="scene12var9item1">The Birds tweet</string>
+    <string name="scene12var9item2">As you approach</string>
+    <string name="scene12var9item3">One flies to you</string>
+    <string name="scene12var9item4">Perched happily</string>
+    <string name="scene12var9item5">on your shoulder</string>
+    <string name="scene12var9item6">It sings to you joyfully</string>
+    <string name="scene12var9item7">What name does it call?</string>
+    <!-- Variation 10: Scene9Choice4 Lona -->
+    <string name="scene12var10item1">The Glyph shines in moonlight</string>
+    <string name="scene12var10item2">Forms a smiling creature</string>
+    <string name="scene12var10item3">Reaches out</string>
+    <string name="scene12var10item4">Calling to you sweetly</string>
+    <string name="scene12var10item5">What name does it call?</string>
+    <!-- Variation 11: Scene10Choice1 Spiten -->
+    <string name="scene12var11item1">The little demon smiles</string>
+    <string name="scene12var11item2">Sharing its snack with you</string>
+    <string name="scene12var11item3">You bond over the meal</string>
+    <string name="scene12var11item4">It calls to you strangely</string>
+    <string name="scene12var11item5">What name does it call?</string>
+    <!-- Variation 12: Scene10Choice2 Flapper -->
+    <string name="scene12var12item1">You fight the demon off</string>
+    <string name="scene12var12item2">The bird miraculously saved</string>
+    <string name="scene12var12item3">Cuddles in its rescuers arms</string>
+    <string name="scene12var12item4">It chirps to you sweetly</string>
+    <string name="scene12var12item5">What name does it call?</string>
+    <!-- Variation 13: Scene10Choice2Alt Blubapup -->
+    <string name="scene12var13item1">You fight the demon off</string>
+    <string name="scene12var13item2">The puppy miraculously saved</string>
+    <string name="scene12var13item3">Jumps in its rescuers arms</string>
+    <string name="scene12var13item4">It licks your nose</string>
+    <string name="scene12var13item5">and barks to you</string>
+    <string name="scene12var13item6">What name does it call?</string>
+    <!-- Variation 14: Scene10Choice3&3Alt Flarial -->
+    <string name="scene12var14item1">The demon and its prey</string>
+    <string name="scene12var14item2">Sizzles ove the cooking fire</string>
+    <string name="scene12var14item3">The Fire, and its master</string>
+    <string name="scene12var14item4">Are sated in turn</string>
+    <string name="scene12var14item5">The fire calls to you</string>
+    <string name="scene12var14item6">What name does it call?</string>
+    <!-- Variation 15: Scene10Choice4 Umbress -->
+    <string name="scene12var15item1">Alone in the dark</string>
+    <string name="scene12var15item2">The shadow embraces you</string>
+    <string name="scene12var15item3">Your will takes form</string>
+    <string name="scene12var15item4">This silence calls to you</string>
+    <string name="scene12var15item5">What name does it call?</string>
+    <!-- Variation 16: Scene11Choice1 Minnow -->
+    <string name="scene12var16item1">Your Draught calls a fish</string>
+    <string name="scene12var16item2">Which stares at you knowingly</string>
+    <string name="scene12var16item3">Its mind touches yours</string>
+    <string name="scene12var16item4">Familiar somehow, it calls</string>
+    <string name="scene12var16item5">What name does it say?</string>
+    <!-- Variation 17: Scene11Choice2 Deepfish -->
+    <string name="scene12var17item1">You dive deeply</string>
+    <string name="scene12var17item2">And glimpse a treasure</string>
+    <string name="scene12var17item3">Taking a ghastly form</string>
+    <string name="scene12var17item4">This treasure calls to you</string>
+    <string name="scene12var17item5">What name does it call?</string>
+    <!-- Variation 18: Scene11Choice3 Bulbapup -->
+    <string name="scene12var18item1">You find a green onion</string>
+    <string name="scene12var18item2">But when plucked</string>
+    <string name="scene12var18item3">A surprised puppy</string>
+    <string name="scene12var18item4">It licks you</string>
+    <string name="scene12var18item5">and barks your name</string>
+    <string name="scene12var18item6">What name does it call?</string>
+    <!-- Variation 19: Scene11 choice3Alt Flapper -->
+    <string name="scene12var19item1">The Birds tweet</string>
+    <string name="scene12var19item2">As you approach</string>
+    <string name="scene12var19item3">One flies to you</string>
+    <string name="scene12var19item4">Perches happily</string>
+    <string name="scene12var19item5">on your shoulder</string>
+    <string name="scene12var19item6">It calls to you joyfully</string>
+    <string name="scene12var19item7">What name does it call?</string>
+    <!-- Variation 20: Scene11 Choice4 Umbress -->
+    <string name="scene12var20item1">Alone in the dark</string>
+    <string name="scene12var20item2">The shadow embraces you</string>
+    <string name="scene12var20item3">Your will takes form</string>
+    <string name="scene12var20item4">This silence calls to you</string>
+    <string name="scene12var20item5">What name does it call?</string>
+    <string name="scene12choice1">Continue</string>
+    <string name="scene13item1">Wake Up!</string>
 </resources>

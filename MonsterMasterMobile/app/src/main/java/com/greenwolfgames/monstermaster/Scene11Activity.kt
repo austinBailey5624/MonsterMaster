@@ -1,5 +1,6 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -35,30 +36,51 @@ class Scene11Activity : AppCompatActivity() {
         button1.setOnClickListener {
             currentState.addScore(Element.WATER,2)
             currentState.starterMonster="Minnow"
+            currentState.previousSceneName="Scene11Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
         button2.setOnClickListener {
             currentState.addScore(Element.WATER,1)
             currentState.addScore(Element.DARK,1)
             currentState.starterMonster="Deepfish"
+            currentState.previousSceneName="Scene11Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
         if(currentState.getScore(Element.AIR) > currentState.getScore(Element.EARTH)) {
             button3.setText(R.string.scene11choice3Alt)
             button3.setOnClickListener {
                 currentState.addScore(Element.AIR, 2)
                 currentState.starterMonster = "Flapper"
+                currentState.previousSceneName="Scene11Activity"
+                val intent = Intent(this, Scene12Activity::class.java)
+                intent.putExtra("state", currentState)
+                startActivity(intent)
             }
+            button3.setText(R.string.scene11choice3Alt)
         }
         else {
             button3.setText(R.string.scene11choice3)
             button3.setOnClickListener {
                 currentState.addScore(Element.EARTH,2)
                 currentState.starterMonster = "Bulbapup"
+                currentState.previousSceneName="Scene11Activity"
+                val intent = Intent(this, Scene12Activity::class.java)
+                intent.putExtra("state", currentState)
+                startActivity(intent)
             }
-            button3.setText(R.string.scene10choice3Alt)
+            button3.setText(R.string.scene11choice3)
         }
         button4.setOnClickListener {
             currentState.addScore(Element.DARK,1)
             currentState.starterMonster="Umbress"
+            currentState.previousSceneName="Scene11Activity"
+            val intent = Intent(this, Scene12Activity::class.java)
+            intent.putExtra("state", currentState)
+            startActivity(intent)
         }
 
         val textViews: List<TextView> = listOf(

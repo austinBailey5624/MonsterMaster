@@ -24,4 +24,6 @@ class State : Serializable
     {
         return elementalScore[element]!!
     }
+    var previousSceneName: String = ""
+    var playerName: String = ""
 }
