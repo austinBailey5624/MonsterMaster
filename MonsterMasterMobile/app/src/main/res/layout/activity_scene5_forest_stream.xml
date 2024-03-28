@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:background="#000028">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/river" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -126,18 +138,5 @@
         app:layout_constraintStart_toEndOf="@+id/scene8button1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".975" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="-50dp"
-        android:scaleX="1.2"
-        android:scaleY="1.2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/stream_bottom_right" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

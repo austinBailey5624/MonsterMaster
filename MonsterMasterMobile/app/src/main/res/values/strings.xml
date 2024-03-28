@@ -165,11 +165,12 @@
     <string name="scene12var9item6">It sings to you joyfully</string>
     <string name="scene12var9item7">What name does it call?</string>
     <!-- Variation 10: Scene9Choice4 Lona -->
-    <string name="scene12var10item1">The Glyph shines in moonlight</string>
-    <string name="scene12var10item2">Forms a smiling creature</string>
-    <string name="scene12var10item3">Reaches out</string>
-    <string name="scene12var10item4">Calling to you sweetly</string>
-    <string name="scene12var10item5">What name does it call?</string>
+    <string name="scene12var10item1">The Glyph shines</string>
+    <string name="scene12var10item2">In blue moonlight</string>
+    <string name="scene12var10item3">Forms a smiling creature</string>
+    <string name="scene12var10item4">Reaches out</string>
+    <string name="scene12var10item5">Calling to you sweetly</string>
+    <string name="scene12var10item6">What name does it call?</string>
     <!-- Variation 11: Scene10Choice1 Spiten -->
     <string name="scene12var11item1">The little demon smiles</string>
     <string name="scene12var11item2">Sharing its snack with you</string>
@@ -237,4 +238,11 @@
     <string name="scene12var20item5">What name does it call?</string>
     <string name="scene12choice1">Continue</string>
     <string name="scene13item1">Wake Up!</string>
+    <string name="scene14node1prompt">Wake up sleepyhead! We dont have time for you to lay in bed all day!</string>
+    <string name="scene14node1choice1">Forget you bro, I\'m sleeping in</string>
+    <string name="scene14node1choice2">Why are you so loud?</string>
+    <string name="scene14node1choice3">Up and at \'em bro! How can I help?</string>
+    <string name="scene14node1choice4">Who you callin\' sleepyhead?</string>
+    <string name="scene14node1choice5">Fine, what do you need?</string>
+    <string name="scene14node1choice6">Who are you?</string>
 </resources>

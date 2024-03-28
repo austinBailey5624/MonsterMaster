@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val button2: Button = findViewById(R.id.scene8button2)
+        val button2: Button = findViewById(R.id.button2)
         Utilities.hideButton(button2, this@MainActivity)
         button2.setOnClickListener {
             state.addScore(Element.DARK,1)

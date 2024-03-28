@@ -73,7 +73,6 @@ class Scene12Activity : AppCompatActivity() {
             Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {}
             override fun onAnimationEnd(animation: Animation) {
-//                button.visibility = TextView.VISIBLE
                 Element.colorButton(button, this@Scene12Activity, Element.LIGHT)
                 button.startAnimation(
                     AnimationUtils.loadAnimation(
@@ -302,7 +301,8 @@ class Scene12Activity : AppCompatActivity() {
                     R.string.scene12var10item2,
                     R.string.scene12var10item3,
                     R.string.scene12var10item4,
-                    R.string.scene12var10item5
+                    R.string.scene12var10item5,
+                    R.string.scene12var10item6
                 )
             }
         }
