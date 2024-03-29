@@ -245,4 +245,26 @@
     <string name="scene14node1choice4">Who you callin\' sleepyhead?</string>
     <string name="scene14node1choice5">Fine, what do you need?</string>
     <string name="scene14node1choice6">Who are you?</string>
+    <string name="scene14node2prompt">Don\'t make me ask again, as your elder, dad put me in change, and I will whup you if I need to</string>
+    <string name="scene14node2choice1">Then don\'t ask again</string>
+    <string name="scene14node2choice2">calm down, what do you need?</string>
+    <string name="scene14node2choice3">alright, alright, what do you need?</string>
+    <string name="scene14node3prompt">Lose the attitude</string>
+    <string name="scene14node3choice1">Make me</string>
+    <string name="scene14node3choice2">I\'m sorry, what do you need?</string>
+    <string name="scene14node3choice3">Fine, what do you need?</string>
+    <string name="scene14node3choice4">Just kidding bro, how can I help?</string>
+    <string name="scene14node4prompt">That\'s what I thought you\'d say. Dad has got some chores for you to do, and don\'t forget your writing lesson with Brahm</string>
+    <string name="scene14node4choice1">Where\'s dad?</string>
+    <string name="scene14node4choice2">Who\'s Brahm?</string>
+    <string name="scene14node4choice3">Thanks, but I do what I want</string>
+    <string name="scene14node4choice4">I\'ll get to it</string>
+    <string name="scene14node4choice5">On it, thanks bro!</string>
+    <string name="scene14node5prompt">You ain\'t so young I can\'t whup you! [Your brother punches you]. Now dad has got some chores for you to do, and don\'t forget your writing lesson with Brahm</string>
+    <string name="scene14node5choice1">Where\'s dad?</string>
+    <string name="scene14node5choice2">Who\'s Brahm?</string>
+    <string name="scene14node5choice3">Thanks, but I do what I want</string>
+    <string name="scene14node5choice4">I\'ll get to it</string>
+    <string name="scene14node5choice5">On it, thanks bro!</string>
+
 </resources>
