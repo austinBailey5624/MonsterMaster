@@ -6,7 +6,7 @@ import androidx.core.content.ContextCompat
 
 enum class Element {
 
-    FIRE, WATER, EARTH, AIR, LIGHT, DARK;
+    FIRE, WATER, EARTH, AIR, LIGHT, DARK, NEUTRAL, PHYSICAL, MAGICAL;
 
     companion object {
 
@@ -18,6 +18,9 @@ enum class Element {
                 Element.AIR -> R.color.yellow
                 Element.LIGHT -> R.color.white
                 Element.DARK -> R.color.black
+                Element.NEUTRAL -> R.color.darkBrown
+                Element.PHYSICAL -> R.color.darkGray
+                Element.MAGICAL -> R.color.darkPurple
             }
 
             val backgroundColor = when (element) {
@@ -27,6 +30,9 @@ enum class Element {
                 Element.AIR -> R.color.brown
                 Element.LIGHT -> R.color.whiteGray
                 Element.DARK -> R.color.gray
+                Element.NEUTRAL -> R.color.brown
+                Element.PHYSICAL -> R.color.whiteGray
+                Element.MAGICAL -> R.color.purple
             }
             button.setTextColor(
                 ContextCompat.getColor(context,textColor))
