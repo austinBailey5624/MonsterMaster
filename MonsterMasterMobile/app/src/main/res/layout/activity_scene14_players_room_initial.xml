@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/button_4x3" />
 
     <TextView
-        android:id="@+id/speakerText"
+        android:id="@+id/speaker_text"
         android:layout_width="200dp"
         android:layout_height="135dp"
         android:text="@string/scene14node1prompt"

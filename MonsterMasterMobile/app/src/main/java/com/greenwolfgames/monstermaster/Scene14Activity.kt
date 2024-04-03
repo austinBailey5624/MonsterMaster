@@ -2,8 +2,10 @@ package com.greenwolfgames.monstermaster
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -14,7 +16,7 @@ class Scene14Activity : AppCompatActivity() {
         val extras = intent.extras
         val currentState = extras?.getSerializable("state") as State
 
-        val parent = findViewById<ImageView>(R.id.Parent)
+        val parent = findViewById<View>(R.id.Parent)
         parent.setBackgroundColor(ContextCompat.getColor(this@Scene14Activity, R.color.darkBrown))
 
         val buttons: List<Button> = listOf(
@@ -33,6 +35,32 @@ class Scene14Activity : AppCompatActivity() {
         portrait_background.setColorFilter(lessIntenseColor)
         val textBackground: ImageView = findViewById(R.id.speaker_text_background)
         textBackground.setColorFilter(lessIntenseColor)
+
+        setNode(1, buttons, currentState)
+    }
+
+    fun setNode(node: Int, buttons: List<Button>, currentState: State)
+    {
+        val scene14Node = getScene14Node(node)
+        val prompt = findViewById<TextView>(R.id.speaker_text)
+        prompt.text = scene14Node.prompt
+        for(i in 0 until buttons.size)
+        {
+            if(i < scene14Node.choices.size)
+            {
+                val choice = scene14Node.choices[i]
+                buttons[i].text = choice.text
+                Element.colorButton(buttons[i], this@Scene14Activity, choice.element)
+                buttons[i].setOnClickListener {
+                    choice.stateChange(currentState)
+                    setNode(choice.nextNodeIndex, buttons, currentState)
+                }
+            }
+            else
+            {
+                Utilities.hideButton(buttons[i], this@Scene14Activity)
+            }
+        }
     }
 
     fun getScene14Node(index: Int): Scene14Node {
