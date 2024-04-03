@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.content.ContextCompat
 import com.google.android.material.textfield.TextInputEditText
+import java.util.Locale
 
 class Scene12Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -185,9 +186,17 @@ class Scene12Activity : AppCompatActivity() {
         button.setOnClickListener {
 
             val textInputEditText = findViewById<TextInputEditText>(R.id.textInputEditText)
-            currentState.playerName = textInputEditText.text.toString()
-            if(currentState.playerName != "")
+            var temp: String = textInputEditText.text.toString()
+            if(temp != "")
             {
+                if(temp.length > 12)
+                {
+                    temp = temp.substring(0,12)
+                }
+                temp.toLowerCase(Locale.getDefault())
+                temp = temp.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+                currentState.playerName = temp
+
                 currentState.previousSceneName = "Scene12Activity"
                 val intent = Intent(this, Scene13Activity::class.java)
                 intent.putExtra("state", currentState)

@@ -39,10 +39,12 @@ class Scene13Activity : AppCompatActivity()
             textView.setTextColor(ContextCompat.getColor(this, R.color.invisible))
         }
 
-        for(i in 0 .. 2)
+        for(i in 0 .. 1)
         {
-            textViews[i].setText(currentState.playerName);
+            textViews[i].text = currentState.playerName;
         }
+        val result = currentState.playerName + "!"
+        textViews[2].text = result
 
         val fadeInAnimations: List<Animation> = listOf(
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
