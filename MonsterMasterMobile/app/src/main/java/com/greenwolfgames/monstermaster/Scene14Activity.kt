@@ -241,7 +241,7 @@ class Scene14Activity : AppCompatActivity() {
             params.bottomToTop = buttons[1].id
             params.topToBottom = R.id.background
             params.startToStart = R.id.Parent
-            params.endToStart = buttons[2].id
+            params.endToStart = buttons[3].id
             params.verticalBias = 0f
             params.horizontalBias = 1f
             buttons[0].layoutParams = params
@@ -250,24 +250,24 @@ class Scene14Activity : AppCompatActivity() {
             val params2 = buttons[1].layoutParams as ConstraintLayout.LayoutParams
             params2.width = totalWidthUsed / 2
             params2.height = (totalHeightUsed / 3).toInt()
-            params2.bottomToTop = buttons[4].id
+            params2.bottomToTop = buttons[2].id
             params2.topToBottom = buttons[0].id
             params2.startToStart = R.id.Parent
-            params2.endToStart = buttons[3].id
+            params2.endToStart = buttons[4].id
             params2.verticalBias = 0f
             params2.horizontalBias = 1f
             buttons[1].layoutParams = params2
 
             buttons[2].textSize = 12f
             val params3 = buttons[2].layoutParams as ConstraintLayout.LayoutParams
-            params3.width = totalWidthUsed / 2
+            params3.width = totalWidthUsed
             params3.height = (totalHeightUsed / 3).toInt()
-            params3.bottomToTop = buttons[3].id
-            params3.topToBottom = R.id.background
-            params3.startToEnd = buttons[0].id
+            params3.bottomToBottom = R.id.Parent
+            params3.topToBottom = buttons[1].id
+            params3.startToStart = R.id.Parent
             params3.endToEnd = R.id.Parent
             params3.verticalBias = 0f
-            params3.horizontalBias = 0f
+            params3.horizontalBias = 0.5f
             buttons[2].layoutParams = params3
 
             buttons[3].textSize = 12f
@@ -275,8 +275,8 @@ class Scene14Activity : AppCompatActivity() {
             params4.width = totalWidthUsed / 2
             params4.height = (totalHeightUsed / 3).toInt()
             params4.bottomToTop = buttons[4].id
-            params4.topToBottom = buttons[2].id
-            params4.startToEnd = buttons[1].id
+            params4.topToBottom = R.id.background
+            params4.startToEnd = buttons[0].id
             params4.endToEnd = R.id.Parent
             params4.verticalBias = 0f
             params4.horizontalBias = 0f
@@ -284,14 +284,14 @@ class Scene14Activity : AppCompatActivity() {
 
             buttons[4].textSize = 12f
             val params5 = buttons[4].layoutParams as ConstraintLayout.LayoutParams
-            params5.width = totalWidthUsed
+            params5.width = totalWidthUsed / 2
             params5.height = (totalHeightUsed / 3).toInt()
-            params5.bottomToBottom = R.id.Parent
-            params5.topToBottom = buttons[1].id
-            params5.startToStart = R.id.Parent
+            params5.bottomToTop = buttons[2].id
+            params5.topToBottom = buttons[3].id
+            params5.startToEnd = buttons[1].id
             params5.endToEnd = R.id.Parent
             params5.verticalBias = 0f
-            params5.horizontalBias = 0.5f
+            params5.horizontalBias = 0f
             buttons[4].layoutParams = params5
 
             Utilities.hideButton(buttons[5], this@Scene14Activity)
