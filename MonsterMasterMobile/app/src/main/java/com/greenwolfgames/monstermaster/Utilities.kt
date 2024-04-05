@@ -39,6 +39,11 @@ class Utilities
             val totalHeightUsed =
                 displayMetrics.heightPixels / 4.5;//(displayMetrics.heightPixels - findViewById<ImageView>(R.id.background).height) / 2
             val totalWidthUsed = displayMetrics.widthPixels
+
+            val topParams = top.layoutParams as ConstraintLayout.LayoutParams
+            topParams.bottomToTop = buttons[0].id
+            top.layoutParams = topParams
+
             if (numButtons == 1) {
                 buttons[0].layoutParams.width = totalWidthUsed
                 buttons[0].layoutParams.height = totalHeightUsed.toInt()

@@ -12,7 +12,8 @@ enum class Subelement {
     FEY,PLANT,TERRA,PEGASUS,COMPASSION,ROTTEN,
     PHOENIX,SEABREEZE,BIRD,AERO,COCKA,NIGHTWING,
     SOLAR,LUNAR,GUARDIAN,ANGEL,LUXOR,REDEMPTION,
-    DEMON,POISON,UNDEAD,STORM,BETRAYAR,UMBRAL;
+    DEMON,POISON,UNDEAD,STORM,BETRAYAR,UMBRAL,
+    NEUTRAL, PHYSICAL, MAGICAL;
     //@formatter:on
 
     companion object {
@@ -33,22 +34,27 @@ enum class Subelement {
 
         fun getTextColor(subelement: Subelement): Int {
             val textColor = when (subelement) {
-                PYRO, LAVA, DINO, SAND, JUSTICE, VENGEANCE -> R.color.yellowOrange
+                PYRO, LAVA, DINO, SAND, JUSTICE -> R.color.yellowOrange
                 STEAM, AQUA, AMPHIBIOUS, WEATHER, ICE -> R.color.cyan
                 FEY, PLANT, TERRA, PEGASUS, COMPASSION, ROTTEN -> R.color.green
                 PHOENIX, SEABREEZE, BIRD, AERO, COCKA, NIGHTWING -> R.color.yellow
-                SOLAR, GUARDIAN, ANGEL, LUXOR, REDEMPTION -> R.color.white
+                GUARDIAN, ANGEL, LUXOR, REDEMPTION -> R.color.white
                 DEMON, POISON, UNDEAD, STORM, BETRAYAR, UMBRAL -> R.color.black
+                SOLAR -> R.color.lightPink
+                VENGEANCE -> R.color.red
                 LUNAR -> R.color.lightCyan
                 DEEP -> R.color.lightishBlue
+                NEUTRAL -> R.color.darkBrown
+                PHYSICAL -> R.color.darkGray
+                MAGICAL -> R.color.darkPurple
             }
             return textColor
         }
 
         fun getButtonBackgroundColor(subelement: Subelement): Int {
             val backgroundColor = when (subelement) {
-                PYRO, LAVA, DINO, SAND, JUSTICE, VENGEANCE -> R.color.red
-                STEAM, AQUA, AMPHIBIOUS, WEATHER, ICE, DEEP -> R.color.blue
+                PYRO, LAVA, DINO, SAND, JUSTICE -> R.color.red
+                STEAM, AQUA, AMPHIBIOUS, WEATHER, ICE -> R.color.blue
                 FEY, PLANT, TERRA, PEGASUS, COMPASSION, ROTTEN -> R.color.forestGreen
                 PHOENIX, SEABREEZE, BIRD, AERO, COCKA, NIGHTWING -> R.color.brown
                 GUARDIAN, ANGEL, LUXOR, REDEMPTION -> R.color.whiteGray
@@ -56,15 +62,17 @@ enum class Subelement {
                 SOLAR -> R.color.pink
                 LUNAR -> R.color.lightishBlue
                 DEMON -> R.color.red
-                DEEP -> R.color.black
+                DEEP, VENGEANCE -> R.color.black
+                NEUTRAL -> R.color.brown
+                PHYSICAL -> R.color.whiteGray
+                MAGICAL -> R.color.purple
             }
             return backgroundColor
         }
 
+
         fun getBackgroundColor(subelement: Subelement): Int {
-
             return R.color.black;
-
         }
     }
 }

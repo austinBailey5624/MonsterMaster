@@ -15,8 +15,9 @@ class Scene14Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene14_players_room_initial)
-        val extras = intent.extras
-        val currentState = extras?.getSerializable("state") as State
+//        val extras = intent.extras
+//        val currentState = extras?.getSerializable("state") as State
+        val currentState = State()
 
         val parent = findViewById<View>(R.id.Parent)
         parent.setBackgroundColor(ContextCompat.getColor(this@Scene14Activity, R.color.darkBrown))
@@ -49,13 +50,12 @@ class Scene14Activity : AppCompatActivity() {
         val prompt = findViewById<TextView>(R.id.speaker_text)
         prompt.text = scene14Node.prompt
         setTextSize(prompt)
-//        formatButtons(buttons, scene14Node.choices.size)
         Utilities.orgainizeButtons(buttons, scene14Node.choices.size, findViewById(R.id.background),this@Scene14Activity, windowManager)
-        for (i in 0 until buttons.size) {
+        for (i in buttons.indices) {
             if (i < scene14Node.choices.size) {
                 val choice = scene14Node.choices[i]
                 buttons[i].text = choice.text
-                Element.colorButton(buttons[i], this@Scene14Activity, choice.element)
+                Subelement.colorButton(buttons[i], this@Scene14Activity, choice.element)
                 buttons[i].setOnClickListener {
                     choice.stateChange(currentState)
                     setNode(choice.nextNodeIndex, buttons, currentState)
@@ -95,7 +95,7 @@ class Scene14Activity : AppCompatActivity() {
             val choice4 = Choice(getString(R.string.scene14node1choice4),2, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE)
             val choice5 = Choice(getString(R.string.scene14node1choice5),4, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH)
             val choice6 = Choice(getString(R.string.scene14node1choice6),5, {}, Element.NEUTRAL)
-            val choices = listOf(choice1, choice2, choice3, choice4, choice5, choice6)
+            val choices = listOf(choice1, choice2, choice3, choice4)//, choice5, choice6)
             return Node(index, getString(R.string.scene14node1prompt),choices)
         }
         if(index == 2)

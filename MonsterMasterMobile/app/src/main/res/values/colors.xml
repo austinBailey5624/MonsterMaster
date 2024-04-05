@@ -17,6 +17,7 @@
     <color name="yellow">#FFFFFF00</color>
     <color name="brown">#FFD16900</color>
     <color name="pink">#FFFF8080</color>
+    <color name="lightPink">#FFFFDDDD</color>
     <color name="lightYellow">#FFFFFF80</color>
     <color name="lightCyan">#FFC4FFFF</color>
     <color name="lightishBlue">#FF4040FF</color>
