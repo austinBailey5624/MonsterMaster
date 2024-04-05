@@ -27,7 +27,7 @@ enum class Element {
                 Element.FIRE -> R.color.red
                 Element.WATER -> R.color.blue
                 Element.EARTH -> R.color.forestGreen
-                Element.AIR -> R.color.brown
+                Element.AIR -> R.color.lightBrown
                 Element.LIGHT -> R.color.whiteGray
                 Element.DARK -> R.color.gray
                 Element.NEUTRAL -> R.color.brown

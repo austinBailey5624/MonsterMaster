@@ -195,7 +195,7 @@ class Scene12Activity : AppCompatActivity() {
                 }
                 temp.toLowerCase(Locale.getDefault())
                 temp = temp.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
-                currentState.playerName = temp
+                currentState.playerName = temp.trim()
 
                 currentState.previousSceneName = "Scene12Activity"
                 val intent = Intent(this, Scene13Activity::class.java)

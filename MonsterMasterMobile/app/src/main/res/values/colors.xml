@@ -31,4 +31,7 @@
     <color name="darkBrown">#FF683600</color>
     <color name="purple">#FF8000FF</color>
     <color name="darkPurple">#FF4a00c2</color>
+    <color name="lightBrown">#FFFF8812</color>
+    <color name="faintRed">#FF220000</color>
+    <color name="faintBlue">#FF002211</color>
 </resources>
