@@ -416,4 +416,5 @@ class Scene12Activity : AppCompatActivity() {
         }
         throw IllegalStateException("Invalid monsterName or prevSceneName passed to getStrings(). MonsterName: " + monsterName + " prevSceneName: " + prevSceneName)
     }
+
 }

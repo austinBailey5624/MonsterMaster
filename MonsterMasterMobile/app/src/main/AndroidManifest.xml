@@ -12,65 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MonsterMaster"
         tools:targetApi="31">
-        <activity
+        <!--<activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
-        </activity>
+        </activity>-->
         <activity
             android:name=".Scene1Activity"
             android:exported="true"
             android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene2Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene3Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene4Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene5Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene6Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene7Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene8Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene9Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene10Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Scene11Activity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Scene12Activity"
@@ -86,10 +40,6 @@
             android:name=".Scene14Activity"
             android:exported="true"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

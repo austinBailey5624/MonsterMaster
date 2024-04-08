@@ -31,6 +31,9 @@ class Scene14Activity : AppCompatActivity() {
             findViewById(R.id.button6),
         )
 
+
+
+
         val portraitBackground: ImageView = findViewById(R.id.portrait_background)
         val color = ContextCompat.getColor(this@Scene14Activity, R.color.brown)
         val lessIntenseColor =
@@ -95,7 +98,7 @@ class Scene14Activity : AppCompatActivity() {
             val choice4 = Choice(getString(R.string.scene14node1choice4),2, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE)
             val choice5 = Choice(getString(R.string.scene14node1choice5),4, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH)
             val choice6 = Choice(getString(R.string.scene14node1choice6),5, {}, Element.NEUTRAL)
-            val choices = listOf(choice1, choice2, choice3, choice4)//, choice5, choice6)
+            val choices = listOf(choice1, choice2, choice3, choice4, choice5, choice6)
             return Node(index, getString(R.string.scene14node1prompt),choices)
         }
         if(index == 2)

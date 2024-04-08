@@ -45,6 +45,10 @@ class Utilities
             top.layoutParams = topParams
 
             if (numButtons == 1) {
+                for (i in 1 until buttons.size) {
+                    Utilities.hideButton(buttons[i], context)
+                    buttons[i].visibility = View.GONE
+                }
                 buttons[0].layoutParams.width = totalWidthUsed
                 buttons[0].layoutParams.height = totalHeightUsed.toInt()
                 buttons[0].textSize = 20f
@@ -56,12 +60,13 @@ class Utilities
                 params.verticalBias = 0f;
                 params.horizontalBias = 0.5f;
                 buttons[0].layoutParams = params
-                for (i in 1 until buttons.size) {
-                    Utilities.hideButton(buttons[i], context)
-                    buttons[i].visibility = View.GONE
-                }
+
             }
             if (numButtons == 2) {
+                for (i in 2 until buttons.size) {
+                    hideButton(buttons[i], context)
+                    buttons[i].visibility = View.GONE
+                }
                 buttons[0].textSize = 20f
                 val params = buttons[0].layoutParams as ConstraintLayout.LayoutParams
                 params.width = totalWidthUsed
@@ -85,12 +90,13 @@ class Utilities
                 params2.verticalBias = 0f;
                 params2.horizontalBias = 0.5f
                 buttons[1].layoutParams = params2
-                for (i in 2 until buttons.size) {
-                    Utilities.hideButton(buttons[i], context)
-                    buttons[i].visibility = View.GONE
-                }
+
             }
             if (numButtons == 3) {
+                for (i in 3 until buttons.size) {
+                    hideButton(buttons[i], context)
+                    buttons[i].visibility = View.GONE
+                }
                 buttons[0].layoutParams.width = totalWidthUsed
                 buttons[0].layoutParams.height = (totalHeightUsed / 3).toInt()
                 buttons[0].textSize = 17f
@@ -123,12 +129,15 @@ class Utilities
                 params3.endToEnd = R.id.Parent
                 params3.verticalBias = 0f
                 buttons[2].layoutParams = params3
-                for (i in 3 until buttons.size) {
-                    Utilities.hideButton(buttons[i], context)
-                    buttons[i].visibility = View.GONE
-                }
+
             }
             if (numButtons == 4) {
+
+                hideButton(buttons[2], context)
+                buttons[2].visibility = View.GONE
+                hideButton(buttons[5], context)
+                buttons[5].visibility = View.GONE
+
                 buttons[0].layoutParams.width = totalWidthUsed / 2
                 buttons[0].layoutParams.height = (totalHeightUsed / 2).toInt()
                 buttons[0].textSize = 15f
@@ -136,9 +145,9 @@ class Utilities
                 params.bottomToTop = buttons[1].id
                 params.topToBottom = top.id
                 params.startToStart = R.id.Parent
-                params.endToStart = buttons[2].id
-                params.verticalBias = 0f;
-                params.horizontalBias = 1f;
+                params.endToStart = buttons[3].id
+//                params.verticalBias = 1f;
+//                params.horizontalBias = 1f;
                 buttons[0].layoutParams = params
 
                 buttons[1].layoutParams.width = totalWidthUsed / 2
@@ -148,38 +157,34 @@ class Utilities
                 params2.bottomToBottom = R.id.Parent
                 params2.topToBottom = buttons[0].id
                 params2.startToStart = R.id.Parent
-                params2.endToStart = buttons[3].id
-                params2.verticalBias = 0f;
-                params2.horizontalBias = 1f;
+                params2.endToStart = buttons[4].id
+//                params2.verticalBias = 1f;
+//                params2.horizontalBias = 1f;
                 buttons[1].layoutParams = params2
-
-                buttons[2].layoutParams.width = totalWidthUsed / 2
-                buttons[2].layoutParams.height = (totalHeightUsed / 2).toInt()
-                buttons[2].textSize = 15f
-                val params3 = buttons[2].layoutParams as ConstraintLayout.LayoutParams
-                params3.bottomToTop = buttons[3].id
-                params3.topToBottom = top.id
-                params3.startToEnd = buttons[0].id
-                params3.endToEnd = R.id.Parent
-                params3.verticalBias = 0f
-                params3.horizontalBias = 0f
-                buttons[2].layoutParams = params3
 
                 buttons[3].layoutParams.width = totalWidthUsed / 2
                 buttons[3].layoutParams.height = (totalHeightUsed / 2).toInt()
                 buttons[3].textSize = 15f
-                val params4 = buttons[3].layoutParams as ConstraintLayout.LayoutParams
+                val params3 = buttons[3].layoutParams as ConstraintLayout.LayoutParams
+                params3.bottomToTop = buttons[4].id
+                params3.topToBottom = top.id
+                params3.startToEnd = buttons[0].id
+                params3.endToEnd = R.id.Parent
+//                params3.verticalBias = 1f
+//                params3.horizontalBias = 1f
+                buttons[3].layoutParams = params3
+
+                buttons[4].layoutParams.width = totalWidthUsed / 2
+                buttons[4].layoutParams.height = (totalHeightUsed / 2).toInt()
+                buttons[4].textSize = 15f
+                val params4 = buttons[4].layoutParams as ConstraintLayout.LayoutParams
                 params4.bottomToBottom = R.id.Parent
-                params4.topToBottom = buttons[2].id
+                params4.topToBottom = buttons[3].id
                 params4.startToEnd = buttons[1].id
                 params4.endToEnd = R.id.Parent
-                params4.verticalBias = 0f
-                params4.horizontalBias = 0f
-                buttons[3].layoutParams = params4
-                for (i in 4 until buttons.size) {
-                    Utilities.hideButton(buttons[i], context)
-                    buttons[i].visibility = View.GONE
-                }
+//                params4.verticalBias = 1f
+//                params4.horizontalBias = 1f
+                buttons[4].layoutParams = params4
             }
             if (numButtons == 5) {
                 buttons[0].textSize = 12f
@@ -242,7 +247,7 @@ class Utilities
                 params5.horizontalBias = 0f
                 buttons[4].layoutParams = params5
 
-                Utilities.hideButton(buttons[5], context)
+                hideButton(buttons[5], context)
                 buttons[5].visibility = View.GONE
             }
             if (numButtons == 6) {

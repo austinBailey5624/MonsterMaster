@@ -77,4 +77,10 @@ class Scene13Activity : AppCompatActivity()
         }
         textViews[0].startAnimation(fadeInAnimations[0])
     }
+    override fun onBackPressed() {
+        if(false) {
+            super.onBackPressed()
+        }
+        // Do nothing here
+    }
 }

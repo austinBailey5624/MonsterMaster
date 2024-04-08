@@ -22,18 +22,18 @@ class MainActivity : AppCompatActivity() {
         Utilities.hideButton(button1,this@MainActivity)
         button1.setOnClickListener {
             state.addScore(Element.LIGHT,1)
-            val intent = Intent(this, Scene2Activity::class.java)
-            intent.putExtra("state", state)
-            startActivity(intent)
+//            val intent = Intent(this, Scene2Activity::class.java)
+//            intent.putExtra("state", state)
+//            startActivity(intent)
         }
 
         val button2: Button = findViewById(R.id.button2)
         Utilities.hideButton(button2, this@MainActivity)
         button2.setOnClickListener {
             state.addScore(Element.DARK,1)
-            val intent = Intent(this, Scene3Activity::class.java)
-            intent.putExtra("state", state)
-            startActivity(intent)
+//            val intent = Intent(this, Scene3Activity::class.java)
+//            intent.putExtra("state", state)
+//            startActivity(intent)
         }
 
         val textViews: List<TextView> = listOf(
