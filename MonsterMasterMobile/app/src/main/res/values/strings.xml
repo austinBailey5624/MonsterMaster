@@ -244,8 +244,8 @@
     <string name="scene14node1choice6">Who are you?</string><!--To Node 5-->
     <string name="scene14node2prompt">Don\'t make me ask again, as your elder, dad put me in change, and I will whup you if I need to!</string>
     <string name="scene14node2choice1">Then don\'t ask again</string><!--To Node 6-->
-    <string name="scene14node2choice2">calm down, what do you need?</string><!--To Node 4-->
-    <string name="scene14node2choice3">alright, alright, what do you need?</string><!--To Node 4-->
+    <string name="scene14node2choice2">Calm down, what do you need?</string><!--To Node 4-->
+    <string name="scene14node2choice3">Alright, alright, what do you need?</string><!--To Node 4-->
     <string name="scene14node3prompt">Lose the attitude</string>
     <string name="scene14node3choice1">Make me</string><!--To Node 6-->
     <string name="scene14node3choice2">I\'m sorry, what do you need?</string><!--Node 4-->
@@ -282,8 +282,8 @@
     <string name="scene14node10choice1">Who\'s Brahm?</string><!-- To Node 8-->
     <string name="scene14node10choice2">Fine</string><!-- Terminates-->
     <string name="scene14node11prompt">Don\'t forget to go see Brahm when you\'re done, he\'s the storyteller living in the northeast</string>
-    <string name='scene14node11choice1'>gotcha</string><!--terminates-->
-    <string name='scene14node11choice2'>Can I go now</string><!--To Node 15-->
+    <string name='scene14node11choice1'>Gotcha</string><!--terminates-->
+    <string name='scene14node11choice2'>Can I go now?</string><!--To Node 15-->
     <string name="scene14node12prompt">She\'s gone and she\'s not coming back. The sooner you two realize that the better.</string>
     <string name="scene14node12choice1">You don\'t know that!</string><!--To Node 16-->
     <string name="scene14node12choice2">You\'re right I guess. But I\'ll still pray for her safety, wherever she is</string><!--To Node 17-->

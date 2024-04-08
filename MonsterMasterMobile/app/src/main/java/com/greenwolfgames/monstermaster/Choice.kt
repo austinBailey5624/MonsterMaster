@@ -1,8 +1,12 @@
 package com.greenwolfgames.monstermaster
 
-class Choice(val text: String, val nextNodeIndex: Int, var stateChange: (State) -> Unit = {}, val element: Subelement) {
+class Choice(val text: String, val nextNodeIndex: Int, var stateChange: (State) -> Unit = {}, val element: Subelement, val textSize: Int) {
 
+    constructor(text: String, nextNodeIndex: Int, stateChange: (State) -> Unit, element: Subelement) : this(text, nextNodeIndex, stateChange, element, 18)
+
+    constructor(text: String, nextNodeIndex: Int, stateChange: (State) -> Unit, element: Element, textSize: Int) : this(text, nextNodeIndex, stateChange, getPureSubelement(element), textSize)
     constructor(text: String, nextNodeIndex: Int) : this(text, nextNodeIndex, {}, Subelement.NEUTRAL)
+    constructor(text: String, nextNodeIndex: Int, textSize: Int) : this(text, nextNodeIndex, {}, Subelement.NEUTRAL, textSize)
     constructor(text: String, nextNodeIndex: Int, stateChange: (State) -> Unit, element: Element) : this(text, nextNodeIndex, stateChange, getPureSubelement(element))
 
 

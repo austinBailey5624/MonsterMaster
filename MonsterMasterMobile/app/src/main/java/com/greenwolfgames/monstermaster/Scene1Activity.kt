@@ -166,6 +166,7 @@ class Scene1Activity : AppCompatActivity() {
                     )
                     val choice = scene1Node.choices[i]
                     buttons[i].text = choice.text
+                    buttons[i].textSize = choice.textSize.toFloat()
                     Utilities.hideButton(buttons[i], this@Scene1Activity)
                     buttons[i].setOnClickListener {
                         choice.stateChange(currentState)
@@ -319,8 +320,8 @@ class Scene1Activity : AppCompatActivity() {
                                  getString(R.string.scene1item3), getString(R.string.scene1item4),
                                  getString(R.string.scene1item5), getString(R.string.scene1item6),
                                  getString(R.string.scene1item7))
-            val choices = listOf(Choice(getString(R.string.scene1choice1),2, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT ),
-                                 Choice(getString(R.string.scene1choice2),3, {state -> state.addScore(Element.DARK)}, Element.DARK ))
+            val choices = listOf(Choice(getString(R.string.scene1choice1),2, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT,24 ),
+                                 Choice(getString(R.string.scene1choice2),3, {state -> state.addScore(Element.DARK)}, Element.DARK,24 ))
             return Scene1Node(index, prompts, choices, Scene1Image.NONE, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.gray))
         }
         if(index == 2)
@@ -328,8 +329,8 @@ class Scene1Activity : AppCompatActivity() {
             val prompts = listOf(getString(R.string.scene2item1), getString(R.string.scene2item2),
                                  getString(R.string.scene2item3), getString(R.string.scene2item4),
                                  getString(R.string.scene2item5))
-            val choices = listOf(Choice(getString(R.string.scene2choice1),4, {state -> state.addScore(Element.FIRE)}, Element.FIRE ),
-                                 Choice(getString(R.string.scene2choice2),5, {state -> state.addScore(Element.WATER)}, Element.WATER))
+            val choices = listOf(Choice(getString(R.string.scene2choice1),4, {state -> state.addScore(Element.FIRE)}, Element.FIRE, 24 ),
+                                 Choice(getString(R.string.scene2choice2),5, {state -> state.addScore(Element.WATER)}, Element.WATER, 24))
             return Scene1Node(index, prompts, choices, Scene1Image.LIGHT_FROM_ABOVE, ContextCompat.getColor(this, R.color.darkGray), ContextCompat.getColor(this, R.color.whiteGray))
         }
         if(index == 3)
@@ -337,8 +338,8 @@ class Scene1Activity : AppCompatActivity() {
             val prompts = listOf(getString(R.string.scene3item1), getString(R.string.scene3item2),
                                  getString(R.string.scene3item3), getString(R.string.scene3item4),
                                  getString(R.string.scene3item5), getString(R.string.scene3item6))
-            val choices = listOf(Choice(getString(R.string.scene3choice1), 6, {state -> state.addScore(Element.FIRE)}, Element.FIRE),
-                                 Choice(getString(R.string.scene3choice2), 7, {state -> state.addScore(Element.WATER)}, Element.WATER))
+            val choices = listOf(Choice(getString(R.string.scene3choice1), 6, {state -> state.addScore(Element.FIRE)}, Element.FIRE, 22),
+                                 Choice(getString(R.string.scene3choice2), 7, {state -> state.addScore(Element.WATER)}, Element.WATER, 22))
             return Scene1Node(index, prompts, choices, Scene1Image.NONE, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.darkishGray))
         }
         if(index == 4)
@@ -346,8 +347,8 @@ class Scene1Activity : AppCompatActivity() {
             val prompts = listOf(getString(R.string.scene4item1), getString(R.string.scene4item2),
                                  getString(R.string.scene4item3), getString(R.string.scene4item4),
                                  getString(R.string.scene4item5))
-            val choices = listOf(Choice(getString(R.string.scene4choice1), 8, {state -> state.addScore(Element.EARTH)}, Element.EARTH),
-                                 Choice(getString(R.string.scene4choice2), 8, {state -> state.addScore(Element.AIR)}, Element.AIR))
+            val choices = listOf(Choice(getString(R.string.scene4choice1), 8, {state -> state.addScore(Element.EARTH)}, Element.EARTH, 26),
+                                 Choice(getString(R.string.scene4choice2), 8, {state -> state.addScore(Element.AIR)}, Element.AIR, 20))
             return Scene1Node(index, prompts, choices, Scene1Image.FLAME, ContextCompat.getColor(this, R.color.faintRed), ContextCompat.getColor(this, R.color.redOrange))
         }
         if(index == 5)
@@ -355,8 +356,8 @@ class Scene1Activity : AppCompatActivity() {
             val prompts = listOf(getString(R.string.scene5item1), getString(R.string.scene5item2),
                                  getString(R.string.scene5item3), getString(R.string.scene5item4),
                                  getString(R.string.scene5item5), getString(R.string.scene5item6))
-            val choices = listOf(Choice(getString(R.string.scene5choice1), 9, {state -> state.addScore(Element.EARTH)}, Element.EARTH),
-                                 Choice(getString(R.string.scene5choice2), 9, {state -> state.addScore(Element.AIR)}, Element.AIR))
+            val choices = listOf(Choice(getString(R.string.scene5choice1), 9, {state -> state.addScore(Element.EARTH)}, Element.EARTH, 26),
+                                 Choice(getString(R.string.scene5choice2), 9, {state -> state.addScore(Element.AIR)}, Element.AIR, 20))
             return Scene1Node(index, prompts, choices, Scene1Image.RIVER, ContextCompat.getColor(this, R.color.faintBlue), ContextCompat.getColor(this, R.color.cyan))
         }
         if(index == 6)
@@ -364,18 +365,18 @@ class Scene1Activity : AppCompatActivity() {
             val prompts = listOf(getString(R.string.scene6item1), getString(R.string.scene6item2),
                                  getString(R.string.scene6item3), getString(R.string.scene6item4),
                                  getString(R.string.scene6item5))
-            val choices = listOf(Choice(getString(R.string.scene6choice1), 10, {state -> state.addScore(Element.EARTH)}, Element.EARTH),
-                                 Choice(getString(R.string.scene6choice2), 10, {state -> state.addScore(Element.AIR)}, Element.AIR))
-            return Scene1Node(index, prompts, choices, Scene1Image.NONE, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.darkRed))
+            val choices = listOf(Choice(getString(R.string.scene6choice1), 10, {state -> state.addScore(Element.EARTH)}, Element.EARTH, 26),
+                                 Choice(getString(R.string.scene6choice2), 10, {state -> state.addScore(Element.AIR)}, Element.AIR, 20))
+            return Scene1Node(index, prompts, choices, Scene1Image.FLAME, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.darkRed))
         }
         if(index == 7)
         {
             val prompts = listOf(getString(R.string.scene7item1), getString(R.string.scene7item2),
                                  getString(R.string.scene7item3), getString(R.string.scene7item4),
                                  getString(R.string.scene7item5))
-            val choices = listOf(Choice(getString(R.string.scene7choice1), 11, {state -> state.addScore(Element.EARTH)}, Element.EARTH),
-                                 Choice(getString(R.string.scene7choice2), 11, {state -> state.addScore(Element.AIR)}, Element.AIR))
-            return Scene1Node(index, prompts, choices, Scene1Image.NONE, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.lightishBlue))
+            val choices = listOf(Choice(getString(R.string.scene7choice1), 11, {state -> state.addScore(Element.EARTH)}, Element.EARTH, 26),
+                                 Choice(getString(R.string.scene7choice2), 11, {state -> state.addScore(Element.AIR)}, Element.AIR, 20))
+            return Scene1Node(index, prompts, choices, Scene1Image.RIVER, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.lightishBlue))
         }
         if(index == 8)
         {
@@ -385,17 +386,17 @@ class Scene1Activity : AppCompatActivity() {
             val choices: List<Choice>
             if(currentState.getScore(Element.AIR) > currentState.getScore(Element.EARTH))
             {
-                choices = listOf(Choice(getString(R.string.scene8choice1),12,{state -> state.addScore(Element.LIGHT,2); state.starterMonster = "Lumin"; state.previousSceneName="Scene8Activity"}, Element.LIGHT),
-                                 Choice(getString(R.string.scene8choice2),12,{state -> state.addScore(Element.FIRE,2); state.starterMonster = "Flarial"; state.previousSceneName="Scene8Activity"}, Element.FIRE),
-                                 Choice(getString(R.string.scene8choice3Alt),12,{state -> state.addScore(Element.AIR,2); state.starterMonster = "Flapper"; state.previousSceneName="Scene8Activity"}, Element.AIR),
-                                 Choice(getString(R.string.scene8choice4),12,{state -> state.addScore(Element.LIGHT,1); state.addScore(Element.FIRE,1); state.starterMonster = "Tona"; state.previousSceneName="Scene8Activity"}, Subelement.SOLAR))
+                choices = listOf(Choice(getString(R.string.scene8choice1),12,{state -> state.addScore(Element.LIGHT,2); state.starterMonster = "Lumin"; state.previousSceneName="Scene8Activity"}, Element.LIGHT,20),
+                                 Choice(getString(R.string.scene8choice2),12,{state -> state.addScore(Element.FIRE,2); state.starterMonster = "Flarial"; state.previousSceneName="Scene8Activity"}, Element.FIRE,20),
+                                 Choice(getString(R.string.scene8choice3Alt),12,{state -> state.addScore(Element.AIR,2); state.starterMonster = "Flapper"; state.previousSceneName="Scene8Activity"}, Element.AIR,20),
+                                 Choice(getString(R.string.scene8choice4),12,{state -> state.addScore(Element.LIGHT,1); state.addScore(Element.FIRE,1); state.starterMonster = "Tona"; state.previousSceneName="Scene8Activity"}, Subelement.SOLAR,20))
             }
             else
             {
-                choices = listOf(Choice(getString(R.string.scene8choice1),12,{state -> state.addScore(Element.LIGHT,2); state.starterMonster = "Lumin"; state.previousSceneName="Scene8Activity"}, Element.LIGHT),
-                                 Choice(getString(R.string.scene8choice2),12,{state -> state.addScore(Element.FIRE,2); state.starterMonster = "Flarial"; state.previousSceneName="Scene8Activity"}, Element.FIRE),
-                                 Choice(getString(R.string.scene8choice3),12,{state -> state.addScore(Element.EARTH,2); state.starterMonster = "Bulbapup"; state.previousSceneName="Scene8Activity"}, Element.EARTH),
-                                 Choice(getString(R.string.scene8choice4),12,{state -> state.addScore(Element.LIGHT,1); state.addScore(Element.FIRE,1); state.starterMonster = "Tona"; state.previousSceneName="Scene8Activity"}, Subelement.SOLAR))
+                choices = listOf(Choice(getString(R.string.scene8choice1),12,{state -> state.addScore(Element.LIGHT,2); state.starterMonster = "Lumin"; state.previousSceneName="Scene8Activity"}, Element.LIGHT,20),
+                                 Choice(getString(R.string.scene8choice2),12,{state -> state.addScore(Element.FIRE,2); state.starterMonster = "Flarial"; state.previousSceneName="Scene8Activity"}, Element.FIRE,20),
+                                 Choice(getString(R.string.scene8choice3),12,{state -> state.addScore(Element.EARTH,2); state.starterMonster = "Bulbapup"; state.previousSceneName="Scene8Activity"}, Element.EARTH,20),
+                                 Choice(getString(R.string.scene8choice4),12,{state -> state.addScore(Element.LIGHT,1); state.addScore(Element.FIRE,1); state.starterMonster = "Tona"; state.previousSceneName="Scene8Activity"}, Subelement.SOLAR,20))
             }
             return Scene1Node(index, prompts, choices, Scene1Image.SUN, ContextCompat.getColor(this, R.color.darkBrown), ContextCompat.getColor(this, R.color.brown))
         }
