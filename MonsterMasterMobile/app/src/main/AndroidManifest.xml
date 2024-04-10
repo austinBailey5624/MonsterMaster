@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/my_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/my_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.MonsterMaster"
         tools:targetApi="31">
@@ -41,6 +41,12 @@
             android:exported="true"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".Scene14ActivityMirror"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>

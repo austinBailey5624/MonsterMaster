@@ -1,22 +1,23 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.DisplayMetrics
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 
 class Scene14Activity : AppCompatActivity() {
+
+    var currentState = State()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene14_players_room_initial)
         val extras = intent.extras
-        val currentState = extras?.getSerializable("state") as State
+        currentState = extras?.getSerializable("state") as State
 
 
         val parent = findViewById<View>(R.id.Parent)
@@ -45,7 +46,14 @@ class Scene14Activity : AppCompatActivity() {
         speakerText.setTextColor(ContextCompat.getColor(this@Scene14Activity, R.color.darkBrown))
 
 
-        setNode(1, buttons, currentState)
+        if(currentState.initScene14)
+        {
+            setNode(1, buttons, currentState)
+        }
+        else
+        {
+            setNode(0, buttons, currentState)
+        }
     }
 
     fun setNode(node: Int, buttons: List<Button>, currentState: State) {
@@ -91,14 +99,37 @@ class Scene14Activity : AppCompatActivity() {
 
     private fun getScene14Node(index: Int): Node {
         //@formatter:OFF
+        if(index == 0)
+        {
+            val portrait = findViewById<ImageView>(R.id.portrait)
+            portrait.visibility = View.INVISIBLE;
+            val portrait_background = findViewById<ImageView>(R.id.portrait_background)
+            portrait_background.visibility = View.INVISIBLE;
+            val speaker_text = findViewById<TextView>(R.id.speaker_text)
+            speaker_text.visibility = View.INVISIBLE;
+            val speaker_text_background = findViewById<ImageView>(R.id.speaker_text_background)
+            speaker_text_background.visibility = View.INVISIBLE;
+            val actor_image = findViewById<ImageView>(R.id.actor_image)
+            actor_image.visibility = View.INVISIBLE;
+
+            currentState.initScene14 = false
+            if(currentState.portrait == PlayerPortrait.UNASSIGNED)
+            {
+                val choice1 = Choice(getString(R.string.scene14node0choice2), 0, {state -> val intent = Intent(this, Scene14ActivityMirror::class.java);intent.putExtra("state", currentState);startActivity(intent)}, Element.NEUTRAL, 14)
+                return Node(index,"", listOf(choice1))
+            }
+            val choice1 = Choice(getString(R.string.scene14node0choice1), 1, {state -> val intent = Intent(this, Scene14Activity::class.java);intent.putExtra("state", currentState);startActivity(intent)}, Element.NEUTRAL, 14)
+            return Node(index, "", listOf(choice1))
+        //            val choice1 = Choice(getString)
+        }
         if(index == 1)
         {
-            val choice1 = Choice(getString(R.string.scene14node1choice1),2, {state -> state.addScore(Element.DARK, 1)}, Element.DARK, 16)
-            val choice2 = Choice(getString(R.string.scene14node1choice2),3, {state -> state.addScore(Element.WATER, 1)}, Element.WATER, 16)
-            val choice3 = Choice(getString(R.string.scene14node1choice3),4, {state -> state.addScore(Element.AIR, 1)}, Element.AIR, 16)
-            val choice4 = Choice(getString(R.string.scene14node1choice4),2, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE, 16)
-            val choice5 = Choice(getString(R.string.scene14node1choice5),4, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH, 16)
-            val choice6 = Choice(getString(R.string.scene14node1choice6),5, {}, Element.NEUTRAL,18)
+            val choice1 = Choice(getString(R.string.scene14node1choice1),2, {state -> state.addScore(Element.DARK, 1)}, Element.DARK, 12)
+            val choice2 = Choice(getString(R.string.scene14node1choice2),3, {state -> state.addScore(Element.WATER, 1)}, Element.WATER, 12)
+            val choice3 = Choice(getString(R.string.scene14node1choice3),4, {state -> state.addScore(Element.AIR, 1)}, Element.AIR, 12)
+            val choice4 = Choice(getString(R.string.scene14node1choice4),2, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE, 12)
+            val choice5 = Choice(getString(R.string.scene14node1choice5),4, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH, 12)
+            val choice6 = Choice(getString(R.string.scene14node1choice6),5, {}, Element.NEUTRAL,16)
             val choices = listOf(choice1, choice2, choice3, choice4, choice5, choice6)
             return Node(index, getString(R.string.scene14node1prompt),choices)
         }

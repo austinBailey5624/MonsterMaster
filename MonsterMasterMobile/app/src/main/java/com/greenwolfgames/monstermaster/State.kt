@@ -34,4 +34,7 @@ class State : Serializable
     }
     var previousSceneName: String = ""
     var playerName: String = ""
+    var portrait: PlayerPortrait = PlayerPortrait.UNASSIGNED
+    var gender: Gender = Gender.MALE
+    var initScene14: Boolean = true
 }

@@ -25,7 +25,7 @@ class Scene1Activity : AppCompatActivity() {
     fun setNode(node: Int, currentState: State) {
         val scene1Node = getScene1Node(node, currentState)
 
-        var buttons: List<Button> = listOf(
+        val buttons: List<Button> = listOf(
             findViewById(R.id.button1),
             findViewById(R.id.button2),
             findViewById(R.id.button3),
@@ -421,7 +421,7 @@ class Scene1Activity : AppCompatActivity() {
                     Choice(getString(R.string.scene9choice4),12,{state -> state.addScore(Element.LIGHT,1); state.addScore(Element.WATER,1); state.starterMonster = "Lona"; state.previousSceneName="Scene9Activity"}, Subelement.LUNAR))
 
             }
-            return Scene1Node(index, prompts, choices, Scene1Image.MOON, ContextCompat.getColor(this, R.color.lightishBlue), ContextCompat.getColor(this, R.color.lightCyanBlue))
+            return Scene1Node(index, prompts, choices, Scene1Image.MAGIC_GLYPH, ContextCompat.getColor(this, R.color.lightishBlue), ContextCompat.getColor(this, R.color.lightCyanBlue))
         }
         if(index == 10)
         {

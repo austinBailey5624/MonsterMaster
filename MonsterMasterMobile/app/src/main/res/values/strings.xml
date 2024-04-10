@@ -306,4 +306,15 @@
     <string name="scene14node18choice1">Thank you</string><!--exit conversation-->
     <string name="scene14node19prompt">I believe you. I\'m taking you to our mystic, Brahm, He\'ll know what to do.</string><!--Set state: Origin: Amnesia-->
     <string name="scene14node19choice1">Thank you</string><!--exit conversation-->
+
+    <string name="scene14node0choice1">Go Outside</string>
+    <string name="scene14node0choice2">Look in Mirror</string>
+    <string name="scene14node0choice3">Rest</string>
+    <string name="scene14mirror_pronouns_male">Pronouns: He, Him, His</string>
+    <string name="scene14mirror_pronouns_female">Pronouns: She, Her, Hers</string>
+    <string name="scene14mirror_pronouns_neutral">Pronouns: They, Them, Theirs</string>
+    <string name="scene14mirror_change_avatar">Change Avatar</string>
+    <string name="scene14mirror_change_gender">Change Gender</string>
+    <string name="scene14mirror_change_pronouns">Change Pronouns</string>
+    <string name="scene14mirror_back">Back</string>
 </resources>
