@@ -77,7 +77,7 @@
     <string name="scene9choice3Alt">Look for people</string>
     <string name="scene9choice4">Recognize moon phases</string>
     <string name="scene10item1">In the Distance</string>
-    <string name="scene10item2">A Small Demon</string>
+    <string name="scene10item2">A small Demon</string>
     <string name="scene10item3">Caught in a trap</string>
     <string name="scene10item4">An innocent bird</string>
     <string name="scene10item4Alt">A small critter</string>
@@ -306,7 +306,7 @@
     <string name="scene14node18choice1">Thank you</string><!--exit conversation-->
     <string name="scene14node19prompt">I believe you. I\'m taking you to our mystic, Brahm, He\'ll know what to do.</string><!--Set state: Origin: Amnesia-->
     <string name="scene14node19choice1">Thank you</string><!--exit conversation-->
-
+    <string name="scene14node0prompt">You glimpse in the mirror on your way out of your room.</string>
     <string name="scene14node0choice1">Go Outside</string>
     <string name="scene14node0choice2">Look in Mirror</string>
     <string name="scene14node0choice3">Rest</string>
@@ -316,5 +316,5 @@
     <string name="scene14mirror_change_avatar">Change Avatar</string>
     <string name="scene14mirror_change_gender">Change Gender</string>
     <string name="scene14mirror_change_pronouns">Change Pronouns</string>
-    <string name="scene14mirror_back">Back</string>
+    <string name="scene14mirror_back">Exit</string>
 </resources>
