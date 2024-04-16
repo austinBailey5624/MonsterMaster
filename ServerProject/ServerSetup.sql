@@ -2166,7 +2166,7 @@ CREATE TABLE skill(
     skill_name VARCHAR(50) NOT NULL,
     skill_description VARCHAR(300) NOT NULL,
     unlock_requirement_manager_id INT NOT NULL DEFAULT 0, -- will be a foreign key
-    usage_requirment_mangaer_id INT NOT NULL DEFAULT 0, -- will be a foreign key
+    usage_requirement_manager_id INT NOT NULL DEFAULT 0, -- will be a foreign key
     cost_mp INT DEFAULT 0, -- nullable if free
     cost_hp iNT DEFAULT 0, -- nullable if free
     nature ENUM('Physical','Magical','None') NOT NULL,
@@ -2230,7 +2230,7 @@ INSERT INTO requirement_manager(requirement_description)
     ("Body Type:25 Horse"),
     ("Body Type:26 Humanoid"),
     ("Body Type:27 Jellyfish"),
-    ("Body Type:28 Ligh"),
+    ("Body Type:28 Light blob"),
     ("Body Type:29 Liquid"),
     ("Body Type:30 Lizard"),
     ("Body Type:31 Monk"),
@@ -2250,7 +2250,7 @@ INSERT INTO requirement_manager(requirement_description)
     ("Body Type:45 Spider"),
     ("Body Type:46 Squid"),
     ("Body Type:47 Starfish"),
-    ("Body Type:48 Stea"),
+    ("Body Type:48 Steam Blob"),
     ("Body Type:49 Stone"),
     ("Body Type:50 Sword"),
     ("Body Type:51 Symbol"),
@@ -2266,15 +2266,15 @@ INSERT INTO requirement_manager(requirement_description)
 --     ("Cloudy:atLeast1 AND Heat Tolerance atMost -1"),
 --     ("BodyType:Vapor"),
 --     ("Corporeality: Corporeal AND bodyType:Horse and AGE at least 2");
-    
-    Select * from requirement_manager;
+--     
+--     Select * from requirement_manager;-- 
 
-INSERT INTO skill(skill_name, skill_description, cost_mp, nature, tier, unlock_requirement_mangaer_id, usage_requirement_manager_id)
+INSERT INTO skill(skill_name, skill_description, cost_mp, nature, tier, unlock_requirement_manager_id, usage_requirement_manager_id)
      VALUES
      ('Tackle','Slam your body into the enemy, dealing some small amount of damage', 0, 'Physical',1.0, 1,1),
      ('Splash','Splash all enemies in front of you with water',0,'Physical',1.0,2,2),
      ('Moisten','Envelop an enemy with your vaporpus body, weakening them to your future electric attacks',0,'Physical',1.0,3,3),
-     ('Choke','Pollute an enemy with your infectious cloud',0,'Phyiscal',1.0,4,4),
+     ('Choke','Pollute an enemy with your infectious cloud',0,'Physical',1.0,4,4),
      ('Spook','Scare an enemy by appearing before them',0,'Physical',1.0,5,5),
      ('Shine','Slam your light body into an enemy, attempting to blind them',0,'Physical',1.0,6,6),
      ('Blessing','Empower a light or neutral target, or damage a dark one',4,'Magical',1.0,7,7),
@@ -2287,14 +2287,52 @@ INSERT INTO skill(skill_name, skill_description, cost_mp, nature, tier, unlock_r
      ('Dry Hump','Send magic from your hump to damage one enemy, stronger the dryer you are',0,'Magical',1.0,14,14),
      ('Hiss','Debuff an enemy with your hiss, and give them a small amount of wet',0,'Magical',1.0,15,15),
      ('Scratch','Deal a small amout of damage scratching with your claws',0,'Physical',1.0,16,16),
-     ('Rain','Rain on one enemy, dealing wet damage to them',0,'Maigcal',1.0,17,17),
+     ('Rain','Rain on one enemy, dealing wet damage to them',0,'Magical',1.0,17,17),
      ('Death stink','Deal small amounts of dark and earth damage to all',0,'Magical',1.0,18,18),
      ('Guard','Increase physical defense',0,'Magical',1.0,19,19),
      ('Hellspark','Send fire and brimstone at a single target',0,'Magical',1.0,20,20),
      ('Trigger cough','lightly infect an enemy, making them cough',0,'Magical',1.0,21,21),
      ('Dragon Bite','Crunch an enemy with your massive fangs',20,'Physical',2.0,22,22),
      ('Charm','Increase a combatants earth damage',4,'Magical',1.0,23,23),
-     ('Bite','Bite into an enemy',0,'Physical',1.0,24,24);
+     ('Bite','Bite into an enemy',0,'Physical',1.0,24,24),
+     ('Fin slap','slap an enemy with your fishy fin',0,'Physical',1.0,25,25),
+     ('Red rush','rush at an enemy, dealing a small amount of physical and fire damage',0,'Physical',1.0,26,26),
+     ('Slime slap','slap an enemy with your froggy webbing',0,'Physical',1.0,27,27),
+     ('Gleam','Catch the light with your body, dealing light damage on an enemy and potentially blinding them',4,'Magical',1.0,28,28),
+     ('Haunt','Haunt an enemy as a ghost, dealing magical and darkness damage',4,'Magical',1.0,29,29),
+     ('Harden','Harden your stone shell, preparing for an attack',4,'Magical',1.0,30,30),
+     ('Rearing','Rear on your hind legs and strike a nearby enemy',2,'Physical',1.0,31,31),
+     ('Punch','Strike an enemy with your fist',0,'Physical',1.0,32,32),
+     ('Jelly Entangle','Entangle an enemy with your jellyfish tail, dealing a small amount of water, physical, and poison damage',4,'Magical',1.0,33,33),
+     ('Glow','Hit everyone with 1 point of light damage',4,'Magical',1.0,34,34),
+     ('Splatter','Splash all enemies in front of you with magical water',4,'Magical',1.0,35,35),
+     ('Scale Tail','Strike an enemy with your scaly tail',2,'Physical',1.0,36,36),
+     ('Focus Healing Energies','Empower future healing abillities',4,'Magical',1.0,37,37),
+     ('Octo peck','Poke an enemy with your octopus beak, dealing water, air and physical damage',4,'Magical',1.0,38,38),
+     ('Soul push','Magically strike an enemy with your soul, dealing almost no damage',0,'Magical',0.0,39,39),
+     ('Ice peck','Peck an enemy with your beak empowered with icy magic',4,'Magical',1.0,40,40),
+     ('Absorb water','Heal HP and MP based on how wet you are, removing wet counters',4,'Magical',1.0,41,41),
+     ('Trounce','Strike with your Fangs, arm and leg claws all at once, dealing considerable damage, but leaving yourself open for future attacks',4,'Physical',1.0,42,42),
+     ('Squeak','Squeak pitifully into the void, dealing 1 point of magic, air, and darkness damage to all monsters',4,'Magical',1.0,43,43),
+     ('Killstrike','Strike an enemy, if it kills them, heal a small amount, and increase damage a small amount',4,'None',1.0,44,44),
+     ('Scorpion Sting','Strike an enemy with your magically poisonous tail, dealing dark, earth, poison, and physical damage',6,'Magical',1.5,45,45),
+     ('Fortify','Channel energy into your shield, enhancing your physical defenses',4,'Magical',1.0,46,46),
+     ('Scary stare','Terrify an enemy with your poisonous stare, dealing darkness, earth, and magicl damage',4,'Magical',1.0,47,47),
+     ('Salute','Target an ally to slightly increase their physical capabilities',4,'Magical',1.0,48,48),
+     ('Poke','Target an enemy up to another row back, dealing normal attack damage',2,'Physical',1.0,49,49),
+     ('Confuse','Target any enemy, dealing pure magical damage on them',4,'Magical',1.0,50,50),
+     ('Creep','Touch an enemy with your spidery legs, causing them to get creeped out',4,'Magical',1.0,51,51),
+     ('Ink','Hit an enemy with magical ink, dealing dark, magical, and water damage',4,'Magical',1.0,52,52),
+     ('Lucky Star','Hit an ally with a random positive magical effect',4,'Magical',1.0,53,53),
+     ('Scald','Hit an enemy with your steamy surface, dealing water, fire, and magical damage',4,'Magical',1.0,54,54),
+     ('Harden','Increase physical and earth defense temporarily',4,'Magical',1.0,55,55),
+     ('Slash','Deal slightly more damage than usual',0,'Physical',1.0,56,56),
+     ('Magical missle','Deal pure magical damage to an enemy',4,'Magical',1.0,57,57),
+     ('Leaf Fall','Sprinkle everyone with leaves, dealing 1 point of earth damage, and debuffing earth magic',4,'Magical',1.0,58,58),
+     ('Hide in Shell','Hide in your shell, increasing physical resistance',0,'Physical',1.0,59,59),
+     ('Roar','Deal 1 point of true damage to the whole field, and debuf them physically',4,'Magical',1.0,60,60),
+     ('Wasp Sting','Deal Physical and Earth Damage, magically enhanced with poison',4,'Magical',1.0,61,61),
+     ('Howl','Slightly increase the attack of all monsters on the battlefield',4,'Magical',1.0,62,62);
 --      ('Blitz','This eager monster strikes first before the enemy is ready', 7,'Physical',2.0,7,7),
 --      ('Trample','Rush an enemy row in a straight line in front of you',7,'Physical',2.0,13,9),
 --      ('Chill Wind','A chill wind from the north cools the battle',4,'Magical',2.0,11,11),
