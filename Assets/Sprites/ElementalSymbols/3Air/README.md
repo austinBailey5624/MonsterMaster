@@ -15,5 +15,10 @@
     <td align="center">Mattie Lyall</td>
     <td align="center">Employment contract; Invoice June 9th, 2023</td>
 </tr>
+<tr>
+    <td align="center">SeabreezeSymbol.afdesign</td>
+	<td align="center">Mattie Lyall</td>
+    <td align="center">Employment contract; Invoice April, 2024</td>
+</tr>	
 </table>
 </div>

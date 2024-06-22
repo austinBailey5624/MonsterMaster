@@ -317,4 +317,9 @@
     <string name="scene14mirror_change_gender">Change Gender</string>
     <string name="scene14mirror_change_pronouns">Change Pronouns</string>
     <string name="scene14mirror_back">Exit</string>
+    <string name="scene15node1prompt1">Welcome to Monster Master!</string>
+    <string name="scene15node1prompt2">In this game, every choice you make matters. If you are really aggressive, you will be better at catching, raising, and fighting with Fire monsters. If you are particularly analytical, you might become stronger with water monsters etc. This goes for all actions and choices you might make. So selecting choices is simpler, we color the buttons to match the element they coorespond to. However, since sometimes this coloring is distracting, or if you want an analytical challenge, you can select what colors are displayed.\nNote: colored choices incur a 5% score penalty, while others confer no penalty. \n\nWould you prefer:</string>
+    <string name="scene15node1choice1">Colored Choices</string>
+    <string name="scene15node1choice2">Neutral choices</string>
+    <string name="scene15node1choice3">My soul color</string>
 </resources>
