@@ -98,18 +98,18 @@ class Scene14Activity : AppCompatActivity() {
         if(index == 0)
         {
             val portrait = findViewById<ImageView>(R.id.portrait)
-            portrait.visibility = View.INVISIBLE;
+            portrait.visibility = View.GONE
             val portrait_background = findViewById<ImageView>(R.id.portrait_background)
-            portrait_background.visibility = View.INVISIBLE;
-//            val speaker_text = findViewById<TextView>(R.id.speaker_text)
-//            speaker_text.visibility = View.INVISIBLE;
-//            val speaker_text_background = findViewById<ImageView>(R.id.speaker_text_background)
-//            speaker_text_background.visibility = View.INVISIBLE;
+            portrait_background.visibility = View.GONE
             val actor_image = findViewById<ImageView>(R.id.actor_image)
             actor_image.visibility = View.INVISIBLE;
+            val speaker_text_background = findViewById<ImageView>(R.id.speaker_text_background)
+            speaker_text_background.layoutParams.width = 350
+            val speaker_text = findViewById<TextView>(R.id.speaker_text)
+            speaker_text.layoutParams.width = 330
 
             currentState.initScene14 = false
-             val choice1 = Choice(getString(R.string.scene14node0choice2), 1, {state -> val intent = Intent(this, Scene14ActivityMirror::class.java);intent.putExtra("state", currentState);startActivity(intent)}, Element.NEUTRAL, 26)
+            val choice1 = Choice(getString(R.string.scene14node0choice2), 1, {state -> val intent = Intent(this, Scene14ActivityMirror::class.java);intent.putExtra("state", currentState);startActivity(intent)}, Element.NEUTRAL, 26)
             return Node(index, getString(R.string.scene14node0prompt), listOf(choice1))
         }
         if(index == 1)

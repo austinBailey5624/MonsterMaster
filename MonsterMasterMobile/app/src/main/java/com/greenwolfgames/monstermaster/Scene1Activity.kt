@@ -478,6 +478,8 @@ class Scene1Activity : AppCompatActivity() {
             val intent = Intent(this, Scene12Activity::class.java)
             intent.putExtra("state", currentState)
             startActivity(intent)
+            //note: We've already started the next activity, this is to fix a bug where we click to fast
+            return Scene1Node(index, listOf(), listOf(), Scene1Image.NONE, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.black))
         }
         throw IllegalStateException("Scene1Node index not found, max 12 actual: $index");
         //@formatter:on

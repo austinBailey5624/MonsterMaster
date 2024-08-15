@@ -44,7 +44,6 @@ class Scene14ActivityMirror : AppCompatActivity() {
 
         val node = getNode()
         val prompt = findViewById<TextView>(R.id.speaker_text)
-//        prompt.text = node.prompt
         setTextSize(prompt)
         Utilities.orgainizeButtons(buttons, node.choices.size, findViewById(R.id.invisible_button_aligner),this@Scene14ActivityMirror, windowManager)
         for (i in buttons.indices) {
@@ -150,7 +149,7 @@ class Scene14ActivityMirror : AppCompatActivity() {
             currentState.portrait = PlayerPortrait.BROWN_HAIR_MALE
         }
         currentState.initScene14 = false
-        val intent = Intent(this, Scene14Activity::class.java)
+        val intent = Intent(this, Scene15Oaktree::class.java)
         intent.putExtra("state", currentState)
         startActivity(intent)
     }

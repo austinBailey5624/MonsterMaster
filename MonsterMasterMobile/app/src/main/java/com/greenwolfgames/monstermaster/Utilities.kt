@@ -46,7 +46,7 @@ class Utilities
 
             if (numButtons == 1) {
                 for (i in 1 until buttons.size) {
-                    Utilities.hideButton(buttons[i], context)
+                    hideButton(buttons[i], context)
                     buttons[i].visibility = View.GONE
                 }
                 buttons[0].layoutParams.width = totalWidthUsed
@@ -146,8 +146,6 @@ class Utilities
                 params.topToBottom = top.id
                 params.startToStart = R.id.Parent
                 params.endToStart = buttons[3].id
-//                params.verticalBias = 1f;
-//                params.horizontalBias = 1f;
                 buttons[0].layoutParams = params
 
                 buttons[1].layoutParams.width = totalWidthUsed / 2
@@ -158,8 +156,6 @@ class Utilities
                 params2.topToBottom = buttons[0].id
                 params2.startToStart = R.id.Parent
                 params2.endToStart = buttons[4].id
-//                params2.verticalBias = 1f;
-//                params2.horizontalBias = 1f;
                 buttons[1].layoutParams = params2
 
                 buttons[3].layoutParams.width = totalWidthUsed / 2
@@ -170,8 +166,6 @@ class Utilities
                 params3.topToBottom = top.id
                 params3.startToEnd = buttons[0].id
                 params3.endToEnd = R.id.Parent
-//                params3.verticalBias = 1f
-//                params3.horizontalBias = 1f
                 buttons[3].layoutParams = params3
 
                 buttons[4].layoutParams.width = totalWidthUsed / 2
@@ -182,8 +176,6 @@ class Utilities
                 params4.topToBottom = buttons[3].id
                 params4.startToEnd = buttons[1].id
                 params4.endToEnd = R.id.Parent
-//                params4.verticalBias = 1f
-//                params4.horizontalBias = 1f
                 buttons[4].layoutParams = params4
             }
             if (numButtons == 5) {

@@ -3,64 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Parent"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="#333333">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="600dp"
-        android:scaleX=".9"
-        android:scaleY=".9"
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/button_4x1" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/scene15node1prompt1"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="@id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:srcCompat="@drawable/oaktree_daylight" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="400dp"
-        android:rotation="90"
-        android:scaleX=".9"
-        android:scaleY="1.2"
-        app:layout_constraintBottom_toTopOf="@id/button1"
+        android:id="@+id/speaker_text_background"
+        android:layout_width="375dp"
+        android:layout_height="125dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:srcCompat="@drawable/button_4x3" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/button_3x1" />
+
+    <TextView
+        android:id="@+id/speaker_text"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:text="@string/scene14node1prompt"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/speaker_text_background"
+        app:layout_constraintEnd_toEndOf="@+id/speaker_text_background"
+        app:layout_constraintStart_toStartOf="@+id/speaker_text_background"
+        app:layout_constraintTop_toTopOf="@+id/speaker_text_background"
+        app:layout_constraintVertical_bias=".5" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
-        android:text="@string/scene14node1choice1"
+        android:layout_marginTop="575dp"
+        android:text="@string/scene15node1choice1"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView3" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
-        android:text="@string/scene14node1choice2"
+        android:text="@string/scene15node1choice2"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +69,6 @@
         android:id="@+id/button3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
         android:text="@string/scene14node1choice3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button6"
@@ -81,19 +79,18 @@
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
-        android:text="@string/scene14node1choice4"
+        android:layout_marginTop="575dp"
+        android:text="@string/scene15node1choice4"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button1"
-        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
         android:text="@string/scene14node1choice5"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,27 +101,11 @@
         android:id="@+id/button6"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
         android:text="@string/scene14node1choice6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="32dp"
-        android:scaleY="1"
-        android:text="@string/scene15node1prompt2"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@id/imageView3"
-        app:layout_constraintEnd_toEndOf="@id/imageView3"
-        app:layout_constraintStart_toStartOf="@id/imageView3"
-        app:layout_constraintTop_toTopOf="@id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
