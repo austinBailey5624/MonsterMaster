@@ -341,4 +341,10 @@
     <string name="cinematic_text_5_content_description">The fifth TextView shown when cinematically displaying text, usually set to invisible</string>
     <string name="cinematic_text_6_content_description">The sixth TextView shown when cinematically displaying text, usually set to invisible</string>
     <string name="cinematic_text_7_content_description">The last Text View displayed when cinematically displaying text, usually set to invisible, aligned to right above the bottom 3rd of the screen</string>
+    <string name="button_1_content_description">The content in the first choice the player has, usually in the upper left of the bottom third screen</string>
+    <string name="button_2_content_description">The content in the second choice the player has, usually in the upper right of the bottom third screen</string>
+    <string name="button_3_content_description">The content in the third choice the player has, usually in the middle left of the bottom third screen</string>
+    <string name="button_4_content_description">The content in the fourth choice the player has, usually in the middle right of the bottom third screen</string>
+    <string name="button_5_content_description">The content in the fifth choice the player has, usually in the bottom left of the bottom third screen</string>
+    <string name="button_6_content_description">The content in the sixth choice the player has, usually in the bottom right of the bottom third screen.</string>
 </resources>
