@@ -328,8 +328,17 @@
     <string name="scene15node1choice3">The Wilderness</string>
     <string name="scene15node1choice4">Church</string>
     <string name="scene15node1choice5">Brahm\'s House</string>
+
+    <!-- content descriptions for UI elements -->
     <string name="background_content_description">The absolute background behind everything else</string>
     <string name="background_top_content_description">The relative \'top\' third(ish) of the display, typically used to prompt the player</string>
     <string name="background_center_content_description">The relative \'center\' of the display, typically used to set an image for the scene for the user</string>
     <string name="background_bottom_content_description">The relative \'bottom\' of the display, typically used to get input from the user</string>
+    <string name="cinematic_text_1_content_description">The first TextView shown when cinematically showing text, should be aligned to the top of the screen, usually set to invisible. The cinematic text will be aligned in approximately the top two thirds of the screen, from the top of the parent (and background top) to the bottom of background_center</string>
+    <string name="cinematic_text_2_content_description">The second TextView shown when cinematically showing text, usually set to invisible</string>
+    <string name="cinematic_text_3_content_description">The third TextView shown when cinematically showing text, usually set to invisible</string>
+    <string name="cinematic_text_4_content_description">The fourth TextView shown when cinematically showing text, usually set to invisible</string>
+    <string name="cinematic_text_5_content_description">The fifth TextView shown when cinematically displaying text, usually set to invisible</string>
+    <string name="cinematic_text_6_content_description">The sixth TextView shown when cinematically displaying text, usually set to invisible</string>
+    <string name="cinematic_text_7_content_description">The last Text View displayed when cinematically displaying text, usually set to invisible, aligned to right above the bottom 3rd of the screen</string>
 </resources>
