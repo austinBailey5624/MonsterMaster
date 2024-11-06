@@ -328,4 +328,8 @@
     <string name="scene15node1choice3">The Wilderness</string>
     <string name="scene15node1choice4">Church</string>
     <string name="scene15node1choice5">Brahm\'s House</string>
+    <string name="background_content_description">The absolute background behind everything else</string>
+    <string name="background_top_content_description">The relative \'top\' third(ish) of the display, typically used to prompt the player</string>
+    <string name="background_center_content_description">The relative \'center\' of the display, typically used to set an image for the scene for the user</string>
+    <string name="background_bottom_content_description">The relative \'bottom\' of the display, typically used to get input from the user</string>
 </resources>

@@ -11,135 +11,43 @@
     android:rotationY="0"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="16dp"
-        android:scaleX="1.6"
-        android:scaleY="1.6"
-        android:text="@string/scene1item1"
-        app:layout_constraintBottom_toTopOf="@+id/text2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:scaleX="1"
-        android:scaleY="1"
-        android:text="@string/scene1choice1"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text7" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="24dp"
-        android:scaleX="1"
-        android:scaleY="1"
-        android:text="@string/scene1choice2"
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_black" />
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:scaleX="1.6"
-        android:scaleY="1.6"
-        android:text="@string/scene1item2"
-        app:layout_constraintBottom_toTopOf="@+id/text3"
+    <ImageView
+        android:id="@+id/background_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/background_center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_1080x528" />
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:scaleX="1.6"
-        android:scaleY="1.6"
-        android:text="@string/scene1item3"
-        app:layout_constraintBottom_toTopOf="@+id/text4"
+    <ImageView
+        android:id="@+id/background_center"
+        android:layout_width="0dp"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toTopOf="@+id/background_bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2"
-        tools:visibility="visible" />
+        app:layout_constraintTop_toBottomOf="@id/background_top"
+        app:srcCompat="@drawable/background_1080x864" />
 
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:scaleX="1.6"
-        android:scaleY="1.6"
-        android:text="@string/scene1item4"
-        app:layout_constraintBottom_toTopOf="@+id/text5"
+    <ImageView
+        android:id="@+id/background_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3" />
-
-    <TextView
-        android:id="@+id/text5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:scaleX="1.6"
-        android:scaleY="1.6"
-        android:text="@string/scene1item5"
-        app:layout_constraintBottom_toTopOf="@+id/text6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text4" />
-
-    <TextView
-        android:id="@+id/text6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:scaleX="1.6"
-        android:scaleY="1.6"
-        android:text="@string/scene1item6"
-        app:layout_constraintBottom_toTopOf="@+id/text7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text5" />
-
-    <TextView
-        android:id="@+id/text7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:scaleX="1.6"
-        android:scaleY="1.6"
-        android:text="@string/scene1item7"
-        app:layout_constraintBottom_toTopOf="@+id/button1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text6" />
-
+        app:layout_constraintTop_toBottomOf="@+id/background_center"
+        app:srcCompat="@drawable/background_1080x528" />
 </androidx.constraintlayout.widget.ConstraintLayout>
