@@ -13,7 +13,6 @@ import androidx.core.view.isVisible
 
 class MainActivity : AppCompatActivity()
 {
-
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity()
         onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
         var state = State()
 
-        //        setNode(1, state)
         var buttons: List<Button> = listOf(
             findViewById(R.id.button_1),
             findViewById(R.id.button_2),
@@ -39,12 +37,9 @@ class MainActivity : AppCompatActivity()
             findViewById(R.id.cinematic_text_6),
             findViewById(R.id.cinematic_text_7)
         )
-        var partialBackgrounds: List<ImageView> = listOf(
-            findViewById(R.id.background_top),
-            findViewById(R.id.background_center),
-            findViewById(R.id.background_bottom)
-        )
-        hideUI(buttons, cinematicTexts, partialBackgrounds)
+        hideCinematicText(cinematicTexts)
+        hideButtons(buttons)
+
         cinematicTexts[0].startAnimation(getFadeInAnimations(buttons, cinematicTexts)[0])
 
     }
@@ -55,24 +50,21 @@ class MainActivity : AppCompatActivity()
     //        // Do nothing here
 
 
-    private fun hideUI(buttons: List<Button>, cinematicTexts: List<TextView>, partialBackgrounds: List<ImageView>)
+    private fun hideCinematicText(cinematicTexts: List<TextView>)
+    {
+        for (text in cinematicTexts)
+        {
+            text.setTextColor(ContextCompat.getColor(this, R.color.invisible))
+        }
+    }
+
+    private fun hideButtons(buttons: List<Button>)
     {
         for (button in buttons)
         {
             button.setTextColor(ContextCompat.getColor(this, R.color.invisible))
             button.setBackgroundColor(ContextCompat.getColor(this, R.color.invisible))
         }
-        for (text in cinematicTexts)
-        {
-            text.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        }
-        for (background in partialBackgrounds)
-        {
-            background.isVisible = false;
-        }
-        var skip_button: Button = findViewById(R.id.button_skip_cinematic)
-        skip_button.setTextColor(ContextCompat.getColor(this, R.color.invisible))
-        skip_button.setBackgroundColor(ContextCompat.getColor(this,R.color.invisible))
     }
 
     private fun getFadeInAnimations(buttons: List<Button>, cinematicTexts: List<TextView>): List<Animation>
