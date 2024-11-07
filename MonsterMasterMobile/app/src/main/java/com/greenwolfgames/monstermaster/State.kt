@@ -6,12 +6,12 @@ import java.io.Serializable
 class State : Serializable
 {
     private var elementalScore = mutableMapOf<Element,Int> (
-        Element.FIRE to 0,
-        Element.WATER to 0,
-        Element.EARTH to 0,
-        Element.AIR to 0,
-        Element.LIGHT to 0,
-        Element.DARK to 0,
+        Element.PYRO to 0,
+        Element.AQUA to 0,
+        Element.TERRA to 0,
+        Element.AERO to 0,
+        Element.LUXOR to 0,
+        Element.UMBRAL to 0,
         Element.NEUTRAL to 0,
         Element.PHYSICAL to 0,
         Element.MAGICAL to 0
