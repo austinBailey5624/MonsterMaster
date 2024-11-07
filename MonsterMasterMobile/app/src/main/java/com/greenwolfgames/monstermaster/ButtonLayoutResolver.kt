@@ -2,7 +2,6 @@ package com.greenwolfgames.monstermaster
 
 import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
-import java.lang.IllegalStateException
 
 class ButtonLayoutResolver
 {

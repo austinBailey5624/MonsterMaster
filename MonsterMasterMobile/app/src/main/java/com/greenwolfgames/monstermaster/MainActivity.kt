@@ -1,5 +1,7 @@
 package com.greenwolfgames.monstermaster
 
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -40,7 +42,8 @@ class MainActivity : AppCompatActivity()
         )
 
         hideCinematicText(cinematicTexts)
-        hideButtons(buttons)
+        initButtons(buttons)
+//        Log.d("ButtonColor" + )
         setNode(1, state, buttons, cinematicTexts)
     }
 
@@ -50,6 +53,20 @@ class MainActivity : AppCompatActivity()
         {
             text.setTextColor(ContextCompat.getColor(this, R.color.invisible))
         }
+    }
+
+    private fun initButtons(buttons: List<Button>)
+    {
+//        val drawable = GradientDrawable().apply {
+//            shape = GradientDrawable.RECTANGLE
+//            cornerRadius = 8f //* resources.displayMetrics.density // Adjust roundness
+//            setColor(Color.BLUE) // Button background color
+////        }
+//        for(button in buttons)
+//        {
+//            button.background = drawable
+//        }
+        hideButtons(buttons)
     }
 
     private fun hideButtons(buttons: List<Button>)
@@ -245,15 +262,22 @@ class MainActivity : AppCompatActivity()
             layoutParams.startToEnd = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.START_TO_END, buttons, R.id.background_bottom)
             layoutParams.endToEnd = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.END_TO_END, buttons, R.id.background_bottom)
             layoutParams.endToStart = ButtonLayoutResolver.getButtonLayout(choiceSize,i,ELayoutMode.END_TO_START,buttons, R.id.background_bottom)
-            Log.d("MainActivity.kt.setButtonFormat", "i: " + i + "layoutParams:"
-                    + "\n parentID: " + R.id.background_bottom
+            Log.d("MainActivity.kt.setButtonFormat",  "\n parentID: " + R.id.background_bottom
                     + "\n Button 0: " + buttons[0].id
                     + "\n Button 1: " + buttons[1].id
-                    + "\n   top to top: " + layoutParams.topToTop.toString()
-            + "\n    top to bottom: " + layoutParams.topToBottom.toString() + "\n    bottomToTop: " + layoutParams.bottomToTop.toString()
-            + "\n    bottom to bottom: " + layoutParams.bottomToBottom.toString() + "\n    start to start: " + layoutParams.startToStart.toString()
-            + "\n    start to end: " + layoutParams.startToEnd.toString() + "\n    end to end: " + layoutParams.endToEnd.toString()
-            + "\n    end to Start: " + layoutParams.endToStart.toString())
+                    + "\n Button 2: " + buttons[2].id
+                    + "\n Button 3: " + buttons[3].id
+                    + "\n Button 4: " + buttons[4].id
+                    + "\n Button 5: " + buttons[5].id
+                    + "\n    Current Button Index: " + i
+                    + "\n    top to top: " + layoutParams.topToTop.toString()
+                    + "\n    top to bottom: " + layoutParams.topToBottom.toString()
+                    + "\n    bottomToTop: " + layoutParams.bottomToTop.toString()
+                    + "\n    bottom to bottom: " + layoutParams.bottomToBottom.toString()
+                    + "\n    start to start: " + layoutParams.startToStart.toString()
+                    + "\n    start to end: " + layoutParams.startToEnd.toString()
+                    + "\n    end to end: " + layoutParams.endToEnd.toString()
+                    + "\n    end to Start: " + layoutParams.endToStart.toString())
             buttons[i].layoutParams = layoutParams
         }
         //@formatter:on
@@ -285,7 +309,6 @@ class MainActivity : AppCompatActivity()
                 choices[i].stateChange(state)
             }
             buttons[i].textSize = choices[i].textSize.toFloat()
-            Element.colorButton(buttons[i], this@MainActivity, choices[i].element)
         }
     }
 
