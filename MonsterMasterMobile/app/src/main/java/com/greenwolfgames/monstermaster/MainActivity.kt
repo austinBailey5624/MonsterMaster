@@ -1,7 +1,5 @@
 package com.greenwolfgames.monstermaster
 
-import android.graphics.Color
-import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -88,7 +86,7 @@ class MainActivity : AppCompatActivity()
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this,R.anim.fade_in_very_fast)
+            AnimationUtils.loadAnimation(this, R.anim.fade_in_very_fast)
         )
 
         //@formatter:off
@@ -121,7 +119,6 @@ class MainActivity : AppCompatActivity()
                     {
                         for (j in i .. cinematicTexts.size -1)
                         {
-//                            cinematicTexts[j].startAnimation(AnimationUtils.loadAnimation(this@MainActivity, R.anim.fade_in_fast))
                             cinematicTexts[j].startAnimation((fadeInAnimations[9]))
                             cinematicTexts[j].setTextColor(textColor)
                         }
@@ -132,8 +129,8 @@ class MainActivity : AppCompatActivity()
                     }
                     else
                     {
-                    cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
-                    cinematicTexts[i].setTextColor(textColor)
+                        cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
+                        cinematicTexts[i].setTextColor(textColor)
                     }
                 }
                 override fun onAnimationRepeat(animation: Animation) { }
@@ -143,13 +140,48 @@ class MainActivity : AppCompatActivity()
         return fadeInAnimations
     }
 
+    private fun fadeOut(
+        buttons: List<Button>, cinematicTexts: List<TextView>, nextNodeIndex: Int, state: State
+    )
+    {
+        val fadeOutAnimationTrigger = AnimationUtils.loadAnimation(this, R.anim.fade_out_fast)
+        fadeOutAnimationTrigger.setAnimationListener(object : Animation.AnimationListener
+        {
+            override fun onAnimationStart(animation: Animation)
+            {
+            }
+
+            override fun onAnimationEnd(animation: Animation)
+            {
+                hideButtons(buttons)
+                hideCinematicText(cinematicTexts)
+                setNode(nextNodeIndex, state, buttons, cinematicTexts)
+            }
+
+            override fun onAnimationRepeat(animation: Animation)
+            {
+            }
+        })
+        val fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out_fast)
+        for(i in 1..buttons.size-1)
+        {
+            buttons[i].startAnimation(fadeOutAnimation)
+        }
+        for(text in cinematicTexts)
+        {
+            text.startAnimation(fadeOutAnimation)
+        }
+        buttons[0].startAnimation(fadeOutAnimationTrigger)
+        fadeOutAnimation.start()
+    }
+
     private fun setNode(
         index: Int, state: State, buttons: List<Button>, cinematicTexts: List<TextView>
     )
     {
         var currentNode: CinematicNode = getCinematicNode(index, state)
         setCinematicTexts(currentNode.prompt, cinematicTexts)
-        setButtons(currentNode.choices, buttons, state)
+        setButtons(currentNode.choices, buttons, state, cinematicTexts)
         val main = findViewById<View>(R.id.main)
         main.setBackgroundColor(currentNode.backgroundColor)
         cinematicTexts[0].startAnimation(
@@ -255,16 +287,26 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-    private fun setButtons(choices: List<Choice>, buttons: List<Button>, state: State)
+    private fun setButtons(
+        choices: List<Choice>, buttons: List<Button>, state: State, cinematicTexts: List<TextView>
+    )
     {
         Log.d("MainActivity.kt.setbuttons", "choicesCount: " + choices.size)
         setButtonFormat(choices.size, buttons)
         setButtonVisibility(choices.size, buttons)
         setButtonTextContent(choices, buttons, state)
+        setButtonBehavior(choices, buttons, state, cinematicTexts)
     }
 
     private fun setButtonFormat(choiceSize: Int, buttons: List<Button>)
     { //@formatter:off
+        Log.d("MainActivity.kt.setButtonFormat",  "\n parentID: " + R.id.background_bottom
+                + "\n Button 0: " + buttons[0].id
+                + "\n Button 1: " + buttons[1].id
+                + "\n Button 2: " + buttons[2].id
+                + "\n Button 3: " + buttons[3].id
+                + "\n Button 4: " + buttons[4].id
+                + "\n Button 5: " + buttons[5].id)
         for(i in buttons.indices)
         {
             var layoutParams = buttons[i].layoutParams as ConstraintLayout.LayoutParams
@@ -276,25 +318,21 @@ class MainActivity : AppCompatActivity()
             layoutParams.startToEnd = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.START_TO_END, buttons, R.id.background_bottom)
             layoutParams.endToEnd = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.END_TO_END, buttons, R.id.background_bottom)
             layoutParams.endToStart = ButtonLayoutResolver.getButtonLayout(choiceSize,i,ELayoutMode.END_TO_START,buttons, R.id.background_bottom)
-            Log.d("MainActivity.kt.setButtonFormat",  "\n parentID: " + R.id.background_bottom
-                    + "\n Button 0: " + buttons[0].id
-                    + "\n Button 1: " + buttons[1].id
-                    + "\n Button 2: " + buttons[2].id
-                    + "\n Button 3: " + buttons[3].id
-                    + "\n Button 4: " + buttons[4].id
-                    + "\n Button 5: " + buttons[5].id
-                    + "\n    Current Button Index: " + i
-                    + "\n    top to top: " + layoutParams.topToTop.toString()
-                    + "\n    top to bottom: " + layoutParams.topToBottom.toString()
-                    + "\n    bottomToTop: " + layoutParams.bottomToTop.toString()
-                    + "\n    bottom to bottom: " + layoutParams.bottomToBottom.toString()
-                    + "\n    start to start: " + layoutParams.startToStart.toString()
-                    + "\n    start to end: " + layoutParams.startToEnd.toString()
-                    + "\n    end to end: " + layoutParams.endToEnd.toString()
-                    + "\n    end to Start: " + layoutParams.endToStart.toString())
+
+            Log.d("MainActivity.setButtonFormat",
+                "\n    Current Button Index: " + i
+                        + "\n    top to top: " + layoutParams.topToTop.toString()
+                        + "\n    top to bottom: " + layoutParams.topToBottom.toString()
+                        + "\n    bottomToTop: " + layoutParams.bottomToTop.toString()
+                        + "\n    bottom to bottom: " + layoutParams.bottomToBottom.toString()
+                        + "\n    start to start: " + layoutParams.startToStart.toString()
+                        + "\n    start to end: " + layoutParams.startToEnd.toString()
+                        + "\n    end to end: " + layoutParams.endToEnd.toString()
+                        + "\n    end to Start: " + layoutParams.endToStart.toString()
+            )
+            //@formatter:on
             buttons[i].layoutParams = layoutParams
         }
-        //@formatter:on
     }
 
     private fun setButtonVisibility(choiceSize: Int, buttons: List<Button>)
@@ -319,10 +357,24 @@ class MainActivity : AppCompatActivity()
         for (i in choices.indices)
         {
             buttons[i].text = choices[i].text
-            buttons[i].setOnClickListener {
-                choices[i].stateChange(state)
-            }
+
+
+
             buttons[i].textSize = choices[i].textSize.toFloat()
+        }
+    }
+
+    private fun setButtonBehavior(
+        choices: List<Choice>, buttons: List<Button>, state: State, cinematicTexts: List<TextView>
+    )
+    {
+        for (i in choices.indices)
+        {
+            buttons[i].setOnClickListener() {
+                Log.d("Button Click Event", "Button " + i + " clicked, moving to node: " + choices[i].nextNodeIndex)
+                choices[i].stateChange(state)
+                fadeOut(buttons, cinematicTexts, choices[i].nextNodeIndex, state)
+            }
         }
     }
 
