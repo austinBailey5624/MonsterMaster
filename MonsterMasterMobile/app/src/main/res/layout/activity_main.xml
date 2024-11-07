@@ -235,4 +235,14 @@
         app:layout_constraintEnd_toEndOf="@id/background_bottom"
         app:layout_constraintStart_toEndOf="@id/button_5"
         app:layout_constraintTop_toBottomOf="@id/button_4" />
+
+    <Button
+        android:id="@+id/button_skip_cinematic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/button_skip_cinematic_content_description"
+        app:layout_constraintBottom_toBottomOf="@id/background"
+        app:layout_constraintEnd_toEndOf="@id/background"
+        app:layout_constraintStart_toStartOf="@id/background"
+        app:layout_constraintTop_toTopOf="@id/background" />
 </androidx.constraintlayout.widget.ConstraintLayout>

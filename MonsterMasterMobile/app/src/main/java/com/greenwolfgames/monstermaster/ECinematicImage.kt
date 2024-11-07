@@ -1,6 +1,6 @@
 package com.greenwolfgames.monstermaster
 
-enum class Scene1Image {
+enum class ECinematicImage {
     LIGHT_FROM_ABOVE,
     RIVER,
     FLAME,
