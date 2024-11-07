@@ -42,8 +42,7 @@ class MainActivity : AppCompatActivity()
         )
 
         hideCinematicText(cinematicTexts)
-        initButtons(buttons)
-//        Log.d("ButtonColor" + )
+        initButtons(buttons) //        Log.d("ButtonColor" + )
         setNode(1, state, buttons, cinematicTexts)
     }
 
@@ -57,15 +56,12 @@ class MainActivity : AppCompatActivity()
 
     private fun initButtons(buttons: List<Button>)
     {
-//        val drawable = GradientDrawable().apply {
-//            shape = GradientDrawable.RECTANGLE
-//            cornerRadius = 8f //* resources.displayMetrics.density // Adjust roundness
-//            setColor(Color.BLUE) // Button background color
-////        }
-//        for(button in buttons)
-//        {
-//            button.background = drawable
-//        }
+        var skipButton: Button = findViewById(R.id.button_skip_animation)
+        skipButton.visibility = View.VISIBLE
+        skipButton.setOnClickListener {
+            skipButton.visibility = View.GONE
+            Log.d("Skip Button Clicked", "The Skip button was clicked")
+        }
         hideButtons(buttons)
     }
 
@@ -91,7 +87,8 @@ class MainActivity : AppCompatActivity()
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast)
+            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
+            AnimationUtils.loadAnimation(this,R.anim.fade_in_very_fast)
         )
 
         //@formatter:off
@@ -101,8 +98,8 @@ class MainActivity : AppCompatActivity()
 
             override fun onAnimationEnd(animation: Animation)
             {
+                buttons[0].startAnimation(fadeInAnimations[8])
                 buttons[1].startAnimation(fadeInAnimations[8])
-                buttons[2].startAnimation(fadeInAnimations[8])
                 Element.colorButton(buttons[0], this@MainActivity, Element.LUXOR)
                 Element.colorButton(buttons[1], this@MainActivity, Element.UMBRAL)
             }
@@ -118,10 +115,27 @@ class MainActivity : AppCompatActivity()
 
                 override fun onAnimationEnd(animation: Animation)
                 {
+                    var skipButton: Button = findViewById(R.id.button_skip_animation)
+                    Log.d("Skip Button Status", "Skip Button Visibility: (visible: " + View.VISIBLE +", invisible: " + View.INVISIBLE + ", gone: " + View.GONE + "): "+ skipButton.visibility)
+                    if(skipButton.visibility == View.GONE)
+                    {
+                        for (j in i .. cinematicTexts.size -1)
+                        {
+//                            cinematicTexts[j].startAnimation(AnimationUtils.loadAnimation(this@MainActivity, R.anim.fade_in_fast))
+                            cinematicTexts[j].startAnimation((fadeInAnimations[9]))
+                            cinematicTexts[j].setTextColor(textColor)
+                        }
+                        buttons[0].startAnimation(fadeInAnimations[9])
+                        buttons[1].startAnimation(fadeInAnimations[9])
+                        Element.colorButton(buttons[0], this@MainActivity, Element.LUXOR)
+                        Element.colorButton(buttons[1], this@MainActivity, Element.UMBRAL)
+                    }
+                    else
+                    {
                     cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
                     cinematicTexts[i].setTextColor(textColor)
+                    }
                 }
-
                 override fun onAnimationRepeat(animation: Animation) { }
             })
         }
@@ -135,16 +149,16 @@ class MainActivity : AppCompatActivity()
     {
         var currentNode: CinematicNode = getCinematicNode(index, state)
         setCinematicTexts(currentNode.prompt, cinematicTexts)
-        setButtons(currentNode.choices,buttons,state)
+        setButtons(currentNode.choices, buttons, state)
         val main = findViewById<View>(R.id.main)
         main.setBackgroundColor(currentNode.backgroundColor)
         cinematicTexts[0].startAnimation(
             getFadeInAnimations(
-                buttons,
-                cinematicTexts,
-                currentNode.textColor
+                buttons, cinematicTexts, currentNode.textColor
             )[0]
         )
+        var skipButton: Button = findViewById(R.id.button_skip_animation)
+        skipButton.visibility = View.VISIBLE
     }
 
     private fun setCinematicTexts(
@@ -243,9 +257,9 @@ class MainActivity : AppCompatActivity()
 
     private fun setButtons(choices: List<Choice>, buttons: List<Button>, state: State)
     {
-        Log.d("MainActivity.kt.setbuttons","choicesCount: " + choices.size)
+        Log.d("MainActivity.kt.setbuttons", "choicesCount: " + choices.size)
         setButtonFormat(choices.size, buttons)
-        setButtonVisibility(choices.size,buttons)
+        setButtonVisibility(choices.size, buttons)
         setButtonTextContent(choices, buttons, state)
     }
 
@@ -285,24 +299,24 @@ class MainActivity : AppCompatActivity()
 
     private fun setButtonVisibility(choiceSize: Int, buttons: List<Button>)
     {
-        for(i in buttons.indices)
+        for (i in buttons.indices)
         {
-            if(i < choiceSize)
+            if (i < choiceSize)
             {
                 buttons[i].visibility = View.VISIBLE
-                Log.d("asdf","Buttons i visible" + i)
+                Log.d("asdf", "Buttons i visible" + i)
             }
             else
             {
                 buttons[i].visibility = View.GONE
-                Log.d("asdf","Buttons, i invisible" + i)
+                Log.d("asdf", "Buttons, i invisible" + i)
             }
         }
     }
 
     private fun setButtonTextContent(choices: List<Choice>, buttons: List<Button>, state: State)
     {
-        for(i in choices.indices)
+        for (i in choices.indices)
         {
             buttons[i].text = choices[i].text
             buttons[i].setOnClickListener {

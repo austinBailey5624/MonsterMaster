@@ -275,13 +275,15 @@
         app:layout_constraintTop_toBottomOf="@id/button_4" />
 
     <Button
-        android:id="@+id/button_skip_cinematic"
+        android:id="@+id/button_skip_animation"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/almostInvisible"
         android:contentDescription="@string/button_skip_cinematic_content_description"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@id/background"
         app:layout_constraintEnd_toEndOf="@id/background"
         app:layout_constraintStart_toStartOf="@id/background"
-        app:layout_constraintTop_toTopOf="@id/background" />
+        app:layout_constraintTop_toTopOf="@id/background"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
