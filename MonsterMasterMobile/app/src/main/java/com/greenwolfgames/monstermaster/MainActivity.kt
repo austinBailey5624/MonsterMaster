@@ -1,6 +1,7 @@
 package com.greenwolfgames.monstermaster
 
 import android.os.Bundle
+import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
@@ -8,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 
@@ -37,17 +39,14 @@ class MainActivity : AppCompatActivity()
             findViewById(R.id.cinematic_text_6),
             findViewById(R.id.cinematic_text_7)
         )
+
         hideCinematicText(cinematicTexts)
         hideButtons(buttons)
+        setNode(1, state, buttons, cinematicTexts)
 
-        cinematicTexts[0].startAnimation(getFadeInAnimations(buttons, cinematicTexts)[0])
+
 
     }
-    //    override fun onBackPressed() {
-    //        if(false) {
-    //            super.onBackPressed()
-    //        }
-    //        // Do nothing here
 
 
     private fun hideCinematicText(cinematicTexts: List<TextView>)
@@ -67,7 +66,9 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-    private fun getFadeInAnimations(buttons: List<Button>, cinematicTexts: List<TextView>): List<Animation>
+    private fun getFadeInAnimations(
+        buttons: List<Button>, cinematicTexts: List<TextView>, textColor: Int
+    ): List<Animation>
     {
         val fadeInAnimations: List<Animation> = listOf(
             AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
@@ -90,8 +91,8 @@ class MainActivity : AppCompatActivity()
             {
                 buttons[1].startAnimation(fadeInAnimations[8])
                 buttons[2].startAnimation(fadeInAnimations[8])
-                Element.colorButton(buttons[1], this@MainActivity, Element.LIGHT)
-                Element.colorButton(buttons[2], this@MainActivity, Element.DARK)
+                Element.colorButton(buttons[0], this@MainActivity, Element.LIGHT)
+                Element.colorButton(buttons[1], this@MainActivity, Element.DARK)
             }
 
             override fun onAnimationRepeat(animation: Animation) {}
@@ -106,7 +107,7 @@ class MainActivity : AppCompatActivity()
                 override fun onAnimationEnd(animation: Animation)
                 {
                     cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
-                    cinematicTexts[i].setTextColor(ContextCompat.getColor(this@MainActivity, R.color.whiteGray))
+                    cinematicTexts[i].setTextColor(textColor)
                 }
 
                 override fun onAnimationRepeat(animation: Animation) { }
@@ -116,6 +117,113 @@ class MainActivity : AppCompatActivity()
         return fadeInAnimations
     }
 
+    private fun setNode(
+        index: Int, state: State, buttons: List<Button>, cinematicTexts: List<TextView>
+    )
+    {
+        var currentNode: CinematicNode = getCinematicNode(index, state)
+        setCinematicTexts(currentNode.prompt, cinematicTexts, currentNode.textColor)
+        val main = findViewById<View>(R.id.main)
+        main.setBackgroundColor(currentNode.backgroundColor)
+        cinematicTexts[0].startAnimation(getFadeInAnimations(buttons, cinematicTexts,currentNode.textColor)[0])
+    }
+
+    private fun setCinematicTexts(
+        prompt: List<String>, cinematicTexts: List<TextView>, textColor: Int
+    )
+    {
+        if (prompt.size > 7 || prompt.size < 5)
+        {
+            throw IllegalStateException("Invalid number of cinematic texts, expected between 5 and 7, actual: " + prompt.size)
+        }
+        setCinematicTextLayout(prompt, cinematicTexts)
+//        setCinematicTextContent(prompt, cinematicTexts, textColor)
+
+        setCinematicTextContent(prompt, cinematicTexts)
+    }
+
+    private fun setCinematicTextLayout(prompt: List<String>, cinematicTexts: List<TextView>)
+    {
+        for (i in cinematicTexts.indices)
+        {
+            val layoutParams = cinematicTexts[i].layoutParams as ConstraintLayout.LayoutParams
+            layoutParams.startToStart = R.id.background_top
+            layoutParams.startToEnd = ConstraintLayout.LayoutParams.UNSET
+            layoutParams.endToEnd = R.id.background_top
+            layoutParams.endToStart = ConstraintLayout.LayoutParams.UNSET
+            if (i == 0)
+            {
+                layoutParams.topToTop = R.id.background_top
+                layoutParams.topToBottom = ConstraintLayout.LayoutParams.UNSET
+            }
+            else
+            {
+                layoutParams.topToTop = ConstraintLayout.LayoutParams.UNSET
+                layoutParams.topToBottom =
+                    getCinematicTextLayout(EDirection.UP, cinematicTexts, i, prompt.size)
+            }
+            layoutParams.bottomToTop =
+                getCinematicTextLayout(EDirection.DOWN, cinematicTexts, i, prompt.size)
+            layoutParams.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
+            cinematicTexts[i].layoutParams = layoutParams
+            cinematicTexts[i].visibility = getCinematicTextVisibility(i, prompt.size)
+        }
+    }
+
+    //index refers to the index fo the cinematicTexts that is being referenced
+    private fun getCinematicTextLayout(
+        direction: EDirection, cinematicTexts: List<TextView>, index: Int, promptSize: Int
+    ): Int
+    {
+        if (direction == EDirection.LEFT || direction == EDirection.RIGHT)
+        {
+            return R.id.background_top
+        }
+        if (direction == EDirection.UP)
+        {
+            return if (index == 0)
+            {
+                R.id.background_top
+            }
+            else
+            {
+                cinematicTexts[index - 1].id
+            }
+        } //now by process of elimination, we have to be in direction down (which is the trickiest)
+        if (index in 0..3)
+        {
+            return cinematicTexts[index + 1].id
+        }
+        if (index == promptSize - 1)
+        {
+            return R.id.background_bottom
+        }
+        if (index < promptSize - 1)
+        {
+            return cinematicTexts[index + 1].id
+        } // if index > promptsize - 1 visiblilty will be false, and we dont have to worry about it
+        return 1;
+    }
+
+    private fun getCinematicTextVisibility(index: Int, promptSize: Int): Int
+    {
+        if (index >= promptSize)
+        {
+            return View.GONE
+        }
+        return View.VISIBLE
+    }
+
+    private fun setCinematicTextContent(prompt: List<String>, cinematicTexts: List<TextView>
+//        prompt: List<String>, cinematicTexts: List<TextView>, textColor: Int
+    )
+    {
+        for (i in prompt.indices)
+        {
+            cinematicTexts[i].text = prompt[i]
+//            cinematicTexts[i].setTextColor( textColor)
+        }
+    }
 
 
     //@formatter:off
@@ -129,7 +237,7 @@ class MainActivity : AppCompatActivity()
                                  getString(R.string.scene1item7))
             val choices = listOf(Choice(getString(R.string.scene1choice1),2, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT,24 ),
                                  Choice(getString(R.string.scene1choice2),3, {state -> state.addScore(Element.DARK)}, Element.DARK,24 ))
-            return CinematicNode(index, prompts, choices, ECinematicImage.NONE, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.gray))
+            return CinematicNode(index, prompts, choices, ECinematicImage.NONE, ContextCompat.getColor(this, R.color.darkGray), ContextCompat.getColor(this, R.color.gray))
         }
         if(index == 2)
         {
@@ -138,7 +246,7 @@ class MainActivity : AppCompatActivity()
                                  getString(R.string.scene2item5))
             val choices = listOf(Choice(getString(R.string.scene2choice1),4, {state -> state.addScore(Element.FIRE)}, Element.FIRE, 24 ),
                                  Choice(getString(R.string.scene2choice2),5, {state -> state.addScore(Element.WATER)}, Element.WATER, 24))
-            return CinematicNode(index, prompts, choices, ECinematicImage.LIGHT_FROM_ABOVE, ContextCompat.getColor(this, R.color.darkGray), ContextCompat.getColor(this, R.color.whiteGray))
+            return CinematicNode(index, prompts, choices, ECinematicImage.LIGHT_FROM_ABOVE, ContextCompat.getColor(this, R.color.gray), ContextCompat.getColor(this, R.color.whiteGray))
         }
         if(index == 3)
         {
@@ -290,5 +398,15 @@ class MainActivity : AppCompatActivity()
         }
         throw IllegalStateException("Scene1Node index not found, max 12 actual: $index");
     }
+
+    override fun onBackPressed()
+    {
+       if(false)
+       {
+            super.onBackPressed()
+            //TODO: Dialog, "Would you like to exit?"
+        }
+        // Do nothing here
+     }
 }
     //@formatter: on
