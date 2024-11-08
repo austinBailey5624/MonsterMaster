@@ -70,6 +70,12 @@ class ButtonLayoutResolver
             choiceSize: Int, layoutMode: ELayoutMode, buttons: List<Button>, parentId: Int
         ): Int
         {
+            //if we shouldn't display this at all because we only have one button and this is the
+            //second button shown
+            if(choiceSize < 2)
+            {
+                return ConstraintLayout.LayoutParams.UNSET
+            }
             if (layoutMode == ELayoutMode.TOP_TO_TOP)
             {
                 return parentId
@@ -101,6 +107,10 @@ class ButtonLayoutResolver
             choiceSize: Int, layoutMode: ELayoutMode, buttons: List<Button>, parentId: Int
         ): Int
         {
+            if(choiceSize < 3)
+            {
+                return ConstraintLayout.LayoutParams.UNSET
+            }
             if (layoutMode == ELayoutMode.TOP_TO_BOTTOM)
             {
                 return buttons[0].id
@@ -132,6 +142,10 @@ class ButtonLayoutResolver
             choiceSize: Int, layoutMode: ELayoutMode, buttons: List<Button>, parentId: Int
         ): Int
         {
+            if(choiceSize < 4)
+            {
+                return ConstraintLayout.LayoutParams.UNSET
+            }
             if (layoutMode == ELayoutMode.TOP_TO_BOTTOM)
             {
                 return buttons[1].id
@@ -159,6 +173,10 @@ class ButtonLayoutResolver
             choiceSize: Int, layoutMode: ELayoutMode, buttons: List<Button>, parentId: Int
         ): Int
         {
+            if(choiceSize < 5)
+            {
+                return ConstraintLayout.LayoutParams.UNSET
+            }
             if (layoutMode == ELayoutMode.TOP_TO_BOTTOM)
             {
                 return buttons[2].id
@@ -186,6 +204,10 @@ class ButtonLayoutResolver
             choiceSize: Int, layoutMode: ELayoutMode, buttons: List<Button>, parentId: Int
         ): Int
         {
+            if(choiceSize < 6)
+            {
+                return ConstraintLayout.LayoutParams.UNSET
+            }
             if (layoutMode == ELayoutMode.TOP_TO_BOTTOM)
             {
                 return buttons[3].id
