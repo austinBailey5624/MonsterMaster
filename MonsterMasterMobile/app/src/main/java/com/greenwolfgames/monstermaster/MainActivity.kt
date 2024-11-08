@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
-        var state = State()
+        val state = State()
 
-        var buttons: List<Button> = listOf(
+        val buttons: List<Button> = listOf(
             findViewById(R.id.button_1),
             findViewById(R.id.button_2),
             findViewById(R.id.button_3),
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity()
             findViewById(R.id.button_5),
             findViewById(R.id.button_6)
         )
-        var cinematicTexts: List<TextView> = listOf(
+        val cinematicTexts: List<TextView> = listOf(
             findViewById(R.id.cinematic_text_1),
             findViewById(R.id.cinematic_text_2),
             findViewById(R.id.cinematic_text_3),
@@ -72,109 +72,6 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-    private fun getFadeInAnimations(
-        buttons: List<Button>, cinematicTexts: List<TextView>, textColor: Int, node: CinematicNode
-    ): List<Animation>
-    {
-        val fadeInAnimations: List<Animation> = listOf(
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_fast),
-            AnimationUtils.loadAnimation(this, R.anim.fade_in_very_fast)
-        )
-
-        //@formatter:off
-        fadeInAnimations[7].setAnimationListener(object : Animation.AnimationListener
-        {
-            override fun onAnimationStart(animation: Animation) {}
-
-            override fun onAnimationEnd(animation: Animation)
-            {
-                animateButtons(buttons, node.choices, fadeInAnimations[8])
-                colorButtons(buttons, node.choices)
-            }
-
-            override fun onAnimationRepeat(animation: Animation) {}
-        })
-
-        for(i in node.prompt.indices)
-        {
-            fadeInAnimations[i].setAnimationListener(object : Animation.AnimationListener
-            {
-                override fun onAnimationStart(animation: Animation) { }
-
-                override fun onAnimationEnd(animation: Animation)
-                {
-                    var skipButton: Button = findViewById(R.id.button_skip_animation)
-                    Log.d("Skip Button Status", "Skip Button Visibility: (visible: " + View.VISIBLE +", invisible: " + View.INVISIBLE + ", gone: " + View.GONE + "): "+ skipButton.visibility)
-                    // case where we have pressed the skip button
-                    if(skipButton.visibility == View.GONE)
-                    {
-                        //for all of the cinematic texts after the current text before the size last cinematic text
-                        for (j in i..<cinematicTexts.size)
-                        {
-                            if(j < node.prompt.size)
-                            {
-                                cinematicTexts[j].startAnimation((fadeInAnimations[9]))
-                                cinematicTexts[j].setTextColor(textColor)
-                            }
-                            else
-                            {
-                                cinematicTexts[j].setTextColor(ContextCompat.getColor(this@MainActivity, R.color.invisible))
-                            }
-                        }
-                        animateButtons(buttons, node.choices, fadeInAnimations[9])
-                        colorButtons(buttons, node.choices)
-                    }
-                    //case where we have not pressed the skip button
-                    else
-                    {
-                        if(i == node.prompt.size-1)
-                        {
-                            cinematicTexts[i].startAnimation(fadeInAnimations[7])
-                            cinematicTexts[i].setTextColor(textColor)
-                        }
-                        else
-                        {
-                            cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
-                            cinematicTexts[i].setTextColor(textColor)
-                        }
-                    }
-                }
-                override fun onAnimationRepeat(animation: Animation) { }
-            })
-        }
-        //@formatter:on
-        return fadeInAnimations
-    }
-
-    private fun colorButtons(buttons: List<Button>, choices: List<Choice>)
-    {
-        for (i in choices.indices)
-        {
-            Element.colorButton(buttons[i], this@MainActivity, choices[i].element)
-            buttons[i].visibility = View.VISIBLE
-        }
-        for (i in choices.size..buttons.size - 1)
-        {
-            buttons[i].visibility = View.GONE
-        }
-    }
-
-    private fun animateButtons(buttons: List<Button>, choices: List<Choice>, animation: Animation)
-    {
-        for (i in choices.indices)
-        {
-            buttons[i].startAnimation(animation)
-        }
-    }
-
     private fun fadeOut(
         buttons: List<Button>, cinematicTexts: List<TextView>, nextNodeIndex: Int, state: State
     )
@@ -214,17 +111,17 @@ class MainActivity : AppCompatActivity()
         index: Int, state: State, buttons: List<Button>, cinematicTexts: List<TextView>
     )
     {
-        var currentNode: CinematicNode = getCinematicNode(index, state)
+        val currentNode: CinematicNode = getCinematicNode(index, state)
         setCinematicTexts(currentNode.prompt, cinematicTexts)
         setButtons(currentNode.choices, buttons, state, cinematicTexts)
         val main = findViewById<View>(R.id.main)
         main.setBackgroundColor(currentNode.backgroundColor)
         cinematicTexts[0].startAnimation(
-            getFadeInAnimations(
-                buttons, cinematicTexts, currentNode.textColor, currentNode
+            AnimationHandler.getFadeInAnimations(
+                buttons, cinematicTexts, currentNode.textColor, currentNode, this@MainActivity, findViewById(R.id.button_skip_animation)
             )[0]
         )
-        var skipButton: Button = findViewById(R.id.button_skip_animation)
+        val skipButton: Button = findViewById(R.id.button_skip_animation)
         skipButton.visibility = View.VISIBLE
     }
 
@@ -377,12 +274,12 @@ class MainActivity : AppCompatActivity()
             if (i < choiceSize)
             {
                 buttons[i].visibility = View.VISIBLE
-                Log.d("asdf", "Buttons i visible" + i)
+                Log.d("asdf", "Buttons i visible$i")
             }
             else
             {
                 buttons[i].visibility = View.GONE
-                Log.d("asdf", "Buttons, i invisible" + i)
+                Log.d("asdf", "Buttons, i invisible$i")
             }
         }
     }
@@ -459,7 +356,7 @@ class MainActivity : AppCompatActivity()
                                  getString(R.string.scene4item5))
             val choices = listOf(Choice(getString(R.string.scene4choice1), 8, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
                                  Choice(getString(R.string.scene4choice2), 8, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
-            return CinematicNode(index, prompts, choices, ECinematicImage.FLAME, ContextCompat.getColor(this, R.color.faintRed), ContextCompat.getColor(this, R.color.redOrange))
+            return CinematicNode(index, prompts, choices, ECinematicImage.FLAME, ContextCompat.getColor(this, R.color.brown), ContextCompat.getColor(this, R.color.darkBrown))
         }
         //Chose light and water, now choose Air or Earth
         if(index == 5)
@@ -469,7 +366,7 @@ class MainActivity : AppCompatActivity()
                                  getString(R.string.scene5item5), getString(R.string.scene5item6))
             val choices = listOf(Choice(getString(R.string.scene5choice1), 9, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
                                  Choice(getString(R.string.scene5choice2), 9, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
-            return CinematicNode(index, prompts, choices, ECinematicImage.RIVER, ContextCompat.getColor(this, R.color.faintBlue), ContextCompat.getColor(this, R.color.cyan))
+            return CinematicNode(index, prompts, choices, ECinematicImage.RIVER, ContextCompat.getColor(this, R.color.lightishBlue), ContextCompat.getColor(this, R.color.lighterBlue))
         }
         //Chose Darkness and Fire, now choose Air or Earth
         if(index == 6)
@@ -479,7 +376,7 @@ class MainActivity : AppCompatActivity()
                                  getString(R.string.scene6item5))
             val choices = listOf(Choice(getString(R.string.scene6choice1), 10, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
                                  Choice(getString(R.string.scene6choice2), 10, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
-            return CinematicNode(index, prompts, choices, ECinematicImage.FLAME, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.darkRed))
+            return CinematicNode(index, prompts, choices, ECinematicImage.FLAME, ContextCompat.getColor(this, R.color.faintRed), ContextCompat.getColor(this, R.color.darkRed))
         }
         //Chose Darkness and Water, now choose Air or Earth
         if(index == 7)
@@ -489,7 +386,7 @@ class MainActivity : AppCompatActivity()
                                  getString(R.string.scene7item5))
             val choices = listOf(Choice(getString(R.string.scene7choice1), 11, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
                                  Choice(getString(R.string.scene7choice2), 11, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
-            return CinematicNode(index, prompts, choices, ECinematicImage.RIVER, ContextCompat.getColor(this, R.color.black), ContextCompat.getColor(this, R.color.lightishBlue))
+            return CinematicNode(index, prompts, choices, ECinematicImage.RIVER, ContextCompat.getColor(this, R.color.faintBlue), ContextCompat.getColor(this, R.color.lightishBlue))
         }
         //Chose Light and Fire, with an option of either Earth or Air, in either case, commit to one of the three elements you've chosen
         if(index == 8)
