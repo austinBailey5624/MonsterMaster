@@ -1,12 +1,15 @@
 package com.greenwolfgames.monstermaster
 
+import android.animation.ObjectAnimator
 import android.content.Context
+import android.graphics.Color
 import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 
 class AnimationHandler
@@ -122,12 +125,17 @@ class AnimationHandler
                 buttons[i].startAnimation(animation)
             }
         }
-//
-//        fun getBackgroundAnimation(fromColor: Int, toColor:Int, context: Context): Animation
-//        {
-//
-//                return AnimationUtils.loadAnimation(context, R.anim.background_darkgray_to_gray)
-//
-//        }
+
+        fun getBackgroundAnimator(main: ConstraintLayout, fromColor: Color, toColor: Color): ObjectAnimator
+        {
+            val animator = ObjectAnimator.ofArgb(
+                main,
+                "backgroundColor",
+                fromColor.toArgb(),
+                toColor.toArgb()
+            )
+            animator.duration = 250
+            return animator
+        }
     }
 }

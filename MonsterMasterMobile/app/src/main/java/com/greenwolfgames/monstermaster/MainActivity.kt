@@ -1,5 +1,7 @@
 package com.greenwolfgames.monstermaster
 
+import android.animation.AnimatorListenerAdapter
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -14,6 +16,7 @@ import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity()
 {
+    private var previousColor = R.color.darkGray
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -40,8 +43,15 @@ class MainActivity : AppCompatActivity()
         )
 
         hideCinematicText(cinematicTexts)
-        initButtons(buttons) //        Log.d("ButtonColor" + )
-        setNode(1, state, buttons, cinematicTexts)
+        initButtons(buttons)
+        val firstNode: CinematicNode = CinematicNodeRetriever.getCinematicNode(1, state, this@MainActivity)
+        previousColor = firstNode.backgroundColor
+        setNode(
+            firstNode,
+            state,
+            buttons,
+            cinematicTexts
+        )
     }
 
     private fun hideCinematicText(cinematicTexts: List<TextView>)
@@ -76,6 +86,22 @@ class MainActivity : AppCompatActivity()
         buttons: List<Button>, cinematicTexts: List<TextView>, nextNodeIndex: Int, state: State
     )
     {
+        val nextNode: CinematicNode =
+            CinematicNodeRetriever.getCinematicNode(nextNodeIndex, state, this@MainActivity)
+        val main: ConstraintLayout = findViewById(R.id.main)
+        val fadeInAnimation = AnimationHandler.getBackgroundAnimator(
+            main, Color.valueOf(previousColor), Color.valueOf(nextNode.backgroundColor)
+        )
+        previousColor=nextNode.backgroundColor
+        fadeInAnimation.addListener(object : AnimatorListenerAdapter()
+        {
+            override fun onAnimationEnd(animation: android.animation.Animator)
+            {
+                super.onAnimationEnd(animation)
+                setNode(nextNode, state, buttons, cinematicTexts)
+            }
+        })
+
         val fadeOutAnimationTrigger = AnimationUtils.loadAnimation(this, R.anim.fade_out_fast)
         fadeOutAnimationTrigger.setAnimationListener(object : Animation.AnimationListener
         {
@@ -87,7 +113,7 @@ class MainActivity : AppCompatActivity()
             {
                 hideButtons(buttons)
                 hideCinematicText(cinematicTexts)
-                setNode(nextNodeIndex, state, buttons, cinematicTexts)
+                fadeInAnimation.start()
             }
 
             override fun onAnimationRepeat(animation: Animation)
@@ -95,9 +121,9 @@ class MainActivity : AppCompatActivity()
             }
         })
 
-//        val fadeInAnimationTrigger = AnimationUtils.loadAnimation()
+        //        val fadeInAnimationTrigger = AnimationUtils.loadAnimation()
         val fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out_fast)
-        for (i in 1..buttons.size - 1)
+        for (i in 1..<buttons.size)
         {
             buttons[i].startAnimation(fadeOutAnimation)
         }
@@ -110,17 +136,21 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun setNode(
-        index: Int, state: State, buttons: List<Button>, cinematicTexts: List<TextView>
+        nextNode: CinematicNode, state: State, buttons: List<Button>, cinematicTexts: List<TextView>
     )
     {
-        val currentNode: CinematicNode = CinematicNodeRetriever.getCinematicNode(index, state, this@MainActivity)
-        setCinematicTexts(currentNode.prompt, cinematicTexts)
-        setButtons(currentNode, buttons, state, cinematicTexts)
+        setCinematicTexts(nextNode.prompt, cinematicTexts)
+        setButtons(nextNode, buttons, state, cinematicTexts)
         val main = findViewById<View>(R.id.main)
-        main.setBackgroundColor(currentNode.backgroundColor)
+        main.setBackgroundColor(nextNode.backgroundColor)
         cinematicTexts[0].startAnimation(
             AnimationHandler.getFadeInAnimations(
-                buttons, cinematicTexts, currentNode.textColor, currentNode, this@MainActivity, findViewById(R.id.button_skip_animation)
+                buttons,
+                cinematicTexts,
+                nextNode.textColor,
+                nextNode,
+                this@MainActivity,
+                findViewById(R.id.button_skip_animation)
             )[0]
         )
         val skipButton: Button = findViewById(R.id.button_skip_animation)
@@ -312,17 +342,11 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-
-
-
     override fun onBackPressed()
     {
-       if(false)
-       {
-            super.onBackPressed()
-            //TODO: Dialog, "Would you like to exit?"
-        }
-        // Do nothing here
-     }
-}
-    //@formatter: on
+        if (false)
+        {
+            super.onBackPressed() //TODO: Dialog, "Would you like to exit?"
+        } // Do nothing here
+    }
+} //@formatter: on

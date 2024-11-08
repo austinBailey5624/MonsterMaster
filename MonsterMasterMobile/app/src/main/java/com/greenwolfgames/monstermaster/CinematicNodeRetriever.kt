@@ -50,7 +50,7 @@ class CinematicNodeRetriever
                     getString(context, R.string.scene4item5))
                 val choices = listOf(Choice(getString(context, R.string.scene4choice1), 8, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
                     Choice(getString(context, R.string.scene4choice2), 8, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
-                return CinematicNode(index, prompts, choices, ECinematicImage.FLAME, ContextCompat.getColor(context, R.color.brown), ContextCompat.getColor(context, R.color.darkBrown))
+                return CinematicNode(index, prompts, choices, ECinematicImage.FLAME, ContextCompat.getColor(context, R.color.darkBrown), ContextCompat.getColor(context, R.color.brown))
             }
             //Chose light and water, now choose Air or Earth
             if(index == 5)
