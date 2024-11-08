@@ -15,7 +15,6 @@ public class App {
     	try
 		{
 			MonsterManager.printTraits();
-//			cleanTextDoc();
 		}
 		catch (IOException e)
 		{
@@ -62,21 +61,4 @@ public class App {
         frame.pack();
         frame.setVisible(true);
     }
-    
-//    private static void cleanTextDoc() throws IOException
-//    {
-//    	String inputFile="src/traitsFromDB.txt";
-//    	String outputFile="src/traitsFromDBClean.txt";
-//    	BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-//    	BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-//    	String line;
-//    	while((line = reader.readLine()) != null)
-//    	{
-//    		line = line.trim();
-//    		writer.write(line);
-//    		writer.newLine();
-//    	}
-//    	reader.close();
-//    	writer.close();
-//    }
 }
