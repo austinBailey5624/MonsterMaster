@@ -119,13 +119,19 @@ class ButtonLayoutResolver
             {
                 return parentId
             }
-            if (layoutMode == ELayoutMode.END_TO_START)
+            if (layoutMode == ELayoutMode.END_TO_END)
             {
                 if (choiceSize == 3)
                 {
                     return parentId;
                 }
-                return buttons[3].id
+            }
+            if (layoutMode == ELayoutMode.END_TO_START)
+            {
+                if(choiceSize > 3)
+                {
+                    return buttons[3].id
+                }
             }
             if (layoutMode == ELayoutMode.BOTTOM_TO_BOTTOM && (choiceSize == 3 || choiceSize == 4))
             {

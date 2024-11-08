@@ -34,12 +34,31 @@ enum class Element {
 
         fun getTextColor(element: Element): Int {
             val textColor = when (element) {
-                PYRO, LAVA, DINO, SAND, JUSTICE -> R.color.yellowOrange
-                STEAM, AQUA, AMPHIBIOUS, WEATHER, ICE -> R.color.cyan
-                FEY, PLANT, TERRA, PEGASUS, COMPASSION, ROTTEN -> R.color.green
-                PHOENIX, SEABREEZE, BIRD, AERO, COCKA, NIGHTWING -> R.color.yellow
-                GUARDIAN, ANGEL, LUXOR, REDEMPTION -> R.color.white
-                DEMON, POISON, UNDEAD, STORM, BETRAYAR, UMBRAL -> R.color.black
+                SAND-> R.color.yellowOrange
+                LAVA -> R.color.darkPurple
+                PYRO -> R.color.orange
+                JUSTICE -> R.color.white
+                DINO -> R.color.brown
+                STEAM, AQUA, AMPHIBIOUS-> R.color.cyan
+                WEATHER -> R.color.yellow
+                ICE -> R.color.lighterBlue
+                TERRA, COMPASSION, ROTTEN -> R.color.green
+                PEGASUS -> R.color.yellowOrange
+                FEY -> R.color.redOrange
+                PLANT -> R.color.cyan
+                SEABREEZE, BIRD, AERO, NIGHTWING -> R.color.yellow
+                COCKA -> R.color.white
+                PHOENIX -> R.color.yellowOrange
+                LUXOR -> R.color.white
+                GUARDIAN -> R.color.lighterGreen
+                REDEMPTION -> R.color.gray
+                ANGEL -> R.color.lightYellow
+                UMBRAL -> R.color.black
+                DEMON -> R.color.darkRed
+                POISON -> R.color.forestGreen
+                BETRAYAR -> R.color.darkGray
+                UNDEAD -> R.color.forestGreen
+                STORM -> R.color.yellowOrange
                 SOLAR -> R.color.lightPink
                 VENGEANCE -> R.color.red
                 LUNAR -> R.color.lightCyan
@@ -53,16 +72,35 @@ enum class Element {
 
         fun getButtonBackgroundColor(element: Element): Int {
             val backgroundColor = when (element) {
-                PYRO, LAVA, DINO, SAND, JUSTICE -> R.color.red
-                STEAM, AQUA, AMPHIBIOUS, WEATHER, ICE -> R.color.blue
-                FEY, PLANT, TERRA, PEGASUS, COMPASSION, ROTTEN -> R.color.forestGreen
-                PHOENIX, SEABREEZE, BIRD, AERO, COCKA, NIGHTWING -> R.color.brown
-                GUARDIAN, ANGEL, LUXOR, REDEMPTION -> R.color.whiteGray
-                POISON, UNDEAD, STORM, BETRAYAR, UMBRAL -> R.color.gray
+                PYRO-> R.color.red
+                LAVA -> R.color.purple
+                DINO -> R.color.darkBrown
+                SAND -> R.color.redOrange
+                JUSTICE -> R.color.pink
+                AQUA, WEATHER, ICE -> R.color.blue
+                STEAM -> R.color.redOrange
+                AMPHIBIOUS -> R.color.green
+                FEY, PLANT, TERRA, PEGASUS -> R.color.forestGreen
+                COMPASSION -> R.color.lighterGreen
+                ROTTEN -> R.color.darkerGreen
+                AERO-> R.color.brown
+                NIGHTWING -> R.color.faintYellow
+                SEABREEZE -> R.color.lightCyanBlue
+                BIRD -> R.color.green
+                COCKA -> R.color.yellow
+                PHOENIX -> R.color.orange
+                ANGEL, LUXOR, REDEMPTION -> R.color.whiteGray
+                GUARDIAN -> R.color.green
+                POISON -> R.color.darkerGreen
+                UMBRAL -> R.color.darkerGray
+                BETRAYAR -> R.color.darkishGray
+                UNDEAD -> R.color.faintGreen
+                STORM -> R.color.darkYellow
                 SOLAR -> R.color.pink
                 LUNAR -> R.color.lightishBlue
                 DEMON -> R.color.red
-                DEEP, VENGEANCE -> R.color.black
+                DEEP-> R.color.faintPurple
+                VENGEANCE -> R.color.faintRed
                 NEUTRAL -> R.color.brown
                 PHYSICAL -> R.color.whiteGray
                 MAGICAL -> R.color.purple

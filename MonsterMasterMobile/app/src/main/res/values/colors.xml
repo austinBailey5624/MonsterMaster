@@ -5,6 +5,7 @@
     <color name="gray">#FF808080</color>
     <color name="darkishGray">#FF444444</color>
     <color name="darkGray">#FF222222</color>
+    <color name="darkerGray">##FF080808</color>
     <color name="black">#FF000000</color>
     <color name="invisible">#00000000</color>
     <color name="almostInvisible">#01000000</color>
@@ -23,10 +24,12 @@
     <color name="lightCyan">#FFC4FFFF</color>
     <color name="lightishBlue">#FF4040FF</color>
     <color name="lightBlue">#FF8080FF</color>
+    <color name="lighterGreen">#FFC4FFC4</color>
     <color name="lighterBlue">#FFC4C4FF</color>
     <color name="redOrange">#FFFF5400</color>
     <color name="redBrown">#FFFF6900</color>
     <color name="darkRed">#FF800000</color>
+    <color name="darkerGreen">#FF004000</color>
     <color name="darkYellow">#FF808000</color>
     <color name="lightCyanBlue">#FF80C4FF</color>
     <color name="lightOrange">#FFAF80</color>
@@ -35,5 +38,8 @@
     <color name="darkPurple">#FF4a00c2</color>
     <color name="lightBrown">#FFFF8812</color>
     <color name="faintRed">#FF220000</color>
-    <color name="faintBlue">#FF002211</color>
+    <color name="faintGreen">#FF002200</color>
+    <color name="faintBlue">#FF002030</color>
+    <color name="faintPurple">#FF220011</color>
+    <color name="faintYellow">#FF444422</color>
 </resources>

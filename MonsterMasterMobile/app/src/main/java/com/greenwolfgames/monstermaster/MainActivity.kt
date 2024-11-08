@@ -16,7 +16,7 @@ import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity()
 {
-    private var previousColor = R.color.darkGray
+    private var previousColor: Int = R.color.darkGray
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -90,6 +90,7 @@ class MainActivity : AppCompatActivity()
             CinematicNodeRetriever.getCinematicNode(nextNodeIndex, state, this@MainActivity)
         val main: ConstraintLayout = findViewById(R.id.main)
         val fadeInAnimation = AnimationHandler.getBackgroundAnimator(
+            //TODO: I know this is an error, but I don't know what to tell  you, when you fix it it doesn't run
             main, Color.valueOf(previousColor), Color.valueOf(nextNode.backgroundColor)
         )
         previousColor=nextNode.backgroundColor
