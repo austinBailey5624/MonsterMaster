@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun getFadeInAnimations(
-        buttons: List<Button>, cinematicTexts: List<TextView>, textColor: Int
+        buttons: List<Button>, cinematicTexts: List<TextView>, textColor: Int, choices: List<Choice>
     ): List<Animation>
     {
         val fadeInAnimations: List<Animation> = listOf(
@@ -98,8 +98,9 @@ class MainActivity : AppCompatActivity()
             {
                 buttons[0].startAnimation(fadeInAnimations[8])
                 buttons[1].startAnimation(fadeInAnimations[8])
-                Element.colorButton(buttons[0], this@MainActivity, Element.LUXOR)
-                Element.colorButton(buttons[1], this@MainActivity, Element.UMBRAL)
+//                Element.colorButton(buttons[0], this@MainActivity, Element.LUXOR)
+//                Element.colorButton(buttons[1], this@MainActivity, Element.UMBRAL)
+                colorButtons(buttons, choices)
             }
 
             override fun onAnimationRepeat(animation: Animation) {}
@@ -124,8 +125,9 @@ class MainActivity : AppCompatActivity()
                         }
                         buttons[0].startAnimation(fadeInAnimations[9])
                         buttons[1].startAnimation(fadeInAnimations[9])
-                        Element.colorButton(buttons[0], this@MainActivity, Element.LUXOR)
-                        Element.colorButton(buttons[1], this@MainActivity, Element.UMBRAL)
+//                        Element.colorButton(buttons[0], this@MainActivity, Element.LUXOR)
+//                        Element.colorButton(buttons[1], this@MainActivity, Element.UMBRAL)
+                        colorButtons(buttons, choices)
                     }
                     else
                     {
@@ -138,6 +140,14 @@ class MainActivity : AppCompatActivity()
         }
         //@formatter:on
         return fadeInAnimations
+    }
+
+    private fun colorButtons(buttons: List<Button>, choices: List<Choice>)
+    {
+        for(i in choices.indices)
+        {
+            Element.colorButton(buttons[i], this@MainActivity, choices[i].element)
+        }
     }
 
     private fun fadeOut(
@@ -186,7 +196,7 @@ class MainActivity : AppCompatActivity()
         main.setBackgroundColor(currentNode.backgroundColor)
         cinematicTexts[0].startAnimation(
             getFadeInAnimations(
-                buttons, cinematicTexts, currentNode.textColor
+                buttons, cinematicTexts, currentNode.textColor, currentNode.choices
             )[0]
         )
         var skipButton: Button = findViewById(R.id.button_skip_animation)
