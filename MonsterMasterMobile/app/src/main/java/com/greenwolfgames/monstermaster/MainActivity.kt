@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun getFadeInAnimations(
-        buttons: List<Button>, cinematicTexts: List<TextView>, textColor: Int, choices: List<Choice>
+        buttons: List<Button>, cinematicTexts: List<TextView>, textColor: Int, node: CinematicNode
     ): List<Animation>
     {
         val fadeInAnimations: List<Animation> = listOf(
@@ -96,17 +96,14 @@ class MainActivity : AppCompatActivity()
 
             override fun onAnimationEnd(animation: Animation)
             {
-                buttons[0].startAnimation(fadeInAnimations[8])
-                buttons[1].startAnimation(fadeInAnimations[8])
-//                Element.colorButton(buttons[0], this@MainActivity, Element.LUXOR)
-//                Element.colorButton(buttons[1], this@MainActivity, Element.UMBRAL)
-                colorButtons(buttons, choices)
+                animateButtons(buttons, node.choices, fadeInAnimations[8])
+                colorButtons(buttons, node.choices)
             }
 
             override fun onAnimationRepeat(animation: Animation) {}
         })
 
-        for (i in cinematicTexts.indices)
+        for(i in node.prompt.indices)
         {
             fadeInAnimations[i].setAnimationListener(object : Animation.AnimationListener
             {
@@ -116,23 +113,38 @@ class MainActivity : AppCompatActivity()
                 {
                     var skipButton: Button = findViewById(R.id.button_skip_animation)
                     Log.d("Skip Button Status", "Skip Button Visibility: (visible: " + View.VISIBLE +", invisible: " + View.INVISIBLE + ", gone: " + View.GONE + "): "+ skipButton.visibility)
+                    // case where we have pressed the skip button
                     if(skipButton.visibility == View.GONE)
                     {
-                        for (j in i .. cinematicTexts.size -1)
+                        //for all of the cinematic texts after the current text before the size last cinematic text
+                        for (j in i..<cinematicTexts.size)
                         {
-                            cinematicTexts[j].startAnimation((fadeInAnimations[9]))
-                            cinematicTexts[j].setTextColor(textColor)
+                            if(j < node.prompt.size)
+                            {
+                                cinematicTexts[j].startAnimation((fadeInAnimations[9]))
+                                cinematicTexts[j].setTextColor(textColor)
+                            }
+                            else
+                            {
+                                cinematicTexts[j].setTextColor(ContextCompat.getColor(this@MainActivity, R.color.invisible))
+                            }
                         }
-                        buttons[0].startAnimation(fadeInAnimations[9])
-                        buttons[1].startAnimation(fadeInAnimations[9])
-//                        Element.colorButton(buttons[0], this@MainActivity, Element.LUXOR)
-//                        Element.colorButton(buttons[1], this@MainActivity, Element.UMBRAL)
-                        colorButtons(buttons, choices)
+                        animateButtons(buttons, node.choices, fadeInAnimations[9])
+                        colorButtons(buttons, node.choices)
                     }
+                    //case where we have not pressed the skip button
                     else
                     {
-                        cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
-                        cinematicTexts[i].setTextColor(textColor)
+                        if(i == node.prompt.size-1)
+                        {
+                            cinematicTexts[i].startAnimation(fadeInAnimations[7])
+                            cinematicTexts[i].setTextColor(textColor)
+                        }
+                        else
+                        {
+                            cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
+                            cinematicTexts[i].setTextColor(textColor)
+                        }
                     }
                 }
                 override fun onAnimationRepeat(animation: Animation) { }
@@ -144,9 +156,22 @@ class MainActivity : AppCompatActivity()
 
     private fun colorButtons(buttons: List<Button>, choices: List<Choice>)
     {
-        for(i in choices.indices)
+        for (i in choices.indices)
         {
             Element.colorButton(buttons[i], this@MainActivity, choices[i].element)
+            buttons[i].visibility = View.VISIBLE
+        }
+        for (i in choices.size..buttons.size - 1)
+        {
+            buttons[i].visibility = View.GONE
+        }
+    }
+
+    private fun animateButtons(buttons: List<Button>, choices: List<Choice>, animation: Animation)
+    {
+        for (i in choices.indices)
+        {
+            buttons[i].startAnimation(animation)
         }
     }
 
@@ -173,11 +198,11 @@ class MainActivity : AppCompatActivity()
             }
         })
         val fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out_fast)
-        for(i in 1..buttons.size-1)
+        for (i in 1..buttons.size - 1)
         {
             buttons[i].startAnimation(fadeOutAnimation)
         }
-        for(text in cinematicTexts)
+        for (text in cinematicTexts)
         {
             text.startAnimation(fadeOutAnimation)
         }
@@ -196,7 +221,7 @@ class MainActivity : AppCompatActivity()
         main.setBackgroundColor(currentNode.backgroundColor)
         cinematicTexts[0].startAnimation(
             getFadeInAnimations(
-                buttons, cinematicTexts, currentNode.textColor, currentNode.choices
+                buttons, cinematicTexts, currentNode.textColor, currentNode
             )[0]
         )
         var skipButton: Button = findViewById(R.id.button_skip_animation)
@@ -381,7 +406,10 @@ class MainActivity : AppCompatActivity()
         for (i in choices.indices)
         {
             buttons[i].setOnClickListener() {
-                Log.d("Button Click Event", "Button " + i + " clicked, moving to node: " + choices[i].nextNodeIndex)
+                Log.d(
+                    "Button Click Event",
+                    "Button " + i + " clicked, moving to node: " + choices[i].nextNodeIndex
+                )
                 choices[i].stateChange(state)
                 fadeOut(buttons, cinematicTexts, choices[i].nextNodeIndex, state)
             }
