@@ -13,7 +13,7 @@ class AnimationHandler
 {
     companion object
     {
-        public fun getFadeInAnimations(
+        fun getFadeInAnimations(
             buttons: List<Button>,
             cinematicTexts: List<TextView>,
             textColor: Int,
@@ -114,9 +114,7 @@ class AnimationHandler
         }
 
         private fun animateButtons(
-            buttons: List<Button>,
-            choices: List<Choice>,
-            animation: Animation
+            buttons: List<Button>, choices: List<Choice>, animation: Animation
         )
         {
             for (i in choices.indices)
@@ -124,5 +122,12 @@ class AnimationHandler
                 buttons[i].startAnimation(animation)
             }
         }
+//
+//        fun getBackgroundAnimation(fromColor: Int, toColor:Int, context: Context): Animation
+//        {
+//
+//                return AnimationUtils.loadAnimation(context, R.anim.background_darkgray_to_gray)
+//
+//        }
     }
 }
