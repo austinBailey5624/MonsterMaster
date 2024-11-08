@@ -105,6 +105,89 @@
     <string name="scene11choice3">Search for Food</string>
     <string name="scene11choice3Alt">Search for Others</string>
 
+    <string name="scene12item1">Touched by the heavens</string>
+    <string name="scene12item2">The light of the Gods</string>
+    <string name="scene12item3">Embraces your soul</string>
+    <string name="scene12item4">You feel complete</string>
+    <string name="scene12item5">Connected</string>
+
+    <string name="scene12choice1">Embrace Connection</string>
+    <string name="scene12choice2">Reject Connection</string>
+    <string name="scene12choice3">Praise the Sun</string>
+    <string name="scene12choice4">Praise the Moon</string>
+    <string name="scene12choice5">Contemplate Experience</string>
+    <string name="scene12choice6">Seek Community</string>
+
+    <string name="scene13item1">Isolation Haunts you</string>
+    <string name="scene13item2">The Shadow your only companion</string>
+    <string name="scene13item3">In the eternal night</string>
+    <string name="scene13item4">All light is gone now</string>
+    <string name="scene13item5">Nothing can harm you</string>
+    <string name="scene13item6">Nothing can bring you joy</string>
+
+    <string name="scene13choice1">Hate the Gods</string>
+    <string name="scene13choice2">Embrace Isolation</string>
+    <string name="scene13choice3">Hate Everything</string>
+    <string name="scene13choice4">Claim Secret Knowledge</string>
+    <string name="scene13choice5">Kill Yourself</string>
+    <string name="scene13choice6">Seek Companions</string>
+
+    <string name="scene14item1">Burning Rage</string>
+    <string name="scene14item2">Fills your Veins</string>
+    <string name="scene14item3">You feel yourself</string>
+    <string name="scene14item4">Become Strong and Powerful</string>
+    <string name="scene14item5">What will you do?</string>
+
+    <string name="scene14choice1">Protect Others</string>
+    <string name="scene14choice2">Seek Power</string>
+    <string name="scene14choice3">Become Stronger</string>
+    <string name="scene14choice4">Become Wiser</string>
+    <string name="scene14choice5">Gain Wealth</string>
+    <string name="scene14choice6">Gain Followers</string>
+
+    <string name="scene15item1">Wisdom cools you</string>
+    <string name="scene15item2">Endless knowledge</string>
+    <string name="scene15item3">Glows in the Reflection</string>
+    <string name="scene15item4">Agency and Influence</string>
+    <string name="scene15item5">Envelop you</string>
+
+    <string name="scene15choice1">Embrace Cold</string>
+    <string name="scene15choice2">Seek Profane Knowledge</string>
+    <string name="scene15choice3">Gain Strength</string>
+    <string name="scene15choice4">Develop Intelligence</string>
+    <string name="scene15choice5">Seek Possessions</string>
+    <string name="scene15choice6">Seek Fellow Scholars</string>
+
+    <string name="scene16item1">You find Sustenance</string>
+    <string name="scene16item1Alt">Your friend brings you food</string>
+    <string name="scene16item2">You find money</string>
+    <string name="scene16item3">And a banquet of food</string>
+    <string name="scene16item4">You feel rich</string>
+    <string name="scene16item5">And safe</string>
+
+    <string name="scene16choice1">Help Others</string>
+    <string name="scene16choice2">Hoard Resources</string>
+    <string name="scene16choice3">Seek More</string>
+    <string name="scene16choice4">Study Belongings</string>
+    <string name="scene16choice5">Become Content</string>
+    <string name="scene16choice6">Seek Companions</string>
+
+    <string name="scene17item1">A bird hops down from the shrine</string>
+    <string name="scene17item1Alt1">The grateful bird</string>
+    <string name="scene17item1Alt2">A bird finds you</string>
+    <string name="scene17item2">Greets you with joy</string>
+    <string name="scene17item3">It teaches you to fly</string>
+    <string name="scene17item4">You are Free</string>
+    <string name="scene17item5">Adventure Beckons</string>
+
+    <string name="scene17choice1">Seek the truth</string>
+    <string name="scene17choice2">Seek isolation</string>
+    <string name="scene17choice3">Seek power</string>
+    <string name="scene17choice4">Seek knowledge</string>
+    <string name="scene17choice5">Seek money</string>
+    <string name="scene17choice6">Seek friendship</string>
+
+
 
     <!-- content descriptions for UI elements -->
     <string name="background_content_description">The absolute background behind everything else</string>

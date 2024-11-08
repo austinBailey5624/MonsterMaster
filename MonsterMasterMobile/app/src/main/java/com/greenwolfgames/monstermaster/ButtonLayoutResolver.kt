@@ -119,7 +119,7 @@ class ButtonLayoutResolver
             {
                 return parentId
             }
-            if (layoutMode == ELayoutMode.END_TO_END)
+            if (layoutMode == ELayoutMode.END_TO_START)
             {
                 if (choiceSize == 3)
                 {

@@ -69,5 +69,7 @@ enum class Element {
             }
             return backgroundColor
         }
+
+//        fun getBackgroundColor(element:Element)
     }
 }
