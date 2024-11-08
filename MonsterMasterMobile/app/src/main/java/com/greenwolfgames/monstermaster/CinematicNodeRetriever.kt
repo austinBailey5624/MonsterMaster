@@ -89,18 +89,20 @@ class CinematicNodeRetriever
                     getString(context, R.string.scene8item3), getString(context, R.string.scene8item4),
                     getString(context, R.string.scene8item5), getString(context, R.string.scene8item6))
                 val choices: List<Choice>
-                if(currentState.getScore(Element.AERO) > currentState.getScore(Element.TERRA))
+                if(currentState.getScore(Element.TERRA) > currentState.getScore(Element.AERO))
                 {
-                    choices = listOf(Choice(getString(context, R.string.scene8choice1),12,{state -> state.addScore(Element.LUXOR,2); state.starterMonster = "Lumin"; state.previousSceneName="Scene8Activity"}, Element.LUXOR,20),
-                        Choice(getString(context, R.string.scene8choice2),12,{state -> state.addScore(Element.PYRO,2); state.starterMonster = "Flarial"; state.previousSceneName="Scene8Activity"}, Element.PYRO,20),
-                        Choice(getString(context, R.string.scene8choice3Alt),12,{state -> state.addScore(Element.AERO,2); state.starterMonster = "Flapper"; state.previousSceneName="Scene8Activity"}, Element.AERO,20))
+                    choices = listOf(Choice(getString(context, R.string.scene8choice1),12,{state -> state.addScore(Element.LUXOR,2)}, Element.LUXOR,20),
+                        Choice(getString(context, R.string.scene8choice2),12,{state -> state.addScore(Element.PYRO,2)}, Element.PYRO,20),
+                        Choice(getString(context, R.string.scene8choice3),12,{state -> state.addScore(Element.TERRA,2)}, Element.TERRA,20))
                 }
                 else
                 {
-                    choices = listOf(Choice(getString(context, R.string.scene8choice1),12,{state -> state.addScore(Element.LUXOR,2); state.starterMonster = "Lumin"; state.previousSceneName="Scene8Activity"}, Element.LUXOR,20),
-                        Choice(getString(context, R.string.scene8choice2),12,{state -> state.addScore(Element.PYRO,2); state.starterMonster = "Flarial"; state.previousSceneName="Scene8Activity"}, Element.PYRO,20),
-                        Choice(getString(context, R.string.scene8choice3),12,{state -> state.addScore(Element.TERRA,2); state.starterMonster = "Bulbapup"; state.previousSceneName="Scene8Activity"}, Element.TERRA,20))
+                    choices = listOf(Choice(getString(context, R.string.scene8choice1),12,{state -> state.addScore(Element.LUXOR,2)}, Element.LUXOR,20),
+                        Choice(getString(context, R.string.scene8choice2),12,{state -> state.addScore(Element.PYRO,2)}, Element.PYRO,20),
+                        Choice(getString(context, R.string.scene8choice3Alt),12,{state -> state.addScore(Element.AERO,2)}, Element.AERO,20))
                 }
+
+
                 return CinematicNode(index, prompts, choices, ECinematicImage.SUN, ContextCompat.getColor(context, R.color.darkBrown), ContextCompat.getColor(context, R.color.brown))
             }
             //Chose Light water and either air or earth, in either case, commit to one of the three elements you've chosen
@@ -110,19 +112,19 @@ class CinematicNodeRetriever
                     getString(context, R.string.scene9item3), getString(context, R.string.scene9item4),
                     getString(context, R.string.scene9item5))
                 val choices: List<Choice>
-                if(currentState.getScore(Element.AERO) > currentState.getScore(Element.TERRA))
+                if(currentState.getScore(Element.TERRA) > currentState.getScore(Element.AERO))
                 {
-                    choices = listOf(Choice(getString(context, R.string.scene9choice1),12,{state -> state.addScore(Element.LUXOR,2); state.starterMonster = "Lumin"; state.previousSceneName="Scene9Activity"}, Element.LUXOR),
-                        Choice(getString(context, R.string.scene9choice2),12,{state -> state.addScore(Element.AQUA,2); state.starterMonster = "Minnow"; state.previousSceneName="Scene9Activity"}, Element.AQUA),
-                        Choice(getString(context, R.string.scene9choice3Alt),12,{state -> state.addScore(Element.AERO,2); state.starterMonster = "Flapper"; state.previousSceneName="Scene9Activity"}, Element.AERO))
+                    choices = listOf(Choice(getString(context, R.string.scene9choice1),12,{state -> state.addScore(Element.LUXOR,2)}, Element.LUXOR),
+                        Choice(getString(context, R.string.scene9choice2),12,{state -> state.addScore(Element.AQUA,2)}, Element.AQUA),
+                        Choice(getString(context, R.string.scene9choice3),12,{state -> state.addScore(Element.TERRA,2)}, Element.TERRA))
                 }
                 else
                 {
-                    choices = listOf(Choice(getString(context, R.string.scene9choice1),12,{state -> state.addScore(Element.LUXOR,2); state.starterMonster = "Lumin"; state.previousSceneName="Scene9Activity"}, Element.LUXOR),
-                        Choice(getString(context, R.string.scene9choice2),12,{state -> state.addScore(Element.AQUA,2); state.starterMonster = "Minnow"; state.previousSceneName="Scene9Activity"}, Element.AQUA),
-                        Choice(getString(context, R.string.scene9choice3),12,{state -> state.addScore(Element.TERRA,2); state.starterMonster = "Bulbapup"; state.previousSceneName="Scene9Activity"}, Element.TERRA))
-
+                    choices = listOf(Choice(getString(context, R.string.scene9choice1),12,{state -> state.addScore(Element.LUXOR,2)}, Element.LUXOR),
+                        Choice(getString(context, R.string.scene9choice2),12,{state -> state.addScore(Element.AQUA,2)}, Element.AQUA),
+                        Choice(getString(context, R.string.scene9choice3Alt),12,{state -> state.addScore(Element.AERO,2)}, Element.AERO))
                 }
+
                 return CinematicNode(index, prompts, choices, ECinematicImage.MAGIC_GLYPH, ContextCompat.getColor(context, R.color.lightishBlue), ContextCompat.getColor(context, R.color.lightCyanBlue))
             }
             //Chose darkness and fire, and either air or earth, in either case, commit to one of the three elements you've chosen
@@ -130,24 +132,24 @@ class CinematicNodeRetriever
             {
                 val prompts: List<String>
                 val choices: List<Choice>
-                if(currentState.getScore(Element.AERO) > currentState.getScore(Element.TERRA))
+                if(currentState.getScore(Element.TERRA) > currentState.getScore(Element.AERO))
                 {
                     prompts = listOf(getString(context, R.string.scene10item1), getString(context, R.string.scene10item2),
                         getString(context, R.string.scene10item3), getString(context, R.string.scene10item4),
                         getString(context, R.string.scene10item5), getString(context, R.string.scene10item6))
-                    choices = listOf(Choice(getString(context, R.string.scene10choice3),12,{state -> state.addScore(Element.PYRO, 2); state.starterMonster = "Flarial"; state.previousSceneName="Scene10Activity"}, Element.PYRO),
-                        Choice(getString(context, R.string.scene10choice4),12,{state -> state.addScore(Element.UMBRAL, 2); state.starterMonster = "Umbress"; state.previousSceneName="Scene10Activity"}, Element.UMBRAL),
-                        Choice(getString(context, R.string.scene10choice2), 12, {state -> state.addScore(Element.AERO, 2); state.starterMonster = "Flapper"; state.previousSceneName="Scene10Activity"}, Element.AERO))
+                    choices = listOf(Choice(getString(context, R.string.scene10choice1), 12, {state -> state.addScore(Element.UMBRAL, 2)}, Element.TERRA),
+                        Choice(getString(context, R.string.scene10choice2),12,{state -> state.addScore(Element.PYRO, 2)}, Element.PYRO),
+                        Choice(getString(context, R.string.scene10choice3),12,{state -> state.addScore(Element.TERRA, 2)}, Element.UMBRAL)
+                    )
                 }
                 else
                 {
                     prompts = listOf(getString(context, R.string.scene10item1), getString(context, R.string.scene10item2),
                         getString(context, R.string.scene10item3), getString(context, R.string.scene10item4Alt),
                         getString(context, R.string.scene10item5), getString(context, R.string.scene10item6))
-                    choices = listOf(Choice(getString(context, R.string.scene10choice2Alt), 12, {state -> state.addScore(Element.TERRA, 2); state.starterMonster = "Bulbapup"; state.previousSceneName="Scene10Activity"}, Element.TERRA),
-                        Choice(getString(context, R.string.scene10choice3Alt),12,{state -> state.addScore(Element.PYRO, 2); state.starterMonster = "Flarial"; state.previousSceneName="Scene10Activity"}, Element.PYRO),
-                        Choice(getString(context, R.string.scene10choice4),12,{state -> state.addScore(Element.UMBRAL, 2); state.starterMonster = "Umbress"; state.previousSceneName="Scene10Activity"}, Element.UMBRAL)
-                    )
+                    choices = listOf(Choice(getString(context, R.string.scene10choice1),12,{state -> state.addScore(Element.UMBRAL, 2)}, Element.PYRO),
+                        Choice(getString(context, R.string.scene10choice2Alt),12,{state -> state.addScore(Element.PYRO, 2)}, Element.UMBRAL),
+                        Choice(getString(context, R.string.scene10choice3Alt), 12, {state -> state.addScore(Element.AERO, 2)}, Element.AERO))
                 }
                 return CinematicNode(index, prompts, choices, ECinematicImage.SUN, ContextCompat.getColor(context, R.color.black), ContextCompat.getColor(context, R.color.red))
             }
@@ -158,18 +160,19 @@ class CinematicNodeRetriever
                     getString(context, R.string.scene11item3), getString(context, R.string.scene11item4),
                     getString(context, R.string.scene11item5), getString(context, R.string.scene11item6))
                 val choices: List<Choice>
-                if(currentState.getScore(Element.AERO) > currentState.getScore(Element.TERRA))
+                if(currentState.getScore(Element.TERRA) > currentState.getScore(Element.AERO))
                 {
-                    choices = listOf(Choice(getString(context, R.string.scene11choice4), 12, {state -> state.addScore(Element.UMBRAL, 2); state.starterMonster = "Umbress"; state.previousSceneName="Scene11Activity"}, Element.UMBRAL),
-                        Choice(getString(context, R.string.scene11choice1), 12, {state -> state.addScore(Element.AQUA, 2); state.starterMonster = "Minnow"; state.previousSceneName="Scene11Activity"}, Element.AQUA),
-                        Choice(getString(context, R.string.scene11choice3Alt), 12, {state -> state.addScore(Element.AERO, 2); state.starterMonster = "Flapper"; state.previousSceneName="Scene11Activity"}, Element.AERO))
+                    choices = listOf(Choice(getString(context, R.string.scene11choice1), 12, {state -> state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
+                        Choice(getString(context, R.string.scene11choice2), 12, {state -> state.addScore(Element.AQUA, 2)}, Element.AQUA),
+                        Choice(getString(context, R.string.scene11choice3), 12, {state -> state.addScore(Element.TERRA, 2); state.starterMonster = "Bulbapup"; state.previousSceneName="Scene11Activity"}, Element.TERRA))
                 }
                 else
                 {
-                    choices = listOf(Choice(getString(context, R.string.scene11choice4), 12, {state -> state.addScore(Element.UMBRAL, 2); state.starterMonster = "Umbress"; state.previousSceneName="Scene11Activity"}, Element.UMBRAL),
-                        Choice(getString(context, R.string.scene11choice1), 12, {state -> state.addScore(Element.AQUA, 2); state.starterMonster = "Minnow"; state.previousSceneName="Scene11Activity"}, Element.AQUA),
-                        Choice(getString(context, R.string.scene11choice3), 12, {state -> state.addScore(Element.TERRA, 2); state.starterMonster = "Bulbapup"; state.previousSceneName="Scene11Activity"}, Element.TERRA))
+                    choices = listOf(Choice(getString(context, R.string.scene11choice1), 12, {state -> state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
+                        Choice(getString(context, R.string.scene11choice2), 12, {state -> state.addScore(Element.AQUA, 2)}, Element.AQUA),
+                        Choice(getString(context, R.string.scene11choice3Alt), 12, {state -> state.addScore(Element.AERO, 2)}, Element.AERO))
                 }
+
                 return CinematicNode(index, prompts, choices, ECinematicImage.MOON, ContextCompat.getColor(context, R.color.black), ContextCompat.getColor(context, R.color.lightishBlue))
             }
             if(index == 12)
