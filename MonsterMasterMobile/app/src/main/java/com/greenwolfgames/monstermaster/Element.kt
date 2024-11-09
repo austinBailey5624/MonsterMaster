@@ -1,7 +1,6 @@
 package com.greenwolfgames.monstermaster
 
 import android.content.Context
-import android.graphics.Color
 import android.widget.Button
 import androidx.core.content.ContextCompat
 
@@ -12,7 +11,7 @@ enum class Element {
     FEY,PLANT,TERRA,PEGASUS,COMPASSION,ROTTEN,
     PHOENIX,SEABREEZE,BIRD,AERO,COCKA,NIGHTWING,
     SOLAR,LUNAR,GUARDIAN,ANGEL,LUXOR,REDEMPTION,
-    DEMON,POISON,UNDEAD,STORM,BETRAYAR,UMBRAL,
+    DEMON,POISON,UNDEAD,STORM,BETRAYER,UMBRAL,
     NEUTRAL, PHYSICAL, MAGICAL;
     //@formatter:on
 
@@ -56,7 +55,7 @@ enum class Element {
                 UMBRAL -> R.color.black
                 DEMON -> R.color.darkRed
                 POISON -> R.color.forestGreen
-                BETRAYAR -> R.color.darkGray
+                BETRAYER -> R.color.darkGray
                 UNDEAD -> R.color.forestGreen
                 STORM -> R.color.yellowOrange
                 SOLAR -> R.color.lightPink
@@ -93,7 +92,7 @@ enum class Element {
                 GUARDIAN -> R.color.green
                 POISON -> R.color.darkerGreen
                 UMBRAL -> R.color.darkerGray
-                BETRAYAR -> R.color.darkishGray
+                BETRAYER -> R.color.darkishGray
                 UNDEAD -> R.color.faintGreen
                 STORM -> R.color.darkYellow
                 SOLAR -> R.color.pink
@@ -107,7 +106,5 @@ enum class Element {
             }
             return backgroundColor
         }
-
-//        fun getBackgroundColor(element:Element)
     }
 }

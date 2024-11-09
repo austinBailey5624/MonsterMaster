@@ -190,6 +190,17 @@
         app:layout_constraintStart_toStartOf="@id/background_top"
         app:layout_constraintTop_toBottomOf="@id/cinematic_text_6" />
 
+    <ImageView
+        android:id="@+id/center_foreground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/background_center"
+        app:layout_constraintEnd_toEndOf="@id/background_center"
+        app:layout_constraintStart_toStartOf="@id/background_center"
+        app:layout_constraintTop_toTopOf="@id/background_center"
+        app:srcCompat="@drawable/background_oaktree_daylight" />
+
     <Button
         android:id="@+id/button_1"
         android:layout_width="0dp"

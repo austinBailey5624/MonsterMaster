@@ -40,7 +40,7 @@ class State : Serializable
         Element.POISON to 0,
         Element.UNDEAD to 0,
         Element.STORM to 0,
-        Element.BETRAYAR to 0,
+        Element.BETRAYER to 0,
         Element.UMBRAL to 0,
         Element.NEUTRAL to 0,
         Element.PHYSICAL to 0,

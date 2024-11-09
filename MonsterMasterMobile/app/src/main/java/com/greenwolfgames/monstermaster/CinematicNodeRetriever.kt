@@ -201,7 +201,7 @@ class CinematicNodeRetriever
                 val prompts = listOf(getString(context, R.string.scene13item1), getString(context, R.string.scene13item2),
                     getString(context,R.string.scene13item3), getString(context,R.string.scene13item4),
                     getString(context,R.string.scene13item5), getString(context,R.string.scene13item6))
-                val choices = listOf(Choice(getString(context,R.string.scene13choice1),0,{state -> state.addScore(Element.BETRAYAR)}, Element.BETRAYAR),
+                val choices = listOf(Choice(getString(context,R.string.scene13choice1),0,{state -> state.addScore(Element.BETRAYER)}, Element.BETRAYER),
                     Choice(getString(context,R.string.scene13choice2),0,{state -> state.addScore(Element.UMBRAL)}, Element.UMBRAL),
                     Choice(getString(context,R.string.scene13choice3),0,{state -> state.addScore(Element.DEMON)}, Element.DEMON),
                     Choice(getString(context,R.string.scene13choice4),0,{state -> state.addScore(Element.POISON)}, Element.POISON),
