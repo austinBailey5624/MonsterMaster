@@ -60,7 +60,7 @@
         app:srcCompat="@drawable/background_1080x528" />
 
     <TextView
-        android:id="@+id/cinematic_text_1"
+        android:id="@+id/text_1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -73,13 +73,13 @@
         android:textColor="@color/whiteGray"
         android:textSize="20sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@id/cinematic_text_2"
+        app:layout_constraintBottom_toTopOf="@id/text_2"
         app:layout_constraintEnd_toEndOf="@id/background_top"
         app:layout_constraintStart_toStartOf="@id/background_top"
         app:layout_constraintTop_toTopOf="@id/background_top" />
 
     <TextView
-        android:id="@+id/cinematic_text_2"
+        android:id="@+id/text_2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -92,13 +92,13 @@
         android:textColor="@color/whiteGray"
         android:textSize="20sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@id/cinematic_text_3"
+        app:layout_constraintBottom_toTopOf="@id/text_3"
         app:layout_constraintEnd_toEndOf="@id/background_top"
         app:layout_constraintStart_toStartOf="@id/background_top"
-        app:layout_constraintTop_toBottomOf="@id/cinematic_text_1" />
+        app:layout_constraintTop_toBottomOf="@id/text_1" />
 
     <TextView
-        android:id="@+id/cinematic_text_3"
+        android:id="@+id/text_3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -111,13 +111,13 @@
         android:textColor="@color/whiteGray"
         android:textSize="20sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@id/cinematic_text_4"
+        app:layout_constraintBottom_toTopOf="@id/text_4"
         app:layout_constraintEnd_toEndOf="@id/background_top"
         app:layout_constraintStart_toStartOf="@id/background_top"
-        app:layout_constraintTop_toBottomOf="@id/cinematic_text_2" />
+        app:layout_constraintTop_toBottomOf="@id/text_2" />
 
     <TextView
-        android:id="@+id/cinematic_text_4"
+        android:id="@+id/text_4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -130,13 +130,13 @@
         android:textColor="@color/whiteGray"
         android:textSize="20sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@id/cinematic_text_5"
+        app:layout_constraintBottom_toTopOf="@id/text_5"
         app:layout_constraintEnd_toEndOf="@id/background_top"
         app:layout_constraintStart_toStartOf="@id/background_top"
-        app:layout_constraintTop_toBottomOf="@id/cinematic_text_3" />
+        app:layout_constraintTop_toBottomOf="@id/text_3" />
 
     <TextView
-        android:id="@+id/cinematic_text_5"
+        android:id="@+id/text_5"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -149,13 +149,13 @@
         android:textColor="@color/whiteGray"
         android:textSize="20sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@id/cinematic_text_6"
+        app:layout_constraintBottom_toTopOf="@id/text_6"
         app:layout_constraintEnd_toEndOf="@id/background_top"
         app:layout_constraintStart_toStartOf="@id/background_top"
-        app:layout_constraintTop_toBottomOf="@id/cinematic_text_4" />
+        app:layout_constraintTop_toBottomOf="@id/text_4" />
 
     <TextView
-        android:id="@+id/cinematic_text_6"
+        android:id="@+id/text_6"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -167,13 +167,13 @@
         android:text="@string/scene1item6"
         android:textColor="@color/whiteGray"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/cinematic_text_7"
+        app:layout_constraintBottom_toTopOf="@id/text_7"
         app:layout_constraintEnd_toEndOf="@id/background_top"
         app:layout_constraintStart_toStartOf="@id/background_top"
-        app:layout_constraintTop_toBottomOf="@id/cinematic_text_5" />
+        app:layout_constraintTop_toBottomOf="@id/text_5" />
 
     <TextView
-        android:id="@+id/cinematic_text_7"
+        android:id="@+id/text_7"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -188,7 +188,7 @@
         app:layout_constraintBottom_toTopOf="@id/background_bottom"
         app:layout_constraintEnd_toEndOf="@id/background_top"
         app:layout_constraintStart_toStartOf="@id/background_top"
-        app:layout_constraintTop_toBottomOf="@id/cinematic_text_6" />
+        app:layout_constraintTop_toBottomOf="@id/text_6" />
 
     <ImageView
         android:id="@+id/center_foreground"

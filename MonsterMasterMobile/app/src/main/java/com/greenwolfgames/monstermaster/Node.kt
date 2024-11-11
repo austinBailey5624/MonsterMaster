@@ -1,6 +1,6 @@
 package com.greenwolfgames.monstermaster
 
-class Node(val index: Int, val prompt: String, val choices: List<Choice>)
+open class Node(val index: Int, val prompt: List<String>, val choices: List<Choice>, val imageResourceIds: List<Int>, val backgroundColor: Int, val textColor: Int)
 {
 
 }

@@ -199,7 +199,7 @@ class ButtonLayoutResolver
             {
                 return buttons[5].id
             }
-            if (layoutMode == ELayoutMode.BOTTOM_TO_BOTTOM && choiceSize > 4)
+            if (layoutMode == ELayoutMode.BOTTOM_TO_BOTTOM)
             {
                 return parentId
             }
@@ -218,7 +218,7 @@ class ButtonLayoutResolver
             {
                 return buttons[3].id
             }
-            if (layoutMode == ELayoutMode.START_TO_END && choiceSize > 5)
+            if (layoutMode == ELayoutMode.START_TO_END)
             {
                 return buttons[4].id
             }

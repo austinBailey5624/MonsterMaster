@@ -61,8 +61,7 @@ class State : Serializable
     {
         return elementalScore[element]!!
     }
-    var previousSceneName: String = ""
-    var playerName: String = ""
+    var playerName: String = "defaultPlayerName"
     var portrait: PlayerPortrait = PlayerPortrait.UNASSIGNED
     var gender: Gender = Gender.MALE
     var initScene14: Boolean = true

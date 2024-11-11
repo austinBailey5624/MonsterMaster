@@ -8,7 +8,6 @@ import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
@@ -33,31 +32,28 @@ class MainActivity : AppCompatActivity()
             findViewById(R.id.button_5),
             findViewById(R.id.button_6)
         )
-        val cinematicTexts: List<TextView> = listOf(
-            findViewById(R.id.cinematic_text_1),
-            findViewById(R.id.cinematic_text_2),
-            findViewById(R.id.cinematic_text_3),
-            findViewById(R.id.cinematic_text_4),
-            findViewById(R.id.cinematic_text_5),
-            findViewById(R.id.cinematic_text_6),
-            findViewById(R.id.cinematic_text_7)
+        val texts: List<TextView> = listOf(
+            findViewById(R.id.text_1),
+            findViewById(R.id.text_2),
+            findViewById(R.id.text_3),
+            findViewById(R.id.text_4),
+            findViewById(R.id.text_5),
+            findViewById(R.id.text_6),
+            findViewById(R.id.text_7)
         )
 
-        hideCinematicText(cinematicTexts)
+        hideCinematicText(texts)
         initButtons(buttons)
-        val firstNode: CinematicNode = CinematicNodeRetriever.getCinematicNode(1, state, this@MainActivity)
+        val firstNode: Node = NodeRetriever.getNode(1, state, this@MainActivity, state)
         previousColor = firstNode.backgroundColor
         setNode(
-            firstNode,
-            state,
-            buttons,
-            cinematicTexts
+            firstNode, state, buttons, texts
         )
     }
 
-    private fun hideCinematicText(cinematicTexts: List<TextView>)
+    private fun hideCinematicText(texts: List<TextView>)
     {
-        for (text in cinematicTexts)
+        for (text in texts)
         {
             text.setTextColor(ContextCompat.getColor(this, R.color.invisible))
         }
@@ -84,27 +80,26 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun fadeOut(
-        buttons: List<Button>, cinematicTexts: List<TextView>, nextNodeIndex: Int, state: State
+        buttons: List<Button>, texts: List<TextView>, nextNodeIndex: Int, state: State
     )
     {
-        val nextNode: CinematicNode =
-            CinematicNodeRetriever.getCinematicNode(nextNodeIndex, state, this@MainActivity)
+        val nextNode: Node = NodeRetriever.getNode(nextNodeIndex, state, this@MainActivity, state)
         val main: ConstraintLayout = findViewById(R.id.main)
-        val fadeInAnimation = AnimationHandler.getBackgroundAnimator(
-            //TODO: I know this is an error, but I don't know what to tell  you, when you fix it it doesn't run
-            main, Color.valueOf(previousColor), Color.valueOf(nextNode.backgroundColor)
-        )
-        previousColor=nextNode.backgroundColor
+        val fadeInAnimation =
+            AnimationHandler.getBackgroundAnimator( //TODO: I know this is an error, but I don't know what to tell  you, when you fix it it doesn't run
+                main, Color.valueOf(previousColor), Color.valueOf(nextNode.backgroundColor)
+            )
+        previousColor = nextNode.backgroundColor
         fadeInAnimation.addListener(object : AnimatorListenerAdapter()
         {
             override fun onAnimationEnd(animation: android.animation.Animator)
             {
                 super.onAnimationEnd(animation)
-                setNode(nextNode, state, buttons, cinematicTexts)
+                setNode(nextNode, state, buttons, texts)
             }
         })
 
-        val fadeOutAnimationTrigger = AnimationUtils.loadAnimation(this, R.anim.fade_out_fast)
+        val fadeOutAnimationTrigger = AnimationUtils.loadAnimation(this, R.anim.fade_out)
         fadeOutAnimationTrigger.setAnimationListener(object : Animation.AnimationListener
         {
             override fun onAnimationStart(animation: Animation)
@@ -114,7 +109,7 @@ class MainActivity : AppCompatActivity()
             override fun onAnimationEnd(animation: Animation)
             {
                 hideButtons(buttons)
-                hideCinematicText(cinematicTexts)
+                hideCinematicText(texts)
                 fadeInAnimation.start()
             }
 
@@ -123,13 +118,12 @@ class MainActivity : AppCompatActivity()
             }
         })
 
-        //        val fadeInAnimationTrigger = AnimationUtils.loadAnimation()
-        val fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out_fast)
+        val fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
         for (i in 1..<buttons.size)
         {
             buttons[i].startAnimation(fadeOutAnimation)
         }
-        for (text in cinematicTexts)
+        for (text in texts)
         {
             text.startAnimation(fadeOutAnimation)
         }
@@ -138,17 +132,17 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun setNode(
-        nextNode: CinematicNode, state: State, buttons: List<Button>, cinematicTexts: List<TextView>
+        nextNode: Node, state: State, buttons: List<Button>, texts: List<TextView>
     )
     {
-        setCinematicTexts(nextNode.prompt, cinematicTexts)
-        setButtons(nextNode, buttons, state, cinematicTexts)
+        setText(nextNode.prompt, texts)
+        setButtons(nextNode, buttons, state, texts)
         val main = findViewById<View>(R.id.main)
         main.setBackgroundColor(nextNode.backgroundColor)
-        cinematicTexts[0].startAnimation(
+        texts[0].startAnimation(
             AnimationHandler.getFadeInAnimations(
                 buttons,
-                cinematicTexts,
+                texts,
                 nextNode.textColor,
                 nextNode,
                 this@MainActivity,
@@ -159,23 +153,48 @@ class MainActivity : AppCompatActivity()
         skipButton.visibility = View.VISIBLE
     }
 
-    private fun setCinematicTexts(
-        prompt: List<String>, cinematicTexts: List<TextView>
-    )
+    private fun setText(prompt: List<String>, texts: List<TextView>)
     {
-        if (prompt.size > 7 || prompt.size < 5)
-        {
-            throw IllegalStateException("Invalid number of cinematic texts, expected between 5 and 7, actual: " + prompt.size)
-        }
-        setCinematicTextLayout(prompt, cinematicTexts)
-        setCinematicTextContent(prompt, cinematicTexts)
+        setTextLayout(prompt, texts)
+        setTextContent(prompt, texts)
     }
 
-    private fun setCinematicTextLayout(prompt: List<String>, cinematicTexts: List<TextView>)
+    private fun setTextLayout(prompt: List<String>, texts: List<TextView>)
     {
-        for (i in cinematicTexts.indices)
+        if (prompt.size == 1)
+        { //set the one textView that we care about
+            var layoutParam = texts[0].layoutParams as ConstraintLayout.LayoutParams
+
+            layoutParam.startToStart = R.id.background_top
+            layoutParam.endToEnd = R.id.background_top
+            layoutParam.topToTop = R.id.background_top
+            layoutParam.bottomToBottom = R.id.background_top
+            layoutParam.startToEnd = ConstraintLayout.LayoutParams.UNSET
+            layoutParam.endToStart = ConstraintLayout.LayoutParams.UNSET
+            layoutParam.topToBottom = ConstraintLayout.LayoutParams.UNSET
+            layoutParam.bottomToTop = ConstraintLayout.LayoutParams.UNSET
+            texts[0].layoutParams = layoutParam
+            texts[0].visibility = View.VISIBLE
+
+            for (i in 1..<texts.size)
+            {
+                layoutParam = texts[i].layoutParams as ConstraintLayout.LayoutParams
+                layoutParam.startToStart = ConstraintLayout.LayoutParams.UNSET
+                layoutParam.endToEnd = ConstraintLayout.LayoutParams.UNSET
+                layoutParam.topToTop = ConstraintLayout.LayoutParams.UNSET
+                layoutParam.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
+                layoutParam.startToEnd = ConstraintLayout.LayoutParams.UNSET
+                layoutParam.endToStart = ConstraintLayout.LayoutParams.UNSET
+                layoutParam.topToBottom = ConstraintLayout.LayoutParams.UNSET
+                layoutParam.bottomToTop = ConstraintLayout.LayoutParams.UNSET
+                texts[i].layoutParams = layoutParam
+                texts[i].visibility = View.GONE
+            }
+            return
+        }
+        for (i in texts.indices)
         {
-            val layoutParams = cinematicTexts[i].layoutParams as ConstraintLayout.LayoutParams
+            val layoutParams = texts[i].layoutParams as ConstraintLayout.LayoutParams
             layoutParams.startToStart = R.id.background_top
             layoutParams.startToEnd = ConstraintLayout.LayoutParams.UNSET
             layoutParams.endToEnd = R.id.background_top
@@ -188,20 +207,18 @@ class MainActivity : AppCompatActivity()
             else
             {
                 layoutParams.topToTop = ConstraintLayout.LayoutParams.UNSET
-                layoutParams.topToBottom =
-                    getCinematicTextLayout(EDirection.UP, cinematicTexts, i, prompt.size)
+                layoutParams.topToBottom = getTextLayout(EDirection.UP, texts, i, prompt.size)
             }
-            layoutParams.bottomToTop =
-                getCinematicTextLayout(EDirection.DOWN, cinematicTexts, i, prompt.size)
+            layoutParams.bottomToTop = getTextLayout(EDirection.DOWN, texts, i, prompt.size)
             layoutParams.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
-            cinematicTexts[i].layoutParams = layoutParams
-            cinematicTexts[i].visibility = getCinematicTextVisibility(i, prompt.size)
+            texts[i].layoutParams = layoutParams
+            texts[i].visibility = getTextVisibility(i, prompt.size)
         }
     }
 
-    //index refers to the index fo the cinematicTexts that is being referenced
-    private fun getCinematicTextLayout(
-        direction: EDirection, cinematicTexts: List<TextView>, index: Int, promptSize: Int
+    //index refers to the index fo the texts that is being referenced
+    private fun getTextLayout(
+        direction: EDirection, texts: List<TextView>, index: Int, promptSize: Int
     ): Int
     {
         if (direction == EDirection.LEFT || direction == EDirection.RIGHT)
@@ -216,12 +233,12 @@ class MainActivity : AppCompatActivity()
             }
             else
             {
-                cinematicTexts[index - 1].id
+                texts[index - 1].id
             }
         } //now by process of elimination, we have to be in direction down (which is the trickiest)
         if (index in 0..3)
         {
-            return cinematicTexts[index + 1].id
+            return texts[index + 1].id
         }
         if (index == promptSize - 1)
         {
@@ -229,12 +246,12 @@ class MainActivity : AppCompatActivity()
         }
         if (index < promptSize - 1)
         {
-            return cinematicTexts[index + 1].id
+            return texts[index + 1].id
         } // if index > promptsize - 1 visiblilty will be false, and we dont have to worry about it
         return 1;
     }
 
-    private fun getCinematicTextVisibility(index: Int, promptSize: Int): Int
+    private fun getTextVisibility(index: Int, promptSize: Int): Int
     {
         if (index >= promptSize)
         {
@@ -243,25 +260,25 @@ class MainActivity : AppCompatActivity()
         return View.VISIBLE
     }
 
-    private fun setCinematicTextContent(
-        prompt: List<String>, cinematicTexts: List<TextView>
+    private fun setTextContent(
+        prompt: List<String>, texts: List<TextView>
     )
     {
         for (i in prompt.indices)
         {
-            cinematicTexts[i].text = prompt[i]
+            texts[i].text = prompt[i]
         }
     }
 
     private fun setButtons(
-        node: CinematicNode, buttons: List<Button>, state: State, cinematicTexts: List<TextView>
+        node: Node, buttons: List<Button>, state: State, texts: List<TextView>
     )
     {
         Log.d("MainActivity.kt.setbuttons", "choicesCount: " + node.choices.size)
         setButtonFormat(node.choices.size, buttons)
         setButtonVisibility(node.choices.size, buttons)
         setButtonTextContent(node.choices, buttons, state)
-        setButtonBehavior(node, buttons, state, cinematicTexts)
+        setButtonBehavior(node, buttons, state, texts)
     }
 
     private fun setButtonFormat(choiceSize: Int, buttons: List<Button>)
@@ -328,7 +345,7 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun setButtonBehavior(
-        node: CinematicNode, buttons: List<Button>, state: State, cinematicTexts: List<TextView>
+        node: Node, buttons: List<Button>, state: State, texts: List<TextView>
     )
     {
         for (i in node.choices.indices)
@@ -339,7 +356,7 @@ class MainActivity : AppCompatActivity()
                     "Button " + i + " clicked, moving to node: " + node.choices[i].nextNodeIndex
                 )
                 node.choices[i].stateChange(state)
-                fadeOut(buttons, cinematicTexts, node.choices[i].nextNodeIndex, state)
+                fadeOut(buttons, texts, node.choices[i].nextNodeIndex, state)
             }
         }
     }

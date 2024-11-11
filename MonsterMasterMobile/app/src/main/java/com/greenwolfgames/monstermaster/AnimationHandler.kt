@@ -20,25 +20,26 @@ class AnimationHandler
             buttons: List<Button>,
             cinematicTexts: List<TextView>,
             textColor: Int,
-            node: CinematicNode,
+            node: Node,
             context: Context,
             skipButton: Button
         ): List<Animation>
         {
             val fadeInAnimations: List<Animation> = listOf(
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_fast),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in_very_fast)
+                AnimationUtils.loadAnimation(context, R.anim.fade_in),
+                AnimationUtils.loadAnimation(context, R.anim.fade_in),
+                AnimationUtils.loadAnimation(context, R.anim.fade_in),
+                AnimationUtils.loadAnimation(context, R.anim.fade_in),
+                AnimationUtils.loadAnimation(context, R.anim.fade_in),
+                AnimationUtils.loadAnimation(context, R.anim.fade_in),
+                AnimationUtils.loadAnimation(context, R.anim.fade_in),
+                AnimationUtils.loadAnimation(context, R.anim.fade_in),
+                AnimationUtils.loadAnimation(context, R.anim.fade_in)
             )
 
-            //@formatter:off
+            val fadeInFastAnimation = AnimationUtils.loadAnimation(context, R.anim.fade_in_fast)
+
+        //@formatter:off
         fadeInAnimations[7].setAnimationListener(object : Animation.AnimationListener
         {
             override fun onAnimationStart(animation: Animation) {}
@@ -70,7 +71,7 @@ class AnimationHandler
                         {
                             if(j < node.prompt.size)
                             {
-                                cinematicTexts[j].startAnimation((fadeInAnimations[9]))
+                                cinematicTexts[j].startAnimation((fadeInFastAnimation))
                                 cinematicTexts[j].setTextColor(textColor)
                             }
                             else
@@ -78,7 +79,7 @@ class AnimationHandler
                                 cinematicTexts[j].setTextColor(ContextCompat.getColor(context, R.color.invisible))
                             }
                         }
-                        animateButtons(buttons, node.choices, fadeInAnimations[9])
+                        animateButtons(buttons, node.choices, fadeInFastAnimation)
                         colorButtons(buttons, node.choices, context)
                     }
                     //case where we have not pressed the skip button

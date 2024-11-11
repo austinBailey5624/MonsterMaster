@@ -222,8 +222,9 @@
     <string name="scene49prompt">Night falls as you find a cave and hang from its rafters. Even in you isolation, you find a quite ally in the darkness.\nWhat do they call you?</string>
     <string name="scene50prompt">Fiery wings lift you into the sky, and ignite dry lands. In the ashes of your power, phoenixes are reborn in flame and join you. One in particular grows close to you.\n It asks you your name.</string>
     <string name="scene51prompt">Your search for knowledge bring your flight to the shoreline, where mystics feed the gulls. Upon descending, you decide to study with them. Your absolute freedom and knowledge attracts a small blue bird that accompanies you on your many adventures.\nIt asks your name</string>
-    <string name="scene52prompt">You use your freedom to seek more resources and find kinship among the birds of the forest. Thier happy aspect is mirroroed by their focus on gaining resources, and this resonates with you. One in particular becomes your constant companion.\nIt asks you your name</string>
-    <string name="scene53prompt">You find frinds among the many birds in the sky. Together you form a community with the freedom to travel whereever you please.\nYou mentor one of them who becomes your constant companion. Who does it learn from?</string>
+    <string name="scene52prompt">You use your freedom to seek more resources and find kinship among the birds of the forest. Their happy aspect is mirrored by their focus on gaining resources, and this resonates with you. One in particular becomes your constant companion.\nIt asks you your name</string>
+    <string name="scene53prompt">You find friends among the many birds in the sky. Together you form a community with the freedom to travel where ever you please.\nYou mentor one of them who becomes your constant companion. Who does it learn from?</string>
+    <string name="scene54choice">Wake up!</string>
 
 
     <!-- content descriptions for UI elements -->
