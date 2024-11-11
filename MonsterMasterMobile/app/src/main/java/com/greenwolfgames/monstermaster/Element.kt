@@ -58,7 +58,7 @@ enum class Element {
                 SEABREEZE -> R.color.lightCyanBlue
                 BIRD -> R.color.forestGreen
                 AERO -> R.color.yellow
-                COCKA -> R.color.white
+                COCKA -> R.color.darkYellow
                 NIGHTWING -> R.color.black
 
                 SOLAR -> R.color.yellow
@@ -110,7 +110,7 @@ enum class Element {
                 SEABREEZE -> R.color.lighterBlue
                 BIRD -> R.color.greenYellow
                 AERO -> R.color.darkYellow
-                COCKA -> R.color.yellow
+                COCKA -> R.color.white
                 NIGHTWING -> R.color.yellow
 
                 SOLAR -> R.color.red
@@ -163,7 +163,7 @@ enum class Element {
                 SEABREEZE -> R.color.lightBlue
                 BIRD -> R.color.yellow
                 AERO -> R.color.lighterYellow
-                COCKA -> R.color.darkYellow
+                COCKA -> R.color.yellow
                 NIGHTWING -> R.color.darkYellow
 
                 SOLAR -> R.color.orange
@@ -185,6 +185,59 @@ enum class Element {
                 PHYSICAL -> R.color.grayerWhite
             }
             return backgroundColor
+        }
+
+        fun getInfantMonster(context: Context, element: Element): MonsterType
+        {
+            val infantMonster = when(element)
+            {
+                PYRO -> MonsterTypeManager.getMonsterType(context, 1)
+                LAVA -> MonsterTypeManager.getMonsterType(context, 13)
+                DINO -> MonsterTypeManager.getMonsterType(context, 23)
+                SAND -> MonsterTypeManager.getMonsterType(context, 33)
+                JUSTICE -> MonsterTypeManager.getMonsterType(context, 43)
+                VENGEANCE -> MonsterTypeManager.getMonsterType(context, 50)
+
+                STEAM -> MonsterTypeManager.getMonsterType(context, 57)
+                AQUA -> MonsterTypeManager.getMonsterType(context, 64)
+                AMPHIBIOUS -> MonsterTypeManager.getMonsterType(context, 76)
+                WEATHER -> MonsterTypeManager.getMonsterType(context, 86)
+                ICE -> MonsterTypeManager.getMonsterType(context, 96)
+                DEEP -> MonsterTypeManager.getMonsterType(context, 108)
+
+                FEY -> MonsterTypeManager.getMonsterType(context, 120)
+                PLANT -> MonsterTypeManager.getMonsterType(context, 130)
+                TERRA -> MonsterTypeManager.getMonsterType(context, 140)
+                PEGASUS -> MonsterTypeManager.getMonsterType(context, 154)
+                COMPASSION -> MonsterTypeManager.getMonsterType(context, 161)
+                ROTTEN -> MonsterTypeManager.getMonsterType(context, 168)
+
+                PHOENIX -> MonsterTypeManager.getMonsterType(context, 178)
+                SEABREEZE -> MonsterTypeManager.getMonsterType(context, 185)
+                BIRD -> MonsterTypeManager.getMonsterType(context, 192)
+                AERO -> MonsterTypeManager.getMonsterType(context, 199)
+                COCKA -> MonsterTypeManager.getMonsterType(context, 211)
+                NIGHTWING -> MonsterTypeManager.getMonsterType(context, 221)
+
+                SOLAR -> MonsterTypeManager.getMonsterType(context, 231)
+                LUNAR -> MonsterTypeManager.getMonsterType(context, 241)
+                GUARDIAN -> MonsterTypeManager.getMonsterType(context, 248)
+                ANGEL -> MonsterTypeManager.getMonsterType(context, 255)
+                LUXOR -> MonsterTypeManager.getMonsterType(context, 262)
+                REDEMPTION -> MonsterTypeManager.getMonsterType(context, 274)
+
+                DEMON -> MonsterTypeManager.getMonsterType(context, 284)
+                POISON -> MonsterTypeManager.getMonsterType(context, 294)
+                UNDEAD -> MonsterTypeManager.getMonsterType(context, 304)
+                STORM -> MonsterTypeManager.getMonsterType(context, 311)
+                BETRAYER -> MonsterTypeManager.getMonsterType(context, 321)
+                UMBRAL -> MonsterTypeManager.getMonsterType(context, 328)
+
+                NEUTRAL -> throw IllegalStateException("Element Neutral has no infant monster")
+                MAGICAL -> throw IllegalStateException("Element Magical has no infant monster")
+                PHYSICAL -> throw IllegalStateException("Element Physical has no infant monster")
+            }
+            return infantMonster
         }
     }
 }

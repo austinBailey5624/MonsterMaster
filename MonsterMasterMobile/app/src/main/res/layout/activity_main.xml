@@ -191,7 +191,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_6" />
 
     <ImageView
-        android:id="@+id/center_foreground"
+        android:id="@+id/image_background"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:visibility="invisible"
@@ -286,7 +286,7 @@
         app:layout_constraintTop_toBottomOf="@id/button_4" />
 
     <Button
-        android:id="@+id/button_skip_animation"
+        android:id="@+id/button_skip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/almostInvisible"

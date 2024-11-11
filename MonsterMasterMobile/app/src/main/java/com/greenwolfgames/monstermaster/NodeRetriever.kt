@@ -18,8 +18,8 @@ class NodeRetriever
                     getString(context, R.string.scene1item3), getString(context, R.string.scene1item4),
                     getString(context, R.string.scene1item5), getString(context, R.string.scene1item6),
                     getString(context, R.string.scene1item7))
-                val choices = listOf(Choice(getString(context, R.string.scene1choice1),2, {state -> state.addScore(Element.LUXOR)}, Element.LUXOR,24),
-                    Choice(getString(context, R.string.scene1choice2),3, {state -> state.addScore(Element.UMBRAL)}, Element.UMBRAL,24 ))
+                val choices = listOf(Choice(getString(context, R.string.scene1choice1),2, {state.addScore(Element.LUXOR)}, Element.LUXOR,24),
+                    Choice(getString(context, R.string.scene1choice2),3, {state.addScore(Element.UMBRAL)}, Element.UMBRAL,24 ))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context, R.color.darkGray), ContextCompat.getColor(context, R.color.gray))
             }
@@ -29,8 +29,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene2item1), getString(context, R.string.scene2item2),
                     getString(context, R.string.scene2item3), getString(context, R.string.scene2item4),
                     getString(context, R.string.scene2item5))
-                val choices = listOf(Choice(getString(context, R.string.scene2choice1),4, {state -> state.addScore(Element.PYRO)}, Element.PYRO, 24 ),
-                    Choice(getString(context, R.string.scene2choice2),5, {state -> state.addScore(Element.AQUA)}, Element.AQUA, 24))
+                val choices = listOf(Choice(getString(context, R.string.scene2choice1),4, {state.addScore(Element.PYRO)}, Element.PYRO, 24 ),
+                    Choice(getString(context, R.string.scene2choice2),5, {state.addScore(Element.AQUA)}, Element.AQUA, 24))
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_faint_light_from_above),
                     ContextCompat.getColor(context, R.color.gray), ContextCompat.getColor(context, R.color.whiteGray))
             }
@@ -40,8 +40,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene3item1), getString(context, R.string.scene3item2),
                     getString(context, R.string.scene3item3), getString(context, R.string.scene3item4),
                     getString(context, R.string.scene3item5), getString(context, R.string.scene3item6))
-                val choices = listOf(Choice(getString(context, R.string.scene3choice1), 6, {state -> state.addScore(Element.PYRO)}, Element.PYRO, 22),
-                    Choice(getString(context, R.string.scene3choice2), 7, {state -> state.addScore(Element.AQUA)}, Element.AQUA, 22))
+                val choices = listOf(Choice(getString(context, R.string.scene3choice1), 6, {state.addScore(Element.PYRO)}, Element.PYRO, 22),
+                    Choice(getString(context, R.string.scene3choice2), 7, {state.addScore(Element.AQUA)}, Element.AQUA, 22))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context, R.color.black), ContextCompat.getColor(context, R.color.darkishGray))
             }
@@ -51,8 +51,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene4item1), getString(context, R.string.scene4item2),
                     getString(context, R.string.scene4item3), getString(context, R.string.scene4item4),
                     getString(context, R.string.scene4item5))
-                val choices = listOf(Choice(getString(context, R.string.scene4choice1), 8, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
-                    Choice(getString(context, R.string.scene4choice2), 8, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
+                val choices = listOf(Choice(getString(context, R.string.scene4choice1), 8, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
+                    Choice(getString(context, R.string.scene4choice2), 8, {state.addScore(Element.AERO)}, Element.AERO, 20))
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_flame_bottom_left),
                     ContextCompat.getColor(context, R.color.darkBrown), ContextCompat.getColor(context, R.color.brown))
             }
@@ -62,8 +62,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene5item1), getString(context, R.string.scene5item2),
                     getString(context, R.string.scene5item3), getString(context, R.string.scene5item4),
                     getString(context, R.string.scene5item5), getString(context, R.string.scene5item6))
-                val choices = listOf(Choice(getString(context, R.string.scene5choice1), 9, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
-                    Choice(getString(context, R.string.scene5choice2), 9, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
+                val choices = listOf(Choice(getString(context, R.string.scene5choice1), 9, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
+                    Choice(getString(context, R.string.scene5choice2), 9, {state.addScore(Element.AERO)}, Element.AERO, 20))
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_river),
                     ContextCompat.getColor(context, R.color.lightishBlue), ContextCompat.getColor(context, R.color.lighterBlue))
             }
@@ -73,8 +73,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene6item1), getString(context, R.string.scene6item2),
                     getString(context, R.string.scene6item3), getString(context, R.string.scene6item4),
                     getString(context, R.string.scene6item5))
-                val choices = listOf(Choice(getString(context, R.string.scene6choice1), 10, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
-                    Choice(getString(context, R.string.scene6choice2), 10, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
+                val choices = listOf(Choice(getString(context, R.string.scene6choice1), 10, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
+                    Choice(getString(context, R.string.scene6choice2), 10, {state.addScore(Element.AERO)}, Element.AERO, 20))
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_flame_bottom_left),
                     ContextCompat.getColor(context, R.color.faintRed), ContextCompat.getColor(context, R.color.darkRed))
             }
@@ -84,8 +84,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene7item1), getString(context, R.string.scene7item2),
                     getString(context, R.string.scene7item3), getString(context, R.string.scene7item4),
                     getString(context, R.string.scene7item5))
-                val choices = listOf(Choice(getString(context, R.string.scene7choice1), 11, {state -> state.addScore(Element.TERRA)}, Element.TERRA, 26),
-                    Choice(getString(context, R.string.scene7choice2), 11, {state -> state.addScore(Element.AERO)}, Element.AERO, 20))
+                val choices = listOf(Choice(getString(context, R.string.scene7choice1), 11, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
+                    Choice(getString(context, R.string.scene7choice2), 11, {state.addScore(Element.AERO)}, Element.AERO, 20))
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_river),
                     ContextCompat.getColor(context, R.color.faintBlue), ContextCompat.getColor(context, R.color.lightishBlue))
             }
@@ -97,15 +97,15 @@ class NodeRetriever
                     getString(context, R.string.scene8item5), getString(context, R.string.scene8item6))
                 val choices: List<Choice> =if(currentState.getScore(Element.TERRA) > currentState.getScore(Element.AERO))
                 {
-                    listOf(Choice(getString(context, R.string.scene8choice1),12,{state -> state.addScore(Element.LUXOR,2)}, Element.LUXOR,20),
-                        Choice(getString(context, R.string.scene8choice2),14,{state -> state.addScore(Element.PYRO,2)}, Element.PYRO,20),
-                        Choice(getString(context, R.string.scene8choice3),16,{state -> state.addScore(Element.TERRA,2)}, Element.TERRA,20))
+                    listOf(Choice(getString(context, R.string.scene8choice1),12,{state.addScore(Element.LUXOR,2)}, Element.LUXOR,20),
+                        Choice(getString(context, R.string.scene8choice2),14,{state.addScore(Element.PYRO,2)}, Element.PYRO,20),
+                        Choice(getString(context, R.string.scene8choice3),16,{state.addScore(Element.TERRA,2)}, Element.TERRA,20))
                 }
                 else
                 {
-                    listOf(Choice(getString(context, R.string.scene8choice1),12,{state -> state.addScore(Element.LUXOR,2)}, Element.LUXOR,20),
-                        Choice(getString(context, R.string.scene8choice2),14,{state -> state.addScore(Element.PYRO,2)}, Element.PYRO,20),
-                        Choice(getString(context, R.string.scene8choice3Alt),17,{state -> state.addScore(Element.AERO,2)}, Element.AERO,20))
+                    listOf(Choice(getString(context, R.string.scene8choice1),12,{state.addScore(Element.LUXOR,2)}, Element.LUXOR,20),
+                        Choice(getString(context, R.string.scene8choice2),14,{state.addScore(Element.PYRO,2)}, Element.PYRO,20),
+                        Choice(getString(context, R.string.scene8choice3Alt),17,{state.addScore(Element.AERO,2)}, Element.AERO,20))
                 }
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_sunshine_upper_left),
                     ContextCompat.getColor(context, R.color.darkBrown), ContextCompat.getColor(context, R.color.brown))
@@ -118,15 +118,15 @@ class NodeRetriever
                     getString(context, R.string.scene9item5))
                 val choices: List<Choice> =if(currentState.getScore(Element.TERRA) > currentState.getScore(Element.AERO))
                 {
-                    listOf(Choice(getString(context, R.string.scene9choice1),12,{state -> state.addScore(Element.LUXOR,2)}, Element.LUXOR),
-                        Choice(getString(context, R.string.scene9choice2),15,{state -> state.addScore(Element.AQUA,2)}, Element.AQUA),
-                        Choice(getString(context, R.string.scene9choice3),16,{state -> state.addScore(Element.TERRA,2)}, Element.TERRA))
+                    listOf(Choice(getString(context, R.string.scene9choice1),12,{state.addScore(Element.LUXOR,2)}, Element.LUXOR),
+                        Choice(getString(context, R.string.scene9choice2),15,{state.addScore(Element.AQUA,2)}, Element.AQUA),
+                        Choice(getString(context, R.string.scene9choice3),16,{state.addScore(Element.TERRA,2)}, Element.TERRA))
                 }
                 else
                 {
-                    listOf(Choice(getString(context, R.string.scene9choice1),12,{state -> state.addScore(Element.LUXOR,2)}, Element.LUXOR),
-                        Choice(getString(context, R.string.scene9choice2),15,{state -> state.addScore(Element.AQUA,2)}, Element.AQUA),
-                        Choice(getString(context, R.string.scene9choice3Alt),17,{state -> state.addScore(Element.AERO,2)}, Element.AERO))
+                    listOf(Choice(getString(context, R.string.scene9choice1),12,{state.addScore(Element.LUXOR,2)}, Element.LUXOR),
+                        Choice(getString(context, R.string.scene9choice2),15,{state.addScore(Element.AQUA,2)}, Element.AQUA),
+                        Choice(getString(context, R.string.scene9choice3Alt),17,{state.addScore(Element.AERO,2)}, Element.AERO))
                 }
 
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_magic_glyph),
@@ -142,9 +142,9 @@ class NodeRetriever
                     prompts = listOf(getString(context, R.string.scene10item1), getString(context, R.string.scene10item2),
                         getString(context, R.string.scene10item3), getString(context, R.string.scene10item4),
                         getString(context, R.string.scene10item5), getString(context, R.string.scene10item6))
-                    choices = listOf(Choice(getString(context, R.string.scene10choice1), 13, {state -> state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
-                        Choice(getString(context, R.string.scene10choice2),14,{state -> state.addScore(Element.PYRO, 2)}, Element.PYRO),
-                        Choice(getString(context, R.string.scene10choice3),16,{state -> state.addScore(Element.TERRA, 2)}, Element.TERRA)
+                    choices = listOf(Choice(getString(context, R.string.scene10choice1), 13, {state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
+                        Choice(getString(context, R.string.scene10choice2),14,{state.addScore(Element.PYRO, 2)}, Element.PYRO),
+                        Choice(getString(context, R.string.scene10choice3),16,{state.addScore(Element.TERRA, 2)}, Element.TERRA)
                     )
                 }
                 else
@@ -152,9 +152,9 @@ class NodeRetriever
                     prompts = listOf(getString(context, R.string.scene10item1), getString(context, R.string.scene10item2),
                         getString(context, R.string.scene10item3), getString(context, R.string.scene10item4Alt),
                         getString(context, R.string.scene10item5), getString(context, R.string.scene10item6))
-                    choices = listOf(Choice(getString(context, R.string.scene10choice1),13,{state -> state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
-                        Choice(getString(context, R.string.scene10choice2Alt),14,{state -> state.addScore(Element.PYRO, 2)}, Element.PYRO),
-                        Choice(getString(context, R.string.scene10choice3Alt), 17, {state -> state.addScore(Element.AERO, 2)}, Element.AERO))
+                    choices = listOf(Choice(getString(context, R.string.scene10choice1),13,{state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
+                        Choice(getString(context, R.string.scene10choice2Alt),14,{state.addScore(Element.PYRO, 2)}, Element.PYRO),
+                        Choice(getString(context, R.string.scene10choice3Alt), 17, {state.addScore(Element.AERO, 2)}, Element.AERO))
                 }
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_sunshine_upper_left),
                     ContextCompat.getColor(context, R.color.black), ContextCompat.getColor(context, R.color.red))
@@ -167,15 +167,15 @@ class NodeRetriever
                     getString(context, R.string.scene11item5), getString(context, R.string.scene11item6))
                 val choices: List<Choice> = if(currentState.getScore(Element.TERRA) > currentState.getScore(Element.AERO))
                 {
-                    listOf(Choice(getString(context, R.string.scene11choice1), 13, {state -> state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
-                        Choice(getString(context, R.string.scene11choice2), 15, {state -> state.addScore(Element.AQUA, 2)}, Element.AQUA),
-                        Choice(getString(context, R.string.scene11choice3), 16, {state -> state.addScore(Element.TERRA, 2)}, Element.TERRA))
+                    listOf(Choice(getString(context, R.string.scene11choice1), 13, {state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
+                        Choice(getString(context, R.string.scene11choice2), 15, {state.addScore(Element.AQUA, 2)}, Element.AQUA),
+                        Choice(getString(context, R.string.scene11choice3), 16, {state.addScore(Element.TERRA, 2)}, Element.TERRA))
                 }
                 else
                 {
-                    listOf(Choice(getString(context, R.string.scene11choice1), 13, {state -> state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
-                        Choice(getString(context, R.string.scene11choice2), 15, {state -> state.addScore(Element.AQUA, 2)}, Element.AQUA),
-                        Choice(getString(context, R.string.scene11choice3Alt), 16, {state -> state.addScore(Element.AERO, 2)}, Element.AERO))
+                    listOf(Choice(getString(context, R.string.scene11choice1), 13, {state.addScore(Element.UMBRAL, 2)}, Element.UMBRAL),
+                        Choice(getString(context, R.string.scene11choice2), 15, {state.addScore(Element.AQUA, 2)}, Element.AQUA),
+                        Choice(getString(context, R.string.scene11choice3Alt), 16, {state.addScore(Element.AERO, 2)}, Element.AERO))
                 }
 
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_moonshine_upper_left),
@@ -186,12 +186,12 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene12item1),getString(context, R.string.scene12item2),
                     getString(context,R.string.scene12item3),getString(context, R.string.scene12item4),
                     getString(context,R.string.scene12item5))
-                val choices = listOf(Choice(getString(context,R.string.scene12choice1),18,{state -> state.addScore(Element.LUXOR)}, Element.LUXOR),
-                    Choice(getString(context,R.string.scene12choice2),19,{state -> state.addScore(Element.REDEMPTION)}, Element.REDEMPTION),
-                    Choice(getString(context,R.string.scene12choice3),20,{state -> state.addScore(Element.SOLAR)}, Element.SOLAR),
-                    Choice(getString(context,R.string.scene12choice4),21,{state -> state.addScore(Element.LUNAR)}, Element.LUNAR),
-                    Choice(getString(context,R.string.scene12choice5),22,{state -> state.addScore(Element.GUARDIAN)}, Element.GUARDIAN),
-                    Choice(getString(context,R.string.scene12choice6),23,{state -> state.addScore(Element.ANGEL)}, Element.ANGEL))
+                val choices = listOf(Choice(getString(context,R.string.scene12choice1),18,{state.addScore(Element.LUXOR)}, Element.LUXOR),
+                    Choice(getString(context,R.string.scene12choice2),19,{state.addScore(Element.REDEMPTION)}, Element.REDEMPTION),
+                    Choice(getString(context,R.string.scene12choice3),20,{state.addScore(Element.SOLAR)}, Element.SOLAR),
+                    Choice(getString(context,R.string.scene12choice4),21,{state.addScore(Element.LUNAR)}, Element.LUNAR),
+                    Choice(getString(context,R.string.scene12choice5),22,{state.addScore(Element.GUARDIAN)}, Element.GUARDIAN),
+                    Choice(getString(context,R.string.scene12choice6),23,{state.addScore(Element.ANGEL)}, Element.ANGEL))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.LUXOR)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.LUXOR)))
@@ -201,12 +201,12 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene13item1), getString(context, R.string.scene13item2),
                     getString(context,R.string.scene13item3), getString(context,R.string.scene13item4),
                     getString(context,R.string.scene13item5), getString(context,R.string.scene13item6))
-                val choices = listOf(Choice(getString(context,R.string.scene13choice1),24,{state -> state.addScore(Element.BETRAYER)}, Element.BETRAYER),
-                    Choice(getString(context,R.string.scene13choice2),25,{state -> state.addScore(Element.UMBRAL)}, Element.UMBRAL),
-                    Choice(getString(context,R.string.scene13choice3),26,{state -> state.addScore(Element.DEMON)}, Element.DEMON),
-                    Choice(getString(context,R.string.scene13choice4),27,{state -> state.addScore(Element.POISON)}, Element.POISON),
-                    Choice(getString(context,R.string.scene13choice5),28,{state -> state.addScore(Element.UNDEAD)}, Element.UNDEAD),
-                    Choice(getString(context,R.string.scene13choice6),29,{state -> state.addScore(Element.STORM)}, Element.STORM))
+                val choices = listOf(Choice(getString(context,R.string.scene13choice1),24,{state.addScore(Element.BETRAYER)}, Element.BETRAYER),
+                    Choice(getString(context,R.string.scene13choice2),25,{state.addScore(Element.UMBRAL)}, Element.UMBRAL),
+                    Choice(getString(context,R.string.scene13choice3),26,{state.addScore(Element.DEMON)}, Element.DEMON),
+                    Choice(getString(context,R.string.scene13choice4),27,{state.addScore(Element.POISON)}, Element.POISON),
+                    Choice(getString(context,R.string.scene13choice5),28,{state.addScore(Element.UNDEAD)}, Element.UNDEAD),
+                    Choice(getString(context,R.string.scene13choice6),29,{state.addScore(Element.STORM)}, Element.STORM))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context,R.color.black),
                     ContextCompat.getColor(context,R.color.darkishGray))
@@ -216,12 +216,12 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene14item1), getString(context, R.string.scene14item2),
                     getString(context,R.string.scene14item3),getString(context,R.string.scene14item4),
                     getString(context,R.string.scene14item5))
-                val choices = listOf(Choice(getString(context,R.string.scene14choice1),30,{state -> state.addScore(Element.JUSTICE)}, Element.JUSTICE),
-                    Choice(getString(context,R.string.scene14choice2),31,{state -> state.addScore(Element.VENGEANCE)}, Element.VENGEANCE),
-                    Choice(getString(context,R.string.scene14choice3),32,{state -> state.addScore(Element.PYRO)}, Element.PYRO),
-                    Choice(getString(context,R.string.scene14choice4),33,{state -> state.addScore(Element.LAVA)}, Element.LAVA),
-                    Choice(getString(context,R.string.scene14choice5),34,{state -> state.addScore(Element.DINO)}, Element.DINO),
-                    Choice(getString(context,R.string.scene14choice6),35,{state -> state.addScore(Element.SAND)},Element.SAND))
+                val choices = listOf(Choice(getString(context,R.string.scene14choice1),30,{state.addScore(Element.JUSTICE)}, Element.JUSTICE),
+                    Choice(getString(context,R.string.scene14choice2),31,{state.addScore(Element.VENGEANCE)}, Element.VENGEANCE),
+                    Choice(getString(context,R.string.scene14choice3),32,{state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context,R.string.scene14choice4),33,{state.addScore(Element.LAVA)}, Element.LAVA),
+                    Choice(getString(context,R.string.scene14choice5),34,{state.addScore(Element.DINO)}, Element.DINO),
+                    Choice(getString(context,R.string.scene14choice6),35,{state.addScore(Element.SAND)},Element.SAND))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.PYRO)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.PYRO)))
@@ -231,12 +231,12 @@ class NodeRetriever
                 val prompts = listOf(getString(context,R.string.scene15item1),getString(context,R.string.scene15item2),
                     getString(context,R.string.scene15item3), getString(context,R.string.scene15item4),
                     getString(context,R.string.scene15item5))
-                val choices = listOf(Choice(getString(context,R.string.scene15choice1),36,{state -> state.addScore(Element.ICE)}, Element.ICE),
-                    Choice(getString(context,R.string.scene15choice2),37,{state -> state.addScore(Element.DEEP)}, Element.DEEP),
-                    Choice(getString(context,R.string.scene15choice3),38,{state -> state.addScore(Element.STEAM)}, Element.STEAM),
-                    Choice(getString(context,R.string.scene15choice4),39,{state -> state.addScore(Element.AQUA)},Element.AQUA),
-                    Choice(getString(context,R.string.scene15choice5),40,{state -> state.addScore(Element.AMPHIBIOUS)},Element.AMPHIBIOUS),
-                    Choice(getString(context,R.string.scene15choice6),41,{state -> state.addScore(Element.WEATHER)},Element.WEATHER))
+                val choices = listOf(Choice(getString(context,R.string.scene15choice1),36,{state.addScore(Element.ICE)}, Element.ICE),
+                    Choice(getString(context,R.string.scene15choice2),37,{state.addScore(Element.DEEP)}, Element.DEEP),
+                    Choice(getString(context,R.string.scene15choice3),38,{state.addScore(Element.STEAM)}, Element.STEAM),
+                    Choice(getString(context,R.string.scene15choice4),39,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene15choice5),40,{state.addScore(Element.AMPHIBIOUS)},Element.AMPHIBIOUS),
+                    Choice(getString(context,R.string.scene15choice6),41,{state.addScore(Element.WEATHER)},Element.WEATHER))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.AQUA)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.AQUA)))}
@@ -254,12 +254,12 @@ class NodeRetriever
                         getString(context,R.string.scene16item3),getString(context,R.string.scene16item4),
                         getString(context,R.string.scene16item5))
                 }
-                val choices = listOf(Choice(getString(context,R.string.scene16choice1),42,{state -> state.addScore(Element.COMPASSION)}, Element.COMPASSION),
-                    Choice(getString(context,R.string.scene16choice2),43,{state -> state.addScore(Element.ROTTEN)},Element.ROTTEN),
-                    Choice(getString(context,R.string.scene16choice3),44,{state -> state.addScore(Element.FEY)},Element.FEY),
-                    Choice(getString(context,R.string.scene16choice4),45,{state -> state.addScore(Element.PLANT)}, Element.PLANT),
-                    Choice(getString(context,R.string.scene16choice5),46,{state -> state.addScore(Element.TERRA)},Element.TERRA),
-                    Choice(getString(context,R.string.scene16choice6),47,{state -> state.addScore(Element.PEGASUS)},Element.PEGASUS))
+                val choices = listOf(Choice(getString(context,R.string.scene16choice1),42,{state.addScore(Element.COMPASSION)}, Element.COMPASSION),
+                    Choice(getString(context,R.string.scene16choice2),43,{state.addScore(Element.ROTTEN)},Element.ROTTEN),
+                    Choice(getString(context,R.string.scene16choice3),44,{state.addScore(Element.FEY)},Element.FEY),
+                    Choice(getString(context,R.string.scene16choice4),45,{state.addScore(Element.PLANT)}, Element.PLANT),
+                    Choice(getString(context,R.string.scene16choice5),46,{state.addScore(Element.TERRA)},Element.TERRA),
+                    Choice(getString(context,R.string.scene16choice6),47,{state.addScore(Element.PEGASUS)},Element.PEGASUS))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.TERRA)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.TERRA)))}
@@ -284,12 +284,12 @@ class NodeRetriever
                         getString(context,R.string.scene17item3),getString(context,R.string.scene17item4),
                         getString(context,R.string.scene17item5))
                 }
-                val choices = listOf(Choice(getString(context,R.string.scene17choice1),48,{state -> state.addScore(Element.COCKA)}, Element.COCKA),
-                    Choice(getString(context,R.string.scene17choice2),49,{state -> state.addScore(Element.NIGHTWING)},Element.NIGHTWING),
-                    Choice(getString(context,R.string.scene17choice3),50,{state -> state.addScore(Element.PHOENIX)},Element.PHOENIX),
-                    Choice(getString(context,R.string.scene17choice4),51,{state -> state.addScore(Element.SEABREEZE)}, Element.SEABREEZE),
-                    Choice(getString(context,R.string.scene17choice5),52,{state -> state.addScore(Element.BIRD)},Element.BIRD),
-                    Choice(getString(context,R.string.scene17choice6),53,{state -> state.addScore(Element.AERO)},Element.AERO))
+                val choices = listOf(Choice(getString(context,R.string.scene17choice1),48,{state.addScore(Element.COCKA)}, Element.COCKA),
+                    Choice(getString(context,R.string.scene17choice2),49,{state.addScore(Element.NIGHTWING)},Element.NIGHTWING),
+                    Choice(getString(context,R.string.scene17choice3),50,{state.addScore(Element.PHOENIX)},Element.PHOENIX),
+                    Choice(getString(context,R.string.scene17choice4),51,{state.addScore(Element.SEABREEZE)}, Element.SEABREEZE),
+                    Choice(getString(context,R.string.scene17choice5),52,{state.addScore(Element.BIRD)},Element.BIRD),
+                    Choice(getString(context,R.string.scene17choice6),53,{state.addScore(Element.AERO)},Element.AERO))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.AERO)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.AERO)))
@@ -441,8 +441,9 @@ class NodeRetriever
             if(index == 54)
             {
                 val prompts: List<String> = listOf(state.playerName, state.playerName, state.playerName)
-                val choices = listOf(Choice(getString(context,R.string.scene54choice), 55, {}, Element.PHYSICAL))
-                return Node(index, prompts, choices, listOf(), Element.getBackgroundColor(Element.PHYSICAL), Element.getTextColor(Element.PHYSICAL))
+                val choices = listOf(Choice(getString(context,R.string.scene54choice), 55, {state -> state}, Element.PHYSICAL))
+                return Node(index, prompts, choices, listOf(), ContextCompat.getColor(context, Element.getBackgroundColor(Element.PHYSICAL)),
+                    ContextCompat.getColor(context, Element.getTextColor(Element.PHYSICAL)))
             }
             throw IllegalStateException("Scene1Node index not found, max 17 actual: $index");
         }
@@ -450,8 +451,9 @@ class NodeRetriever
         private fun getEnterNameNode(context: Context, index: Int, promptIndex: Int, element: Element): Node
         {
             val prompts: List<String> = listOf(getString(context, promptIndex))
-            val choices = listOf(Choice(getString(context,R.string.enter_name),54,{},element))
-            return Node(index, prompts, choices, listOf(), Element.getBackgroundColor(element), Element.getTextColor(element))
+            val choices = listOf(Choice(getString(context,R.string.enter_name),54,{state -> state},element))
+            return Node(index, prompts, choices, listOf(Element.getInfantMonster(context, element).imageResourceId), ContextCompat.getColor(context, Element.getBackgroundColor(element)),
+                ContextCompat.getColor(context, Element.getTextColor(element)))
         }
     }
 }

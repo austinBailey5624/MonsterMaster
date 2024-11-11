@@ -187,7 +187,7 @@
     <string name="scene17choice5">Seek money</string>
     <string name="scene17choice6">Seek friendship</string>
 
-    <string name="enter_name">[Enter your Name]</string>
+    <string name="enter_name">Enter your Name</string>
     <string name="scene18prompt">The Gods love you, as you love the gods. You accept their divine authority and bow to it. Your connection to them is so strong a being of pure light is formed to facilitate it.\n This being calls to you.\n What name does it call?</string>
     <string name="scene19prompt">The divine spurn you, as you spurn them. You reject their authority and refuse to bow to it. You inherently know the right way and do not require their guidance.\nYour independent morality attracts a compatriot. It seeks to know you and follow you. Who does it seek to know?</string>
     <string name="scene20prompt">Your connection to the holy fire, the origin of life, and all righteous authority strengthens you.\nIn gratitude, the sun god sends you a servant to mark your connection.\nThis servant asks your name.\n Whom does it seek to serve?</string>

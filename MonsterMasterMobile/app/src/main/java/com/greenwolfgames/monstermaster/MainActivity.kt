@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity()
             findViewById(R.id.text_7)
         )
 
-        hideCinematicText(texts)
+        hideText(texts)
         initButtons(buttons)
         val firstNode: Node = NodeRetriever.getNode(1, state, this@MainActivity, state)
         previousColor = firstNode.backgroundColor
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity()
         )
     }
 
-    private fun hideCinematicText(texts: List<TextView>)
+    private fun hideText(texts: List<TextView>)
     {
         for (text in texts)
         {
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity()
 
     private fun initButtons(buttons: List<Button>)
     {
-        var skipButton: Button = findViewById(R.id.button_skip_animation)
+        var skipButton: Button = findViewById(R.id.button_skip)
         skipButton.visibility = View.VISIBLE
         skipButton.setOnClickListener {
             skipButton.visibility = View.GONE
@@ -109,7 +109,8 @@ class MainActivity : AppCompatActivity()
             override fun onAnimationEnd(animation: Animation)
             {
                 hideButtons(buttons)
-                hideCinematicText(texts)
+                hideText(texts)
+                //TODO hideImages(images)
                 fadeInAnimation.start()
             }
 
@@ -146,10 +147,10 @@ class MainActivity : AppCompatActivity()
                 nextNode.textColor,
                 nextNode,
                 this@MainActivity,
-                findViewById(R.id.button_skip_animation)
+                findViewById(R.id.button_skip)
             )[0]
         )
-        val skipButton: Button = findViewById(R.id.button_skip_animation)
+        val skipButton: Button = findViewById(R.id.button_skip)
         skipButton.visibility = View.VISIBLE
     }
 
@@ -277,7 +278,7 @@ class MainActivity : AppCompatActivity()
         Log.d("MainActivity.kt.setbuttons", "choicesCount: " + node.choices.size)
         setButtonFormat(node.choices.size, buttons)
         setButtonVisibility(node.choices.size, buttons)
-        setButtonTextContent(node.choices, buttons, state)
+        setButtonTextContent(node.choices, buttons)
         setButtonBehavior(node, buttons, state, texts)
     }
 
@@ -292,7 +293,7 @@ class MainActivity : AppCompatActivity()
                 + "\n Button 5: " + buttons[5].id)
         for(i in buttons.indices)
         {
-            var layoutParams = buttons[i].layoutParams as ConstraintLayout.LayoutParams
+            val layoutParams = buttons[i].layoutParams as ConstraintLayout.LayoutParams
             layoutParams.topToTop = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.TOP_TO_TOP, buttons, R.id.background_bottom)
             layoutParams.topToBottom = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.TOP_TO_BOTTOM, buttons, R.id.background_bottom)
             layoutParams.bottomToTop = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.BOTTOM_TO_TOP, buttons, R.id.background_bottom)
@@ -335,7 +336,7 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-    private fun setButtonTextContent(choices: List<Choice>, buttons: List<Button>, state: State)
+    private fun setButtonTextContent(choices: List<Choice>, buttons: List<Button>)
     {
         for (i in choices.indices)
         {

@@ -4091,5 +4091,18 @@ class MonsterTypeManager
             )
             return monsterTypes.toList()
         }
+
+        fun getMonsterType(context: Context, index: Int): MonsterType
+        {
+            val monsters: List<MonsterType> = getMonsterTypes(context)
+            for(monsterType in monsters)
+            {
+                if(monsterType.index == index)
+                {
+                    return monsterType
+                }
+            }
+            throw IllegalStateException("No monster found for index $index")
+        }
     }
 }
