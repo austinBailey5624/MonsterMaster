@@ -27,10 +27,11 @@
     <string name="scene3choice1">Gather Twigs for Fire</string>
     <string name="scene3choice2">Search for Water</string>
     <string name="scene4item1">The flame comforts you</string>
-    <string name="scene4item2">Reveals a stream</string>
-    <string name="scene4item3">Thirst quenched</string>
-    <string name="scene4item4">You are safe</string>
-    <string name="scene4item5">What next?</string>
+    <string name="scene4item2">Prophecies of your ascendance</string>
+    <string name="scene4item3">Snap in the flames</string>
+    <string name="scene4item4">You feel strong</string>
+    <string name="scene4item5">Safe</string>
+    <string name="scene4item6">What next?</string>
     <string name="scene4choice1">Stay</string>
     <string name="scene4choice2">Search for Others</string>
     <string name="scene5item1">A stream greets you</string>
@@ -160,8 +161,8 @@
 
     <string name="scene16item1">You find Sustenance</string>
     <string name="scene16item1Alt">Your friend brings you food</string>
-    <string name="scene16item2">You find money</string>
-    <string name="scene16item3">And a banquet of food</string>
+    <string name="scene16item2">A banquet of food</string>
+    <string name="scene16item3">Fear gone</string>
     <string name="scene16item4">You feel rich</string>
     <string name="scene16item5">And safe</string>
 
@@ -224,7 +225,10 @@
     <string name="scene51prompt">Your search for knowledge bring your flight to the shoreline, where mystics feed the gulls. Upon descending, you decide to study with them. Your absolute freedom and knowledge attracts a small blue bird that accompanies you on your many adventures.\nIt asks your name</string>
     <string name="scene52prompt">You use your freedom to seek more resources and find kinship among the birds of the forest. Their happy aspect is mirrored by their focus on gaining resources, and this resonates with you. One in particular becomes your constant companion.\nIt asks you your name</string>
     <string name="scene53prompt">You find friends among the many birds in the sky. Together you form a community with the freedom to travel where ever you please.\nYou mentor one of them who becomes your constant companion. Who does it learn from?</string>
-    <string name="scene54choice">Wake up!</string>
+    <string name="scene54item1">The name is familiar</string>
+    <string name="scene54item2">But it is not your voice</string>
+    <string name="scene54item3">That speaks it</string>
+    <string name="scene54choice">Wake</string>
 
 
     <!-- content descriptions for UI elements -->

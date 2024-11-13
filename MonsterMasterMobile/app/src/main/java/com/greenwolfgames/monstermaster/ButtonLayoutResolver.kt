@@ -51,6 +51,10 @@ class ButtonLayoutResolver
             {
                 return parentId;
             }
+            if(layoutMode == ELayoutMode.END_TO_END && choiceSize == 1)
+            {
+                return parentId;
+            }
             if (layoutMode == ELayoutMode.END_TO_START && choiceSize > 1)
             {
                 return buttons[1].id

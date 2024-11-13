@@ -50,7 +50,7 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene4item1), getString(context, R.string.scene4item2),
                     getString(context, R.string.scene4item3), getString(context, R.string.scene4item4),
-                    getString(context, R.string.scene4item5))
+                    getString(context, R.string.scene4item5), getString(context, R.string.scene4item6))
                 val choices = listOf(Choice(getString(context, R.string.scene4choice1), 8, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
                     Choice(getString(context, R.string.scene4choice2), 8, {state.addScore(Element.AERO)}, Element.AERO, 20))
                 return Node(index, prompts, choices, listOf(R.drawable.scene_object_flame_bottom_left),
@@ -440,12 +440,14 @@ class NodeRetriever
             }
             if(index == 54)
             {
-                val prompts: List<String> = listOf(state.playerName, state.playerName, state.playerName)
+                val prompts: List<String> = listOf(getString(context,R.string.scene54item1),state.playerName,
+                    getString(context,R.string.scene54item2), state.playerName,
+                    getString(context,R.string.scene54item3),state.playerName)
                 val choices = listOf(Choice(getString(context,R.string.scene54choice), 55, {state -> state}, Element.PHYSICAL))
                 return Node(index, prompts, choices, listOf(), ContextCompat.getColor(context, Element.getBackgroundColor(Element.PHYSICAL)),
                     ContextCompat.getColor(context, Element.getTextColor(Element.PHYSICAL)))
             }
-            throw IllegalStateException("Scene1Node index not found, max 17 actual: $index");
+            throw IllegalStateException("Scene1Node index not found, max 54 actual: $index");
         }
 
         private fun getEnterNameNode(context: Context, index: Int, promptIndex: Int, element: Element): Node
