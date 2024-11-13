@@ -37,6 +37,7 @@
     <color name="darkRed">            #FF800000</color>
     <color name="darkBlue">           #FF000080</color>
     <color name="darkerGreen">        #FF004000</color>
+    <color name="darkerPurple">       #FF380080</color>
     <color name="darkYellow">         #FF808000</color>
     <color name="darkCyan">           #FF008080</color>
     <color name="lightCyanBlue">      #FF80C4FF</color>

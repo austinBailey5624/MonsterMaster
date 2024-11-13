@@ -150,7 +150,7 @@ enum class Element {
                 AMPHIBIOUS -> R.color.darkCyan
                 WEATHER -> R.color.darkCyan
                 ICE -> R.color.lightCyanBlue
-                DEEP -> R.color.pink
+                DEEP -> R.color.darkerPurple
 
                 FEY -> R.color.brown
                 PLANT -> R.color.darkCyan

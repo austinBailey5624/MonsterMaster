@@ -31,7 +31,8 @@ class NodeRetriever
                     getString(context, R.string.scene2item5))
                 val choices = listOf(Choice(getString(context, R.string.scene2choice1),4, {state.addScore(Element.PYRO)}, Element.PYRO, 24 ),
                     Choice(getString(context, R.string.scene2choice2),5, {state.addScore(Element.AQUA)}, Element.AQUA, 24))
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_faint_light_from_above),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_faint_light_from_above,
+                    R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.gray), ContextCompat.getColor(context, R.color.whiteGray))
             }
             //Chose Darkness, now choose Fire or Water
@@ -42,7 +43,8 @@ class NodeRetriever
                     getString(context, R.string.scene3item5), getString(context, R.string.scene3item6))
                 val choices = listOf(Choice(getString(context, R.string.scene3choice1), 6, {state.addScore(Element.PYRO)}, Element.PYRO, 22),
                     Choice(getString(context, R.string.scene3choice2), 7, {state.addScore(Element.AQUA)}, Element.AQUA, 22))
-                return Node(index, prompts, choices, listOf(),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_trees,
+                    R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.black), ContextCompat.getColor(context, R.color.darkishGray))
             }
             // Chose Light and Fire, now choose Air or Earth
@@ -53,7 +55,8 @@ class NodeRetriever
                     getString(context, R.string.scene4item5), getString(context, R.string.scene4item6))
                 val choices = listOf(Choice(getString(context, R.string.scene4choice1), 8, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
                     Choice(getString(context, R.string.scene4choice2), 8, {state.addScore(Element.AERO)}, Element.AERO, 20))
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_flame_bottom_left),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_flame_bottom_left,
+                    R.anim.fade_in_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.darkBrown), ContextCompat.getColor(context, R.color.brown))
             }
             //Chose light and water, now choose Air or Earth
@@ -64,7 +67,8 @@ class NodeRetriever
                     getString(context, R.string.scene5item5), getString(context, R.string.scene5item6))
                 val choices = listOf(Choice(getString(context, R.string.scene5choice1), 9, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
                     Choice(getString(context, R.string.scene5choice2), 9, {state.addScore(Element.AERO)}, Element.AERO, 20))
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_river),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_river,
+                    R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.lightishBlue), ContextCompat.getColor(context, R.color.lighterBlue))
             }
             //Chose Darkness and Fire, now choose Air or Earth
@@ -75,7 +79,8 @@ class NodeRetriever
                     getString(context, R.string.scene6item5))
                 val choices = listOf(Choice(getString(context, R.string.scene6choice1), 10, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
                     Choice(getString(context, R.string.scene6choice2), 10, {state.addScore(Element.AERO)}, Element.AERO, 20))
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_flame_bottom_left),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_flame_bottom_left,
+                    R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.faintRed), ContextCompat.getColor(context, R.color.darkRed))
             }
             //Chose Darkness and Water, now choose Air or Earth
@@ -86,7 +91,7 @@ class NodeRetriever
                     getString(context, R.string.scene7item5))
                 val choices = listOf(Choice(getString(context, R.string.scene7choice1), 11, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
                     Choice(getString(context, R.string.scene7choice2), 11, {state.addScore(Element.AERO)}, Element.AERO, 20))
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_river),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_river, R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.faintBlue), ContextCompat.getColor(context, R.color.lightishBlue))
             }
             //Chose Light and Fire, with an option of either Earth or Air, in either case, commit to one of the three elements you've chosen
@@ -107,7 +112,8 @@ class NodeRetriever
                         Choice(getString(context, R.string.scene8choice2),14,{state.addScore(Element.PYRO,2)}, Element.PYRO,20),
                         Choice(getString(context, R.string.scene8choice3Alt),17,{state.addScore(Element.AERO,2)}, Element.AERO,20))
                 }
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_sunshine_upper_left),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_sunshine_upper_left,
+                    R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.darkBrown), ContextCompat.getColor(context, R.color.brown))
             }
             //Chose Light water and either air or earth, in either case, commit to one of the three elements you've chosen
@@ -129,7 +135,9 @@ class NodeRetriever
                         Choice(getString(context, R.string.scene9choice3Alt),17,{state.addScore(Element.AERO,2)}, Element.AERO))
                 }
 
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_magic_glyph),
+                //TODO: Make an animation so the glyph fades in and pulses
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_magic_glyph,
+                    R.anim.fade_in_very_slow, R.id.background)),
                     ContextCompat.getColor(context, R.color.lightishBlue), ContextCompat.getColor(context, R.color.lightCyanBlue))
             }
             //Chose darkness and fire, and either air or earth, in either case, commit to one of the three elements you've chosen
@@ -156,7 +164,8 @@ class NodeRetriever
                         Choice(getString(context, R.string.scene10choice2Alt),14,{state.addScore(Element.PYRO, 2)}, Element.PYRO),
                         Choice(getString(context, R.string.scene10choice3Alt), 17, {state.addScore(Element.AERO, 2)}, Element.AERO))
                 }
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_sunshine_upper_left),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_sunshine_upper_left,
+                    R.anim.fade_in_very_slow, R.id.background)),
                     ContextCompat.getColor(context, R.color.black), ContextCompat.getColor(context, R.color.red))
             }
             //Choose Darkness and Water, and either air or earth, in either case, commit to one of the three elements you've chosen
@@ -178,7 +187,9 @@ class NodeRetriever
                         Choice(getString(context, R.string.scene11choice3Alt), 16, {state.addScore(Element.AERO, 2)}, Element.AERO))
                 }
 
-                return Node(index, prompts, choices, listOf(R.drawable.scene_object_moonshine_upper_left),
+                //TODO: replace with a cool moon sigil
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_moonshine_upper_left,
+                    R.anim.fade_in_very_slow, R.id.background)),
                     ContextCompat.getColor(context, R.color.black), ContextCompat.getColor(context, R.color.lightishBlue))
             }
             if(index == 12)
@@ -192,7 +203,8 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene12choice4),21,{state.addScore(Element.LUNAR)}, Element.LUNAR),
                     Choice(getString(context,R.string.scene12choice5),22,{state.addScore(Element.GUARDIAN)}, Element.GUARDIAN),
                     Choice(getString(context,R.string.scene12choice6),23,{state.addScore(Element.ANGEL)}, Element.ANGEL))
-                return Node(index, prompts, choices, listOf(),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_faint_light_from_above,
+                    R.anim.fade_in_very_slow, R.id.background)),
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.LUXOR)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.LUXOR)))
             }
@@ -207,7 +219,8 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene13choice4),27,{state.addScore(Element.POISON)}, Element.POISON),
                     Choice(getString(context,R.string.scene13choice5),28,{state.addScore(Element.UNDEAD)}, Element.UNDEAD),
                     Choice(getString(context,R.string.scene13choice6),29,{state.addScore(Element.STORM)}, Element.STORM))
-                return Node(index, prompts, choices, listOf(),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_gray_skull,
+                    R.anim.fade_in_very_slow, R.id.background)),
                     ContextCompat.getColor(context,R.color.black),
                     ContextCompat.getColor(context,R.color.darkishGray))
             }
@@ -222,7 +235,8 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene14choice4),33,{state.addScore(Element.LAVA)}, Element.LAVA),
                     Choice(getString(context,R.string.scene14choice5),34,{state.addScore(Element.DINO)}, Element.DINO),
                     Choice(getString(context,R.string.scene14choice6),35,{state.addScore(Element.SAND)},Element.SAND))
-                return Node(index, prompts, choices, listOf(),
+                return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_flame,
+                    R.anim.fade_in_very_slow, R.id.background)),
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.PYRO)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.PYRO)))
             }
@@ -237,7 +251,8 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene15choice4),39,{state.addScore(Element.AQUA)},Element.AQUA),
                     Choice(getString(context,R.string.scene15choice5),40,{state.addScore(Element.AMPHIBIOUS)},Element.AMPHIBIOUS),
                     Choice(getString(context,R.string.scene15choice6),41,{state.addScore(Element.WEATHER)},Element.WEATHER))
-                return Node(index, prompts, choices, listOf(),
+                //TODO: Add a waterdrop animation
+                return Node(index, prompts, choices,
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.AQUA)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.AQUA)))}
             if(index == 16)
@@ -260,7 +275,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene16choice4),45,{state.addScore(Element.PLANT)}, Element.PLANT),
                     Choice(getString(context,R.string.scene16choice5),46,{state.addScore(Element.TERRA)},Element.TERRA),
                     Choice(getString(context,R.string.scene16choice6),47,{state.addScore(Element.PEGASUS)},Element.PEGASUS))
-                return Node(index, prompts, choices, listOf(),
+                return Node(index, prompts, choices,
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.TERRA)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.TERRA)))}
             if(index == 17)
@@ -290,7 +305,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene17choice4),51,{state.addScore(Element.SEABREEZE)}, Element.SEABREEZE),
                     Choice(getString(context,R.string.scene17choice5),52,{state.addScore(Element.BIRD)},Element.BIRD),
                     Choice(getString(context,R.string.scene17choice6),53,{state.addScore(Element.AERO)},Element.AERO))
-                return Node(index, prompts, choices, listOf(),
+                return Node(index, prompts, choices,
                     ContextCompat.getColor(context,Element.getButtonBackgroundColor(Element.AERO)),
                     ContextCompat.getColor(context,Element.getTextColor(Element.AERO)))
             }
@@ -444,7 +459,7 @@ class NodeRetriever
                     getString(context,R.string.scene54item2), state.playerName,
                     getString(context,R.string.scene54item3),state.playerName)
                 val choices = listOf(Choice(getString(context,R.string.scene54choice), 55, {state -> state}, Element.PHYSICAL))
-                return Node(index, prompts, choices, listOf(), ContextCompat.getColor(context, Element.getBackgroundColor(Element.PHYSICAL)),
+                return Node(index, prompts, choices, ContextCompat.getColor(context, Element.getBackgroundColor(Element.PHYSICAL)),
                     ContextCompat.getColor(context, Element.getTextColor(Element.PHYSICAL)))
             }
             throw IllegalStateException("Scene1Node index not found, max 54 actual: $index");
@@ -454,7 +469,9 @@ class NodeRetriever
         {
             val prompts: List<String> = listOf(getString(context, promptIndex))
             val choices = listOf(Choice(getString(context,R.string.enter_name),54,{state -> state},element))
-            return Node(index, prompts, choices, listOf(Element.getInfantMonster(context, element).imageResourceId), ContextCompat.getColor(context, Element.getBackgroundColor(element)),
+            return Node(index, prompts, choices, listOf(AnimationInfo(Element.getInfantMonster(context, element).imageResourceId,
+                R.anim.fade_in, R.id.background_center)),
+                ContextCompat.getColor(context, Element.getBackgroundColor(element)),
                 ContextCompat.getColor(context, Element.getTextColor(element)))
         }
     }

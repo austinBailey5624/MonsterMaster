@@ -8,6 +8,7 @@ import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,7 @@ import java.util.Locale
 class MainActivity : AppCompatActivity()
 {
     private var previousColor: Int = R.color.darkGray
+    private var previousNodeAnimations: List<AnimationInfo> = listOf()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -43,13 +45,17 @@ class MainActivity : AppCompatActivity()
             findViewById(R.id.text_6),
             findViewById(R.id.text_7)
         )
+        val images: List<ImageView> = listOf(
+            findViewById(R.id.image_1)
+        )
         val textInput: TextInputEditText = findViewById(R.id.text_input)
 
         hideText(texts)
+        hideImages(images)
         initButtons(buttons)
         val firstNode: Node = NodeRetriever.getNode(1, state, this@MainActivity, state)
         previousColor = firstNode.backgroundColor
-        setNode(firstNode, state, buttons, texts, textInput)
+        setNode(firstNode, state, buttons, texts, images, textInput)
     }
 
     private fun hideText(texts: List<TextView>)
@@ -57,6 +63,14 @@ class MainActivity : AppCompatActivity()
         for (text in texts)
         {
             text.setTextColor(ContextCompat.getColor(this, R.color.invisible))
+        }
+    }
+
+    private fun hideImages(images: List<ImageView>)
+    {
+        for(imageView in images)
+        {
+            imageView.visibility = View.GONE
         }
     }
 
@@ -81,7 +95,12 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun fadeOut(
-        buttons: List<Button>, texts: List<TextView>, nextNodeIndex: Int, state: State, textInput: TextInputEditText
+        buttons: List<Button>,
+        texts: List<TextView>,
+        images: List<ImageView>,
+        nextNodeIndex: Int,
+        state: State,
+        textInput: TextInputEditText
     )
     {
         val nextNode: Node = NodeRetriever.getNode(nextNodeIndex, state, this@MainActivity, state)
@@ -96,7 +115,7 @@ class MainActivity : AppCompatActivity()
             override fun onAnimationEnd(animation: android.animation.Animator)
             {
                 super.onAnimationEnd(animation)
-                setNode(nextNode, state, buttons, texts, textInput)
+                setNode(nextNode, state, buttons, texts, images, textInput)
             }
         })
 
@@ -120,25 +139,36 @@ class MainActivity : AppCompatActivity()
         })
 
         val fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
-        for (i in 1..<buttons.size)
+//        for (i in 1..<buttons.size)
+        for(button in buttons)
         {
-            buttons[i].startAnimation(fadeOutAnimation)
+            button.startAnimation(fadeOutAnimation)
         }
         for (text in texts)
         {
             text.startAnimation(fadeOutAnimation)
+        }
+        for(image in images)
+        {
+            image.startAnimation(fadeOutAnimation)
         }
         buttons[0].startAnimation(fadeOutAnimationTrigger)
         fadeOutAnimation.start()
     }
 
     private fun setNode(
-        nextNode: Node, state: State, buttons: List<Button>, texts: List<TextView>, textInput: TextInputEditText
+        nextNode: Node,
+        state: State,
+        buttons: List<Button>,
+        texts: List<TextView>,
+        images: List<ImageView>,
+        textInput: TextInputEditText
     )
     {
         Log.d("MainActivity.Set Node", "Setting node index: " + nextNode.index)
+
         setText(nextNode.prompt, texts)
-        setButtons(nextNode, buttons, state, texts, textInput)
+        setButtons(nextNode, buttons, state, texts, images, textInput)
         setTextInput(nextNode, textInput)
         val main = findViewById<View>(R.id.main)
         main.setBackgroundColor(nextNode.backgroundColor)
@@ -154,6 +184,45 @@ class MainActivity : AppCompatActivity()
         )
         val skipButton: Button = findViewById(R.id.button_skip)
         skipButton.visibility = View.VISIBLE
+
+        //if we need to update our animations
+        if(previousNodeAnimations != nextNode.animationInfos)
+        {
+            hideImages(images)
+            for (i in nextNode.animationInfos.indices)
+            {
+//                if(!previousNodeAnimations.contains(nextNode.animationInfos[i]))
+//                {
+//                    //TODO: Fix (this assumes everything is in the same image
+//                    hideImages(images)
+//                }
+                setUpAnimation(images[i], nextNode.animationInfos[i])
+            }
+        }
+        previousNodeAnimations = nextNode.animationInfos
+    }
+
+    private fun setUpAnimation(image: ImageView, animationInfo: AnimationInfo)
+    { //@formatter:off
+        image.setImageResource(animationInfo.imageId)
+
+        val layoutParam = image.layoutParams as ConstraintLayout.LayoutParams
+        layoutParam.startToStart   = animationInfo.parentBackgroundId
+        layoutParam.endToEnd       = animationInfo.parentBackgroundId
+        layoutParam.topToTop   = animationInfo.parentBackgroundId
+        layoutParam.bottomToBottom = animationInfo.parentBackgroundId
+        layoutParam.startToEnd     = ConstraintLayout.LayoutParams.UNSET
+        layoutParam.endToStart     = ConstraintLayout.LayoutParams.UNSET
+        layoutParam.topToBottom    = ConstraintLayout.LayoutParams.UNSET
+        layoutParam.bottomToTop    = ConstraintLayout.LayoutParams.UNSET
+        image.layoutParams = layoutParam
+
+        image.visibility = View.VISIBLE
+
+        image.scaleType = ImageView.ScaleType.FIT_XY
+
+        //@formatter:on
+        image.startAnimation(AnimationUtils.loadAnimation(this@MainActivity, animationInfo.animationId))
     }
 
     private fun setText(prompt: List<String>, texts: List<TextView>)
@@ -195,14 +264,10 @@ class MainActivity : AppCompatActivity()
             }
             return
         }
-        Log.d("MainActivity Text Layout", "\n  parentID:" + R.id.background_top + "\n"
-            + "  text 1 ID: " + R.id.text_1 + "\n"
-            + "  text 2 ID: " + R.id.text_2 + "\n"
-            + "  text 3 ID: " + R.id.text_3 + "\n"
-            + "  text 4 ID: " + R.id.text_4 + "\n"
-            + "  text 5 ID: " + R.id.text_5 + "\n"
-            + "  text 6 ID: " + R.id.text_6 + "\n"
-            + "  text 7 ID: " + R.id.text_7 + "\n")
+        Log.d(
+            "MainActivity Text Layout",
+            "\n  parentID:" + R.id.background_top + "\n" + "  text 1 ID: " + R.id.text_1 + "\n" + "  text 2 ID: " + R.id.text_2 + "\n" + "  text 3 ID: " + R.id.text_3 + "\n" + "  text 4 ID: " + R.id.text_4 + "\n" + "  text 5 ID: " + R.id.text_5 + "\n" + "  text 6 ID: " + R.id.text_6 + "\n" + "  text 7 ID: " + R.id.text_7 + "\n"
+        )
         for (i in texts.indices)
         {
             val layoutParams = texts[i].layoutParams as ConstraintLayout.LayoutParams
@@ -222,15 +287,10 @@ class MainActivity : AppCompatActivity()
             }
             layoutParams.bottomToTop = getTextLayout(EDirection.DOWN, texts, i, prompt.size)
             layoutParams.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
-            Log.d("MainActivity Text Layout",
-                "  text $i startToStart   : " + layoutParams.startToStart + "\n"
-                        + "  text $i startToEnd    : " + layoutParams.startToEnd + "\n"
-                        + "  text $i endToEnd      : " + layoutParams.endToEnd + "\n"
-                        + "  text $i endToStart    : " + layoutParams.endToStart + "\n"
-                        + "  text $i topToTop      : " + layoutParams.topToTop + "\n"
-                        + "  text $i topToBottom   : " + layoutParams.topToBottom + "\n"
-                        + "  text $i bottomToTop   : " + layoutParams.bottomToTop + "\n"
-                        + "  text $i bottomToBottom: " + layoutParams.bottomToBottom)
+            Log.d(
+                "MainActivity Text Layout",
+                "  text $i startToStart   : " + layoutParams.startToStart + "\n" + "  text $i startToEnd    : " + layoutParams.startToEnd + "\n" + "  text $i endToEnd      : " + layoutParams.endToEnd + "\n" + "  text $i endToStart    : " + layoutParams.endToStart + "\n" + "  text $i topToTop      : " + layoutParams.topToTop + "\n" + "  text $i topToBottom   : " + layoutParams.topToBottom + "\n" + "  text $i bottomToTop   : " + layoutParams.bottomToTop + "\n" + "  text $i bottomToBottom: " + layoutParams.bottomToBottom
+            )
 
             texts[i].layoutParams = layoutParams
 
@@ -273,7 +333,7 @@ class MainActivity : AppCompatActivity()
     {
         if (index >= promptSize)
         {
-            Log.d("MainActivity Text Visibility","text index: $index is invisible(Gone)")
+            Log.d("MainActivity Text Visibility", "text index: $index is invisible(Gone)")
             return View.GONE
         }
         Log.d("MainActivity Text Visibility", "text index: $index is visible")
@@ -292,7 +352,7 @@ class MainActivity : AppCompatActivity()
 
     private fun setTextInput(nextNode: Node, textInput: TextInputEditText)
     {
-        if(nextNode.index  in 18..53)
+        if (nextNode.index in 18..53)
         {
             textInput.visibility = View.VISIBLE
         }
@@ -303,12 +363,17 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun setButtons(
-        node: Node, buttons: List<Button>, state: State, texts: List<TextView>, textInput: TextInputEditText
+        node: Node,
+        buttons: List<Button>,
+        state: State,
+        texts: List<TextView>,
+        images: List<ImageView>,
+        textInput: TextInputEditText
     )
     {
         Log.d("MainActivity.kt.setbuttons", "choicesCount: " + node.choices.size)
 
-        if(nodeRequiresTextInput(node))
+        if (nodeRequiresTextInput(node))
         {
             setButtonFormatWithInput(buttons[0], textInput)
         }
@@ -318,7 +383,7 @@ class MainActivity : AppCompatActivity()
         }
         setButtonVisibility(node.choices.size, buttons)
         setButtonTextContent(node.choices, buttons)
-        setButtonBehavior(node, buttons, state, texts, textInput)
+        setButtonBehavior(node, buttons, state, texts, images, textInput)
     }
 
     private fun nodeRequiresTextInput(node: Node): Boolean
@@ -327,8 +392,7 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun setButtonFormatWithInput(button: Button, textInput: TextInputEditText)
-    {
-        //Assume a single button, the input will be above it
+    { //Assume a single button, the input will be above it
         val inputLayout = textInput.layoutParams as ConstraintLayout.LayoutParams
 
         inputLayout.topToTop = R.id.background_bottom
@@ -359,10 +423,13 @@ class MainActivity : AppCompatActivity()
         button.visibility = View.VISIBLE
     }
 
-    private fun setButtonFormat(choiceSize: Int, buttons: List<Button>,textInput: TextInputEditText)
+    private fun setButtonFormat(
+        choiceSize: Int,
+        buttons: List<Button>,
+        textInput: TextInputEditText
+    )
     {
-        textInput.visibility = View.GONE
-        //@formatter:off
+        textInput.visibility = View.GONE //@formatter:off
         Log.d("MainActivity.kt.setButtonFormat",  "\n parentID: " + R.id.background_bottom
                 + "\n Button 0: " + buttons[0].id
                 + "\n Button 1: " + buttons[1].id
@@ -425,13 +492,17 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun setButtonBehavior(
-        node: Node, buttons: List<Button>, state: State, texts: List<TextView>, textInput: TextInputEditText
+        node: Node,
+        buttons: List<Button>,
+        state: State,
+        texts: List<TextView>,
+        images: List<ImageView>,
+        textInput: TextInputEditText
     )
     { //if we are in a node where we need a special button behavior where we retrieve the player name
         if (nodeRequiresTextInput(node))
         {
-            buttons[0].setOnClickListener()
-            {
+            buttons[0].setOnClickListener() {
                 var temp: String = textInput.text.toString()
                 if (temp != "")
                 {
@@ -446,11 +517,10 @@ class MainActivity : AppCompatActivity()
                     Log.d("Name Input", "Player enetered Name, rinsed version: $temp")
                     state.playerName = temp.trim()
                     node.choices[0].stateChange(state)
-                    fadeOut(buttons, texts, node.choices[0].nextNodeIndex, state, textInput)
+                    fadeOut(buttons, texts, images, node.choices[0].nextNodeIndex, state, textInput)
                 }
                 else
-                {
-                    //TODO: Prompt the user to input their name
+                { //TODO: Prompt the user to input their name
                 }
             }
         }
@@ -464,7 +534,7 @@ class MainActivity : AppCompatActivity()
                         "Button " + i + " clicked, moving to node: " + node.choices[i].nextNodeIndex
                     )
                     node.choices[i].stateChange(state)
-                    fadeOut(buttons, texts, node.choices[i].nextNodeIndex, state, textInput)
+                    fadeOut(buttons, texts, images, node.choices[i].nextNodeIndex, state, textInput)
                 }
             }
         }
