@@ -4,6 +4,7 @@ import android.animation.AnimatorListenerAdapter
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.util.TypedValue
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -50,12 +51,41 @@ class MainActivity : AppCompatActivity()
         )
         val textInput: TextInputEditText = findViewById(R.id.text_input)
 
+
+        setTextAutoResizing(texts)
+        setButtonAutoResizing(buttons)
         hideText(texts)
         hideImages(images)
         initButtons(buttons)
         val firstNode: Node = NodeRetriever.getNode(1, state, this@MainActivity, state)
         previousColor = firstNode.backgroundColor
         setNode(firstNode, state, buttons, texts, images, textInput)
+    }
+
+    private fun setTextAutoResizing(texts: List<TextView>)
+    {
+        for(text in texts)
+        {
+            text.setAutoSizeTextTypeUniformWithConfiguration(
+                12,  // Minimum text size in sp
+                50, // Maximum text size in sp
+                2,   // Step granularity in sp
+                TypedValue.COMPLEX_UNIT_SP
+            )
+        }
+    }
+
+    private fun setButtonAutoResizing(buttons: List<Button>)
+    {
+        for(button in buttons)
+        {
+            button.setAutoSizeTextTypeUniformWithConfiguration(
+                12,
+                100,
+                2,
+                TypedValue.COMPLEX_UNIT_SP
+            )
+        }
     }
 
     private fun hideText(texts: List<TextView>)
@@ -139,7 +169,6 @@ class MainActivity : AppCompatActivity()
         })
 
         val fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
-//        for (i in 1..<buttons.size)
         for(button in buttons)
         {
             button.startAnimation(fadeOutAnimation)
@@ -219,7 +248,7 @@ class MainActivity : AppCompatActivity()
 
         image.visibility = View.VISIBLE
 
-        image.scaleType = ImageView.ScaleType.FIT_XY
+        image.scaleType = animationInfo.imageScaleType
 
         //@formatter:on
         image.startAnimation(AnimationUtils.loadAnimation(this@MainActivity, animationInfo.animationId))
