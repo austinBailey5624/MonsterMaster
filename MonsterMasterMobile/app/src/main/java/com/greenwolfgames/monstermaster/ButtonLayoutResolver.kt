@@ -43,6 +43,7 @@ class ButtonLayoutResolver
             choiceSize: Int, layoutMode: ELayoutMode, buttons: List<Button>, parentId: Int
         ): Int
         {
+
             if (layoutMode == ELayoutMode.TOP_TO_TOP)
             {
                 return parentId;
@@ -55,9 +56,24 @@ class ButtonLayoutResolver
             {
                 return parentId;
             }
-            if (layoutMode == ELayoutMode.END_TO_START && choiceSize > 1)
+            if (layoutMode == ELayoutMode.END_TO_START && choiceSize > 2)
             {
                 return buttons[1].id
+            }
+            if(choiceSize == 2)
+            {
+                if (layoutMode == ELayoutMode.END_TO_END)
+                {
+                    return parentId
+                }
+                if (layoutMode == ELayoutMode.BOTTOM_TO_TOP)
+                {
+                    return buttons[1].id
+                }
+                if (layoutMode == ELayoutMode.BOTTOM_TO_BOTTOM)
+                {
+                    ConstraintLayout.LayoutParams.UNSET
+                }
             }
             if (layoutMode == ELayoutMode.BOTTOM_TO_TOP && choiceSize > 2)
             {
@@ -79,6 +95,22 @@ class ButtonLayoutResolver
             if(choiceSize < 2)
             {
                 return ConstraintLayout.LayoutParams.UNSET
+            }
+            if(layoutMode == ELayoutMode.TOP_TO_TOP && choiceSize == 2)
+            {
+                return ConstraintLayout.LayoutParams.UNSET
+            }
+            if(layoutMode == ELayoutMode.TOP_TO_BOTTOM && choiceSize == 2)
+            {
+                return buttons[0].id
+            }
+            if(layoutMode == ELayoutMode.START_TO_END && choiceSize == 2)
+            {
+                return parentId
+            }
+            if(layoutMode == ELayoutMode.START_TO_START && choiceSize == 2)
+            {
+                return parentId
             }
             if (layoutMode == ELayoutMode.TOP_TO_TOP)
             {

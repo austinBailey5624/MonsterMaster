@@ -471,7 +471,7 @@ class NodeRetriever
             val prompts: List<String> = listOf(getString(context, promptIndex))
             val choices = listOf(Choice(getString(context,R.string.enter_name),54,{state -> state},element))
             return Node(index, prompts, choices, listOf(AnimationInfo(Element.getInfantMonster(context, element).imageResourceId,
-                R.anim.fade_in, R.id.background_center, ImageView.ScaleType.FIT_CENTER)),
+                R.anim.fade_in_slow, R.id.background_center, ImageView.ScaleType.FIT_CENTER)),
                 ContextCompat.getColor(context, Element.getBackgroundColor(element)),
                 ContextCompat.getColor(context, Element.getTextColor(element)))
         }
