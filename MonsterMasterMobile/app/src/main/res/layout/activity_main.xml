@@ -69,6 +69,38 @@
         app:layout_constraintTop_toTopOf="@id/background_center"
         app:srcCompat="@drawable/background_oaktree_daylight" />
 
+    <ImageView
+        android:id="@+id/image_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/background"
+        app:layout_constraintEnd_toEndOf="@id/background"
+        app:layout_constraintStart_toStartOf="@id/background"
+        app:layout_constraintTop_toBottomOf="@+id/background" />
+
+    <ImageView
+        android:id="@+id/image_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/background"
+        app:layout_constraintEnd_toEndOf="@id/background"
+        app:layout_constraintStart_toEndOf="@id/background"
+        app:layout_constraintTop_toTopOf="@id/background"
+        app:srcCompat="@drawable/Icon" />
+
+    <ImageView
+        android:id="@+id/image_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:srcCompat="@drawable/Icon" />
+
     <TextView
         android:id="@+id/text_1"
         android:layout_width="0dp"
@@ -311,4 +343,5 @@
         app:layout_constraintStart_toStartOf="@id/background"
         app:layout_constraintTop_toTopOf="@id/background"
         tools:visibility="visible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

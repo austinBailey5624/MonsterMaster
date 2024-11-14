@@ -112,130 +112,130 @@
 //            val choice1 = Choice(getString(R.string.scene14node0choice2), 1, {state -> val intent = Intent(this, Scene14ActivityMirror::class.java);intent.putExtra("state", currentState);startActivity(intent)}, Element.NEUTRAL, 26)
 //            return Node(index, getString(R.string.scene14node0prompt), listOf(choice1))
 //        }
-//        if(index == 1)
+//        if(index == 1)//scene55
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node1choice1),2, {state -> state.addScore(Element.DARK, 1)}, Element.DARK, 12)
-//            val choice2 = Choice(getString(R.string.scene14node1choice2),3, {state -> state.addScore(Element.WATER, 1)}, Element.WATER, 12)
-//            val choice3 = Choice(getString(R.string.scene14node1choice3),4, {state -> state.addScore(Element.AIR, 1)}, Element.AIR, 12)
-//            val choice4 = Choice(getString(R.string.scene14node1choice4),2, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE, 12)
-//            val choice5 = Choice(getString(R.string.scene14node1choice5),4, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH, 12)
-//            val choice6 = Choice(getString(R.string.scene14node1choice6),5, {}, Element.NEUTRAL,16)
+//            val choice1 = Choice(getString(R.string.scene14node1choice1),scene56, {state -> state.addScore(Element.DARK, 1)}, Element.DARK, 12)
+//            val choice2 = Choice(getString(R.string.scene14node1choice2),57, {state -> state.addScore(Element.WATER, 1)}, Element.WATER, 12)
+//            val choice3 = Choice(getString(R.string.scene14node1choice3),58, {state -> state.addScore(Element.AIR, 1)}, Element.AIR, 12)
+//            val choice4 = Choice(getString(R.string.scene14node1choice4),56, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE, 12)
+//            val choice5 = Choice(getString(R.string.scene14node1choice5),58, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH, 12)
+//            val choice6 = Choice(getString(R.string.scene14node1choice6),59, {}, Element.NEUTRAL,16)
 //            val choices = listOf(choice1, choice2, choice3, choice4, choice5, choice6)
 //            return Node(index, getString(R.string.scene14node1prompt),choices)
 //        }
-//        if(index == 2)
+//        if(index == 2)56
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node2choice1),6, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE, 18)
-//            val choice2 = Choice(getString(R.string.scene14node2choice2),4, {state -> state.addScore(Element.WATER, 1)}, Element.WATER, 18)
-//            val choice3 = Choice(getString(R.string.scene14node2choice3),4, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH, 18)
+//            val choice1 = Choice(getString(R.string.scene14node2choice1),60, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE, 18)
+//            val choice2 = Choice(getString(R.string.scene14node2choice2),58, {state -> state.addScore(Element.WATER, 1)}, Element.WATER, 18)
+//            val choice3 = Choice(getString(R.string.scene14node2choice3),58, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH, 18)
 //            return Node(index, getString(R.string.scene14node2prompt), listOf(choice1, choice2, choice3))
 //        }
-//        if(index == 3)
+//        if(index == 3)57
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node3choice1),6, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE, 24)
-//            val choice2 = Choice(getString(R.string.scene14node3choice2), 4, {state -> state.addScore(Element.WATER, 1)}, Element.WATER,20)
-//            val choice3 = Choice(getString(R.string.scene14node3choice3), 4, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH,20)
+//            val choice1 = Choice(getString(R.string.scene14node3choice1),60, {state -> state.addScore(Element.FIRE, 1)}, Element.FIRE, 24)
+//            val choice2 = Choice(getString(R.string.scene14node3choice2),58, {state -> state.addScore(Element.WATER, 1)}, Element.WATER,20)
+//            val choice3 = Choice(getString(R.string.scene14node3choice3),58, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH,20)
 //            return Node(index, getString(R.string.scene14node3prompt), listOf(choice1, choice2, choice3))
 //        }
-//        if(index == 4)
+//        if(index == 4)58
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node4choice1), 7, {}, Element.NEUTRAL,18)
-//            val choice2 = Choice(getString(R.string.scene14node4choice2), 8, {}, Element.NEUTRAL,18)
-//            val choice3 = Choice(getString(R.string.scene14node4choice3), 9, {state -> state.addScore(Element.DARK,1)}, Element.DARK,14)
+//            val choice1 = Choice(getString(R.string.scene14node4choice1), 61, {}, Element.NEUTRAL,18)
+//            val choice2 = Choice(getString(R.string.scene14node4choice2), 62, {}, Element.NEUTRAL,18)
+//            val choice3 = Choice(getString(R.string.scene14node4choice3), 63, {state -> state.addScore(Element.DARK,1)}, Element.DARK,14)
 //            val choice4 = Choice(getString(R.string.scene14node4choice4), 0, {state -> state.addScore(Element.EARTH,1)}, Element.EARTH,18)
 //            val choice5 = Choice(getString(R.string.scene14node4choice5), 0, {state -> state.addScore(Element.AIR, 1)}, Element.AIR,16)
 //            return Node(index, getString(R.string.scene14node4prompt), listOf(choice1, choice2, choice3, choice4, choice5))
 //        }
-//        if(index == 5)
+//        if(index == 5)59
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node5choice1), 4, {}, Element.NEUTRAL)
-//            val choice2 = Choice(getString(R.string.scene14node5choice2), 14, {}, Element.NEUTRAL)
+//            val choice1 = Choice(getString(R.string.scene14node5choice1), 58, {}, Element.NEUTRAL)
+//            val choice2 = Choice(getString(R.string.scene14node5choice2), 68, {}, Element.NEUTRAL)
 //            return Node(index, getString(R.string.scene14node5prompt), listOf(choice1, choice2))
 //        }
-//        if(index == 6)
+//        if(index == 6)60
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node6choice1), 7, {}, Element.NEUTRAL, 18)
-//            val choice2 = Choice(getString(R.string.scene14node6choice2), 8,{}, Element.NEUTRAL, 18)
-//            val choice3 = Choice(getString(R.string.scene14node6choice3), 9, {state -> state.addScore(Element.DARK, 1)}, Element.DARK, 14)
+//            val choice1 = Choice(getString(R.string.scene14node6choice1), 61, {}, Element.NEUTRAL, 18)
+//            val choice2 = Choice(getString(R.string.scene14node6choice2), 62,{}, Element.NEUTRAL, 18)
+//            val choice3 = Choice(getString(R.string.scene14node6choice3), 63, {state -> state.addScore(Element.DARK, 1)}, Element.DARK, 14)
 //            val choice4 = Choice(getString(R.string.scene14node6choice4), 0, {state -> state.addScore(Element.EARTH, 1)}, Element.EARTH, 18)
 //            val choice5 = Choice(getString(R.string.scene14node6choice5), 0, {state -> state.addScore(Element.AIR, 1)}, Element.AIR, 16)
-//            val choice6 = Choice(getString(R.string.scene14node6choice6),10, {state -> state.addScore(Element.DARK, 1)}, Element.DARK, 16)
+//            val choice6 = Choice(getString(R.string.scene14node6choice6), 64, {state -> state.addScore(Element.DARK, 1)}, Element.DARK, 16)
 //            return Node(index, getString(R.string.scene14node6prompt), listOf(choice1, choice2, choice3, choice4, choice5, choice6))
 //        }
-//        if(index == 7)
+//        if(index == 7)61
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node7choice1), 11, {}, Element.NEUTRAL, 20)
-//            val choice2 = Choice(getString(R.string.scene14node7choice2), 12, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT, 20)
+//            val choice1 = Choice(getString(R.string.scene14node7choice1), 65, {}, Element.NEUTRAL, 20)
+//            val choice2 = Choice(getString(R.string.scene14node7choice2), 66, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT, 20)
 //            return Node(index, getString(R.string.scene14node7prompt), listOf(choice1, choice2))
 //        }
-//        if(index == 8)
+//        if(index == 8)62
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node8choice1), 13, {}, Element.NEUTRAL,22)
-//            val choice2 = Choice(getString(R.string.scene14node8choice2), 13, {state -> state.addScore(Element.AIR)}, Element.AIR,28)
-//            val choice3 = Choice(getString(R.string.scene14node8choice3),13, {state -> state.addScore(Element.WATER)}, Element.WATER,28)
+//            val choice1 = Choice(getString(R.string.scene14node8choice1), 67, {}, Element.NEUTRAL,22)
+//            val choice2 = Choice(getString(R.string.scene14node8choice2), 67, {state -> state.addScore(Element.AIR)}, Element.AIR,28)
+//            val choice3 = Choice(getString(R.string.scene14node8choice3), 67, {state -> state.addScore(Element.WATER)}, Element.WATER,28)
 //            return Node(index, getString(R.string.scene14node8prompt), listOf(choice1, choice2, choice3))
 //        }
-//        if(index == 9)
+//        if(index == 9)63
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node9choice1), 7,20)
-//            val choice2 = Choice(getString(R.string.scene14node9choice2),8,20)
-//            val choice3 = Choice(getString(R.string.scene14node9choice3),0,20)
+//            val choice1 = Choice(getString(R.string.scene14node9choice1),61,20)
+//            val choice2 = Choice(getString(R.string.scene14node9choice2),62,20)
+//            val choice3 = Choice(getString(R.string.scene14node9choice3),62,20)
 //            return Node(index, getString(R.string.scene14node9prompt), listOf(choice1, choice2, choice3))
 //        }
-//        if(index == 10)
+//        if(index == 10)64
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node10choice1),8, 22)
+//            val choice1 = Choice(getString(R.string.scene14node10choice1),62, 22)
 //            val choice2 = Choice(getString(R.string.scene14node10choice2), 0, 25)
 //            return Node(index, getString(R.string.scene14node10prompt), listOf(choice1, choice2))
 //        }
-//        if(index == 11)
+//        if(index == 11)65
 //        {
 //            val choice1 = Choice(getString(R.string.scene14node11choice1), 0, 22)
-//            val choice2 = Choice(getString(R.string.scene14node11choice2), 15, 22)
+//            val choice2 = Choice(getString(R.string.scene14node11choice2), 69, 22)
 //            return Node(index, getString(R.string.scene14node11prompt), listOf(choice1, choice2))
 //        }
-//        if(index == 12)
+//        if(index == 12)66
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node12choice1), 16)
-//            val choice2 = Choice(getString(R.string.scene14node12choice2), 17, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT)
-//            val choice3 = Choice(getString(R.string.scene14node12choice3),11)
+//            val choice1 = Choice(getString(R.string.scene14node12choice1), 70)
+//            val choice2 = Choice(getString(R.string.scene14node12choice2), 71, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT)
+//            val choice3 = Choice(getString(R.string.scene14node12choice3), 65)
 //            return Node(index, getString(R.string.scene14node12prompt), listOf(choice1, choice2, choice3))
 //        }
-//        if(index == 13)
+//        if(index == 13)67
 //        {
 //            val choice1 = Choice(getString(R.string.scene14node13choice1), 0, 26)
 //            return Node(index, getString(R.string.scene14node13prompt), listOf(choice1))
 //        }
-//        if(index == 14)
+//        if(index == 14)68
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node14choice1), 4,18)
-//            val choice2 = Choice(getString(R.string.scene14node14choice2),18, 20)
-//            val choice3 = Choice(getString(R.string.scene14node14choice3), 19,16)
+//            val choice1 = Choice(getString(R.string.scene14node14choice1), 58,18)
+//            val choice2 = Choice(getString(R.string.scene14node14choice2), 72, 20)
+//            val choice3 = Choice(getString(R.string.scene14node14choice3), 73,16)
 //            return Node(index, getString(R.string.scene14node14prompt), listOf(choice1, choice2, choice3))
 //        }
-//        if(index == 15)
+//        if(index == 15)69
 //        {
 //            val choice1 = Choice(getString(R.string.scene14node15choice1), 0, 22)
 //            return Node(index, getString(R.string.scene14node15prompt), listOf(choice1))
 //        }
-//        if(index == 16)
+//        if(index == 16)70
 //        {
-//            val choice1 = Choice(getString(R.string.scene14node16choice1), 11, 22)
-//            val choice2 = Choice(getString(R.string.scene14node16prompt), 17, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT, 16)
+//            val choice1 = Choice(getString(R.string.scene14node16choice1), 65, 22)
+//            val choice2 = Choice(getString(R.string.scene14node16prompt), 71, {state -> state.addScore(Element.LIGHT)}, Element.LIGHT, 16)
 //            return Node(index, getString(R.string.scene14node16prompt), listOf(choice1, choice2))
 //        }
-//        if(index == 17)
+//        if(index == 17)71
 //        {
 //            val choice1 = Choice(getString(R.string.scene14node17choice1), 0, 25)
-//            val choice2 = Choice(getString(R.string.scene14node17choice2), 15, 20)
+//            val choice2 = Choice(getString(R.string.scene14node17choice2), 69, 20)
 //            return Node(index, getString(R.string.scene14node17prompt), listOf(choice1, choice2))
 //        }
-//        if(index == 18)
+//        if(index == 18)72
 //        {
 //            val choice1 = Choice(getString(R.string.scene14node18choice1), 0, 25)
 //            return Node(index, getString(R.string.scene14node18prompt), listOf(choice1))
 //        }
-//        if(index == 19)
+//        if(index == 19)73
 //        {
 //            val choice1 = Choice(getString(R.string.scene14node19choice1), 0, 25)
 //            return Node(index, getString(R.string.scene14node19prompt), listOf(choice1))

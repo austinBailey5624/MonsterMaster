@@ -47,7 +47,10 @@ class MainActivity : AppCompatActivity()
             findViewById(R.id.text_7)
         )
         val images: List<ImageView> = listOf(
-            findViewById(R.id.image_1)
+            findViewById(R.id.image_1),
+            findViewById(R.id.image_2),
+            findViewById(R.id.image_3),
+            findViewById(R.id.image_4)
         )
         val textInput: TextInputEditText = findViewById(R.id.text_input)
 
@@ -516,7 +519,6 @@ class MainActivity : AppCompatActivity()
         for (i in choices.indices)
         {
             buttons[i].text = choices[i].text
-            buttons[i].textSize = choices[i].textSize.toFloat()
         }
     }
 

@@ -19,8 +19,8 @@ class NodeRetriever
                     getString(context, R.string.scene1item3), getString(context, R.string.scene1item4),
                     getString(context, R.string.scene1item5), getString(context, R.string.scene1item6),
                     getString(context, R.string.scene1item7))
-                val choices = listOf(Choice(getString(context, R.string.scene1choice1),2, {state.addScore(Element.LUXOR)}, Element.LUXOR,24),
-                    Choice(getString(context, R.string.scene1choice2),3, {state.addScore(Element.UMBRAL)}, Element.UMBRAL,24 ))
+                val choices = listOf(Choice(getString(context, R.string.scene1choice1),2, {state.addScore(Element.LUXOR)}, Element.LUXOR),
+                    Choice(getString(context, R.string.scene1choice2),3, {state.addScore(Element.UMBRAL)}, Element.UMBRAL))
                 return Node(index, prompts, choices, listOf(),
                     ContextCompat.getColor(context, R.color.darkGray), ContextCompat.getColor(context, R.color.gray))
             }
@@ -30,8 +30,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene2item1), getString(context, R.string.scene2item2),
                     getString(context, R.string.scene2item3), getString(context, R.string.scene2item4),
                     getString(context, R.string.scene2item5))
-                val choices = listOf(Choice(getString(context, R.string.scene2choice1),4, {state.addScore(Element.PYRO)}, Element.PYRO, 24 ),
-                    Choice(getString(context, R.string.scene2choice2),5, {state.addScore(Element.AQUA)}, Element.AQUA, 24))
+                val choices = listOf(Choice(getString(context, R.string.scene2choice1),4, {state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context, R.string.scene2choice2),5, {state.addScore(Element.AQUA)}, Element.AQUA))
                 return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_faint_light_from_above,
                     R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.gray), ContextCompat.getColor(context, R.color.whiteGray))
@@ -42,8 +42,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene3item1), getString(context, R.string.scene3item2),
                     getString(context, R.string.scene3item3), getString(context, R.string.scene3item4),
                     getString(context, R.string.scene3item5), getString(context, R.string.scene3item6))
-                val choices = listOf(Choice(getString(context, R.string.scene3choice1), 6, {state.addScore(Element.PYRO)}, Element.PYRO, 22),
-                    Choice(getString(context, R.string.scene3choice2), 7, {state.addScore(Element.AQUA)}, Element.AQUA, 22))
+                val choices = listOf(Choice(getString(context, R.string.scene3choice1), 6, {state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context, R.string.scene3choice2), 7, {state.addScore(Element.AQUA)}, Element.AQUA))
                 return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_trees,
                     R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.black), ContextCompat.getColor(context, R.color.darkishGray))
@@ -54,8 +54,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene4item1), getString(context, R.string.scene4item2),
                     getString(context, R.string.scene4item3), getString(context, R.string.scene4item4),
                     getString(context, R.string.scene4item5), getString(context, R.string.scene4item6))
-                val choices = listOf(Choice(getString(context, R.string.scene4choice1), 8, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
-                    Choice(getString(context, R.string.scene4choice2), 8, {state.addScore(Element.AERO)}, Element.AERO, 20))
+                val choices = listOf(Choice(getString(context, R.string.scene4choice1), 8, {state.addScore(Element.TERRA)}, Element.TERRA),
+                    Choice(getString(context, R.string.scene4choice2), 8, {state.addScore(Element.AERO)}, Element.AERO))
                 return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_flame_bottom_left,
                     R.anim.fade_in_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.darkBrown), ContextCompat.getColor(context, R.color.brown))
@@ -66,8 +66,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene5item1), getString(context, R.string.scene5item2),
                     getString(context, R.string.scene5item3), getString(context, R.string.scene5item4),
                     getString(context, R.string.scene5item5), getString(context, R.string.scene5item6))
-                val choices = listOf(Choice(getString(context, R.string.scene5choice1), 9, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
-                    Choice(getString(context, R.string.scene5choice2), 9, {state.addScore(Element.AERO)}, Element.AERO, 20))
+                val choices = listOf(Choice(getString(context, R.string.scene5choice1), 9, {state.addScore(Element.TERRA)}, Element.TERRA),
+                    Choice(getString(context, R.string.scene5choice2), 9, {state.addScore(Element.AERO)}, Element.AERO))
                 return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_river,
                     R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.lightishBlue), ContextCompat.getColor(context, R.color.lighterBlue))
@@ -78,8 +78,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene6item1), getString(context, R.string.scene6item2),
                     getString(context, R.string.scene6item3), getString(context, R.string.scene6item4),
                     getString(context, R.string.scene6item5))
-                val choices = listOf(Choice(getString(context, R.string.scene6choice1), 10, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
-                    Choice(getString(context, R.string.scene6choice2), 10, {state.addScore(Element.AERO)}, Element.AERO, 20))
+                val choices = listOf(Choice(getString(context, R.string.scene6choice1), 10, {state.addScore(Element.TERRA)}, Element.TERRA),
+                    Choice(getString(context, R.string.scene6choice2), 10, {state.addScore(Element.AERO)}, Element.AERO))
                 return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_flame_bottom_left,
                     R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.faintRed), ContextCompat.getColor(context, R.color.darkRed))
@@ -90,8 +90,8 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene7item1), getString(context, R.string.scene7item2),
                     getString(context, R.string.scene7item3), getString(context, R.string.scene7item4),
                     getString(context, R.string.scene7item5))
-                val choices = listOf(Choice(getString(context, R.string.scene7choice1), 11, {state.addScore(Element.TERRA)}, Element.TERRA, 26),
-                    Choice(getString(context, R.string.scene7choice2), 11, {state.addScore(Element.AERO)}, Element.AERO, 20))
+                val choices = listOf(Choice(getString(context, R.string.scene7choice1), 11, {state.addScore(Element.TERRA)}, Element.TERRA),
+                    Choice(getString(context, R.string.scene7choice2), 11, {state.addScore(Element.AERO)}, Element.AERO))
                 return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_river, R.anim.fade_in_very_slow, R.id.main)),
                     ContextCompat.getColor(context, R.color.faintBlue), ContextCompat.getColor(context, R.color.lightishBlue))
             }
@@ -103,15 +103,15 @@ class NodeRetriever
                     getString(context, R.string.scene8item5), getString(context, R.string.scene8item6))
                 val choices: List<Choice> =if(currentState.getScore(Element.TERRA) > currentState.getScore(Element.AERO))
                 {
-                    listOf(Choice(getString(context, R.string.scene8choice1),12,{state.addScore(Element.LUXOR,2)}, Element.LUXOR,20),
-                        Choice(getString(context, R.string.scene8choice2),14,{state.addScore(Element.PYRO,2)}, Element.PYRO,20),
-                        Choice(getString(context, R.string.scene8choice3),16,{state.addScore(Element.TERRA,2)}, Element.TERRA,20))
+                    listOf(Choice(getString(context, R.string.scene8choice1),12,{state.addScore(Element.LUXOR,2)}, Element.LUXOR),
+                        Choice(getString(context, R.string.scene8choice2),14,{state.addScore(Element.PYRO,2)}, Element.PYRO),
+                        Choice(getString(context, R.string.scene8choice3),16,{state.addScore(Element.TERRA,2)}, Element.TERRA))
                 }
                 else
                 {
-                    listOf(Choice(getString(context, R.string.scene8choice1),12,{state.addScore(Element.LUXOR,2)}, Element.LUXOR,20),
-                        Choice(getString(context, R.string.scene8choice2),14,{state.addScore(Element.PYRO,2)}, Element.PYRO,20),
-                        Choice(getString(context, R.string.scene8choice3Alt),17,{state.addScore(Element.AERO,2)}, Element.AERO,20))
+                    listOf(Choice(getString(context, R.string.scene8choice1),12,{state.addScore(Element.LUXOR,2)}, Element.LUXOR),
+                        Choice(getString(context, R.string.scene8choice2),14,{state.addScore(Element.PYRO,2)}, Element.PYRO),
+                        Choice(getString(context, R.string.scene8choice3Alt),17,{state.addScore(Element.AERO,2)}, Element.AERO))
                 }
                 return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_sunshine_upper_left,
                     R.anim.fade_in_very_slow, R.id.main)),
@@ -459,9 +459,236 @@ class NodeRetriever
                 val prompts: List<String> = listOf(getString(context,R.string.scene54item1),state.playerName,
                     getString(context,R.string.scene54item2), state.playerName,
                     getString(context,R.string.scene54item3),state.playerName)
-                val choices = listOf(Choice(getString(context,R.string.scene54choice), 55, {state -> state}, Element.PHYSICAL))
+                val choices = listOf(Choice(getString(context,R.string.scene54choice),55,{}, Element.PHYSICAL))
                 return Node(index, prompts, choices, ContextCompat.getColor(context, Element.getBackgroundColor(Element.PHYSICAL)),
                     ContextCompat.getColor(context, Element.getTextColor(Element.PHYSICAL)))
+            }
+            //OakTree-players room
+            if(index == 55)
+            {
+                val prompts: List<String> = listOf(getString(context,R.string.scene55prompt))
+                val choices = listOf(
+                    Choice(getString(context, R.string.scene55choice1),56,{state.addScore(Element.UMBRAL)},Element.UMBRAL),
+                    Choice(getString(context, R.string.scene55choice2),57,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context, R.string.scene55choice3),58,{state.addScore(Element.AERO)},Element.AERO),
+                    Choice(getString(context, R.string.scene55choice4),56,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context, R.string.scene55choice5),58,{state.addScore(Element.TERRA)},Element.TERRA),
+                    Choice(getString(context,R.string.scene55choice6),59,{},Element.NEUTRAL))
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 56)
+            {
+                val prompts: List<String> = listOf(getString(context,R.string.scene56prompt))
+                val choices = listOf(
+                    Choice(getString(context, R.string.scene56choice1),60,{state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context, R.string.scene56choice2),58,{state.addScore(Element.AQUA)}, Element.AQUA),
+                    Choice(getString(context, R.string.scene56choice3),58,{state.addScore(Element.TERRA)}, Element.TERRA))
+                return Node(index, prompts, choices, context)//TODO Add images and animations
+            }
+            if(index == 57)
+            {
+                val prompts: List<String> = listOf(getString(context, R.string.scene57prompt))
+                val choices = listOf(
+                    Choice(getString(context, R.string.scene57choice1),60,{state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context, R.string.scene57choice2),58,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context, R.string.scene57choice3),58,{state.addScore(Element.TERRA)},Element.TERRA))
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 58)
+            {
+                val prompts: List<String> = listOf(getString(context, R.string.scene58prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene58choice1),61),
+                    Choice(getString(context,R.string.scene58choice2),62),
+                    Choice(getString(context,R.string.scene58choice3), 63,{state.addScore(Element.UMBRAL)},Element.UMBRAL),
+                    Choice(getString(context,R.string.scene58choice4),0,{state.addScore(Element.TERRA)},Element.TERRA),//TODO: Replace with Mirror index
+                    Choice(getString(context,R.string.scene58choice5),0,{state.addScore(Element.AERO)},Element.AERO)//TODO: Replace with mirrror index
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 59)
+            {
+                val prompts = listOf(getString(context, R.string.scene59prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene59choice1), 58),
+                    Choice(getString(context,R.string.scene59choice2),68)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 60)
+            {
+                val prompts = listOf(getString(context,R.string.scene60prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene60choice1),61),
+                    Choice(getString(context,R.string.scene60choice2),62),
+                    Choice(getString(context,R.string.scene60choice3),63,{state.addScore(Element.UMBRAL)}, Element.UMBRAL),
+                    Choice(getString(context,R.string.scene60choice4),0,{state.addScore(Element.TERRA)},Element.TERRA),//TODO: Replace with Mirror index
+                    Choice(getString(context,R.string.scene60choice5),0,{state.addScore(Element.AERO)},Element.AERO),//TODO: Replace with Mirror index
+                    Choice(getString(context,R.string.scene60choice6),64,{state.addScore(Element.UMBRAL)},Element.UMBRAL)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 61)
+            {
+                val prompts = listOf(getString(context,R.string.scene61prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene61choice1), 65),
+                    Choice(getString(context,R.string.scene61choice2), 66, {state.addScore(Element.LUXOR)}, Element.LUXOR)
+
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 62)
+            {
+                val prompts = listOf(getString(context,R.string.scene62prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene62choice1), 67),
+                    Choice(getString(context,R.string.scene62choice2), 67,{state.addScore(Element.AERO)}, Element.AERO),
+                    Choice(getString(context,R.string.scene62choice3),67,{state.addScore(Element.AQUA)}, Element.AQUA)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 63)
+            {
+                val prompts = listOf(getString(context,R.string.scene63prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene63choice1), 61),
+                    Choice(getString(context,R.string.scene63choice2), 62),
+                    Choice(getString(context,R.string.scene63choice3), 62)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 64)
+            {
+                val prompts = listOf(getString(context,R.string.scene64prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene64choice1), 61),
+                    Choice(getString(context,R.string.scene64choice2), 62),
+                    Choice(getString(context,R.string.scene64choice3), 0),//TODO: add mirror scene index
+                    Choice(getString(context,R.string.scene64choice4), 77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 65)
+            {
+                val prompts = listOf(getString(context,R.string.scene65prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene65choice1), 0),//TODO: add  mirror scene index
+                    Choice(getString(context,R.string.scene65choice2), 0,{state.addScore(Element.STORM)}, Element.STORM),//TODO: add mirror scene index
+                    Choice(getString(context,R.string.scene65choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 66)
+            {
+                val prompts = listOf(getString(context, R.string.scene66prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene66choice1),70,{state.addScore(Element.REDEMPTION)}, Element.REDEMPTION),
+                    Choice(getString(context,R.string.scene66choice2),71,{state.addScore(Element.LUXOR)}, Element.LUXOR),
+                    Choice(getString(context,R.string.scene66choice3), 65),
+                    Choice(getString(context,R.string.scene66choice4),71,{state.addScore(Element.DEMON)}, Element.DEMON)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 67)
+            {
+                val prompts = listOf(getString(context, R.string.scene67prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene67choice1),0),//TODO add mirror scene index
+                    Choice(getString(context,R.string.scene67choice2),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 68)
+            {
+                val prompts = listOf(getString(context, R.string.scene68prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene68choice1),58),
+                    Choice(getString(context,R.string.scene68choice2),72),
+                    Choice(getString(context,R.string.scene68choice3),73)
+                )
+                return Node(index, prompts, choices, context)//TODO add images and animations
+            }
+            if(index == 69)
+            {
+                val prompts = listOf(getString(context, R.string.scene69prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene69choice),0)//TODO add mirror scene index
+                )
+                return Node(index, prompts, choices, context)
+            }
+            if(index == 70)
+            {
+                val prompts = listOf(getString(context, R.string.scene70prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene70choice1), 65),
+                    Choice(getString(context,R.string.scene70choice2), 71, {state.addScore(Element.LUXOR)}, Element.LUXOR),
+                )
+                return Node(index, prompts, choices, context)
+            }
+            if(index == 71)
+            {
+                val prompts = listOf(getString(context, R.string.scene71prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene71choice1), 0),
+                    Choice(getString(context,R.string.scene71choice2),69)
+                )
+                return Node(index, prompts, choices, context)
+            }
+            if(index == 72)
+            {
+                val prompts = listOf(getString(context, R.string.scene72prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene72choice),0,{state.setAmnesiac(true)}, Element.NEUTRAL)//TODO add mirror scene index
+                )
+                return Node(index, prompts, choices, context)
+            }
+            if(index == 73)
+            {
+                val prompts = listOf(getString(context, R.string.scene73prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene73choice),0,{state.setAmnesiac(true)}, Element.NEUTRAL)//TODO add mirror scene index
+                )
+                return Node(index, prompts, choices, context)
+            }
+            if(index == 74)
+            {
+                val prompts = listOf(getString(context, R.string.scene74prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene74choice1),75,{state.addScore(Element.DEMON)}, Element.DEMON),//TODO add mirror scene index
+                    Choice(getString(context,R.string.scene74choice2), 76,{state.addScore(Element.LUXOR)}, Element.LUXOR)
+                )
+                return Node(index, prompts, choices, context)
+            }
+            if(index == 75)
+            {
+                val prompts = listOf(getString(context, R.string.scene75prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene75choice1),0),
+                    Choice(getString(context,R.string.scene75choice2), 0, {state.addScore(Element.STORM)}, Element.STORM),
+                    Choice(getString(context,R.string.scene75choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
+                )
+                return Node(index, prompts, choices, context)
+            }
+            if(index == 76)
+            {
+                val prompts = listOf(getString(context, R.string.scene76prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene76choice1),0),
+                    Choice(getString(context,R.string.scene76choice2), 0, {state.addScore(Element.STORM)}, Element.STORM),
+                    Choice(getString(context,R.string.scene76choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
+                )
+                return Node(index, prompts, choices, context)
+            }
+            if(index == 77)
+            {
+                val prompts = listOf(getString(context, R.string.scene77prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene77choice1), 0, {state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context,R.string.scene77choice2), 0, {state.addScore(Element.LUXOR)}, Element.LUXOR),
+                    Choice(getString(context,R.string.scene77choice3),0,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
+                )
+                return Node(index, prompts, choices, context)
             }
             throw IllegalStateException("Scene1Node index not found, max 54 actual: $index");
         }
@@ -469,7 +696,7 @@ class NodeRetriever
         private fun getEnterNameNode(context: Context, index: Int, promptIndex: Int, element: Element): Node
         {
             val prompts: List<String> = listOf(getString(context, promptIndex))
-            val choices = listOf(Choice(getString(context,R.string.enter_name),54,{state -> state},element))
+            val choices = listOf(Choice(getString(context,R.string.enter_name),54,{},element))
             return Node(index, prompts, choices, listOf(AnimationInfo(Element.getInfantMonster(context, element).imageResourceId,
                 R.anim.fade_in_slow, R.id.background_center, ImageView.ScaleType.FIT_CENTER)),
                 ContextCompat.getColor(context, Element.getBackgroundColor(element)),
