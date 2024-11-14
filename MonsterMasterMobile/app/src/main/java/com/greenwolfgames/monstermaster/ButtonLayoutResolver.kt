@@ -204,9 +204,13 @@ class ButtonLayoutResolver
             {
                 return parentId
             }
-            if (layoutMode == ELayoutMode.BOTTOM_TO_TOP && choiceSize > 4)
+            if (layoutMode == ELayoutMode.BOTTOM_TO_TOP && choiceSize == 5)
             {
-                return buttons[5].id //4?
+                return buttons[4].id
+            }
+            if(layoutMode == ELayoutMode.BOTTOM_TO_TOP && choiceSize == 6)
+            {
+                return buttons[5].id
             }
             return ConstraintLayout.LayoutParams.UNSET
         }

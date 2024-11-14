@@ -474,7 +474,7 @@ class NodeRetriever
                     Choice(getString(context, R.string.scene55choice4),56,{state.addScore(Element.PYRO)},Element.PYRO),
                     Choice(getString(context, R.string.scene55choice5),58,{state.addScore(Element.TERRA)},Element.TERRA),
                     Choice(getString(context,R.string.scene55choice6),59,{},Element.NEUTRAL))
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 56)
             {
@@ -483,7 +483,7 @@ class NodeRetriever
                     Choice(getString(context, R.string.scene56choice1),60,{state.addScore(Element.PYRO)}, Element.PYRO),
                     Choice(getString(context, R.string.scene56choice2),58,{state.addScore(Element.AQUA)}, Element.AQUA),
                     Choice(getString(context, R.string.scene56choice3),58,{state.addScore(Element.TERRA)}, Element.TERRA))
-                return Node(index, prompts, choices, context)//TODO Add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 57)
             {
@@ -492,7 +492,7 @@ class NodeRetriever
                     Choice(getString(context, R.string.scene57choice1),60,{state.addScore(Element.PYRO)}, Element.PYRO),
                     Choice(getString(context, R.string.scene57choice2),58,{state.addScore(Element.AQUA)},Element.AQUA),
                     Choice(getString(context, R.string.scene57choice3),58,{state.addScore(Element.TERRA)},Element.TERRA))
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 58)
             {
@@ -504,7 +504,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene58choice4),0,{state.addScore(Element.TERRA)},Element.TERRA),//TODO: Replace with Mirror index
                     Choice(getString(context,R.string.scene58choice5),0,{state.addScore(Element.AERO)},Element.AERO)//TODO: Replace with mirrror index
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 59)
             {
@@ -513,7 +513,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene59choice1), 58),
                     Choice(getString(context,R.string.scene59choice2),68)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 60)
             {
@@ -526,7 +526,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene60choice5),0,{state.addScore(Element.AERO)},Element.AERO),//TODO: Replace with Mirror index
                     Choice(getString(context,R.string.scene60choice6),64,{state.addScore(Element.UMBRAL)},Element.UMBRAL)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 61)
             {
@@ -536,7 +536,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene61choice2), 66, {state.addScore(Element.LUXOR)}, Element.LUXOR)
 
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 62)
             {
@@ -546,7 +546,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene62choice2), 67,{state.addScore(Element.AERO)}, Element.AERO),
                     Choice(getString(context,R.string.scene62choice3),67,{state.addScore(Element.AQUA)}, Element.AQUA)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 63)
             {
@@ -556,7 +556,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene63choice2), 62),
                     Choice(getString(context,R.string.scene63choice3), 62)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 64)
             {
@@ -567,7 +567,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene64choice3), 0),//TODO: add mirror scene index
                     Choice(getString(context,R.string.scene64choice4), 77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 65)
             {
@@ -577,7 +577,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene65choice2), 0,{state.addScore(Element.STORM)}, Element.STORM),//TODO: add mirror scene index
                     Choice(getString(context,R.string.scene65choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 66)
             {
@@ -588,7 +588,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene66choice3), 65),
                     Choice(getString(context,R.string.scene66choice4),71,{state.addScore(Element.DEMON)}, Element.DEMON)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 67)
             {
@@ -597,7 +597,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene67choice1),0),//TODO add mirror scene index
                     Choice(getString(context,R.string.scene67choice2),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 68)
             {
@@ -607,7 +607,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene68choice2),72),
                     Choice(getString(context,R.string.scene68choice3),73)
                 )
-                return Node(index, prompts, choices, context)//TODO add images and animations
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 69)
             {
@@ -615,7 +615,7 @@ class NodeRetriever
                 val choices = listOf(
                     Choice(getString(context,R.string.scene69choice),0)//TODO add mirror scene index
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 70)
             {
@@ -624,7 +624,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene70choice1), 65),
                     Choice(getString(context,R.string.scene70choice2), 71, {state.addScore(Element.LUXOR)}, Element.LUXOR),
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 71)
             {
@@ -633,7 +633,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene71choice1), 0),
                     Choice(getString(context,R.string.scene71choice2),69)
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 72)
             {
@@ -641,7 +641,7 @@ class NodeRetriever
                 val choices = listOf(
                     Choice(getString(context,R.string.scene72choice),0,{state.setAmnesiac(true)}, Element.NEUTRAL)//TODO add mirror scene index
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 73)
             {
@@ -649,7 +649,7 @@ class NodeRetriever
                 val choices = listOf(
                     Choice(getString(context,R.string.scene73choice),0,{state.setAmnesiac(true)}, Element.NEUTRAL)//TODO add mirror scene index
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 74)
             {
@@ -658,7 +658,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene74choice1),75,{state.addScore(Element.DEMON)}, Element.DEMON),//TODO add mirror scene index
                     Choice(getString(context,R.string.scene74choice2), 76,{state.addScore(Element.LUXOR)}, Element.LUXOR)
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 75)
             {
@@ -668,7 +668,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene75choice2), 0, {state.addScore(Element.STORM)}, Element.STORM),
                     Choice(getString(context,R.string.scene75choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 76)
             {
@@ -678,7 +678,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene76choice2), 0, {state.addScore(Element.STORM)}, Element.STORM),
                     Choice(getString(context,R.string.scene76choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             if(index == 77)
             {
@@ -688,7 +688,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene77choice2), 0, {state.addScore(Element.LUXOR)}, Element.LUXOR),
                     Choice(getString(context,R.string.scene77choice3),0,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
-                return Node(index, prompts, choices, context)
+                return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
             throw IllegalStateException("Scene1Node index not found, max 54 actual: $index");
         }
@@ -701,6 +701,14 @@ class NodeRetriever
                 R.anim.fade_in_slow, R.id.background_center, ImageView.ScaleType.FIT_CENTER)),
                 ContextCompat.getColor(context, Element.getBackgroundColor(element)),
                 ContextCompat.getColor(context, Element.getTextColor(element)))
+        }
+
+        private fun getPlayerRoomAnimations(): List<AnimationInfo>
+        {
+            return listOf(
+                AnimationInfo(R.drawable.background_players_room,
+                    R.anim.fade_in_fast, R.id.background_center),
+                AnimationInfo(R.drawable.character_john_profile, R.anim.fade_in_fast, R.id.background_center,ImageView.ScaleType.FIT_CENTER))
         }
     }
 }

@@ -31,6 +31,7 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/background_center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background_1080x528" />
@@ -38,13 +39,15 @@
     <ImageView
         android:id="@+id/background_center"
         android:layout_width="0dp"
-        android:layout_height="330dp"
+        android:layout_height="0dp"
         android:contentDescription="@string/background_center_content_description"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/background_bottom"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/background_top" />
+        app:layout_constraintTop_toBottomOf="@id/background_top"
+        app:layout_constraintWidth_percent="1" />
 
     <ImageView
         android:id="@+id/background_bottom"
@@ -54,6 +57,7 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/background_center"
         app:srcCompat="@drawable/background_1080x528" />
@@ -87,8 +91,7 @@
         app:layout_constraintBottom_toBottomOf="@id/background"
         app:layout_constraintEnd_toEndOf="@id/background"
         app:layout_constraintStart_toEndOf="@id/background"
-        app:layout_constraintTop_toTopOf="@id/background"
-        app:srcCompat="@drawable/Icon" />
+        app:layout_constraintTop_toTopOf="@id/background" />
 
     <ImageView
         android:id="@+id/image_4"
@@ -98,8 +101,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:srcCompat="@drawable/Icon" />
+        app:layout_constraintTop_toBottomOf="parent" />
 
     <TextView
         android:id="@+id/text_1"

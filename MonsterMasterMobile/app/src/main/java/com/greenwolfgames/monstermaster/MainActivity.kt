@@ -182,7 +182,18 @@ class MainActivity : AppCompatActivity()
         }
         for(image in images)
         {
-            image.startAnimation(fadeOutAnimation)
+            var shouldRemove = true
+            for(animationInfo in nextNode.animationInfos)
+            {
+                if(animationInfo.imageId == image.tag)
+                {
+                    shouldRemove = false
+                }
+            }
+            if (shouldRemove)
+            {
+                image.visibility = View.GONE
+            }
         }
         buttons[0].startAnimation(fadeOutAnimationTrigger)
         fadeOutAnimation.start()
@@ -218,25 +229,28 @@ class MainActivity : AppCompatActivity()
         skipButton.visibility = View.VISIBLE
 
         //if we need to update our animations
-        if(previousNodeAnimations != nextNode.animationInfos)
+        for( i in nextNode.animationInfos.indices)
         {
-            hideImages(images)
-            for (i in nextNode.animationInfos.indices)
-            {
-//                if(!previousNodeAnimations.contains(nextNode.animationInfos[i]))
-//                {
-//                    //TODO: Fix (this assumes everything is in the same image
-//                    hideImages(images)
-//                }
-                setUpAnimation(images[i], nextNode.animationInfos[i])
-            }
+            setUpAnimation(images[i], nextNode.animationInfos[i])
+        }
+        //hide all the images we aren't using
+        for(i in nextNode.animationInfos.size..<images.size)
+        {
+            images[i].visibility = View.GONE
         }
         previousNodeAnimations = nextNode.animationInfos
     }
 
     private fun setUpAnimation(image: ImageView, animationInfo: AnimationInfo)
     { //@formatter:off
+        //If the image is already animated and present
+        if(image.tag == animationInfo.animationId)
+        {
+            return;//do nothing
+        }
+
         image.setImageResource(animationInfo.imageId)
+        image.tag = animationInfo.imageId
 
         val layoutParam = image.layoutParams as ConstraintLayout.LayoutParams
         layoutParam.startToStart   = animationInfo.parentBackgroundId
@@ -542,7 +556,7 @@ class MainActivity : AppCompatActivity()
                     {
                         temp = temp.substring(0, 12)
                     }
-                    temp.toLowerCase(Locale.getDefault())
+                    temp.lowercase()
                     temp =
                         temp.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
                     Log.d("Name Input", "Player enetered Name, rinsed version: $temp")

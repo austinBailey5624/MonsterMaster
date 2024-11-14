@@ -62,13 +62,13 @@ class State : Serializable
         return elementalScore[element]!!
     }
     var playerName: String = "defaultPlayerName"
-    var amnesiac: Boolean = false;
+    private var amnesiac: Boolean = false;
     var portrait: PlayerPortrait = PlayerPortrait.UNASSIGNED
     var gender: Gender = Gender.MALE
     var initScene14: Boolean = true
 
     fun setAmnesiac(isAmnesiac: Boolean)
     {
-        amnesiac = isAmnesiac
+        this.amnesiac = isAmnesiac
     }
 }
