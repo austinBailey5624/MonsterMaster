@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity()
         {
             text.setAutoSizeTextTypeUniformWithConfiguration(
                 12,  // Minimum text size in sp
-                40, // Maximum text size in sp
+                33, // Maximum text size in sp
                 2,   // Step granularity in sp
                 TypedValue.COMPLEX_UNIT_SP
             )

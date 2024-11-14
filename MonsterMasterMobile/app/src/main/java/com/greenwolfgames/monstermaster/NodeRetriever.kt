@@ -458,7 +458,7 @@ class NodeRetriever
             {
                 val prompts: List<String> = listOf(getString(context,R.string.scene54item1),state.playerName,
                     getString(context,R.string.scene54item2), state.playerName,
-                    getString(context,R.string.scene54item3),state.playerName)
+                    getString(context,R.string.scene54item3),state.playerName + " wake up!")
                 val choices = listOf(Choice(getString(context,R.string.scene54choice),55,{}, Element.PHYSICAL))
                 return Node(index, prompts, choices, ContextCompat.getColor(context, Element.getBackgroundColor(Element.PHYSICAL)),
                     ContextCompat.getColor(context, Element.getTextColor(Element.PHYSICAL)))
@@ -501,8 +501,8 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene58choice1),61),
                     Choice(getString(context,R.string.scene58choice2),62),
                     Choice(getString(context,R.string.scene58choice3), 63,{state.addScore(Element.UMBRAL)},Element.UMBRAL),
-                    Choice(getString(context,R.string.scene58choice4),0,{state.addScore(Element.TERRA)},Element.TERRA),//TODO: Replace with Mirror index
-                    Choice(getString(context,R.string.scene58choice5),0,{state.addScore(Element.AERO)},Element.AERO)//TODO: Replace with mirrror index
+                    Choice(getString(context,R.string.scene58choice4),78,{state.addScore(Element.TERRA)},Element.TERRA),
+                    Choice(getString(context,R.string.scene58choice5),78,{state.addScore(Element.AERO)},Element.AERO)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
@@ -522,8 +522,8 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene60choice1),61),
                     Choice(getString(context,R.string.scene60choice2),62),
                     Choice(getString(context,R.string.scene60choice3),63,{state.addScore(Element.UMBRAL)}, Element.UMBRAL),
-                    Choice(getString(context,R.string.scene60choice4),0,{state.addScore(Element.TERRA)},Element.TERRA),//TODO: Replace with Mirror index
-                    Choice(getString(context,R.string.scene60choice5),0,{state.addScore(Element.AERO)},Element.AERO),//TODO: Replace with Mirror index
+                    Choice(getString(context,R.string.scene60choice4),78,{state.addScore(Element.TERRA)},Element.TERRA),
+                    Choice(getString(context,R.string.scene60choice5),78,{state.addScore(Element.AERO)},Element.AERO),
                     Choice(getString(context,R.string.scene60choice6),64,{state.addScore(Element.UMBRAL)},Element.UMBRAL)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
@@ -564,7 +564,7 @@ class NodeRetriever
                 val choices = listOf(
                     Choice(getString(context,R.string.scene64choice1), 61),
                     Choice(getString(context,R.string.scene64choice2), 62),
-                    Choice(getString(context,R.string.scene64choice3), 0),//TODO: add mirror scene index
+                    Choice(getString(context,R.string.scene64choice3), 78),//TODO: add mirror scene index
                     Choice(getString(context,R.string.scene64choice4), 77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
@@ -573,8 +573,8 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context,R.string.scene65prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene65choice1), 0),//TODO: add  mirror scene index
-                    Choice(getString(context,R.string.scene65choice2), 0,{state.addScore(Element.STORM)}, Element.STORM),//TODO: add mirror scene index
+                    Choice(getString(context,R.string.scene65choice1), 78),
+                    Choice(getString(context,R.string.scene65choice2), 78,{state.addScore(Element.STORM)}, Element.STORM),
                     Choice(getString(context,R.string.scene65choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
@@ -594,7 +594,7 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene67prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene67choice1),0),//TODO add mirror scene index
+                    Choice(getString(context,R.string.scene67choice1),78),
                     Choice(getString(context,R.string.scene67choice2),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
@@ -613,7 +613,7 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene69prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene69choice),0)//TODO add mirror scene index
+                    Choice(getString(context,R.string.scene69choice),78)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
@@ -630,7 +630,7 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene71prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene71choice1), 0),
+                    Choice(getString(context,R.string.scene71choice1), 78),
                     Choice(getString(context,R.string.scene71choice2),69)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
@@ -639,7 +639,7 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene72prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene72choice),0,{state.setAmnesiac(true)}, Element.NEUTRAL)//TODO add mirror scene index
+                    Choice(getString(context,R.string.scene72choice),78,{state.setAmnesiac(true)}, Element.NEUTRAL)//TODO add mirror scene index
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
@@ -647,7 +647,7 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene73prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene73choice),0,{state.setAmnesiac(true)}, Element.NEUTRAL)//TODO add mirror scene index
+                    Choice(getString(context,R.string.scene73choice),78,{state.setAmnesiac(true)}, Element.NEUTRAL)//TODO add mirror scene index
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
@@ -664,8 +664,8 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene75prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene75choice1),0),
-                    Choice(getString(context,R.string.scene75choice2), 0, {state.addScore(Element.STORM)}, Element.STORM),
+                    Choice(getString(context,R.string.scene75choice1),78),
+                    Choice(getString(context,R.string.scene75choice2), 78, {state.addScore(Element.STORM)}, Element.STORM),
                     Choice(getString(context,R.string.scene75choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
@@ -674,8 +674,8 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene76prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene76choice1),0),
-                    Choice(getString(context,R.string.scene76choice2), 0, {state.addScore(Element.STORM)}, Element.STORM),
+                    Choice(getString(context,R.string.scene76choice1),78),
+                    Choice(getString(context,R.string.scene76choice2), 78, {state.addScore(Element.STORM)}, Element.STORM),
                     Choice(getString(context,R.string.scene76choice3),77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
@@ -684,13 +684,30 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context, R.string.scene77prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene77choice1), 0, {state.addScore(Element.PYRO)}, Element.PYRO),
-                    Choice(getString(context,R.string.scene77choice2), 0, {state.addScore(Element.LUXOR)}, Element.LUXOR),
-                    Choice(getString(context,R.string.scene77choice3),0,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
+                    Choice(getString(context,R.string.scene77choice1), 78, {state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context,R.string.scene77choice2), 78, {state.addScore(Element.LUXOR)}, Element.LUXOR),
+                    Choice(getString(context,R.string.scene77choice3),78,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
             }
-            throw IllegalStateException("Scene1Node index not found, max 54 actual: $index");
+            if(index == 78)
+            {
+                val prompts = listOf(getString(context, R.string.scene78prompt) + " " + Gender.getSubjectPronoun(context, state.gender)
+                + ", " + Gender.getObjectPronoun(context, state.gender) + ", " + Gender.getPossessivePronoun(context, state.gender))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene78item1),78){state.cyclePortrait()},
+                    Choice(getString(context,R.string.scene78item1),78){state.cyclePortraitBack()},
+                    Choice(getString(context,R.string.scene78item2),78){state.cyclePortraitGender()},
+                    Choice(getString(context,R.string.scene78item3), 78){state.cycleGender()},
+                    Choice(getString(context,R.string.scene78item4), 79)
+
+                )
+                val animations = listOf(AnimationInfo(R.drawable.scene_object_bedside_mirror, R.anim.fade_in_fast, R.id.background_center),
+                    AnimationInfo(state.playerPortraitImageId, R.anim.fade_in_fast, R.id.background_center),
+                    AnimationInfo(R.drawable.scene_object_bedside_mirror_overlap, R.anim.fade_in_fast, R.id.background_center))
+                return Node(index, prompts, choices, animations, context)
+            }
+            throw IllegalStateException("Scene1Node index not found, max 77 actual: $index");
         }
 
         private fun getEnterNameNode(context: Context, index: Int, promptIndex: Int, element: Element): Node

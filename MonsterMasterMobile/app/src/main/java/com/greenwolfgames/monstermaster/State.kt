@@ -63,12 +63,168 @@ class State : Serializable
     }
     var playerName: String = "defaultPlayerName"
     private var amnesiac: Boolean = false;
-    var portrait: PlayerPortrait = PlayerPortrait.UNASSIGNED
+    var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male;
     var gender: Gender = Gender.MALE
-    var initScene14: Boolean = true
 
     fun setAmnesiac(isAmnesiac: Boolean)
     {
         this.amnesiac = isAmnesiac
+    }
+
+    fun cyclePortrait()
+    {
+        when (this.playerPortraitImageId)
+        {
+            R.drawable.main_character_brown_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_hair_male
+            }
+            R.drawable.main_character_black_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_asian_male
+            }
+            R.drawable.main_character_asian_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_male
+            }
+            R.drawable.main_character_black_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_blonde_hair_male
+            }
+            R.drawable.main_character_blonde_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_brown_hair_male
+            }
+            R.drawable.main_character_brown_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_hair_female
+            }
+            R.drawable.main_character_black_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_asian_female
+            }
+            R.drawable.main_character_asian_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_female
+            }
+            R.drawable.main_character_black_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_blonde_hair_female
+            }
+            R.drawable.main_character_blonde_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_brown_hair_female
+            }
+        }
+    }
+
+    fun cyclePortraitBack()
+    {
+        when (this.playerPortraitImageId)
+        {
+            R.drawable.main_character_brown_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_blonde_hair_male
+            }
+            R.drawable.main_character_black_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_brown_hair_male
+            }
+            R.drawable.main_character_asian_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_hair_male
+            }
+            R.drawable.main_character_black_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_asian_male
+            }
+            R.drawable.main_character_blonde_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_male
+            }
+            R.drawable.main_character_brown_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_blonde_hair_female
+            }
+            R.drawable.main_character_black_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_brown_hair_female
+            }
+            R.drawable.main_character_asian_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_hair_female
+            }
+            R.drawable.main_character_black_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_brown_hair_female
+            }
+            R.drawable.main_character_blonde_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_female
+            }
+        }
+    }
+
+    fun cyclePortraitGender()
+    {
+        when (this.playerPortraitImageId)
+        {
+            R.drawable.main_character_brown_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_brown_hair_female
+            }
+            R.drawable.main_character_black_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_hair_female
+            }
+            R.drawable.main_character_asian_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_asian_female
+            }
+            R.drawable.main_character_black_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_female
+            }
+            R.drawable.main_character_blonde_hair_male ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_blonde_hair_female
+            }
+            R.drawable.main_character_brown_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_brown_hair_male
+            }
+            R.drawable.main_character_black_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_male
+            }
+            R.drawable.main_character_asian_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_asian_male
+            }
+            R.drawable.main_character_black_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_black_male
+            }
+            R.drawable.main_character_blonde_hair_female ->
+            {
+                this.playerPortraitImageId = R.drawable.main_character_blonde_hair_male
+            }
+        }
+    }
+
+    fun cycleGender()
+    {
+        if(this.gender == Gender.MALE)
+        {
+            this.gender = Gender.FEMALE
+        }
+        else if(this.gender == Gender.FEMALE)
+        {
+            this.gender = Gender.NEUTRAL
+        }
+        else if(this.gender == Gender.NEUTRAL)
+        {
+            this.gender = Gender.MALE
+        }
     }
 }

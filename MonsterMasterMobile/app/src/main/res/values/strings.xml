@@ -322,6 +322,23 @@
     <string name="scene77choice1">Don\'t tell me what to do</string>
     <string name="scene77choice2">You\'re right, I\'m sorry</string>
     <string name="scene77choice3">*Leave without speaking*</string>
+    <string name="scene78prompt">You catch a glimpse of yourself in the mirror. Yet something seems strange… does that look right?\nPronouns:</string>
+    <string name="scene78item1">Change hair/race</string>
+    <string name="scene78item2">Change portrait gender</string>
+    <string name="scene78item3">Change pronouns</string>
+    <string name="scene78item4">That looks right</string>
+
+
+    <!-- main character pronouns -->
+    <string name="pronoun_subject_masculine">he</string>
+    <string name="pronoun_subject_feminine">she</string>
+    <string name="pronoun_subject_neutral">they</string>
+    <string name="pronoun_object_masculine">him</string>
+    <string name="pronoun_object_feminine">her</string>
+    <string name="pronoun_object_neutral">them</string>
+    <string name="pronoun_possessive_masculine">his</string>
+    <string name="pronoun_possessive_feminine">hers</string>
+    <string name="pronoun_possessive_neutral">theirs</string>
 
     <!-- content descriptions for UI elements -->
     <string name="background_content_description">The absolute background behind everything else</string>
