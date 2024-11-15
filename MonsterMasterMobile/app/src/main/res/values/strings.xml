@@ -323,11 +323,16 @@
     <string name="scene77choice2">You\'re right, I\'m sorry</string>
     <string name="scene77choice3">*Leave without speaking*</string>
     <string name="scene78prompt">You catch a glimpse of yourself in the mirror. Yet something seems strange… does that look right?\nPronouns:</string>
-    <string name="scene78item1">Change hair/race</string>
-    <string name="scene78item2">Change portrait gender</string>
-    <string name="scene78item3">Change pronouns</string>
-    <string name="scene78item4">That looks right</string>
-
+    <string name="scene78choice1">Change hair/race</string>
+    <string name="scene78choice2">Change portrait gender</string>
+    <string name="scene78choice3">Change pronouns</string>
+    <string name="scene78choice4">That looks right</string>
+    <string name="scene79prompt">You enter the small town of Oaktree, bustling in the noonday sun. Children play happily in the streets while their elders play stones beneath the great Oak tree around which the city was founded</string>
+    <string name="scene79choice1">Go to Church</string>
+    <string name="scene79choice2">Go to Brahm\'s house</string>
+    <string name="scene79choice3">Explore Wilderness</string>
+    <string name="scene79choice4">Go to Morn\'s tavern</string>
+    <string name="scene79choice5">Go to the market</string>
 
     <!-- main character pronouns -->
     <string name="pronoun_subject_masculine">he</string>

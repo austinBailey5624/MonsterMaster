@@ -695,11 +695,11 @@ class NodeRetriever
                 val prompts = listOf(getString(context, R.string.scene78prompt) + " " + Gender.getSubjectPronoun(context, state.gender)
                 + ", " + Gender.getObjectPronoun(context, state.gender) + ", " + Gender.getPossessivePronoun(context, state.gender))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene78item1),78){state.cyclePortrait()},
-                    Choice(getString(context,R.string.scene78item1),78){state.cyclePortraitBack()},
-                    Choice(getString(context,R.string.scene78item2),78){state.cyclePortraitGender()},
-                    Choice(getString(context,R.string.scene78item3), 78){state.cycleGender()},
-                    Choice(getString(context,R.string.scene78item4), 79)
+                    Choice(getString(context,R.string.scene78choice1),78){state.cyclePortrait()},
+                    Choice(getString(context,R.string.scene78choice1),78){state.cyclePortraitBack()},
+                    Choice(getString(context,R.string.scene78choice2),78){state.cyclePortraitGender()},
+                    Choice(getString(context,R.string.scene78choice3), 78){state.cycleGender()},
+                    Choice(getString(context,R.string.scene78choice4), 79)
 
                 )
                 val animations = listOf(AnimationInfo(R.drawable.scene_object_bedside_mirror, R.anim.fade_in_fast, R.id.background_center),
@@ -708,7 +708,56 @@ class NodeRetriever
                     AnimationInfo(R.drawable.scene_object_bedside_mirror_overlap, R.anim.fade_in_fast, R.id.background_center))
                 return Node(index, prompts, choices, animations, context)
             }
-            throw IllegalStateException("Scene1Node index not found, max 77 actual: $index");
+            //oaktree
+            if(index == 79)
+            {
+                val prompts = listOf(getString(context, R.string.scene79prompt))
+                val choices: List<Choice> = listOf(
+                    Choice(getString(context,R.string.scene79choice1),80,
+                    {
+                        if(!state.getSeenNodeBefore(index))
+                        {
+                            state.addScore(Element.LUXOR)
+                            state.visitNode(index)
+                        }
+                    }, Element.LUXOR),
+                    Choice(getString(context,R.string.scene79choice2), 0,
+                        {
+                            if(!state.getSeenNodeBefore(index))
+                            {
+                                state.addScore(Element.AQUA)
+                                state.visitNode(index)
+                            }
+                        }, Element.AQUA),
+                    Choice(getString(context,R.string.scene79choice3), 0,
+                        {
+                            if(!state.getSeenNodeBefore(index))
+                            {
+                                state.addScore(Element.TERRA)
+                                state.visitNode(index)
+                            }
+                        }, Element.TERRA),
+                    Choice(getString(context,R.string.scene79choice4), 0,
+                        {
+                            if(!state.getSeenNodeBefore(index))
+                            {
+                                state.addScore(Element.NIGHTWING)
+                                state.visitNode(index)
+                            }
+                        }, Element.NIGHTWING),
+                    Choice(getString(context,R.string.scene79choice5),0,
+                        {
+                            if(!state.getSeenNodeBefore(index))
+                            {
+                                state.addScore(Element.AERO)
+                                state.visitNode(index)
+                            }
+                        }, Element.AERO)
+                )
+                val animations = listOf(AnimationInfo(R.drawable.background_oaktree_daylight, R.anim.fade_in_fast, R.id.background_center))
+                return Node(index, prompts, choices, animations, context)
+            }
+            throw IllegalStateException("Scene1Node index not found, max 79 actual: $index");
         }
 
         private fun getEnterNameNode(context: Context, index: Int, promptIndex: Int, element: Element): Node

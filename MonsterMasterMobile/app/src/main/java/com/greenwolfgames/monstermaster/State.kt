@@ -47,6 +47,8 @@ class State : Serializable
         Element.MAGICAL to 0
     )
 
+    var nodeIndexByVisitedBefore = mutableMapOf<Int, Boolean> ().withDefault{false}
+
     fun addScore(element: Element, score: Int)
     {
         elementalScore[element] = elementalScore[element]!! + score
@@ -61,10 +63,22 @@ class State : Serializable
     {
         return elementalScore[element]!!
     }
+
+    fun getSeenNodeBefore(nodeIndex: Int): Boolean
+    {
+        return nodeIndexByVisitedBefore[nodeIndex] ?: false
+    }
+
+    fun visitNode(nodeIndex: Int)
+    {
+        nodeIndexByVisitedBefore[nodeIndex] = true
+    }
+
     var playerName: String = "defaultPlayerName"
     private var amnesiac: Boolean = false;
-    var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male;
+    var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
     var gender: Gender = Gender.MALE
+
 
     fun setAmnesiac(isAmnesiac: Boolean)
     {
