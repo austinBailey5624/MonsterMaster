@@ -53,10 +53,10 @@ class Utilities
                 buttons[0].layoutParams.height = totalHeightUsed.toInt()
                 buttons[0].textSize = 20f
                 val params = buttons[0].layoutParams as ConstraintLayout.LayoutParams
-                params.bottomToBottom = R.id.Parent
+                params.bottomToBottom = R.id.background
                 params.topToBottom = top.id
-                params.startToStart = R.id.Parent
-                params.endToEnd = R.id.Parent
+                params.startToStart = R.id.background
+                params.endToEnd = R.id.background
                 params.verticalBias = 0f;
                 params.horizontalBias = 0.5f;
                 buttons[0].layoutParams = params
@@ -73,8 +73,8 @@ class Utilities
                 params.height = (totalHeightUsed / 2).toInt()
                 params.bottomToTop = buttons[1].id
                 params.topToBottom = top.id
-                params.startToStart = R.id.Parent
-                params.endToEnd = R.id.Parent
+                params.startToStart = R.id.background
+                params.endToEnd = R.id.background
                 params.verticalBias = 0f;
                 params.horizontalBias = 0.5f;
                 buttons[0].layoutParams = params
@@ -83,10 +83,10 @@ class Utilities
                 buttons[1].layoutParams.height = (totalHeightUsed / 2).toInt()
                 buttons[1].textSize = 20f
                 val params2 = buttons[1].layoutParams as ConstraintLayout.LayoutParams
-                params2.bottomToBottom = R.id.Parent
+                params2.bottomToBottom = R.id.background
                 params2.topToBottom = buttons[0].id
-                params2.startToStart = R.id.Parent
-                params2.endToEnd = R.id.Parent
+                params2.startToStart = R.id.background
+                params2.endToEnd = R.id.background
                 params2.verticalBias = 0f;
                 params2.horizontalBias = 0.5f
                 buttons[1].layoutParams = params2
@@ -103,8 +103,8 @@ class Utilities
                 val params = buttons[0].layoutParams as ConstraintLayout.LayoutParams
                 params.bottomToTop = buttons[1].id
                 params.topToBottom = top.id
-                params.startToStart = R.id.Parent
-                params.endToEnd = R.id.Parent
+                params.startToStart = R.id.background
+                params.endToEnd = R.id.background
                 params.verticalBias = 0f;
                 buttons[0].layoutParams = params
 
@@ -114,8 +114,8 @@ class Utilities
                 val params2 = buttons[1].layoutParams as ConstraintLayout.LayoutParams
                 params2.bottomToTop = buttons[2].id
                 params2.topToBottom = buttons[0].id
-                params2.startToStart = R.id.Parent
-                params2.endToEnd = R.id.Parent
+                params2.startToStart = R.id.background
+                params2.endToEnd = R.id.background
                 params2.verticalBias = 0f;
                 buttons[1].layoutParams = params2
 
@@ -123,10 +123,10 @@ class Utilities
                 buttons[2].layoutParams.height = (totalHeightUsed / 3).toInt()
                 buttons[2].textSize = 17f
                 val params3 = buttons[2].layoutParams as ConstraintLayout.LayoutParams
-                params3.bottomToBottom = R.id.Parent
+                params3.bottomToBottom = R.id.background
                 params3.topToBottom = buttons[1].id
-                params3.startToStart = R.id.Parent
-                params3.endToEnd = R.id.Parent
+                params3.startToStart = R.id.background
+                params3.endToEnd = R.id.background
                 params3.verticalBias = 0f
                 buttons[2].layoutParams = params3
 
@@ -144,7 +144,7 @@ class Utilities
                 val params = buttons[0].layoutParams as ConstraintLayout.LayoutParams
                 params.bottomToTop = buttons[1].id
                 params.topToBottom = top.id
-                params.startToStart = R.id.Parent
+                params.startToStart = R.id.background
                 params.endToStart = buttons[3].id
                 buttons[0].layoutParams = params
 
@@ -152,9 +152,9 @@ class Utilities
                 buttons[1].layoutParams.height = (totalHeightUsed / 2).toInt()
                 buttons[1].textSize = 15f
                 val params2 = buttons[1].layoutParams as ConstraintLayout.LayoutParams
-                params2.bottomToBottom = R.id.Parent
+                params2.bottomToBottom = R.id.background
                 params2.topToBottom = buttons[0].id
-                params2.startToStart = R.id.Parent
+                params2.startToStart = R.id.background
                 params2.endToStart = buttons[4].id
                 buttons[1].layoutParams = params2
 
@@ -165,17 +165,17 @@ class Utilities
                 params3.bottomToTop = buttons[4].id
                 params3.topToBottom = top.id
                 params3.startToEnd = buttons[0].id
-                params3.endToEnd = R.id.Parent
+                params3.endToEnd = R.id.background
                 buttons[3].layoutParams = params3
 
                 buttons[4].layoutParams.width = totalWidthUsed / 2
                 buttons[4].layoutParams.height = (totalHeightUsed / 2).toInt()
                 buttons[4].textSize = 15f
                 val params4 = buttons[4].layoutParams as ConstraintLayout.LayoutParams
-                params4.bottomToBottom = R.id.Parent
+                params4.bottomToBottom = R.id.background
                 params4.topToBottom = buttons[3].id
                 params4.startToEnd = buttons[1].id
-                params4.endToEnd = R.id.Parent
+                params4.endToEnd = R.id.background
                 buttons[4].layoutParams = params4
             }
             if (numButtons == 5) {
@@ -185,7 +185,7 @@ class Utilities
                 params.height = (totalHeightUsed / 3).toInt()
                 params.bottomToTop = buttons[1].id
                 params.topToBottom = top.id
-                params.startToStart = R.id.Parent
+                params.startToStart = R.id.background
                 params.endToStart = buttons[3].id
                 params.verticalBias = 0f
                 params.horizontalBias = 1f
@@ -197,7 +197,7 @@ class Utilities
                 params2.height = (totalHeightUsed / 3).toInt()
                 params2.bottomToTop = buttons[2].id
                 params2.topToBottom = buttons[0].id
-                params2.startToStart = R.id.Parent
+                params2.startToStart = R.id.background
                 params2.endToStart = buttons[4].id
                 params2.verticalBias = 0f
                 params2.horizontalBias = 1f
@@ -207,10 +207,10 @@ class Utilities
                 val params3 = buttons[2].layoutParams as ConstraintLayout.LayoutParams
                 params3.width = totalWidthUsed
                 params3.height = (totalHeightUsed / 3).toInt()
-                params3.bottomToBottom = R.id.Parent
+                params3.bottomToBottom = R.id.background
                 params3.topToBottom = buttons[1].id
-                params3.startToStart = R.id.Parent
-                params3.endToEnd = R.id.Parent
+                params3.startToStart = R.id.background
+                params3.endToEnd = R.id.background
                 params3.verticalBias = 0f
                 params3.horizontalBias = 0.5f
                 buttons[2].layoutParams = params3
@@ -222,7 +222,7 @@ class Utilities
                 params4.bottomToTop = buttons[4].id
                 params4.topToBottom = top.id
                 params4.startToEnd = buttons[0].id
-                params4.endToEnd = R.id.Parent
+                params4.endToEnd = R.id.background
                 params4.verticalBias = 0f
                 params4.horizontalBias = 0f
                 buttons[3].layoutParams = params4
@@ -234,7 +234,7 @@ class Utilities
                 params5.bottomToTop = buttons[2].id
                 params5.topToBottom = buttons[3].id
                 params5.startToEnd = buttons[1].id
-                params5.endToEnd = R.id.Parent
+                params5.endToEnd = R.id.background
                 params5.verticalBias = 0f
                 params5.horizontalBias = 0f
                 buttons[4].layoutParams = params5
@@ -249,7 +249,7 @@ class Utilities
                 params.height = (totalHeightUsed / 3).toInt()
                 params.bottomToTop = buttons[1].id
                 params.topToBottom = top.id
-                params.startToStart = R.id.Parent
+                params.startToStart = R.id.background
                 params.endToStart = buttons[3].id
                 params.verticalBias = 0f
                 params.horizontalBias = 1f
@@ -261,7 +261,7 @@ class Utilities
                 params2.height = (totalHeightUsed / 3).toInt()
                 params2.bottomToTop = buttons[2].id
                 params2.topToBottom = buttons[0].id
-                params2.startToStart = R.id.Parent
+                params2.startToStart = R.id.background
                 params2.endToStart = buttons[4].id
                 params2.verticalBias = 0f
                 params2.horizontalBias = 1f
@@ -271,9 +271,9 @@ class Utilities
                 val params3 = buttons[2].layoutParams as ConstraintLayout.LayoutParams
                 params3.width = totalWidthUsed / 2
                 params3.height = (totalHeightUsed / 3).toInt()
-                params3.bottomToBottom = R.id.Parent
+                params3.bottomToBottom = R.id.background
                 params3.topToBottom = buttons[1].id
-                params3.startToStart = R.id.Parent
+                params3.startToStart = R.id.background
                 params3.endToStart = buttons[5].id
                 params3.verticalBias = 0f
                 params3.horizontalBias = 1f
@@ -286,7 +286,7 @@ class Utilities
                 params4.bottomToTop = buttons[4].id
                 params4.topToBottom = top.id
                 params4.startToEnd = buttons[0].id
-                params4.endToEnd = R.id.Parent
+                params4.endToEnd = R.id.background
                 params4.verticalBias = 0f
                 params4.horizontalBias = 0f
                 buttons[3].layoutParams = params4
@@ -298,7 +298,7 @@ class Utilities
                 params5.bottomToTop = buttons[5].id
                 params5.topToBottom = buttons[3].id
                 params5.startToEnd = buttons[1].id
-                params5.endToEnd = R.id.Parent
+                params5.endToEnd = R.id.background
                 params5.verticalBias = 0f
                 params5.horizontalBias = 0f
                 buttons[4].layoutParams = params5
@@ -307,10 +307,10 @@ class Utilities
                 val params6 = buttons[5].layoutParams as ConstraintLayout.LayoutParams
                 params6.width = totalWidthUsed / 2
                 params6.height = (totalHeightUsed / 3).toInt()
-                params6.bottomToBottom = R.id.Parent
+                params6.bottomToBottom = R.id.background
                 params6.topToBottom = buttons[4].id
                 params6.startToEnd = buttons[2].id
-                params6.endToEnd = R.id.Parent
+                params6.endToEnd = R.id.background
                 params6.verticalBias = 0f
                 params6.horizontalBias = 0f
                 buttons[5].layoutParams = params6

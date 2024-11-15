@@ -1,6 +1,46 @@
 package com.greenwolfgames.monstermaster
 
-class Node(val index: Int, val prompt: String, val choices: List<Choice>)
-{
+import android.content.Context
+import androidx.core.content.ContextCompat
 
+open class Node(
+    val index: Int,
+    val prompt: List<String>,
+    val choices: List<Choice>,
+    val animationInfos: List<AnimationInfo>,
+    val backgroundColor: Int,
+    val textColor: Int
+)
+{
+    constructor(
+        index: Int,
+        prompt: List<String>,
+        choices: List<Choice>,
+        backgroundColor: Int,
+        textColor: Int
+    ) : this(index, prompt, choices, listOf(), backgroundColor, textColor)
+
+    constructor(index: Int, prompt: List<String>, choices: List<Choice>, context: Context) : this(
+        index,
+        prompt,
+        choices,
+        listOf(),
+        ContextCompat.getColor(context, Element.getBackgroundColor(Element.NEUTRAL)),
+        ContextCompat.getColor(context, Element.getTextColor(Element.NEUTRAL))
+    )
+
+    constructor(
+        index: Int,
+        prompt: List<String>,
+        choices: List<Choice>,
+        animationInfos: List<AnimationInfo>,
+        context: Context
+    ) : this(
+        index,
+        prompt,
+        choices,
+        animationInfos,
+        ContextCompat.getColor(context, Element.getBackgroundColor(Element.NEUTRAL)),
+        ContextCompat.getColor(context, Element.getTextColor(Element.NEUTRAL))
+    )
 }

@@ -7,6 +7,9 @@ import java.awt.Graphics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Image;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,133 +20,174 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
+import java.io.File;
 
 public class Main
 {
-	private static JPanel promptPanel;
-	private static JPanel choicesPanel;
-
+	private static String prefix = "getString(context,R.string.monster_type_";
+	private static String postfix = "_evolution_index).toInt(),\n";
+	private static String lastPostfix = "_evolution_index).toInt())\n";
 	public static void main(String[] args)
 	{
-		FileReader reader = new FileReader();
+//		printMonsterTypesToFile();
+		printKotlinIntermediateMonsterTypesToFile();
 
-		System.out.println("User: " + reader.getDBUserFromFile());
-		System.out.println("Pass: " + reader.getDBPassFromFile());
-
-		javax.swing.SwingUtilities.invokeLater(new Runnable()
-		{
-			public void run()
-			{
-				initialize();
-				JFrame frame = new JFrame("Monster Master Incremental");
-				frame.setSize(1920, 1080);
-				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				
-				JLayeredPane layeredPane = new JLayeredPane();
-				layeredPane.setPreferredSize(new Dimension(1920,1080));
-				
-				ImageIcon image = new ImageIcon("assets/DarkBackground.png");
-				
-		        JPanel panel = new JPanel() {
-		            @Override
-		            protected void paintComponent(Graphics g) {
-		                super.paintComponent(g);
-		                // Load the background image
-		                ImageIcon backgroundImage = new ImageIcon("assets/DarkBackground.png");
-		                Image img = backgroundImage.getImage();
-		                g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
-		            }
-		        };
-		        panel.setLayout(null); // We'll position the text manually
-		        panel.setPreferredSize(new Dimension(1920,1080));
-		        
-		        // Create and add text label
-		        JLabel textLabel = new JLabel("Hello, World!");
-		        textLabel.setForeground(Color.WHITE); // Set text color
-		        textLabel.setFont(new Font("Arial", Font.BOLD, 24)); // Set font
-		        textLabel.setBounds(50, 50, 200, 50); // Position and size
-		        panel.add(textLabel);
-
-		        frame.pack();
-		        frame.setVisible(true);
-
-//		        // Add the panel to the frame
-//		        frame.add(panel);
-//				GridBagConstraints constraints = new GridBagConstraints();
-//				constraints.anchor  = GridBagConstraints.CENTER;
-//				constraints.fill    = GridBagConstraints.HORIZONTAL;
-//				constraints.weightx = 0.5;
-//				constraints.weighty = 0.7;
-//				constraints.gridx   = 0;
-//				constraints.gridy   = 0;
-//				panel.add(promptPanel, constraints);
-//				constraints.gridy = 1;
-//				panel.add(choicesPanel, constraints);
-//
-//
-//				frame.setContentPane(panel);
-//				frame.pack();
-//
-//				frame.setVisible(true);
-			}
-		});
 	}
-
-	private static void initialize()
+	
+	private static void printKotlinIntermediateMonsterTypesToFile()
 	{
-		initializePrompt(1);
-		initializeChoices();
+		List<MonsterType> monsters= MonsterManager.getMonsterTypes();
+		String filePath = "kotlin_intermediate_monster_type_helper.txt";
+        File file = new File(filePath); 
+        if (file.delete()) {
+            System.out.println("File deleted successfully.");
+        } else {
+            System.out.println("Failed to delete the file.");
+        }
+        
+        try (FileWriter fileWriter = new FileWriter(filePath);
+                BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) 
+        {
+        	bufferedWriter.write(indent(2) + "fun getMonsterTypesFromFile(context: Context): List<MonsterType>\n");
+        	bufferedWriter.write(indent(2) + "{\n");
+        	bufferedWriter.write(indent(3) + "var monsterTypes: MutableList<MonsterType> = mutableListOf()\n");
+        	for(MonsterType monster : monsters)
+        	{
+        		bufferedWriter.write(indent(4) + "monsterTypes.add(\n");
+        		bufferedWriter.write(indent(5) + "MonsterType(" + monster.getIndex() + ",\n");
+        		bufferedWriter.write(indent(5) + prefix + monster.getIndex() + "_name),\n");
+        		bufferedWriter.write(indent(5) + prefix + monster.getIndex() + "_description),\n");
+        		bufferedWriter.write(indent(5) + prefix + monster.getIndex() + "_previous" + postfix);
+        		bufferedWriter.write(indent(5) + prefix + monster.getIndex() + "_physical" + postfix);
+        		bufferedWriter.write(indent(5) + prefix + monster.getIndex() + "_balanced" + postfix);
+        		bufferedWriter.write(indent(5) + prefix + monster.getIndex() + "_magical" + postfix);
+        		bufferedWriter.write(indent(5) + "R.drawable.monster_" + monster.getSubElement().getName().toString().toLowerCase() + "_" + monster.getName().toLowerCase().replace(" ", "_").replace("\'", "") + ",\n");
+        		bufferedWriter.write(indent(5) + "Element." + monster.getSubElement().getName().toString().toUpperCase() + "\n");
+        		bufferedWriter.write(indent(4) + ")\n");
+        		bufferedWriter.write(indent(3) + ")\n");
+        		
+        		System.out.println("Written insert for monster " + monster.getName() + " successfully");
+        	}
+        	bufferedWriter.write(indent(3) + "return monsterTypes.toList()\n" + indent(2) + "}\n");
+            System.out.println("Content successfully written to " + filePath);
+        }
+        catch(Exception e)
+        {
+        	//do nothing
+        }
+        
 	}
-
-	private static void initializePrompt(int scenario_id)
+	
+	private static String indent(int indent_size)
 	{
-		promptPanel = new JPanel(new GridBagLayout());
-		new SQLContentRetriever();
-		List<String> prompt = new ArrayList<>();
-		try
+		if(indent_size == 2)
 		{
-			prompt = new SQLContentRetriever().getPrompt(scenario_id);
+			return "        ";
 		}
-		catch (Exception e)
+		if(indent_size == 3)
 		{
-			e.printStackTrace();
+			return "            ";
 		}
-		List<JLabel> jLabels = new LinkedList<JLabel>();
-		for (String string : prompt)
+		if(indent_size == 4)
 		{
-			jLabels.add(new JLabel(string));
+			return "                ";
 		}
-
-		GridBagConstraints constraints = new GridBagConstraints();
-		constraints.weightx = 0.2;
-		constraints.weighty = 0.2;
-		constraints.gridx   = 0;
-		constraints.anchor  = GridBagConstraints.CENTER;
-		constraints.ipady   = 40;
-		Font font = new Font("Verdana", Font.BOLD, 20);
-		for (int i = 0; i < jLabels.size(); i++)
+		if(indent_size == 5)
 		{
-			constraints.gridy = i;
-			jLabels.get(i).setFont(font);
-
-			promptPanel.add(jLabels.get(i), constraints);
-
+			return "                    ";
 		}
+		String result = "";
+		for(int i = 0; i < indent_size; i++)
+		{
+			result.concat("    ");
+		}
+		return result;
 	}
-
-	private static void initializeChoices()
+	
+	private static void printMonsterTypesToFile()
 	{
-		choicesPanel = new JPanel(new GridBagLayout());
-		JLabel choice1 = new JLabel("Go towards the light");
-		choice1.setBorder(BorderFactory.createBevelBorder(5, Color.red, Color.black));
-		JLabel             choice2     = new JLabel("Embrace the darkness");
-		GridBagConstraints constraints = new GridBagConstraints();
-		constraints.gridx   = 0;
-		constraints.gridy   = 0;
-		constraints.weightx = 0.5;
-		constraints.weighty = 0.7;
-		choicesPanel.add(choice1, constraints);
-		constraints.gridx = 1;
-		choicesPanel.add(choice2, constraints);
+		List<MonsterType> monsters= MonsterManager.getMonsterTypes();
+		String filePath = "monster_types_kotlin.txt";
+		
+        File file = new File(filePath); 
+        if (file.delete()) {
+            System.out.println("File deleted successfully.");
+        } else {
+            System.out.println("Failed to delete the file.");
+        }
+        
+        // Use try-with-resources to automatically close resources
+        try (FileWriter fileWriter = new FileWriter(filePath);
+             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+
+        	for(MonsterType monsterType : monsters)
+        	{
+        		bufferedWriter.write("    <string name=\"monster_type_" + monsterType.getIndex());
+        		bufferedWriter.write("_name\">" + filterString(monsterType.getName()) + "</string>\n");
+        		
+        		bufferedWriter.write("    <string name=\"monster_type_" + monsterType.getIndex());
+        		bufferedWriter.write("_description\">" + filterString(monsterType.getDescription()));
+        		bufferedWriter.write("</string>\n");
+        		
+        		bufferedWriter.write("    <string name=\"monster_type_" + monsterType.getIndex());
+        		bufferedWriter.write("_subelement\">" + monsterType.getSubElement().getName());
+        		bufferedWriter.write("</string>\n");
+        		
+        		bufferedWriter.write("    <string name=\"monster_type_" + monsterType.getIndex());
+        		bufferedWriter.write("_previous_evolution_index\">");
+        		if(monsterType.getPreviousEvolution() == null)
+        		{
+        			bufferedWriter.write("-1</string>\n");
+        		}
+        		else
+        		{
+        			bufferedWriter.write(monsterType.getPreviousEvolution().getIndex() + "</string>\n");        			
+        		}
+        		
+        		bufferedWriter.write("    <string name=\"monster_type_" + monsterType.getIndex());
+        		bufferedWriter.write("_physical_evolution_index\">");
+        		if(monsterType.getPhysicalEvolution() == null)
+        		{
+        			bufferedWriter.write("-1</string>\n");
+        		}
+        		else
+        		{
+        			bufferedWriter.write(monsterType.getPhysicalEvolution().getIndex() + "</string>\n");        			
+        		}
+        		
+
+        		bufferedWriter.write("    <string name=\"monster_type_" + monsterType.getIndex());
+        		bufferedWriter.write("_balanced_evolution_index\">");
+        		if(monsterType.getBalancedEvolution() == null)
+        		{
+        			bufferedWriter.write("-1</string>\n");
+        		}
+        		else
+        		{
+        			bufferedWriter.write(monsterType.getBalancedEvolution().getIndex() + "</string>\n");        			
+        		}
+        		
+
+        		bufferedWriter.write("    <string name=\"monster_type_" + monsterType.getIndex());
+        		bufferedWriter.write("_magical_evolution_index\">");
+        		if(monsterType.getMagicalEvolution() == null)
+        		{
+        			bufferedWriter.write("-1</string>\n");
+        		}
+        		else
+        		{
+        			bufferedWriter.write(monsterType.getMagicalEvolution().getIndex() + "</string>\n");        			
+        		}
+        		System.out.println("Written successfully");
+        	}
+            System.out.println("Content successfully written to " + filePath);
+        } catch (IOException e) {
+            e.printStackTrace(); // Handle exceptions
+        }
+	}
+	
+	private static String filterString(String description)
+	{
+		return description.replace("\'", "\\\'");
 	}
 }
