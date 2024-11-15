@@ -75,6 +75,9 @@ class State : Serializable
     }
 
     var playerName: String = "defaultPlayerName"
+    val currentGold: Int = 0
+    val totalGoldEver: Int = 0
+    val totalGoldDonated: Int = 0
     private var amnesiac: Boolean = false;
     var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
     var gender: Gender = Gender.MALE

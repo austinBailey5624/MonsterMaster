@@ -344,7 +344,7 @@
     <string name="scene81choice1">I\'m here to see my dad</string><!--86-->
     <string name="scene81choice2">Nothing, forget it</string><!--87-->
     <string name="scene82prompt">There is a place for questions, as there is a place for answers, but not all questions have easy answers. To bridge this gap, there is faith</string>
-    <string name="scene82choice1">I believe in facts, not faith</string>
+    <string name="scene82choice1">I believe in facts, not faith</string><!--101-->
     <string name="scene82choice2">I\'m here for my father, not to argue</string><!--86-->
     <string name="scene82choice3">May I study with you to learn faith?</string><!--88-->
     <string name="scene83prompt">Do not neglect your faith, my child. Much can be gained from prayer and contemplation. Now how may I help you?</string>
@@ -409,12 +409,16 @@
     <string name="scene97choice2">Stay silent</string><!--96-->
     <string name="scene98prompt">Good. Thank you</string>
     <string name="scene98choice">*Leave*</string><!--79-->
-    <string name="scene99prompt">*A tear slips from his eye*\n She doesn\'t need it anymore.</string>
+    <string name="scene99prompt">*A tear slips from his eye*\n She doesn\'t need it anymore. I kept this thinking she would come back, and I need to let it go.</string>
     <string name="scene99choice1">Okay, I\'ll do it</string><!--98-->
     <string name="scene99choice2">No. I\'ll find the money some other way</string><!--100-->
-    <string name="scene100prompt1">Let her go lad, she let us go a long time ago.</string>
-    <string name="scene100prompt2">Let her go, she let us go a long time ago.</string>
+    <string name="scene100prompt1">Let her go </string>
+    <string name="scene100prompt2">, she let us go a long time ago.</string>
     <string name="scene100choice">Leave</string><!--79-->
+    <string name="scene101prompt">Then you will only ever comprehend part of the mystery, and will be poorer for it. Now how can I help you today?</string>
+    <string name="scene101choice1">I\'m here to see my dad</string><!--86-->
+    <string name="scene101choice2">I\'d like to pray</string><!--88-->
+    <string name="scene101choice3">I\'d like to pay a tithe</string><!--94-->
 
     <!-- main character pronouns -->
     <string name="pronoun_subject_masculine">he</string>
@@ -1422,7 +1426,7 @@
     <string name="monster_type_139_balanced_evolution_index">-1</string>
     <string name="monster_type_139_magical_evolution_index">-1</string>
     <string name="monster_type_140_name">Bulbapup</string>
-    <string name="monster_type_140_description">A small, energetic puppy with a large bulb on its back, resembling an onion. It loves to jump around, but when it does so it is rather comical, as the weight of the bulb often makes it fall over. Its bark is adorable. And it\'s not a refrerence to Bulbasaur from Pokemon. At all.</string>
+    <string name="monster_type_140_description">A small, energetic puppy with a large bulb on its back, resembling an onion. It loves to jump around, but when it does so it is rather comical, as the weight of the bulb often makes it fall over. Its bark is adorable. And it\'s not a reference to Bulbasaur from Pokemon. At all.</string>
     <string name="monster_type_140_subelement">Terra</string>
     <string name="monster_type_140_previous_evolution_index">-1</string>
     <string name="monster_type_140_physical_evolution_index">141</string>

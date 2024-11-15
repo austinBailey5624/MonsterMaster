@@ -708,7 +708,6 @@ class NodeRetriever
                     AnimationInfo(R.drawable.scene_object_bedside_mirror_overlap, R.anim.fade_in_fast, R.id.background_center))
                 return Node(index, prompts, choices, animations, context)
             }
-            //oaktree
             if(index == 79)
             {
                 val prompts = listOf(getString(context, R.string.scene79prompt))
@@ -757,7 +756,252 @@ class NodeRetriever
                 val animations = listOf(AnimationInfo(R.drawable.background_oaktree_daylight, R.anim.fade_in_fast, R.id.background_center))
                 return Node(index, prompts, choices, animations, context)
             }
-            throw IllegalStateException("Scene1Node index not found, max 79 actual: $index");
+            if(index == 80)
+            {
+                val prompts = listOf(getString(context, R.string.scene80prompt1) + state.playerName + getString(context,R.string.scene80prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene80choice1), 81,{state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context,R.string.scene80choice2),82,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene80choice3),83,{state.addScore(Element.TERRA)},Element.TERRA),
+                    Choice(getString(context,R.string.scene80choice4),84,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene80choice5),85,{state.addScore(Element.UMBRAL)},Element.UMBRAL)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 81)
+            {
+                val prompts = listOf(getString(context,R.string.scene81prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene81choice1),86),
+                    Choice(getString(context,R.string.scene81choice2),87)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 82)
+            {
+                val prompts = listOf(getString(context,R.string.scene82prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene82choice1),101,{state.addScore(Element.AQUA)}, Element.AQUA),
+                    Choice(getString(context,R.string.scene82choice2),86),
+                    Choice(getString(context,R.string.scene82choice3),88)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 83)
+            {
+                val prompts = listOf(getString(context,R.string.scene83prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene83choice1),86),
+                    Choice(getString(context,R.string.scene83choice2),87)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 84)
+            {
+                val prompts = listOf(getString(context,R.string.scene84prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene84choice1),88,{state.addScore(Element.LUNAR)}, Element.LUNAR),
+                    Choice(getString(context,R.string.scene84choice2),89,{state.addScore(Element.UMBRAL)},Element.UMBRAL),
+                    Choice(getString(context,R.string.scene84choice3),86)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 85)
+            {
+                val prompts = listOf(getString(context,R.string.scene85prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene85choice1),90,{state.addScore(Element.STORM)},Element.STORM),
+                    Choice(getString(context,R.string.scene85choice2),91),
+                    Choice(getString(context,R.string.scene85choice3),87),
+                    Choice(getString(context,R.string.scene85choice4),92, {state.addScore(Element.UMBRAL)}, Element.UMBRAL)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 86)
+            {
+                val prompts = listOf(getString(context, R.string.scene86prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene86choice1),93),
+                    Choice(getString(context,R.string.scene86choice2), 79)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 87)
+            {
+                val prompts = listOf(getString(context, R.string.scene87prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene87choice1), 86),
+                    Choice(getString(context,R.string.scene87choice2), 88, {state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene87choice3), 94,{state.addScore(Element.ANGEL)},Element.ANGEL),
+                    Choice(getString(context,R.string.scene87choice4),79))
+                return getMichaelChurchNode(index,prompts,choices,context)
+            }
+            if(index == 88)
+            {
+                val prompts = listOf(getString(context, R.string.scene88prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene88choice1),93, {state.addScore(Element.LUXOR)}, Element.LUXOR),
+                    Choice(getString(context,R.string.scene88choice2), 93)
+                )
+                return getMichaelChurchNode(index, prompts,choices, context)
+            }
+            if(index == 89)
+            {
+                val prompts = listOf(getString(context, R.string.scene89prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene89choice1),86),
+                    Choice(getString(context,R.string.scene89choice2),88),
+                    Choice(getString(context,R.string.scene89choice3),94)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 90)
+            {
+                val prompts = listOf(getString(context, R.string.scene90prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene90choice1), 86),
+                    Choice(getString(context,R.string.scene90choice2),88),
+                    Choice(getString(context,R.string.scene90choice3),94)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 91)
+            {
+                val prompts = listOf(getString(context, R.string.scene91prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene91choice1),86),
+                    Choice(getString(context,R.string.scene91choice2),87)
+                )
+                return getMichaelChurchNode(index,prompts, choices, context)
+            }
+            if(index == 92)
+            {
+                val prompts = listOf(getString(context, R.string.scene92prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene92choice1),86),
+                    Choice(getString(context,R.string.scene92choice2),88),
+                    Choice(getString(context,R.string.scene92choice3), 94)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 93)
+            {
+                val casual: String=when (state.gender)
+                {
+                    Gender.MALE -> {
+                        "pal"
+                    }
+                    Gender.FEMALE -> {
+                        "sweetie"
+                    }
+                    else -> {
+                        "kid"
+                    }
+                }
+                val prompts = listOf(getString(context, R.string.scene93prompt1) + casual + getString(context, R.string.scene93prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene93choice1), 96,{state.addScore(Element.ANGEL)}, Element.ANGEL),
+                    Choice(getString(context,R.string.scene93choice2),96),
+                    Choice(getString(context,R.string.scene93choice3), 97,{state.addScore(Element.ROTTEN)}, Element.ROTTEN)
+                )
+                return getFatherChurchNode(index, prompts, choices, context)
+            }
+            if(index == 94)
+            {
+                //TODO: extend
+                if(state.currentGold > 10)
+                {
+                    val prompts = listOf(getString(context, R.string.scene94prompt2))
+                    var choices = mutableListOf(
+                        Choice(getString(context,R.string.scene94choice1),95,{state.addScore(Element.ANGEL)}, Element.ANGEL),
+                        Choice(getString(context,R.string.scene94choice4),87))
+                    if(state.currentGold > 100)
+                    {
+                        choices.add(Choice(getString(context,R.string.scene94choice2),95,{state.addScore(Element.ANGEL)}, Element.ANGEL))
+                    }
+                    if(state.currentGold > 1000)
+                    {
+                        choices.add(Choice(getString(context,R.string.scene94choice3), 95,{state.addScore(Element.ANGEL)}, Element.ANGEL))
+                    }
+                    return getMichaelChurchNode(index, prompts, choices, context)
+                }
+                val prompts = listOf(getString(context, R.string.scene94prompt1))
+                val choices = listOf(Choice(getString(context,R.string.scene94choice4), 87))
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 95)
+            {
+                val prompts = listOf(getString(context, R.string.scene95prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene95choice1), 86),
+                    Choice(getString(context,R.string.scene95choice2),88),
+                    Choice(getString(context,R.string.scene95choice3), 94)
+                )
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            if(index == 96)
+            {
+                val prompts = listOf(getString(context, R.string.scene96prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene96choice1), 98),
+                    Choice(getString(context,R.string.scene96choice2), 99),
+                    Choice(getString(context,R.string.scene96choice3),100)
+                )
+                return getFatherChurchNode(index, prompts, choices, context)
+            }
+            if(index == 97)
+            {
+                val prompts = listOf(getString(context, R.string.scene97prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene97choice1),96,{state.addScore(Element.LUXOR)}, Element.LUXOR),
+                    Choice(getString(context,R.string.scene97choice2),96)
+                )
+                return getFatherChurchNode(index, prompts, choices, context)
+            }
+            if(index == 98)
+            {
+                val prompts = listOf(getString(context, R.string.scene98prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene98choice),79)
+                )
+                return getFatherChurchNode(index, prompts, choices, context)
+            }
+            if(index == 99)
+            {
+                val prompts = listOf(getString(context, R.string.scene99prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene99choice1), 98),
+                    Choice(getString(context,R.string.scene99choice2), 100,{state.addScore(Element.LUXOR)}, Element.LUXOR)
+                )
+                return getFatherChurchNode(index, prompts, choices, context)
+            }
+            if(index == 100)
+            {
+                val casual: String=when (state.gender)
+                {
+                    Gender.MALE -> {
+                        "pal"
+                    }
+                    Gender.FEMALE -> {
+                        "sweetie"
+                    }
+                    else -> {
+                        "kid"
+                    }
+                }
+                val prompts = listOf(getString(context,R.string.scene100prompt1) + casual + getString(context,R.string.scene100prompt2))
+                val choices = listOf(Choice(getString(context,R.string.scene100choice),79))
+                return getFatherChurchNode(index, prompts, choices, context)
+            }
+            if(index == 101)
+            {
+                val prompts = listOf(getString(context,R.string.scene101prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene101choice1),86),
+                    Choice(getString(context,R.string.scene101choice2),88),
+                    Choice(getString(context,R.string.scene101choice3),94))
+                return getMichaelChurchNode(index, prompts, choices, context)
+            }
+            throw IllegalStateException("Scene1Node index not found, max 101 actual: $index");
         }
 
         private fun getEnterNameNode(context: Context, index: Int, promptIndex: Int, element: Element): Node
@@ -776,6 +1020,18 @@ class NodeRetriever
                 AnimationInfo(R.drawable.background_players_room,
                     R.anim.fade_in_fast, R.id.background_center),
                 AnimationInfo(R.drawable.character_john_profile, R.anim.fade_in_fast, R.id.background_center,ImageView.ScaleType.FIT_CENTER))
+        }
+
+        private fun getMichaelChurchNode(index: Int, prompts: List<String>, choices: List<Choice>, context: Context): Node{
+            val animations = listOf(AnimationInfo(R.drawable.background_oaktree_church, R.anim.fade_in_fast,R.id.background_center),
+                AnimationInfo(R.drawable.character_michael_profile, R.anim.fade_in_fast,R.id.background_center))
+            return Node(index, prompts, choices, animations, context)
+        }
+
+        private fun getFatherChurchNode(index: Int, prompts: List<String>, choices: List<Choice>, context: Context): Node{
+            val animations = listOf(AnimationInfo(R.drawable.background_oaktree_church, R.anim.fade_in_fast,R.id.background_center),
+                AnimationInfo(R.drawable.character_chuck_profile, R.anim.fade_in_fast,R.id.background_center))
+            return Node(index, prompts, choices, animations, context)
         }
     }
 }
