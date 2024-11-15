@@ -703,7 +703,8 @@ class NodeRetriever
 
                 )
                 val animations = listOf(AnimationInfo(R.drawable.scene_object_bedside_mirror, R.anim.fade_in_fast, R.id.background_center),
-                    AnimationInfo(state.playerPortraitImageId, R.anim.fade_in_fast, R.id.background_center),
+                    AnimationInfo(state.playerPortraitImageId, R.anim.fade_in_fast, ImageView.ScaleType.FIT_XY,
+                        AnimationInfo.getDefaultLayoutParams(R.id.background_center,0.45f,0.225f)),
                     AnimationInfo(R.drawable.scene_object_bedside_mirror_overlap, R.anim.fade_in_fast, R.id.background_center))
                 return Node(index, prompts, choices, animations, context)
             }

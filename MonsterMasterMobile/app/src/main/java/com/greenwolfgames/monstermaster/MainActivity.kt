@@ -252,19 +252,8 @@ class MainActivity : AppCompatActivity()
         image.setImageResource(animationInfo.imageId)
         image.tag = animationInfo.imageId
 
-        val layoutParam = image.layoutParams as ConstraintLayout.LayoutParams
-        layoutParam.startToStart   = animationInfo.parentBackgroundId
-        layoutParam.endToEnd       = animationInfo.parentBackgroundId
-        layoutParam.topToTop   = animationInfo.parentBackgroundId
-        layoutParam.bottomToBottom = animationInfo.parentBackgroundId
-        layoutParam.startToEnd     = ConstraintLayout.LayoutParams.UNSET
-        layoutParam.endToStart     = ConstraintLayout.LayoutParams.UNSET
-        layoutParam.topToBottom    = ConstraintLayout.LayoutParams.UNSET
-        layoutParam.bottomToTop    = ConstraintLayout.LayoutParams.UNSET
-        image.layoutParams = layoutParam
-
+        image.layoutParams = animationInfo.layoutParam
         image.visibility = View.VISIBLE
-
         image.scaleType = animationInfo.imageScaleType
 
         //@formatter:on
@@ -583,8 +572,8 @@ class MainActivity : AppCompatActivity()
                 }
             }
         }
-
     }
+
 
     override fun onBackPressed()
     {

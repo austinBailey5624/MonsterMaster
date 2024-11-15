@@ -15,10 +15,9 @@ enum class Element {
     NEUTRAL, PHYSICAL, MAGICAL;
     //@formatter:on
 
-    companion object {
-        fun fromString(s: String): Element {
-            return valueOf(s)
-        }
+    companion object
+    {
+
 
         fun colorButton(button: Button, context: Context, element: Element): Button {
             val textColor = getTextColor(element)
