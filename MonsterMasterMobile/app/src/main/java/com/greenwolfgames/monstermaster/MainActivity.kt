@@ -490,6 +490,18 @@ class MainActivity : AppCompatActivity()
             layoutParams.startToEnd = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.START_TO_END, buttons, R.id.background_bottom)
             layoutParams.endToEnd = ButtonLayoutResolver.getButtonLayout(choiceSize, i, ELayoutMode.END_TO_END, buttons, R.id.background_bottom)
             layoutParams.endToStart = ButtonLayoutResolver.getButtonLayout(choiceSize,i,ELayoutMode.END_TO_START,buttons, R.id.background_bottom)
+            if(choiceSize == 3 && i == 2 || choiceSize == 5 && i == 4)
+            {
+                layoutParams.matchConstraintDefaultWidth =
+                    ConstraintLayout.LayoutParams.MATCH_CONSTRAINT_SPREAD
+                layoutParams.matchConstraintPercentWidth = 0.5f
+            }
+            else
+            {
+                layoutParams.matchConstraintDefaultWidth =
+                    ConstraintLayout.LayoutParams.MATCH_CONSTRAINT_SPREAD
+                layoutParams.matchConstraintPercentWidth = 0f
+            }
 
             Log.d("MainActivity.setButtonFormat",
                 "\n    Current Button Index: " + i

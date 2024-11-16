@@ -385,8 +385,8 @@
     <string name="scene92choice1">I\'m here to see my dad</string><!--86-->
     <string name="scene92choice2">I\'d like to pray</string><!--88-->
     <string name="scene92choice3">I\'d like to pay a tithe</string><!--94-->
-    <string name="scene93prompt1">*Your father is silent for a moment, even after you approach*\n Hey </string>
-    <string name="scene93prompt2"> *he wipes away a tear in his eye* I have some chores for you.</string>
+    <string name="scene93prompt1">*Your father is silent for a moment, even after you approach*\n Hey</string>
+    <string name="scene93prompt2">*he wipes away a tear in his eye* I have some chores for you.</string>
     <string name="scene93choice1">How can I help</string><!--96-->
     <string name="scene93choice2">Fine</string><!--96-->
     <string name="scene93choice3">Do I have to?</string><!--97-->
