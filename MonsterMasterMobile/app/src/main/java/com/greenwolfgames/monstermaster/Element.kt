@@ -1,6 +1,8 @@
 package com.greenwolfgames.monstermaster
 
 import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.widget.Button
 import androidx.core.content.ContextCompat
 
@@ -24,14 +26,24 @@ enum class Element {
 
     companion object
     {
-        fun colorButton(button: Button, context: Context, element: Element): Button {
+        fun colorButton(button: Button, context: Context, element: Element): Button
+        {
+            button.backgroundTintList = null
+            button.setBackgroundResource(0)
+            button.background = null
             val textColor = getTextColor(element)
-            val buttonBackgroundColor = getButtonBackgroundColor(element)
-
+            val borderedShape = GradientDrawable().apply {
+                shape = GradientDrawable.RECTANGLE
+                setColor(ContextCompat.getColor(context, getButtonBackgroundColor(element)))
+                setStroke(10, ContextCompat.getColor(context, textColor))
+                cornerRadius = 40f
+            }
+            button.elevation = 0f
+            button.background = borderedShape
             button.setTextColor(
                 ContextCompat.getColor(context, textColor)
             )
-            button.setBackgroundColor(ContextCompat.getColor(context, buttonBackgroundColor))
+
             return button
         }
 
