@@ -430,6 +430,9 @@
     <string name="pronoun_possessive_masculine">his</string>
     <string name="pronoun_possessive_feminine">hers</string>
     <string name="pronoun_possessive_neutral">theirs</string>
+    <string name="nickname_masculine">pal</string>
+    <string name="nickname_feminine">sweetie</string>
+    <string name="nickname_neutral">kid</string>
 
     <!-- content descriptions for UI elements -->
     <string name="background_content_description">The absolute background behind everything else</string>

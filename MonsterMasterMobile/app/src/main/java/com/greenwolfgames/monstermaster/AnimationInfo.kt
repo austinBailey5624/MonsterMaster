@@ -7,16 +7,16 @@ import androidx.constraintlayout.widget.ConstraintLayout
 /**
  * Class to handle the information needed to dynamically apply and run animations on images
  * @author: Austin Bailey
- * @date: 11/13/2024
+ * @year: 2024
  *
- * @Copyright 2024 All rights reserved
+ * @Copyright Austin Bailey 2024 All rights reserved
  */
 class AnimationInfo(
     val imageId: Int,
     val animationId: Int,
     val imageScaleType: ImageView.ScaleType,
     val layoutParam: ConstraintLayout.LayoutParams
-) //TODO: extend so we can select image placement behind and in front of text
+)
 {
     constructor(
         imageId: Int,

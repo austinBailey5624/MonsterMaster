@@ -18,6 +18,13 @@ import androidx.core.content.ContextCompat
 import com.google.android.material.textfield.TextInputEditText
 import java.util.Locale
 
+/**
+ * Class to manage the elements of the activity_main.xml layout
+ * @Author: Austin Bailey
+ * @Year: 2024
+ *
+ * @Copyright: Austin Bailey 2024 All Rights Reserved
+ */
 class MainActivity : AppCompatActivity()
 {
     private var previousColor: Int = R.color.darkGray

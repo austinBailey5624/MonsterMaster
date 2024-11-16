@@ -12,6 +12,13 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 
+/**
+ * Class to handle and organize complex animations
+ * @Author Austin Bailey
+ * @Year 2024
+ *
+ * @Copyright Austin Bailey 2024 all rights reserved
+ */
 class AnimationHandler
 {
     companion object

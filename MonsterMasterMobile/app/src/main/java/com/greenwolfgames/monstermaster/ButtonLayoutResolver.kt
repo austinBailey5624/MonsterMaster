@@ -3,6 +3,13 @@ package com.greenwolfgames.monstermaster
 import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
 
+/**
+ * Class to resolve button layouts
+ * @Author: Austin Bailey
+ * @Year: 2024
+ *
+ * @Copyright: Austin Bailey 2024 All rights reserved
+ */
 class ButtonLayoutResolver
 {
     companion object

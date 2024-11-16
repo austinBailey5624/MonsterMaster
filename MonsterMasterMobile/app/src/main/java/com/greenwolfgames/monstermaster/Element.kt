@@ -4,6 +4,13 @@ import android.content.Context
 import android.widget.Button
 import androidx.core.content.ContextCompat
 
+/**
+ * Enum to help organize elements and so element specific variables can be retrieved
+ * @Author: Austin Bailey
+ * @Year: 2024
+ *
+ * @Copyright Austin Bailey 2024 All Rights Reserved
+ */
 enum class Element {
     //@formatter:off
     PYRO,LAVA,DINO,SAND,JUSTICE,VENGEANCE,
@@ -17,8 +24,6 @@ enum class Element {
 
     companion object
     {
-
-
         fun colorButton(button: Button, context: Context, element: Element): Button {
             val textColor = getTextColor(element)
             val buttonBackgroundColor = getButtonBackgroundColor(element)
