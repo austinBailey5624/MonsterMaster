@@ -419,6 +419,27 @@
     <string name="scene101choice1">I\'m here to see my dad</string><!--86-->
     <string name="scene101choice2">I\'d like to pray</string><!--88-->
     <string name="scene101choice3">I\'d like to pay a tithe</string><!--94-->
+    <string name="scene102prompt1">Welcome,</string>
+    <string name="scene102prompt2">Have you come for your writing lesson?</string>
+    <string name="scene102choice1">Can we just say we did?</string><!--103-->
+    <string name="scene102choice2">Do you have any books on the Gods?</string><!--104-->
+    <string name="scene102choice3">Your puppy is so cute!</string><!--105-->
+    <string name="scene102choice4">Could you teach me about magic?</string><!--106-->
+    <string name="scene102choice5">I want to learn about Monsters</string><!--107-->
+    <string name="scene102choice6">Can we get this over with?</string><!--108-->
+    <string name="scene103prompt">Ahh yes. Today is the anniversary of your mother\'s departure is it not? I imagine such a time must be stressful for one so young. If you'd like, we can talk about it before your lesson.</string>
+    <string name="scene103choice1">No, I\'d rather do the lesson</string><!--109-->
+    <string name="scene103choice2">I don\'t trust you</string><!--109-->
+    <string name="scene103choice3">Why do you think she left?</string><!--110-->
+
+    <string name="scene109prompt">Very well. I shall relent. Though I am here if you ever need me.\nWhat book should we scribe today?</string>
+    <string name="scene109choice1">Five Faces, One God</string>
+    <string name="scene109choice2">Mysteries of Mana</string>
+    <string name="scene109choice3">Mixed Party Tactics</string>
+    <string name="scene109choice4">Property Ownership</string>
+    <string name="scene109choice5">Shadow of the Moon</string>
+    <string name="scene109choice6">Merchant Adventures</string>
+
 
     <!-- main character pronouns -->
     <string name="pronoun_subject_masculine">he</string>

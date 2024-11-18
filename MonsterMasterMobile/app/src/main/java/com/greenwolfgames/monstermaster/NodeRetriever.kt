@@ -718,16 +718,32 @@ class NodeRetriever
             if(index == 79)
             {
                 val prompts = listOf(getString(context, R.string.scene79prompt))
-                val choices: List<Choice> = listOf(
-                    Choice(getString(context,R.string.scene79choice1),80,
-                    {
-                        if(!state.getSeenNodeBefore(index))
+
+                val choices: List<Choice>
+                //if we've visited this node before, we don't award points on decisions (avoid infinite loop)
+                if(state.getSeenNodeBefore(index))
+                {
+                    choices = listOf(
+                        Choice(getString(context,R.string.scene79choice1),80),
+                        Choice(getString(context,R.string.scene79choice2),0),
+                        Choice(getString(context,R.string.scene79choice3),0),
+                        Choice(getString(context,R.string.scene79choice4),0),
+                        Choice(getString(context,R.string.scene79choice5),0)
+                    )
+                }
+                //if we've never been to this node before
+                else
+                {
+                    choices = listOf(
+                        Choice(getString(context,R.string.scene79choice1),80,
                         {
-                            state.addScore(Element.LUXOR)
-                            state.visitNode(index)
-                        }
-                    }, Element.LUXOR),
-                    Choice(getString(context,R.string.scene79choice2), 0,
+                            if(!state.getSeenNodeBefore(index))
+                            {
+                                state.addScore(Element.LUXOR)
+                                state.visitNode(index)
+                            }
+                        }, Element.LUXOR),
+                        Choice(getString(context,R.string.scene79choice2), 0,
                         {
                             if(!state.getSeenNodeBefore(index))
                             {
@@ -735,7 +751,7 @@ class NodeRetriever
                                 state.visitNode(index)
                             }
                         }, Element.AQUA),
-                    Choice(getString(context,R.string.scene79choice3), 0,
+                        Choice(getString(context,R.string.scene79choice3), 0,
                         {
                             if(!state.getSeenNodeBefore(index))
                             {
@@ -743,7 +759,7 @@ class NodeRetriever
                                 state.visitNode(index)
                             }
                         }, Element.TERRA),
-                    Choice(getString(context,R.string.scene79choice4), 0,
+                        Choice(getString(context,R.string.scene79choice4), 0,
                         {
                             if(!state.getSeenNodeBefore(index))
                             {
@@ -751,7 +767,7 @@ class NodeRetriever
                                 state.visitNode(index)
                             }
                         }, Element.NIGHTWING),
-                    Choice(getString(context,R.string.scene79choice5),0,
+                        Choice(getString(context,R.string.scene79choice5),0,
                         {
                             if(!state.getSeenNodeBefore(index))
                             {
@@ -759,7 +775,8 @@ class NodeRetriever
                                 state.visitNode(index)
                             }
                         }, Element.AERO)
-                )
+                    )
+                }
                 val animations = listOf(AnimationInfo(R.drawable.background_oaktree_daylight, R.anim.fade_in_fast, R.id.background_center))
                 return Node(index, prompts, choices, animations, context)
             }
