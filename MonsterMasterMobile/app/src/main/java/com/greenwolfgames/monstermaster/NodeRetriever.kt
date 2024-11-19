@@ -725,7 +725,7 @@ class NodeRetriever
                 {
                     choices = listOf(
                         Choice(getString(context,R.string.scene79choice1),80),
-                        Choice(getString(context,R.string.scene79choice2),0),
+                        Choice(getString(context,R.string.scene79choice2),102),
                         Choice(getString(context,R.string.scene79choice3),0),
                         Choice(getString(context,R.string.scene79choice4),0),
                         Choice(getString(context,R.string.scene79choice5),0)
@@ -1002,6 +1002,510 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene101choice3),94))
                 return getMichaelChurchNode(index, prompts, choices, context)
             }
+            if(index == 102)
+            {
+                val prompts = listOf(getString(context,R.string.scene102prompt1) + " " + state.playerName + " " +
+                getString(context,R.string.scene102prompt2))
+                val choices = listOf(Choice(getString(context,R.string.scene102choice1),103,{state.addScore(Element.PYRO)}, Element.PYRO),
+                    Choice(getString(context,R.string.scene102choice2),104,{state.addScore(Element.LUXOR)}, Element.LUXOR),
+                    Choice(getString(context,R.string.scene102choice3),105,{state.addScore(Element.PEGASUS)}, Element.PEGASUS),
+                    Choice(getString(context,R.string.scene102choice4),106,{state.addScore(Element.AQUA)}, Element.AQUA),
+                    Choice(getString(context,R.string.scene102choice5),107),
+                    Choice(getString(context,R.string.scene102choice6),108,{state.addScore(Element.PHOENIX)}, Element.PHOENIX))
+                return getBrahmNode(index, prompts, choices, context)
+            }
+            if(index == 103)
+            {
+                val prompts = listOf(getString(context,R.string.scene103prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene103choice1),109,{state.addScore(Element.AQUA)},Element.AQUA),
+                Choice(getString(context,R.string.scene103choice2),109,{state.addScore(Element.UMBRAL)},Element.UMBRAL),
+                Choice(getString(context,R.string.scene103choice3),110))
+                return getBrahmNode(index, prompts, choices, context)
+            }
+            if(index == 104)
+            {
+                val prompts = listOf(getString(context,R.string.scene104prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene104choice1), 111,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene104choice2),112,{state.addScore(Element.WEATHER)},Element.WEATHER),
+                    Choice(getString(context,R.string.scene104choice3),113))
+                return getBrahmNode(index, prompts, choices, context)
+            }
+            if(index == 105)
+            {
+                val prompts = listOf(getString(context,R.string.scene105prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene105choice1),114,{state.addScore(Element.BIRD)},Element.BIRD),
+                    Choice(getString(context,R.string.scene105choice2),113,{state.addScore(Element.AQUA)},Element.AQUA))
+                return getBrahmNode(index, prompts, choices, context)
+            }
+            if(index == 106)
+            {
+                val prompts = listOf(getString(context,R.string.scene106prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene106choice1),133,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene106choice2),115,{state.addScore(Element.LAVA)},Element.LAVA))
+                return getBrahmNode(index,prompts, choices, context)
+            }
+            if(index == 107)
+            {
+                val prompts = listOf(getString(context,R.string.scene107prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene107choice1),116),
+                    Choice(getString(context,R.string.scene107choice2),117))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 108)
+            {
+                val prompts = listOf(getString(context,R.string.scene108prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene108choice1),112,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene108choice2),131,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene108choice3),140,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene108choice4),152,{state.addScore(Element.STORM)},Element.STORM),
+                    Choice(getString(context,R.string.scene108choice5),160,{state.addScore(Element.AERO)},Element.AERO),
+                    Choice(getString(context,R.string.scene108choice6),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 109)
+            {
+                val prompts = listOf(getString(context,R.string.scene109prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene109choice1),112,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene109choice2),131,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene109choice3),140,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene109choice4),152,{state.addScore(Element.STORM)},Element.STORM),
+                    Choice(getString(context,R.string.scene109choice5),160,{state.addScore(Element.AERO)},Element.AERO),
+                    Choice(getString(context,R.string.scene109choice6),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 110)
+            {
+                val prompts = listOf(getString(context,R.string.scene110prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene110choice1),165),
+                    Choice(getString(context,R.string.scene110choice2),168),
+                    Choice(getString(context,R.string.scene110choice3),109))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 111)
+            {
+                val prompts = listOf(getString(context,R.string.scene111prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene111choice1),170),
+                    Choice(getString(context,R.string.scene111choice2),171),
+                    Choice(getString(context,R.string.scene111choice3),112))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 112)
+            {
+                val prompts = listOf(getString(context,R.string.scene112prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene112choice1),118),
+                    Choice(getString(context,R.string.scene112choice2),119,{state.addScore(Element.UMBRAL)},Element.UMBRAL))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 113)
+            {
+                val prompts = listOf(getString(context,R.string.scene113prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene113choice1),112,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene113choice1),131,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene113choice3),140,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene113choice4),152,{state.addScore(Element.STORM)},Element.STORM),
+                    Choice(getString(context,R.string.scene113choice5),160,{state.addScore(Element.AERO)},Element.AERO),
+                    Choice(getString(context,R.string.scene113choice6),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 114)
+            {
+                val prompts = listOf(getString(context,R.string.scene114prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene114choice1),112,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene114choice2),131,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene114choice3),140,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene114choice4),152,{state.addScore(Element.STORM)},Element.STORM),
+                    Choice(getString(context,R.string.scene114choice5),160,{state.addScore(Element.AERO)},Element.AERO),
+                    Choice(getString(context,R.string.scene114choice6),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 115)
+            {
+                val prompts = listOf(getString(context,R.string.scene115prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene115choice1),131),
+                    Choice(getString(context,R.string.scene115choice2),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 116)
+            {
+                val prompts = listOf(getString(context,R.string.scene116prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene116choice1),112),
+                    Choice(getString(context,R.string.scene116choice1),172))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 117)
+            {
+                val prompts = listOf(getString(context,R.string.scene117prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene117choice1),175,{state.addScore(Element.JUSTICE)},Element.JUSTICE),
+                    Choice(getString(context,R.string.scene117choice2),112,{state.addScore(Element.AQUA)},Element.AQUA))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 118)
+            {
+                val prompts = listOf(getString(context,R.string.scene118prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene118choice1),120),
+                    Choice(getString(context,R.string.scene118choice2),119))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 119)
+            {
+                val prompts = listOf(getString(context,R.string.scene119prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene119choice1),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 120)
+            {
+                val prompts = listOf(getString(context,R.string.scene120prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene120choice1),121),
+                    Choice(getString(context,R.string.scene120choice2),122,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 121)
+            {
+                val prompts = listOf(getString(context,R.string.scene121prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene121choice1),123),
+                    Choice(getString(context,R.string.scene121choice2),122,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 122)
+            {
+                val prompts = listOf(getString(context,R.string.scene122prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene122choice),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 123)
+            {
+                val prompts = listOf(getString(context,R.string.scene123prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene123choice1),124,{state.addScore(Element.LUNAR)},Element.LUNAR),
+                    Choice(getString(context,R.string.scene123choice2),122,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 124)
+            {
+                val prompts = listOf(getString(context,R.string.scene124prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene124choice1),125,{state.addScore(Element.LUNAR)},Element.LUNAR),
+                    Choice(getString(context,R.string.scene124choice2),126,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 125)
+            {
+                val prompts = listOf(getString(context,R.string.scene125prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene125choice1),127,{state.addScore(Element.LUNAR)},Element.LUNAR),
+                    Choice(getString(context,R.string.scene125choice2),126,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 126)
+            {
+                val prompts = listOf(getString(context,R.string.scene126prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene126choice1),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 127)
+            {
+                val prompts = listOf(getString(context,R.string.scene127prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene127choice),128))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 128)
+            {
+                val prompts = listOf(getString(context,R.string.scene128prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene128choice1),129),
+                    Choice(getString(context,R.string.scene128choice2),130))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 129)
+            {
+                val prompts = listOf(getString(context,R.string.scene129prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene129choice1),176),
+                    Choice(getString(context,R.string.scene129choice2),130))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 130)
+            {
+                val prompts = listOf(getString(context,R.string.scene130prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene130choice1),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 131)
+            {
+                val prompts = listOf(getString(context,R.string.scene131prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene131choice1),133,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene132choice2),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 132)
+            {
+                val prompts = listOf(getString(context,R.string.scene132prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene132choice1),113),
+                    Choice(getString(context,R.string.scene132choice2),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 133)
+            {
+                val prompts = listOf(getString(context,R.string.scene133prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene133choice1),134,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene133choice2),119,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 134)
+            {
+                val prompts = listOf(getString(context,R.string.scene134prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene134choice1),135,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene134choice2),119,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 135)
+            {
+                val prompts = listOf(getString(context,R.string.scene135prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene135choice1),136,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene135choice2),122,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index ==136)
+            {
+                val prompts = listOf(getString(context,R.string.scene136prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene136choice), 137))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 137)
+            {
+                val prompts = listOf(getString(context,R.string.scene137prompt1) + " " + state.playerName + " " + getString(context,R.string.scene137prompt2))
+                val choices = listOf(Choice(getString(context,R.string.scene137choice1),79),
+                    Choice(getString(context,R.string.scene137choice2), 138,{state.addScore(Element.AQUA)},Element.AQUA))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 138)
+            {
+                val prompts = listOf(getString(context,R.string.scene138prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene138choice1),79),
+                    Choice(getString(context,R.string.scene138choice2),139,{state.addScore(Element.DEEP)},Element.DEEP))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 139)
+            {
+                val prompts = listOf(getString(context,R.string.scene139prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene139choice),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 140)
+            {
+                val prompts = listOf(getString(context,R.string.scene140prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene140choice1),141,{state.addScore(Element.STEAM)},Element.STEAM),
+                    Choice(getString(context,R.string.scene140choice2),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 141)
+            {
+                val prompts = listOf(getString(context,R.string.scene141prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene141choice1),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX),
+                    Choice(getString(context,R.string.scene141choice2),141,{state.addScore(Element.STEAM)},Element.STEAM))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 142)
+            {
+                val prompts = listOf(getString(context,R.string.scene142prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene142choice1),143,{state.addScore(Element.STEAM)},Element.STEAM),
+                    Choice(getString(context,R.string.scene142choice2),119,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 143)
+            {
+                val prompts = listOf(getString(context,R.string.scene143prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene143choice1),144,{state.addScore(Element.STEAM)},Element.STEAM),
+                    Choice(getString(context,R.string.scene143choice2),122,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 144)
+            {
+                val prompts = listOf(getString(context,R.string.scene144prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene144choice1),145,{state.addScore(Element.STEAM)},Element.STEAM),
+                    Choice(getString(context,R.string.scene144choice2),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 145)
+            {
+                val prompts = listOf(getString(context,R.string.scene145prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene145choice1),137),
+                    Choice(getString(context,R.string.scene145choice1),146,{state.addScore(Element.LAVA)}, Element.LAVA))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 146)
+            {
+                val prompts = listOf(getString(context,R.string.scene146prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene146choice1),147,{state.addScore(Element.JUSTICE)},Element.JUSTICE),
+                    Choice(getString(context,R.string.scene146choice2),148),
+                    Choice(getString(context,R.string.scene146choice3),149,{state.addScore(Element.DEMON)},Element.DEMON))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 147)
+            {
+                val prompts = listOf(getString(context,R.string.scene147prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene147choice1),150))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 148)
+            {
+                val prompts = listOf(getString(context,R.string.scene148prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene148choice1),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 149)
+            {
+                val prompts = listOf(getString(context,R.string.scene149prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene149choice1),150,{state.addScore(Element.JUSTICE)},Element.JUSTICE),
+                    Choice(getString(context,R.string.scene149choice2),151,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene149choice3),151,{state.addScore(Element.DEMON)},Element.DEMON))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 150)
+            {
+                val prompts = listOf(getString(context,R.string.scene150prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene150choice1),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 151)
+            {
+                val prompts = listOf(getString(context,R.string.scene151prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene151choice1),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 152)
+            {
+                val prompts = listOf(getString(context,R.string.scene152prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene152choice1),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX),
+                    Choice(getString(context,R.string.scene152choice2),153,{state.addScore(Element.WEATHER)},Element.WEATHER))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 153)
+            {
+                val prompts = listOf(getString(context,R.string.scene153prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene153choice1),119,{state.addScore(Element.PHOENIX)},Element.PHOENIX),
+                    Choice(getString(context,R.string.scene153choice2),154,{state.addScore(Element.WEATHER)},Element.WEATHER))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 154)
+            {
+                val prompts = listOf(getString(context,R.string.scene154prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene154choice1),122,{state.addScore(Element.PHOENIX)},Element.PHOENIX),
+                    Choice(getString(context,R.string.scene154choice2),155,{state.addScore(Element.WEATHER)},Element.WEATHER))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 155)
+            {
+                val prompts = listOf(getString(context,R.string.scene155prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene155choice1),137),
+                    Choice(getString(context,R.string.scene155choice2),156),
+                    Choice(getString(context,R.string.scene155choice3),157))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 156)
+            {
+                val prompts = listOf(getString(context,R.string.scene156prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene156choice1),137))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 157)
+            {
+                val prompts = listOf(getString(context,R.string.scene157prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene157choice1),158,{state.addScore(Element.ANGEL)},Element.ANGEL),
+                    Choice(getString(context,R.string.scene157choice2),159,{state.addScore(Element.NIGHTWING)},Element.NIGHTWING))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 158)
+            {
+                val prompts = listOf(getString(context,R.string.scene158prompt1) + " " + Gender.getBrahmsNickname(context,state.gender))
+                val choices = listOf(Choice(getString(context,R.string.scene158choice1),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 159)
+            {
+                val prompts = listOf(getString(context,R.string.scene159prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene159choice1),79))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 160)
+            {
+                val prompts = listOf(getString(context,R.string.scene160prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene160choice1),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX),
+                    Choice(getString(context,R.string.scene160choice2),161,{state.addScore(Element.AERO)},Element.AERO))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 161)
+            {
+                val prompts = listOf(getString(context,R.string.scene161prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene161choice1),119,{state.addScore(Element.PHOENIX)},Element.PHOENIX),
+                    Choice(getString(context,R.string.scene161choice2),163,{state.addScore(Element.AERO)},Element.AERO))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 162)
+            {
+                val prompts = listOf(getString(context,R.string.scene162prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene162choice1),122,{state.addScore(Element.PHOENIX)},Element.PHOENIX),
+                    Choice(getString(context,R.string.scene162choice2),163,{state.addScore(Element.AERO)},Element.AERO))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 163)
+            {
+                val prompts = listOf(getString(context,R.string.scene163prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene163choice1),137))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 164)
+            {
+                val prompts = listOf(getString(context,R.string.scene164prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene164choice1),165))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 165)
+            {
+                val prompts = listOf(getString(context,R.string.scene165prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene165choice1),166),
+                    Choice(getString(context,R.string.scene165choice2),167),
+                    Choice(getString(context,R.string.scene165choice3),166))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 166)
+            {
+                val prompts = listOf(getString(context,R.string.scene166prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene166choice1),113))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 167)
+            {
+                val prompts = listOf(getString(context,R.string.scene167prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene167choice1),168),
+                    Choice(getString(context,R.string.scene167choice2),113))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 168)
+            {
+                val prompts = listOf(getString(context,R.string.scene168prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene168choice1),112,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene168choice2),131,{state.addScore(Element.AQUA)},Element.AQUA),
+                    Choice(getString(context,R.string.scene168choice3),140,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene168choice4),152,{state.addScore(Element.STORM)},Element.STORM),
+                    Choice(getString(context,R.string.scene168choice5),160,{state.addScore(Element.AERO)},Element.AERO),
+                    Choice(getString(context,R.string.scene168choice6),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 169)
+            {
+                val prompts = listOf(getString(context,R.string.scene169prompt))
+                val choices = listOf(Choice(getString(context,R.string.scene169choice1),112,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene169choice2),132,{state.addScore(Element.PHOENIX)},Element.PHOENIX))
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 170)
+            {
+                val prompts = listOf(getString(context,R.string.scene170prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene170choice1),171,{state.addScore(Element.JUSTICE)},Element.JUSTICE),
+                    Choice(getString(context,R.string.scene170choice2),171,{state.addScore(Element.LUNAR)},Element.LUNAR),
+                    Choice(getString(context,R.string.scene170choice3),171,{state.addScore(Element.COMPASSION)},Element.COMPASSION),
+                    Choice(getString(context,R.string.scene170choice4),171,{state.addScore(Element.ANGEL)},Element.ANGEL),
+                    Choice(getString(context,R.string.scene170choice5),171,{state.addScore(Element.REDEMPTION)},Element.REDEMPTION),
+                    Choice(getString(context,R.string.scene170choice6),112,{state.addScore(Element.AQUA)},Element.AQUA))
+                return getBrahmNode(index,prompts,choices,context)
+            }
             throw IllegalStateException("Scene1Node index not found, max 101 actual: $index")
         }
 
@@ -1032,6 +1536,12 @@ class NodeRetriever
         private fun getFatherChurchNode(index: Int, prompts: List<String>, choices: List<Choice>, context: Context): Node{
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_church, R.anim.fade_in_fast,R.id.background_center),
                 AnimationInfo(R.drawable.character_chuck_profile, R.anim.fade_in_fast,R.id.background_center))
+            return Node(index, prompts, choices, animations, context)
+        }
+
+        private fun getBrahmNode(index: Int, prompts: List<String>, choices: List<Choice>, context: Context): Node{
+            val animations = listOf(AnimationInfo(R.drawable.background_brahms_room, R.anim.fade_in_fast, R.id.background_center),
+                AnimationInfo(R.drawable.character_brahm_profile, R.anim.fade_in_fast, R.id.background_center))
             return Node(index, prompts, choices, animations, context)
         }
     }

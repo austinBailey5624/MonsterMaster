@@ -8,7 +8,7 @@ import androidx.core.content.ContextCompat.getString
  * @Author: Austin Bailye
  * @Year: 2024
  *
- * @Copyright: Austin Bailey 2024 All Rights Reserved
+ * @Copyright: Austin Bailey 2024 All Rights Reserved{
  */
 class MonsterTypeManager
 {

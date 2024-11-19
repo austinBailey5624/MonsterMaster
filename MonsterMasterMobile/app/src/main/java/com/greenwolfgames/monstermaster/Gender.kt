@@ -55,5 +55,15 @@ enum class Gender
                 NEUTRAL -> getString(context, R.string.nickname_neutral)
             }
         }
+
+        fun getBrahmsNickname(context:Context, gender:Gender): String
+        {
+            return when(gender)
+            {
+                MALE -> getString(context,R.string.nickname2_masculine)
+                FEMALE -> getString(context,R.string.nickname2_feminine)
+                NEUTRAL -> getString(context,R.string.nickname2_neutral)
+            }
+        }
     }
 }
