@@ -743,7 +743,7 @@ class NodeRetriever
                                 state.visitNode(index)
                             }
                         }, Element.LUXOR),
-                        Choice(getString(context,R.string.scene79choice2), 0,
+                        Choice(getString(context,R.string.scene79choice2), 102,
                         {
                             if(!state.getSeenNodeBefore(index))
                             {
@@ -1506,7 +1506,64 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene170choice6),112,{state.addScore(Element.AQUA)},Element.AQUA))
                 return getBrahmNode(index,prompts,choices,context)
             }
-            throw IllegalStateException("Scene1Node index not found, max 101 actual: $index")
+            if(index == 171)
+            {
+                val prompts = listOf(getString(context,R.string.scene171prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene171choice1),112),
+                    Choice(getString(context,R.string.scene171choice2),119)
+                )
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 172)
+            {
+                val prompts = listOf(getString(context,R.string.scene172prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene172choice1),173),
+                    Choice(getString(context,R.string.scene172choice2),174),
+                    Choice(getString(context,R.string.scene172choice3),113),
+                    Choice(getString(context,R.string.scene172choice4),132)
+                )
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 173)
+            {
+                val prompts = listOf(getString(context,R.string.scene173prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene173choice1),174),
+                    Choice(getString(context,R.string.scene173choice2),113),
+                    Choice(getString(context,R.string.scene173choice3),132)
+                )
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 174)
+            {
+                val prompts = listOf(getString(context,R.string.scene174prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene174choice1),113),
+                    Choice(getString(context,R.string.scene174choice2),132)
+                )
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 175)
+            {
+                val prompts = listOf(getString(context,R.string.scene175prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene175choice1),113),
+                    Choice(getString(context,R.string.scene175choice2),132)
+                )
+                return getBrahmNode(index,prompts,choices,context)
+            }
+            if(index == 176)
+            {
+                val prompts = listOf(getString(context,R.string.scene176prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene176choice),130)
+                )
+                return getBrahmNode(index,prompts,choices,context)
+            }
+
+            throw IllegalStateException("NodeRetriever index not found, max 176 actual: $index")
         }
 
         private fun getEnterNameNode(context: Context, index: Int, promptIndex: Int, element: Element): Node

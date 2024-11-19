@@ -427,7 +427,7 @@
     <string name="scene102choice4">Could you teach me about magic?</string><!--106-->
     <string name="scene102choice5">I want to learn about Monsters</string><!--107-->
     <string name="scene102choice6">Can we get this over with?</string><!--108-->
-    <string name="scene103prompt">Ahh yes. Today is the anniversary of your mother\'s departure is it not? I imagine such a time must be stressful for one so young. If you'd like, we can talk about it before your lesson.</string>
+    <string name="scene103prompt">Ahh yes. Today is the anniversary of your mother\'s departure is it not? I imagine such a time must be stressful for one so young. If you\'d like, we can talk about it before your lesson.</string>
     <string name="scene103choice1">No, I\'d rather do the lesson</string><!--109-->
     <string name="scene103choice2">I don\'t trust you</string><!--109-->
     <string name="scene103choice3">Why do you think she left?</string><!--110-->
@@ -500,7 +500,7 @@
     <string name="scene120prompt">Erebius brought his traitorous servant Pytion before Ahros, and asked the God-King to pass judgement. Ahros replied:\"The law of balance decrees that Pythion should have the evil he had done others done to himself in the same measure\". Ahros rose with the Sun, and was bathed in its light as he ascended to heaven, that he may judge men in the next life as he did in this. </string>
     <string name="scene120choice1">Continue</string><!--121-->
     <string name="scene120choice2">I\'m bored, can we stop now?</string><!--122-->
-    <string name="scene121prompt">As the sun set on the day of his victory, Erebius was bathed in the light of the full moon. He travelled to the western shore, where A mystic was meditating on a rock. So strong was her magic that beams of light shone upon her. Erebius asked her: \"Mystic, what is the purpose of magic?\" She replied: \"To do that which is right, to serve both God and men.\"</string>
+    <string name="scene121prompt">As the sun set on the day of his victory, Erebius was bathed in the light of the full moon. He travelled to the western shore, where a mystic was meditating on a rock. So strong was her magic that beams of light shone upon her. Erebius asked her: \"Mystic, what is the purpose of magic?\" She replied: \"To do that which is right, to serve both God and men.\"</string>
     <string name="scene121choice1">Continue</string><!--123-->
     <string name="scene121choice2">I\'m bored, can we stop now?</string><!--122-->
     <string name="scene122prompt">That is enough. The young still have fire in their veins it seems. Go play, and may you get onto as much mischief as you can manage</string>
@@ -532,10 +532,10 @@
     <string name="scene132prompt">Don\'t let me stop you. We can study when you are older. Though I will have to tell your father</string>
     <string name="scene132choice1">Alright alright, lets just make this quick</string><!--113-->
     <string name="scene132choice2">*Leave*</string><!--79-->
-    <string name="scene133prompt">Magic, in its many forms, has a wide variety of uses and expressions, however structurally, 3 things remain mechanically constant. Mana, or the power that is used to cast spells, has a source from which it originates, a channel through which it travells to its destination, and an expression. The expression is the effect of mana, which can vary from mending wounds to fire and lightning and other effects</string>
+    <string name="scene133prompt">Magic, in its many forms, has a wide variety of uses and expressions, however structurally, 3 things remain mechanically constant. Mana, or the power that is used to cast spells, has a source from which it originates, a channel through which it travels to its destination, and an expression. The expression is the effect of mana, which can vary from mending wounds to fire and lightning and other effects</string>
     <string name="scene133choice1">Cool! *continue*</string><!--134-->
     <string name="scene133choice2">Can we stop now?</string><!--119-->
-    <string name="scene134prompt">The source determines the moral \'character\' of the magic - which magistars, the church\'s magic police care greatly about. The source of White magic is the God\'s themselves, and can be granted or taken by them at a whim, while Grey magic uses the innate magic from a person themselves. This is more reliable in some ways, because a person can always access their own magic, and less because unlike white magic, grey magic's energy is finite.</string>
+    <string name="scene134prompt">The source determines the moral \'character\' of the magic - which magistars, the church\'s magic police care greatly about. The source of White magic is the God\'s themselves, and can be granted or taken by them at a whim, while Grey magic uses the innate magic from a person themselves. This is more reliable in some ways, because a person can always access their own magic, and less because unlike white magic, grey magic energy is finite.</string>
     <string name="scene134choice1">*Continue*</string><!--135-->
     <string name="scene134choice2">I\'m bored, I\'m going to leave now</string><!--119-->
     <string name="scene135prompt">Black magic, or \'evil\' magic has a source external to one\'s self, and is illegal and condemned.\nThe channel determines how much power can be used at once, even if the caster has an infinite source, they can only use as much as they can channel at one time. Likewise, if their source is depeleted, their channel will do them no good, as they will have nothing to draw upon.</string>
@@ -643,7 +643,7 @@
     <string name="scene169choice2">I don\'t really care, can I go play?</string><!--132-->
     <string name="scene170prompt">There is a god for each virtue: Ahros symbolizes justice and  martial authority, while Velhu is mercy and magical regulation. Sid is boundless compassion, and Gabriel is sharing and spreading the light. Pythion is for those that have lost their way, to come back to the light</string>
     <string name="scene170choice1">Tell me more of Ahros</string><!--171-->
-    <stirng name="scene170choice2">Tell me more of Velhu</stirng><!--171-->
+    <string name="scene170choice2">Tell me more of Velhu</string><!--171-->
     <string name="scene170choice3">Tell me more of Sid</string><!--171-->
     <string name="scene170choice4">Tell me more of Gabriel</string><!--171-->
     <string name="scene170choice5">Tell me more of Pythion</string><!--171-->
@@ -664,7 +664,7 @@
     <string name="scene174choice1">Can we return to the lesson?</string><!--113-->
     <string name="scene174choice2">I\'m going to go play</string><!--132-->
     <string name="scene175prompt">Fear does not serve you, yet caution is useful. Balance is the key.</string>
-    <string name="scene175choice1">Can we get to the lesson?</string><!--112-->
+    <string name="scene175choice1">Can we get to the lesson?</string><!--113-->
     <string name="scene175choice2">Actually, I\'m going to go play</string><!--132-->
     <string name="scene176prompt">We simply do not know. The ascention was a long time ago, if Erebius was mortal, he is surely dead. If he was immortal, there has been no record of him. If time does not touch him, he is either hidden in secret, or imprisoned, or both</string>
     <string name="scene176choice">That\'s interesting, but enough for one day. I\'m going to go finish my chores and play</string><!--130-->
