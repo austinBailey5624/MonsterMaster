@@ -726,7 +726,7 @@ class NodeRetriever
                     choices = listOf(
                         Choice(getString(context,R.string.scene79choice1),80),
                         Choice(getString(context,R.string.scene79choice2),102),
-                        Choice(getString(context,R.string.scene79choice3),0),
+                        Choice(getString(context,R.string.scene79choice3),177),
                         Choice(getString(context,R.string.scene79choice4),0),
                         Choice(getString(context,R.string.scene79choice5),0)
                     )
@@ -751,7 +751,7 @@ class NodeRetriever
                                 state.visitNode(index)
                             }
                         }, Element.AQUA),
-                        Choice(getString(context,R.string.scene79choice3), 0,
+                        Choice(getString(context,R.string.scene79choice3), 177,
                         {
                             if(!state.getSeenNodeBefore(index))
                             {
@@ -1562,6 +1562,97 @@ class NodeRetriever
                 )
                 return getBrahmNode(index,prompts,choices,context)
             }
+            if(index == 177)
+            {
+                val prompts = listOf(getString(context,R.string.scene177prompt1) + " " + Gender.getBrahmsNickname(context,state.gender) + " "
+                        + getString(context,R.string.scene177prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene177choice1),178,{state.addScore(Element.TERRA)},Element.TERRA),
+                    Choice(getString(context,R.string.scene177choice2),179,{state.addScore(Element.UMBRAL)},Element.UMBRAL),
+                    Choice(getString(context,R.string.scene177choice3),180),
+                    Choice(getString(context,R.string.scene177choice4),181,{state.addScore(Element.AERO)},Element.AERO),
+                    Choice(getString(context,R.string.scene177choice5),182,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene177choice6),183)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
+            if(index == 178)
+            {
+                val prompts = listOf(getString(context,R.string.scene178prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene178choice1),182,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene178choice2),183,{state.addScore(Element.STORM)},Element.STORM),
+                    Choice(getString(context,R.string.scene178choice3),79)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
+            if(index == 179)
+            {
+                val prompts = listOf(getString(context,R.string.scene179prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene179choice1),184,{state.addScore(Element.PYRO)},Element.PYRO),
+                    Choice(getString(context,R.string.scene179choice2),185,{state.addScore(Element.SEABREEZE)},Element.SEABREEZE),
+                    Choice(getString(context,R.string.scene179choice3),79)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
+            if(index == 180)
+            {
+                val prompts = listOf(getString(context,R.string.scene180prompt1) + " " + Gender.getBrahmsNickname(context,state.gender) + " "
+                + getString(context,R.string.scene180prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene180choice1),186),
+                    Choice(getString(context,R.string.scene180choice2),79)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
+            if(index == 181)
+            {
+                val prompts = listOf(getString(context,R.string.scene181prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene181choice1),186),
+                    Choice(getString(context,R.string.scene181choice2),79)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
+            if(index == 182)
+            {
+                val prompts = listOf(getString(context,R.string.scene182prompt1) + " " + Gender.getBrahmsNickname(context,state.gender) + " "
+                + getString(context,R.string.scene182prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene182choice1),186),
+                    Choice(getString(context,R.string.scene182choice2),79)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
+            if(index == 183)
+            {
+                val prompts = listOf(getString(context,R.string.scene183prompt1) + " " + Gender.getBrahmsNickname(context,state.gender) + " "
+                + getString(context,R.string.scene183prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene183choice1),186),
+                    Choice(getString(context,R.string.scene183choice2),79)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
+            if(index == 184)
+            {
+                val prompts = listOf(getString(context,R.string.scene184prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene184choice1),186),
+                    Choice(getString(context,R.string.scene184choice2),79)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
+            if(index == 185)
+            {
+                val prompts = listOf(getString(context,R.string.scene185prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene185choice1),186),
+                    Choice(getString(context,R.string.scene185choice2),79)
+                )
+                return getGateNode(index,prompts,choices,context)
+            }
 
             throw IllegalStateException("NodeRetriever index not found, max 176 actual: $index")
         }
@@ -1600,6 +1691,13 @@ class NodeRetriever
             val animations = listOf(AnimationInfo(R.drawable.background_brahms_room, R.anim.fade_in_fast, R.id.background_center),
                 AnimationInfo(R.drawable.character_brahm_profile, R.anim.fade_in_fast, R.id.background_center))
             return Node(index, prompts, choices, animations, context)
+        }
+
+        private fun getGateNode(index: Int, prompts: List<String>, choices: List<Choice>, context: Context): Node
+        {
+            val animations = listOf(AnimationInfo(R.drawable.background_oaktree_gate,R.anim.fade_in_fast,R.id.background_center),
+                AnimationInfo(R.drawable.character_guard_profile,R.anim.fade_in_fast,R.id.background_center))
+            return Node(index,prompts,choices,animations,context)
         }
     }
 }

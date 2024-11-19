@@ -666,8 +666,47 @@
     <string name="scene175prompt">Fear does not serve you, yet caution is useful. Balance is the key.</string>
     <string name="scene175choice1">Can we get to the lesson?</string><!--113-->
     <string name="scene175choice2">Actually, I\'m going to go play</string><!--132-->
-    <string name="scene176prompt">We simply do not know. The ascention was a long time ago, if Erebius was mortal, he is surely dead. If he was immortal, there has been no record of him. If time does not touch him, he is either hidden in secret, or imprisoned, or both</string>
+    <string name="scene176prompt">We simply do not know. The ascension was a long time ago, if Erebius was mortal, he is surely dead. If he was immortal, there has been no record of him. If time does not touch him, he is either hidden in secret, or imprisoned, or both</string>
     <string name="scene176choice">That\'s interesting, but enough for one day. I\'m going to go finish my chores and play</string><!--130-->
+    <string name="scene177prompt1">You are stopped at the gate by a guard. He says: \"Hey there, young</string>
+    <string name="scene177prompt2">I can\'t just let you wander into the forest, there\'s monsters out there.</string>
+    <string name="scene177choice1">I\'ll be fine</string><!--178-->
+    <string name="scene177choice2">Who are you to stop me?</string><!--179-->
+    <string name="scene177choice3">Why are you so worried?</string><!--180-->
+    <string name="scene177choice4">Whats the worst that can happen?</string><!--181-->
+    <string name="scene177choice5">I\'m strong enough</string><!--182-->
+    <string name="scene177choice6">I\'ll come back later</string><!--79-->
+    <string name="scene178prompt">What would your father say if I let you pass and you went missing, on today of all days?</string>
+    <string name="scene178choice1">Let me prove my strength</string><!--182-->
+    <string name="scene178choice2">He doesn\'t have to know</string><!--183-->
+    <string name="scene178choice3">I\'ll come back later</string><!--79-->
+    <string name="scene179prompt">I\'m the town guard you guttersnipe. Save the baliff or the mayou, my word is law, and they\'ll not gainsay me for chastizing impatient youth</string>
+    <string name="scene179choice1">I bet I could take you</string><!--184-->
+    <string name="scene179choice2">Could you please let me pass?</string><!--185-->
+    <string name="scene179choice3">I\'ll come back later</string><!--79-->
+    <string name="scene180prompt1">Caution never hurt anyone</string>
+    <string name="scene180prompt2">. The wood has been mostly peaceful these days, which is why I entertain the prospect at all.</string>
+    <string name="scene180choice1">What do I need to do for you to let me pass?</string><!--186-->
+    <string name="scene180choice2">I\'ll come back later</string><!--79-->
+    <string name="scene181prompt">You could be ripped apart limb from limb by a feral wolf, and your father would have my hide.</string>
+    <string name="scene181choice1">What do I need to do for you to let me pass?</string><!--186-->
+    <string name="scene181choice2">I\'ll come back later</string><!--79-->
+    <string name="scene182prompt1">It is not your strength that irks me,</string>
+    <string name="scene182prompt2">but your equipment. There are wolves out there that could rip you limb from limb</string>
+    <string name="scene182choice1">What equipment do I need?</string><!--186-->
+    <string name="scene182choice2">I\'ll come back later</string><!--79-->
+    <string name="scene183prompt1">Secrets keep you sick</string>
+    <string name="scene183prompt2">. What your father doesn\'t know can curse me.</string>
+    <string name="scene183choice1">What do I need to do for you to let me pass?</string><!--186-->
+    <string name="scene183choice2">I\'ll come back later</string><!--79-->
+    <string name="scene184prompt">*The guard laughs* You\'re have my size, half my brains, and unarmed or armored. I\'ll take my chances.</string>
+    <string name="scene184choice1">What do I need for you to let me pass?</string><!--186-->
+    <string name="scene184choice2">I\'ll come back later</string>
+    <string name="scene185prompt">Pleading won\'t get you past</string>
+    <string name="scene185choice1">What do I need to do for you to let me pass?</string>
+    <string name="scene185choice2">I\'ll come back later</string>
+
+
 
     <!-- main character pronouns -->
     <string name="pronoun_subject_masculine">he</string>
