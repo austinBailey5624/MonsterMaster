@@ -776,6 +776,57 @@
     <string name="scene204choice2">Dad said you\'d have chores for me</string><!--189-->
     <string name="scene205prompt">The young have grey eyes until they\'ve settled into their nature- Your nature has yet to be decided young one.</string>
     <string name="scene205choice">Dad said you\'d have chores for me</string><!--189-->
+    <string name="scene206prompt">Afternoon sugar, you\'re a little young for a drink, how can I help you?</string>
+    <string name="scene206choice1">Who\'s the Jester?</string><!--207-->
+    <string name="scene206choice2">Can I have a drink anyway?</string><!--208-->
+    <string name="scene206choice3">Nothing, nevermind</string><!--187-->
+    <string name="scene206choice4">You\'re pretty</string><!--211-->
+    <string name="scene206choice5">How long have they been together?</string><!--214-->
+    <string name="scene206choice6">How old are you?</string><!--213-->
+    <string name="scene207prompt">No one\'s really sure, he just showed up this morning though. Kinda creepy, he\'s always rhyming and seems pretty crazy</string>
+    <string name="scene207choice1">I\'m going to go talk to him</string><!--209-->
+    <string name="scene207choice2">I best leave him alone</string><!--210-->
+    <string name="scene208prompt">Morn, your father, and the baliff would have my hide, try again in a few years kid *wink*</string>
+    <string name="scene208choice1">Return to entrance</string><!--187-->
+    <string name="scene208choice2">Who\'s the Jester</string><!--207-->
+    <string name="scene208choice3">How long have they been together?</string><!--214-->
+    <string name="scene209prompt">Be careful young one, give a yelp if he causes you trouble, Morn\'ll deal with him.</string>
+    <string name="scene209choice1">Go to the Jester</string><!--TODO-->
+    <string name="scene209choice2">*Return to entrance*</string><!--187-->
+    <string name="scene210prompt">Smart choice kiddo, now be careful out there</string>
+    <string name="scene210choice1">Return to entrance</string><!--187-->
+    <string name="scene210choice2">How long have they been together?</string><!--214-->
+    <string name="scene210choice3">How old are you?</string><!--213-->
+    <string name="scene211prompt">You\'re a little young for that too sugar, now change the subject \'fore you get in trouble</string>
+    <string name="scene211choice1">Who\'s the Jester</string><!--207-->
+    <string name="scene211choice2">How long have they been together?</string><!--214-->
+    <string name="scene211choice3">I like trouble</string><!--212-->
+    <string name="scene211choice4">*Return to entrance*</string><!--187-->
+    <string name="scene212prompt">Fiesty, ain\'t cha? Still, you\'re a couple centuries too young for me, and the wrong race besides. Now change the subject before I call Morn over</string>
+    <string name="scene212choice1">How old are you?</string><!--213-->
+    <string name="scene212choice2">Who\'s the Jester</string><!--207-->
+    <string name="scene212choice3">How long have they been together?</string><!--214-->
+    <string name="scene213prompt">How rude! Don\'t you know never to ask a lady that? Oh well, I\'m 317 years young sugar. Still young for an elf, but far too old for you. By our reckoning, you\'re still a baby</string>
+    <string name="scene213choice1">Who\'s the Jester</string><!--207-->
+    <string name="scene213choice2">How long have they been together?</string><!--214-->
+    <string name="scene213choice3">*Return to Entrance*</string><!--187-->
+    <string name="scene214prompt">Your brother and the farmer girl? They\'ve been sneaking around for a fortnight, I\'m surprised you haven\'t noticed.</string>
+    <string name="scene214choice1">I\'m gonna go talk to them</string><!--215-->
+    <string name="scene214choice2">Who\'s the Jester</string><!--207-->
+    <string name="scene214choice3">How old are you?</string><!--213-->
+    <string name="scene214choice4">*Return to entrance*</string><!--187-->
+    <string name="scene215prompt">Best to let the young be in love while blossoms still float on the summer breeze.</string>
+    <string name="scene215choice1">I see your point</string><!--216-->
+    <string name="scene215choice2">Love is foolish</string><!--217-->
+    <string name="scene215choice3">Who\'s the Jester</string><!--207-->
+    <string name="scene215choice4">How old are you?</string><!--213-->
+    <string name="scene215choice5">*Return to entrance*</string><!--187-->
+    <string name="scene216prompt1">Good</string><!-- boy, girl, kid-->
+    <string name="scene216prompt2">, now is there anything else I can help with?</string>
+    <string name="scene216choice1">Who\'s the Jester</string><!--207-->
+    <string name="scene216choice2">How old are you?</string><!--213-->
+    <string name="scene216choice3">*Return to entrance*</string><!--187-->
+
 
 
     <!--Quest related Strings-->
