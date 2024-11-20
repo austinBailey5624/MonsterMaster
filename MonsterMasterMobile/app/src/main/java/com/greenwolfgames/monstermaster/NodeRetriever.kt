@@ -727,7 +727,7 @@ class NodeRetriever
                         Choice(getString(context,R.string.scene79choice1),80),
                         Choice(getString(context,R.string.scene79choice2),102),
                         Choice(getString(context,R.string.scene79choice3),177),
-                        Choice(getString(context,R.string.scene79choice4),0),
+                        Choice(getString(context,R.string.scene79choice4),187),
                         Choice(getString(context,R.string.scene79choice5),0)
                     )
                 }
@@ -759,7 +759,7 @@ class NodeRetriever
                                 state.visitNode(index)
                             }
                         }, Element.TERRA),
-                        Choice(getString(context,R.string.scene79choice4), 0,
+                        Choice(getString(context,R.string.scene79choice4), 187,
                         {
                             if(!state.getSeenNodeBefore(index))
                             {

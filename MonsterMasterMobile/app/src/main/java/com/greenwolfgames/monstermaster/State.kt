@@ -47,6 +47,15 @@ class State : Serializable
         Element.MAGICAL to 0
     )
 
+    private var questStage = mutableMapOf<Quest,Int>(
+        Quest.CHORES to 0,
+        Quest.AMNESIA to 0,
+        Quest.KYLER_REDEMPTION to 0,
+        Quest.MORNS_ERRAND to 0,
+        Quest.WRITING_LESSON to 0,
+        Quest.SELL_AMULET to 0
+    )
+
     var nodeIndexByVisitedBefore = mutableMapOf<Int, Boolean> ().withDefault{false}
 
     fun addScore(element: Element, score: Int)
@@ -54,7 +63,7 @@ class State : Serializable
         elementalScore[element] = elementalScore[element]!! + score
     }
 
-    fun addScore(element:Element)
+    fun addScore(element: Element)
     {
         elementalScore[element] = elementalScore[element]!! + 1
     }
@@ -62,6 +71,16 @@ class State : Serializable
     fun getScore(element: Element): Int
     {
         return elementalScore[element]!!
+    }
+
+    fun getQuestStage(quest: Quest): Int
+    {
+        return questStage[quest]!!
+    }
+
+    fun setQuestStage(quest: Quest, stage: Int)
+    {
+        questStage[quest]=stage
     }
 
     fun getSeenNodeBefore(nodeIndex: Int): Boolean
@@ -75,13 +94,19 @@ class State : Serializable
     }
 
     var playerName: String = "defaultPlayerName"
-    val currentGold: Int = 0
-    val totalGoldEver: Int = 0
-    val totalGoldDonated: Int = 0
+    var currentGold: Int = 0
+    var totalGoldEver: Int = 0
+    var totalGoldDonated: Int = 0
     private var amnesiac: Boolean = false;
     var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
     var gender: Gender = Gender.MALE
 
+
+    fun addGold(addedGold: Int)
+    {
+        totalGoldEver += addedGold
+        currentGold += addedGold
+    }
 
     fun setAmnesiac(isAmnesiac: Boolean)
     {
