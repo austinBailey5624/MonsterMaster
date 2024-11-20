@@ -12,7 +12,7 @@ import androidx.core.content.ContextCompat.getString
  */
 enum class Quest
 {
-    CHORES,AMNESIA,KYLER_REDEMPTION,MORNS_ERRAND,WRITING_LESSON,SELL_AMULET;
+    CHORES,AMNESIA,KYLER_REDEMPTION,MORNS_ERRAND,WRITING_LESSON,SELL_AMULET,EXPLORE;
 
     companion object
     {
@@ -26,6 +26,7 @@ enum class Quest
                 MORNS_ERRAND -> getString(context, R.string.quest_morns_errand_name)
                 WRITING_LESSON -> getString(context, R.string.quest_writing_lesson_name)
                 SELL_AMULET -> getString(context,R.string.quest_sell_amulet_name)
+                EXPLORE -> getString(context,R.string.quest_explore_name)
             }
         }
 
@@ -39,6 +40,7 @@ enum class Quest
                 MORNS_ERRAND -> getMornsErrandStages(context)[stage]
                 WRITING_LESSON -> getWritingLessonStages(context)[stage]
                 SELL_AMULET -> getSellAmuletStages(context)[stage]
+                EXPLORE -> getExploreStages(context)[stage]
             }
         }
 
@@ -83,7 +85,9 @@ enum class Quest
                 getString(context,R.string.quest_morns_errand_4),
                 getString(context,R.string.quest_morns_errand_5),
                 getString(context,R.string.quest_morns_errand_6),
-                getString(context,R.string.quest_morns_errand_7)
+                getString(context,R.string.quest_morns_errand_7),
+                getString(context,R.string.quest_morns_errand_8),
+                getString(context,R.string.quest_morns_errand_9)
             )
         }
 
@@ -100,12 +104,22 @@ enum class Quest
         fun getSellAmuletStages(context: Context): List<String>
         {
             return listOf(
-                getString(context,R.string.quest_0),
-                getString(context,R.string.quest_sell_amulet_1),
-                getString(context,R.string.quest_sell_amulet_2),
-                getString(context,R.string.quest_sell_amulet_3),
-                getString(context,R.string.quest_sell_amulet_4),
-                getString(context,R.string.quest_sell_amulet_5)
+                getString(context, R.string.quest_0),
+                getString(context, R.string.quest_sell_amulet_1),
+                getString(context, R.string.quest_sell_amulet_2),
+                getString(context, R.string.quest_sell_amulet_3),
+                getString(context, R.string.quest_sell_amulet_4),
+                getString(context, R.string.quest_sell_amulet_5)
+            )
+        }
+
+        fun getExploreStages(context: Context): List<String>
+        {
+            return listOf(
+                getString(context,R.string.quest_explore_1),
+                getString(context,R.string.quest_explore_2),
+                getString(context,R.string.quest_explore_3),
+                getString(context,R.string.quest_explore_4)
             )
         }
     }

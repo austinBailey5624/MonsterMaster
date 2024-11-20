@@ -1,5 +1,6 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Context
 import java.io.Serializable
 
 //Class to represent the state of the game
@@ -97,7 +98,6 @@ class State : Serializable
     var currentGold: Int = 0
     var totalGoldEver: Int = 0
     var totalGoldDonated: Int = 0
-    private var amnesiac: Boolean = false;
     var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
     var gender: Gender = Gender.MALE
 
@@ -108,9 +108,39 @@ class State : Serializable
         currentGold += addedGold
     }
 
-    fun setAmnesiac(isAmnesiac: Boolean)
+    fun setChoresStage_WritingLessonFinished()
     {
-        this.amnesiac = isAmnesiac
+        if(questStage[Quest.CHORES]!! < 3)
+        {
+            questStage[Quest.CHORES] = 3
+        }
+        if(questStage[Quest.CHORES]!! == 4)
+        {
+            questStage[Quest.CHORES] = 6
+        }
+        if(questStage[Quest.CHORES]!! == 5)
+        {
+            questStage[Quest.CHORES] = 8
+        }
+        if(questStage[Quest.CHORES]!! == 7)
+        {
+            questStage[Quest.CHORES] = 9
+        }
+    }
+
+    fun initChoresQuestline()
+    {
+        questStage[Quest.MORNS_ERRAND]=1
+        questStage[Quest.SELL_AMULET]=1
+        if(questStage[Quest.WRITING_LESSON]!! == 2)
+        {
+            questStage[Quest.CHORES] = 2
+        }
+        else
+        {
+            questStage[Quest.CHORES] = 1
+            questStage[Quest.WRITING_LESSON] = 1
+        }
     }
 
     fun cyclePortrait()
