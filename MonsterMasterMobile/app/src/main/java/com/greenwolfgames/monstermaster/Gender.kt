@@ -75,5 +75,15 @@ enum class Gender
                 NEUTRAL -> getString(context,R.string.nickname3neutral)
             }
         }
+
+        fun getProphetsNickname(context:Context, gender:Gender):String
+        {
+            return when(gender)
+            {
+                MALE -> getString(context,R.string.nickname4masculine)
+                FEMALE -> getString(context,R.string.nickname4feminine)
+                NEUTRAL -> getString(context,R.string.nickname4neutral)
+            }
+        }
     }
 }

@@ -1669,7 +1669,7 @@ class NodeRetriever
                 val choices = listOf(
                     Choice(getString(context,R.string.scene187choice1),188),
                     Choice(getString(context,R.string.scene187choice2),206),
-                    Choice(getString(context,R.string.scene187choice3),0),//TODO: finish
+                    Choice(getString(context,R.string.scene187choice3),217),
                     Choice(getString(context,R.string.scene187choice4),0),//TODO: finish
                     Choice(getString(context,R.string.scene187choice5),0),//TODO: finish
                     Choice(getString(context,R.string.scene187choice6),79)
@@ -2061,7 +2061,122 @@ class NodeRetriever
                 )
                 return Node(index,prompts,choices,animations,context)
             }
-            throw IllegalStateException("NodeRetriever index not found, max 216 actual: $index")
+            if(index == 217)
+            {
+                val prompts = listOf(getString(context,R.string.scene217prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene217choice1),218),
+                    Choice(getString(context,R.string.scene217choice2),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_black_cat,R.anim.fade_in_fast,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 218)
+            {
+                val prompts = listOf(getString(context,R.string.scene218prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene218choice),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_black_cat,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 219)
+            {
+                val prompts = listOf(getString(context,R.string.scene219prompt1) + " "
+                        + Gender.getProphetsNickname(context,state.gender)
+                        + getString(context,R.string.scene219prompt2) + " "
+                        + Gender.getProphetsNickname(context,state.gender) + " "
+                        + getString(context,R.string.scene219prompt3))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene219choice1),220),
+                    Choice(getString(context,R.string.scene219choice2),221),
+                    Choice(getString(context,R.string.scene219choice3),222),
+                    Choice(getString(context,R.string.scene219choice4),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 220)
+            {
+                val prompts = listOf(getString(context,R.string.scene220prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene220choice1),221),
+                    Choice(getString(context,R.string.scene220choice2),223),
+                    Choice(getString(context,R.string.scene220choice3),222),
+                    Choice(getString(context,R.string.scene220choice4),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 221)
+            {
+                val prompts = listOf(getString(context,R.string.scene221prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene221choice1),225),
+                    Choice(getString(context,R.string.scene221choice2),220),
+                    Choice(getString(context,R.string.scene221choice3),222)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 222)
+            {
+                val prompts = listOf(getString(context,R.string.scene222prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene222choice1),227),
+                    Choice(getString(context,R.string.scene222choice2),228),
+                    Choice(getString(context,R.string.scene222choice3),223),
+                    Choice(getString(context,R.string.scene222choice4),224)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 223)
+            {
+                val prompts = listOf(getString(context,R.string.scene223prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene223choice1),228),
+                    Choice(getString(context,R.string.scene223choice2),228),
+                    Choice(getString(context,R.string.scene223choice3),227),
+                    Choice(getString(context,R.string.scene223choice4),224)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 224)
+            {
+                val prompts = listOf(getString(context,R.string.scene224prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene224choice1),228),
+                    Choice(getString(context,R.string.scene224choice2),231),
+                    Choice(getString(context,R.string.scene224choice3),227),
+                    Choice(getString(context,R.string.scene224choice4),223)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            else
+            {
+                val prompts = listOf("Whoops! please tell Austin theres an issue with node: " + index)
+                val choices = listOf(Choice("Go back to Oaktree",79))
+                return Node(index,prompts,choices,listOf(),context)
+            }
         }
 
         private fun getEnterNameNode(context: Context, index: Int, promptIndex: Int, element: Element): Node
