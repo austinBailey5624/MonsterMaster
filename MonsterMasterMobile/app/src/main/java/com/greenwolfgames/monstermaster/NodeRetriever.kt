@@ -145,7 +145,7 @@ class NodeRetriever
 
                 //TODO: Make an animation so the glyph fades in and pulses
                 return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_magic_glyph,
-                    R.anim.fade_in_very_slow, R.id.background)),
+                    R.anim.fade_in_slow, R.id.background)),
                     ContextCompat.getColor(context, R.color.lightishBlue), ContextCompat.getColor(context, R.color.lightCyanBlue))
             }
             //Chose darkness and fire, and either air or earth, in either case, commit to one of the three elements you've chosen
@@ -1670,7 +1670,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene187choice1),188),
                     Choice(getString(context,R.string.scene187choice2),206),
                     Choice(getString(context,R.string.scene187choice3),217),
-                    Choice(getString(context,R.string.scene187choice4),0),//TODO: finish
+                    Choice(getString(context,R.string.scene187choice4),219),
                     Choice(getString(context,R.string.scene187choice5),0),//TODO: finish
                     Choice(getString(context,R.string.scene187choice6),79)
                 )
@@ -2087,7 +2087,7 @@ class NodeRetriever
             if(index == 219)
             {
                 val prompts = listOf(getString(context,R.string.scene219prompt1) + " "
-                        + Gender.getProphetsNickname(context,state.gender)
+                        + Gender.getProphetsNickname(context,state.gender) + " "
                         + getString(context,R.string.scene219prompt2) + " "
                         + Gender.getProphetsNickname(context,state.gender) + " "
                         + getString(context,R.string.scene219prompt3))
@@ -2112,7 +2112,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene220choice4),187)
                 )
                 val animations = listOf(
-                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
                 )
                 return Node(index,prompts,choices,animations,context)
             }
@@ -2125,7 +2125,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene221choice3),222)
                 )
                 val animations = listOf(
-                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
                 )
                 return Node(index,prompts,choices,animations,context)
             }
@@ -2139,7 +2139,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene222choice4),224)
                 )
                 val animations = listOf(
-                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
                 )
                 return Node(index,prompts,choices,animations,context)
             }
@@ -2153,7 +2153,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene223choice4),224)
                 )
                 val animations = listOf(
-                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
                 )
                 return Node(index,prompts,choices,animations,context)
             }
@@ -2167,10 +2167,135 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene224choice4),223)
                 )
                 val animations = listOf(
-                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.fade_in_fast,R.id.background_center)
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
                 )
                 return Node(index,prompts,choices,animations,context)
             }
+            if(index == 225)
+            {
+                val prompts = listOf(getString(context,R.string.scene225prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene225choice),226)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 226)
+            {
+                val prompts = listOf(getString(context,R.string.scene226prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene226choice1),227),
+                    Choice(getString(context,R.string.scene226choice2),232),
+                    Choice(getString(context,R.string.scene226choice3),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 227)
+            {
+                val prompts = listOf(getString(context,R.string.scene227prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene227choice1),228),
+                    Choice(getString(context,R.string.scene227choice2),232),
+                    Choice(getString(context,R.string.scene227choice3),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 228)
+            {
+                val prompts = listOf(getString(context,R.string.scene228prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene228choice1),229),
+                    Choice(getString(context,R.string.scene228choice2),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 229)
+            {
+                val prompts = listOf(getString(context,R.string.scene229prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene229choice1),230),
+                    Choice(getString(context,R.string.scene229choice2),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 230)
+            {
+                val prompts = listOf(getString(context,R.string.scene230prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene230choice1),233,{state.addScore(Element.REDEMPTION)},Element.REDEMPTION),
+                    Choice(getString(context,R.string.scene230choice2),234,{state.addScore(Element.LUXOR)},Element.LUXOR),
+                    Choice(getString(context,R.string.scene230choice3),187,{state.addScore(Element.ROTTEN)},Element.ROTTEN)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 231)
+            {
+                val prompts = listOf(getString(context,R.string.scene231prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene231choice1),228),
+                    Choice(getString(context,R.string.scene231choice2),227),
+                    Choice(getString(context,R.string.scene231choice3),225),
+                    Choice(getString(context,R.string.scene231choice4),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 232)
+            {
+                val prompts = listOf(getString(context,R.string.scene232prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene232choice1),228),
+                    Choice(getString(context,R.string.scene232choice2),227),
+                    Choice(getString(context,R.string.scene232choice3),225),
+                    Choice(getString(context,R.string.scene232choice4),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 233)
+            {
+                val prompts = listOf(getString(context,R.string.scene233prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene233choice),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 234)
+            {
+                val prompts = listOf(getString(context,R.string.scene234prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene234choice),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+
             else
             {
                 val prompts = listOf("Whoops! please tell Austin theres an issue with node: " + index)

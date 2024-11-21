@@ -832,13 +832,13 @@
     <string name="scene218prompt">The cat hisses at you and disappears</string>
     <string name="scene218choice">*leave*</string><!--187-->
     <string name="scene219prompt1">Strange, I cannot tell your fate\n you the</string>
-    <string name="scene219prompt2">thats always late\nForgive me</string>
+    <string name="scene219prompt2">that\'s always late\nForgive me</string>
     <string name="scene219prompt3">I\'ve lost my nerve\nHow can this poor madman serve?</string>
     <string name="scene219choice1">Who are you?</string><!--220-->
     <string name="scene219choice2">What\'s your name</string><!--221-->
     <string name="scene219choice3">Why are you dressed so strangely?</string><!--222-->
     <string name="scene219choice4">I\'m leaving</string><!--187-->
-    <string name="scene220prompt">I\'m a prophet of no small renown,\nMy trifork hat\'s a doubled crown.\nI\'m a madman\'s mockery, a fitting clown\mMankind\'s last breath, before we drown</string>
+    <string name="scene220prompt">I\'m a prophet of no small renown,\nMy trifork hat\'s a doubled crown.\nI\'m a madman\'s mockery, a fitting clown\nMankind\'s last breath, before we drown</string>
     <string name="scene220choice1">Whats your name?</string><!--221-->
     <string name="scene220choice2">Why are you rhyming?</string><!--223-->
     <string name="scene220choice3">Why are you dressed so strangely?</string><!--222-->
@@ -857,12 +857,12 @@
     <string name="scene223choice2">Why can\'t you lie?</string><!--228-->
     <string name="scene223choice3">You\'re crazy</string><!--227-->
     <string name="scene223choice4">What do you want?</string><!--224-->
-    <string name="scene224prompt">My aims are easily percieved\nTo speak the truth and be believed.\nI\'ll save mankind although I\'m cursed\nUnless the Gods kill you all first.</string>
+    <string name="scene224prompt">My aims are easily perceived\nTo speak the truth and be believed.\nI\'ll save mankind although I\'m cursed\nUnless the Gods kill you all first.</string>
     <string name="scene224choice1">Tell me of this curse</string><!--228-->
     <string name="scene224choice2">Why do the gods want to kill us?</string><!--231-->
     <string name="scene224choice3">You\'re crazy</string><!--227-->
     <string name="scene224choice4">Why are you rhyming?</string><!--223-->
-    <string name="scene225prompt">You ask for a future, I can give you none\nThe devil is patient, he\'s already won\nI oppose him, of course, as I do all the rest\nBut they've stolen my mind, so I\'m not at my best</string>
+    <string name="scene225prompt">You ask for a future, I can give you none\nThe devil is patient, he\'s already won\nI oppose him, of course, as I do all the rest\nBut they\'ve stolen my mind, so I\'m not at my best</string>
     <string name="scene225choice">*Continue*</string><!--226-->
     <string name="scene226prompt">The God\'s will choose you, you\'ll bear Pythion\'s mark\nYou\'ll struggle to banish the unyielding dark.\nListen thee close, for I speak with precision,\nYou\'re the last hope of mankind, the dark spot in my vision</string>
     <string name="scene226choice1">You\'re crazy</string><!--227-->
@@ -873,12 +873,15 @@
     <string name="scene227choice2">Your riddles mean nothing</string><!--232-->
     <string name="scene227choice3">I\'m leaving</string><!--187-->
     <string name="scene228prompt">Look, and you will not see far\n\'tween what things seem and what they are.\nI\'m a God, though I\'ve surely err\'d\nA divine you\'ve only seen, not heard</string>
-    <string name="scene228choice">*continue*</string><!--229-->
+    <string name="scene228choice1">*continue*</string><!--229-->
+    <string name="scene228choice2">*leave*</string><!--187-->
     <string name="scene229prompt">My children took my voice, my word\nLocked away my mind, left vengeance differed\nBut they lacked the strength to bind me in hell\nSo they locked me in this immortal shell</string>
-    <string name="scene229choice">*continue*</string><!--230-->
+    <string name="scene229choice1">*continue*</string><!--230-->
+    <string name="scene229choice2">*leave*</string><!--187-->
     <string name="scene230prompt">Them you\'ve heard of, but never met\nMade me a cripple so I\'m not a threat\nThey took my power to deceive\nThough I speak only truth, you won\'t believe.</string>
     <string name="scene230choice1">I believe you</string><!--233-->
     <string name="scene230choice2">That\'s the craziest thing I\'ve ever heard</string><!--234-->
+    <string name="scene230choice3">*Say nothing and leave*</string><!--187-->
     <string name="scene231prompt">Our deaths do not all eighteen seek,\nSome want us chained, some want us weak\nSome would see all mankind enslaved\nAll are holy, and all depraved.</string>
     <string name="scene231choice1">What happened to you?</string><!--228-->
     <string name="scene231choice2">You\'re crazy</string><!--227-->
@@ -888,13 +891,18 @@
     <string name="scene232choice1">What happened to you?</string><!--228-->
     <string name="scene232choice2">You\'re crazy</string><!--227-->
     <string name="scene232choice3">Tell me the future</string><!--225-->
-    <string name="scene232choice4">I\'m leaving</string>
+    <string name="scene232choice4">I\'m leaving</string><!--187-->
     <string name="scene233prompt">Now that\'s a thing I\'ve never heard\nFrom mortal men that know my word.\nThank you child, you are quite kind\nA prick of light, when I am blind</string>
     <string name="scene233choice">Leave</string><!--187-->
     <string name="scene234prompt">Thus the curse of which I already spoke\nNow leave this shell, my heart is broke</string>
-    <string name="scene234choice1">*Leave*</string><!--187-->
+    <string name="scene234choice">*Leave*</string><!--187-->
 
 
+    <string name="prophetReturnBelieverPrompt1">If it isn\'t the kind </string><!--boy,girl,kid-->
+    <string name="prophetReturnBelieverPrompt2">\'s return\nWhat is it you seek to learn?</string>
+    <string name="prophetReturnNonBelieverPrompt1">If it isn\'t the </string><!--boy,girl,kid-->
+    <string name="prophetReturnNonBelieverPrompt2">that won\'t believe\nThe one that claims that I decieve\nLeave me</string><!--boy,girl,kid-->
+    <string name="prophetReturnNonBelieverPrompt3">and let me drink\nthis mad prophet needs to think</string>
 
     <!--Quest related Strings-->
     <string name="quest_0">ERROR! Quest not initalized</string>

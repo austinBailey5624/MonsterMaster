@@ -49,7 +49,7 @@ enum class Element {
 
         fun getTextColor(element: Element): Int {
             val textColor = when (element) {
-                PYRO -> R.color.orange
+                PYRO -> R.color.yellowOrange
                 LAVA -> R.color.orange
                 DINO -> R.color.darkBrown
                 SAND -> R.color.redOrange
