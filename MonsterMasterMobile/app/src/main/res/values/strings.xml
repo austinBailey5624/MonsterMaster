@@ -896,6 +896,27 @@
     <string name="scene233choice">Leave</string><!--187-->
     <string name="scene234prompt">Thus the curse of which I already spoke\nNow leave this shell, my heart is broke</string>
     <string name="scene234choice">*Leave*</string><!--187-->
+    <string name="scene235prompt1">Go speak with your father </string><!--boy girl kid-->
+    <string name="scene235prompt2">perhaps I can interest you in a quest when you get back</string>
+    <string name="scene235choice1">A Quest? Tell me!</string><!--196-->
+    <string name="scene235choice2">I\'ll be back after I talk to Dad</string><!--187-->
+    <string name="scene236prompt1">Afternoon,</string>
+    <string name="scene236prompt2">I wanted you to meet Debbie</string>
+    <string name="scene236choice1">Nice to meet you Debbie</string><!--237-->
+    <string name="scene236choice2">You know you\'re too cute for him, right?</string><!--238-->
+    <string name="scene236choice3">I\'m telling dad</string><!--239-->
+    <string name="scene236choice4">Do her folks know?</string><!--240-->
+    <string name="scene236choice5">Leave</string><!--187-->
+    <string name="scene237prompt">Nice to meet you too! John\'s told me so much about you.</string>
+    <string name="scene237choice1">Not too much I hope</string><!--241-->
+    <string name="scene237choice2">He\'s told me nothing about you</string><!--242-->
+    <string name="scene237choice3">I\'m telling dad</string><!--239-->
+    <string name="scene237choice4">I\'ll keep your secret</string><!--243-->
+    <string name="scene238prompt">Aww! You\'re so sweet! John didn\'t tell me how nice you were.</string>
+    <string name="scene238choice1">How long have you two been together?</string><!--244-->
+    <string name="scene238choice2">I\'m sure Dad will approve</string><!--245-->
+    <string name="scene238choice3">Do your folks know?</string><!--240-->
+    <string name="scene238choice4">That\'s so funny! Because he\'s a jerk</string><!--246-->
 
 
     <string name="prophetReturnBelieverPrompt1">If it isn\'t the kind </string><!--boy,girl,kid-->

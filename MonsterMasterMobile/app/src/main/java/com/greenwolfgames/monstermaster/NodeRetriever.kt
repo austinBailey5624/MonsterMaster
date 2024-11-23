@@ -571,7 +571,7 @@ class NodeRetriever
                 val choices = listOf(
                     Choice(getString(context,R.string.scene64choice1), 61),
                     Choice(getString(context,R.string.scene64choice2), 62),
-                    Choice(getString(context,R.string.scene64choice3), 78),//TODO: add mirror scene index
+                    Choice(getString(context,R.string.scene64choice3), 78),
                     Choice(getString(context,R.string.scene64choice4), 77,{state.addScore(Element.UMBRAL)}, Element.UMBRAL)
                 )
                 return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
@@ -1694,7 +1694,7 @@ class NodeRetriever
                 else if(state.getQuestStage(Quest.CHORES) == 0)
                 {
                     choices = listOf(
-                        Choice(getString(context,R.string.scene188choice5),196),//WRONG INDEX
+                        Choice(getString(context,R.string.scene188choice5),235),
                         Choice(getString(context,R.string.scene188choice4),190),
                         Choice(getString(context,R.string.scene188choice6),203))
                 }
@@ -1957,7 +1957,7 @@ class NodeRetriever
             {
                 val prompts = listOf(getString(context,R.string.scene209prompt))
                 val choices = listOf(
-                    Choice(getString(context,R.string.scene209choice1),0),//TODO finish
+                    Choice(getString(context,R.string.scene209choice1),219),
                     Choice(getString(context,R.string.scene209choice2),187)
                 )
                 val animations = listOf(
@@ -2292,6 +2292,20 @@ class NodeRetriever
                 )
                 val animations = listOf(
                     AnimationInfo(R.drawable.character_mad_prophet,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 235)
+            {
+                val prompts= listOf(getString(context,R.string.scene235prompt1) + " "
+                + Gender.getProphetsNickname(context,state.gender) + " "
+                + getString(context,R.string.scene235prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene235choice1),196,{state.addScore(Element.AERO)},Element.AERO),
+                    Choice(getString(context,R.string.scene235choice2),187,)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.character_morn,R.anim.appear,R.id.background_center)
                 )
                 return Node(index,prompts,choices,animations,context)
             }
