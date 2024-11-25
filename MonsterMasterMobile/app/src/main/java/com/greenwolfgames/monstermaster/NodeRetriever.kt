@@ -1671,7 +1671,7 @@ class NodeRetriever
                     Choice(getString(context,R.string.scene187choice2),206),
                     Choice(getString(context,R.string.scene187choice3),217),
                     Choice(getString(context,R.string.scene187choice4),219),
-                    Choice(getString(context,R.string.scene187choice5),0),//TODO: finish
+                    //Choice(getString(context,R.string.scene187choice5),0),//TODO: finish and restore
                     Choice(getString(context,R.string.scene187choice6),79)
                 )
                 val animations = listOf(
