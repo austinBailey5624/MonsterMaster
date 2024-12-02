@@ -12,7 +12,8 @@ import androidx.core.content.ContextCompat.getString
  */
 enum class Quest
 {
-    CHORES,AMNESIA,KYLER_REDEMPTION,MORNS_ERRAND,WRITING_LESSON,SELL_AMULET,EXPLORE;
+    CHORES,AMNESIA,KYLER_REDEMPTION,MORNS_ERRAND,WRITING_LESSON,SELL_AMULET,EXPLORE,
+    MICHAEL_ATTITUDE;
 
     companion object
     {
@@ -27,6 +28,7 @@ enum class Quest
                 WRITING_LESSON -> getString(context, R.string.quest_writing_lesson_name)
                 SELL_AMULET -> getString(context,R.string.quest_sell_amulet_name)
                 EXPLORE -> getString(context,R.string.quest_explore_name)
+                MICHAEL_ATTITUDE -> getString(context,R.string.quest_michael_attitude_name)
             }
         }
 
@@ -41,6 +43,7 @@ enum class Quest
                 WRITING_LESSON -> getWritingLessonStages(context)[stage]
                 SELL_AMULET -> getSellAmuletStages(context)[stage]
                 EXPLORE -> getExploreStages(context)[stage]
+                MICHAEL_ATTITUDE -> getMichaelAttitudeStages(context)[stage]
             }
         }
 
@@ -116,10 +119,23 @@ enum class Quest
         fun getExploreStages(context: Context): List<String>
         {
             return listOf(
+                getString(context,R.string.quest_0),
                 getString(context,R.string.quest_explore_1),
                 getString(context,R.string.quest_explore_2),
                 getString(context,R.string.quest_explore_3),
                 getString(context,R.string.quest_explore_4)
+            )
+        }
+
+        fun getMichaelAttitudeStages(context: Context): List<String>
+        {
+            return listOf(
+                getString(context,R.string.quest_michael_attitude_0),
+                getString(context,R.string.quest_michael_attitude_1),
+                getString(context,R.string.quest_michael_attitude_2),
+                getString(context,R.string.quest_michael_attitude_3),
+                getString(context,R.string.quest_michael_attitude_4),
+                getString(context,R.string.quest_michael_attitude_5)
             )
         }
     }

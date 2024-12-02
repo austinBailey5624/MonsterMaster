@@ -20,6 +20,7 @@ class NodeRetriever
         //@formatter:off
         fun getNode(index: Int, currentState: State, context: Context, state: State): Node
         {
+            state.visitNode(index)
             //Choose Between light or dark
             if(index == 1)
             {
@@ -783,15 +784,80 @@ class NodeRetriever
             }
             if(index == 80)
             {
-                val prompts = listOf(getString(context, R.string.scene80prompt1) + state.playerName + getString(context,R.string.scene80prompt2))
-                val choices = listOf(
-                    Choice(getString(context,R.string.scene80choice1), 81,{state.addScore(Element.PYRO)}, Element.PYRO),
-                    Choice(getString(context,R.string.scene80choice2),82,{state.addScore(Element.AQUA)},Element.AQUA),
-                    Choice(getString(context,R.string.scene80choice3),83,{state.addScore(Element.TERRA)},Element.TERRA),
-                    Choice(getString(context,R.string.scene80choice4),84,{state.addScore(Element.LUXOR)},Element.LUXOR),
-                    Choice(getString(context,R.string.scene80choice5),85,{state.addScore(Element.UMBRAL)},Element.UMBRAL)
-                )
-                return getMichaelChurchNode(index, prompts, choices, context)
+                if(state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 1)//neutral
+                {
+                    val prompts = listOf(getString(context,R.string.scene80alt1prompt1) + " "
+                    + Gender.getNickname2(context,state.gender) + " "
+                    + getString(context,R.string.scene80alt1prompt2))
+                    val choices = listOf(
+                        Choice(getString(context,R.string.scene80alt1choice1),93),
+                        Choice(getString(context,R.string.scene80alt1choice2),94),
+                        Choice(getString(context,R.string.scene80alt1choice3),251),
+                        Choice(getString(context,R.string.scene80alt1choice4),252),
+                        Choice(getString(context,R.string.scene80alt1choice5),79)
+                    )
+                    return getMichaelChurchNode(index, prompts, choices, context)
+                }
+                if(state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 4)//insulted
+                {
+                    val prompts = listOf(getString(context,R.string.scene80alt2prompt))
+                    val choices = listOf(
+                        Choice(getString(context,R.string.scene80alt2choice1),253),
+                        Choice(getString(context,R.string.scene80alt2choice2),93),
+                        Choice(getString(context,R.string.scene80alt2choice3),251),
+                        Choice(getString(context,R.string.scene80alt2choice4),94),
+                        Choice(getString(context,R.string.scene80alt2choice5),79)
+                    )
+                    return getMichaelChurchNode(index, prompts, choices, context)
+                }
+                if(state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 3)//positive
+                {
+                    val prompts = listOf(getString(context,R.string.scene80alt3prompt))
+                    val choices = listOf(
+                        Choice(getString(context,R.string.scene80alt3choice1),93),
+                        Choice(getString(context,R.string.scene80alt3choice2),94),
+                        Choice(getString(context,R.string.scene80alt3choice3),251),
+                        Choice(getString(context,R.string.scene80alt3choice4),252),
+                        Choice(getString(context,R.string.scene80alt3choice5),79)
+                    )
+                    return getMichaelChurchNode(index, prompts, choices, context)
+                }
+                if(state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 5)// very positive
+                {
+                    val prompts = listOf(getString(context,R.string.scene80alt4prompt))
+                    val choices = listOf(
+                        Choice(getString(context,R.string.scene80alt4choice1),93),
+                        Choice(getString(context,R.string.scene80alt4choice2),94),
+                        Choice(getString(context,R.string.scene80alt4choice3),251),
+                        Choice(getString(context,R.string.scene80alt4choice4),252),
+                        Choice(getString(context,R.string.scene80alt4choice5),79)
+                    )
+                    return getMichaelChurchNode(index, prompts, choices, context)
+                }
+                if(state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 2)
+                {
+                    val prompts = listOf(getString(context,R.string.scene80alt5prompt))
+                    val choices = listOf(
+                        Choice(getString(context,R.string.scene80alt5choice1),93),
+                        Choice(getString(context,R.string.scene80alt5choice2),94),
+                        Choice(getString(context,R.string.scene80alt5choice3),251),
+                        Choice(getString(context,R.string.scene80alt5choice4),252),
+                        Choice(getString(context,R.string.scene80alt5choice5),79)
+                    )
+                    return getMichaelChurchNode(index, prompts, choices, context)
+                }
+                else
+                {
+                    val prompts = listOf(getString(context, R.string.scene80prompt1) + state.playerName + getString(context,R.string.scene80prompt2))
+                    val choices = listOf(
+                        Choice(getString(context,R.string.scene80choice1), 81,{state.addScore(Element.PYRO);state.setQuestStage(Quest.MICHAEL_ATTITUDE,4)}, Element.PYRO),
+                        Choice(getString(context,R.string.scene80choice2),82,{state.addScore(Element.AQUA);state.setQuestStage(Quest.MICHAEL_ATTITUDE,2)},Element.AQUA),
+                        Choice(getString(context,R.string.scene80choice3),83,{state.addScore(Element.TERRA);state.setQuestStage(Quest.MICHAEL_ATTITUDE,1)},Element.TERRA),
+                        Choice(getString(context,R.string.scene80choice4),84,{state.addScore(Element.LUXOR);state.setQuestStage(Quest.MICHAEL_ATTITUDE,3)},Element.LUXOR),
+                        Choice(getString(context,R.string.scene80choice5),85,{state.addScore(Element.UMBRAL);state.setQuestStage(Quest.MICHAEL_ATTITUDE,4)},Element.UMBRAL)
+                    )
+                    return getMichaelChurchNode(index, prompts, choices, context)
+                }
             }
             if(index == 81)
             {
