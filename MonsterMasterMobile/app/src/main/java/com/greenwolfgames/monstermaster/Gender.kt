@@ -46,7 +46,7 @@ enum class Gender
             }
         }
 
-        fun getDadsNickname(context: Context, gender: Gender): String
+        fun getNickname1(context: Context, gender: Gender): String
         {
             return when(gender)
             {
@@ -56,7 +56,7 @@ enum class Gender
             }
         }
 
-        fun getBrahmsNickname(context:Context, gender:Gender): String
+        fun getNickname2(context:Context, gender:Gender): String
         {
             return when(gender)
             {
@@ -66,7 +66,7 @@ enum class Gender
             }
         }
 
-        fun getMornsNickname(context:Context, gender:Gender): String
+        fun getNickname3(context:Context, gender:Gender): String
         {
             return when(gender)
             {
@@ -76,7 +76,7 @@ enum class Gender
             }
         }
 
-        fun getProphetsNickname(context:Context, gender:Gender):String
+        fun getNickname4(context:Context, gender:Gender):String
         {
             return when(gender)
             {

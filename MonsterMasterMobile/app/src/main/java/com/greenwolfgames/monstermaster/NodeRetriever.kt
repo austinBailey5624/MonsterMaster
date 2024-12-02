@@ -1,6 +1,7 @@
 package com.greenwolfgames.monstermaster
 
 import android.content.Context
+import android.util.Log
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.getString
@@ -728,7 +729,7 @@ class NodeRetriever
                         Choice(getString(context,R.string.scene79choice2),102),
                         Choice(getString(context,R.string.scene79choice3),177),
                         Choice(getString(context,R.string.scene79choice4),187),
-                        Choice(getString(context,R.string.scene79choice5),0)
+                        Choice(getString(context,R.string.scene79choice5),236)
                     )
                 }
                 //if we've never been to this node before
@@ -767,7 +768,7 @@ class NodeRetriever
                                 state.visitNode(index)
                             }
                         }, Element.NIGHTWING),
-                        Choice(getString(context,R.string.scene79choice5),0,
+                        Choice(getString(context,R.string.scene79choice5),236,
                         {
                             if(!state.getSeenNodeBefore(index))
                             {
@@ -911,7 +912,7 @@ class NodeRetriever
             if(index == 93)
             {
                 val prompts = listOf(getString(context, R.string.scene93prompt1) + " "
-                        + Gender.getDadsNickname(context, state.gender) + " " + getString(context, R.string.scene93prompt2))
+                        + Gender.getNickname1(context, state.gender) + " " + getString(context, R.string.scene93prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene93choice1), 96,{state.addScore(Element.ANGEL)}, Element.ANGEL),
                     Choice(getString(context,R.string.scene93choice2),96),
@@ -990,7 +991,7 @@ class NodeRetriever
             }
             if(index == 100)
             {
-                val prompts = listOf(getString(context,R.string.scene100prompt1) + Gender.getDadsNickname(context, state.gender) + getString(context,R.string.scene100prompt2))
+                val prompts = listOf(getString(context,R.string.scene100prompt1) + Gender.getNickname1(context, state.gender) + getString(context,R.string.scene100prompt2))
                 val choices = listOf(Choice(getString(context,R.string.scene100choice),79))
                 return getFatherChurchNode(index, prompts, choices, context)
             }
@@ -1414,7 +1415,7 @@ class NodeRetriever
             }
             if(index == 158)
             {
-                val prompts = listOf(getString(context,R.string.scene158prompt1) + " " + Gender.getBrahmsNickname(context,state.gender))
+                val prompts = listOf(getString(context,R.string.scene158prompt1) + " " + Gender.getNickname2(context,state.gender))
                 val choices = listOf(Choice(getString(context,R.string.scene158choice1),79))
                 return getBrahmNode(index,prompts,choices,context)
             }
@@ -1566,7 +1567,7 @@ class NodeRetriever
             }
             if(index == 177)
             {
-                val prompts = listOf(getString(context,R.string.scene177prompt1) + " " + Gender.getBrahmsNickname(context,state.gender) + " "
+                val prompts = listOf(getString(context,R.string.scene177prompt1) + " " + Gender.getNickname2(context,state.gender) + " "
                         + getString(context,R.string.scene177prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene177choice1),178,{state.addScore(Element.TERRA)},Element.TERRA),
@@ -1600,7 +1601,7 @@ class NodeRetriever
             }
             if(index == 180)
             {
-                val prompts = listOf(getString(context,R.string.scene180prompt1) + " " + Gender.getBrahmsNickname(context,state.gender) + " "
+                val prompts = listOf(getString(context,R.string.scene180prompt1) + " " + Gender.getNickname2(context,state.gender) + " "
                 + getString(context,R.string.scene180prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene180choice1),186),
@@ -1619,7 +1620,7 @@ class NodeRetriever
             }
             if(index == 182)
             {
-                val prompts = listOf(getString(context,R.string.scene182prompt1) + " " + Gender.getBrahmsNickname(context,state.gender) + " "
+                val prompts = listOf(getString(context,R.string.scene182prompt1) + " " + Gender.getNickname2(context,state.gender) + " "
                 + getString(context,R.string.scene182prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene182choice1),186),
@@ -1629,7 +1630,7 @@ class NodeRetriever
             }
             if(index == 183)
             {
-                val prompts = listOf(getString(context,R.string.scene183prompt1) + " " + Gender.getBrahmsNickname(context,state.gender) + " "
+                val prompts = listOf(getString(context,R.string.scene183prompt1) + " " + Gender.getNickname2(context,state.gender) + " "
                 + getString(context,R.string.scene183prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene183choice1),186),
@@ -1681,7 +1682,7 @@ class NodeRetriever
             }
             if(index == 188)
             {
-                val prompts = listOf(getString(context,R.string.scene188prompt1) + " " + Gender.getMornsNickname(context,state.gender)
+                val prompts = listOf(getString(context,R.string.scene188prompt1) + " " + Gender.getNickname3(context,state.gender)
                 + getString(context,R.string.scene188prompt2))
                 val choices: List<Choice>
                 if(state.getQuestStage(Quest.CHORES) == 3)
@@ -1749,7 +1750,7 @@ class NodeRetriever
             }
             if(index == 191)
             {
-                val prompts = listOf(getString(context,R.string.scene191prompt1) + " " + Gender.getMornsNickname(context, state.gender)
+                val prompts = listOf(getString(context,R.string.scene191prompt1) + " " + Gender.getNickname3(context, state.gender)
                 + getString(context,R.string.scene191prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene191choice1), 193,{state.addScore(Element.TERRA)},Element.TERRA),
@@ -1762,7 +1763,7 @@ class NodeRetriever
             }
             if(index == 192)
             {
-                val prompts = listOf(getString(context,R.string.scene192prompt1) + " " + Gender.getMornsNickname(context, state.gender)
+                val prompts = listOf(getString(context,R.string.scene192prompt1) + " " + Gender.getNickname3(context, state.gender)
                 + getString(context,R.string.scene192prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene192choice1),196,{state.addScore(Element.ROTTEN)},Element.ROTTEN),
@@ -1798,7 +1799,7 @@ class NodeRetriever
             }
             if(index == 195)
             {
-                val prompts = listOf(getString(context,R.string.scene195prompt1)+ " " + Gender.getMornsNickname(context,state.gender)
+                val prompts = listOf(getString(context,R.string.scene195prompt1)+ " " + Gender.getNickname3(context,state.gender)
                 + getString(context,R.string.scene195prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene195choice1),199),
@@ -1864,7 +1865,7 @@ class NodeRetriever
             }
             if(index == 201)
             {
-                val prompts = listOf(getString(context,R.string.scene201prompt1) + " " + Gender.getMornsNickname(context,state.gender)
+                val prompts = listOf(getString(context,R.string.scene201prompt1) + " " + Gender.getNickname3(context,state.gender)
                 + getString(context,R.string.scene201prompt2))
                 val choices = listOf(Choice(getString(context,R.string.scene201choice),187,{state.setQuestStage(Quest.MORNS_ERRAND,9)}))
                 val animations = listOf(
@@ -2049,7 +2050,7 @@ class NodeRetriever
             }
             if(index == 216)
             {
-                val prompts = listOf(getString(context,R.string.scene216prompt1) + " " + Gender.getBrahmsNickname(context,state.gender)
+                val prompts = listOf(getString(context,R.string.scene216prompt1) + " " + Gender.getNickname2(context,state.gender)
                         + getString(context,R.string.scene216prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene216choice1),207),
@@ -2087,9 +2088,9 @@ class NodeRetriever
             if(index == 219)
             {
                 val prompts = listOf(getString(context,R.string.scene219prompt1) + " "
-                        + Gender.getProphetsNickname(context,state.gender) + " "
+                        + Gender.getNickname4(context,state.gender) + " "
                         + getString(context,R.string.scene219prompt2) + " "
-                        + Gender.getProphetsNickname(context,state.gender) + " "
+                        + Gender.getNickname4(context,state.gender) + " "
                         + getString(context,R.string.scene219prompt3))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene219choice1),220),
@@ -2298,14 +2299,222 @@ class NodeRetriever
             if(index == 235)
             {
                 val prompts= listOf(getString(context,R.string.scene235prompt1) + " "
-                + Gender.getProphetsNickname(context,state.gender) + " "
+                + Gender.getNickname4(context,state.gender) + " "
                 + getString(context,R.string.scene235prompt2))
                 val choices = listOf(
                     Choice(getString(context,R.string.scene235choice1),196,{state.addScore(Element.AERO)},Element.AERO),
-                    Choice(getString(context,R.string.scene235choice2),187,)
+                    Choice(getString(context,R.string.scene235choice2),187)
                 )
                 val animations = listOf(
                     AnimationInfo(R.drawable.character_morn,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 236)
+            {
+                val prompts = listOf(getString(context,R.string.scene236prompt1) + " "
+                + Gender.getNickname2(context,state.gender) + " "
+                + getString(context,R.string.scene236prompt2))
+
+                val choices: List<Choice>
+
+                //If we have spoken to dad and have the amulet to sell
+                if(state.getQuestStage(Quest.SELL_AMULET) == 1)
+                {
+                    choices = listOf(
+                        Choice(getString(context,R.string.scene236choice1),237),
+                        Choice(getString(context,R.string.scene236choice2),238)
+                    )
+                }
+                //if(state.getQuestStage(Quest.SELL_AMULET) == 0)
+                //default branch where we haven't met dad yet
+                else
+                {
+                    choices = listOf(
+                        Choice(getString(context,R.string.scene236choice1),237)
+                    )
+                }
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.fade_in,R.id.background_center)
+                )
+                return Node(index, prompts, choices, animations, context)
+            }
+            if(index == 237)
+            {
+                val prompts = listOf(getString(context,R.string.scene237prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene237choice),79)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 238)
+            {
+                val prompts = listOf(getString(context,R.string.scene238prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene238choice1),239),
+                    Choice(getString(context,R.string.scene238choice2), 240, state, Element.UMBRAL)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index, prompts, choices, animations, context)
+            }
+            if(index == 239)
+            {
+                val prompts = listOf(getString(context,R.string.scene239prompt1) + " "
+                + Gender.getNickname2(context,state.gender) + " "
+                + getString(context,R.string.scene239prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene239choice1),241){state.addGold(20)},
+                    Choice(getString(context,R.string.scene239choice2),242)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 240)
+            {
+                val prompts = listOf(getString(context,R.string.scene240prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene240choice1),243),
+                    Choice(getString(context,R.string.scene240choice2),242),
+                    Choice(getString(context,R.string.scene240choice3),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index, prompts, choices, animations, context)
+            }
+            if(index == 241)
+            {
+                val prompts = listOf(getString(context,R.string.scene241prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene241choice1),243),
+                    Choice(getString(context,R.string.scene241choice2),244),
+                    Choice(getString(context,R.string.scene241choice3),247),
+                    Choice(getString(context,R.string.scene241choice4),187)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 242)
+            {
+                val prompts = listOf(getString(context,R.string.scene242prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene242choice1),245){state.addGold(22);state.setQuestStage(Quest.SELL_AMULET,2)},
+                    Choice(getString(context,R.string.scene242choice2),246){state.setQuestStage(Quest.SELL_AMULET,6)}
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 243)
+            {
+                val prompts = listOf(getString(context,R.string.scene243prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene243choice1),250)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 244)
+            {
+                val prompts = listOf(getString(context,R.string.scene244prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene244choice1), 248){state.removeGold(20);state.setQuestStage(Quest.EXPLORE,3)},
+                    Choice(getString(context,R.string.scene244choice2),249)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 245)
+            {
+                val prompts = listOf(getString(context,R.string.scene245prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene245choice1),243),
+                    Choice(getString(context,R.string.scene245choice2),244),
+                    Choice(getString(context,R.string.scene245choice3),247,state,Element.STORM),
+                    Choice(getString(context,R.string.scene245choice4),79)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 246)
+            {
+                val prompts = listOf(getString(context,R.string.scene246prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene246choice1),79,state,Element.AERO),
+                    Choice(getString(context,R.string.scene246choice2),79,state,Element.TERRA)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 247)
+            {
+                val prompts = listOf(getString(context,R.string.scene247prompt1) + " "
+                + Gender.getNickname2(context,state.gender) + " "
+                + getString(context,R.string.scene247prompt2))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene247choice1),249),
+                    Choice(getString(context,R.string.scene247choice2),79)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 248)
+            {
+                val prompts = listOf(getString(context,R.string.scene248prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene248choice1),79,state,Element.AERO),
+                    Choice(getString(context,R.string.scene248choice2),79,state,Element.TERRA)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 249)
+            {
+                val prompts = listOf(getString(context,R.string.scene249prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene249choice1),243),
+                    Choice(getString(context,R.string.scene249choice2),244),
+                    Choice(getString(context,R.string.scene249choice3),247),
+                    Choice(getString(context,R.string.scene249choice4),79)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
+                )
+                return Node(index,prompts,choices,animations,context)
+            }
+            if(index == 250)
+            {
+                val prompts = listOf(getString(context,R.string.scene250prompt))
+                val choices = listOf(
+                    Choice(getString(context,R.string.scene250choice1),243),
+                    Choice(getString(context,R.string.scene250choice2),244),
+                    Choice(getString(context,R.string.scene250choice3),247),
+                    Choice(getString(context,R.string.scene250choice4),79)
+                )
+                val animations = listOf(
+                    AnimationInfo(R.drawable.background_oaktree_pawnshop,R.anim.appear,R.id.background_center)
                 )
                 return Node(index,prompts,choices,animations,context)
             }

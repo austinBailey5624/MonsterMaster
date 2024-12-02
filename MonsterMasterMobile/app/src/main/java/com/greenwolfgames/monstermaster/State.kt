@@ -48,7 +48,7 @@ class State : Serializable
         Element.MAGICAL to 0
     )
 
-    private var questStage = mutableMapOf<Quest,Int>(
+    var questStage = mutableMapOf<Quest,Int>(
         Quest.CHORES to 0,
         Quest.AMNESIA to 0,
         Quest.KYLER_REDEMPTION to 0,
@@ -106,6 +106,11 @@ class State : Serializable
     {
         totalGoldEver += addedGold
         currentGold += addedGold
+    }
+
+    fun removeGold(removedGold: Int)
+    {
+        currentGold -= removedGold
     }
 
     fun setChoresStage_WritingLessonFinished()

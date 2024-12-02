@@ -48,7 +48,7 @@ enum class Element {
         }
 
         fun getTextColor(element: Element): Int {
-            val textColor = when (element) {
+            return when (element) {
                 PYRO -> R.color.yellowOrange
                 LAVA -> R.color.orange
                 DINO -> R.color.darkBrown
@@ -95,7 +95,6 @@ enum class Element {
                 PHYSICAL -> R.color.darkGray
                 MAGICAL -> R.color.darkPurple
             }
-            return textColor
         }
 
         fun getButtonBackgroundColor(element: Element): Int {
@@ -156,7 +155,7 @@ enum class Element {
             {
                 PYRO -> R.color.darkRed
                 LAVA -> R.color.purple
-                DINO -> R.color.darkBrown
+                DINO -> R.color.brown
                 SAND -> R.color.pink
                 JUSTICE -> R.color.pink
                 VENGEANCE -> R.color.darkRed
