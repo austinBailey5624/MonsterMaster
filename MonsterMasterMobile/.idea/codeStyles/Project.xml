@@ -2,7 +2,6 @@
   <code_scheme name="Project" version="173">
     <JetCodeStyleSettings>
       <option name="LBRACE_ON_NEXT_LINE" value="true" />
-      <option name="CONTINUATION_INDENT_IN_SUPERTYPE_LISTS" value="true" />
       <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
     </JetCodeStyleSettings>
     <codeStyleSettings language="XML">
@@ -123,6 +122,9 @@
       <option name="KEEP_LINE_BREAKS" value="false" />
       <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
       <option name="ELSE_ON_NEW_LINE" value="true" />
+      <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="false" />
+      <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="false" />
+      <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="false" />
     </codeStyleSettings>
   </code_scheme>
 </component>
