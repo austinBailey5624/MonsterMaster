@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity()
         hideText(texts)
         hideImages(images)
         initButtons(buttons)
-        val firstNode: Node = NodeRetriever.getNode(1, state, this@MainActivity, state)
+        val firstNode: Node = NodeRetriever(this@MainActivity,state).getNode(1)
         previousColor = firstNode.backgroundColor
         setNode(firstNode, state, buttons, texts, images, textInput)
     }
@@ -143,7 +143,7 @@ class MainActivity : AppCompatActivity()
         textInput: TextInputEditText
     )
     {
-        val nextNode: Node = NodeRetriever.getNode(nextNodeIndex, state, this@MainActivity, state)
+        val nextNode: Node = NodeRetriever(this@MainActivity,state).getNode(nextNodeIndex)
         val main: ConstraintLayout = findViewById(R.id.main)
         val fadeInAnimation =
             AnimationHandler.getBackgroundAnimator( //TODO: I know this is an error, but I don't know what to tell  you, when you fix it it doesn't run
