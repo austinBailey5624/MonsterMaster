@@ -21,7 +21,7 @@ enum class Element {
     PHOENIX,SEABREEZE,BIRD,AERO,COCKA,NIGHTWING,
     SOLAR,LUNAR,GUARDIAN,ANGEL,LUXOR,REDEMPTION,
     DEMON,POISON,UNDEAD,STORM,BETRAYER,UMBRAL,
-    NEUTRAL, PHYSICAL, MAGICAL;
+    NEUTRAL, PHYSICAL, MAGICAL, INITIAL;
     //@formatter:on
 
     companion object
@@ -94,6 +94,7 @@ enum class Element {
                 NEUTRAL -> R.color.darkBrown
                 PHYSICAL -> R.color.darkGray
                 MAGICAL -> R.color.darkPurple
+                INITIAL -> R.color.gray
             }
         }
 
@@ -145,6 +146,7 @@ enum class Element {
                 NEUTRAL -> R.color.brown
                 MAGICAL -> R.color.pink
                 PHYSICAL -> R.color.gray
+                INITIAL -> R.color.grayerWhite
             }
             return backgroundColor
         }
@@ -198,6 +200,7 @@ enum class Element {
                 NEUTRAL -> R.color.beige
                 MAGICAL -> R.color.purple
                 PHYSICAL -> R.color.grayerWhite
+                INITIAL -> R.color.darkGray
             }
             return backgroundColor
         }
@@ -251,6 +254,7 @@ enum class Element {
                 NEUTRAL -> throw IllegalStateException("Element Neutral has no infant monster")
                 MAGICAL -> throw IllegalStateException("Element Magical has no infant monster")
                 PHYSICAL -> throw IllegalStateException("Element Physical has no infant monster")
+                INITIAL -> throw IllegalStateException("Element Initial has no infant monster")
             }
             return infantMonster
         }

@@ -26,10 +26,10 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getString(context, R.string.scene1item3), getString(context, R.string.scene1item4),
                 getString(context, R.string.scene1item5), getString(context, R.string.scene1item6),
                 getString(context, R.string.scene1item7))
-            val choices = listOf(Choice(getString(context, R.string.scene1choice1),2, {state.addScore(Element.LUXOR)}, Element.LUXOR),
-                Choice(getString(context, R.string.scene1choice2),3, {state.addScore(Element.UMBRAL)}, Element.UMBRAL))
-            return Node(index, prompts, choices, listOf(),
-                ContextCompat.getColor(context, R.color.darkGray), ContextCompat.getColor(context, R.color.gray))
+            val choices = listOf(
+                getChoice(R.string.scene1choice1,2,Element.LUXOR),
+                getChoice(R.string.scene1choice2,3,Element.UMBRAL))
+            return getNode(index,prompts,choices,Element.INITIAL)
         }
         //Chose Light, now choose Fire or Water
         if(index == 2)
@@ -37,11 +37,11 @@ class NodeRetriever(private val context: Context, private val state: State)
             val prompts = listOf(getString(context, R.string.scene2item1), getString(context, R.string.scene2item2),
                 getString(context, R.string.scene2item3), getString(context, R.string.scene2item4),
                 getString(context, R.string.scene2item5))
-            val choices = listOf(Choice(getString(context, R.string.scene2choice1),4, {state.addScore(Element.PYRO)}, Element.PYRO),
-                Choice(getString(context, R.string.scene2choice2),5, {state.addScore(Element.AQUA)}, Element.AQUA))
-            return Node(index, prompts, choices, listOf(AnimationInfo(R.drawable.scene_object_faint_light_from_above,
-                R.anim.fade_in_very_slow, R.id.main)),
-                ContextCompat.getColor(context, R.color.gray), ContextCompat.getColor(context, R.color.whiteGray))
+            val choices = listOf(
+                getChoice(R.string.scene2choice1,4,Element.PYRO),
+                getChoice(R.string.scene2choice2,5,Element.AQUA))
+            return getNode(index,prompts,choices,listOf(AnimationInfo(R.drawable.scene_object_faint_light_from_above,
+                                R.anim.fade_in_very_slow, R.id.main)),Element.LUXOR)
         }
         //Chose Darkness, now choose Fire or Water
         if(index == 3)
@@ -2873,9 +2873,28 @@ class NodeRetriever(private val context: Context, private val state: State)
         return Node(index,prompts,choices,animations,context)
     }
 
-//        private fun getPrompt(stringId: Int): List<String>
-//        {
-//            return li
-//        }
+    private fun getChoice(stringId: Int, nextNodeIndex: Int, element: Element): Choice
+    {
+        return Choice(getString(context,stringId),nextNodeIndex,state,element)
+    }
 
+    private fun getChoice(stringId: Int, nextNodeIndex: Int): Choice
+    {
+        return Choice(getString(context,stringId),nextNodeIndex)
+    }
+
+    private fun getPrompt(stringId: Int): List<String>
+    {
+        return listOf(getString(context,stringId))
+    }
+
+    private fun getNode(index: Int, prompt: List<String>, choices: List<Choice>, element: Element): Node
+    {
+        return Node(index, prompt, choices, element, context)
+    }
+
+    private fun getNode(index: Int, prompt: List<String>, choices: List<Choice>, animations: List<AnimationInfo>, element: Element): Node
+    {
+        return Node(index, prompt, choices,element, animations, context)
+    }
 }

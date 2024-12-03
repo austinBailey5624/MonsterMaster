@@ -41,4 +41,35 @@ open class Node(
         ContextCompat.getColor(context, Element.getBackgroundColor(Element.NEUTRAL)),
         ContextCompat.getColor(context, Element.getTextColor(Element.NEUTRAL))
     )
+
+    constructor(
+        index: Int,
+        prompt: List<String>,
+        choices: List<Choice>,
+        element: Element,
+        context: Context
+    ) : this(
+        index,
+        prompt,
+        choices,
+        listOf(),
+        ContextCompat.getColor(context,Element.getBackgroundColor(element)),
+        ContextCompat.getColor(context,Element.getTextColor(element))
+    )
+
+    constructor(
+        index: Int,
+        prompt: List<String>,
+        choices: List<Choice>,
+        element: Element,
+        animations: List<AnimationInfo>,
+        context: Context
+    ) : this(
+        index,
+        prompt,
+        choices,
+        animations,
+        ContextCompat.getColor(context,Element.getBackgroundColor(element)),
+        ContextCompat.getColor(context,Element.getTextColor(element))
+    )
 }
