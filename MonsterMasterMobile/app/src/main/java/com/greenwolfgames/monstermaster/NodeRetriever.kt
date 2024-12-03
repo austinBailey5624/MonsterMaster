@@ -527,99 +527,52 @@ class NodeRetriever(private val context: Context, private val state: State)
                 state.playerName,
                 getString(context, R.string.scene54item3),
                 state.playerName + " wake up!")
-            val choices =
-                listOf(Choice(getString(context, R.string.scene54choice), 55, {}, Element.PHYSICAL))
-            return Node(index,
-                prompts,
-                choices,
-                ContextCompat.getColor(context, Element.getBackgroundColor(Element.PHYSICAL)),
-                ContextCompat.getColor(context, Element.getTextColor(Element.PHYSICAL)))
+            val choices = listOf(getChoice(R.string.scene54choice, 55, Element.PHYSICAL))
+            return getNode(index, prompts, choices, Element.PHYSICAL)
         } //OakTree-players room
         if (index == 55)
         {
-            val prompts: List<String> = listOf(getString(context, R.string.scene55prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene55choice1),
-                56,
-                { state.addScore(Element.UMBRAL) },
-                Element.UMBRAL),
-                Choice(getString(context, R.string.scene55choice2),
-                    57,
-                    { state.addScore(Element.AQUA) },
-                    Element.AQUA),
-                Choice(getString(context, R.string.scene55choice3),
-                    58,
-                    { state.addScore(Element.AERO) },
-                    Element.AERO),
-                Choice(getString(context, R.string.scene55choice4),
-                    56,
-                    { state.addScore(Element.PYRO) },
-                    Element.PYRO),
-                Choice(getString(context, R.string.scene55choice5),
-                    58,
-                    { state.addScore(Element.TERRA) },
-                    Element.TERRA),
-                Choice(getString(context, R.string.scene55choice6), 59, {}, Element.NEUTRAL))
-            return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
+            val prompts = getPrompt(R.string.scene55prompt)
+            val choices = listOf(getChoice(R.string.scene55choice1, 56, Element.UMBRAL),
+                getChoice(R.string.scene55choice2, 57, Element.AQUA),
+                getChoice(R.string.scene55choice3, 58, Element.AERO),
+                getChoice(R.string.scene55choice4, 56, Element.PYRO),
+                getChoice(R.string.scene55choice5, 58, Element.TERRA),
+                getChoice(R.string.scene55choice6, 59, Element.NEUTRAL))
+            return getNode(index, prompts, choices, getPlayerRoomAnimations())
         }
         if (index == 56)
         {
-            val prompts: List<String> = listOf(getString(context, R.string.scene56prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene56choice1),
-                60,
-                { state.addScore(Element.PYRO) },
-                Element.PYRO),
-                Choice(getString(context, R.string.scene56choice2),
-                    58,
-                    { state.addScore(Element.AQUA) },
-                    Element.AQUA),
-                Choice(getString(context, R.string.scene56choice3),
-                    58,
-                    { state.addScore(Element.TERRA) },
-                    Element.TERRA))
-            return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
+            val prompts = getPrompt(R.string.scene56prompt)
+            val choices = listOf(getChoice(R.string.scene56choice1, 60, Element.PYRO),
+                getChoice(R.string.scene56choice2, 58, Element.AQUA),
+                getChoice(R.string.scene56choice3, 58, Element.TERRA))
+            return getNode(index, prompts, choices, getPlayerRoomAnimations())
         }
         if (index == 57)
         {
-            val prompts: List<String> = listOf(getString(context, R.string.scene57prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene57choice1),
-                60,
-                { state.addScore(Element.PYRO) },
-                Element.PYRO),
-                Choice(getString(context, R.string.scene57choice2),
-                    58,
-                    { state.addScore(Element.AQUA) },
-                    Element.AQUA),
-                Choice(getString(context, R.string.scene57choice3),
-                    58,
-                    { state.addScore(Element.TERRA) },
-                    Element.TERRA))
-            return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
+            val prompts = getPrompt(R.string.scene57prompt)
+            val choices = listOf(getChoice(R.string.scene57choice1, 60, Element.PYRO),
+                getChoice(R.string.scene57choice2, 58, Element.AQUA),
+                getChoice(R.string.scene57choice3, 58, Element.TERRA))
+            return getNode(index, prompts, choices, getPlayerRoomAnimations())
         }
         if (index == 58)
         {
-            val prompts: List<String> = listOf(getString(context, R.string.scene58prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene58choice1), 61),
-                Choice(getString(context, R.string.scene58choice2), 62),
-                Choice(getString(context, R.string.scene58choice3),
-                    63,
-                    { state.addScore(Element.UMBRAL) },
-                    Element.UMBRAL),
-                Choice(getString(context, R.string.scene58choice4),
-                    78,
-                    { state.addScore(Element.TERRA) },
-                    Element.TERRA),
-                Choice(getString(context, R.string.scene58choice5),
-                    78,
-                    { state.addScore(Element.AERO) },
-                    Element.AERO))
-            return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
+            val prompts = getPrompt(R.string.scene58prompt)
+            val choices = listOf(getChoice(R.string.scene58choice1, 61),
+                getChoice(R.string.scene58choice2, 62),
+                getChoice(R.string.scene58choice3, 63, Element.UMBRAL),
+                getChoice(R.string.scene58choice4, 78, Element.TERRA),
+                getChoice(R.string.scene58choice5, 78, Element.AERO))
+            return getNode(index, prompts, choices, getPlayerRoomAnimations())
         }
         if (index == 59)
         {
-            val prompts = listOf(getString(context, R.string.scene59prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene59choice1), 58),
-                Choice(getString(context, R.string.scene59choice2), 68))
-            return Node(index, prompts, choices, getPlayerRoomAnimations(), context)
+            val prompts = getPrompt(R.string.scene59prompt)
+            val choices = listOf(getChoice(R.string.scene59choice1, 58),
+                getChoice(R.string.scene59choice2, 68))
+            return getNode(index, prompts, choices, getPlayerRoomAnimations())
         }
         if (index == 60)
         {
@@ -3345,6 +3298,15 @@ class NodeRetriever(private val context: Context, private val state: State)
         index: Int, prompt: List<String>, choices: List<Choice>, element: Element): Node
     {
         return Node(index, prompt, choices, element, context)
+    }
+
+    private fun getNode(
+        index: Int,
+        prompt: List<String>,
+        choices: List<Choice>,
+        animations: List<AnimationInfo>): Node
+    {
+        return Node(index, prompt, choices, Element.NEUTRAL, animations, context)
     }
 
     private fun getNode(
