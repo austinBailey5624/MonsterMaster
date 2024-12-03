@@ -1053,9 +1053,9 @@
     <string name="scene264choice4">How is the Church Organized?</string><!--257-->
     <string name="scene264choice5">*leave*</string><!--79-->
     <string name="scene265prompt">Ahros, the God of Justice, often associated with the sun, was known as a great and just ruler before granted ascension from Erebius. He judges the faithful dead and distributes the rewards of the afterlife to them. He founded the Justicars, who judge the living to this day, as he judges them in death.</string>
-    <string name="scene265choice1">Tell me about another God</string>
-    <string name="scene265choice2">Talk about something else</string>
-    <string name="scene265choice3">*leave*</string>
+    <string name="scene265choice1">Tell me about another God</string><!--261-->
+    <string name="scene265choice2">Talk about something else</string><!--80-->
+    <string name="scene265choice3">*leave*</string><!--79-->
     <string name="scene266prompt">Velhu, mother of the moon, was found by Erebius on a shard of the moon that fell from the sky. That stone is the most potent magical artifact on this planet, which the college of the Magi built their tower over, to the chagrin of Velhu\'s Magistars to this day.</string>
     <string name="scene266choice1">*continue*</string><!--271-->
     <string name="scene267prompt">Sid, God of compassion, was a nonviolent monk an healer in life, who starved himself so others could eat, abstained from meat, alcohol, sex, and dishonesty. He is a friend to animals, and could calm a raging bull at a glance.</string>
