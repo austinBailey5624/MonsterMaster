@@ -738,7 +738,7 @@
     <string name="scene185choice2">I\'ll come back later</string><!--79-->
     <string name="scene186prompt">If you had a shortsword and some leather armor, it would put my mind at ease.</string>
     <string name="scene186choice">Very well, I\'ll come back with a shortsword and some armor</string>
-    <string name="scene187prompt">You enter Morn\'s tavern, a rather dingy bar with the opposing smells of stale beer and freshly baked bread. You see the owner and barkeep, Morn, cleaning a glass with a dirty rag, a barmaid, a cat, an ash skinned jester wearing grey motley, and … is that John? With a GIRL!?</string>
+    <string name="scene187prompt">You enter Morn\'s tavern, a rather dingy bar with the opposing smells of stale beer and freshly baked bread. You see the owner and barkeep, Morn, cleaning a glass with a dirty rag, a barmaid, a cat, and an ash skinned jester wearing grey motley</string>
     <string name="scene187choice1">Go see Morn</string><!--188-->
     <string name="scene187choice2">Speak with the barmaid</string><!--206-->
     <string name="scene187choice3">Play with the Cat</string><!--217-->
