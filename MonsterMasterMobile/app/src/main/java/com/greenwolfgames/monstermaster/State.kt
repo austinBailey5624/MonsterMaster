@@ -45,7 +45,8 @@ class State : Serializable
         Element.UMBRAL to 0,
         Element.NEUTRAL to 0,
         Element.PHYSICAL to 0,
-        Element.MAGICAL to 0
+        Element.MAGICAL to 0,
+        Element.INITIAL to 0
     )
 
     var questStage = mutableMapOf<Quest,Int>(

@@ -1559,9 +1559,9 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 174)
         {
             val prompts = getPrompt(R.string.scene174prompt)
-            val choices = listOf(getChoice(R.string.scene174choice1,113),
+            val choices = listOf(getChoice(R.string.scene174choice1, 113),
                 getChoice(R.string.scene174choice2, 132))
-                return getBrahmNode(index, prompts, choices)
+            return getBrahmNode(index, prompts, choices)
         }
         if (index == 175)
         {
@@ -1639,41 +1639,41 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene183prompt1) + " " + Gender.getNickname2(
                     context,
                     state.gender) + " " + getString(context, R.string.scene183prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene183choice1), 186),
-                Choice(getString(context, R.string.scene183choice2), 79))
+            val choices = listOf(getChoice(R.string.scene183choice1, 186),
+                getChoice(R.string.scene183choice2, 79))
             return getGateNode(index, prompts, choices)
         }
         if (index == 184)
         {
-            val prompts = listOf(getString(context, R.string.scene184prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene184choice1), 186),
-                Choice(getString(context, R.string.scene184choice2), 79))
+            val prompts = getPrompt(R.string.scene184prompt)
+            val choices = listOf(getChoice(R.string.scene184choice1, 186),
+                getChoice(R.string.scene184choice2, 79))
             return getGateNode(index, prompts, choices)
         }
         if (index == 185)
         {
-            val prompts = listOf(getString(context, R.string.scene185prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene185choice1), 186),
-                Choice(getString(context, R.string.scene185choice2), 79))
+            val prompts = getPrompt(R.string.scene185prompt)
+            val choices = listOf(getChoice(R.string.scene185choice1, 186),
+                getChoice(R.string.scene185choice2, 79))
             return getGateNode(index, prompts, choices)
         }
         if (index == 186)
         {
-            val prompts = listOf(getString(context, R.string.scene186prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene186choice),
+            val prompts = getPrompt(R.string.scene186prompt)
+            val choices = listOf(getChoice(R.string.scene186choice,
                 79,
                 { state.setQuestStage(Quest.EXPLORE, 1) }))
             return getGateNode(index, prompts, choices)
         }
         if (index == 187)
         {
-            val prompts = listOf(getString(context, R.string.scene187prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene187choice1), 188),
-                Choice(getString(context, R.string.scene187choice2), 206),
-                Choice(getString(context, R.string.scene187choice3), 217),
-                Choice(getString(context, R.string.scene187choice4),
+            val prompts = getPrompt(R.string.scene187prompt)
+            val choices = listOf(getChoice(R.string.scene187choice1, 188),
+                getChoice(R.string.scene187choice2, 206),
+                getChoice(R.string.scene187choice3, 217),
+                getChoice(R.string.scene187choice4,
                     219), //Choice(getString(context,R.string.scene187choice5),0),//TODO: finish and restore
-                Choice(getString(context, R.string.scene187choice6), 79))
+                getChoice(R.string.scene187choice6, 79))
             val animations = listOf(AnimationInfo(R.drawable.background_morns_tavern,
                 R.anim.fade_in_fast,
                 R.id.background_center))
@@ -1688,69 +1688,57 @@ class NodeRetriever(private val context: Context, private val state: State)
             val choices: List<Choice>
             if (state.getQuestStage(Quest.CHORES) == 3)
             {
-                choices = listOf(Choice(getString(context, R.string.scene188choice1), 189),
-                    Choice(getString(context, R.string.scene188choice4), 190),
-                    Choice(getString(context, R.string.scene188choice6), 203))
+                choices = listOf(getChoice(R.string.scene188choice1, 189),
+                    getChoice(R.string.scene188choice4, 190),
+                    getChoice(R.string.scene188choice6, 203))
             }
             else if (state.getQuestStage(Quest.CHORES) == 0)
             {
-                choices = listOf(Choice(getString(context, R.string.scene188choice5), 235),
-                    Choice(getString(context, R.string.scene188choice4), 190),
-                    Choice(getString(context, R.string.scene188choice6), 203))
+                choices = listOf(getChoice(R.string.scene188choice5, 235),
+                    getChoice(R.string.scene188choice4, 190),
+                    getChoice(R.string.scene188choice6, 203))
             }
             else if (state.getQuestStage(Quest.CHORES) == 5)
             {
-                choices = listOf(Choice(getString(context, R.string.scene188choice2), 189),
-                    Choice(getString(context, R.string.scene188choice4), 190),
-                    Choice(getString(context, R.string.scene188choice6), 203))
+                choices = listOf(getChoice(R.string.scene188choice2, 189),
+                    getChoice(R.string.scene188choice4, 190),
+                    getChoice(R.string.scene188choice6, 203))
             }
             else if (state.getQuestStage(Quest.CHORES) == 8)
             {
-                choices = listOf(Choice(getString(context, R.string.scene188choice3), 189),
-                    Choice(getString(context, R.string.scene188choice4), 190),
-                    Choice(getString(context, R.string.scene188choice6), 203))
+                choices = listOf(getChoice(R.string.scene188choice3, 189),
+                    getChoice(R.string.scene188choice4, 190),
+                    getChoice(R.string.scene188choice6, 203))
             }
             else
             {
-                choices = listOf(Choice(getString(context, R.string.scene188choice4), 190),
-                    Choice(getString(context, R.string.scene188choice6), 203))
+                choices = listOf(getChoice(R.string.scene188choice4, 190),
+                    getChoice(R.string.scene188choice6, 203))
             }
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 189)
         {
-            val prompts = listOf(getString(context, R.string.scene189prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene189choice1),
-                191,
-                { state.addScore(Element.AERO) },
-                Element.AERO),
-                Choice(getString(context, R.string.scene189choice2),
-                    192,
-                    { state.addScore(Element.UMBRAL) },
-                    Element.UMBRAL))
+            val prompts = getPrompt(R.string.scene189prompt)
+            val choices = listOf(getChoice(R.string.scene189choice1, 191, Element.AERO),
+                getChoice(R.string.scene189choice2, 192, Element.UMBRAL))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 190)
         {
-            val prompts = listOf(getString(context, R.string.scene190prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene190choice1),
-                191,
-                { state.addScore(Element.AERO) },
-                Element.AERO),
-                Choice(getString(context, R.string.scene190choice2),
-                    192,
-                    { state.addScore(Element.UMBRAL) },
-                    Element.UMBRAL))
+            val prompts = getPrompt(R.string.scene190prompt)
+            val choices = listOf(getChoice(R.string.scene190choice1, 191, Element.AERO),
+                getChoice(R.string.scene190choice2, 192, Element.UMBRAL))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 191)
         {
@@ -1758,18 +1746,12 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene191prompt1) + " " + Gender.getNickname3(
                     context,
                     state.gender) + getString(context, R.string.scene191prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene191choice1),
-                193,
-                { state.addScore(Element.TERRA) },
-                Element.TERRA),
-                Choice(getString(context, R.string.scene191choice2),
-                    194,
-                    { state.addScore(Element.AERO) },
-                    Element.AERO))
+            val choices = listOf(getChoice(R.string.scene191choice1, 193, Element.TERRA),
+                getChoice(R.string.scene191choice2, 194, Element.AERO))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 192)
         {
@@ -1777,42 +1759,32 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene192prompt1) + " " + Gender.getNickname3(
                     context,
                     state.gender) + getString(context, R.string.scene192prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene192choice1),
-                196,
-                { state.addScore(Element.ROTTEN) },
-                Element.ROTTEN),
-                Choice(getString(context, R.string.scene192choice2),
-                    191,
-                    { state.addScore(Element.AERO) },
-                    Element.AERO))
+            val choices = listOf(getChoice(R.string.scene192choice1, 196, Element.ROTTEN),
+                getChoice(R.string.scene192choice2, 191, Element.AERO))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 193)
         {
-            val prompts = listOf(getString(context, R.string.scene193prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene193choice1),
-                197,
-                { state.addScore(Element.COMPASSION) },
-                Element.COMPASSION), Choice(getString(context, R.string.scene193choice2), 198))
+            val prompts = getPrompt(R.string.scene193prompt)
+            val choices = listOf(getChoice(R.string.scene193choice1, 197, Element.COMPASSION),
+                getChoice(R.string.scene193choice2, 198))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 194)
         {
-            val prompts = listOf(getString(context, R.string.scene194prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene194choice1),
-                197,
-                { state.addScore(Element.COMPASSION) },
-                Element.COMPASSION), Choice(getString(context, R.string.scene194choice2), 198))
+            val prompts = getPrompt(R.string.scene194prompt)
+            val choices = listOf(getChoice(R.string.scene194choice1, 197, Element.COMPASSION),
+                getChoice(R.string.scene194choice2, 198))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 195)
         {
@@ -1820,78 +1792,65 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene195prompt1) + " " + Gender.getNickname3(
                     context,
                     state.gender) + getString(context, R.string.scene195prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene195choice1), 199),
-                Choice(getString(context, R.string.scene195choice2),
+            val choices = listOf(getChoice(R.string.scene195choice1, 199),
+                getChoice(R.string.scene195choice2,
                     187,
                     { state.setQuestStage(Quest.MORNS_ERRAND, 9) }))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 196)
         {
-            val prompts = listOf(getString(context, R.string.scene196prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene196choice1),
-                200,
-                { state.addScore(Element.UMBRAL) },
-                Element.UMBRAL), Choice(getString(context, R.string.scene196choice2), 191))
+            val prompts = getPrompt(R.string.scene196prompt)
+            val choices = listOf(getChoice(R.string.scene196choice1, 200, Element.UMBRAL),
+                getChoice(R.string.scene196choice2, 191))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 197)
         {
-            val prompts = listOf(getString(context, R.string.scene197prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene197choice1),
-                198,
-                { state.addScore(Element.COMPASSION) },
-                Element.COMPASSION),
-                Choice(getString(context, R.string.scene197choice2),
-                    201,
-                    { state.addScore(Element.NIGHTWING) },
-                    Element.NIGHTWING))
+            val prompts = getPrompt(R.string.scene197prompt)
+            val choices = listOf(getChoice(R.string.scene197choice1, 198, Element.COMPASSION),
+                getChoice(R.string.scene197choice2, 201, Element.NIGHTWING))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 198)
         {
-            val prompts = listOf(getString(context, R.string.scene198prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene198choice),
+            val prompts = getPrompt(R.string.scene198prompt)
+            val choices = listOf(getChoice(R.string.scene198choice,
                 187,
                 { state.setQuestStage(Quest.MORNS_ERRAND, 2) }))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 199)
         {
-            val prompts = listOf(getString(context, R.string.scene199prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene199choice1),
-                197,
-                { state.addScore(Element.COMPASSION) },
-                Element.COMPASSION), Choice(getString(context, R.string.scene199choice2), 198))
+            val prompts = getPrompt(R.string.scene199prompt)
+            val choices = listOf(getChoice(R.string.scene199choice1, 197, Element.COMPASSION),
+                getChoice(R.string.scene199choice2, 198))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 200)
         {
-            val prompts = listOf(getString(context, R.string.scene200prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene200choice1), 191),
-                Choice(getString(context, R.string.scene200choice2),
-                    202,
-                    { state.addScore(Element.UMBRAL) },
-                    Element.UMBRAL))
+            val prompts = getPrompt(R.string.scene200prompt)
+            val choices = listOf(getChoice(R.string.scene200choice1, 191),
+                getChoice(R.string.scene200choice2, 202, Element.UMBRAL))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 201)
         {
@@ -1899,177 +1858,168 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene201prompt1) + " " + Gender.getNickname3(
                     context,
                     state.gender) + getString(context, R.string.scene201prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene201choice),
+            val choices = listOf(getChoice(R.string.scene201choice,
                 187,
                 { state.setQuestStage(Quest.MORNS_ERRAND, 9) }))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 202)
         {
-            val prompts = listOf(getString(context, R.string.scene202prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene202choice1),
-                197,
-                { state.addScore(Element.COMPASSION) },
-                Element.COMPASSION),
-                Choice(getString(context, R.string.scene202choice2), 198),
-                Choice(getString(context, R.string.scene202choice3),
-                    201,
-                    { state.addScore(Element.STORM) },
-                    Element.STORM))
+            val prompts = getPrompt(R.string.scene202prompt)
+            val choices = listOf(getChoice(R.string.scene202choice1, 197, Element.COMPASSION),
+                getChoice(R.string.scene202choice2, 198),
+                getChoice(R.string.scene202choice3, 201, Element.STORM))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 203)
         {
-            val prompts = listOf(getString(context, R.string.scene203prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene203choice1), 204),
-                Choice(getString(context, R.string.scene203choice2), 189))
+            val prompts = getPrompt(R.string.scene203prompt)
+            val choices = listOf(getChoice(R.string.scene203choice1, 204),
+                getChoice(R.string.scene203choice2, 189))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 204)
         {
-            val prompts = listOf(getString(context, R.string.scene204prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene204choice1), 205),
-                Choice(getString(context, R.string.scene204choice2), 189))
+            val prompts = getPrompt(R.string.scene204prompt)
+            val choices = listOf(getChoice(R.string.scene204choice1, 205),
+                getChoice(R.string.scene204choice2, 189))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 205)
         {
-            val prompts = listOf(getString(context, R.string.scene205prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene205choice), 189))
+            val prompts = getPrompt(R.string.scene205prompt)
+            val choices = listOf(getChoice(R.string.scene205choice, 189))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 206)
         {
-            val prompts = listOf(getString(context, R.string.scene206prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene206choice1), 207),
-                Choice(getString(context, R.string.scene206choice2), 208),
-                Choice(getString(context, R.string.scene206choice3), 187),
-                Choice(getString(context, R.string.scene206choice4), 211),
-                Choice(getString(context, R.string.scene206choice5), 214),
-                Choice(getString(context, R.string.scene206choice6), 213))
+            val prompts = getPrompt(R.string.scene206prompt)
+            val choices = listOf(getChoice(R.string.scene206choice1, 207),
+                getChoice(R.string.scene206choice2, 208),
+                getChoice(R.string.scene206choice3, 187),
+                getChoice(R.string.scene206choice4, 211),
+                getChoice(R.string.scene206choice5, 214),
+                getChoice(R.string.scene206choice6, 213))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 207)
         {
-            val prompts = listOf(getString(context, R.string.scene207prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene207choice1), 209),
-                Choice(getString(context, R.string.scene207choice2), 210))
+            val prompts = getPrompt(R.string.scene207prompt)
+            val choices = listOf(getChoice(R.string.scene207choice1, 209),
+                getChoice(R.string.scene207choice2, 210))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 208)
         {
-            val prompts = listOf(getString(context, R.string.scene208prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene208choice1), 187),
-                Choice(getString(context, R.string.scene208choice2), 207),
-                Choice(getString(context, R.string.scene208choice3), 214))
+            val prompts = getPrompt(R.string.scene208prompt)
+            val choices = listOf(getChoice(R.string.scene208choice1, 187),
+                getChoice(R.string.scene208choice2, 207),
+                getChoice(R.string.scene208choice3, 214))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 209)
         {
-            val prompts = listOf(getString(context, R.string.scene209prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene209choice1), 219),
-                Choice(getString(context, R.string.scene209choice2), 187))
+            val prompts = getPrompt(R.string.scene209prompt)
+            val choices = listOf(getChoice(R.string.scene209choice1, 219),
+                getChoice(R.string.scene209choice2, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 210)
         {
-            val prompts = listOf(getString(context, R.string.scene210prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene210choice1), 187),
-                Choice(getString(context, R.string.scene210choice2), 214),
-                Choice(getString(context, R.string.scene210choice3), 213))
+            val prompts = getPrompt(R.string.scene210prompt)
+            val choices = listOf(getChoice(R.string.scene210choice1, 187),
+                getChoice(R.string.scene210choice2, 214),
+                getChoice(R.string.scene210choice3, 213))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 211)
         {
-            val prompts = listOf(getString(context, R.string.scene211prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene211choice1), 207),
-                Choice(getString(context, R.string.scene211choice2), 214),
-                Choice(getString(context, R.string.scene211choice3),
-                    212,
-                    { state.addScore(Element.VENGEANCE) },
-                    Element.VENGEANCE),
-                Choice(getString(context, R.string.scene211choice4), 187))
+            val prompts = getPrompt(R.string.scene211prompt)
+            val choices = listOf(getChoice(R.string.scene211choice1, 207),
+                getChoice(R.string.scene211choice2, 214),
+                getChoice(R.string.scene211choice3, 212, Element.VENGEANCE),
+                getChoice(R.string.scene211choice4, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 212)
         {
-            val prompts = listOf(getString(context, R.string.scene212prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene212choice1), 213),
-                Choice(getString(context, R.string.scene212choice2), 207),
-                Choice(getString(context, R.string.scene212choice3), 214))
+            val prompts = getPrompt(R.string.scene212prompt)
+            val choices = listOf(getChoice(R.string.scene212choice1, 213),
+                getChoice(R.string.scene212choice2, 207),
+                getChoice(R.string.scene212choice3, 214))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 213)
         {
-            val prompts = listOf(getString(context, R.string.scene213prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene213choice1), 207),
-                Choice(getString(context, R.string.scene213choice2), 214),
-                Choice(getString(context, R.string.scene213choice3), 187))
+            val prompts = getPrompt(R.string.scene213prompt)
+            val choices = listOf(getChoice(R.string.scene213choice1, 207),
+                getChoice(R.string.scene213choice2, 214),
+                getChoice(R.string.scene213choice3, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 214)
         {
-            val prompts = listOf(getString(context, R.string.scene214prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene214choice1), 215),
-                Choice(getString(context, R.string.scene214choice2), 207),
-                Choice(getString(context, R.string.scene214choice3), 213),
-                Choice(getString(context, R.string.scene214choice4), 187))
+            val prompts = getPrompt(R.string.scene214prompt)
+            val choices = listOf(getChoice(R.string.scene214choice1, 215),
+                getChoice(R.string.scene214choice2, 207),
+                getChoice(R.string.scene214choice3, 213),
+                getChoice(R.string.scene214choice4, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 215)
         {
-            val prompts = listOf(getString(context, R.string.scene215prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene215choice1), 216),
-                Choice(getString(context, R.string.scene215choice2), 217),
-                Choice(getString(context, R.string.scene215choice3), 207),
-                Choice(getString(context, R.string.scene215choice4), 213),
-                Choice(getString(context, R.string.scene215choice5), 187))
+            val prompts = getPrompt(R.string.scene215prompt)
+            val choices = listOf(getChoice(R.string.scene215choice1, 216),
+                getChoice(R.string.scene215choice2, 217),
+                getChoice(R.string.scene215choice3, 207),
+                getChoice(R.string.scene215choice4, 213),
+                getChoice(R.string.scene215choice5, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 216)
         {
@@ -2077,32 +2027,32 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene216prompt1) + " " + Gender.getNickname2(
                     context,
                     state.gender) + getString(context, R.string.scene216prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene216choice1), 207),
-                Choice(getString(context, R.string.scene216choice2), 213),
-                Choice(getString(context, R.string.scene216choice3), 187))
+            val choices = listOf(getChoice(R.string.scene216choice1, 207),
+                getChoice(R.string.scene216choice2, 213),
+                getChoice(R.string.scene216choice3, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_barmaid,
-                R.anim.fade_in_fast,
+                R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 217)
         {
-            val prompts = listOf(getString(context, R.string.scene217prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene217choice1), 218),
-                Choice(getString(context, R.string.scene217choice2), 187))
+            val prompts = getPrompt(R.string.scene217prompt)
+            val choices = listOf(getChoice(R.string.scene217choice1, 218),
+                getChoice(R.string.scene217choice2, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_black_cat,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 218)
         {
-            val prompts = listOf(getString(context, R.string.scene218prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene218choice), 187))
+            val prompts = getPrompt(R.string.scene218prompt)
+            val choices = listOf(getChoice(R.string.scene218choice, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_black_cat,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 219)
         {
@@ -2112,186 +2062,177 @@ class NodeRetriever(private val context: Context, private val state: State)
                     state.gender) + " " + getString(context,
                     R.string.scene219prompt2) + " " + Gender.getNickname4(context,
                     state.gender) + " " + getString(context, R.string.scene219prompt3))
-            val choices = listOf(Choice(getString(context, R.string.scene219choice1), 220),
-                Choice(getString(context, R.string.scene219choice2), 221),
-                Choice(getString(context, R.string.scene219choice3), 222),
-                Choice(getString(context, R.string.scene219choice4), 187))
+            val choices = listOf(getChoice(R.string.scene219choice1, 220),
+                getChoice(R.string.scene219choice2, 221),
+                getChoice(R.string.scene219choice3, 222),
+                getChoice(R.string.scene219choice4, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.fade_in_fast,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 220)
         {
-            val prompts = listOf(getString(context, R.string.scene220prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene220choice1), 221),
-                Choice(getString(context, R.string.scene220choice2), 223),
-                Choice(getString(context, R.string.scene220choice3), 222),
-                Choice(getString(context, R.string.scene220choice4), 187))
+            val prompts = getPrompt(R.string.scene220prompt)
+            val choices = listOf(getChoice(R.string.scene220choice1, 221),
+                getChoice(R.string.scene220choice2, 223),
+                getChoice(R.string.scene220choice3, 222),
+                getChoice(R.string.scene220choice4, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 221)
         {
-            val prompts = listOf(getString(context, R.string.scene221prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene221choice1), 225),
-                Choice(getString(context, R.string.scene221choice2), 220),
-                Choice(getString(context, R.string.scene221choice3), 222))
+            val prompts = getPrompt(R.string.scene221prompt)
+            val choices = listOf(getChoice(R.string.scene221choice1, 225),
+                getChoice(R.string.scene221choice2, 220),
+                getChoice(R.string.scene221choice3, 222))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 222)
         {
-            val prompts = listOf(getString(context, R.string.scene222prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene222choice1), 227),
-                Choice(getString(context, R.string.scene222choice2), 228),
-                Choice(getString(context, R.string.scene222choice3), 223),
-                Choice(getString(context, R.string.scene222choice4), 224))
+            val prompts = getPrompt(R.string.scene222prompt)
+            val choices = listOf(getChoice(R.string.scene222choice1, 227),
+                getChoice(R.string.scene222choice2, 228),
+                getChoice(R.string.scene222choice3, 223),
+                getChoice(R.string.scene222choice4, 224))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 223)
         {
-            val prompts = listOf(getString(context, R.string.scene223prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene223choice1), 228),
-                Choice(getString(context, R.string.scene223choice2), 228),
-                Choice(getString(context, R.string.scene223choice3), 227),
-                Choice(getString(context, R.string.scene223choice4), 224))
+            val prompts = getPrompt(R.string.scene223prompt)
+            val choices = listOf(getChoice(R.string.scene223choice1, 228),
+                getChoice(R.string.scene223choice2, 228),
+                getChoice(R.string.scene223choice3, 227),
+                getChoice(R.string.scene223choice4, 224))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 224)
         {
-            val prompts = listOf(getString(context, R.string.scene224prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene224choice1), 228),
-                Choice(getString(context, R.string.scene224choice2), 231),
-                Choice(getString(context, R.string.scene224choice3), 227),
-                Choice(getString(context, R.string.scene224choice4), 223))
+            val prompts = getPrompt(R.string.scene224prompt)
+            val choices = listOf(getChoice(R.string.scene224choice1, 228),
+                getChoice(R.string.scene224choice2, 231),
+                getChoice(R.string.scene224choice3, 227),
+                getChoice(R.string.scene224choice4, 223))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 225)
         {
-            val prompts = listOf(getString(context, R.string.scene225prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene225choice), 226))
+            val prompts = getPrompt(R.string.scene225prompt)
+            val choices = listOf(getChoice(R.string.scene225choice, 226))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 226)
         {
-            val prompts = listOf(getString(context, R.string.scene226prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene226choice1), 227),
-                Choice(getString(context, R.string.scene226choice2), 232),
-                Choice(getString(context, R.string.scene226choice3), 187))
+            val prompts = getPrompt(R.string.scene226prompt)
+            val choices = listOf(getChoice(R.string.scene226choice1, 227),
+                getChoice(R.string.scene226choice2, 232),
+                getChoice(R.string.scene226choice3, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 227)
         {
-            val prompts = listOf(getString(context, R.string.scene227prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene227choice1), 228),
-                Choice(getString(context, R.string.scene227choice2), 232),
-                Choice(getString(context, R.string.scene227choice3), 187))
+            val prompts = getPrompt(R.string.scene227prompt)
+            val choices = listOf(getChoice(R.string.scene227choice1, 228),
+                getChoice(R.string.scene227choice2, 232),
+                getChoice(R.string.scene227choice3, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 228)
         {
-            val prompts = listOf(getString(context, R.string.scene228prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene228choice1), 229),
-                Choice(getString(context, R.string.scene228choice2), 187))
+            val prompts = getPrompt(R.string.scene228prompt)
+            val choices = listOf(getChoice(R.string.scene228choice1, 229),
+                getChoice(R.string.scene228choice2, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 229)
         {
-            val prompts = listOf(getString(context, R.string.scene229prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene229choice1), 230),
-                Choice(getString(context, R.string.scene229choice2), 187))
+            val prompts = getPrompt(R.string.scene229prompt)
+            val choices = listOf(getChoice(R.string.scene229choice1, 230),
+                getChoice(R.string.scene229choice2, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 230)
         {
-            val prompts = listOf(getString(context, R.string.scene230prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene230choice1),
-                233,
-                { state.addScore(Element.REDEMPTION) },
-                Element.REDEMPTION),
-                Choice(getString(context, R.string.scene230choice2),
-                    234,
-                    { state.addScore(Element.LUXOR) },
-                    Element.LUXOR),
-                Choice(getString(context, R.string.scene230choice3),
-                    187,
-                    { state.addScore(Element.ROTTEN) },
-                    Element.ROTTEN))
+            val prompts = getPrompt(R.string.scene230prompt)
+            val choices = listOf(getChoice(R.string.scene230choice1, 233, Element.REDEMPTION),
+                getChoice(R.string.scene230choice2, 234, Element.LUXOR),
+                getChoice(R.string.scene230choice3, 187, Element.ROTTEN))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 231)
         {
-            val prompts = listOf(getString(context, R.string.scene231prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene231choice1), 228),
-                Choice(getString(context, R.string.scene231choice2), 227),
-                Choice(getString(context, R.string.scene231choice3), 225),
-                Choice(getString(context, R.string.scene231choice4), 187))
+            val prompts = getPrompt(R.string.scene231prompt)
+            val choices = listOf(getChoice(R.string.scene231choice1, 228),
+                getChoice(R.string.scene231choice2, 227),
+                getChoice(R.string.scene231choice3, 225),
+                getChoice(R.string.scene231choice4, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 232)
         {
-            val prompts = listOf(getString(context, R.string.scene232prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene232choice1), 228),
-                Choice(getString(context, R.string.scene232choice2), 227),
-                Choice(getString(context, R.string.scene232choice3), 225),
-                Choice(getString(context, R.string.scene232choice4), 187))
+            val prompts = getPrompt(R.string.scene232prompt)
+            val choices = listOf(getChoice(R.string.scene232choice1, 228),
+                getChoice(R.string.scene232choice2, 227),
+                getChoice(R.string.scene232choice3, 225),
+                getChoice(R.string.scene232choice4, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 233)
         {
-            val prompts = listOf(getString(context, R.string.scene233prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene233choice), 187))
+            val prompts = getPrompt(R.string.scene233prompt)
+            val choices = listOf(getChoice(R.string.scene233choice, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 234)
         {
-            val prompts = listOf(getString(context, R.string.scene234prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene234choice), 187))
+            val prompts = getPrompt(R.string.scene234prompt)
+            val choices = listOf(getChoice(R.string.scene234choice, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_mad_prophet,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 235)
         {
@@ -2299,14 +2240,12 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene235prompt1) + " " + Gender.getNickname4(
                     context,
                     state.gender) + " " + getString(context, R.string.scene235prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene235choice1),
-                196,
-                { state.addScore(Element.AERO) },
-                Element.AERO), Choice(getString(context, R.string.scene235choice2), 187))
+            val choices = listOf(getChoice(R.string.scene235choice1, 196, Element.AERO),
+                getChoice(R.string.scene235choice2, 187))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 236)
         {
@@ -2314,43 +2253,40 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene236prompt1) + " " + Gender.getNickname2(
                     context,
                     state.gender) + " " + getString(context, R.string.scene236prompt2))
-
-            val choices: List<Choice>
-
-            //If we have spoken to dad and have the amulet to sell
+            val choices: List<Choice> //If we have spoken to dad and have the amulet to sell
             if (state.getQuestStage(Quest.SELL_AMULET) == 1)
             {
-                choices = listOf(Choice(getString(context, R.string.scene236choice1), 237),
-                    Choice(getString(context, R.string.scene236choice2), 238))
+                choices = listOf(getChoice(R.string.scene236choice1, 237),
+                    getChoice(R.string.scene236choice2, 238))
             } //if(state.getQuestStage(Quest.SELL_AMULET) == 0)
             //default branch where we haven't met dad yet
             else
             {
-                choices = listOf(Choice(getString(context, R.string.scene236choice1), 237))
+                choices = listOf(getChoice(R.string.scene236choice1, 237))
             }
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.fade_in,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 237)
         {
-            val prompts = listOf(getString(context, R.string.scene237prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene237choice), 79))
+            val prompts = getPrompt(R.string.scene237prompt)
+            val choices = listOf(getChoice(R.string.scene237choice, 79))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 238)
         {
-            val prompts = listOf(getString(context, R.string.scene238prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene238choice1), 239),
-                Choice(getString(context, R.string.scene238choice2), 240, state, Element.UMBRAL))
+            val prompts = getPrompt(R.string.scene238prompt)
+            val choices = listOf(getChoice(R.string.scene238choice1, 239),
+                getChoice(R.string.scene238choice2, 240, Element.UMBRAL))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 239)
         {
@@ -2358,94 +2294,90 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene239prompt1) + " " + Gender.getNickname2(
                     context,
                     state.gender) + " " + getString(context, R.string.scene239prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene239choice1),
-                241) { state.addGold(20) },
-                Choice(getString(context, R.string.scene239choice2), 242))
+            val choices = listOf(getChoice(R.string.scene239choice1, 241) { state.addGold(20) },
+                getChoice(R.string.scene239choice2, 242))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 240)
         {
-            val prompts = listOf(getString(context, R.string.scene240prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene240choice1), 243),
-                Choice(getString(context, R.string.scene240choice2), 242),
-                Choice(getString(context, R.string.scene240choice3), 187))
+            val prompts = getPrompt(R.string.scene240prompt)
+            val choices = listOf(getChoice(R.string.scene240choice1, 243),
+                getChoice(R.string.scene240choice2, 242),
+                getChoice(R.string.scene240choice3, 187))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 241)
         {
-            val prompts = listOf(getString(context, R.string.scene241prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene241choice1), 243),
-                Choice(getString(context, R.string.scene241choice2), 244),
-                Choice(getString(context, R.string.scene241choice3), 247),
-                Choice(getString(context, R.string.scene241choice4), 187))
+            val prompts = getPrompt(R.string.scene241prompt)
+            val choices = listOf(getChoice(R.string.scene241choice1, 243),
+                getChoice(R.string.scene241choice2, 244),
+                getChoice(R.string.scene241choice3, 247),
+                getChoice(R.string.scene241choice4, 187))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 242)
         {
-            val prompts = listOf(getString(context, R.string.scene242prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene242choice1),
+            val prompts = getPrompt(R.string.scene242prompt)
+            val choices = listOf(getChoice(R.string.scene242choice1,
                 245) { state.addGold(22);state.setQuestStage(Quest.SELL_AMULET, 2) },
-                Choice(getString(context, R.string.scene242choice2), 246) {
+                getChoice(R.string.scene242choice2, 246) {
                     state.setQuestStage(Quest.SELL_AMULET, 6)
                 })
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 243)
         {
-            val prompts = listOf(getString(context, R.string.scene243prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene243choice1), 250))
+            val prompts = getPrompt(R.string.scene243prompt)
+            val choices = listOf(getChoice(R.string.scene243choice1, 250))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 244)
         {
-            val prompts = listOf(getString(context, R.string.scene244prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene244choice1), 248) {
+            val prompts = getPrompt(R.string.scene244prompt)
+            val choices = listOf(getChoice(R.string.scene244choice1, 248) {
                 state.removeGold(20);state.setQuestStage(Quest.EXPLORE, 3)
-            }, Choice(getString(context, R.string.scene244choice2), 249))
+            }, getChoice(R.string.scene244choice2, 249))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 245)
         {
-            val prompts = listOf(getString(context, R.string.scene245prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene245choice1), 243),
-                Choice(getString(context, R.string.scene245choice2), 244),
-                Choice(getString(context, R.string.scene245choice3), 247, state, Element.STORM),
-                Choice(getString(context, R.string.scene245choice4), 79))
+            val prompts = getPrompt(R.string.scene245prompt)
+            val choices = listOf(getChoice(R.string.scene245choice1, 243),
+                getChoice(R.string.scene245choice2, 244),
+                getChoice(R.string.scene245choice3, 247, Element.STORM),
+                getChoice(R.string.scene245choice4, 79))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 246)
         {
-            val prompts = listOf(getString(context, R.string.scene246prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene246choice1),
-                79,
-                state,
-                Element.AERO),
-                Choice(getString(context, R.string.scene246choice2), 79, state, Element.TERRA))
+            val prompts = getPrompt(R.string.scene246prompt)
+            val choices = listOf(getChoice(R.string.scene246choice1, 79, Element.AERO),
+                getChoice(R.string.scene246choice2, 79, Element.TERRA))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 247)
         {
@@ -2453,263 +2385,240 @@ class NodeRetriever(private val context: Context, private val state: State)
                 listOf(getString(context, R.string.scene247prompt1) + " " + Gender.getNickname2(
                     context,
                     state.gender) + " " + getString(context, R.string.scene247prompt2))
-            val choices = listOf(Choice(getString(context, R.string.scene247choice1), 249),
-                Choice(getString(context, R.string.scene247choice2), 79))
+            val choices = listOf(getChoice(R.string.scene247choice1, 249),
+                getChoice(R.string.scene247choice2, 79))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 248)
         {
-            val prompts = listOf(getString(context, R.string.scene248prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene248choice1),
-                79,
-                state,
-                Element.AERO),
-                Choice(getString(context, R.string.scene248choice2), 79, state, Element.TERRA))
+            val prompts = getPrompt(R.string.scene248prompt)
+            val choices = listOf(getChoice(R.string.scene248choice1, 79, Element.AERO),
+                getChoice(R.string.scene248choice2, 79, Element.TERRA))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 249)
         {
-            val prompts = listOf(getString(context, R.string.scene249prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene249choice1), 243),
-                Choice(getString(context, R.string.scene249choice2), 244),
-                Choice(getString(context, R.string.scene249choice3), 247),
-                Choice(getString(context, R.string.scene249choice4), 79))
+            val prompts = getPrompt(R.string.scene249prompt)
+            val choices = listOf(getChoice(R.string.scene249choice1, 243),
+                getChoice(R.string.scene249choice2, 244),
+                getChoice(R.string.scene249choice3, 247),
+                getChoice(R.string.scene249choice4, 79))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 250)
         {
-            val prompts = listOf(getString(context, R.string.scene250prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene250choice1), 243),
-                Choice(getString(context, R.string.scene250choice2), 244),
-                Choice(getString(context, R.string.scene250choice3), 247),
-                Choice(getString(context, R.string.scene250choice4), 79))
+            val prompts = getPrompt(R.string.scene250prompt)
+            val choices = listOf(getChoice(R.string.scene250choice1, 243),
+                getChoice(R.string.scene250choice2, 244),
+                getChoice(R.string.scene250choice3, 247),
+                getChoice(R.string.scene250choice4, 79))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
                 R.id.background_center))
-            return Node(index, prompts, choices, animations, context)
+            return getNode(index, prompts, choices, animations)
         }
         if (index == 251)
         {
-            val choices = listOf(Choice(getString(context, R.string.scene251choice1), 254),
-                Choice(getString(context, R.string.scene251choice2), 255),
-                Choice(getString(context, R.string.scene251choice3), 256),
-                Choice(getString(context, R.string.scene251choice4), 257),
-                Choice(getString(context, R.string.scene251choice5), 79))
+            val choices = listOf(getChoice(R.string.scene251choice1, 254),
+                getChoice(R.string.scene251choice2, 255),
+                getChoice(R.string.scene251choice3, 256),
+                getChoice(R.string.scene251choice4, 257),
+                getChoice(R.string.scene251choice5, 79))
             if (state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 2)
             {
-                val prompts = listOf(getString(context, R.string.scene251alt1prompt))
-                return getMichaelChurchNode(index, prompts, choices)
+                return getMichaelChurchNode(index, getPrompt(R.string.scene251alt1prompt), choices)
             }
-            val prompts = listOf(getString(context, R.string.scene251prompt))
-            return getMichaelChurchNode(index, prompts, choices)
+            return getMichaelChurchNode(index, getPrompt(R.string.scene251prompt), choices)
         }
         if (index == 252)
         {
-            val prompts = listOf(getString(context, R.string.scene252prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene252choice1),
-                258,
-                state,
-                Element.PYRO),
-                Choice(getString(context, R.string.scene252choice2), 258, state, Element.LUXOR),
-                Choice(getString(context, R.string.scene252choice3), 258, state, Element.UMBRAL),
-                Choice(getString(context, R.string.scene252choice4), 79))
+            val prompts = getPrompt(R.string.scene252prompt)
+            val choices = listOf(getChoice(R.string.scene252choice1, 258, Element.PYRO),
+                getChoice(R.string.scene252choice2, 258, Element.LUXOR),
+                getChoice(R.string.scene252choice3, 258, Element.UMBRAL),
+                getChoice(R.string.scene252choice4, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 253)
         {
-            val prompts = listOf(getString(context, R.string.scene253prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene253choice1),
-                259,
-                state,
-                Element.TERRA),
-                Choice(getString(context, R.string.scene253choice2), 260, state, Element.UMBRAL),
-                Choice(getString(context, R.string.scene253choice3), 259, state, Element.LUXOR))
+            val prompts = getPrompt(R.string.scene253prompt)
+            val choices = listOf(getChoice(R.string.scene253choice1, 259, Element.TERRA),
+                getChoice(R.string.scene253choice2, 260, Element.UMBRAL),
+                getChoice(R.string.scene253choice3, 259, Element.LUXOR))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 254)
         {
-            val prompts = listOf(getString(context, R.string.scene254prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene254choice1), 261),
-                Choice(getString(context, R.string.scene254choice2), 255),
-                Choice(getString(context, R.string.scene254choice3), 256),
-                Choice(getString(context, R.string.scene254choice4), 257),
-                Choice(getString(context, R.string.scene254choice5), 79))
+            val prompts = getPrompt(R.string.scene254prompt)
+            val choices = listOf(getChoice(R.string.scene254choice1, 261),
+                getChoice(R.string.scene254choice2, 255),
+                getChoice(R.string.scene254choice3, 256),
+                getChoice(R.string.scene254choice4, 257),
+                getChoice(R.string.scene254choice5, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 255)
         {
-            val prompts = listOf(getString(context, R.string.scene255prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene255choice), 262))
+            val prompts = getPrompt(R.string.scene255prompt)
+            val choices = listOf(getChoice(R.string.scene255choice, 262))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 256)
         {
-            val prompts = listOf(getString(context, R.string.scene256prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene256choice), 264))
+            val prompts = getPrompt(R.string.scene256prompt)
+            val choices = listOf(getChoice(R.string.scene256choice, 264))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 257)
         {
-            val prompts = listOf(getString(context, R.string.scene257prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene257choice1), 254),
-                Choice(getString(context, R.string.scene257choice2), 261),
-                Choice(getString(context, R.string.scene257choice3), 255),
-                Choice(getString(context, R.string.scene257choice4), 256),
-                Choice(getString(context, R.string.scene257choice5), 79))
+            val prompts = getPrompt(R.string.scene257prompt)
+            val choices = listOf(getChoice(R.string.scene257choice1, 254),
+                getChoice(R.string.scene257choice2, 261),
+                getChoice(R.string.scene257choice3, 255),
+                getChoice(R.string.scene257choice4, 256),
+                getChoice(R.string.scene257choice5, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 258)
         {
-            val prompts = listOf(getString(context, R.string.scene258prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene258choice1),
-                80,
-                state,
-                Element.UMBRAL),
-                Choice(getString(context, R.string.scene258choice2), 80, state, Element.ANGEL),
-                Choice(getString(context, R.string.scene258choice3), 80, state, Element.TERRA))
+            val prompts = getPrompt(R.string.scene258prompt)
+            val choices = listOf(getChoice(R.string.scene258choice1, 80, Element.UMBRAL),
+                getChoice(R.string.scene258choice2, 80, Element.ANGEL),
+                getChoice(R.string.scene258choice3, 80, Element.TERRA))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 259)
         {
-            val prompts = listOf(getString(context, R.string.scene259prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene259choice1), 93),
-                Choice(getString(context, R.string.scene259choice2), 94),
-                Choice(getString(context, R.string.scene259choice3), 251),
-                Choice(getString(context, R.string.scene259choice4), 252),
-                Choice(getString(context, R.string.scene259choice5), 79))
+            val prompts = getPrompt(R.string.scene259prompt)
+            val choices = listOf(getChoice(R.string.scene259choice1, 93),
+                getChoice(R.string.scene259choice2, 94),
+                getChoice(R.string.scene259choice3, 251),
+                getChoice(R.string.scene259choice4, 252),
+                getChoice(R.string.scene259choice5, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 260)
         {
-            val prompts = listOf(getString(context, R.string.scene260prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene260choice), 79))
+            val prompts = getPrompt(R.string.scene260prompt)
+            val choices = listOf(getChoice(R.string.scene260choice, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 261)
         {
-            val prompts = listOf(getString(context, R.string.scene261prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene261choice1),
-                265,
-                state,
-                Element.JUSTICE),
-                Choice(getString(context, R.string.scene261choice2), 266, state, Element.LUNAR),
-                Choice(getString(context, R.string.scene261choice3),
-                    267,
-                    state,
-                    Element.COMPASSION),
-                Choice(getString(context, R.string.scene261choice4), 268, state, Element.ANGEL),
-                Choice(getString(context, R.string.scene261choice5),
-                    269,
-                    state,
-                    Element.REDEMPTION),
-                Choice(getString(context, R.string.scene261choice6), 270))
+            val prompts = getPrompt(R.string.scene261prompt)
+            val choices = listOf(getChoice(R.string.scene261choice1, 265, Element.JUSTICE),
+                getChoice(R.string.scene261choice2, 266, Element.LUNAR),
+                getChoice(R.string.scene261choice3, 267, Element.COMPASSION),
+                getChoice(R.string.scene261choice4, 268, Element.ANGEL),
+                getChoice(R.string.scene261choice5, 269, Element.REDEMPTION),
+                getChoice(R.string.scene261choice6, 270))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 262)
         {
-            val prompts = listOf(getString(context, R.string.scene262prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene262choice), 263))
+            val prompts = getPrompt(R.string.scene262prompt)
+            val choices = listOf(getChoice(R.string.scene262choice, 263))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 263)
         {
-            val prompts = listOf(getString(context, R.string.scene263prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene263choice1), 254),
-                Choice(getString(context, R.string.scene263choice2), 255),
-                Choice(getString(context, R.string.scene263choice3), 256),
-                Choice(getString(context, R.string.scene263choice4), 257),
-                Choice(getString(context, R.string.scene263choice5), 79))
+            val prompts = getPrompt(R.string.scene263prompt)
+            val choices = listOf(getChoice(R.string.scene263choice1, 254),
+                getChoice(R.string.scene263choice2, 255),
+                getChoice(R.string.scene263choice3, 256),
+                getChoice(R.string.scene263choice4, 257),
+                getChoice(R.string.scene263choice5, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 264)
         {
-            val prompts = listOf(getString(context, R.string.scene264prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene264choice1), 254),
-                Choice(getString(context, R.string.scene264choice2), 261),
-                Choice(getString(context, R.string.scene264choice3), 255),
-                Choice(getString(context, R.string.scene264choice4), 257),
-                Choice(getString(context, R.string.scene264choice5), 79))
+            val prompts = getPrompt(R.string.scene264prompt)
+            val choices = listOf(getChoice(R.string.scene264choice1, 254),
+                getChoice(R.string.scene264choice2, 261),
+                getChoice(R.string.scene264choice3, 255),
+                getChoice(R.string.scene264choice4, 257),
+                getChoice(R.string.scene264choice5, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 265)
         {
-            val prompts = listOf(getString(context, R.string.scene265prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene265choice1), 261),
-                Choice(getString(context, R.string.scene265choice2), 60),
-                Choice(getString(context, R.string.scene265choice3), 79))
+            val prompts = getPrompt(R.string.scene265prompt)
+            val choices = listOf(getChoice(R.string.scene265choice1, 261),
+                getChoice(R.string.scene265choice2, 60),
+                getChoice(R.string.scene265choice3, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 266)
         {
-            val prompts = listOf(getString(context, R.string.scene266prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene266choice1), 271))
+            val prompts = getPrompt( R.string.scene266prompt)
+            val choices = listOf(getChoice(R.string.scene266choice1, 271))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 267)
         {
-            val prompts = listOf(getString(context, R.string.scene267prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene267choice), 272))
+            val prompts = getPrompt(R.string.scene267prompt)
+            val choices = listOf(getChoice(R.string.scene267choice, 272))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 268)
         {
-            val prompts = listOf(getString(context, R.string.scene268prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene268choice1), 273))
+            val prompts = getPrompt(R.string.scene268prompt)
+            val choices = listOf(getChoice(R.string.scene268choice1, 273))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 269)
         {
-            val prompts = listOf(getString(context, R.string.scene269prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene269choice1), 274))
+            val prompts = getPrompt(R.string.scene269prompt)
+            val choices = listOf(getChoice(R.string.scene269choice1, 274))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 270)
         {
-            val prompts = listOf(getString(context, R.string.scene270prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene270choice1), 261),
-                Choice(getString(context, R.string.scene270choice2), 80),
-                Choice(getString(context, R.string.scene270choice3), 79))
+            val prompts = getPrompt(R.string.scene270prompt)
+            val choices = listOf(getChoice(R.string.scene270choice1, 261),
+                getChoice(R.string.scene270choice2, 80),
+                getChoice(R.string.scene270choice3, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 271)
         {
-            val prompts = listOf(getString(context, R.string.scene271prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene271choice1), 261),
-                Choice(getString(context, R.string.scene271choice2), 80),
-                Choice(getString(context, R.string.scene271choice3), 79))
+            val prompts = getPrompt(R.string.scene271prompt)
+            val choices = listOf(getChoice(R.string.scene271choice1, 261),
+                getChoice(R.string.scene271choice2, 80),
+                getChoice(R.string.scene271choice3, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 272)
         {
-            val prompts = listOf(getString(context, R.string.scene272prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene272choice1), 261),
-                Choice(getString(context, R.string.scene272choice2), 80),
-                Choice(getString(context, R.string.scene272choice3), 79))
+            val prompts = getPrompt(R.string.scene272prompt)
+            val choices = listOf(getChoice(R.string.scene272choice1, 261),
+                getChoice(R.string.scene272choice2, 80),
+                getChoice(R.string.scene272choice3, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 273)
         {
-            val prompts = listOf(getString(context, R.string.scene273prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene273choice1), 261),
-                Choice(getString(context, R.string.scene273choice2), 80),
-                Choice(getString(context, R.string.scene274choice3), 79))
+            val prompts = getPrompt(R.string.scene273prompt)
+            val choices = listOf(getChoice(R.string.scene273choice1, 261),
+                getChoice(R.string.scene273choice2, 80),
+                getChoice(R.string.scene274choice3, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 274)
         {
-            val prompts = listOf(getString(context, R.string.scene274prompt))
-            val choices = listOf(Choice(getString(context, R.string.scene274choice1), 261),
-                Choice(getString(context, R.string.scene274choice2), 80),
-                Choice(getString(context, R.string.scene274choice3), 79))
+            val prompts = getPrompt(R.string.scene274prompt)
+            val choices = listOf(getChoice(R.string.scene274choice1, 261),
+                getChoice(R.string.scene274choice2, 80),
+                getChoice(R.string.scene274choice3, 79))
             return getMichaelChurchNode(index, prompts, choices)
         }
         else
@@ -2800,6 +2709,12 @@ class NodeRetriever(private val context: Context, private val state: State)
     private fun getChoice(stringId: Int, nextNodeIndex: Int): Choice
     {
         return Choice(getString(context, stringId), nextNodeIndex)
+    }
+
+    private fun getChoice(
+        stringId: Int, nextNodeIndex: Int, stateChange: (State) -> Unit = {}): Choice
+    {
+        return Choice(getString(context, stringId), nextNodeIndex, stateChange)
     }
 
     private fun getPrompt(stringId: Int): List<String>
