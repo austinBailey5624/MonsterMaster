@@ -12,6 +12,7 @@ import androidx.core.content.ContextCompat.getString
  */
 enum class Quest
 {
+//Note remember when adding to this enum to update the corresponding queststage in state
     CHORES,AMNESIA,KYLER_REDEMPTION,MORNS_ERRAND,WRITING_LESSON,SELL_AMULET,EXPLORE,
     MICHAEL_ATTITUDE;
 

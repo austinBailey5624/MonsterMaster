@@ -3,7 +3,6 @@ package com.greenwolfgames.monstermaster
 import android.content.Context
 import android.util.Log
 import android.widget.ImageView
-import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.getString
 
 /**
@@ -17,7 +16,9 @@ class NodeRetriever(private val context: Context, private val state: State)
 {
     fun getNode(index: Int): Node
     {
-        state.visitNode(index) //Choose Between light or dark
+        Log.d("Node retrieval","Retrieving node $index")
+        Log.d("MichaelAttitude: ", state.getQuestStage(Quest.MICHAEL_ATTITUDE).toString())
+        //Choose Between light or dark
         if (index == 1)
         {
             val prompts = listOf(getString(context, R.string.scene1item1),
@@ -815,15 +816,15 @@ class NodeRetriever(private val context: Context, private val state: State)
                     R.string.scene80prompt2))
                 val choices = listOf(Choice(getString(context, R.string.scene80choice1), 81, {
                     state.addScore(Element.PYRO);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 4)
-                }, Element.PYRO), Choice(getString(context, R.string.scene80choice2), 82, {
+                }, Element.PYRO, false), Choice(getString(context, R.string.scene80choice2), 82, {
                     state.addScore(Element.AQUA);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 2)
-                }, Element.AQUA), Choice(getString(context, R.string.scene80choice3), 83, {
+                }, Element.AQUA, false), Choice(getString(context, R.string.scene80choice3), 83, {
                     state.addScore(Element.TERRA);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 1)
-                }, Element.TERRA), Choice(getString(context, R.string.scene80choice4), 84, {
+                }, Element.TERRA, false), Choice(getString(context, R.string.scene80choice4), 84, {
                     state.addScore(Element.LUXOR);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 3)
-                }, Element.LUXOR), Choice(getString(context, R.string.scene80choice5), 85, {
+                }, Element.LUXOR, false), Choice(getString(context, R.string.scene80choice5), 85, {
                     state.addScore(Element.UMBRAL);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 4)
-                }, Element.UMBRAL))
+                }, Element.UMBRAL, false))
                 return getMichaelChurchNode(index, prompts, choices)
             }
         }
@@ -863,13 +864,14 @@ class NodeRetriever(private val context: Context, private val state: State)
             val choices = listOf(Choice(getString(context, R.string.scene85choice1),
                 90,
                 { state.addScore(Element.STORM) },
-                Element.STORM), Choice(getString(context, R.string.scene85choice2), 91) {
+                Element.STORM,
+                false), Choice(getString(context, R.string.scene85choice2), 91, {
                 state.setQuestStage(Quest.KYLER_REDEMPTION, 1)
-            }, Choice(getString(context, R.string.scene85choice3), 87) {
+            }, Element.NEUTRAL, false), Choice(getString(context, R.string.scene85choice3), 87, {
                 state.setQuestStage(Quest.KYLER_REDEMPTION, 1)
-            }, Choice(getString(context, R.string.scene85choice4), 92, {
+            }, Element.NEUTRAL, false), Choice(getString(context, R.string.scene85choice4), 92, {
                 state.addScore(Element.UMBRAL);state.setQuestStage(Quest.KYLER_REDEMPTION, 1)
-            }, Element.UMBRAL))
+            }, Element.UMBRAL, false))
             return getMichaelChurchNode(index, prompts, choices)
         }
         if (index == 86)
@@ -999,9 +1001,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         }
         if (index == 100)
         {
-            val prompts = listOf(getString(context, R.string.scene100prompt1) + Gender.getNickname1(
-                context,
-                state.gender) + getString(context, R.string.scene100prompt2))
+            val prompts = getPrompt(R.string.scene100prompt)
             val choices = listOf(getChoice(R.string.scene100choice, 79))
             return getFatherChurchNode(index, prompts, choices)
         }
@@ -1342,11 +1342,15 @@ class NodeRetriever(private val context: Context, private val state: State)
         {
             val prompts = getPrompt(R.string.scene145prompt)
             val choices = listOf(Choice(getString(context, R.string.scene145choice1),
-                137) { state.setChoresStage_WritingLessonFinished() },
+                137,
+                { state.setChoresStage_WritingLessonFinished() },
+                Element.AMPHIBIOUS,
+                false),
                 Choice(getString(context, R.string.scene145choice1),
                     146,
                     { state.addScore(Element.LAVA);state.setChoresStage_WritingLessonFinished() },
-                    Element.LAVA))
+                    Element.LAVA,
+                    false))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 146)
@@ -2559,7 +2563,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         }
         if (index == 266)
         {
-            val prompts = getPrompt( R.string.scene266prompt)
+            val prompts = getPrompt(R.string.scene266prompt)
             val choices = listOf(getChoice(R.string.scene266choice1, 271))
             return getMichaelChurchNode(index, prompts, choices)
         }
@@ -2625,7 +2629,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         {
             val prompts = listOf("Whoops! please tell Austin theres an issue with node: " + index)
             val choices = listOf(Choice("Go back to Oaktree", 79))
-            return Node(index, prompts, choices, listOf(), context)
+            return getNode(index, prompts, choices, listOf())
         }
     }
 
@@ -2653,6 +2657,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                 ImageView.ScaleType.FIT_CENTER))
     }
 
+    //@formatter:off
     private fun getMichaelChurchNode(
         index: Int, prompts: List<String>, choices: List<Choice>): Node
     {
@@ -2660,7 +2665,7 @@ class NodeRetriever(private val context: Context, private val state: State)
             R.anim.fade_in_fast,
             R.id.background_center),
             AnimationInfo(R.drawable.character_michael_profile,
-                R.anim.fade_in_fast,
+                if(index==80){R.anim.fade_in_fast}else{R.anim.appear},
                 R.id.background_center))
         return getNode(index, prompts, choices, animations)
     }
@@ -2672,7 +2677,7 @@ class NodeRetriever(private val context: Context, private val state: State)
             R.anim.fade_in_fast,
             R.id.background_center),
             AnimationInfo(R.drawable.character_chuck_profile,
-                R.anim.fade_in_fast,
+                if(index == 91) {R.anim.fade_in_fast} else {R.anim.appear},
                 R.id.background_center))
         return getNode(index, prompts, choices, animations)
     }
@@ -2684,10 +2689,11 @@ class NodeRetriever(private val context: Context, private val state: State)
             R.anim.fade_in_fast,
             R.id.background_center),
             AnimationInfo(R.drawable.character_brahm_profile,
-                R.anim.fade_in_fast,
+                if (index == 102) { R.anim.fade_in_fast }else{R.anim.appear},
                 R.id.background_center))
         return getNode(index, prompts, choices, animations)
     }
+    //formatter:on
 
     private fun getGateNode(
         index: Int, prompts: List<String>, choices: List<Choice>): Node
@@ -2725,7 +2731,7 @@ class NodeRetriever(private val context: Context, private val state: State)
     private fun getNode(
         index: Int, prompt: List<String>, choices: List<Choice>, element: Element): Node
     {
-        return Node(index, prompt, choices, element, context)
+        return Node(index, prompt, choices, element, context, state)
     }
 
     private fun getNode(
@@ -2734,7 +2740,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         choices: List<Choice>,
         animations: List<AnimationInfo>): Node
     {
-        return Node(index, prompt, choices, Element.NEUTRAL, animations, context)
+        return Node(index, prompt, choices, Element.NEUTRAL, animations, context, state)
     }
 
     private fun getNode(
@@ -2744,6 +2750,6 @@ class NodeRetriever(private val context: Context, private val state: State)
         animations: List<AnimationInfo>,
         element: Element): Node
     {
-        return Node(index, prompt, choices, element, animations, context)
+        return Node(index, prompt, choices, element, animations, context, state)
     }
 }

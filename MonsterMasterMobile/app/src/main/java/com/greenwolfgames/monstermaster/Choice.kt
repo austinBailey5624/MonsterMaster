@@ -7,11 +7,10 @@ package com.greenwolfgames.monstermaster
  *
  * @Copyright Austin Bailey 2024 All Rights Reserved
  */
-open class Choice(val text: String, val nextNodeIndex: Int, val stateChange: (State) -> Unit = {}, val element: Element) {
-    constructor(text: String, nextNodeIndex: Int) : this(text, nextNodeIndex, {}, Element.NEUTRAL)
-    constructor(text: String, nextNodeIndex: Int, stateChange: (State) -> Unit = {}) : this(text, nextNodeIndex,stateChange, Element.NEUTRAL )
-    constructor(text: String, nextNodeIndex: Int, state: State, element: Element) : this(text, nextNodeIndex, getStateChange(state,element), element)
-
+open class Choice(val text: String, val nextNodeIndex: Int, var stateChange: (State) -> Unit = {}, val element: Element, val shouldChangeStateOnRevisit: Boolean) {
+    constructor(text: String, nextNodeIndex: Int) : this(text, nextNodeIndex, {}, Element.NEUTRAL, true)
+    constructor(text: String, nextNodeIndex: Int, stateChange: (State) -> Unit = {}) : this(text, nextNodeIndex,stateChange, Element.NEUTRAL, true )
+    constructor(text: String, nextNodeIndex: Int, state: State, element: Element) : this(text, nextNodeIndex, getStateChange(state,element), element, false )
 
     companion object
     {

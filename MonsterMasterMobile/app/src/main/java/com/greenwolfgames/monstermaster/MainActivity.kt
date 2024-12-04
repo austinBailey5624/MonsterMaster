@@ -216,7 +216,7 @@ class MainActivity : AppCompatActivity()
     )
     {
         Log.d("MainActivity.Set Node", "Setting node index: " + nextNode.index)
-
+        state.visitNode(nextNode.index)
         setText(nextNode.prompt, texts)
         setButtons(nextNode, buttons, state, texts, images, textInput)
         setTextInput(nextNode, textInput)
@@ -306,10 +306,10 @@ class MainActivity : AppCompatActivity()
             }
             return
         }
-        Log.d(
-            "MainActivity Text Layout",
-            "\n  parentID:" + R.id.background_top + "\n" + "  text 1 ID: " + R.id.text_1 + "\n" + "  text 2 ID: " + R.id.text_2 + "\n" + "  text 3 ID: " + R.id.text_3 + "\n" + "  text 4 ID: " + R.id.text_4 + "\n" + "  text 5 ID: " + R.id.text_5 + "\n" + "  text 6 ID: " + R.id.text_6 + "\n" + "  text 7 ID: " + R.id.text_7 + "\n"
-        )
+//        Log.d(
+//            "MainActivity Text Layout",
+//            "\n  parentID:" + R.id.background_top + "\n" + "  text 1 ID: " + R.id.text_1 + "\n" + "  text 2 ID: " + R.id.text_2 + "\n" + "  text 3 ID: " + R.id.text_3 + "\n" + "  text 4 ID: " + R.id.text_4 + "\n" + "  text 5 ID: " + R.id.text_5 + "\n" + "  text 6 ID: " + R.id.text_6 + "\n" + "  text 7 ID: " + R.id.text_7 + "\n"
+//        )
         for (i in texts.indices)
         {
             val layoutParams = texts[i].layoutParams as ConstraintLayout.LayoutParams
@@ -329,10 +329,10 @@ class MainActivity : AppCompatActivity()
             }
             layoutParams.bottomToTop = getTextLayout(EDirection.DOWN, texts, i, prompt.size)
             layoutParams.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
-            Log.d(
-                "MainActivity Text Layout",
-                "  text $i startToStart   : " + layoutParams.startToStart + "\n" + "  text $i startToEnd    : " + layoutParams.startToEnd + "\n" + "  text $i endToEnd      : " + layoutParams.endToEnd + "\n" + "  text $i endToStart    : " + layoutParams.endToStart + "\n" + "  text $i topToTop      : " + layoutParams.topToTop + "\n" + "  text $i topToBottom   : " + layoutParams.topToBottom + "\n" + "  text $i bottomToTop   : " + layoutParams.bottomToTop + "\n" + "  text $i bottomToBottom: " + layoutParams.bottomToBottom
-            )
+//            Log.d(
+//                "MainActivity Text Layout",
+//                "  text $i startToStart   : " + layoutParams.startToStart + "\n" + "  text $i startToEnd    : " + layoutParams.startToEnd + "\n" + "  text $i endToEnd      : " + layoutParams.endToEnd + "\n" + "  text $i endToStart    : " + layoutParams.endToStart + "\n" + "  text $i topToTop      : " + layoutParams.topToTop + "\n" + "  text $i topToBottom   : " + layoutParams.topToBottom + "\n" + "  text $i bottomToTop   : " + layoutParams.bottomToTop + "\n" + "  text $i bottomToBottom: " + layoutParams.bottomToBottom
+//            )
 
             texts[i].layoutParams = layoutParams
 
@@ -375,10 +375,10 @@ class MainActivity : AppCompatActivity()
     {
         if (index >= promptSize)
         {
-            Log.d("MainActivity Text Visibility", "text index: $index is invisible(Gone)")
+           // Log.d("MainActivity Text Visibility", "text index: $index is invisible(Gone)")
             return View.GONE
         }
-        Log.d("MainActivity Text Visibility", "text index: $index is visible")
+        //Log.d("MainActivity Text Visibility", "text index: $index is visible")
         return View.VISIBLE
     }
 
@@ -413,7 +413,7 @@ class MainActivity : AppCompatActivity()
         textInput: TextInputEditText
     )
     {
-        Log.d("MainActivity.kt.setbuttons", "choicesCount: " + node.choices.size)
+//        Log.d("MainActivity.kt.setbuttons", "choicesCount: " + node.choices.size)
 
         if (nodeRequiresTextInput(node))
         {
@@ -472,13 +472,14 @@ class MainActivity : AppCompatActivity()
     )
     {
         textInput.visibility = View.GONE //@formatter:off
-        Log.d("MainActivity.kt.setButtonFormat",  "\n parentID: " + R.id.background_bottom
-                + "\n Button 0: " + buttons[0].id
-                + "\n Button 1: " + buttons[1].id
-                + "\n Button 2: " + buttons[2].id
-                + "\n Button 3: " + buttons[3].id
-                + "\n Button 4: " + buttons[4].id
-                + "\n Button 5: " + buttons[5].id)
+        //Reenable when debugging button layout issues
+//        Log.d("MainActivity.kt.setButtonFormat",  "\n parentID: " + R.id.background_bottom
+//                + "\n Button 0: " + buttons[0].id
+//                + "\n Button 1: " + buttons[1].id
+//                + "\n Button 2: " + buttons[2].id
+//                + "\n Button 3: " + buttons[3].id
+//                + "\n Button 4: " + buttons[4].id
+//                + "\n Button 5: " + buttons[5].id)
         for(i in buttons.indices)
         {
             val layoutParams = buttons[i].layoutParams as ConstraintLayout.LayoutParams
@@ -502,18 +503,18 @@ class MainActivity : AppCompatActivity()
                     ConstraintLayout.LayoutParams.MATCH_CONSTRAINT_SPREAD
                 layoutParams.matchConstraintPercentWidth = 0f
             }
-
-            Log.d("MainActivity.setButtonFormat",
-                "\n    Current Button Index: " + i
-                        + "\n    top to top:      " + layoutParams.topToTop.toString()
-                        + "\n    top to bottom   : " + layoutParams.topToBottom.toString()
-                        + "\n    bottomToTop     : " + layoutParams.bottomToTop.toString()
-                        + "\n    bottom to bottom: " + layoutParams.bottomToBottom.toString()
-                        + "\n    start to start  : " + layoutParams.startToStart.toString()
-                        + "\n    start to end    : " + layoutParams.startToEnd.toString()
-                        + "\n    end to end      : " + layoutParams.endToEnd.toString()
-                        + "\n    end to Start    : " + layoutParams.endToStart.toString()
-            )
+//enable when troubleshooting button layout issues
+//            Log.d("MainActivity.setButtonFormat",
+//                "\n    Current Button Index: " + i
+//                        + "\n    top to top:      " + layoutParams.topToTop.toString()
+//                        + "\n    top to bottom   : " + layoutParams.topToBottom.toString()
+//                        + "\n    bottomToTop     : " + layoutParams.bottomToTop.toString()
+//                        + "\n    bottom to bottom: " + layoutParams.bottomToBottom.toString()
+//                        + "\n    start to start  : " + layoutParams.startToStart.toString()
+//                        + "\n    start to end    : " + layoutParams.startToEnd.toString()
+//                        + "\n    end to end      : " + layoutParams.endToEnd.toString()
+//                        + "\n    end to Start    : " + layoutParams.endToStart.toString()
+//            )
             //@formatter:on
             buttons[i].layoutParams = layoutParams
         }
@@ -526,12 +527,12 @@ class MainActivity : AppCompatActivity()
             if (i < choiceSize)
             {
                 buttons[i].visibility = View.VISIBLE
-                Log.d("MainActivity button Visibility", "Button $i: visible")
+               // Log.d("MainActivity button Visibility", "Button $i: visible")
             }
             else
             {
                 buttons[i].visibility = View.GONE
-                Log.d("MainActivity button Visibility", "Button $i: invisible(Gone)")
+               // Log.d("MainActivity button Visibility", "Button $i: invisible(Gone)")
             }
         }
     }
@@ -559,7 +560,7 @@ class MainActivity : AppCompatActivity()
                 var temp: String = textInput.text.toString()
                 if (temp != "")
                 {
-                    Log.d("Name Input", "Player entered Name, unrinsed version: $temp")
+//                    Log.d("Name Input", "Player entered Name, unrinsed version: $temp")
                     if (temp.length > 12)
                     {
                         temp = temp.substring(0, 12)
@@ -567,7 +568,7 @@ class MainActivity : AppCompatActivity()
                     temp.lowercase()
                     temp =
                         temp.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
-                    Log.d("Name Input", "Player enetered Name, rinsed version: $temp")
+//                    Log.d("Name Input", "Player enetered Name, rinsed version: $temp")
                     state.playerName = temp.trim()
                     node.choices[0].stateChange(state)
                     fadeOut(buttons, texts, images, node.choices[0].nextNodeIndex, state, textInput)
@@ -582,10 +583,10 @@ class MainActivity : AppCompatActivity()
             for (i in node.choices.indices)
             {
                 buttons[i].setOnClickListener() {
-                    Log.d(
-                        "Button Click Event",
-                        "Button " + i + " clicked, moving to node: " + node.choices[i].nextNodeIndex
-                    )
+//                    Log.d(
+//                        "Button Click Event",
+//                        "Button " + i + " clicked, moving to node: " + node.choices[i].nextNodeIndex
+//                    )
                     node.choices[i].stateChange(state)
                     fadeOut(buttons, texts, images, node.choices[i].nextNodeIndex, state, textInput)
                 }

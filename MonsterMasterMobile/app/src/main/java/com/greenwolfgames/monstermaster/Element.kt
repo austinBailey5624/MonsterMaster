@@ -73,7 +73,7 @@ enum class Element {
                 PHOENIX -> R.color.yellowOrange
                 SEABREEZE -> R.color.lightCyanBlue
                 BIRD -> R.color.forestGreen
-                AERO -> R.color.yellow
+                AERO -> R.color.darkishYellow
                 COCKA -> R.color.darkYellow
                 NIGHTWING -> R.color.black
 
@@ -125,7 +125,7 @@ enum class Element {
                 PHOENIX -> R.color.redOrange
                 SEABREEZE -> R.color.lighterBlue
                 BIRD -> R.color.greenYellow
-                AERO -> R.color.darkYellow
+                AERO -> R.color.yellow
                 COCKA -> R.color.white
                 NIGHTWING -> R.color.yellow
 

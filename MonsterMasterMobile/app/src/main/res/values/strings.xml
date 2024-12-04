@@ -443,8 +443,7 @@
     <string name="scene99prompt">*A tear slips from his eye*\n She doesn\'t need it anymore. I kept this thinking she would come back, and I need to let it go.</string>
     <string name="scene99choice1">Okay, I\'ll do it</string><!--98-->
     <string name="scene99choice2">No. I\'ll find the money some other way</string><!--100-->
-    <string name="scene100prompt1">Let her go </string>
-    <string name="scene100prompt2">, she let us go a long time ago.</string>
+    <string name="scene100prompt">That may be true for now, but you will learn that real freedom is found in providing for others. Helping others is what gives life meaning</string>
     <string name="scene100choice">Leave</string><!--79-->
     <string name="scene101prompt">Then you will only ever comprehend part of the mystery, and will be poorer for it. Now how can I help you today?</string>
     <string name="scene101choice1">I\'m here to see my dad</string><!--86-->
