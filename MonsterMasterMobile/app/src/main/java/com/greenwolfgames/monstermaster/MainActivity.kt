@@ -1,6 +1,7 @@
 package com.greenwolfgames.monstermaster
 
 import android.animation.AnimatorListenerAdapter
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -134,6 +135,8 @@ class MainActivity : AppCompatActivity()
         }
     }
 
+    //TODO: I know this is an error, but I don't know what to tell  you, when you fix it it doesn't run
+    @SuppressLint("ResourceAsColor")
     private fun fadeOut(
         buttons: List<Button>,
         texts: List<TextView>,
@@ -146,7 +149,7 @@ class MainActivity : AppCompatActivity()
         val nextNode: Node = NodeRetriever(this@MainActivity,state).getNode(nextNodeIndex)
         val main: ConstraintLayout = findViewById(R.id.main)
         val fadeInAnimation =
-            AnimationHandler.getBackgroundAnimator( //TODO: I know this is an error, but I don't know what to tell  you, when you fix it it doesn't run
+            AnimationHandler.getBackgroundAnimator(
                 main, Color.valueOf(previousColor), Color.valueOf(nextNode.backgroundColor)
             )
         previousColor = nextNode.backgroundColor

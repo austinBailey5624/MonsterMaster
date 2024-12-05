@@ -148,11 +148,6 @@ class State : Serializable
         }
     }
 
-    fun print()
-    {
-        Log.d("State Check","")
-    }
-
     fun cyclePortrait()
     {
         when (this.playerPortraitImageId)
