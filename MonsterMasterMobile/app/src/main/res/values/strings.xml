@@ -422,14 +422,14 @@
     <string name="scene93choice2">Fine</string><!--96-->
     <string name="scene93choice3">Do I have to?</string><!--97-->
     <!--scene93Alt1 is for if you come back with quest chores at stage 2-->
-    <string name="scene93alt1prompt">Go on now, finish your chores for Morn, do your writing lesson with Brahm, and sell the amulet, after we can meet your brother at the tavern for dinner</string>
+    <string name="scene93alt1prompt">Go on now, finish your chores, after we can meet your brother at the tavern for dinner</string>
     <string name="scene93alt1choice1">Will do</string><!--79-->
     <string name="scene93alt1choice2">I\'d rather not [End Tutorial]</string><!--275-->
     <!--scene93Alt2 is for if you come back with quest chores at stage 3-->
     <string name="scene93alt2prompt">How was the writing lesson with Brahm?</string>
     <string name="scene93alt2choice1">It was boring</string><!--276-->
     <string name="scene93alt2choice2">It was okay</string><!--277-->
-    <string name="scene93atl2choice3">I loved it!</string><!--277-->
+    <string name="scene93alt2choice3">I loved it!</string><!--277-->
     <string name="scene93alt2choice4">I hated it</string><!--276-->
     <!--scene93alt3 is for if you come back with quest chores at stage 4-->
     <string name="scene93alt3prompt">How was Morn doing? He was an adventurer, you know, before he took that arrow to the knee.</string>
@@ -440,6 +440,10 @@
     <!--scene93alt4 is for if you come back with quest chores at stage 5-->
     <string name="scene93alt4prompt">I see you\'ve sold your mom\'s old necklace. Keep the money for now, I want to see if you can hang on to it.</string>
     <string name="scene93alt4choice1">Thanks Dad!</string><!--281-->
+    <!--scene93alt5 is for when all chores are finished -->
+    <string name="scene93alt5prompt">I see you\'ve finished all your chores, are you ready to go have dinner?</string>
+    <string name="scene93alt5choice1">Yes [End Tutorial]</string><!--275-->
+    <string name="scene93alt5choice2">No I\'d rather go play first</string><!--282-->
     <string name="scene94prompt1">Your will is strong but I\'m afraid your purse is light, come back later. Tithes are well and good,but they do not replace good acts. If you cannot contribute materially, contribute to your fellow man in other ways.</string>
     <string name="scene94prompt2">Very well, but do not donate more than you can spare. Tithes are well and good,but they do not replace good acts. If you cannot contribute materially, contribute to your fellow man in other ways.</string>
     <string name="scene94choice1">*Donate 10 Gold*</string><!--95-->
@@ -1123,6 +1127,8 @@
     <string name="scene281prompt2">Now go finish the rest of your chores, then come back when you\'re done.</string>
     <string name="scene281choice1">Return to Oaktree</string><!--79-->
     <string name="scene281choice2">I\'m finished with chores [End Tutorial]</string><!--275-->
+    <string name="scene282prompt">Alright, go have fun, come back when you are ready.</string>
+    <string name="scene282choice1">*leave*</string>
 
     <!--TODO Restore
 

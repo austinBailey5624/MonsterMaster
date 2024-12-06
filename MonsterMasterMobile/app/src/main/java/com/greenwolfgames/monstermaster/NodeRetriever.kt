@@ -16,9 +16,9 @@ class NodeRetriever(private val context: Context, private val state: State)
 {
     fun getNode(index: Int): Node
     {
-        Log.d("Node retrieval","Retrieving node $index")
-        Log.d("MichaelAttitude: ", state.getQuestStage(Quest.MICHAEL_ATTITUDE).toString())
-        //Choose Between light or dark
+        Log.d("Node retrieval", "Retrieving node $index")
+        Log.d("MichaelAttitude: ",
+            state.getQuestStage(Quest.MICHAEL_ATTITUDE).toString()) //Choose Between light or dark
         if (index == 1)
         {
             val prompts = listOf(getString(context, R.string.scene1item1),
@@ -930,6 +930,67 @@ class NodeRetriever(private val context: Context, private val state: State)
         }
         if (index == 93)
         {
+            if (state.getQuestStage(Quest.CHORES) == 2)
+            {
+                return getDadNode_Default()
+            }
+            if (state.getQuestStage(Quest.CHORES) == 3)
+            {
+                return getDadNode_talkAboutWriting()
+            }
+            if (state.getQuestStage(Quest.CHORES) == 4)
+            {
+                return getDadNode_talkAboutMorn()
+            }
+            if (state.getQuestStage(Quest.CHORES) == 5)
+            {
+                return getDadNode_talkAboutAmulet()
+            } //We have completed writing and done chores for morn. If we have not spoken to dad before about it,
+            //we should talk about how the writing lesson went, if weve talked about the writing lesson,
+            //we need to talk about how the chores with morn went. If we've talked about both, go to alt one
+            if (state.getQuestStage(Quest.CHORES) == 6)
+            {
+                if (haveTalkedToDadAboutWriting())
+                {
+                    return getDadNode_talkAboutMorn()
+                }
+                if (haveTalkedToDadAboutMornChores())
+                {
+                    return getDadNode_talkAboutWriting()
+                }
+                return getDadNode_Default()
+            }
+            if (state.getQuestStage(Quest.CHORES) == 7)
+            {
+                if(haveTalkedToDadAboutMornChores())
+                {
+                    return getDadNode_talkAboutAmulet()
+                }
+                if(haveTalkedToDadAboutSellingNecklace())
+                {
+                    return getDadNode_talkAboutMorn()
+                }
+                return getDadNode_Default()
+            }
+            if(state.getQuestStage(Quest.CHORES) == 8)
+            {
+                if(haveTalkedToDadAboutWriting())
+                {
+                    return getDadNode_talkAboutAmulet()
+                }
+                if(haveTalkedToDadAboutSellingNecklace())
+                {
+                    return getDadNode_talkAboutWriting()
+                }
+                return getDadNode_Default()
+            }
+            if(state.getQuestStage(Quest.CHORES) == 9)
+            {
+                val prompts = getPrompt(R.string.scene93alt5prompt)
+                val choices = listOf(getChoice(R.string.scene93alt5choice1,281),
+                    getChoice(R.string.scene93alt5choice2,282))
+                return getFatherChurchNode(index,prompts,choices)
+            }
             val prompts =
                 listOf(getString(context, R.string.scene93prompt1) + " " + Gender.getNickname1(
                     context,
@@ -937,6 +998,7 @@ class NodeRetriever(private val context: Context, private val state: State)
             val choices = listOf(getChoice(R.string.scene93choice1, 96, Element.ANGEL),
                 getChoice(R.string.scene93choice2, 96),
                 getChoice(R.string.scene93choice3, 97, Element.ROTTEN))
+
             return getFatherChurchNode(index, prompts, choices)
         }
         if (index == 94)
@@ -2751,5 +2813,55 @@ class NodeRetriever(private val context: Context, private val state: State)
         element: Element): Node
     {
         return Node(index, prompt, choices, element, animations, context, state)
+    }
+
+    private fun getDadNode_talkAboutWriting(): Node
+    {
+        val prompts = getPrompt(R.string.scene93alt2prompt)
+        val choices = listOf(getChoice(R.string.scene93alt2choice1, 276, Element.PYRO),
+            getChoice(R.string.scene93alt2choice2, 277, Element.TERRA),
+            getChoice(R.string.scene93alt2choice3, 277, Element.AQUA),
+            getChoice(R.string.scene93alt2choice4, 276, Element.UMBRAL))
+        return getFatherChurchNode(93,prompts,choices)
+    }
+
+    private fun getDadNode_talkAboutAmulet(): Node
+    {
+        val prompts = getPrompt(R.string.scene93alt4prompt)
+        val choices = listOf(getChoice(R.string.scene93alt4choice1, 281))
+        return getFatherChurchNode(93,prompts,choices)
+    }
+
+    private fun getDadNode_talkAboutMorn():Node
+    {
+        val prompts = getPrompt(R.string.scene93alt3prompt)
+        val choices = listOf(getChoice(R.string.scene93alt3choice1, 278, Element.AERO),
+            getChoice(R.string.scene93alt3choice2, 279, Element.AQUA),
+            getChoice(R.string.scene93alt3choice3, 278, Element.PYRO),
+            getChoice(R.string.scene93alt3choice4, 280, Element.TERRA))
+        return getFatherChurchNode(93,prompts,choices)
+    }
+
+    private fun getDadNode_Default():Node
+    {
+        val prompts = getPrompt(R.string.scene93alt1prompt)
+        val choices = listOf(getChoice(R.string.scene93alt1choice1, 79),
+            getChoice(R.string.scene93alt1choice2, 275, Element.UMBRAL))
+        return getFatherChurchNode(93,prompts,choices)
+    }
+
+    private fun haveTalkedToDadAboutWriting():Boolean
+    {
+        return state.getSeenNodeBefore(276) || state.getSeenNodeBefore(277)
+    }
+
+    private fun haveTalkedToDadAboutMornChores():Boolean
+    {
+        return state.getSeenNodeBefore(278) || state.getSeenNodeBefore(279) || state.getSeenNodeBefore(280)
+    }
+
+    private fun haveTalkedToDadAboutSellingNecklace():Boolean
+    {
+        return state.getSeenNodeBefore(281)
     }
 }
