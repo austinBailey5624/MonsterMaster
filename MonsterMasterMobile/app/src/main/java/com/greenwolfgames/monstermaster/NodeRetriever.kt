@@ -1276,7 +1276,8 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 127)
         {
             val prompts = getPrompt(R.string.scene127prompt)
-            val choices = listOf(getChoice(R.string.scene127choice, 128))
+            val choices = listOf(getChoice(R.string.scene127choice1,128),
+                getChoice(R.string.scene127choice2,126))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 128)
