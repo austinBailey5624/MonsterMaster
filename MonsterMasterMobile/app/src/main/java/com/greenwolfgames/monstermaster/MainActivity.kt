@@ -257,7 +257,7 @@ class MainActivity : AppCompatActivity()
         //If the image is already animated and present
         if(image.tag == animationInfo.animationId)
         {
-            return;//do nothing
+            return//do nothing
         }
 
         image.setImageResource(animationInfo.imageId)
@@ -372,7 +372,7 @@ class MainActivity : AppCompatActivity()
         {
             return texts[index + 1].id
         } // if index > promptsize - 1 visiblilty will be false, and we dont have to worry about it
-        return 1;
+        return 1
     }
 
     private fun getTextVisibility(index: Int, promptSize: Int): Int
@@ -560,7 +560,7 @@ class MainActivity : AppCompatActivity()
     { //if we are in a node where we need a special button behavior where we retrieve the player name
         if (nodeRequiresTextInput(node))
         {
-            buttons[0].setOnClickListener() {
+            buttons[0].setOnClickListener {
                 var temp: String = textInput.text.toString()
                 if (temp != "")
                 {
@@ -586,7 +586,7 @@ class MainActivity : AppCompatActivity()
         {
             for (i in node.choices.indices)
             {
-                buttons[i].setOnClickListener() {
+                buttons[i].setOnClickListener {
 //                    Log.d(
 //                        "Button Click Event",
 //                        "Button " + i + " clicked, moving to node: " + node.choices[i].nextNodeIndex
