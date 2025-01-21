@@ -106,6 +106,8 @@ class MainActivity : AppCompatActivity()
         {
             text.setTextColor(ContextCompat.getColor(this, R.color.invisible))
         }
+        val notificationTextView: TextView = findViewById(R.id.text_notification)
+        notificationTextView.setTextColor(ContextCompat.getColor(this, R.color.invisible))
     }
 
     private fun hideImages(images: List<ImageView>)
@@ -598,14 +600,27 @@ class MainActivity : AppCompatActivity()
         }
     }
 
+    private fun notify(notification: String)
+    {
+        val notificationTextView: TextView = findViewById(R.id.text_notification)
+        notificationTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
+        notificationTextView.startAnimation(AnimationHandler.getNotificationAnimation(notificationTextView,notification,this@MainActivity))
+    }
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed()
     {
-        showMenuFragment()
+        if(state.canAccessMenu())
+        {
+            showMenuFragment()
+        }
+        else
+        {
+            notify(getString(R.string.notification_menu_not_accessible))
+        }
         if (false)
         {
-            super.onBackPressed() //TODO: Dialog, "Would you like to exit?"
+            super.onBackPressed()
         } // Do nothing here
     }
 

@@ -6,7 +6,7 @@ import android.graphics.Color
 import android.util.Log
 import android.view.View
 import android.view.animation.Animation
-import android.view.animation.AnimationUtils
+import android.view.animation.AnimationUtils.loadAnimation
 import android.widget.Button
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -33,80 +33,80 @@ class AnimationHandler
         ): List<Animation>
         {
             val fadeInAnimations: List<Animation> = listOf(
-                AnimationUtils.loadAnimation(context, R.anim.fade_in),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in),
-                AnimationUtils.loadAnimation(context, R.anim.fade_in)
+                loadAnimation(context, R.anim.fade_in),
+                loadAnimation(context, R.anim.fade_in),
+                loadAnimation(context, R.anim.fade_in),
+                loadAnimation(context, R.anim.fade_in),
+                loadAnimation(context, R.anim.fade_in),
+                loadAnimation(context, R.anim.fade_in),
+                loadAnimation(context, R.anim.fade_in),
+                loadAnimation(context, R.anim.fade_in),
+                loadAnimation(context, R.anim.fade_in)
             )
 
-            val fadeInFastAnimation = AnimationUtils.loadAnimation(context, R.anim.fade_in_fast)
+            val fadeInFastAnimation = loadAnimation(context, R.anim.fade_in_fast)
 
         //@formatter:off
-        fadeInAnimations[7].setAnimationListener(object : Animation.AnimationListener
-        {
-            override fun onAnimationStart(animation: Animation) {}
-
-            override fun onAnimationEnd(animation: Animation)
+            fadeInAnimations[7].setAnimationListener(object : Animation.AnimationListener
             {
-                animateButtons(buttons, node.choices, fadeInAnimations[8])
-                colorButtons(buttons, node.choices, context)
-                skipButton.visibility = View.GONE
-            }
-
-            override fun onAnimationRepeat(animation: Animation) {}
-        })
-
-        for(i in node.prompt.indices)
-        {
-            fadeInAnimations[i].setAnimationListener(object : Animation.AnimationListener
-            {
-                override fun onAnimationStart(animation: Animation) { }
+                override fun onAnimationStart(animation: Animation) {}
 
                 override fun onAnimationEnd(animation: Animation)
                 {
-                    Log.d("Skip Button Status", "Skip Button Visibility: (visible: " + View.VISIBLE +", invisible: " + View.INVISIBLE + ", gone: " + View.GONE + "): "+ skipButton.visibility)
-                    // case where we have pressed the skip button
-                    if(skipButton.visibility == View.GONE)
+                    animateButtons(buttons, node.choices, fadeInAnimations[8])
+                    colorButtons(buttons, node.choices, context)
+                    skipButton.visibility = View.GONE
+                }
+
+                override fun onAnimationRepeat(animation: Animation) {}
+            })
+
+            for(i in node.prompt.indices)
+            {
+                fadeInAnimations[i].setAnimationListener(object : Animation.AnimationListener
+                {
+                    override fun onAnimationStart(animation: Animation) { }
+
+                    override fun onAnimationEnd(animation: Animation)
                     {
-                        //for all of the cinematic texts after the current text before the size last cinematic text
-                        for (j in i..<cinematicTexts.size)
+                        Log.d("Skip Button Status", "Skip Button Visibility: (visible: " + View.VISIBLE +", invisible: " + View.INVISIBLE + ", gone: " + View.GONE + "): "+ skipButton.visibility)
+                        // case where we have pressed the skip button
+                        if(skipButton.visibility == View.GONE)
                         {
-                            if(j < node.prompt.size)
+                            //for all of the cinematic texts after the current text before the size last cinematic text
+                            for (j in i..<cinematicTexts.size)
                             {
-                                cinematicTexts[j].startAnimation((fadeInFastAnimation))
-                                cinematicTexts[j].setTextColor(textColor)
+                                if(j < node.prompt.size)
+                                {
+                                    cinematicTexts[j].startAnimation((fadeInFastAnimation))
+                                    cinematicTexts[j].setTextColor(textColor)
+                                }
+                                else
+                                {
+                                    cinematicTexts[j].setTextColor(ContextCompat.getColor(context, R.color.invisible))
+                                }
+                            }
+                            animateButtons(buttons, node.choices, fadeInFastAnimation)
+                            colorButtons(buttons, node.choices, context)
+                        }
+                        //case where we have not pressed the skip button
+                        else
+                        {
+                            if(i == node.prompt.size-1)
+                            {
+                                cinematicTexts[i].startAnimation(fadeInAnimations[7])
+                                cinematicTexts[i].setTextColor(textColor)
                             }
                             else
                             {
-                                cinematicTexts[j].setTextColor(ContextCompat.getColor(context, R.color.invisible))
+                                cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
+                                cinematicTexts[i].setTextColor(textColor)
                             }
                         }
-                        animateButtons(buttons, node.choices, fadeInFastAnimation)
-                        colorButtons(buttons, node.choices, context)
                     }
-                    //case where we have not pressed the skip button
-                    else
-                    {
-                        if(i == node.prompt.size-1)
-                        {
-                            cinematicTexts[i].startAnimation(fadeInAnimations[7])
-                            cinematicTexts[i].setTextColor(textColor)
-                        }
-                        else
-                        {
-                            cinematicTexts[i].startAnimation(fadeInAnimations[i + 1])
-                            cinematicTexts[i].setTextColor(textColor)
-                        }
-                    }
-                }
-                override fun onAnimationRepeat(animation: Animation) { }
-            })
-        }
+                    override fun onAnimationRepeat(animation: Animation) { }
+                })
+            }
         //@formatter:on
             return fadeInAnimations
         }
@@ -144,6 +144,52 @@ class AnimationHandler
             )
             animator.duration = 250
             return animator
+        }
+
+        fun getNotificationAnimation(notificationView: TextView, notification: String, context: Context): Animation
+        {
+            val fadeInFastAnimation = loadAnimation(context, R.anim.fade_in_fast)
+            val stay = loadAnimation(context, R.anim.stay)
+            val fadeOutFastAnimation = loadAnimation(context, R.anim.fade_out_fast)
+
+            fadeInFastAnimation.setAnimationListener(object : Animation.AnimationListener
+            {
+                override fun onAnimationStart(animation: Animation) {
+                    notificationView.visibility = View.VISIBLE
+                    notificationView.text = notification
+                }
+
+                override fun onAnimationEnd(animation: Animation)
+                {
+                    notificationView.startAnimation(stay)
+                }
+
+                override fun onAnimationRepeat(animation: Animation) {}
+            })
+
+            stay.setAnimationListener(object: Animation.AnimationListener
+            {
+                override fun onAnimationStart(animation: Animation) {}
+
+                override fun onAnimationEnd(animation: Animation)
+                {
+                    notificationView.startAnimation(fadeOutFastAnimation)
+                }
+
+                override fun onAnimationRepeat(animation: Animation) {}
+            })
+            fadeOutFastAnimation.setAnimationListener(object: Animation.AnimationListener
+            {
+                override fun onAnimationStart(animation: Animation) {}
+
+                override fun onAnimationEnd(animation: Animation)
+                {
+                    notificationView.visibility = View.INVISIBLE
+                }
+
+                override fun onAnimationRepeat(animation: Animation) {}
+            })
+            return fadeInFastAnimation
         }
     }
 }

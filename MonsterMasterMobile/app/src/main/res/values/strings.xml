@@ -1361,6 +1361,9 @@
     <string name="fragment_menu_button_7_content_description">Allows the player to navigate to the Credits Menu</string>
     <string name="fragment_menu_button_8_content_description">Allows the player to navigate to the Main Activity</string>
 
+    <!-- Notificiation Texts -->
+    <string name="notification_menu_not_accessible">Menu is not currently accessible</string>
+
     <!-- content for monster types -->
     <string name="monster_type_1_name">Flarial</string>
     <string name="monster_type_1_description">Young spirits made of flame that snap and spit at anything that comes near. Their white eyes burn with anger at whatever they see.</string>

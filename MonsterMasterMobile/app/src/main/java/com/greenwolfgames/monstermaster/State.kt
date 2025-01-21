@@ -148,6 +148,11 @@ class State : Serializable
         }
     }
 
+    fun canAccessMenu(): Boolean
+    {
+        return nodeIndexByVisitedBefore.getOrDefault(79, false)
+    }
+
     fun cyclePortrait()
     {
         when (this.playerPortraitImageId)

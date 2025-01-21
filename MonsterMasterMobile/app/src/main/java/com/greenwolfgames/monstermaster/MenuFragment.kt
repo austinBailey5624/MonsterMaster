@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 
 /**
  * Fragment to handle the display of the menu from the MainActivity
@@ -34,6 +36,7 @@ class MenuFragment : Fragment()
         arguments?.let{
             state = it.getSerializable("state") as State
         }
+
     }
 
     override fun onCreateView(
@@ -41,5 +44,29 @@ class MenuFragment : Fragment()
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_menu, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Use view.findViewById to access UI elements
+//        val myButton: Button = view.findViewById(R.id.fragment_menu_button_1)
+//        myButton.setOnClickListener {
+//            myButton.text = "Pressed!"
+//        }
+        val buttons: List<Button> = listOf(
+            view.findViewById(R.id.fragment_menu_button_1),
+            view.findViewById(R.id.fragment_menu_button_2),
+            view.findViewById(R.id.fragment_menu_button_3),
+            view.findViewById(R.id.fragment_menu_button_4),
+            view.findViewById(R.id.fragment_menu_button_5),
+            view.findViewById(R.id.fragment_menu_button_6),
+            view.findViewById(R.id.fragment_menu_button_7),
+            view.findViewById(R.id.fragment_menu_button_8)
+        )
+        for(button in buttons)
+        {
+            Element.colorButton(button, requireContext(), Element.NEUTRAL)
+        }
     }
 }
