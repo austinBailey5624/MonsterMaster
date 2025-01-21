@@ -2,6 +2,7 @@ package com.greenwolfgames.monstermaster
 
 import android.animation.AnimatorListenerAdapter
 import android.annotation.SuppressLint
+import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -9,12 +10,15 @@ import android.util.TypedValue
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
 import com.google.android.material.textfield.TextInputEditText
 import java.util.Locale
@@ -403,6 +407,15 @@ class MainActivity : AppCompatActivity()
         if (nextNode.index in 18..53)
         {
             textInput.visibility = View.VISIBLE
+            textInput.setOnEditorActionListener{ v, actionId, event ->
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    val imm = this@MainActivity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(v.windowToken, 0)
+                    true // Indicates the action was handled
+                } else {
+                    false // Pass on the action if not handled
+                }
+            }
         }
         else
         {

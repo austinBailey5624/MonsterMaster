@@ -68,5 +68,9 @@ class MenuFragment : Fragment()
         {
             Element.colorButton(button, requireContext(), Element.NEUTRAL)
         }
+
+        buttons[7].setOnClickListener{
+            requireActivity().supportFragmentManager.popBackStack()
+        }
     }
 }
