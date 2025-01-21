@@ -1321,7 +1321,17 @@
     <string name="nickname4feminine">girl</string>
     <string name="nickname4neutral">kid</string>
 
-    <!-- content descriptions for UI elements -->
+    <!-- Menu Button Content -->
+    <string name="menu_party">Party</string>
+    <string name="menu_inventory">Inventory</string>
+    <string name="menu_journal">Journal</string>
+    <string name="menu_encyclopedia">Encyclopedia</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_credits">Credits</string>
+    <string name="menu_back">Back</string>
+
+    <!-- content descriptions for Main Activiity UI elements -->
     <string name="background_content_description">The absolute background behind everything else</string>
     <string name="background_top_content_description">The relative \'top\' third(ish) of the display, typically used to prompt the player</string>
     <string name="background_center_content_description">The relative \'center\' of the display, typically used to set an image for the scene for the user</string>
@@ -1340,6 +1350,16 @@
     <string name="button_5_content_description">The content in the fifth choice the player has, usually in the bottom left of the bottom third screen</string>
     <string name="button_6_content_description">The content in the sixth choice the player has, usually in the bottom right of the bottom third screen.</string>
     <string name="button_skip_cinematic_content_description">The invisible button that you select to skip cinematic text.</string>
+
+    <!-- content description for menu UI elements -->
+    <string name="fragment_menu_button_1_content_description">Allows the player to navigate to the party menu</string>
+    <string name="fragment_menu_button_2_content_description">Allows the player to navigate tot he Inventory menu</string>
+    <string name="fragment_menu_button_3_content_description">Allows the player to navigate to the Journal menu</string>
+    <string name="fragment_menu_button_4_content_description">Allows the player to navigate to the Encyclopedia Menu</string>
+    <string name="fragment_menu_button_5_content_description">Allows the player to navigate to the Save Menu</string>
+    <string name="fragment_menu_button_6_content_description">Allows the player to navigate to the Settings Menu</string>
+    <string name="fragment_menu_button_7_content_description">Allows the player to navigate to the Credits Menu</string>
+    <string name="fragment_menu_button_8_content_description">Allows the player to navigate to the Main Activity</string>
 
     <!-- content for monster types -->
     <string name="monster_type_1_name">Flarial</string>

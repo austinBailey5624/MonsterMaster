@@ -30,12 +30,13 @@ class MainActivity : AppCompatActivity()
 {
     private var previousColor: Int = R.color.darkGray
     private var previousNodeAnimations: List<AnimationInfo> = listOf()
+    private lateinit var state: State
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
-        val state = State()
+        state = State()
 
         val buttons: List<Button> = listOf(
             findViewById(R.id.button_1),
@@ -598,11 +599,22 @@ class MainActivity : AppCompatActivity()
     }
 
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed()
     {
+        showMenuFragment()
         if (false)
         {
             super.onBackPressed() //TODO: Dialog, "Would you like to exit?"
         } // Do nothing here
+    }
+
+    private fun showMenuFragment()
+    {
+        val fragment = MenuFragment.newInstance(state)
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment) // Ensure you have a container in your layout
+            .addToBackStack(null)
+            .commit()
     }
 } //@formatter: on
