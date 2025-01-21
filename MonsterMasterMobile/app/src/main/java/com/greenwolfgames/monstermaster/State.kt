@@ -1,12 +1,13 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Context
+import android.util.Log
 import java.io.Serializable
 
 //Class to represent the state of the game
 class State : Serializable
 {
-    private var elementalScore = mutableMapOf<Element,Int> (
-        Element.PYRO to 0,
+    private var elementalScore = mutableMapOf<Element, Int>(Element.PYRO to 0,
         Element.LAVA to 0,
         Element.DINO to 0,
         Element.SAND to 0,
@@ -44,17 +45,26 @@ class State : Serializable
         Element.UMBRAL to 0,
         Element.NEUTRAL to 0,
         Element.PHYSICAL to 0,
-        Element.MAGICAL to 0
-    )
+        Element.MAGICAL to 0,
+        Element.INITIAL to 0).withDefault { 0 }
 
-    var nodeIndexByVisitedBefore = mutableMapOf<Int, Boolean> ().withDefault{false}
+    var questStage = mutableMapOf<Quest, Int>(Quest.CHORES to 0,
+        Quest.AMNESIA to 0,
+        Quest.KYLER_REDEMPTION to 0,
+        Quest.MORNS_ERRAND to 0,
+        Quest.WRITING_LESSON to 0,
+        Quest.SELL_AMULET to 0,
+        Quest.EXPLORE to 0,
+        Quest.MICHAEL_ATTITUDE to 0).withDefault { 0 }
+
+    var nodeIndexByVisitedBefore = mutableMapOf<Int, Boolean>().withDefault { false }
 
     fun addScore(element: Element, score: Int)
     {
         elementalScore[element] = elementalScore[element]!! + score
     }
 
-    fun addScore(element:Element)
+    fun addScore(element: Element)
     {
         elementalScore[element] = elementalScore[element]!! + 1
     }
@@ -64,25 +74,78 @@ class State : Serializable
         return elementalScore[element]!!
     }
 
-    fun getSeenNodeBefore(nodeIndex: Int): Boolean
+    fun getQuestStage(quest: Quest): Int
     {
-        return nodeIndexByVisitedBefore[nodeIndex] ?: false
+        return questStage[quest]!!
     }
 
-    fun visitNode(nodeIndex: Int)
+    fun setQuestStage(quest: Quest, stage: Int)
     {
+        questStage[quest] = stage
+    }
+
+    fun visitNode(nodeIndex: Int) {
         nodeIndexByVisitedBefore[nodeIndex] = true
+        Log.d("State", "Visited node $nodeIndex. Current map: $nodeIndexByVisitedBefore")
     }
 
+    fun getSeenNodeBefore(nodeIndex: Int): Boolean {
+        val seenBefore = nodeIndexByVisitedBefore.getOrDefault(nodeIndex, false)
+        Log.d("State", "Checking node $nodeIndex: seenBefore = $seenBefore")
+        return seenBefore
+    }
     var playerName: String = "defaultPlayerName"
-    private var amnesiac: Boolean = false;
+    var currentGold: Int = 0
+    var totalGoldEver: Int = 0
+    var totalGoldDonated: Int = 0
     var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
     var gender: Gender = Gender.MALE
 
 
-    fun setAmnesiac(isAmnesiac: Boolean)
+    fun addGold(addedGold: Int)
     {
-        this.amnesiac = isAmnesiac
+        totalGoldEver += addedGold
+        currentGold += addedGold
+    }
+
+    fun removeGold(removedGold: Int)
+    {
+        currentGold -= removedGold
+    }
+
+    fun setChoresStage_WritingLessonFinished()
+    {
+        if (questStage[Quest.CHORES]!! < 3)
+        {
+            questStage[Quest.CHORES] = 3
+        }
+        if (questStage[Quest.CHORES]!! == 4)
+        {
+            questStage[Quest.CHORES] = 6
+        }
+        if (questStage[Quest.CHORES]!! == 5)
+        {
+            questStage[Quest.CHORES] = 8
+        }
+        if (questStage[Quest.CHORES]!! == 7)
+        {
+            questStage[Quest.CHORES] = 9
+        }
+    }
+
+    fun initChoresQuestline()
+    {
+        questStage[Quest.MORNS_ERRAND] = 1
+        questStage[Quest.SELL_AMULET] = 1
+        if (questStage[Quest.WRITING_LESSON]!! == 2)
+        {
+            questStage[Quest.CHORES] = 2
+        }
+        else
+        {
+            questStage[Quest.CHORES] = 1
+            questStage[Quest.WRITING_LESSON] = 1
+        }
     }
 
     fun cyclePortrait()
@@ -93,38 +156,47 @@ class State : Serializable
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_hair_male
             }
+
             R.drawable.main_character_black_hair_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_asian_male
             }
+
             R.drawable.main_character_asian_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_male
             }
+
             R.drawable.main_character_black_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_blonde_hair_male
             }
+
             R.drawable.main_character_blonde_hair_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_brown_hair_male
             }
+
             R.drawable.main_character_brown_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_hair_female
             }
+
             R.drawable.main_character_black_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_asian_female
             }
+
             R.drawable.main_character_asian_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_female
             }
+
             R.drawable.main_character_black_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_blonde_hair_female
             }
+
             R.drawable.main_character_blonde_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_brown_hair_female
@@ -140,38 +212,47 @@ class State : Serializable
             {
                 this.playerPortraitImageId = R.drawable.main_character_blonde_hair_male
             }
+
             R.drawable.main_character_black_hair_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_brown_hair_male
             }
+
             R.drawable.main_character_asian_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_hair_male
             }
+
             R.drawable.main_character_black_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_asian_male
             }
+
             R.drawable.main_character_blonde_hair_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_male
             }
+
             R.drawable.main_character_brown_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_blonde_hair_female
             }
+
             R.drawable.main_character_black_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_brown_hair_female
             }
+
             R.drawable.main_character_asian_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_hair_female
             }
+
             R.drawable.main_character_black_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_brown_hair_female
             }
+
             R.drawable.main_character_blonde_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_female
@@ -187,38 +268,47 @@ class State : Serializable
             {
                 this.playerPortraitImageId = R.drawable.main_character_brown_hair_female
             }
+
             R.drawable.main_character_black_hair_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_hair_female
             }
+
             R.drawable.main_character_asian_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_asian_female
             }
+
             R.drawable.main_character_black_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_female
             }
+
             R.drawable.main_character_blonde_hair_male ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_blonde_hair_female
             }
+
             R.drawable.main_character_brown_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_brown_hair_male
             }
+
             R.drawable.main_character_black_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_male
             }
+
             R.drawable.main_character_asian_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_asian_male
             }
+
             R.drawable.main_character_black_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_black_male
             }
+
             R.drawable.main_character_blonde_hair_female ->
             {
                 this.playerPortraitImageId = R.drawable.main_character_blonde_hair_male
@@ -228,15 +318,15 @@ class State : Serializable
 
     fun cycleGender()
     {
-        if(this.gender == Gender.MALE)
+        if (this.gender == Gender.MALE)
         {
             this.gender = Gender.FEMALE
         }
-        else if(this.gender == Gender.FEMALE)
+        else if (this.gender == Gender.FEMALE)
         {
             this.gender = Gender.NEUTRAL
         }
-        else if(this.gender == Gender.NEUTRAL)
+        else if (this.gender == Gender.NEUTRAL)
         {
             this.gender = Gender.MALE
         }

@@ -1,9 +1,18 @@
 package com.greenwolfgames.monstermaster
 
 import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.widget.Button
 import androidx.core.content.ContextCompat
 
+/**
+ * Enum to help organize elements and so element specific variables can be retrieved
+ * @Author: Austin Bailey
+ * @Year: 2024
+ *
+ * @Copyright Austin Bailey 2024 All Rights Reserved
+ */
 enum class Element {
     //@formatter:off
     PYRO,LAVA,DINO,SAND,JUSTICE,VENGEANCE,
@@ -12,27 +21,35 @@ enum class Element {
     PHOENIX,SEABREEZE,BIRD,AERO,COCKA,NIGHTWING,
     SOLAR,LUNAR,GUARDIAN,ANGEL,LUXOR,REDEMPTION,
     DEMON,POISON,UNDEAD,STORM,BETRAYER,UMBRAL,
-    NEUTRAL, PHYSICAL, MAGICAL;
+    NEUTRAL, PHYSICAL, MAGICAL, INITIAL;
     //@formatter:on
 
     companion object
     {
-
-
-        fun colorButton(button: Button, context: Context, element: Element): Button {
+        fun colorButton(button: Button, context: Context, element: Element): Button
+        {
+            button.backgroundTintList = null
+            button.setBackgroundResource(0)
+            button.background = null
             val textColor = getTextColor(element)
-            val buttonBackgroundColor = getButtonBackgroundColor(element)
-
+            val borderedShape = GradientDrawable().apply {
+                shape = GradientDrawable.RECTANGLE
+                setColor(ContextCompat.getColor(context, getButtonBackgroundColor(element)))
+                setStroke(10, ContextCompat.getColor(context, textColor))
+                cornerRadius = 40f
+            }
+            button.elevation = 0f
+            button.background = borderedShape
             button.setTextColor(
                 ContextCompat.getColor(context, textColor)
             )
-            button.setBackgroundColor(ContextCompat.getColor(context, buttonBackgroundColor))
+
             return button
         }
 
         fun getTextColor(element: Element): Int {
-            val textColor = when (element) {
-                PYRO -> R.color.orange
+            return when (element) {
+                PYRO -> R.color.yellowOrange
                 LAVA -> R.color.orange
                 DINO -> R.color.darkBrown
                 SAND -> R.color.redOrange
@@ -56,7 +73,7 @@ enum class Element {
                 PHOENIX -> R.color.yellowOrange
                 SEABREEZE -> R.color.lightCyanBlue
                 BIRD -> R.color.forestGreen
-                AERO -> R.color.yellow
+                AERO -> R.color.darkishYellow
                 COCKA -> R.color.darkYellow
                 NIGHTWING -> R.color.black
 
@@ -77,8 +94,8 @@ enum class Element {
                 NEUTRAL -> R.color.darkBrown
                 PHYSICAL -> R.color.darkGray
                 MAGICAL -> R.color.darkPurple
+                INITIAL -> R.color.gray
             }
-            return textColor
         }
 
         fun getButtonBackgroundColor(element: Element): Int {
@@ -108,7 +125,7 @@ enum class Element {
                 PHOENIX -> R.color.redOrange
                 SEABREEZE -> R.color.lighterBlue
                 BIRD -> R.color.greenYellow
-                AERO -> R.color.darkYellow
+                AERO -> R.color.yellow
                 COCKA -> R.color.white
                 NIGHTWING -> R.color.yellow
 
@@ -129,6 +146,7 @@ enum class Element {
                 NEUTRAL -> R.color.brown
                 MAGICAL -> R.color.pink
                 PHYSICAL -> R.color.gray
+                INITIAL -> R.color.grayerWhite
             }
             return backgroundColor
         }
@@ -139,7 +157,7 @@ enum class Element {
             {
                 PYRO -> R.color.darkRed
                 LAVA -> R.color.purple
-                DINO -> R.color.darkBrown
+                DINO -> R.color.brown
                 SAND -> R.color.pink
                 JUSTICE -> R.color.pink
                 VENGEANCE -> R.color.darkRed
@@ -182,6 +200,7 @@ enum class Element {
                 NEUTRAL -> R.color.beige
                 MAGICAL -> R.color.purple
                 PHYSICAL -> R.color.grayerWhite
+                INITIAL -> R.color.darkGray
             }
             return backgroundColor
         }
@@ -235,6 +254,7 @@ enum class Element {
                 NEUTRAL -> throw IllegalStateException("Element Neutral has no infant monster")
                 MAGICAL -> throw IllegalStateException("Element Magical has no infant monster")
                 PHYSICAL -> throw IllegalStateException("Element Physical has no infant monster")
+                INITIAL -> throw IllegalStateException("Element Initial has no infant monster")
             }
             return infantMonster
         }

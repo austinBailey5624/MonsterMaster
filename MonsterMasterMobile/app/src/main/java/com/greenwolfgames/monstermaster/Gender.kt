@@ -3,6 +3,13 @@ package com.greenwolfgames.monstermaster
 import android.content.Context
 import androidx.core.content.ContextCompat.getString
 
+/**
+ * Enum ot help organize gender and gender-specific elements of the game
+ * @Author: Austin Bailey
+ * @Year: 2024
+ *
+ * @Copyright Austin Bailey 2024 All Rights Reserved
+ */
 enum class Gender
 {
     MALE,FEMALE,NEUTRAL;
@@ -36,6 +43,46 @@ enum class Gender
                 MALE    -> getString(context, R.string.pronoun_possessive_masculine)
                 FEMALE  -> getString(context, R.string.pronoun_possessive_feminine)
                 NEUTRAL -> getString(context, R.string.pronoun_possessive_neutral)
+            }
+        }
+
+        fun getNickname1(context: Context, gender: Gender): String
+        {
+            return when(gender)
+            {
+                MALE -> getString(context, R.string.nickname_masculine)
+                FEMALE -> getString(context, R.string.nickname_feminine)
+                NEUTRAL -> getString(context, R.string.nickname_neutral)
+            }
+        }
+
+        fun getNickname2(context:Context, gender:Gender): String
+        {
+            return when(gender)
+            {
+                MALE -> getString(context,R.string.nickname2_masculine)
+                FEMALE -> getString(context,R.string.nickname2_feminine)
+                NEUTRAL -> getString(context,R.string.nickname2_neutral)
+            }
+        }
+
+        fun getNickname3(context:Context, gender:Gender): String
+        {
+            return when(gender)
+            {
+                MALE -> getString(context,R.string.nickname3masculine)
+                FEMALE -> getString(context,R.string.nickname3feminine)
+                NEUTRAL -> getString(context,R.string.nickname3neutral)
+            }
+        }
+
+        fun getNickname4(context:Context, gender:Gender):String
+        {
+            return when(gender)
+            {
+                MALE -> getString(context,R.string.nickname4masculine)
+                FEMALE -> getString(context,R.string.nickname4feminine)
+                NEUTRAL -> getString(context,R.string.nickname4neutral)
             }
         }
     }
