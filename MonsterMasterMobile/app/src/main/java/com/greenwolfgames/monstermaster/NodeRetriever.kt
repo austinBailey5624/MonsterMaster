@@ -1217,13 +1217,13 @@ class NodeRetriever(private val context: Context, private val state: State)
         {
             val prompts = getPrompt(R.string.scene118prompt)
             val choices = listOf(getChoice(R.string.scene118choice1, 120),
-                getChoice(R.string.scene118choice2, 119))
+                getChoice(R.string.scene118choice2, 119, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 119)
         {
             val prompts = getPrompt(R.string.scene119prompt)
-            val choices = listOf(getChoice(R.string.scene119choice1, 79))
+            val choices = listOf(getChoice(R.string.scene119choice1, 79, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 120)
@@ -1243,7 +1243,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 122)
         {
             val prompts = getPrompt(R.string.scene122prompt)
-            val choices = listOf(getChoice(R.string.scene122choice, 79))
+            val choices = listOf(getChoice(R.string.scene122choice, 79, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 123)
@@ -1270,13 +1270,13 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 126)
         {
             val prompts = getPrompt(R.string.scene126prompt)
-            val choices = listOf(getChoice(R.string.scene126choice1, 79))
+            val choices = listOf(getChoice(R.string.scene126choice1, 79, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 127)
         {
             val prompts = getPrompt(R.string.scene127prompt)
-            val choices = listOf(getChoice(R.string.scene127choice1,128),
+            val choices = listOf(getChoice(R.string.scene127choice1,128, {state.setQuestStage(Quest.WRITING_LESSON,2)}),
                 getChoice(R.string.scene127choice2,126))
             return getBrahmNode(index, prompts, choices)
         }
@@ -1299,7 +1299,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 130)
         {
             val prompts = getPrompt(R.string.scene130prompt)
-            val choices = listOf(getChoice(R.string.scene130choice1, 79))
+            val choices = listOf(getChoice(R.string.scene130choice1, 79, {state.setQuestStage(Quest.WRITING_LESSON,2)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 131)
@@ -1313,7 +1313,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         {
             val prompts = getPrompt(R.string.scene132prompt)
             val choices = listOf(getChoice(R.string.scene132choice1, 113),
-                getChoice(R.string.scene132choice2, 79))
+                getChoice(R.string.scene132choice2, 79, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 133)
