@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBrown"
+    tools:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_player_information_name_background"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_player_information_portrait_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_5x1" />
+
+    <ImageView
+        android:id="@+id/menu_player_information_portrait_background"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_status_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_name_background"
+        app:srcCompat="@drawable/button_1x1" />
+
+    <ImageView
+        android:id="@+id/menu_player_information_status_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/menu_player_information_status_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_portrait_background"
+        app:srcCompat="@drawable/status_bar_mock" />
+
+    <ImageView
+        android:id="@+id/menu_player_information_status_background"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_status_bar"
+        app:srcCompat="@drawable/button_2x1" />
+
+    <ImageView
+        android:id="@+id/menu_player_information_buttons_holder"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_player_information_status_background"
+        app:srcCompat="@drawable/button_2x1" />
+
+    <Button
+        android:id="@+id/menu_player_information_skills_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Skills"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_back_button"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_information_elemental_affinity_button"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_buttons_holder" />
+
+    <Button
+        android:id="@+id/menu_player_information_elemental_affinity_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Elemental Alignment"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_deity_affinity_button"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintStart_toEndOf="@id/menu_player_information_skills_button"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_buttons_holder" />
+
+    <Button
+        android:id="@+id/menu_player_information_back_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_information_deity_affinity_button"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_skills_button" />
+
+    <Button
+        android:id="@+id/menu_player_information_deity_affinity_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Deity Affinity"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintStart_toEndOf="@id/menu_player_information_back_button"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_elemental_affinity_button" />
+
+    <TextView
+        android:id="@+id/menu_player_information_level_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Level"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_equipped_item_text"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_information_physical_skills_used_text"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_background" />
+
+    <TextView
+        android:id="@+id/menu_player_information_physical_skills_used_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Physical Skills Used:"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_magical_skills_used"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
+        app:layout_constraintStart_toEndOf="@id/menu_player_information_level_text"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_background" />
+
+    <TextView
+        android:id="@+id/menu_player_information_equipped_item_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="Equipped Item: "
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_equipped_armor_text"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_information_magical_skills_used"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_level_text" />
+
+    <TextView
+        android:id="@+id/menu_player_information_magical_skills_used"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:text="Magical Skills Used"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_informationl_balance_text"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
+        app:layout_constraintStart_toEndOf="@id/menu_player_information_equipped_item_text"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_physical_skills_used_text" />
+
+    <TextView
+        android:id="@+id/menu_player_information_equipped_armor_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="Equipped Armor:"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_equipped_accessory_text"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_informationl_balance_text"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_equipped_item_text" />
+
+    <TextView
+        android:id="@+id/menu_player_informationl_balance_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:text="Phy/Magic Balance:"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_exp_to_next_level_text"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
+        app:layout_constraintStart_toEndOf="@id/menu_player_information_equipped_armor_text"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_magical_skills_used" />
+
+    <TextView
+        android:id="@+id/menu_player_information_equipped_accessory_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Equipped Accessory"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_background"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_information_exp_to_next_level_text"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_equipped_armor_text" />
+
+    <TextView
+        android:id="@+id/menu_player_information_exp_to_next_level_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Exp to next level:"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
+        app:layout_constraintStart_toEndOf="@id/menu_player_information_equipped_accessory_text"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_informationl_balance_text" />
+
+    <ImageView
+        android:id="@+id/menu_player_information_portriat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_portrait_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_portrait_background"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_portrait_background"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_portrait_background"
+        app:srcCompat="@drawable/main_character_brown_hair_male" />
+
+    <TextView
+        android:id="@+id/menu_player_information_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PlayerNameExample"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_name_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_name_background"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_name_background"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_name_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
