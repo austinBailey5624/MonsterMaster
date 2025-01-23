@@ -9,6 +9,21 @@
     tools:layout_width="match_parent">
 
     <ImageView
+        android:id="@+id/menu_player_infomration_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:rotation="-90"
+        android:rotationX="180"
+        android:rotationY="0"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_16x9" />
+
+    <ImageView
         android:id="@+id/menu_player_information_name_background"
         android:layout_width="240dp"
         android:layout_height="48dp"

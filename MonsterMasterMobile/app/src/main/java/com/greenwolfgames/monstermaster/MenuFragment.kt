@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.appcompat.app.AppCompatActivity
 
 /**
  * Fragment to handle the display of the menu from the MainActivity
@@ -46,14 +45,10 @@ class MenuFragment : Fragment()
         return inflater.inflate(R.layout.fragment_menu, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?)
+    {
         super.onViewCreated(view, savedInstanceState)
 
-        // Use view.findViewById to access UI elements
-//        val myButton: Button = view.findViewById(R.id.fragment_menu_button_1)
-//        myButton.setOnClickListener {
-//            myButton.text = "Pressed!"
-//        }
         val buttons: List<Button> = listOf(
             view.findViewById(R.id.fragment_menu_button_1),
             view.findViewById(R.id.fragment_menu_button_2),
@@ -69,8 +64,21 @@ class MenuFragment : Fragment()
             Element.colorButton(button, requireContext(), Element.NEUTRAL)
         }
 
+        buttons[0].setOnClickListener{
+            openPlayerInformationMenu()
+        }
+
         buttons[7].setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()
         }
+    }
+
+
+    private fun openPlayerInformationMenu() {
+        val fragment = PlayerInformationMenu.newInstance(state)
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.fragment_menu_frame_layout, fragment)
+            .addToBackStack(null) // Adds this transaction to the back stack
+            .commit()
     }
 }
