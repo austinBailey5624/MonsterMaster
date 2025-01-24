@@ -1331,6 +1331,17 @@
     <string name="menu_credits">Credits</string>
     <string name="menu_back">Back</string>
 
+    <!-- Player Information Menu Content -->
+    <string name="player_info_menu_level">Level:</string>
+    <string name="player_info_menu_exp_to_next">Exp to Next Level:</string>
+    <string name="player_info_menu_physical">Physical Uses:</string>
+    <string name="player_info_menu_weapon">Weapon:</string>
+    <string name="player_info_menu_magical">Magic Uses:</string>
+    <string name="player_info_menu_armor">Armor: </string>
+    <string name="player_info_menu_item_uses">Item Uses:</string>
+    <string name="player_info_menu_accessory">Accessory:</string>
+    <string name="player_info_name">PlayerNameExample</string>
+
     <!-- content descriptions for Main Activiity UI elements -->
     <string name="background_content_description">The absolute background behind everything else.</string>
     <string name="background_top_content_description">The relative \'top\' third(ish) of the display, typically used to prompt the player.</string>
@@ -1360,6 +1371,18 @@
     <string name="fragment_menu_button_6_content_description">Allows the player to navigate to the Settings Menu</string>
     <string name="fragment_menu_button_7_content_description">Allows the player to navigate to the Credits Menu</string>
     <string name="fragment_menu_button_8_content_description">Allows the player to navigate to the Main Activity</string>
+
+    <!-- content description for player info menu UI elements -->
+    <string name="player_info_menu_background_content_description">The background for the player information menu</string>
+    <string name="player_info_menu_name_background_content_description">The background for the menu element providing a background for the name</string>
+    <string name="player_info_menu_portrait_background_content_description">The background for the portrait in the player information menu</string>
+    <string name="player_info_menu_status_bar_content_description">The placeholder for the status bar in the player information menu</string>
+    <string name="player_info_menu_status_background_content_description">Background for the status indicator texts</string>
+    <string name="player_info_menu_skills_button_content_description">Button to navigate to the players skill menu</string>
+    <string name="player_info_menu_elemental_affinity_button_content_description">Button to navigate to the players elemental alignment</string>
+    <string name="player_info_menu_back_button_content_description">Button to navigate back to the menu</string>
+    <string name="player_info_menu_deity_affinity_button_content_description">Button to navigate to the deity affinity menu</string>
+    <string name="player_info_menu_portrait_content_description">Image representing the player character</string>
 
     <!-- Notificiation Texts -->
     <string name="notification_menu_not_accessible">Menu is not currently accessible</string>
