@@ -2,18 +2,21 @@ package com.greenwolfgames.monstermaster
 
 import android.content.Context
 import android.graphics.Color
+import android.graphics.PorterDuff
 import android.graphics.drawable.GradientDrawable
 import android.widget.Button
+import android.widget.ImageView
 import androidx.core.content.ContextCompat
 
 /**
  * Enum to help organize elements and so element specific variables can be retrieved
  * @Author: Austin Bailey
- * @Year: 2024
+ * @Year: 2024-2025
  *
- * @Copyright Austin Bailey 2024 All Rights Reserved
+ * @Copyright Austin Bailey 2024-2025 All Rights Reserved
  */
-enum class Element {
+enum class Element
+{
     //@formatter:off
     PYRO,LAVA,DINO,SAND,JUSTICE,VENGEANCE,
     STEAM,AQUA,AMPHIBIOUS,WEATHER,ICE,DEEP,
@@ -22,10 +25,20 @@ enum class Element {
     SOLAR,LUNAR,GUARDIAN,ANGEL,LUXOR,REDEMPTION,
     DEMON,POISON,UNDEAD,STORM,BETRAYER,UMBRAL,
     NEUTRAL, PHYSICAL, MAGICAL, INITIAL;
-    //@formatter:on
+
 
     companion object
     {
+        fun getAllColoredElements(): List<Element>
+        {
+            return listOf(PYRO,LAVA,DINO,SAND,JUSTICE,VENGEANCE,
+                STEAM,AQUA,AMPHIBIOUS,WEATHER,ICE,DEEP,
+                FEY,PLANT,TERRA,PEGASUS,COMPASSION,ROTTEN,
+                PHOENIX,SEABREEZE,BIRD,AERO,COCKA,NIGHTWING,
+                SOLAR,LUNAR,GUARDIAN,ANGEL,LUXOR,REDEMPTION,
+                DEMON,POISON,UNDEAD,STORM,BETRAYER,UMBRAL)
+        }
+
         fun colorButton(button: Button, context: Context, element: Element): Button
         {
             button.backgroundTintList = null
@@ -45,6 +58,12 @@ enum class Element {
             )
 
             return button
+        }
+
+        fun colorImageView_background(view: ImageView, context: Context, element: Element): ImageView
+        {
+            view.setColorFilter(ContextCompat.getColor(context, getBackgroundColor(element)), PorterDuff.Mode.MULTIPLY)
+            return view
         }
 
         fun getTextColor(element: Element): Int {
@@ -99,8 +118,8 @@ enum class Element {
         }
 
         fun getButtonBackgroundColor(element: Element): Int {
-            val backgroundColor = when (element) {
-
+             return when (element)
+             {
                 PYRO -> R.color.red
                 LAVA -> R.color.lightBlue
                 DINO -> R.color.lightBrown
@@ -148,12 +167,11 @@ enum class Element {
                 PHYSICAL -> R.color.gray
                 INITIAL -> R.color.grayerWhite
             }
-            return backgroundColor
         }
 
-        fun getBackgroundColor(element: Element): Int{
-
-            val backgroundColor = when(element)
+        fun getBackgroundColor(element: Element): Int
+        {
+            return when(element)
             {
                 PYRO -> R.color.darkRed
                 LAVA -> R.color.purple
@@ -202,12 +220,11 @@ enum class Element {
                 PHYSICAL -> R.color.grayerWhite
                 INITIAL -> R.color.darkGray
             }
-            return backgroundColor
         }
 
         fun getInfantMonster(context: Context, element: Element): MonsterType
         {
-            val infantMonster = when(element)
+            return when(element)
             {
                 PYRO -> MonsterTypeManager.getMonsterType(context, 1)
                 LAVA -> MonsterTypeManager.getMonsterType(context, 13)
@@ -251,12 +268,62 @@ enum class Element {
                 BETRAYER -> MonsterTypeManager.getMonsterType(context, 321)
                 UMBRAL -> MonsterTypeManager.getMonsterType(context, 328)
 
-                NEUTRAL -> throw IllegalStateException("Element Neutral has no infant monster")
-                MAGICAL -> throw IllegalStateException("Element Magical has no infant monster")
-                PHYSICAL -> throw IllegalStateException("Element Physical has no infant monster")
-                INITIAL -> throw IllegalStateException("Element Initial has no infant monster")
+                NEUTRAL, PHYSICAL, MAGICAL, INITIAL -> throw IllegalStateException("Element $element has no infant monster")
             }
-            return infantMonster
+        }
+
+        fun getMatchingPrimaryNature(nature: Nature): List<Element>
+        {
+            return when(nature)
+            {
+                Nature.FIRE -> listOf(PYRO,LAVA,DINO,SAND,JUSTICE,VENGEANCE)
+                Nature.WATER -> listOf(STEAM,AQUA,AMPHIBIOUS,WEATHER,ICE,DEEP)
+                Nature.EARTH -> listOf(FEY,PLANT,TERRA,PEGASUS,COMPASSION,ROTTEN)
+                Nature.AIR -> listOf(PHOENIX,SEABREEZE,BIRD,AERO,COCKA,NIGHTWING)
+                Nature.LIGHT -> listOf(SOLAR,LUNAR,GUARDIAN,ANGEL,LUXOR,REDEMPTION)
+                Nature.DARKNESS -> listOf(DEMON,POISON,UNDEAD,STORM,BETRAYER,UMBRAL)
+            }
+        }
+
+        fun getMatchingSecondaryNature(nature: Nature): List<Element>
+        {
+            return when(nature)
+            {
+                Nature.FIRE -> listOf(PYRO,STEAM,FEY,PHOENIX,SOLAR,DEMON)
+                Nature.WATER -> listOf(LAVA,AQUA,PLANT,SEABREEZE,LUNAR,POISON)
+                Nature.EARTH -> listOf(DINO,AMPHIBIOUS,TERRA,BIRD,GUARDIAN,UNDEAD)
+                Nature.AIR -> listOf(SAND,WEATHER,PEGASUS,AERO,ANGEL,STORM)
+                Nature.LIGHT -> listOf(JUSTICE,ICE,COMPASSION,COCKA,LUXOR,BETRAYER)
+                Nature.DARKNESS -> listOf(VENGEANCE,DEEP,ROTTEN,NIGHTWING,REDEMPTION,UMBRAL)
+            }
+        }
+        //@formatter:on
+        fun getPrimaryNature(element: Element): Nature
+        {
+            return when(element)
+            {
+                PYRO, LAVA, DINO, SAND, JUSTICE, VENGEANCE -> Nature.FIRE
+                STEAM,AQUA,AMPHIBIOUS,WEATHER,ICE,DEEP -> Nature.WATER
+                FEY,PLANT,TERRA,PEGASUS,COMPASSION,ROTTEN -> Nature.EARTH
+                PHOENIX,SEABREEZE,BIRD,AERO,COCKA,NIGHTWING -> Nature.AIR
+                SOLAR,LUNAR,GUARDIAN,ANGEL,LUXOR,REDEMPTION -> Nature.LIGHT
+                DEMON,POISON,UNDEAD,STORM,BETRAYER,UMBRAL -> Nature.DARKNESS
+                NEUTRAL, PHYSICAL, MAGICAL, INITIAL -> throw IllegalStateException("Element $element has no nature")
+            }
+        }
+
+        fun getSecondaryNature(element: Element): Nature
+        {
+            return when(element)
+            {
+                PYRO,STEAM,FEY,PHOENIX,SOLAR,DEMON -> Nature.FIRE
+                LAVA,AQUA,PLANT,SEABREEZE,LUNAR,POISON -> Nature.WATER
+                DINO,AMPHIBIOUS,TERRA,BIRD,GUARDIAN,UNDEAD -> Nature.EARTH
+                SAND,WEATHER,PEGASUS,AERO,ANGEL,STORM -> Nature.AIR
+                JUSTICE,ICE,COMPASSION,COCKA,LUXOR,BETRAYER -> Nature.LIGHT
+                VENGEANCE,DEEP,ROTTEN,NIGHTWING,REDEMPTION,UMBRAL -> Nature.DARKNESS
+                NEUTRAL, PHYSICAL, MAGICAL, INITIAL -> throw IllegalStateException("Element $element has no nature")
+            }
         }
     }
 }

@@ -4,10 +4,19 @@ import android.content.Context
 import android.util.Log
 import java.io.Serializable
 
-//Class to represent the state of the game
+/**
+ * Class to represent the state of the game. All game state should be represented in this class or
+ * in a member variable of this class
+ * @Author: Austin Bailey
+ * @Year: 2024-2025
+ *
+ * @Copyright Austin Bailey 2024-2025 All Rights Reserved
+ */
 class State : Serializable
 {
-    private var elementalScore = mutableMapOf<Element, Int>(Element.PYRO to 0,
+    //@formatter:off
+    private var elementalScore = mutableMapOf<Element, Int>(
+        Element.PYRO to 0,
         Element.LAVA to 0,
         Element.DINO to 0,
         Element.SAND to 0,
@@ -48,7 +57,8 @@ class State : Serializable
         Element.MAGICAL to 0,
         Element.INITIAL to 0).withDefault { 0 }
 
-    var questStage = mutableMapOf<Quest, Int>(Quest.CHORES to 0,
+    var questStage = mutableMapOf<Quest, Int>(
+        Quest.CHORES to 0,
         Quest.AMNESIA to 0,
         Quest.KYLER_REDEMPTION to 0,
         Quest.MORNS_ERRAND to 0,
@@ -58,7 +68,7 @@ class State : Serializable
         Quest.MICHAEL_ATTITUDE to 0).withDefault { 0 }
 
     var nodeIndexByVisitedBefore = mutableMapOf<Int, Boolean>().withDefault { false }
-
+    //@formatter:on
     fun addScore(element: Element, score: Int)
     {
         elementalScore[element] = elementalScore[element]!! + score
@@ -335,5 +345,36 @@ class State : Serializable
         {
             this.gender = Gender.MALE
         }
+    }
+
+    fun getMainCharacterElement(): Element
+    {
+        return Element.getAllColoredElements().maxByOrNull { getElementalScoreForMainCharacterElementCalculation(it) } ?: throw NoSuchElementException("List is empty")
+    }
+
+    /**
+     * Calculates the elemental score for an individual element in the element calculation.
+     * 40% of this score is determined by the affinity of the matching element
+     * 25% of this score is determined by the average score of elements whose primary nature
+     *    matches the parameters primary nature
+     * 10% of this score is determined by the average score of the elements whose secondary nature
+     *    matches the parameters primary nature
+     * 17.5% of this score is determined by the average score of the elements whose primary nature
+     *     matches the paramaters secondary nature
+     * 7.5% of this score is determiend by the average score of the elements whose secondary nature
+     *     matches the parameters secondary nature
+     *
+     * Note: Target elements may belong in arbitrarily groups of this calcuation and can be 'counted'
+     * more than once as a result. this is design.
+     */
+    fun getElementalScoreForMainCharacterElementCalculation(element: Element): Double
+    {
+        var score = 0.0
+        score += .4 * elementalScore.get(element)!!
+        score += .25 * Element.getMatchingPrimaryNature(Element.getPrimaryNature(element)).mapNotNull { elementalScore[it] }.average()
+        score += .1 * Element.getMatchingSecondaryNature(Element.getSecondaryNature(element)).mapNotNull { elementalScore[it] }.average()
+        score += .175 * Element.getMatchingPrimaryNature(Element.getSecondaryNature(element)).mapNotNull{ elementalScore[it]}.average()
+        score += .075 * Element.getMatchingSecondaryNature(Element.getSecondaryNature(element)).mapNotNull{ elementalScore[it]}.average()
+        return score
     }
 }

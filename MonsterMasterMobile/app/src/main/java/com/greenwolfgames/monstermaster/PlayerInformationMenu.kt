@@ -1,10 +1,13 @@
 package com.greenwolfgames.monstermaster
 
+import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
 /**
@@ -20,21 +23,14 @@ class PlayerInformationMenu : Fragment()
 
     companion object
     {
-        fun newInstance(state: State): PlayerInformationMenu {
+        fun newInstance(state: State): PlayerInformationMenu
+        {
             val fragment = PlayerInformationMenu()
             val bundle = Bundle()
             bundle.putSerializable("state", state)
             fragment.arguments = bundle
-            return PlayerInformationMenu()
+            return fragment
         }
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let{
-            state = it.getSerializable("state") as State
-        }
-
     }
 
     override fun onCreateView(
@@ -48,5 +44,20 @@ class PlayerInformationMenu : Fragment()
     {
         super.onViewCreated(view, savedInstanceState)
 
+        arguments?.let{
+            state = it.getSerializable("state") as State
+        }
+
+        // Ensure state is initialized properly, otherwise throw an exception
+        if (!::state.isInitialized) {
+            throw IllegalStateException("State cannot be null in PlayerInformationMenu.onViewCreated()")
+        }
+
+        val background: ImageView = view.findViewById(R.id. menu_player_information_background)
+
+        val mainCharacterElement = state.getMainCharacterElement()
+
+        background.setColorFilter(ContextCompat.getColor(requireContext(),
+            Element.getBackgroundColor(mainCharacterElement)), PorterDuff.Mode.MULTIPLY)
     }
 }

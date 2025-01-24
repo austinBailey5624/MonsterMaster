@@ -61,7 +61,7 @@ class MenuFragment : Fragment()
         )
         for(button in buttons)
         {
-            Element.colorButton(button, requireContext(), Element.NEUTRAL)
+            Element.colorButton(button, requireContext(), state.getMainCharacterElement())
         }
 
         buttons[0].setOnClickListener{
@@ -74,9 +74,10 @@ class MenuFragment : Fragment()
     }
 
 
-    private fun openPlayerInformationMenu() {
+    private fun openPlayerInformationMenu()
+    {
         val fragment = PlayerInformationMenu.newInstance(state)
-        parentFragmentManager.beginTransaction()
+        childFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, fragment)
             .addToBackStack(null) // Adds this transaction to the back stack
             .commit()
