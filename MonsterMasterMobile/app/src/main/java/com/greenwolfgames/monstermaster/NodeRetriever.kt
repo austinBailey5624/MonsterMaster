@@ -166,8 +166,9 @@ class NodeRetriever(private val context: Context, private val state: State)
                         getChoice(R.string.scene9choice3Alt, 17, Element.AERO))
                 }
             val animations = listOf(AnimationInfo(R.drawable.scene_object_magic_glyph,
-                R.anim.fade_in_slow,
-                R.id.background))
+                R.anim.fade_in_halfway_very_slow,
+                R.id.background,
+                ImageView.ScaleType.FIT_CENTER))
             return getNode(index, prompts, choices, animations, Element.ICE)
         } //Chose darkness and fire, and either air or earth, in either case, commit to one of the three elements you've chosen
         if (index == 10)
@@ -226,7 +227,8 @@ class NodeRetriever(private val context: Context, private val state: State)
                 }
             val animations = listOf(AnimationInfo(R.drawable.scene_object_moonshine_upper_left,
                 R.anim.fade_in_slow,
-                R.id.background),
+                R.id.background,
+                ImageView.ScaleType.FIT_CENTER),
                 AnimationInfo(R.drawable.element_lunar, R.anim.fade_in, R.id.background_center))
             return getNode(index, prompts, choices, animations, Element.LUNAR)
         }
@@ -245,7 +247,8 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getChoice(R.string.scene12choice6, 23, Element.ANGEL))
             val animations = listOf(AnimationInfo(R.drawable.scene_object_faint_light_from_above,
                 R.anim.fade_in_very_slow,
-                R.id.background),
+                R.id.background,
+                ImageView.ScaleType.FIT_CENTER),
                 AnimationInfo(R.drawable.element_luxor, R.anim.fade_in, R.id.background_center))
             return getNode(index, prompts, choices, animations, Element.LUXOR)
         }
@@ -265,7 +268,8 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getChoice(R.string.scene13choice6, 29, Element.STORM))
             val animations = listOf(AnimationInfo(R.drawable.scene_object_gray_skull,
                 R.anim.fade_in_slow,
-                R.id.background))
+                R.id.background,
+                ImageView.ScaleType.FIT_CENTER))
             return getNode(index, prompts, choices, animations, Element.UMBRAL)
         }
         if (index == 14)
@@ -282,8 +286,9 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getChoice(R.string.scene14choice5, 34, Element.DINO),
                 getChoice(R.string.scene14choice6, 35, Element.SAND))
             val animations = listOf(AnimationInfo(R.drawable.element_pyro,
-                R.anim.fade_in_very_slow,
-                R.id.background_center))
+                R.anim.fade_in_halfway_very_slow,
+                R.id.background,
+                ImageView.ScaleType.FIT_CENTER))
             return getNode(index, prompts, choices, animations, Element.PYRO)
         }
         if (index == 15)
@@ -300,8 +305,9 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getChoice(R.string.scene15choice5, 40, Element.AMPHIBIOUS),
                 getChoice(R.string.scene15choice6, 41, Element.WEATHER))
             val animations = listOf(AnimationInfo(R.drawable.element_aqua,
-                R.anim.fade_in_very_slow,
-                R.id.background_center))
+                R.anim.fade_in_halfway_very_slow,
+                R.id.background,
+                ImageView.ScaleType.FIT_CENTER))
             return getNode(index, prompts, choices, animations, Element.AQUA)
         }
         if (index == 16)
@@ -330,8 +336,9 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getChoice(R.string.scene16choice5, 46, Element.TERRA),
                 getChoice(R.string.scene16choice6, 47, Element.PEGASUS))
             val animations = listOf(AnimationInfo(R.drawable.element_terra,
-                R.anim.fade_in_very_slow,
-                R.id.background_center))
+                R.anim.fade_in_halfway_very_slow,
+                R.id.background,
+                ImageView.ScaleType.FIT_CENTER))
             return getNode(index, prompts, choices, animations, Element.TERRA)
         }
         if (index == 17)
@@ -372,8 +379,9 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getChoice(R.string.scene17choice5, 52, Element.BIRD),
                 getChoice(R.string.scene17choice6, 53, Element.AERO))
             val animations = listOf(AnimationInfo(R.drawable.element_aero,
-                R.anim.fade_in_very_slow,
-                R.id.background_center))
+                R.anim.fade_in_halfway_very_slow,
+                R.id.background,
+                ImageView.ScaleType.FIT_CENTER))
             return getNode(index, prompts, choices, animations, Element.AERO)
         }
         if (index == 18)
