@@ -273,7 +273,7 @@
     <string name="scene63prompt">You\'re going to get yourself in trouble one of these days, but I guess you\'re old enough to make your own mistakes. Dad has some chores for you to do, and don\'t forget your writing lesson with Brahm.</string>
     <string name="scene63choice1">Where\'s dad?</string>
     <string name="scene63choice2">Who\'s Brahm?</string>
-    <string name="scene63choice3">Sure, I\'ll figure it out.</string>
+    <string name="scene63choice3">Sure, I\'ll figure it out. *leave*</string>
     <string name="scene64prompt">You should know better than that by now; Dad\'s not going to put up with your attitude. Now quit whining and remember to see Brahm at his house, then Dad at the church</string>
     <string name="scene64choice1">Where\'s dad?</string>
     <string name="scene64choice2">Who\'s Brahm?</string>
@@ -1332,22 +1332,22 @@
     <string name="menu_back">Back</string>
 
     <!-- content descriptions for Main Activiity UI elements -->
-    <string name="background_content_description">The absolute background behind everything else</string>
-    <string name="background_top_content_description">The relative \'top\' third(ish) of the display, typically used to prompt the player</string>
-    <string name="background_center_content_description">The relative \'center\' of the display, typically used to set an image for the scene for the user</string>
-    <string name="background_bottom_content_description">The relative \'bottom\' of the display, typically used to get input from the user</string>
-    <string name="cinematic_text_1_content_description">The first TextView shown when cinematically showing text, should be aligned to the top of the screen, usually set to invisible. The cinematic text will be aligned in approximately the top two thirds of the screen, from the top of the parent (and background top) to the bottom of background_center</string>
-    <string name="cinematic_text_2_content_description">The second TextView shown when cinematically showing text, usually set to invisible</string>
-    <string name="cinematic_text_3_content_description">The third TextView shown when cinematically showing text, usually set to invisible</string>
-    <string name="cinematic_text_4_content_description">The fourth TextView shown when cinematically showing text, usually set to invisible</string>
-    <string name="cinematic_text_5_content_description">The fifth TextView shown when cinematically displaying text, usually set to invisible</string>
-    <string name="cinematic_text_6_content_description">The sixth TextView shown when cinematically displaying text, usually set to invisible</string>
-    <string name="cinematic_text_7_content_description">The last Text View displayed when cinematically displaying text, usually set to invisible, aligned to right above the bottom 3rd of the screen</string>
-    <string name="button_1_content_description">The content in the first choice the player has, usually in the upper left of the bottom third screen</string>
-    <string name="button_2_content_description">The content in the second choice the player has, usually in the upper right of the bottom third screen</string>
-    <string name="button_3_content_description">The content in the third choice the player has, usually in the middle left of the bottom third screen</string>
-    <string name="button_4_content_description">The content in the fourth choice the player has, usually in the middle right of the bottom third screen</string>
-    <string name="button_5_content_description">The content in the fifth choice the player has, usually in the bottom left of the bottom third screen</string>
+    <string name="background_content_description">The absolute background behind everything else.</string>
+    <string name="background_top_content_description">The relative \'top\' third(ish) of the display, typically used to prompt the player.</string>
+    <string name="background_center_content_description">The relative \'center\' of the display, typically used to set an image for the scene for the user.</string>
+    <string name="background_bottom_content_description">The relative \'bottom\' of the display, typically used to get input from the user.</string>
+    <string name="cinematic_text_1_content_description">The first TextView shown when cinematically showing text, should be aligned to the top of the screen, usually set to invisible. The cinematic text will be aligned in approximately the top two thirds of the screen, from the top of the parent (and background top) to the bottom of background_center.</string>
+    <string name="cinematic_text_2_content_description">The second TextView shown when cinematically showing text, usually set to invisible.</string>
+    <string name="cinematic_text_3_content_description">The third TextView shown when cinematically showing text, usually set to invisible.</string>
+    <string name="cinematic_text_4_content_description">The fourth TextView shown when cinematically showing text, usually set to invisible.</string>
+    <string name="cinematic_text_5_content_description">The fifth TextView shown when cinematically displaying text, usually set to invisible.</string>
+    <string name="cinematic_text_6_content_description">The sixth TextView shown when cinematically displaying text, usually set to invisible.</string>
+    <string name="cinematic_text_7_content_description">The last Text View displayed when cinematically displaying text, usually set to invisible, aligned to right above the bottom 3rd of the screen.</string>
+    <string name="button_1_content_description">The content in the first choice the player has, usually in the upper left of the bottom third screen.</string>
+    <string name="button_2_content_description">The content in the second choice the player has, usually in the upper right of the bottom third screen.</string>
+    <string name="button_3_content_description">The content in the third choice the player has, usually in the middle left of the bottom third screen.</string>
+    <string name="button_4_content_description">The content in the fourth choice the player has, usually in the middle right of the bottom third screen.</string>
+    <string name="button_5_content_description">The content in the fifth choice the player has, usually in the bottom left of the bottom third screen.</string>
     <string name="button_6_content_description">The content in the sixth choice the player has, usually in the bottom right of the bottom third screen.</string>
     <string name="button_skip_cinematic_content_description">The invisible button that you select to skip cinematic text.</string>
 

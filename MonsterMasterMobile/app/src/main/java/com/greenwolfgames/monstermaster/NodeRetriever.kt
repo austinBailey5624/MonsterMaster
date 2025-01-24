@@ -606,7 +606,7 @@ class NodeRetriever(private val context: Context, private val state: State)
             val prompts = getPrompt(R.string.scene63prompt)
             val choices = listOf(getChoice(R.string.scene63choice1, 61),
                 getChoice(R.string.scene63choice2, 62),
-                getChoice(R.string.scene63choice3, 62))
+                getChoice(R.string.scene63choice3, 78))
             return getNode(index, prompts, choices, getPlayerRoomAnimations())
         }
         if (index == 64)
