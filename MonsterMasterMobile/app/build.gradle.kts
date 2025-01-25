@@ -7,6 +7,10 @@ android {
     namespace = "com.greenwolfgames.monstermaster"
     compileSdk = 34
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     defaultConfig {
         applicationId = "com.greenwolfgames.monstermaster"
         minSdk = 30
@@ -18,9 +22,14 @@ android {
     }
 
     buildTypes {
+	    debug {
+            isDebuggable = true
+            buildConfigField("boolean", "DEBUG", "true")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            buildConfigField("boolean", "DEBUG", "false")
         }
     }
     compileOptions {
