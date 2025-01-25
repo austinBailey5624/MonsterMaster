@@ -1386,6 +1386,7 @@
 
     <!-- Notificiation Texts -->
     <string name="notification_menu_not_accessible">Menu is not currently accessible</string>
+    <string name="notification_enter_name">Please enter your name in the box</string>
 
     <!-- content for monster types -->
     <string name="monster_type_1_name">Flarial</string>

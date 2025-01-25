@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 import java.util.Locale
 
 /**
@@ -64,7 +65,7 @@ class MainActivity : AppCompatActivity()
             findViewById(R.id.image_3),
             findViewById(R.id.image_4)
         )
-        val textInput: TextInputEditText = findViewById(R.id.text_input)
+        val textInput: TextInputLayout = findViewById(R.id.text_input_layout)
 
 
         setTextAutoResizing(texts)
@@ -149,7 +150,7 @@ class MainActivity : AppCompatActivity()
         images: List<ImageView>,
         nextNodeIndex: Int,
         state: State,
-        textInput: TextInputEditText
+        textInput: TextInputLayout
     )
     {
         val nextNode: Node = NodeRetriever(this@MainActivity,state).getNode(nextNodeIndex)
@@ -221,7 +222,7 @@ class MainActivity : AppCompatActivity()
         buttons: List<Button>,
         texts: List<TextView>,
         images: List<ImageView>,
-        textInput: TextInputEditText
+        textInput: TextInputLayout
     )
     {
         Log.d("MainActivity.Set Node", "Setting node index: " + nextNode.index)
@@ -401,20 +402,14 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-    private fun setTextInput(nextNode: Node, textInput: TextInputEditText)
+    private fun setTextInput(nextNode: Node, textInput: TextInputLayout)
     {
         if (nextNode.index in 18..53)
         {
             textInput.visibility = View.VISIBLE
-            textInput.setOnEditorActionListener{ v, actionId, event ->
-                if (actionId == EditorInfo.IME_ACTION_DONE) {
-                    val imm = this@MainActivity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-                    imm.hideSoftInputFromWindow(v.windowToken, 0)
-                    true // Indicates the action was handled
-                } else {
-                    false // Pass on the action if not handled
-                }
-            }
+            textInput.editText!!.setTextColor(nextNode.textColor)
+            textInput.editText!!.setHintTextColor(nextNode.textColor)
+            textInput.setBoxStrokeColor(nextNode.textColor)
         }
         else
         {
@@ -428,7 +423,7 @@ class MainActivity : AppCompatActivity()
         state: State,
         texts: List<TextView>,
         images: List<ImageView>,
-        textInput: TextInputEditText
+        textInput: TextInputLayout
     )
     {
 //        Log.d("MainActivity.kt.setbuttons", "choicesCount: " + node.choices.size)
@@ -451,7 +446,7 @@ class MainActivity : AppCompatActivity()
         return node.index in 18..53
     }
 
-    private fun setButtonFormatWithInput(button: Button, textInput: TextInputEditText)
+    private fun setButtonFormatWithInput(button: Button, textInput: TextInputLayout)
     { //Assume a single button, the input will be above it
         val inputLayout = textInput.layoutParams as ConstraintLayout.LayoutParams
 
@@ -486,7 +481,7 @@ class MainActivity : AppCompatActivity()
     private fun setButtonFormat(
         choiceSize: Int,
         buttons: List<Button>,
-        textInput: TextInputEditText
+        textInput: TextInputLayout
     )
     {
         textInput.visibility = View.GONE //@formatter:off
@@ -569,13 +564,13 @@ class MainActivity : AppCompatActivity()
         state: State,
         texts: List<TextView>,
         images: List<ImageView>,
-        textInput: TextInputEditText
+        textInput: TextInputLayout
     )
     { //if we are in a node where we need a special button behavior where we retrieve the player name
         if (nodeRequiresTextInput(node))
         {
             buttons[0].setOnClickListener {
-                var temp: String = textInput.text.toString()
+                var temp: String = textInput.editText!!.text.toString()
                 if (temp != "")
                 {
 //                    Log.d("Name Input", "Player entered Name, unrinsed version: $temp")
@@ -592,7 +587,8 @@ class MainActivity : AppCompatActivity()
                     fadeOut(buttons, texts, images, node.choices[0].nextNodeIndex, state, textInput)
                 }
                 else
-                { //TODO: Prompt the user to input their name
+                {
+                    notify(getString(R.string.notification_enter_name))
                 }
             }
         }

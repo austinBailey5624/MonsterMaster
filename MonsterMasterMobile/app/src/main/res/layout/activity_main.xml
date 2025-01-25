@@ -248,22 +248,23 @@
         app:layout_constraintStart_toStartOf="@id/background_top"
         app:layout_constraintTop_toBottomOf="@id/text_6" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/text_input"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:hint="name"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@id/background_bottom"
-        app:layout_constraintEnd_toEndOf="@id/background_bottom"
-        app:layout_constraintStart_toStartOf="@id/background_bottom"
-        app:layout_constraintTop_toTopOf="@id/background_bottom" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/enter_name"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button_1"
