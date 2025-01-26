@@ -171,7 +171,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/player_info_menu_exp_to_next"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_physical"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_physical_text"
         app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
         app:layout_constraintStart_toEndOf="@id/menu_player_information_level_text"
         app:layout_constraintTop_toTopOf="@id/menu_player_information_status_background" />
@@ -183,17 +183,17 @@
         android:layout_marginStart="8dp"
         android:text="@string/player_info_menu_weapon"
         app:layout_constraintBottom_toTopOf="@id/menu_player_information_armor_text"
-        app:layout_constraintEnd_toStartOf="@id/menu_player_information_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_information_physical_text"
         app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
         app:layout_constraintTop_toBottomOf="@id/menu_player_information_level_text" />
 
     <TextView
-        android:id="@+id/menu_player_information_physical"
+        android:id="@+id/menu_player_information_physical_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="8dp"
         android:text="@string/player_info_menu_physical"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_magic"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_magic_text"
         app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
         app:layout_constraintStart_toEndOf="@id/menu_player_information_weapon_text"
         app:layout_constraintTop_toBottomOf="@id/menu_player_information_exp_to_next_level_text" />
@@ -205,12 +205,12 @@
         android:layout_marginStart="8dp"
         android:text="@string/player_info_menu_armor"
         app:layout_constraintBottom_toTopOf="@id/menu_player_information_accessory_text"
-        app:layout_constraintEnd_toStartOf="@id/menu_player_information_magic"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_information_magic_text"
         app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
         app:layout_constraintTop_toBottomOf="@id/menu_player_information_weapon_text" />
 
     <TextView
-        android:id="@+id/menu_player_information_magic"
+        android:id="@+id/menu_player_information_magic_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="8dp"
@@ -218,7 +218,7 @@
         app:layout_constraintBottom_toTopOf="@id/menu_player_information_item_uses_text"
         app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
         app:layout_constraintStart_toEndOf="@id/menu_player_information_armor_text"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_physical" />
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_physical_text" />
 
     <TextView
         android:id="@+id/menu_player_information_accessory_text"
@@ -242,7 +242,7 @@
         app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_background"
         app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
         app:layout_constraintStart_toEndOf="@id/menu_player_information_accessory_text"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_magic" />
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_magic_text" />
 
     <ImageView
         android:id="@+id/menu_player_information_portriat"

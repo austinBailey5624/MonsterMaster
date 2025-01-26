@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
@@ -59,12 +60,28 @@ class PlayerInformationMenu : Fragment()
             view.findViewById(R.id.menu_player_information_portrait_background),
             view.findViewById(R.id.menu_player_information_status_background))
 
-        var buttonsToColor: List<Button> = listOf(
+        val buttonsToColor: List<Button> = listOf(
             view.findViewById(R.id.menu_player_information_skills_button),
             view.findViewById(R.id.menu_player_information_elemental_affinity_button),
             view.findViewById(R.id.menu_player_information_back_button),
             view.findViewById(R.id.menu_player_information_deity_affinity_button)
         )
+
+        val texts: List<TextView> = listOf(
+            view.findViewById(R.id.menu_player_information_name),
+            view.findViewById(R.id.menu_player_information_level_text),
+            view.findViewById(R.id.menu_player_information_exp_to_next_level_text),
+            view.findViewById(R.id.menu_player_information_weapon_text),
+            view.findViewById(R.id.menu_player_information_physical_text),
+            view.findViewById(R.id.menu_player_information_armor_text),
+            view.findViewById(R.id.menu_player_information_magic_text),
+            view.findViewById(R.id.menu_player_information_accessory_text),
+            view.findViewById(R.id.menu_player_information_item_uses_text)
+        )
+
+        val playerNameText: TextView = texts[0]
+
+        val playerPortrait: ImageView = view.findViewById(R.id.menu_player_information_portriat)
 
         val mainCharacterElement = state.getMainCharacterElement()
 
@@ -78,5 +95,13 @@ class PlayerInformationMenu : Fragment()
         {
             Element.colorButton(button,requireContext(),mainCharacterElement)
         }
+
+        for(text in texts)
+        {
+            text.setTextColor(Element.getTextColor(mainCharacterElement))
+        }
+
+        playerNameText.setText(state.playerName)
+        playerPortrait.setImageResource(state.playerPortraitImageId)
     }
 }
