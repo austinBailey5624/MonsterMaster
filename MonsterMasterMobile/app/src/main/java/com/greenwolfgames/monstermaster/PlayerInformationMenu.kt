@@ -53,11 +53,30 @@ class PlayerInformationMenu : Fragment()
             throw IllegalStateException("State cannot be null in PlayerInformationMenu.onViewCreated()")
         }
 
-        val background: ImageView = view.findViewById(R.id. menu_player_information_background)
+        val backgroundsToColor: List<ImageView> = listOf(
+            view.findViewById(R.id.menu_player_information_background),
+            view.findViewById(R.id.menu_player_information_name_background),
+            view.findViewById(R.id.menu_player_information_portrait_background),
+            view.findViewById(R.id.menu_player_information_status_background))
+
+        var buttonsToColor: List<Button> = listOf(
+            view.findViewById(R.id.menu_player_information_skills_button),
+            view.findViewById(R.id.menu_player_information_elemental_affinity_button),
+            view.findViewById(R.id.menu_player_information_back_button),
+            view.findViewById(R.id.menu_player_information_deity_affinity_button)
+        )
 
         val mainCharacterElement = state.getMainCharacterElement()
 
-        background.setColorFilter(ContextCompat.getColor(requireContext(),
-            Element.getBackgroundColor(mainCharacterElement)), PorterDuff.Mode.MULTIPLY)
+        for(background in backgroundsToColor)
+        {
+            background.setColorFilter(ContextCompat.getColor(requireContext(),
+                Element.getBackgroundColor(mainCharacterElement)), PorterDuff.Mode.MULTIPLY)
+        }
+
+        for(button in buttonsToColor)
+        {
+            Element.colorButton(button,requireContext(),mainCharacterElement)
+        }
     }
 }

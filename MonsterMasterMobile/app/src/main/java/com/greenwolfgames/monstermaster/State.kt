@@ -111,6 +111,8 @@ class State : Serializable
     var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
     var gender: Gender = Gender.MALE
 
+    var playerBattleActor = BattleActor.getBasicBattleActor()
+
 
     fun addGold(addedGold: Int)
     {

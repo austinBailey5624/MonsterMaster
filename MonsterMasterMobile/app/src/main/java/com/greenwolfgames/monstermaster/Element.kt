@@ -60,12 +60,6 @@ enum class Element
             return button
         }
 
-        fun colorImageView_background(view: ImageView, context: Context, element: Element): ImageView
-        {
-            view.setColorFilter(ContextCompat.getColor(context, getBackgroundColor(element)), PorterDuff.Mode.MULTIPLY)
-            return view
-        }
-
         fun getTextColor(element: Element): Int {
             return when (element) {
                 PYRO -> R.color.yellowOrange

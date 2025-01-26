@@ -14,8 +14,6 @@ Monster master has gone through many iterations in its alpha development, as I f
 
 3. MonsterMasterMobile (currently in development) This Android project reads from the files generated in MonsterMasterIncrementalJava and is the current version of the game
 
-4. GameMakerVersion: (Abandoned) also no longer in the git repo, if you want to play with it, a very rough version exists in early commits, and the 'final' version of that is in GameMakerVersion.zip. Its pretty basic, the interesting parts are after you press 'z' to access the menu- only the bestiary is of note though
-
 ## Vision of the future 
 
 I would like to get the first town and sequence as a playable demo in the mobile version of the game, then the first sixth will be available to play for free, with the following five chapters bringing enhancements that will be modestly expensive (perhaps 2.99 per additional chapter is the idea). Then (and this is a crazy dream stretch goal), I'll redo it using what I've learned to make a better version for the xbox and playstation stores.
@@ -39,4 +37,4 @@ I would like to get the first town and sequence as a playable demo in the mobile
 
 3. Q: How many monsters are there? A: Right now 339, though I may expand that in future releases
 
-@Copyright 2016-2024 Austin Bailey all rights reserved
+@Copyright 2016-2025 Austin Bailey all rights reserved

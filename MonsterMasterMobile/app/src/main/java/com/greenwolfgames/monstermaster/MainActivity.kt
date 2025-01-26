@@ -138,7 +138,6 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-    //TODO: I know this is an error, but I don't know what to tell  you, when you fix it it doesn't run
     @SuppressLint("ResourceAsColor")
     private fun fadeOut(
         buttons: List<Button>,
