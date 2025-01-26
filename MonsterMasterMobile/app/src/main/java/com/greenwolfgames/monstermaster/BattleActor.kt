@@ -9,7 +9,7 @@ import kotlin.random.Random
  *
  * @Copyright Austin Bailey 2025 All Rights Reserved
  */
-class BattleActor(val hpMin: Double, val hpMax: Double, val mpMin: Double, val mpMax: Double, val element: Element, val level: Int, val experience: Int, val physicalUses: Int, val magicalUses: Int, val itemUses: Int)
+class BattleActor(val hpCurrent: Double, val hpMax: Double, val mpCurrent: Double, val mpMax: Double, val element: Element, val level: Int, val experience: Int, val physicalUses: Int, val magicalUses: Int, val itemUses: Int)
 {
     class DiceToRoll(val raw: Int,val  d4: Int,val d6: Int,val d8: Int,val d10: Int)
     companion object

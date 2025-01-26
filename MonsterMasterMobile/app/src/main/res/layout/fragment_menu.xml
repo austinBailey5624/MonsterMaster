@@ -4,8 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/darkBrown">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fragment_menu_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/player_info_menu_background_content_description"
+        android:rotation="-90"
+        android:rotationX="180"
+        android:rotationY="0"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:tintMode="multiply"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_16x9" />
 
     <Button
         android:id="@+id/fragment_menu_button_1"

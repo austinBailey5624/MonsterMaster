@@ -1,11 +1,8 @@
 package com.greenwolfgames.monstermaster
 
 import android.content.Context
-import android.graphics.Color
-import android.graphics.PorterDuff
 import android.graphics.drawable.GradientDrawable
 import android.widget.Button
-import android.widget.ImageView
 import androidx.core.content.ContextCompat
 
 /**
@@ -317,6 +314,59 @@ enum class Element
                 JUSTICE,ICE,COMPASSION,COCKA,LUXOR,BETRAYER -> Nature.LIGHT
                 VENGEANCE,DEEP,ROTTEN,NIGHTWING,REDEMPTION,UMBRAL -> Nature.DARKNESS
                 NEUTRAL, PHYSICAL, MAGICAL, INITIAL -> throw IllegalStateException("Element $element has no nature")
+            }
+        }
+
+        fun getSymbol(element: Element): Int //returns a image resource Id
+        {
+            return when(element)
+            {
+                PYRO -> R.drawable.element_pyro
+                LAVA -> R.drawable.element_lava
+                DINO -> R.drawable.element_dino
+                SAND -> R.drawable.element_sand
+                JUSTICE -> R.drawable.element_justice
+                VENGEANCE -> R.drawable.element_vengeance
+
+                STEAM -> R.drawable.element_steam
+                AQUA -> R.drawable.element_aqua
+                AMPHIBIOUS -> R.drawable.element_amphibious
+                WEATHER -> R.drawable.element_weather
+                ICE -> R.drawable.element_ice
+                DEEP -> R.drawable.element_deep
+
+                FEY -> R.drawable.element_fey
+                PLANT -> R.drawable.element_plant
+                TERRA -> R.drawable.element_terra
+                PEGASUS -> R.drawable.element_pegasus
+                COMPASSION -> R.drawable.element_compassion
+                ROTTEN -> R.drawable.element_rotten
+
+                PHOENIX -> R.drawable.element_phoenix
+                SEABREEZE -> R.drawable.element_seabreeze
+                BIRD -> R.drawable.element_bird
+                AERO -> R.drawable.element_aero
+                COCKA -> R.drawable.element_cocka
+                NIGHTWING -> R.drawable.element_nightwing
+
+                SOLAR -> R.drawable.element_solar
+                LUNAR -> R.drawable.element_lunar
+                GUARDIAN -> R.drawable.element_guaridan
+                ANGEL -> R.drawable.element_angel
+                LUXOR -> R.drawable.element_luxor
+                REDEMPTION -> R.drawable.element_redemption
+
+                DEMON -> R.drawable.element_demon
+                POISON -> R.drawable.element_poison
+                UNDEAD -> R.drawable.element_undead
+                STORM -> R.drawable.element_storm
+                BETRAYER -> R.drawable.element_betrayer
+                UMBRAL -> R.drawable.element_umbral
+
+                MAGICAL -> R.drawable.element_magical
+                PHYSICAL -> R.drawable.element_physical
+
+                NEUTRAL, INITIAL -> throw IllegalStateException("Element $element has no symbol")
             }
         }
     }

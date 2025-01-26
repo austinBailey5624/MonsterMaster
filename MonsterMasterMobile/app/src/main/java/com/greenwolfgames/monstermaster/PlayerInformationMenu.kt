@@ -60,7 +60,7 @@ class PlayerInformationMenu : Fragment()
             view.findViewById(R.id.menu_player_information_portrait_background),
             view.findViewById(R.id.menu_player_information_status_background))
 
-        val buttonsToColor: List<Button> = listOf(
+        val buttons: List<Button> = listOf(
             view.findViewById(R.id.menu_player_information_skills_button),
             view.findViewById(R.id.menu_player_information_elemental_affinity_button),
             view.findViewById(R.id.menu_player_information_back_button),
@@ -91,9 +91,13 @@ class PlayerInformationMenu : Fragment()
                 Element.getBackgroundColor(mainCharacterElement)), PorterDuff.Mode.MULTIPLY)
         }
 
-        for(button in buttonsToColor)
+        for(button in buttons)
         {
             Element.colorButton(button,requireContext(),mainCharacterElement)
+        }
+
+        buttons[2].setOnClickListener{
+            requireActivity().supportFragmentManager.popBackStack()
         }
 
         for(text in texts)
