@@ -62,7 +62,7 @@ enum class Element
                 PYRO -> R.color.yellowOrange
                 LAVA -> R.color.orange
                 DINO -> R.color.darkBrown
-                SAND -> R.color.redOrange
+                SAND -> R.color.darkRed
                 JUSTICE -> R.color.lightPink
                 VENGEANCE -> R.color.black
 

@@ -14,7 +14,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 class AnimationInfo(
     val imageId: Int,
     val animationId: Int,
-    val imageScaleType: ImageView.ScaleType,
+    val imageScaleType: ScaleType,
     val layoutParam: ConstraintLayout.LayoutParams
 )
 {
@@ -28,7 +28,7 @@ class AnimationInfo(
     )
 
     constructor(imageId: Int, animationId: Int, parentBackgroundId: Int) : this(
-        imageId, animationId, parentBackgroundId, ImageView.ScaleType.FIT_XY
+        imageId, animationId, parentBackgroundId, ScaleType.FIT_XY
     )
 
     companion object

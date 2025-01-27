@@ -107,5 +107,33 @@ class PlayerInformationMenu : Fragment()
 
         playerNameText.setText(state.playerName)
         playerPortrait.setImageResource(state.playerPortraitImageId)
+
+        val playerBattleActor: BattleActor = state.getPlayerBattleActor()
+        val statusBar: StatusBar = StatusBar.getStatusBar(playerBattleActor)
+
+        val statusBarHealth: ImageView = view.findViewById(R.id.menu_player_information_status_bar_health)
+        statusBarHealth.setImageResource(statusBar.health)
+
+        val statusBarMana: ImageView = view.findViewById(R.id.menu_player_information_status_bar_mana)
+        statusBarMana.setImageResource(statusBar.mana)
+
+        val statusBarElement: ImageView = view.findViewById(R.id.menu_player_information_status_bar_element)
+        statusBarElement.setImageResource(statusBar.elementSymbol)
+
+        val statusBarHealthText: TextView = view.findViewById(R.id.menu_player_information_status_bar_health_text)
+
+        statusBarHealthText.text = requireContext().getString(
+            R.string.health_status,
+            playerBattleActor.hpCurrent.toInt(),
+            playerBattleActor.hpMax.toInt()
+        )
+
+        val statusBarManaText: TextView = view.findViewById(R.id.menu_player_information_status_bar_mana_text)
+
+        statusBarManaText.text = requireContext().getString(
+            R.string.health_status,
+            playerBattleActor.mpCurrent.toInt(),
+            playerBattleActor.mpMax.toInt()
+        )
     }
 }

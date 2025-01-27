@@ -13,7 +13,7 @@ import android.widget.ImageView
  *
  * @Copyright Austin Bailey 2025 All Rights Reserved
  */
-class StatusBar(elementSymbol: Int, health: Int, mana: Int)
+class StatusBar(val elementSymbol: Int,val health: Int,val mana: Int)
 {
     companion object
     {

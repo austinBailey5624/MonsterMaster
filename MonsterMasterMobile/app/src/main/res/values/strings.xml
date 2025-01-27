@@ -1347,6 +1347,8 @@
     <string name="player_info_deity_affinity">Deity Affinity</string>
     <string name="player_info_example_number">1xx/5xx</string>
 
+    <string name="health_status">%1$d / %2$d</string>
+
     <!-- content descriptions for Main Activiity UI elements -->
     <string name="background_content_description">The absolute background behind everything else.</string>
     <string name="background_top_content_description">The relative \'top\' third(ish) of the display, typically used to prompt the player.</string>

@@ -12,8 +12,27 @@ import java.io.Serializable
  *
  * @Copyright Austin Bailey 2024-2025 All Rights Reserved
  */
-class State : Serializable
+class State public constructor() : Serializable
 {
+    var playerName: String = "defaultPlayerName"
+    var currentGold: Int = 0
+    var totalGoldEver: Int = 0
+    var totalGoldDonated: Int = 0
+    var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
+    var gender: Gender = Gender.MALE
+    private var playerBattleActor: BattleActor
+
+    init
+    {
+        playerBattleActor = BattleActor.getBasicBattleActor()
+    }
+
+    fun getPlayerBattleActor(): BattleActor
+    {
+        playerBattleActor.element = getMainCharacterElement()
+        return playerBattleActor
+    }
+
     //@formatter:off
     private var elementalScore = mutableMapOf<Element, Int>(
         Element.PYRO to 0,
@@ -104,15 +123,6 @@ class State : Serializable
         Log.d("State", "Checking node $nodeIndex: seenBefore = $seenBefore")
         return seenBefore
     }
-    var playerName: String = "defaultPlayerName"
-    var currentGold: Int = 0
-    var totalGoldEver: Int = 0
-    var totalGoldDonated: Int = 0
-    var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
-    var gender: Gender = Gender.MALE
-
-    var playerBattleActor = BattleActor.getBasicBattleActor()
-
 
     fun addGold(addedGold: Int)
     {

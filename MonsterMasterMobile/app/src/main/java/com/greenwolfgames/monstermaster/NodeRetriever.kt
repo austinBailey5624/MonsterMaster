@@ -3,6 +3,7 @@ package com.greenwolfgames.monstermaster
 import android.content.Context
 import android.util.Log
 import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.getString
 
 /**
@@ -598,7 +599,17 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getChoice(R.string.scene60choice4, 78, Element.TERRA),
                 getChoice(R.string.scene60choice5, 78, Element.AERO),
                 getChoice(R.string.scene60choice6, 64, Element.UMBRAL))
-            return getNode(index, prompts, choices, getPlayerRoomAnimations())
+            val action: () -> Unit = {
+                state.getPlayerBattleActor().takeDamage(3.0)
+            }
+            return Node(index,
+                prompts,
+                choices,
+                getPlayerRoomAnimations(),
+                ContextCompat.getColor(context, Element.getBackgroundColor(Element.NEUTRAL)),
+                ContextCompat.getColor(context, Element.getTextColor(Element.NEUTRAL)),
+                state,
+                action)
         }
         if (index == 61)
         {

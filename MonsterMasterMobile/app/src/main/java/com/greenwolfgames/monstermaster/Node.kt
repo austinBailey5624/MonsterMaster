@@ -18,7 +18,8 @@ open class Node(
     val animationInfos: List<AnimationInfo>,
     val backgroundColor: Int,
     val textColor: Int,
-    val state: State)
+    val state: State,
+    val action: () -> Unit)
 {
     constructor(
         index: Int,
@@ -32,7 +33,8 @@ open class Node(
         listOf(),
         ContextCompat.getColor(context, Element.getBackgroundColor(element)),
         ContextCompat.getColor(context, Element.getTextColor(element)),
-        state)
+        state,
+        {})
 
     constructor(
         index: Int,
@@ -47,7 +49,8 @@ open class Node(
         animations,
         ContextCompat.getColor(context, Element.getBackgroundColor(element)),
         ContextCompat.getColor(context, Element.getTextColor(element)),
-        state)
+        state,
+        {})
 
     companion object
     {
