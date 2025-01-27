@@ -48,14 +48,14 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/player_info_menu_name_background_content_description"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_status_bar"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_status_bar_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu_player_information_name_background"
         app:srcCompat="@drawable/button_1x1" />
 
     <ImageView
-        android:id="@+id/menu_player_information_status_bar"
+        android:id="@+id/menu_player_information_status_bar_background"
         android:layout_width="260dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -66,11 +66,83 @@
         android:scaleType="center"
         android:scaleX="1.2"
         android:scaleY="1.2"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/menu_player_information_status_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu_player_information_portrait_background"
         app:srcCompat="@drawable/status_bar_mock" />
+
+    <ImageView
+        android:id="@+id/menu_player_information_status_bar_health"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="@string/player_info_menu_status_bar_content_description"
+        android:scaleType="center"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_bar_background"
+        app:srcCompat="@drawable/battle_ui_healthbar_100" />
+
+    <TextView
+        android:id="@+id/menu_player_information_status_bar_health_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_info_example_number"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/menu_player_information_status_bar_mana"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/player_info_menu_status_bar_content_description"
+        android:scaleType="center"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_bar_background"
+        app:srcCompat="@drawable/battle_ui_manabar_100" />
+
+    <TextView
+        android:id="@+id/menu_player_information_status_bar_mana_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_info_example_number"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <ImageView
+        android:id="@+id/menu_player_information_status_bar_element"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/player_info_menu_status_bar_content_description"
+        android:scaleType="fitCenter"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_bar_background"
+        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_bar_background"
+        app:srcCompat="@drawable/element_physical" />
 
     <ImageView
         android:id="@+id/menu_player_information_status_background"
@@ -84,7 +156,7 @@
         app:layout_constraintBottom_toTopOf="@id/menu_player_information_buttons_holder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_status_bar"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_status_bar_background"
         app:srcCompat="@drawable/button_2x1" />
 
     <ImageView

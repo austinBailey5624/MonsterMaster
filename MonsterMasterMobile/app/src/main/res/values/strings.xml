@@ -1345,6 +1345,7 @@
     <string name="player_info_elemental_affinity">Elemental Affinity</string>
     <string name="player_info_back">Back</string>
     <string name="player_info_deity_affinity">Deity Affinity</string>
+    <string name="player_info_example_number">1xx/5xx</string>
 
     <!-- content descriptions for Main Activiity UI elements -->
     <string name="background_content_description">The absolute background behind everything else.</string>
