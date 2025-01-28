@@ -2,15 +2,15 @@ DROP DATABASE IF EXISTS monsterMaster;
 CREATE DATABASE monsterMaster;
 USE monsterMaster;
 
-DROP TABLE IF EXISTS primary_element;
+DROP TABLE IF EXISTS nature;
 
-CREATE TABLE primary_element(
-	primary_element_id INT PRIMARY KEY,
+CREATE TABLE nature(
+	nature_id INT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     primaryColor VARCHAR(50)
     );
     
-INSERT INTO primary_element(primary_element_id, name, primaryColor)
+INSERT INTO nature(nature_id, name, primaryColor)
 VALUES
 	(0,'Fire', 'Red'),   
     (1,'Water', 'Blue'),
@@ -22,16 +22,16 @@ VALUES
     (7,'Physical', 'Brown'),
     (8,'Magical', 'Purple');
 
-CREATE TABLE secondary_element(
-	secondary_element_id INT PRIMARY KEY,
+CREATE TABLE element(
+	element_id INT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
-    first_element_id INT NOT NULL,
-    FOREIGN KEY(first_element_id) REFERENCES primary_element(primary_element_id),
-    second_element_id INT NOT NULL,
-    FOREIGN KEY(second_element_id) REFERENCES primary_element(primary_element_id)
+    primary_nature_id INT NOT NULL,
+    FOREIGN KEY(primary_nature_id) REFERENCES nature(nature_id),
+    secondary_nature_id INT NOT NULL,
+    FOREIGN KEY(secondary_nature_id) REFERENCES nature(nature_id)
     );
     
-INSERT INTO secondary_element(secondary_element_id, name, first_element_id, second_element_id)
+INSERT INTO element(element_id, name, primary_nature_id, secondary_nature_id)
 VALUES
 	(0,'Pyro',0,0),
     (1,'Lava',0,1),
@@ -74,7 +74,7 @@ VALUES
   deity_id INT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
   element_id INT NOT NULL,
-  FOREIGN KEY(element_id) REFERENCES primary_element(primary_element_id),
+  FOREIGN KEY(element_id) REFERENCES nature(nature_id),
   entropic_nature ENUM('Lawful','Neutral','Chaotic')
   );
   
@@ -129,149 +129,11 @@ VALUES
         ('Magistiars'),
         ('Sidden Monks');
     
-    CREATE TABLE adventure(
-     adventure_id INT PRIMARY KEY AUTO_INCREMENT,
-     name VARCHAR(50) NOT NULL,
-     requirements_id INT,
-     faction_id INT
-     );
-     
-     INSERT INTO adventure(name)
-     VALUES
-		('Initial');
-        
-CREATE TABLE scenario(
-	scenario_id INT PRIMARY KEY AUTO_INCREMENT, -- the unique key identifying the scenario
-    adventure_id INT NOT NULL, -- the adventure to which the scenario belongs
-    FOREIGN KEY(adventure_id) REFERENCES adventure(adventure_id),
-    name VARCHAR(50)
-    );
-    
-INSERT INTO scenario(adventure_id, name)
-VALUES
-	(1,'Initial, light or darkness'),
-    (1,'Light:Forest, Fire or Water'),
-    (1,'Darkness:Forest, Fire or Water'),
-    (1,'Fire:Forest, Earth or Air'),
-    (1,'Water:Forest, Earth or Air'),
-    (1,'Forest Demon Bird'),
-    (1,'Forest Demon Critter'),
-    (1,'Forest Deep Pool'),
-    (1,'Forest Deep Pool2'),
-    (1,'Forgotten Shrine'),
-    (1,'Forgotten Shrine 2'),
-    (1,'Magic Glyph'),
-    (1,'Magic Glyph2');
-    
-CREATE TABLE choice(
-	choice_id INT PRIMARY KEY AUTO_INCREMENT,
-    scenario_id INT NOT NULL,
-    FOREIGN KEY(scenario_id) REFERENCES scenario(scenario_id),
-    name VARCHAR(50)
-    );
-    
-INSERT INTO choice(choice_id, scenario_id,name)
-VALUES
-	(-1,1,' ');
-    
-INSERT INTO choice(scenario_id, name)
-VALUES
-	(1,'Go towards the light'),
-    (1,'Embrace the Darkness'),
-    (2,'Search for twigs to make a fire'),
-    (2,'Find a source of water to drink'),
-    (3,'Stay and make the best of things'),
-    (3,'Abandon your house and search for others'),
-    (4,'Free demon from trap'),
-    (4,'Save bird'),
-    (4,'Kill demon'),
-    (4,'Leave in darkness'),
-    (5,'Free demon from trap'),
-    (5,'Save critter from demon'),
-    (5,'Kill demon, eat critter'),
-    (5,'Leave in darkness'),
-    (6,'Drink deeply from the pool'),
-    (6,'Dive into the depths'),
-    (6,'Search around the pool for others'),
-    (6,'Wait patiently in the darkness'),
-    (7,'Drink deeply from the pool'),
-    (7,'Dive into the pool'),
-    (7,'Make shelter besides the water source'),
-    (7,'Wait patiently in the darkness'),
-    (8,'Say a prayer to the lost gods'),
-    (8,'Burn the shrine'),
-    (8,'Look for worshippers'),
-    (8,'Praise the sun!'),
-    (9,'Say a prayer to the lost gods'),
-    (9,'Burn the shrine'),
-    (9,'Look for food'),
-    (9,'Praise the sun!'),
-    (10,'Attune to the glyph'),
-    (10,'Study the glyph'),
-    (10,'Look for others'),
-    (10,'Recognize the phases of the moon in the glyph'),
-    (11,'Attue to the glyph'),
-    (11,'Study the glyph'),
-    (11,'Look for food'),
-    (11,'Recognize the phases of the moon in the glyph');
-    
-CREATE TABLE statement(
-	statement_id INT PRIMARY KEY AUTO_INCREMENT,
-    scenario_id INT NOT NULL,
-    FOREIGN KEY(scenario_id) REFERENCES scenario(scenario_id),
-    choice_id INT Default -1, -- 0 choice_id indicates the statement is for the scenario prompt
-    FOREIGN KEY(choice_id) REFERENCES choice(choice_id),
-    content VARCHAR(500) NOT NULL
-    );
-    
---   SELECT scenario.scenario_id, choice.choice_id, scenario.name as 'ScenName', choice.name as 'ChioceName'
---   FROM scenario
---   RIGHT JOIN choice ON scenario.scenario_id = choice.scenario_id;
-
-INSERT INTO statement(scenario_id, content)
-VALUES
-	(1,'You awaken in the darkness'),
-    (1,'With no memory or direction,'),
-    (1,'Time passes'),
-    (1,'You cannot grasp it'),
-    (1,'A week, a month, a year'),
-    (1,'comes and fades again'),
-    (1,'Then there is light'),
-	(2,'Light comes from above'),
-    (2,'Revealing a dark forest'),
-    (2,'Trees reach to heaven'),
-    (2,'Outer branches'),
-    (2,'Silhouetted by the stars'),
-    (2,'Your form is unfamiliar'),
-    (2,'Quiet echoes through the night'),
-    (3,'Darkness comforts you'),
-    (3,'Harsh light fades'),
-    (3,'You touch rough bark'),
-    (3,'Sharp blades of grass'),
-    (3,'You do not know'),
-    (3,'Your nature or your form'),
-    (4,'The flame comforts you'),
-    (4,'Reveals a stream'),
-    (4,'Thirst quenched'),
-    (4,'You are safe'),
-    (4,'A question arrives'),
-    (4,'What next?'),
-    (5,'A stream greets you');
-    
-INSERT INTO statement(scenario_id, choice_id, content)
-VALUES
-    (1,1,'Go towards the light'),
-    (1,2,'Embrace the Darkness'),
-    (2,1,'Search for twigs to make a fire'),
-    (2,2,'Search for water to drink'),
-    (3,1,'Search for twigs to make a fire'),
-    (3,2,'Search for water to drink');
-    
 CREATE TABLE monster_type(
 	monster_type_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
     description VARCHAR(750) NOT NULL,
-    secondary_element_id INT NOT NULL,
+    element_id INT NOT NULL,
     physical_evolution INT,
     balanced_evolution INT,
     magical_evolution INT,
@@ -279,7 +141,7 @@ CREATE TABLE monster_type(
     monster_type_image VARCHAR(500)
     );
     
-INSERT INTO monster_type(name, secondary_element_id,  physical_evolution, balanced_evolution, magical_evolution, previous_evolution,  description)
+INSERT INTO monster_type(name, element_id,  physical_evolution, balanced_evolution, magical_evolution, previous_evolution,  description)
 VALUES
 	('Flarial',0,2,3,4,NULL,'Young spirits made of flame that snap and spit at anything that comes near. Their white eyes burn with anger at whatever they see.'),
     ('Pyres',0,NULL, 5, NULL,1,'Minor demon, made of flame. Their arms are glowing iron blades, that they may never put down. They are cursed for their violence to never cease.'),
@@ -2259,15 +2121,6 @@ INSERT INTO requirement_manager(requirement_description)
     ("Body Type:54 Tyrant"),
     ("Body Type:55 Wasp"),
     ("Body Type:56 Wolf");
---     ("Corporeality: Coproreal AND Fast: 1"),
---     ("Corporeality:Corporeal AND bodyType:Fang OR Corporeal AND bodytype:Wolf OR Corporeal AND bodytype:Dragon OR Corporeal AND bodyType:Snake"),
---     ("Corporeality:Corporeal AND bodyType:Horse"),
---     ("Corporeality:Fluid OR BodyType:Liquid OR Aquamagia:1"),
---     ("Cloudy:atLeast1 AND Heat Tolerance atMost -1"),
---     ("BodyType:Vapor"),
---     ("Corporeality: Corporeal AND bodyType:Horse and AGE at least 2");
---     
---     Select * from requirement_manager;-- 
 
 INSERT INTO skill(skill_name, skill_description, cost_mp, nature, tier, unlock_requirement_manager_id, usage_requirement_manager_id)
      VALUES
@@ -2333,11 +2186,16 @@ INSERT INTO skill(skill_name, skill_description, cost_mp, nature, tier, unlock_r
      ('Roar','Deal 1 point of true damage to the whole field, and debuf them physically',4,'Magical',1.0,60,60),
      ('Wasp Sting','Deal Physical and Earth Damage, magically enhanced with poison',4,'Magical',1.0,61,61),
      ('Howl','Slightly increase the attack of all monsters on the battlefield',4,'Magical',1.0,62,62);
---      ('Blitz','This eager monster strikes first before the enemy is ready', 7,'Physical',2.0,7,7),
---      ('Trample','Rush an enemy row in a straight line in front of you',7,'Physical',2.0,13,9),
---      ('Chill Wind','A chill wind from the north cools the battle',4,'Magical',2.0,11,11),
---      ('Bite','Bite an enemy with your fangs',2,'Physical',1.0,8,8);
-
      
+CREATE TABLE item(
+	item_id INT PRIMARY KEY AUTO_INCREMENT,
+    item_name VARCHAR(50) NOT NULL,
+    item_description VARCHAR(750) NOT NULL,
+    item_element_id INT NOT NULL, -- foreign key
+    item_value INT NOT NULL,
+    item_use VARCHAR (750) NOT NULL,
+    item_how_to_obtain VARCHAR(750) NOT NULL,
+    item_type ENUM('WEAPON','ARMOR','ACCESSORY','USEABLE','KEY')
+    );
     
-    
+-- INSERT INTO item(item_name,item_description,item_element_id,item_value,
