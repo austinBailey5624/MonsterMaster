@@ -39,6 +39,9 @@ VALUES
     (3,'Sand',0,3),
     (4,'Justice',0,4),
     (5,'Vengeance',0,5),
+    (6,'Neutral',6,6),
+    (7,'Physical',7,7),
+    (8,'Magical',8,8),
     (10,'Steam',1,0),
     (11,'Aqua',1,1),
     (12,'Amphibious',1,2),
@@ -2191,11 +2194,22 @@ CREATE TABLE item(
 	item_id INT PRIMARY KEY AUTO_INCREMENT,
     item_name VARCHAR(50) NOT NULL,
     item_description VARCHAR(750) NOT NULL,
-    item_element_id INT NOT NULL, -- foreign key
+    item_element_id INT NOT NULL,
+    FOREIGN KEY(item_element_id) REFERENCES element(element_id),
     item_value INT NOT NULL,
     item_use VARCHAR (750) NOT NULL,
     item_how_to_obtain VARCHAR(750) NOT NULL,
     item_type ENUM('WEAPON','ARMOR','ACCESSORY','USEABLE','KEY')
     );
     
--- INSERT INTO item(item_name,item_description,item_element_id,item_value,
+INSERT INTO item(item_name,item_description,item_element_id,item_value,item_use,item_how_to_obtain,item_type)
+VALUES
+	('Mother\'s Necklace','A necklace your mother left with your father before she left for parts unknown',6,22,'The necklace is purely sentimental.','Given by Father at the beginning of the story','KEY'),
+    ('Shortsword','A small sword, fit for a soldier in close combat',6,10,'1d4 damage, orthoganally ajacent target, .85 turn speed','Can be bought from the merchant in Oaktree','WEAPON'),
+    ('Leather Armor','Tight fitting leather armor, which provides moderate protection',6,10,'Increase Physical armor by 1','Can be bought from the merchant in Oaktree','ARMOR'),
+    ('Bark','Wood from a plant monster that can be used to heal an immolated monster',22,0,'If single target is of type immolated, heal 1d4 health,','Base 30% Drop upon defeating a Bulbapup, base 60 drop upon defeating a Greenwolf, Base 90% drop on defeating a Sief','USEABLE'),
+    ('Green Onion','Wild onion from the back of a bulbapup, useful in cooking. When eaten raw, heal a human by a small amount of hp',22,1,'Heal heman 1d4 health','Base 30% Drop upon defeating a Bulbapup.','USEABLE'),
+    ('Vine Rope','Green Rope from a vine monster, can be use to fuel a fire or heal an immolated monster.',22,0,'If single target is immolated, heal 1d6 health.','Base 30% Drop upon defeating a Vine Wolf.','USEABLE'),
+    ('Badge',"Shiny metal that has little use",22,2,'Increase Physical Armor by 1','Base 30% drop from badge badger, 60% from Honey Badger, and 90 from Honey badgeBear.','ACCESSORY'),
+    ('Mystic Vine','Magic green vine that can boost earth damage',22,2,'Increase Earth Damage by 1 for rest of battle, does not stack','Base 40% drop from Aware Wolf, Base 70% drop from Mystic Wolf','USEABLE')
+    
