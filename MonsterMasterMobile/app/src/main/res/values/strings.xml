@@ -1347,6 +1347,21 @@
     <string name="player_info_deity_affinity">Deity Affinity</string>
     <string name="player_info_example_number">1xx/5xx</string>
 
+    <!-- Deity Alignment Menu Content -->
+    <string name="deity_alignment_menu_lawful">Lawful Deities</string>
+    <string name="deity_alignment_menu_neutral">Neutral Deities</string>
+    <string name="deity_alignment_menu_chaotic">Chaotic Deities</string>
+    <string name="deity_alignment_menu_anu">Anu</string>
+    <string name="deity_alignment_menu_velhu">Velhu</string>
+    <string name="deity_alignment_menu_sid">Sid</string>
+    <string name="deity_alignment_menu_gabriel">Gabriel</string>
+    <string name="deity_alignment_menu_ahros">Ahros</string>
+    <string name="deity_alignment_menu_pythion">Pythion</string>
+
+    <string name="deity_alignment_menu_player_info_text">Click a deity for more information </string>
+    <string name="deity_alignment_menu_back">Back</string>
+
+
     <string name="health_status">%1$d / %2$d</string>
 
     <!-- content descriptions for Main Activiity UI elements -->
