@@ -1357,6 +1357,18 @@
     <string name="deity_alignment_menu_gabriel">Gabriel</string>
     <string name="deity_alignment_menu_ahros">Ahros</string>
     <string name="deity_alignment_menu_pythion">Pythion</string>
+    <string name="deity_alignment_menu_bennu">Bennu</string>
+    <string name="deity_alignment_menu_neptune">Neptune</string>
+    <string name="deity_alignment_menu_gaia">Gaia</string>
+    <string name="deity_alignment_menu_bacchus">Bacchus</string>
+    <string name="deity_alignment_menu_mars">Mars</string>
+    <string name="deity_alignment_menu_thanatos">Thanatos</string>
+    <string name="deity_alignment_menu_acheron">Acheron</string>
+    <string name="deity_alignment_menu_illian">Illian</string>
+    <string name="deity_alignment_menu_webspinner">Webspinner</string>
+    <string name="deity_alignment_menu_muir">Muir</string>
+    <string name="deity_alignment_menu_malacathe">Malacathe</string>
+    <string name="deity_alignment_menu_enemy">Enemy</string>
 
     <string name="deity_alignment_menu_player_info_text">Click a deity for more information </string>
     <string name="deity_alignment_menu_back">Back</string>
