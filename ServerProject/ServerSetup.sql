@@ -147,7 +147,7 @@ CREATE TABLE monster_type(
 INSERT INTO monster_type(name, element_id,  physical_evolution, balanced_evolution, magical_evolution, previous_evolution,  description)
 VALUES
 	('Flarial',0,2,3,4,NULL,'Young spirits made of flame that snap and spit at anything that comes near. Their white eyes burn with anger at whatever they see.'),
-    ('Pyres',0,NULL, 5, NULL,1,'Minor demon, made of flame. Their arms are glowing iron blades, that they may never put down. They are cursed for their violence to never cease.'),
+    ('Pyrus',0,NULL, 5, NULL,1,'Minor demon, made of flame. Their arms are glowing iron blades, that they may never put down. They are cursed for their violence to never cease.'),
     ('Flarpup',0,NULL, 6, NULL,1,'Young flaming fox cubs dashing this way and that, famed both for their agility and their inability to slow down.'),
     ('Pyro Symbol',0,7, NULL,8, 1,'Magical symbols of the eternal flame, Pyro Symbols spark and burn to the touch. It is said they can see the future in the fire.'),
     ('Pyos',0,NULL,9,NULL,2,'Wingless drakes whose skin is lit aflame, the Pyos are known for their ferocity in combat and the red fire that spills from their jaws.'),
@@ -2216,9 +2216,42 @@ VALUES
     ('Red Coin','Magic Red goin that can be used to slightly heal a fire monster, or consumed to gain loyalty with fire monsters and fire gods',0,10,'Heal a character by 1d4 if that character has a fire primary nature, if consumed outside battle, adds 1 point of affinity with Pyro Element and Mars Deity','Base 30% drop from pyro symbol, 40% from pyro elemental, 25% from Terra, Pyro, and Umbral Elemntals (Pyro gets two rolls), and 20% from all primordial elementals.','USEABLE'),
     ('Fire Opal','Lesser red stone used to gain fire affinity or sold for profit',0,20,'Consume for 3 points of affinity with Mars and the Pyro Element.','50% drop from Fire Opal, 30% drop from Ruby','USEABLE'),
     ('Ruby','Red stone used in jewelry making, can be consumed for affinity with red spirits',0,50,'Consume for large affinity boost with both Mars and the Pyro Element.','60% drop from Ruby','USEABLE'),
+    ('Lava Shell','The shell of a slain lava monster, can be used to grant minor protection from both fire and physical damage',1,5,'On use, grant 1 point of protection from fire and physical','20% Drop from a Philammon','USEABLE'),
+    ('Warm Stone','A small stone that is magically warm to the touch, cracking it open heats the battlefield by a small amount',1,7,'On use, addd 1 point of heat to the battlefield','30% drop from Crerops, 50% drop from Philottus, 70% drop from Vulcanous','USEABLE'),
+    ('Igneous Rock','A balck stone formed from cooled lava. Can be thrown at an opponent to deal a moderate amount of fire and physical damage',1,10,'On use deal 1d4 fire damage and 1d4 physical damage','30% drop from Philottus, 50% drop from Vulcanous','USEABLE'),
+    ('Oil','A black viscous substance that can be thrown to an enemy to make them vulnerable to fire attacks',1,3,'On use deal 1d2 oil damage to target.','30% drop from Oil puddle, 50% drop from lava pool, 70% drop from magma lake','USEABLE'),
+    ('Lava Essence','A glowing red substance that enhances Fire magic temporarily when consumed. Can only safely be consumed by warm creatures.',1,10,'On Use, increase Fire magic damage by 1 point until end of battle','30% drop from lava pool, 50% drop from magma lake','USEABLE'),
+    ('Magma Essence','A glowing red substance that enchances Fire and Earth magic temporarily when consumed. Can only safely be used by warm creatures',1,16,'On Use, increase Fire magic and Earth Magic by 1 point until end of battle','30% drop from magma lake','USEABLE'),
+    ('Tea Stone','When equipped, slightly increases the heat of the battle every turn.',1,7,'When equipped, adds 1 point of heat to the battle every turn','30% drop from Corynetes, 50% from Cercyon, 70% from Vagrus','ACCESSORY'),
+    ('Lava Snake Tail','While equipped, slightly increases Pyro Magic intensity',1,14,'When equipped, adds one point of intensity to pyro magic spells of the equipper','30% drop from Cercyon, 50% drop from Vagrus','ACCESSORY'),
+    ('Dragon Snake Tail','While equipped, moderately increases Fire Magic Intensity and adds heat every turn',1,22,'When equipped, increase Fire magic by 2, add 2 points of heat each turn','30% drop from Vagrus','ACCESSORY'),
     ('Bark','Wood from a plant monster that can be used to heal an immolated monster',22,0,'If single target is of type immolated, heal 1d4 health,','Base 30% Drop upon defeating a Bulbapup, base 60 drop upon defeating a Greenwolf, Base 90% drop on defeating a Sief','USEABLE'),
     ('Green Onion','Wild onion from the back of a bulbapup, useful in cooking. When eaten raw, heal a human by a small amount of hp',22,1,'Heal heman 1d4 health','Base 30% Drop upon defeating a Bulbapup.','USEABLE'),
     ('Vine Rope','Green Rope from a vine monster, can be use to fuel a fire or heal an immolated monster.',22,0,'If single target is immolated, heal 1d6 health.','Base 30% Drop upon defeating a Vine Wolf.','USEABLE'),
     ('Badge',"Shiny metal that has little use",22,2,'Increase Physical Armor by 1','Base 30% drop from badge badger, 60% from Honey Badger, and 90 from Honey badgeBear.','ACCESSORY'),
-    ('Mystic Vine','Magic green vine that can boost earth damage',22,2,'Increase Earth Damage by 1 for rest of battle, does not stack','Base 40% drop from Aware Wolf, Base 70% drop from Mystic Wolf','USEABLE')
+    ('Mystic Vine','Magic green vine that can boost earth damage',22,2,'Increase Earth Damage by 1 for rest of battle, does not stack','Base 40% drop from Aware Wolf, Base 70% drop from Mystic Wolf','USEABLE');
+
+    select monster_type_id,name,element_id from monster_type;
+    
+    select item_id, item_element_id, item_name from item;
+    
+CREATE TABLE item_drop_chance(
+	item_drop_chance_id INT PRIMARY KEY AUTO_INCREMENT,
+    monster_type_id INT NOT NULL,
+    FOREIGN KEY(monster_type_id) REFERENCES monster_type(monster_type_id),
+    item_id INT NOT NULL,
+    FOREIGN KEY(item_id) REFERENCES item(item_id),
+    drop_chance FLOAT NOT NULL
+    );
+    
+INSERT INTO item_drop_chance(monster_type_id, item_id, drop_chance)
+VALUES
+	(1,4,0.3),
+    (2,4,0.6),
+    (3,4,0.6),
+    (5,4,0.9),
+    (6,4,0.9),
+    (9,4,1.2),
+    (10,4,1.2);
+
     
