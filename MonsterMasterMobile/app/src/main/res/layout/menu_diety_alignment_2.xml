@@ -25,44 +25,74 @@
         app:srcCompat="@drawable/background_16x9" />
 
     <TextView
-        android:id="@+id/menu_deity_alignment_lawful_text"
-        android:layout_width="50dp"
-        android:layout_height="200dp"
+        android:id="@+id/deity_alignment_lawful_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
         android:rotation="-90"
         android:text="@string/deity_alignment_menu_lawful"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/note_to_players"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/menu_deity_alignemnt_neutral_text"
+        android:id="@+id/deity_alignment_neutral_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginEnd="24dp"
+        android:rotation="-90"
         android:text="@string/deity_alignment_menu_neutral"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@id/bennu_frame_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/anu_frame_layout" />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/deity_alignment_chaotic_textview"
+        app:layout_constraintStart_toEndOf="@id/deity_alignment_lawful_textview"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/menu_deity_alignment_chaotic_text"
+        android:id="@+id/deity_alignment_chaotic_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginEnd="50dp"
+        android:rotation="-90"
         android:text="@string/deity_alignment_menu_chaotic"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@id/achreon_frame_layout"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/deity_alignment_neutral_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deity_alignment_player_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deity_alignment_menu_player_info_text"
+        app:layout_constraintBottom_toTopOf="@id/deity_alignment_back_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bennu_frame_layout" />
+        app:layout_constraintTop_toBottomOf="@id/deity_alignment_lawful_textview" />
+
+    <Button
+        android:id="@+id/deity_alignment_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deity_alignment_player_info" />
 
     <FrameLayout
         android:id="@+id/anu_frame_layout"
-        android:layout_width="90dp"
-        android:layout_height="108dp"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="27dp">
+        android:layout_width="65dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@id/deity_alignment_neutral_textview"
+        app:layout_constraintStart_toEndOf="@id/deity_alignment_lawful_textview"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/menu_deity_anu_text"
@@ -88,10 +118,11 @@
 
     <FrameLayout
         android:id="@+id/velhu_frame_layout"
-        android:layout_width="126dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="231dp">
+        android:layout_width="65dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@id/deity_alignment_neutral_textview"
+        app:layout_constraintStart_toEndOf="@id/deity_alignment_lawful_textview"
+        app:layout_constraintTop_toBottomOf="@id/anu_frame_layout">
 
         <TextView
             android:id="@+id/menu_deity_velhu_text"
@@ -120,8 +151,9 @@
         android:id="@+id/sid_frame_layout"
         android:layout_width="65dp"
         android:layout_height="100dp"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="35dp">
+        app:layout_constraintEnd_toStartOf="@id/deity_alignment_neutral_textview"
+        app:layout_constraintStart_toEndOf="@id/deity_alignment_lawful_textview"
+        app:layout_constraintTop_toBottomOf="@id/velhu_frame_layout">
 
         <TextView
             android:id="@+id/menu_deity_sid_text"
@@ -149,8 +181,9 @@
         android:id="@+id/gabriel_frame_layout"
         android:layout_width="65dp"
         android:layout_height="100dp"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="35dp">
+        app:layout_constraintEnd_toStartOf="@id/deity_alignment_neutral_textview"
+        app:layout_constraintStart_toEndOf="@id/deity_alignment_lawful_textview"
+        app:layout_constraintTop_toBottomOf="@id/sid_frame_layout">
 
         <TextView
             android:id="@+id/menu_deity_gabriel_text"
@@ -175,213 +208,17 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/ahros_frame_layout"
+        android:id="@+id/ahros_deity_layout"
         android:layout_width="65dp"
-        android:layout_height="100dp"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="35dp">
+        android:layout_height="100dp">
 
-        <TextView
-            android:id="@+id/menu_diety_ahros_text"
-            android:layout_width="65dp"
-            android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
-            android:text="@string/deity_alignment_menu_ahros" />
-
-        <ImageView
-            android:id="@+id/menu_deity_ahros"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/deity_ahros" />
-
-        <ImageView
-            android:id="@+id/menu_deity_ahros_alignment"
-            android:layout_width="65dp"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom"
-            app:srcCompat="@drawable/menu_ui_alignment" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/pythion_frame_layout"
         android:layout_width="65dp"
-        android:layout_height="100dp"
-        tools:layout_editor_absoluteX="346dp"
-        tools:layout_editor_absoluteY="35dp">
-
-        <TextView
-            android:id="@+id/menu_deity_pythion_text"
-            android:layout_width="65dp"
-            android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
-            android:text="@string/deity_alignment_menu_pythion" />
-
-        <ImageView
-            android:id="@+id/menu_deity_pythion"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/deity_pythion" />
-
-        <ImageView
-            android:id="@+id/menu_deity_pythion_alignment"
-            android:layout_width="65dp"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom"
-            app:srcCompat="@drawable/menu_ui_alignment" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/bennu_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@id/menu_deity_alignment_chaotic_text"
-        app:layout_constraintEnd_toStartOf="@id/neptune_frame_layout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_deity_alignemnt_neutral_text">
+        android:layout_height="100dp">
 
     </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/neptune_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/bennu_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/gaia_frame_layout"
-        app:layout_constraintStart_toEndOf="@id/bennu_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/bennu_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/gaia_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/bennu_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/bacchus_frame_layout"
-        app:layout_constraintStart_toEndOf="@id/neptune_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/bennu_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/bacchus_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/bennu_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/mars_frame_layout"
-        app:layout_constraintStart_toEndOf="@id/gaia_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/bennu_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/mars_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/bennu_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/thanatos_frame_layout"
-        app:layout_constraintStart_toEndOf="@id/bacchus_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/bennu_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/thanatos_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/bennu_frame_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/mars_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/bennu_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/achreon_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@id/note_to_players"
-        app:layout_constraintEnd_toStartOf="@id/illian_frame_layout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_deity_alignment_chaotic_text">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/illian_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/achreon_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/webspinner_frame_layout"
-        app:layout_constraintStart_toEndOf="@id/achreon_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/achreon_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/webspinner_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/achreon_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/muir_frame_layout"
-        app:layout_constraintStart_toEndOf="@id/illian_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/achreon_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/muir_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/achreon_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/malacathe_frame_layout"
-        app:layout_constraintStart_toEndOf="@id/webspinner_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/achreon_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/malacathe_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/achreon_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/enemy_frame_layout"
-        app:layout_constraintStart_toEndOf="@id/muir_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/achreon_frame_layout">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/enemy_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@id/achreon_frame_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/malacathe_frame_layout"
-        app:layout_constraintTop_toTopOf="@id/achreon_frame_layout">
-
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/note_to_players"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/deity_alignment_menu_player_info_text"
-        app:layout_constraintBottom_toTopOf="@id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/achreon_frame_layout" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/deity_alignment_menu_back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/note_to_players" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
