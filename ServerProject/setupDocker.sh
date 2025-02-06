@@ -2,10 +2,10 @@
 docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=secret -p 3306:3306 -d mysql:latest
 
 # put the setup file in the docker container
-docker cp ServerSetup.sql my-mysql:/ServerSetup.sql
+ docker cp ServerSetup.sql my-mysql:/ServerSetup.sql
 
 # access the mySQL shell for the container
-docker exec -it my-mysql mysql -uroot -p
+ docker exec -it my-mysql mysql -uroot -p
 
 # inside mySQL shell
 source /ServerSetup.sql

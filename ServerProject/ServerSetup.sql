@@ -2230,15 +2230,33 @@ VALUES
     ('Tyrant Fang','Massive fang from a tyrant, slightly increases physical damage when used on a monster in battle',2,14,'Increase Physical Damage by 2 till end of battle','30% drop from Tyrant, 50% drop from great white tyrant','USEABLE'),
     ('White Tyrant Claw','Equip as an accessory to increase physical damage dealt',2,25,'Increase Physical damage by 2 while equipped','30% drop from a Great White Tyrant','ACCESSORY'),
     ('Winger Scale','Speed up next physical attack target makes',2,5,'Duration of target\'s next attack *.9','30% drop from winger, 50% drop from Steelwinger, 70% drop from edgewinger','USEABLE'),
+    ('Steelwinger Barb','Speeds up the targets physcial attacks for the rest of the battle',2,15,'Duration of target\'s physical attacks *.925 for the rest of the battle','30% drop from steelwinger, 50% drop from edgewinger','USEABLE'),
+    ('Edgewinger Tooth','Speeds up the equipped users physical attacks',2,35,'Duration of equipped users physical attacks *.95 while equipped','30% drop from edgewinger','ACCESSORY'),
+    ('Rough Hide','Increase physcial defense of target for the rest of the battle',3,5,'Increase target\'s physical defense by 1 for the rest of the battle','30% drop from Herbisaur, 50% drop from Spikevorsaur, 70% drop from Broncheospikesaur','USEABLE'),
+    ('Thorny Hide','Target reflects a small amount of physical damage for the rest of the battle',3,15,'Target reflects 1 point of physcial damage for the rest of the battle','30% drop from Spikevorsaur, 50% drop from Broncheospikesaur','USEABLE'),
+    ('Spiked Hide','Target reflects and is protected from some physical damage for the rest of the battle',3,25,'Target reflects 2 points of physical damage, and increases their physical damage protection by 2 for the rest of the battle','30% drop from Broncheospikesaur','USEABLE'),
+    ('Kangarat Tail','Target is more resistant to heat for the rest of the battle',4,1,'Tartet has one higher \'heat\' trait until the end of the battle (max 4)','30% drop from kangarat','USEABLE'),
+    ('Slynx Collar','When equipped, increases the users heat tolerance',4,10,'When equipped, increases heat tolerance by 1','30% drop from Slynx','ACCESSORY'),
+    ('Sphynx Eye','Target takes a small amount of magic, fire and air damage',4,15,'Target takes 1d4 magic, fire and air damage','30% drop from a sphynx, 50% drop from a greater sphynx','USEABLE'),
+    ('Sphynx Claw','Target takess a small amount of physical damage, and deals increased sand magic for the rest of the battle',4,22,'Target takes 1d4 physical, then Sand Magic intensity increased by 1 for the rest of the battle','30% drop from a Greater Sphynx','USEABLE'),
+    ('Scoprion Stinger','Inflicts small amount of poison on a target',4,4,'Target takes 1 point of poison damage','30% drop from Skorpi, 50% drop from Scarpi, 70% drop from Scorpious, 20% drop from Stinger','USEABLE'),
+    ('Red Scorpion Stinger','Inflicts poison on a target',4,8,'Target takes 2 points of poison damage','30% drop from Scarpi, 50% drop from Scorpius','USEABLE'),
+    ('Golden Scorpion Stinger','Inflicts a large amount of poison on a target',4,16,'Target takes 4  points of poison damage','30% drop from Scorpius','USEABLE'),
+    ('Clean Water','Heals a small amount of health and mana',4,5,'Target heals 1 point of health and mana','30% drop from humpless, 50% drop from Unihump, 70% drop from bihump','USEABLE'),
+    ('Oasis Water','Heals health and mana',4,15,'Target heals 2 points of health and mana','30% drop from Unihump, 50% drop from Bihump','USEABLE'),
+    ('Sacred Oasis Water','Heals health and mana',4,25,'Target heals 3 points of health and mana','30% drop from Bihump','USEABLE'),
+    ('White Demon Horn','Deal small amount of physical and light damage to target',5,1,'Target takes 1 point of physical and 1 point of Light damage','30% drop from Angier, 50% drop from Justicar, 70% drop from Ordinator, 90% drop from Zireal','USEABLE'),
+    ('Wooden Buclker','When equipped, raise physical defense by a small amount',5,10,'Raise Physical defense by 1 when equipped','30% drop from Justicar','ACCESSORY'),
+    ('Steel Shield','When equipped, raise physical defense by a moderate amount',5,20,'Raise Physical defense by 2 when equipped','30% drop from Ordinator','ACCESSORY'),
+    ('Ahros Paladin\'s Shield','When equipped raise physical defense by a moderate amount, and fire defense by a small amount',5,35,'Raises Physical defense by 2 and fire defense by 1 when equipped','30% drop from a Zireal','ACCESSORY'),
+    ('Red Angel Down','Consume as a sacrement to Ahros and slightly strengthen Justice Monsters',5,8,'Consume to increase affinity with Ahros and the Justice Element by 1','30% drop from Ayurved, 50% drop from Anyr,70% drop from Justicer','USEABLE'),
+    ('Red Angel Feather','Consume as a ritural to Ahros, and strengthen Justice Monsters',5,16,'Consume to increase affinity with Ahros and the Justice Element by 2','30% drop from Anyr, 50% drop from Justicer','USEABLE'),
+    ('Red Angel Wing','Consume with devotion to Ahros, and greatly strengthen Justice Monsters.',5,24,'Consume to increase affinity with Ahros and the Justice Element by 3','30% drop from Justicer','USEABLE'),
     ('Bark','Wood from a plant monster that can be used to heal an immolated monster',22,0,'If single target is of type immolated, heal 1d4 health,','Base 30% Drop upon defeating a Bulbapup, base 60 drop upon defeating a Greenwolf, Base 90% drop on defeating a Sief','USEABLE'),
     ('Green Onion','Wild onion from the back of a bulbapup, useful in cooking. When eaten raw, heal a human by a small amount of hp',22,1,'Heal heman 1d4 health','Base 30% Drop upon defeating a Bulbapup.','USEABLE'),
     ('Vine Rope','Green Rope from a vine monster, can be use to fuel a fire or heal an immolated monster.',22,0,'If single target is immolated, heal 1d6 health.','Base 30% Drop upon defeating a Vine Wolf.','USEABLE'),
     ('Badge',"Shiny metal that has little use",22,2,'Increase Physical Armor by 1','Base 30% drop from badge badger, 60% from Honey Badger, and 90 from Honey badgeBear.','ACCESSORY'),
     ('Mystic Vine','Magic green vine that can boost earth damage',22,2,'Increase Earth Damage by 1 for rest of battle, does not stack','Base 40% drop from Aware Wolf, Base 70% drop from Mystic Wolf','USEABLE');
-
-    select monster_type_id,name,element_id from monster_type;
-    
-    select item_id, item_element_id, item_name from item;
     
 CREATE TABLE item_drop_chance(
 	item_drop_chance_id INT PRIMARY KEY AUTO_INCREMENT,
