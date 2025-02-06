@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/background_menu_diety" />
+
     <TextView
         android:id="@+id/menu_deity_alignment_lawful_text"
         android:layout_width="wrap_content"
@@ -619,6 +625,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/deity_alignment_menu_player_info_text"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@id/menu_diety_back_button"
         app:layout_constraintEnd_toEndOf="parent"
