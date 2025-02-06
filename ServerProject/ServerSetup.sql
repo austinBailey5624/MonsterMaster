@@ -2277,4 +2277,76 @@ VALUES
     (9,4,1.2),
     (10,4,1.2);
 
+CREATE TABLE deity_relationship_level(
+	deity_relationship_level_id INT PRIMARY KEY AUTO_INCREMENT,
+    deity_relationship_level_minimum INT NOT NULL,
+    deity_relationship_level_maximum INT NOT NULL,
+    deity_relationship_level VARCHAR(50)
+    );
+    
+INSERT INTO deity_relationship_level(deity_relationship_level_minimum, deity_relationship_level_maximum, deity_relationship_level)
+VALUES
+	(-9999999,-1000,'Enemy'),
+    (-999,-301,'Unfriendly'),
+    (-300,-101,'Irritated'),
+    (-100,100,'Neutral'),
+    (101,300,'Interested'),
+    (301,999,'Friendly'),
+    (1000,999999999,'Ally');
+
+CREATE TABLE deity_affinity_title(
+	deity_affinity_title_id INT PRIMARY KEY AUTO_INCREMENT,
+    deity_id INT NOT NULL,
+    FOREIGN KEY(deity_id) REFERENCES deity(deity_id),
+    deity_relationship_level_id INT NOT NULL,
+    FOREIGN KEY(deity_relationship_level_id) REFERENCES deity_relationship_level(deity_relationship_level_id),
+    deity_affinity_title VARCHAR(50) NOT NULL
+    );
+
+INSERT INTO diety_affinity_title(deity_id,deity_relationship_level_id,deity_affinity_title)
+VALUES
+	(0,1,'Heretic'),
+    (0,2,'Betrayer'),
+    (0,3,'Faithless'),
+    (0,4,'Unknown'),
+    (0,5,'Pilgrim'),
+    (0,6,'Annointed'),
+    (0,7,'Prophet'),
+    (1,1,'Abomination'),
+    (1,2,'Black Magician'),
+    (1,3,'Tempted'),
+    (1,4,'Unknown'),
+    (1,5,'LitPath'),
+    (1,6,'Moonblessed'),
+    (1,7,'Arch Magistair'),
+    (2,1,'Treebreaker'),
+    (2,2,'Vengeful'),
+    (2,3,'Anger-touched'),
+    (2,4,'Untouched by Sid'),
+    (2,5,'Compassionate Traveller'),
+    (2,6,'Healer'),
+    (2,7,'Savior'),
+    (3,1,'Satan'),
+    (3,2,'Betrayer of Faith'),
+    (3,3,'Apostate'),
+    (3,4,'Unknown'),
+    (3,5,'Faithful'),
+    (3,6,'Missionary'),
+    (3,7,'Prophet'),
+    (4,1,'Destroyer'),
+    (4,2,'Cruel'),
+    (4,3,'Unjust'),
+    (4,4,'Unjudged'),
+    (4,5,'Just'),
+    (4,6,'Law Enforcer'),
+    (4,7,'Sword of Ahros'),
+    (5,1,'Betrayer'),
+    (5,2,'Committed to darkness'),
+    (5,3,'Lost'),
+    (5,4,'Clean'),
+    (5,5,'Guilty'),
+    (5,6,'Redemption Seeker'),
+    (5,7,'Redeemed');
+
+
     
