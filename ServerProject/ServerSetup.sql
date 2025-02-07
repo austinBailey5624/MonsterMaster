@@ -6,21 +6,38 @@ DROP TABLE IF EXISTS nature;
 
 CREATE TABLE nature(
 	nature_id INT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
-    primaryColor VARCHAR(50)
+    name VARCHAR(50) NOT NULL
     );
     
-INSERT INTO nature(nature_id, name, primaryColor)
+INSERT INTO nature(nature_id, name)
 VALUES
-	(0,'Fire', 'Red'),   
-    (1,'Water', 'Blue'),
-    (2,'Earth', 'Green'),
-    (3,'Air', 'Yellow'),
-    (4,'Light', 'White'),
-    (5,'Dark', 'Black'),
-    (6,'Neutral', 'Grey'),
-    (7,'Physical', 'Brown'),
-    (8,'Magical', 'Purple');
+	(0,'Fire'),   
+    (1,'Water'),
+    (2,'Earth'),
+    (3,'Air'),
+    (4,'Light'),
+    (5,'Dark'),
+    (6,'Neutral'),
+    (7,'Physical'),
+    (8,'Magical');
+
+CREATE TABLE color(
+	color_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(25) NOT NULL,
+    rgb VARCHAR(9) NOT NULL
+);
+
+INSERT INTO color(name, rgb)
+VALUES
+    ('Red',       'FFFF0000'),
+    ('Blue',      'FF0000FF'),
+    ('Green',     'FF00FF00'),
+    ('Yellow',    'FFFFFF00'),
+    ('White',     'FFFFFFFF'),
+    ('Black',     'FF000000'),
+    ('Grey',      'FF808080'),
+    ('Brown',     'FFD16900'),
+    ('Purple',    'FF8000FF');
 
 CREATE TABLE element(
 	element_id INT PRIMARY KEY,

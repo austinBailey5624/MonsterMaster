@@ -16,19 +16,20 @@ public class Nature
 {
     @Id
     @Column(name = "nature_id")
-    private final Integer natureId;
+    private Integer natureId;
 
     @Column(name = "name", nullable = false)
-    private final String name;
+    private String name;
 
-    @Column(name = "primaryColor")
-    private final String primaryColor;
+    public Nature()
+    {
 
-    public Nature(Integer natureId, String name, String primaryColor)
+    }
+
+    public Nature(Integer natureId, String name)
     {
         this.natureId = natureId;
         this.name = name;
-        this.primaryColor = primaryColor;
     }
 
     public Integer getNatureId()
@@ -41,8 +42,12 @@ public class Nature
         return name;
     }
 
-    public String getPrimaryColor()
-    {
-        return primaryColor;
+
+    @Override
+    public String toString() {
+        return "Nature{" +
+                "natureId=" + natureId +
+                ", name='" + name + 
+                "'}";
     }
 }

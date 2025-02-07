@@ -9,7 +9,7 @@ import kotlin.random.Random
  *
  * @Copyright Austin Bailey 2025 All Rights Reserved
  */
-class BattleActor(var hpCurrent: Double, val hpMax: Double, var mpCurrent: Double, val mpMax: Double, var element: Element, val level: Int, val experience: Int, val physicalUses: Int, val magicalUses: Int, val itemUses: Int)
+class BattleActor(var hpCurrent: Double, var hpMax: Double, var mpCurrent: Double, var mpMax: Double, var element: Element, val level: Int, val experience: Int, val physicalUses: Int, val magicalUses: Int, val itemUses: Int)
 {
     class DiceToRoll(val raw: Int,val  d4: Int,val d6: Int,val d8: Int,val d10: Int)
 
@@ -22,9 +22,12 @@ class BattleActor(var hpCurrent: Double, val hpMax: Double, var mpCurrent: Doubl
     {
         fun getBasicBattleActor(): BattleActor
         {
-            val hp = getHPMax(1)
-            val mp = getMPMax(1)
-            return BattleActor(hp,hp,mp,mp,Element.INITIAL,1,0,0,0,0)
+            var basicBattleActor: BattleActor = BattleActor(0.0,0.0,0.0,0.0,Element.INITIAL,1,0,0,0);
+            basicBattleActor.hpMax = getHPMax(1)
+            basicBattleActor.hpCurrent = basicBattleActor.hpMax
+            basicBattleActor.mpMax = getMPMax(1)
+            basicBattleActor.mpCurrent = basicBattleActor.mpMax
+            return basicBattleActor
         }
 
         val diceToRollToAddToHPMaxOnLevelUp: List<DiceToRoll> = listOf(
