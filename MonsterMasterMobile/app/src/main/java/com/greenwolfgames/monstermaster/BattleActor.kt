@@ -22,7 +22,7 @@ class BattleActor(var hpCurrent: Double, var hpMax: Double, var mpCurrent: Doubl
     {
         fun getBasicBattleActor(): BattleActor
         {
-            var basicBattleActor: BattleActor = BattleActor(0.0,0.0,0.0,0.0,Element.INITIAL,1,0,0,0);
+            val basicBattleActor= BattleActor(0.0,0.0,0.0,0.0,Element.INITIAL,1,0,0,0,0);
             basicBattleActor.hpMax = getHPMax(1)
             basicBattleActor.hpCurrent = basicBattleActor.hpMax
             basicBattleActor.mpMax = getMPMax(1)
@@ -31,6 +31,7 @@ class BattleActor(var hpCurrent: Double, var hpMax: Double, var mpCurrent: Doubl
         }
 
         val diceToRollToAddToHPMaxOnLevelUp: List<DiceToRoll> = listOf(
+            DiceToRoll(0,0,0,0,0),
             DiceToRoll(18,1,0,0,0),//Level 1, 18 +1d4
             DiceToRoll(3,1,0,0,0),//Level 2 add 3 + 1d4
             DiceToRoll(4,1,0,0,0),// Level 3
@@ -72,7 +73,7 @@ class BattleActor(var hpCurrent: Double, var hpMax: Double, var mpCurrent: Doubl
         }
 
         val rawValueToAddToMPMaxOnLevelUp: List<Int> = listOf(
-            10,1,1,1,1,//Levels 1 - 5, Level 1 gain 10 mp, 2 gain 1 mp etc
+            0,10,1,1,1,1,//Levels 1 - 5, Level 1 gain 10 mp, 2 gain 1 mp etc
             6,2,2,2,2,
             2,2,2,2,14,
             3,3,3,3,3,
