@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_journal_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_light_center" />
+
+    <ImageView
+        android:id="@+id/menu_journal_title_box"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_active_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_4x1" />
+
+    <TextView
+        android:id="@+id/menu_journal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_journal_title"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_journal_title_box"
+        app:layout_constraintEnd_toEndOf="@id/menu_journal_title_box"
+        app:layout_constraintStart_toStartOf="@id/menu_journal_title_box"
+        app:layout_constraintTop_toTopOf="@id/menu_journal_title_box" />
+
+    <ImageView
+        android:id="@+id/menu_journal_active_box"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_quest_1"
+        app:layout_constraintEnd_toStartOf="@id/menu_journal_completed_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_title_box"
+        app:srcCompat="@drawable/button_3x1" />
+
+    <TextView
+        android:id="@+id/menu_journal_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_journal_active"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_journal_active_box"
+        app:layout_constraintEnd_toEndOf="@id/menu_journal_active_box"
+        app:layout_constraintStart_toStartOf="@id/menu_journal_active_box"
+        app:layout_constraintTop_toTopOf="@id/menu_journal_active_box" />
+
+    <ImageView
+        android:id="@+id/menu_journal_completed_box"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_quest_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_journal_active_box"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_title_box"
+        app:srcCompat="@drawable/button_3x1" />
+
+    <TextView
+        android:id="@+id/menu_journal_completed"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:gravity="center"
+        android:text="@string/menu_journal_completed"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_journal_completed_box"
+        app:layout_constraintEnd_toEndOf="@id/menu_journal_completed_box"
+        app:layout_constraintStart_toStartOf="@id/menu_journal_completed_box"
+        app:layout_constraintTop_toTopOf="@id/menu_journal_completed_box" />
+
+    <ImageView
+        android:id="@+id/menu_journal_quest_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_quest_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_active_box"
+        app:srcCompat="@drawable/button_5x1" />
+
+    <TextView
+        android:id="@+id/menu_journal_quest_1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/menu_journal_quest_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_quest_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_quest_1"
+        app:srcCompat="@drawable/button_5x1" />
+
+    <ImageView
+        android:id="@+id/menu_journal_quest_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_quest_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_quest_2"
+        app:srcCompat="@drawable/button_5x1" />
+
+    <ImageView
+        android:id="@+id/menu_journal_quest_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_quest_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_quest_3"
+        app:srcCompat="@drawable/button_5x1" />
+
+    <ImageView
+        android:id="@+id/menu_journal_quest_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_previous_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_quest_4"
+        app:srcCompat="@drawable/button_5x1" />
+
+    <Button
+        android:id="@+id/menu_journal_previous_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_journal_previous"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_back_button"
+        app:layout_constraintEnd_toStartOf="@id/menu_journal_next_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_quest_5" />
+
+    <Button
+        android:id="@+id/menu_journal_next_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_journal_next"
+        app:layout_constraintBottom_toTopOf="@id/menu_journal_player_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_journal_previous_button"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_quest_5" />
+
+    <Button
+        android:id="@+id/menu_journal_back_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menu_journal_player_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_previous_button" />
+
+    <ImageView
+        android:id="@+id/menu_journal_player_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_journal_back_button"
+        app:layout_constraintTop_toBottomOf="@id/menu_journal_next_button"
+        app:srcCompat="@drawable/button_3x1" />
+
+    <TextView
+        android:id="@+id/menu_journal_hint_text"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:gravity="center"
+        android:text="@string/menu_journal_hint"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_journal_player_info"
+        app:layout_constraintEnd_toEndOf="@id/menu_journal_player_info"
+        app:layout_constraintStart_toStartOf="@id/menu_journal_player_info"
+        app:layout_constraintTop_toTopOf="@id/menu_journal_player_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

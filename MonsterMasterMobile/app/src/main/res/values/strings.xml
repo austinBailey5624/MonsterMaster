@@ -1369,9 +1369,16 @@
     <string name="deity_alignment_menu_muir">Muir</string>
     <string name="deity_alignment_menu_malacathe">Malacathe</string>
     <string name="deity_alignment_menu_enemy">Enemy</string>
-
     <string name="deity_alignment_menu_player_info_text">Click a deity for more information </string>
     <string name="deity_alignment_menu_back">Back</string>
+
+    <string name="menu_journal_title">Journal</string>
+    <string name="menu_journal_active">Active</string>
+    <string name="menu_journal_completed">Completed</string>
+    <string name="menu_journal_next">Next</string>
+    <string name="menu_journal_previous">Previous</string>
+    <string name="menu_journal_back">Back</string>
+    <string name="menu_journal_hint">Tap a quest for more information</string>
 
 
     <string name="health_status">%1$d / %2$d</string>

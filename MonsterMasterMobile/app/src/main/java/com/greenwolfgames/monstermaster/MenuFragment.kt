@@ -45,7 +45,7 @@ class MenuFragment : Fragment()
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_menu, container, false)
+        return inflater.inflate(R.layout.menu_side, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)
