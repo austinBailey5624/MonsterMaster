@@ -39,6 +39,18 @@ VALUES
     ('Brown',     'FFD16900'),
     ('Purple',    'FF8000FF');
 
+CREATE TABLE nature_abstract(
+	nature_abstract_id INT PRIMARY KEY AUTO_INCREMENT,
+    nature_id INT NOT NULL,
+    FOREIGN KEY(nature_id) REFERENCES nature(nature_id),
+    abstract VARCHAR(999) NOT NULL
+    );
+    
+INSERT INTO nature_abstract(nature_id, abstract)
+VALUES
+	(0,'Fire is the nature of passion, hatred, love, sex and physical strength. It uses its power for its own ends. Those with this nature are great warriors, generals, poets and soldiers. Though it can seem invincible, it can be easily outwitted and out manuvered.'),
+    (1,'Water is the nature of calm wisdom and deep knowledge. Those with this nature outwit their enemies with their understanding. They are known as great wizards, artificers, inventors and sages. Sometimes they can become so lost in thought that defeating them is simply a matter of getting close with a sharp sword.');
+-- TODO finish 
 CREATE TABLE element(
 	element_id INT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,

@@ -1,27 +1,16 @@
 package com.greenwolfgames.monstermaster;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
-
 @RestController
 @RequestMapping("/api")
-public class NodeController {
-
-    @Autowired
-    private NatureService natureService;
+public class ApiController {
     
     @GetMapping("/node")
     public String sayHello() {
         return "Hello, Spring Boot!;lkj";
-    }
-
-    @GetMapping("/nature")
-    public String getNatures() {
-        return natureService.getAllNatures().toString();
     }
 }
