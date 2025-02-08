@@ -1379,6 +1379,11 @@
     <string name="menu_journal_previous">Previous</string>
     <string name="menu_journal_back">Back</string>
     <string name="menu_journal_hint">Tap a quest for more information</string>
+    <string name="menu_journal_quest_1">Quest 1 Title</string>
+    <string name="menu_journal_quest_2">Quest 2 Title</string>
+    <string name="menu_journal_quest_3">Quest 3 Title</string>
+    <string name="menu_journal_quest_4">Quest 4 Title</string>
+    <string name="menu_journal_quest_5">Quest 5 Title</string>
 
 
     <string name="health_status">%1$d / %2$d</string>
@@ -1424,6 +1429,18 @@
     <string name="player_info_menu_back_button_content_description">Button to navigate back to the menu</string>
     <string name="player_info_menu_deity_affinity_button_content_description">Button to navigate to the deity affinity menu</string>
     <string name="player_info_menu_portrait_content_description">Image representing the player character</string>
+
+    <!--content description for journal menu UI elements -->
+    <string name="menu_journal_background_content_description">The background for the journal menu</string>
+    <string name="menu_journal_title_box_content_description">The background for the title of the journal menu </string>
+    <string name="menu_journal_active_box_content_description">The background for the active box of the journal menu</string>
+    <string name="menu_journal_completed_box_content_description">The background for the completed box of the journal menu</string>
+    <string name="menu_journal_quest_1_content_description">The background for the first quest displayed in the journal menu</string>
+    <string name="menu_journal_quest_2_content_description">The background for the second quest displayed in the journal menu</string>
+    <string name="menu_journal_quest_3_content_description">The background for the third quest displayed in the journal menu</string>
+    <string name="menu_journal_quest_4_content_description">The background for the fourth quest displayed in the journal menu</string>
+    <string name="menu_journal_quest_5_content_description">The background for the fifth quest displayed in the journal menu</string>
+    <string name="menu_journal_player_info_content_description">The background for the box providing info to the player on how to use the menu</string>
 
     <!-- Notificiation Texts -->
     <string name="notification_menu_not_accessible">Menu is not currently accessible</string>
