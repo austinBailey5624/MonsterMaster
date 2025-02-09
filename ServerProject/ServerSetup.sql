@@ -161,15 +161,22 @@ VALUES
         ('Magistiars'),
         ('Sidden Monks');
     
+    SET FOREIGN_KEY_CHECKS=0;
+    
 CREATE TABLE monster_type(
 	monster_type_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
     description VARCHAR(750) NOT NULL,
     element_id INT NOT NULL,
-    physical_evolution INT,
-    balanced_evolution INT,
-    magical_evolution INT,
-	previous_evolution INT,
+    FOREIGN KEY(element_id) REFERENCES element(element_id),
+    physical_evolution INT NULL,
+    FOREIGN KEY (physical_evolution) REFERENCES monster_type(monster_type_id) ON DELETE SET NULL, 
+    balanced_evolution INT NULL,
+    FOREIGN KEY (balanced_evolution) REFERENCES monster_type(monster_type_id) ON DELETE SET NULL,
+    magical_evolution INT NULL,
+    FOREIGN KEY (magical_evolution) REFERENCES monster_type(monster_type_id) ON DELETE SET NULL,
+	previous_evolution INT NULL,
+    FOREIGN KEY (previous_evolution) REFERENCES monster_type(monster_type_id) ON DELETE SET NULL, 
     monster_type_image VARCHAR(500)
     );
     
@@ -514,6 +521,8 @@ VALUES
     ('Mang',55,NULL,NULL,NULL,333,'The wolf has satiated all its hunger for power, all of its hunger for food. It has everything it could want, and yet still is empty. A hollow, empty purple fire embraces it, a physical manifestation of the loneliness pride wrought.'),
     ('Onyx',55,NULL,NULL,NULL,334,'The onyx consumes the light around it, giving it a halo of shadow. It crystalizes any energy sent at it and consumes it at will. It bows only to masters that serve themselves, and even then, the master must be powerful enough to dominate it utterly. It\'s made of a thousand onyx crystals, each incredibly valuable, but anything that would seek to take them is a fool- they are cursed and embedded with darkness.'),
     ('Primordial Umbral Elemental',55,NULL,NULL,NULL,335,'The Primordial Umbral Elemental is a very large umbral symbol surrounded by Elementals representing every element. As such, it can cast greater darkness magics and regular magics of every other element. Each of the surrounding elementals is its slave, and serves it utterly. Its very existence is an affront to decency.');
+
+	SET FOREIGN_KEY_CHECKS=1;
 
 ALTER TABLE monster_type
 ADD FOREIGN KEY(physical_evolution) REFERENCES monster_type(monster_type_id);
