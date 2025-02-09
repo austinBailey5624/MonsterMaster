@@ -1385,6 +1385,24 @@
     <string name="menu_journal_quest_4">Quest 4 Title</string>
     <string name="menu_journal_quest_5">Quest 5 Title</string>
 
+    <string name="menu_inventory_title">Inventory</string>
+    <string name="menu_inventory_gold">Gold:</string>
+    <string name="menu_inventory_weapons">Weapons</string>
+    <string name="menu_inventory_armor">Armor</string>
+    <string name="menu_inventory_accessory">Accessory</string>
+    <string name="menu_inventory_useable">Useable</string>
+    <string name="menu_inventory_back">Back</string>
+
+    <string name="menu_weapons_title">Weapons</string>
+    <string name="menu_weapons_equipped">Equipped:</string>
+    <string name="menu_weapons_icon">Icon</string>
+    <string name="menu_weapons_name">Name</string>
+    <string name="menu_weapons_description">Description</string>
+    <string name="menu_weapons_previous">Previous</string>
+    <string name="menu_weapons_next">Next</string>
+    <string name="menu_weapons_back">Back</string>
+    <string name="menu_weapons_info">Tap a weapon to Equip</string>
+
 
     <string name="health_status">%1$d / %2$d</string>
 
