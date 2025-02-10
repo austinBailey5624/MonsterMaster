@@ -3,56 +3,460 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/invisible"
+    app:layout_constraintStart_toStartOf="@id/menu_monsters_pyro">
 
     <ImageButton
         android:id="@+id/menu_monsters_pyro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
         android:background="@color/invisible"
-        app:srcCompat="@drawable/element_pyro"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="4dp" />
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_lava"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_steam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_pyro" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_steam"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_aqua"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_fey"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_pyro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_steam" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_fey"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_plant"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_phoenix"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_steam"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_fey" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_phoenix"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_seabreeze"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_solar"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_fey"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_phoenix" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_solar"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_lunar"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_demon"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_phoenix"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_solar" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_demon"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_poison"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_solar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_demon" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_lava"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_dino"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_aqua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_pyro"
+        app:srcCompat="@drawable/element_lava" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_aqua"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_amphibious"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_plant"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_lava"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_steam"
+        app:srcCompat="@drawable/element_aqua" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_plant"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_terra"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_seabreeze"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_aqua"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_fey"
+        app:srcCompat="@drawable/element_plant" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_seabreeze"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bird"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_lunar"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_plant"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_phoenix"
+        app:srcCompat="@drawable/element_seabreeze" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_lunar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_guardian"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_poison"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_seabreeze"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_solar"
+        app:srcCompat="@drawable/element_lunar" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_poison"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_undead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_lunar"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_demon"
+        app:srcCompat="@drawable/element_poison" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_dino"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_sand"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_amphibious"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_lava"
+        app:srcCompat="@drawable/element_dino" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_amphibious"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_weather"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_terra"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_dino"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_aqua"
+        app:srcCompat="@drawable/element_amphibious" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_terra"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_pegasus"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_bird"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_amphibious"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_plant"
+        app:srcCompat="@drawable/element_terra" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_bird"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_aero"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_guardian"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_terra"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_seabreeze"
+        app:srcCompat="@drawable/element_bird" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_guardian"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_angel"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_undead"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bird"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_lunar"
+        app:srcCompat="@drawable/element_guaridan" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_undead"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_storm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_guardian"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_poison"
+        app:srcCompat="@drawable/element_undead" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_sand"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_justice"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_weather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_dino"
+        app:srcCompat="@drawable/element_sand" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_weather"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_ice"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_pegasus"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_sand"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_amphibious"
+        app:srcCompat="@drawable/element_weather" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_pegasus"
+        android:layout_width="50sp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_compassion"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_aero"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_weather"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_terra"
+        app:srcCompat="@drawable/element_pegasus" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_aero"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_cocka"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_angel"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_pegasus"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bird"
+        app:srcCompat="@drawable/element_aero" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_angel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_luxor"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_storm"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_aero"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_guardian"
+        app:srcCompat="@drawable/element_angel" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_storm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_betrayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_angel"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_undead"
+        app:srcCompat="@drawable/element_storm" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_justice"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_vengeance"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_ice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_sand"
+        app:srcCompat="@drawable/element_justice" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_ice"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_deep"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_compassion"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_justice"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_weather"
+        app:srcCompat="@drawable/element_ice" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_compassion"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_rotten"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_cocka"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_ice"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_pegasus"
+        app:srcCompat="@drawable/element_compassion" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_cocka"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_nightwing"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_luxor"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_compassion"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_aero"
+        app:srcCompat="@drawable/element_cocka" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_luxor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_redemption"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_betrayer"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_cocka"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_angel"
+        app:srcCompat="@drawable/element_luxor" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_betrayer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_umbral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_luxor"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_storm"
+        app:srcCompat="@drawable/element_betrayer" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_vengeance"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_deep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_justice"
+        app:srcCompat="@drawable/element_vengeance" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_deep"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_rotten"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_vengeance"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_ice"
+        app:srcCompat="@drawable/element_deep" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_rotten"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_nightwing"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_deep"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_compassion"
+        app:srcCompat="@drawable/element_rotten" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_nightwing"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_redemption"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_rotten"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_cocka"
+        app:srcCompat="@drawable/element_nightwing" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_redemption"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_umbral"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_nightwing"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_luxor"
+        app:srcCompat="@drawable/element_redemption" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_umbral"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_redemption"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_betrayer"
+        app:srcCompat="@drawable/element_umbral" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/menu_monsters_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="662dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".95" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/menu_monsters_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="664dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/invisible"
-        app:srcCompat="@drawable/element_steam"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/invisible"
-        app:srcCompat="@drawable/element_fey"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="345dp"
-        android:layout_height="319dp"
-        app:srcCompat="@drawable/element_phoenix"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="@id/menu_monsters_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_back"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_back" />
 </androidx.constraintlayout.widget.ConstraintLayout>
