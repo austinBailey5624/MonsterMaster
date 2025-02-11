@@ -1412,7 +1412,15 @@
     <string name="menu_monsters_bident_infant">Infant</string>
     <string name="menu_monsters_bident_adolescent">Adolescent</string>
     <string name="menu_monsters_bident_adult">Adult</string>
-    <string name="menu_Monsters_bident_elder">Elder</string>
+    <string name="menu_monsters_bident_elder">Elder</string>
+
+    <string name="menu_monsters_trident_back">Back</string>
+    <string name="menu_monsters_trident_info">Tap a monster for more information</string>
+    <string name="menu_monsters_trident_element_replacement_text">ElementNameHere</string>
+    <string name="menu_monsters_trident_infant">Infant</string>
+    <string name="menu_monsters_trident_adolescent">Adolescent</string>
+    <string name="menu_monsters_trident_adult">Adult</string>
+    <string name="menu_monsters_trident_elder">Elder</string>
 
 
     <string name="health_status">%1$d / %2$d</string>
@@ -1517,6 +1525,17 @@
     <string name="menu_monsters_bident_adult_magical_content_description">Magical Adult menu</string>
     <string name="menu_monsters_bident_elder_physical_content_description">Physical Elder menu</string>
     <string name="menu_monsters_bident_elder_magical_content_description">Magical Elder menu</string>
+
+    <string name="menu_monsters_trident_infant_content_description">Infant menu</string>
+    <string name="menu_monsters_trident_adolescent_physical_content_description">Physical Adolescent menu</string>
+    <string name="menu_monsters_trident_adolescent_balanced_content_description">Balanced Adolescent menu</string>
+    <string name="menu_monsters_trident_adolescent_magical_content_description">Magical Adolescent menu</string>
+    <string name="menu_monsters_trident_adult_physical_content_description">Physical Adult menu</string>
+    <string name="menu_monsters_trident_adult_balanced_content_description">Balanced Adult menu</string>
+    <string name="menu_monsters_trident_adult_magical_content_description">Magical Adult menu</string>
+    <string name="menu_monsters_trident_elder_physical_content_description">Physical Elder menu</string>
+    <string name="menu_monsters_trident_elder_balanced_content_description">Balanced Elder menu</string>
+    <string name="menu_monsters_trident_elder_magical_content_description">Magical Elder menu</string>
 
 
     <!-- Notificiation Texts -->

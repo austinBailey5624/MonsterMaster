@@ -104,7 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rotation="-90"
-        android:text="@string/menu_Monsters_bident_elder"
+        android:text="@string/menu_monsters_bident_elder"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@id/menu_monsters_bident_elder_background"
         app:layout_constraintEnd_toEndOf="@id/menu_monsters_bident_elder_background"
