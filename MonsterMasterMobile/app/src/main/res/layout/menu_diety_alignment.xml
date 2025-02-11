@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/menu_deity_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -15,54 +15,100 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background_menu_diety" />
 
+    <ImageView
+        android:id="@+id/menu_deity_alignment_lawful_background"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/anu_frame_layout"
+        app:layout_constraintEnd_toStartOf="@id/menu_deity_alignment_neutral_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_4x1" />
+
     <TextView
         android:id="@+id/menu_deity_alignment_lawful_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
         android:text="Lawful Deities"
+        app:layout_constraintBottom_toBottomOf="@id/menu_deity_alignment_lawful_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_deity_alignment_lawful_background"
+        app:layout_constraintStart_toStartOf="@id/menu_deity_alignment_lawful_background"
+        app:layout_constraintTop_toTopOf="@id/menu_deity_alignment_lawful_background" />
+
+    <ImageView
+        android:id="@+id/menu_deity_alignment_neutral_background"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@id/anu_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/menu_deity_alignemnt_neutral_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/menu_deity_alignment_chaotic_background"
+        app:layout_constraintStart_toEndOf="@id/menu_deity_alignment_lawful_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_4x1" />
 
     <TextView
-        android:id="@+id/menu_deity_alignemnt_neutral_text"
+        android:id="@+id/menu_deity_alignment_neutral_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/deity_alignment_menu_neutral"
+        app:layout_constraintBottom_toBottomOf="@id/menu_deity_alignment_neutral_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_deity_alignment_neutral_background"
+        app:layout_constraintStart_toStartOf="@id/menu_deity_alignment_neutral_background"
+        app:layout_constraintTop_toTopOf="@id/menu_deity_alignment_neutral_background" />
+
+    <ImageView
+        android:id="@+id/menu_deity_alignment_chaotic_background"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@id/anu_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/menu_deity_alignment_chaotic_text"
-        app:layout_constraintStart_toEndOf="@id/menu_deity_alignment_lawful_text"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_deity_alignment_neutral_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_4x1" />
 
     <TextView
         android:id="@+id/menu_deity_alignment_chaotic_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/deity_alignment_menu_chaotic"
-        app:layout_constraintBottom_toTopOf="@id/anu_frame_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/menu_deity_alignemnt_neutral_text"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@id/menu_deity_alignment_chaotic_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_deity_alignment_chaotic_background"
+        app:layout_constraintStart_toStartOf="@id/menu_deity_alignment_chaotic_background"
+        app:layout_constraintTop_toTopOf="@id/menu_deity_alignment_chaotic_background" />
 
     <FrameLayout
         android:id="@+id/anu_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/velhu_frame_layout"
         app:layout_constraintEnd_toStartOf="@id/bennu_frame_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_deity_alignment_lawful_text">
+        app:layout_constraintTop_toBottomOf="@id/menu_deity_alignment_lawful_background">
+
+        <ImageView
+            android:id="@+id/menu_deity_anu_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal|top"
+            app:srcCompat="@drawable/button_4x1" />
 
         <TextView
             android:id="@+id/menu_deity_anu_text"
-            android:layout_width="65dp"
+            android:layout_width="80dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_anu" />
 
         <ImageView
@@ -76,24 +122,32 @@
             android:id="@+id/menu_deity_anu_alilgnment"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/menu_ui_alignment" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/velhu_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/sid_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/anu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/anu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/anu_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_velhu_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_velhu_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_velhu" />
 
         <ImageView
@@ -107,25 +161,33 @@
             android:id="@+id/menu_deity_velhu_alilgnment"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/menu_ui_alignment" />
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/sid_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/gabriel_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/anu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/anu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/velhu_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_sid_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_sid_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_sid" />
 
         <ImageView
@@ -139,24 +201,32 @@
             android:id="@+id/menu_deity_sid_alilgnment"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/menu_ui_alignment" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/gabriel_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/ahros_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/anu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/anu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/sid_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_gabriel_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_gabriel_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_gabriel" />
 
         <ImageView
@@ -170,24 +240,32 @@
             android:id="@+id/menu_deity_gabriel_alignment"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/menu_ui_alignment" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/ahros_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/pythion_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/anu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/anu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/gabriel_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_ahros_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_diety_ahros_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_ahros" />
 
         <ImageView
@@ -201,24 +279,32 @@
             android:id="@+id/menu_deity_ahros_alignment"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/menu_ui_alignment" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/pythion_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/menu_diety_back_button"
         app:layout_constraintEnd_toEndOf="@id/anu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/anu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/ahros_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_pythion_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_pythion_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_pythion" />
 
         <ImageView
@@ -232,24 +318,32 @@
             android:id="@+id/menu_deity_pythion_alignment"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/menu_ui_alignment" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/bennu_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@id/anu_frame_layout"
-        app:layout_constraintEnd_toStartOf="@id/achreon_frame_layout"
+        app:layout_constraintEnd_toStartOf="@id/acheron_frame_layout"
         app:layout_constraintStart_toEndOf="@id/anu_frame_layout"
         app:layout_constraintTop_toTopOf="@id/anu_frame_layout">
+
+        <ImageView
+            android:id="@+id/menu_deity_bennu_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal|top"
+            app:srcCompat="@drawable/button_4x1" />
 
         <TextView
             android:id="@+id/menu_deity_bennu_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_bennu" />
 
         <ImageView
@@ -263,24 +357,32 @@
             android:id="@+id/menu_deity_bennu_alignment"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/menu_ui_alignment" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/neptune_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/gaia_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/bennu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/bennu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/bennu_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_neptune_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_neptune_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_neptune" />
 
         <ImageView
@@ -300,18 +402,26 @@
 
     <FrameLayout
         android:id="@+id/gaia_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/bacchus_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/bennu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/bennu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/neptune_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_gaia_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_gaia_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_gaia" />
 
         <ImageView
@@ -325,7 +435,7 @@
             android:id="@+id/menu_deity_gaia_alignment"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/menu_ui_alignment" />
 
         <ImageView
@@ -344,18 +454,26 @@
 
     <FrameLayout
         android:id="@+id/bacchus_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/mars_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/bennu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/bennu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/gaia_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_bacchus_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_bacchus_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_bacchus" />
 
         <ImageView
@@ -375,18 +493,26 @@
 
     <FrameLayout
         android:id="@+id/mars_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/thanatos_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/bennu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/bennu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/bacchus_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_mars_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_mars_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_mars" />
 
         <ImageView
@@ -406,18 +532,26 @@
 
     <FrameLayout
         android:id="@+id/thanatos_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/menu_diety_back_button"
         app:layout_constraintEnd_toEndOf="@id/bennu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/bennu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/mars_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_thanatos_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_thanatos_text"
             android:layout_width="65dp"
             android:layout_height="20dp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_thanatos" />
 
         <ImageView
@@ -437,20 +571,28 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/achreon_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:id="@+id/acheron_frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@id/anu_frame_layout"
         app:layout_constraintBottom_toTopOf="@id/illian_frame_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/bennu_frame_layout"
         app:layout_constraintTop_toTopOf="@id/anu_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_acheron_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_acheron_text"
             android:layout_width="65sp"
             android:layout_height="20sp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_acheron" />
 
         <ImageView
@@ -470,18 +612,26 @@
 
     <FrameLayout
         android:id="@+id/illian_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/webspinner_frame_layout"
-        app:layout_constraintEnd_toEndOf="@id/achreon_frame_layout"
-        app:layout_constraintStart_toStartOf="@id/achreon_frame_layout"
-        app:layout_constraintTop_toBottomOf="@id/achreon_frame_layout">
+        app:layout_constraintEnd_toEndOf="@id/acheron_frame_layout"
+        app:layout_constraintStart_toStartOf="@id/acheron_frame_layout"
+        app:layout_constraintTop_toBottomOf="@id/acheron_frame_layout">
+
+        <ImageView
+            android:id="@+id/menu_deity_illian_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
 
         <TextView
             android:id="@+id/menu_deity_illian_text"
             android:layout_width="65sp"
             android:layout_height="20sp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_illian" />
 
         <ImageView
@@ -501,17 +651,25 @@
 
     <FrameLayout
         android:id="@+id/webspinner_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/muir_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/illian_frame_layout"
         app:layout_constraintStart_toStartOf="@id/illian_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/illian_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_webspinner_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_webspinner_text"
             android:layout_width="65sp"
             android:layout_height="20sp"
+            android:layout_gravity="center_horizontal|top"
             android:gravity="center"
             android:text="@string/deity_alignment_menu_webspinner"
             android:textSize="12sp" />
@@ -533,24 +691,33 @@
 
     <FrameLayout
         android:id="@+id/muir_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/malacathe_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/webspinner_frame_layout"
         app:layout_constraintStart_toStartOf="@id/webspinner_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/webspinner_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_muir_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_muir_text"
             android:layout_width="65sp"
             android:layout_height="20sp"
-            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
             android:text="@string/deity_alignment_menu_muir" />
 
         <ImageView
             android:id="@+id/menu_deity_muir"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/deity_muir" />
 
         <ImageView
@@ -563,17 +730,25 @@
 
     <FrameLayout
         android:id="@+id/malacathe_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/enemy_frame_layout"
         app:layout_constraintEnd_toEndOf="@id/muir_frame_layout"
         app:layout_constraintStart_toStartOf="@id/muir_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/muir_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_malacathe_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_malacathe_text"
             android:layout_width="65sp"
             android:layout_height="20sp"
+            android:layout_gravity="center_horizontal|top"
             android:gravity="center"
             android:text="@string/deity_alignment_menu_malacathe"
             android:textSize="13sp" />
@@ -595,17 +770,25 @@
 
     <FrameLayout
         android:id="@+id/enemy_frame_layout"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/menu_diety_back_button"
         app:layout_constraintEnd_toEndOf="@id/malacathe_frame_layout"
         app:layout_constraintStart_toStartOf="@id/malacathe_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/malacathe_frame_layout">
 
+        <ImageView
+            android:id="@+id/menu_deity_enemy_background"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/button_4x1" />
+
         <TextView
             android:id="@+id/menu_deity_enemy_text"
             android:layout_width="65sp"
             android:layout_height="20sp"
+            android:layout_gravity="center_horizontal|top"
             android:gravity="center"
             android:text="@string/deity_alignment_menu_enemy" />
 
@@ -624,26 +807,25 @@
             app:srcCompat="@drawable/menu_ui_alignment" />
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/note_to_players"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/deity_alignment_menu_player_info_text"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@id/menu_diety_back_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/menu_diety_back_button"
+    <Button
+        android:id="@+id/menu_diety_back_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/deity_alignment_menu_back"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menu_deity_info"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pythion_frame_layout" />
 
     <Button
-        android:id="@+id/menu_diety_back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/deity_alignment_menu_back"
+        android:id="@+id/menu_deity_info"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:text="@string/deity_alignment_menu_player_info_text"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/note_to_players"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_diety_back_button"
         app:layout_constraintTop_toBottomOf="@id/pythion_frame_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

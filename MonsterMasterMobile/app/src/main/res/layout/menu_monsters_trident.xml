@@ -17,6 +17,17 @@
         app:srcCompat="@drawable/background_blank" />
 
     <ImageView
+        android:id="@+id/menu_monsters_trident_element_symbol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_trident_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_trident_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_trident_element_title"
+        app:srcCompat="@drawable/element_solar" />
+
+    <ImageView
         android:id="@+id/menu_monsters_trident_background_overlap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -135,8 +146,8 @@
 
     <Button
         android:id="@+id/menu_monsters_trident_info"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:text="@string/menu_monsters_trident_info"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"

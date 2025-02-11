@@ -709,6 +709,18 @@ enum class Element
             }
         }
 
+        fun getEnlightenedAdultMonster(context: Context, element: Element): MonsterType
+        {
+            return when (element)
+            {
+                TERRA -> MonsterTypeManager.getMonsterType(context, 146)
+                PYRO, LAVA, DINO, SAND, JUSTICE, VENGEANCE, STEAM, AMPHIBIOUS, WEATHER, AQUA, ICE, DEEP, FEY, PLANT, PEGASUS, COMPASSION, ROTTEN, PHOENIX, SEABREEZE, BIRD, COCKA, NIGHTWING, AERO, SOLAR, LUNAR, GUARDIAN, ANGEL, REDEMPTION, LUXOR, DEMON, POISON, UNDEAD, STORM, BETRAYER, UMBRAL -> throw IllegalStateException(
+                    "Element $element has no Enlightened Adult Monster")
+
+                NEUTRAL, PHYSICAL, MAGICAL, INITIAL -> throw IllegalStateException("Element $element has monsters")
+            }
+        }
+
         fun getMysticAdultMonster(context: Context, element:Element): MonsterType
         {
             return when(element)
@@ -876,6 +888,18 @@ enum class Element
                 UNDEAD,BETRAYER -> throw IllegalStateException("Element $element has no Balanced Elder Monster")
                 STORM -> MonsterTypeManager.getMonsterType(context, 319)
                 UMBRAL -> MonsterTypeManager.getMonsterType(context, 337)
+
+                NEUTRAL, PHYSICAL, MAGICAL, INITIAL -> throw IllegalStateException("Element $element has monsters")
+            }
+        }
+
+        fun getEnlightenedElderMonster(context: Context, element: Element): MonsterType
+        {
+            return when (element)
+            {
+                TERRA -> MonsterTypeManager.getMonsterType(context, 151)
+                PYRO, LAVA, DINO, SAND, JUSTICE, VENGEANCE, STEAM, AMPHIBIOUS, WEATHER, AQUA, ICE, DEEP, FEY, PLANT, PEGASUS, COMPASSION, ROTTEN, PHOENIX, SEABREEZE, BIRD, COCKA, NIGHTWING, AERO, SOLAR, LUNAR, GUARDIAN, ANGEL, REDEMPTION, LUXOR, DEMON, POISON, UNDEAD, STORM, BETRAYER, UMBRAL -> throw IllegalStateException(
+                    "Element $element has no Enlightened Adult Monster")
 
                 NEUTRAL, PHYSICAL, MAGICAL, INITIAL -> throw IllegalStateException("Element $element has monsters")
             }
