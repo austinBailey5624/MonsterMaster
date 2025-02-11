@@ -718,7 +718,7 @@
     <string name="scene153alt1choice1">Next Page</string><!--154-->
     <string name="scene153alt1choice2">Back to Library</string><!--102-->
     <string name="scene153alt1choice3">*Leave*</string><!--79-->
-    <string name="scene154prompt">After you\'ve bought a property license though, you can invest your hard earned money in businesses and real estate, which will typically yeild 1/1000th of the money you invested in them each day. This doesn\'t sound like much, but if you invest the money you earn in investing in investing, you can make a feedback loop that will make you very financially secure.</string>
+    <string name="scene154prompt">After you\'ve bought a property license though, you can invest your hard earned money in businesses and real estate, which will typically yield 1/1000th of the money you invested in them each day. This doesn\'t sound like much, but if you invest the money you earn in investing in investing, you can make a feedback loop that will make you very financially secure.</string>
     <string name="scene154choice1">I\'m going to go play</string><!--122-->
     <string name="scene154choice2">Fascinating! Let\'s continue</string><!--155-->
     <string name="scene154alt1choice1">Previous Page</string><!--153-->
@@ -1403,6 +1403,9 @@
     <string name="menu_weapons_back">Back</string>
     <string name="menu_weapons_info">Tap a weapon to Equip</string>
 
+    <string name="menu_monsters_back">Back</string>
+    <string name="menu_monsters_info">Tap an element to see related monsters</string>
+
 
     <string name="health_status">%1$d / %2$d</string>
 
@@ -1459,6 +1462,45 @@
     <string name="menu_journal_quest_4_content_description">The background for the fourth quest displayed in the journal menu</string>
     <string name="menu_journal_quest_5_content_description">The background for the fifth quest displayed in the journal menu</string>
     <string name="menu_journal_player_info_content_description">The background for the box providing info to the player on how to use the menu</string>
+
+    <!--content description for monster menu UI elements -->
+    <string name="menu_monsters_pyro_content_description">Pyro Monster Menu</string>
+    <string name="menu_monsters_steam_content_description">Steam Monster Menu</string>
+    <string name="menu_monsters_fey_content_description">Fey Monster menu</string>
+    <string name="menu_monsters_phoenix_content_description">Phoenix Monster menu</string>
+    <string name="menu_monsters_solar_content_description">Solar Monster menu</string>
+    <string name="menu_monsters_demon_content_description">Demon Monster menu</string>
+    <string name="menu_monsters_lava_content_description">Lava Monster menu</string>
+    <string name="menu_monsters_aqua_content_description">Aqua Monster menu</string>
+    <string name="menu_monsters_plant_content_description">Plant Monster menu</string>
+    <string name="menu_monsters_seabreeze_content_description">Seabreeze Monster menu</string>
+    <string name="menu_monsters_lunar_content_description">Lunar Monster menu</string>
+    <string name="menu_monsters_poison_content_description">Poison Monster menu</string>
+    <string name="menu_monsters_dino_content_description">Dino Monster menu</string>
+    <string name="menu_monsters_amphibious_content_description">Amphibious Monster menu</string>
+    <string name="menu_monsters_terra_content_description">Terra Monster menu</string>
+    <string name="menu_monsters_bird_content_description">Bird Monster menu</string>
+    <string name="menu_monsters_guardian_content_description">Guardian Monster menu</string>
+    <string name="menu_monsters_undead_content_description">Undead Monster menu</string>
+    <string name="menu_monsters_sand_content_description">Sand Monster menu</string>
+    <string name="menu_monsters_weather_content_description">Weather Monster menu</string>
+    <string name="menu_monsters_pegasus_content_description">Pegasus Monster menu</string>
+    <string name="menu_monsters_aero_content_description">Aero Monster menu</string>
+    <string name="menu_monsters_angel_content_description">Angel Monster menu</string>
+    <string name="menu_monsters_storm_content_description">Storm Monster menu</string>
+    <string name="menu_monsters_justice_content_description">Justice Monster menu</string>
+    <string name="menu_monsters_ice_content_description">Ice Monster menu</string>
+    <string name="menu_monsters_compassion_content_description">Compassion Monster menu</string>
+    <string name="menu_monsters_cocka_content_description">Cocka Monster menu</string>
+    <string name="menu_monsters_luxor_content_description">Luxor Monster menu</string>
+    <string name="menu_monsters_betrayer_content_description">Betrayer Monster menu</string>
+    <string name="menu_monsters_vengeance_content_description">Vengeance Monster menu</string>
+    <string name="menu_monsters_deep_content_description">Deep Monster menu</string>
+    <string name="menu_monsters_rotten_content_description">Rotten Monster menu</string>
+    <string name="menu_monsters_nightwing_content_description">Nightwing Monster menu</string>
+    <string name="menu_monsters_redemption_content_description">Redemption Monster menu</string>
+    <string name="menu_monsters_umbral_content_description">Umbral Monster menu</string>
+
 
     <!-- Notificiation Texts -->
     <string name="notification_menu_not_accessible">Menu is not currently accessible</string>

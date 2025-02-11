@@ -7,11 +7,22 @@
     android:background="@color/invisible"
     app:layout_constraintStart_toStartOf="@id/menu_monsters_pyro">
 
+    <ImageView
+        android:id="@+id/menu_monsters_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_monsters_background" />
+
     <ImageButton
         android:id="@+id/menu_monsters_pyro"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_pyro_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_lava"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_steam"
@@ -21,9 +32,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_steam"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_steam_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_aqua"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_fey"
@@ -33,9 +45,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_fey"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_fey_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_plant"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_phoenix"
@@ -45,9 +58,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_phoenix"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_phoenix_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_seabreeze"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_solar"
@@ -57,9 +71,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_solar"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_solar_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_lunar"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_demon"
@@ -69,9 +84,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_demon"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_demon_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_poison"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,9 +97,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_lava"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_lava_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_dino"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_aqua"
@@ -93,9 +110,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_aqua"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_aqua_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_amphibious"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_plant"
@@ -105,9 +123,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_plant"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_plant_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_terra"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_seabreeze"
@@ -117,9 +136,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_seabreeze"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_seabreeze_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_bird"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_lunar"
@@ -129,9 +149,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_lunar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_lunar_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_guardian"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_poison"
@@ -141,9 +162,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_poison"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_poison_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_undead"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,9 +175,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_dino"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_dino_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_sand"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_amphibious"
@@ -165,9 +188,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_amphibious"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_amphibious_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_weather"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_terra"
@@ -177,9 +201,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_terra"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_terra_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_pegasus"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_bird"
@@ -189,9 +214,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_bird"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_bird_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_aero"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_guardian"
@@ -201,9 +227,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_guardian"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_guardian_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_angel"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_undead"
@@ -213,9 +240,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_undead"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_undead_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_storm"
         app:layout_constraintEnd_toEndOf="parent"
@@ -225,9 +253,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_sand"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_sand_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_justice"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_weather"
@@ -237,9 +266,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_weather"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_weather_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_ice"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_pegasus"
@@ -249,9 +279,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_pegasus"
-        android:layout_width="50sp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_pegasus_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_compassion"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_aero"
@@ -261,9 +292,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_aero"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_aero_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_cocka"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_angel"
@@ -273,9 +305,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_angel"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_angel_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_luxor"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_storm"
@@ -285,9 +318,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_storm"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_storm_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_betrayer"
         app:layout_constraintEnd_toEndOf="parent"
@@ -297,9 +331,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_justice"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_justice_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_vengeance"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_ice"
@@ -309,9 +344,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_ice"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_ice_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_deep"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_compassion"
@@ -321,9 +357,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_compassion"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_compassion_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_rotten"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_cocka"
@@ -333,9 +370,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_cocka"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_cocka_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_nightwing"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_luxor"
@@ -345,9 +383,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_luxor"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_luxor_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_redemption"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_betrayer"
@@ -357,9 +396,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_betrayer"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_betrayer_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_umbral"
         app:layout_constraintEnd_toEndOf="parent"
@@ -369,9 +409,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_vengeance"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_vengeance_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_deep"
@@ -381,9 +422,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_deep"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_deep_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_rotten"
@@ -393,9 +435,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_rotten"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_rotten_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_nightwing"
@@ -405,9 +448,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_nightwing"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_nightwing_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_redemption"
@@ -417,9 +461,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_redemption"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_redemption_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_umbral"
@@ -429,9 +474,10 @@
 
     <ImageButton
         android:id="@+id/menu_monsters_umbral"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_umbral_content_description"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_monsters_back"
         app:layout_constraintEnd_toEndOf="parent"
@@ -441,20 +487,22 @@
 
     <Button
         android:id="@+id/menu_monsters_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="@string/menu_monsters_back"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/menu_monsters_info"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".95" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/menu_monsters_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_monsters_info"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@id/menu_monsters_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/menu_monsters_back"
