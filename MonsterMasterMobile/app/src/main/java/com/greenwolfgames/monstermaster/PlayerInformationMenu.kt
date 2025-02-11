@@ -2,6 +2,7 @@ package com.greenwolfgames.monstermaster
 
 import android.graphics.PorterDuff
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,28 +27,33 @@ class PlayerInformationMenu : Fragment()
     {
         fun newInstance(state: State): PlayerInformationMenu
         {
+            Log.d("PlayerInformationMenu.newInstance","PlayerInformationMenu newInstance() called")
             val fragment = PlayerInformationMenu()
             val bundle = Bundle()
-            bundle.putSerializable("state", state)
+            bundle.putParcelable("state", state)
             fragment.arguments = bundle
             return fragment
         }
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("PlayerInformationMenu.onCreate", "OnCreate method of PlayerInformationMenu called")
+        super.onCreate(savedInstanceState)
+        state = arguments?.getParcelable("state") ?: throw IllegalStateException("State cannot be null")
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View?
+    {
+        Log.d("PlayerInformationMenu.onCreateView","PlayerInformationMenu onCreateView() called")
         return inflater.inflate(R.layout.menu_player_information, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)
     {
         super.onViewCreated(view, savedInstanceState)
-
-        arguments?.let{
-            state = it.getSerializable("state") as State
-        }
 
         // Ensure state is initialized properly, otherwise throw an exception
         if (!::state.isInitialized) {

@@ -12,6 +12,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -35,7 +36,6 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        onBackPressedDispatcher.addCallback(this) {}.isEnabled = false
         state = State()
 
         val buttons: List<Button> = listOf(
@@ -63,6 +63,27 @@ class MainActivity : AppCompatActivity()
         )
         val textInput: TextInputLayout = findViewById(R.id.text_input_layout)
 
+        // Handle back press dispatcher
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                Log.d("Back Button Triggered","Main Activity handle on Back pressed triggered.")
+                if(state.canAccessMenu())
+                {
+                    showMenuFragment()
+                }
+                else
+                {
+                    notify(getString(R.string.notification_menu_not_accessible))
+                    return
+                }
+//                val fragmentManager = supportFragmentManager
+//                if (fragmentManager.backStackEntryCount > 0) {
+//                    fragmentManager.popBackStack() // Go back to the previous fragment
+//                } else {
+//                    finish() // Close the activity if no fragments are left
+//                }
+            }
+        })
 
         setTextAutoResizing(texts)
         setButtonAutoResizing(buttons)
@@ -639,26 +660,10 @@ class MainActivity : AppCompatActivity()
         notificationTextView.startAnimation(AnimationHandler.getNotificationAnimation(notificationTextView,notification,this@MainActivity))
     }
 
-    @Deprecated("Deprecated in Java")
-    override fun onBackPressed()
-    {
-        if(state.canAccessMenu())
-        {
-            showMenuFragment()
-        }
-        else
-        {
-            notify(getString(R.string.notification_menu_not_accessible))
-        }
-        if (false)
-        {
-            super.onBackPressed()
-        } // Do nothing here
-    }
-
     private fun showMenuFragment()
     {
-        val fragment = MenuFragment.newInstance(state)
+        Log.d("Open Menu Fragment Event", "Main Activity show Menu Fragment triggered.")
+        val fragment = MenuSide.newInstance(state)
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment)
             .addToBackStack(null).commit()
     }

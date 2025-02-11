@@ -1,8 +1,8 @@
 package com.greenwolfgames.monstermaster
 
-import android.content.Context
+import android.os.Parcel
+import android.os.Parcelable
 import android.util.Log
-import java.io.Serializable
 
 /**
  * Class to represent the state of the game. All game state should be represented in this class or
@@ -12,7 +12,7 @@ import java.io.Serializable
  *
  * @Copyright Austin Bailey 2024-2025 All Rights Reserved
  */
-class State public constructor() : Serializable
+class State public constructor() : Parcelable
 {
     var playerName: String = "defaultPlayerName"
     var currentGold: Int = 0
@@ -87,6 +87,15 @@ class State public constructor() : Serializable
         Quest.MICHAEL_ATTITUDE to 0).withDefault { 0 }
 
     var nodeIndexByVisitedBefore = mutableMapOf<Int, Boolean>().withDefault { false }
+
+    constructor(parcel: Parcel) :this() {
+        playerName = parcel.readString().toString()
+        currentGold = parcel.readInt()
+        totalGoldEver = parcel.readInt()
+        totalGoldDonated = parcel.readInt()
+        playerPortraitImageId = parcel.readInt()
+    }
+
     //@formatter:on
     fun addScore(element: Element, score: Int)
     {
@@ -388,5 +397,32 @@ class State public constructor() : Serializable
         score += .175 * Element.getMatchingPrimaryNature(Element.getSecondaryNature(element)).mapNotNull{ elementalScore[it]}.average()
         score += .075 * Element.getMatchingSecondaryNature(Element.getSecondaryNature(element)).mapNotNull{ elementalScore[it]}.average()
         return score
+    }
+
+    override fun writeToParcel(parcel: Parcel, flags: Int)
+    {
+        parcel.writeString(playerName)
+        parcel.writeInt(currentGold)
+        parcel.writeInt(totalGoldEver)
+        parcel.writeInt(totalGoldDonated)
+        parcel.writeInt(playerPortraitImageId)
+    }
+
+    override fun describeContents(): Int
+    {
+        return 0
+    }
+
+    companion object CREATOR : Parcelable.Creator<State>
+    {
+        override fun createFromParcel(parcel: Parcel): State
+        {
+            return State(parcel)
+        }
+
+        override fun newArray(size: Int): Array<State?>
+        {
+            return arrayOfNulls(size)
+        }
     }
 }

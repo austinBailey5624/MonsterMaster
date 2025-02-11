@@ -2,6 +2,7 @@ package com.greenwolfgames.monstermaster
 
 import android.graphics.PorterDuff
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,34 +18,34 @@ import androidx.fragment.app.Fragment
  *
  * @Copyright Austin Bailey 2025 All Rights Reserved
  */
-class MenuFragment : Fragment()
+class MenuSide : Fragment()
 {
     private lateinit var state: State
 
     companion object
     {
-        fun newInstance(state: State): MenuFragment
+        fun newInstance(state: State): MenuSide
         {
-            val fragment = MenuFragment()
+            Log.d("MenuSide", "Creating new instance of MenuSide")
+            val fragment = MenuSide()
             val bundle = Bundle()
-            bundle.putSerializable("state", state)
+            bundle.putParcelable("state", state)
             fragment.arguments = bundle
             return fragment
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("MenuSide.onCreate", "OnCreate method of MenuSide called")
         super.onCreate(savedInstanceState)
-        arguments?.let{
-            state = it.getSerializable("state") as State
-        }
-
+        state = arguments?.getParcelable("state") ?: throw IllegalStateException("State cannot be null")
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.d("MenuSide.onCreateView","Menu Side onCreateView called")
         return inflater.inflate(R.layout.menu_side, container, false)
     }
 
@@ -53,14 +54,14 @@ class MenuFragment : Fragment()
         super.onViewCreated(view, savedInstanceState)
 
         val buttons: List<Button> = listOf(
-            view.findViewById(R.id.fragment_menu_button_1),
-            view.findViewById(R.id.fragment_menu_button_2),
-            view.findViewById(R.id.fragment_menu_button_3),
-            view.findViewById(R.id.fragment_menu_button_4),
-            view.findViewById(R.id.fragment_menu_button_5),
-            view.findViewById(R.id.fragment_menu_button_6),
-            view.findViewById(R.id.fragment_menu_button_7),
-            view.findViewById(R.id.fragment_menu_button_8)
+            view.findViewById(R.id.fragment_menu_button_party),
+            view.findViewById(R.id.fragment_menu_button_inventory),
+            view.findViewById(R.id.fragment_menu_button_journal),
+            view.findViewById(R.id.fragment_menu_button_encyclopedia),
+            view.findViewById(R.id.fragment_menu_button_save),
+            view.findViewById(R.id.fragment_menu_button_settings),
+            view.findViewById(R.id.fragment_menu_button_credits),
+            view.findViewById(R.id.fragment_menu_button_back)
         )
         for(button in buttons)
         {
@@ -71,22 +72,33 @@ class MenuFragment : Fragment()
         background.setColorFilter(ContextCompat.getColor(requireContext(),
             Element.getBackgroundColor(state.getMainCharacterElement())), PorterDuff.Mode.MULTIPLY)
 
-        buttons[0].setOnClickListener{
+        view.findViewById<Button>(R.id.fragment_menu_button_party).setOnClickListener{
             openPlayerInformationMenu()
         }
 
-        buttons[7].setOnClickListener{
+        view.findViewById<Button>(R.id.fragment_menu_button_encyclopedia).setOnClickListener{
+            openMonsterMenu()
+        }
+
+        view.findViewById<Button>(R.id.fragment_menu_button_back).setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()
         }
     }
 
-
     private fun openPlayerInformationMenu()
     {
         val fragment = PlayerInformationMenu.newInstance(state)
-        childFragmentManager.beginTransaction()
+        requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, fragment)
-            .addToBackStack(null) // Adds this transaction to the back stack
+            .addToBackStack(null)
+            .commit()
+    }
+
+    private fun openMonsterMenu() {
+        val fragment = MenuMonsters.newInstance(state)
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_menu_frame_layout, fragment)
+            .addToBackStack(null)
             .commit()
     }
 }
