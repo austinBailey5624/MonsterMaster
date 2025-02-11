@@ -20,6 +20,7 @@ class State public constructor() : Parcelable
     var totalGoldDonated: Int = 0
     var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
     var gender: Gender = Gender.MALE
+    var uiElement: Element = Element.INITIAL
     private var playerBattleActor: BattleActor
 
     init
@@ -131,6 +132,10 @@ class State public constructor() : Parcelable
         val seenBefore = nodeIndexByVisitedBefore.getOrDefault(nodeIndex, false)
         Log.d("State", "Checking node $nodeIndex: seenBefore = $seenBefore")
         return seenBefore
+    }
+
+    fun getUIElement(): Element {
+        return uiElement
     }
 
     fun addGold(addedGold: Int)

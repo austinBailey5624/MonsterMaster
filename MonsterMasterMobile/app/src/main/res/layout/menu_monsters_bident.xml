@@ -17,6 +17,18 @@
         app:srcCompat="@drawable/background_blank" />
 
     <ImageView
+        android:id="@+id/menu_monsters_bident_element_symbol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_element_title"
+        app:srcCompat="@drawable/element_justice" />
+
+    <ImageView
         android:id="@+id/menu_monsters_bident_background_overlap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -138,7 +150,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/menu_monsters_bident_info"
-        android:textSize="22sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_back"

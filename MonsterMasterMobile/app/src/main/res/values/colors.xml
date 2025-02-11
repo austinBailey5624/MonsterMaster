@@ -10,6 +10,7 @@
     <color name="black">              #FF000000</color>
     <color name="invisible">          #00000000</color>
     <color name="almostInvisible">    #01000000</color>
+    <color name="halfTransparent">    #80000000</color>
     <color name="red">                #FFFF0000</color>
     <color name="orange">             #FFFF8000</color>
     <color name="yellowOrange">       #FFFFDD00</color>

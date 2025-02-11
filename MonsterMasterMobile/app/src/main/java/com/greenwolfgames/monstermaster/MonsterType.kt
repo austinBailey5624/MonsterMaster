@@ -1,11 +1,11 @@
 package com.greenwolfgames.monstermaster
 
 /**
- * Class to contain the infomation needed for a specific type of monster
+ * Class to contain the information needed for a specific type of monster
  * @Author: Austin Bailey
- * @Year: 2024
+ * @Year: 2024-2025
  *
- * @Copyright: Austin Bailey 2024 All Rights Reserved
+ * @Copyright: Austin Bailey 2024-2025 All Rights Reserved
  */
 class MonsterType(
     val index: Int,

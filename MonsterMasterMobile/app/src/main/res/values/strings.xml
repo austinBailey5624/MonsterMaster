@@ -1438,6 +1438,48 @@
     <string name="menu_monsters_quindent_adult">Adult</string>
     <string name="menu_monsters_quindent_elder">Elder</string>
 
+    <!-- Element Names -->
+    <string name="pyro_name">Pyro</string>
+    <string name="lava_name">Lava</string>
+    <string name="dino_name">Dino</string>
+    <string name="sand_name">Sand</string>
+    <string name="justice_name">Justice</string>
+    <string name="vengeance_name">Vengeance</string>
+    <string name="steam_name">Steam</string>
+    <string name="aqua_name">Aqua</string>
+    <string name="amphibious_name">Amphibious</string>
+    <string name="weather_name">Weather</string>
+    <string name="ice_name">Ice</string>
+    <string name="deep_name">Deep</string>
+    <string name="fey_name">Fey</string>
+    <string name="plant_name">Plant</string>
+    <string name="terra_name">Terra</string>
+    <string name="pegasus_name">Pegasus</string>
+    <string name="compassion_name">Compassion</string>
+    <string name="rotten_name">Rotten</string>
+    <string name="phoenix_name">Phoenix</string>
+    <string name="seabreeze_name">Seabreeze</string>
+    <string name="bird_name">Bird</string>
+    <string name="aero_name">Aero</string>
+    <string name="cocka_name">Cocka</string>
+    <string name="nightwing_name">Nightwing</string>
+    <string name="solar_name">Solar</string>
+    <string name="lunar_name">Lunar</string>
+    <string name="guardian_name">Guardian</string>
+    <string name="angel_name">Angel</string>
+    <string name="luxor_name">Luxor</string>
+    <string name="redemption_name">Redemption</string>
+    <string name="demon_name">Demon</string>
+    <string name="poison_name">Poison</string>
+    <string name="undead_name">Undead</string>
+    <string name="storm_name">Storm</string>
+    <string name="betrayer_name">Betrayer</string>
+    <string name="umbral_name">Umbral</string>
+    <string name="neutral_name">Neutral</string>
+    <string name="physical_name">Physical</string>
+    <string name="magical_name">Magical</string>
+    <string name="initial_name">Initial</string>
+
 
     <string name="health_status">%1$d / %2$d</string>
 

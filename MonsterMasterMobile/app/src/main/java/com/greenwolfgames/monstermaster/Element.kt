@@ -370,6 +370,59 @@ enum class Element
             }
         }
 
+        fun getName(context:Context, element:Element): String
+        {
+            return when(element)
+            {
+                PYRO -> ContextCompat.getString(context,R.string.pyro_name)
+                LAVA -> ContextCompat.getString(context,R.string.lava_name)
+                DINO -> ContextCompat.getString(context,R.string.dino_name)
+                SAND -> ContextCompat.getString(context,R.string.sand_name)
+                JUSTICE -> ContextCompat.getString(context,R.string.justice_name)
+                VENGEANCE -> ContextCompat.getString(context,R.string.vengeance_name)
+
+                STEAM -> ContextCompat.getString(context,R.string.steam_name)
+                AQUA -> ContextCompat.getString(context,R.string.aqua_name)
+                AMPHIBIOUS -> ContextCompat.getString(context,R.string.amphibious_name)
+                WEATHER -> ContextCompat.getString(context,R.string.weather_name)
+                ICE -> ContextCompat.getString(context,R.string.ice_name)
+                DEEP -> ContextCompat.getString(context,R.string.deep_name)
+
+                FEY -> ContextCompat.getString(context,R.string.fey_name)
+                PLANT -> ContextCompat.getString(context,R.string.plant_name)
+                TERRA -> ContextCompat.getString(context,R.string.terra_name)
+                PEGASUS -> ContextCompat.getString(context,R.string.pegasus_name)
+                COMPASSION -> ContextCompat.getString(context,R.string.compassion_name)
+                ROTTEN -> ContextCompat.getString(context,R.string.rotten_name)
+
+                PHOENIX -> ContextCompat.getString(context,R.string.phoenix_name)
+                SEABREEZE -> ContextCompat.getString(context,R.string.seabreeze_name)
+                BIRD -> ContextCompat.getString(context,R.string.bird_name)
+                AERO -> ContextCompat.getString(context,R.string.aero_name)
+                COCKA -> ContextCompat.getString(context,R.string.cocka_name)
+                NIGHTWING -> ContextCompat.getString(context,R.string.nightwing_name)
+
+                SOLAR -> ContextCompat.getString(context,R.string.solar_name)
+                LUNAR -> ContextCompat.getString(context,R.string.lunar_name)
+                GUARDIAN -> ContextCompat.getString(context,R.string.guardian_name)
+                ANGEL -> ContextCompat.getString(context,R.string.angel_name)
+                LUXOR -> ContextCompat.getString(context,R.string.luxor_name)
+                REDEMPTION -> ContextCompat.getString(context,R.string.redemption_name)
+
+                DEMON -> ContextCompat.getString(context,R.string.demon_name)
+                POISON -> ContextCompat.getString(context,R.string.poison_name)
+                UNDEAD -> ContextCompat.getString(context,R.string.undead_name)
+                STORM -> ContextCompat.getString(context,R.string.storm_name)
+                BETRAYER -> ContextCompat.getString(context,R.string.betrayer_name)
+                UMBRAL -> ContextCompat.getString(context,R.string.umbral_name)
+
+                NEUTRAL -> ContextCompat.getString(context,R.string.neutral_name)
+                PHYSICAL -> ContextCompat.getString(context,R.string.physical_name)
+                MAGICAL -> ContextCompat.getString(context,R.string.magical_name)
+                INITIAL -> ContextCompat.getString(context,R.string.initial_name)
+            }
+        }
+
         fun getInfantMonster(context: Context, element: Element): MonsterType
         {
             return when(element)
@@ -857,7 +910,7 @@ enum class Element
             }
         }
 
-        fun getMagicElderMonster(context: Context, element: Element): MonsterType
+        fun getMagicalElderMonster(context: Context, element: Element): MonsterType
         {
             return when(element)
             {
