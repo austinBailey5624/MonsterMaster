@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_monsters_quindent_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_blank" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_quindent_background_overlap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_fade_2" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_quindent_infant_background"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_adolescent_background"
+        app:srcCompat="@drawable/button_1x3" />
+
+    <TextView
+        android:id="@+id/menu_monsters_quindent_infant_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:rotation="-90"
+        android:text="@string/menu_monsters_quindent_infant"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_monsters_quindent_infant_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monsters_quindent_infant_background"
+        app:layout_constraintStart_toStartOf="@id/menu_monsters_quindent_infant_background"
+        app:layout_constraintTop_toTopOf="@+id/menu_monsters_quindent_infant_background" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_quindent_adolescent_background"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_infant_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_adult_background"
+        app:srcCompat="@drawable/button_1x3" />
+
+    <TextView
+        android:id="@+id/menu_monsters_quindent_adolescent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-90"
+        android:text="@string/menu_monsters_quindent_adolescent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_monsters_quindent_adolescent_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monsters_quindent_adolescent_background"
+        app:layout_constraintStart_toStartOf="@id/menu_monsters_quindent_adolescent_background"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_quindent_adolescent_background" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_quindent_adult_background"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adolescent_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_elder_background"
+        app:srcCompat="@drawable/button_1x3" />
+
+    <TextView
+        android:id="@+id/menu_monsters_quindent_adult_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-90"
+        android:text="@string/menu_monsters_quindent_adult"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_monsters_quindent_adult_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monsters_quindent_adult_background"
+        app:layout_constraintStart_toStartOf="@id/menu_monsters_quindent_adult_background"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_quindent_adult_background" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_quindent_elder_background"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adult_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_element_title"
+        app:srcCompat="@drawable/button_1x3" />
+
+    <TextView
+        android:id="@+id/menu_monsters_quindent_elder_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-90"
+        android:text="@string/menu_monsters_quindent_elder"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_monsters_quindent_elder_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monsters_quindent_elder_background"
+        app:layout_constraintStart_toStartOf="@id/menu_monsters_quindent_elder_background"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_quindent_elder_background" />
+
+    <Button
+        android:id="@+id/menu_monsters_quindent_element_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_monsters_quindent_element_replacement_text"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_elder_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu_monsters_quindent_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_monsters_back"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_infant_background" />
+
+    <Button
+        android:id="@+id/menu_monsters_quindent_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_monsters_quindent_info"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_back"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_quindent_back" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_infant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_infant_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_adolescent_physical"
+        app:srcCompat="@drawable/monster_lava_philammon" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_adolescent_physical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_adolescent_physical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_infant"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_adolescent_balanced"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_adult_physical"
+        app:srcCompat="@drawable/monster_lava_crerops" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_adolescent_balanced"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_adult_balanced_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_infant"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_adolescent_magical"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_adolescent_physical"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_adult_balanced"
+        app:srcCompat="@drawable/monster_lava_oil_puddle" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_adolescent_magical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_adolescent_magical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_infant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_adolescent_balanced"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_adult_magical"
+        app:srcCompat="@drawable/monster_lava_corynetes" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_adult_physical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_adult_physical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adolescent_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_adult_balanced"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_elder_physical"
+        app:srcCompat="@drawable/monster_lava_philottus" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_adult_balanced"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_adult_balanced_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adolescent_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_adult_enlightened"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_adult_physical"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_elder_physical"
+        app:srcCompat="@drawable/monster_lava_lava_pool" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_adult_enlightened"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_adult_enlightened_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adolescent_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_adult_mystic"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_adult_balanced"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_elder_physical"
+        app:srcCompat="@drawable/monster_lava_lava_pool" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_adult_mystic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_adult_balanced_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adolescent_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_adult_magical"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_adult_enlightened"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_elder_physical"
+        app:srcCompat="@drawable/monster_lava_lava_pool" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_adult_magical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_adult_magical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adolescent_magical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_adult_mystic"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_elder_magical"
+        app:srcCompat="@drawable/monster_lava_cercyon" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_elder_physical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_elder_physical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adult_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_elder_balanced"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_element_title"
+        app:srcCompat="@drawable/monster_lava_vulcanous" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_elder_balanced"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_elder_balanced_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adult_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_elder_enlightened"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_elder_physical"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_element_title"
+        app:srcCompat="@drawable/monster_lava_magma_lake" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_elder_enlightened"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_elder_enlightened_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adult_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_elder_mystic"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_elder_balanced"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_element_title"
+        app:srcCompat="@drawable/monster_lava_magma_lake" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_elder_mystic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_elder_balanced_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adult_mystic"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_quindent_elder_magical"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_elder_enlightened"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_element_title"
+        app:srcCompat="@drawable/monster_lava_magma_lake" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_quindent_elder_magical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_quindent_elder_magical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_quindent_adult_magical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_quindent_elder_mystic"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_quindent_element_title"
+        app:srcCompat="@drawable/monster_lava_vagrus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
