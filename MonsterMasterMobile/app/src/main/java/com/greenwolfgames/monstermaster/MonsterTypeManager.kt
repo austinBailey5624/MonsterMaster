@@ -132,7 +132,7 @@ class MonsterTypeManager
                     getString(context,R.string.monster_type_9_physical_evolution_index).toInt(),
                     getString(context,R.string.monster_type_9_balanced_evolution_index).toInt(),
                     getString(context,R.string.monster_type_9_magical_evolution_index).toInt(),
-                    R.drawable.monster_pyro_pyrus,
+                    R.drawable.monster_pyro_pyres,
                     Element.PYRO
                 )
             )
