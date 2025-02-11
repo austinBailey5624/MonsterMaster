@@ -1422,6 +1422,22 @@
     <string name="menu_monsters_trident_adult">Adult</string>
     <string name="menu_monsters_trident_elder">Elder</string>
 
+    <string name="menu_monsters_quadent_back">Back</string>
+    <string name="menu_monsters_quadent_info">Tap a monster for more information</string>
+    <string name="menu_monsters_quadent_element_replacement_text">ElementNameHere</string>
+    <string name="menu_monsters_quadent_infant">Infant</string>
+    <string name="menu_monsters_quadent_adolescent">Adolescent</string>
+    <string name="menu_monsters_quadent_adult">Adult</string>
+    <string name="menu_monsters_quadent_elder">Elder</string>
+
+    <string name="menu_monsters_quindent_back">Back</string>
+    <string name="menu_monsters_quindent_info">Tap a monster for more information</string>
+    <string name="menu_monsters_quindent_element_replacement_text">ElementNameHere</string>
+    <string name="menu_monsters_quindent_infant">Infant</string>
+    <string name="menu_monsters_quindent_adolescent">Adolescent</string>
+    <string name="menu_monsters_quindent_adult">Adult</string>
+    <string name="menu_monsters_quindent_elder">Elder</string>
+
 
     <string name="health_status">%1$d / %2$d</string>
 
@@ -1536,6 +1552,34 @@
     <string name="menu_monsters_trident_elder_physical_content_description">Physical Elder menu</string>
     <string name="menu_monsters_trident_elder_balanced_content_description">Balanced Elder menu</string>
     <string name="menu_monsters_trident_elder_magical_content_description">Magical Elder menu</string>
+
+    <string name="menu_monsters_quadent_infant_content_description">Infant menu</string>
+    <string name="menu_monsters_quadent_adolescent_physical_content_description">Physical Adolescent menu</string>
+    <string name="menu_monsters_quadent_adolescent_balanced_content_description">Balanced Adolescent menu</string>
+    <string name="menu_monsters_quadent_adolescent_magical_content_description">Magical Adolescent menu</string>
+    <string name="menu_monsters_quadent_adult_physical_content_description">Physical Adult menu</string>
+    <string name="menu_monsters_quadent_adult_balanced_content_description">Balanced Adult menu</string>
+    <string name="menu_monsters_quadent_adult_mystic_content_description">Mystic Adult Menu</string>
+    <string name="menu_monsters_quadent_adult_magical_content_description">Magical Adult menu</string>
+    <string name="menu_monsters_quadent_elder_physical_content_description">Physical Elder menu</string>
+    <string name="menu_monsters_quadent_elder_balanced_content_description">Balanced Elder menu</string>
+    <string name="menu_monsters_quadent_elder_mystic_content_description">Mystic Adult menu</string>
+    <string name="menu_monsters_quadent_elder_magical_content_description">Magical Elder menu</string>
+
+    <string name="menu_monsters_quindent_infant_content_description">Infant menu</string>
+    <string name="menu_monsters_quindent_adolescent_physical_content_description">Physical Adolescent menu</string>
+    <string name="menu_monsters_quindent_adolescent_balanced_content_description">Balanced Adolescent menu</string>
+    <string name="menu_monsters_quindent_adolescent_magical_content_description">Magical Adolescent menu</string>
+    <string name="menu_monsters_quindent_adult_physical_content_description">Physical Adult menu</string>
+    <string name="menu_monsters_quindent_adult_balanced_content_description">Balanced Adult menu</string>
+    <string name="menu_monsters_quindent_adult_enlightened_content_description">Enlightened Adult Menu</string>
+    <string name="menu_monsters_quindent_adult_mystic_content_description">Mystic Adult Menu</string>
+    <string name="menu_monsters_quindent_adult_magical_content_description">Magical Adult menu</string>
+    <string name="menu_monsters_quindent_elder_physical_content_description">Physical Elder menu</string>
+    <string name="menu_monsters_quindent_elder_enlightened_content_description">Enlightened Elder Menu</string>
+    <string name="menu_monsters_quindent_elder_balanced_content_description">Balanced Elder menu</string>
+    <string name="menu_monsters_quindent_elder_mystic_content_description">Mystic Adult menu</string>
+    <string name="menu_monsters_quindent_elder_magical_content_description">Magical Elder menu</string>
 
 
     <!-- Notificiation Texts -->
