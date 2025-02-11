@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_monsters_bident_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_blank" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_bident_background_overlap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_fade_2" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_bident_infant_background"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_adolescent_background"
+        app:srcCompat="@drawable/button_1x3" />
+
+    <TextView
+        android:id="@+id/menu_monsters_bident_infant_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:rotation="-90"
+        android:text="@string/menu_monsters_bident_infant"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_monsters_bident_infant_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monsters_bident_infant_background"
+        app:layout_constraintStart_toStartOf="@id/menu_monsters_bident_infant_background"
+        app:layout_constraintTop_toTopOf="@+id/menu_monsters_bident_infant_background" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_bident_adolescent_background"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_infant_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_adult_background"
+        app:srcCompat="@drawable/button_1x3" />
+
+    <TextView
+        android:id="@+id/menu_monsters_bident_adolescent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-90"
+        android:text="@string/menu_monsters_bident_adolescent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_monsters_bident_adolescent_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monsters_bident_adolescent_background"
+        app:layout_constraintStart_toStartOf="@id/menu_monsters_bident_adolescent_background"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_bident_adolescent_background" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_bident_adult_background"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_adolescent_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_elder_background"
+        app:srcCompat="@drawable/button_1x3" />
+
+    <TextView
+        android:id="@+id/menu_monsters_bident_adult_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-90"
+        android:text="@string/menu_monsters_bident_adult"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_monsters_bident_adult_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monsters_bident_adult_background"
+        app:layout_constraintStart_toStartOf="@id/menu_monsters_bident_adult_background"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_bident_adult_background" />
+
+    <ImageView
+        android:id="@+id/menu_monsters_bident_elder_background"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_adult_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_element_title"
+        app:srcCompat="@drawable/button_1x3" />
+
+    <TextView
+        android:id="@+id/menu_monsters_bident_elder_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-90"
+        android:text="@string/menu_Monsters_bident_elder"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_monsters_bident_elder_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monsters_bident_elder_background"
+        app:layout_constraintStart_toStartOf="@id/menu_monsters_bident_elder_background"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_bident_elder_background" />
+
+    <Button
+        android:id="@+id/menu_monsters_bident_element_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_monsters_bident_element_replacement_text"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_elder_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu_monsters_bident_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_monsters_back"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_bident_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_infant_background" />
+
+    <Button
+        android:id="@+id/menu_monsters_bident_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_monsters_bident_info"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_back"
+        app:layout_constraintTop_toTopOf="@id/menu_monsters_bident_back" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_bident_infant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_bident_infant_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_adolescent_physical"
+        app:srcCompat="@drawable/monster_justice_angier" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_bident_adolescent_physical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_bident_adolescent_physical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_infant"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_bident_adolescent_magical"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_adult_physical"
+        app:srcCompat="@drawable/monster_justice_justicar" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_bident_adolescent_magical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_bident_adolescent_magical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_infant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_adolescent_physical"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_adult_magical"
+        app:srcCompat="@drawable/monster_justice_ayurved" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_bident_adult_physical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_bident_adult_physical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_adolescent_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_bident_adult_magical"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_elder_physical"
+        app:srcCompat="@drawable/monster_justice_ordinator" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_bident_adult_magical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_bident_adult_magical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_adolescent_magical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_adult_physical"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_elder_magical"
+        app:srcCompat="@drawable/monster_justice_anyr" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_bident_elder_physical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_bident_elder_physical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_adult_physical"
+        app:layout_constraintEnd_toStartOf="@id/menu_monsters_bident_elder_magical"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_infant_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_element_title"
+        app:srcCompat="@drawable/monster_justice_zireal" />
+
+    <ImageButton
+        android:id="@+id/menu_monsters_bident_elder_magical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_monsters_bident_elder_magical_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monsters_bident_adult_magical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monsters_bident_elder_physical"
+        app:layout_constraintTop_toBottomOf="@id/menu_monsters_bident_element_title"
+        app:srcCompat="@drawable/monster_justice_justicer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

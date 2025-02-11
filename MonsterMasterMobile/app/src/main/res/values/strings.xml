@@ -1406,6 +1406,14 @@
     <string name="menu_monsters_back">Back</string>
     <string name="menu_monsters_info">Tap an element to see related monsters</string>
 
+    <string name="menu_monsters_bident_back">Back</string>
+    <string name="menu_monsters_bident_info">Tap a monster for more information</string>
+    <string name="menu_monsters_bident_element_replacement_text">ElementNameHere</string>
+    <string name="menu_monsters_bident_infant">Infant</string>
+    <string name="menu_monsters_bident_adolescent">Adolescent</string>
+    <string name="menu_monsters_bident_adult">Adult</string>
+    <string name="menu_Monsters_bident_elder">Elder</string>
+
 
     <string name="health_status">%1$d / %2$d</string>
 
@@ -1500,6 +1508,15 @@
     <string name="menu_monsters_nightwing_content_description">Nightwing Monster menu</string>
     <string name="menu_monsters_redemption_content_description">Redemption Monster menu</string>
     <string name="menu_monsters_umbral_content_description">Umbral Monster menu</string>
+
+    <!--content description for menu monsters bident UI elements -->
+    <string name="menu_monsters_bident_infant_content_description">Infant menu</string>
+    <string name="menu_monsters_bident_adolescent_physical_content_description">Physical Adolescent menu</string>
+    <string name="menu_monsters_bident_adolescent_magical_content_description">Magical Adolescent menu</string>
+    <string name="menu_monsters_bident_adult_physical_content_description">Physical Adult menu</string>
+    <string name="menu_monsters_bident_adult_magical_content_description">Magical Adult menu</string>
+    <string name="menu_monsters_bident_elder_physical_content_description">Physical Elder menu</string>
+    <string name="menu_monsters_bident_elder_magical_content_description">Magical Elder menu</string>
 
 
     <!-- Notificiation Texts -->
