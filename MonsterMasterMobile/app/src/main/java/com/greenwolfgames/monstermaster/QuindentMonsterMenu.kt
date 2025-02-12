@@ -123,9 +123,74 @@ class QuindentMonsterMenu : Fragment()
         view.findViewById<ImageButton>(R.id.menu_monsters_quindent_elder_mystic).setImageResource(Element.getMysticElderMonster(requireContext(),element).imageResourceId)
         view.findViewById<ImageButton>(R.id.menu_monsters_quindent_elder_magical).setImageResource(Element.getMagicalElderMonster(requireContext(),element).imageResourceId)
 
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_infant).setOnClickListener{
+            openMonsterTypeMenu(Element.getInfantMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_adolescent_physical).setOnClickListener{
+            openMonsterTypeMenu(Element.getPhysicalAdolescentMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_adolescent_balanced).setOnClickListener{
+            openMonsterTypeMenu(Element.getBalancedAdolescentMonster(requireContext(), element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_adolescent_magical).setOnClickListener{
+            openMonsterTypeMenu(Element.getMagicalAdolescentMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_adult_physical).setOnClickListener{
+            openMonsterTypeMenu(Element.getPhysicalAdultMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_adult_balanced).setOnClickListener{
+            openMonsterTypeMenu(Element.getBalancedAdultMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_adult_enlightened).setOnClickListener{
+            openMonsterTypeMenu(Element.getEnlightenedAdultMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_adult_mystic).setOnClickListener{
+            openMonsterTypeMenu(Element.getMysticAdultMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_adult_magical).setOnClickListener{
+            openMonsterTypeMenu(Element.getMagicalAdultMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_elder_physical).setOnClickListener{
+            openMonsterTypeMenu(Element.getPhysicalElderMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_elder_balanced).setOnClickListener{
+            openMonsterTypeMenu(Element.getBalancedElderMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_elder_enlightened).setOnClickListener{
+            openMonsterTypeMenu(Element.getEnlightenedAdultMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_elder_mystic).setOnClickListener{
+            openMonsterTypeMenu(Element.getMysticElderMonster(requireContext(),element))
+        }
+
+        view.findViewById<ImageButton>(R.id.menu_monsters_quindent_elder_magical).setOnClickListener{
+            openMonsterTypeMenu(Element.getMagicalElderMonster(requireContext(),element))
+        }
 
         view.findViewById<Button>(R.id.menu_monsters_quindent_back).setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()
         }
+    }
+
+    private fun openMonsterTypeMenu(monsterType: MonsterType)
+    {
+        state.uiMonsterType = monsterType
+        val fragment = MonsterTypeMenu.newInstance(state)
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_menu_frame_layout, fragment)
+            .addToBackStack(null)
+            .commit()
     }
 }

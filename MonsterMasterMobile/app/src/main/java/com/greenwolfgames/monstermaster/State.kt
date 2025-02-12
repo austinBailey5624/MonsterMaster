@@ -21,6 +21,7 @@ class State public constructor() : Parcelable
     var playerPortraitImageId: Int = R.drawable.main_character_brown_hair_male
     var gender: Gender = Gender.MALE
     var uiElement: Element = Element.INITIAL
+    var uiMonsterType: MonsterType =  MonsterType(0,"","",0,0,0,0,0,Element.INITIAL)
     private var playerBattleActor: BattleActor
 
     init
@@ -136,6 +137,10 @@ class State public constructor() : Parcelable
 
     fun getUIElement(): Element {
         return uiElement
+    }
+
+    fun getUIMonsterType(): MonsterType {
+        return uiMonsterType
     }
 
     fun addGold(addedGold: Int)
