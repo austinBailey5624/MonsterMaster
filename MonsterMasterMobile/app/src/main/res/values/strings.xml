@@ -1438,6 +1438,20 @@
     <string name="menu_monsters_quindent_adult">Adult</string>
     <string name="menu_monsters_quindent_elder">Elder</string>
 
+    <string name="menu_monster_type_title">MonsterTypeText</string>
+    <string name="menu_monster_type_seen">Seen:</string>
+    <string name="menu_monster_type_slain">Slain:</string>
+    <string name="menu_monster_type_owned">Owned:</string>
+    <string name="menu_monster_type_description">Description:</string>
+    <string name="menu_monster_type_location">Location:</string>
+    <string name="menu_monster_type_traits">Traits:</string>
+    <string name="menu_monster_type_items_dropped">Items Dropped:</string>
+    <string name="menu_monster_type_evolved_from">Evolved From</string>
+    <string name="menu_monster_type_physical_evolution">Physical Evolution</string>
+    <string name="menu_monster_type_balanced_evolution">Balanced Evolution</string>
+    <string name="menu_monster_type_magical_evolution">Magical Evolution</string>
+    <string name="menu_monster_type_back">Back</string>
+
     <!-- Element Names -->
     <string name="pyro_name">Pyro</string>
     <string name="lava_name">Lava</string>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_monster_type_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_blank" />
+
+    <ImageView
+        android:id="@+id/menu_monster_type_background_faded"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_fade_2" />
+
+    <Button
+        android:id="@+id/menu_monster_type_title"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/menu_monster_type_title"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_seen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu_monster_type_seen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/menu_monster_type_seen"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_image"
+        app:layout_constraintEnd_toStartOf="@id/menu_monster_type_slain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_title"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/menu_monster_type_slain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/menu_monster_type_slain"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_image"
+        app:layout_constraintEnd_toStartOf="@id/menu_monster_type_owned"
+        app:layout_constraintStart_toEndOf="@id/menu_monster_type_seen"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_title" />
+
+    <Button
+        android:id="@+id/menu_monster_type_owned"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/menu_monster_type_owned"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monster_type_slain"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_title" />
+
+    <ImageView
+        android:id="@+id/menu_monster_type_elemental_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".5"
+        app:layout_constraintBottom_toBottomOf="@id/menu_monster_type_image"
+        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_image"
+        app:layout_constraintStart_toStartOf="@id/menu_monster_type_image"
+        app:layout_constraintTop_toTopOf="@id/menu_monster_type_image"
+        app:srcCompat="@drawable/element_physical" />
+
+    <ImageView
+        android:id="@+id/menu_monster_type_image"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_info_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_seen"
+        app:srcCompat="@drawable/monster_pyro_flarial" />
+
+    <ImageView
+        android:id="@+id/menu_monster_type_info_background"
+        android:layout_width="350dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_evolved_from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_image"
+        app:srcCompat="@drawable/button_2x1" />
+
+    <TextView
+        android:id="@+id/menu_monster_type_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/menu_monster_type_description"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_location"
+        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/menu_monster_type_info_background"
+        app:layout_constraintTop_toTopOf="@id/menu_monster_type_info_background" />
+
+    <TextView
+        android:id="@+id/menu_monster_type_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/menu_monster_type_location"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_traits"
+        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/menu_monster_type_info_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_description" />
+
+    <TextView
+        android:id="@+id/menu_monster_type_traits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/menu_monster_type_traits"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_items_dropped"
+        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/menu_monster_type_info_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_location" />
+
+    <TextView
+        android:id="@+id/menu_monster_type_items_dropped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/menu_monster_type_items_dropped"
+        app:layout_constraintBottom_toBottomOf="@id/menu_monster_type_info_background"
+        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/menu_monster_type_info_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_traits" />
+
+    <Button
+        android:id="@+id/menu_monster_evolved_from"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/menu_monster_type_evolved_from"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_balanced_evolution"
+        app:layout_constraintEnd_toStartOf="@id/menu_monster_type_physical_evolution"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_info_background" />
+
+    <Button
+        android:id="@+id/menu_monster_type_physical_evolution"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/menu_monster_type_physical_evolution"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_magical_evolution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monster_evolved_from"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_info_background" />
+
+    <Button
+        android:id="@+id/menu_monster_type_balanced_evolution"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/menu_monster_type_balanced_evolution"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_monster_type_magical_evolution"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_evolved_from" />
+
+    <Button
+        android:id="@+id/menu_monster_type_magical_evolution"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/menu_monster_type_magical_evolution"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_monster_type_balanced_evolution"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_physical_evolution" />
+
+    <Button
+        android:id="@+id/menu_monster_type_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/menu_monster_type_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_balanced_evolution" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
