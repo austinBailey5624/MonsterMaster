@@ -46,7 +46,7 @@ class DeityAlignmentMenu : Fragment()
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.menu_diety_alignment, container, false)
+        return inflater.inflate(R.layout.menu_deity_alignment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)

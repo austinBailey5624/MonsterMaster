@@ -64,5 +64,32 @@ enum class Deity
                 ENEMY -> ContextCompat.getString(context,R.string.enemy_name)
             }
         }
+
+        fun getDescription(context: Context, deity: Deity): String
+        {
+            return when(deity)
+            {
+                ANU -> ContextCompat.getString(context,R.string.anu_description)
+                VELHU -> ContextCompat.getString(context,R.string.velhu_description)
+                SID -> ContextCompat.getString(context,R.string.sid_description)
+                GABRIEL -> ContextCompat.getString(context,R.string.gabriel_description)
+                AHROS -> ContextCompat.getString(context,R.string.ahros_description)
+                PYTHION -> ContextCompat.getString(context,R.string.pythion_description)
+
+                BENNU -> ContextCompat.getString(context,R.string.bennu_description)
+                NEPTUNE -> ContextCompat.getString(context,R.string.neptune_description)
+                GAIA -> ContextCompat.getString(context,R.string.gaia_description)
+                BACCHUS -> ContextCompat.getString(context,R.string.bacchus_description)
+                MARS -> ContextCompat.getString(context,R.string.mars_description)
+                THANATOS -> ContextCompat.getString(context,R.string.thanatos_description)
+
+                ACHERON -> ContextCompat.getString(context,R.string.acheron_description)
+                ILLIAN -> ContextCompat.getString(context,R.string.illian_description)
+                WEBSPINNER -> ContextCompat.getString(context,R.string.webspinner_description)
+                MUIR -> ContextCompat.getString(context,R.string.muir_description)
+                MALACATHE -> ContextCompat.getString(context,R.string.malacathe_description)
+                ENEMY -> ContextCompat.getString(context,R.string.enemy_description)
+            }
+        }
     }
 }
