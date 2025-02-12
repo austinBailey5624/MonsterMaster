@@ -67,21 +67,22 @@ class MainActivity : AppCompatActivity()
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 Log.d("Back Button Triggered","Main Activity handle on Back pressed triggered.")
-                if(state.canAccessMenu())
+                if(fragmentManager.backStackEntryCount > 0)
                 {
-                    showMenuFragment()
+                    fragmentManager.popBackStack()
                 }
                 else
                 {
-                    notify(getString(R.string.notification_menu_not_accessible))
-                    return
+                    if (state.canAccessMenu())
+                    {
+                        showMenuFragment()
+                    }
+                    else
+                    {
+                        notify(getString(R.string.notification_menu_not_accessible))
+                        return
+                    }
                 }
-//                val fragmentManager = supportFragmentManager
-//                if (fragmentManager.backStackEntryCount > 0) {
-//                    fragmentManager.popBackStack() // Go back to the previous fragment
-//                } else {
-//                    finish() // Close the activity if no fragments are left
-//                }
             }
         })
 
