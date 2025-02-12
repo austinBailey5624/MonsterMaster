@@ -20,15 +20,15 @@ import androidx.fragment.app.Fragment
  *
  * @Copyright 2025 Austin Bailey All Rights Reserved
  */
-class MonsterTypeMenu : Fragment()
+class MenuMonsterType : Fragment()
 {
     private lateinit var state: State
 
     companion object
     {
-        fun newInstance(state: State): MonsterTypeMenu
+        fun newInstance(state: State): MenuMonsterType
         {
-            val fragment = MonsterTypeMenu()
+            val fragment = MenuMonsterType()
             val bundle = Bundle()
             bundle.putParcelable("state", state)
             fragment.arguments = bundle

@@ -106,7 +106,7 @@
         android:id="@+id/menu_deity_description_background"
         android:layout_width="300dp"
         android:layout_height="225dp"
-        app:layout_constraintBottom_toTopOf="@id/benu_deity_back"
+        app:layout_constraintBottom_toTopOf="@id/menu_deity_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu_deity_status"
@@ -128,7 +128,7 @@
         app:layout_constraintTop_toTopOf="@id/menu_deity_description_background" />
 
     <Button
-        android:id="@+id/benu_deity_back"
+        android:id="@+id/menu_deity_back"
         android:layout_width="200dp"
         android:layout_height="0dp"
         android:text="@string/menu_deity_back"

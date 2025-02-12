@@ -22,6 +22,7 @@ class State public constructor() : Parcelable
     var gender: Gender = Gender.MALE
     var uiElement: Element = Element.INITIAL
     var uiMonsterType: MonsterType =  MonsterType(0,"","",0,0,0,0,0,Element.INITIAL)
+    var uiDeity: Deity = Deity.BENNU
     private var playerBattleActor: BattleActor
 
     init

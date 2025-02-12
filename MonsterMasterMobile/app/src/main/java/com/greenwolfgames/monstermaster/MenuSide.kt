@@ -87,7 +87,7 @@ class MenuSide : Fragment()
 
     private fun openPlayerInformationMenu()
     {
-        val fragment = PlayerInformationMenu.newInstance(state)
+        val fragment = MenuPlayerInformation.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, fragment)
             .addToBackStack(null)
@@ -95,7 +95,7 @@ class MenuSide : Fragment()
     }
 
     private fun openMonsterMenu() {
-        val fragment = MenuMonsters.newInstance(state)
+        val fragment = MenuMonstersElements.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, fragment)
             .addToBackStack(null)

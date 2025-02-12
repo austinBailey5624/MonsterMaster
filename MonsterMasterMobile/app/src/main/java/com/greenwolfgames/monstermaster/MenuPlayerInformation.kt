@@ -19,16 +19,16 @@ import androidx.fragment.app.Fragment
  *
  * @Copyright Austin Bailey 2025 All Rights Reserved
  */
-class PlayerInformationMenu : Fragment()
+class MenuPlayerInformation : Fragment()
 {
     private lateinit var state: State
 
     companion object
     {
-        fun newInstance(state: State): PlayerInformationMenu
+        fun newInstance(state: State): MenuPlayerInformation
         {
             Log.d("PlayerInformationMenu.newInstance","PlayerInformationMenu newInstance() called")
-            val fragment = PlayerInformationMenu()
+            val fragment = MenuPlayerInformation()
             val bundle = Bundle()
             bundle.putParcelable("state", state)
             fragment.arguments = bundle
@@ -148,7 +148,7 @@ class PlayerInformationMenu : Fragment()
     }
 
     private fun openDeityAlignmentMenu() {
-        val fragment = DeityAlignmentMenu.newInstance(state)
+        val fragment = MenuDeities.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, fragment)
             .addToBackStack(null)

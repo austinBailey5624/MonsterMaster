@@ -16,15 +16,15 @@ import androidx.fragment.app.Fragment
  *
  * @Copyright Austin Bailey All Rights Reserved
  */
-class MenuMonsters : Fragment()
+class MenuMonstersElements : Fragment()
 {
     private lateinit var state: State
 
     companion object
     {
-        fun newInstance(state: State): MenuMonsters
+        fun newInstance(state: State): MenuMonstersElements
         {
-            val fragment = MenuMonsters()
+            val fragment = MenuMonstersElements()
             val bundle = Bundle()
             bundle.putParcelable("state", state)
             fragment.arguments = bundle
@@ -43,7 +43,7 @@ class MenuMonsters : Fragment()
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.menu_monsters, container, false)
+        return inflater.inflate(R.layout.menu_monsters_elements, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)
@@ -213,7 +213,7 @@ class MenuMonsters : Fragment()
         if(Element.getMonsterHierarchyType(element) == EMonsterHierarchyType.BIDENT)
         {
             state.uiElement = element;
-            val fragment = BidentMonsterMenu.newInstance(state)
+            val fragment = MenuMonstersBident.newInstance(state)
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_menu_frame_layout, fragment)
                 .addToBackStack(null)
@@ -223,7 +223,7 @@ class MenuMonsters : Fragment()
         else if(Element.getMonsterHierarchyType(element) == EMonsterHierarchyType.TRIDENT)
         {
             state.uiElement = element;
-            val fragment = TridentMonsterMenu.newInstance(state)
+            val fragment = MenuMonstersTrident.newInstance(state)
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_menu_frame_layout, fragment)
                 .addToBackStack(null)
@@ -233,7 +233,7 @@ class MenuMonsters : Fragment()
         else if(Element.getMonsterHierarchyType(element) == EMonsterHierarchyType.QUADENT)
         {
             state.uiElement = element
-            val fragment = QuadentMonsterMenu.newInstance(state)
+            val fragment = MenuMonstersQuadent.newInstance(state)
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_menu_frame_layout, fragment)
                 .addToBackStack(null)
@@ -243,7 +243,7 @@ class MenuMonsters : Fragment()
         else if(Element.getMonsterHierarchyType(element) == EMonsterHierarchyType.QUINDENT)
         {
             state.uiElement = element
-            val fragment = QuindentMonsterMenu.newInstance(state)
+            val fragment = MenuMonstersQuindent.newInstance(state)
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_menu_frame_layout, fragment)
                 .addToBackStack(null)

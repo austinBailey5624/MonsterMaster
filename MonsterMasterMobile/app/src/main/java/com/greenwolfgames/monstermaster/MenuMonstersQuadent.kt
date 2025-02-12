@@ -20,15 +20,15 @@ import androidx.fragment.app.Fragment
  *
  * @Copyright 2025 Austin Bailey All Rights Reserved
  */
-class QuadentMonsterMenu : Fragment()
+class MenuMonstersQuadent : Fragment()
 {
     private lateinit var state: State
 
     companion object
     {
-        fun newInstance(state: State): QuadentMonsterMenu
+        fun newInstance(state: State): MenuMonstersQuadent
         {
-            val fragment = QuadentMonsterMenu()
+            val fragment = MenuMonstersQuadent()
             val bundle = Bundle()
             bundle.putParcelable("state", state)
             fragment.arguments = bundle
@@ -177,7 +177,7 @@ class QuadentMonsterMenu : Fragment()
     private fun openMonsterTypeMenu(monsterType: MonsterType)
     {
         state.uiMonsterType = monsterType
-        val fragment = MonsterTypeMenu.newInstance(state)
+        val fragment = MenuMonsterType.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, fragment)
             .addToBackStack(null)
