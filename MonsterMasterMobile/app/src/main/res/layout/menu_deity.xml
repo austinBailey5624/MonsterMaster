@@ -31,7 +31,7 @@
     <Button
         android:id="@+id/menu_deity_title"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="100dp"
         android:text="@string/menu_deity_title"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@id/menu_deity_entropic_nature"
@@ -44,7 +44,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@id/menu_deity_entropic_nature"
+        app:layout_constraintBottom_toTopOf="@id/menu_deity_entropic_nature"
         app:layout_constraintEnd_toStartOf="@id/menu_deity_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -55,7 +55,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@id/menu_deity_entropic_nature"
+        app:layout_constraintBottom_toTopOf="@id/menu_deity_element"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/menu_deity_title"
         app:layout_constraintTop_toTopOf="parent"
@@ -63,44 +63,40 @@
 
     <Button
         android:id="@+id/menu_deity_entropic_nature"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:text="@string/menu_deity_entropic_nature"
-        app:layout_constraintBottom_toBottomOf="@id/menu_deity_element_symbol"
-        app:layout_constraintEnd_toStartOf="@id/menu_deity_element"
-        app:layout_constraintStart_toEndOf="@id/menu_deity_entropic_nature_symbol"
-        app:layout_constraintTop_toBottomOf="@id/menu_deity_title" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_deity_entropic_nature_symbol" />
 
     <Button
         android:id="@+id/menu_deity_element"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:text="@string/menu_deity_element"
-        app:layout_constraintBottom_toBottomOf="@id/menu_deity_element_symbol"
-        app:layout_constraintEnd_toStartOf="@id/menu_deity_element_symbol"
-        app:layout_constraintStart_toEndOf="@id/menu_deity_entropic_nature"
-        app:layout_constraintTop_toBottomOf="@id/menu_deity_title" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_deity_element_symbol" />
 
     <ImageView
-        android:id="@+id/menu_diety_symbol"
+        android:id="@+id/menu_deity_symbol"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@id/menu_deity_status"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_deity_entropic_nature"
+        app:layout_constraintTop_toBottomOf="@id/menu_deity_title"
         app:srcCompat="@drawable/element_neutral" />
 
     <Button
         android:id="@+id/menu_deity_status"
         android:layout_width="200dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:text="@string/menu_deity_status"
         app:layout_constraintBottom_toTopOf="@id/menu_deity_description_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_diety_symbol" />
+        app:layout_constraintTop_toBottomOf="@id/menu_deity_symbol" />
 
     <ImageView
         android:id="@+id/menu_deity_description_background"
@@ -130,7 +126,7 @@
     <Button
         android:id="@+id/menu_deity_back"
         android:layout_width="200dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:text="@string/menu_deity_back"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

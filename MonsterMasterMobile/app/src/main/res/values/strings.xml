@@ -1521,6 +1521,37 @@
     <string name="malacathe_name">Malacathe</string>
     <string name="enemy_name">Enemy</string>
 
+    <!-- Entropic Nature Names -->
+    <string name="order_name">Order</string>
+    <string name="chaos_name">Chaos</string>
+
+    <string name="anu_enemy">Heretic</string>
+    <string name="velhu_enemy">Abomination</string>
+    <string name="sid_enemy">Treebreaker</string>
+    <string name="gabriel_enemy">Satan</string>
+    <string name="ahros_enemy">Destroyer</string>
+    <string name="pythion_enemy">Betrayer</string>
+    <string name="enemy">Enemy</string>
+    <string name="anu_unfriendly">Betrayer</string>
+    <string name="velhu_unfriendly">Black Magician</string>
+    <string name="sid_unfriendly">Vengeful</string>
+    <string name="gabriel_unfriendly">Betrayer of Faith</string>
+    <string name="ahros_unfriendly">Cruel</string>
+    <string name="pythion_unfriendly">Committed to Darkness</string>
+    <string name="unfriendly">Unfriendly</string>
+    <string name="anu_irritated">Faithless</string>
+    <string name="velhu_irritated">Tempted</string>
+    <string name="sid_irritated">Anger-touched</string>
+    <string name="gabriel_irritated">Apostate</string>
+    <string name="ahros_irritated">Unjust</string>
+    <string name="pythion_irritated">Lost</string>
+    <string name="irritated">Irritated</string>
+    <string name="unknown">Unknown</string>
+    <string name="interested">Interested</string>
+    <string name="friendly">Friendly</string>
+    <string name="ally">Ally</string>
+    <!-- TODO finish deity status names -->
+
     <!-- Deity Descriptions -->
     <string name="anu_description">Anu is the great moral authority, comprised of five lesser Gods or faces. They have a strict view on what is right and each governs over their own aspect of reality.</string>
     <string name="velhu_description">Velhu, Anu\'s face of magic, governs the appropriate use of mystic arts. She teaches those that follow her powerful white magic, and hunts those that use black magic.</string>

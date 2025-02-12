@@ -144,10 +144,10 @@ VALUES
         (0,'Anu is the great moral authority, comprised of five lesser Gods or faces. They have a strict view on what is right and each governs over their own aspect of reality.'),
         (1,'Velhu, Anu\'s face of magic, governs the appropriate use of mystic arts. She teaches those that follow her powerful white magic, and hunts those that use black magic.'),
         (2,'Sid, Anu\'s face of compassion, believes and compassion and healing for all, no matter their misdeeds. He exists on this earth, melded into the Tree of the Living God.'),
-        (3,'Gabriel, Anu\'s face of worship, spreads the word of Anu to the people outside of his reach.'),
+        (3,'Gabriel, Anu\'s face of worship, spreads the word of Anu to the people outside of his reach. He leads the missionaries, and is the messenger of Anu.'),
         (4,'Ahros, Anu\'s face of righteous authority, judges men for their misdeeds, and heads the martial arm of the church.'),
         (5,'Pythion, Anu\'s face of redemption, guides and protects those that have lost their way, and brings them back to the light.'),
-        (10,'Bennu, is the god of rebirth and immolation. It is said that a true believer will die by fire and be reborn in the next life. Sacrificial suicide is practiced by his priests, who believe in fiery ressurection.'),
+        (10,'Bennu, is the god of rebirth and immolation. It is said that a true believer will die by fire and be reborn in the next life. Sacrificial suicide is practiced by his priests, who believe in fiery resurrection.'),
         (11,'Neputne is the god of the sea. He weilds a great trident and controls the many fish of the reefs and shallows. He allows fisherman their catches, so long as they respect his waters.'),
         (12,'Gaia is Mother Nature herself, oldest and wisest of the Gods. She is goddess of love, motherhood, and natural order.'),
         (13,'Bacchus is the God of Revelry, music and poetry while in fair form. Yet he transforms into a poisonous snake when the party is over, and in that form is the patron god of assassins.'),
@@ -156,9 +156,9 @@ VALUES
         (20,'Acheron is the God of the River of Pain in the underworld, he plots the death of the other gods in his darkness, claiming his goal is the freedom of mankind from their yolk.'),
         (21,'Illian is the God of Dark magic, arcane secrets, and dominion. He already has dominion over the depths, and seeks dominion over the oceans, then the world.'),
         (22,'Websipnner is the Goddess of Plots, secrets, lies and treachery. She vows to entangle all in her conspiracies, and seeks to hold secret sway over those in power.'),
-        (23,'Muir is the God of Greed and commerce, worshipped by bandits and bankers alike. He offers gold for peoples souls, and always takes advantage.'),
+        (23,'Muir is the God of Greed and Commerce, worshipped by bandits and bankers alike. He offers gold for peoples souls, and always takes advantage.'),
         (24,'Malacathe is the God of Destruction. He is fed by hate and pain, and seeks to spread it until there is nothing left. He sees beauty only in the end.'),
-        (25,'Enemy is the God of the abyss, darkness, and quiet. Enemy prefers to be left alone, unless he can exert control. It is formless, and overcome with all consuming hunger');
+        (25,'Enemy is the God of the abyss, darkness, and quiet. Enemy prefers to be left alone, unless he can exert control. It is formless, and overcome with all consuming hunger.');
     
     CREATE TABLE faction(
 		faction_id INT PRIMARY KEY AUTO_INCREMENT,

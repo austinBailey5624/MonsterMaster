@@ -561,8 +561,8 @@
 
         <ImageButton
             android:id="@+id/menu_deities_acheron"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/invisible"
             android:contentDescription="@string/menu_deities_acheron"
@@ -598,8 +598,8 @@
 
         <ImageButton
             android:id="@+id/menu_deities_illian"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/invisible"
             android:contentDescription="@string/menu_deities_acheron"
@@ -636,8 +636,8 @@
 
         <ImageButton
             android:id="@+id/menu_deities_webspinner"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/invisible"
             android:contentDescription="@string/menu_deities_webspinner"

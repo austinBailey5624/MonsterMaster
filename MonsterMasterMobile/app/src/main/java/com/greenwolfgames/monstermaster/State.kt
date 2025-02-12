@@ -79,6 +79,27 @@ class State public constructor() : Parcelable
         Element.MAGICAL to 0,
         Element.INITIAL to 0).withDefault { 0 }
 
+    private var deityScore = mutableMapOf<Deity, Int>(
+        Deity.ANU to 0,
+        Deity.VELHU to 0,
+        Deity.SID to 0,
+        Deity.GABRIEL to 0,
+        Deity.AHROS to 0,
+        Deity.PYTHION to 0,
+        Deity.BENNU to 0,
+        Deity.NEPTUNE to 0,
+        Deity.GAIA to 0,
+        Deity.BACCHUS to 0,
+        Deity.MARS to 0,
+        Deity.THANATOS to 0,
+        Deity.ACHERON to 0,
+        Deity.ILLIAN to 0,
+        Deity.WEBSPINNER to 0,
+        Deity.MUIR to 0,
+        Deity.MALACATHE to 0,
+        Deity.ENEMY to 0).withDefault { 0 }
+
+
     var questStage = mutableMapOf<Quest, Int>(
         Quest.CHORES to 0,
         Quest.AMNESIA to 0,
@@ -110,9 +131,19 @@ class State public constructor() : Parcelable
         elementalScore[element] = elementalScore[element]!! + 1
     }
 
+    fun addScore(deity: Deity)
+    {
+        deityScore[deity] = deityScore[deity]!! +1
+    }
+
     fun getScore(element: Element): Int
     {
         return elementalScore[element]!!
+    }
+
+    fun getScore(deity: Deity): Int
+    {
+        return deityScore[deity]!!
     }
 
     fun getQuestStage(quest: Quest): Int

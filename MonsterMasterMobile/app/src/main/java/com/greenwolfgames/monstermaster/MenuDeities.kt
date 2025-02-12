@@ -50,6 +50,8 @@ class MenuDeities : Fragment()
         return inflater.inflate(R.layout.menu_deities, container, false)
     }
 
+    class MenuDeitiesPair(val resourceId: Int, val deity: Deity)
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)
     {
         super.onViewCreated(view, savedInstanceState)
@@ -105,9 +107,31 @@ class MenuDeities : Fragment()
             Element.colorButton(button,requireContext(),Element.PHYSICAL)
         }
 
-        view.findViewById<ImageButton>(R.id.menu_deities_anu).setOnClickListener{openDeityMenu(Deity.ANU)}
-        view.findViewById<ImageButton>(R.id.menu_deities_velhu).setOnClickListener{openDeityMenu(Deity.VELHU)}
+        val menuDeities: List<MenuDeitiesPair> = listOf(
+            MenuDeitiesPair(R.id.menu_deities_anu, Deity.ANU),
+            MenuDeitiesPair(R.id.menu_deities_velhu, Deity.VELHU),
+            MenuDeitiesPair(R.id.menu_deities_sid, Deity.SID),
+            MenuDeitiesPair(R.id.menu_deities_gabriel, Deity.GABRIEL),
+            MenuDeitiesPair(R.id.menu_deities_ahros, Deity.AHROS),
+            MenuDeitiesPair(R.id.menu_deities_pythion, Deity.PYTHION),
+            MenuDeitiesPair(R.id.menu_deities_bennu, Deity.BENNU),
+            MenuDeitiesPair(R.id.menu_deities_neptune, Deity.NEPTUNE),
+            MenuDeitiesPair(R.id.menu_deities_gaia, Deity.GAIA),
+            MenuDeitiesPair(R.id.menu_deities_bacchus, Deity.BACCHUS),
+            MenuDeitiesPair(R.id.menu_deities_mars, Deity.MARS),
+            MenuDeitiesPair(R.id.menu_deities_thanatos, Deity.THANATOS),
+            MenuDeitiesPair(R.id.menu_deities_acheron, Deity.ACHERON),
+            MenuDeitiesPair(R.id.menu_deities_illian, Deity.ILLIAN),
+            MenuDeitiesPair(R.id.menu_deities_webspinner, Deity.WEBSPINNER),
+            MenuDeitiesPair(R.id.menu_deities_muir, Deity.MUIR),
+            MenuDeitiesPair(R.id.menu_deities_malacathe, Deity.MALACATHE),
+            MenuDeitiesPair(R.id.menu_deities_enemy, Deity.ENEMY)
+        )
 
+        for( menuDeityPair in menuDeities)
+        {
+            view.findViewById<ImageButton>(menuDeityPair.resourceId).setOnClickListener{openDeityMenu(menuDeityPair.deity)}
+        }
 
         view.findViewById<Button>(R.id.menu_deities_back_button).setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()
@@ -130,4 +154,5 @@ class MenuDeities : Fragment()
             .addToBackStack(null)
             .commit()
     }
+
 }

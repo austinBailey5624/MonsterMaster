@@ -1,5 +1,8 @@
 package com.greenwolfgames.monstermaster
 
+import android.content.Context
+import androidx.core.content.ContextCompat
+
 enum class EntropicNature
 {
     ORDER,NEUTRAL,CHAOS;
@@ -33,6 +36,16 @@ enum class EntropicNature
                 ORDER -> R.drawable.element_order
                 NEUTRAL -> R.drawable.element_neutral
                 CHAOS -> R.drawable.element_chaos
+            }
+        }
+
+        fun getName(context: Context, entropicNature: EntropicNature): String
+        {
+            return when(entropicNature)
+            {
+                ORDER -> ContextCompat.getString(context,R.string.order_name)
+                NEUTRAL -> ContextCompat.getString(context,R.string.neutral_name)
+                CHAOS -> ContextCompat.getString(context,R.string.chaos_name)
             }
         }
     }
