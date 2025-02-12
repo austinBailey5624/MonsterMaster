@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu_credits_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_blank" />
+
+    <ImageView
+        android:id="@+id/menu_credits_background_fade"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_fade_2" />
+
+    <Button
+        android:id="@+id/menu_credits_thanks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_thanks"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_austin_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu_credits_austin_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_austin_title"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_mattie_title"
+        app:layout_constraintEnd_toStartOf="@id/menu_credits_austin_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_thanks" />
+
+    <Button
+        android:id="@+id/menu_credits_austin_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_austin_name"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_mattie_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_credits_austin_title"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_thanks" />
+
+    <Button
+        android:id="@+id/menu_credits_mattie_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_mattie_title"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_chatgpt_title"
+        app:layout_constraintEnd_toStartOf="@id/menu_credits_mattie_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_austin_title" />
+
+    <Button
+        android:id="@+id/menu_credits_mattie_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_mattie_name"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_chatgpt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_credits_mattie_title"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_austin_title" />
+
+    <Button
+        android:id="@+id/menu_credits_chatgpt_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_chatgpt_title"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_your_title"
+        app:layout_constraintEnd_toStartOf="@id/menu_credits_chatgpt_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_mattie_title" />
+
+    <Button
+        android:id="@+id/menu_credits_chatgpt_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_chatgpt_name"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_your_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_credits_chatgpt_title"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_mattie_name" />
+
+    <Button
+        android:id="@+id/menu_credits_your_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_your_title"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_credits_your_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_chatgpt_title" />
+
+    <Button
+        android:id="@+id/menu_credits_your_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_your_name"
+        app:layout_constraintBottom_toTopOf="@id/menu_credits_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_credits_your_title"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_chatgpt_name" />
+
+    <Button
+        android:id="@+id/menu_credits_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_credits_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_credits_your_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

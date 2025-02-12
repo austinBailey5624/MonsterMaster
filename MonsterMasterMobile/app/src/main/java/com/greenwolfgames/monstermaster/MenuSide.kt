@@ -12,7 +12,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
 /**
- * Fragment to handle the display of the menu from the MainActivity
+ * side to handle the display of the menu from the MainActivity
  * @Author: Austin Bailey
  * @Year: 2025
  *
@@ -54,50 +54,63 @@ class MenuSide : Fragment()
         super.onViewCreated(view, savedInstanceState)
 
         val buttons: List<Button> = listOf(
-            view.findViewById(R.id.fragment_menu_button_party),
-            view.findViewById(R.id.fragment_menu_button_inventory),
-            view.findViewById(R.id.fragment_menu_button_journal),
-            view.findViewById(R.id.fragment_menu_button_encyclopedia),
-            view.findViewById(R.id.fragment_menu_button_save),
-            view.findViewById(R.id.fragment_menu_button_settings),
-            view.findViewById(R.id.fragment_menu_button_credits),
-            view.findViewById(R.id.fragment_menu_button_back)
+            view.findViewById(R.id.side_menu_button_party),
+            view.findViewById(R.id.side_menu_button_inventory),
+            view.findViewById(R.id.side_menu_button_journal),
+            view.findViewById(R.id.side_menu_button_encyclopedia),
+            view.findViewById(R.id.side_menu_button_save),
+            view.findViewById(R.id.side_menu_button_settings),
+            view.findViewById(R.id.side_menu_button_credits),
+            view.findViewById(R.id.side_menu_button_back)
         )
         for(button in buttons)
         {
             Element.colorButton(button, requireContext(), state.getMainCharacterElement())
         }
 
-        val background: ImageView = view.findViewById(R.id.fragment_menu_background)
+        val background: ImageView = view.findViewById(R.id.side_menu_background)
         background.setColorFilter(ContextCompat.getColor(requireContext(),
             Element.getBackgroundColor(state.getMainCharacterElement())), PorterDuff.Mode.MULTIPLY)
+        
+        view.findViewById<ImageView>(R.id.side_menu_background_fade)
 
-        view.findViewById<Button>(R.id.fragment_menu_button_party).setOnClickListener{
+        view.findViewById<Button>(R.id.side_menu_button_party).setOnClickListener{
             openPlayerInformationMenu()
         }
 
-        view.findViewById<Button>(R.id.fragment_menu_button_encyclopedia).setOnClickListener{
+        view.findViewById<Button>(R.id.side_menu_button_encyclopedia).setOnClickListener{
             openMonsterMenu()
         }
+        
+        view.findViewById<Button>(R.id.side_menu_button_credits).setOnClickListener{
+            openCreditsMenu()
+        }
 
-        view.findViewById<Button>(R.id.fragment_menu_button_back).setOnClickListener{
+        view.findViewById<Button>(R.id.side_menu_button_back).setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()
         }
     }
 
     private fun openPlayerInformationMenu()
     {
-        val fragment = MenuPlayerInformation.newInstance(state)
+        val side = MenuPlayerInformation.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_menu_frame_layout, fragment)
+            .replace(R.id.fragment_menu_frame_layout, side)
             .addToBackStack(null)
             .commit()
     }
 
     private fun openMonsterMenu() {
-        val fragment = MenuMonstersElements.newInstance(state)
+        val side = MenuMonstersElements.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_menu_frame_layout, fragment)
+            .replace(R.id.fragment_menu_frame_layout, side)
+            .addToBackStack(null)
+            .commit()
+    }
+    
+    private fun openCreditsMenu() {
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_menu_frame_layout, MenuCredits.newInstance())
             .addToBackStack(null)
             .commit()
     }

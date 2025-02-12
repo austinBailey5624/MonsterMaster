@@ -7,136 +7,143 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/fragment_menu_background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/side_menu_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:contentDescription="@string/player_info_menu_background_content_description"
-        android:rotation="-90"
-        android:rotationX="180"
-        android:rotationY="0"
-        android:scaleX="2"
-        android:scaleY="2"
+        android:scaleType="fitXY"
         android:tintMode="multiply"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background_16x9" />
+        app:srcCompat="@drawable/background_blank" />
+
+    <ImageView
+        android:id="@+id/side_menu_background_fade"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_fade_2" />
 
     <Button
-        android:id="@+id/fragment_menu_button_party"
+        android:id="@+id/side_menu_button_party"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:contentDescription="@string/fragment_menu_button_1_content_description"
+        android:contentDescription="@string/side_menu_button_1_content_description"
         android:text="@string/menu_party"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/fragment_menu_button_inventory"
+        app:layout_constraintBottom_toTopOf="@id/side_menu_button_inventory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/fragment_menu_button_inventory"
+        android:id="@+id/side_menu_button_inventory"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:contentDescription="@string/fragment_menu_button_2_content_description"
+        android:contentDescription="@string/side_menu_button_2_content_description"
         android:text="@string/menu_inventory"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/fragment_menu_button_journal"
+        app:layout_constraintBottom_toTopOf="@id/side_menu_button_journal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_menu_button_party" />
+        app:layout_constraintTop_toBottomOf="@id/side_menu_button_party" />
 
     <Button
-        android:id="@+id/fragment_menu_button_journal"
+        android:id="@+id/side_menu_button_journal"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:contentDescription="@string/fragment_menu_button_3_content_description"
+        android:contentDescription="@string/side_menu_button_3_content_description"
         android:text="@string/menu_journal"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/fragment_menu_button_encyclopedia"
+        app:layout_constraintBottom_toTopOf="@id/side_menu_button_encyclopedia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_menu_button_inventory" />
+        app:layout_constraintTop_toBottomOf="@id/side_menu_button_inventory" />
 
     <Button
-        android:id="@+id/fragment_menu_button_encyclopedia"
+        android:id="@+id/side_menu_button_encyclopedia"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:contentDescription="@string/fragment_menu_button_4_content_description"
+        android:contentDescription="@string/side_menu_button_4_content_description"
         android:text="@string/menu_encyclopedia"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/fragment_menu_button_save"
+        app:layout_constraintBottom_toTopOf="@id/side_menu_button_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_menu_button_journal" />
+        app:layout_constraintTop_toBottomOf="@id/side_menu_button_journal" />
 
     <Button
-        android:id="@+id/fragment_menu_button_save"
+        android:id="@+id/side_menu_button_save"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:contentDescription="@string/fragment_menu_button_5_content_description"
+        android:contentDescription="@string/side_menu_button_5_content_description"
         android:text="@string/menu_save"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/fragment_menu_button_settings"
+        app:layout_constraintBottom_toTopOf="@id/side_menu_button_settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_menu_button_encyclopedia" />
+        app:layout_constraintTop_toBottomOf="@id/side_menu_button_encyclopedia" />
 
     <Button
-        android:id="@+id/fragment_menu_button_settings"
+        android:id="@+id/side_menu_button_settings"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:contentDescription="@string/fragment_menu_button_6_content_description"
+        android:contentDescription="@string/side_menu_button_6_content_description"
         android:text="@string/menu_settings"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/fragment_menu_button_credits"
+        app:layout_constraintBottom_toTopOf="@id/side_menu_button_credits"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_menu_button_save" />
+        app:layout_constraintTop_toBottomOf="@id/side_menu_button_save" />
 
     <Button
-        android:id="@+id/fragment_menu_button_credits"
+        android:id="@+id/side_menu_button_credits"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:contentDescription="@string/fragment_menu_button_7_content_description"
+        android:contentDescription="@string/side_menu_button_7_content_description"
         android:text="@string/menu_credits"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/fragment_menu_button_back"
+        app:layout_constraintBottom_toTopOf="@id/side_menu_button_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_menu_button_settings" />
+        app:layout_constraintTop_toBottomOf="@id/side_menu_button_settings" />
 
     <Button
-        android:id="@+id/fragment_menu_button_back"
+        android:id="@+id/side_menu_button_back"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:contentDescription="@string/fragment_menu_button_8_content_description"
+        android:contentDescription="@string/side_menu_button_8_content_description"
         android:text="@string/menu_back"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_menu_button_credits" />
+        app:layout_constraintTop_toBottomOf="@id/side_menu_button_credits" />
 
     <FrameLayout
         android:id="@+id/fragment_menu_frame_layout"

@@ -1596,14 +1596,14 @@
     <string name="button_skip_cinematic_content_description">The invisible button that you select to skip cinematic text.</string>
 
     <!-- content description for menu UI elements -->
-    <string name="fragment_menu_button_1_content_description">Allows the player to navigate to the party menu</string>
-    <string name="fragment_menu_button_2_content_description">Allows the player to navigate tot he Inventory menu</string>
-    <string name="fragment_menu_button_3_content_description">Allows the player to navigate to the Journal menu</string>
-    <string name="fragment_menu_button_4_content_description">Allows the player to navigate to the Encyclopedia Menu</string>
-    <string name="fragment_menu_button_5_content_description">Allows the player to navigate to the Save Menu</string>
-    <string name="fragment_menu_button_6_content_description">Allows the player to navigate to the Settings Menu</string>
-    <string name="fragment_menu_button_7_content_description">Allows the player to navigate to the Credits Menu</string>
-    <string name="fragment_menu_button_8_content_description">Allows the player to navigate to the Main Activity</string>
+    <string name="side_menu_button_1_content_description">Allows the player to navigate to the party menu</string>
+    <string name="side_menu_button_2_content_description">Allows the player to navigate tot he Inventory menu</string>
+    <string name="side_menu_button_3_content_description">Allows the player to navigate to the Journal menu</string>
+    <string name="side_menu_button_4_content_description">Allows the player to navigate to the Encyclopedia Menu</string>
+    <string name="side_menu_button_5_content_description">Allows the player to navigate to the Save Menu</string>
+    <string name="side_menu_button_6_content_description">Allows the player to navigate to the Settings Menu</string>
+    <string name="side_menu_button_7_content_description">Allows the player to navigate to the Credits Menu</string>
+    <string name="side_menu_button_8_content_description">Allows the player to navigate to the Main Activity</string>
 
     <!-- content description for player info menu UI elements -->
     <string name="player_info_menu_background_content_description">The background for the player information menu</string>
@@ -1714,6 +1714,18 @@
     <string name="menu_monsters_quindent_elder_balanced_content_description">Balanced Elder menu</string>
     <string name="menu_monsters_quindent_elder_mystic_content_description">Mystic Adult menu</string>
     <string name="menu_monsters_quindent_elder_magical_content_description">Magical Elder menu</string>
+
+    <!-- Credits Menu Text -->
+    <string name="menu_credits_thanks">Thanks so much for playing our game, we hope you had fun! If you would like to contribute, or contact me, please tap my name below.</string>
+    <string name="menu_credits_austin_title">Lead Developer:</string>
+    <string name="menu_credits_austin_name">Austin Bailey</string>
+    <string name="menu_credits_mattie_title">Element and Deity Art asset creator:</string>
+    <string name="menu_credits_mattie_name">Mattie Lyall</string>
+    <string name="menu_credits_chatgpt_title">Image generator and AI assitant:</string>
+    <string name="menu_credits_chatgpt_name">ChatGPT</string>
+    <string name="menu_credits_your_title">Your Title here!</string>
+    <string name="menu_credits_your_name">Your name here!</string>
+    <string name="menu_credits_back">Back</string>
 
 
     <!-- Notificiation Texts -->
