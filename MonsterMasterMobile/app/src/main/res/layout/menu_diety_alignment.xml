@@ -9,6 +9,7 @@
         android:id="@+id/menu_deity_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -287,7 +288,7 @@
         android:id="@+id/pythion_frame_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/menu_diety_back_button"
+        app:layout_constraintBottom_toTopOf="@id/menu_deity_back_button"
         app:layout_constraintEnd_toEndOf="@id/anu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/anu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/ahros_frame_layout">
@@ -534,7 +535,7 @@
         android:id="@+id/thanatos_frame_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/menu_diety_back_button"
+        app:layout_constraintBottom_toTopOf="@id/menu_deity_back_button"
         app:layout_constraintEnd_toEndOf="@id/bennu_frame_layout"
         app:layout_constraintStart_toStartOf="@id/bennu_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/mars_frame_layout">
@@ -772,7 +773,7 @@
         android:id="@+id/enemy_frame_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/menu_diety_back_button"
+        app:layout_constraintBottom_toTopOf="@id/menu_deity_back_button"
         app:layout_constraintEnd_toEndOf="@id/malacathe_frame_layout"
         app:layout_constraintStart_toStartOf="@id/malacathe_frame_layout"
         app:layout_constraintTop_toBottomOf="@id/malacathe_frame_layout">
@@ -808,7 +809,7 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/menu_diety_back_button"
+        android:id="@+id/menu_deity_back_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/deity_alignment_menu_back"
@@ -825,7 +826,7 @@
         android:text="@string/deity_alignment_menu_player_info_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/menu_diety_back_button"
+        app:layout_constraintStart_toEndOf="@id/menu_deity_back_button"
         app:layout_constraintTop_toBottomOf="@id/pythion_frame_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

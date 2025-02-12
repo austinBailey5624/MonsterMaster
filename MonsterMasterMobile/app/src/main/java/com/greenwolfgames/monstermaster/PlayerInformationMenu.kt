@@ -114,6 +114,10 @@ class PlayerInformationMenu : Fragment()
         playerNameText.setText(state.playerName)
         playerPortrait.setImageResource(state.playerPortraitImageId)
 
+        view.findViewById<Button>(R.id.menu_player_information_deity_affinity_button).setOnClickListener{
+            openDeityAlignmentMenu()
+        }
+
         val playerBattleActor: BattleActor = state.getPlayerBattleActor()
         val statusBar: StatusBar = StatusBar.getStatusBar(playerBattleActor)
 
@@ -141,5 +145,13 @@ class PlayerInformationMenu : Fragment()
             playerBattleActor.mpCurrent.toInt(),
             playerBattleActor.mpMax.toInt()
         )
+    }
+
+    private fun openDeityAlignmentMenu() {
+        val fragment = DeityAlignmentMenu.newInstance(state)
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_menu_frame_layout, fragment)
+            .addToBackStack(null)
+            .commit()
     }
 }

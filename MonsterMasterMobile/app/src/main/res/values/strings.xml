@@ -1480,6 +1480,26 @@
     <string name="magical_name">Magical</string>
     <string name="initial_name">Initial</string>
 
+    <!-- Deity Names -->
+    <string name="anu_name">Anu</string>
+    <string name="velhu_name">Velhu</string>
+    <string name="sid_name">Sid</string>
+    <string name="gabriel_name">Gabriel</string>
+    <string name="ahros_name">Ahros</string>
+    <string name="pythion_name">Pythion</string>
+    <string name="bennu_name">Bennu</string>
+    <string name="neptune_name">Neptune</string>
+    <string name="gaia_name">Gaia</string>
+    <string name="bacchus_name">Bacchus</string>
+    <string name="mars_name">Mars</string>
+    <string name="thanatos_name">Thanatos</string>
+    <string name="acheron_name">Acheron</string>
+    <string name="illian_name">Illian</string>
+    <string name="webspinner_name">Webspinner</string>
+    <string name="muir_name">Muir</string>
+    <string name="malacathe_name">Malacathe</string>
+    <string name="enemy_name">Enemy</string>
+
 
     <string name="health_status">%1$d / %2$d</string>
 

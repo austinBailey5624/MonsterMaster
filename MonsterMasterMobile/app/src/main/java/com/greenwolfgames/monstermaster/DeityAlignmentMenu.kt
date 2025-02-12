@@ -1,10 +1,14 @@
 package com.greenwolfgames.monstermaster
 
+import android.graphics.PorterDuff
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
 /**
@@ -41,5 +45,48 @@ class DeityAlignmentMenu : Fragment()
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.menu_diety_alignment, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?)
+    {
+        super.onViewCreated(view, savedInstanceState)
+
+        view.findViewById<ImageView>(R.id.menu_deity_alignment_lawful_background).setColorFilter(
+            ContextCompat.getColor(requireContext(),
+            Element.getButtonBackgroundColor(Element.LUXOR)), PorterDuff.Mode.MULTIPLY)
+
+        view.findViewById<ImageView>(R.id.menu_deity_alignment_neutral_background).setColorFilter(
+            ContextCompat.getColor(requireContext(),
+                Element.getButtonBackgroundColor(Element.INITIAL)), PorterDuff.Mode.MULTIPLY)
+
+        view.findViewById<ImageView>(R.id.menu_deity_alignment_chaotic_background).setColorFilter(
+            ContextCompat.getColor(requireContext(),
+                Element.getButtonBackgroundColor(Element.UMBRAL)), PorterDuff.Mode.MULTIPLY)
+
+        view.findViewById<ImageView>(R.id.menu_deity_alignment_lawful_text).setColorFilter(
+            ContextCompat.getColor(requireContext(),
+                Element.getTextColor(Element.LUXOR)), PorterDuff.Mode.MULTIPLY)
+
+        view.findViewById<ImageView>(R.id.menu_deity_alignment_neutral_text).setColorFilter(
+            ContextCompat.getColor(requireContext(),
+                Element.getTextColor(Element.INITIAL)), PorterDuff.Mode.MULTIPLY)
+
+        view.findViewById<ImageView>(R.id.menu_deity_alignment_chaotic_text).setColorFilter(
+            ContextCompat.getColor(requireContext(),
+                Element.getTextColor(Element.UMBRAL)), PorterDuff.Mode.MULTIPLY)
+
+        val buttons: List<Button> = listOf(
+            view.findViewById(R.id.menu_deity_back_button),
+            view.findViewById(R.id.menu_deity_info)
+        )
+
+        for(button in buttons)
+        {
+            Element.colorButton(button,requireContext(),Element.PHYSICAL)
+        }
+
+        view.findViewById<Button>(R.id.menu_deity_back_button).setOnClickListener{
+            requireActivity().supportFragmentManager.popBackStack()
+        }
     }
 }
