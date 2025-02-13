@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/invisible"
+    app:layout_constraintStart_toStartOf="@id/menu_player_element_pyro">
+
+    <ImageView
+        android:id="@+id/menu_player_element_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_player_element_background" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_pyro"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_pyro_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_lava"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_steam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_pyro" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_pyro_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_pyro"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_pyro"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_pyro"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_pyro"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_steam"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_steam_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_aqua"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_fey"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_pyro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_steam" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_steam_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_steam"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_steam"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_steam"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_steam"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_fey"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_fey_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_plant"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_phoenix"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_steam"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_fey" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_fey_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_fey"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_fey"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_fey"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_fey"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_phoenix"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_phoenix_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_seabreeze"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_solar"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_fey"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_phoenix" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_phoenix_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_phoenix"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_phoenix"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_phoenix"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_phoenix"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_solar"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_solar_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_lunar"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_demon"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_phoenix"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_solar" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_solar_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_solar"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_solar"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_solar"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_solar"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_demon"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_demon_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_poison"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_solar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/element_demon" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_demon_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_demon"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_demon"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_demon"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_demon"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_lava"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_lava_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_dino"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_aqua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_pyro"
+        app:srcCompat="@drawable/element_lava" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_lava_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_lava"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_lava"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_lava"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_lava"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_aqua"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_aqua_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_amphibious"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_plant"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_lava"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_steam"
+        app:srcCompat="@drawable/element_aqua" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_aqua_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_aqua"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_aqua"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_aqua"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_aqua"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_plant"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_plant_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_terra"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_seabreeze"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_aqua"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_fey"
+        app:srcCompat="@drawable/element_plant" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_plant_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_plant"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_plant"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_plant"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_plant"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_seabreeze"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_seabreeze_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_bird"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_lunar"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_plant"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_phoenix"
+        app:srcCompat="@drawable/element_seabreeze" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_seabreeze_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_seabreeze"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_seabreeze"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_seabreeze"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_seabreeze"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_lunar"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_lunar_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_guardian"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_poison"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_seabreeze"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_solar"
+        app:srcCompat="@drawable/element_lunar" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_lunar_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_lunar"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_lunar"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_lunar"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_lunar"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_poison"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_poison_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_undead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_lunar"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_demon"
+        app:srcCompat="@drawable/element_poison" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_poison_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_poison"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_poison"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_poison"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_poison"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_dino"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_dino_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_sand"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_amphibious"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_lava"
+        app:srcCompat="@drawable/element_dino" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_dino_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_dino"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_dino"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_dino"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_dino"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_amphibious"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_amphibious_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_weather"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_terra"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_dino"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_aqua"
+        app:srcCompat="@drawable/element_amphibious" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_amphibious_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_amphibious"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_amphibious"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_amphibious"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_amphibious"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_terra"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_terra_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_pegasus"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_bird"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_amphibious"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_plant"
+        app:srcCompat="@drawable/element_terra" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_terra_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_terra"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_terra"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_terra"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_terra"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_bird"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_bird_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_aero"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_guardian"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_terra"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_seabreeze"
+        app:srcCompat="@drawable/element_bird" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_bird_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_bird"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_bird"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_bird"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_bird"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_guardian"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_guardian_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_angel"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_undead"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_bird"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_lunar"
+        app:srcCompat="@drawable/element_guaridan" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_guardian_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_guardian"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_guardian"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_guardian"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_guardian"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_undead"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_undead_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_storm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_guardian"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_poison"
+        app:srcCompat="@drawable/element_undead" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_undead_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_undead"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_undead"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_undead"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_undead"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_sand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_sand_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_justice"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_weather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_dino"
+        app:srcCompat="@drawable/element_sand" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_sand_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_sand"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_sand"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_sand"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_sand"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_weather"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_weather_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_ice"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_pegasus"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_sand"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_amphibious"
+        app:srcCompat="@drawable/element_weather" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_weather_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_weather"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_weather"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_weather"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_weather"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_pegasus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_pegasus_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_compassion"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_aero"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_weather"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_terra"
+        app:srcCompat="@drawable/element_pegasus" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_pegasus_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_pegasus"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_pegasus"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_pegasus"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_pegasus"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_aero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_aero_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_cocka"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_angel"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_pegasus"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_bird"
+        app:srcCompat="@drawable/element_aero" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_aero_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_aero"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_aero"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_aero"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_aero"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_angel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_angel_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_luxor"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_storm"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_aero"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_guardian"
+        app:srcCompat="@drawable/element_angel" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_angel_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_angel"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_angel"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_angel"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_angel"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_storm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_storm_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_betrayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_angel"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_undead"
+        app:srcCompat="@drawable/element_storm" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_storm_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_storm"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_storm"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_storm"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_storm"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_justice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_justice_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_vengeance"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_ice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_sand"
+        app:srcCompat="@drawable/element_justice" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_justice_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_justice"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_justice"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_justice"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_justice"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_ice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_ice_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_deep"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_compassion"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_justice"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_weather"
+        app:srcCompat="@drawable/element_ice" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_ice_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_ice"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_ice"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_ice"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_ice"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_compassion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_compassion_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_rotten"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_cocka"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_ice"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_pegasus"
+        app:srcCompat="@drawable/element_compassion" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_compassion_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_compassion"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_compassion"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_compassion"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_compassion"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_cocka"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_cocka_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_nightwing"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_luxor"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_compassion"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_aero"
+        app:srcCompat="@drawable/element_cocka" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_cocka_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_cocka"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_cocka"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_cocka"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_cocka"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_luxor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_luxor_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_redemption"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_betrayer"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_cocka"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_angel"
+        app:srcCompat="@drawable/element_luxor" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_luxor_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_luxor"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_luxor"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_luxor"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_luxor"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_betrayer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_betrayer_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_umbral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_luxor"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_storm"
+        app:srcCompat="@drawable/element_betrayer" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_betrayer_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_betrayer"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_betrayer"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_betrayer"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_betrayer"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_vengeance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_vengeance_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_deep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_justice"
+        app:srcCompat="@drawable/element_vengeance" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_vengeance_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_vengeance"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_vengeance"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_vengeance"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_vengeance"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_deep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_deep_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_rotten"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_vengeance"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_ice"
+        app:srcCompat="@drawable/element_deep" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_deep_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_deep"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_deep"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_deep"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_deep"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_rotten"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_rotten_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_nightwing"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_deep"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_compassion"
+        app:srcCompat="@drawable/element_rotten" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_rotten_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_rotten"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_rotten"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_rotten"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_rotten"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_nightwing"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_nightwing_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_redemption"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_rotten"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_cocka"
+        app:srcCompat="@drawable/element_nightwing" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_nightwing_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_nightwing"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_nightwing"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_nightwing"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_nightwing"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_redemption"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_redemption_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_back"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_umbral"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_nightwing"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_luxor"
+        app:srcCompat="@drawable/element_redemption" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_redemption_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_redemption"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_redemption"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_redemption"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_redemption"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <ImageButton
+        android:id="@+id/menu_player_element_umbral"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/invisible"
+        android:contentDescription="@string/menu_player_element_umbral_content_description"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_element_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_redemption"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_element_betrayer"
+        app:srcCompat="@drawable/element_umbral" />
+
+    <ImageView
+        android:id="@+id/menu_player_element_umbral_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_umbral"
+        app:layout_constraintEnd_toEndOf="@id/menu_player_element_umbral"
+        app:layout_constraintStart_toStartOf="@id/menu_player_element_umbral"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_umbral"
+        app:srcCompat="@drawable/element_neutral" />
+
+    <Button
+        android:id="@+id/menu_player_element_back"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="@string/menu_player_element_back"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menu_player_element_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/menu_player_element_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/menu_player_element_info"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_player_element_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_player_element_back"
+        app:layout_constraintTop_toTopOf="@id/menu_player_element_back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -118,6 +118,10 @@ class MenuPlayerInformation : Fragment()
             openDeityAlignmentMenu()
         }
 
+        view.findViewById<Button>(R.id.menu_player_information_elemental_affinity_button).setOnClickListener{
+            openElementAlignmentMenu()
+        }
+
         val playerBattleActor: BattleActor = state.getPlayerBattleActor()
         val statusBar: StatusBar = StatusBar.getStatusBar(playerBattleActor)
 
@@ -149,6 +153,14 @@ class MenuPlayerInformation : Fragment()
 
     private fun openDeityAlignmentMenu() {
         val fragment = MenuDeities.newInstance(state)
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_menu_frame_layout, fragment)
+            .addToBackStack(null)
+            .commit()
+    }
+
+    private fun openElementAlignmentMenu() {
+        val fragment = MenuPlayerElements.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, fragment)
             .addToBackStack(null)

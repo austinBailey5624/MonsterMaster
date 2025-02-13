@@ -1715,6 +1715,47 @@
     <string name="menu_monsters_quindent_elder_mystic_content_description">Mystic Adult menu</string>
     <string name="menu_monsters_quindent_elder_magical_content_description">Magical Elder menu</string>
 
+    <!-- Content Descriptions for menu_player_elemnets -->
+
+    <string name="menu_player_element_pyro_content_description">Pyro Player Element Menu</string>
+    <string name="menu_player_element_steam_content_description">Steam Player Element Menu</string>
+    <string name="menu_player_element_fey_content_description">Fey Player Element Menu</string>
+    <string name="menu_player_element_phoenix_content_description">Phoenix Player Element Menu</string>
+    <string name="menu_player_element_solar_content_description">Solar Player Element Menu</string>
+    <string name="menu_player_element_demon_content_description">Demon Player Element Menu</string>
+    <string name="menu_player_element_lava_content_description">Lava Player Element Menu</string>
+    <string name="menu_player_element_aqua_content_description">Aqua Player Element Menu</string>
+    <string name="menu_player_element_plant_content_description">Plant Player Element Menu</string>
+    <string name="menu_player_element_seabreeze_content_description">Seabreeze Player Element Menu</string>
+    <string name="menu_player_element_lunar_content_description">Lunar Player Element Menu</string>
+    <string name="menu_player_element_poison_content_description">Poison Player Element Menu</string>
+    <string name="menu_player_element_dino_content_description">Dino Player Element Menu</string>
+    <string name="menu_player_element_amphibious_content_description">Amphibious Player Element Menu</string>
+    <string name="menu_player_element_terra_content_description">Terra Player Element Menu</string>
+    <string name="menu_player_element_bird_content_description">Bird Player Element Menu</string>
+    <string name="menu_player_element_guardian_content_description">Guardian Player Element Menu</string>
+    <string name="menu_player_element_undead_content_description">Undead Player Element Menu</string>
+    <string name="menu_player_element_sand_content_description">Sand Player Element Menu</string>
+    <string name="menu_player_element_weather_content_description">Weather Player Element Menu</string>
+    <string name="menu_player_element_pegasus_content_description">Pegasus Player Element Menu</string>
+    <string name="menu_player_element_aero_content_description">Aero Player Element Menu</string>
+    <string name="menu_player_element_angel_content_description">Angel Player Element Menu</string>
+    <string name="menu_player_element_storm_content_description">Storm Player Element Menu</string>
+    <string name="menu_player_element_justice_content_description">Justice Player Element Menu</string>
+    <string name="menu_player_element_ice_content_description">Ice Player Element Menu</string>
+    <string name="menu_player_element_compassion_content_description">Compassion Player Element Menu</string>
+    <string name="menu_player_element_cocka_content_description">Cocka Player Element Menu</string>
+    <string name="menu_player_element_luxor_content_description">Luxor Player Element Menu</string>
+    <string name="menu_player_element_betrayer_content_description">Betrayer Player Element Menu</string>
+    <string name="menu_player_element_vengeance_content_description">Vengeance Player Element Menu</string>
+    <string name="menu_player_element_deep_content_description">Deep Player Element Menu</string>
+    <string name="menu_player_element_rotten_content_description">Rotten Player Element Menu</string>
+    <string name="menu_player_element_nightwing_content_description">Nightwing Player Element Menu</string>
+    <string name="menu_player_element_redemption_content_description">Redemption Player Element Menu</string>
+    <string name="menu_player_element_umbral_content_description">Umbral Player Element Menu</string>
+    <string name="menu_player_element_back">Back</string>
+    <string name="menu_player_element_info">Tap an element to see your attunment to it</string>
+
     <!-- Credits Menu Text -->
     <string name="menu_credits_thanks">Thanks so much for playing our game, we hope you had fun! If you would like to contribute, or contact me, please tap my name below.</string>
     <string name="menu_credits_austin_title">Lead Developer:</string>
