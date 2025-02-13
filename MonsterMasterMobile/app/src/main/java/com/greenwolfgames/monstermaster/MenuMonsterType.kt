@@ -72,6 +72,10 @@ class MenuMonsterType : Fragment()
 
         //TODO: Location, traits, items dropped
         view.findViewById<TextView>(R.id.menu_monster_type_description).text = description
+        view.findViewById<TextView>(R.id.menu_monster_type_description).setTextColor(Element.getTextColor(element))
+        view.findViewById<TextView>(R.id.menu_monster_type_location).setTextColor(Element.getTextColor(element))
+        view.findViewById<TextView>(R.id.menu_monster_type_traits).setTextColor(Element.getTextColor(element))
+        view.findViewById<TextView>(R.id.menu_monster_type_items_dropped).setTextColor(Element.getTextColor(element))
 
 
         val buttons: List<Button> = listOf(

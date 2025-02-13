@@ -180,7 +180,7 @@ enum class Element
 
                 FEY -> R.color.brown
                 PLANT -> R.color.darkCyan
-                TERRA -> R.color.lightGreen
+                TERRA -> R.color.darkerGreen
                 PEGASUS -> R.color.greenYellow
                 COMPASSION -> R.color.green
                 ROTTEN -> R.color.darkerGreen
@@ -420,6 +420,49 @@ enum class Element
                 PHYSICAL -> ContextCompat.getString(context,R.string.physical_name)
                 MAGICAL -> ContextCompat.getString(context,R.string.magical_name)
                 INITIAL -> ContextCompat.getString(context,R.string.initial_name)
+            }
+        }
+
+        fun getDescription(context: Context, element: Element): String {
+            return when (element) {
+                PYRO -> ContextCompat.getString(context,R.string.pyro_description)
+                LAVA -> ContextCompat.getString(context,R.string.lava_description)
+                DINO -> ContextCompat.getString(context,R.string.dino_description)
+                SAND -> ContextCompat.getString(context,R.string.sand_description)
+                JUSTICE -> ContextCompat.getString(context,R.string.justice_description)
+                VENGEANCE -> ContextCompat.getString(context,R.string.vengeance_description)
+                STEAM -> ContextCompat.getString(context,R.string.steam_description)
+                AQUA -> ContextCompat.getString(context,R.string.aqua_description)
+                AMPHIBIOUS -> ContextCompat.getString(context,R.string.amphibious_description)
+                WEATHER -> ContextCompat.getString(context,R.string.weather_description)
+                ICE -> ContextCompat.getString(context,R.string.ice_description)
+                DEEP -> ContextCompat.getString(context,R.string.deep_description)
+                FEY -> ContextCompat.getString(context,R.string.fey_description)
+                PLANT -> ContextCompat.getString(context,R.string.plant_description)
+                TERRA -> ContextCompat.getString(context,R.string.terra_description)
+                PEGASUS -> ContextCompat.getString(context,R.string.pegasus_description)
+                COMPASSION -> ContextCompat.getString(context,R.string.compassion_description)
+                ROTTEN -> ContextCompat.getString(context,R.string.rotten_description)
+                PHOENIX -> ContextCompat.getString(context,R.string.phoenix_description)
+                SEABREEZE -> ContextCompat.getString(context,R.string.seabreeze_description)
+                BIRD -> ContextCompat.getString(context,R.string.bird_description)
+                AERO -> ContextCompat.getString(context,R.string.aero_description)
+                COCKA -> ContextCompat.getString(context,R.string.cocka_description)
+                NIGHTWING -> ContextCompat.getString(context,R.string.nightwing_description)
+                SOLAR -> ContextCompat.getString(context,R.string.solar_description)
+                LUNAR -> ContextCompat.getString(context,R.string.lunar_description)
+                GUARDIAN -> ContextCompat.getString(context,R.string.guardian_description)
+                ANGEL -> ContextCompat.getString(context,R.string.angel_description)
+                LUXOR -> ContextCompat.getString(context,R.string.luxor_description)
+                REDEMPTION -> ContextCompat.getString(context,R.string.redemption_description)
+                DEMON -> ContextCompat.getString(context,R.string.demon_description)
+                POISON -> ContextCompat.getString(context,R.string.poison_description)
+                UNDEAD -> ContextCompat.getString(context,R.string.undead_description)
+                STORM -> ContextCompat.getString(context,R.string.storm_description)
+                BETRAYER -> ContextCompat.getString(context,R.string.betrayer_description)
+                UMBRAL -> ContextCompat.getString(context,R.string.umbral_description)
+
+                NEUTRAL, PHYSICAL, MAGICAL, INITIAL -> throw IllegalStateException("Element $element does not have a description")
             }
         }
 

@@ -113,11 +113,11 @@
 
     <TextView
         android:id="@+id/menu_monster_type_description"
-        android:layout_width="wrap_content"
+        android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/menu_monster_type_description"
+        android:text="this is a long descripti9on because the example descirption isn't long enough aand it can go on for like three of four sentences to "
         app:layout_constraintBottom_toTopOf="@id/menu_monster_type_location"
         app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
         app:layout_constraintHorizontal_bias="0.0"

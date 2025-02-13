@@ -66,19 +66,21 @@ class MainActivity : AppCompatActivity()
         // Handle back press dispatcher
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                Log.d("Back Button Triggered","Main Activity handle on Back pressed triggered.")
-                if(fragmentManager.backStackEntryCount > 0)
-                {
+                Log.d("Back Button Triggered", "Main Activity handle on Back pressed triggered.")
+
+                val menuFragmentTag = "MenuFragmentTag"  // Use a tag to identify the menu fragment
+
+                // Check if the fragment is already shown or in the back stack
+                val menuFragment = supportFragmentManager.findFragmentByTag(menuFragmentTag)
+
+                if (fragmentManager.backStackEntryCount > 0) {
                     fragmentManager.popBackStack()
-                }
-                else
-                {
-                    if (state.canAccessMenu())
-                    {
-                        showMenuFragment()
-                    }
-                    else
-                    {
+                } else {
+                    if (menuFragment == null && state.canAccessMenu()) {
+                        showMenuFragment(menuFragmentTag,state)  // Ensure to pass the tag for easy reference
+                    } else if (menuFragment != null) {
+                        Log.d("Back Button", "Menu Fragment already displayed, not showing again.")
+                    } else {
                         notify(getString(R.string.notification_menu_not_accessible))
                         return
                     }
@@ -661,11 +663,11 @@ class MainActivity : AppCompatActivity()
         notificationTextView.startAnimation(AnimationHandler.getNotificationAnimation(notificationTextView,notification,this@MainActivity))
     }
 
-    private fun showMenuFragment()
-    {
-        Log.d("Open Menu Fragment Event", "Main Activity show Menu Fragment triggered.")
-        val fragment = MenuSide.newInstance(state)
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment)
-            .addToBackStack(null).commit()
+    fun showMenuFragment(tag: String, state: State) {
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        val menuFragment = MenuSide.newInstance(state) // Replace with your actual menu fragment
+        fragmentTransaction.replace(R.id.fragment_container, menuFragment, tag)
+        fragmentTransaction.addToBackStack(tag)
+        fragmentTransaction.commit()
     }
 } //@formatter: on

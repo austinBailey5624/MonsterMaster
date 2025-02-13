@@ -441,6 +441,26 @@ class State public constructor() : Parcelable
         return score
     }
 
+    fun getMainCharacterMaxElementalScore(): Double
+    {
+        return Element.getAllColoredElements().maxOf { getElementalScoreForMainCharacterElementCalculation(it) }
+    }
+
+    /**
+     * Returns the rank (1 is first, to 36) of the score of the main character with the provided element
+     */
+    fun getMainCharacterElementalScoreRank(element: Element): Int
+    {
+        return getMainCharacterElementalScoresOrderedByScore().indexOf(element) +1 //plus one to fix zero indexing
+    }
+
+    fun getMainCharacterElementalScoresOrderedByScore(): List<Element>
+    {
+        return Element.getAllColoredElements().sortedByDescending { element ->
+            getElementalScoreForMainCharacterElementCalculation(element)
+        }
+    }
+
     override fun writeToParcel(parcel: Parcel, flags: Int)
     {
         parcel.writeString(playerName)

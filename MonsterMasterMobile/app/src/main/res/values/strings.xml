@@ -1501,6 +1501,45 @@
     <string name="magical_name">Magical</string>
     <string name="initial_name">Initial</string>
 
+    <string name="pyro_description">Pyro elementals, given their second share of the fire nature tend to be extremely aggressive, strong, independent and passionate. They can use this passion to help others, or to marshal more power under their control.</string>
+    <string name="lava_description">Most see Fire and Water as opposing Elements, but to Lava Elementals, they are complements. The rage of fire is controlled and directed by the control of the water. Many use the magic affinity of the water element to channel the raw fury of the fire, making Lava elementals powerful fire magicians.</string>
+    <string name="dino_description">Dino elementals combine the raw fury of their Fire nature with the endurance of their earth nature, to become formidibale long lasting fighters. They can only be overcome with great wisdom and skill, as their lack of intellect can be their downfall.</string>
+    <string name="sand_description">Sand elementals chase the fiery heat of the desert sand with the cruel heat that whips through it. They are masters of enduring heat, but are vulnerable to icy spells.</string>
+    <string name="justice_description">When the raw power of Fire is tempered by Light, justice elementals go forth, using their moral nature to temper their strength in the service of the common good.</string>
+    <string name="vengeance_description">The raw power of righteous fury has turned dark in vengeance elementals, who vow to take revenge on the world that has pained them. Yet, when there persecutors are slain and their vengeance fulfilled, they became the very evil they sought to destroy.</string>
+    <string name="steam_description">Masters of damp heat, steam elementals are wise warriors, chanelling the strength of their fire nature through the mastery of water magic.</string>
+    <string name="aqua_description">Pure in their quest for knowledge, Aqua elementals pursue their desires completely. Their aquatic nature makes them at home in the shallow parts of the ocean, where few can hope to match them.</string>
+    <string name="amphibious_description">Local to swamps, marshes, and bogs, amphibious elementals are hardy spellcasters, magical frogs that can take a surprising amount of damage.</string>
+    <string name="weather_description">Weather elementals are poor direct combatants but excel in changing the conditions of the battlefield in their parties favor. For instance, they can cause it to rain to help water elementals, focus sunlight on the battlefield to help fire elementals, and change the winds and the atmosphere to be favorable to their Air elemental counterparts.</string>
+    <string name="ice_description">Masters of the frozen north, ice monsters dwell in feilds of snow, as their white coloring would suggest. Nearly impossible to defeat in a winter storm, they are vulnerable to heat.</string>
+    <string name="deep_description">Hidden in the depths beyond all other life lie the Deep Elementals. What hidden magics they keep beyond the sight of all others none can know. They are known for viciously defending their territory, guarding their secrets jealously. Most serve Illian, master of hidden knowledge, who seeks to one day rise from the depths and dominate all life.</string>
+    <string name="fey_description">Masters of natural forest magic, fey elementals are known for being the best non-water magicians. They tend to employ tricks and spells, delighting in charming or deceiving those foolish enough to tread far beyond the forest trail</string>
+    <string name="plant_description">Slow and hardy, plant elementals are known for their strength with natural magic. They feed themselves with water mana and are quite difficult to take down. Many are shepherds of the forest, and will fight any that disturb their flock</string>
+    <string name="terra_description">Terra Elementals have a deep connection to nature and to life itself. Because of this, they tend to be very hardy and able to take a lot of punishment. There is a large variety of them (more than any other element) since more monsters naturally have a connection to earth than anything else.</string>
+    <string name="pegasus_description">Pegasus Elementals are best known as reformed earth monsters that now long to fly. Young pegasuses are born with tree-like, \'rooty\' forward appendages which they will either shed, becoming more horse-like or the roots will spread and the monster will become more like a flying tree.</string>
+    <string name="compassion_description">Compassion monsters are best known for their very limited offensive capability, they much prefer healing others, and calming fights, settling things non-violently if possible.</string>
+    <string name="rotten_description">The rotten are poisonous smelly sick elementals that dwell in trash heaps and sewers. They are known for infecting people with poison and disease, and for their resistance to it (due to spending their whole lives dwelling in filth). They are known for sneaking in the shadows and are absolutely silent- although the smell usually gives them away. </string>
+    <string name="phoenix_description">Phoenix elementals are known as \'glass cannons\' they can dish out a lot of damage very quickly (because their fire element makes them dangerous and their air element makes them fast) but are rather fragile. They are able to resurrect, and plumes of their feathers can save other monsters from death. </string>
+    <string name="seabreeze_description">Coastal elementals, and monsters that represent a unique connection between fish and bird are considered Seabreeze monsters. Among them, you will find many gulls and flying fish. They are the most magically inclined of those with Air natures.</string>
+    <string name="bird_description">Colorful bright and strange, bird elmentals love to be with each other (due to their Air Nature) and love to be apart (due to their Earth Nature). They tend to be very fast, but can still take a hit!</string>
+    <string name="aero_description">Fastest of all elementals, Aero elementals are strong fliers, frequently able to carry other less flight inclined elementals with them. They are consummate gamblers, sometimes dealing massive critical hits, while other times missing terribly.</string>
+    <string name="cocka_description">Cockas are extravagant, random, crazy birds that have very strange distinct personalities. Even stronger Cockas are easy to defeat one on one, they are only as strong as their flock. In battle they can be unpredictable, but focus on buffing their allies and debuffing and intimidating their enemies.</string>
+    <string name="nightwing_description">Fast ambushers in the dark, nightiwing elementals take comfort in the darkness, among the vampires, owls and flying scavengers. They specialize in stealing life from their opponents, making them difficult opponents to defeat.</string>
+    <string name="solar_description">Solar elementals thrive in the sun, yet are weak in the night or when hidden in shadow. They form communities of fire elemntals, and tend to hunt in packs during the day.</string>
+    <string name="lunar_description">Thriving in the light of the moon, lunar elementals are known for their belief in mercy and forgiveness, while despising evil magic</string>
+    <string name="guardian_description">Guardians are the \'tanks\' of the battlefield, who, through compassion prefer that they take damage instead of their allies. They seem to have lost a share of aggression and gained a share of vitality, since they deal very little damage, but can withstand a lot of punishment.</string>
+    <string name="angel_description">Divine angels are known for their loving magical embrace of those they consider to be \'good\' as well as their enthusiasm for the redemption of those that they believe can be redeemed, however some are known to be cruel to those that they believe are beyond redemption.</string>
+    <string name="luxor_description">Luxor Elementals are beings of pure light. On the battlefield, they cast spells that banish darkness (increasing accuracy against the hidden) and powerful offensive magic that only works against monsters with some dedication to the dark.</string>
+    <string name="redemption_description">Redemption is the element of those that are impure, but serve the light as best they can. Perhaps they are willing to do a little evil for a greater good, or were born into evil yet seek to do what is right regardless.</string>
+    <string name="demon_description">Motivated by pain and anger, the demons are servants of Malacathe, God of destruction. They are considered to be the strongest physical warriors, especially dangerous when they are near death. They value only strength, and the ability to defeat one\'s enemies.</string>
+    <string name="poison_description">Poison elementals feed on disease and malaise, infecting as many others as they can, and drawing strength from each infected foe. They respond well to masters that employ guile and intrigue and are willing to do anything required to achieve their goals.</string>
+    <string name="undead_description">Risen servants, the undead have no will of their own, and will not abandon, or betray their masters. The magic that animates them is only given with the permission of Thanatos, the god of death, who is known to be fickle to all but the most loyal acolytes.</string>
+    <string name="storm_description">Bane of sailor-folk, the storm elementals are capricious and cruel by nature. They seek to destroy at a whim and are the mortal enemies of the Weather monsters, who may be dangerous, but can also be kind.</string>
+    <string name="betrayer_description">These fallen angels once knew the light, but disillusioned with their old masters, (or after failing to deny a hunger within) they betrayed their masters and now serve only themselves, and their own interests.</string>
+    <string name="umbral_description">Hidden in the darkness, Umbral elementals stir. They use darkness to enshroud their allies and blind their enemies, though by their very nature they have few friends, and many enemies.</string>
+
+
+
     <!-- Deity Names -->
     <string name="anu_name">Anu</string>
     <string name="velhu_name">Velhu</string>
@@ -1717,44 +1756,44 @@
 
     <!-- Content Descriptions for menu_player_elemnets -->
 
-    <string name="menu_player_element_pyro_content_description">Pyro Player Element Menu</string>
-    <string name="menu_player_element_steam_content_description">Steam Player Element Menu</string>
-    <string name="menu_player_element_fey_content_description">Fey Player Element Menu</string>
-    <string name="menu_player_element_phoenix_content_description">Phoenix Player Element Menu</string>
-    <string name="menu_player_element_solar_content_description">Solar Player Element Menu</string>
-    <string name="menu_player_element_demon_content_description">Demon Player Element Menu</string>
-    <string name="menu_player_element_lava_content_description">Lava Player Element Menu</string>
-    <string name="menu_player_element_aqua_content_description">Aqua Player Element Menu</string>
-    <string name="menu_player_element_plant_content_description">Plant Player Element Menu</string>
-    <string name="menu_player_element_seabreeze_content_description">Seabreeze Player Element Menu</string>
-    <string name="menu_player_element_lunar_content_description">Lunar Player Element Menu</string>
-    <string name="menu_player_element_poison_content_description">Poison Player Element Menu</string>
-    <string name="menu_player_element_dino_content_description">Dino Player Element Menu</string>
-    <string name="menu_player_element_amphibious_content_description">Amphibious Player Element Menu</string>
-    <string name="menu_player_element_terra_content_description">Terra Player Element Menu</string>
-    <string name="menu_player_element_bird_content_description">Bird Player Element Menu</string>
-    <string name="menu_player_element_guardian_content_description">Guardian Player Element Menu</string>
-    <string name="menu_player_element_undead_content_description">Undead Player Element Menu</string>
-    <string name="menu_player_element_sand_content_description">Sand Player Element Menu</string>
-    <string name="menu_player_element_weather_content_description">Weather Player Element Menu</string>
-    <string name="menu_player_element_pegasus_content_description">Pegasus Player Element Menu</string>
-    <string name="menu_player_element_aero_content_description">Aero Player Element Menu</string>
-    <string name="menu_player_element_angel_content_description">Angel Player Element Menu</string>
-    <string name="menu_player_element_storm_content_description">Storm Player Element Menu</string>
-    <string name="menu_player_element_justice_content_description">Justice Player Element Menu</string>
-    <string name="menu_player_element_ice_content_description">Ice Player Element Menu</string>
-    <string name="menu_player_element_compassion_content_description">Compassion Player Element Menu</string>
-    <string name="menu_player_element_cocka_content_description">Cocka Player Element Menu</string>
-    <string name="menu_player_element_luxor_content_description">Luxor Player Element Menu</string>
-    <string name="menu_player_element_betrayer_content_description">Betrayer Player Element Menu</string>
-    <string name="menu_player_element_vengeance_content_description">Vengeance Player Element Menu</string>
-    <string name="menu_player_element_deep_content_description">Deep Player Element Menu</string>
-    <string name="menu_player_element_rotten_content_description">Rotten Player Element Menu</string>
-    <string name="menu_player_element_nightwing_content_description">Nightwing Player Element Menu</string>
-    <string name="menu_player_element_redemption_content_description">Redemption Player Element Menu</string>
-    <string name="menu_player_element_umbral_content_description">Umbral Player Element Menu</string>
-    <string name="menu_player_element_back">Back</string>
-    <string name="menu_player_element_info">Tap an element to see your attunment to it</string>
+    <string name="menu_player_elements_pyro_content_description">Pyro Player Element Menu</string>
+    <string name="menu_player_elements_steam_content_description">Steam Player Element Menu</string>
+    <string name="menu_player_elements_fey_content_description">Fey Player Element Menu</string>
+    <string name="menu_player_elements_phoenix_content_description">Phoenix Player Element Menu</string>
+    <string name="menu_player_elements_solar_content_description">Solar Player Element Menu</string>
+    <string name="menu_player_elements_demon_content_description">Demon Player Element Menu</string>
+    <string name="menu_player_elements_lava_content_description">Lava Player Element Menu</string>
+    <string name="menu_player_elements_aqua_content_description">Aqua Player Element Menu</string>
+    <string name="menu_player_elements_plant_content_description">Plant Player Element Menu</string>
+    <string name="menu_player_elements_seabreeze_content_description">Seabreeze Player Element Menu</string>
+    <string name="menu_player_elements_lunar_content_description">Lunar Player Element Menu</string>
+    <string name="menu_player_elements_poison_content_description">Poison Player Element Menu</string>
+    <string name="menu_player_elements_dino_content_description">Dino Player Element Menu</string>
+    <string name="menu_player_elements_amphibious_content_description">Amphibious Player Element Menu</string>
+    <string name="menu_player_elements_terra_content_description">Terra Player Element Menu</string>
+    <string name="menu_player_elements_bird_content_description">Bird Player Element Menu</string>
+    <string name="menu_player_elements_guardian_content_description">Guardian Player Element Menu</string>
+    <string name="menu_player_elements_undead_content_description">Undead Player Element Menu</string>
+    <string name="menu_player_elements_sand_content_description">Sand Player Element Menu</string>
+    <string name="menu_player_elements_weather_content_description">Weather Player Element Menu</string>
+    <string name="menu_player_elements_pegasus_content_description">Pegasus Player Element Menu</string>
+    <string name="menu_player_elements_aero_content_description">Aero Player Element Menu</string>
+    <string name="menu_player_elements_angel_content_description">Angel Player Element Menu</string>
+    <string name="menu_player_elements_storm_content_description">Storm Player Element Menu</string>
+    <string name="menu_player_elements_justice_content_description">Justice Player Element Menu</string>
+    <string name="menu_player_elements_ice_content_description">Ice Player Element Menu</string>
+    <string name="menu_player_elements_compassion_content_description">Compassion Player Element Menu</string>
+    <string name="menu_player_elements_cocka_content_description">Cocka Player Element Menu</string>
+    <string name="menu_player_elements_luxor_content_description">Luxor Player Element Menu</string>
+    <string name="menu_player_elements_betrayer_content_description">Betrayer Player Element Menu</string>
+    <string name="menu_player_elements_vengeance_content_description">Vengeance Player Element Menu</string>
+    <string name="menu_player_elements_deep_content_description">Deep Player Element Menu</string>
+    <string name="menu_player_elements_rotten_content_description">Rotten Player Element Menu</string>
+    <string name="menu_player_elements_nightwing_content_description">Nightwing Player Element Menu</string>
+    <string name="menu_player_elements_redemption_content_description">Redemption Player Element Menu</string>
+    <string name="menu_player_elements_umbral_content_description">Umbral Player Element Menu</string>
+    <string name="menu_player_elements_back">Back</string>
+    <string name="menu_player_elements_info">Tap an element to see your attunment to it</string>
 
     <!-- Credits Menu Text -->
     <string name="menu_credits_thanks">Thanks so much for playing our game, we hope you had fun! If you would like to contribute, or contact me, please tap my name below.</string>
@@ -1767,6 +1806,55 @@
     <string name="menu_credits_your_title">Your Title here!</string>
     <string name="menu_credits_your_name">Your name here!</string>
     <string name="menu_credits_back">Back</string>
+
+    <!-- Element Menu Text -->
+    <string name="menu_element_score_1">Your personality scores</string>
+    <string name="menu_element_score_2">for element</string>
+    <string name="menu_element_score_3">making it your</string>
+    <string name="menu_element_score_4">most aligned element. This gives you a</string>
+    <string name="menu_element_score_5">bonus of</string>
+    <string name="menu_element_score_5_alt">penalty of</string>
+    <string name="menu_element_score_6">to catching monsters with this element, and a</string>
+    <string name="menu_element_score_7">bonus intensity to magic and attacks with this element.</string>
+    <string name="menu_element_back">Back</string>
+
+    <!-- Rank word -->
+    <string name="rank_word_1">First</string>
+    <string name="rank_word_2">Second</string>
+    <string name="rank_word_3">Third</string>
+    <string name="rank_word_4">Fourth</string>
+    <string name="rank_word_5">Fifth</string>
+    <string name="rank_word_6">Sixth</string>
+    <string name="rank_word_7">Seventh</string>
+    <string name="rank_word_8">Eighth</string>
+    <string name="rank_word_9">Ninth</string>
+    <string name="rank_word_10">Tenth</string>
+    <string name="rank_word_11">Eleventh</string>
+    <string name="rank_word_12">Twelfth</string>
+    <string name="rank_word_13">Thirteenth</string>
+    <string name="rank_word_14">Fourteenth</string>
+    <string name="rank_word_15">Fifteenth</string>
+    <string name="rank_word_16">Sixteenth</string>
+    <string name="rank_word_17">Seventeenth</string>
+    <string name="rank_word_18">Eighteenth</string>
+    <string name="rank_word_19">Nineteenth</string>
+    <string name="rank_word_20">Twentieth</string>
+    <string name="rank_word_21">Twenty-first</string>
+    <string name="rank_word_22">Twenty-second</string>
+    <string name="rank_word_23">Twenty-third</string>
+    <string name="rank_word_24">Twenty-fourth</string>
+    <string name="rank_word_25">Twenty-fifth</string>
+    <string name="rank_word_26">Twenty-sixth</string>
+    <string name="rank_word_27">Twenty-seventh</string>
+    <string name="rank_word_28">Twenty-eighth</string>
+    <string name="rank_word_29">Twenty-ninth</string>
+    <string name="rank_word_30">Thirtieth</string>
+    <string name="rank_word_31">Thirty-first</string>
+    <string name="rank_word_32">Thirty-second</string>
+    <string name="rank_word_33">Thirty-third</string>
+    <string name="rank_word_34">Thirty-fourth</string>
+    <string name="rank_word_35">Thirty-fifth</string>
+    <string name="rank_word_36">Thirty-sixth</string>
 
 
     <!-- Notificiation Texts -->

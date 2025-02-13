@@ -108,7 +108,7 @@ class MenuPlayerInformation : Fragment()
 
         for(text in texts)
         {
-            text.setTextColor(Element.getTextColor(mainCharacterElement))
+            text.setTextColor(ContextCompat.getColor(requireContext(),Element.getTextColor(mainCharacterElement)))
         }
 
         playerNameText.setText(state.playerName)
