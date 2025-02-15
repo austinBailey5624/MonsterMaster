@@ -61,6 +61,7 @@ public class MenuPlayerElement : Fragment()
 
         val buttons: List<Button> = listOf(
             view.findViewById(R.id.menu_player_element_title),
+            view.findViewById(R.id.menu_player_element_description),
             view.findViewById(R.id.menu_player_element_back)
         )
 
@@ -99,8 +100,10 @@ public class MenuPlayerElement : Fragment()
         {
             bonusString = ContextCompat.getString(requireContext(),R.string.menu_element_score_5_alt)
         }
-        val description: String =
-            Element.getDescription(requireContext(),element) + "\n" +
+        val description1: String =
+            Element.getDescription(requireContext(),element) + "\n" + ContextCompat.getString(requireContext(),R.string.menu_element_tap_for_more_info)
+
+        val description2: String =
                     ContextCompat.getString(requireContext(),R.string.menu_element_score_1) + " " + String.format(Locale.US,"%.3g",score) + " " +
                     ContextCompat.getString(requireContext(),R.string.menu_element_score_2) + " " + Element.getName(requireContext(),element) + " " +
                     ContextCompat.getString(requireContext(),R.string.menu_element_score_3) + " " + getRankWordForInt(requireContext(),rank) + " " +
@@ -108,8 +111,6 @@ public class MenuPlayerElement : Fragment()
                     parseModifier(calculateModifier(score,rank)) + " " +
                     ContextCompat.getString(requireContext(),R.string.menu_element_score_6) + " " + parseModifier(calculateModifier(score,rank)*1.2) + " " +
                     ContextCompat.getString(requireContext(),R.string.menu_element_score_7)
-
-        view.findViewById<TextView>(R.id.menu_player_element_description).text = description
 
         view.findViewById<TextView>(R.id.menu_player_element_description)
             .setAutoSizeTextTypeUniformWithConfiguration(10,  // Minimum text size in sp
@@ -119,11 +120,22 @@ public class MenuPlayerElement : Fragment()
 
         view.findViewById<TextView>(R.id.menu_player_element_description).setTextColor(ContextCompat.getColor(requireContext(),Element.getTextColor(element)))
 
-        view.findViewById<ImageView>(R.id.menu_player_element_description_background).setColorFilter(ContextCompat.getColor(requireContext(),Element.getButtonBackgroundColor(element)))
-
-        var maxScore = state.getMainCharacterMaxElementalScore()
+        val maxScore = state.getMainCharacterMaxElementalScore()
 
         view.findViewById<ImageView>(R.id.menu_player_element_symbol_overlap).alpha = 1 - (score/maxScore).toFloat()
+
+        view.findViewById<Button>(R.id.menu_player_element_description).text = description1
+
+        view.findViewById<Button>(R.id.menu_player_element_description).setOnClickListener {
+            if (view.findViewById<Button>(R.id.menu_player_element_description).text.equals(description1))
+            {
+                view.findViewById<Button>(R.id.menu_player_element_description).text = description2
+            }
+            else
+            {
+                view.findViewById<Button>(R.id.menu_player_element_description).text = description1
+            }
+        }
 
         view.findViewById<Button>(R.id.menu_player_element_back).setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()

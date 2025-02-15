@@ -36,52 +36,15 @@
         android:layout_marginEnd="16dp"
         android:text="@string/menu_monster_type_title"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_seen"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_element_symbol"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/menu_monster_type_seen"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/menu_monster_type_seen"
-        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_image"
-        app:layout_constraintEnd_toStartOf="@id/menu_monster_type_slain"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_title"
-        tools:visibility="visible" />
-
-    <Button
-        android:id="@+id/menu_monster_type_slain"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/menu_monster_type_slain"
-        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_image"
-        app:layout_constraintEnd_toStartOf="@id/menu_monster_type_owned"
-        app:layout_constraintStart_toEndOf="@id/menu_monster_type_seen"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_title" />
-
-    <Button
-        android:id="@+id/menu_monster_type_owned"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/menu_monster_type_owned"
-        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/menu_monster_type_slain"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_title" />
-
     <ImageView
         android:id="@+id/menu_monster_type_element_symbol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:alpha=".5"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@id/menu_monster_type_image"
@@ -93,75 +56,28 @@
     <ImageView
         android:id="@+id/menu_monster_type_image"
         android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:layout_height="0dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_info_background"
+        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_description"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".325"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_seen"
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_title"
+        app:layout_constraintWidth_percent=".7"
         app:srcCompat="@drawable/monster_pyro_flarial" />
 
-    <ImageView
-        android:id="@+id/menu_monster_type_info_background"
-        android:layout_width="350dp"
-        android:layout_height="175dp"
+    <Button
+        android:id="@+id/menu_monster_type_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
         app:layout_constraintBottom_toTopOf="@id/menu_monster_evolved_from"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_image"
-        app:srcCompat="@drawable/button_2x1" />
-
-    <TextView
-        android:id="@+id/menu_monster_type_description"
-        android:layout_width="0sp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="this is a long descripti9on because the example descirption isn't long enough aand it can go on for like three of four sentences to "
-        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_location"
-        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/menu_monster_type_info_background"
-        app:layout_constraintTop_toTopOf="@id/menu_monster_type_info_background" />
-
-    <TextView
-        android:id="@+id/menu_monster_type_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/menu_monster_type_location"
-        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_traits"
-        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/menu_monster_type_info_background"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_description" />
-
-    <TextView
-        android:id="@+id/menu_monster_type_traits"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/menu_monster_type_traits"
-        app:layout_constraintBottom_toTopOf="@id/menu_monster_type_items_dropped"
-        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/menu_monster_type_info_background"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_location" />
-
-    <TextView
-        android:id="@+id/menu_monster_type_items_dropped"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/menu_monster_type_items_dropped"
-        app:layout_constraintBottom_toBottomOf="@id/menu_monster_type_info_background"
-        app:layout_constraintEnd_toEndOf="@id/menu_monster_type_info_background"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/menu_monster_type_info_background"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_traits" />
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_image" />
 
     <Button
         android:id="@+id/menu_monster_evolved_from"
@@ -172,8 +88,9 @@
         android:text="@string/menu_monster_type_evolved_from"
         app:layout_constraintBottom_toTopOf="@id/menu_monster_type_balanced_evolution"
         app:layout_constraintEnd_toStartOf="@id/menu_monster_type_physical_evolution"
+        app:layout_constraintHeight_percent=".075"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_info_background" />
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_description" />
 
     <Button
         android:id="@+id/menu_monster_type_physical_evolution"
@@ -184,8 +101,9 @@
         android:text="@string/menu_monster_type_physical_evolution"
         app:layout_constraintBottom_toTopOf="@id/menu_monster_type_magical_evolution"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".075"
         app:layout_constraintStart_toEndOf="@id/menu_monster_evolved_from"
-        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_info_background" />
+        app:layout_constraintTop_toBottomOf="@id/menu_monster_type_description" />
 
     <Button
         android:id="@+id/menu_monster_type_balanced_evolution"
@@ -196,6 +114,7 @@
         android:text="@string/menu_monster_type_balanced_evolution"
         app:layout_constraintBottom_toTopOf="@id/menu_monster_type_back"
         app:layout_constraintEnd_toStartOf="@id/menu_monster_type_magical_evolution"
+        app:layout_constraintHeight_percent=".075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu_monster_evolved_from" />
 
@@ -208,6 +127,7 @@
         android:text="@string/menu_monster_type_magical_evolution"
         app:layout_constraintBottom_toTopOf="@id/menu_monster_type_back"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".075"
         app:layout_constraintStart_toEndOf="@id/menu_monster_type_balanced_evolution"
         app:layout_constraintTop_toBottomOf="@id/menu_monster_type_physical_evolution" />
 
@@ -220,6 +140,7 @@
         android:text="@string/menu_monster_type_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu_monster_type_balanced_evolution" />
 

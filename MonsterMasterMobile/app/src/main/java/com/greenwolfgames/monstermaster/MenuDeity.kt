@@ -3,6 +3,7 @@ package com.greenwolfgames.monstermaster
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.util.Log
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -88,7 +89,6 @@ class MenuDeity : Fragment()
         view.findViewById<ImageView>(R.id.menu_deity_symbol).setImageResource(Deity.getSymbol(deity))
         view.findViewById<Button>(R.id.menu_deity_status).setText(Deity.getDeityRelationshipStatus(deity,requireContext(),state))
         view.findViewById<Button>(R.id.menu_deity_description).setText(Deity.getDescription(requireContext(),deity))
-//        view.findViewById<Button>(R.id.menu_deity_description).setTextColor(Element.getTextColor(element))
 
         view.findViewById<Button>(R.id.menu_deity_back).setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()

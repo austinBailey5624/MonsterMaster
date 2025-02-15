@@ -109,8 +109,9 @@ class MenuSide : Fragment()
     }
     
     private fun openCreditsMenu() {
+        val side = MenuCredits.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_menu_frame_layout, MenuCredits.newInstance())
+            .replace(R.id.fragment_menu_frame_layout, side)
             .addToBackStack(null)
             .commit()
     }

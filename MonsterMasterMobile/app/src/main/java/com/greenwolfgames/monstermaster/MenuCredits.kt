@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.PorterDuff
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,12 +22,27 @@ import androidx.fragment.app.Fragment
  */
 class MenuCredits : Fragment()
 {
+
+    private lateinit var state: State
+
     companion object
     {
-        fun newInstance(): MenuCredits
+        fun newInstance(state: State): MenuCredits
         {
-            return MenuCredits()
+            MenuCredits()
+            val fragment = MenuCredits()
+            val bundle = Bundle()
+            bundle.putParcelable("state", state)
+            fragment.arguments = bundle
+            return fragment
         }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
+        Log.d("MenuCredits.onCreate","CreditsMenu.oncreate() triggered")
+        super.onCreate(savedInstanceState)
+        state = arguments?.getParcelable("state") ?: throw IllegalStateException("State cannot be null")
     }
 
     override fun onCreateView(
@@ -40,12 +56,14 @@ class MenuCredits : Fragment()
     {
         super.onViewCreated(view, savedInstanceState)
 
+        val element: Element = state.getMainCharacterElement()
+
         view.findViewById<ImageView>(R.id.menu_credits_background).setColorFilter(
             ContextCompat.getColor(requireContext(),
-                Element.getBackgroundColor(Element.NEUTRAL)),PorterDuff.Mode.MULTIPLY)
+                Element.getBackgroundColor(element)),PorterDuff.Mode.MULTIPLY)
 
         view.findViewById<ImageView>(R.id.menu_credits_background_fade).setColorFilter(
-            ContextCompat.getColor(requireContext(),Element.getTextColor(Element.NEUTRAL)),PorterDuff.Mode.MULTIPLY)
+            ContextCompat.getColor(requireContext(),Element.getTextColor(element)),PorterDuff.Mode.MULTIPLY)
 
         val buttons: List<Button> = listOf(
             view.findViewById(R.id.menu_credits_thanks),
@@ -62,7 +80,7 @@ class MenuCredits : Fragment()
 
         for(button in buttons)
         {
-            Element.colorButton(button,requireContext(),Element.NEUTRAL)
+            Element.colorButton(button,requireContext(),element)
         }
 
         view.findViewById<Button>(R.id.menu_credits_austin_name).setOnClickListener {

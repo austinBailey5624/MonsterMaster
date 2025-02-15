@@ -66,23 +66,16 @@ class MenuMonsterType : Fragment()
         view.findViewById<ImageView>(R.id.menu_monster_type_element_symbol).setImageResource(Element.getSymbol(element))
         view.findViewById<ImageView>(R.id.menu_monster_type_image).setImageResource(state.getUIMonsterType().imageResourceId)
 
-        view.findViewById<ImageView>(R.id.menu_monster_type_info_background).setColorFilter(ContextCompat.getColor(requireContext(),
-            Element.getBackgroundColor(element)), PorterDuff.Mode.MULTIPLY)
         val description: String = ContextCompat.getString(requireContext(),R.string.menu_monster_type_description) + " " + monster.description
 
         //TODO: Location, traits, items dropped
         view.findViewById<TextView>(R.id.menu_monster_type_description).text = description
         view.findViewById<TextView>(R.id.menu_monster_type_description).setTextColor(Element.getTextColor(element))
-        view.findViewById<TextView>(R.id.menu_monster_type_location).setTextColor(Element.getTextColor(element))
-        view.findViewById<TextView>(R.id.menu_monster_type_traits).setTextColor(Element.getTextColor(element))
-        view.findViewById<TextView>(R.id.menu_monster_type_items_dropped).setTextColor(Element.getTextColor(element))
 
 
         val buttons: List<Button> = listOf(
             view.findViewById(R.id.menu_monster_type_title),
-            view.findViewById(R.id.menu_monster_type_seen),
-            view.findViewById(R.id.menu_monster_type_slain),
-            view.findViewById(R.id.menu_monster_type_owned),
+            view.findViewById(R.id.menu_monster_type_description),
             view.findViewById(R.id.menu_monster_evolved_from),
             view.findViewById(R.id.menu_monster_type_physical_evolution),
             view.findViewById(R.id.menu_monster_type_balanced_evolution),
@@ -93,22 +86,24 @@ class MenuMonsterType : Fragment()
         for(button in buttons)
         {
             Element.colorButton(button,requireContext(),element)
+            val text = button.text.toString()
+            val paint = button.paint
+            val width = button.width - button.paddingLeft - button.paddingRight
+            var textSize = 60f  // Start from max size
+
+            while (textSize > 12f) {
+                paint.textSize = textSize
+                if (paint.measureText(text) <= width) break
+                textSize -= 2f  // Decrease size step-by-step
+            }
+
+            button.textSize = textSize
         }
 
         setButtonAutoResizing(buttons)
 
-        setTextAutoResizing(
-            listOf(
-                view.findViewById(R.id.menu_monster_type_description),
-                view.findViewById(R.id.menu_monster_type_location),
-                view.findViewById(R.id.menu_monster_type_traits),
-                view.findViewById(R.id.menu_monster_type_items_dropped)
-            )
-        )
-
-
-
         view.findViewById<Button>(R.id.menu_monster_type_title).setText(monster.name)
+        view.findViewById<Button>(R.id.menu_monster_type_description).setText(monster.description)
 
         var text: String
         if (monster.previousEvolutionIndex > 0)
@@ -184,19 +179,6 @@ class MenuMonsterType : Fragment()
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, fragment)//TODO be aware removed .addToBackStack(null) to seeif that would work
             .commit()
-    }
-
-    private fun setTextAutoResizing(texts: List<TextView>)
-    {
-        for(text in texts)
-        {
-            text.setAutoSizeTextTypeUniformWithConfiguration(
-                10,  // Minimum text size in sp
-                33, // Maximum text size in sp
-                2,   // Step granularity in sp
-                TypedValue.COMPLEX_UNIT_SP
-            )
-        }
     }
 
     private fun setButtonAutoResizing(buttons: List<Button>)

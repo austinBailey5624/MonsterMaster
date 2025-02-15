@@ -89,7 +89,7 @@ enum class Element
 
                 SOLAR -> R.color.yellow
                 LUNAR -> R.color.lighterBlue
-                GUARDIAN -> R.color.lighterGreen
+                GUARDIAN -> R.color.white
                 ANGEL -> R.color.darkYellow
                 LUXOR -> R.color.white
                 REDEMPTION -> R.color.whiteGray

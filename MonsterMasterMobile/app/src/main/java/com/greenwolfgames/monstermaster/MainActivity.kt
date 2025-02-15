@@ -111,6 +111,7 @@ class MainActivity : AppCompatActivity()
         }
     }
 
+    //TODO: Doesnt work, this only works for textviews not buttons
     private fun setButtonAutoResizing(buttons: List<Button>)
     {
         for(button in buttons)

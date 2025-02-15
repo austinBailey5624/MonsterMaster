@@ -1816,6 +1816,7 @@
     <string name="menu_element_score_5_alt">penalty of</string>
     <string name="menu_element_score_6">to catching monsters with this element, and a</string>
     <string name="menu_element_score_7">bonus intensity to magic and attacks with this element.</string>
+    <string name="menu_element_tap_for_more_info">Tap for more info</string>
     <string name="menu_element_back">Back</string>
 
     <!-- Rank word -->
