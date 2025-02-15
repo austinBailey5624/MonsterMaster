@@ -69,6 +69,7 @@ class MenuDeity : Fragment()
             view.findViewById(R.id.menu_deity_entropic_nature),
             view.findViewById(R.id.menu_deity_element),
             view.findViewById(R.id.menu_deity_status),
+            view.findViewById(R.id.menu_deity_description),
             view.findViewById(R.id.menu_deity_back)
         )
 
@@ -86,9 +87,8 @@ class MenuDeity : Fragment()
         view.findViewById<Button>(R.id.menu_deity_element).setText(Element.getName(requireContext(), element))
         view.findViewById<ImageView>(R.id.menu_deity_symbol).setImageResource(Deity.getSymbol(deity))
         view.findViewById<Button>(R.id.menu_deity_status).setText(Deity.getDeityRelationshipStatus(deity,requireContext(),state))
-        view.findViewById<ImageView>(R.id.menu_deity_description_background).setColorFilter(ContextCompat.getColor(requireContext(),Element.getBackgroundColor(element)),PorterDuff.Mode.MULTIPLY)
-        view.findViewById<TextView>(R.id.menu_deity_description).setText(Deity.getDescription(requireContext(),deity))
-        view.findViewById<TextView>(R.id.menu_deity_description).setTextColor(Element.getTextColor(element))
+        view.findViewById<Button>(R.id.menu_deity_description).setText(Deity.getDescription(requireContext(),deity))
+//        view.findViewById<Button>(R.id.menu_deity_description).setTextColor(Element.getTextColor(element))
 
         view.findViewById<Button>(R.id.menu_deity_back).setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()
