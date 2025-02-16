@@ -78,6 +78,10 @@ class MenuSide : Fragment()
             openPlayerInformationMenu()
         }
 
+        view.findViewById<Button>(R.id.side_menu_button_journal).setOnClickListener{
+            openJournalMenu()
+        }
+
         view.findViewById<Button>(R.id.side_menu_button_encyclopedia).setOnClickListener{
             openMonsterMenu()
         }
@@ -122,6 +126,14 @@ class MenuSide : Fragment()
 
     private fun openInventoryMenu() {
         val side = MenuInventory.newInstance(state)
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_menu_frame_layout, side)
+            .addToBackStack(null)
+            .commit()
+    }
+
+    private fun openJournalMenu() {
+        val side = MenuJournal.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, side)
             .addToBackStack(null)
