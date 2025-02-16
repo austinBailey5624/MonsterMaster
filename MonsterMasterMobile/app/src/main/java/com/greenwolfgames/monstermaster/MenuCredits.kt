@@ -22,14 +22,12 @@ import androidx.fragment.app.Fragment
  */
 class MenuCredits : Fragment()
 {
-
     private lateinit var state: State
 
     companion object
     {
         fun newInstance(state: State): MenuCredits
         {
-            MenuCredits()
             val fragment = MenuCredits()
             val bundle = Bundle()
             bundle.putParcelable("state", state)

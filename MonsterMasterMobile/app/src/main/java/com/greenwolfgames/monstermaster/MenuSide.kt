@@ -81,6 +81,10 @@ class MenuSide : Fragment()
         view.findViewById<Button>(R.id.side_menu_button_encyclopedia).setOnClickListener{
             openMonsterMenu()
         }
+
+        view.findViewById<Button>(R.id.side_menu_button_inventory).setOnClickListener{
+            openInventoryMenu()
+        }
         
         view.findViewById<Button>(R.id.side_menu_button_credits).setOnClickListener{
             openCreditsMenu()
@@ -110,6 +114,14 @@ class MenuSide : Fragment()
     
     private fun openCreditsMenu() {
         val side = MenuCredits.newInstance(state)
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_menu_frame_layout, side)
+            .addToBackStack(null)
+            .commit()
+    }
+
+    private fun openInventoryMenu() {
+        val side = MenuInventory.newInstance(state)
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_menu_frame_layout, side)
             .addToBackStack(null)
