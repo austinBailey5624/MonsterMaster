@@ -22,36 +22,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background_16x9" />
+        app:srcCompat="@drawable/background_blank" />
 
     <ImageView
-        android:id="@+id/menu_player_information_name_background"
-        android:layout_width="240dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/player_info_menu_name_background_content_description"
-        app:layout_constraintBottom_toTopOf="@+id/menu_player_information_portrait_background"
+        android:id="@+id/menu_player_information_background_fade"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/button_5x1" />
+        app:srcCompat="@drawable/background_fade_2" />
+
+    <Button
+        android:id="@+id/menu_player_information_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_portrait_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".75" />
 
     <ImageView
         android:id="@+id/menu_player_information_portrait_background"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:contentDescription="@string/player_info_menu_name_background_content_description"
         app:layout_constraintBottom_toTopOf="@id/menu_player_information_status_bar_background"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".35"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_name_background"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_name"
         app:srcCompat="@drawable/button_1x1" />
 
     <ImageView
@@ -61,13 +65,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
         android:contentDescription="@string/player_info_menu_status_bar_content_description"
         android:scaleType="center"
         android:scaleX="1.2"
         android:scaleY="1.2"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/menu_player_information_status_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu_player_information_portrait_background"
@@ -144,179 +146,61 @@
         app:layout_constraintTop_toTopOf="@id/menu_player_information_status_bar_background"
         app:srcCompat="@drawable/element_physical" />
 
-    <ImageView
-        android:id="@+id/menu_player_information_status_background"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/player_info_menu_status_background_content_description"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_buttons_holder"
+    <Button
+        android:id="@+id/menu_player_information_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@id/menu_player_information_skills_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_status_bar_background"
-        app:srcCompat="@drawable/button_2x1" />
-
-    <ImageView
-        android:id="@+id/menu_player_information_buttons_holder"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_player_information_status_background"
-        app:srcCompat="@drawable/button_2x1" />
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_status_bar_background" />
 
     <Button
         android:id="@+id/menu_player_information_skills_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:contentDescription="@string/player_info_menu_skills_button_content_description"
         android:text="Skills"
         app:layout_constraintBottom_toTopOf="@id/menu_player_information_back_button"
         app:layout_constraintEnd_toStartOf="@id/menu_player_information_elemental_affinity_button"
-        app:layout_constraintStart_toStartOf="@id/menu_player_information_buttons_holder"
-        app:layout_constraintTop_toTopOf="@id/menu_player_information_buttons_holder" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_description" />
 
     <Button
         android:id="@+id/menu_player_information_elemental_affinity_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
         android:contentDescription="@string/player_info_menu_elemental_affinity_button_content_description"
         android:text="Elemental Alignment"
         app:layout_constraintBottom_toTopOf="@id/menu_player_information_deity_affinity_button"
-        app:layout_constraintEnd_toEndOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/menu_player_information_skills_button"
-        app:layout_constraintTop_toTopOf="@id/menu_player_information_buttons_holder" />
+        app:layout_constraintTop_toBottomOf="@id/menu_player_information_description" />
 
     <Button
         android:id="@+id/menu_player_information_back_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:contentDescription="@string/player_info_menu_back_button_content_description"
         android:text="Back"
-        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/menu_player_information_deity_affinity_button"
-        app:layout_constraintStart_toStartOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu_player_information_skills_button" />
 
     <Button
         android:id="@+id/menu_player_information_deity_affinity_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
         android:contentDescription="@string/player_info_menu_deity_affinity_button_content_description"
         android:text="Deity Affinity"
-        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_buttons_holder"
-        app:layout_constraintEnd_toEndOf="@id/menu_player_information_buttons_holder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/menu_player_information_back_button"
         app:layout_constraintTop_toBottomOf="@id/menu_player_information_elemental_affinity_button" />
-
-    <TextView
-        android:id="@+id/menu_player_information_level_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/player_info_menu_level"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_weapon_text"
-        app:layout_constraintEnd_toStartOf="@id/menu_player_information_exp_to_next_level_text"
-        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
-        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_background" />
-
-    <TextView
-        android:id="@+id/menu_player_information_exp_to_next_level_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/player_info_menu_exp_to_next"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_physical_text"
-        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
-        app:layout_constraintStart_toEndOf="@id/menu_player_information_level_text"
-        app:layout_constraintTop_toTopOf="@id/menu_player_information_status_background" />
-
-    <TextView
-        android:id="@+id/menu_player_information_weapon_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/player_info_menu_weapon"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_armor_text"
-        app:layout_constraintEnd_toStartOf="@id/menu_player_information_physical_text"
-        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_level_text" />
-
-    <TextView
-        android:id="@+id/menu_player_information_physical_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/player_info_menu_physical"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_magic_text"
-        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
-        app:layout_constraintStart_toEndOf="@id/menu_player_information_weapon_text"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_exp_to_next_level_text" />
-
-    <TextView
-        android:id="@+id/menu_player_information_armor_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/player_info_menu_armor"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_accessory_text"
-        app:layout_constraintEnd_toStartOf="@id/menu_player_information_magic_text"
-        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_weapon_text" />
-
-    <TextView
-        android:id="@+id/menu_player_information_magic_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/player_info_menu_magical"
-        app:layout_constraintBottom_toTopOf="@id/menu_player_information_item_uses_text"
-        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
-        app:layout_constraintStart_toEndOf="@id/menu_player_information_armor_text"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_physical_text" />
-
-    <TextView
-        android:id="@+id/menu_player_information_accessory_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/player_info_menu_accessory"
-        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_background"
-        app:layout_constraintEnd_toStartOf="@id/menu_player_information_item_uses_text"
-        app:layout_constraintStart_toStartOf="@id/menu_player_information_status_background"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_armor_text" />
-
-    <TextView
-        android:id="@+id/menu_player_information_item_uses_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/player_info_menu_item_uses"
-        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_status_background"
-        app:layout_constraintEnd_toEndOf="@id/menu_player_information_status_background"
-        app:layout_constraintStart_toEndOf="@id/menu_player_information_accessory_text"
-        app:layout_constraintTop_toBottomOf="@id/menu_player_information_magic_text" />
 
     <ImageView
         android:id="@+id/menu_player_information_portriat"
@@ -332,15 +216,5 @@
         app:layout_constraintStart_toStartOf="@id/menu_player_information_portrait_background"
         app:layout_constraintTop_toTopOf="@id/menu_player_information_portrait_background"
         app:srcCompat="@drawable/main_character_brown_hair_male" />
-
-    <TextView
-        android:id="@+id/menu_player_information_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@id/menu_player_information_name_background"
-        app:layout_constraintEnd_toEndOf="@id/menu_player_information_name_background"
-        app:layout_constraintStart_toStartOf="@id/menu_player_information_name_background"
-        app:layout_constraintTop_toTopOf="@id/menu_player_information_name_background" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

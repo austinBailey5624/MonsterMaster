@@ -9,7 +9,7 @@ import kotlin.random.Random
  *
  * @Copyright Austin Bailey 2025 All Rights Reserved
  */
-class BattleActor(var hpCurrent: Double, var hpMax: Double, var mpCurrent: Double, var mpMax: Double, var element: Element, val level: Int, val experience: Int, val physicalUses: Int, val magicalUses: Int, val itemUses: Int)
+class BattleActor(var hpCurrent: Double, var hpMax: Double, var mpCurrent: Double, var mpMax: Double, var element: Element, val level: Int, val experience: Int, var physicalUses: Int, var magicalUses: Int, var itemUses: Int)
 {
     class DiceToRoll(val raw: Int,val  d4: Int,val d6: Int,val d8: Int,val d10: Int)
 
@@ -27,6 +27,9 @@ class BattleActor(var hpCurrent: Double, var hpMax: Double, var mpCurrent: Doubl
             basicBattleActor.hpCurrent = basicBattleActor.hpMax
             basicBattleActor.mpMax = getMPMax(1)
             basicBattleActor.mpCurrent = basicBattleActor.mpMax
+            basicBattleActor.physicalUses = 0
+            basicBattleActor.magicalUses = 0
+            basicBattleActor.itemUses = 0
             return basicBattleActor
         }
 
@@ -59,6 +62,65 @@ class BattleActor(var hpCurrent: Double, var hpMax: Double, var mpCurrent: Doubl
             DiceToRoll(45,0,0,0,10),//25
             DiceToRoll(3,3,1,0,1),//26
         )
+
+        val expRequiredForLevelUp: List<Int> = listOf(
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000,
+            19000,
+            28000,
+            37000,
+            46000,
+            55000,
+            64000,
+            73000,
+            82000,
+            91000,
+            100000,
+            130000,
+            160000,
+            190000,
+            220000,
+            250000,
+            280000,
+            310000,
+            340000,
+            370000,
+            400000,
+            430000,
+            460000,
+            490000,
+            520000,
+            550000,
+            580000,
+            610000,
+            640000,
+            670000,
+            700000,
+            730000,
+            760000,
+            790000,
+            820000,
+            850000,
+            880000,
+            910000,
+            940000,
+            970000,
+            1000000
+        )
+
+        fun getExpRequiredForLevelUp(level: Int, curExp: Int): Int
+        {
+            return expRequiredForLevelUp[level]-curExp
+        }
 
         fun getMPMaxIncreaseOnLevelUp(level: Int): Int
         {

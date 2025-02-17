@@ -1335,17 +1335,18 @@
     <string name="player_info_menu_level">Level:</string>
     <string name="player_info_menu_exp_to_next">Exp to Next Level:</string>
     <string name="player_info_menu_physical">Physical Uses:</string>
-    <string name="player_info_menu_weapon">Weapon:</string>
+    <string name="player_info_menu_weapon">Equipped Weapon:</string>
     <string name="player_info_menu_magical">Magic Uses:</string>
-    <string name="player_info_menu_armor">Armor: </string>
+    <string name="player_info_menu_armor">Equipped Armor: </string>
     <string name="player_info_menu_item_uses">Item Uses:</string>
-    <string name="player_info_menu_accessory">Accessory:</string>
+    <string name="player_info_menu_accessory">Equipped Accessory:</string>
     <string name="player_info_name">PlayerNameExample</string>
     <string name="player_info_skills">Skills</string>
     <string name="player_info_elemental_affinity">Elemental Affinity</string>
     <string name="player_info_back">Back</string>
     <string name="player_info_deity_affinity">Deity Affinity</string>
     <string name="player_info_example_number">1xx/5xx</string>
+    <string name="player_info_tap_for_more_info">Tap for more information</string>
 
     <!-- Deity Alignment Menu Content -->
     <string name="menu_deities_lawful">Lawful Deities</string>
