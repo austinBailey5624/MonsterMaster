@@ -66,7 +66,8 @@ class MenuInventory: Fragment()
             view.findViewById(R.id.menu_inventory_weapons),
             view.findViewById(R.id.menu_inventory_armor),
             view.findViewById(R.id.menu_inventory_accessory),
-            view.findViewById(R.id.menu_inventory_useable)
+            view.findViewById(R.id.menu_inventory_useable),
+            view.findViewById(R.id.menu_inventory_back)
         )
 
         for(button in buttons)
@@ -74,7 +75,7 @@ class MenuInventory: Fragment()
             Element.colorButton(button, requireContext(), element)
         }
 
-        view.findViewById<Button>(R.id.menu_inventory_gold).text = (ContextCompat.getString(requireContext(),R.id.menu_inventory_gold) + " " + state.currentGold)
+        view.findViewById<Button>(R.id.menu_inventory_gold).setText(ContextCompat.getString(requireContext(),R.string.menu_inventory_gold) + " " + state.currentGold)
 
         view.findViewById<Button>(R.id.menu_inventory_back).setOnClickListener{
             requireActivity().supportFragmentManager.popBackStack()

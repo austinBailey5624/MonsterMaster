@@ -85,6 +85,9 @@ class MenuPlayerInformation : Fragment()
             Element.colorButton(button,requireContext(),element)
         }
 
+        view.findViewById<ImageView>(R.id.menu_player_information_portrait_background).setColorFilter(ContextCompat.getColor(requireContext(),
+            Element.getBackgroundColor(element)), PorterDuff.Mode.MULTIPLY)
+
         val playerPortrait: ImageView = view.findViewById(R.id.menu_player_information_portriat)
         view.findViewById<Button>(R.id.menu_player_information_name).setText(state.playerName)
         playerPortrait.setImageResource(state.playerPortraitImageId)
@@ -103,10 +106,10 @@ class MenuPlayerInformation : Fragment()
 
         val statusBarHealthText: TextView = view.findViewById(R.id.menu_player_information_status_bar_health_text)
 
-        val description: String = ContextCompat.getString(requireContext(),R.string.player_info_menu_level) + " "
-                playerBattleActor.level.toString() + "\n\n" + ContextCompat.getString(requireContext(), R.string.player_info_menu_exp_to_next) +
-                        " " + BattleActor.getExpRequiredForLevelUp(playerBattleActor.level,playerBattleActor.experience).toString() + " " +
-                        ContextCompat.getString(requireContext(), R.string.player_info_tap_for_more_info)
+        val description: String = ContextCompat.getString(requireContext(),R.string.player_info_menu_level) + " " +
+                playerBattleActor.level.toString() + "\n" + ContextCompat.getString(requireContext(), R.string.player_info_menu_exp_to_next) +
+                " " + BattleActor.getExpRequiredForLevelUp(playerBattleActor.level,playerBattleActor.experience).toString() + "\n" +
+                ContextCompat.getString(requireContext(), R.string.player_info_tap_for_more_info)
 
         val description2: String = ContextCompat.getString(requireContext(),R.string.player_info_menu_weapon) + "\n" +
                 ContextCompat.getString(requireContext(),R.string.player_info_menu_armor) + "\n" +
