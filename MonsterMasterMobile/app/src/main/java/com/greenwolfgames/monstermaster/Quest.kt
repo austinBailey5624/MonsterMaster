@@ -4,140 +4,91 @@ import android.content.Context
 import androidx.core.content.ContextCompat.getString
 
 /**
- * Enum to help organize game state with quests
+ * Class to help organize game state with quests
  * @Author: Austin Bailey
  * @Year: 2024
  *
  * @Copyright Austin Bailey 2024 All Rights Reserved
  */
-enum class Quest
+class Quest
+    (
+    val index: Int,
+    val name: String,
+    val stages: List<QuestStage>  )
 {
-//Note remember when adding to this enum to update the corresponding queststage in state
-    CHORES,AMNESIA,KYLER_REDEMPTION,MORNS_ERRAND,WRITING_LESSON,SELL_AMULET,EXPLORE,
-    MICHAEL_ATTITUDE;
-
     companion object
     {
-        fun getName(context: Context, quest: Quest): String
+        var quests: List<Quest> = listOf()
+        fun getQuests(context: Context): List<Quest>
         {
-            return when(quest)
+            if (quests.isEmpty())
             {
-                CHORES -> getString(context, R.string.quest_chores_name)
-                AMNESIA -> getString(context, R.string.quest_amnesia_name)
-                KYLER_REDEMPTION -> getString(context, R.string.quest_kyler_redemption_name)
-                MORNS_ERRAND -> getString(context, R.string.quest_morns_errand_name)
-                WRITING_LESSON -> getString(context, R.string.quest_writing_lesson_name)
-                SELL_AMULET -> getString(context,R.string.quest_sell_amulet_name)
-                EXPLORE -> getString(context,R.string.quest_explore_name)
-                MICHAEL_ATTITUDE -> getString(context,R.string.quest_michael_attitude_name)
+                quests = initQuests(context)
             }
+            return quests
         }
 
-        fun getQuestStageMeaning(context:Context, quest: Quest, stage: Int): String
+        fun initQuests(context: Context): List<Quest>
         {
-            return when(quest)
-            {
-                CHORES -> getChoresStages(context)[stage]
-                AMNESIA -> getAmnesiaStages(context)[stage]
-                KYLER_REDEMPTION -> getKylerRedemptionStages(context)[stage]
-                MORNS_ERRAND -> getMornsErrandStages(context)[stage]
-                WRITING_LESSON -> getWritingLessonStages(context)[stage]
-                SELL_AMULET -> getSellAmuletStages(context)[stage]
-                EXPLORE -> getExploreStages(context)[stage]
-                MICHAEL_ATTITUDE -> getMichaelAttitudeStages(context)[stage]
-            }
-        }
+            var quests: MutableList<Quest> = mutableListOf()
+            quests.add(Quest(0, "", listOf()))
+            quests.add(
+                Quest(1,
+                getString(context, R.string.quest_chores_name),
+                listOf(QuestStage(1, getString(context, R.string.quest_chores_1)),
+                    QuestStage(2, getString(context, R.string.quest_chores_2)),
+                    QuestStage(3, getString(context, R.string.quest_chores_3)),
+                    QuestStage(4, getString(context, R.string.quest_chores_4)),
+                    QuestStage(5, getString(context, R.string.quest_chores_5)),
+                    QuestStage(6, getString(context, R.string.quest_chores_6)),
+                    QuestStage(7, getString(context, R.string.quest_chores_7)),
+                    QuestStage(8, getString(context, R.string.quest_chores_8)),
+                    QuestStage(9, getString(context, R.string.quest_chores_9)))))
+            quests.add(Quest(2,
+                getString(context, R.string.quest_amnesia_name),
+                listOf(QuestStage(1, getString(context, R.string.quest_amnesia_1)))))
+            quests.add(Quest(3,
+                getString(context, R.string.quest_kyler_redemption_name),
+                listOf(QuestStage(1, getString(context, R.string.quest_kyler_redemption_1)))))
+            quests.add(Quest(4,
+                getString(context, R.string.quest_morns_errand_name),
+                listOf(QuestStage(1, getString(context, R.string.quest_morns_errand_1)),
+                    QuestStage(2,getString(context,R.string.quest_morns_errand_2)),
+                    QuestStage(3, getString(context,R.string.quest_morns_errand_3)),
+                    QuestStage(4,getString(context,R.string.quest_morns_errand_4)),
+                    QuestStage(5, getString(context,R.string.quest_morns_errand_5)),
+                    QuestStage(6,getString(context,R.string.quest_morns_errand_6)),
+                    QuestStage(7, getString(context,R.string.quest_morns_errand_7)),
+                    QuestStage(8,getString(context,R.string.quest_morns_errand_8)),
+                    QuestStage(9, getString(context,R.string.quest_morns_errand_9)))))
+            quests.add(Quest(5,
+                getString(context,R.string.quest_writing_lesson_name),
+                listOf(QuestStage(1, getString(context, R.string.quest_writing_lesson_1)),
+                    QuestStage(2, getString(context,R.string.quest_writing_lesson_2)),
+                    QuestStage(3, getString(context, R.string.quest_writing_lesson_3)))))
+            quests.add(Quest(6,
+                getString(context,R.string.quest_sell_amulet_name),
+                listOf(QuestStage(1, getString(context, R.string.quest_sell_amulet_1)),
+                    QuestStage(2, getString(context, R.string.quest_sell_amulet_2)),
+                    QuestStage(3, getString(context, R.string.quest_sell_amulet_3)),
+                    QuestStage(4, getString(context, R.string.quest_sell_amulet_4)),
+                    QuestStage(5, getString(context, R.string.quest_sell_amulet_5)),
+                    QuestStage(6, getString(context, R.string.quest_sell_amulet_6)))))
+            quests.add(Quest(7,
+                getString(context,R.string.quest_explore_name),
+                listOf(QuestStage(1, getString(context,R.string.quest_explore_1)),
+                    QuestStage(2, getString(context,R.string.quest_explore_2)),
+                    QuestStage(3, getString(context,R.string.quest_explore_3)),
+                    QuestStage(4, getString(context,R.string.quest_explore_4)))))
+            quests.add(Quest(8,
+                getString(context,R.string.quest_michael_attitude_name),
+                listOf(QuestStage(1, getString(context,R.string.quest_michael_attitude_1)),
+                    QuestStage(2, getString(context,R.string.quest_michael_attitude_2)),
+                    QuestStage(3, getString(context,R.string.quest_michael_attitude_3)),
+                    QuestStage(4, getString(context,R.string.quest_michael_attitude_4)),
+                    QuestStage(5,getString(context,R.string.quest_michael_attitude_5)))))
 
-        fun getChoresStages(context: Context): List<String>
-        {
-            return listOf(
-                getString(context,R.string.quest_0),
-                getString(context,R.string.quest_chores_1),
-                getString(context,R.string.quest_chores_2),
-                getString(context,R.string.quest_chores_3),
-                getString(context,R.string.quest_chores_4),
-                getString(context,R.string.quest_chores_5),
-                getString(context,R.string.quest_chores_6),
-                getString(context,R.string.quest_chores_7),
-                getString(context,R.string.quest_chores_8),
-                getString(context,R.string.quest_chores_9))
-        }
-
-        fun getAmnesiaStages(context: Context): List<String>
-        {
-            return listOf(
-                getString(context,R.string.quest_0),
-                getString(context,R.string.quest_amnesia_stage_1)
-            )
-        }
-
-        fun getKylerRedemptionStages(context: Context): List<String>
-        {
-            return listOf(
-                getString(context,R.string.quest_0),
-                getString(context,R.string.quest_kyler_redemption_1)
-            )
-        }
-
-        fun getMornsErrandStages(context: Context): List<String>
-        {
-            return listOf(
-                getString(context,R.string.quest_0),
-                getString(context,R.string.quest_morns_errand_1),
-                getString(context,R.string.quest_morns_errand_2),
-                getString(context,R.string.quest_morns_errand_3),
-                getString(context,R.string.quest_morns_errand_4),
-                getString(context,R.string.quest_morns_errand_5),
-                getString(context,R.string.quest_morns_errand_6),
-                getString(context,R.string.quest_morns_errand_7),
-                getString(context,R.string.quest_morns_errand_8),
-                getString(context,R.string.quest_morns_errand_9)
-            )
-        }
-
-        fun getWritingLessonStages(context: Context): List<String>
-        {
-            return listOf(
-                getString(context,R.string.quest_0),
-                getString(context,R.string.quest_writing_lesson_1),
-                getString(context,R.string.quest_writing_lesson_2),
-                getString(context,R.string.quest_writing_lesson_3)
-            )
-        }
-
-        fun getSellAmuletStages(context: Context): List<String>
-        {
-            return listOf(
-                getString(context, R.string.quest_0),
-                getString(context, R.string.quest_sell_amulet_1),
-                getString(context, R.string.quest_sell_amulet_2),
-                getString(context, R.string.quest_sell_amulet_3),
-                getString(context, R.string.quest_sell_amulet_4),
-                getString(context, R.string.quest_sell_amulet_5)
-            )
-        }
-
-        fun getExploreStages(context: Context): List<String>
-        {
-            return listOf(
-                getString(context,R.string.quest_0),
-                getString(context,R.string.quest_explore_1),
-                getString(context,R.string.quest_explore_2),
-                getString(context,R.string.quest_explore_3),
-                getString(context,R.string.quest_explore_4)
-            )
-        }
-
-        fun getMichaelAttitudeStages(context: Context): List<String>
-        {
-            return listOf(
-                getString(context,R.string.quest_michael_attitude_0),
-                getString(context,R.string.quest_michael_attitude_1),
-                getString(context,R.string.quest_michael_attitude_2),
-                getString(context,R.string.quest_michael_attitude_3),
-                getString(context,R.string.quest_michael_attitude_4),
-                getString(context,R.string.quest_michael_attitude_5)
-            )
+            return quests
         }
     }
 }

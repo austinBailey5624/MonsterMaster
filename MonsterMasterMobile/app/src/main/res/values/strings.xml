@@ -1261,7 +1261,7 @@
     <string name="quest_chores_8">I have completed my writing lesson, and sold mom\'s old locket. Now all that\'s left is to go do chores for Morn</string>
     <string name="quest_chores_9">I have completed my writing lesson, sold mom\'s old locket, and done chores for Morn. I should go back to my house to tell Dad</string>
     <string name="quest_amnesia_name">Amnesia</string>
-    <string name="quest_amnesia_stage_1">Go see Brahm at his house</string>
+    <string name="quest_amnesia_1">Go see Brahm at his house</string>
     <string name="quest_kyler_redemption_name">Kyler\'s redemption</string>
     <string name="quest_kyler_redemption_1">Visit Kyler at his house</string>
     <string name="quest_morns_errand_name">Morn\'s Errand</string>
@@ -1284,14 +1284,13 @@
     <string name="quest_sell_amulet_3">I spent the money I got from the amulet on a shortsword and leather armor. Dad\'s not going to be happy</string>
     <string name="quest_sell_amulet_4">I spent the money I got from the amulet on onions for Morn. Dad\'s not going to be happy</string>
     <string name="quest_sell_amulet_5">I pawned the amulet, and should now bring the money to Dad. I may try to buy the amulet back later</string>
-    <string name="quest_sell_amulet_6">I visited the pawnshop but couln\'t bear to selll mom\'s amulet</string>
+    <string name="quest_sell_amulet_6">I visited the pawnshop but couldn\'t bear to sell mom\'s amulet. I should report my failure to Dad</string>
     <string name="quest_explore_name">Explore</string>
     <string name="quest_explore_1">The guard at the gate won\'t let me pass unless I get a shortsword and leather armor.</string>
     <string name="quest_explore_2">I have beer, if I give this to the guard he may let me by.</string>
     <string name="quest_explore_3">I have the shortsword and leather armor, now I should go see the guard.</string>
     <string name="quest_explore_4">The guard let me by, I can now explore freely.</string>
     <string name="quest_michael_attitude_name">Father Michael\'s Favor</string>
-    <string name="quest_michael_attitude_0">You have never met Father Michael, so he has no opinion of you</string>
     <string name="quest_michael_attitude_1">Michael has a neutral opinion of you</string>
     <string name="quest_michael_attitude_2">Michael has a neutral opinion of you, and considers you a scholar</string>
     <string name="quest_michael_attitude_3">Michael has a positive opinion of you</string>

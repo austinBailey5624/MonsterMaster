@@ -100,15 +100,7 @@ class State public constructor() : Parcelable
         Deity.ENEMY to 0).withDefault { 0 }
 
 
-    var questStage = mutableMapOf<Quest, Int>(
-        Quest.CHORES to 0,
-        Quest.AMNESIA to 0,
-        Quest.KYLER_REDEMPTION to 0,
-        Quest.MORNS_ERRAND to 0,
-        Quest.WRITING_LESSON to 0,
-        Quest.SELL_AMULET to 0,
-        Quest.EXPLORE to 0,
-        Quest.MICHAEL_ATTITUDE to 0).withDefault { 0 }
+    var questStage = mutableMapOf<Int, Int>().withDefault { 0 }
 
     var nodeIndexByVisitedBefore = mutableMapOf<Int, Boolean>().withDefault { false }
 
@@ -146,14 +138,14 @@ class State public constructor() : Parcelable
         return deityScore[deity]!!
     }
 
-    fun getQuestStage(quest: Quest): Int
+    fun getQuestStage(questIndex: Int): Int
     {
-        return questStage[quest]!!
+        return questStage[questIndex]!!
     }
 
-    fun setQuestStage(quest: Quest, stage: Int)
+    fun setQuestStage(questIndex: Int, stage: Int)
     {
-        questStage[quest] = stage
+        questStage[questIndex] = stage
     }
 
     fun visitNode(nodeIndex: Int) {
@@ -188,36 +180,36 @@ class State public constructor() : Parcelable
 
     fun setChoresStage_WritingLessonFinished()
     {
-        if (questStage[Quest.CHORES]!! < 3)
+        if (questStage[1]!! < 3)
         {
-            questStage[Quest.CHORES] = 3
+            questStage[1] = 3
         }
-        if (questStage[Quest.CHORES]!! == 4)
+        if (questStage[1]!! == 4)
         {
-            questStage[Quest.CHORES] = 6
+            questStage[1] = 6
         }
-        if (questStage[Quest.CHORES]!! == 5)
+        if (questStage[1]!! == 5)
         {
-            questStage[Quest.CHORES] = 8
+            questStage[1] = 8
         }
-        if (questStage[Quest.CHORES]!! == 7)
+        if (questStage[1]!! == 7)
         {
-            questStage[Quest.CHORES] = 9
+            questStage[1] = 9
         }
     }
 
     fun initChoresQuestline()
     {
-        questStage[Quest.MORNS_ERRAND] = 1
-        questStage[Quest.SELL_AMULET] = 1
-        if (questStage[Quest.WRITING_LESSON]!! == 2)
+        questStage[4] = 1
+        questStage[6] = 1
+        if (questStage[5]!! == 2)
         {
-            questStage[Quest.CHORES] = 2
+            questStage[1] = 2
         }
         else
         {
-            questStage[Quest.CHORES] = 1
-            questStage[Quest.WRITING_LESSON] = 1
+            questStage[1] = 1
+            questStage[5] = 1
         }
     }
 
