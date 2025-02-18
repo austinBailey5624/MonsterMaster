@@ -2279,7 +2279,7 @@ VALUES
     ('Tuft of Kitsune Fur','Tuft of hair from a fox spirit, used to temporarily incease fire damage by a small amount',0,2,'Increase a target fire damage by 1 for the rest of the battle, increase temperature by 3 points','30% drop from a Flarpup, 60% drop from a comet, 90% drop from a bolide.','USEABLE'),
     ('Flaming Wolf Fang','Fang of a flaming wolf, increase physical and fire damage by 1 when equipped as an accessory',0,10,'Increase a players fire damage by 1 and physical damage by 1 while equipped','20% from a comet, 40% from a Bolide','ACCESSORY'),
     ('Bolide Claw','Claw of a Bolide, increases physical and fire damage when equipped as an accessory.',0,20,'Increase a players fire damage by 2 and physcial damage by 2 while equipped','15% from a Bolide.','ACCESSORY'),
-    ('Red Coin','Magic Red goin that can be used to slightly heal a fire monster, or consumed to gain loyalty with fire monsters and fire gods',0,10,'Heal a character by 1d4 if that character has a fire primary nature, if consumed outside battle, adds 1 point of affinity with Pyro Element and Mars Deity','Base 30% drop from pyro symbol, 40% from pyro elemental, 25% from Terra, Pyro, and Umbral Elemntals (Pyro gets two rolls), and 20% from all primordial elementals.','USEABLE'),
+    ('Red Coin','Magic Red goin that can be used to slightly restore mana to a fire monster, or consumed to gain loyalty with fire monsters and fire gods',0,10,'Restore a character\'s mana by 1d4 if that character has a fire primary nature, if consumed outside battle, adds 1 point of affinity with Pyro Element and Mars Deity','Base 30% drop from pyro symbol, 40% from pyro elemental, 25% from Terra, Pyro, and Umbral Elementals (Pyro gets two rolls), 60% from primordial pryo elemental and 20% from all primordial elementals.','USEABLE'),
     ('Fire Opal','Lesser red stone used to gain fire affinity or sold for profit',0,20,'Consume for 3 points of affinity with Mars and the Pyro Element.','50% drop from Fire Opal, 30% drop from Ruby','USEABLE'),
     ('Ruby','Red stone used in jewelry making, can be consumed for affinity with red spirits',0,50,'Consume for large affinity boost with both Mars and the Pyro Element.','60% drop from Ruby','USEABLE'),
     ('Lava Shell','The shell of a slain lava monster, can be used to grant minor protection from both fire and physical damage',1,5,'On use, grant 1 point of protection from fire and physical','20% Drop from a Philammon','USEABLE'),
@@ -2461,6 +2461,16 @@ VALUES
     ('Peacock cloak','While equipped, gain small bonus to earth, air, water damage and defense',32, 20,'While equipped, gain 1 point of damage and defense to earth, air and water','30% drop fom Seusstruse','ACCESSORY'),
     ('Green Angel Down','Consume as a sacrement to Sid and slightly strengthen Compassion Monsters',43,8,'Gain 1 point of Sid and Compassion Affinity','30% Drop from Haloss, 50% drop from Halosses and Wing Tree, 70% drop from Halarial','USEABLE'),
     ('Green Angel Feather','Consume as a sacrement to Sid and strengthen Compassion Monsters',43,16,'Gain 2 points of Sid and Compassion Affinity','30% drop from Halosses and Wing Tree, 50% drop from Halarial','USEABLE'),
+    ('Flapper Shell','Use to gain one point of defense for the rest of the battle, but only if you have an air primary dature',44,1,'Gain one point of defense for the rest of the battle if your primary nature is air','30% drop from Flapper','USEABLE'),
+    ('Toupee','Ridiculous looking terrible toupee, which adds a point of air damage while equipped',44,2,'Add ont point of air damage to physical attacks while equipped','30% from toupeeagle','ACCESSORY'),
+    ('Feather of Flight','Magic feather that makes it easier to fly when equipped',44,15,'While equipped, increase \'flying\' trait by 1','30% drop from Baldgul, 50% drop from Patriot Hawk','ACCESSORY'),
+    ('Patriotic Quill','You imagine this patriotic quill might have been used to sign the declaration of indepenence or some such, use on target to enhance air and physcail attacks',44,20,'On use, increase physical and air damage by 1','30% dropf rom Patriot hawk','USEABLE'),
+    ('Byrdi Scarf','While equipped, increase speed of physcial attacks',44,12,'While equipped Physical attacks *.975 speed','30% drop from Byrid, 50% drop from Wings','ACCESSORY'),
+    ('Wings','While equipped, increase speed of magical attacks',44,22,'While equipped, Magic attacks are *.975 speed','30% drop from Wings, 50% drop from Roc','ACCESSORY'),
+    ('Golden Wings','While equipped, increase flying trait, the speed of physical and magical attacks',44,20,'While equipped, Increase Flying trait by 1, and physical and magical attack speeds by .975','30% drop from Roc','ACCESSORY'),
+    ('Yellow Coin','Heal the mp of a creature with an air primary nature',44,10,'Target heals 1d4 mana if they are air primary nature','30% drop form Aero Symbol, 40% drop from Aero elementals, 25% drop from Aero Umbral and aqua elementals, 60% drop from primoridal Aero Elemental, and 20% drop from all primordial elementals','USEABLE'),
+    ('Quartz','A lesser yellow stone, can be consumed to improve relationships with air monsters and gods',44,20,'Gain affinity with Bacchus and Aero Monsters','50% drop from quartz, 70% drop from Topaz','USEABLE'),
+    ('Topaz','A shining Yellow Gem, can be consumed to greatly improve relationships with air monsters and gods',44,50,'Gain affinity with Bacchus and Aero Mosnters','60% drop from Topaz','USEABLE'),
     ('Green Angel Wing','Consume as a sacrement to Sid and greatly strengthen Compassion Monsters',43,24,'Gain 3 points of Sid and Compassion Affinity','30% drop from Halarial','USEABLE'),
     ('Black Angel Down','Consume as a ritual sacrement to Acheron, and slightly strengthen Betrayer Monsters',54,8,'Gain Affinity with Acheron and Betryer Monsters','50% drop from D\'hoffry','USEABLE'),
     ('Black Angel Feather','Consume as a ritual sacrment to Acheron, and strengthen Betrayer Monsters',54,16,'Gain Affinity with Acheron and Betrayer Monsters','30% drop from D\'hoffry','USEABLE'),
@@ -2556,6 +2566,23 @@ VALUES
     (5,5,'Guilty'),
     (5,6,'Redemption Seeker'),
     (5,7,'Redeemed');
+    
+CREATE TABLE quest(
+    quest_id INT PRIMARY KEY AUTO_INCREMENT,
+    quest_name VARCHAR(50) NOT NULL,
+    quest_visible BOOLEAN NOT NULL
+    );
+    
+INSERT INTO quest(quest_name, quest_visible)
+VALUES
+	('Chores',TRUE),
+    ('Amnesia',TRUE),
+    ('Kyler\'s redemption',TRUE),
+    ('Morn\'s errand',TRUE),
+    ('Writing Lesson',TRUE),
+    ('Sell Amulet',TRUE),
+    ('Explore',TRUE),
+    ('Michael\'s Attitude',FALSE)
 
 
     
