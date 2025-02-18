@@ -17,9 +17,6 @@ class NodeRetriever(private val context: Context, private val state: State)
 {
     fun getNode(index: Int): Node
     {
-        Log.d("Node retrieval", "Retrieving node $index")
-        Log.d("MichaelAttitude: ",
-            state.getQuestStage(Quest.MICHAEL_ATTITUDE).toString()) //Choose Between light or dark
         if (index == 1)
         {
             val prompts = listOf(getString(context, R.string.scene1item1),
@@ -782,7 +779,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         }
         if (index == 80)
         {
-            if (state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 1) //neutral
+            if (state.getQuestStage(8) == 1) //neutral
             {
                 val prompts = listOf(getString(context,
                     R.string.scene80alt1prompt1) + " " + Gender.getNickname2(context,
@@ -794,7 +791,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                     getChoice(R.string.scene80alt1choice5, 79))
                 return getMichaelChurchNode(index, prompts, choices)
             }
-            if (state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 4) //insulted
+            if (state.getQuestStage(8) == 4) //insulted
             {
                 val prompts = getPrompt(R.string.scene80alt2prompt)
                 val choices = listOf(getChoice(R.string.scene80alt2choice1, 253),
@@ -804,7 +801,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                     getChoice(R.string.scene80alt2choice5, 79))
                 return getMichaelChurchNode(index, prompts, choices)
             }
-            if (state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 3) //positive
+            if (state.getQuestStage(8) == 3) //positive
             {
                 val prompts = getPrompt(R.string.scene80alt3prompt)
                 val choices = listOf(getChoice(R.string.scene80alt3choice1, 93),
@@ -814,7 +811,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                     getChoice(R.string.scene80alt3choice5, 79))
                 return getMichaelChurchNode(index, prompts, choices)
             }
-            if (state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 5) // very positive
+            if (state.getQuestStage(8) == 5) // very positive
             {
                 val prompts = getPrompt(R.string.scene80alt4prompt)
                 val choices = listOf(getChoice(R.string.scene80alt4choice1, 93),
@@ -824,7 +821,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                     getChoice(R.string.scene80alt4choice5, 79))
                 return getMichaelChurchNode(index, prompts, choices)
             }
-            if (state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 2)
+            if (state.getQuestStage(8) == 2)
             {
                 val prompts = getPrompt(R.string.scene80alt5prompt)
                 val choices = listOf(getChoice(R.string.scene80alt5choice1, 93),
@@ -840,15 +837,15 @@ class NodeRetriever(private val context: Context, private val state: State)
                     R.string.scene80prompt1) + state.playerName + getString(context,
                     R.string.scene80prompt2))
                 val choices = listOf(Choice(getString(context, R.string.scene80choice1), 81, {
-                    state.addScore(Element.PYRO);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 4)
+                    state.addScore(Element.PYRO);state.setQuestStage(8, 4)
                 }, Element.PYRO, false), Choice(getString(context, R.string.scene80choice2), 82, {
-                    state.addScore(Element.AQUA);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 2)
+                    state.addScore(Element.AQUA);state.setQuestStage(8, 2)
                 }, Element.AQUA, false), Choice(getString(context, R.string.scene80choice3), 83, {
-                    state.addScore(Element.TERRA);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 1)
+                    state.addScore(Element.TERRA);state.setQuestStage(8, 1)
                 }, Element.TERRA, false), Choice(getString(context, R.string.scene80choice4), 84, {
-                    state.addScore(Element.LUXOR);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 3)
+                    state.addScore(Element.LUXOR);state.setQuestStage(8, 3)
                 }, Element.LUXOR, false), Choice(getString(context, R.string.scene80choice5), 85, {
-                    state.addScore(Element.UMBRAL);state.setQuestStage(Quest.MICHAEL_ATTITUDE, 4)
+                    state.addScore(Element.UMBRAL);state.setQuestStage(8, 4)
                 }, Element.UMBRAL, false))
                 return getMichaelChurchNode(index, prompts, choices)
             }
@@ -891,11 +888,11 @@ class NodeRetriever(private val context: Context, private val state: State)
                 { state.addScore(Element.STORM) },
                 Element.STORM,
                 false), Choice(getString(context, R.string.scene85choice2), 91, {
-                state.setQuestStage(Quest.KYLER_REDEMPTION, 1)
+                state.setQuestStage(3, 1)
             }, Element.NEUTRAL, false), Choice(getString(context, R.string.scene85choice3), 87, {
-                state.setQuestStage(Quest.KYLER_REDEMPTION, 1)
+                state.setQuestStage(3, 1)
             }, Element.NEUTRAL, false), Choice(getString(context, R.string.scene85choice4), 92, {
-                state.addScore(Element.UMBRAL);state.setQuestStage(Quest.KYLER_REDEMPTION, 1)
+                state.addScore(Element.UMBRAL);state.setQuestStage(3, 1)
             }, Element.UMBRAL, false))
             return getMichaelChurchNode(index, prompts, choices)
         }
@@ -955,25 +952,25 @@ class NodeRetriever(private val context: Context, private val state: State)
         }
         if (index == 93)
         {
-            if (state.getQuestStage(Quest.CHORES) == 2)
+            if (state.getQuestStage(1) == 2)
             {
                 return getDadNode_Default()
             }
-            if (state.getQuestStage(Quest.CHORES) == 3)
+            if (state.getQuestStage(1) == 3)
             {
                 return getDadNode_talkAboutWriting()
             }
-            if (state.getQuestStage(Quest.CHORES) == 4)
+            if (state.getQuestStage(1) == 4)
             {
                 return getDadNode_talkAboutMorn()
             }
-            if (state.getQuestStage(Quest.CHORES) == 5)
+            if (state.getQuestStage(1) == 5)
             {
                 return getDadNode_talkAboutAmulet()
             } //We have completed writing and done chores for morn. If we have not spoken to dad before about it,
             //we should talk about how the writing lesson went, if weve talked about the writing lesson,
             //we need to talk about how the chores with morn went. If we've talked about both, go to alt one
-            if (state.getQuestStage(Quest.CHORES) == 6)
+            if (state.getQuestStage(1) == 6)
             {
                 if (haveTalkedToDadAboutWriting())
                 {
@@ -985,7 +982,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                 }
                 return getDadNode_Default()
             }
-            if (state.getQuestStage(Quest.CHORES) == 7)
+            if (state.getQuestStage(1) == 7)
             {
                 if(haveTalkedToDadAboutMornChores())
                 {
@@ -997,7 +994,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                 }
                 return getDadNode_Default()
             }
-            if(state.getQuestStage(Quest.CHORES) == 8)
+            if(state.getQuestStage(1) == 8)
             {
                 if(haveTalkedToDadAboutWriting())
                 {
@@ -1009,7 +1006,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                 }
                 return getDadNode_Default()
             }
-            if(state.getQuestStage(Quest.CHORES) == 9)
+            if(state.getQuestStage(1) == 9)
             {
                 val prompts = getPrompt(R.string.scene93alt5prompt)
                 val choices = listOf(getChoice(R.string.scene93alt5choice1,281),
@@ -1242,13 +1239,13 @@ class NodeRetriever(private val context: Context, private val state: State)
         {
             val prompts = getPrompt(R.string.scene118prompt)
             val choices = listOf(getChoice(R.string.scene118choice1, 120),
-                getChoice(R.string.scene118choice2, 119, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
+                getChoice(R.string.scene118choice2, 119, {state.setQuestStage(5,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 119)
         {
             val prompts = getPrompt(R.string.scene119prompt)
-            val choices = listOf(getChoice(R.string.scene119choice1, 79, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
+            val choices = listOf(getChoice(R.string.scene119choice1, 79, {state.setQuestStage(5,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 120)
@@ -1268,7 +1265,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 122)
         {
             val prompts = getPrompt(R.string.scene122prompt)
-            val choices = listOf(getChoice(R.string.scene122choice, 79, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
+            val choices = listOf(getChoice(R.string.scene122choice, 79, {state.setQuestStage(5,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 123)
@@ -1295,13 +1292,13 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 126)
         {
             val prompts = getPrompt(R.string.scene126prompt)
-            val choices = listOf(getChoice(R.string.scene126choice1, 79, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
+            val choices = listOf(getChoice(R.string.scene126choice1, 79, {state.setQuestStage(5,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 127)
         {
             val prompts = getPrompt(R.string.scene127prompt)
-            val choices = listOf(getChoice(R.string.scene127choice1,128, {state.setQuestStage(Quest.WRITING_LESSON,2)}),
+            val choices = listOf(getChoice(R.string.scene127choice1,128, {state.setQuestStage(5,2)}),
                 getChoice(R.string.scene127choice2,126))
             return getBrahmNode(index, prompts, choices)
         }
@@ -1324,7 +1321,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 130)
         {
             val prompts = getPrompt(R.string.scene130prompt)
-            val choices = listOf(getChoice(R.string.scene130choice1, 79, {state.setQuestStage(Quest.WRITING_LESSON,2)}))
+            val choices = listOf(getChoice(R.string.scene130choice1, 79, {state.setQuestStage(5,2)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 131)
@@ -1338,7 +1335,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         {
             val prompts = getPrompt(R.string.scene132prompt)
             val choices = listOf(getChoice(R.string.scene132choice1, 113),
-                getChoice(R.string.scene132choice2, 79, {state.setQuestStage(Quest.WRITING_LESSON,3)}))
+                getChoice(R.string.scene132choice2, 79, {state.setQuestStage(5,3)}))
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 133)
@@ -1754,7 +1751,7 @@ class NodeRetriever(private val context: Context, private val state: State)
             val prompts = getPrompt(R.string.scene186prompt)
             val choices = listOf(getChoice(R.string.scene186choice,
                 79,
-                { state.setQuestStage(Quest.EXPLORE, 1) }))
+                { state.setQuestStage(7, 1) }))
             return getGateNode(index, prompts, choices)
         }
         if (index == 187)
@@ -1778,25 +1775,25 @@ class NodeRetriever(private val context: Context, private val state: State)
                     context,
                     state.gender) + getString(context, R.string.scene188prompt2))
             val choices: List<Choice>
-            if (state.getQuestStage(Quest.CHORES) == 3)
+            if (state.getQuestStage(1) == 3)
             {
                 choices = listOf(getChoice(R.string.scene188choice1, 189),
                     getChoice(R.string.scene188choice4, 190),
                     getChoice(R.string.scene188choice6, 203))
             }
-            else if (state.getQuestStage(Quest.CHORES) == 0)
+            else if (state.getQuestStage(1) == 0)
             {
                 choices = listOf(getChoice(R.string.scene188choice5, 235),
                     getChoice(R.string.scene188choice4, 190),
                     getChoice(R.string.scene188choice6, 203))
             }
-            else if (state.getQuestStage(Quest.CHORES) == 5)
+            else if (state.getQuestStage(1) == 5)
             {
                 choices = listOf(getChoice(R.string.scene188choice2, 189),
                     getChoice(R.string.scene188choice4, 190),
                     getChoice(R.string.scene188choice6, 203))
             }
-            else if (state.getQuestStage(Quest.CHORES) == 8)
+            else if (state.getQuestStage(1) == 8)
             {
                 choices = listOf(getChoice(R.string.scene188choice3, 189),
                     getChoice(R.string.scene188choice4, 190),
@@ -1887,7 +1884,7 @@ class NodeRetriever(private val context: Context, private val state: State)
             val choices = listOf(getChoice(R.string.scene195choice1, 199),
                 getChoice(R.string.scene195choice2,
                     187,
-                    { state.setQuestStage(Quest.MORNS_ERRAND, 9) }))
+                    { state.setQuestStage(4, 9) }))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.appear,
                 R.id.background_center))
@@ -1918,7 +1915,7 @@ class NodeRetriever(private val context: Context, private val state: State)
             val prompts = getPrompt(R.string.scene198prompt)
             val choices = listOf(getChoice(R.string.scene198choice,
                 187,
-                { state.setQuestStage(Quest.MORNS_ERRAND, 2) }))
+                { state.setQuestStage(4, 2) }))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
@@ -1952,7 +1949,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                     state.gender) + getString(context, R.string.scene201prompt2))
             val choices = listOf(getChoice(R.string.scene201choice,
                 187,
-                { state.setQuestStage(Quest.MORNS_ERRAND, 9) }))
+                { state.setQuestStage(4, 9) }))
             val animations = listOf(AnimationInfo(R.drawable.character_morn,
                 R.anim.fade_in_fast,
                 R.id.background_center))
@@ -2346,7 +2343,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                     context,
                     state.gender) + " " + getString(context, R.string.scene236prompt2))
             val choices: List<Choice> //If we have spoken to dad and have the amulet to sell
-            if (state.getQuestStage(Quest.SELL_AMULET) == 1)
+            if (state.getQuestStage(6) == 1)
             {
                 choices = listOf(getChoice(R.string.scene236choice1, 237),
                     getChoice(R.string.scene236choice2, 238))
@@ -2420,9 +2417,9 @@ class NodeRetriever(private val context: Context, private val state: State)
         {
             val prompts = getPrompt(R.string.scene242prompt)
             val choices = listOf(getChoice(R.string.scene242choice1,
-                245) { state.addGold(22);state.setQuestStage(Quest.SELL_AMULET, 2) },
+                245) { state.addGold(22);state.setQuestStage(6, 2) },
                 getChoice(R.string.scene242choice2, 246) {
-                    state.setQuestStage(Quest.SELL_AMULET, 6)
+                    state.setQuestStage(6, 6)
                 })
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
@@ -2442,7 +2439,7 @@ class NodeRetriever(private val context: Context, private val state: State)
         {
             val prompts = getPrompt(R.string.scene244prompt)
             val choices = listOf(getChoice(R.string.scene244choice1, 248) {
-                state.removeGold(20);state.setQuestStage(Quest.EXPLORE, 3)
+                state.removeGold(20);state.setQuestStage(7, 3)
             }, getChoice(R.string.scene244choice2, 249))
             val animations = listOf(AnimationInfo(R.drawable.background_oaktree_pawnshop,
                 R.anim.appear,
@@ -2525,7 +2522,7 @@ class NodeRetriever(private val context: Context, private val state: State)
                 getChoice(R.string.scene251choice3, 256),
                 getChoice(R.string.scene251choice4, 257),
                 getChoice(R.string.scene251choice5, 79))
-            if (state.getQuestStage(Quest.MICHAEL_ATTITUDE) == 2)
+            if (state.getQuestStage(8) == 2)
             {
                 return getMichaelChurchNode(index, getPrompt(R.string.scene251alt1prompt), choices)
             }
