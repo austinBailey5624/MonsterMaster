@@ -87,6 +87,20 @@ class Quest
                     QuestStage(3, getString(context,R.string.quest_michael_attitude_3)),
                     QuestStage(4, getString(context,R.string.quest_michael_attitude_4)),
                     QuestStage(5,getString(context,R.string.quest_michael_attitude_5)))))
+            quests.add(Quest(9,
+                getString(context,R.string.quest_read_five_faces_one_god_name),
+                listOf(QuestStage(1, getString(context,R.string.quest_read_five_faces_one_god_1)))))
+            quests.add(Quest(10,
+                getString(context,R.string.quest_read_mysteries_of_mana_name),
+                listOf(QuestStage(1, getString(context,R.string.quest_read_mysteries_of_mana_1)))))
+            quests.add(Quest(11,
+                getString(context,R.string.quest_read_mixed_party_tactics_name),
+                listOf(QuestStage(1, getString(context,R.string.quest_read_mixed_party_tactics_1)))))
+            quests.add(Quest(12,
+                getString(context,R.string.quest_read_property_ownership_name),
+                listOf(QuestStage(1, getString(context,R.string.quest_read_property_ownership_1)))))
+            quests.add(Quest(13, getString(context,R.string.quest_read_merchant_adventures_name),
+                listOf(QuestStage(1, getString(context,R.string.quest_read_merchant_adventures_1)))))
 
             return quests
         }

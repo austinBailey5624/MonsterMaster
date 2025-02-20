@@ -483,10 +483,11 @@
     <string name="scene102alt1prompt1">Ahh,</string>
     <string name="scene102alt1prompt2">Welcome back. Would you like to peruse the library?</string>
     <string name="scene102alt1choice1">Five Faces, One God</string><!--118-->
-    <string name="scene102alt1choice2">Mysteries of Mana</string><!--284-->
-    <string name="scene102alt1choice3">Mixed Party Tactics</string><!--285-->
-    <string name="scene102alt1choice4">Property Ownership</string><!--286-->
-    <string name="scene102alt1choice5">Merchant Adventures</string><!--287-->
+    <string name="scene102alt1choice2">Mysteries of Mana</string><!--133-->
+    <string name="scene102alt1choice3">Mixed Party Tactics</string><!--141-->
+    <string name="scene102alt1choice4">Property Ownership</string><!--153-->
+    <string name="scene102alt1choice5">Merchant Adventures</string><!--161-->
+    <string name="scene102alt1choice6">*Leave*</string><!--79-->
     <string name="scene103prompt">Ahh yes. Today is the anniversary of your mother\'s departure is it not? I imagine such a time must be stressful for one so young. If you\'d like, we can talk about it before your lesson.</string>
     <string name="scene103choice1">No, I\'d rather do the lesson</string><!--109-->
     <string name="scene103choice2">I don\'t trust you</string><!--109-->
@@ -557,7 +558,7 @@
     <string name="scene118choice2">Can we stop now?</string><!--119-->
     <string name="scene118alt1choice1">Back to library</string><!--102-->
     <string name="scene118alt1choice2">Next Page</string><!--120-->
-    <string name="scene188alt1choice3">*Leave*</string><!--79-->
+    <string name="scene118alt1choice3">*Leave*</string><!--79-->
     <string name="scene119prompt">We have only just begun, but very well. May the joy of youth blossom in your heart, as you go and have many misadventures.</string>
     <string name="scene119choice1">Bye!</string><!--79-->
     <string name="scene120prompt">Erebius brought his traitorous servant Pythion before Ahros, and asked the God-King to pass judgement. Ahros replied:\"The law of balance decrees that Pythion should have the evil he had done others done to himself in the same measure\". Ahros rose with the Sun, and was bathed in its light as he ascended to heaven, that he may judge men in the next life as he did in this. </string>
@@ -1276,8 +1277,8 @@
     <string name="quest_morns_errand_9">I have told Morn I would rather play than run his errand</string>
     <string name="quest_writing_lesson_name">Writing Lesson</string>
     <string name="quest_writing_lesson_1">I Need to go see Brahm at his house for a writing lesson</string>
-    <string name="quest_writing_lesson_2">I have completed the writing lesson, but can return to read the other books if I\'d like</string>
-    <string name="quest_writing_lesson_3">I left Brahm and refused a writing lesson</string>
+    <string name="quest_writing_lesson_2">I left Brahm and refused to finish a writing lesson, I may return later if I change my mind</string>
+    <string name="quest_writing_lesson_3">I have completed the writing lesson, but can return to read the other books if I\'d like</string>
     <string name="quest_sell_amulet_name">Sell Amulet</string>
     <string name="quest_sell_amulet_1">My dad has given me mom\'s old amulet to sell.. I\'m not sure how I feel about this</string>
     <string name="quest_sell_amulet_2">I have sold the amulet and now need to take the money to Dad</string>
@@ -1296,6 +1297,16 @@
     <string name="quest_michael_attitude_3">Michael has a positive opinion of you</string>
     <string name="quest_michael_attitude_4">You have insulted the church, so Michael has a low opinion of you</string>
     <string name="quest_michael_attitude_5">You have donated to the church, so Michael has a very positive opinion of you</string>
+    <string name="quest_read_five_faces_one_god_name">Read Five Faces, One God</string>
+    <string name="quest_read_five_faces_one_god_1">I have read the book Five Faces, One God</string>
+    <string name="quest_read_mysteries_of_mana_name">Read Mysteries of Mana</string>
+    <string name="quest_read_mysteries_of_mana_1">I have read the book Mysteries of Mana</string>
+    <string name="quest_read_mixed_party_tactics_name">Read Mixed Party Tactics</string>
+    <string name="quest_read_mixed_party_tactics_1">I have read the book Mixed Party Tactics</string>
+    <string name="quest_read_property_ownership_name">Read Property Ownership</string>
+    <string name="quest_read_property_ownership_1">I have read the book Property Ownership</string>
+    <string name="quest_read_merchant_adventures_name">Read Merchant Adventures</string>
+    <string name="quest_read_merchant_adventures_1">I have read the book Merchant Adventures</string>
 
     <!-- main character pronouns -->
     <string name="pronoun_subject_masculine">he</string>

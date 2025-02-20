@@ -11,6 +11,7 @@ open class Choice(val text: String, val nextNodeIndex: Int, var stateChange: (St
     constructor(text: String, nextNodeIndex: Int) : this(text, nextNodeIndex, {}, Element.NEUTRAL, true)
     constructor(text: String, nextNodeIndex: Int, stateChange: (State) -> Unit = {}) : this(text, nextNodeIndex,stateChange, Element.NEUTRAL, true )
     constructor(text: String, nextNodeIndex: Int, state: State, element: Element) : this(text, nextNodeIndex, getStateChange(state,element), element, false )
+    constructor(text: String, nextNodeIndex: Int, element: Element, stateChange: (State) -> Unit= {}) : this(text, nextNodeIndex,stateChange, element, true)
 
     companion object
     {
