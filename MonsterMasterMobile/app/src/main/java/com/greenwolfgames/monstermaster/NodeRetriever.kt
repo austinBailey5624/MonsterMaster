@@ -1431,29 +1431,62 @@ class NodeRetriever(private val context: Context, private val state: State)
         if (index == 133)
         {
             val prompts = getPrompt(R.string.scene133prompt)
-            val choices = listOf(getChoice(R.string.scene133choice1, 134, Element.AQUA),
-                getChoice(R.string.scene133choice2, 119, Element.PHOENIX))
+            val choices = if(state.getQuestStage(5) < 3) {
+                listOf(getChoice(R.string.scene133choice1, 134, Element.AQUA),
+                        getChoice(R.string.scene133choice2, 119, Element.PHOENIX))
+                }
+                else
+            {
+                listOf(getChoice(R.string.scene133alt1choice1,102),
+                    getChoice(R.string.scene133alt1choice2,134),
+                    getChoice(R.string.scene133alt1choice3,79))
+            }
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 134)
         {
             val prompts = getPrompt(R.string.scene134prompt)
-            val choices = listOf(getChoice(R.string.scene134choice1, 135, Element.AQUA),
-                getChoice(R.string.scene134choice2, 119, Element.PHOENIX))
+            val choices = if(state.getQuestStage(5) < 3) {
+                listOf(getChoice(R.string.scene134choice1, 135, Element.AQUA),
+                    getChoice(R.string.scene134choice2, 119, Element.PHOENIX))
+            }
+            else{
+                listOf(getChoice(R.string.scene134alt1choice1,133),
+                    getChoice(R.string.scene134alt1choice2,135),
+                    getChoice(R.string.scene134alt1choice3,102),
+                    getChoice(R.string.scene134alt1choice4,79))
+            }
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 135)
         {
             val prompts = getPrompt(R.string.scene135prompt)
-            val choices = listOf(getChoice(R.string.scene135choice1, 136, Element.AQUA),
-                getChoice(R.string.scene135choice2, 122, Element.PHOENIX))
+            val choices = if(state.getQuestStage(5) <3) {
+                listOf(getChoice(R.string.scene135choice1, 136, Element.AQUA),
+                    getChoice(R.string.scene135choice2, 122, Element.PHOENIX))
+            }
+            else
+            {
+                listOf(getChoice(R.string.scene135alt1choice1,134),
+                    getChoice(R.string.scene135alt1choice2,136),
+                    getChoice(R.string.scene135alt1choice3,102),
+                    getChoice(R.string.scene135alt1choice4,79))
+            }
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 136)
         {
             val prompts = getPrompt(R.string.scene136prompt)
-            val choices = listOf(Choice(getString(context, R.string.scene136choice),
-                137) { state.setChoresStage_WritingLessonFinished() })
+            val choices = if(state.getQuestStage(5) < 3) {
+                listOf(Choice(getString(context, R.string.scene136choice),
+                    137) { state.setChoresStage_WritingLessonFinished(); state.setQuestStage(5,3); state.setQuestStage(10,1) })
+            }
+            else
+            {
+                listOf(getChoice(R.string.scene136alt1choice1,135,{state.setChoresStage_WritingLessonFinished(); state.setQuestStage(5,3); state.setQuestStage(10,1)}),
+                    getChoice(R.string.scene136alt1choice2,102,{state.setChoresStage_WritingLessonFinished(); state.setQuestStage(5,3); state.setQuestStage(10,1)}),
+                    getChoice(R.string.scene136alt1choice3,79,{state.setChoresStage_WritingLessonFinished(); state.setQuestStage(5,3); state.setQuestStage(10,1)}))
+            }
             return getBrahmNode(index, prompts, choices)
         }
         if (index == 137)
